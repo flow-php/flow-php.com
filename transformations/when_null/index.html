@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <meta name="description" content="Flow PHP 'transformations' topic showing 'when null' code example.">
+
     <title>Flow ETL - PHP Data Processing Framework</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon-9cae7ee880b4fe0bd755d300e1bca71e.png">
@@ -10,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png">
     <link rel="shortcut icon" href="/assets/images/favicons/favicon-db409885df78dea389e6d0b036da382c.ico">
 
-            <link rel="stylesheet" href="/assets/styles/app-fd23361149856aedc8bd47830d3146b0.css">
+            <link rel="stylesheet" href="/assets/styles/app-301cb0b6817040eed8f9cd01b0b734d4.css">
     
             
 <link rel="stylesheet" href="/assets/vendor/@fontsource-variable/cabin/index.min-08e34691d22388e6974e6cb2bfbcbfd0.css">
@@ -97,39 +99,39 @@
     </header>
 
     <main>
-            <div class="mx-auto max-w-screen-xl px-4 relative max-lg:py-10 lg:h-[500px] flex flex-col justify-center">
-        <h1 class="font-bold text-6xl tracking-wide leading-[70px] max-w-[450px] mb-8 z-10">UNIFIED DATA PROCESSING FRAMEWORK</h1>
+            <div class="mx-auto max-w-screen-xl px-2 sm:px-4 relative max-lg:py-10 lg:h-[500px] flex flex-col justify-center">
+        <h1 class="font-bold max-sm:text-5xl text-6xl tracking-wide leading-[70px] max-w-[450px] mb-8 z-10">UNIFIED DATA PROCESSING FRAMEWORK</h1>
         <a href="https://packagist.org/packages/flow-php/etl" target="_blank" class="w-fit py-2 px-3 tracking-widest before:content-['$'] before:mr-2 bg-orange-100 rounded">composer require flow-php/etl</a>
         <img src="/assets/images/elephant-4b2eb8a559db8a8a34bb8d10d5df26d3.svg" alt="elephant" class="max-lg:hidden max-w-[720px] absolute right-0 top-2">
     </div>
 
     <div class="bg-blue-200">
-        <div class="mx-auto max-w-screen-xl flex items-center text-center lg:pr-[550px] xl:pr-[650px]">
-            <div class="p-2.5 my-2.5 rounded">
+        <div class="mx-auto max-w-screen-xl flex items-center justify-center text-center max-sm:flex-col lg:pr-[550px] xl:pr-[650px]">
+            <div class="p-2 my-2 rounded">
                 <img src="/assets/images/icons/extract-733c1cf43ee630c5056b7d09e9406522.svg" alt="extract" class="inline">
-                <h2 class="my-2.5 text-2xl font-semibold tracking-wide">Extracts</h2>
+                <h2 class="my-2 text-2xl font-semibold tracking-wide">Extracts</h2>
                 <p>Retrieves and verifies data from various sources.</p>
             </div>
 
-            <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow right">
+            <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow right" class="max-sm:rotate-90">
 
-            <div class="p-2.5 my-2.5 rounded">
+            <div class="p-2 my-2 rounded">
                 <img src="/assets/images/icons/transform-0c0a9fd75cc66af8420fe905a301e543.svg" alt="transform" class="inline">
-                <h2 class="my-2.5 text-2xl font-semibold tracking-wide">Transforms</h2>
+                <h2 class="my-2 text-2xl font-semibold tracking-wide">Transforms</h2>
                 <p>Processes and organizes extracted data so it is usable.</p>
             </div>
 
-            <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow right">
+            <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow right" class="max-sm:rotate-90">
 
-            <div class="p-2.5 my-2.5 rounded">
+            <div class="p-2 my-2 rounded">
                 <img src="/assets/images/icons/load-9d1ae77f76eb4e7003f46be915c17949.svg" alt="load" class="inline">
-                <h2 class="my-2.5 text-2xl font-semibold tracking-wide">Loads</h2>
+                <h2 class="my-2 text-2xl font-semibold tracking-wide">Loads</h2>
                 <p>Moves transformed data to a data repository.</p>
             </div>
         </div>
     </div>
 
-    <div class="relative py-10 px-4 mx-auto max-w-screen-xl" data-hx-boost="true">
+    <div class="relative py-10 px-2 sm:px-4 mx-auto max-w-screen-xl" data-hx-boost="true">
         <nav class="font-medium text-center bg-orange-100 rounded">
             <ul class="flex whitespace-nowrap overflow-auto justify-between">
                                     <li class="grow rounded">
@@ -278,7 +280,7 @@ df()
     </div>
 
     <div class="bg-blue-200">
-        <section class="mx-auto max-w-screen-xl sm:flex justify-between items-center py-6 px-4">
+        <section class="mx-auto max-w-screen-xl sm:flex justify-between items-center py-6 px-2 sm:px-4">
             <div class="max-sm:mb-6 mr-6 whitespace-nowrap">
                 <h2 class="text-2xl font-semibold tracking-wide">Contributors</h2>
                 <a href="https://github.com/flow-php/flow/graphs/contributors" target="_blank" class="flex items-center">
@@ -289,58 +291,58 @@ df()
 
             <div class="grid gap-1 sm:gap-2 lg:gap-4 grid-cols-8 lg:grid-cols-12">
                                     <a href="https://github.com/norberttech" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/1921950?v=4" alt="norberttech" title="norberttech" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/1921950?v=4&amp;s=128" alt="norberttech" title="norberttech" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/tomaszhanc" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/7013293?v=4" alt="tomaszhanc" title="tomaszhanc" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/7013293?v=4&amp;s=128" alt="tomaszhanc" title="tomaszhanc" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/stloyd" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/67402?v=4" alt="stloyd" title="stloyd" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/67402?v=4&amp;s=128" alt="stloyd" title="stloyd" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/DawidSajdak" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/946972?v=4" alt="DawidSajdak" title="DawidSajdak" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/946972?v=4&amp;s=128" alt="DawidSajdak" title="DawidSajdak" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/owsiakl" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/9623965?v=4" alt="owsiakl" title="owsiakl" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/9623965?v=4&amp;s=128" alt="owsiakl" title="owsiakl" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/rzarno" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/12570337?v=4" alt="rzarno" title="rzarno" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/12570337?v=4&amp;s=128" alt="rzarno" title="rzarno" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/scyzoryck" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/8014727?v=4" alt="scyzoryck" title="scyzoryck" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/8014727?v=4&amp;s=128" alt="scyzoryck" title="scyzoryck" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/norbertmwk" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/82225968?v=4" alt="norbertmwk" title="norbertmwk" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/82225968?v=4&amp;s=128" alt="norbertmwk" title="norbertmwk" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/szepeviktor" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/952007?v=4" alt="szepeviktor" title="szepeviktor" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/952007?v=4&amp;s=128" alt="szepeviktor" title="szepeviktor" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/xaviermarchegay" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/658523?v=4" alt="xaviermarchegay" title="xaviermarchegay" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/658523?v=4&amp;s=128" alt="xaviermarchegay" title="xaviermarchegay" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/peter279k" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/9021747?v=4" alt="peter279k" title="peter279k" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/9021747?v=4&amp;s=128" alt="peter279k" title="peter279k" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/flavioheleno" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/471860?v=4" alt="flavioheleno" title="flavioheleno" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/471860?v=4&amp;s=128" alt="flavioheleno" title="flavioheleno" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/Wirone" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/600668?v=4" alt="Wirone" title="Wirone" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/600668?v=4&amp;s=128" alt="Wirone" title="Wirone" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/jpiatko" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/80686947?v=4" alt="jpiatko" title="jpiatko" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/80686947?v=4&amp;s=128" alt="jpiatko" title="jpiatko" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/voku" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/264695?v=4" alt="voku" title="voku" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/264695?v=4&amp;s=128" alt="voku" title="voku" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/mleczakm" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/3474636?v=4" alt="mleczakm" title="mleczakm" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/3474636?v=4&amp;s=128" alt="mleczakm" title="mleczakm" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/drupol" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/252042?v=4" alt="drupol" title="drupol" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/252042?v=4&amp;s=128" alt="drupol" title="drupol" class="w-full max-w-14 rounded-full">
                     </a>
                                     <a href="https://github.com/Wiktor6" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/24683748?v=4" alt="Wiktor6" title="Wiktor6" class="w-full max-w-14 rounded-full">
+                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/24683748?v=4&amp;s=128" alt="Wiktor6" title="Wiktor6" class="w-full max-w-14 rounded-full">
                     </a>
                             </div>
         </section>
