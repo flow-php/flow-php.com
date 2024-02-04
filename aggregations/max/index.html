@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
-    <meta name="description" content="Flow PHP 'transformations' topic showing 'size' code example.">
+    <meta name="description" content="Flow PHP 'aggregations' topic showing 'max' code example.">
 
     <title>Flow ETL - PHP Data Processing Framework</title>
 
@@ -135,7 +135,7 @@
         <nav class="font-medium text-center bg-orange-100 rounded">
             <ul class="flex whitespace-nowrap overflow-auto justify-between">
                                     <li class="grow rounded">
-                        <a href="/aggregations#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                        <a href="/aggregations#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
                             Aggregations
                         </a>
                     </li>
@@ -165,7 +165,7 @@
                         </a>
                     </li>
                                     <li class="grow rounded">
-                        <a href="/transformations#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                        <a href="/transformations#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
                             Transformations
                         </a>
                     </li>
@@ -181,63 +181,51 @@
             <nav>
                 <ul class="flex flex-nowrap whitespace-nowrap overflow-auto py-4">
                                             <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
-                            <a href="/transformations/array_expand#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/aggregations/average#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
-                                Array expand
+                                Average
                             </a>
                         </li>
                                             <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
-                            <a href="/transformations/array_unpack#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/aggregations/first#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
-                                Array unpack
+                                First
                             </a>
                         </li>
                                             <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
-                            <a href="/transformations/filter_divide#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/aggregations/group_by#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
-                                Filter divide
+                                Group by
                             </a>
                         </li>
                                             <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
-                            <a href="/transformations/filter_mod#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/aggregations/group_by_sum#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
-                                Filter mod
+                                Group by sum
                             </a>
                         </li>
                                             <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
-                            <a href="/transformations/literals#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/aggregations/last#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
-                                Literals
+                                Last
                             </a>
                         </li>
                                             <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
-                            <a href="/transformations/math#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/aggregations/max#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
-                                Math
+                                Max
                             </a>
                         </li>
                                             <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
-                            <a href="/transformations/size#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/aggregations/min#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
-                                Size
+                                Min
                             </a>
                         </li>
                                             <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
-                            <a href="/transformations/sort#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/aggregations/sum#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
-                                Sort
-                            </a>
-                        </li>
-                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
-                            <a href="/transformations/when_null#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
-                                When null
-                            </a>
-                        </li>
-                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
-                            <a href="/transformations/when_odd#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
-                                When odd
+                                Sum
                             </a>
                         </li>
                                     </ul>
@@ -248,10 +236,10 @@
 
 declare(strict_types=1);
 
-use function Flow\ETL\DSL\array_entry;
 use function Flow\ETL\DSL\df;
 use function Flow\ETL\DSL\from_rows;
 use function Flow\ETL\DSL\int_entry;
+use function Flow\ETL\DSL\max;
 use function Flow\ETL\DSL\ref;
 use function Flow\ETL\DSL\row;
 use function Flow\ETL\DSL\rows;
@@ -260,12 +248,23 @@ use function Flow\ETL\DSL\to_output;
 require __DIR__ . &#039;/../../../autoload.php&#039;;
 
 df()
-    -&gt;read(from_rows(rows(
-        row(int_entry(&#039;id&#039;, 1), array_entry(&#039;array&#039;, [&#039;a&#039; =&gt; 1, &#039;b&#039; =&gt; 2, &#039;c&#039; =&gt; 3])),
+    -&gt;from(from_rows(rows(
+        row(int_entry(&#039;a&#039;, 100)),
+        row(int_entry(&#039;a&#039;, 100)),
+        row(int_entry(&#039;a&#039;, 200)),
+        row(int_entry(&#039;a&#039;, 400)),
+        row(int_entry(&#039;a&#039;, 400))
     )))
-    -&gt;withEntry(&#039;array_size&#039;, ref(&#039;array&#039;)-&gt;size())
+    -&gt;aggregate(max(ref(&#039;a&#039;)))
     -&gt;write(to_output(false))
     -&gt;run();
+
+// +-------+
+// | a_max |
+// +-------+
+// |   400 |
+// +-------+
+// 1 rows
 </code></pre>            </div>
         </div>
     </div>

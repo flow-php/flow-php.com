@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png">
     <link rel="shortcut icon" href="/assets/images/favicons/favicon-db409885df78dea389e6d0b036da382c.ico">
 
-            <link rel="stylesheet" href="/assets/styles/app-301cb0b6817040eed8f9cd01b0b734d4.css">
+            <link rel="stylesheet" href="/assets/styles/app-bb8c75ca4a6648a6284eb57a9eacd7e2.css">
     
             
 <link rel="stylesheet" href="/assets/vendor/@fontsource-variable/cabin/index.min-08e34691d22388e6974e6cb2bfbcbfd0.css">
@@ -107,26 +107,26 @@
 
     <div class="bg-blue-200">
         <div class="mx-auto max-w-screen-xl flex items-center justify-center text-center max-sm:flex-col lg:pr-[550px] xl:pr-[650px]">
-            <div class="p-2 my-2 rounded">
+            <div class="p-2 my-2 rounded basis-1/2">
                 <img src="/assets/images/icons/extract-733c1cf43ee630c5056b7d09e9406522.svg" alt="extract" class="inline">
                 <h2 class="my-2 text-2xl font-semibold tracking-wide">Extracts</h2>
-                <p>Retrieves and verifies data from various sources.</p>
+                <p>Read from various data sources.</p>
             </div>
 
             <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow right" class="max-sm:rotate-90">
 
-            <div class="p-2 my-2 rounded">
+            <div class="p-2 my-2 ml-4 rounded basis-1/2">
                 <img src="/assets/images/icons/transform-0c0a9fd75cc66af8420fe905a301e543.svg" alt="transform" class="inline">
                 <h2 class="my-2 text-2xl font-semibold tracking-wide">Transforms</h2>
-                <p>Processes and organizes extracted data so it is usable.</p>
+                <p>Shape and optimize for your needs</p>
             </div>
 
             <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow right" class="max-sm:rotate-90">
 
-            <div class="p-2 my-2 rounded">
+            <div class="p-2 my-2 rounded basis-1/2">
                 <img src="/assets/images/icons/load-9d1ae77f76eb4e7003f46be915c17949.svg" alt="load" class="inline">
                 <h2 class="my-2 text-2xl font-semibold tracking-wide">Loads</h2>
-                <p>Moves transformed data to a data repository.</p>
+                <p>Store and secure in one of many available data sinks.</p>
             </div>
         </div>
     </div>
@@ -181,9 +181,63 @@
             <nav>
                 <ul class="flex flex-nowrap whitespace-nowrap overflow-auto py-4">
                                             <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
+                            <a href="/data_source/array#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                Array
+                            </a>
+                        </li>
+                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
+                            <a href="/data_source/csv#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                Csv
+                            </a>
+                        </li>
+                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
+                            <a href="/data_source/data_frame#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                Data frame
+                            </a>
+                        </li>
+                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
                             <a href="/data_source/http_dynamic#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
                                 Http dynamic
+                            </a>
+                        </li>
+                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
+                            <a href="/data_source/json#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                Json
+                            </a>
+                        </li>
+                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
+                            <a href="/data_source/parquet#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                Parquet
+                            </a>
+                        </li>
+                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
+                            <a href="/data_source/sequence_date#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                Sequence date
+                            </a>
+                        </li>
+                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
+                            <a href="/data_source/sequence_date_recurrences#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                Sequence date recurrences
+                            </a>
+                        </li>
+                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
+                            <a href="/data_source/sequence_number#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                Sequence number
+                            </a>
+                        </li>
+                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
+                            <a href="/data_source/xml#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                Xml
                             </a>
                         </li>
                                     </ul>
