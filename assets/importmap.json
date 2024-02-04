@@ -1,6 +1,6 @@
 {
     "app": {
-        "path": "\/assets\/app-b7fed2530f713e7e81b2af93588bb87a.js",
+        "path": "\/assets\/app-0d5de75f5cc929a9b11b0c237cf00818.js",
         "type": "js"
     },
     "\/assets\/bootstrap.js": {
@@ -38,6 +38,10 @@
     "@fontsource-variable\/cabin\/index.min.css": {
         "path": "\/assets\/vendor\/@fontsource-variable\/cabin\/index.min-08e34691d22388e6974e6cb2bfbcbfd0.css",
         "type": "css"
+    },
+    "htmx.org": {
+        "path": "\/assets\/vendor\/htmx.org\/htmx.org.index-023ae86a082913526422a6063298f898.js",
+        "type": "js"
     },
     "@oddbird\/popover-polyfill": {
         "path": "\/assets\/vendor\/@oddbird\/popover-polyfill\/popover-polyfill.index-7979d53637476aa204f709644aed2c19.js",
