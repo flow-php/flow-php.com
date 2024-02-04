@@ -185,6 +185,12 @@
                             </a>
                         </li>
                                             <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
+                            <a href="/schema/inferring#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                Inferring
+                            </a>
+                        </li>
+                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
                             <a href="/schema/validate#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
                                 Validate
@@ -210,19 +216,19 @@ use Flow\ETL\Row\Schema\Metadata;
 
 require __DIR__ . &#039;/../../../autoload.php&#039;;
 
+$schema = schema(
+    int_schema(&#039;id&#039;, $nullable = false),
+    str_schema(&#039;name&#039;, $nullable = true),
+    bool_schema(&#039;active&#039;, $nullable = false, Metadata::empty()-&gt;add(&#039;key&#039;, &#039;value&#039;)),
+);
+
 df()
     -&gt;read(from_array([
         [&#039;id&#039; =&gt; 1, &#039;name&#039; =&gt; &#039;Product 1&#039;, &#039;active&#039; =&gt; true],
         [&#039;id&#039; =&gt; 2, &#039;name&#039; =&gt; &#039;Product 2&#039;, &#039;active&#039; =&gt; false],
         [&#039;id&#039; =&gt; 3, &#039;name&#039; =&gt; &#039;Product 3&#039;, &#039;active&#039; =&gt; true],
     ]))
-    -&gt;validate(
-        schema(
-            int_schema(&#039;id&#039;, $nullable = false),
-            str_schema(&#039;name&#039;, $nullable = true),
-            bool_schema(&#039;active&#039;, $nullable = false, Metadata::empty()-&gt;add(&#039;key&#039;, &#039;value&#039;)),
-        )
-    )
+    -&gt;validate($schema)
     -&gt;write(to_output(false, Output::rows_and_schema))
     -&gt;run();
 </code></pre>            </div>

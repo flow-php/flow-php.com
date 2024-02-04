@@ -203,7 +203,8 @@ use function Flow\ETL\DSL\rows;
 use function Flow\ETL\DSL\to_output;
 
 // flow.phar run examples/topics/phar/data_frame/code.php
-
+// when executing data processing pipeline through phar make sure to not use any trigger, like -&gt;run();
+// this is handled by the phar internally.
 return df()
     -&gt;read(from_rows(rows(
         row(int_entry(&#039;id&#039;, 1), array_entry(&#039;array&#039;, [&#039;a&#039; =&gt; 1, &#039;b&#039; =&gt; 2, &#039;c&#039; =&gt; 3])),

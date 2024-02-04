@@ -158,7 +158,7 @@
                         </a>
                     </li>
                                     <li class="grow rounded">
-                        <a href="/schema#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                        <a href="/schema#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
                             Schema
                         </a>
                     </li>
@@ -168,7 +168,7 @@
                         </a>
                     </li>
                                     <li class="grow rounded">
-                        <a href="/window_functions#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                        <a href="/window_functions#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
                             Window functions
                         </a>
                     </li>
@@ -179,9 +179,21 @@
             <nav>
                 <ul class="flex flex-nowrap whitespace-nowrap overflow-auto py-4">
                                             <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
-                            <a href="/window_functions/dens_rank#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/schema/display#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
-                                Dens rank
+                                Display
+                            </a>
+                        </li>
+                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
+                            <a href="/schema/inferring#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                Inferring
+                            </a>
+                        </li>
+                                            <li class="group-[:not(:has(:target))]/examples:first:bg-orange-300 rounded">
+                            <a href="/schema/validate#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                Validate
                             </a>
                         </li>
                                     </ul>
@@ -192,29 +204,32 @@
 
 declare(strict_types=1);
 
-use function Flow\ETL\DSL\data_frame;
-use function Flow\ETL\DSL\dense_rank;
-use function Flow\ETL\DSL\from_array;
-use function Flow\ETL\DSL\ref;
+use function Flow\ETL\Adapter\CSV\from_csv;
+use function Flow\ETL\DSL\df;
+use function Flow\ETL\DSL\schema_from_json;
+use function Flow\ETL\DSL\schema_to_json;
 use function Flow\ETL\DSL\to_output;
-use function Flow\ETL\DSL\window;
+use Flow\ETL\Loader\StreamLoader\Output;
 
 require __DIR__ . &#039;/../../../autoload.php&#039;;
 
-$df = data_frame()
-    -&gt;read(
-        from_array([
-            [&#039;id&#039; =&gt; 1, &#039;name&#039; =&gt; &#039;Greg&#039;, &#039;department&#039; =&gt; &#039;IT&#039;, &#039;salary&#039; =&gt; 6000],
-            [&#039;id&#039; =&gt; 2, &#039;name&#039; =&gt; &#039;Michal&#039;, &#039;department&#039; =&gt; &#039;IT&#039;, &#039;salary&#039; =&gt; 5000],
-            [&#039;id&#039; =&gt; 3, &#039;name&#039; =&gt; &#039;Tomas&#039;, &#039;department&#039; =&gt; &#039;Finances&#039;, &#039;salary&#039; =&gt; 11_000],
-            [&#039;id&#039; =&gt; 4, &#039;name&#039; =&gt; &#039;John&#039;, &#039;department&#039; =&gt; &#039;Finances&#039;, &#039;salary&#039; =&gt; 9000],
-            [&#039;id&#039; =&gt; 5, &#039;name&#039; =&gt; &#039;Jane&#039;, &#039;department&#039; =&gt; &#039;Finances&#039;, &#039;salary&#039; =&gt; 14_000],
-            [&#039;id&#039; =&gt; 6, &#039;name&#039; =&gt; &#039;Janet&#039;, &#039;department&#039; =&gt; &#039;Finances&#039;, &#039;salary&#039; =&gt; 4000],
-        ])
-    )
-    -&gt;withEntry(&#039;rank&#039;, dense_rank()-&gt;over(window()-&gt;partitionBy(ref(&#039;department&#039;))-&gt;orderBy(ref(&#039;salary&#039;)-&gt;desc())))
-    -&gt;sortBy(ref(&#039;department&#039;), ref(&#039;rank&#039;))
-    -&gt;write(to_output(false))
+if (!\file_exists(__DIR__ . &#039;/output/schema.json&#039;)) {
+    $schema = df()
+        -&gt;read(from_csv(__DIR__ . &#039;/input/dataset.csv&#039;))
+        -&gt;limit(100) // Limiting the number of rows to read will speed up the process but might bring less accurate results
+        -&gt;autoCast()
+        -&gt;schema();
+
+    \file_put_contents(__DIR__ . &#039;/output/schema.json&#039;, schema_to_json($schema));
+} else {
+    $schema = schema_from_json(\file_get_contents(__DIR__ . &#039;/output/schema.json&#039;));
+}
+
+// Reading schemaless data formats with predefined schema can significantly improve performance
+df()
+    -&gt;read(from_csv(__DIR__ . &#039;/input/dataset.csv&#039;, schema: $schema))
+    -&gt;collect()
+    -&gt;write(to_output(truncate: false, output: Output::rows_and_schema))
     -&gt;run();
 </code></pre>            </div>
         </div>

@@ -214,13 +214,8 @@ $df = data_frame()
     )
     -&gt;withEntry(&#039;rank&#039;, dense_rank()-&gt;over(window()-&gt;partitionBy(ref(&#039;department&#039;))-&gt;orderBy(ref(&#039;salary&#039;)-&gt;desc())))
     -&gt;sortBy(ref(&#039;department&#039;), ref(&#039;rank&#039;))
-    -&gt;write(to_output(false));
-
-if ($_ENV[&#039;FLOW_PHAR_APP&#039;] ?? false) {
-    return $df;
-}
-
-$df-&gt;run();
+    -&gt;write(to_output(false))
+    -&gt;run();
 </code></pre>            </div>
         </div>
     </div>
