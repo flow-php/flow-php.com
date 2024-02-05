@@ -4,9 +4,11 @@
     "@oddbird\/popover-polyfill",
     "\/assets\/bootstrap.js",
     "htmx.org",
+    "clipboard",
     "@symfony\/stimulus-bundle",
     "@hotwired\/stimulus",
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js",
+    "\/assets\/controllers\/clipboard_controller.js",
     "\/assets\/controllers\/syntax_highlight_controller.js",
     "highlight.js\/lib\/core",
     "highlight.js\/lib\/languages\/php"
