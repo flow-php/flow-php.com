@@ -12,45 +12,41 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png">
     <link rel="shortcut icon" href="/assets/images/favicons/favicon-db409885df78dea389e6d0b036da382c.ico">
 
-            <link rel="stylesheet" href="/assets/styles/app-41289cb657d1ac553ca3eb22050c8ad0.css">
+    <link rel="preload" fetchpriority="high" href="/assets/vendor/@fontsource-variable/cabin/files/cabin-latin-wght-normal-866be39b45f5b5b8840cb93bc1069465.woff2" as="font" crossorigin>
+
+            <link rel="stylesheet" href="/assets/styles/app-7d45c31c9c7858d39fff1ac246962b71.css">
     
             
 <link rel="stylesheet" href="/assets/vendor/@fontsource-variable/cabin/index.min-08e34691d22388e6974e6cb2bfbcbfd0.css">
-<link rel="stylesheet" href="/assets/vendor/highlight.js/styles/github-dark.min-4b46e20f66f76e35d6454ca4f09b57c3.css">
 <script type="importmap">
 {
     "imports": {
-        "app": "/assets/app-a8ed94d3fe7fdb4f7c4b9f4f1af807bd.js",
+        "app": "/assets/app-402e6d0e292bee3e01162b7328f4c328.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,",
-        "highlight.js/styles/github-dark.min.css": "data:application/javascript,",
         "@oddbird/popover-polyfill": "/assets/vendor/@oddbird/popover-polyfill/popover-polyfill.index-7979d53637476aa204f709644aed2c19.js",
         "/assets/bootstrap.js": "/assets/bootstrap-d78d7e12c819dedf89372fb4824c072d.js",
         "htmx.org": "/assets/vendor/htmx.org/htmx.org.index-023ae86a082913526422a6063298f898.js",
-        "clipboard": "/assets/vendor/clipboard/clipboard.index-925566f98181665b5a61fea1bcd9033d.js",
         "@symfony/stimulus-bundle": "/assets/@symfony/stimulus-bundle/loader-e1ee9ace0562f2e6a52301e4ccc8627d.js",
         "@hotwired/stimulus": "/assets/vendor/@hotwired/stimulus/stimulus.index-304681764684182e6662e0931532ed91.js",
-        "/assets/@symfony/stimulus-bundle/controllers.js": "/assets/@symfony/stimulus-bundle/controllers-528c002c2aae78dc39665c30730efb45.js",
-        "/assets/controllers/clipboard_controller.js": "/assets/controllers/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js",
-        "/assets/controllers/syntax_highlight_controller.js": "/assets/controllers/syntax_highlight_controller-b4e25d6a5d11b52dc036f7d97b6f8e3f.js",
+        "/assets/@symfony/stimulus-bundle/controllers.js": "/assets/@symfony/stimulus-bundle/controllers-10e6fdbcf4f70220371fa70aa0833944.js",
+        "/assets/controllers/syntax_highlight_controller.js": "/assets/controllers/syntax_highlight_controller-743c541af7c05ef0a8fa630ec3f9b167.js",
+        "/assets/controllers/clipboard_controller.js": "/assets/controllers/clipboard_controller-6aefa8a9dec3271dae2f05b464bf9204.js",
         "highlight.js/lib/core": "/assets/vendor/highlight.js/lib/core-760145ef158caabe84ca07686407d093.js",
-        "highlight.js/lib/languages/php": "/assets/vendor/highlight.js/lib/languages/php-c0eb2105c14097e8a5a1e9a767e8ac95.js"
+        "highlight.js/lib/languages/php": "/assets/vendor/highlight.js/lib/languages/php-c0eb2105c14097e8a5a1e9a767e8ac95.js",
+        "highlight.js/styles/github-dark.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fhighlight.js%2Fstyles%2Fgithub-dark.min-4b46e20f66f76e35d6454ca4f09b57c3.css%22%7D%29%29",
+        "clipboard": "/assets/vendor/clipboard/clipboard.index-925566f98181665b5a61fea1bcd9033d.js"
     }
 }
 </script>
 <!-- ES Module Shims: Import maps polyfill for modules browsers without import maps support -->
 <script async src="https://ga.jspm.io/npm:es-module-shims@1.8.0/dist/es-module-shims.js"></script>
-<link rel="modulepreload" href="/assets/app-a8ed94d3fe7fdb4f7c4b9f4f1af807bd.js">
+<link rel="modulepreload" href="/assets/app-402e6d0e292bee3e01162b7328f4c328.js">
 <link rel="modulepreload" href="/assets/vendor/@oddbird/popover-polyfill/popover-polyfill.index-7979d53637476aa204f709644aed2c19.js">
 <link rel="modulepreload" href="/assets/bootstrap-d78d7e12c819dedf89372fb4824c072d.js">
 <link rel="modulepreload" href="/assets/vendor/htmx.org/htmx.org.index-023ae86a082913526422a6063298f898.js">
-<link rel="modulepreload" href="/assets/vendor/clipboard/clipboard.index-925566f98181665b5a61fea1bcd9033d.js">
 <link rel="modulepreload" href="/assets/@symfony/stimulus-bundle/loader-e1ee9ace0562f2e6a52301e4ccc8627d.js">
 <link rel="modulepreload" href="/assets/vendor/@hotwired/stimulus/stimulus.index-304681764684182e6662e0931532ed91.js">
-<link rel="modulepreload" href="/assets/@symfony/stimulus-bundle/controllers-528c002c2aae78dc39665c30730efb45.js">
-<link rel="modulepreload" href="/assets/controllers/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js">
-<link rel="modulepreload" href="/assets/controllers/syntax_highlight_controller-b4e25d6a5d11b52dc036f7d97b6f8e3f.js">
-<link rel="modulepreload" href="/assets/vendor/highlight.js/lib/core-760145ef158caabe84ca07686407d093.js">
-<link rel="modulepreload" href="/assets/vendor/highlight.js/lib/languages/php-c0eb2105c14097e8a5a1e9a767e8ac95.js">
+<link rel="modulepreload" href="/assets/@symfony/stimulus-bundle/controllers-10e6fdbcf4f70220371fa70aa0833944.js">
 <script type="module">import 'app';</script>
     </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1W17JSMLE5"></script>
@@ -63,38 +59,38 @@
 </script>
 <body class="scroll-smooth bg-black text-white">
     <header class="py-2 text-white bg-blue-200">
-        <div class="mx-auto max-w-screen-xl px-4 flex items-center justify-between ">
+        <div class="mx-auto max-w-screen-xl px-4 flex items-center justify-between">
             <a href="/">
-                <img src="/assets/images/logo-3ed481e55faedcd874c34e4801929d00.svg" alt="flow php" class="w-44 h-12">
+                <img src="/assets/images/logo-3ed481e55faedcd874c34e4801929d00.svg" alt="flow php" width="176" height="48">
             </a>
 
             <button popovertarget="main-nav" popovertargetaction="show" class="sm:hidden">
-                <img src="/assets/images/icons/menu-77fe45bf7a82a5a987e517f5f502d1a8.svg" alt="menu" class="" >
+                <img src="/assets/images/icons/menu-77fe45bf7a82a5a987e517f5f502d1a8.svg" alt="menu">
             </button>
 
             <nav popover id="main-nav" class="max-sm:absolute border-0 p-0 m-0 max-sm:top-0 max-sm:right-0 sm:relative sm:block text-white bg-blue-200 unset">
                 <ul class="sm:flex flex-nowrap whitespace-nowrap">
                     <li class="sm:hidden text-right">
                         <button popovertarget="main-nav" popovertargetaction="hide" class="sm:hidden h-16 pr-4">
-                            <img src="/assets/images/icons/close-1d7ec4af2f20f3e124a47ef76786be62.svg" alt="menu">
+                            <img src="/assets/images/icons/close-1d7ec4af2f20f3e124a47ef76786be62.svg" alt="close">
                         </button>
                     </li>
                     <li>
                         <a class="p-3 flex items-center" href="https://github.com/flow-php/flow" target="_blank">
                             Repository
-                            <img src="/assets/images/icons/github-b7e5d858805e5289b575768f10a66b52.svg" alt="external resource" class="w-4 ml-0.5">
+                            <img src="/assets/images/icons/github-b7e5d858805e5289b575768f10a66b52.svg" alt="external resource" width="16" height="16" class="ml-1">
                         </a>
                     </li>
                     <li>
                         <a class="p-3 flex items-center" href="https://github.com/orgs/flow-php/projects/1" target="_blank">
                             Roadmap
-                            <img src="/assets/images/icons/external-03423c578ef110d4d4f0083107996af5.svg" alt="external resource" class="w-4 ml-0.5">
+                            <img src="/assets/images/icons/external-03423c578ef110d4d4f0083107996af5.svg" alt="external resource" width="16" height="16" class="ml-1">
                         </a>
                     </li>
                     <li>
                         <a class="p-3 flex items-center" href="https://github.com/orgs/flow-php/discussions" target="_blank">
                             Discussion
-                            <img src="/assets/images/icons/external-03423c578ef110d4d4f0083107996af5.svg" alt="external resource" class="w-4 ml-0.5">
+                            <img src="/assets/images/icons/external-03423c578ef110d4d4f0083107996af5.svg" alt="external resource" width="16" height="16" class="ml-1">
                         </a>
                     </li>
                 </ul>
@@ -103,44 +99,38 @@
     </header>
 
     <main>
-            <div class="mx-auto max-w-screen-xl px-2 sm:px-4 relative max-lg:py-10 p-[116px]">
-        <h1 class="font-bold max-sm:text-5xl text-6xl tracking-wide leading-[70px] max-w-[450px] mb-8 z-10">UNIFIED DATA PROCESSING FRAMEWORK</h1>
-        <code class="w-fit py-2 px-3 before:content-['$'] bg-orange-100 rounded">
-            <span id="command">composer require flow-php/etl</span>
-            <button class="[&.copied]:after:content-['Copied!'] after:absolute after:translate-x-6 select-none" title="copy command" data-clipboard-target="#command" data-controller="clipboard">
-                <img src="/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy command" class="inline w-5">
-            </button>
-        </code>
-        <img src="/assets/images/elephant-4b2eb8a559db8a8a34bb8d10d5df26d3.svg" alt="elephant" class="max-lg:hidden max-w-[720px] absolute right-0 top-0">
-    </div>
+        <div class="mx-auto max-w-screen-xl px-2 sm:px-4 relative max-lg:py-10 p-[116px]">
+            <h1 class="font-bold max-sm:text-5xl text-6xl tracking-wide leading-[70px] max-w-[450px] mb-8 z-10">UNIFIED DATA PROCESSING FRAMEWORK</h1>
+            <code class="w-fit py-2 px-3 before:content-['$'] before:mr-2 bg-orange-100 rounded"><span id="command">composer require flow-php/etl</span><button class="ml-2 [&.copied]:after:content-['Copied!'] after:absolute after:translate-x-6 select-none" title="copy command" data-clipboard-target="#command" data-controller="clipboard"><img src="/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy command" width="20" height="20" class="inline"></button></code>            <img src="/assets/images/elephant-4b2eb8a559db8a8a34bb8d10d5df26d3.svg" alt="elephant" width="720" class="max-lg:hidden absolute right-0 top-0">
+        </div>
 
-    <div class="bg-blue-200">
-        <div class="mx-auto max-w-screen-xl flex items-center justify-center text-center max-sm:flex-col lg:pr-[550px] xl:pr-[600px]">
-            <div class="p-2 my-2 basis-1/3">
-                <img src="/assets/images/icons/extract-733c1cf43ee630c5056b7d09e9406522.svg" alt="extract" class="inline">
-                <h2 class="my-2 text-2xl font-semibold tracking-wide">Extracts</h2>
-                <p>Read from various data sources.</p>
-            </div>
+        <div class="bg-blue-200">
+            <div class="mx-auto max-w-screen-xl py-4 flex sm:items-start justify-center text-center max-sm:flex-col lg:pr-[550px]">
+                <div class="basis-1/3">
+                    <img src="/assets/images/icons/extract-733c1cf43ee630c5056b7d09e9406522.svg" alt="extract" width="64" height="64" class="inline">
+                    <h2 class="my-2 text-2xl font-semibold tracking-wide">Extracts</h2>
+                    <p>Read from various data sources.</p>
+                </div>
 
-            <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow right" class="max-sm:rotate-90">
+                <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow right" width="32" height="32" class="max-sm:rotate-90 max-sm:my-4 mx-2 self-center">
 
-            <div class="p-2 my-2 ml-4 basis-1/3">
-                <img src="/assets/images/icons/transform-0c0a9fd75cc66af8420fe905a301e543.svg" alt="transform" class="inline">
-                <h2 class="my-2 text-2xl font-semibold tracking-wide">Transforms</h2>
-                <p>Shape and optimize for your needs</p>
-            </div>
+                <div class="basis-1/3">
+                    <img src="/assets/images/icons/transform-0c0a9fd75cc66af8420fe905a301e543.svg" alt="transform" width="64" height="64" class="inline">
+                    <h2 class="my-2 text-2xl font-semibold tracking-wide">Transforms</h2>
+                    <p>Shape and optimize for your needs</p>
+                </div>
 
-            <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow right" class="max-sm:rotate-90">
+                <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow right" width="32" height="32" class="max-sm:rotate-90 max-sm:my-4 mx-2 self-center">
 
-            <div class="p-2 my-2 basis-1/3">
-                <img src="/assets/images/icons/load-9d1ae77f76eb4e7003f46be915c17949.svg" alt="load" class="inline">
-                <h2 class="my-2 text-2xl font-semibold tracking-wide">Loads</h2>
-                <p>Store and secure in one of many available data sinks.</p>
+                <div class="basis-1/3">
+                    <img src="/assets/images/icons/load-9d1ae77f76eb4e7003f46be915c17949.svg" alt="load" width="64" height="64" class="inline">
+                    <h2 class="my-2 text-2xl font-semibold tracking-wide">Loads</h2>
+                    <p>Store and secure in one of many available data sinks.</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="py-10 px-2 sm:px-4 mx-auto max-w-screen-xl" data-hx-boost="true">
+            <div class="py-10 px-2 sm:px-4 mx-auto max-w-screen-xl" data-hx-boost="true">
         <nav class="font-medium text-center bg-orange-100 rounded">
             <ul class="flex whitespace-nowrap overflow-auto justify-between">
                                     <li class="grow">
@@ -186,66 +176,66 @@
                             </ul>
         </nav>
 
-        <div class="pb-4 -mt-20 pt-20">
+        <div class="-mt-20 pt-20">
             <nav>
                 <ul class="flex whitespace-nowrap overflow-auto py-4">
                                             <li>
                             <a href="/data_source/array/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Array
                             </a>
                         </li>
                                             <li>
                             <a href="/data_source/csv/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Csv
                             </a>
                         </li>
                                             <li>
                             <a href="/data_source/data_frame/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Data frame
                             </a>
                         </li>
                                             <li>
                             <a href="/data_source/http_dynamic/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Http dynamic
                             </a>
                         </li>
                                             <li>
                             <a href="/data_source/json/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Json
                             </a>
                         </li>
                                             <li>
                             <a href="/data_source/parquet/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Parquet
                             </a>
                         </li>
                                             <li>
                             <a href="/data_source/sequence_date/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Sequence date
                             </a>
                         </li>
                                             <li>
                             <a href="/data_source/sequence_date_recurrences/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Sequence date recurrences
                             </a>
                         </li>
                                             <li>
                             <a href="/data_source/sequence_number/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Sequence number
                             </a>
                         </li>
                                             <li>
                             <a href="/data_source/xml/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png" alt="flow php icon" class="mr-2">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Xml
                             </a>
                         </li>
@@ -253,7 +243,7 @@
             </nav>
 
             <div id="example" class="-mt-36 pt-36">
-                <pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative"><button class="absolute top-0 right-0 bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-24" title="copy code" data-clipboard-target="#code" data-controller="clipboard"><img src="/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" class="inline w-5"></button><code id="code" class="language-php !p-0 !bg-transparent" data-controller="syntax-highlight">&lt;?php
+                <pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative"><button class="absolute top-0 right-0 bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-24" title="copy code" data-clipboard-target="#code" data-controller="clipboard"><img src="/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><code id="code" class="language-php !p-0 !bg-transparent" data-controller="syntax-highlight">&lt;?php
 
 declare(strict_types=1);
 
@@ -280,74 +270,74 @@ data_frame()
         </div>
     </div>
 
-    <div class="bg-blue-200">
-        <section class="mx-auto max-w-screen-xl sm:flex justify-between items-center py-6 px-2 sm:px-4">
-            <div class="max-sm:mb-6 mr-6 whitespace-nowrap">
-                <h2 class="text-2xl font-semibold tracking-wide">Contributors</h2>
-                <a href="https://github.com/flow-php/flow/graphs/contributors" target="_blank" class="flex items-center">
-                    Join us on GitHub
-                    <img src="/assets/images/icons/external-03423c578ef110d4d4f0083107996af5.svg" alt="external resource" class="w-4 ml-0.5">
-                </a>
-            </div>
+        <div class="bg-blue-200">
+            <section class="mx-auto max-w-screen-xl sm:flex justify-between items-center py-6 px-2 sm:px-4">
+                <div class="max-sm:mb-6 mr-6 whitespace-nowrap">
+                    <h2 class="text-2xl font-semibold tracking-wide">Contributors</h2>
+                    <a href="https://github.com/flow-php/flow/graphs/contributors" target="_blank" class="flex items-center">
+                        Join us on GitHub
+                        <img src="/assets/images/icons/external-03423c578ef110d4d4f0083107996af5.svg" alt="external resource" width="16" height="16" class="ml-1">
+                    </a>
+                </div>
 
-            <div class="grid gap-1 sm:gap-2 lg:gap-4 grid-cols-8 lg:grid-cols-12">
-                                    <a href="https://github.com/norberttech" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/1921950?v=4&amp;s=128" alt="norberttech" title="norberttech" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/tomaszhanc" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/7013293?v=4&amp;s=128" alt="tomaszhanc" title="tomaszhanc" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/stloyd" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/67402?v=4&amp;s=128" alt="stloyd" title="stloyd" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/DawidSajdak" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/946972?v=4&amp;s=128" alt="DawidSajdak" title="DawidSajdak" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/owsiakl" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/9623965?v=4&amp;s=128" alt="owsiakl" title="owsiakl" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/rzarno" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/12570337?v=4&amp;s=128" alt="rzarno" title="rzarno" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/scyzoryck" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/8014727?v=4&amp;s=128" alt="scyzoryck" title="scyzoryck" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/norbertmwk" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/82225968?v=4&amp;s=128" alt="norbertmwk" title="norbertmwk" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/szepeviktor" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/952007?v=4&amp;s=128" alt="szepeviktor" title="szepeviktor" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/xaviermarchegay" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/658523?v=4&amp;s=128" alt="xaviermarchegay" title="xaviermarchegay" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/peter279k" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/9021747?v=4&amp;s=128" alt="peter279k" title="peter279k" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/flavioheleno" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/471860?v=4&amp;s=128" alt="flavioheleno" title="flavioheleno" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/Wirone" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/600668?v=4&amp;s=128" alt="Wirone" title="Wirone" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/jpiatko" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/80686947?v=4&amp;s=128" alt="jpiatko" title="jpiatko" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/voku" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/264695?v=4&amp;s=128" alt="voku" title="voku" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/mleczakm" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/3474636?v=4&amp;s=128" alt="mleczakm" title="mleczakm" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/drupol" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/252042?v=4&amp;s=128" alt="drupol" title="drupol" class="w-full max-w-14 rounded-full">
-                    </a>
-                                    <a href="https://github.com/Wiktor6" rel="nofollow" target="_blank">
-                        <img loading="lazy" src="https://avatars.githubusercontent.com/u/24683748?v=4&amp;s=128" alt="Wiktor6" title="Wiktor6" class="w-full max-w-14 rounded-full">
-                    </a>
-                            </div>
-        </section>
-    </div>
+                <div class="grid gap-1 sm:gap-2 lg:gap-4 grid-cols-8 lg:grid-cols-12">
+                                            <a href="https://github.com/norberttech" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/1921950?v=4&amp;s=128" alt="norberttech" width="56" height="56" title="norberttech" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/tomaszhanc" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/7013293?v=4&amp;s=128" alt="tomaszhanc" width="56" height="56" title="tomaszhanc" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/stloyd" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/67402?v=4&amp;s=128" alt="stloyd" width="56" height="56" title="stloyd" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/DawidSajdak" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/946972?v=4&amp;s=128" alt="DawidSajdak" width="56" height="56" title="DawidSajdak" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/owsiakl" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/9623965?v=4&amp;s=128" alt="owsiakl" width="56" height="56" title="owsiakl" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/rzarno" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/12570337?v=4&amp;s=128" alt="rzarno" width="56" height="56" title="rzarno" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/scyzoryck" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/8014727?v=4&amp;s=128" alt="scyzoryck" width="56" height="56" title="scyzoryck" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/norbertmwk" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/82225968?v=4&amp;s=128" alt="norbertmwk" width="56" height="56" title="norbertmwk" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/szepeviktor" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/952007?v=4&amp;s=128" alt="szepeviktor" width="56" height="56" title="szepeviktor" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/xaviermarchegay" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/658523?v=4&amp;s=128" alt="xaviermarchegay" width="56" height="56" title="xaviermarchegay" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/peter279k" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/9021747?v=4&amp;s=128" alt="peter279k" width="56" height="56" title="peter279k" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/flavioheleno" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/471860?v=4&amp;s=128" alt="flavioheleno" width="56" height="56" title="flavioheleno" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/Wirone" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/600668?v=4&amp;s=128" alt="Wirone" width="56" height="56" title="Wirone" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/jpiatko" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/80686947?v=4&amp;s=128" alt="jpiatko" width="56" height="56" title="jpiatko" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/voku" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/264695?v=4&amp;s=128" alt="voku" width="56" height="56" title="voku" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/mleczakm" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/3474636?v=4&amp;s=128" alt="mleczakm" width="56" height="56" title="mleczakm" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/drupol" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/252042?v=4&amp;s=128" alt="drupol" width="56" height="56" title="drupol" class="rounded-full">
+                        </a>
+                                            <a href="https://github.com/Wiktor6" rel="nofollow" target="_blank">
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/24683748?v=4&amp;s=128" alt="Wiktor6" width="56" height="56" title="Wiktor6" class="rounded-full">
+                        </a>
+                                    </div>
+            </section>
+        </div>
     </main>
 
     <footer class="text-center bg-orange-100">

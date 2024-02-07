@@ -1,6 +1,6 @@
 {
     "app": {
-        "path": "\/assets\/app-a8ed94d3fe7fdb4f7c4b9f4f1af807bd.js",
+        "path": "\/assets\/app-402e6d0e292bee3e01162b7328f4c328.js",
         "type": "js"
     },
     "\/assets\/bootstrap.js": {
@@ -8,15 +8,15 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-528c002c2aae78dc39665c30730efb45.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/clipboard_controller.js": {
-        "path": "\/assets\/controllers\/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-10e6fdbcf4f70220371fa70aa0833944.js",
         "type": "js"
     },
     "\/assets\/controllers\/syntax_highlight_controller.js": {
-        "path": "\/assets\/controllers\/syntax_highlight_controller-b4e25d6a5d11b52dc036f7d97b6f8e3f.js",
+        "path": "\/assets\/controllers\/syntax_highlight_controller-743c541af7c05ef0a8fa630ec3f9b167.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/clipboard_controller.js": {
+        "path": "\/assets\/controllers\/clipboard_controller-6aefa8a9dec3271dae2f05b464bf9204.js",
         "type": "js"
     },
     "@symfony\/stimulus-bundle": {
