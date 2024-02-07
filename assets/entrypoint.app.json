@@ -1,5 +1,4 @@
 [
-    "@fontsource-variable\/cabin\/index.min.css",
     "@oddbird\/popover-polyfill",
     "\/assets\/bootstrap.js",
     "htmx.org",
