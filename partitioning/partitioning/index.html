@@ -160,8 +160,8 @@
                         </a>
                     </li>
                                     <li class="grow">
-                        <a href="/cache/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
-                            Cache
+                        <a href="/data_frame/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                            Data frame
                         </a>
                     </li>
                                     <li class="grow">
@@ -177,11 +177,6 @@
                                     <li class="grow">
                         <a href="/partitioning/#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
                             Partitioning
-                        </a>
-                    </li>
-                                    <li class="grow">
-                        <a href="/phar/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
-                            Phar
                         </a>
                     </li>
                                     <li class="grow">
@@ -252,29 +247,29 @@ data_frame()
         ]
     ))
     -&gt;partitionBy(ref(&#039;color&#039;), ref(&#039;sku&#039;))
-    -&gt;write(to_csv(__DIR__ . &#039;/output&#039;)) // do not provider extension, partitions are anyway written to separate folders
+    -&gt;write(to_csv(__DIR__ . &#039;/output/products.csv&#039;))
     -&gt;run();
 
 // output
 // ├── color=blue
 // │   ├── sku=PRODUCT01
-// │   │   └── 65c7e9bc4460a568233195.csv
+// │   │   └── products.csv
 // │   └── sku=PRODUCT02
-// │       └── 65c7e9bc446c2326068326.csv
+// │       └── products.csv
 // ├── color=green
 // │   ├── sku=PRODUCT01
-// │   │   └── 65c7e9bc44305321518126.csv
+// │   │   └── products.csv
 // │   ├── sku=PRODUCT02
-// │   │   └── 65c7e9bc44421020940545.csv
+// │   │   └── products.csv
 // │   └── sku=PRODUCT03
-// │       └── 65c7e9bc44515031584752.csv
+// │       └── products.csv
 // └── color=red
 //     ├── sku=PRODUCT01
-//     │   └── 65c7e9bc4386f958078278.csv
+//     │   └── products.csv
 //     ├── sku=PRODUCT02
-//     │   └── 65c7e9bc440fa083889144.csv
+//     │   └── products.csv
 //     └── sku=PRODUCT03
-//         └── 65c7e9bc44209401416287.csv
+//         └── products.csv
 //
 // 12 directories, 8 files
 </code></pre>            </div>

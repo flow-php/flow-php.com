@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
 
-    <title>Cache - Flow PHP</title>
-    <meta property="og:title" content="Cache - Flow PHP" />
-    <meta name="twitter:title" content="Cache - Flow PHP" >
+    <title>Data frame - Flow PHP</title>
+    <meta property="og:title" content="Data frame - Flow PHP" />
+    <meta name="twitter:title" content="Data frame - Flow PHP" >
 
-    <meta name="description" content="Code example showing reading cache.">
-    <meta property="og:description" content="Code example showing reading cache.">
-    <meta name="twitter:description" content="Code example showing reading cache.">
+    <meta name="description" content="Code example showing overwrite data frame.">
+    <meta property="og:description" content="Code example showing overwrite data frame.">
+    <meta name="twitter:description" content="Code example showing overwrite data frame.">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/cache/" />
+    <meta property="og:url" content="https://flow-php.com/data_frame/overwrite/" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/cache/" />
+    <meta property="twitter:url" content="https://flow-php.com/data_frame/overwrite/" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -160,8 +160,8 @@
                         </a>
                     </li>
                                     <li class="grow">
-                        <a href="/cache/#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
-                            Cache
+                        <a href="/data_frame/#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                            Data frame
                         </a>
                     </li>
                                     <li class="grow">
@@ -177,11 +177,6 @@
                                     <li class="grow">
                         <a href="/partitioning/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
                             Partitioning
-                        </a>
-                    </li>
-                                    <li class="grow">
-                        <a href="/phar/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
-                            Phar
                         </a>
                     </li>
                                     <li class="grow">
@@ -206,9 +201,21 @@
             <nav>
                 <ul class="flex whitespace-nowrap overflow-auto py-4">
                                             <li>
-                            <a href="/cache/reading/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/data_frame/cache/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Reading
+                                Cache
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/data_frame/data_frame/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
+                                Data frame
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/data_frame/overwrite/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
+                                Overwrite
                             </a>
                         </li>
                                     </ul>
@@ -219,66 +226,32 @@
 
 declare(strict_types=1);
 
-use function Flow\ETL\DSL\config_builder;
+use function Flow\ETL\Adapter\CSV\from_csv;
+use function Flow\ETL\Adapter\CSV\to_csv;
 use function Flow\ETL\DSL\df;
-use function Flow\ETL\DSL\from_cache;
-use function Flow\ETL\DSL\ref;
-use function Flow\ETL\DSL\to_output;
-use Flow\ETL\Adapter\Http\DynamicExtractor\NextRequestFactory;
-use Flow\ETL\Adapter\Http\PsrHttpClientDynamicExtractor;
-use Flow\ETL\Cache\PSRSimpleCache;
-use Http\Client\Curl\Client;
-use Nyholm\Psr7\Factory\Psr17Factory;
-use Psr\Http\Message\RequestInterface;
-use Psr\Http\Message\ResponseInterface;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
-use Symfony\Component\Cache\Psr16Cache;
+use function Flow\ETL\DSL\overwrite;
 
 require __DIR__ . &#039;/../../../autoload.php&#039;;
 
-$factory = new Psr17Factory();
-$client = new Client($factory, $factory);
-
-$from_github_api = new PsrHttpClientDynamicExtractor($client, new class implements NextRequestFactory {
-    public function create(?ResponseInterface $previousResponse = null) : ?RequestInterface
-    {
-        $factory = new Psr17Factory();
-
-        if ($previousResponse === null) {
-            return $factory
-                -&gt;createRequest(&#039;GET&#039;, &#039;https://api.github.com/orgs/flow-php&#039;)
-                -&gt;withHeader(&#039;Accept&#039;, &#039;application/vnd.github.v3+json&#039;)
-                -&gt;withHeader(&#039;User-Agent&#039;, &#039;flow-php/etl&#039;);
-        }
-
-        return null;
-    }
-});
-
-$adapter = new PSRSimpleCache(
-    new Psr16Cache(
-        new FilesystemAdapter(
-            directory: __DIR__ . &#039;/output/cache&#039;
-        )
-    )
-);
-
-df(config_builder()-&gt;cache($adapter))
-    -&gt;read(
-        from_cache(
-            id: &#039;github_api&#039;,
-            fallback_extractor: $from_github_api
-        )
-    )
-    -&gt;cache(&#039;github_api&#039;)
-    -&gt;withEntry(&#039;unpacked&#039;, ref(&#039;response_body&#039;)-&gt;jsonDecode())
-    -&gt;select(&#039;unpacked&#039;)
-    -&gt;withEntry(&#039;unpacked&#039;, ref(&#039;unpacked&#039;)-&gt;unpack())
-    -&gt;renameAll(&#039;unpacked.&#039;, &#039;&#039;)
-    -&gt;drop(&#039;unpacked&#039;)
-    -&gt;select(&#039;name&#039;, &#039;html_url&#039;, &#039;blog&#039;, &#039;login&#039;, &#039;public_repos&#039;, &#039;followers&#039;, &#039;created_at&#039;)
-    -&gt;write(to_output(false))
+df()
+    -&gt;read(from_csv(__DIR__ . &#039;/input/file.csv&#039;))
+    -&gt;saveMode(overwrite())
+    -&gt;write(to_csv(__DIR__ . &#039;/output/file.csv&#039;))
     -&gt;run();
+
+df()
+    -&gt;read(from_csv(__DIR__ . &#039;/output/file.csv&#039;))
+    -&gt;saveMode(overwrite())
+    -&gt;drop(&#039;name&#039;)
+    -&gt;write(to_csv(__DIR__ . &#039;/output/file.csv&#039;))
+    -&gt;run();
+
+// content of /output/file.csv:
+// id
+// 1
+// 2
+// 3
+// 4
 </code></pre>            </div>
         </div>
     </div>
