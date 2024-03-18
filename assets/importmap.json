@@ -8,15 +8,15 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-546191eec481bda239002864175e5efd.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/clipboard_controller.js": {
-        "path": "\/assets\/controllers\/clipboard_controller-6aefa8a9dec3271dae2f05b464bf9204.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-10e6fdbcf4f70220371fa70aa0833944.js",
         "type": "js"
     },
     "\/assets\/controllers\/syntax_highlight_controller.js": {
         "path": "\/assets\/controllers\/syntax_highlight_controller-743c541af7c05ef0a8fa630ec3f9b167.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/clipboard_controller.js": {
+        "path": "\/assets\/controllers\/clipboard_controller-6aefa8a9dec3271dae2f05b464bf9204.js",
         "type": "js"
     },
     "@symfony\/stimulus-bundle": {
