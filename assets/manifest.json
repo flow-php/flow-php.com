@@ -4,7 +4,7 @@
     "app.js": "\/assets\/app-f6b6b9453864ea635d158621b1bef659.js",
     "bootstrap.js": "\/assets\/bootstrap-d78d7e12c819dedf89372fb4824c072d.js",
     "controllers\/clipboard_controller.js": "\/assets\/controllers\/clipboard_controller-6aefa8a9dec3271dae2f05b464bf9204.js",
-    "controllers\/syntax_highlight_controller.js": "\/assets\/controllers\/syntax_highlight_controller-743c541af7c05ef0a8fa630ec3f9b167.js",
+    "controllers\/syntax_highlight_controller.js": "\/assets\/controllers\/syntax_highlight_controller-791975e0cb2971825f2a57790fe0b3e5.js",
     "images\/banner.png": "\/assets\/images\/banner-a491e037b6fca6069571c39eb216acc9.png",
     "images\/banner.svg": "\/assets\/images\/banner-591e5038a090cae0016d8201072c288b.svg",
     "images\/elephant.svg": "\/assets\/images\/elephant-4b2eb8a559db8a8a34bb8d10d5df26d3.svg",
@@ -29,7 +29,7 @@
     "images\/icons\/transform.svg": "\/assets\/images\/icons\/transform-0c0a9fd75cc66af8420fe905a301e543.svg",
     "images\/icons\/users-group.svg": "\/assets\/images\/icons\/users-group-ae8d874e32736274033f4a7d20d388a1.svg",
     "images\/logo.svg": "\/assets\/images\/logo-3ed481e55faedcd874c34e4801929d00.svg",
-    "styles\/app.css": "\/assets\/styles\/app-5187a88bafeab9b0d237c20121b21018.css",
+    "styles\/app.css": "\/assets\/styles\/app-8099971cf9a3f7a6aa8f008de16d91a2.css",
     "styles\/changelog.css": "\/assets\/styles\/changelog-140c9dc3ab542002ac195827220fa968.css",
     "vendor\/@fontsource-variable\/cabin\/files\/cabin-latin-ext-wght-normal.woff2": "\/assets\/vendor\/@fontsource-variable\/cabin\/files\/cabin-latin-ext-wght-normal-2faa374eb2a80d6be629a356e68b73d7.woff2",
     "vendor\/@fontsource-variable\/cabin\/files\/cabin-latin-wght-normal.woff2": "\/assets\/vendor\/@fontsource-variable\/cabin\/files\/cabin-latin-wght-normal-866be39b45f5b5b8840cb93bc1069465.woff2",
@@ -40,6 +40,7 @@
     "vendor\/clipboard\/clipboard.index.js": "\/assets\/vendor\/clipboard\/clipboard.index-925566f98181665b5a61fea1bcd9033d.js",
     "vendor\/highlight.js\/lib\/core.js": "\/assets\/vendor\/highlight.js\/lib\/core-760145ef158caabe84ca07686407d093.js",
     "vendor\/highlight.js\/lib\/languages\/php.js": "\/assets\/vendor\/highlight.js\/lib\/languages\/php-c0eb2105c14097e8a5a1e9a767e8ac95.js",
+    "vendor\/highlight.js\/lib\/languages\/shell.js": "\/assets\/vendor\/highlight.js\/lib\/languages\/shell-664215791af27581e04813723523a355.js",
     "vendor\/highlight.js\/styles\/github-dark.min.css": "\/assets\/vendor\/highlight.js\/styles\/github-dark.min-4b46e20f66f76e35d6454ca4f09b57c3.css",
     "vendor\/htmx.org\/htmx.org.index.js": "\/assets\/vendor\/htmx.org\/htmx.org.index-023ae86a082913526422a6063298f898.js"
 }

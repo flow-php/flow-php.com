@@ -12,7 +12,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/syntax_highlight_controller.js": {
-        "path": "\/assets\/controllers\/syntax_highlight_controller-743c541af7c05ef0a8fa630ec3f9b167.js",
+        "path": "\/assets\/controllers\/syntax_highlight_controller-791975e0cb2971825f2a57790fe0b3e5.js",
         "type": "js"
     },
     "\/assets\/controllers\/clipboard_controller.js": {
@@ -53,6 +53,10 @@
     },
     "@oddbird\/popover-polyfill": {
         "path": "\/assets\/vendor\/@oddbird\/popover-polyfill\/popover-polyfill.index-7979d53637476aa204f709644aed2c19.js",
+        "type": "js"
+    },
+    "highlight.js\/lib\/languages\/shell": {
+        "path": "\/assets\/vendor\/highlight.js\/lib\/languages\/shell-664215791af27581e04813723523a355.js",
         "type": "js"
     }
 }

@@ -32,7 +32,7 @@
     <link rel="preload" fetchpriority="high" href="https://flow-php.com/assets/vendor/@fontsource-variable/cabin/files/cabin-latin-wght-normal-866be39b45f5b5b8840cb93bc1069465.woff2" as="font" crossorigin>
 
             <style>@font-face{font-family:'Cabin Variable';font-style:normal;font-display:swap;font-weight:400 700;src:url("https://flow-php.com/assets/vendor/@fontsource-variable/cabin/files/cabin-vietnamese-wght-normal-728366455e644228c0222e375fa14bb4.woff2") format('woff2-variations');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Cabin Variable';font-style:normal;font-display:swap;font-weight:400 700;src:url("https://flow-php.com/assets/vendor/@fontsource-variable/cabin/files/cabin-latin-ext-wght-normal-2faa374eb2a80d6be629a356e68b73d7.woff2") format('woff2-variations');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Cabin Variable';font-style:normal;font-display:swap;font-weight:400 700;src:url("https://flow-php.com/assets/vendor/@fontsource-variable/cabin/files/cabin-latin-wght-normal-866be39b45f5b5b8840cb93bc1069465.woff2") format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
-        <link rel="stylesheet" href="https://flow-php.com/assets/styles/app-5187a88bafeab9b0d237c20121b21018.css">
+        <link rel="stylesheet" href="https://flow-php.com/assets/styles/app-8099971cf9a3f7a6aa8f008de16d91a2.css">
     
             
 <script type="importmap">
@@ -45,13 +45,14 @@
         "@symfony/stimulus-bundle": "https://flow-php.com/assets/@symfony/stimulus-bundle/loader-e1ee9ace0562f2e6a52301e4ccc8627d.js",
         "@hotwired/stimulus": "https://flow-php.com/assets/vendor/@hotwired/stimulus/stimulus.index-304681764684182e6662e0931532ed91.js",
         "https://flow-php.com/assets/@symfony/stimulus-bundle/controllers.js": "https://flow-php.com/assets/@symfony/stimulus-bundle/controllers-10e6fdbcf4f70220371fa70aa0833944.js",
-        "https://flow-php.com/assets/controllers/syntax_highlight_controller.js": "https://flow-php.com/assets/controllers/syntax_highlight_controller-743c541af7c05ef0a8fa630ec3f9b167.js",
+        "https://flow-php.com/assets/controllers/syntax_highlight_controller.js": "https://flow-php.com/assets/controllers/syntax_highlight_controller-791975e0cb2971825f2a57790fe0b3e5.js",
         "https://flow-php.com/assets/controllers/clipboard_controller.js": "https://flow-php.com/assets/controllers/clipboard_controller-6aefa8a9dec3271dae2f05b464bf9204.js",
         "highlight.js/lib/core": "https://flow-php.com/assets/vendor/highlight.js/lib/core-760145ef158caabe84ca07686407d093.js",
         "highlight.js/lib/languages/php": "https://flow-php.com/assets/vendor/highlight.js/lib/languages/php-c0eb2105c14097e8a5a1e9a767e8ac95.js",
         "highlight.js/styles/github-dark.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22https%3A%2F%2Fflow-php.com%2Fassets%2Fvendor%2Fhighlight.js%2Fstyles%2Fgithub-dark.min-4b46e20f66f76e35d6454ca4f09b57c3.css%22%7D%29%29",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22https%3A%2F%2Fflow-php.com%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-08e34691d22388e6974e6cb2bfbcbfd0.css%22%7D%29%29",
-        "clipboard": "https://flow-php.com/assets/vendor/clipboard/clipboard.index-925566f98181665b5a61fea1bcd9033d.js"
+        "clipboard": "https://flow-php.com/assets/vendor/clipboard/clipboard.index-925566f98181665b5a61fea1bcd9033d.js",
+        "highlight.js/lib/languages/shell": "https://flow-php.com/assets/vendor/highlight.js/lib/languages/shell-664215791af27581e04813723523a355.js"
     }
 }
 </script>
@@ -269,21 +270,174 @@
 
 declare(strict_types=1);
 
-use function Flow\ETL\DSL\{data_frame, from_sequence_date_period, to_output};
+use function Flow\ETL\DSL\{data_frame, from_sequence_date_period, to_stream};
 
 require __DIR__ . &#039;/../../../autoload.php&#039;;
 
 data_frame()
     -&gt;read(from_sequence_date_period(
         &#039;date&#039;,
-        new DateTimeImmutable(&#039;now&#039;),
+        new DateTimeImmutable(&#039;2024-01-01 00:00:00 UTC&#039;),
         new DateInterval(&#039;P1D&#039;),
         new DateTimeImmutable(&#039;now + 60 days&#039;),
     ))
-    -&gt;write(to_output(false))
+    -&gt;collect()
+    -&gt;write(to_stream(__DIR__ . &#039;/output.txt&#039;, truncate: false))
     -&gt;run();
 </code></pre>            </div>
-        </div>
+
+                        <h2 class="text-xl mt-5 mb-5">Output</h2>
+            <div id="output">
+                <pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative"><button class="absolute top-0 right-0 bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-24" title="copy code" data-clipboard-target="#output" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><code id="output" class="language-console !p-0 !bg-transparent" data-controller="syntax-highlight">+---------------------------+
+|                      date |
++---------------------------+
+| 2024-01-01T00:00:00+00:00 |
+| 2024-01-02T00:00:00+00:00 |
+| 2024-01-03T00:00:00+00:00 |
+| 2024-01-04T00:00:00+00:00 |
+| 2024-01-05T00:00:00+00:00 |
+| 2024-01-06T00:00:00+00:00 |
+| 2024-01-07T00:00:00+00:00 |
+| 2024-01-08T00:00:00+00:00 |
+| 2024-01-09T00:00:00+00:00 |
+| 2024-01-10T00:00:00+00:00 |
+| 2024-01-11T00:00:00+00:00 |
+| 2024-01-12T00:00:00+00:00 |
+| 2024-01-13T00:00:00+00:00 |
+| 2024-01-14T00:00:00+00:00 |
+| 2024-01-15T00:00:00+00:00 |
+| 2024-01-16T00:00:00+00:00 |
+| 2024-01-17T00:00:00+00:00 |
+| 2024-01-18T00:00:00+00:00 |
+| 2024-01-19T00:00:00+00:00 |
+| 2024-01-20T00:00:00+00:00 |
+| 2024-01-21T00:00:00+00:00 |
+| 2024-01-22T00:00:00+00:00 |
+| 2024-01-23T00:00:00+00:00 |
+| 2024-01-24T00:00:00+00:00 |
+| 2024-01-25T00:00:00+00:00 |
+| 2024-01-26T00:00:00+00:00 |
+| 2024-01-27T00:00:00+00:00 |
+| 2024-01-28T00:00:00+00:00 |
+| 2024-01-29T00:00:00+00:00 |
+| 2024-01-30T00:00:00+00:00 |
+| 2024-01-31T00:00:00+00:00 |
+| 2024-02-01T00:00:00+00:00 |
+| 2024-02-02T00:00:00+00:00 |
+| 2024-02-03T00:00:00+00:00 |
+| 2024-02-04T00:00:00+00:00 |
+| 2024-02-05T00:00:00+00:00 |
+| 2024-02-06T00:00:00+00:00 |
+| 2024-02-07T00:00:00+00:00 |
+| 2024-02-08T00:00:00+00:00 |
+| 2024-02-09T00:00:00+00:00 |
+| 2024-02-10T00:00:00+00:00 |
+| 2024-02-11T00:00:00+00:00 |
+| 2024-02-12T00:00:00+00:00 |
+| 2024-02-13T00:00:00+00:00 |
+| 2024-02-14T00:00:00+00:00 |
+| 2024-02-15T00:00:00+00:00 |
+| 2024-02-16T00:00:00+00:00 |
+| 2024-02-17T00:00:00+00:00 |
+| 2024-02-18T00:00:00+00:00 |
+| 2024-02-19T00:00:00+00:00 |
+| 2024-02-20T00:00:00+00:00 |
+| 2024-02-21T00:00:00+00:00 |
+| 2024-02-22T00:00:00+00:00 |
+| 2024-02-23T00:00:00+00:00 |
+| 2024-02-24T00:00:00+00:00 |
+| 2024-02-25T00:00:00+00:00 |
+| 2024-02-26T00:00:00+00:00 |
+| 2024-02-27T00:00:00+00:00 |
+| 2024-02-28T00:00:00+00:00 |
+| 2024-02-29T00:00:00+00:00 |
+| 2024-03-01T00:00:00+00:00 |
+| 2024-03-02T00:00:00+00:00 |
+| 2024-03-03T00:00:00+00:00 |
+| 2024-03-04T00:00:00+00:00 |
+| 2024-03-05T00:00:00+00:00 |
+| 2024-03-06T00:00:00+00:00 |
+| 2024-03-07T00:00:00+00:00 |
+| 2024-03-08T00:00:00+00:00 |
+| 2024-03-09T00:00:00+00:00 |
+| 2024-03-10T00:00:00+00:00 |
+| 2024-03-11T00:00:00+00:00 |
+| 2024-03-12T00:00:00+00:00 |
+| 2024-03-13T00:00:00+00:00 |
+| 2024-03-14T00:00:00+00:00 |
+| 2024-03-15T00:00:00+00:00 |
+| 2024-03-16T00:00:00+00:00 |
+| 2024-03-17T00:00:00+00:00 |
+| 2024-03-18T00:00:00+00:00 |
+| 2024-03-19T00:00:00+00:00 |
+| 2024-03-20T00:00:00+00:00 |
+| 2024-03-21T00:00:00+00:00 |
+| 2024-03-22T00:00:00+00:00 |
+| 2024-03-23T00:00:00+00:00 |
+| 2024-03-24T00:00:00+00:00 |
+| 2024-03-25T00:00:00+00:00 |
+| 2024-03-26T00:00:00+00:00 |
+| 2024-03-27T00:00:00+00:00 |
+| 2024-03-28T00:00:00+00:00 |
+| 2024-03-29T00:00:00+00:00 |
+| 2024-03-30T00:00:00+00:00 |
+| 2024-03-31T00:00:00+00:00 |
+| 2024-04-01T00:00:00+00:00 |
+| 2024-04-02T00:00:00+00:00 |
+| 2024-04-03T00:00:00+00:00 |
+| 2024-04-04T00:00:00+00:00 |
+| 2024-04-05T00:00:00+00:00 |
+| 2024-04-06T00:00:00+00:00 |
+| 2024-04-07T00:00:00+00:00 |
+| 2024-04-08T00:00:00+00:00 |
+| 2024-04-09T00:00:00+00:00 |
+| 2024-04-10T00:00:00+00:00 |
+| 2024-04-11T00:00:00+00:00 |
+| 2024-04-12T00:00:00+00:00 |
+| 2024-04-13T00:00:00+00:00 |
+| 2024-04-14T00:00:00+00:00 |
+| 2024-04-15T00:00:00+00:00 |
+| 2024-04-16T00:00:00+00:00 |
+| 2024-04-17T00:00:00+00:00 |
+| 2024-04-18T00:00:00+00:00 |
+| 2024-04-19T00:00:00+00:00 |
+| 2024-04-20T00:00:00+00:00 |
+| 2024-04-21T00:00:00+00:00 |
+| 2024-04-22T00:00:00+00:00 |
+| 2024-04-23T00:00:00+00:00 |
+| 2024-04-24T00:00:00+00:00 |
+| 2024-04-25T00:00:00+00:00 |
+| 2024-04-26T00:00:00+00:00 |
+| 2024-04-27T00:00:00+00:00 |
+| 2024-04-28T00:00:00+00:00 |
+| 2024-04-29T00:00:00+00:00 |
+| 2024-04-30T00:00:00+00:00 |
+| 2024-05-01T00:00:00+00:00 |
+| 2024-05-02T00:00:00+00:00 |
+| 2024-05-03T00:00:00+00:00 |
+| 2024-05-04T00:00:00+00:00 |
+| 2024-05-05T00:00:00+00:00 |
+| 2024-05-06T00:00:00+00:00 |
+| 2024-05-07T00:00:00+00:00 |
+| 2024-05-08T00:00:00+00:00 |
+| 2024-05-09T00:00:00+00:00 |
+| 2024-05-10T00:00:00+00:00 |
+| 2024-05-11T00:00:00+00:00 |
+| 2024-05-12T00:00:00+00:00 |
+| 2024-05-13T00:00:00+00:00 |
+| 2024-05-14T00:00:00+00:00 |
+| 2024-05-15T00:00:00+00:00 |
+| 2024-05-16T00:00:00+00:00 |
+| 2024-05-17T00:00:00+00:00 |
+| 2024-05-18T00:00:00+00:00 |
+| 2024-05-19T00:00:00+00:00 |
+| 2024-05-20T00:00:00+00:00 |
+| 2024-05-21T00:00:00+00:00 |
+| 2024-05-22T00:00:00+00:00 |
++---------------------------+
+143 rows
+</code></pre>            </div>
+                    </div>
     </div>
 
         <div class="bg-blue-200">
