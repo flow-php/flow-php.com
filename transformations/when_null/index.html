@@ -270,7 +270,7 @@
 
 declare(strict_types=1);
 
-use function Flow\ETL\DSL\{data_frame, from_rows, int_entry, lit, null_entry, ref, row, rows, to_stream, when};
+use function Flow\ETL\DSL\{data_frame, from_rows, int_entry, lit, ref, row, rows, to_stream, when};
 
 require __DIR__ . &#039;/../../../autoload.php&#039;;
 
@@ -278,9 +278,9 @@ data_frame()
     -&gt;read(from_rows(rows(
         row(int_entry(&#039;id&#039;, 1), int_entry(&#039;value&#039;, 1)),
         row(int_entry(&#039;id&#039;, 2), int_entry(&#039;value&#039;, 1)),
-        row(int_entry(&#039;id&#039;, 3), null_entry(&#039;value&#039;)),
+        row(int_entry(&#039;id&#039;, 3), int_entry(&#039;value&#039;, null)),
         row(int_entry(&#039;id&#039;, 4), int_entry(&#039;value&#039;, 1)),
-        row(int_entry(&#039;id&#039;, 5), null_entry(&#039;value&#039;)),
+        row(int_entry(&#039;id&#039;, 5), int_entry(&#039;value&#039;, null)),
     )))
     -&gt;withEntry(
         &#039;value&#039;,
