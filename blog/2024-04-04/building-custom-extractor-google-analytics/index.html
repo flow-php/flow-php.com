@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
 
-    <title>Flow PHP - Unified data processing framework</title>
-    <meta property="og:title" content="Flow PHP - Unified data processing framework" />
-    <meta name="twitter:title" content="Flow PHP - Unified data processing framework" >
+    <title>Building Custom Data Extractor - Flow PHP</title>
+    <meta property="og:title" content="Building Custom Data Extractor - Flow PHP" />
+    <meta name="twitter:title" content="Building Custom Data Extractor - Flow PHP" >
 
-    <meta name="description" content="Flow is a PHP-based, strongly typed data processing framework with low memory footprint.">
-    <meta property="og:description" content="Flow is a PHP-based, strongly typed data processing framework with low memory footprint.">
-    <meta name="twitter:description" content="Flow is a PHP-based, strongly typed data processing framework with low memory footprint.">
+    <meta name="description" content="Learn how to extract data from Google Analytics API using Flow PHP but also how to build a custom data extractor.">
+    <meta property="og:description" content="Learn how to extract data from Google Analytics API using Flow PHP but also how to build a custom data extractor.">
+    <meta name="twitter:description" content="Learn how to extract data from Google Analytics API using Flow PHP but also how to build a custom data extractor.">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/" />
+    <meta property="og:url" content="https://flow-php.com/blog/2024-04-04/building-custom-extractor-google-analytics" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/" />
+    <meta property="twitter:url" content="https://flow-php.com/blog/2024-04-04/building-custom-extractor-google-analytics" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -154,147 +154,276 @@
     </div>
 </div>
 
-            <div class="py-10 px-2 sm:px-4 mx-auto max-w-screen-xl" data-hx-boost="true">
-        <h2 class="mb-4 text-2xl font-semibold tracking-wide">Examples:</h2>
-        <nav class="font-medium text-center bg-orange-100 rounded">
-            <ul class="flex whitespace-nowrap overflow-auto justify-between">
-                                    <li class="grow">
-                        <a href="/aggregations/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
-                            Aggregations
-                        </a>
-                    </li>
-                                    <li class="grow">
-                        <a href="/data_frame/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
-                            Data frame
-                        </a>
-                    </li>
-                                    <li class="grow">
-                        <a href="/data_source/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
-                            Data source
-                        </a>
-                    </li>
-                                    <li class="grow">
-                        <a href="/join/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
-                            Join
-                        </a>
-                    </li>
-                                    <li class="grow">
-                        <a href="/partitioning/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
-                            Partitioning
-                        </a>
-                    </li>
-                                    <li class="grow">
-                        <a href="/schema/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
-                            Schema
-                        </a>
-                    </li>
-                                    <li class="grow">
-                        <a href="/transformations/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
-                            Transformations
-                        </a>
-                    </li>
-                                    <li class="grow">
-                        <a href="/window_functions/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
-                            Window functions
-                        </a>
-                    </li>
-                            </ul>
-        </nav>
-    </div>
+            <div class="py-10 px-2 sm:px-4 mx-auto max-w-screen-xl">
+        <h1 class="font-bold text-4xl" id="title">Building Custom Data Extractor</h1>
 
-    <div class="max-w-screen-xl mx-auto">
-        <div class="flex flex-wrap -mx-2 mb-10 lg:mb-20 px-4 items-center">
-            <div class="w-full lg:w-2/3 px-2">
-                <section class="shadow-2xl shadow-gray rounded border-gray border-2 p-4 rounded">
-                    <img src="https://flow-php.com/assets/images/icons/tools-08f26d8f68dd6769d8c8101d767320d7.svg" width="32" height="32" alt="feature" class="inline mr-2 bg-blue-100 p-1 -mt-4 rounded">
-                    <h2 class="inline text-4xl">Data Processing Made Easy</h2>
-                    <hr class="text-blue-100 my-4 border-t-2 rounded">
-                    <p class="mb-2">
-                        One of the most significant challenges in data processing lies in maintaining consistency, particularly in languages as flexible as PHP.
-                        Instead of creating custom code for each dataset or integration, Flow PHP offers a uniform API for all data sources.
-                    </p>
-                    <p class="mb-2">
-                        Whether you’re dealing with a CSV file or consuming data from a REST API, Flow ensures consistency by offering a uniform API for all data sources.
-                    </p>
-                    <p class="mb-2">
-                        It will not only make your codebase more consistent but also ensure that your system processes data in a memory-efficient way out of the box.
-                    </p>
-                </section>
-            </div>
-            <div class="w-full lg:w-1/3 px-2 hidden lg:block">
-                <div class="text-center">
-                    <img src="https://flow-php.com/assets/images/icons/data-flow-d4022509119b01127862567c775fe91c.svg" alt="extract" width="128" height="128" class="inline mb-4">
-                    <h2 class="mt-5 text-4xl">Framework</h2>
-                </div>
-            </div>
-        </div>
+        <p class="mt-2">
+            Our goal is to extract a list of Account Summaries from Google Analytics API.<br/>
+        </p>
+        <p class="mt-2">
+            The very first step is to get familiar with the data structure of the dataset we are going to extract.<br/>
+            So let's take a look at <a href="https://developers.google.com/analytics/devguides/config/admin/v1/rest/v1beta/accountSummaries/list" target="_blank" rel="noopener noreferrer">Account Summaries API documentation</a>.
+        </p>
 
-        <div class="flex flex-wrap -mx-2 mb-10 lg:mb-20 px-4 items-center">
-            <div class="w-full lg:w-1/3 px-2 text-center hidden lg:block">
-                <div class="p-4 bg-gray-300">
-                    <img src="https://flow-php.com/assets/images/icons/api-3b7da1dc4175c5bfff3f32472d84b0ca.svg" alt="extract" width="128" height="128" class="inline mb-4">
-                    <h2 class="mt-5 text-4xl">API</h2>
-                </div>
-            </div>
-            <div class="w-full lg:w-2/3 px-2">
-                <section class="shadow-2xl shadow-gray rounded border-gray border-2 p-4 rounded">
-                    <img src="https://flow-php.com/assets/images/icons/tools-08f26d8f68dd6769d8c8101d767320d7.svg" width="32" height="32" alt="feature" class="inline mr-2 bg-blue-100 p-1 -mt-4 rounded">
-                    <h2 class="inline text-4xl">Unified, Strongly Typed API</h2>
-                    <hr class="text-blue-100 my-4 border-t-2 rounded">
-                    <p class="mb-2">
-                        Flow PHP offers a unified, strongly typed API for all data sources, including:
-                    </p>
-                    <ul class="flex flex-wrap items-center mb-2">
-                        <li class="mr-2">CSV,</li>
-                        <li class="mr-2">Json,</li>
-                        <li class="mr-2">XML,</li>
-                        <li class="mr-2">Text,</li>
-                        <li class="mr-2">Parquet,</li>
-                        <li class="mr-2">Avro,</li>
-                        <li class="mr-2">Rest API,</li>
-                        <li class="mr-2">RDBMS,</li>
-                        <li class="mr-2">Elasticsearch / Meilisearch</li>
-                    </ul>
-                    <p class="mb-2">
-                        Flow not only enables you to process various data sources consistently, but also strives to accurately
-                        detect data types and cast them to the appropriate PHP types.
-                    </p>
-                    <p>
-                        Even when reading schemaless formats like CSV, Flow allows you to either predefine the schema
-                        according to which it will cast the data, or it will attempt to infer the schema from the data itself.
-                    </p>
-                </section>
-            </div>
-        </div>
+        <h2 class="font-bold text-2xl mt-4">Account Summary</h2>
+        <pre class="rounded mt-4 p-4 overflow-auto rounded border-gray border-2 relative"><code id="code" class="language-json !p-0 !bg-transparent" data-controller="syntax-highlight">{
+  "name": string,
+  "account": string,
+  "displayName": string,
+  "propertySummaries": [
+    {
+      object (PropertySummary)
+    }
+  ]
+}</code></pre>        <h2 class="font-bold text-2xl mt-4">Property Summary</h2>
+        <pre class="rounded mt-4 p-4 overflow-auto rounded border-gray border-2 relative"><code id="code" class="language-json !p-0 !bg-transparent" data-controller="syntax-highlight">{
+  "property": string,
+  "displayName": string,
+  "propertyType": enum (PropertyType), // integer
+  "parent": string
+}</code></pre>
+        <p class="mt-4">
+            Ok, not too bad, we have one list of structures (Property Summary is a structure) and few other not nullable fields.<br/>
+            This should give us the following schema:
+        </p>
 
-        <div class="flex flex-wrap -mx-2 mb-10 lg:mb-20 px-4 items-center">
-            <div class="w-full lg:w-2/3 px-2">
-                <section class="shadow-2xl shadow-gray rounded border-gray border-2 p-4 rounded">
-                    <img src="https://flow-php.com/assets/images/icons/tools-08f26d8f68dd6769d8c8101d767320d7.svg" width="32" height="32" alt="feature" class="inline mr-2 bg-blue-100 p-1 -mt-4 rounded">
-                    <h2 class="inline text-4xl">Consistent Memory Consumption</h2>
-                    <hr class="text-blue-100 my-4 border-t-2 rounded">
-                    <p class="mb-2">
-                        Processing large datasets is no easy task, especially without dedicated tools.
-                        The most common solution is to read datasets in chunks and process them one by one.
-                    </p>
-                    <p class="mb-2">
-                        But unfortunately, it sounds easier than it is. The most common problem is lack of unified
-                        API for all data sources and memory management. Flow PHP solves this problem for you.
-                    </p>
-                    <p class="mb-2">
-                        All of this is possible thanks to the Flow PHP architecture based on generators and iterators.
-                        This approach enables you to process large datasets even on small machines.
-                    </p>
-                </section>
-            </div>
-            <div class="w-full lg:w-1/3 px-2 hidden lg:block">
-                <div class="text-center">
-                    <img src="https://flow-php.com/assets/images/icons/chart-bar-57b02db3c75697315eddf1dd153ea921.svg" alt="extract" width="128" height="128" class="inline mb-4">
-                    <h2 class="mt-5 text-4xl">Memory Management</h2>
-                </div>
-            </div>
-        </div>
-    </div>
+        <pre class="rounded mt-4 p-4 overflow-auto rounded border-gray border-2 relative"><code id="code" class="language-shell !p-0 !bg-transparent" data-controller="syntax-highlight">schema
+|-- account: string
+|-- name: string
+|-- displayName: string
+|-- propertySummaries: list&lt;structure{property: string, displayName: string, propertyType: integer, parent: string}&gt;</code></pre>
+        <p class="mt-4">
+            Now that we have our schema, we can start building our custom data extractor.<br/>
+            Our next step is to figure out if there is any existing SDK that we can use to interact with Google Analytics API.<br/>
+            In this case, we are going to use <a href="https://github.com/googleapis/php-analytics-admin" target="_blank" rel="noopener noreferrer">Google Analytics Admin SDK</a>.
+        </p>
+
+        <p class="mt-2">
+            Sometimes we might not be able to find any SDK that fits our needs, in such cases we would have to build our own HTTP client and handle the API requests manually.
+        </p>
+
+        <p class="mt-4">
+            Let's start by preparing our Extractor class. We will call it <code>AccountSummariesExtractor</code>.<br/>
+            First we need to make sure that our extractor is implementing the <code>Flow\ETL\Extractor</code> interface.<br/>
+            Technically speaking, it's all we need but to make our extractor to be compatible with Flow <code>DataFrame::limit()</code> function,
+            we should additionally implement <code>Flow\ETL\Extractor\LimitableExtractor</code> interface.
+        </p>
+        <p class="mt-2">
+            Most of the <code>Flow\ETL\Extractor\LimitableExtractor</code> logic is reusable so to avoid code duplications we are going to use <code>Flow\ETL\Extractor\Limitable</code> trait in our extractor.
+        </p>
+
+        <pre class="rounded mt-4 p-4 overflow-auto rounded border-gray border-2 relative"><code id="code" class="language-php !p-0 !bg-transparent" data-controller="syntax-highlight">&lt;?php
+
+namespace Flow\ETL\Adapter\GoogleAnalytics;
+
+use Flow\ETL\FlowContext;
+use Google\Analytics\Admin\V1beta\AccountSummary;
+use Google\Analytics\Admin\V1beta\AnalyticsAdminServiceClient;
+use Google\Analytics\Admin\V1beta\PropertySummary;
+use Flow\ETL\Extractor;
+use Flow\ETL\Extractor\Limitable;
+use Flow\ETL\Extractor\LimitableExtractor;
+
+final class AccountSummariesExtractor implements Extractor, LimitableExtractor
+{
+    use Limitable;
+
+    public function __construct(
+        private readonly AnalyticsAdminServiceClient $client,
+        private readonly int $pageSize = 200
+    ) {
+        if ($this-&gt;pageSize &lt; 1 || $this-&gt;pageSize &gt; 200) {
+            throw new \Flow\ETL\Exception\InvalidArgumentException(&#039;Page size must be greater than 0 and lower than 200.&#039;);
+        }
+    }
+
+    public function extract(FlowContext $context): \Generator
+    {
+        // TODO
+    }
+}</code></pre>
+        <p class="mt-4">
+            Our extractor boilerplate is ready, let's try to implement the <code>extract()</code> method logic.<br/>
+            <code>FlowContext $context</code> is a container for all parameters/services that are shared between all the stages of the ETL process.<br/>
+            We can use it to access things like <code>EntryFactory</code> or <code>Config</code> however we are not going to use it in this example.
+        </p>
+
+        <p class="mt-4">
+            Let's start by fetching the list of Account Summaries from Google Analytics API, iterating over the list and yield each Account Summary.
+        </p>
+
+        <pre class="rounded mt-4 p-4 overflow-auto rounded border-gray border-2 relative"><code id="code" class="language-php !p-0 !bg-transparent" data-controller="syntax-highlight">&lt;?php
+
+namespace Flow\ETL\Adapter\GoogleAnalytics;
+
+use Flow\ETL\Extractor\Signal;
+use Flow\ETL\FlowContext;
+use Google\Analytics\Admin\V1beta\AccountSummary;
+use Google\Analytics\Admin\V1beta\AnalyticsAdminServiceClient;
+use Google\Analytics\Admin\V1beta\PropertySummary;
+use Flow\ETL\Extractor;
+use Flow\ETL\Extractor\Limitable;
+use Flow\ETL\Extractor\LimitableExtractor;
+use function Flow\ETL\DSL\rows;
+
+final class AccountSummariesExtractor implements Extractor, LimitableExtractor
+{
+    // code from previous snippet
+
+    public function extract(FlowContext $context): \Generator
+    {
+        $list = $this-&gt;client-&gt;listAccountSummaries([&#039;pageSize&#039; =&gt; $this-&gt;pageSize]);
+
+        /** @var AccountSummary $account */
+        foreach ($list-&gt;iterateAllElements() as $accountSummary) {
+            $signal = yield rows(ga_account_summary_to_row($accountSummary));
+            $this-&gt;countRow();
+
+            if ($signal === Signal::STOP || $this-&gt;reachedLimit()) {
+                return;
+            }
+        }
+
+        // TODO: Implement pagination
+    }
+}</code></pre>
+        <p class="mt-2">
+            <code>ga_account_summary_to_row</code> function is responsible for transforming the Account Summary structure into a row that fits our schema.<br/>
+            It could be a private method of our Extractor, however, extracting it to separated function will make our code cleaner and easier to test/use later.
+        </p>
+
+        <pre class="rounded mt-4 p-4 overflow-auto rounded border-gray border-2 relative"><code id="code" class="language-php !p-0 !bg-transparent" data-controller="syntax-highlight">&lt;?php
+
+namespace Flow\ETL\Adapter\GoogleAnalytics;
+
+use Flow\ETL\Row;
+use Google\Analytics\Admin\V1beta\AccountSummary;
+use Google\Analytics\Admin\V1beta\AnalyticsAdminServiceClient;
+use Google\Analytics\Admin\V1beta\PropertySummary;
+use function Flow\ETL\DSL\{list_entry, row, str_entry, structure_element, type_integer, type_list, type_string, type_structure};
+
+function ga_account_summary_to_row(AccountSummary $accountSummary) : Row
+{
+    return row(
+        str_entry(&#039;account&#039;, $accountSummary-&gt;getAccount()),
+        str_entry(&#039;name&#039;, $accountSummary-&gt;getName()),
+        str_entry(&#039;displayName&#039;, $accountSummary-&gt;getDisplayName()),
+        list_entry(
+            &#039;propertySummaries&#039;,
+            array_map(
+                static fn(PropertySummary $propertySummary) =&gt; [
+                    &#039;property&#039; =&gt; $propertySummary-&gt;getProperty(),
+                    &#039;displayName&#039; =&gt; $propertySummary-&gt;getDisplayName(),
+                    &#039;propertyType&#039; =&gt; $propertySummary-&gt;getPropertyType(),
+                    &#039;parent&#039; =&gt; $propertySummary-&gt;getParent(),
+                ],
+                \iterator_to_array($accountSummary-&gt;getPropertySummaries())
+            ),
+            type_list(
+                type_structure(
+                    [
+                        structure_element(&#039;property&#039;, type_string()),
+                        structure_element(&#039;displayName&#039;, type_string()),
+                        structure_element(&#039;propertyType&#039;, type_integer()),
+                        structure_element(&#039;parent&#039;, type_string()),
+                    ]
+                )
+            ),
+        )
+    );
+}
+</code></pre>
+        <p class="mt-4">
+            Our final step would be to implement pagination logic, since Google Analytics API returns only up to 200 Account Summaries per page.<br/>
+            Typically, we are not going to have more than 200 Account Summaries, but it's always good to be prepared for such cases.
+        </p>
+
+        <pre class="rounded mt-4 p-4 overflow-auto rounded border-gray border-2 relative"><code id="code" class="language-php !p-0 !bg-transparent" data-controller="syntax-highlight">&lt;?php
+
+namespace Flow\ETL\Adapter\GoogleAnalytics;
+
+use Flow\ETL\Extractor\Signal;
+use Flow\ETL\FlowContext;
+use Google\Analytics\Admin\V1beta\AccountSummary;
+use Google\Analytics\Admin\V1beta\AnalyticsAdminServiceClient;
+use Google\Analytics\Admin\V1beta\PropertySummary;
+use Flow\ETL\Extractor;
+use Flow\ETL\Extractor\Limitable;
+use Flow\ETL\Extractor\LimitableExtractor;
+use function Flow\ETL\DSL\rows;
+
+final class AccountSummariesExtractor implements Extractor, LimitableExtractor
+{
+    // code from previous snippet
+
+    public function extract(FlowContext $context): \Generator
+    {
+        $list = $this-&gt;client-&gt;listAccountSummaries([&#039;pageSize&#039; =&gt; $this-&gt;pageSize]);
+
+        // code from previous snippet
+
+        while ($list-&gt;getPage()-&gt;hasNextPage()) {
+            $list = $this-&gt;client-&gt;listAccountSummaries([&#039;pageSize&#039; =&gt; $this-&gt;pageSize, &#039;pageToken&#039; =&gt; $list-&gt;getPage()-&gt;getNextPageToken()]);
+
+            foreach ($list-&gt;iterateAllElements() as $accountSummary) {
+                $signal = yield rows(ga_account_summary_to_row($accountSummary));
+                $this-&gt;countRow();
+
+                if ($signal === Signal::STOP || $this-&gt;reachedLimit()) {
+                    return;
+                }
+            }
+        }
+    }
+}</code></pre>
+        <p class="mt-4">
+            That's it! Our custom data extractor is ready to be used.<br/>
+            We can now use it in our ETL process to extract Account Summaries from Google Analytics API.
+        </p>
+
+        <pre class="rounded mt-4 p-4 overflow-auto rounded border-gray border-2 relative"><code id="code" class="language-php !p-0 !bg-transparent" data-controller="syntax-highlight">&lt;?php
+
+use function Flow\ETL\DSL\df;
+use function Flow\ETL\DSL\to_output;
+use Flow\ETL\Adapter\GoogleAnalytics\AccountSummariesExtractor;
+
+// $client = new AnalyticsAdminServiceClient([
+//     &#039;credentials&#039; =&gt; $credentials
+// ]);
+
+df()
+    -&gt;read(new AccountSummariesExtractor($client))
+    -&gt;limit(2)
+    -&gt;collect()
+    -&gt;write(to_output())
+    -&gt;run();
+
+// Output
+// +--------------------+----------------------+--------------+----------------------+
+// |            account |                 name |  displayName |    propertySummaries |
+// +--------------------+----------------------+--------------+----------------------+
+// | accounts/111111111 | accountSummaries/111 | norbert.tech | [{&quot;property&quot;:&quot;proper |
+// | accounts/222222222 | accountSummaries/222 |     aeon-php | [{&quot;property&quot;:&quot;proper |
+// +--------------------+----------------------+--------------+----------------------+
+</code></pre>
+        <p class="mt-4">
+            We are almost done, at this point we can fetch all Account Summaries from Google Analytics API and transform them into a DataFrame.<br/>
+            Our final but also optional step would be to prepare a dsl function returning our extractor that is going to improve the readability of our ETL data processing pipeline.
+        </p>
+
+
+        <pre class="rounded mt-4 p-4 overflow-auto rounded border-gray border-2 relative"><code id="code" class="language-php !p-0 !bg-transparent" data-controller="syntax-highlight">&lt;?php
+
+use function Flow\ETL\DSL\df;
+use function Flow\ETL\DSL\to_output;
+use function Flow\ETL\Adapter\GoogleAnalytics\from_ga_account_summaries;
+
+df()
+    -&gt;read(from_ga_account_summaries($client))
+    -&gt;limit(2)
+    -&gt;collect()
+    -&gt;write(to_output())
+    -&gt;run();</code></pre>    </div>
 
         <div class="bg-blue-200">
     <section class="mx-auto max-w-screen-xl sm:flex justify-between items-center py-6 px-2 sm:px-4">
