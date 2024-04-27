@@ -8,18 +8,18 @@
     <meta property="og:title" content="Data frame - Flow PHP" />
     <meta name="twitter:title" content="Data frame - Flow PHP" >
 
-    <meta name="description" content="Code example showing overwrite data frame.">
-    <meta property="og:description" content="Code example showing overwrite data frame.">
-    <meta name="twitter:description" content="Code example showing overwrite data frame.">
+    <meta name="description" content="Code example showing reorder entries data frame.">
+    <meta property="og:description" content="Code example showing reorder entries data frame.">
+    <meta name="twitter:description" content="Code example showing reorder entries data frame.">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/data_frame/overwrite/" />
+    <meta property="og:url" content="https://flow-php.com/data_frame/reorder_entries/" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/data_frame/overwrite/" />
+    <meta property="twitter:url" content="https://flow-php.com/data_frame/reorder_entries/" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -216,13 +216,13 @@
                             </a>
                         </li>
                                             <li>
-                            <a href="/data_frame/overwrite/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/data_frame/overwrite/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Overwrite
                             </a>
                         </li>
                                             <li>
-                            <a href="/data_frame/reorder_entries/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/data_frame/reorder_entries/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Reorder entries
                             </a>
@@ -235,40 +235,99 @@
 
 declare(strict_types=1);
 
-use function Flow\ETL\Adapter\CSV\{from_csv, to_csv};
-use function Flow\ETL\DSL\{data_frame, overwrite, to_stream};
-
-require __DIR__ . &#039;/../../../autoload.php&#039;;
+use function Flow\ETL\DSL\{array_entry,
+    bool_entry,
+    compare_entries_by_type_and_name,
+    data_frame,
+    datetime_entry,
+    float_entry,
+    from_rows,
+    int_entry,
+    json_entry,
+    list_entry,
+    map_entry,
+    object_entry,
+    row,
+    rows,
+    str_entry,
+    struct_element,
+    struct_entry,
+    struct_type,
+    to_output,
+    to_stream,
+    type_float,
+    type_int,
+    type_list,
+    type_map,
+    type_string,
+    uuid_entry};
+use Ramsey\Uuid\Uuid;
 
 data_frame()
-    -&gt;read(from_csv(__DIR__ . &#039;/input/file.csv&#039;))
-    -&gt;saveMode(overwrite())
-    -&gt;write(to_csv(__DIR__ . &#039;/output/file.csv&#039;))
-    -&gt;collect()
-    -&gt;write(to_stream(__DIR__ . &#039;/output.txt&#039;, truncate: false))
-    -&gt;run();
-
-data_frame()
-    -&gt;read(from_csv(__DIR__ . &#039;/output/file.csv&#039;))
-    -&gt;saveMode(overwrite())
-    -&gt;drop(&#039;name&#039;)
-    -&gt;write(to_csv(__DIR__ . &#039;/output/file.csv&#039;))
-    -&gt;collect()
+    -&gt;read(from_rows(rows(
+        row(
+            int_entry(&#039;int_a&#039;, 1),
+            int_entry(&#039;int_b&#039;, 1),
+            float_entry(&#039;float_a&#039;, \random_int(100, 100000) / 100),
+            float_entry(&#039;float_b&#039;, \random_int(100, 100000) / 100),
+            bool_entry(&#039;bool&#039;, false),
+            bool_entry(&#039;bool_a&#039;, false),
+            bool_entry(&#039;bool_c&#039;, false),
+            datetime_entry(&#039;datetime_d&#039;, new DateTimeImmutable(&#039;now&#039;)),
+            datetime_entry(&#039;datetime_z&#039;, new DateTimeImmutable(&#039;now&#039;)),
+            str_entry(&#039;string_a&#039;, &#039;string&#039;),
+            str_entry(&#039;string_b&#039;, &#039;string&#039;),
+            uuid_entry(&#039;uuid&#039;, new Flow\ETL\Row\Entry\Type\Uuid(Uuid::uuid4())),
+            json_entry(&#039;json&#039;, [&#039;id&#039; =&gt; 1, &#039;status&#039; =&gt; &#039;NEW&#039;]),
+            array_entry(
+                &#039;array&#039;,
+                [
+                    [&#039;id&#039; =&gt; 1, &#039;status&#039; =&gt; &#039;NEW&#039;],
+                    [&#039;id&#039; =&gt; 2, &#039;status&#039; =&gt; &#039;PENDING&#039;],
+                ]
+            ),
+            list_entry(&#039;list&#039;, [1, 2, 3], type_list(type_int())),
+            map_entry(&#039;map&#039;, [0 =&gt; &#039;zero&#039;, 1 =&gt; &#039;one&#039;, 2 =&gt; &#039;two&#039;], type_map(type_int(), type_string())),
+            struct_entry(
+                &#039;struct&#039;,
+                [
+                    &#039;street&#039; =&gt; &#039;street&#039;,
+                    &#039;city&#039; =&gt; &#039;city&#039;,
+                    &#039;zip&#039; =&gt; &#039;zip&#039;,
+                    &#039;country&#039; =&gt; &#039;country&#039;,
+                    &#039;location&#039; =&gt; [&#039;lat&#039; =&gt; 1.5, &#039;lon&#039; =&gt; 1.5],
+                ],
+                struct_type([
+                    struct_element(&#039;street&#039;, type_string()),
+                    struct_element(&#039;city&#039;, type_string()),
+                    struct_element(&#039;zip&#039;, type_string()),
+                    struct_element(&#039;country&#039;, type_string()),
+                    struct_element(
+                        &#039;location&#039;,
+                        struct_type([
+                            struct_element(&#039;lat&#039;, type_float()),
+                            struct_element(&#039;lon&#039;, type_float()),
+                        ])
+                    ),
+                ]),
+            ),
+            object_entry(&#039;object&#039;, new ArrayIterator([1, 2, 3])),
+        )
+    )))
+    -&gt;reorderEntries(compare_entries_by_type_and_name())
+    -&gt;write(to_output(false))
     -&gt;write(to_stream(__DIR__ . &#039;/output.txt&#039;, truncate: false))
     -&gt;run();
 </code></pre>            </div>
 
                         <h2 class="text-xl mt-5 mb-5">Output</h2>
             <div id="output">
-                <pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative"><button class="absolute top-0 right-0 bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-24" title="copy code" data-clipboard-target="#output" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><code id="output" class="language-console !p-0 !bg-transparent" data-controller="syntax-highlight">+----+
-| id |
-+----+
-|  1 |
-|  2 |
-|  3 |
-|  4 |
-+----+
-4 rows
+                <pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative"><button class="absolute top-0 right-0 bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-24" title="copy code" data-clipboard-target="#output" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><code id="output" class="language-console !p-0 !bg-transparent" data-controller="syntax-highlight">+--------------------------------------+-------+-------+-------+--------+--------+---------+---------+---------------------------+---------------------------+----------+----------+-------------------------------------------------------+---------+-------------------------+----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
+|                                 uuid | int_a | int_b |  bool | bool_a | bool_c | float_a | float_b |                datetime_d |                datetime_z | string_a | string_b |                                                 array |    list |                    json |                  map |                                                                                         object |                                                                                             struct |
++--------------------------------------+-------+-------+-------+--------+--------+---------+---------+---------------------------+---------------------------+----------+----------+-------------------------------------------------------+---------+-------------------------+----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
+| 1fb2af91-332b-409f-b314-d26969651f1d |     1 |     1 | false |  false |  false |  468.02 |   75.21 | 2024-04-27T14:24:02+00:00 | 2024-04-27T14:24:02+00:00 |   string |   string | [{&quot;id&quot;:1,&quot;status&quot;:&quot;NEW&quot;},{&quot;id&quot;:2,&quot;status&quot;:&quot;PENDING&quot;}] | [1,2,3] | {&quot;id&quot;:1,&quot;status&quot;:&quot;NEW&quot;} | [&quot;zero&quot;,&quot;one&quot;,&quot;two&quot;] | ArrayIterator Object( [storage:ArrayIterator:private] =&gt; Array ( [0] =&gt; 1 [1] =&gt; 2 [2] =&gt; 3 )) | {&quot;street&quot;:&quot;street&quot;,&quot;city&quot;:&quot;city&quot;,&quot;zip&quot;:&quot;zip&quot;,&quot;country&quot;:&quot;country&quot;,&quot;location&quot;:{&quot;lat&quot;:1.5,&quot;lon&quot;:1.5}} |
++--------------------------------------+-------+-------+-------+--------+--------+---------+---------+---------------------------+---------------------------+----------+----------+-------------------------------------------------------+---------+-------------------------+----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
+1 rows
 </code></pre>            </div>
                     </div>
     </div>
