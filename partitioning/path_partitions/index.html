@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
 
-    <title>Data source - Flow PHP</title>
-    <meta property="og:title" content="Data source - Flow PHP" />
-    <meta name="twitter:title" content="Data source - Flow PHP" >
+    <title>Partitioning - Flow PHP</title>
+    <meta property="og:title" content="Partitioning - Flow PHP" />
+    <meta name="twitter:title" content="Partitioning - Flow PHP" >
 
-    <meta name="description" content="Code example showing xml data source.">
-    <meta property="og:description" content="Code example showing xml data source.">
-    <meta name="twitter:description" content="Code example showing xml data source.">
+    <meta name="description" content="Code example showing path partitions partitioning.">
+    <meta property="og:description" content="Code example showing path partitions partitioning.">
+    <meta name="twitter:description" content="Code example showing path partitions partitioning.">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/data_source/xml/" />
+    <meta property="og:url" content="https://flow-php.com/partitioning/path_partitions/" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/data_source/xml/" />
+    <meta property="twitter:url" content="https://flow-php.com/partitioning/path_partitions/" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -173,7 +173,7 @@
                         </a>
                     </li>
                                     <li class="grow">
-                        <a href="/data_source/#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                        <a href="/data_source/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
                             Data source
                         </a>
                     </li>
@@ -183,7 +183,7 @@
                         </a>
                     </li>
                                     <li class="grow">
-                        <a href="/partitioning/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                        <a href="/partitioning/#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
                             Partitioning
                         </a>
                     </li>
@@ -209,63 +209,27 @@
             <nav>
                 <ul class="flex whitespace-nowrap overflow-auto py-4">
                                             <li>
-                            <a href="/data_source/array/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/partitioning/partition_pruning/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Array
+                                Partition pruning
                             </a>
                         </li>
                                             <li>
-                            <a href="/data_source/csv/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/partitioning/partitioning/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Csv
+                                Partitioning
                             </a>
                         </li>
                                             <li>
-                            <a href="/data_source/data_frame/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/partitioning/path_partitions/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Data frame
+                                Path partitions
                             </a>
                         </li>
                                             <li>
-                            <a href="/data_source/http_dynamic/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/partitioning/reading/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Http dynamic
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="/data_source/json/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Json
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="/data_source/parquet/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Parquet
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="/data_source/sequence_date/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Sequence date
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="/data_source/sequence_date_recurrences/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Sequence date recurrences
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="/data_source/sequence_number/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Sequence number
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="/data_source/xml/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Xml
+                                Reading
                             </a>
                         </li>
                                     </ul>
@@ -276,21 +240,13 @@
 
 declare(strict_types=1);
 
-use function Flow\ETL\Adapter\XML\from_xml;
-use function Flow\ETL\DSL\{data_frame, ref, to_stream};
+use function Flow\ETL\DSL\{data_frame, from_path_partitions, ref, to_stream};
 
 require __DIR__ . &#039;/../../../autoload.php&#039;;
 
 data_frame()
-    -&gt;read(from_xml(
-        __DIR__ . &#039;/input/dataset.xml&#039;,
-        &#039;users/user&#039;
-    ))
-    -&gt;withEntry(&#039;id&#039;, ref(&#039;node&#039;)-&gt;xpath(&#039;@id&#039;)-&gt;domElementValue())
-    -&gt;withEntry(&#039;name&#039;, ref(&#039;node&#039;)-&gt;xpath(&#039;name&#039;)-&gt;domElementValue())
-    -&gt;withEntry(&#039;active&#039;, ref(&#039;node&#039;)-&gt;xpath(&#039;active&#039;)-&gt;domElementValue())
-    -&gt;withEntry(&#039;email&#039;, ref(&#039;node&#039;)-&gt;xpath(&#039;email&#039;)-&gt;domElementValue())
-    -&gt;drop(&#039;node&#039;)
+    -&gt;read(from_path_partitions(__DIR__ . &#039;/input/color=*/sku=*/*.csv&#039;))
+    -&gt;withEntry(&#039;path&#039;, ref(&#039;path&#039;)-&gt;strReplace(__DIR__, &#039;/__ABSOLUTE_PATH__&#039;))
     -&gt;collect()
     -&gt;write(to_stream(__DIR__ . &#039;/output.txt&#039;, truncate: false))
     -&gt;run();
@@ -298,21 +254,19 @@ data_frame()
 
                         <h2 class="text-xl mt-5 mb-5">Output</h2>
             <div id="output">
-                <pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative"><button class="absolute top-0 right-0 bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-24" title="copy code" data-clipboard-target="#output" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><code id="output" class="language-console !p-0 !bg-transparent" data-controller="syntax-highlight">+----+---------+--------+---------------------+
-| id |    name | active |               email |
-+----+---------+--------+---------------------+
-|    |   Alice |   true |   alice@example.com |
-|    |     Bob |  false |     bob@example.com |
-|    | Charlie |   true | charlie@example.com |
-|    |   David |  false |   david@example.com |
-|    |    Emma |   true |    emma@example.com |
-|    |   Frank |  false |   frank@example.com |
-|    |   Grace |   true |   grace@example.com |
-|    |   Harry |  false |   harry@example.com |
-|    |    Isla |   true |    isla@example.com |
-|    |   James |  false |   james@example.com |
-+----+---------+--------+---------------------+
-10 rows
+                <pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative"><button class="absolute top-0 right-0 bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-24" title="copy code" data-clipboard-target="#output" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><code id="output" class="language-console !p-0 !bg-transparent" data-controller="syntax-highlight">+-------------------------------------------------------------------------------------+-------------------------------------+
+|                                                                                path |                          partitions |
++-------------------------------------------------------------------------------------+-------------------------------------+
+|  file://__ABSOLUTE_PATH__/input/color=blue/sku=PRODUCT01/65c7e9bc4460a568233195.csv |  {&quot;color&quot;:&quot;blue&quot;,&quot;sku&quot;:&quot;PRODUCT01&quot;} |
+|  file://__ABSOLUTE_PATH__/input/color=blue/sku=PRODUCT02/65c7e9bc446c2326068326.csv |  {&quot;color&quot;:&quot;blue&quot;,&quot;sku&quot;:&quot;PRODUCT02&quot;} |
+| file://__ABSOLUTE_PATH__/input/color=green/sku=PRODUCT01/65c7e9bc44305321518126.csv | {&quot;color&quot;:&quot;green&quot;,&quot;sku&quot;:&quot;PRODUCT01&quot;} |
+| file://__ABSOLUTE_PATH__/input/color=green/sku=PRODUCT02/65c7e9bc44421020940545.csv | {&quot;color&quot;:&quot;green&quot;,&quot;sku&quot;:&quot;PRODUCT02&quot;} |
+| file://__ABSOLUTE_PATH__/input/color=green/sku=PRODUCT03/65c7e9bc44515031584752.csv | {&quot;color&quot;:&quot;green&quot;,&quot;sku&quot;:&quot;PRODUCT03&quot;} |
+|   file://__ABSOLUTE_PATH__/input/color=red/sku=PRODUCT01/65c7e9bc4386f958078278.csv |   {&quot;color&quot;:&quot;red&quot;,&quot;sku&quot;:&quot;PRODUCT01&quot;} |
+|   file://__ABSOLUTE_PATH__/input/color=red/sku=PRODUCT02/65c7e9bc440fa083889144.csv |   {&quot;color&quot;:&quot;red&quot;,&quot;sku&quot;:&quot;PRODUCT02&quot;} |
+|   file://__ABSOLUTE_PATH__/input/color=red/sku=PRODUCT03/65c7e9bc44209401416287.csv |   {&quot;color&quot;:&quot;red&quot;,&quot;sku&quot;:&quot;PRODUCT03&quot;} |
++-------------------------------------------------------------------------------------+-------------------------------------+
+8 rows
 </code></pre>            </div>
                     </div>
     </div>
