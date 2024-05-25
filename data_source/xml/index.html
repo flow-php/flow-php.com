@@ -286,7 +286,7 @@ data_frame()
         __DIR__ . &#039;/input/dataset.xml&#039;,
         &#039;users/user&#039;
     ))
-    -&gt;withEntry(&#039;id&#039;, ref(&#039;node&#039;)-&gt;xpath(&#039;@id&#039;)-&gt;domElementValue())
+    -&gt;withEntry(&#039;id&#039;, ref(&#039;node&#039;)-&gt;xpath(&#039;@id&#039;)-&gt;domElementAttribute(&#039;id&#039;))
     -&gt;withEntry(&#039;name&#039;, ref(&#039;node&#039;)-&gt;xpath(&#039;name&#039;)-&gt;domElementValue())
     -&gt;withEntry(&#039;active&#039;, ref(&#039;node&#039;)-&gt;xpath(&#039;active&#039;)-&gt;domElementValue())
     -&gt;withEntry(&#039;email&#039;, ref(&#039;node&#039;)-&gt;xpath(&#039;email&#039;)-&gt;domElementValue())
@@ -301,16 +301,16 @@ data_frame()
                 <pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative"><button class="absolute top-0 right-0 bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-24" title="copy code" data-clipboard-target="#output" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><code id="output" class="language-console !p-0 !bg-transparent" data-controller="syntax-highlight">+----+---------+--------+---------------------+
 | id |    name | active |               email |
 +----+---------+--------+---------------------+
-|    |   Alice |   true |   alice@example.com |
-|    |     Bob |  false |     bob@example.com |
-|    | Charlie |   true | charlie@example.com |
-|    |   David |  false |   david@example.com |
-|    |    Emma |   true |    emma@example.com |
-|    |   Frank |  false |   frank@example.com |
-|    |   Grace |   true |   grace@example.com |
-|    |   Harry |  false |   harry@example.com |
-|    |    Isla |   true |    isla@example.com |
-|    |   James |  false |   james@example.com |
+|  1 |   Alice |   true |   alice@example.com |
+|  2 |     Bob |  false |     bob@example.com |
+|  3 | Charlie |   true | charlie@example.com |
+|  4 |   David |  false |   david@example.com |
+|  5 |    Emma |   true |    emma@example.com |
+|  6 |   Frank |  false |   frank@example.com |
+|  7 |   Grace |   true |   grace@example.com |
+|  8 |   Harry |  false |   harry@example.com |
+|  9 |    Isla |   true |    isla@example.com |
+| 10 |   James |  false |   james@example.com |
 +----+---------+--------+---------------------+
 10 rows
 </code></pre>            </div>
