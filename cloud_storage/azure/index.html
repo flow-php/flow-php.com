@@ -209,12 +209,6 @@
             <nav>
                 <ul class="flex whitespace-nowrap overflow-auto py-4">
                                             <li>
-                            <a href="/cloud_storage/aws_s3/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Aws s3
-                            </a>
-                        </li>
-                                            <li>
                             <a href="/cloud_storage/azure/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Azure
@@ -228,10 +222,11 @@
 
 declare(strict_types=1);
 
+use function Flow\Azure\SDK\DSL\{azure_blob_service, azure_blob_service_config, azure_shared_key_authorization_factory};
 use function Flow\ETL\Adapter\CSV\to_csv;
-use function Flow\ETL\DSL\{data_frame, from_array, overwrite};
-use Flow\ETL\Adapter\Filesystem\AzureBlobStream;
-use Flow\ETL\Filesystem\Path;
+use function Flow\ETL\DSL\{config_builder, data_frame, from_array, overwrite};
+use function Flow\Filesystem\Bridge\Azure\DSL\azure_filesystem;
+use function Flow\Filesystem\DSL\path;
 use Symfony\Component\Dotenv\Dotenv;
 
 require __DIR__ . &#039;/../../../autoload.php&#039;;
@@ -245,14 +240,23 @@ if (!\file_exists(__DIR__ . &#039;/.env&#039;)) {
 $dotenv = new Dotenv();
 $dotenv-&gt;load(__DIR__ . &#039;/.env&#039;);
 
-$azure_client_option = [
-    &#039;connection-string&#039; =&gt; $_ENV[&#039;AZURE_CONNECTION_STRING&#039;],
-    &#039;container&#039; =&gt; $_ENV[&#039;AZURE_CONTAINER&#039;],
-];
+$config = config_builder()
+    -&gt;mount(
+        azure_filesystem(
+            azure_blob_service(
+                azure_blob_service_config(
+                    $_ENV[&#039;AZURE_ACCOUNT&#039;],
+                    $_ENV[&#039;AZURE_CONTAINER&#039;]
+                ),
+                azure_shared_key_authorization_factory(
+                    $_ENV[&#039;AZURE_ACCOUNT&#039;],
+                    $_ENV[&#039;AZURE_ACCOUNT_KEY&#039;]
+                ),
+            )
+        )
+    );
 
-AzureBlobStream::register();
-
-data_frame()
+data_frame($config)
     -&gt;read(from_array([
         [&#039;id&#039; =&gt; 1, &#039;name&#039; =&gt; &#039;test&#039;],
         [&#039;id&#039; =&gt; 2, &#039;name&#039; =&gt; &#039;test&#039;],
@@ -260,7 +264,7 @@ data_frame()
         [&#039;id&#039; =&gt; 4, &#039;name&#039; =&gt; &#039;test&#039;],
     ]))
     -&gt;saveMode(overwrite())
-    -&gt;write(to_csv(new Path(&#039;flow-azure-blob://test.csv&#039;, $azure_client_option)))
+    -&gt;write(to_csv(path(&#039;azure-blob://test.csv&#039;)))
     -&gt;run();
 </code></pre>            </div>
 

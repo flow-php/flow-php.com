@@ -8,9 +8,9 @@
     <meta property="og:title" content="Cloud storage - Flow PHP" />
     <meta name="twitter:title" content="Cloud storage - Flow PHP" >
 
-    <meta name="description" content="Code example showing aws s3 cloud storage.">
-    <meta property="og:description" content="Code example showing aws s3 cloud storage.">
-    <meta name="twitter:description" content="Code example showing aws s3 cloud storage.">
+    <meta name="description" content="Code example showing azure cloud storage.">
+    <meta property="og:description" content="Code example showing azure cloud storage.">
+    <meta name="twitter:description" content="Code example showing azure cloud storage.">
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://flow-php.com/cloud_storage/" />
@@ -209,13 +209,7 @@
             <nav>
                 <ul class="flex whitespace-nowrap overflow-auto py-4">
                                             <li>
-                            <a href="/cloud_storage/aws_s3/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Aws s3
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="/cloud_storage/azure/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/cloud_storage/azure/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Azure
                             </a>
@@ -228,16 +222,17 @@
 
 declare(strict_types=1);
 
+use function Flow\Azure\SDK\DSL\{azure_blob_service, azure_blob_service_config, azure_shared_key_authorization_factory};
 use function Flow\ETL\Adapter\CSV\to_csv;
-use function Flow\ETL\DSL\{data_frame, from_array, overwrite};
-use Flow\ETL\Adapter\Filesystem\AwsS3Stream;
-use Flow\ETL\Filesystem\Path;
+use function Flow\ETL\DSL\{config_builder, data_frame, from_array, overwrite};
+use function Flow\Filesystem\Bridge\Azure\DSL\azure_filesystem;
+use function Flow\Filesystem\DSL\path;
 use Symfony\Component\Dotenv\Dotenv;
 
 require __DIR__ . &#039;/../../../autoload.php&#039;;
 
 if (!\file_exists(__DIR__ . &#039;/.env&#039;)) {
-    print &#039;Example skipped. Please create .env file with AWS S3 credentials.&#039; . PHP_EOL;
+    print &#039;Example skipped. Please create .env file with Azure Storage Account credentials.&#039; . PHP_EOL;
 
     return;
 }
@@ -245,21 +240,23 @@ if (!\file_exists(__DIR__ . &#039;/.env&#039;)) {
 $dotenv = new Dotenv();
 $dotenv-&gt;load(__DIR__ . &#039;/.env&#039;);
 
-$s3_client_option = [
-    &#039;client&#039; =&gt; [
-        &#039;credentials&#039; =&gt; [
-            &#039;key&#039; =&gt; $_ENV[&#039;AWS_S3_KEY&#039;],
-            &#039;secret&#039; =&gt; $_ENV[&#039;AWS_S3_SECRET&#039;],
-        ],
-        &#039;region&#039; =&gt; &#039;eu-west-2&#039;,
-        &#039;version&#039; =&gt; &#039;latest&#039;,
-    ],
-    &#039;bucket&#039; =&gt; &#039;flow-php&#039;,
-];
+$config = config_builder()
+    -&gt;mount(
+        azure_filesystem(
+            azure_blob_service(
+                azure_blob_service_config(
+                    $_ENV[&#039;AZURE_ACCOUNT&#039;],
+                    $_ENV[&#039;AZURE_CONTAINER&#039;]
+                ),
+                azure_shared_key_authorization_factory(
+                    $_ENV[&#039;AZURE_ACCOUNT&#039;],
+                    $_ENV[&#039;AZURE_ACCOUNT_KEY&#039;]
+                ),
+            )
+        )
+    );
 
-AwsS3Stream::register();
-
-data_frame()
+data_frame($config)
     -&gt;read(from_array([
         [&#039;id&#039; =&gt; 1, &#039;name&#039; =&gt; &#039;test&#039;],
         [&#039;id&#039; =&gt; 2, &#039;name&#039; =&gt; &#039;test&#039;],
@@ -267,7 +264,7 @@ data_frame()
         [&#039;id&#039; =&gt; 4, &#039;name&#039; =&gt; &#039;test&#039;],
     ]))
     -&gt;saveMode(overwrite())
-    -&gt;write(to_csv(new Path(&#039;flow-aws-s3://test.csv&#039;, $s3_client_option)))
+    -&gt;write(to_csv(path(&#039;azure-blob://test.csv&#039;)))
     -&gt;run();
 </code></pre>            </div>
 
