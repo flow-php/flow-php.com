@@ -240,15 +240,12 @@
 
 declare(strict_types=1);
 
-use function Flow\ETL\DSL\{config_builder, data_frame, from_cache, ref, to_stream};
+use function Flow\ETL\DSL\{config_builder, data_frame, filesystem_cache, from_cache, ref, to_stream};
 use Flow\ETL\Adapter\Http\DynamicExtractor\NextRequestFactory;
 use Flow\ETL\Adapter\Http\PsrHttpClientDynamicExtractor;
-use Flow\ETL\Cache\PSRSimpleCache;
 use Http\Client\Curl\Client;
 use Nyholm\Psr7\Factory\Psr17Factory;
 use Psr\Http\Message\{RequestInterface, ResponseInterface};
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
-use Symfony\Component\Cache\Psr16Cache;
 
 require __DIR__ . &#039;/../../../autoload.php&#039;;
 
@@ -271,15 +268,7 @@ $from_github_api = new PsrHttpClientDynamicExtractor($client, new class implemen
     }
 });
 
-$adapter = new PSRSimpleCache(
-    new Psr16Cache(
-        new FilesystemAdapter(
-            directory: __DIR__ . &#039;/output/cache&#039;
-        )
-    )
-);
-
-data_frame(config_builder()-&gt;cache($adapter))
+data_frame(config_builder()-&gt;cache(filesystem_cache(__DIR__ . &#039;/output/cache&#039;)))
     -&gt;read(
         from_cache(
             id: &#039;github_api&#039;,
@@ -302,7 +291,7 @@ data_frame(config_builder()-&gt;cache($adapter))
                 <pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative"><button class="absolute top-0 right-0 bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-24" title="copy code" data-clipboard-target="#output" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><code id="output" class="language-console !p-0 !bg-transparent" data-controller="syntax-highlight">+----------+-----------------------------+---------------------+----------+--------------+-----------+----------------------+
 |     name |                    html_url |                blog |    login | public_repos | followers |           created_at |
 +----------+-----------------------------+---------------------+----------+--------------+-----------+----------------------+
-| Flow PHP | https://github.com/flow-php | http://flow-php.com | flow-php |           30 |        89 | 2020-10-26T18:40:27Z |
+| Flow PHP | https://github.com/flow-php | http://flow-php.com | flow-php |           34 |        96 | 2020-10-26T18:40:27Z |
 +----------+-----------------------------+---------------------+----------+--------------+-----------+----------------------+
 1 rows
 </code></pre>            </div>
