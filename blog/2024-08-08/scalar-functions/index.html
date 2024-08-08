@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+
+    <title>Article - Scalar Functions</title>
+    <meta property="og:title" content="Article - Scalar Functions" />
+    <meta name="twitter:title" content="Article - Scalar Functions" >
+
+    <meta name="description" content="Scalar functions are one of the most important building blocks of Flow. Learn how to build and use custom scalar functions in Flow PHP.">
+    <meta property="og:description" content="Scalar functions are one of the most important building blocks of Flow. Learn how to build and use custom scalar functions in Flow PHP.">
+    <meta name="twitter:description" content="Scalar functions are one of the most important building blocks of Flow. Learn how to build and use custom scalar functions in Flow PHP.">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://flow-php.com/blog/2024-08-08/scalar-functions" />
+    <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
+    <meta property="og:image:type" content="image/svg+xml" />
+    <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://flow-php.com/blog/2024-08-08/scalar-functions" />
+    <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
+    <meta name="twitter:site" content="@norbert_tech" />
+    <meta name="twitter:creator" content="@norbert_tech" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://flow-php.com/assets/images/favicons/apple-touch-icon-9cae7ee880b4fe0bd755d300e1bca71e.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://flow-php.com/assets/images/favicons/favicon-32x32-b7a4ad4b584ab95534144e071f0e8587.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://flow-php.com/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png">
+    <link rel="shortcut icon" href="https://flow-php.com/assets/images/favicons/favicon-db409885df78dea389e6d0b036da382c.ico">
+
+    <link rel="preload" fetchpriority="high" href="https://flow-php.com/assets/vendor/@fontsource-variable/cabin/files/cabin-latin-wght-normal-866be39b45f5b5b8840cb93bc1069465.woff2" as="font" crossorigin>
+
+            <style>@font-face{font-family:'Cabin Variable';font-style:normal;font-display:swap;font-weight:400 700;src:url("https://flow-php.com/assets/vendor/@fontsource-variable/cabin/files/cabin-vietnamese-wght-normal-728366455e644228c0222e375fa14bb4.woff2") format('woff2-variations');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Cabin Variable';font-style:normal;font-display:swap;font-weight:400 700;src:url("https://flow-php.com/assets/vendor/@fontsource-variable/cabin/files/cabin-latin-ext-wght-normal-2faa374eb2a80d6be629a356e68b73d7.woff2") format('woff2-variations');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Cabin Variable';font-style:normal;font-display:swap;font-weight:400 700;src:url("https://flow-php.com/assets/vendor/@fontsource-variable/cabin/files/cabin-latin-wght-normal-866be39b45f5b5b8840cb93bc1069465.woff2") format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
+        <link rel="stylesheet" href="https://flow-php.com/assets/styles/app-797f3089bc216068343a73005e431a94.css">
+    
+            
+<script type="importmap">
+{
+    "imports": {
+        "app": "https://flow-php.com/assets/app-f6b6b9453864ea635d158621b1bef659.js",
+        "@oddbird/popover-polyfill": "https://flow-php.com/assets/vendor/@oddbird/popover-polyfill/popover-polyfill.index-7979d53637476aa204f709644aed2c19.js",
+        "https://flow-php.com/assets/bootstrap.js": "https://flow-php.com/assets/bootstrap-d78d7e12c819dedf89372fb4824c072d.js",
+        "htmx.org": "https://flow-php.com/assets/vendor/htmx.org/htmx.org.index-023ae86a082913526422a6063298f898.js",
+        "@symfony/stimulus-bundle": "https://flow-php.com/assets/@symfony/stimulus-bundle/loader-e1ee9ace0562f2e6a52301e4ccc8627d.js",
+        "@hotwired/stimulus": "https://flow-php.com/assets/vendor/@hotwired/stimulus/stimulus.index-304681764684182e6662e0931532ed91.js",
+        "https://flow-php.com/assets/@symfony/stimulus-bundle/controllers.js": "https://flow-php.com/assets/@symfony/stimulus-bundle/controllers-546191eec481bda239002864175e5efd.js",
+        "https://flow-php.com/assets/controllers/clipboard_controller.js": "https://flow-php.com/assets/controllers/clipboard_controller-6aefa8a9dec3271dae2f05b464bf9204.js",
+        "https://flow-php.com/assets/controllers/syntax_highlight_controller.js": "https://flow-php.com/assets/controllers/syntax_highlight_controller-21214ceee6533e0aad7a15e1c17adc5c.js",
+        "highlight.js/lib/core": "https://flow-php.com/assets/vendor/highlight.js/lib/core-760145ef158caabe84ca07686407d093.js",
+        "highlight.js/lib/languages/php": "https://flow-php.com/assets/vendor/highlight.js/lib/languages/php-c0eb2105c14097e8a5a1e9a767e8ac95.js",
+        "highlight.js/styles/github-dark.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22https%3A%2F%2Fflow-php.com%2Fassets%2Fvendor%2Fhighlight.js%2Fstyles%2Fgithub-dark.min-4b46e20f66f76e35d6454ca4f09b57c3.css%22%7D%29%29",
+        "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22https%3A%2F%2Fflow-php.com%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-08e34691d22388e6974e6cb2bfbcbfd0.css%22%7D%29%29",
+        "clipboard": "https://flow-php.com/assets/vendor/clipboard/clipboard.index-925566f98181665b5a61fea1bcd9033d.js",
+        "highlight.js/lib/languages/shell": "https://flow-php.com/assets/vendor/highlight.js/lib/languages/shell-664215791af27581e04813723523a355.js",
+        "highlight.js/lib/languages/json": "https://flow-php.com/assets/vendor/highlight.js/lib/languages/json-9ac51ad2a97f9ce56b2f309eb64d7b04.js"
+    }
+}
+</script>
+<!-- ES Module Shims: Import maps polyfill for modules browsers without import maps support -->
+<script async src="https://ga.jspm.io/npm:es-module-shims@1.10.0/dist/es-module-shims.js"></script>
+<link rel="modulepreload" href="https://flow-php.com/assets/app-f6b6b9453864ea635d158621b1bef659.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/vendor/@oddbird/popover-polyfill/popover-polyfill.index-7979d53637476aa204f709644aed2c19.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/bootstrap-d78d7e12c819dedf89372fb4824c072d.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/vendor/htmx.org/htmx.org.index-023ae86a082913526422a6063298f898.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/@symfony/stimulus-bundle/loader-e1ee9ace0562f2e6a52301e4ccc8627d.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/vendor/@hotwired/stimulus/stimulus.index-304681764684182e6662e0931532ed91.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/@symfony/stimulus-bundle/controllers-546191eec481bda239002864175e5efd.js">
+<script type="module">import 'app';</script>
+    </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1W17JSMLE5">gtag('config', 'AW-1008336727');</script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1W17JSMLE5');
+</script>
+<body class="scroll-smooth bg-black text-white">
+    <header class="py-2 text-white bg-blue-200">
+        <div class="mx-auto max-w-screen-xl px-4 flex items-center justify-between">
+            <a href="/">
+                <img src="https://flow-php.com/assets/images/logo-3ed481e55faedcd874c34e4801929d00.svg" alt="flow php" width="176" height="48">
+            </a>
+
+            <button popovertarget="main-nav" popovertargetaction="show" class="sm:hidden">
+                <img src="https://flow-php.com/assets/images/icons/menu-77fe45bf7a82a5a987e517f5f502d1a8.svg" alt="menu" width="32" height="32">
+            </button>
+
+            <nav popover id="main-nav" class="max-sm:absolute border-0 p-0 m-0 max-sm:top-0 max-sm:right-0 sm:relative sm:block text-white bg-blue-200 unset">
+                <ul class="sm:flex flex-nowrap whitespace-nowrap">
+                    <li class="sm:hidden text-right">
+                        <button popovertarget="main-nav" popovertargetaction="hide" class="sm:hidden h-16 pr-4">
+                            <img src="https://flow-php.com/assets/images/icons/close-1d7ec4af2f20f3e124a47ef76786be62.svg" alt="close" width="32" height="32">
+                        </button>
+                    </li>
+                    <li>
+                        <a class="p-3 flex items-center" href="https://github.com/flow-php/flow" target="_blank">
+                            Repository
+                            <img src="https://flow-php.com/assets/images/icons/github-b7e5d858805e5289b575768f10a66b52.svg" alt="external resource" width="16" height="16" class="ml-1">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="p-3 flex items-center" href="https://github.com/orgs/flow-php/projects/1" target="_blank">
+                            Roadmap
+                            <img src="https://flow-php.com/assets/images/icons/date-63953f42e238fc293ab9dde6ac95a1a1.svg" alt="external resource" width="16" height="16" class="ml-1">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="p-3 flex items-center" href="/blog">
+                            Blog
+                            <img src="https://flow-php.com/assets/images/icons/pencil-2039a70b25dae9a3c94ba87cf2804809.svg" alt="Flow PHP Blog" width="16" height="16" class="ml-1">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="p-3 flex items-center text-white" href="https://discord.gg/5dNXfQyACW" target="_blank">
+                            Discord
+                            <img src="https://flow-php.com/assets/images/icons/discord-cc4dedbe49f4a0858a75b8a5a0476830.svg" alt="external resource" width="16" height="16" class="ml-1">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="mx-auto max-w-screen-xl max-lg:text-center px-2 sm:px-4 relative max-lg:py-10 p-[100px]">
+    <h1 class="font-bold max-sm:text-5xl max-lg:mx-auto text-6xl tracking-wider leading-[70px] max-w-[450px] mb-8 z-10">UNIFIED DATA PROCESSING FRAMEWORK</h1>
+    <code class="w-fit py-2 px-3 before:content-['$'] before:mr-2 bg-orange-100 rounded"><span id="command">composer require flow-php/etl ^0.8.0</span><button class="ml-2 [&.copied]:after:content-['Copied!'] after:absolute after:translate-x-6 select-none" title="copy command" data-clipboard-target="#command" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy command" width="20" height="20" class="inline"></button></code><p class="mt-5"><a class="text-white" href="https://flow-php.com/changelog">Changelog</a></p>    <img src="https://flow-php.com/assets/images/elephant-4b2eb8a559db8a8a34bb8d10d5df26d3.svg" alt="elephant" width="720" class="max-lg:hidden absolute right-0 top-0">
+</div>
+
+<div class="bg-blue-200">
+    <div class="mx-auto max-w-screen-xl max-sm:px-2 py-4 flex flex-wrap sm:flex-nowrap items-start text-center lg:pr-[550px]">
+        <div class="basis-2/5 sm:basis-1/3">
+            <img src="https://flow-php.com/assets/images/icons/extract-733c1cf43ee630c5056b7d09e9406522.svg" alt="extract" width="64" height="64" class="inline">
+            <h2 class="my-2 text-2xl font-semibold tracking-wide">Extracts</h2>
+            <p>Read from various data sources.</p>
+        </div>
+
+        <span class="basis-1/5 self-center sm:flex-none sm:mx-2">
+                    <img src="https://flow-php.com/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow" width="32" height="32" class="mx-auto">
+                </span>
+
+        <div class="basis-2/5 sm:basis-1/3">
+            <img src="https://flow-php.com/assets/images/icons/transform-0c0a9fd75cc66af8420fe905a301e543.svg" alt="transform" width="64" height="64" class="inline">
+            <h2 class="my-2 text-2xl font-semibold tracking-wide">Transforms</h2>
+            <p>Shape and optimize for your needs.</p>
+        </div>
+
+        <span class="basis-2/5 self-center ml-auto mt-6 sm:flex-none sm:my-0 sm:mx-2">
+                    <img src="https://flow-php.com/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow" width="32" height="32" class="max-sm:rotate-[135deg]">
+                </span>
+
+        <div class="basis-full sm:basis-1/3">
+            <img src="https://flow-php.com/assets/images/icons/load-9d1ae77f76eb4e7003f46be915c17949.svg" alt="load" width="64" height="64" class="inline">
+            <h2 class="my-2 text-2xl font-semibold tracking-wide">Loads</h2>
+            <p>Store and secure in one of many available data sinks.</p>
+        </div>
+    </div>
+</div>
+
+            <article id="blog-post">
+    <h1>Scalar Functions</h1>
+    <hr />
+    <p>
+        Scalar Functions are the most basic building blocks of Flow. These functions are used in all operations that occur at the level of a single cell.
+    </p>
+    <p>
+        If we wanted to imagine how Flow works, the easiest way is to think of a spreadsheet. After reading a portion of data from the source, Flow transforms it into a structure of rows, columns, and cells.
+    </p>
+    <p>
+        Once the read batch of data is converted into a tabular form, Flow proceeds to process the data row by row, column by column, cell by cell.
+    </p>
+    <p>
+        Scalar functions are called for each cell in a given row.
+        It's worth noticing that the execution context of scalar functions is the entire row, even though the operation usually takes place on a single cell.
+        This relationship allows using values from other cells as function arguments, for example.
+    </p>
+    <p>
+        Each scalar function implements a very simple interface.
+    </p>
+    <pre><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+declare(strict_types=1);
+
+namespace Flow\ETL\Function;
+
+use Flow\ETL\Row;
+
+interface ScalarFunction
+{
+    public function eval(Row $row) : mixed;
+}
+</code></pre>
+    <p>
+        As you can see, there's not much room for overly complicated operations here. The best and most efficient scalar functions are those that have only one, well-defined responsibility.
+        The fewer things a function does, the easier it is to test, understand, and maintain.
+    </p>
+    <p>
+        Let's see what an example of scalar functions in Flow looks like:
+    </p>
+    <pre><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+declare(strict_types=1);
+
+namespace Flow\ETL\Function;
+
+use Flow\ETL\Row;
+
+final class Power extends ScalarFunctionChain
+{
+    public function __construct(
+        private readonly ScalarFunction $leftRef,
+        private readonly ScalarFunction $rightRef
+    ) {
+    }
+
+    public function eval(Row $row) : mixed
+    {
+        $left = $this-&gt;leftRef-&gt;eval($row);
+        $right = $this-&gt;rightRef-&gt;eval($row);
+
+        if ($right === 0) {
+            return null;
+        }
+
+        if (!\is_numeric($left) || !\is_numeric($right)) {
+            return null;
+        }
+
+        return $left ** $right;
+    }
+}</code></pre>
+    <p>
+        Let's start by analyzing the function constructor. We can notice that the arguments passed to the constructor are two other scalar functions.
+        This simple trick allows us to refer to values from different cells using the <code>ref</code> function.
+    </p>
+    <p>
+        The <code>ref(string $entry) : EntryReference</code> function returns an instance of the <code>EntryReference</code> object, which implements the <code>ScalarFunction</code> interface. This implementation involves returning the value from the cell that the reference points to.
+    </p>
+    <p>
+        It's worth mentioning another very frequently used scalar function, <code>lit(mixed $value) : Literal</code>. The <code>lit</code> function has a very similar operation to <code>ref</code>, with the difference that instead of extracting a value from a cell, it returns the value passed as an argument.
+    </p>
+    <p>
+        Now that we know the construction of a scalar function, let's look at the implementation of the <code>eval(Row $row) : mixed</code> method.
+    </p>
+    <pre><code class="language-php" data-controller="syntax-highlight">public function eval(Row $row) : mixed
+{
+    // Retrieving parameters
+    $left = $this-&gt;leftRef-&gt;eval($row);
+    $right = $this-&gt;rightRef-&gt;eval($row);
+
+    // Validating parameters
+    if ($right === 0) {
+        return null;
+    }
+
+    if (!\is_numeric($left) || !\is_numeric($right)) {
+        return null;
+    }
+
+    // Execution
+    return $left ** $right;
+}</code></pre>
+    <p>
+        We can assume that the <code>eval</code> method consists of 3 parts:
+    </p>
+    <ul>
+        <li>Retrieving parameters</li>
+        <li>Validating parameters</li>
+        <li>Execution</li>
+    </ul>
+
+    <p>
+        Let's now analyze each of these parts.
+    </p>
+
+    <p>
+        <strong>Retrieving parameters</strong> - the purpose of this action is to reduce all scalar functions to specific values by calling them on the passed row.
+    </p>
+    <p>
+        <strong>Parameters validation</strong> - when we have all parameters reduced to simple values, we need to make sure they are correct. We check if something is not <code>null</code> or if the values are of the appropriate type. In case the values are incorrect, instead of throwing an exception, we should return <code>null</code>.
+    </p>
+    <p>
+        <strong>Execution</strong> - this part of the method contains the actual logic of the scalar function. In our case, it's raising a value to a power. A significant portion of scalar functions are nothing more than functions provided by PHP.
+    </p>
+    <p>
+        This construction allows for very easy addition of new scalar functions, and for their very simple testing. Let's look at the tests for the <code>power</code> function:
+    </p>
+
+    <pre><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+declare(strict_types=1);
+
+namespace Flow\ETL\Tests\Unit\Function;
+
+use function Flow\ETL\DSL\{int_entry, lit, ref, str_entry};
+use Flow\ETL\Row;
+use PHPUnit\Framework\TestCase;
+
+final class PowerTest extends TestCase
+{
+    public function test_power_non_numeric_values() : void
+    {
+        self::assertNull(
+            ref(&#039;int&#039;)-&gt;power(lit(&#039;non numeric&#039;))-&gt;eval(Row::create(int_entry(&#039;int&#039;, 10)))
+        );
+        self::assertNull(
+            ref(&#039;str&#039;)-&gt;power(lit(2))-&gt;eval(Row::create(str_entry(&#039;str&#039;, &#039;abc&#039;)))
+        );
+    }
+
+    public function test_power_two_numeric_values() : void
+    {
+        self::assertSame(
+            100,
+            ref(&#039;int&#039;)-&gt;power(lit(2))-&gt;eval(Row::create(int_entry(&#039;int&#039;, 10)))
+        );
+    }
+}
+</code></pre>
+
+    <p>
+        To improve developer experience, <code>EntryReference</code> inherits from the abstract class <code>ScalarFunctionChain</code>, which aggregates all functions in one place so that they can be referred to directly from <code>ref()</code>. Let's look at some examples:
+    </p>
+    <pre><code class="language-php" data-controller="syntax-highlight">ref(&#039;integer_value&#039;)-&gt;power(lit(2));</code></pre>
+    <pre><code class="language-php" data-controller="syntax-highlight">ref(&#039;integer_value&#039;)-&gt;power(ref(&#039;other_column&#039;));</code></pre>
+
+    <p>
+        The practical use of a scalar function will therefore look like this:
+    </p>
+
+    <pre><code class="language-php" data-controller="syntax-highlight">df()-&gt;withEntry(&#039;power_of_integer_value&#039;, ref(&#039;integer_value&#039;)-&gt;power(ref(&#039;other_column&#039;)));</code></pre>
+
+    <p>
+        Some scalar functions are also available in the form of regular functions registered in the DSL. An example of such a function is <code>when</code> which takes 3 arguments:
+    </p>
+    <ul>
+        <li>condition</li>
+        <li>what if true</li>
+        <li>what if false</li>
+    </ul>
+    <p>
+        If we look at the implementation of this function, we'll notice that all its arguments are also scalar functions. This allows us to build very complicated nested conditions.
+    </p>
+    <pre><code class="language-php" data-controller="syntax-highlight">function when(ScalarFunction $ref, ScalarFunction $then, ?ScalarFunction $else = null) : When
+{
+    return new When($ref, $then, $else);
+}</code></pre>
+
+</article>
+
+
+        <div class="bg-blue-200">
+    <section class="mx-auto max-w-screen-xl sm:flex justify-between items-center py-6 px-2 sm:px-4">
+        <div class="max-sm:mb-6 mr-6 whitespace-nowrap">
+            <h2 class="text-2xl font-semibold tracking-wide">Contributors</h2>
+            <a href="https://github.com/flow-php/flow/graphs/contributors" target="_blank" class="flex items-center text-white">
+                Join us on GitHub
+                <img src="https://flow-php.com/assets/images/icons/external-03423c578ef110d4d4f0083107996af5.svg" alt="external resource" width="16" height="16" class="ml-1">
+            </a>
+        </div>
+
+        <div class="grid gap-1 sm:gap-2 lg:gap-4 grid-cols-8 lg:grid-cols-12">
+                            <a href="https://github.com/norberttech" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/1921950?v=4&amp;s=128" alt="norberttech" width="56" height="56" title="norberttech" class="rounded-full">
+                </a>
+                            <a href="https://github.com/stloyd" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/67402?v=4&amp;s=128" alt="stloyd" width="56" height="56" title="stloyd" class="rounded-full">
+                </a>
+                            <a href="https://github.com/tomaszhanc" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/7013293?v=4&amp;s=128" alt="tomaszhanc" width="56" height="56" title="tomaszhanc" class="rounded-full">
+                </a>
+                            <a href="https://github.com/DawidSajdak" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/946972?v=4&amp;s=128" alt="DawidSajdak" width="56" height="56" title="DawidSajdak" class="rounded-full">
+                </a>
+                            <a href="https://github.com/owsiakl" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/9623965?v=4&amp;s=128" alt="owsiakl" width="56" height="56" title="owsiakl" class="rounded-full">
+                </a>
+                            <a href="https://github.com/flavioheleno" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/471860?v=4&amp;s=128" alt="flavioheleno" width="56" height="56" title="flavioheleno" class="rounded-full">
+                </a>
+                            <a href="https://github.com/rzarno" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/12570337?v=4&amp;s=128" alt="rzarno" width="56" height="56" title="rzarno" class="rounded-full">
+                </a>
+                            <a href="https://github.com/szepeviktor" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/952007?v=4&amp;s=128" alt="szepeviktor" width="56" height="56" title="szepeviktor" class="rounded-full">
+                </a>
+                            <a href="https://github.com/mleczakm" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/3474636?v=4&amp;s=128" alt="mleczakm" width="56" height="56" title="mleczakm" class="rounded-full">
+                </a>
+                            <a href="https://github.com/xaviermarchegay" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/658523?v=4&amp;s=128" alt="xaviermarchegay" width="56" height="56" title="xaviermarchegay" class="rounded-full">
+                </a>
+                            <a href="https://github.com/scyzoryck" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/8014727?v=4&amp;s=128" alt="scyzoryck" width="56" height="56" title="scyzoryck" class="rounded-full">
+                </a>
+                            <a href="https://github.com/alexislefebvre" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/2071331?v=4&amp;s=128" alt="alexislefebvre" width="56" height="56" title="alexislefebvre" class="rounded-full">
+                </a>
+                            <a href="https://github.com/peter279k" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/9021747?v=4&amp;s=128" alt="peter279k" width="56" height="56" title="peter279k" class="rounded-full">
+                </a>
+                            <a href="https://github.com/Wirone" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/600668?v=4&amp;s=128" alt="Wirone" width="56" height="56" title="Wirone" class="rounded-full">
+                </a>
+                            <a href="https://github.com/jpiatko" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/80686947?v=4&amp;s=128" alt="jpiatko" width="56" height="56" title="jpiatko" class="rounded-full">
+                </a>
+                            <a href="https://github.com/jguittard" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/5320213?v=4&amp;s=128" alt="jguittard" width="56" height="56" title="jguittard" class="rounded-full">
+                </a>
+                            <a href="https://github.com/voku" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/264695?v=4&amp;s=128" alt="voku" width="56" height="56" title="voku" class="rounded-full">
+                </a>
+                            <a href="https://github.com/drupol" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/252042?v=4&amp;s=128" alt="drupol" width="56" height="56" title="drupol" class="rounded-full">
+                </a>
+                            <a href="https://github.com/Wiktor6" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/24683748?v=4&amp;s=128" alt="Wiktor6" width="56" height="56" title="Wiktor6" class="rounded-full">
+                </a>
+                            <a href="https://github.com/inmanturbo" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/47095624?v=4&amp;s=128" alt="inmanturbo" width="56" height="56" title="inmanturbo" class="rounded-full">
+                </a>
+                    </div>
+    </section>
+</div>
+    </main>
+
+    <footer class="text-center bg-orange-100">
+        <div class="py-4 mx-auto max-w-screen-xl">
+            <a href="https://github.com/flow-php">&copy; Copyright 2024 Flow PHP</a>
+        </div>
+    </footer>
+</body>
+</html>
