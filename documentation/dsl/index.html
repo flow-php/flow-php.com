@@ -1,0 +1,2070 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+
+    <title>DSL - Flow PHP</title>
+    <meta property="og:title" content="DSL - Flow PHP" />
+    <meta name="twitter:title" content="DSL - Flow PHP" >
+
+    <meta name="description" content="Documentation - DSL">
+    <meta property="og:description" content="Documentation - DSL">
+    <meta name="twitter:description" content="Documentation - DSL">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://flow-php.com/documentation/dsl" />
+    <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
+    <meta property="og:image:type" content="image/svg+xml" />
+    <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://flow-php.com/documentation/dsl" />
+    <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
+    <meta name="twitter:site" content="@norbert_tech" />
+    <meta name="twitter:creator" content="@norbert_tech" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://flow-php.com/assets/images/favicons/apple-touch-icon-9cae7ee880b4fe0bd755d300e1bca71e.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://flow-php.com/assets/images/favicons/favicon-32x32-b7a4ad4b584ab95534144e071f0e8587.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://flow-php.com/assets/images/favicons/favicon-16x16-154ca21abc06ae116c8d7ffc5713c000.png">
+    <link rel="shortcut icon" href="https://flow-php.com/assets/images/favicons/favicon-db409885df78dea389e6d0b036da382c.ico">
+
+    <link rel="preload" fetchpriority="high" href="https://flow-php.com/assets/vendor/@fontsource-variable/cabin/files/cabin-latin-wght-normal-866be39b45f5b5b8840cb93bc1069465.woff2" as="font" crossorigin>
+
+            <style>@font-face{font-family:'Cabin Variable';font-style:normal;font-display:swap;font-weight:400 700;src:url("https://flow-php.com/assets/vendor/@fontsource-variable/cabin/files/cabin-vietnamese-wght-normal-728366455e644228c0222e375fa14bb4.woff2") format('woff2-variations');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Cabin Variable';font-style:normal;font-display:swap;font-weight:400 700;src:url("https://flow-php.com/assets/vendor/@fontsource-variable/cabin/files/cabin-latin-ext-wght-normal-2faa374eb2a80d6be629a356e68b73d7.woff2") format('woff2-variations');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Cabin Variable';font-style:normal;font-display:swap;font-weight:400 700;src:url("https://flow-php.com/assets/vendor/@fontsource-variable/cabin/files/cabin-latin-wght-normal-866be39b45f5b5b8840cb93bc1069465.woff2") format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
+        <link rel="stylesheet" href="https://flow-php.com/assets/styles/app-987f30d877c5d9a5933b4e2a4b531019.css">
+    
+            
+<script type="importmap">
+{
+    "imports": {
+        "app": "https://flow-php.com/assets/app-f6b6b9453864ea635d158621b1bef659.js",
+        "@oddbird/popover-polyfill": "https://flow-php.com/assets/vendor/@oddbird/popover-polyfill/popover-polyfill.index-7979d53637476aa204f709644aed2c19.js",
+        "https://flow-php.com/assets/bootstrap.js": "https://flow-php.com/assets/bootstrap-d78d7e12c819dedf89372fb4824c072d.js",
+        "htmx.org": "https://flow-php.com/assets/vendor/htmx.org/htmx.org.index-023ae86a082913526422a6063298f898.js",
+        "@symfony/stimulus-bundle": "https://flow-php.com/assets/@symfony/stimulus-bundle/loader-e1ee9ace0562f2e6a52301e4ccc8627d.js",
+        "@hotwired/stimulus": "https://flow-php.com/assets/vendor/@hotwired/stimulus/stimulus.index-304681764684182e6662e0931532ed91.js",
+        "https://flow-php.com/assets/@symfony/stimulus-bundle/controllers.js": "https://flow-php.com/assets/@symfony/stimulus-bundle/controllers-fbcc42ecb6d725f4ea6815cad80a5ca4.js",
+        "https://flow-php.com/assets/controllers/scroll_to_top_controller.js": "https://flow-php.com/assets/controllers/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
+        "https://flow-php.com/assets/controllers/all_links_external_controller.js": "https://flow-php.com/assets/controllers/all_links_external_controller-ee822120135f8059dd46fcce63e38376.js",
+        "https://flow-php.com/assets/controllers/clipboard_controller.js": "https://flow-php.com/assets/controllers/clipboard_controller-6aefa8a9dec3271dae2f05b464bf9204.js",
+        "https://flow-php.com/assets/controllers/syntax_highlight_controller.js": "https://flow-php.com/assets/controllers/syntax_highlight_controller-21214ceee6533e0aad7a15e1c17adc5c.js",
+        "highlight.js/lib/core": "https://flow-php.com/assets/vendor/highlight.js/lib/core-760145ef158caabe84ca07686407d093.js",
+        "highlight.js/lib/languages/php": "https://flow-php.com/assets/vendor/highlight.js/lib/languages/php-c0eb2105c14097e8a5a1e9a767e8ac95.js",
+        "highlight.js/styles/github-dark.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22https%3A%2F%2Fflow-php.com%2Fassets%2Fvendor%2Fhighlight.js%2Fstyles%2Fgithub-dark.min-4b46e20f66f76e35d6454ca4f09b57c3.css%22%7D%29%29",
+        "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22https%3A%2F%2Fflow-php.com%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-08e34691d22388e6974e6cb2bfbcbfd0.css%22%7D%29%29",
+        "clipboard": "https://flow-php.com/assets/vendor/clipboard/clipboard.index-925566f98181665b5a61fea1bcd9033d.js",
+        "highlight.js/lib/languages/shell": "https://flow-php.com/assets/vendor/highlight.js/lib/languages/shell-664215791af27581e04813723523a355.js",
+        "highlight.js/lib/languages/json": "https://flow-php.com/assets/vendor/highlight.js/lib/languages/json-9ac51ad2a97f9ce56b2f309eb64d7b04.js"
+    }
+}
+</script>
+<!-- ES Module Shims: Import maps polyfill for modules browsers without import maps support -->
+<script async src="https://ga.jspm.io/npm:es-module-shims@1.10.0/dist/es-module-shims.js"></script>
+<link rel="modulepreload" href="https://flow-php.com/assets/app-f6b6b9453864ea635d158621b1bef659.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/vendor/@oddbird/popover-polyfill/popover-polyfill.index-7979d53637476aa204f709644aed2c19.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/bootstrap-d78d7e12c819dedf89372fb4824c072d.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/vendor/htmx.org/htmx.org.index-023ae86a082913526422a6063298f898.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/@symfony/stimulus-bundle/loader-e1ee9ace0562f2e6a52301e4ccc8627d.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/vendor/@hotwired/stimulus/stimulus.index-304681764684182e6662e0931532ed91.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/@symfony/stimulus-bundle/controllers-fbcc42ecb6d725f4ea6815cad80a5ca4.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/controllers/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js">
+<script type="module">import 'app';</script>
+    </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1W17JSMLE5">gtag('config', 'AW-1008336727');</script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1W17JSMLE5');
+</script>
+<body class="scroll-smooth bg-black text-white">
+    <header class="py-2 text-white bg-blue-200">
+        <div class="mx-auto max-w-screen-xl px-4 flex items-center justify-between">
+            <a href="/">
+                <img src="https://flow-php.com/assets/images/logo-3ed481e55faedcd874c34e4801929d00.svg" alt="flow php" width="176" height="48">
+            </a>
+
+            <button popovertarget="main-nav" popovertargetaction="show" class="sm:hidden">
+                <img src="https://flow-php.com/assets/images/icons/menu-77fe45bf7a82a5a987e517f5f502d1a8.svg" alt="menu" width="32" height="32">
+            </button>
+
+            <nav popover id="main-nav" class="max-sm:absolute border-0 p-0 m-0 max-sm:top-0 max-sm:right-0 sm:relative sm:block text-white bg-blue-200 unset">
+                <ul class="sm:flex flex-nowrap whitespace-nowrap">
+                    <li class="sm:hidden text-right">
+                        <button popovertarget="main-nav" popovertargetaction="hide" class="sm:hidden h-16 pr-4">
+                            <img src="https://flow-php.com/assets/images/icons/close-1d7ec4af2f20f3e124a47ef76786be62.svg" alt="close" width="32" height="32">
+                        </button>
+                    </li>
+                    <li>
+                        <a class="p-3 flex items-center" href="https://github.com/flow-php/flow" target="_blank">
+                            Repository
+                            <img src="https://flow-php.com/assets/images/icons/github-b7e5d858805e5289b575768f10a66b52.svg" alt="external resource" width="16" height="16" class="ml-1">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="p-3 flex items-center" href="https://github.com/orgs/flow-php/projects/1" target="_blank">
+                            Roadmap
+                            <img src="https://flow-php.com/assets/images/icons/date-63953f42e238fc293ab9dde6ac95a1a1.svg" alt="external resource" width="16" height="16" class="ml-1">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="p-3 flex items-center" href="/blog">
+                            Blog
+                            <img src="https://flow-php.com/assets/images/icons/pencil-2039a70b25dae9a3c94ba87cf2804809.svg" alt="Flow PHP Blog" width="16" height="16" class="ml-1">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="p-3 flex items-center" href="/documentation/dsl">
+                            Docs
+                            <img src="https://flow-php.com/assets/images/icons/checklist-4abcd44072ff8c8e2ece60507271d2b2.svg" alt="Flow PHP Blog" width="16" height="16" class="ml-1">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="p-3 flex items-center text-white" href="https://discord.gg/5dNXfQyACW" target="_blank">
+                            Discord
+                            <img src="https://flow-php.com/assets/images/icons/discord-cc4dedbe49f4a0858a75b8a5a0476830.svg" alt="external resource" width="16" height="16" class="ml-1">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="mx-auto max-w-screen-xl max-lg:text-center px-2 sm:px-4 relative max-lg:py-10 p-[100px]">
+    <h1 class="font-bold max-sm:text-5xl max-lg:mx-auto text-6xl tracking-wider leading-[70px] max-w-[450px] mb-8 z-10">UNIFIED DATA PROCESSING FRAMEWORK</h1>
+    <code class="w-fit py-2 px-3 before:content-['$'] before:mr-2 bg-orange-100 rounded"><span id="command">composer require flow-php/etl ^0.9.1</span><button class="ml-2 [&.copied]:after:content-['Copied!'] after:absolute after:translate-x-6 select-none" title="copy command" data-clipboard-target="#command" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy command" width="20" height="20" class="inline"></button></code><p class="mt-5"><a class="text-white" href="https://flow-php.com/changelog">Changelog</a></p>    <img src="https://flow-php.com/assets/images/elephant-4b2eb8a559db8a8a34bb8d10d5df26d3.svg" alt="elephant" width="720" class="max-lg:hidden absolute right-0 top-0">
+</div>
+
+<div class="bg-blue-200">
+    <div class="mx-auto max-w-screen-xl max-sm:px-2 py-4 flex flex-wrap sm:flex-nowrap items-start text-center lg:pr-[550px]">
+        <div class="basis-2/5 sm:basis-1/3">
+            <img src="https://flow-php.com/assets/images/icons/extract-733c1cf43ee630c5056b7d09e9406522.svg" alt="extract" width="64" height="64" class="inline">
+            <h2 class="my-2 text-2xl font-semibold tracking-wide">Extracts</h2>
+            <p>Read from various data sources.</p>
+        </div>
+
+        <span class="basis-1/5 self-center sm:flex-none sm:mx-2">
+                    <img src="https://flow-php.com/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow" width="32" height="32" class="mx-auto">
+                </span>
+
+        <div class="basis-2/5 sm:basis-1/3">
+            <img src="https://flow-php.com/assets/images/icons/transform-0c0a9fd75cc66af8420fe905a301e543.svg" alt="transform" width="64" height="64" class="inline">
+            <h2 class="my-2 text-2xl font-semibold tracking-wide">Transforms</h2>
+            <p>Shape and optimize for your needs.</p>
+        </div>
+
+        <span class="basis-2/5 self-center ml-auto mt-6 sm:flex-none sm:my-0 sm:mx-2">
+                    <img src="https://flow-php.com/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow" width="32" height="32" class="max-sm:rotate-[135deg]">
+                </span>
+
+        <div class="basis-full sm:basis-1/3">
+            <img src="https://flow-php.com/assets/images/icons/load-9d1ae77f76eb4e7003f46be915c17949.svg" alt="load" width="64" height="64" class="inline">
+            <h2 class="my-2 text-2xl font-semibold tracking-wide">Loads</h2>
+            <p>Store and secure in one of many available data sinks.</p>
+        </div>
+    </div>
+</div>
+
+        <div class="py-10 px-2 sm:px-4 mx-auto max-w-screen-xl" data-hx-boost="true">
+    <div class="grid grid-cols-1 sm:grid-cols-6">
+        <div class="col-span-1 sm:sticky sm:top-0 sm:max-h-screen sm:overflow-y-auto">
+        <h1 class="font-bold text-4xl mb-4">Modules</h1>
+            <ul class="mb-10 mr-6">
+                                    <li class="mb-1">
+                        <a
+                            href="/documentation/dsl#dsl-functions"
+                            class="text-white "
+
+                        >Core</a>
+                                                <ul class="list-disc pl-6 mt-2">
+                                                                                                <li class="text-sm">
+                                        <a href="#type-data frame">Data frame</a>
+                                    </li>
+                                                                                                                                <li class="text-sm">
+                                        <a href="#type-extractors">Extractors</a>
+                                    </li>
+                                                                                                                                <li class="text-sm">
+                                        <a href="#type-loaders">Loaders</a>
+                                    </li>
+                                                                                                                                                                                            <li class="text-sm">
+                                        <a href="#type-entries">Entries</a>
+                                    </li>
+                                                                                                                                <li class="text-sm">
+                                        <a href="#type-types">Types</a>
+                                    </li>
+                                                                                                                                <li class="text-sm">
+                                        <a href="#type-schema">Schema</a>
+                                    </li>
+                                                                                                                                <li class="text-sm">
+                                        <a href="#type-aggregating functions">Aggregating functions</a>
+                                    </li>
+                                                                                                                                <li class="text-sm">
+                                        <a href="#type-scalar functions">Scalar functions</a>
+                                    </li>
+                                                                                                                                <li class="text-sm">
+                                        <a href="#type-window functions">Window functions</a>
+                                    </li>
+                                                                                                                                <li class="text-sm">
+                                        <a href="#type-comparisons">Comparisons</a>
+                                    </li>
+                                                                                    </ul>
+                                            </li>
+                                    <li class="mb-1">
+                        <a
+                            href="/documentation/dsl/csv#dsl-functions"
+                            class=""
+
+                        >CSV</a>
+                                            </li>
+                                    <li class="mb-1">
+                        <a
+                            href="/documentation/dsl/doctrine#dsl-functions"
+                            class=""
+
+                        >Doctrine</a>
+                                            </li>
+                                    <li class="mb-1">
+                        <a
+                            href="/documentation/dsl/elastic%20search#dsl-functions"
+                            class=""
+
+                        >Elastic Search</a>
+                                            </li>
+                                    <li class="mb-1">
+                        <a
+                            href="/documentation/dsl/google%20sheet#dsl-functions"
+                            class=""
+
+                        >Google Sheet</a>
+                                            </li>
+                                    <li class="mb-1">
+                        <a
+                            href="/documentation/dsl/json#dsl-functions"
+                            class=""
+
+                        >JSON</a>
+                                            </li>
+                                    <li class="mb-1">
+                        <a
+                            href="/documentation/dsl/meilisearch#dsl-functions"
+                            class=""
+
+                        >MeiliSearch</a>
+                                            </li>
+                                    <li class="mb-1">
+                        <a
+                            href="/documentation/dsl/parquet#dsl-functions"
+                            class=""
+
+                        >Parquet</a>
+                                            </li>
+                                    <li class="mb-1">
+                        <a
+                            href="/documentation/dsl/text#dsl-functions"
+                            class=""
+
+                        >Text</a>
+                                            </li>
+                            </ul>
+        </div>
+        <div class="sm:col-span-5">
+            <h1 id="dsl-functions" class="font-bold text-4xl mb-4">DSL Functions</h1>
+            <hr class="text-blue-100 my-4 border-t-2 rounded" />
+            <p class="mb-2 text-sm italic">
+                DSL stands for Domain Specific Language. In the case of Flow, the DSL is used to define simple functions that can be used to transform data.
+                Most of those functions are initializing a new instance of a class under the hood since Flow is fully object-oriented.
+                Please look at the <a href="/data_frame/data_frame/#example">examples</a> below to get a better understanding of how to use the DSL functions.
+            </p>
+                                                <h2 id="type-data frame" class="font-bold text-2xl mb-2">
+                        <a href="#type-data frame" class="text-white">
+                            Data frame
+                        </a>
+                    </h2>
+                    <hr class="text-blue-100 my-4 border-t-2 rounded" />
+                                            <h4 class="mb-2" id="dsl-append">
+                            <a href="#dsl-append" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                append
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">append() : SaveMode</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_to_row">
+                            <a href="#dsl-array_to_row" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_to_row
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param array&lt;array&lt;mixed&gt;&gt;|array&lt;mixed|string&gt; $data
+ * @param array&lt;Partition&gt;|Partitions $partitions
+ */
+array_to_row(array $data, EntryFactory $entryFactory, Partitions|array $partitions, ?Schema $schema) : Row</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_to_rows">
+                            <a href="#dsl-array_to_rows" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_to_rows
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param array&lt;array&lt;mixed&gt;&gt;|array&lt;mixed|string&gt; $data
+ * @param array&lt;Partition&gt;|Partitions $partitions
+ */
+array_to_rows(array $data, EntryFactory $entryFactory, Partitions|array $partitions, ?Schema $schema) : Rows</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-col">
+                            <a href="#dsl-col" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                col
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * An alias for `ref`.
+ */
+col(string $entry) : EntryReference</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-compare_entries_by_name">
+                            <a href="#dsl-compare_entries_by_name" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                compare_entries_by_name
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">compare_entries_by_name(Order $order) : Comparator</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-compare_entries_by_name_desc">
+                            <a href="#dsl-compare_entries_by_name_desc" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                compare_entries_by_name_desc
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">compare_entries_by_name_desc() : Comparator</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-compare_entries_by_type">
+                            <a href="#dsl-compare_entries_by_type" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                compare_entries_by_type
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param array&lt;class-string&lt;Entry&gt;, int&gt; $priorities
+ */
+compare_entries_by_type(array $priorities, Order $order) : Comparator</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-compare_entries_by_type_and_name">
+                            <a href="#dsl-compare_entries_by_type_and_name" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                compare_entries_by_type_and_name
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param array&lt;class-string&lt;Entry&gt;, int&gt; $priorities
+ */
+compare_entries_by_type_and_name(array $priorities, Order $order) : Comparator</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-compare_entries_by_type_desc">
+                            <a href="#dsl-compare_entries_by_type_desc" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                compare_entries_by_type_desc
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param array&lt;class-string&lt;Entry&gt;, int&gt; $priorities
+ */
+compare_entries_by_type_desc(array $priorities) : Comparator</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-config">
+                            <a href="#dsl-config" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                config
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">config() : Config</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-config_builder">
+                            <a href="#dsl-config_builder" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                config_builder
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">config_builder() : ConfigBuilder</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-data_frame">
+                            <a href="#dsl-data_frame" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                data_frame
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">data_frame(Config|ConfigBuilder|null $config) : Flow</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-df">
+                            <a href="#dsl-df" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                df
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * Alias for data_frame() : Flow.
+ */
+df(Config|ConfigBuilder|null $config) : Flow</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-dom_element_to_string">
+                            <a href="#dsl-dom_element_to_string" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                dom_element_to_string
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">dom_element_to_string(DOMElement $element, bool $format_output, bool $preserver_white_space) : string|false</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-entries">
+                            <a href="#dsl-entries" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                entries
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">entries(Entry $entries) : Entries</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-exception_if_exists">
+                            <a href="#dsl-exception_if_exists" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                exception_if_exists
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">exception_if_exists() : SaveMode</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-execution_context">
+                            <a href="#dsl-execution_context" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                execution_context
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">execution_context(?Config $config) : FlowContext</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-filesystem_cache">
+                            <a href="#dsl-filesystem_cache" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                filesystem_cache
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">filesystem_cache(Path|string|null $cache_dir, Filesystem $filesystem, Serializer $serializer) : FilesystemCache</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-flow_context">
+                            <a href="#dsl-flow_context" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                flow_context
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">flow_context(?Config $config) : FlowContext</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-generate_random_int">
+                            <a href="#dsl-generate_random_int" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                generate_random_int
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">generate_random_int(int $start, int $end, NativePHPRandomValueGenerator $generator) : int</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-generate_random_string">
+                            <a href="#dsl-generate_random_string" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                generate_random_string
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">generate_random_string(int $length, NativePHPRandomValueGenerator $generator) : string</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-get_type">
+                            <a href="#dsl-get_type" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                get_type
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">get_type(?mixed $value) : Type</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-ignore">
+                            <a href="#dsl-ignore" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                ignore
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">ignore() : SaveMode</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-ignore_error_handler">
+                            <a href="#dsl-ignore_error_handler" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                ignore_error_handler
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">ignore_error_handler() : IgnoreError</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-is_type">
+                            <a href="#dsl-is_type" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                is_type
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param array&lt;string|Type&gt; $types
+ * @param mixed $value
+ */
+is_type(array $types, ?mixed $value) : bool</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-join_on">
+                            <a href="#dsl-join_on" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                join_on
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">join_on(Comparison|array $comparisons, string $joinPrefix) : Expression</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-overwrite">
+                            <a href="#dsl-overwrite" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                overwrite
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">overwrite() : SaveMode</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-print_rows">
+                            <a href="#dsl-print_rows" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                print_rows
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">print_rows(Rows $rows, int|bool $truncate, ?Formatter $formatter) : string</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-random_string">
+                            <a href="#dsl-random_string" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                random_string
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">random_string(ScalarFunction|int $length, RandomValueGenerator $generator) : RandomString</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-row">
+                            <a href="#dsl-row" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                row
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">row(Entry $entry) : Row</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-rows">
+                            <a href="#dsl-rows" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                rows
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">rows(Row $row) : Rows</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-rows_partitioned">
+                            <a href="#dsl-rows_partitioned" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                rows_partitioned
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">rows_partitioned(array $rows, Partitions|array $partitions) : Rows</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-row_number">
+                            <a href="#dsl-row_number" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                row_number
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">row_number() : RowNumber</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-skip_rows_handler">
+                            <a href="#dsl-skip_rows_handler" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                skip_rows_handler
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">skip_rows_handler() : SkipRows</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-throw_error_handler">
+                            <a href="#dsl-throw_error_handler" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                throw_error_handler
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">throw_error_handler() : ThrowError</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-window">
+                            <a href="#dsl-window" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                window
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">window() : Window</code></pre>                        </article>
+                                                                                    <h2 id="type-extractors" class="font-bold text-2xl mb-2">
+                        <a href="#type-extractors" class="text-white">
+                            Extractors
+                        </a>
+                    </h2>
+                    <hr class="text-blue-100 my-4 border-t-2 rounded" />
+                                            <h4 class="mb-2" id="dsl-chunks_from">
+                            <a href="#dsl-chunks_from" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                chunks_from
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param int&lt;1, max&gt; $chunk_size
+ */
+chunks_from(Extractor $extractor, int $chunk_size) : ChunkExtractor</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-files">
+                            <a href="#dsl-files" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                files
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">files(Path|string $directory) : FilesExtractor</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-from_all">
+                            <a href="#dsl-from_all" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                from_all
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">from_all(Extractor $extractors) : ChainExtractor</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-from_array">
+                            <a href="#dsl-from_array" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                from_array
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">from_array(iterable $array, ?Schema $schema) : ArrayExtractor</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-from_cache">
+                            <a href="#dsl-from_cache" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                from_cache
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">from_cache(string $id, ?Extractor $fallback_extractor, bool $clear) : CacheExtractor</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-from_data_frame">
+                            <a href="#dsl-from_data_frame" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                from_data_frame
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">from_data_frame(DataFrame $data_frame) : DataFrameExtractor</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-from_memory">
+                            <a href="#dsl-from_memory" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                from_memory
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">from_memory(Memory $memory) : MemoryExtractor</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-from_path_partitions">
+                            <a href="#dsl-from_path_partitions" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                from_path_partitions
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">from_path_partitions(Path|string $path) : PathPartitionsExtractor</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-from_pipeline">
+                            <a href="#dsl-from_pipeline" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                from_pipeline
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">from_pipeline(Pipeline $pipeline) : PipelineExtractor</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-from_rows">
+                            <a href="#dsl-from_rows" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                from_rows
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">from_rows(Rows $rows) : RowsExtractor</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-from_sequence_date_period">
+                            <a href="#dsl-from_sequence_date_period" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                from_sequence_date_period
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">from_sequence_date_period(string $entry_name, DateTimeInterface $start, DateInterval $interval, DateTimeInterface $end, int $options) : SequenceExtractor</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-from_sequence_date_period_recurrences">
+                            <a href="#dsl-from_sequence_date_period_recurrences" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                from_sequence_date_period_recurrences
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">from_sequence_date_period_recurrences(string $entry_name, DateTimeInterface $start, DateInterval $interval, int $recurrences, int $options) : SequenceExtractor</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-from_sequence_number">
+                            <a href="#dsl-from_sequence_number" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                from_sequence_number
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">from_sequence_number(string $entry_name, string|int|float $start, string|int|float $end, int|float $step) : SequenceExtractor</code></pre>                        </article>
+                                                                                    <h2 id="type-loaders" class="font-bold text-2xl mb-2">
+                        <a href="#type-loaders" class="text-white">
+                            Loaders
+                        </a>
+                    </h2>
+                    <hr class="text-blue-100 my-4 border-t-2 rounded" />
+                                            <h4 class="mb-2" id="dsl-to_branch">
+                            <a href="#dsl-to_branch" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                to_branch
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">to_branch(ScalarFunction $condition, Loader $loader) : Loader</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-to_callable">
+                            <a href="#dsl-to_callable" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                to_callable
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">to_callable(callable $callable) : CallbackLoader</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-to_memory">
+                            <a href="#dsl-to_memory" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                to_memory
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">to_memory(Memory $memory) : MemoryLoader</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-to_output">
+                            <a href="#dsl-to_output" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                to_output
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">to_output(int|bool $truncate, Output $output, Formatter $formatter, SchemaFormatter $schemaFormatter) : StreamLoader</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-to_stderr">
+                            <a href="#dsl-to_stderr" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                to_stderr
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">to_stderr(int|bool $truncate, Output $output, Formatter $formatter, SchemaFormatter $schemaFormatter) : StreamLoader</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-to_stdout">
+                            <a href="#dsl-to_stdout" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                to_stdout
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">to_stdout(int|bool $truncate, Output $output, Formatter $formatter, SchemaFormatter $schemaFormatter) : StreamLoader</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-to_stream">
+                            <a href="#dsl-to_stream" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                to_stream
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">to_stream(string $uri, int|bool $truncate, Output $output, string $mode, Formatter $formatter, SchemaFormatter $schemaFormatter) : StreamLoader</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-to_transformation">
+                            <a href="#dsl-to_transformation" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                to_transformation
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">to_transformation(Transformer $transformer, Loader $loader) : TransformerLoader</code></pre>                        </article>
+                                                                                                                <h2 id="type-entries" class="font-bold text-2xl mb-2">
+                        <a href="#type-entries" class="text-white">
+                            Entries
+                        </a>
+                    </h2>
+                    <hr class="text-blue-100 my-4 border-t-2 rounded" />
+                                            <h4 class="mb-2" id="dsl-array_entry">
+                            <a href="#dsl-array_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param array&lt;mixed&gt; $data
+ */
+array_entry(string $array, ?array $data) : ArrayEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-boolean_entry">
+                            <a href="#dsl-boolean_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                boolean_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">boolean_entry(string $name, ?bool $value) : BooleanEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-bool_entry">
+                            <a href="#dsl-bool_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                bool_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">bool_entry(string $name, ?bool $value) : BooleanEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-datetime_entry">
+                            <a href="#dsl-datetime_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                datetime_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">datetime_entry(string $name, DateTimeInterface|string|null $value) : DateTimeEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-enum_entry">
+                            <a href="#dsl-enum_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                enum_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">enum_entry(string $name, ?UnitEnum $enum) : EnumEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-float_entry">
+                            <a href="#dsl-float_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                float_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">float_entry(string $name, ?float $value) : FloatEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-integer_entry">
+                            <a href="#dsl-integer_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                integer_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">integer_entry(string $name, ?int $value) : IntegerEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-int_entry">
+                            <a href="#dsl-int_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                int_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">int_entry(string $name, ?int $value) : IntegerEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-json_entry">
+                            <a href="#dsl-json_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                json_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">json_entry(string $name, array|string|null $data) : JsonEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-json_object_entry">
+                            <a href="#dsl-json_object_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                json_object_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @throws InvalidArgumentException
+ */
+json_object_entry(string $name, array|string|null $data) : JsonEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-list_entry">
+                            <a href="#dsl-list_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                list_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">list_entry(string $name, ?array $value, ListType $type) : ListEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-map_entry">
+                            <a href="#dsl-map_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                map_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">map_entry(string $name, ?array $value, MapType $mapType) : MapEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-object_entry">
+                            <a href="#dsl-object_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                object_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">object_entry(string $name, ?object $data) : ObjectEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-obj_entry">
+                            <a href="#dsl-obj_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                obj_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">obj_entry(string $name, ?object $data) : ObjectEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-string_entry">
+                            <a href="#dsl-string_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                string_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">string_entry(string $name, ?string $value) : StringEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-structure_entry">
+                            <a href="#dsl-structure_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                structure_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">structure_entry(string $name, ?array $value, StructureType $type) : StructureEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-struct_entry">
+                            <a href="#dsl-struct_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                struct_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">struct_entry(string $name, ?array $value, StructureType $type) : StructureEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-str_entry">
+                            <a href="#dsl-str_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                str_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">str_entry(string $name, ?string $value) : StringEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-uuid_entry">
+                            <a href="#dsl-uuid_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                uuid_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">uuid_entry(string $name, Uuid|string|null $value) : UuidEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-xml_element_entry">
+                            <a href="#dsl-xml_element_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                xml_element_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">xml_element_entry(string $name, DOMElement|string|null $value) : XMLElementEntry</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-xml_entry">
+                            <a href="#dsl-xml_entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                xml_entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">xml_entry(string $name, DOMDocument|string|null $value) : XMLEntry</code></pre>                        </article>
+                                                                                    <h2 id="type-types" class="font-bold text-2xl mb-2">
+                        <a href="#type-types" class="text-white">
+                            Types
+                        </a>
+                    </h2>
+                    <hr class="text-blue-100 my-4 border-t-2 rounded" />
+                                            <h4 class="mb-2" id="dsl-structure_element">
+                            <a href="#dsl-structure_element" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                structure_element
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">structure_element(string $name, Type $type) : StructureElement</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-structure_type">
+                            <a href="#dsl-structure_type" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                structure_type
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param array&lt;StructureElement&gt; $elements
+ */
+structure_type(array $elements, bool $nullable) : StructureType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-struct_element">
+                            <a href="#dsl-struct_element" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                struct_element
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">struct_element(string $name, Type $type) : StructureElement</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-struct_type">
+                            <a href="#dsl-struct_type" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                struct_type
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param array&lt;StructureElement&gt; $elements
+ */
+struct_type(array $elements, bool $nullable) : StructureType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_array">
+                            <a href="#dsl-type_array" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_array
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_array(bool $empty, bool $nullable) : ArrayType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_boolean">
+                            <a href="#dsl-type_boolean" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_boolean
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_boolean(bool $nullable) : ScalarType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_callable">
+                            <a href="#dsl-type_callable" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_callable
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_callable(bool $nullable) : CallableType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_datetime">
+                            <a href="#dsl-type_datetime" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_datetime
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_datetime(bool $nullable) : DateTimeType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_enum">
+                            <a href="#dsl-type_enum" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_enum
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param class-string&lt;\UnitEnum&gt; $class
+ */
+type_enum(string $class, bool $nullable) : EnumType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_float">
+                            <a href="#dsl-type_float" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_float
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_float(bool $nullable) : ScalarType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_int">
+                            <a href="#dsl-type_int" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_int
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_int(bool $nullable) : ScalarType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_integer">
+                            <a href="#dsl-type_integer" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_integer
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_integer(bool $nullable) : ScalarType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_json">
+                            <a href="#dsl-type_json" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_json
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_json(bool $nullable) : JsonType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_list">
+                            <a href="#dsl-type_list" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_list
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_list(Type $element, bool $nullable) : ListType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_map">
+                            <a href="#dsl-type_map" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_map
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_map(ScalarType $key_type, Type $value_type, bool $nullable) : MapType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_null">
+                            <a href="#dsl-type_null" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_null
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_null() : NullType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_object">
+                            <a href="#dsl-type_object" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_object
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param class-string $class
+ */
+type_object(string $class, bool $nullable) : ObjectType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_resource">
+                            <a href="#dsl-type_resource" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_resource
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_resource(bool $nullable) : ResourceType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_string">
+                            <a href="#dsl-type_string" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_string
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_string(bool $nullable) : ScalarType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_structure">
+                            <a href="#dsl-type_structure" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_structure
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param array&lt;StructureElement&gt; $elements
+ */
+type_structure(array $elements, bool $nullable) : StructureType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_uuid">
+                            <a href="#dsl-type_uuid" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_uuid
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_uuid(bool $nullable) : UuidType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_xml">
+                            <a href="#dsl-type_xml" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_xml
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_xml(bool $nullable) : XMLType</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-type_xml_element">
+                            <a href="#dsl-type_xml_element" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                type_xml_element
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">type_xml_element(bool $nullable) : XMLElementType</code></pre>                        </article>
+                                                                                    <h2 id="type-schema" class="font-bold text-2xl mb-2">
+                        <a href="#type-schema" class="text-white">
+                            Schema
+                        </a>
+                    </h2>
+                    <hr class="text-blue-100 my-4 border-t-2 rounded" />
+                                            <h4 class="mb-2" id="dsl-array_schema">
+                            <a href="#dsl-array_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">array_schema(string $name, bool $empty, bool $nullable, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-bool_schema">
+                            <a href="#dsl-bool_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                bool_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">bool_schema(string $name, bool $nullable, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-datetime_schema">
+                            <a href="#dsl-datetime_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                datetime_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">datetime_schema(string $name, bool $nullable, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-enum_schema">
+                            <a href="#dsl-enum_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                enum_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param class-string&lt;\UnitEnum&gt; $type
+ */
+enum_schema(string $name, string $type, bool $nullable, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-float_schema">
+                            <a href="#dsl-float_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                float_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">float_schema(string $name, bool $nullable, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-int_schema">
+                            <a href="#dsl-int_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                int_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">int_schema(string $name, bool $nullable, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-json_schema">
+                            <a href="#dsl-json_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                json_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">json_schema(string $name, bool $nullable, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-list_schema">
+                            <a href="#dsl-list_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                list_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">list_schema(string $name, ListType $type, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-map_schema">
+                            <a href="#dsl-map_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                map_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">map_schema(string $name, MapType $type, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-null_schema">
+                            <a href="#dsl-null_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                null_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">null_schema(string $name, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-object_schema">
+                            <a href="#dsl-object_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                object_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">object_schema(string $name, ObjectType $type, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-print_schema">
+                            <a href="#dsl-print_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                print_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">print_schema(Schema $schema, ?SchemaFormatter $formatter) : string</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-schema">
+                            <a href="#dsl-schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">schema(Definition $definitions) : Schema</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-schema_evolving_matcher">
+                            <a href="#dsl-schema_evolving_matcher" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                schema_evolving_matcher
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">schema_evolving_matcher() : EvolvingSchemaMatcher</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-schema_from_json">
+                            <a href="#dsl-schema_from_json" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                schema_from_json
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">schema_from_json(string $schema) : Schema</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-schema_strict_matcher">
+                            <a href="#dsl-schema_strict_matcher" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                schema_strict_matcher
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">schema_strict_matcher() : StrictSchemaMatcher</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-schema_to_json">
+                            <a href="#dsl-schema_to_json" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                schema_to_json
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">schema_to_json(Schema $schema) : string</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-structure_schema">
+                            <a href="#dsl-structure_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                structure_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">structure_schema(string $name, StructureType $type, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-struct_schema">
+                            <a href="#dsl-struct_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                struct_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">struct_schema(string $name, StructureType $type, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-str_schema">
+                            <a href="#dsl-str_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                str_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">str_schema(string $name, bool $nullable, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-uuid_schema">
+                            <a href="#dsl-uuid_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                uuid_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">uuid_schema(string $name, bool $nullable, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-xml_element_schema">
+                            <a href="#dsl-xml_element_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                xml_element_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">xml_element_schema(string $name, bool $nullable, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-xml_schema">
+                            <a href="#dsl-xml_schema" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                xml_schema
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">xml_schema(string $name, bool $nullable, ?Metadata $metadata) : Definition</code></pre>                        </article>
+                                                                                    <h2 id="type-aggregating functions" class="font-bold text-2xl mb-2">
+                        <a href="#type-aggregating functions" class="text-white">
+                            Aggregating functions
+                        </a>
+                    </h2>
+                    <hr class="text-blue-100 my-4 border-t-2 rounded" />
+                                            <h4 class="mb-2" id="dsl-average">
+                            <a href="#dsl-average" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                average
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">average(Reference|string $ref) : Average</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-collect">
+                            <a href="#dsl-collect" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                collect
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">collect(Reference|string $ref) : Collect</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-collect_unique">
+                            <a href="#dsl-collect_unique" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                collect_unique
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">collect_unique(Reference|string $ref) : CollectUnique</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-count">
+                            <a href="#dsl-count" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                count
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">count(Reference $function) : Count</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-first">
+                            <a href="#dsl-first" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                first
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">first(Reference|string $ref) : First</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-last">
+                            <a href="#dsl-last" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                last
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">last(Reference|string $ref) : Last</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-max">
+                            <a href="#dsl-max" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                max
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">max(Reference|string $ref) : Max</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-min">
+                            <a href="#dsl-min" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                min
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">min(Reference|string $ref) : Min</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-sum">
+                            <a href="#dsl-sum" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                sum
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">sum(Reference|string $ref) : Sum</code></pre>                        </article>
+                                                                                    <h2 id="type-scalar functions" class="font-bold text-2xl mb-2">
+                        <a href="#type-scalar functions" class="text-white">
+                            Scalar functions
+                        </a>
+                    </h2>
+                    <hr class="text-blue-100 my-4 border-t-2 rounded" />
+                                            <h4 class="mb-2" id="dsl-all">
+                            <a href="#dsl-all" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                all
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">all(ScalarFunction $functions) : All</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-any">
+                            <a href="#dsl-any" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                any
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">any(ScalarFunction $values) : Any</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_exists">
+                            <a href="#dsl-array_exists" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_exists
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">array_exists(ScalarFunction|array $ref, ScalarFunction|string $path) : ArrayPathExists</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_expand">
+                            <a href="#dsl-array_expand" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_expand
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * Expands each value into entry, if there are more than one value, multiple rows will be created.
+ * Array keys are ignored, only values are used to create new rows.
+ *
+ * Before:
+ *   +--+-------------------+
+ *   |id|              array|
+ *   +--+-------------------+
+ *   | 1|{&quot;a&quot;:1,&quot;b&quot;:2,&quot;c&quot;:3}|
+ *   +--+-------------------+
+ *
+ * After:
+ *   +--+--------+
+ *   |id|expanded|
+ *   +--+--------+
+ *   | 1|       1|
+ *   | 1|       2|
+ *   | 1|       3|
+ *   +--+--------+
+ */
+array_expand(ScalarFunction $function, ArrayExpand $expand) : ArrayExpand</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_get">
+                            <a href="#dsl-array_get" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_get
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">array_get(ScalarFunction $ref, ScalarFunction|string $path) : ArrayGet</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_get_collection">
+                            <a href="#dsl-array_get_collection" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_get_collection
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">array_get_collection(ScalarFunction $ref, ScalarFunction|array $keys) : ArrayGetCollection</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_get_collection_first">
+                            <a href="#dsl-array_get_collection_first" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_get_collection_first
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">array_get_collection_first(ScalarFunction $ref, string $keys) : ArrayGetCollection</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_keys_style_convert">
+                            <a href="#dsl-array_keys_style_convert" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_keys_style_convert
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">array_keys_style_convert(ScalarFunction $ref, StringStyles|string $style) : ArrayKeysStyleConvert</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_key_rename">
+                            <a href="#dsl-array_key_rename" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_key_rename
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">array_key_rename(ScalarFunction $ref, ScalarFunction|string $path, ScalarFunction|string $newName) : ArrayKeyRename</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_merge">
+                            <a href="#dsl-array_merge" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_merge
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">array_merge(ScalarFunction|array $left, ScalarFunction|array $right) : ArrayMerge</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_merge_collection">
+                            <a href="#dsl-array_merge_collection" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_merge_collection
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">array_merge_collection(ScalarFunction|array $array) : ArrayMergeCollection</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_reverse">
+                            <a href="#dsl-array_reverse" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_reverse
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">array_reverse(ScalarFunction|array $function, ScalarFunction|bool $preserveKeys) : ArrayReverse</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_sort">
+                            <a href="#dsl-array_sort" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_sort
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">array_sort(ScalarFunction $function, ScalarFunction|Sort|null $sort_function, ScalarFunction|int|null $flags, ScalarFunction|bool $recursive) : ArraySort</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-array_unpack">
+                            <a href="#dsl-array_unpack" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                array_unpack
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * Unpacks each element of an array into a new entry, using the array key as the entry name.
+ *
+ * Before:
+ * +--+-------------------+
+ * |id|              array|
+ * +--+-------------------+
+ * | 1|{&quot;a&quot;:1,&quot;b&quot;:2,&quot;c&quot;:3}|
+ * | 2|{&quot;d&quot;:4,&quot;e&quot;:5,&quot;f&quot;:6}|
+ * +--+-------------------+
+ *
+ * After:
+ * +--+-----+-----+-----+-----+-----+
+ * |id|arr.b|arr.c|arr.d|arr.e|arr.f|
+ * +--+-----+-----+-----+-----+-----+
+ * | 1|    2|    3|     |     |     |
+ * | 2|     |     |    4|    5|    6|
+ * +--+-----+-----+-----+-----+-----+
+ */
+array_unpack(ScalarFunction|array $array, ScalarFunction|array $skip_keys, ScalarFunction|string|null $entry_prefix) : ArrayUnpack</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-between">
+                            <a href="#dsl-between" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                between
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">between(?mixed $value, ?mixed $lower_bound, ?mixed $upper_bound, ScalarFunction|Boundary $boundary) : Between</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-call_method">
+                            <a href="#dsl-call_method" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                call_method
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * @param array&lt;mixed&gt; $params
+ */
+call_method(object $object, ScalarFunction|string $method, array $params) : CallMethod</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-capitalize">
+                            <a href="#dsl-capitalize" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                capitalize
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">capitalize(ScalarFunction|string $value) : Capitalize</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-cast">
+                            <a href="#dsl-cast" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                cast
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">cast(?mixed $value, ScalarFunction|Type|string $type) : Cast</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-combine">
+                            <a href="#dsl-combine" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                combine
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">combine(ScalarFunction|array $keys, ScalarFunction|array $values) : Combine</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-concat">
+                            <a href="#dsl-concat" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                concat
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">concat(ScalarFunction|string $functions) : Concat</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-date_time_format">
+                            <a href="#dsl-date_time_format" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                date_time_format
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">date_time_format(ScalarFunction $ref, string $format) : DateTimeFormat</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-entry">
+                            <a href="#dsl-entry" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                entry
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">/**
+ * An alias for `ref`.
+ */
+entry(string $entry) : EntryReference</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-exists">
+                            <a href="#dsl-exists" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                exists
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">exists(ScalarFunction $ref) : Exists</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-hash">
+                            <a href="#dsl-hash" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                hash
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">hash(?mixed $value, Algorithm $algorithm) : Hash</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-list_ref">
+                            <a href="#dsl-list_ref" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                list_ref
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">list_ref(string $entry) : ListFunctions</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-lit">
+                            <a href="#dsl-lit" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                lit
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">lit(?mixed $value) : Literal</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-lower">
+                            <a href="#dsl-lower" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                lower
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">lower(ScalarFunction|string $value) : ToLower</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-not">
+                            <a href="#dsl-not" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                not
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">not(ScalarFunction $value) : Not</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-now">
+                            <a href="#dsl-now" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                now
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">now(DateTimeZone|ScalarFunction $time_zone) : Now</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-number_format">
+                            <a href="#dsl-number_format" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                number_format
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">number_format(ScalarFunction|int|float $value, ScalarFunction|int $decimals, ScalarFunction|string $decimal_separator, ScalarFunction|string $thousands_separator) : NumberFormat</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-optional">
+                            <a href="#dsl-optional" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                optional
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">optional(ScalarFunction $function) : Optional</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-ref">
+                            <a href="#dsl-ref" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                ref
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">ref(string $entry) : EntryReference</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-refs">
+                            <a href="#dsl-refs" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                refs
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">refs(Reference|string $entries) : References</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-regex">
+                            <a href="#dsl-regex" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                regex
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">regex(ScalarFunction|string $pattern, ScalarFunction|string $subject, ScalarFunction|int $flags, ScalarFunction|int $offset) : Regex</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-regex_all">
+                            <a href="#dsl-regex_all" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                regex_all
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">regex_all(ScalarFunction|string $pattern, ScalarFunction|string $subject, ScalarFunction|int $flags, ScalarFunction|int $offset) : RegexAll</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-regex_match">
+                            <a href="#dsl-regex_match" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                regex_match
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">regex_match(ScalarFunction|string $pattern, ScalarFunction|string $subject, ScalarFunction|int $flags, ScalarFunction|int $offset) : RegexMatch</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-regex_match_all">
+                            <a href="#dsl-regex_match_all" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                regex_match_all
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">regex_match_all(ScalarFunction|string $pattern, ScalarFunction|string $subject, ScalarFunction|int $flags, ScalarFunction|int $offset) : RegexMatchAll</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-regex_replace">
+                            <a href="#dsl-regex_replace" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                regex_replace
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">regex_replace(ScalarFunction|string $pattern, ScalarFunction|string $replacement, ScalarFunction|string $subject, ScalarFunction|int|null $limit) : RegexReplace</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-round">
+                            <a href="#dsl-round" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                round
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">round(ScalarFunction|int|float $value, ScalarFunction|int $precision, ScalarFunction|int $mode) : Round</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-sanitize">
+                            <a href="#dsl-sanitize" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                sanitize
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">sanitize(ScalarFunction|string $value, ScalarFunction|string $placeholder, ScalarFunction|int|null $skipCharacters) : Sanitize</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-size">
+                            <a href="#dsl-size" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                size
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">size(?mixed $value) : Size</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-split">
+                            <a href="#dsl-split" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                split
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">split(ScalarFunction|string $value, ScalarFunction|string $separator, ScalarFunction|int $limit) : Split</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-sprintf">
+                            <a href="#dsl-sprintf" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                sprintf
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">sprintf(ScalarFunction|string $format, ScalarFunction|string|int|float|null $args) : Sprintf</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-structure_ref">
+                            <a href="#dsl-structure_ref" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                structure_ref
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">structure_ref(string $entry) : StructureFunctions</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-to_date">
+                            <a href="#dsl-to_date" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                to_date
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">to_date(?mixed $ref, ScalarFunction|string $format, ScalarFunction|DateTimeZone $timeZone) : ToDate</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-to_date_time">
+                            <a href="#dsl-to_date_time" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                to_date_time
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">to_date_time(?mixed $ref, ScalarFunction|string $format, ScalarFunction|DateTimeZone $timeZone) : ToDateTime</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-to_timezone">
+                            <a href="#dsl-to_timezone" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                to_timezone
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">to_timezone(ScalarFunction|DateTimeInterface $value, ScalarFunction|DateTimeZone|string $timeZone) : ToTimeZone</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-ulid">
+                            <a href="#dsl-ulid" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                ulid
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">ulid(ScalarFunction|string|null $value) : Ulid</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-upper">
+                            <a href="#dsl-upper" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                upper
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">upper(ScalarFunction|string $value) : ToUpper</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-uuid_v4">
+                            <a href="#dsl-uuid_v4" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                uuid_v4
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">uuid_v4() : Uuid</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-uuid_v7">
+                            <a href="#dsl-uuid_v7" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                uuid_v7
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">uuid_v7(ScalarFunction|DateTimeInterface|null $value) : Uuid</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-when">
+                            <a href="#dsl-when" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                when
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">when(?mixed $condition, ?mixed $then, ?mixed $else) : When</code></pre>                        </article>
+                                                                                    <h2 id="type-window functions" class="font-bold text-2xl mb-2">
+                        <a href="#type-window functions" class="text-white">
+                            Window functions
+                        </a>
+                    </h2>
+                    <hr class="text-blue-100 my-4 border-t-2 rounded" />
+                                            <h4 class="mb-2" id="dsl-dense_rank">
+                            <a href="#dsl-dense_rank" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                dense_rank
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">dense_rank() : DenseRank</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-dens_rank">
+                            <a href="#dsl-dens_rank" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                dens_rank
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">dens_rank() : DenseRank</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-rank">
+                            <a href="#dsl-rank" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                rank
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">rank() : Rank</code></pre>                        </article>
+                                                                                    <h2 id="type-comparisons" class="font-bold text-2xl mb-2">
+                        <a href="#type-comparisons" class="text-white">
+                            Comparisons
+                        </a>
+                    </h2>
+                    <hr class="text-blue-100 my-4 border-t-2 rounded" />
+                                            <h4 class="mb-2" id="dsl-compare_all">
+                            <a href="#dsl-compare_all" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                compare_all
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">compare_all(Comparison $comparisons) : All</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-compare_any">
+                            <a href="#dsl-compare_any" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                compare_any
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">compare_any(Comparison $comparisons) : Any</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-equal">
+                            <a href="#dsl-equal" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                equal
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">equal(Reference|string $left, Reference|string $right) : Equal</code></pre>                        </article>
+                                            <h4 class="mb-2" id="dsl-identical">
+                            <a href="#dsl-identical" class="text-white">
+                                <img src="https://flow-php.com/assets/images/icons/link-f29f316ca9c7f9db626d88a73948709f.svg" width="16" height="16" alt="feature" class="inline">
+                                identical
+                            </a>
+                        </h4>
+                        <article class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
+                            <pre class="overflow-auto m-0 p-2"><code id="code" class="language-php !bg-transparent" data-controller="syntax-highlight">identical(Reference|string $left, Reference|string $right) : Identical</code></pre>                        </article>
+                                                        </div>
+    </div>
+</div>
+
+        <div class="bg-blue-200">
+    <section class="mx-auto max-w-screen-xl sm:flex justify-between items-center py-6 px-2 sm:px-4">
+        <div class="max-sm:mb-6 mr-6 whitespace-nowrap">
+            <h2 class="text-2xl font-semibold tracking-wide">Contributors</h2>
+            <a href="https://github.com/flow-php/flow/graphs/contributors" target="_blank" class="flex items-center text-white">
+                Join us on GitHub
+                <img src="https://flow-php.com/assets/images/icons/external-03423c578ef110d4d4f0083107996af5.svg" alt="external resource" width="16" height="16" class="ml-1">
+            </a>
+        </div>
+
+        <div class="grid gap-1 sm:gap-2 lg:gap-4 grid-cols-8 lg:grid-cols-12">
+                            <a href="https://github.com/norberttech" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/1921950?v=4&amp;s=128" alt="norberttech" width="56" height="56" title="norberttech" class="rounded-full">
+                </a>
+                            <a href="https://github.com/stloyd" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/67402?v=4&amp;s=128" alt="stloyd" width="56" height="56" title="stloyd" class="rounded-full">
+                </a>
+                            <a href="https://github.com/tomaszhanc" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/7013293?v=4&amp;s=128" alt="tomaszhanc" width="56" height="56" title="tomaszhanc" class="rounded-full">
+                </a>
+                            <a href="https://github.com/DawidSajdak" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/946972?v=4&amp;s=128" alt="DawidSajdak" width="56" height="56" title="DawidSajdak" class="rounded-full">
+                </a>
+                            <a href="https://github.com/owsiakl" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/9623965?v=4&amp;s=128" alt="owsiakl" width="56" height="56" title="owsiakl" class="rounded-full">
+                </a>
+                            <a href="https://github.com/flavioheleno" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/471860?v=4&amp;s=128" alt="flavioheleno" width="56" height="56" title="flavioheleno" class="rounded-full">
+                </a>
+                            <a href="https://github.com/rzarno" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/12570337?v=4&amp;s=128" alt="rzarno" width="56" height="56" title="rzarno" class="rounded-full">
+                </a>
+                            <a href="https://github.com/szepeviktor" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/952007?v=4&amp;s=128" alt="szepeviktor" width="56" height="56" title="szepeviktor" class="rounded-full">
+                </a>
+                            <a href="https://github.com/mleczakm" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/3474636?v=4&amp;s=128" alt="mleczakm" width="56" height="56" title="mleczakm" class="rounded-full">
+                </a>
+                            <a href="https://github.com/xaviermarchegay" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/658523?v=4&amp;s=128" alt="xaviermarchegay" width="56" height="56" title="xaviermarchegay" class="rounded-full">
+                </a>
+                            <a href="https://github.com/scyzoryck" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/8014727?v=4&amp;s=128" alt="scyzoryck" width="56" height="56" title="scyzoryck" class="rounded-full">
+                </a>
+                            <a href="https://github.com/alexislefebvre" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/2071331?v=4&amp;s=128" alt="alexislefebvre" width="56" height="56" title="alexislefebvre" class="rounded-full">
+                </a>
+                            <a href="https://github.com/peter279k" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/9021747?v=4&amp;s=128" alt="peter279k" width="56" height="56" title="peter279k" class="rounded-full">
+                </a>
+                            <a href="https://github.com/Wirone" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/600668?v=4&amp;s=128" alt="Wirone" width="56" height="56" title="Wirone" class="rounded-full">
+                </a>
+                            <a href="https://github.com/jpiatko" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/80686947?v=4&amp;s=128" alt="jpiatko" width="56" height="56" title="jpiatko" class="rounded-full">
+                </a>
+                            <a href="https://github.com/jguittard" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/5320213?v=4&amp;s=128" alt="jguittard" width="56" height="56" title="jguittard" class="rounded-full">
+                </a>
+                            <a href="https://github.com/voku" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/264695?v=4&amp;s=128" alt="voku" width="56" height="56" title="voku" class="rounded-full">
+                </a>
+                            <a href="https://github.com/drupol" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/252042?v=4&amp;s=128" alt="drupol" width="56" height="56" title="drupol" class="rounded-full">
+                </a>
+                            <a href="https://github.com/Wiktor6" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/24683748?v=4&amp;s=128" alt="Wiktor6" width="56" height="56" title="Wiktor6" class="rounded-full">
+                </a>
+                            <a href="https://github.com/inmanturbo" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/47095624?v=4&amp;s=128" alt="inmanturbo" width="56" height="56" title="inmanturbo" class="rounded-full">
+                </a>
+                    </div>
+    </section>
+</div>
+    </main>
+
+    <a
+        href="#main"
+        class="fixed bottom-4 right-4 bg-orange-200 text-white p-2 rounded-full shadow-lg hover:bg-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-100 focus:ring-opacity-50 sm:hidden opacity-0"
+        data-controller="scroll-to-top" data-action="click->scroll-to-top#scrollToTop"
+    >
+        <img src="https://flow-php.com/assets/images/icons/arrow-up-20d70af002ca1815b713be37ccf38607.svg" width="32" height="32" alt="scroll back to top" class="inline">
+    </a>
+
+    <footer class="text-center bg-orange-100">
+        <div class="py-4 mx-auto max-w-screen-xl">
+            <a href="https://github.com/flow-php">&copy; Copyright 2024 Flow PHP</a>
+        </div>
+    </footer>
+</body>
+</html>

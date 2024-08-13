@@ -4,5 +4,6 @@
     "htmx.org",
     "@symfony\/stimulus-bundle",
     "@hotwired\/stimulus",
-    "\/assets\/@symfony\/stimulus-bundle\/controllers.js"
+    "\/assets\/@symfony\/stimulus-bundle\/controllers.js",
+    "\/assets\/controllers\/scroll_to_top_controller.js"
 ]

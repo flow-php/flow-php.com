@@ -8,7 +8,11 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-f7321b33ead15a291aac83866ffcc879.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-fbcc42ecb6d725f4ea6815cad80a5ca4.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/scroll_to_top_controller.js": {
+        "path": "\/assets\/controllers\/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
         "type": "js"
     },
     "\/assets\/controllers\/all_links_external_controller.js": {
