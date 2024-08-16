@@ -24,7 +24,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/syntax_highlight_controller.js": {
-        "path": "\/assets\/controllers\/syntax_highlight_controller-4f09e8263434d18f8ec581100e2741d2.js",
+        "path": "\/assets\/controllers\/syntax_highlight_controller-18188b92826b820d5e085c168e04f8a6.js",
         "type": "js"
     },
     "\/assets\/prismjs\/themes\/prism-flow.css": {
@@ -85,6 +85,10 @@
     },
     "prismjs\/components\/prism-php.min.js": {
         "path": "\/assets\/vendor\/prismjs\/components\/prism-php.min-40d11e3bad4f2ce85f71cde26868e952.js",
+        "type": "js"
+    },
+    "prismjs\/components\/prism-json.min.js": {
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-json.min-547eb54b73faba145fb7981f07ceb520.js",
         "type": "js"
     }
 }
