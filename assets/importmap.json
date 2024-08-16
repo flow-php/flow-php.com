@@ -32,7 +32,7 @@
         "type": "css"
     },
     "\/assets\/prismjs\/plugins\/autolinker\/autolinker.js": {
-        "path": "\/assets\/prismjs\/plugins\/autolinker\/autolinker-2ee5ed3eb863740c8347ea8df77eaf0c.js",
+        "path": "\/assets\/prismjs\/plugins\/autolinker\/autolinker-1f4fe3cbf486385b6ffd1ad55ab1ad35.js",
         "type": "js"
     },
     "@symfony\/stimulus-bundle": {
