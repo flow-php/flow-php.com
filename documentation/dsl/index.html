@@ -16,13 +16,13 @@
     Most of those functions are initializing a new instance of a class under the hood since Flow is fully object-oriented.">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/documentation/dsl/CORE" />
+    <meta property="og:url" content="https://flow-php.com/documentation/dsl" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/documentation/dsl/CORE" />
+    <meta property="twitter:url" content="https://flow-php.com/documentation/dsl" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -195,39 +195,39 @@
                                     <li class="mb-1" data-dsl-module="core">
                         <a
                             href="/documentation/dsl#dsl-functions"
-                            class=""
+                            class="text-white "
 
                         >Core</a>
                                                 <ul class="list-disc pl-6 mt-2">
                                                                                                 <li class="text-sm">
-                                        <a href="#type-SCHEMA">Schema</a>
+                                        <a href="#type-schema">Schema</a>
                                     </li>
                                                                                                                                 <li class="text-sm">
-                                        <a href="#type-TYPE">Type</a>
+                                        <a href="#type-type">Type</a>
                                     </li>
                                                                                                                                 <li class="text-sm">
-                                        <a href="#type-ENTRY">Entries</a>
+                                        <a href="#type-entry">Entries</a>
                                     </li>
                                                                                                                                 <li class="text-sm">
-                                        <a href="#type-DATA_FRAME">Data Frame</a>
+                                        <a href="#type-data_frame">Data Frame</a>
                                     </li>
                                                                                                                                 <li class="text-sm">
-                                        <a href="#type-EXTRACTOR">Extractors</a>
+                                        <a href="#type-extractor">Extractors</a>
                                     </li>
                                                                                                                                 <li class="text-sm">
-                                        <a href="#type-AGGREGATING_FUNCTION">Aggregating Functions</a>
+                                        <a href="#type-aggregating_function">Aggregating Functions</a>
                                     </li>
                                                                                                                                 <li class="text-sm">
-                                        <a href="#type-SCALAR_FUNCTION">Scalar Functions</a>
+                                        <a href="#type-scalar_function">Scalar Functions</a>
                                     </li>
                                                                                                                                 <li class="text-sm">
-                                        <a href="#type-WINDOW_FUNCTION">Window Functions</a>
+                                        <a href="#type-window_function">Window Functions</a>
                                     </li>
                                                                                                                                 <li class="text-sm">
-                                        <a href="#type-COMPARISON">Comparisons</a>
+                                        <a href="#type-comparison">Comparisons</a>
                                     </li>
                                                                                                                                                                                             <li class="text-sm">
-                                        <a href="#type-LOADER">Loaders</a>
+                                        <a href="#type-loader">Loaders</a>
                                     </li>
                                                                                     </ul>
                                             </li>
@@ -332,8 +332,8 @@
                 Most of those functions are initializing a new instance of a class under the hood since Flow is fully object-oriented.
                 Please look at the <a href="/data_frame/data_frame/#example">examples</a> below to get a better understanding of how to use the DSL functions.
             </p>
-                                                <h2 id="type-Schema" class="font-bold text-2xl mb-2" data-dsl-type="Schema">
-                        <a href="#type-Schema" class="text-white">
+                                                <h2 id="type-schema" class="font-bold text-2xl mb-2" data-dsl-type="Schema">
+                        <a href="#type-schema" class="text-white">
                             SCHEMA
                         </a>
                     </h2>
@@ -801,8 +801,8 @@ enum_schema(string $name, string $type, bool $nullable, ?Metadata $metadata) : D
                             <div class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
                                 <pre class="overflow-auto !m-0"><code id="code" class="language-php" data-prismjs-no-auto-linker data-controller="syntax-highlight">xml_schema(string $name, bool $nullable, ?Metadata $metadata) : Definition</code></pre>                            </div>
                         </article>
-                                                                                    <h2 id="type-Type" class="font-bold text-2xl mb-2" data-dsl-type="Type">
-                        <a href="#type-Type" class="text-white">
+                                                                                    <h2 id="type-type" class="font-bold text-2xl mb-2" data-dsl-type="Type">
+                        <a href="#type-type" class="text-white">
                             TYPE
                         </a>
                     </h2>
@@ -1282,8 +1282,8 @@ type_structure(array $elements, bool $nullable) : StructureType</code></pre>    
                             <div class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
                                 <pre class="overflow-auto !m-0"><code id="code" class="language-php" data-prismjs-no-auto-linker data-controller="syntax-highlight">type_xml_element(bool $nullable) : XMLElementType</code></pre>                            </div>
                         </article>
-                                                                                    <h2 id="type-Entries" class="font-bold text-2xl mb-2" data-dsl-type="Entries">
-                        <a href="#type-Entries" class="text-white">
+                                                                                    <h2 id="type-entry" class="font-bold text-2xl mb-2" data-dsl-type="Entries">
+                        <a href="#type-entry" class="text-white">
                             ENTRY
                         </a>
                     </h2>
@@ -1714,8 +1714,8 @@ json_object_entry(string $name, array|string|null $data) : JsonEntry</code></pre
                             <div class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
                                 <pre class="overflow-auto !m-0"><code id="code" class="language-php" data-prismjs-no-auto-linker data-controller="syntax-highlight">xml_entry(string $name, DOMDocument|string|null $value) : XMLEntry</code></pre>                            </div>
                         </article>
-                                                                                    <h2 id="type-Data Frame" class="font-bold text-2xl mb-2" data-dsl-type="Data Frame">
-                        <a href="#type-Data Frame" class="text-white">
+                                                                                    <h2 id="type-data_frame" class="font-bold text-2xl mb-2" data-dsl-type="Data Frame">
+                        <a href="#type-data_frame" class="text-white">
                             DATA_FRAME
                         </a>
                     </h2>
@@ -2467,8 +2467,8 @@ is_type(array $types, ?mixed $value) : bool</code></pre>                        
                             <div class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
                                 <pre class="overflow-auto !m-0"><code id="code" class="language-php" data-prismjs-no-auto-linker data-controller="syntax-highlight">window() : Window</code></pre>                            </div>
                         </article>
-                                                                                    <h2 id="type-Extractors" class="font-bold text-2xl mb-2" data-dsl-type="Extractors">
-                        <a href="#type-Extractors" class="text-white">
+                                                                                    <h2 id="type-extractor" class="font-bold text-2xl mb-2" data-dsl-type="Extractors">
+                        <a href="#type-extractor" class="text-white">
                             EXTRACTOR
                         </a>
                     </h2>
@@ -2736,8 +2736,8 @@ chunks_from(Extractor $extractor, int $chunk_size) : ChunkExtractor</code></pre>
                             <div class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
                                 <pre class="overflow-auto !m-0"><code id="code" class="language-php" data-prismjs-no-auto-linker data-controller="syntax-highlight">from_sequence_number(string $entry_name, string|int|float $start, string|int|float $end, int|float $step) : SequenceExtractor</code></pre>                            </div>
                         </article>
-                                                                                    <h2 id="type-Aggregating Functions" class="font-bold text-2xl mb-2" data-dsl-type="Aggregating Functions">
-                        <a href="#type-Aggregating Functions" class="text-white">
+                                                                                    <h2 id="type-aggregating_function" class="font-bold text-2xl mb-2" data-dsl-type="Aggregating Functions">
+                        <a href="#type-aggregating_function" class="text-white">
                             AGGREGATING_FUNCTION
                         </a>
                     </h2>
@@ -2922,8 +2922,8 @@ chunks_from(Extractor $extractor, int $chunk_size) : ChunkExtractor</code></pre>
                             <div class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
                                 <pre class="overflow-auto !m-0"><code id="code" class="language-php" data-prismjs-no-auto-linker data-controller="syntax-highlight">sum(Reference|string $ref) : Sum</code></pre>                            </div>
                         </article>
-                                                                                    <h2 id="type-Scalar Functions" class="font-bold text-2xl mb-2" data-dsl-type="Scalar Functions">
-                        <a href="#type-Scalar Functions" class="text-white">
+                                                                                    <h2 id="type-scalar_function" class="font-bold text-2xl mb-2" data-dsl-type="Scalar Functions">
+                        <a href="#type-scalar_function" class="text-white">
                             SCALAR_FUNCTION
                         </a>
                     </h2>
@@ -4013,8 +4013,8 @@ entry(string $entry) : EntryReference</code></pre>                            </
                             <div class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
                                 <pre class="overflow-auto !m-0"><code id="code" class="language-php" data-prismjs-no-auto-linker data-controller="syntax-highlight">when(?mixed $condition, ?mixed $then, ?mixed $else) : When</code></pre>                            </div>
                         </article>
-                                                                                    <h2 id="type-Window Functions" class="font-bold text-2xl mb-2" data-dsl-type="Window Functions">
-                        <a href="#type-Window Functions" class="text-white">
+                                                                                    <h2 id="type-window_function" class="font-bold text-2xl mb-2" data-dsl-type="Window Functions">
+                        <a href="#type-window_function" class="text-white">
                             WINDOW_FUNCTION
                         </a>
                     </h2>
@@ -4079,8 +4079,8 @@ entry(string $entry) : EntryReference</code></pre>                            </
                             <div class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
                                 <pre class="overflow-auto !m-0"><code id="code" class="language-php" data-prismjs-no-auto-linker data-controller="syntax-highlight">rank() : Rank</code></pre>                            </div>
                         </article>
-                                                                                    <h2 id="type-Comparisons" class="font-bold text-2xl mb-2" data-dsl-type="Comparisons">
-                        <a href="#type-Comparisons" class="text-white">
+                                                                                    <h2 id="type-comparison" class="font-bold text-2xl mb-2" data-dsl-type="Comparisons">
+                        <a href="#type-comparison" class="text-white">
                             COMPARISON
                         </a>
                     </h2>
@@ -4165,8 +4165,8 @@ entry(string $entry) : EntryReference</code></pre>                            </
                             <div class="rounded shadow-2xl shadow-gray rounded border-gray border-2 mb-4">
                                 <pre class="overflow-auto !m-0"><code id="code" class="language-php" data-prismjs-no-auto-linker data-controller="syntax-highlight">identical(Reference|string $left, Reference|string $right) : Identical</code></pre>                            </div>
                         </article>
-                                                                                                                <h2 id="type-Loaders" class="font-bold text-2xl mb-2" data-dsl-type="Loaders">
-                        <a href="#type-Loaders" class="text-white">
+                                                                                                                <h2 id="type-loader" class="font-bold text-2xl mb-2" data-dsl-type="Loaders">
+                        <a href="#type-loader" class="text-white">
                             LOADER
                         </a>
                     </h2>
