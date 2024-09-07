@@ -16,7 +16,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/all_links_external_controller.js": {
-        "path": "\/assets\/controllers\/all_links_external_controller-ee822120135f8059dd46fcce63e38376.js",
+        "path": "\/assets\/controllers\/all_links_external_controller-3d9fa0aa855dc5722728d005bdf6ab1d.js",
         "type": "js"
     },
     "\/assets\/controllers\/clipboard_controller.js": {
@@ -32,7 +32,7 @@
         "type": "css"
     },
     "\/assets\/prismjs\/plugins\/autolinker\/autolinker.js": {
-        "path": "\/assets\/prismjs\/plugins\/autolinker\/autolinker-8820cce5db35feaad9a1b0ac23174f9f.js",
+        "path": "\/assets\/prismjs\/plugins\/autolinker\/autolinker-e906ddf9b7d89f169c9cf40a53e5605d.js",
         "type": "js"
     },
     "@symfony\/stimulus-bundle": {
