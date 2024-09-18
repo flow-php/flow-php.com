@@ -1,5 +1,5 @@
 {
-    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-fbcc42ecb6d725f4ea6815cad80a5ca4.js",
+    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-6ef62d63c1b157875bcc41c3ef809182.js",
     "@symfony\/stimulus-bundle\/loader.js": "\/assets\/@symfony\/stimulus-bundle\/loader-e1ee9ace0562f2e6a52301e4ccc8627d.js",
     "app.js": "\/assets\/app-f6b6b9453864ea635d158621b1bef659.js",
     "bootstrap.js": "\/assets\/bootstrap-d78d7e12c819dedf89372fb4824c072d.js",
@@ -39,7 +39,7 @@
     "images\/logo.svg": "\/assets\/images\/logo-3ed481e55faedcd874c34e4801929d00.svg",
     "prismjs\/plugins\/autolinker\/autolinker.js": "\/assets\/prismjs\/plugins\/autolinker\/autolinker-e906ddf9b7d89f169c9cf40a53e5605d.js",
     "prismjs\/themes\/prism-flow.css": "\/assets\/prismjs\/themes\/prism-flow-fd41d42cbe47222136f28692af336476.css",
-    "styles\/app.css": "\/assets\/styles\/app-30d368392cd50a4cd048d6048360c619.css",
+    "styles\/app.css": "\/assets\/styles\/app-07a75268e51ee4d572fba4e25dff041e.css",
     "styles\/changelog.css": "\/assets\/styles\/changelog-140c9dc3ab542002ac195827220fa968.css",
     "vendor\/@fontsource-variable\/cabin\/files\/cabin-latin-ext-wght-normal.woff2": "\/assets\/vendor\/@fontsource-variable\/cabin\/files\/cabin-latin-ext-wght-normal-2faa374eb2a80d6be629a356e68b73d7.woff2",
     "vendor\/@fontsource-variable\/cabin\/files\/cabin-latin-wght-normal.woff2": "\/assets\/vendor\/@fontsource-variable\/cabin\/files\/cabin-latin-wght-normal-866be39b45f5b5b8840cb93bc1069465.woff2",
