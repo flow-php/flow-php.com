@@ -191,9 +191,12 @@
 </div>
 
             <section id="changelog" class="py-10 px-2 sm:px-4 mx-auto max-w-screen-xl">
-        <h2>[Unreleased] - 2024-10-20</h2>
+        <h2>[Unreleased] - 2024-10-25</h2>
 <h3>Added</h3>
 <ul>
+<li>
+<a href="https://github.com/flow-php/flow/pull/1251">#1251</a> - <strong>composer script for building thrift definitions</strong> - <a href="https://github.com/norberttech">@norberttech</a>
+</li>
 <li>
 <a href="https://github.com/flow-php/flow/pull/1247">#1247</a> - <strong>command to convert files through cli</strong> - <a href="https://github.com/norberttech">@norberttech</a>
 </li>
@@ -212,6 +215,12 @@
 </ul>
 <h3>Changed</h3>
 <ul>
+<li>
+<a href="https://github.com/flow-php/flow/pull/1251">#1251</a> - <strong>Updated parquet thrift definitions</strong> - <a href="https://github.com/norberttech">@norberttech</a>
+</li>
+<li>
+<a href="https://github.com/flow-php/flow/pull/1251">#1251</a> - <strong>ParquetLoader will now make inferred schema nullable</strong> - <a href="https://github.com/norberttech">@norberttech</a>
+</li>
 <li>
 <a href="https://github.com/flow-php/flow/pull/1247">#1247</a> - <strong>CLI command options now comes with a --output / --input prefix</strong> - <a href="https://github.com/norberttech">@norberttech</a>
 </li>
@@ -233,6 +242,9 @@
 </ul>
 <h3>Fixed</h3>
 <ul>
+<li>
+<a href="https://github.com/flow-php/flow/pull/1251">#1251</a> - <strong>Setting repetition level based on flow schema definition in parquet converter</strong> - <a href="https://github.com/norberttech">@norberttech</a>
+</li>
 <li>
 <a href="https://github.com/flow-php/flow/pull/1248">#1248</a> - <strong>Unified behavior of first/last aggregations to prevent columns conflicts when doing aggregation and grouping by the same column</strong> - <a href="https://github.com/norberttech">@norberttech</a>
 </li>
