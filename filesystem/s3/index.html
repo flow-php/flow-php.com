@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
 
-    <title>Flow PHP - Data frame - Create columns - Example</title>
-    <meta property="og:title" content="Flow PHP - Data frame - Create columns - Example" />
-    <meta name="twitter:title" content="Flow PHP - Data frame - Create columns - Example" >
+    <title>Flow PHP - Filesystem - S3 - Example</title>
+    <meta property="og:title" content="Flow PHP - Filesystem - S3 - Example" />
+    <meta name="twitter:title" content="Flow PHP - Filesystem - S3 - Example" >
 
-    <meta name="description" content="Code example showing create columns data frame.">
-    <meta property="og:description" content="Code example showing create columns data frame.">
-    <meta name="twitter:description" content="Code example showing create columns data frame.">
+    <meta name="description" content="Code example showing s3 filesystem.">
+    <meta property="og:description" content="Code example showing s3 filesystem.">
+    <meta name="twitter:description" content="Code example showing s3 filesystem.">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/data_frame/create_columns/" />
+    <meta property="og:url" content="https://flow-php.com/filesystem/s3/" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/data_frame/create_columns/" />
+    <meta property="twitter:url" content="https://flow-php.com/filesystem/s3/" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -199,7 +199,7 @@
                         </a>
                     </li>
                                     <li class="grow">
-                        <a href="/data_frame/#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                        <a href="/data_frame/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
                             Data frame
                         </a>
                     </li>
@@ -209,7 +209,7 @@
                         </a>
                     </li>
                                     <li class="grow">
-                        <a href="/filesystem/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                        <a href="/filesystem/#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
                             Filesystem
                         </a>
                     </li>
@@ -245,51 +245,27 @@
             <nav>
                 <ul class="flex whitespace-nowrap overflow-auto py-4">
                                             <li>
-                            <a href="/data_frame/data_frame/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/filesystem/local/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Data frame
+                                Local
                             </a>
                         </li>
                                             <li>
-                            <a href="/data_frame/create_columns/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/filesystem/azure/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Create columns
+                                Azure
                             </a>
                         </li>
                                             <li>
-                            <a href="/data_frame/rename_columns/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/filesystem/s3/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Rename columns
+                                S3
                             </a>
                         </li>
                                             <li>
-                            <a href="/data_frame/batch_size/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/filesystem/stdout/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Batch size
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="/data_frame/collect/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Collect
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="/data_frame/cache/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Cache
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="/data_frame/overwrite/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Overwrite
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="/data_frame/reorder_columns/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
-                                <img src="https://flow-php.com/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
-                                Reorder columns
+                                Stdout
                             </a>
                         </li>
                                     </ul>
@@ -301,15 +277,7 @@
                              class="rounded px-4 pt-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative mb-10"
                             data-controller="all-links-external"
                     >
-                        <p>To create new columns (row entries) we always use <code>DataFrame::withEntry(string $entryName, ScalarFunction|WindowFunction $ref)</code> method.<br />
-We can create new entry by providing a unique <code>$entryName</code>, if the entry already exists it will be replaced.</p>
-<p>As a second argument we can provide a static value or a function that will be evaluated for each row.</p>
-<ul>
-<li>
-<code>DataFrame::withEntry('number', lit(5))</code> - creates a new column with a constant value of 5</li>
-<li>
-<code>DataFrame::withEntry('is_odd', ref('another_column')-&gt;isOdd())</code> - creates a new column that checks if the value of <code>another_column</code> in is odd</li>
-</ul>
+                        <p>S3 or any S3 like filesystem is coming soon!</p>
 
                     </article>
                 
@@ -317,34 +285,9 @@ We can create new entry by providing a unique <code>$entryName</code>, if the en
 
 declare(strict_types=1);
 
-use function Flow\ETL\DSL\{data_frame, from_array, lit, ref, to_stream};
-
-require __DIR__ . &#039;/../../../autoload.php&#039;;
-
-data_frame()
-    -&gt;read(from_array([
-        [&#039;id&#039; =&gt; 1, &#039;name&#039; =&gt; &#039;Norbert&#039;],
-        [&#039;id&#039; =&gt; 2, &#039;name&#039; =&gt; &#039;John&#039;],
-        [&#039;id&#039; =&gt; 3, &#039;name&#039; =&gt; &#039;Jane&#039;],
-    ]))
-    -&gt;withEntry(&#039;active&#039;, ref(&#039;id&#039;)-&gt;isOdd())
-    -&gt;withEntry(&#039;number&#039;, lit(5))
-    -&gt;collect()
-    -&gt;write(to_stream(__DIR__ . &#039;/output.txt&#039;, truncate: false))
-    -&gt;run();
+// Coming soon!
 </code></pre></div>            </div>
 
-                        <h2 class="text-xl mt-5 mb-5">Output</h2>
-            <div id="output" class="relative">
-                <button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#output" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><pre class="rounded p-4 shadow-2xl shadow-gray rounded border-gray border-2"><code id="output" class="language-bash overflow-auto" data-controller="syntax-highlight">+----+---------+--------+--------+
-| id |    name | active | number |
-+----+---------+--------+--------+
-|  1 | Norbert |   true |      5 |
-|  2 |    John |  false |      5 |
-|  3 |    Jane |   true |      5 |
-+----+---------+--------+--------+
-3 rows
-</code></pre>            </div>
             
             <div class="mt-5">
                 <script src="https://giscus.app/client.js"
