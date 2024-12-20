@@ -13,7 +13,7 @@
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/documentation" />
+    <meta property="og:url" content="https://flow-php.com/documentation/components/cli/docs" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
@@ -21,7 +21,7 @@
     <meta name="google-adsense-account" content="ca-pub-2364202911639369">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/documentation" />
+    <meta property="twitter:url" content="https://flow-php.com/documentation/components/cli/docs" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -315,43 +315,285 @@
 
         </div>
         <div class="sm:col-span-5">
-            <p>Flow is a PHP based, strongly typed data processing framework with low memory footprint.</p>
-<p>Supported PHP versions:</p>
-<ul>
-<li>8.1 - going to be removed soon</li>
-<li>8.2</li>
-<li>8.3</li>
-<li>8.4</li>
-</ul>
-<h1>Key Features</h1>
-<ul>
-<li>
-<strong>Low memory footprint</strong>: Optimized for efficiency, Flow PHP ensures minimal memory usage, maintaining low and constant consumption regardless of data size. This makes it ideal for handling large datasets without compromising performance.</li>
-<li>
-<strong>Versatile Data Source Interaction</strong>: Whether your data resides in databases, spreadsheets, or online platforms, Flow PHP can seamlessly read from and write to any data source.</li>
-<li>
-<strong>Rich Collection of Data Transformation Functions</strong>: Transform your data with ease using a wide array of built-in functions. From simple mapping to complex manipulations, the framework covers all your data transformation needs.</li>
-<li>
-<strong>Direct Access to Remote Filesystems</strong>: Flow PHP provides the ability to interact directly with remote filesystems, facilitating efficient data handling and processing without the need for local storage.</li>
-<li>
-<strong>Advanced Data Partitioning</strong>: Efficiently partition your data for improved manageability and processing. This feature is crucial for handling large datasets or for processing data in distributed systems.</li>
-<li>
-<strong>Grouping &amp; Aggregating</strong>: Easily group and aggregate data to extract meaningful insights. This feature is particularly useful for summarizing datasets and performing statistical analysis.</li>
-<li>
-<strong>Remote File Processing</strong>: Process files stored remotely with the same ease as local files, enabling powerful and flexible data integration from various sources.</li>
-<li>
-<strong>Join Operations</strong>: Perform join operations between different datasets. This is essential for combining data from multiple sources, providing a more comprehensive view.</li>
-<li>
-<strong>Efficient Sorting</strong>: Sort your data based on specific criteria or conditions, ensuring that your datasets are organized precisely as needed.</li>
-<li>
-<strong>ASCII Table Display</strong>: Visualize your datasets as neatly formatted ASCII tables, making it easier to read and analyze data directly from the console.</li>
-<li>
-<strong>Schema Validation</strong>: Ensure data quality and consistency by validating your datasets against predefined schemas.</li>
-<li>
-<strong>Window Functions</strong>: Utilize window functions for advanced data analysis, allowing you to perform calculations across sets of rows that are related to the current row.</li>
-<li>
-<strong>Built-In Caching Mechanism</strong>: Improve performance with built-in caching, reducing processing time and enhancing overall efficiency, especially in repetitive data processing tasks.</li>
-</ul>
+            <h1>Flow Command Line Interface</h1>
+<h2>Installation</h2>
+<pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/cli
+</code></pre>
+<p>In some cases, it might make sense to install the CLI globally:</p>
+<pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer global require flow-php/cli
+</code></pre>
+<p>Now you can run the CLI using the <code>flow</code> command.</p>
+<h2>Commands</h2>
+<h3>Config</h3>
+<p>All Flow CLI Commands can be configured using <code>--config</code> option. The option accepts a path to a configuration file in php that returns an Config or ConfigBuilder instance.</p>
+<p><code>.flow.php</code></p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+use function Flow\ETL\DSL\config_builder;
+
+return config_builder()
+    -&gt;id('execution-id');
+</code></pre>
+<p><code>flow read --config .flow.php orders.csv</code></p>
+<p>One of the most common use cases is to mount custom filesystem into Flow fstab to access remote files through CLI.</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow
+Flow PHP - Data processing framework
+
+Usage:
+  command [options] [arguments]
+
+Options:
+  -h, --help            Display help for the given command. When no command is given display help for the list command
+  -q, --quiet           Do not output any message
+  -V, --version         Display this application version
+      --ansi|--no-ansi  Force (or disable --no-ansi) ANSI output
+  -n, --no-interaction  Do not ask any interactive question
+  -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+Available commands:
+  completion             Dump the shell completion script
+  help                   Display help for a command
+  list                   List commands
+ file
+  file:convert           [convert] Read data from a file.
+  file:read              [read] Read data from a file.
+  file:rows:count        [count] Read data schema from a file.
+  file:schema            [schema] Read data schema from a file.
+ parquet
+  parquet:read           [parquet:read:data] Read data from parquet file
+  parquet:read:metadata  Read metadata from parquet file
+ pipeline
+  pipeline:run           [run] Execute ETL pipeline from a php/json file.
+</code></pre>
+<h3><code>file:convert</code> alias <code>convert</code></h3>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">Description:
+  Read data from a file.
+
+Usage:
+  file:convert [options] [--] &lt;input-file&gt; &lt;output-file&gt;
+  convert
+
+Arguments:
+  input-file                                                         Path to a file that should be converted to another format.
+  output-file                                                        Path where converted file should be saved.
+
+Options:
+      --input-file-format=INPUT-FILE-FORMAT                          File format. When not set file format is guessed from input file path extension
+      --input-file-batch-size=INPUT-FILE-BATCH-SIZE                  Number of rows that are going to be read and displayed in one batch, when set to -1 whole dataset will be displayed at once [default: 100]
+      --input-file-limit=INPUT-FILE-LIMIT                            Limit number of rows that are going to be used to infer file schema, when not set whole file is analyzed
+      --output-file-format=OUTPUT-FILE-FORMAT                        File format. When not set file format is guessed from output file path extension
+      --output-overwrite[=OUTPUT-OVERWRITE]                          When set output file will be overwritten if exists
+      --schema-auto-cast[=SCHEMA-AUTO-CAST]                          When set Flow will try to automatically cast values to more precise data types, for example datetime strings will be casted to datetime type [default: false]
+      --analyze[=ANALYZE]                                            Collect processing statistics and print them. [default: false]
+      --config=CONFIG                                                Path to a local php file that MUST return instance of: Flow\ETL\Config
+      --input-json-pointer=INPUT-JSON-POINTER                        JSON Pointer to a subtree from which schema should be extracted
+      --input-json-pointer-entry-name                                When set, JSON Pointer will be used as an entry name in the schema
+      --input-csv-header[=INPUT-CSV-HEADER]                          When set, CSV header will be used as a schema
+      --input-csv-empty-to-null[=INPUT-CSV-EMPTY-TO-NULL]            When set, empty CSV values will be treated as NULL values
+      --input-csv-separator=INPUT-CSV-SEPARATOR                      CSV separator character
+      --input-csv-enclosure=INPUT-CSV-ENCLOSURE                      CSV enclosure character
+      --input-csv-escape=INPUT-CSV-ESCAPE                            CSV escape character
+      --output-csv-header[=OUTPUT-CSV-HEADER]                        When set, CSV header will be used as a schema
+      --output-csv-new-line-separator=OUTPUT-CSV-NEW-LINE-SEPARATOR  When set, empty CSV values will be treated as NULL values
+      --output-csv-separator=OUTPUT-CSV-SEPARATOR                    CSV separator character
+      --output-csv-enclosure=OUTPUT-CSV-ENCLOSURE                    CSV enclosure character
+      --output-csv-escape=OUTPUT-CSV-ESCAPE                          CSV escape character
+      --output-csv-date-time-format=OUTPUT-CSV-DATE-TIME-FORMAT      DateTime format for CSV output
+      --input-xml-node-path=INPUT-XML-NODE-PATH                      XML node path to a subtree from which schema should be extracted, for example /root/element This is not xpath, just a node names separated by slash
+      --input-xml-buffer-size=INPUT-XML-BUFFER-SIZE                  XML buffer size in bytes
+      --input-parquet-columns=INPUT-PARQUET-COLUMNS                  Columns to read from parquet file (multiple values allowed)
+      --input-parquet-offset=INPUT-PARQUET-OFFSET                    Offset to start reading from
+  -h, --help                                                         Display help for the given command. When no command is given display help for the list command
+  -q, --quiet                                                        Do not output any message
+  -V, --version                                                      Display this application version
+      --ansi|--no-ansi                                               Force (or disable --no-ansi) ANSI output
+  -n, --no-interaction                                               Do not ask any interactive question
+  -v|vv|vvv, --verbose                                               Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+</code></pre>
+<h3><code>file:schema</code> alias <code>schema</code></h3>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow file:schema --help
+Description:
+  Read data schema from a file.
+
+Usage:
+  file:schema [options] [--] &lt;input-file&gt;
+  schema
+
+Arguments:
+  input-file                                               Path to a file from which schema should be extracted.
+
+Options:
+      --input-file-format=INPUT-FILE-FORMAT                Source file format. When not set file format is guessed from source file path extension
+      --input-file-limit=INPUT-FILE-LIMIT                  Limit number of rows that are going to be used to infer file schema, when not set whole file is analyzed
+      --output-pretty                                      Pretty print schema
+      --output-table                                       Pretty schema as ascii table
+      --schema-auto-cast[=SCHEMA-AUTO-CAST]                When set Flow will try to automatically cast values to more precise data types, for example datetime strings will be casted to datetime type [default: false]
+      --config=CONFIG                                      Path to a local php file that MUST return instance of: Flow\ETL\Config
+      --input-json-pointer=INPUT-JSON-POINTER              JSON Pointer to a subtree from which schema should be extracted
+      --input-json-pointer-entry-name                      When set, JSON Pointer will be used as an entry name in the schema
+      --input-csv-header[=INPUT-CSV-HEADER]                When set, CSV header will be used as a schema
+      --input-csv-empty-to-null[=INPUT-CSV-EMPTY-TO-NULL]  When set, empty CSV values will be treated as NULL values
+      --input-csv-separator=INPUT-CSV-SEPARATOR            CSV separator character
+      --input-csv-enclosure=INPUT-CSV-ENCLOSURE            CSV enclosure character
+      --input-csv-escape=INPUT-CSV-ESCAPE                  CSV escape character
+      --input-xml-node-path=INPUT-XML-NODE-PATH            XML node path to a subtree from which schema should be extracted, for example /root/element This is not xpath, just a node names separated by slash
+      --input-xml-buffer-size=INPUT-XML-BUFFER-SIZE        XML buffer size in bytes
+      --input-parquet-columns=INPUT-PARQUET-COLUMNS        Columns to read from parquet file (multiple values allowed)
+      --input-parquet-offset=INPUT-PARQUET-OFFSET          Offset to start reading from
+  -h, --help                                               Display help for the given command. When no command is given display help for the list command
+  -q, --quiet                                              Do not output any message
+  -V, --version                                            Display this application version
+      --ansi|--no-ansi                                     Force (or disable --no-ansi) ANSI output
+  -n, --no-interaction                                     Do not ask any interactive question
+  -v|vv|vvv, --verbose                                     Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+</code></pre>
+<p>Example:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow schema orders.csv --table --auto-cast
++------------+----------+----------+-------------+----------+
+|       name |     type | nullable | scalar_type | metadata |
++------------+----------+----------+-------------+----------+
+|   order_id |     uuid |    false |             |       [] |
+| created_at | datetime |    false |             |       [] |
+| updated_at | datetime |    false |             |       [] |
+|   discount |   scalar |     true |      string |       [] |
+|    address |     json |    false |             |       [] |
+|      notes |     json |    false |             |       [] |
+|      items |     json |    false |             |       [] |
++------------+----------+----------+-------------+----------+
+7 rows
+</code></pre>
+<h3><code>file:read</code> alias <code>read</code></h3>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow read --help
+Description:
+  Read data from a file.
+
+Usage:
+  file:read [options] [--] &lt;input-file&gt;
+  read
+
+Arguments:
+  input-file                                               Path to a file from which schema should be extracted.
+
+Options:
+      --input-file-format=INPUT-FILE-FORMAT                File format. When not set file format is guessed from source file path extension
+      --input-file-batch-size=INPUT-FILE-BATCH-SIZE        Number of rows that are going to be read and displayed in one batch, when set to -1 whole dataset will be displayed at once [default: 100]
+      --input-file-limit=INPUT-FILE-LIMIT                  Limit number of rows that are going to be used to infer file schema, when not set whole file is analyzed
+      --output-truncate=OUTPUT-TRUNCATE                    Truncate output to given number of characters, when set to -1 output is not truncated at all [default: 20]
+      --schema-auto-cast[=SCHEMA-AUTO-CAST]                When set Flow will try to automatically cast values to more precise data types, for example datetime strings will be casted to datetime type [default: false]
+      --config=CONFIG                                      Path to a local php file that MUST return instance of: Flow\ETL\Config
+      --input-json-pointer=INPUT-JSON-POINTER              JSON Pointer to a subtree from which schema should be extracted
+      --input-json-pointer-entry-name                      When set, JSON Pointer will be used as an entry name in the schema
+      --input-csv-header[=INPUT-CSV-HEADER]                When set, CSV header will be used as a schema
+      --input-csv-empty-to-null[=INPUT-CSV-EMPTY-TO-NULL]  When set, empty CSV values will be treated as NULL values
+      --input-csv-separator=INPUT-CSV-SEPARATOR            CSV separator character
+      --input-csv-enclosure=INPUT-CSV-ENCLOSURE            CSV enclosure character
+      --input-csv-escape=INPUT-CSV-ESCAPE                  CSV escape character
+      --input-xml-node-path=INPUT-XML-NODE-PATH            XML node path to a subtree from which schema should be extracted, for example /root/element This is not xpath, just a node names separated by slash
+      --input-xml-buffer-size=INPUT-XML-BUFFER-SIZE        XML buffer size in bytes
+      --input-parquet-columns=INPUT-PARQUET-COLUMNS        Columns to read from parquet file (multiple values allowed)
+      --input-parquet-offset=INPUT-PARQUET-OFFSET          Offset to start reading from
+  -h, --help                                               Display help for the given command. When no command is given display help for the list command
+  -q, --quiet                                              Do not output any message
+  -V, --version                                            Display this application version
+      --ansi|--no-ansi                                     Force (or disable --no-ansi) ANSI output
+  -n, --no-interaction                                     Do not ask any interactive question
+  -v|vv|vvv, --verbose                                     Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+</code></pre>
+<h3><code>file:rows:count</code> alis <code>count</code></h3>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$ flow count --help
+Description:
+  Read data schema from a file.
+
+Usage:
+  file:rows:count [options] [--] &lt;input-file&gt;
+  count
+
+Arguments:
+  input-file                                               Path to a file from which schema should be extracted.
+
+Options:
+      --input-file-format=INPUT-FILE-FORMAT                Source file format. When not set file format is guessed from source file path extension
+      --input-file-limit=INPUT-FILE-LIMIT                  Limit number of rows that are going to be used to infer file schema, when not set whole file is analyzed
+      --config=CONFIG                                      Path to a local php file that MUST return instance of: Flow\ETL\Config
+      --input-json-pointer=INPUT-JSON-POINTER              JSON Pointer to a subtree from which schema should be extracted
+      --input-json-pointer-entry-name                      When set, JSON Pointer will be used as an entry name in the schema
+      --input-csv-header[=INPUT-CSV-HEADER]                When set, CSV header will be used as a schema
+      --input-csv-empty-to-null[=INPUT-CSV-EMPTY-TO-NULL]  When set, empty CSV values will be treated as NULL values
+      --input-csv-separator=INPUT-CSV-SEPARATOR            CSV separator character
+      --input-csv-enclosure=INPUT-CSV-ENCLOSURE            CSV enclosure character
+      --input-csv-escape=INPUT-CSV-ESCAPE                  CSV escape character
+      --input-xml-node-path=INPUT-XML-NODE-PATH            XML node path to a subtree from which schema should be extracted, for example /root/element This is not xpath, just a node names separated by slash
+      --input-xml-buffer-size=INPUT-XML-BUFFER-SIZE        XML buffer size in bytes
+      --input-parquet-columns=INPUT-PARQUET-COLUMNS        Columns to read from parquet file (multiple values allowed)
+      --input-parquet-offset=INPUT-PARQUET-OFFSET          Offset to start reading from
+  -h, --help                                               Display help for the given command. When no command is given display help for the list command
+  -q, --quiet                                              Do not output any message
+  -V, --version                                            Display this application version
+      --ansi|--no-ansi                                     Force (or disable --no-ansi) ANSI output
+  -n, --no-interaction                                     Do not ask any interactive question
+  -v|vv|vvv, --verbose                                     Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+</code></pre>
+<h3><code>parquet:read:metadata</code></h3>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow parquet:read:metadata --help
+Description:
+  Read metadata from parquet file
+
+Usage:
+  parquet:read:metadata [options] [--] &lt;file&gt;
+
+Arguments:
+  file                  path to parquet file
+
+Options:
+      --columns         Display column details
+      --row-groups      Display row group details
+      --column-chunks   Display column chunks details
+      --statistics      Display column chunks statistics details
+      --page-headers    Display page headers details
+  -h, --help            Display help for the given command. When no command is given display help for the list command
+  -q, --quiet           Do not output any message
+  -V, --version         Display this application version
+      --ansi|--no-ansi  Force (or disable --no-ansi) ANSI output
+  -n, --no-interaction  Do not ask any interactive question
+  -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+</code></pre>
+<h3><code>pipeline:run</code></h3>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow pipeline:run --help
+Description:
+  Execute ETL pipeline from a php/json file.
+
+Usage:
+  pipeline:run [options] [--] &lt;pipeline-file&gt;
+  run
+
+Arguments:
+  pipeline-file          Path to a php/json with DataFrame definition.
+
+Options:
+      --analyze=ANALYZE  Collect processing statistics and print them. [default: false]
+      --config=CONFIG Path to a local php file that MUST return instance of: Flow\ETL\Config      
+  -h, --help             Display help for the given command. When no command is given display help for the list command
+  -q, --quiet            Do not output any message
+  -V, --version          Display this application version
+      --ansi|--no-ansi   Force (or disable --no-ansi) ANSI output
+  -n, --no-interaction   Do not ask any interactive question
+  -v|vv|vvv, --verbose   Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+Help:
+  pipeline-file argument must point to a valid php file that returns DataFrame instance.
+  Make sure to not execute run() or any other trigger function.
+  
+  Example of pipeline.php:
+  &lt;?php
+  return df()
+      -&gt;read(from_array([
+          ['id' =&gt; 1, 'name' =&gt; 'User 01', 'active' =&gt; true],
+          ['id' =&gt; 2, 'name' =&gt; 'User 02', 'active' =&gt; false],
+          ['id' =&gt; 3, 'name' =&gt; 'User 03', 'active' =&gt; true],
+      ]))
+      -&gt;collect()
+      -&gt;write(to_output());
+</code></pre>
 
 
             <hr class="!mt-8 !mb-8"/>

@@ -13,7 +13,7 @@
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/documentation" />
+    <meta property="og:url" content="https://flow-php.com/documentation/components/core/building-blocks" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
@@ -21,7 +21,7 @@
     <meta name="google-adsense-account" content="ca-pub-2364202911639369">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/documentation" />
+    <meta property="twitter:url" content="https://flow-php.com/documentation/components/core/building-blocks" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -315,42 +315,114 @@
 
         </div>
         <div class="sm:col-span-5">
-            <p>Flow is a PHP based, strongly typed data processing framework with low memory footprint.</p>
-<p>Supported PHP versions:</p>
+            <h1>Building Blocks</h1>
 <ul>
-<li>8.1 - going to be removed soon</li>
-<li>8.2</li>
-<li>8.3</li>
-<li>8.4</li>
+<li>
+<a href="core">⬅️️ Back</a>
+</li>
 </ul>
-<h1>Key Features</h1>
+<p>Entries are the columns of the data frame, they are represented by the <a href="../../../src/core/etl/src/Flow/ETL/Row/Entry.php">Entry</a> interface.
+Group of Entries is called <code>Row</code>, it is represented by the <a href="../../../src/core/etl/src/Flow/ETL/Row.php">Row</a> class.
+Group of Rows is called <code>Rows</code>, it is represented by the <a href="../../../src/core/etl/src/Flow/ETL/Rows.php">Rows</a> class.</p>
+<p>Let's look at the following example:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+declare(strict_types=1);
+
+use function Flow\ETL\DSL\{bool_entry, int_entry, row, rows, str_entry};
+
+$rows = rows(
+    row(int_entry('id', 1), str_entry('name', 'user_01'), bool_entry('active', true)),
+    row(int_entry('id', 2), str_entry('name', 'user_02'), bool_entry('active', false)),
+    row(int_entry('id', 3), str_entry('name', 'user_03'), bool_entry('active', true)),
+    row(int_entry('id', 3), str_entry('name', 'user_04'), bool_entry('active', false)),
+);
+</code></pre>
+<p>Rows are the main data structure in Flow ETL, they’re used to represent data in the data frame.
+Extractors are yielding Rows and Loaders are saving Rows.</p>
+<p>The same can be achieved using the following code:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+declare(strict_types=1);
+
+use function Flow\ETL\DSL\array_to_rows;
+
+$rows = array_to_rows([
+    ['id' =&gt; 1, 'name' =&gt; 'user_01', 'active' =&gt; true],
+    ['id' =&gt; 2, 'name' =&gt; 'user_02', 'active' =&gt; false],
+    ['id' =&gt; 3, 'name' =&gt; 'user_03', 'active' =&gt; true],
+    ['id' =&gt; 4, 'name' =&gt; 'user_04', 'active' =&gt; false],
+]);
+</code></pre>
+<h2>Entry Types</h2>
 <ul>
 <li>
-<strong>Low memory footprint</strong>: Optimized for efficiency, Flow PHP ensures minimal memory usage, maintaining low and constant consumption regardless of data size. This makes it ideal for handling large datasets without compromising performance.</li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/BooleanEntry.php">Boolean</a>
+</li>
 <li>
-<strong>Versatile Data Source Interaction</strong>: Whether your data resides in databases, spreadsheets, or online platforms, Flow PHP can seamlessly read from and write to any data source.</li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/TimeEntry.php">Time</a>
+</li>
 <li>
-<strong>Rich Collection of Data Transformation Functions</strong>: Transform your data with ease using a wide array of built-in functions. From simple mapping to complex manipulations, the framework covers all your data transformation needs.</li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/DateEntry.php">Date</a>
+</li>
 <li>
-<strong>Direct Access to Remote Filesystems</strong>: Flow PHP provides the ability to interact directly with remote filesystems, facilitating efficient data handling and processing without the need for local storage.</li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/DateTimeEntry.php">DateTime</a>
+</li>
 <li>
-<strong>Advanced Data Partitioning</strong>: Efficiently partition your data for improved manageability and processing. This feature is crucial for handling large datasets or for processing data in distributed systems.</li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">Enum</a>
+</li>
 <li>
-<strong>Grouping &amp; Aggregating</strong>: Easily group and aggregate data to extract meaningful insights. This feature is particularly useful for summarizing datasets and performing statistical analysis.</li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/FloatEntry.php">Float</a>
+</li>
 <li>
-<strong>Remote File Processing</strong>: Process files stored remotely with the same ease as local files, enabling powerful and flexible data integration from various sources.</li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/IntegerEntry.php">Integer</a>
+</li>
 <li>
-<strong>Join Operations</strong>: Perform join operations between different datasets. This is essential for combining data from multiple sources, providing a more comprehensive view.</li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/JsonEntry.php">Json</a>
+</li>
 <li>
-<strong>Efficient Sorting</strong>: Sort your data based on specific criteria or conditions, ensuring that your datasets are organized precisely as needed.</li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/ListEntry.php">List</a>
+</li>
 <li>
-<strong>ASCII Table Display</strong>: Visualize your datasets as neatly formatted ASCII tables, making it easier to read and analyze data directly from the console.</li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/MapEntry.php">Map</a>
+</li>
 <li>
-<strong>Schema Validation</strong>: Ensure data quality and consistency by validating your datasets against predefined schemas.</li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/StringEntry.php">String</a>
+</li>
 <li>
-<strong>Window Functions</strong>: Utilize window functions for advanced data analysis, allowing you to perform calculations across sets of rows that are related to the current row.</li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">Structure</a>
+</li>
 <li>
-<strong>Built-In Caching Mechanism</strong>: Improve performance with built-in caching, reducing processing time and enhancing overall efficiency, especially in repetitive data processing tasks.</li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/UuidEntry.php">Uuid</a>
+</li>
+<li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/XMLEntry.php">XML</a>
+</li>
+<li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Entry/XMLElementEntry.php">XMLElement</a>
+</li>
+</ul>
+<p>Internally flow is using <a href="../../../src/core/etl/src/Flow/ETL/Row/Factory/NativeEntryFactory.php">EntryFactory</a> to create entries.
+It will try to detect and create the most appropriate entry type based on the value.</p>
+<p>Flow Entries are based on <a href="../../../src/core/etl/src/Flow/ETL/PHP/Type/Type.php">PHP Types</a>, which are divided into two groups:</p>
+<ul>
+<li>Native
+<ul>
+<li>Array</li>
+<li>Callable</li>
+<li>Enum</li>
+<li>Object</li>
+<li>Resource</li>
+<li>Scalar</li>
+</ul>
+</li>
+<li>Logical
+<ul>
+<li>List</li>
+<li>Map</li>
+<li>Structure</li>
+</ul>
+</li>
 </ul>
 
 

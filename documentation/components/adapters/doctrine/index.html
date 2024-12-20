@@ -13,7 +13,7 @@
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/documentation" />
+    <meta property="og:url" content="https://flow-php.com/documentation/components/adapters/doctrine" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
@@ -21,7 +21,7 @@
     <meta name="google-adsense-account" content="ca-pub-2364202911639369">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/documentation" />
+    <meta property="twitter:url" content="https://flow-php.com/documentation/components/adapters/doctrine" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -315,43 +315,81 @@
 
         </div>
         <div class="sm:col-span-5">
-            <p>Flow is a PHP based, strongly typed data processing framework with low memory footprint.</p>
-<p>Supported PHP versions:</p>
-<ul>
-<li>8.1 - going to be removed soon</li>
-<li>8.2</li>
-<li>8.3</li>
-<li>8.4</li>
-</ul>
-<h1>Key Features</h1>
+            <h1>ETL Adapter: Doctrine</h1>
 <ul>
 <li>
-<strong>Low memory footprint</strong>: Optimized for efficiency, Flow PHP ensures minimal memory usage, maintaining low and constant consumption regardless of data size. This makes it ideal for handling large datasets without compromising performance.</li>
-<li>
-<strong>Versatile Data Source Interaction</strong>: Whether your data resides in databases, spreadsheets, or online platforms, Flow PHP can seamlessly read from and write to any data source.</li>
-<li>
-<strong>Rich Collection of Data Transformation Functions</strong>: Transform your data with ease using a wide array of built-in functions. From simple mapping to complex manipulations, the framework covers all your data transformation needs.</li>
-<li>
-<strong>Direct Access to Remote Filesystems</strong>: Flow PHP provides the ability to interact directly with remote filesystems, facilitating efficient data handling and processing without the need for local storage.</li>
-<li>
-<strong>Advanced Data Partitioning</strong>: Efficiently partition your data for improved manageability and processing. This feature is crucial for handling large datasets or for processing data in distributed systems.</li>
-<li>
-<strong>Grouping &amp; Aggregating</strong>: Easily group and aggregate data to extract meaningful insights. This feature is particularly useful for summarizing datasets and performing statistical analysis.</li>
-<li>
-<strong>Remote File Processing</strong>: Process files stored remotely with the same ease as local files, enabling powerful and flexible data integration from various sources.</li>
-<li>
-<strong>Join Operations</strong>: Perform join operations between different datasets. This is essential for combining data from multiple sources, providing a more comprehensive view.</li>
-<li>
-<strong>Efficient Sorting</strong>: Sort your data based on specific criteria or conditions, ensuring that your datasets are organized precisely as needed.</li>
-<li>
-<strong>ASCII Table Display</strong>: Visualize your datasets as neatly formatted ASCII tables, making it easier to read and analyze data directly from the console.</li>
-<li>
-<strong>Schema Validation</strong>: Ensure data quality and consistency by validating your datasets against predefined schemas.</li>
-<li>
-<strong>Window Functions</strong>: Utilize window functions for advanced data analysis, allowing you to perform calculations across sets of rows that are related to the current row.</li>
-<li>
-<strong>Built-In Caching Mechanism</strong>: Improve performance with built-in caching, reducing processing time and enhancing overall efficiency, especially in repetitive data processing tasks.</li>
+<a href="../../introduction">⬅️️ Back</a>
+</li>
 </ul>
+<p>Flow PHP's Adapter Doctrine is an adept library designed to seamlessly integrate Doctrine ORM within your ETL (Extract,
+Transform, Load) workflows. This adapter is crucial for developers seeking to effortlessly interact with databases using
+Doctrine ORM, ensuring a streamlined and reliable data transformation process. By harnessing the Adapter Doctrine
+library, developers can tap into a robust set of features engineered for precise database interaction through Doctrine
+ORM, simplifying complex data transformations and enhancing data processing efficiency. The Adapter Doctrine library
+encapsulates a rich set of functionalities, offering a streamlined API for managing database tasks, which is crucial in
+contemporary data processing and transformation scenarios. This library epitomizes Flow PHP's commitment to delivering
+versatile and efficient data processing solutions, making it an excellent choice for developers dealing with database
+operations in large-scale and data-intensive environments. With Flow PHP's Adapter Doctrine, managing database
+interactions within your ETL workflows becomes a more simplified and efficient endeavor, perfectly aligning with the
+robust and adaptable nature of the Flow PHP ecosystem.</p>
+<h2>Installation</h2>
+<pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/etl-adapter-doctrine
+</code></pre>
+<h2>Description</h2>
+<p>Adapter for <a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl">ETL</a> using bulk operations from <a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/doctrine-dbal-bulk">Doctrine Dbal Bulk</a>.</p>
+<h2>Loader - DbalLoader</h2>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
+    -&gt;read(from_())
+    -&gt;write(new DbalLoader('your-table-name', $bulkSize = 100, ['url' =&gt; \getenv('PGSQL_DATABASE_URL')], ['skip_conflicts' =&gt; true]))
+    -&gt;run();
+</code></pre>
+<p>All supported types of <code>DbalBulkLoader</code> loading:</p>
+<ul>
+<li>
+<code>::insert(Connection $connection, string $table, QueryFactory $queryFactory = null) : self</code>
+</li>
+<li>
+<code>::insertOrSkipOnConflict(Connection $connection, string $table, QueryFactory $queryFactory = null) : self</code>
+</li>
+<li>
+<code>::insertOrUpdateOnConstraintConflict(Connection $connection, string $table, string $constraint, QueryFactory $queryFactory = null) : self</code>
+</li>
+</ul>
+<p>The <code>bulkSize</code> means how many rows you want to push to a database in a single <code>INSERT</code> query. Each extracted rows set
+is going to be split before inserting data into the database.</p>
+<h2>Extractor - DbalQuery</h2>
+<p>This simple but powerful extractor let you extract data from a single or multiple parametrized queries.</p>
+<h3>Single Query</h3>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
+    -&gt;read(DbalQueryExtractor::singleQuery($connection, "SELECT * FROM {$table} ORDER BY id"))
+    -&gt;write(to_())
+    -&gt;run()
+</code></pre>
+<h3>Single Parametrized Query</h3>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
+    -&gt;read(DbalQueryExtractor::singleQuery($connection, "SELECT * FROM {$table} WHERE id = :id", ['id' =&gt; 1]))
+    -&gt;write(to_())
+    -&gt;run()
+</code></pre>
+<h3>Multiple Parametrized Query</h3>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
+    -&gt;read(
+        new DbalQueryExtractor(
+            $connection
+            "SELECT * FROM {$table} ORDER BY id LIMIT :limit OFFSET :offset",
+            new ParametersSet(
+                ['limit' =&gt; 2, 'offset' =&gt; 0],
+                ['limit' =&gt; 2, 'offset' =&gt; 2],
+                ['limit' =&gt; 2, 'offset' =&gt; 4],
+                ['limit' =&gt; 2, 'offset' =&gt; 6],
+                ['limit' =&gt; 2, 'offset' =&gt; 8],
+            )
+        )
+    )
+    -&gt;write(to_())
+    -&gt;run()
+</code></pre>
+<p>In this case, query will be executed exactly five times, taking every time next entry of parameters from ParametersSet.</p>
 
 
             <hr class="!mt-8 !mb-8"/>

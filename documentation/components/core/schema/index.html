@@ -13,7 +13,7 @@
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/documentation" />
+    <meta property="og:url" content="https://flow-php.com/documentation/components/core/schema" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
@@ -21,7 +21,7 @@
     <meta name="google-adsense-account" content="ca-pub-2364202911639369">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/documentation" />
+    <meta property="twitter:url" content="https://flow-php.com/documentation/components/core/schema" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -315,43 +315,92 @@
 
         </div>
         <div class="sm:col-span-5">
-            <p>Flow is a PHP based, strongly typed data processing framework with low memory footprint.</p>
-<p>Supported PHP versions:</p>
-<ul>
-<li>8.1 - going to be removed soon</li>
-<li>8.2</li>
-<li>8.3</li>
-<li>8.4</li>
-</ul>
-<h1>Key Features</h1>
+            <h1>Schema</h1>
 <ul>
 <li>
-<strong>Low memory footprint</strong>: Optimized for efficiency, Flow PHP ensures minimal memory usage, maintaining low and constant consumption regardless of data size. This makes it ideal for handling large datasets without compromising performance.</li>
-<li>
-<strong>Versatile Data Source Interaction</strong>: Whether your data resides in databases, spreadsheets, or online platforms, Flow PHP can seamlessly read from and write to any data source.</li>
-<li>
-<strong>Rich Collection of Data Transformation Functions</strong>: Transform your data with ease using a wide array of built-in functions. From simple mapping to complex manipulations, the framework covers all your data transformation needs.</li>
-<li>
-<strong>Direct Access to Remote Filesystems</strong>: Flow PHP provides the ability to interact directly with remote filesystems, facilitating efficient data handling and processing without the need for local storage.</li>
-<li>
-<strong>Advanced Data Partitioning</strong>: Efficiently partition your data for improved manageability and processing. This feature is crucial for handling large datasets or for processing data in distributed systems.</li>
-<li>
-<strong>Grouping &amp; Aggregating</strong>: Easily group and aggregate data to extract meaningful insights. This feature is particularly useful for summarizing datasets and performing statistical analysis.</li>
-<li>
-<strong>Remote File Processing</strong>: Process files stored remotely with the same ease as local files, enabling powerful and flexible data integration from various sources.</li>
-<li>
-<strong>Join Operations</strong>: Perform join operations between different datasets. This is essential for combining data from multiple sources, providing a more comprehensive view.</li>
-<li>
-<strong>Efficient Sorting</strong>: Sort your data based on specific criteria or conditions, ensuring that your datasets are organized precisely as needed.</li>
-<li>
-<strong>ASCII Table Display</strong>: Visualize your datasets as neatly formatted ASCII tables, making it easier to read and analyze data directly from the console.</li>
-<li>
-<strong>Schema Validation</strong>: Ensure data quality and consistency by validating your datasets against predefined schemas.</li>
-<li>
-<strong>Window Functions</strong>: Utilize window functions for advanced data analysis, allowing you to perform calculations across sets of rows that are related to the current row.</li>
-<li>
-<strong>Built-In Caching Mechanism</strong>: Improve performance with built-in caching, reducing processing time and enhancing overall efficiency, especially in repetitive data processing tasks.</li>
+<a href="core">⬅️️ Back</a>
+</li>
 </ul>
+<p>Schema is a set of rules that defines how data is structured.
+It is used to validate data and to provide information about data structure.</p>
+<p>Before loading data to sink it might be a good idea to validate it against the schema.
+Row Schema is built from Entry Definitions, each definition is created from:</p>
+<ul>
+<li>
+<code>entry</code> - name of entry</li>
+<li>
+<code>type</code> - type of entry (class string)</li>
+<li>
+<code>nullable</code> - if <code>true</code> NullEntry with matching name will also pass the validation regardless of the type</li>
+<li>
+<code>constraint</code> - additional, flexible validation. Useful for checking if entry value is for example one of expected values</li>
+<li>
+<code>metadata</code> - additional key-value collection that can carry additional context for the definition</li>
+</ul>
+<p>There is more than one way to validate the schema, built in strategies are defined below:</p>
+<ul>
+<li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Schema/StrictValidator.php">StrictValidator</a> - each row must exactly match the schema, extra entries will fail validation</li>
+<li>
+<a href="../../../src/core/etl/src/Flow/ETL/Row/Schema/SelectiveValidator.php">SelectiveValidator</a> - only rows defined in the schema must match, any extra entry in row will be ignored</li>
+</ul>
+<p>By default, ETL is initializing <code>StrictValidator</code>, but it's possible to override it by passing second argument to <code>DataFrame::validate()</code> method.</p>
+<h2>Example - schema validation</h2>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+data_frame()
+    -&gt;read(from_array([
+        ['id' =&gt; 1, 'name' =&gt; 'Product 1', 'active' =&gt; true],
+        ['id' =&gt; 2, 'name' =&gt; 'Product 2', 'active' =&gt; false],
+        ['id' =&gt; 3, 'name' =&gt; 'Product 3', 'active' =&gt; true]
+    ]))
+    -&gt;validate(
+        schema(
+            int_schema('id', $nullable = false),
+            str_schema('name', $nullable = true),
+            bool_schema('active', $nullable = false, Metadata::empty()-&gt;add('key', 'value')),
+        )
+    )
+    -&gt;write(to_output(false, Output::rows_and_schema))
+    -&gt;run();
+</code></pre>
+<p>Output:</p>
+<pre class="language-console"><code class="language-console" data-controller="syntax-highlight">Fatal error: Uncaught Flow\ETL\Exception\SchemaValidationException: Given schema:
+schema
+|-- id: integer
+|-- name: ?string
+|-- active: boolean
+
+Does not match rows:
+schema
+|-- id: integer
+|-- name: string
+|-- active: boolean
+</code></pre>
+<h2>Example - display schema</h2>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+data_frame()
+    -&gt;read(from_array([
+        ['id' =&gt; 1, 'name' =&gt; 'Product 1', 'active' =&gt; true, 'tags' =&gt; ['tag1', 'tag2']],
+        ['id' =&gt; 2, 'name' =&gt; 'Product 2', 'active' =&gt; false, 'address' =&gt; ['city' =&gt; 'London', 'country' =&gt; 'UK']],
+        ['id' =&gt; 3, 'name' =&gt; 'Product 3', 'active' =&gt; true, 'tags' =&gt; ['tag1', 'tag2']],
+        ['id' =&gt; 3, 'name' =&gt; 'Product 3', 'active' =&gt; true]
+    ]))
+    -&gt;collect()
+    -&gt;write(to_output(false, Output::schema))
+    -&gt;run();
+</code></pre>
+<p>Output:</p>
+<pre class="language-console"><code class="language-console" data-controller="syntax-highlight">schema
+|-- id: integer
+|-- name: string
+|-- active: boolean
+|-- tags: list&lt;string&gt;
+|-- address: structure
+|    |-- city: string
+|    |-- country: string
+</code></pre>
 
 
             <hr class="!mt-8 !mb-8"/>

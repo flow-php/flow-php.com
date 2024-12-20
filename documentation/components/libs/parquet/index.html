@@ -13,7 +13,7 @@
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/documentation" />
+    <meta property="og:url" content="https://flow-php.com/documentation/components/libs/parquet" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
@@ -21,7 +21,7 @@
     <meta name="google-adsense-account" content="ca-pub-2364202911639369">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/documentation" />
+    <meta property="twitter:url" content="https://flow-php.com/documentation/components/libs/parquet" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -315,43 +315,289 @@
 
         </div>
         <div class="sm:col-span-5">
-            <p>Flow is a PHP based, strongly typed data processing framework with low memory footprint.</p>
-<p>Supported PHP versions:</p>
-<ul>
-<li>8.1 - going to be removed soon</li>
-<li>8.2</li>
-<li>8.3</li>
-<li>8.4</li>
-</ul>
-<h1>Key Features</h1>
+            <h1>Parquet</h1>
 <ul>
 <li>
-<strong>Low memory footprint</strong>: Optimized for efficiency, Flow PHP ensures minimal memory usage, maintaining low and constant consumption regardless of data size. This makes it ideal for handling large datasets without compromising performance.</li>
-<li>
-<strong>Versatile Data Source Interaction</strong>: Whether your data resides in databases, spreadsheets, or online platforms, Flow PHP can seamlessly read from and write to any data source.</li>
-<li>
-<strong>Rich Collection of Data Transformation Functions</strong>: Transform your data with ease using a wide array of built-in functions. From simple mapping to complex manipulations, the framework covers all your data transformation needs.</li>
-<li>
-<strong>Direct Access to Remote Filesystems</strong>: Flow PHP provides the ability to interact directly with remote filesystems, facilitating efficient data handling and processing without the need for local storage.</li>
-<li>
-<strong>Advanced Data Partitioning</strong>: Efficiently partition your data for improved manageability and processing. This feature is crucial for handling large datasets or for processing data in distributed systems.</li>
-<li>
-<strong>Grouping &amp; Aggregating</strong>: Easily group and aggregate data to extract meaningful insights. This feature is particularly useful for summarizing datasets and performing statistical analysis.</li>
-<li>
-<strong>Remote File Processing</strong>: Process files stored remotely with the same ease as local files, enabling powerful and flexible data integration from various sources.</li>
-<li>
-<strong>Join Operations</strong>: Perform join operations between different datasets. This is essential for combining data from multiple sources, providing a more comprehensive view.</li>
-<li>
-<strong>Efficient Sorting</strong>: Sort your data based on specific criteria or conditions, ensuring that your datasets are organized precisely as needed.</li>
-<li>
-<strong>ASCII Table Display</strong>: Visualize your datasets as neatly formatted ASCII tables, making it easier to read and analyze data directly from the console.</li>
-<li>
-<strong>Schema Validation</strong>: Ensure data quality and consistency by validating your datasets against predefined schemas.</li>
-<li>
-<strong>Window Functions</strong>: Utilize window functions for advanced data analysis, allowing you to perform calculations across sets of rows that are related to the current row.</li>
-<li>
-<strong>Built-In Caching Mechanism</strong>: Improve performance with built-in caching, reducing processing time and enhancing overall efficiency, especially in repetitive data processing tasks.</li>
+<a href="../../introduction">⬅️️ Back</a>
+</li>
 </ul>
+<h2>Installation</h2>
+<pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/parquet
+</code></pre>
+<h2>What is Parquet</h2>
+<p>Apache Parquet is an open source, column-oriented data file format designed for efficient data storage and retrieval.
+It provides efficient data compression and encoding schemes with enhanced performance to handle complex data in bulk.
+Parquet is available in multiple languages including Java, C++, Python, etc... <strong>Now also in PHP!</strong></p>
+<h2>Columnar Storage</h2>
+<p>Parquet stores data in a columnar format, but what does it means?</p>
+<p>Row-based format:</p>
+<hr />
+<p>| ID | Name  | Age |
+|----|-------|-----|
+| 1  | Alice | 20  |
+| 2  | Bob   | 25  |
+| 3  | Carol | 30  |</p>
+<h2>Column-based format:</h2>
+<p>| ID | 1 | 2 | 3 |
+|----|---|---|---|
+| Name | Alice | Bob | Carol |
+| Age  | 20    | 25  | 30    |</p>
+<p>This approach has several advantages:</p>
+<ul>
+<li>
+<strong>Compression</strong>: Since data is stored in columns, it is naturally compressed better.</li>
+<li>
+<strong>I/O</strong>: When querying a subset of columns, we can skip reading the other columns. This is especially useful when the columns are large.</li>
+<li>
+<strong>Encoding</strong>: Different encoding schemes can be used for different columns, depending on the data type and the distribution of values.</li>
+<li>
+<strong>Data skipping</strong>: When querying a subset of rows, we can skip reading the other rows. This is especially useful when the rows are large.</li>
+<li>
+<strong>Reading selective columns</strong>: When querying a subset of columns, we can skip reading the other columns. This is especially useful when the columns are large.</li>
+</ul>
+<h3>Parquet File Structure</h3>
+<pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">4-byte magic number "PAR1"
+&lt;Column 1 Chunk 1 + Column Metadata&gt;
+&lt;Column 2 Chunk 1 + Column Metadata&gt;
+...
+&lt;Column N Chunk 1 + Column Metadata&gt;
+&lt;Column 1 Chunk 2 + Column Metadata&gt;
+&lt;Column 2 Chunk 2 + Column Metadata&gt;
+...
+&lt;Column N Chunk 2 + Column Metadata&gt;
+...
+&lt;Column 1 Chunk M + Column Metadata&gt;
+&lt;Column 2 Chunk M + Column Metadata&gt;
+...
+&lt;Column N Chunk M + Column Metadata&gt;
+File Metadata
+4-byte length in bytes of file metadata (little endian)
+4-byte magic number "PAR1"
+</code></pre>
+<p><img src="https://parquet.apache.org/images/FileLayout.gif" alt="Parquet File Structure" /></p>
+<h2>Reading Parquet Files</h2>
+<p>The first thing we need to do is to create a reader.</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Reader;
+
+$reader = new Reader();
+</code></pre>
+<p>The Reader accepts two arguments:</p>
+<ul>
+<li>
+<code>$byteOrder</code> - by default set to <code>ByteOrder::LITTLE_ENDIAN</code>
+</li>
+<li>
+<code>$options</code> - a set of options that can be used to configure the reader.</li>
+</ul>
+<p>All available options are described in <a href="/src/lib/parquet/src/Flow/Parquet/Option.php">Option</a> enum.</p>
+<blockquote>
+<p>Please be aware that not all options are affecting reader.</p>
+</blockquote>
+<h3>Reader Options</h3>
+<ul>
+<li>
+<code>INT_96_AS_DATETIME</code> - default: <code>true</code> - if set to <code>true</code> then <code>INT96</code> values will be converted to <code>DateTime</code> objects.</li>
+</ul>
+<h3>Reading a file</h3>
+<p>Once we have reader we can read a file.</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Reader;
+
+$reader = new Reader();
+
+$file = $reader-&gt;read('path/to/file.parquet');
+$file = $reader-&gt;readStream(\fopen('path/to/file.parquet', 'rb'));
+</code></pre>
+<p>At this point, nothing is read yet. We just created a file object.</p>
+<p>There are several things we can read from parquet file:</p>
+<ul>
+<li>
+<code>ParquetFile::values(array $columns = [], ?int $limit = null, ?int $offset = null) : \Generator</code>
+</li>
+<li>
+<code>ParquetFile::metadata() : Metadata</code>
+</li>
+<li>
+<code>ParquetFile::schema() : Schema</code> - shortcut for <code>ParquetFile::metadata()-&gt;schema()</code>
+</li>
+</ul>
+<h3>Reading the whole file:</h3>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Reader;
+
+$reader = new Reader();
+
+$file = $reader-&gt;read('path/to/file.parquet');
+foreach ($file-&gt;values() as $row) {
+    // do something with $row
+}
+</code></pre>
+<h3>Reading selected columns</h3>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Reader;
+
+$reader = new Reader();
+
+$file = $reader-&gt;read('path/to/file.parquet');
+foreach ($file-&gt;values(["column_1", "column_2"]) as $row) {
+    // do something with $row
+}
+</code></pre>
+<h3>Pagination</h3>
+<blockquote>
+<p>[!NOTE]
+Paginating over parquet file is a bit tricky, especially if we want to keep memory usage low.
+To achieve the best results, we will need to play a bit with Writer options (covered later).</p>
+</blockquote>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Reader;
+
+$reader = new Reader();
+
+$file = $reader-&gt;read('path/to/file.parquet');
+foreach ($file-&gt;values(["column_1", "column_2"], limit: 100, offset: 1000) as $row) {
+    // do something with $row
+}
+</code></pre>
+<h2>Writing Parquet Files</h2>
+<p>Since parquet is a binary format, we need to provide a schema for the writer so it can know how
+to encode values in specific columns.</p>
+<p>Here is how we can create a schema:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">
+use Flow\Parquet\ParquetFile\Schema;
+use Flow\Parquet\ParquetFile\Schema\FlatColumn;
+use Flow\Parquet\ParquetFile\Schema\NestedColumn;
+
+$schema = Schema::with(
+    FlatColumn::int64('id'),
+    FlatColumn::string('name'),
+    FlatColumn::boolean('active'),
+    FlatColumn::dateTime('created_at'),
+    NestedColumn::list('list_of_int', Schema\ListElement::int32()),
+    NestedColumn::map('map_of_int_string', Schema\MapKey::int32(), Schema\MapValue::string()),
+    NestedColumn::struct('struct', [
+        FlatColumn::int64('id'),
+        FlatColumn::string('name'),
+        FlatColumn::boolean('active'),
+        FlatColumn::dateTime('created_at'),
+        NestedColumn::list('list_of_int', Schema\ListElement::int32()),
+        NestedColumn::map('map_of_int_string', Schema\MapKey::int32(), Schema\MapValue::string()),
+    ])
+);
+</code></pre>
+<p>Once we have a schema, we can create a writer.</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Writer;
+
+$writer = new Writer();
+</code></pre>
+<p>and write our data:</p>
+<pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">$writer-&gt;write(
+    $path,
+    $schema,
+    [
+        [
+            'id' =&gt; 1,
+            'name' =&gt; 'Alice',
+            ...
+        ]
+    ]
+);
+</code></pre>
+<p>This approach will open a parquet file, create a group writer, write all data and close the file.
+It requires to keep whole dataset in memory which usually is not the best approach.</p>
+<h3>Writing data in chunks</h3>
+<p>Before we can write a batch of rows, we need to open a file.</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$writer-&gt;open($path, $schema);
+$writer-&gt;writeBatch([$row, $row]);
+$writer-&gt;writeBatch([$row, $row]);
+$writer-&gt;writeBatch([$row, $row]);
+$writer-&gt;writeBatch([$row, $row]);
+$writer-&gt;writeBatch([$row, $row]);
+$writer-&gt;close();
+</code></pre>
+<p>We can also open a file for a resource:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$writer-&gt;openForStream($stream, $schema);
+</code></pre>
+<h3>Writing a single row</h3>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$writer-&gt;open($path, $schema);
+$writer-&gt;writeRow($row);
+$writer-&gt;writeRow($row);
+$writer-&gt;writeRow($row);
+$writer-&gt;writeRow($row);
+$writer-&gt;writeRow($row);
+$writer-&gt;close();
+</code></pre>
+<blockquote>
+<p>[!WARNING]
+At this point, schema evolution is not yet supported.
+We need to make sure that schema is the same as the one used to create a file.</p>
+</blockquote>
+<h3>Writer Options</h3>
+<ul>
+<li>
+<code>BYTE_ARRAY_TO_STRING</code> - default: <code>true</code> - if set to <code>true</code> then <code>BYTE_ARRAY</code> values will be converted to <code>string</code> objects.</li>
+<li>
+<code>DICTIONARY_PAGE_MIN_CARDINALITY_RATION</code> - default '0.4' - minimum ratio of unique values to total values for a column to have dictionary encoding.</li>
+<li>
+<code>DICTIONARY_PAGE_SIZE</code> - default: <code>1Mb</code> - maximum size of dictionary page.</li>
+<li>
+<code>GZIP_COMPRESSION_LEVEL</code> - default: <code>9</code> - compression level for GZIP compression (applied only when GZIP compression is enabled).</li>
+<li>
+<code>PAGE_SIZE_BYTES</code> - default: <code>8Kb</code> - maximum size of data page.</li>
+<li>
+<code>ROUND_NANOSECONDS</code> - default: <code>false</code> - Since PHP does not support nanoseconds precision for DateTime objects, when this options is set to true, reader will round nanoseconds to microseconds.</li>
+<li>
+<code>ROW_GROUP_SIZE_BYTES</code> - default: <code>8Mb</code> - maximum size of row group.</li>
+<li>
+<code>ROW_GROUP_SIZE_CHECK_INTERVAL</code> default: <code>1000</code> - number of rows to write before checking if row group size limit is reached.</li>
+<li>
+<code>VALIDATE_DATA</code> - default: <code>true</code> - if set to <code>true</code> then writer will validate data against schema.</li>
+<li>
+<code>WRITER_VERSION</code> - default <code>1</code> - tells writer which version of parquet format should be used.</li>
+</ul>
+<p>Two most important options that can heavily affect memory usage are:</p>
+<ul>
+<li>
+<code>ROW_GROUP_SIZE_BYTES</code>
+</li>
+<li>
+<code>ROW_GROUP_SIZE_CHECK_INTERVAL</code>
+</li>
+</ul>
+<p>Row Group Size defines pretty much how much data writer (but also reader) will need to keep in memory
+before flushing it to the file.
+Row group size check interval, defines how often writer will check if row group size limit is reached.
+If you set this value too high, writer might exceed row group size limit.</p>
+<p>By default tools like Spark or Hive are using 128-512Mb as a row group size.
+Which is great for big data, and quick processing in memory but not so great for PHP.</p>
+<p>For example, if you need to paginate over file with 1Gb of data, and you set row group size to 512Mb,
+you will need to keep at least 512Mb of data in memory at once.</p>
+<p>A Much better approach is to reduce the row group size to something closer to 1Mb, and row grpu size check interval to
+what your default page size should be - like for example 100 or 500 (that obviously depends on your data)</p>
+<p>This way you will keep memory usage low, and you will be able to paginate over big files without any issues.
+But it will take a little longer to write to these files, because writer has to flush and calculate statistic
+more frequently.</p>
+<p>Unfortunately, there is no one size fits all solution here.
+You will need to play a bit with those values to find the best one for your use case.</p>
+<h2>Compressions</h2>
+<p>Parquet supports several compression algorithms.</p>
+<ul>
+<li>
+<code>BROTLI</code> - supported if <a rel="noopener noreferrer" target="_blank" href="https://github.com/kjdev/php-ext-brotli">Brotli Extension</a> is installed</li>
+<li>
+<code>GZIP</code> - supported out of the box</li>
+<li>
+<code>LZ4</code> - supported if <a rel="noopener noreferrer" target="_blank" href="https://github.com/kjdev/php-ext-lz4">LZ4 Extension</a> is installed</li>
+<li>
+<code>LZ4_RAW</code> - supported if <a rel="noopener noreferrer" target="_blank" href="https://github.com/kjdev/php-ext-lz4">LZ4 Extension</a> is installed</li>
+<li>
+<code>LZO</code>  - not yet supported</li>
+<li>
+<code>SNAPPY</code> - supported - it's recommended to install <a rel="noopener noreferrer" target="_blank" href="https://github.com/kjdev/php-ext-snappy">Snappy Extension</a> - otherwise php implementation is used that is much slower than extension</li>
+<li>
+<code>UNCOMPRESSED</code> - supported out of the box</li>
+<li>
+<code>ZSTD</code> - supported if <a rel="noopener noreferrer" target="_blank" href="https://github.com/kjdev/php-ext-zstd">ZSTD Extension</a> is installed</li>
+</ul>
+<p>Obviously, compression is a trade-off between speed and size.
+If you want to achieve the best compression, you should use <code>GZIP</code> or <code>SNAPPY</code> which is a default compression algorithm.</p>
+<p>For not yet supported algorithms, please check our <a rel="noopener noreferrer" target="_blank" href="https://github.com/orgs/flow-php/projects/1">Roadmap</a> to understand when they will be supported.</p>
 
 
             <hr class="!mt-8 !mb-8"/>

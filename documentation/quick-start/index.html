@@ -13,7 +13,7 @@
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/documentation" />
+    <meta property="og:url" content="https://flow-php.com/documentation/quick-start" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
@@ -21,7 +21,7 @@
     <meta name="google-adsense-account" content="ca-pub-2364202911639369">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/documentation" />
+    <meta property="twitter:url" content="https://flow-php.com/documentation/quick-start" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -315,43 +315,124 @@
 
         </div>
         <div class="sm:col-span-5">
-            <p>Flow is a PHP based, strongly typed data processing framework with low memory footprint.</p>
-<p>Supported PHP versions:</p>
-<ul>
-<li>8.1 - going to be removed soon</li>
-<li>8.2</li>
-<li>8.3</li>
-<li>8.4</li>
-</ul>
-<h1>Key Features</h1>
+            <h1>Quick Start</h1>
 <ul>
 <li>
-<strong>Low memory footprint</strong>: Optimized for efficiency, Flow PHP ensures minimal memory usage, maintaining low and constant consumption regardless of data size. This makes it ideal for handling large datasets without compromising performance.</li>
-<li>
-<strong>Versatile Data Source Interaction</strong>: Whether your data resides in databases, spreadsheets, or online platforms, Flow PHP can seamlessly read from and write to any data source.</li>
-<li>
-<strong>Rich Collection of Data Transformation Functions</strong>: Transform your data with ease using a wide array of built-in functions. From simple mapping to complex manipulations, the framework covers all your data transformation needs.</li>
-<li>
-<strong>Direct Access to Remote Filesystems</strong>: Flow PHP provides the ability to interact directly with remote filesystems, facilitating efficient data handling and processing without the need for local storage.</li>
-<li>
-<strong>Advanced Data Partitioning</strong>: Efficiently partition your data for improved manageability and processing. This feature is crucial for handling large datasets or for processing data in distributed systems.</li>
-<li>
-<strong>Grouping &amp; Aggregating</strong>: Easily group and aggregate data to extract meaningful insights. This feature is particularly useful for summarizing datasets and performing statistical analysis.</li>
-<li>
-<strong>Remote File Processing</strong>: Process files stored remotely with the same ease as local files, enabling powerful and flexible data integration from various sources.</li>
-<li>
-<strong>Join Operations</strong>: Perform join operations between different datasets. This is essential for combining data from multiple sources, providing a more comprehensive view.</li>
-<li>
-<strong>Efficient Sorting</strong>: Sort your data based on specific criteria or conditions, ensuring that your datasets are organized precisely as needed.</li>
-<li>
-<strong>ASCII Table Display</strong>: Visualize your datasets as neatly formatted ASCII tables, making it easier to read and analyze data directly from the console.</li>
-<li>
-<strong>Schema Validation</strong>: Ensure data quality and consistency by validating your datasets against predefined schemas.</li>
-<li>
-<strong>Window Functions</strong>: Utilize window functions for advanced data analysis, allowing you to perform calculations across sets of rows that are related to the current row.</li>
-<li>
-<strong>Built-In Caching Mechanism</strong>: Improve performance with built-in caching, reducing processing time and enhancing overall efficiency, especially in repetitive data processing tasks.</li>
+<a href="installation">⬅️️ Back</a>
+</li>
 </ul>
+<p>At this point, you should have a working installation of Flow ETL. If you don't, please go back to the <a href="installation">Installation</a> section.</p>
+<p>Let's take a look at a simple example of how to use Flow ETL to read a CSV file, transform it and write it to another CSV file.</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+declare(strict_types=1);
+
+use function Flow\ETL\Adapter\CSV\{from_csv, to_csv};
+use function Flow\ETL\DSL\{data_frame, lit, ref, sum, to_output};
+use Flow\ETL\Filesystem\SaveMode;
+
+require __DIR__ . '/vendor/autoload.php';
+
+data_frame()
+    -&gt;read(from_csv(__DIR__ . '/orders_flow.csv'))
+    -&gt;select('created_at', 'total_price', 'discount')
+    -&gt;withEntry('created_at', ref('created_at')-&gt;cast('date')-&gt;dateFormat('Y/m'))
+    -&gt;withEntry('revenue', ref('total_price')-&gt;minus(ref('discount')))
+    -&gt;select('created_at', 'revenue')
+    -&gt;groupBy('created_at')
+    -&gt;aggregate(sum(ref('revenue')))
+    -&gt;sortBy(ref('created_at')-&gt;desc())
+    -&gt;withEntry('daily_revenue', ref('revenue_sum')-&gt;round(lit(2))-&gt;numberFormat(lit(2)))
+    -&gt;drop('revenue_sum')
+    -&gt;write(to_output(truncate: false))
+    -&gt;withEntry('created_at', ref('created_at')-&gt;toDate('Y/m'))
+    -&gt;mode(SaveMode::Overwrite)
+    -&gt;write(to_csv(__DIR__ . '/daily_revenue.csv'))
+    -&gt;run();
+</code></pre>
+<h2>Data Frame</h2>
+<p>The <code>data_frame()</code> function is the entry point to the Flow ETL DSL.</p>
+<blockquote>
+<p>[!TIP]
+To maximize developer experience, Flow exposes a DSL (Domain Specific Language).
+Flow DSL is a set of functions that can be used to build a data processing pipeline.
+Entire project is written in Object-Oriented style, but DSL is a more convenient way to build a pipeline.
+Whenever possible, use DSL functions instead of creating objects directly.</p>
+</blockquote>
+<p>It creates a new instance of the <code>Flow\ETL\Flow</code> class, which is the main class of the ETL.</p>
+<h2>Extraction</h2>
+<p>The first step in creating a data processing pipeline is to read the data from a data source.
+Extractors are responsible for reading data from a data source and converting it into a format that can be processed by Flow ETL.
+All extractors return \Generator and by design will throw rows one by one, this is to ensure that memory consumption is constant and low.</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
+    -&gt;read(from_csv(__DIR__ . '/orders_flow.csv'))
+</code></pre>
+<p>In this example we’re using the <code>from_csv()</code> function to create a new instance of the <code>Flow\ETL\Adapter\CSV\CSVExtractor</code> class.</p>
+<p>All file-based extractors accept <a rel="noopener noreferrer" target="_blank" href="https://github.com/webmozarts/glob">glob path patterns</a>, allowing you to read multiple files at once.</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
+    -&gt;read(from_csv(__DIR__ . '/reports/*.csv'))
+</code></pre>
+<h2>Transformation</h2>
+<p>Extractors by default are going to read all columns from the data source, you can use the <code>select()</code> function to select only the columns you need.
+Alternatively you can use the <code>drop()</code> function to drop columns you don't need.</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">    -&gt;select('created_at', 'total_price', 'discount')
+</code></pre>
+<p>One of the most powerful features of Flow ETL is the ability to transform data using the <code>withEntry()</code> function.</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">    -&gt;withEntry('created_at', ref('created_at')-&gt;cast('date')-&gt;dateFormat('Y/m'))
+    -&gt;withEntry('revenue', ref('total_price')-&gt;minus(ref('discount')))
+</code></pre>
+<p><code>withEntry()</code> function accepts two arguments, the first one is the name of the new entry (column), the second one is the value of the new column.
+The value of the new column can be a literal value, a reference to an existing column or a function call.</p>
+<ul>
+<li>
+<code>ref('created_at')</code> - creates a reference to the <code>created_at</code> column.</li>
+<li>
+<code>...-&gt;cast('date')</code> - casts column to a date type.</li>
+<li>
+<code>...-&gt;dateFormat('Y/m')</code> - format date using the <code>Y/m</code> format, as a result created_at becomes a string <code>2023/01</code>.</li>
+</ul>
+<p>You can find all available functions in the <a href="../src/core/etl/src/Flow/ETL/DSL/functions.php">DSL</a>.</p>
+<blockquote>
+<p>[!TIP]
+DSL is nothing more than a set of functions that return instances of Flow PHP objects.
+You can always create objects directly, but DSL is a more convenient way to build a pipeline.
+All available ETL functions can be found in the <a href="../src/core/etl/src/Flow/ETL/Function">Function</a> namespace.</p>
+</blockquote>
+<h2>Loading</h2>
+<p>Loading, also writing to a data source, is the last step in the data processing pipeline.
+There can be more than one writer in the pipeline</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">    -&gt;write(to_output(truncate: false))
+    -&gt;mode(SaveMode::Overwrite)
+    -&gt;write(to_csv(__DIR__ . '/daily_revenue.csv'))
+</code></pre>
+<p>In this example we’re first using the <code>to_output()</code> which just prints the data to the console as a simple ASCII table without
+truncating the output.</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">    -&gt;mode(SaveMode::Overwrite)
+    -&gt;write(to_csv(__DIR__ . '/daily_revenue.csv'))
+</code></pre>
+<p>Second write is writing the data to a CSV file, we're using the <code>mode()</code> function to set the save mode to <code>overwrite</code>.
+There are three save modes available:</p>
+<ul>
+<li>
+<code>SaveMode::Append</code> - If data sink already exists, data will be appended. This solution might cause data duplication since it's not check if given rows already existed.</li>
+<li>
+<code>SaveMode::ExceptionIfExists</code> - If data sink already exists error will be thrown.</li>
+<li>
+<code>SaveMode::Ignore</code> - If data sink already exists, writing will be skipped.</li>
+<li>
+<code>SaveMode::Overwrite</code> - If data sink already exists, it will be removed and written again.</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+Append mode is not really appending anything to existing files, instead it creates a folder in which it stores outputs under randomized file names.
+It can be later read using glob-pattern, for example <code>from_csv('/path/to/folder/*.csv')</code>.</p>
+</blockquote>
+<h2>Lazy Execution</h2>
+<p>Flow ETL is using lazy execution, which means that the pipeline will not be executed until you call the <code>run()</code> function.</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">    -&gt;run();
+</code></pre>
+<p>There are few more triggering functions, like <code>fetch()</code>, you can find which functions are <code>@lazy</code> or <code>@trigger</code> looking at
+the <a href="../src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame</a> source code.</p>
 
 
             <hr class="!mt-8 !mb-8"/>

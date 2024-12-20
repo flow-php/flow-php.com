@@ -13,7 +13,7 @@
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/documentation" />
+    <meta property="og:url" content="https://flow-php.com/documentation/components/core/window-functions" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
@@ -21,7 +21,7 @@
     <meta name="google-adsense-account" content="ca-pub-2364202911639369">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/documentation" />
+    <meta property="twitter:url" content="https://flow-php.com/documentation/components/core/window-functions" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -315,43 +315,74 @@
 
         </div>
         <div class="sm:col-span-5">
-            <p>Flow is a PHP based, strongly typed data processing framework with low memory footprint.</p>
-<p>Supported PHP versions:</p>
-<ul>
-<li>8.1 - going to be removed soon</li>
-<li>8.2</li>
-<li>8.3</li>
-<li>8.4</li>
-</ul>
-<h1>Key Features</h1>
+            <h1>Window Functions</h1>
 <ul>
 <li>
-<strong>Low memory footprint</strong>: Optimized for efficiency, Flow PHP ensures minimal memory usage, maintaining low and constant consumption regardless of data size. This makes it ideal for handling large datasets without compromising performance.</li>
-<li>
-<strong>Versatile Data Source Interaction</strong>: Whether your data resides in databases, spreadsheets, or online platforms, Flow PHP can seamlessly read from and write to any data source.</li>
-<li>
-<strong>Rich Collection of Data Transformation Functions</strong>: Transform your data with ease using a wide array of built-in functions. From simple mapping to complex manipulations, the framework covers all your data transformation needs.</li>
-<li>
-<strong>Direct Access to Remote Filesystems</strong>: Flow PHP provides the ability to interact directly with remote filesystems, facilitating efficient data handling and processing without the need for local storage.</li>
-<li>
-<strong>Advanced Data Partitioning</strong>: Efficiently partition your data for improved manageability and processing. This feature is crucial for handling large datasets or for processing data in distributed systems.</li>
-<li>
-<strong>Grouping &amp; Aggregating</strong>: Easily group and aggregate data to extract meaningful insights. This feature is particularly useful for summarizing datasets and performing statistical analysis.</li>
-<li>
-<strong>Remote File Processing</strong>: Process files stored remotely with the same ease as local files, enabling powerful and flexible data integration from various sources.</li>
-<li>
-<strong>Join Operations</strong>: Perform join operations between different datasets. This is essential for combining data from multiple sources, providing a more comprehensive view.</li>
-<li>
-<strong>Efficient Sorting</strong>: Sort your data based on specific criteria or conditions, ensuring that your datasets are organized precisely as needed.</li>
-<li>
-<strong>ASCII Table Display</strong>: Visualize your datasets as neatly formatted ASCII tables, making it easier to read and analyze data directly from the console.</li>
-<li>
-<strong>Schema Validation</strong>: Ensure data quality and consistency by validating your datasets against predefined schemas.</li>
-<li>
-<strong>Window Functions</strong>: Utilize window functions for advanced data analysis, allowing you to perform calculations across sets of rows that are related to the current row.</li>
-<li>
-<strong>Built-In Caching Mechanism</strong>: Improve performance with built-in caching, reducing processing time and enhancing overall efficiency, especially in repetitive data processing tasks.</li>
+<a href="core">⬅️️ Back</a>
+</li>
 </ul>
+<p>Window functions are a special type of function that perform calculations on a set of rows that are related to the current row.
+Unlike regular aggregate functions, use of a window function does not cause rows to become grouped into a single output row — the rows retain their separate identities.
+Behind the scenes, the window function is able to access more than just the current row of the query result.</p>
+<p>To narrow window function to a specific set of rows, you need to use <code>window</code>.
+Window is used to partition dataset into smaller partitions on which later window function will be applied.</p>
+<h3>Window Functions:</h3>
+<ul>
+<li>
+<a href="../../../src/core/etl/src/Flow/ETL/Function/RowNumber.php"><code>ROW_NUMBER()</code></a>
+</li>
+<li>
+<a href="../../../src/core/etl/src/Flow/ETL/Function/Rank.php"><code>RANK()</code></a>
+</li>
+<li>
+<a href="../../../src/core/etl/src/Flow/ETL/Function/DenseRank.php"><code>DENSE_RANK()</code></a>
+</li>
+<li>
+<a href="../../../src/core/etl/src/Flow/ETL/Function/Sum.php"><code>SUM</code></a>
+</li>
+<li>
+<a href="../../../src/core/etl/src/Flow/ETL/Function/Average.php"><code>AVERAGE</code></a>
+</li>
+<li>
+<a href="../../../src/core/etl/src/Flow/ETL/Function/Count.php"><code>COUNT</code></a>
+</li>
+</ul>
+<p>All window functions are implementing <a href="../../../src/core/etl/src/Flow/ETL/Function/WindowFunction.php"><code>WindowFunction</code></a> interface.</p>
+<h3>Example</h3>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
+    -&gt;read(
+        from_array([
+            ['id' =&gt; 1, 'name' =&gt; 'Greg', 'department' =&gt; 'IT', 'salary' =&gt; 6000],
+            ['id' =&gt; 2, 'name' =&gt; 'Michal', 'department' =&gt; 'IT', 'salary' =&gt; 5000],
+            ['id' =&gt; 3, 'name' =&gt; 'Tomas', 'department' =&gt; 'Finances', 'salary' =&gt; 11_000],
+            ['id' =&gt; 4, 'name' =&gt; 'John', 'department' =&gt; 'Finances', 'salary' =&gt; 9000],
+            ['id' =&gt; 5, 'name' =&gt; 'Jane', 'department' =&gt; 'Finances', 'salary' =&gt; 14_000],
+            ['id' =&gt; 6, 'name' =&gt; 'Janet', 'department' =&gt; 'Finances', 'salary' =&gt; 4000],
+        ])
+    )
+    -&gt;withEntry('rank', dense_rank()-&gt;over(window()-&gt;partitionBy(ref('department'))-&gt;orderBy(ref('salary')-&gt;desc())))
+    -&gt;sortBy(ref('department'), ref('rank'))
+    -&gt;write(to_output(false))
+    -&gt;run();
+</code></pre>
+<p>Output:</p>
+<pre class="language-console"><code class="language-console" data-controller="syntax-highlight">+----+-------+------------+--------+------+
+| id |  name | department | salary | rank |
++----+-------+------------+--------+------+
+|  5 |  Jane |   Finances |  14000 |    1 |
+|  3 | Tomas |   Finances |  11000 |    2 |
+|  4 |  John |   Finances |   9000 |    3 |
+|  6 | Janet |   Finances |   4000 |    4 |
++----+-------+------------+--------+------+
+4 rows
++----+--------+------------+--------+------+
+| id |   name | department | salary | rank |
++----+--------+------------+--------+------+
+|  1 |   Greg |         IT |   6000 |    1 |
+|  2 | Michal |         IT |   5000 |    2 |
++----+--------+------------+--------+------+
+2 rows
+</code></pre>
 
 
             <hr class="!mt-8 !mb-8"/>

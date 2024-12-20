@@ -13,7 +13,7 @@
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/documentation" />
+    <meta property="og:url" content="https://flow-php.com/documentation/components/libs/azure-sdk" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
@@ -21,7 +21,7 @@
     <meta name="google-adsense-account" content="ca-pub-2364202911639369">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/documentation" />
+    <meta property="twitter:url" content="https://flow-php.com/documentation/components/libs/azure-sdk" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -315,43 +315,77 @@
 
         </div>
         <div class="sm:col-span-5">
-            <p>Flow is a PHP based, strongly typed data processing framework with low memory footprint.</p>
-<p>Supported PHP versions:</p>
-<ul>
-<li>8.1 - going to be removed soon</li>
-<li>8.2</li>
-<li>8.3</li>
-<li>8.4</li>
-</ul>
-<h1>Key Features</h1>
+            <h1>Azure SDK</h1>
 <ul>
 <li>
-<strong>Low memory footprint</strong>: Optimized for efficiency, Flow PHP ensures minimal memory usage, maintaining low and constant consumption regardless of data size. This makes it ideal for handling large datasets without compromising performance.</li>
-<li>
-<strong>Versatile Data Source Interaction</strong>: Whether your data resides in databases, spreadsheets, or online platforms, Flow PHP can seamlessly read from and write to any data source.</li>
-<li>
-<strong>Rich Collection of Data Transformation Functions</strong>: Transform your data with ease using a wide array of built-in functions. From simple mapping to complex manipulations, the framework covers all your data transformation needs.</li>
-<li>
-<strong>Direct Access to Remote Filesystems</strong>: Flow PHP provides the ability to interact directly with remote filesystems, facilitating efficient data handling and processing without the need for local storage.</li>
-<li>
-<strong>Advanced Data Partitioning</strong>: Efficiently partition your data for improved manageability and processing. This feature is crucial for handling large datasets or for processing data in distributed systems.</li>
-<li>
-<strong>Grouping &amp; Aggregating</strong>: Easily group and aggregate data to extract meaningful insights. This feature is particularly useful for summarizing datasets and performing statistical analysis.</li>
-<li>
-<strong>Remote File Processing</strong>: Process files stored remotely with the same ease as local files, enabling powerful and flexible data integration from various sources.</li>
-<li>
-<strong>Join Operations</strong>: Perform join operations between different datasets. This is essential for combining data from multiple sources, providing a more comprehensive view.</li>
-<li>
-<strong>Efficient Sorting</strong>: Sort your data based on specific criteria or conditions, ensuring that your datasets are organized precisely as needed.</li>
-<li>
-<strong>ASCII Table Display</strong>: Visualize your datasets as neatly formatted ASCII tables, making it easier to read and analyze data directly from the console.</li>
-<li>
-<strong>Schema Validation</strong>: Ensure data quality and consistency by validating your datasets against predefined schemas.</li>
-<li>
-<strong>Window Functions</strong>: Utilize window functions for advanced data analysis, allowing you to perform calculations across sets of rows that are related to the current row.</li>
-<li>
-<strong>Built-In Caching Mechanism</strong>: Improve performance with built-in caching, reducing processing time and enhancing overall efficiency, especially in repetitive data processing tasks.</li>
+<a href="../../introduction">⬅️️ Back</a>
+</li>
 </ul>
+<p>Simple, lightweight, dependency-free and efficient Azure SDK for PHP.</p>
+<h2>Installation</h2>
+<pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight">composer require flow-php/azure-sdk
+</code></pre>
+<blockquote>
+<p>[!NOTE]<br />
+Since the Azure SDK is not providing any http client or factories, you need to install them manually.
+The following example uses the <code>php-http/discovery</code> package to find the factories in your project existing dependencies.
+Use below links to find the implementations for client and the factories:</p>
+</blockquote>
+<ul>
+<li>
+<a rel="noopener noreferrer" target="_blank" href="https://packagist.org/providers/psr/http-client-implementation">Http Client</a>
+</li>
+<li>
+<a rel="noopener noreferrer" target="_blank" href="https://packagist.org/providers/psr/http-factory-implementation">Http Factories</a>
+</li>
+</ul>
+<blockquote>
+<p>[!TIP]
+To fully benefit from SDK features, you need to install the following packages:
+<code>composer require flow-php/monolog-http-bridge</code> that will normalize request/response objects from logs context</p>
+</blockquote>
+<blockquote>
+<p>[!WARNING]
+This implementation is not fully covering Azure SDK, only Storage related services are implemented.
+Feel free to contribute to the project and add more services.</p>
+</blockquote>
+<h2>Usage</h2>
+<p>The absolute minimum configuration to start using the SDK is to provide the account name and the account key.</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+use function Flow\Azure\SDK\DSL\azure_blob_service;
+use function Flow\Azure\SDK\DSL\azure_blob_service_config;
+use function Flow\Azure\SDK\DSL\azure_shared_key_authorization_factory;
+
+$sdk = azure_blob_service(
+    azure_blob_service_config($account, $container),
+    azure_shared_key_authorization_factory($account, $accountKey),
+);
+</code></pre>
+<h4>Advanced</h4>
+<p>Since our goal is to not depend on any specific http client implementation, the library will use <a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/php-http/discovery">php-http/discovery</a>
+to find the factories for the http client and the request/response objects. To gain full control over this library
+it need to be initialized like this:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+use function Flow\Azure\SDK\DSL\azure_blob_service;
+use function Flow\Azure\SDK\DSL\azure_blob_service_config;
+use function Flow\Azure\SDK\DSL\azure_http_factory;
+use function Flow\Azure\SDK\DSL\azure_shared_key_authorization_factory;
+use function Flow\Azure\SDK\DSL\azure_url_factory;
+use Http\Discovery\Psr17Factory;
+use Http\Discovery\Psr18Client;
+use Psr\Log\NullLogger;
+
+$sdk = azure_blob_service(
+    azure_blob_service_config($account, $container),
+    azure_shared_key_authorization_factory($account, $accountKey),
+    new Psr18Client(),
+    azure_http_factory(request_factory: new Psr17Factory(), stream_factory: new Psr17Factory()),
+    azure_url_factory(),
+    new NullLogger(),
+);
+</code></pre>
 
 
             <hr class="!mt-8 !mb-8"/>

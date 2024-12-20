@@ -13,7 +13,7 @@
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/documentation" />
+    <meta property="og:url" content="https://flow-php.com/documentation/components/core/join" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
@@ -21,7 +21,7 @@
     <meta name="google-adsense-account" content="ca-pub-2364202911639369">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/documentation" />
+    <meta property="twitter:url" content="https://flow-php.com/documentation/components/core/join" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -315,43 +315,75 @@
 
         </div>
         <div class="sm:col-span-5">
-            <p>Flow is a PHP based, strongly typed data processing framework with low memory footprint.</p>
-<p>Supported PHP versions:</p>
-<ul>
-<li>8.1 - going to be removed soon</li>
-<li>8.2</li>
-<li>8.3</li>
-<li>8.4</li>
-</ul>
-<h1>Key Features</h1>
+            <h1>Join</h1>
 <ul>
 <li>
-<strong>Low memory footprint</strong>: Optimized for efficiency, Flow PHP ensures minimal memory usage, maintaining low and constant consumption regardless of data size. This makes it ideal for handling large datasets without compromising performance.</li>
-<li>
-<strong>Versatile Data Source Interaction</strong>: Whether your data resides in databases, spreadsheets, or online platforms, Flow PHP can seamlessly read from and write to any data source.</li>
-<li>
-<strong>Rich Collection of Data Transformation Functions</strong>: Transform your data with ease using a wide array of built-in functions. From simple mapping to complex manipulations, the framework covers all your data transformation needs.</li>
-<li>
-<strong>Direct Access to Remote Filesystems</strong>: Flow PHP provides the ability to interact directly with remote filesystems, facilitating efficient data handling and processing without the need for local storage.</li>
-<li>
-<strong>Advanced Data Partitioning</strong>: Efficiently partition your data for improved manageability and processing. This feature is crucial for handling large datasets or for processing data in distributed systems.</li>
-<li>
-<strong>Grouping &amp; Aggregating</strong>: Easily group and aggregate data to extract meaningful insights. This feature is particularly useful for summarizing datasets and performing statistical analysis.</li>
-<li>
-<strong>Remote File Processing</strong>: Process files stored remotely with the same ease as local files, enabling powerful and flexible data integration from various sources.</li>
-<li>
-<strong>Join Operations</strong>: Perform join operations between different datasets. This is essential for combining data from multiple sources, providing a more comprehensive view.</li>
-<li>
-<strong>Efficient Sorting</strong>: Sort your data based on specific criteria or conditions, ensuring that your datasets are organized precisely as needed.</li>
-<li>
-<strong>ASCII Table Display</strong>: Visualize your datasets as neatly formatted ASCII tables, making it easier to read and analyze data directly from the console.</li>
-<li>
-<strong>Schema Validation</strong>: Ensure data quality and consistency by validating your datasets against predefined schemas.</li>
-<li>
-<strong>Window Functions</strong>: Utilize window functions for advanced data analysis, allowing you to perform calculations across sets of rows that are related to the current row.</li>
-<li>
-<strong>Built-In Caching Mechanism</strong>: Improve performance with built-in caching, reducing processing time and enhancing overall efficiency, especially in repetitive data processing tasks.</li>
+<a href="core">⬅️️ Back</a>
+</li>
 </ul>
+<p>Joining two data frames is a common operation in data processing.
+It is used to combine data from two different sources into one data frame.
+The join operation is performed on a common column or columns between the two data frames.</p>
+<h2>Join Methods</h2>
+<ul>
+<li>
+<code>DataFrame::crossJoin</code> - join each row from the left side with each row on the right side creating <code>count(left) * count(right)</code> rows in total.</li>
+<li>
+<code>DataFrame::join</code> - right side is static for each left Rows set.</li>
+<li>
+<code>DataFrame::joinEach</code> - right side dynamically generated for each left Rows set.</li>
+</ul>
+<h2>Join Types</h2>
+<ul>
+<li>
+<code>left</code>
+</li>
+<li>
+<code>left_anti</code> (keep in left only what does not exist in right)</li>
+<li>
+<code>right</code>
+</li>
+<li>
+<code>inner</code>
+</li>
+</ul>
+<h2>Example</h2>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+$externalProducts = [
+    ['id' =&gt; 1, 'sku' =&gt; 'PRODUCT01'],
+    ['id' =&gt; 2, 'sku' =&gt; 'PRODUCT02'],
+    ['id' =&gt; 3, 'sku' =&gt; 'PRODUCT03'],
+];
+
+$internalProducts = [
+    ['id' =&gt; 2, 'sku' =&gt; 'PRODUCT02'],
+    ['id' =&gt; 3, 'sku' =&gt; 'PRODUCT03'],
+];
+
+/**
+ * DataFrame::join will perform joining having both dataframes in memory.
+ * This means that if if the right side dataframe is big (as the left side usually will be a batch)
+ * then it might become performance bottleneck.
+ * In that case please look at DataFrame::joinEach.
+ */
+data_frame()
+    -&gt;read(from_array($externalProducts))
+    -&gt;join(
+        data_frame()-&gt;read(from_array($internalProducts)),
+        Expression::on(['id' =&gt; 'id']),
+        Join::left_anti
+    )
+    -&gt;write(to_output())
+    -&gt;run();
+</code></pre>
+<p>Output:</p>
+<pre class="language-console"><code class="language-console" data-controller="syntax-highlight">| id |       sku |
++----+-----------+
+|  1 | PRODUCT01 |
++----+-----------+
+1 rows
+</code></pre>
 
 
             <hr class="!mt-8 !mb-8"/>
