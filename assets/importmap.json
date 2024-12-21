@@ -1,6 +1,6 @@
 {
     "app": {
-        "path": "\/assets\/app-f6b6b9453864ea635d158621b1bef659.js",
+        "path": "\/assets\/app-d6226daa238de3f1832e60a162430df0.js",
         "type": "js"
     },
     "\/assets\/bootstrap.js": {
@@ -90,5 +90,21 @@
     "prismjs\/components\/prism-json.min.js": {
         "path": "\/assets\/vendor\/prismjs\/components\/prism-json.min-547eb54b73faba145fb7981f07ceb520.js",
         "type": "js"
+    },
+    "flowbite": {
+        "path": "\/assets\/vendor\/flowbite\/flowbite.index-151cb8d7657ce8a54caacf1b88cd0ed2.js",
+        "type": "js"
+    },
+    "@popperjs\/core": {
+        "path": "\/assets\/vendor\/@popperjs\/core\/core.index-ceb5b6c0f9e1d3f6c78ef733facfdcda.js",
+        "type": "js"
+    },
+    "flowbite-datepicker": {
+        "path": "\/assets\/vendor\/flowbite-datepicker\/flowbite-datepicker.index-61e87965dafd5797f47a9641b85bc61c.js",
+        "type": "js"
+    },
+    "flowbite\/dist\/flowbite.min.css": {
+        "path": "\/assets\/vendor\/flowbite\/dist\/flowbite.min-31c025f9f6772a66d5fcc61a3e76c101.css",
+        "type": "css"
     }
 }
