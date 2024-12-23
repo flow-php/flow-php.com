@@ -1,6 +1,6 @@
 {
     "app": {
-        "path": "\/assets\/app-d6226daa238de3f1832e60a162430df0.js",
+        "path": "\/assets\/app-26bf61e602aaad446028928293d06c3f.js",
         "type": "js"
     },
     "\/assets\/bootstrap.js": {
@@ -8,11 +8,15 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-435b048fe3f3d33d3511b29f91e4f453.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-68f95e1af3a687736c10a51efea62f5e.js",
         "type": "js"
     },
     "\/assets\/controllers\/scroll_to_top_controller.js": {
         "path": "\/assets\/controllers\/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/cookie_consent_controller.js": {
+        "path": "\/assets\/controllers\/cookie_consent_controller-5018d266b12c80b516ef6866a4b0d758.js",
         "type": "js"
     },
     "\/assets\/controllers\/clipboard_controller.js": {
