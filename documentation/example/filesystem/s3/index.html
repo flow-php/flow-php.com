@@ -346,21 +346,13 @@
                 <h1>Example: S3</h1>
                 <h3>Topic: Filesystem</h3>
                 <hr class="hidden lg:block"/>
-                                    <h2 class="text-xl mt-5 mb-5">Description</h2>
-                    <article id="example-description"
-                             class="rounded px-4 pt-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative mb-10"
-                            data-controller="all-links-external"
-                    >
-                        <p>S3 or any S3 like filesystem is coming soon!</p>
-
-                    </article>
                 
                 <h2 class="text-xl mt-5 mb-5">Code</h2><div id="code" class="relative"><button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#code" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2"><code id="code" class="language-php" data-controller="syntax-highlight" >&lt;?php
 
 declare(strict_types=1);
 
-use function Flow\ETL\Adapter\CSV\to_csv;
-use function Flow\ETL\DSL\{config_builder, data_frame, from_array, overwrite};
+use function Flow\ETL\Adapter\CSV\{from_csv, to_csv};
+use function Flow\ETL\DSL\{config_builder, data_frame, from_array, overwrite, to_stream};
 use function Flow\Filesystem\Bridge\AsyncAWS\DSL\{aws_s3_client, aws_s3_filesystem};
 use function Flow\Filesystem\DSL\path;
 use Symfony\Component\Dotenv\Dotenv;
@@ -398,8 +390,40 @@ data_frame($config)
     -&gt;saveMode(overwrite())
     -&gt;write(to_csv(path(&#039;aws-s3://test.csv&#039;)))
     -&gt;run();
+
+data_frame($config)
+    -&gt;read(from_csv(path(&#039;aws-s3://test.csv&#039;)))
+    -&gt;write(to_stream(__DIR__ . &#039;/output.txt&#039;, truncate: false))
+    -&gt;run();
 </code></pre></div>            </div>
 
+                            <h2 class="text-xl mt-5 mb-5">Output</h2>
+                <div id="output" class="relative">
+                    <button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#output" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><pre class="rounded p-4 shadow-2xl shadow-gray rounded border-gray border-2"><code id="output" class="language-bash overflow-auto" data-controller="syntax-highlight">+----+------+
+| id | name |
++----+------+
+|  1 | test |
++----+------+
+1 rows
++----+------+
+| id | name |
++----+------+
+|  2 | test |
++----+------+
+1 rows
++----+------+
+| id | name |
++----+------+
+|  3 | test |
++----+------+
+1 rows
++----+------+
+| id | name |
++----+------+
+|  4 | test |
++----+------+
+1 rows
+</code></pre>                </div>
             
             <div class="mt-5">
                 <script src="https://giscus.app/client.js"
