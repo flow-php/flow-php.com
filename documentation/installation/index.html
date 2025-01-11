@@ -401,94 +401,202 @@
 <p>If you want to work with JSON/CSV files here are the dependencies you will need to install:</p>
 <pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight">composer require flow-php/etl flow-php/etl-adapter-csv flow-php/etl-adapter-json
 </code></pre>
-<p>Flow is developed as a <a rel="noopener noreferrer" target="_blank" href="https://tomasvotruba.com/blog/2019/10/28/all-you-always-wanted-to-know-about-monorepo-but-were-afraid-to-ask/">monorepo</a> to reduce maintenance overhead and to make it easier to manage dependencies between components.</p>
+<p>Flow is developed as
+a <a rel="noopener noreferrer" target="_blank" href="https://tomasvotruba.com/blog/2019/10/28/all-you-always-wanted-to-know-about-monorepo-but-were-afraid-to-ask/">monorepo</a>
+to reduce maintenance overhead and to make it easier to manage dependencies between components.</p>
 <p>Instead of installing whole repository with all dependencies, it's recommended to install only the components you need.</p>
-<ul>
-<li>
-<a href="components/core/core">ETL</a>
-</li>
-<li>Adapters
-<ul>
-<li>
-<a href="components/adapters/chartjs">chartjs</a>
-</li>
-<li>
-<a href="components/adapters/csv">csv</a>
-</li>
-<li>
-<a href="components/adapters/doctrine">doctrine</a>
-</li>
-<li>
-<a href="components/adapters/elasticsearch">elasticsearch</a>
-</li>
-<li>
-<a href="components/adapters/google-sheet">google sheet</a>
-</li>
-<li>
-<a href="components/adapters/http">http</a>
-</li>
-<li>
-<a href="components/adapters/json">json</a>
-</li>
-<li>
-<a href="components/adapters/logger">logger</a>
-</li>
-<li>
-<a href="components/adapters/meilisearch">meilisearch</a>
-</li>
-<li>
-<a href="components/adapters/parquet">parquet</a>
-</li>
-<li>
-<a href="components/adapters/text">text</a>
-</li>
-<li>
-<a href="components/adapters/xml">xml</a>
-</li>
-</ul>
-</li>
-<li>Libraries
-<ul>
-<li>
-<a href="components/libs/array-dot">array-dot</a>
-</li>
-<li>
-<a href="components/libs/azure-sdk">azure-sdk</a>
-</li>
-<li>
-<a href="components/libs/doctrine-dbal-bulk">doctrine-dbal-bulk</a>
-</li>
-<li>
-<a href="components/libs/dremel">dremel</a>
-</li>
-<li>
-<a href="components/libs/filesystem">filesystem</a>
-</li>
-<li>
-<a href="components/libs/parquet">parquet</a>
-</li>
-<li>
-<a href="components/libs/parquet-viewer">parquet-viewer</a>
-</li>
-<li>
-<a href="components/libs/snappy">snappy</a>
-</li>
-</ul>
-</li>
-<li>Bridges
-<ul>
-<li>
-<a href="components/bridges/filesystem-azure-bridge">filesystem-azure</a>
-</li>
-<li>
-<a href="components/bridges/filesystem-async-aws-bridge">filesystem-async-aws</a>
-</li>
-<li>
-<a href="components/bridges/monolog-http-bridge">monolog-http</a>
-</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Total Downloads</th>
+<th>Version</th>
+<th>Unreleased</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/documentation/components/core/core">flow-php/core</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl"><img src="https://poser.pugx.org/flow-php/etl/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl"><img src="https://poser.pugx.org/flow-php/etl/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/etl.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/cli/docs">flow-php/cli</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/cli"><img src="https://poser.pugx.org/flow-php/cli/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/cli"><img src="https://poser.pugx.org/flow-php/cli/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/cli/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/cli.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><strong>Adapters</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/adapters/chartjs">flow-php/etl-adapter-chartjs</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-chartjs"><img src="https://poser.pugx.org/flow-php/etl-adapter-chartjs/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-chartjs"><img src="https://poser.pugx.org/flow-php/etl-adapter-chartjs/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl-adapter-chartjs/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/etl-adapter-chartjs.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/adapters/csv">flow-php/etl-adapter-csv</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-csv"><img src="https://poser.pugx.org/flow-php/etl-adapter-csv/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-csv"><img src="https://poser.pugx.org/flow-php/etl-adapter-csv/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl-adapter-csv/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/etl-adapter-csv.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/adapters/doctrine">flow-php/etl-adapter-doctrine</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-doctrine"><img src="https://poser.pugx.org/flow-php/etl-adapter-doctrine/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-doctrine"><img src="https://poser.pugx.org/flow-php/etl-adapter-doctrine/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl-adapter-csv/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/etl-adapter-csv.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/adapters/elasticsearch">flow-php/etl-adapter-elasticsearch</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-elasticsearch"><img src="https://poser.pugx.org/flow-php/etl-adapter-elasticsearch/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-elasticsearch"><img src="https://poser.pugx.org/flow-php/etl-adapter-elasticsearch/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl-adapter-elasticsearch/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/etl-adapter-elasticsearch.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/adapters/google-sheet">flow-php/etl-adapter-google-sheet</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-google-sheet"><img src="https://poser.pugx.org/flow-php/etl-adapter-google-sheet/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-google-sheet"><img src="https://poser.pugx.org/flow-php/etl-adapter-google-sheet/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl-adapter-google-sheet/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/etl-adapter-google-sheet.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/adapters/http">flow-php/etl-adapter-http</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-http"><img src="https://poser.pugx.org/flow-php/etl-adapter-http/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-http"><img src="https://poser.pugx.org/flow-php/etl-adapter-http/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl-adapter-http/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/etl-adapter-http.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/adapters/json">flow-php/etl-adapter-json</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-json"><img src="https://poser.pugx.org/flow-php/etl-adapter-json/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-json"><img src="https://poser.pugx.org/flow-php/etl-adapter-json/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl-adapter-json/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/etl-adapter-json.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/adapters/logger">flow-php/etl-adapter-logger</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-logger"><img src="https://poser.pugx.org/flow-php/etl-adapter-logger/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-logger"><img src="https://poser.pugx.org/flow-php/etl-adapter-logger/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl-adapter-meilisearch/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/etl-adapter-meilisearch.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/adapters/meilisearch">flow-php/etl-adapter-meilisearch</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-meilisearch"><img src="https://poser.pugx.org/flow-php/etl-adapter-meilisearch/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-meilisearch"><img src="https://poser.pugx.org/flow-php/etl-adapter-meilisearch/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl-adapter-meilisearch/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/etl-adapter-meilisearch.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/adapters/parquet">flow-php/etl-adapter-parquet</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-parquet"><img src="https://poser.pugx.org/flow-php/etl-adapter-parquet/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-parquet"><img src="https://poser.pugx.org/flow-php/etl-adapter-parquet/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl-adapter-parquet/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/etl-adapter-parquet.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/adapters/text">flow-php/etl-adapter-text</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-text"><img src="https://poser.pugx.org/flow-php/etl-adapter-text/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-text"><img src="https://poser.pugx.org/flow-php/etl-adapter-text/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl-adapter-text/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/etl-adapter-text.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/adapters/xml">flow-php/etl-adapter-xml</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-xml"><img src="https://poser.pugx.org/flow-php/etl-adapter-xml/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/etl-adapter-xml"><img src="https://poser.pugx.org/flow-php/etl-adapter-xml/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl-adapter-xml/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/etl-adapter-xml.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><strong>Libs</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/libs/array-dot">flow-php/array-dot</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/array-dot"><img src="https://poser.pugx.org/flow-php/array-dot/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/array-dot"><img src="https://poser.pugx.org/flow-php/array-dot/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/array-dot/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/array-dot.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/libs/azure-sdk">flow-php/azure-sdk</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/azure-sdk"><img src="https://poser.pugx.org/flow-php/azure-sdk/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/azure-sdk"><img src="https://poser.pugx.org/flow-php/azure-sdk/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/azure-sdk/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/azure-sdk.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/libs/doctrine-dbal-bulk">flow-php/doctrine-dbal-bulk</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/doctrine-dbal-bulk"><img src="https://poser.pugx.org/flow-php/doctrine-dbal-bulk/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/doctrine-dbal-bulk"><img src="https://poser.pugx.org/flow-php/doctrine-dbal-bulk/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/doctrine-dbal-bulk/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/doctrine-dbal-bulk.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/libs/dremel">flow-php/dremel</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/dremel"><img src="https://poser.pugx.org/flow-php/dremel/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/dremel"><img src="https://poser.pugx.org/flow-php/dremel/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/dremel/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/dremel.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/libs/filesystem">flow-php/filesystem</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/filesystem"><img src="https://poser.pugx.org/flow-php/filesystem/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/filesystem"><img src="https://poser.pugx.org/flow-php/filesystem/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/filesystem/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/filesystem.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/libs/parquet">flow-php/parquet</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/parquet"><img src="https://poser.pugx.org/flow-php/parquet/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/parquet"><img src="https://poser.pugx.org/flow-php/parquet/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/parquet/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/parquet.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/libs/parquet-viewer">flow-php/parquet-viewer</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/parquet-viewer"><img src="https://poser.pugx.org/flow-php/parquet-viewer/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/parquet-viewer"><img src="https://poser.pugx.org/flow-php/parquet-viewer/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/parquet-viewer/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/parquet-viewer.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/libs/rdsl">flow-php/rdsl</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/rdsl"><img src="https://poser.pugx.org/flow-php/rdsl/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/rdsl"><img src="https://poser.pugx.org/flow-php/rdsl/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/rdsl/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/rdsl.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/libs/snappy">flow-php/snappy</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/snappy"><img src="https://poser.pugx.org/flow-php/snappy/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/snappy"><img src="https://poser.pugx.org/flow-php/snappy/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/snappy/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/snappy.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><strong>Bridges</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/bridges/filesystem-async-aws-bridge">flow-php/filesystem-async-aws-bridge</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/filesystem-async-aws-bridge"><img src="https://poser.pugx.org/flow-php/filesystem-async-aws-bridge/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/filesystem-async-aws-bridge"><img src="https://poser.pugx.org/flow-php/filesystem-async-aws-bridge/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/filesystem-async-aws-bridge/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/filesystem-async-aws-bridge.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/bridges/filesystem-azure-bridge">flow-php/filesystem-azure-bridge</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/filesystem-azure-bridge"><img src="https://poser.pugx.org/flow-php/filesystem-azure-bridge/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/filesystem-azure-bridge"><img src="https://poser.pugx.org/flow-php/filesystem-azure-bridge/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/filesystem-azure-bridge/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/filesystem-azure-bridge.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/bridges/monolog-http-bridge">flow-php/monolog-http-bridge</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/monolog-http-bridge"><img src="https://poser.pugx.org/flow-php/monolog-http-bridge/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/monolog-http-bridge"><img src="https://poser.pugx.org/flow-php/monolog-http-bridge/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/monolog-http-bridge/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/monolog-http-bridge.svg" alt="" /></a></td>
+</tr>
+<tr>
+<td><a href="/documentation/components/bridges/symfony-http-foundation-bridge">flow-php/symfony-http-foundation-bridge</a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/symfony-http-foundation-bridge"><img src="https://poser.pugx.org/flow-php/symfony-http-foundation-bridge/downloads" alt="Total Downloads" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/symfony-http-foundation-bridge"><img src="https://poser.pugx.org/flow-php/symfony-http-foundation-bridge/v/stable" alt="Latest Stable Version" /></a></td>
+<td><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/symfony-http-foundation-bridge/tags"><img src="https://flow-php.github.io/commits-since-release-counter/flow-php/symfony-http-foundation-bridge.svg" alt="" /></a></td>
+</tr>
+</tbody>
+</table>
 
 
             <hr class="!mt-8 !mb-8"/>
