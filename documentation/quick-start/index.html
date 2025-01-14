@@ -87,7 +87,7 @@
         "prismjs/components/prism-markup-templating.min.js": "https://flow-php.com/assets/vendor/prismjs/components/prism-markup-templating.min-1919ad14f0e4ab43685b3923a0e1cd53.js",
         "prismjs/components/prism-php.min.js": "https://flow-php.com/assets/vendor/prismjs/components/prism-php.min-40d11e3bad4f2ce85f71cde26868e952.js",
         "prismjs/components/prism-json.min.js": "https://flow-php.com/assets/vendor/prismjs/components/prism-json.min-547eb54b73faba145fb7981f07ceb520.js",
-        "@popperjs/core": "https://flow-php.com/assets/vendor/@popperjs/core/core.index-ceb5b6c0f9e1d3f6c78ef733facfdcda.js",
+        "@popperjs/core": "https://flow-php.com/assets/vendor/@popperjs/core/core.index-644d3145fb9a988a73db5b102874629c.js",
         "flowbite-datepicker": "https://flow-php.com/assets/vendor/flowbite-datepicker/flowbite-datepicker.index-61e87965dafd5797f47a9641b85bc61c.js",
         "flowbite/dist/flowbite.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22https%3A%2F%2Fflow-php.com%2Fassets%2Fvendor%2Fflowbite%2Fdist%2Fflowbite.min-31c025f9f6772a66d5fcc61a3e76c101.css%22%7D%29%29"
     }
@@ -381,9 +381,7 @@
 
             <h1>Quick Start</h1>
 <ul>
-<li>
-<a href="installation">⬅️️ Back</a>
-</li>
+<li><a href="installation">⬅️️ Back</a></li>
 </ul>
 <p>At this point, you should have a working installation of Flow ETL. If you don't, please go back to the <a href="installation">Installation</a> section.</p>
 <p>Let's take a look at a simple example of how to use Flow ETL to read a CSV file, transform it and write it to another CSV file.</p>
@@ -450,12 +448,9 @@ Alternatively you can use the <code>drop()</code> function to drop columns you d
 <p><code>withEntry()</code> function accepts two arguments, the first one is the name of the new entry (column), the second one is the value of the new column.
 The value of the new column can be a literal value, a reference to an existing column or a function call.</p>
 <ul>
-<li>
-<code>ref('created_at')</code> - creates a reference to the <code>created_at</code> column.</li>
-<li>
-<code>...-&gt;cast('date')</code> - casts column to a date type.</li>
-<li>
-<code>...-&gt;dateFormat('Y/m')</code> - format date using the <code>Y/m</code> format, as a result created_at becomes a string <code>2023/01</code>.</li>
+<li><code>ref('created_at')</code> - creates a reference to the <code>created_at</code> column.</li>
+<li><code>...-&gt;cast('date')</code> - casts column to a date type.</li>
+<li><code>...-&gt;dateFormat('Y/m')</code> - format date using the <code>Y/m</code> format, as a result created_at becomes a string <code>2023/01</code>.</li>
 </ul>
 <p>You can find all available functions in the <a href="../src/core/etl/src/Flow/ETL/DSL/functions.php">DSL</a>.</p>
 <blockquote>
@@ -480,14 +475,10 @@ truncating the output.</p>
 <p>Second write is writing the data to a CSV file, we're using the <code>mode()</code> function to set the save mode to <code>overwrite</code>.
 There are three save modes available:</p>
 <ul>
-<li>
-<code>SaveMode::Append</code> - If data sink already exists, data will be appended. This solution might cause data duplication since it's not check if given rows already existed.</li>
-<li>
-<code>SaveMode::ExceptionIfExists</code> - If data sink already exists error will be thrown.</li>
-<li>
-<code>SaveMode::Ignore</code> - If data sink already exists, writing will be skipped.</li>
-<li>
-<code>SaveMode::Overwrite</code> - If data sink already exists, it will be removed and written again.</li>
+<li><code>SaveMode::Append</code> - If data sink already exists, data will be appended. This solution might cause data duplication since it's not check if given rows already existed.</li>
+<li><code>SaveMode::ExceptionIfExists</code> - If data sink already exists error will be thrown.</li>
+<li><code>SaveMode::Ignore</code> - If data sink already exists, writing will be skipped.</li>
+<li><code>SaveMode::Overwrite</code> - If data sink already exists, it will be removed and written again.</li>
 </ul>
 <blockquote>
 <p>[!NOTE]

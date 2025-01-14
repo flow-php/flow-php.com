@@ -87,7 +87,7 @@
         "prismjs/components/prism-markup-templating.min.js": "https://flow-php.com/assets/vendor/prismjs/components/prism-markup-templating.min-1919ad14f0e4ab43685b3923a0e1cd53.js",
         "prismjs/components/prism-php.min.js": "https://flow-php.com/assets/vendor/prismjs/components/prism-php.min-40d11e3bad4f2ce85f71cde26868e952.js",
         "prismjs/components/prism-json.min.js": "https://flow-php.com/assets/vendor/prismjs/components/prism-json.min-547eb54b73faba145fb7981f07ceb520.js",
-        "@popperjs/core": "https://flow-php.com/assets/vendor/@popperjs/core/core.index-ceb5b6c0f9e1d3f6c78ef733facfdcda.js",
+        "@popperjs/core": "https://flow-php.com/assets/vendor/@popperjs/core/core.index-644d3145fb9a988a73db5b102874629c.js",
         "flowbite-datepicker": "https://flow-php.com/assets/vendor/flowbite-datepicker/flowbite-datepicker.index-61e87965dafd5797f47a9641b85bc61c.js",
         "flowbite/dist/flowbite.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22https%3A%2F%2Fflow-php.com%2Fassets%2Fvendor%2Fflowbite%2Fdist%2Fflowbite.min-31c025f9f6772a66d5fcc61a3e76c101.css%22%7D%29%29"
     }
@@ -381,35 +381,23 @@
 
             <h1>Error Handling</h1>
 <ul>
-<li>
-<a href="core">⬅️️ Back</a>
-</li>
+<li><a href="core">⬅️️ Back</a></li>
 </ul>
 <p>In case of any exception in transform/load steps, an ETL process will break,
 to change that behavior, please set custom <a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/ErrorHandler.php">ErrorHandler</a>.</p>
 <p>Error Handler defines 3 behavior using 2 methods.</p>
 <ul>
-<li>
-<code>ErrorHandler::throw(\Throwable $error, Rows $rows) : bool</code>
-</li>
-<li>
-<code>ErrorHandler::skipRows(\Throwable $error, Rows $rows) : bool</code>
-</li>
+<li><code>ErrorHandler::throw(\Throwable $error, Rows $rows) : bool</code></li>
+<li><code>ErrorHandler::skipRows(\Throwable $error, Rows $rows) : bool</code></li>
 </ul>
 <p>If <code>throw</code> returns true, ETL will simply throw an error.
 If `skipRows' returns true, ETL will stop processing given rows, and it will try to move to the next batch.
 If both methods return false, ETL will continue processing Rows using next transformers/loaders.</p>
 <p>There are 3 build-in ErrorHandlers (look for more in adapters):</p>
 <ul>
-<li>
-<a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/ErrorHandler/IgnoreError.php">ignore error</a>
-</li>
-<li>
-<a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/ErrorHandler/SkipRows.php">skip rows</a>
-</li>
-<li>
-<a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/ErrorHandler/ThrowError.php">throw error</a>
-</li>
+<li><a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/ErrorHandler/IgnoreError.php">ignore error</a></li>
+<li><a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/ErrorHandler/SkipRows.php">skip rows</a></li>
+<li><a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/ErrorHandler/ThrowError.php">throw error</a></li>
 </ul>
 <p>Error Handling can be set directly at ETL:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php 
