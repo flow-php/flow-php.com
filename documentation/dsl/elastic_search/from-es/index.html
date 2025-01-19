@@ -416,7 +416,7 @@ data_frame()
         ]
     ))
     -&gt;write(to_stream(__DIR__ . &#039;/output.raw.txt&#039;, truncate: false))
-    -&gt;transform(es_hits_to_rows())
+    -&gt;with(es_hits_to_rows())
     -&gt;write(to_stream(__DIR__ . &#039;/output.txt&#039;, truncate: false))
     -&gt;run();
 </code></pre>                        </article>
