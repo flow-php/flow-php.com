@@ -347,6 +347,8 @@ df(Config|ConfigBuilder|null $config) : Flow</code></pre>                    </d
 
 declare(strict_types=1);
 
+require __DIR__ . &#039;/vendor/autoload.php&#039;;
+
 use function Flow\ETL\DSL\{
     data_frame,
     from_array,
@@ -374,7 +376,7 @@ declare(strict_types=1);
 use function Flow\ETL\Adapter\CSV\{from_csv, to_csv};
 use function Flow\ETL\DSL\{data_frame, overwrite, to_stream};
 
-require __DIR__ . &#039;/../../../autoload.php&#039;;
+require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
 data_frame()
     -&gt;read(from_csv(__DIR__ . &#039;/input/file.csv&#039;))

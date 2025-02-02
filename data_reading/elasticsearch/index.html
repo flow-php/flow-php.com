@@ -326,7 +326,38 @@
 
             <div id="example" class="-mt-36 pt-36">
                 
-                <h2 class="text-xl mt-5 mb-5">Code</h2><div id="code" class="relative"><button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#code" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2"><code id="code" class="language-php" data-controller="syntax-highlight" >&lt;?php
+                <div class="mb-5">
+                    <a href="https://raw.githubusercontent.com/flow-php/flow/refs/heads/1.x/examples/topics/data_reading/elasticsearch/flow_php_example.zip" target="_blank" class="btn btn-primary mb-5">
+                        Download
+                    </a>
+                </div>
+
+                <hr class="hidden lg:block"/>
+                                    <code>composer.json</code>
+                    <div id="composer" class="relative"><button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#composer-json" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy composer-json" width="20" height="20" class="inline"></button><pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2"><code id="composer-json" class="language-json" data-controller="syntax-highlight" >{
+  &quot;name&quot;: &quot;flow-php/examples&quot;,
+  &quot;description&quot;: &quot;Flow PHP - Examples&quot;,
+  &quot;license&quot;: &quot;MIT&quot;,
+  &quot;type&quot;: &quot;library&quot;,
+  &quot;require&quot;: {
+    &quot;flow-php/etl&quot;: &quot;1.x-dev&quot;,
+    &quot;symfony/dotenv&quot;: &quot;^7.2&quot;,
+    &quot;flow-php/etl-adapter-elasticsearch&quot;: &quot;1.x-dev&quot;
+  },
+  &quot;config&quot;: {
+    &quot;allow-plugins&quot;: {
+      &quot;php-http/discovery&quot;: false
+    }
+  },
+  &quot;archive&quot;: {
+    &quot;exclude&quot;: [
+      &quot;.env&quot;,
+      &quot;vendor&quot;
+    ]
+  }
+}
+</code></pre></div>                
+                <code>code.php</code><div id="code" class="relative"><button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#code-php" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code-php" width="20" height="20" class="inline"></button><pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2"><code id="code-php" class="language-php" data-controller="syntax-highlight" >&lt;?php
 
 declare(strict_types=1);
 
@@ -334,7 +365,7 @@ use function Flow\ETL\Adapter\Elasticsearch\{entry_id_factory, es_hits_to_rows, 
 use function Flow\ETL\DSL\{data_frame, from_array, to_stream};
 use Symfony\Component\Dotenv\Dotenv;
 
-require __DIR__ . &#039;/../../../autoload.php&#039;;
+require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
 if (!\file_exists(__DIR__ . &#039;/.env&#039;)) {
     print &#039;Example skipped. Please create .env file with Azure Storage Account credentials.&#039; . PHP_EOL;
@@ -402,7 +433,7 @@ data_frame()
 +------+-----------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | took | timed_out |                                           _shards |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 hits |
 +------+-----------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|    1 |     false | {&quot;total&quot;:1,&quot;successful&quot;:1,&quot;skipped&quot;:0,&quot;failed&quot;:0} | {&quot;total&quot;:{&quot;value&quot;:6,&quot;relation&quot;:&quot;eq&quot;},&quot;max_score&quot;:1,&quot;hits&quot;:[{&quot;_index&quot;:&quot;test_index&quot;,&quot;_type&quot;:&quot;_doc&quot;,&quot;_id&quot;:&quot;1&quot;,&quot;_score&quot;:1,&quot;_source&quot;:{&quot;id&quot;:1,&quot;text&quot;:&quot;lorem ipsum&quot;}},{&quot;_index&quot;:&quot;test_index&quot;,&quot;_type&quot;:&quot;_doc&quot;,&quot;_id&quot;:&quot;2&quot;,&quot;_score&quot;:1,&quot;_source&quot;:{&quot;id&quot;:2,&quot;text&quot;:&quot;lorem ipsum&quot;}},{&quot;_index&quot;:&quot;test_index&quot;,&quot;_type&quot;:&quot;_doc&quot;,&quot;_id&quot;:&quot;3&quot;,&quot;_score&quot;:1,&quot;_source&quot;:{&quot;id&quot;:3,&quot;text&quot;:&quot;lorem ipsum&quot;}},{&quot;_index&quot;:&quot;test_index&quot;,&quot;_type&quot;:&quot;_doc&quot;,&quot;_id&quot;:&quot;4&quot;,&quot;_score&quot;:1,&quot;_source&quot;:{&quot;id&quot;:4,&quot;text&quot;:&quot;lorem ipsum&quot;}},{&quot;_index&quot;:&quot;test_index&quot;,&quot;_type&quot;:&quot;_doc&quot;,&quot;_id&quot;:&quot;5&quot;,&quot;_score&quot;:1,&quot;_source&quot;:{&quot;id&quot;:5,&quot;text&quot;:&quot;lorem ipsum&quot;}},{&quot;_index&quot;:&quot;test_index&quot;,&quot;_type&quot;:&quot;_doc&quot;,&quot;_id&quot;:&quot;6&quot;,&quot;_score&quot;:1,&quot;_source&quot;:{&quot;id&quot;:6,&quot;text&quot;:&quot;lorem ipsum&quot;}}]} |
+|    0 |     false | {&quot;total&quot;:1,&quot;successful&quot;:1,&quot;skipped&quot;:0,&quot;failed&quot;:0} | {&quot;total&quot;:{&quot;value&quot;:6,&quot;relation&quot;:&quot;eq&quot;},&quot;max_score&quot;:1,&quot;hits&quot;:[{&quot;_index&quot;:&quot;test_index&quot;,&quot;_type&quot;:&quot;_doc&quot;,&quot;_id&quot;:&quot;1&quot;,&quot;_score&quot;:1,&quot;_source&quot;:{&quot;id&quot;:1,&quot;text&quot;:&quot;lorem ipsum&quot;}},{&quot;_index&quot;:&quot;test_index&quot;,&quot;_type&quot;:&quot;_doc&quot;,&quot;_id&quot;:&quot;2&quot;,&quot;_score&quot;:1,&quot;_source&quot;:{&quot;id&quot;:2,&quot;text&quot;:&quot;lorem ipsum&quot;}},{&quot;_index&quot;:&quot;test_index&quot;,&quot;_type&quot;:&quot;_doc&quot;,&quot;_id&quot;:&quot;3&quot;,&quot;_score&quot;:1,&quot;_source&quot;:{&quot;id&quot;:3,&quot;text&quot;:&quot;lorem ipsum&quot;}},{&quot;_index&quot;:&quot;test_index&quot;,&quot;_type&quot;:&quot;_doc&quot;,&quot;_id&quot;:&quot;4&quot;,&quot;_score&quot;:1,&quot;_source&quot;:{&quot;id&quot;:4,&quot;text&quot;:&quot;lorem ipsum&quot;}},{&quot;_index&quot;:&quot;test_index&quot;,&quot;_type&quot;:&quot;_doc&quot;,&quot;_id&quot;:&quot;5&quot;,&quot;_score&quot;:1,&quot;_source&quot;:{&quot;id&quot;:5,&quot;text&quot;:&quot;lorem ipsum&quot;}},{&quot;_index&quot;:&quot;test_index&quot;,&quot;_type&quot;:&quot;_doc&quot;,&quot;_id&quot;:&quot;6&quot;,&quot;_score&quot;:1,&quot;_source&quot;:{&quot;id&quot;:6,&quot;text&quot;:&quot;lorem ipsum&quot;}}]} |
 +------+-----------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 1 rows
 

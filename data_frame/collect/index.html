@@ -319,9 +319,9 @@
             </nav>
 
             <div id="example" class="-mt-36 pt-36">
-                                    <h2 class="text-xl mt-5 mb-5">Description</h2>
+                                    <h2 class="text-xl mt-5">Description</h2>
                     <article id="example-description"
-                             class="rounded px-4 pt-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative mb-10"
+                             class="rounded px-4 pt-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative mb-5"
                             data-controller="all-links-external"
                     >
                         <p>Collect is used to make sure that all rows are processed at once. This means that all rows are loaded into memory and processed at once.
@@ -331,13 +331,37 @@ In order to control memory consumption please use <a href="/data_frame/batch_siz
 
                     </article>
                 
-                <h2 class="text-xl mt-5 mb-5">Code</h2><div id="code" class="relative"><button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#code" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2"><code id="code" class="language-php" data-controller="syntax-highlight" >&lt;?php
+                <div class="mb-5">
+                    <a href="https://raw.githubusercontent.com/flow-php/flow/refs/heads/1.x/examples/topics/data_frame/collect/flow_php_example.zip" target="_blank" class="btn btn-primary mb-5">
+                        Download
+                    </a>
+                </div>
+
+                <hr class="hidden lg:block"/>
+                                    <code>composer.json</code>
+                    <div id="composer" class="relative"><button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#composer-json" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy composer-json" width="20" height="20" class="inline"></button><pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2"><code id="composer-json" class="language-json" data-controller="syntax-highlight" >{
+  &quot;name&quot;: &quot;flow-php/examples&quot;,
+  &quot;description&quot;: &quot;Flow PHP - Examples&quot;,
+  &quot;license&quot;: &quot;MIT&quot;,
+  &quot;type&quot;: &quot;library&quot;,
+  &quot;require&quot;: {
+    &quot;flow-php/etl&quot;: &quot;1.x-dev&quot;
+  },
+  &quot;archive&quot;: {
+    &quot;exclude&quot;: [
+      &quot;.env&quot;,
+      &quot;vendor&quot;
+    ]
+  }
+}
+</code></pre></div>                
+                <code>code.php</code><div id="code" class="relative"><button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#code-php" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code-php" width="20" height="20" class="inline"></button><pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2"><code id="code-php" class="language-php" data-controller="syntax-highlight" >&lt;?php
 
 declare(strict_types=1);
 
 use function Flow\ETL\DSL\{data_frame, from_array, to_stream};
 
-require __DIR__ . &#039;/../../../autoload.php&#039;;
+require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
 data_frame()
     -&gt;read(from_array([

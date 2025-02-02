@@ -350,7 +350,7 @@ declare(strict_types=1);
 
 use function Flow\ETL\DSL\{data_frame, from_array, to_stream};
 
-require __DIR__ . &#039;/../../../autoload.php&#039;;
+require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
 data_frame()
     -&gt;read(from_array([
@@ -368,6 +368,8 @@ data_frame()
                         <h4 class="text-bold mt-5 mb-5">Example: <a href="/data_frame/data_frame/#example">Data frame - Data frame</a></h4><pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative"><button class="absolute top-0 right-0 bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-24" title="copy code" data-clipboard-target="#code" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><code id="code" class="language-php" data-controller="syntax-highlight" >&lt;?php
 
 declare(strict_types=1);
+
+require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
 use function Flow\ETL\DSL\{
     data_frame,

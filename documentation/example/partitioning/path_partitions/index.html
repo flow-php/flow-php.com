@@ -361,9 +361,12 @@
                 <h1>Example: Path partitions</h1>
                 <h3>Topic: Partitioning</h3>
                 <div class="mb-5 text-left">
-                    <a class="btn btn-primary" href="https://github.com/flow-php/flow/tree/1.x/examples/topics/partitioning/path_partitions" target="_blank">
+                    <a class="btn btn-primary mr-2" href="https://github.com/flow-php/flow/tree/1.x/examples/topics/partitioning/path_partitions" target="_blank">
                         View
                         <img src="https://flow-php.com/assets/images/icons/github-b7e5d858805e5289b575768f10a66b52.svg" alt="external resource" width="16" height="16" class="ml-1">
+                    </a>
+                    <a href="https://raw.githubusercontent.com/flow-php/flow/refs/heads/1.x/examples/topics/partitioning/path_partitions/flow_php_example.zip" target="_blank" class="btn btn-primary mb-5">
+                        Download
                     </a>
                 </div>
 
@@ -384,13 +387,37 @@
                     </script>
                 </section>
 
-                <h2 class="text-xl mt-5 mb-5">Code</h2><div id="code" class="relative"><button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#code" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code" width="20" height="20" class="inline"></button><pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2"><code id="code" class="language-php" data-controller="syntax-highlight" >&lt;?php
+                <hr class="hidden lg:block"/>
+                                    <code>composer.json</code>
+                <div id="composer" class="relative">
+                    <button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#composer-json" data-controller="clipboard">
+                        <img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy composer-json" width="20" height="20" class="inline">
+                    </button>
+                    <pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2"><code id="composer-json" class="language-json" data-controller="syntax-highlight" >{
+  "name": "flow-php/examples",
+  "description": "Flow PHP - Examples",
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "flow-php/etl": "1.x-dev"
+  },
+  "archive": {
+    "exclude": [
+      ".env",
+      "vendor"
+    ]
+  }
+}
+</code></pre>
+                </div>
+                
+                <code>code.php</code><div id="code" class="relative"><button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#code-php" data-controller="clipboard"><img src="https://flow-php.com/assets/images/icons/copy-c890d86c179d4c56059b8a0e9c88cd23.svg" alt="copy code-php" width="20" height="20" class="inline"></button><pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2"><code id="code-php" class="language-php" data-controller="syntax-highlight" >&lt;?php
 
 declare(strict_types=1);
 
 use function Flow\ETL\DSL\{data_frame, from_path_partitions, ref, to_stream};
 
-require __DIR__ . &#039;/../../../autoload.php&#039;;
+require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
 data_frame()
     -&gt;read(from_path_partitions(__DIR__ . &#039;/input/color=*/sku=*/*.csv&#039;))
