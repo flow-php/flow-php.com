@@ -379,18 +379,18 @@
                 </a>
             </div>
 
-            <h1>Parquet</h1>
+            <h1><a id="flow-php-parquet" href="#content-parquet" class="mr-2" aria-hidden="true" title="Permalink">#</a>Parquet</h1>
 <ul>
 <li><a href="../../introduction">⬅️️ Back</a></li>
 </ul>
-<h2>Installation</h2>
+<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/parquet
 </code></pre>
-<h2>What is Parquet</h2>
+<h2><a id="flow-php-what-is-parquet" href="#content-what-is-parquet" class="mr-2" aria-hidden="true" title="Permalink">#</a>What is Parquet</h2>
 <p>Apache Parquet is an open source, column-oriented data file format designed for efficient data storage and retrieval.
 It provides efficient data compression and encoding schemes with enhanced performance to handle complex data in bulk.
 Parquet is available in multiple languages including Java, C++, Python, etc... <strong>Now also in PHP!</strong></p>
-<h2>Columnar Storage</h2>
+<h2><a id="flow-php-columnar-storage" href="#content-columnar-storage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Columnar Storage</h2>
 <p>Parquet stores data in a columnar format, but what does it means?</p>
 <p>Row-based format:</p>
 <hr />
@@ -420,7 +420,7 @@ Parquet is available in multiple languages including Java, C++, Python, etc... <
 </tr>
 </tbody>
 </table>
-<h2>Column-based format:</h2>
+<h2><a id="flow-php-column-based-format" href="#content-column-based-format" class="mr-2" aria-hidden="true" title="Permalink">#</a>Column-based format:</h2>
 <table>
 <thead>
 <tr>
@@ -453,7 +453,7 @@ Parquet is available in multiple languages including Java, C++, Python, etc... <
 <li><strong>Data skipping</strong>: When querying a subset of rows, we can skip reading the other rows. This is especially useful when the rows are large.</li>
 <li><strong>Reading selective columns</strong>: When querying a subset of columns, we can skip reading the other columns. This is especially useful when the columns are large.</li>
 </ul>
-<h3>Parquet File Structure</h3>
+<h3><a id="flow-php-parquet-file-structure" href="#content-parquet-file-structure" class="mr-2" aria-hidden="true" title="Permalink">#</a>Parquet File Structure</h3>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">4-byte magic number "PAR1"
 &lt;Column 1 Chunk 1 + Column Metadata&gt;
 &lt;Column 2 Chunk 1 + Column Metadata&gt;
@@ -473,7 +473,7 @@ File Metadata
 4-byte magic number "PAR1"
 </code></pre>
 <p><img src="https://parquet.apache.org/images/FileLayout.gif" alt="Parquet File Structure" /></p>
-<h2>Reading Parquet Files</h2>
+<h2><a id="flow-php-reading-parquet-files" href="#content-reading-parquet-files" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading Parquet Files</h2>
 <p>The first thing we need to do is to create a reader.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Reader;
 
@@ -488,11 +488,11 @@ $reader = new Reader();
 <blockquote>
 <p>Please be aware that not all options are affecting reader.</p>
 </blockquote>
-<h3>Reader Options</h3>
+<h3><a id="flow-php-reader-options" href="#content-reader-options" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reader Options</h3>
 <ul>
 <li><code>INT_96_AS_DATETIME</code> - default: <code>true</code> - if set to <code>true</code> then <code>INT96</code> values will be converted to <code>DateTime</code> objects.</li>
 </ul>
-<h3>Reading a file</h3>
+<h3><a id="flow-php-reading-a-file" href="#content-reading-a-file" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading a file</h3>
 <p>Once we have reader we can read a file.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Reader;
 
@@ -508,7 +508,7 @@ $file = $reader-&gt;readStream(\fopen('path/to/file.parquet', 'rb'));
 <li><code>ParquetFile::metadata() : Metadata</code></li>
 <li><code>ParquetFile::schema() : Schema</code> - shortcut for <code>ParquetFile::metadata()-&gt;schema()</code></li>
 </ul>
-<h3>Reading the whole file:</h3>
+<h3><a id="flow-php-reading-the-whole-file" href="#content-reading-the-whole-file" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading the whole file:</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Reader;
 
 $reader = new Reader();
@@ -518,7 +518,7 @@ foreach ($file-&gt;values() as $row) {
     // do something with $row
 }
 </code></pre>
-<h3>Reading selected columns</h3>
+<h3><a id="flow-php-reading-selected-columns" href="#content-reading-selected-columns" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading selected columns</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Reader;
 
 $reader = new Reader();
@@ -528,7 +528,7 @@ foreach ($file-&gt;values(["column_1", "column_2"]) as $row) {
     // do something with $row
 }
 </code></pre>
-<h3>Pagination</h3>
+<h3><a id="flow-php-pagination" href="#content-pagination" class="mr-2" aria-hidden="true" title="Permalink">#</a>Pagination</h3>
 <blockquote>
 <p>[!NOTE]
 Paginating over parquet file is a bit tricky, especially if we want to keep memory usage low.
@@ -543,7 +543,7 @@ foreach ($file-&gt;values(["column_1", "column_2"], limit: 100, offset: 1000) as
     // do something with $row
 }
 </code></pre>
-<h2>Writing Parquet Files</h2>
+<h2><a id="flow-php-writing-parquet-files" href="#content-writing-parquet-files" class="mr-2" aria-hidden="true" title="Permalink">#</a>Writing Parquet Files</h2>
 <p>Since parquet is a binary format, we need to provide a schema for the writer so it can know how
 to encode values in specific columns.</p>
 <p>Here is how we can create a schema:</p>
@@ -589,7 +589,7 @@ $writer = new Writer();
 </code></pre>
 <p>This approach will open a parquet file, create a group writer, write all data and close the file.
 It requires to keep whole dataset in memory which usually is not the best approach.</p>
-<h3>Writing data in chunks</h3>
+<h3><a id="flow-php-writing-data-in-chunks" href="#content-writing-data-in-chunks" class="mr-2" aria-hidden="true" title="Permalink">#</a>Writing data in chunks</h3>
 <p>Before we can write a batch of rows, we need to open a file.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$writer-&gt;open($path, $schema);
 $writer-&gt;writeBatch([$row, $row]);
@@ -602,7 +602,7 @@ $writer-&gt;close();
 <p>We can also open a file for a resource:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$writer-&gt;openForStream($stream, $schema);
 </code></pre>
-<h3>Writing a single row</h3>
+<h3><a id="flow-php-writing-a-single-row" href="#content-writing-a-single-row" class="mr-2" aria-hidden="true" title="Permalink">#</a>Writing a single row</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$writer-&gt;open($path, $schema);
 $writer-&gt;writeRow($row);
 $writer-&gt;writeRow($row);
@@ -616,7 +616,7 @@ $writer-&gt;close();
 At this point, schema evolution is not yet supported.
 We need to make sure that schema is the same as the one used to create a file.</p>
 </blockquote>
-<h3>Writer Options</h3>
+<h3><a id="flow-php-writer-options" href="#content-writer-options" class="mr-2" aria-hidden="true" title="Permalink">#</a>Writer Options</h3>
 <ul>
 <li><code>BYTE_ARRAY_TO_STRING</code> - default: <code>true</code> - if set to <code>true</code> then <code>BYTE_ARRAY</code> values will be converted to <code>string</code> objects.</li>
 <li><code>DICTIONARY_PAGE_MIN_CARDINALITY_RATION</code> - default '0.4' - minimum ratio of unique values to total values for a column to have dictionary encoding.</li>
@@ -649,7 +649,7 @@ But it will take a little longer to write to these files, because writer has to 
 more frequently.</p>
 <p>Unfortunately, there is no one size fits all solution here.
 You will need to play a bit with those values to find the best one for your use case.</p>
-<h2>Compressions</h2>
+<h2><a id="flow-php-compressions" href="#content-compressions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Compressions</h2>
 <p>Parquet supports several compression algorithms.</p>
 <ul>
 <li><code>BROTLI</code> - supported if <a rel="noopener noreferrer" target="_blank" href="https://github.com/kjdev/php-ext-brotli">Brotli Extension</a> is installed</li>

@@ -379,7 +379,7 @@
                 </a>
             </div>
 
-            <h1>Window Functions</h1>
+            <h1><a id="flow-php-window-functions" href="#content-window-functions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Window Functions</h1>
 <ul>
 <li><a href="/documentation/components/core/core">⬅️️ Back</a></li>
 </ul>
@@ -388,7 +388,7 @@ Unlike regular aggregate functions, use of a window function does not cause rows
 Behind the scenes, the window function is able to access more than just the current row of the query result.</p>
 <p>To narrow window function to a specific set of rows, you need to use <code>window</code>.
 Window is used to partition dataset into smaller partitions on which later window function will be applied.</p>
-<h3>Window Functions:</h3>
+<h3><a id="flow-php-window-functions-1" href="#content-window-functions-1" class="mr-2" aria-hidden="true" title="Permalink">#</a>Window Functions:</h3>
 <ul>
 <li><a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/Function/RowNumber.php"><code>ROW_NUMBER()</code></a></li>
 <li><a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/Function/Rank.php"><code>RANK()</code></a></li>
@@ -398,7 +398,7 @@ Window is used to partition dataset into smaller partitions on which later windo
 <li><a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/Function/Count.php"><code>COUNT</code></a></li>
 </ul>
 <p>All window functions are implementing <a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/Function/WindowFunction.php"><code>WindowFunction</code></a> interface.</p>
-<h3>Example</h3>
+<h3><a id="flow-php-example" href="#content-example" class="mr-2" aria-hidden="true" title="Permalink">#</a>Example</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
     -&gt;read(
         from_array([

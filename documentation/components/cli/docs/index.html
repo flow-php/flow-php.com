@@ -379,16 +379,16 @@
                 </a>
             </div>
 
-            <h1>Flow Command Line Interface</h1>
-<h2>Installation</h2>
+            <h1><a id="flow-php-flow-command-line-interface" href="#content-flow-command-line-interface" class="mr-2" aria-hidden="true" title="Permalink">#</a>Flow Command Line Interface</h1>
+<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/cli
 </code></pre>
 <p>In some cases, it might make sense to install the CLI globally:</p>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer global require flow-php/cli
 </code></pre>
 <p>Now you can run the CLI using the <code>flow</code> command.</p>
-<h2>Commands</h2>
-<h3>Config</h3>
+<h2><a id="flow-php-commands" href="#content-commands" class="mr-2" aria-hidden="true" title="Permalink">#</a>Commands</h2>
+<h3><a id="flow-php-config" href="#content-config" class="mr-2" aria-hidden="true" title="Permalink">#</a>Config</h3>
 <p>All Flow CLI Commands can be configured using <code>--config</code> option. The option accepts a path to a configuration file in php that returns an Config or ConfigBuilder instance.</p>
 <p><code>.flow.php</code></p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
@@ -429,7 +429,7 @@ Available commands:
  pipeline
   pipeline:run           [run] Execute ETL pipeline from a php/json file.
 </code></pre>
-<h3><code>file:convert</code> alias <code>convert</code></h3>
+<h3><a id="flow-php-fileconvert-alias-convert" href="#content-fileconvert-alias-convert" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:convert</code> alias <code>convert</code></h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">Description:
   Read data from a file.
 
@@ -474,7 +474,7 @@ Options:
   -n, --no-interaction                                               Do not ask any interactive question
   -v|vv|vvv, --verbose                                               Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 </code></pre>
-<h3><code>file:schema</code> alias <code>schema</code></h3>
+<h3><a id="flow-php-fileschema-alias-schema" href="#content-fileschema-alias-schema" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:schema</code> alias <code>schema</code></h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow file:schema --help
 Description:
   Read data schema from a file.
@@ -526,7 +526,7 @@ Options:
 +------------+----------+----------+-------------+----------+
 7 rows
 </code></pre>
-<h3><code>file:analyze</code> alias <code>analyze</code></h3>
+<h3><a id="flow-php-fileanalyze-alias-analyze" href="#content-fileanalyze-alias-analyze" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:analyze</code> alias <code>analyze</code></h3>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">file:analyze --help                         
 Description:
   Analyze a file.
@@ -562,7 +562,7 @@ Options:
   -n, --no-interaction                                     Do not ask any interactive question
   -v|vv|vvv, --verbose                                     Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 </code></pre>
-<h3><code>file:read</code> alias <code>read</code></h3>
+<h3><a id="flow-php-fileread-alias-read" href="#content-fileread-alias-read" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:read</code> alias <code>read</code></h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow read --help
 Description:
   Read data from a file.
@@ -599,7 +599,7 @@ Options:
   -n, --no-interaction                                     Do not ask any interactive question
   -v|vv|vvv, --verbose                                     Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 </code></pre>
-<h3><code>file:rows:count</code> alis <code>count</code></h3>
+<h3><a id="flow-php-filerowscount-alis-count" href="#content-filerowscount-alis-count" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:rows:count</code> alis <code>count</code></h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$ flow count --help
 Description:
   Read data schema from a file.
@@ -633,7 +633,7 @@ Options:
   -n, --no-interaction                                     Do not ask any interactive question
   -v|vv|vvv, --verbose                                     Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 </code></pre>
-<h3><code>parquet:read:metadata</code></h3>
+<h3><a id="flow-php-parquetreadmetadata" href="#content-parquetreadmetadata" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>parquet:read:metadata</code></h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow parquet:read:metadata --help
 Description:
   Read metadata from parquet file
@@ -657,7 +657,7 @@ Options:
   -n, --no-interaction  Do not ask any interactive question
   -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 </code></pre>
-<h3><code>pipeline:run</code></h3>
+<h3><a id="flow-php-pipelinerun" href="#content-pipelinerun" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>pipeline:run</code></h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow pipeline:run --help
 Description:
   Execute ETL pipeline from a php/json file.

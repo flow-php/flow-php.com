@@ -314,18 +314,18 @@ By default <code>fstab()</code> function registers two default filesystems:</p>
 </ul>
 <p>All filesystems supports listing files and opening streams
 into which you can read or write data.</p>
-<h2>Listing Files</h2>
+<h2><a id="flow-php-listing-files" href="#content-listing-files" class="mr-2" aria-hidden="true" title="Permalink">#</a>Listing Files</h2>
 <hr />
 <p>To list files use <code>Filesystem::list(Path $path)</code> method
 which also supports <code>glob</code> pattern.</p>
 <p>List method returns and generator of <code>FileStatus</code> objects.</p>
 <p>Alternatively to check if a single file exists, use <code>Filesystem::status(Path $path) : ?FileStatus</code></p>
-<h2>Reading Data</h2>
+<h2><a id="flow-php-reading-data" href="#content-reading-data" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading Data</h2>
 <hr />
 <p>Reading data from a filesystem is done by opening a stream
 and deciding if you want to read it at once or in chunks.</p>
 <p>Additionally, you can read a part of a file from a specific offset.</p>
-<h2>Writing Data</h2>
+<h2><a id="flow-php-writing-data" href="#content-writing-data" class="mr-2" aria-hidden="true" title="Permalink">#</a>Writing Data</h2>
 <hr />
 <p>Writing data to a filesystem is done by opening a stream throught
 one of two methods:</p>

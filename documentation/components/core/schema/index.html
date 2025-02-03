@@ -379,7 +379,7 @@
                 </a>
             </div>
 
-            <h1>Schema</h1>
+            <h1><a id="flow-php-schema" href="#content-schema" class="mr-2" aria-hidden="true" title="Permalink">#</a>Schema</h1>
 <ul>
 <li><a href="/documentation/components/core/core">⬅️️ Back</a></li>
 </ul>
@@ -400,7 +400,7 @@ Row Schema is built from Entry Definitions, each definition is created from:</p>
 <li><a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/Row/Schema/SelectiveValidator.php">SelectiveValidator</a> - only rows defined in the schema must match, any extra entry in row will be ignored</li>
 </ul>
 <p>By default, ETL is initializing <code>StrictValidator</code>, but it's possible to override it by passing second argument to <code>DataFrame::validate()</code> method.</p>
-<h2>Example - schema validation</h2>
+<h2><a id="flow-php-example---schema-validation" href="#content-example---schema-validation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Example - schema validation</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 data_frame()
@@ -432,7 +432,7 @@ schema
 |-- name: string
 |-- active: boolean
 </code></pre>
-<h2>Example - display schema</h2>
+<h2><a id="flow-php-example---display-schema" href="#content-example---display-schema" class="mr-2" aria-hidden="true" title="Permalink">#</a>Example - display schema</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 data_frame()

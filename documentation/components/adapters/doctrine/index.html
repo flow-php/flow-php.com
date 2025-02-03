@@ -379,7 +379,7 @@
                 </a>
             </div>
 
-            <h1>ETL Adapter: Doctrine</h1>
+            <h1><a id="flow-php-etl-adapter-doctrine" href="#content-etl-adapter-doctrine" class="mr-2" aria-hidden="true" title="Permalink">#</a>ETL Adapter: Doctrine</h1>
 <ul>
 <li><a href="../../introduction">⬅️️ Back</a></li>
 </ul>
@@ -394,12 +394,12 @@ versatile and efficient data processing solutions, making it an excellent choice
 operations in large-scale and data-intensive environments. With Flow PHP's Adapter Doctrine, managing database
 interactions within your ETL workflows becomes a more simplified and efficient endeavor, perfectly aligning with the
 robust and adaptable nature of the Flow PHP ecosystem.</p>
-<h2>Installation</h2>
+<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/etl-adapter-doctrine
 </code></pre>
-<h2>Description</h2>
+<h2><a id="flow-php-description" href="#content-description" class="mr-2" aria-hidden="true" title="Permalink">#</a>Description</h2>
 <p>Adapter for <a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl">ETL</a> using bulk operations from <a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/doctrine-dbal-bulk">Doctrine Dbal Bulk</a>.</p>
-<h2>Loader - DbalLoader</h2>
+<h2><a id="flow-php-loader---dballoader" href="#content-loader---dballoader" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loader - DbalLoader</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
     -&gt;read(from_())
     -&gt;write(new DbalLoader('your-table-name', $bulkSize = 100, ['url' =&gt; \getenv('PGSQL_DATABASE_URL')], ['skip_conflicts' =&gt; true]))
@@ -413,21 +413,21 @@ robust and adaptable nature of the Flow PHP ecosystem.</p>
 </ul>
 <p>The <code>bulkSize</code> means how many rows you want to push to a database in a single <code>INSERT</code> query. Each extracted rows set
 is going to be split before inserting data into the database.</p>
-<h2>Extractor - DbalQuery</h2>
+<h2><a id="flow-php-extractor---dbalquery" href="#content-extractor---dbalquery" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extractor - DbalQuery</h2>
 <p>This simple but powerful extractor let you extract data from a single or multiple parametrized queries.</p>
-<h3>Single Query</h3>
+<h3><a id="flow-php-single-query" href="#content-single-query" class="mr-2" aria-hidden="true" title="Permalink">#</a>Single Query</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
     -&gt;read(DbalQueryExtractor::singleQuery($connection, "SELECT * FROM {$table} ORDER BY id"))
     -&gt;write(to_())
     -&gt;run()
 </code></pre>
-<h3>Single Parametrized Query</h3>
+<h3><a id="flow-php-single-parametrized-query" href="#content-single-parametrized-query" class="mr-2" aria-hidden="true" title="Permalink">#</a>Single Parametrized Query</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
     -&gt;read(DbalQueryExtractor::singleQuery($connection, "SELECT * FROM {$table} WHERE id = :id", ['id' =&gt; 1]))
     -&gt;write(to_())
     -&gt;run()
 </code></pre>
-<h3>Multiple Parametrized Query</h3>
+<h3><a id="flow-php-multiple-parametrized-query" href="#content-multiple-parametrized-query" class="mr-2" aria-hidden="true" title="Permalink">#</a>Multiple Parametrized Query</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
     -&gt;read(
         new DbalQueryExtractor(
@@ -446,7 +446,7 @@ is going to be split before inserting data into the database.</p>
     -&gt;run()
 </code></pre>
 <p>In this case, query will be executed exactly five times, taking every time next entry of parameters from ParametersSet.</p>
-<h2>Schema Converter</h2>
+<h2><a id="flow-php-schema-converter" href="#content-schema-converter" class="mr-2" aria-hidden="true" title="Permalink">#</a>Schema Converter</h2>
 <p>With <code>to_dbal_schema_table()</code> function we can convert any Flow Schema (which represents a dataset)
 to Doctrine DBAL Schema Table.</p>
 <p>By providing metadata defined in <code>\Flow\ETL\Adapter\Doctrine\DbalMetadata</code> we can also add additional information to the schema,
@@ -510,7 +510,7 @@ new Table(
     ]
 );
 </code></pre>
-<h3>Schema Converter - Types Map</h3>
+<h3><a id="flow-php-schema-converter---types-map" href="#content-schema-converter---types-map" class="mr-2" aria-hidden="true" title="Permalink">#</a>Schema Converter - Types Map</h3>
 <p>When types map is not provided, the default one will be used:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">public const DEFAULT_TYPES = [
     StringType::class =&gt; \Doctrine\DBAL\Types\StringType::class,

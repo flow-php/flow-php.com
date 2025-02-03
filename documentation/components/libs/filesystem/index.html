@@ -379,11 +379,11 @@
                 </a>
             </div>
 
-            <h1>Filesystem</h1>
+            <h1><a id="flow-php-filesystem" href="#content-filesystem" class="mr-2" aria-hidden="true" title="Permalink">#</a>Filesystem</h1>
 <ul>
 <li><a href="../../introduction">⬅️️ Back</a></li>
 </ul>
-<h2>Installation</h2>
+<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/filesystem
 </code></pre>
 <p>Flow Filesystem is a unified solution to store and retrieve data at remote and local filesystems.
@@ -392,12 +392,12 @@ it by byte ranges.</p>
 <p>This means, that while writing data to a large remote file, instead we can literally stream the data and based on the implementation
 of the filesystem, it will be saved in blocks.</p>
 <p>When reading, instead of iterating through the whole file to find the data you need, you can directly access the data you need by specifying the byte range.</p>
-<h1>Available Filesystems</h1>
+<h1><a id="flow-php-available-filesystems" href="#content-available-filesystems" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Filesystems</h1>
 <ul>
 <li>Native Local Filesystem</li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/blob/1.x/documentation/components/bridges/filesystem-azure-bridge.md">Azure Blob Filesystem</a></li>
 </ul>
-<h1>Building Blocks</h1>
+<h1><a id="flow-php-building-blocks" href="#content-building-blocks" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building Blocks</h1>
 <ul>
 <li><code>SourceStream</code> - source streams interface represents readonly data streams</li>
 </ul>
@@ -437,7 +437,7 @@ FilesystemTable::for(Path|Protocol $path) : Filesystem
 FilesystemTable::mount(Filesystem $filesystem) : void
 FilesystemTable::unmount(Filesystem $filesystem) : void
 </code></pre>
-<h2>Usage</h2>
+<h2><a id="flow-php-usage" href="#content-usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\Azure\SDK\DSL\azure_blob_service;

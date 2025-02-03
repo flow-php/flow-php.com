@@ -379,7 +379,7 @@
                 </a>
             </div>
 
-            <h1>Quick Start</h1>
+            <h1><a id="flow-php-quick-start" href="#content-quick-start" class="mr-2" aria-hidden="true" title="Permalink">#</a>Quick Start</h1>
 <ul>
 <li><a href="installation">⬅️️ Back</a></li>
 </ul>
@@ -412,7 +412,7 @@ data_frame()
     -&gt;write(to_csv(__DIR__ . '/daily_revenue.csv'))
     -&gt;run();
 </code></pre>
-<h2>Data Frame</h2>
+<h2><a id="flow-php-data-frame" href="#content-data-frame" class="mr-2" aria-hidden="true" title="Permalink">#</a>Data Frame</h2>
 <p>The <code>data_frame()</code> function is the entry point to the Flow ETL DSL.</p>
 <blockquote>
 <p>[!TIP]
@@ -423,7 +423,7 @@ Whenever possible, use DSL functions instead of creating objects directly.</p>
 </blockquote>
 <p>It creates a new instance of the <code>Flow\ETL\Flow</code> class, which is the main class of the ETL.</p>
 <p><a href="/data_frame/#example">Data Frame Examples</a></p>
-<h2>Extraction - Reading</h2>
+<h2><a id="flow-php-extraction---reading" href="#content-extraction---reading" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extraction - Reading</h2>
 <p>The first step in creating a data processing pipeline is to read the data from a data source.
 Extractors are responsible for reading data from a data source and converting it into a format that can be processed by Flow ETL.
 All extractors return \Generator and by design will throw rows one by one, this is to ensure that memory consumption is constant and low.</p>
@@ -436,7 +436,7 @@ All extractors return \Generator and by design will throw rows one by one, this 
     -&gt;read(from_csv(__DIR__ . '/reports/*.csv'))
 </code></pre>
 <p><a href="/data_reading/#example">Extractors Examples</a></p>
-<h2>Transformation</h2>
+<h2><a id="flow-php-transformation" href="#content-transformation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Transformation</h2>
 <p>Extractors by default are going to read all columns from the data source, you can use the <code>select()</code> function to select only the columns you need.
 Alternatively you can use the <code>drop()</code> function to drop columns you don't need.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">    -&gt;select('created_at', 'total_price', 'discount')
@@ -460,7 +460,7 @@ You can always create objects directly, but DSL is a more convenient way to buil
 All available ETL functions can be found in the <a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/Function">Function</a> namespace.</p>
 </blockquote>
 <p><a href="/transformations/#example">Transformations Examples</a></p>
-<h2>Loading - Writing</h2>
+<h2><a id="flow-php-loading---writing" href="#content-loading---writing" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loading - Writing</h2>
 <p>Loading, also writing to a data source, is the last step in the data processing pipeline.
 There can be more than one writer in the pipeline</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">    -&gt;write(to_output(truncate: false))
@@ -486,7 +486,7 @@ Append mode is not really appending anything to existing files, instead it creat
 It can be later read using glob-pattern, for example <code>from_csv('/path/to/folder/*.csv')</code>.</p>
 </blockquote>
 <p><a href="/data_writing/#example">Loaders Examples</a></p>
-<h2>Lazy Execution</h2>
+<h2><a id="flow-php-lazy-execution" href="#content-lazy-execution" class="mr-2" aria-hidden="true" title="Permalink">#</a>Lazy Execution</h2>
 <p>Flow ETL is using lazy execution, which means that the pipeline will not be executed until you call the <code>run()</code> function.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">    -&gt;run();
 </code></pre>

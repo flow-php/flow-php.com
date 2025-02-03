@@ -379,27 +379,27 @@
                 </a>
             </div>
 
-            <h1>Join</h1>
+            <h1><a id="flow-php-join" href="#content-join" class="mr-2" aria-hidden="true" title="Permalink">#</a>Join</h1>
 <ul>
 <li><a href="/documentation/components/core/core">⬅️️ Back</a></li>
 </ul>
 <p>Joining two data frames is a common operation in data processing.
 It is used to combine data from two different sources into one data frame.
 The join operation is performed on a common column or columns between the two data frames.</p>
-<h2>Join Methods</h2>
+<h2><a id="flow-php-join-methods" href="#content-join-methods" class="mr-2" aria-hidden="true" title="Permalink">#</a>Join Methods</h2>
 <ul>
 <li><code>DataFrame::crossJoin</code> - join each row from the left side with each row on the right side creating <code>count(left) * count(right)</code> rows in total.</li>
 <li><code>DataFrame::join</code> - right side is static for each left Rows set.</li>
 <li><code>DataFrame::joinEach</code> - right side dynamically generated for each left Rows set.</li>
 </ul>
-<h2>Join Types</h2>
+<h2><a id="flow-php-join-types" href="#content-join-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Join Types</h2>
 <ul>
 <li><code>left</code></li>
 <li><code>left_anti</code> (keep in left only what does not exist in right)</li>
 <li><code>right</code></li>
 <li><code>inner</code></li>
 </ul>
-<h2>Example</h2>
+<h2><a id="flow-php-example" href="#content-example" class="mr-2" aria-hidden="true" title="Permalink">#</a>Example</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 $externalProducts = [

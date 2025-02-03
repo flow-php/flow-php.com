@@ -379,39 +379,39 @@
                 </a>
             </div>
 
-            <h1>Contributing</h1>
+            <h1><a id="flow-php-contributing" href="#content-contributing" class="mr-2" aria-hidden="true" title="Permalink">#</a>Contributing</h1>
 <p>In order to run tests locally please make sure you have <a rel="noopener noreferrer" target="_blank" href="https://www.docker.com/">docker</a> up and running.
 You also need <a rel="noopener noreferrer" target="_blank" href="https://www.php.net/">PHP 8.1</a> and <a rel="noopener noreferrer" target="_blank" href="https://getcomposer.org/">composer</a> to be available from your CLI.
 Even that we are supporting 3 PHP versions at time, we are using the lowest supported one for development, currently it's PHP 8.1.</p>
 <p>For the code coverage, please install <a rel="noopener noreferrer" target="_blank" href="https://pecl.php.net/package/pcov">pcov</a>.</p>
-<h3>Before you change anything</h3>
+<h3><a id="flow-php-before-you-change-anything" href="#content-before-you-change-anything" class="mr-2" aria-hidden="true" title="Permalink">#</a>Before you change anything</h3>
 <p>Please make sure that you are aware of our <a href="/documentation/adrs">Architecture Decision Records</a>.
 It's mandatory to follow all of them without any exceptions unless explicitly overridden by a new ADR.</p>
-<h3>Prepare Project:</h3>
+<h3><a id="flow-php-prepare-project" href="#content-prepare-project" class="mr-2" aria-hidden="true" title="Permalink">#</a>Prepare Project:</h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">cp compose.yml.dist compose.yml
 composer install 
 docker compose up -d
 </code></pre>
-<h3>Run Test Suite</h3>
+<h3><a id="flow-php-run-test-suite" href="#content-run-test-suite" class="mr-2" aria-hidden="true" title="Permalink">#</a>Run Test Suite</h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer test
 </code></pre>
-<h3>Run Static Analyze</h3>
+<h3><a id="flow-php-run-static-analyze" href="#content-run-static-analyze" class="mr-2" aria-hidden="true" title="Permalink">#</a>Run Static Analyze</h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer static:analyze
 </code></pre>
-<h3>Fixing Coding Standards</h3>
+<h3><a id="flow-php-fixing-coding-standards" href="#content-fixing-coding-standards" class="mr-2" aria-hidden="true" title="Permalink">#</a>Fixing Coding Standards</h3>
 <p>Before committing your code, please make sure that your code is following our coding standards.</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer cs:php:fix
 </code></pre>
-<h3>Test everything</h3>
+<h3><a id="flow-php-test-everything" href="#content-test-everything" class="mr-2" aria-hidden="true" title="Permalink">#</a>Test everything</h3>
 <p>This command will execute exactly the same tests as we run at GitHub Actions before PR can get merged.
 If it passes locally, you are good to open pull request.</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer build 
 </code></pre>
-<h2>Building PHAR</h2>
+<h2><a id="flow-php-building-phar" href="#content-building-phar" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building PHAR</h2>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer build:phar
 ./build/flow.phar --version
 </code></pre>
-<h2>Building Docker Image</h2>
+<h2><a id="flow-php-building-docker-image" href="#content-building-docker-image" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building Docker Image</h2>
 <p>In order to build docker image and load it to local registry please use:</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">docker buildx build -t flow-php/flow:latest . --progress=plain  --load
 </code></pre>

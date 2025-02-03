@@ -379,7 +379,7 @@
                 </a>
             </div>
 
-            <h1>ETL Adapter: HTTP</h1>
+            <h1><a id="flow-php-etl-adapter-http" href="#content-etl-adapter-http" class="mr-2" aria-hidden="true" title="Permalink">#</a>ETL Adapter: HTTP</h1>
 <ul>
 <li><a href="../../introduction">⬅️️ Back</a></li>
 </ul>
@@ -394,10 +394,10 @@ efficient data processing solutions, making it an excellent choice for developer
 large-scale and data-intensive environments. With Flow PHP's Adapter HTTP, navigating HTTP tasks within your ETL
 workflows becomes a more refined and efficient endeavor, harmoniously aligning with the robust and adaptable framework
 of the Flow PHP ecosystem.</p>
-<h2>Installation</h2>
+<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/etl-adapter-http
 </code></pre>
-<h2>Extractor - PsrHttpClientDynamicExtractor</h2>
+<h2><a id="flow-php-extractor---psrhttpclientdynamicextractor" href="#content-extractor---psrhttpclientdynamicextractor" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extractor - PsrHttpClientDynamicExtractor</h2>
 <p>Extract Rows using NextRequestFactory that can dynamically parse previous response and generate next request.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -439,7 +439,7 @@ $this-&gt;assertSame(200, $rows-&gt;current()-&gt;first()-&gt;valueOf('status_co
 $this-&gt;assertSame('1.1', $rows-&gt;current()-&gt;first()-&gt;valueOf('protocol_version'));
 $this-&gt;assertSame('OK', $rows-&gt;current()-&gt;first()-&gt;valueOf('reason_phrase'));
 </code></pre>
-<h2>Extractor - PsrHttpClientStaticExtractor</h2>
+<h2><a id="flow-php-extractor---psrhttpclientstaticextractor" href="#content-extractor---psrhttpclientstaticextractor" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extractor - PsrHttpClientStaticExtractor</h2>
 <p>Extract Rows from predefined collection of requests.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">
 use Flow\ETL\Adapter\Http\PsrHttpClientStaticExtractor;

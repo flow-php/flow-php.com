@@ -379,7 +379,7 @@
                 </a>
             </div>
 
-            <h1>Doctrine Bulk</h1>
+            <h1><a id="flow-php-doctrine-bulk" href="#content-doctrine-bulk" class="mr-2" aria-hidden="true" title="Permalink">#</a>Doctrine Bulk</h1>
 <ul>
 <li><a href="../../introduction">⬅️️ Back</a></li>
 </ul>
@@ -391,10 +391,10 @@ leveraging this library, developers can effortlessly manage bulk data processes,
 reliability even in demanding data-intensive environments. This aligns perfectly with Flow PHP's ethos of robust data
 processing, making the Doctrine DBAL Bulk library an invaluable addition to your data transformation and processing
 toolkit.</p>
-<h2>Installation</h2>
+<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/doctrine-dbal-bulk
 </code></pre>
-<h2>Usage Examples</h2>
+<h2><a id="flow-php-usage-examples" href="#content-usage-examples" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage Examples</h2>
 <p>Insert:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$bulk = Bulk::create();
 $bulk-&gt;insert(
@@ -425,13 +425,13 @@ $bulk-&gt;update(
 );
 
 </code></pre>
-<h2>Supported Dialects</h2>
+<h2><a id="flow-php-supported-dialects" href="#content-supported-dialects" class="mr-2" aria-hidden="true" title="Permalink">#</a>Supported Dialects</h2>
 <ul>
 <li>PostgreSQL</li>
 <li>MySQL / MariaDB</li>
 <li>SQLite</li>
 </ul>
-<h3>Adding new Dialects</h3>
+<h3><a id="flow-php-adding-new-dialects" href="#content-adding-new-dialects" class="mr-2" aria-hidden="true" title="Permalink">#</a>Adding new Dialects</h3>
 <p><a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/Dialect.php">Dialect</a> is basic abstraction of this library.<br />
 The main role of Dialect is to prepare SQL insert/update statement based
 on <a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData</a>

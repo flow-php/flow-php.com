@@ -379,7 +379,7 @@
                 </a>
             </div>
 
-            <h1>ETL Adapter: Text</h1>
+            <h1><a id="flow-php-etl-adapter-text" href="#content-etl-adapter-text" class="mr-2" aria-hidden="true" title="Permalink">#</a>ETL Adapter: Text</h1>
 <ul>
 <li><a href="../../introduction">⬅️️ Back</a></li>
 </ul>
@@ -394,10 +394,10 @@ providing versatile and efficient data processing solutions, making it an excell
 text data in large-scale and data-intensive projects. With Flow PHP's Adapter Text, managing text data within your ETL
 workflows becomes a more refined and efficient endeavor, perfectly aligning with the robust and adaptable framework of
 the Flow PHP ecosystem.</p>
-<h2>Installation</h2>
+<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/etl-adapter-text
 </code></pre>
-<h2>Extractor</h2>
+<h2><a id="flow-php-extractor" href="#content-extractor" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extractor</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use Flow\ETL\DSL\Text;
@@ -407,7 +407,7 @@ $rows = (new Flow())
     -&gt;read(from_text(path))
     -&gt;fetch();
 </code></pre>
-<h2>Loader</h2>
+<h2><a id="flow-php-loader" href="#content-loader" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loader</h2>
 <blockquote>
 <p>:warning: Heads up, TextLoader expects rows to have single entry in order to properly write them into file.</p>
 </blockquote>
