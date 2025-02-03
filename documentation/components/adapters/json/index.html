@@ -412,7 +412,7 @@ $rows = (new Flow())
 <h2>Loader - JsonLoader</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
-use Flow\ETL\Adapter\JSON\JsonLoader;
+use function Flow\ETL\Adapter\JSON\{to_json};
 use Flow\ETL\Flow;
 use Flow\ETL\Row;
 use Flow\ETL\Rows;
@@ -430,6 +430,30 @@ use Flow\ETL\Rows;
         )
     )
     -&gt;write(to_json(\sys_get_temp_dir() . '/file.json'))
+    -&gt;run();
+</code></pre>
+<h2>Loader - JsonLoader - JSON lines</h2>
+<p>It is also possible to export the rows using the <a rel="noopener noreferrer" target="_blank" href="https://jsonlines.org/">json lines</a> format</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+use function Flow\ETL\Adapter\JSON\{to_json};
+use Flow\ETL\Flow;
+use Flow\ETL\Row;
+use Flow\ETL\Rows;
+
+(new Flow())
+    -&gt;process(
+        new Rows(
+            ...\array_map(
+                fn (int $i) : Row =&gt; Row::create(
+                    new Row\Entry\IntegerEntry('id', $i),
+                    new Row\Entry\StringEntry('name', 'name_' . $i)
+                ),
+                \range(0, 10)
+            )
+        )
+    )
+    -&gt;write(to_json(\sys_get_temp_dir() . '/file.jsonl')-&gt;asJsonl())
     -&gt;run();
 </code></pre>
 
@@ -804,6 +828,9 @@ use Flow\ETL\Rows;
                 </a>
                             <a href="https://github.com/jpiatko" rel="nofollow" target="_blank">
                     <img loading="lazy" src="https://avatars.githubusercontent.com/u/80686947?v=4&amp;s=128" alt="jpiatko" width="56" height="56" title="jpiatko" class="rounded-full">
+                </a>
+                            <a href="https://github.com/jmortlock" rel="nofollow" target="_blank">
+                    <img loading="lazy" src="https://avatars.githubusercontent.com/u/10041761?v=4&amp;s=128" alt="jmortlock" width="56" height="56" title="jmortlock" class="rounded-full">
                 </a>
                             <a href="https://github.com/jguittard" rel="nofollow" target="_blank">
                     <img loading="lazy" src="https://avatars.githubusercontent.com/u/5320213?v=4&amp;s=128" alt="jguittard" width="56" height="56" title="jguittard" class="rounded-full">
