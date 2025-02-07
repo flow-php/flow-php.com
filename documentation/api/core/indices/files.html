@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>Flow PHP</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+    
+            <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <div class="flow-header-wrapper">
+    <header class="phpdocumentor-header phpdocumentor-section">
+        <h1 class="phpdocumentor-title"><a href="/documentation" class="phpdocumentor-title__link">Flow PHP</a></h1>
+        <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+        <label class="phpdocumentor-header__menu-icon" for="menu-button">
+            <i class="fas fa-bars"></i>
+        </label>
+        <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+        <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+                        <li class="phpdocumentor-topnav__menu-item -menu">
+                <a href="/documentation">
+                    <span>
+                                                                        Back
+                    </span>
+                </a>
+            </li>
+                </ul>
+</nav>
+    </header>
+</div>
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                                <section class="phpdocumentor-sidebar__category -namespaces">
+                <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                            <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/flow.html" class="">Flow</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/flow-arraycomparison.html" class="">ArrayComparison</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-clock.html" class="">Clock</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-etl.html" class="">ETL</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-serializer.html" class="">Serializer</a>
+                
+            </li>
+            </ul>
+
+                                </section>
+                                    
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                        <section>
+        
+        <h2 class="phpdocumentor-content__title">Files</h2>
+                                            <h3>A</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-formatter-ascii-asciibody.html"><abbr title="src/core/etl/src/Flow/ETL/Formatter/ASCII/ASCIIBody.php">ASCIIBody.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-formatter-ascii-asciiheaders.html"><abbr title="src/core/etl/src/Flow/ETL/Formatter/ASCII/ASCIIHeaders.php">ASCIIHeaders.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-schema-formatter-asciischemaformatter.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema/Formatter/ASCIISchemaFormatter.php">ASCIISchemaFormatter.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-formatter-ascii-asciitable.html"><abbr title="src/core/etl/src/Flow/ETL/Formatter/ASCII/ASCIITable.php">ASCIITable.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-formatter-ascii-asciivalue.html"><abbr title="src/core/etl/src/Flow/ETL/Formatter/ASCII/ASCIIValue.php">ASCIIValue.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-aggregatingfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php">AggregatingFunction.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-hash-algorithm.html"><abbr title="src/core/etl/src/Flow/ETL/Hash/Algorithm.php">Algorithm.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-all.html"><abbr title="src/core/etl/src/Flow/ETL/Function/All.php">All.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-join-comparison-all.html"><abbr title="src/core/etl/src/Flow/ETL/Join/Comparison/All.php">All.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-any.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Any.php">Any.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-join-comparison-any.html"><abbr title="src/core/etl/src/Flow/ETL/Join/Comparison/Any.php">Any.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-arraycastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/ArrayCastingHandler.php">ArrayCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-arraycomparison-arraycomparison.html"><abbr title="src/core/etl/src/Flow/ArrayComparison/ArrayComparison.php">ArrayComparison.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-arraycontentdetector.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/ArrayContentDetector.php">ArrayContentDetector.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arrayexpand-arrayexpand.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayExpand/ArrayExpand.php">ArrayExpand.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arrayexpand.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayExpand.php">ArrayExpand.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arrayfilter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayFilter.php">ArrayFilter.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arrayget.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayGet.php">ArrayGet.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arraygetcollection.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayGetCollection.php">ArrayGetCollection.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arraykeep.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayKeep.php">ArrayKeep.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-styleconverter-arraykeyconverter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/StyleConverter/ArrayKeyConverter.php">ArrayKeyConverter.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-styleconverter-arraykeyconverter.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/StyleConverter/ArrayKeyConverter.php">ArrayKeyConverter.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arraykeyrename.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayKeyRename.php">ArrayKeyRename.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arraykeys.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayKeys.php">ArrayKeys.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arraykeysstyleconvert.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayKeysStyleConvert.php">ArrayKeysStyleConvert.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-loader-arrayloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/ArrayLoader.php">ArrayLoader.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-memory-arraymemory.html"><abbr title="src/core/etl/src/Flow/ETL/Memory/ArrayMemory.php">ArrayMemory.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arraymerge.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayMerge.php">ArrayMerge.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arraymergecollection.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayMergeCollection.php">ArrayMergeCollection.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arraypathexists.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayPathExists.php">ArrayPathExists.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arrayreverse.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayReverse.php">ArrayReverse.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arraysort.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArraySort.php">ArraySort.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-arraycomparison-arraysortbykey.html"><abbr title="src/core/etl/src/Flow/ArrayComparison/ArraySortByKey.php">ArraySortByKey.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-native-arraytype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/ArrayType.php">ArrayType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arrayunpack.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayUnpack.php">ArrayUnpack.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arrayvalues.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArrayValues.php">ArrayValues.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-ascii.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Ascii.php">Ascii.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-formatter-asciitableformatter.html"><abbr title="src/core/etl/src/Flow/ETL/Formatter/AsciiTableFormatter.php">AsciiTableFormatter.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-autocasttransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/AutoCastTransformer.php">AutoCastTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-autocaster.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/AutoCaster.php">AutoCaster.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-average.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Average.php">Average.php</abbr></a></li>
+                        </ul>
+                                                        <h3>B</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-serializer-base64serializer.html"><abbr title="src/core/etl/src/Flow/Serializer/Base64Serializer.php">Base64Serializer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-optimizer-batchsizeoptimization.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/Optimizer/BatchSizeOptimization.php">BatchSizeOptimization.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-batchingpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/BatchingPipeline.php">BatchingPipeline.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-between.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Between.php">Between.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-formatter-ascii-body.html"><abbr title="src/core/etl/src/Flow/ETL/Formatter/ASCII/Body.php">Body.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-booleancastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/BooleanCastingHandler.php">BooleanCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-booleanentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/BooleanEntry.php">BooleanEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-native-booleantype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/BooleanType.php">BooleanType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-between-boundary.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Between/Boundary.php">Boundary.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-loader-branchingloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php">BranchingLoader.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-hashjoin-bucket.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/HashJoin/Bucket.php">Bucket.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-sort-externalsort-bucket.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/ExternalSort/Bucket.php">Bucket.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-sort-externalsort-bucketrow.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/ExternalSort/BucketRow.php">BucketRow.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-sort-externalsort-buckets.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/ExternalSort/Buckets.php">Buckets.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-sort-externalsort-bucketscache.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/ExternalSort/BucketsCache.php">BucketsCache.php</abbr></a></li>
+                        </ul>
+                                                        <h3>C</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-cache.html"><abbr title="src/core/etl/src/Flow/ETL/Cache.php">Cache.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-config-cache-cacheconfig.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfig.php">CacheConfig.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-config-cache-cacheconfigbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php">CacheConfigBuilder.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-cacheextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/CacheExtractor.php">CacheExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-cache-cacheindex.html"><abbr title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php">CacheIndex.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-cachingpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/CachingPipeline.php">CachingPipeline.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-native-callabletype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/CallableType.php">CallableType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-loader-callbackloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/CallbackLoader.php">CallbackLoader.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-callbackrowtransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/CallbackRowTransformer.php">CallbackRowTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-capitalize.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Capitalize.php">Capitalize.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-cartesianproduct.html"><abbr title="src/core/etl/src/Flow/ETL/Row/CartesianProduct.php">CartesianProduct.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-cast.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Cast.php">Cast.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster.php">Caster.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-castingcontext.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/CastingContext.php">CastingContext.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-castingexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/CastingException.php">CastingException.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-castinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/CastingHandler.php">CastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-chainextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/ChainExtractor.php">ChainExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-chunkextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/ChunkExtractor.php">ChunkExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-loader-closure.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/Closure.php">Closure.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-coalesce.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Coalesce.php">Coalesce.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-collect.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Collect.php">Collect.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-collectunique.html"><abbr title="src/core/etl/src/Flow/ETL/Function/CollectUnique.php">CollectUnique.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-collectingextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php">CollectingExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-collectingpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/CollectingPipeline.php">CollectingPipeline.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-combine.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Combine.php">Combine.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-orderentries-combinedcomparator.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/OrderEntries/CombinedComparator.php">CombinedComparator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-comparison-comparable.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Comparison/Comparable.php">Comparable.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-comparator.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Comparator.php">Comparator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-orderentries-comparator.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/OrderEntries/Comparator.php">Comparator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-join-comparison.html"><abbr title="src/core/etl/src/Flow/ETL/Join/Comparison.php">Comparison.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-serializer-compressingserializer.html"><abbr title="src/core/etl/src/Flow/Serializer/CompressingSerializer.php">CompressingSerializer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-concat.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Concat.php">Concat.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-concatwithseparator.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ConcatWithSeparator.php">ConcatWithSeparator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-config.html"><abbr title="src/core/etl/src/Flow/ETL/Config.php">Config.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-monitoring-memory-configuration.html"><abbr title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php">Configuration.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-monitoring-memory-consumption.html"><abbr title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Consumption.php">Consumption.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-contains.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Contains.php">Contains.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-count.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Count.php">Count.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-crossjoinrowstransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/CrossJoinRowsTransformer.php">CrossJoinRowsTransformer.php</abbr></a></li>
+                        </ul>
+                                                        <h3>D</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-function-domelementattributevalue.html"><abbr title="src/core/etl/src/Flow/ETL/Function/DOMElementAttributeValue.php">DOMElementAttributeValue.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-domelementattributescount.html"><abbr title="src/core/etl/src/Flow/ETL/Function/DOMElementAttributesCount.php">DOMElementAttributesCount.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-domelementvalue.html"><abbr title="src/core/etl/src/Flow/ETL/Function/DOMElementValue.php">DOMElementValue.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-dataframeextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/DataFrameExtractor.php">DataFrameExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-dataframefactory.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrameFactory.php">DataFrameFactory.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-datecastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/DateCastingHandler.php">DateCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-dateentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/DateEntry.php">DateEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-sequencegenerator-dateperiodsequencegenerator.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/SequenceGenerator/DatePeriodSequenceGenerator.php">DatePeriodSequenceGenerator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-datetimecastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/DateTimeCastingHandler.php">DateTimeCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-datetimeentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/DateTimeEntry.php">DateTimeEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-datetimeformat.html"><abbr title="src/core/etl/src/Flow/ETL/Function/DateTimeFormat.php">DateTimeFormat.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-logical-datetimetype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Logical/DateTimeType.php">DateTimeType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-logical-datetype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Logical/DateType.php">DateType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-schema-definition.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema/Definition.php">Definition.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-denserank.html"><abbr title="src/core/etl/src/Flow/ETL/Function/DenseRank.php">DenseRank.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-divide.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Divide.php">Divide.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-attribute-documentationdsl.html"><abbr title="src/core/etl/src/Flow/ETL/Attribute/DocumentationDSL.php">DocumentationDSL.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-attribute-documentationexample.html"><abbr title="src/core/etl/src/Flow/ETL/Attribute/DocumentationExample.php">DocumentationExample.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-dropduplicatestransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/DropDuplicatesTransformer.php">DropDuplicatesTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-dropentriestransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/DropEntriesTransformer.php">DropEntriesTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-droppartitionstransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/DropPartitionsTransformer.php">DropPartitionsTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-duplicatedentriesexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/DuplicatedEntriesException.php">DuplicatedEntriesException.php</abbr></a></li>
+                        </ul>
+                                                        <h3>E</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-function-endswith.html"><abbr title="src/core/etl/src/Flow/ETL/Function/EndsWith.php">EndsWith.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entries.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entries.php">Entries.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry.php">Entry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entryfactory.html"><abbr title="src/core/etl/src/Flow/ETL/Row/EntryFactory.php">EntryFactory.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-entrynamestyleconvertertransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/EntryNameStyleConverterTransformer.php">EntryNameStyleConverterTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-entryref.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EntryRef.php">EntryRef.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entryreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/EntryReference.php">EntryReference.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-enumcastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/EnumCastingHandler.php">EnumCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-native-enumtype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php">EnumType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-join-comparison-equal.html"><abbr title="src/core/etl/src/Flow/ETL/Join/Comparison/Equal.php">Equal.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-equals.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Equals.php">Equals.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-errorhandler.html"><abbr title="src/core/etl/src/Flow/ETL/ErrorHandler.php">ErrorHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-schema-matcher-evolvingschemamatcher.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema/Matcher/EvolvingSchemaMatcher.php">EvolvingSchemaMatcher.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-exception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/Exception.php">Exception.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-dataset-statistics-executiontime.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/ExecutionTime.php">ExecutionTime.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-exists.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Exists.php">Exists.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-scalarfunction-expandresults.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunction/ExpandResults.php">ExpandResults.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-join-expression.html"><abbr title="src/core/etl/src/Flow/ETL/Join/Expression.php">Expression.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/ExternalSort.php">ExternalSort.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor.php">Extractor.php</abbr></a></li>
+                        </ul>
+                                                        <h3>F</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-clock-fakeclock.html"><abbr title="src/core/etl/src/Flow/Clock/FakeClock.php">FakeClock.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-fileextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php">FileExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-loader-fileloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/FileLoader.php">FileLoader.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-filesextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/FilesExtractor.php">FilesExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-sort-externalsort-bucketscache-filesystembucketscache.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/ExternalSort/BucketsCache/FilesystemBucketsCache.php">FilesystemBucketsCache.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-cache-implementation-filesystemcache.html"><abbr title="src/core/etl/src/Flow/ETL/Cache/Implementation/FilesystemCache.php">FilesystemCache.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-filesystem-filesystemstreams.html"><abbr title="src/core/etl/src/Flow/ETL/Filesystem/FilesystemStreams.php">FilesystemStreams.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-first.html"><abbr title="src/core/etl/src/Flow/ETL/Function/First.php">First.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-floatcastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/FloatCastingHandler.php">FloatCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-floatentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/FloatEntry.php">FloatEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-native-floattype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/FloatType.php">FloatType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-flow.html"><abbr title="src/core/etl/src/Flow/ETL/Flow.php">Flow.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-flowcontext.html"><abbr title="src/core/etl/src/Flow/ETL/FlowContext.php">FlowContext.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-formatter.html"><abbr title="src/core/etl/src/Flow/ETL/Formatter.php">Formatter.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></li>
+                        </ul>
+                                                        <h3>G</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-generatorextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/GeneratorExtractor.php">GeneratorExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-greaterthan.html"><abbr title="src/core/etl/src/Flow/ETL/Function/GreaterThan.php">GreaterThan.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-greaterthanequal.html"><abbr title="src/core/etl/src/Flow/ETL/Function/GreaterThanEqual.php">GreaterThanEqual.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-greatest.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Greatest.php">Greatest.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-groupby.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy.php">GroupBy.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-groupbypipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php">GroupByPipeline.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-grouptoarraytransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/GroupToArrayTransformer.php">GroupToArrayTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-dataframe-groupeddataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame/GroupedDataFrame.php">GroupedDataFrame.php</abbr></a></li>
+                        </ul>
+                                                        <h3>H</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-function-hash.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Hash.php">Hash.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-hashjoinpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/HashJoinPipeline.php">HashJoinPipeline.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-hashjoin-hashtable.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/HashJoin/HashTable.php">HashTable.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-dropduplicates-hashes.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/DropDuplicates/Hashes.php">Hashes.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-formatter-ascii-headers.html"><abbr title="src/core/etl/src/Flow/ETL/Formatter/ASCII/Headers.php">Headers.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-dataset-statistics-highresolutiontime.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/HighResolutionTime.php">HighResolutionTime.php</abbr></a></li>
+                        </ul>
+                                                        <h3>I</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-join-comparison-identical.html"><abbr title="src/core/etl/src/Flow/ETL/Join/Comparison/Identical.php">Identical.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-errorhandler-ignoreerror.html"><abbr title="src/core/etl/src/Flow/ETL/ErrorHandler/IgnoreError.php">IgnoreError.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-cache-implementation-inmemorycache.html"><abbr title="src/core/etl/src/Flow/ETL/Cache/Implementation/InMemoryCache.php">InMemoryCache.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-integercastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/IntegerCastingHandler.php">IntegerCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-integerentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/IntegerEntry.php">IntegerEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-native-integertype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/IntegerType.php">IntegerType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-invalidargumentexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/InvalidArgumentException.php">InvalidArgumentException.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-invalidfileformatexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/InvalidFileFormatException.php">InvalidFileFormatException.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-invalidlogicexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/InvalidLogicException.php">InvalidLogicException.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-isin.html"><abbr title="src/core/etl/src/Flow/ETL/Function/IsIn.php">IsIn.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-isnotnull.html"><abbr title="src/core/etl/src/Flow/ETL/Function/IsNotNull.php">IsNotNull.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-isnotnumeric.html"><abbr title="src/core/etl/src/Flow/ETL/Function/IsNotNumeric.php">IsNotNumeric.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-isnull.html"><abbr title="src/core/etl/src/Flow/ETL/Function/IsNull.php">IsNull.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-isnumeric.html"><abbr title="src/core/etl/src/Flow/ETL/Function/IsNumeric.php">IsNumeric.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-istype.html"><abbr title="src/core/etl/src/Flow/ETL/Function/IsType.php">IsType.php</abbr></a></li>
+                        </ul>
+                                                        <h3>J</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-join-join.html"><abbr title="src/core/etl/src/Flow/ETL/Join/Join.php">Join.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-joineachrowstransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/JoinEachRowsTransformer.php">JoinEachRowsTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-joinexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/JoinException.php">JoinException.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-jsoncastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/JsonCastingHandler.php">JsonCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-jsondecode.html"><abbr title="src/core/etl/src/Flow/ETL/Function/JsonDecode.php">JsonDecode.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-jsonencode.html"><abbr title="src/core/etl/src/Flow/ETL/Function/JsonEncode.php">JsonEncode.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-jsonentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/JsonEntry.php">JsonEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-logical-jsontype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Logical/JsonType.php">JsonType.php</abbr></a></li>
+                        </ul>
+                                                        <h3>K</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-keynotincacheexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/KeyNotInCacheException.php">KeyNotInCacheException.php</abbr></a></li>
+                        </ul>
+                                                        <h3>L</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-function-last.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Last.php">Last.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-least.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Least.php">Least.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-lessthan.html"><abbr title="src/core/etl/src/Flow/ETL/Function/LessThan.php">LessThan.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-lessthanequal.html"><abbr title="src/core/etl/src/Flow/ETL/Function/LessThanEqual.php">LessThanEqual.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-optimizer-limitoptimization.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/Optimizer/LimitOptimization.php">LimitOptimization.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-limitreachedexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/LimitReachedException.php">LimitReachedException.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-limittransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/LimitTransformer.php">LimitTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-limitable.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/Limitable.php">Limitable.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-limitableextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/LimitableExtractor.php">LimitableExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-linkedpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/LinkedPipeline.php">LinkedPipeline.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-listcastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/ListCastingHandler.php">ListCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-listentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/ListEntry.php">ListEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-listfunctions.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ListFunctions.php">ListFunctions.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-listselect.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ListSelect.php">ListSelect.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-logical-listtype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Logical/ListType.php">ListType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-literal.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Literal.php">Literal.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-loader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader.php">Loader.php</abbr></a></li>
+                        </ul>
+                                                        <h3>M</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-mapcastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/MapCastingHandler.php">MapCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-mapentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/MapEntry.php">MapEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-logical-maptype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Logical/MapType.php">MapType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-max.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Max.php">Max.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-memory-memory.html"><abbr title="src/core/etl/src/Flow/ETL/Memory/Memory.php">Memory.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-memoryextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/MemoryExtractor.php">MemoryExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-loader-memoryloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/MemoryLoader.php">MemoryLoader.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-sort-memorysort.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/MemorySort.php">MemorySort.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-schema-metadata.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema/Metadata.php">Metadata.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-min.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Min.php">Min.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-minus.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Minus.php">Minus.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-missingdependencyexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/MissingDependencyException.php">MissingDependencyException.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-missingextensionexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/MissingExtensionException.php">MissingExtensionException.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-mod.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Mod.php">Mod.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-attribute-module.html"><abbr title="src/core/etl/src/Flow/ETL/Attribute/Module.php">Module.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-multiply.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Multiply.php">Multiply.php</abbr></a></li>
+                        </ul>
+                                                        <h3>N</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-orderentries-namecomparator.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/OrderEntries/NameComparator.php">NameComparator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-comparator-nativecomparator.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Comparator/NativeComparator.php">NativeComparator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-hash-nativephphash.html"><abbr title="src/core/etl/src/Flow/ETL/Hash/NativePHPHash.php">NativePHPHash.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-nativephprandomvaluegenerator.html"><abbr title="src/core/etl/src/Flow/ETL/NativePHPRandomValueGenerator.php">NativePHPRandomValueGenerator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-serializer-nativephpserializer.html"><abbr title="src/core/etl/src/Flow/Serializer/NativePHPSerializer.php">NativePHPSerializer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-not.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Not.php">Not.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-notequals.html"><abbr title="src/core/etl/src/Flow/ETL/Function/NotEquals.php">NotEquals.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-notsame.html"><abbr title="src/core/etl/src/Flow/ETL/Function/NotSame.php">NotSame.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-now.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Now.php">Now.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-nullcastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/NullCastingHandler.php">NullCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-native-nulltype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/NullType.php">NullType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-numberformat.html"><abbr title="src/core/etl/src/Flow/ETL/Function/NumberFormat.php">NumberFormat.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-sequencegenerator-numbersequencegenerator.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/SequenceGenerator/NumberSequenceGenerator.php">NumberSequenceGenerator.php</abbr></a></li>
+                        </ul>
+                                                        <h3>O</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-objectcastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/ObjectCastingHandler.php">ObjectCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-native-objecttype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/ObjectType.php">ObjectType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-oneach.html"><abbr title="src/core/etl/src/Flow/ETL/Function/OnEach.php">OnEach.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-optimizer-optimization.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/Optimizer/Optimization.php">Optimization.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-optimizer.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/Optimizer.php">Optimizer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-optional.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Optional.php">Optional.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-options.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/Options.php">Options.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-orderentries-order.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/OrderEntries/Order.php">Order.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-orderentriestransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/OrderEntriesTransformer.php">OrderEntriesTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-outofmemoryexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/OutOfMemoryException.php">OutOfMemoryException.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-loader-streamloader-output.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/StreamLoader/Output.php">Output.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-overridingextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/OverridingExtractor.php">OverridingExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-loader-overridingloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/OverridingLoader.php">OverridingLoader.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-overridingpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/OverridingPipeline.php">OverridingPipeline.php</abbr></a></li>
+                        </ul>
+                                                        <h3>P</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-cache-implementation-psrsimplecache.html"><abbr title="src/core/etl/src/Flow/ETL/Cache/Implementation/PSRSimpleCache.php">PSRSimpleCache.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-partitioningpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/PartitioningPipeline.php">PartitioningPipeline.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-pathfiltering.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PathFiltering.php">PathFiltering.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-pathpartitionsextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php">PathPartitionsExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline.php">Pipeline.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-pipelineextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PipelineExtractor.php">PipelineExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-pipes.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/Pipes.php">Pipes.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-hash-plaintext.html"><abbr title="src/core/etl/src/Flow/ETL/Hash/PlainText.php">PlainText.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-plus.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Plus.php">Plus.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-power.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Power.php">Power.php</abbr></a></li>
+                        </ul>
+                                                                                        <h3>R</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-function-randomstring.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RandomString.php">RandomString.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-randomvaluegenerator.html"><abbr title="src/core/etl/src/Flow/ETL/RandomValueGenerator.php">RandomValueGenerator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-rank.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Rank.php">Rank.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-reference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Reference.php">Reference.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-references.html"><abbr title="src/core/etl/src/Flow/ETL/Row/References.php">References.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-regex.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Regex.php">Regex.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-regexall.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RegexAll.php">RegexAll.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-regexmatch.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RegexMatch.php">RegexMatch.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-regexmatchall.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RegexMatchAll.php">RegexMatchAll.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-regexreplace.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RegexReplace.php">RegexReplace.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-renameallcasetransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/RenameAllCaseTransformer.php">RenameAllCaseTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-renameentrytransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/RenameEntryTransformer.php">RenameEntryTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-renamestrreplaceallentriestransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/RenameStrReplaceAllEntriesTransformer.php">RenameStrReplaceAllEntriesTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-dataset-report.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Report.php">Report.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-native-resourcetype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/ResourceType.php">ResourceType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-round.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Round.php">Round.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-floatcastinghandler-roundingmode.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/FloatCastingHandler/RoundingMode.php">RoundingMode.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row.html"><abbr title="src/core/etl/src/Flow/ETL/Row.php">Row.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-rownumber.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RowNumber.php">RowNumber.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-rows.html"><abbr title="src/core/etl/src/Flow/ETL/Rows.php">Rows.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-rowsextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/RowsExtractor.php">RowsExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-rowsfactory.html"><abbr title="src/core/etl/src/Flow/ETL/RowsFactory.php">RowsFactory.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-sort-externalsort-rowsminheap.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/ExternalSort/RowsMinHeap.php">RowsMinHeap.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-runtimeexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/RuntimeException.php">RuntimeException.php</abbr></a></li>
+                        </ul>
+                                                        <h3>S</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-function-same.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Same.php">Same.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-sanitize.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sanitize.php">Sanitize.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-filesystem-savemode.html"><abbr title="src/core/etl/src/Flow/ETL/Filesystem/SaveMode.php">SaveMode.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-scalarfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunction.php">ScalarFunction.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-filesystem-scalarfunctionfilter.html"><abbr title="src/core/etl/src/Flow/ETL/Filesystem/ScalarFunctionFilter.php">ScalarFunctionFilter.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-scalarfunctionfiltertransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/ScalarFunctionFilterTransformer.php">ScalarFunctionFilterTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-scalarfunctiontransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/ScalarFunctionTransformer.php">ScalarFunctionTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-schemadefinitionnotfoundexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/SchemaDefinitionNotFoundException.php">SchemaDefinitionNotFoundException.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-schemadefinitionnotuniqueexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/SchemaDefinitionNotUniqueException.php">SchemaDefinitionNotUniqueException.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-schema-schemaformatter.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema/SchemaFormatter.php">SchemaFormatter.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-schema-schemamatcher.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema/SchemaMatcher.php">SchemaMatcher.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-exception-schemavalidationexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/SchemaValidationException.php">SchemaValidationException.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-loader-schemavalidationloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/SchemaValidationLoader.php">SchemaValidationLoader.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-schemavalidator.html"><abbr title="src/core/etl/src/Flow/ETL/SchemaValidator.php">SchemaValidator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-selectentriestransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/SelectEntriesTransformer.php">SelectEntriesTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-schema-selectivevalidator.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema/SelectiveValidator.php">SelectiveValidator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-sequenceextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php">SequenceExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-sequencegenerator-sequencegenerator.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/SequenceGenerator/SequenceGenerator.php">SequenceGenerator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-serializer-exception-serializationexception.html"><abbr title="src/core/etl/src/Flow/Serializer/Exception/SerializationException.php">SerializationException.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-serializetransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/SerializeTransformer.php">SerializeTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-serializer-serializer.html"><abbr title="src/core/etl/src/Flow/Serializer/Serializer.php">Serializer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-signal.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/Signal.php">Signal.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-size.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Size.php">Size.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-errorhandler-skiprows.html"><abbr title="src/core/etl/src/Flow/ETL/ErrorHandler/SkipRows.php">SkipRows.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-slug.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Slug.php">Slug.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-arraysort-sort.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ArraySort/Sort.php">Sort.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-sort-sortalgorithms.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/SortAlgorithms.php">SortAlgorithms.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-extractor-sortbucketsextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/SortBucketsExtractor.php">SortBucketsExtractor.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-config-sort-sortconfig.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Sort/SortConfig.php">SortConfig.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-config-sort-sortconfigbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Sort/SortConfigBuilder.php">SortConfigBuilder.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-sortorder.html"><abbr title="src/core/etl/src/Flow/ETL/Row/SortOrder.php">SortOrder.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-sort-sortingalgorithm.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/SortingAlgorithm.php">SortingAlgorithm.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-sortingpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/SortingPipeline.php">SortingPipeline.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-split.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Split.php">Split.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-sprintf.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sprintf.php">Sprintf.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-startswith.html"><abbr title="src/core/etl/src/Flow/ETL/Function/StartsWith.php">StartsWith.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-dataset-statistics.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics.php">Statistics.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-strpad.html"><abbr title="src/core/etl/src/Flow/ETL/Function/StrPad.php">StrPad.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-strreplace.html"><abbr title="src/core/etl/src/Flow/ETL/Function/StrReplace.php">StrReplace.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-loader-streamloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/StreamLoader.php">StreamLoader.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-schema-matcher-strictschemamatcher.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema/Matcher/StrictSchemaMatcher.php">StrictSchemaMatcher.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-schema-strictvalidator.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema/StrictValidator.php">StrictValidator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-stringaggregate.html"><abbr title="src/core/etl/src/Flow/ETL/Function/StringAggregate.php">StringAggregate.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-stringcastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/StringCastingHandler.php">StringCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-stringentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StringEntry.php">StringEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-stringfold.html"><abbr title="src/core/etl/src/Flow/ETL/Function/StringFold.php">StringFold.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-styleconverter-stringstyles.html"><abbr title="src/core/etl/src/Flow/ETL/Function/StyleConverter/StringStyles.php">StringStyles.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-native-stringtype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/StringType.php">StringType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-stringcastinghandler-stringtypechecker.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/StringCastingHandler/StringTypeChecker.php">StringTypeChecker.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-structurecastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/StructureCastingHandler.php">StructureCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-structurefunctions.html"><abbr title="src/core/etl/src/Flow/ETL/Function/StructureFunctions.php">StructureFunctions.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-structureselect.html"><abbr title="src/core/etl/src/Flow/ETL/Function/StructureSelect.php">StructureSelect.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-logical-structuretype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Logical/StructureType.php">StructureType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-synchronouspipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/SynchronousPipeline.php">SynchronousPipeline.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-clock-systemclock.html"><abbr title="src/core/etl/src/Flow/Clock/SystemClock.php">SystemClock.php</abbr></a></li>
+                        </ul>
+                                                        <h3>T</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-errorhandler-throwerror.html"><abbr title="src/core/etl/src/Flow/ETL/ErrorHandler/ThrowError.php">ThrowError.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-timecastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/TimeCastingHandler.php">TimeCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-timeentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/TimeEntry.php">TimeEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-logical-timetype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Logical/TimeType.php">TimeType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-todate.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ToDate.php">ToDate.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-todatetime.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ToDateTime.php">ToDateTime.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-tolower.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ToLower.php">ToLower.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-totimezone.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ToTimeZone.php">ToTimeZone.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-toupper.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ToUpper.php">ToUpper.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformation.html"><abbr title="src/core/etl/src/Flow/ETL/Transformation.php">Transformation.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer.php">Transformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-loader-transformerloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/TransformerLoader.php">TransformerLoader.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-trim.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Trim.php">Trim.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-attribute-type.html"><abbr title="src/core/etl/src/Flow/ETL/Attribute/Type.php">Type.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-trim-type.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Trim/Type.php">Type.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-loader-streamloader-type.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/StreamLoader/Type.php">Type.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-type.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Type.php">Type.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-orderentries-typecomparator.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/OrderEntries/TypeComparator.php">TypeComparator.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-typedetector.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/TypeDetector.php">TypeDetector.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-typefactory.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/TypeFactory.php">TypeFactory.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-orderentries-typepriorities.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/OrderEntries/TypePriorities.php">TypePriorities.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-scalarfunction-typedscalarfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunction/TypedScalarFunction.php">TypedScalarFunction.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-types.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Types.php">Types.php</abbr></a></li>
+                        </ul>
+                                                        <h3>U</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-function-ulid.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Ulid.php">Ulid.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-monitoring-memory-unit.html"><abbr title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Unit.php">Unit.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-scalarfunction-unpackresults.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunction/UnpackResults.php">UnpackResults.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-unserializetransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/UnserializeTransformer.php">UnserializeTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-untiltransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/UntilTransformer.php">UntilTransformer.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-uuid.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Uuid.php">Uuid.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-value-uuid.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Value/Uuid.php">Uuid.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-uuidcastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/UuidCastingHandler.php">UuidCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-uuidentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/UuidEntry.php">UuidEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-logical-uuidtype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Logical/UuidType.php">UuidType.php</abbr></a></li>
+                        </ul>
+                                                        <h3>V</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-pipeline-voidpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/VoidPipeline.php">VoidPipeline.php</abbr></a></li>
+                        </ul>
+                                                        <h3>W</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-function-when.html"><abbr title="src/core/etl/src/Flow/ETL/Function/When.php">When.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-window.html"><abbr title="src/core/etl/src/Flow/ETL/Window.php">Window.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-windowfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/WindowFunction.php">WindowFunction.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-transformer-windowfunctiontransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/WindowFunctionTransformer.php">WindowFunctionTransformer.php</abbr></a></li>
+                        </ul>
+                                                        <h3>X</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-xmlcastinghandler.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/XMLCastingHandler.php">XMLCastingHandler.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-caster-xml-xmlconverter.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Caster/XML/XMLConverter.php">XMLConverter.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-xmlelemententry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/XMLElementEntry.php">XMLElementEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-logical-xmlelementtype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Logical/XMLElementType.php">XMLElementType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-row-entry-xmlentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/XMLEntry.php">XMLEntry.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-php-type-logical-xmltype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Logical/XMLType.php">XMLType.php</abbr></a></li>
+                            <li><a href="files/src-core-etl-src-flow-etl-function-xpath.html"><abbr title="src/core/etl/src/Flow/ETL/Function/XPath.php">XPath.php</abbr></a></li>
+                        </ul>
+                                                                                        </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="indices/files.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>Flow PHP</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+    
+            <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <div class="flow-header-wrapper">
+    <header class="phpdocumentor-header phpdocumentor-section">
+        <h1 class="phpdocumentor-title"><a href="/documentation" class="phpdocumentor-title__link">Flow PHP</a></h1>
+        <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+        <label class="phpdocumentor-header__menu-icon" for="menu-button">
+            <i class="fas fa-bars"></i>
+        </label>
+        <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+        <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+                        <li class="phpdocumentor-topnav__menu-item -menu">
+                <a href="/documentation">
+                    <span>
+                                                                        Back
+                    </span>
+                </a>
+            </li>
+                </ul>
+</nav>
+    </header>
+</div>
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                                <section class="phpdocumentor-sidebar__category -namespaces">
+                <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                            <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/flow.html" class="">Flow</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/flow-parquet.html" class="">Parquet</a>
+                
+            </li>
+            </ul>
+
+                                </section>
+                                    
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                        <section>
+        
+        <h2 class="phpdocumentor-content__title">Files</h2>
+                                            <h3>A</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-aesgcmctrv1.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/AesGcmCtrV1.php">AesGcmCtrV1.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-aesgcmv1.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/AesGcmV1.php">AesGcmV1.php</abbr></a></li>
+                        </ul>
+                                                        <h3>B</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-binaryreader-binarybufferreader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/BinaryReader/BinaryBufferReader.php">BinaryBufferReader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-binarywriter-binarybufferwriter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/BinaryWriter/BinaryBufferWriter.php">BinaryBufferWriter.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-binaryreader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/BinaryReader.php">BinaryReader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-binarywriter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/BinaryWriter.php">BinaryWriter.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-data-bitwidth.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/BitWidth.php">BitWidth.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-bloomfilteralgorithm.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/BloomFilterAlgorithm.php">BloomFilterAlgorithm.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-bloomfiltercompression.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/BloomFilterCompression.php">BloomFilterCompression.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-bloomfilterhash.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/BloomFilterHash.php">BloomFilterHash.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-bloomfilterheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/BloomFilterHeader.php">BloomFilterHeader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-boundaryorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/BoundaryOrder.php">BoundaryOrder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-bsontype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/BsonType.php">BsonType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-byteorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ByteOrder.php">ByteOrder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-binaryreader-bytes.html"><abbr title="src/lib/parquet/src/Flow/Parquet/BinaryReader/Bytes.php">Bytes.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-data-bytesconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/BytesConverter.php">BytesConverter.php</abbr></a></li>
+                        </ul>
+                                                        <h3>C</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-codec.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Codec.php">Codec.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-column.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/Column.php">Column.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroup-columnchunk.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroup/ColumnChunk.php">ColumnChunk.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-columnchunk.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/ColumnChunk.php">ColumnChunk.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-columnchunkbuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/ColumnChunkBuilder.php">ColumnChunkBuilder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-columnchunkcontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/ColumnChunkContainer.php">ColumnChunkContainer.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-columnchunkreader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/ColumnChunkReader.php">ColumnChunkReader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-columnchunkstatistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/ColumnChunkStatistics.php">ColumnChunkStatistics.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-columnchunkviewer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/ColumnChunkViewer.php">ColumnChunkViewer.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-columncryptometadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/ColumnCryptoMetaData.php">ColumnCryptoMetaData.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-page-columndata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Page/ColumnData.php">ColumnData.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-validator-columndatavalidator.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/Validator/ColumnDataValidator.php">ColumnDataValidator.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/ColumnIndex.php">ColumnIndex.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/ColumnMetaData.php">ColumnMetaData.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-columnorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/ColumnOrder.php">ColumnOrder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-columnpageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/ColumnPageHeader.php">ColumnPageHeader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-columnprimitivetype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/ColumnPrimitiveType.php">ColumnPrimitiveType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-statistics-comparator.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/Statistics/Comparator.php">Comparator.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-compressioncodec.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/CompressionCodec.php">CompressionCodec.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-compressions.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Compressions.php">Compressions.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-consts.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Consts.php">Consts.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-convertedtype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/ConvertedType.php">ConvertedType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-convertedtype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/ConvertedType.php">ConvertedType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-data-converter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Data/Converter.php">Converter.php</abbr></a></li>
+                        </ul>
+                                                        <h3>D</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-datacoder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/DataCoder.php">DataCoder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-exception-dataconversionexception.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Exception/DataConversionException.php">DataConversionException.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-data-dataconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Data/DataConverter.php">DataConverter.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagebuilder-datapagebuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PageBuilder/DataPageBuilder.php">DataPageBuilder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-page-header-datapageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Page/Header/DataPageHeader.php">DataPageHeader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-datapageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/DataPageHeader.php">DataPageHeader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-page-header-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Page/Header/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagebuilder-datapagev2statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PageBuilder/DataPageV2Statistics.php">DataPageV2Statistics.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-datasize.html"><abbr title="src/lib/parquet/src/Flow/Parquet/DataSize.php">DataSize.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-datetype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/DateType.php">DateType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-logicaltype-decimal.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/LogicalType/Decimal.php">Decimal.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-decimaltype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/DecimalType.php">DecimalType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-columndata-definitionconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/ColumnData/DefinitionConverter.php">DefinitionConverter.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-page-dictionary.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Page/Dictionary.php">Dictionary.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagebuilder-dictionary.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PageBuilder/Dictionary.php">Dictionary.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagebuilder-dictionarybuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PageBuilder/DictionaryBuilder.php">DictionaryBuilder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagebuilder-dictionarypagebuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PageBuilder/DictionaryPageBuilder.php">DictionaryPageBuilder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-page-header-dictionarypageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Page/Header/DictionaryPageHeader.php">DictionaryPageHeader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-dictionarypageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/DictionaryPageHeader.php">DictionaryPageHeader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-validator-disabledvalidator.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/Validator/DisabledValidator.php">DisabledValidator.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-dremelassembler.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/DremelAssembler.php">DremelAssembler.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-dremelshredder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/DremelShredder.php">DremelShredder.php</abbr></a></li>
+                        </ul>
+                                                        <h3>E</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-encoding.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/Encoding.php">Encoding.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-encodings.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Encodings.php">Encodings.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-encryptionalgorithm.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/EncryptionAlgorithm.php">EncryptionAlgorithm.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-encryptionwithcolumnkey.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/EncryptionWithColumnKey.php">EncryptionWithColumnKey.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-encryptionwithfooterkey.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/EncryptionWithFooterKey.php">EncryptionWithFooterKey.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-enumtype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/EnumType.php">EnumType.php</abbr></a></li>
+                        </ul>
+                                                        <h3>F</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-fieldrepetitiontype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/FieldRepetitionType.php">FieldRepetitionType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-filecryptometadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/FileCryptoMetaData.php">FileCryptoMetaData.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/FileMetaData.php">FileMetaData.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-flatcolumn.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/FlatColumn.php">FlatColumn.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-flatcolumndata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/FlatColumnData.php">FlatColumnData.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-columndata-flatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/ColumnData/FlatColumnValues.php">FlatColumnValues.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-columndata-flatvalue.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/ColumnData/FlatValue.php">FlatValue.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-float16type.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/Float16Type.php">Float16Type.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagebuilder-dictionarybuilder-floatdictionarybuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PageBuilder/DictionaryBuilder/FloatDictionaryBuilder.php">FloatDictionaryBuilder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroup-flowcolumnchunk.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroup/FlowColumnChunk.php">FlowColumnChunk.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-functions.html"><abbr title="src/lib/parquet/src/Flow/Parquet/functions.php">functions.php</abbr></a></li>
+                        </ul>
+                                                                                                                        <h3>I</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-indexpageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/IndexPageHeader.php">IndexPageHeader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-data-converter-int32dateconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Data/Converter/Int32DateConverter.php">Int32DateConverter.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-data-converter-int32datetimeconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Data/Converter/Int32DateTimeConverter.php">Int32DateTimeConverter.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-data-converter-int64datetimeconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Data/Converter/Int64DateTimeConverter.php">Int64DateTimeConverter.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-data-converter-int96datetimeconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Data/Converter/Int96DateTimeConverter.php">Int96DateTimeConverter.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-inttype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/IntType.php">IntType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-exception-invalidargumentexception.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Exception/InvalidArgumentException.php">InvalidArgumentException.php</abbr></a></li>
+                        </ul>
+                                                        <h3>J</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-data-converter-jsonconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Data/Converter/JsonConverter.php">JsonConverter.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-jsontype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/JsonType.php">JsonType.php</abbr></a></li>
+                        </ul>
+                                                        <h3>K</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-keyvalue.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/KeyValue.php">KeyValue.php</abbr></a></li>
+                        </ul>
+                                                        <h3>L</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-listelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/ListElement.php">ListElement.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-listtype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/ListType.php">ListType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-logicaltype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/LogicalType.php">LogicalType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-logicaltype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/LogicalType.php">LogicalType.php</abbr></a></li>
+                        </ul>
+                                                        <h3>M</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-mapkey.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/MapKey.php">MapKey.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-maptype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/MapType.php">MapType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-mapvalue.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/MapValue.php">MapValue.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-metadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Metadata.php">Metadata.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-microseconds.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/MicroSeconds.php">MicroSeconds.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-milliseconds.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/MilliSeconds.php">MilliSeconds.php</abbr></a></li>
+                        </ul>
+                                                        <h3>N</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-nanoseconds.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/NanoSeconds.php">NanoSeconds.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-nestedcolumn.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/NestedColumn.php">NestedColumn.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-columndata-nulllevel.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/ColumnData/NullLevel.php">NullLevel.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-nulltype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/NullType.php">NullType.php</abbr></a></li>
+                        </ul>
+                                                        <h3>O</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagebuilder-dictionarybuilder-objectdictionarybuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PageBuilder/DictionaryBuilder/ObjectDictionaryBuilder.php">ObjectDictionaryBuilder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-data-objecttostring.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Data/ObjectToString.php">ObjectToString.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-offsetindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/OffsetIndex.php">OffsetIndex.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-exception-outofboundsexception.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Exception/OutOfBoundsException.php">OutOfBoundsException.php</abbr></a></li>
+                        </ul>
+                                                        <h3>P</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagecontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PageContainer.php">PageContainer.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagecontainers.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PageContainers.php">PageContainers.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-pageencodingstats.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/PageEncodingStats.php">PageEncodingStats.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-page-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Page/PageHeader.php">PageHeader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/PageHeader.php">PageHeader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-pagelocation.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/PageLocation.php">PageLocation.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-pagereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/PageReader.php">PageReader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagesizecalculator.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PageSizeCalculator.php">PageSizeCalculator.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-pagetype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/PageType.php">PageType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagesbuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PagesBuilder.php">PagesBuilder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-physicaltype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/PhysicalType.php">PhysicalType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-data-plainvalueunpacker.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/PlainValueUnpacker.php">PlainValueUnpacker.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-data-plainvaluespacker.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/PlainValuesPacker.php">PlainValuesPacker.php</abbr></a></li>
+                        </ul>
+                                                                                        <h3>R</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-data-rlebitpackedhybrid.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/RLEBitPackedHybrid.php">RLEBitPackedHybrid.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagebuilder-rlebitpackedpacker.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PageBuilder/RLEBitPackedPacker.php">RLEBitPackedPacker.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-reader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader.php">Reader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-repetition.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/Repetition.php">Repetition.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-repetitions.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/Repetitions.php">Repetitions.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroup.php">RowGroup.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/RowGroup.php">RowGroup.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder.php">RowGroupBuilder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-rowgroupcontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/RowGroupContainer.php">RowGroupContainer.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-rowgroupstatistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/RowGroupStatistics.php">RowGroupStatistics.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroups.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroups.php">RowGroups.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-exception-runtimeexception.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Exception/RuntimeException.php">RuntimeException.php</abbr></a></li>
+                        </ul>
+                                                        <h3>S</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagebuilder-dictionarybuilder-scalardictionarybuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PageBuilder/DictionaryBuilder/ScalarDictionaryBuilder.php">ScalarDictionaryBuilder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema.php">Schema.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/SchemaElement.php">SchemaElement.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-sizestatistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/SizeStatistics.php">SizeStatistics.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-sortingcolumn.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/SortingColumn.php">SortingColumn.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-splitblockalgorithm.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/SplitBlockAlgorithm.php">SplitBlockAlgorithm.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-columndata-stack.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/ColumnData/Stack.php">Stack.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Statistics.php">Statistics.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/Statistics.php">Statistics.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-pagebuilder-statisticsbuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/PageBuilder/StatisticsBuilder.php">StatisticsBuilder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-statisticsbuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/StatisticsBuilder.php">StatisticsBuilder.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroup-statisticsreader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroup/StatisticsReader.php">StatisticsReader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-stringtype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/StringType.php">StringType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-stubs.html"><abbr title="src/lib/parquet/src/stubs.php">stubs.php</abbr></a></li>
+                        </ul>
+                                                        <h3>T</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thriftstream-tphpfilestream.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftStream/TPhpFileStream.php">TPhpFileStream.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-logicaltype-time.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/LogicalType/Time.php">Time.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-data-converter-timeconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Data/Converter/TimeConverter.php">TimeConverter.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-timetype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/TimeType.php">TimeType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-timeunit.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/TimeUnit.php">TimeUnit.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-timeunit.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/TimeUnit.php">TimeUnit.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-schema-logicaltype-timestamp.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Schema/LogicalType/Timestamp.php">Timestamp.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-timestamptype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/TimestampType.php">TimestampType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-page-header-type.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Page/Header/Type.php">Type.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-type.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/Type.php">Type.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-typedefinedorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/TypeDefinedOrder.php">TypeDefinedOrder.php</abbr></a></li>
+                        </ul>
+                                                        <h3>U</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-uuidtype.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/UUIDType.php">UUIDType.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-uncompressed.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/Uncompressed.php">Uncompressed.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-data-converter-uuidconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Data/Converter/UuidConverter.php">UuidConverter.php</abbr></a></li>
+                        </ul>
+                                                        <h3>V</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-exception-validationexception.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Exception/ValidationException.php">ValidationException.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-rowgroupbuilder-validator.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/RowGroupBuilder/Validator.php">Validator.php</abbr></a></li>
+                        </ul>
+                                                        <h3>W</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-columnchunkreader-wholechunkreader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/ColumnChunkReader/WholeChunkReader.php">WholeChunkReader.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-columnchunkviewer-wholechunkviewer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/ColumnChunkViewer/WholeChunkViewer.php">WholeChunkViewer.php</abbr></a></li>
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></li>
+                        </ul>
+                                                        <h3>X</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-lib-parquet-src-flow-parquet-thrift-xxhash.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Thrift/XxHash.php">XxHash.php</abbr></a></li>
+                        </ul>
+                                                                                        </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="indices/files.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

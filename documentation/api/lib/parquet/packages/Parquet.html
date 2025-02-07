@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>Flow PHP</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+    
+            <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <div class="flow-header-wrapper">
+    <header class="phpdocumentor-header phpdocumentor-section">
+        <h1 class="phpdocumentor-title"><a href="/documentation" class="phpdocumentor-title__link">Flow PHP</a></h1>
+        <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+        <label class="phpdocumentor-header__menu-icon" for="menu-button">
+            <i class="fas fa-bars"></i>
+        </label>
+        <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+        <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+                        <li class="phpdocumentor-topnav__menu-item -menu">
+                <a href="/documentation">
+                    <span>
+                                                                        Back
+                    </span>
+                </a>
+            </li>
+                </ul>
+</nav>
+    </header>
+</div>
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                                <section class="phpdocumentor-sidebar__category -namespaces">
+                <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                            <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/flow.html" class="">Flow</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/flow-parquet.html" class="">Parquet</a>
+                
+            </li>
+            </ul>
+
+                                </section>
+                                    
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -package">
+        <h2 class="phpdocumentor-content__title">Parquet</h2>
+
+        
+
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="packages/Parquet.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Parquet-BinaryReader.html"><abbr title="\Flow\Parquet\BinaryReader">BinaryReader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Parquet-BinaryWriter.html"><abbr title="\Flow\Parquet\BinaryWriter">BinaryWriter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Parquet-Data-Converter.html"><abbr title="\Flow\Parquet\Data\Converter">Converter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Parquet-ParquetFile-ColumnChunkReader.html"><abbr title="\Flow\Parquet\ParquetFile\ColumnChunkReader">ColumnChunkReader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Parquet-ParquetFile-ColumnChunkViewer.html"><abbr title="\Flow\Parquet\ParquetFile\ColumnChunkViewer">ColumnChunkViewer</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-Validator.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\Validator">Validator</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Parquet-ParquetFile-Schema-Column.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\Column">Column</abbr></a></dt>    </dl>
+
+    <h4 id="toc-classes">
+        Classes
+        <a href="packages/Parquet.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html"><abbr title="\Flow\Parquet\BinaryReader\BinaryBufferReader">BinaryBufferReader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-BinaryReader-Bytes.html"><abbr title="\Flow\Parquet\BinaryReader\Bytes">Bytes</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-BinaryWriter-BinaryBufferWriter.html"><abbr title="\Flow\Parquet\BinaryWriter\BinaryBufferWriter">BinaryBufferWriter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Consts.html"><abbr title="\Flow\Parquet\Consts">Consts</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Data-Converter-Int32DateConverter.html"><abbr title="\Flow\Parquet\Data\Converter\Int32DateConverter">Int32DateConverter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Data-Converter-Int32DateTimeConverter.html"><abbr title="\Flow\Parquet\Data\Converter\Int32DateTimeConverter">Int32DateTimeConverter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Data-Converter-Int64DateTimeConverter.html"><abbr title="\Flow\Parquet\Data\Converter\Int64DateTimeConverter">Int64DateTimeConverter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Data-Converter-Int96DateTimeConverter.html"><abbr title="\Flow\Parquet\Data\Converter\Int96DateTimeConverter">Int96DateTimeConverter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Data-Converter-JsonConverter.html"><abbr title="\Flow\Parquet\Data\Converter\JsonConverter">JsonConverter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Data-Converter-TimeConverter.html"><abbr title="\Flow\Parquet\Data\Converter\TimeConverter">TimeConverter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Data-Converter-UuidConverter.html"><abbr title="\Flow\Parquet\Data\Converter\UuidConverter">UuidConverter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Data-DataConverter.html"><abbr title="\Flow\Parquet\Data\DataConverter">DataConverter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Data-ObjectToString.html"><abbr title="\Flow\Parquet\Data\ObjectToString">ObjectToString</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-DataSize.html"><abbr title="\Flow\Parquet\DataSize">DataSize</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Exception-DataConversionException.html"><abbr title="\Flow\Parquet\Exception\DataConversionException">DataConversionException</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Exception-InvalidArgumentException.html"><abbr title="\Flow\Parquet\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Exception-OutOfBoundsException.html"><abbr title="\Flow\Parquet\Exception\OutOfBoundsException">OutOfBoundsException</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Exception-RuntimeException.html"><abbr title="\Flow\Parquet\Exception\RuntimeException">RuntimeException</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Exception-ValidationException.html"><abbr title="\Flow\Parquet\Exception\ValidationException">ValidationException</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Codec.html"><abbr title="\Flow\Parquet\ParquetFile\Codec">Codec</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-ColumnChunkReader-WholeChunkReader.html"><abbr title="\Flow\Parquet\ParquetFile\ColumnChunkReader\WholeChunkReader">WholeChunkReader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-ColumnChunkViewer-WholeChunkViewer.html"><abbr title="\Flow\Parquet\ParquetFile\ColumnChunkViewer\WholeChunkViewer">WholeChunkViewer</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-ColumnPageHeader.html"><abbr title="\Flow\Parquet\ParquetFile\ColumnPageHeader">ColumnPageHeader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Data-BitWidth.html"><abbr title="\Flow\Parquet\ParquetFile\Data\BitWidth">BitWidth</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Data-BytesConverter.html"><abbr title="\Flow\Parquet\ParquetFile\Data\BytesConverter">BytesConverter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Data-PlainValuesPacker.html"><abbr title="\Flow\Parquet\ParquetFile\Data\PlainValuesPacker">PlainValuesPacker</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Data-PlainValueUnpacker.html"><abbr title="\Flow\Parquet\ParquetFile\Data\PlainValueUnpacker">PlainValueUnpacker</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Data-RLEBitPackedHybrid.html"><abbr title="\Flow\Parquet\ParquetFile\Data\RLEBitPackedHybrid">RLEBitPackedHybrid</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-DataCoder.html"><abbr title="\Flow\Parquet\ParquetFile\DataCoder">DataCoder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Metadata.html"><abbr title="\Flow\Parquet\ParquetFile\Metadata">Metadata</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Page-ColumnData.html"><abbr title="\Flow\Parquet\ParquetFile\Page\ColumnData">ColumnData</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Page-Dictionary.html"><abbr title="\Flow\Parquet\ParquetFile\Page\Dictionary">Dictionary</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Page-Header-DataPageHeader.html"><abbr title="\Flow\Parquet\ParquetFile\Page\Header\DataPageHeader">DataPageHeader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Page-Header-DataPageHeaderV2.html"><abbr title="\Flow\Parquet\ParquetFile\Page\Header\DataPageHeaderV2">DataPageHeaderV2</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Page-Header-DictionaryPageHeader.html"><abbr title="\Flow\Parquet\ParquetFile\Page\Header\DictionaryPageHeader">DictionaryPageHeader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Page-PageHeader.html"><abbr title="\Flow\Parquet\ParquetFile\Page\PageHeader">PageHeader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-PageReader.html"><abbr title="\Flow\Parquet\ParquetFile\PageReader">PageReader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroup\ColumnChunk">ColumnChunk</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroup-FlowColumnChunk.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroup\FlowColumnChunk">FlowColumnChunk</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroup\StatisticsReader">StatisticsReader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroup.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroup">RowGroup</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-ColumnChunkBuilder.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\ColumnChunkBuilder">ColumnChunkBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-ColumnChunkContainer.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\ColumnChunkContainer">ColumnChunkContainer</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-ColumnChunkStatistics.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\ColumnChunkStatistics">ColumnChunkStatistics</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-ColumnData-DefinitionConverter.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\ColumnData\DefinitionConverter">DefinitionConverter</abbr></a></dt><dd>Converts definition levels to actual values.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-ColumnData-FlatColumnValues.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\ColumnData\FlatColumnValues">FlatColumnValues</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-ColumnData-FlatValue.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\ColumnData\FlatValue">FlatValue</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-ColumnData-NullLevel.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\ColumnData\NullLevel">NullLevel</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-ColumnData-Stack.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\ColumnData\Stack">Stack</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-DremelAssembler.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\DremelAssembler">DremelAssembler</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-DremelShredder.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\DremelShredder">DremelShredder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-FlatColumnData.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\FlatColumnData">FlatColumnData</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PageBuilder-DataPageBuilder.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PageBuilder\DataPageBuilder">DataPageBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PageBuilder-DataPageV2Statistics.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PageBuilder\DataPageV2Statistics">DataPageV2Statistics</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PageBuilder-Dictionary.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PageBuilder\Dictionary">Dictionary</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PageBuilder-DictionaryBuilder-FloatDictionaryBuilder.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PageBuilder\DictionaryBuilder\FloatDictionaryBuilder">FloatDictionaryBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PageBuilder-DictionaryBuilder-ObjectDictionaryBuilder.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PageBuilder\DictionaryBuilder\ObjectDictionaryBuilder">ObjectDictionaryBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PageBuilder-DictionaryBuilder-ScalarDictionaryBuilder.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PageBuilder\DictionaryBuilder\ScalarDictionaryBuilder">ScalarDictionaryBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PageBuilder-DictionaryBuilder.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PageBuilder\DictionaryBuilder">DictionaryBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PageBuilder-DictionaryPageBuilder.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PageBuilder\DictionaryPageBuilder">DictionaryPageBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PageBuilder-RLEBitPackedPacker.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PageBuilder\RLEBitPackedPacker">RLEBitPackedPacker</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PageBuilder-StatisticsBuilder.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PageBuilder\StatisticsBuilder">StatisticsBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PageContainer.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PageContainer">PageContainer</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PageContainers.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PageContainers">PageContainers</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PagesBuilder.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PagesBuilder">PagesBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-PageSizeCalculator.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\PageSizeCalculator">PageSizeCalculator</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-RowGroupContainer.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\RowGroupContainer">RowGroupContainer</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-RowGroupStatistics.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\RowGroupStatistics">RowGroupStatistics</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-Statistics-Comparator.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\Statistics\Comparator">Comparator</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-StatisticsBuilder.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\StatisticsBuilder">StatisticsBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-Validator-ColumnDataValidator.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\Validator\ColumnDataValidator">ColumnDataValidator</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder-Validator-DisabledValidator.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder\Validator\DisabledValidator">DisabledValidator</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroupBuilder.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroupBuilder">RowGroupBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-RowGroups.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroups">RowGroups</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Schema-ColumnPrimitiveType.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\ColumnPrimitiveType">ColumnPrimitiveType</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Schema-ListElement.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\ListElement">ListElement</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Schema-LogicalType-Decimal.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\LogicalType\Decimal">Decimal</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Schema-LogicalType-Time.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\LogicalType\Time">Time</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Schema-LogicalType-Timestamp.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\LogicalType\Timestamp">Timestamp</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Schema-LogicalType.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\LogicalType">LogicalType</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Schema-MapKey.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\MapKey">MapKey</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Schema-MapValue.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\MapValue">MapValue</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Schema-NestedColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\NestedColumn">NestedColumn</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Schema-Repetitions.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\Repetitions">Repetitions</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Schema.html"><abbr title="\Flow\Parquet\ParquetFile\Schema">Schema</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile-Statistics.html"><abbr title="\Flow\Parquet\ParquetFile\Statistics">Statistics</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ParquetFile.html"><abbr title="\Flow\Parquet\ParquetFile">ParquetFile</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Reader.html"><abbr title="\Flow\Parquet\Reader">Reader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-AesGcmCtrV1.html"><abbr title="\Flow\Parquet\Thrift\AesGcmCtrV1">AesGcmCtrV1</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-AesGcmV1.html"><abbr title="\Flow\Parquet\Thrift\AesGcmV1">AesGcmV1</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-BloomFilterAlgorithm.html"><abbr title="\Flow\Parquet\Thrift\BloomFilterAlgorithm">BloomFilterAlgorithm</abbr></a></dt><dd>The algorithm used in Bloom filter. *.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-BloomFilterCompression.html"><abbr title="\Flow\Parquet\Thrift\BloomFilterCompression">BloomFilterCompression</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-BloomFilterHash.html"><abbr title="\Flow\Parquet\Thrift\BloomFilterHash">BloomFilterHash</abbr></a></dt><dd>The hash function used in Bloom filter. This function takes the hash of a column value
+using plain encoding.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-BloomFilterHeader.html"><abbr title="\Flow\Parquet\Thrift\BloomFilterHeader">BloomFilterHeader</abbr></a></dt><dd>Bloom filter header is stored at beginning of Bloom filter data of each column
+and followed by its bitset.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-BoundaryOrder.html"><abbr title="\Flow\Parquet\Thrift\BoundaryOrder">BoundaryOrder</abbr></a></dt><dd>Enum to annotate whether lists of min/max elements inside ColumnIndex
+are ordered and if so, in which direction.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-BsonType.html"><abbr title="\Flow\Parquet\Thrift\BsonType">BsonType</abbr></a></dt><dd>Embedded BSON logical type annotation.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-ColumnChunk.html"><abbr title="\Flow\Parquet\Thrift\ColumnChunk">ColumnChunk</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-ColumnCryptoMetaData.html"><abbr title="\Flow\Parquet\Thrift\ColumnCryptoMetaData">ColumnCryptoMetaData</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-ColumnIndex.html"><abbr title="\Flow\Parquet\Thrift\ColumnIndex">ColumnIndex</abbr></a></dt><dd>Optional statistics for each data page in a ColumnChunk.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-ColumnMetaData.html"><abbr title="\Flow\Parquet\Thrift\ColumnMetaData">ColumnMetaData</abbr></a></dt><dd>Description for column metadata.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-ColumnOrder.html"><abbr title="\Flow\Parquet\Thrift\ColumnOrder">ColumnOrder</abbr></a></dt><dd>Union to specify the order used for the min_value and max_value fields for a
+column. This union takes the role of an enhanced enum that allows rich
+elements (which will be needed for a collation-based ordering in the future).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-CompressionCodec.html"><abbr title="\Flow\Parquet\Thrift\CompressionCodec">CompressionCodec</abbr></a></dt><dd>Supported compression algorithms.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-ConvertedType.html"><abbr title="\Flow\Parquet\Thrift\ConvertedType">ConvertedType</abbr></a></dt><dd>DEPRECATED: Common types used by frameworks(e.g. hive, pig) using parquet.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-DataPageHeader.html"><abbr title="\Flow\Parquet\Thrift\DataPageHeader">DataPageHeader</abbr></a></dt><dd>Data page header.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-DataPageHeaderV2.html"><abbr title="\Flow\Parquet\Thrift\DataPageHeaderV2">DataPageHeaderV2</abbr></a></dt><dd>New page format allowing reading levels without decompressing the data
+Repetition and definition levels are uncompressed
+The remaining section containing the data is compressed if is_compressed is true.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-DateType.html"><abbr title="\Flow\Parquet\Thrift\DateType">DateType</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-DecimalType.html"><abbr title="\Flow\Parquet\Thrift\DecimalType">DecimalType</abbr></a></dt><dd>Decimal logical type annotation.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-DictionaryPageHeader.html"><abbr title="\Flow\Parquet\Thrift\DictionaryPageHeader">DictionaryPageHeader</abbr></a></dt><dd>The dictionary page must be placed at the first position of the column chunk
+if it is partly or completely dictionary encoded. At most one dictionary page
+can be placed in a column chunk.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-Encoding.html"><abbr title="\Flow\Parquet\Thrift\Encoding">Encoding</abbr></a></dt><dd>Encodings supported by Parquet.  Not all encodings are valid for all types.  These
+enums are also used to specify the encoding of definition and repetition levels.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-EncryptionAlgorithm.html"><abbr title="\Flow\Parquet\Thrift\EncryptionAlgorithm">EncryptionAlgorithm</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-EncryptionWithColumnKey.html"><abbr title="\Flow\Parquet\Thrift\EncryptionWithColumnKey">EncryptionWithColumnKey</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-EncryptionWithFooterKey.html"><abbr title="\Flow\Parquet\Thrift\EncryptionWithFooterKey">EncryptionWithFooterKey</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-EnumType.html"><abbr title="\Flow\Parquet\Thrift\EnumType">EnumType</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-FieldRepetitionType.html"><abbr title="\Flow\Parquet\Thrift\FieldRepetitionType">FieldRepetitionType</abbr></a></dt><dd>Representation of Schemas.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-FileCryptoMetaData.html"><abbr title="\Flow\Parquet\Thrift\FileCryptoMetaData">FileCryptoMetaData</abbr></a></dt><dd>Crypto metadata for files with encrypted footer *.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-FileMetaData.html"><abbr title="\Flow\Parquet\Thrift\FileMetaData">FileMetaData</abbr></a></dt><dd>Description for file metadata.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-Float16Type.html"><abbr title="\Flow\Parquet\Thrift\Float16Type">Float16Type</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-IndexPageHeader.html"><abbr title="\Flow\Parquet\Thrift\IndexPageHeader">IndexPageHeader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-IntType.html"><abbr title="\Flow\Parquet\Thrift\IntType">IntType</abbr></a></dt><dd>Integer logical type annotation.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-JsonType.html"><abbr title="\Flow\Parquet\Thrift\JsonType">JsonType</abbr></a></dt><dd>Embedded JSON logical type annotation.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-KeyValue.html"><abbr title="\Flow\Parquet\Thrift\KeyValue">KeyValue</abbr></a></dt><dd>Wrapper struct to store key values.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-ListType.html"><abbr title="\Flow\Parquet\Thrift\ListType">ListType</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-LogicalType.html"><abbr title="\Flow\Parquet\Thrift\LogicalType">LogicalType</abbr></a></dt><dd>LogicalType annotations to replace ConvertedType.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-MapType.html"><abbr title="\Flow\Parquet\Thrift\MapType">MapType</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-MicroSeconds.html"><abbr title="\Flow\Parquet\Thrift\MicroSeconds">MicroSeconds</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-MilliSeconds.html"><abbr title="\Flow\Parquet\Thrift\MilliSeconds">MilliSeconds</abbr></a></dt><dd>Time units for logical types.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-NanoSeconds.html"><abbr title="\Flow\Parquet\Thrift\NanoSeconds">NanoSeconds</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-NullType.html"><abbr title="\Flow\Parquet\Thrift\NullType">NullType</abbr></a></dt><dd>Logical type to annotate a column that is always null.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-OffsetIndex.html"><abbr title="\Flow\Parquet\Thrift\OffsetIndex">OffsetIndex</abbr></a></dt><dd>Optional offsets for each data page in a ColumnChunk.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-PageEncodingStats.html"><abbr title="\Flow\Parquet\Thrift\PageEncodingStats">PageEncodingStats</abbr></a></dt><dd>statistics of a given page type and encoding.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-PageHeader.html"><abbr title="\Flow\Parquet\Thrift\PageHeader">PageHeader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-PageLocation.html"><abbr title="\Flow\Parquet\Thrift\PageLocation">PageLocation</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-PageType.html"><abbr title="\Flow\Parquet\Thrift\PageType">PageType</abbr></a></dt><dd>Autogenerated by Thrift Compiler (0.18.1).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-RowGroup.html"><abbr title="\Flow\Parquet\Thrift\RowGroup">RowGroup</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-SchemaElement.html"><abbr title="\Flow\Parquet\Thrift\SchemaElement">SchemaElement</abbr></a></dt><dd>Represents a element inside a schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-SizeStatistics.html"><abbr title="\Flow\Parquet\Thrift\SizeStatistics">SizeStatistics</abbr></a></dt><dd>A structure for capturing metadata for estimating the unencoded,
+uncompressed size of data written. This is useful for readers to estimate
+how much memory is needed to reconstruct data in their memory model and for
+fine grained filter pushdown on nested structures (the histograms contained
+in this structure can help determine the number of nulls at a particular
+nesting level and maximum length of lists).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-SortingColumn.html"><abbr title="\Flow\Parquet\Thrift\SortingColumn">SortingColumn</abbr></a></dt><dd>Sort order within a RowGroup of a leaf column.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-SplitBlockAlgorithm.html"><abbr title="\Flow\Parquet\Thrift\SplitBlockAlgorithm">SplitBlockAlgorithm</abbr></a></dt><dd>Block-based algorithm type annotation. *.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-Statistics.html"><abbr title="\Flow\Parquet\Thrift\Statistics">Statistics</abbr></a></dt><dd>Statistics per row group and per page
+All fields are optional.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-StringType.html"><abbr title="\Flow\Parquet\Thrift\StringType">StringType</abbr></a></dt><dd>Empty structs to use as logical type annotations.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-TimestampType.html"><abbr title="\Flow\Parquet\Thrift\TimestampType">TimestampType</abbr></a></dt><dd>Timestamp logical type annotation.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-TimeType.html"><abbr title="\Flow\Parquet\Thrift\TimeType">TimeType</abbr></a></dt><dd>Time logical type annotation.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-TimeUnit.html"><abbr title="\Flow\Parquet\Thrift\TimeUnit">TimeUnit</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-Type.html"><abbr title="\Flow\Parquet\Thrift\Type">Type</abbr></a></dt><dd>Types supported by Parquet.  These types are intended to be used in combination
+with the encodings to control the on disk storage format.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-TypeDefinedOrder.html"><abbr title="\Flow\Parquet\Thrift\TypeDefinedOrder">TypeDefinedOrder</abbr></a></dt><dd>Empty struct to signal the order defined by the physical or logical type.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-Uncompressed.html"><abbr title="\Flow\Parquet\Thrift\Uncompressed">Uncompressed</abbr></a></dt><dd>The compression used in the Bloom filter.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-UUIDType.html"><abbr title="\Flow\Parquet\Thrift\UUIDType">UUIDType</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Thrift-XxHash.html"><abbr title="\Flow\Parquet\Thrift\XxHash">XxHash</abbr></a></dt><dd>Hash strategy type annotation. xxHash is an extremely fast non-cryptographic hash
+algorithm. It uses 64 bits version of xxHash.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-ThriftStream-TPhpFileStream.html"><abbr title="\Flow\Parquet\ThriftStream\TPhpFileStream">TPhpFileStream</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer.html"><abbr title="\Flow\Parquet\Writer">Writer</abbr></a></dt>    </dl>
+
+
+
+    <h4 id="toc-enums">
+        Enums
+        <a href="packages/Parquet.html#toc-enums" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-Parquet-ByteOrder.html"><abbr title="\Flow\Parquet\ByteOrder">ByteOrder</abbr></a></dt>        <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-Parquet-Option.html"><abbr title="\Flow\Parquet\Option">Option</abbr></a></dt>        <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-Parquet-ParquetFile-Compressions.html"><abbr title="\Flow\Parquet\ParquetFile\Compressions">Compressions</abbr></a></dt>        <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-Parquet-ParquetFile-Encodings.html"><abbr title="\Flow\Parquet\ParquetFile\Encodings">Encodings</abbr></a></dt>        <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-Parquet-ParquetFile-Page-Header-Type.html"><abbr title="\Flow\Parquet\ParquetFile\Page\Header\Type">Type</abbr></a></dt>        <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-Parquet-ParquetFile-Schema-ConvertedType.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\ConvertedType">ConvertedType</abbr></a></dt>        <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-Parquet-ParquetFile-Schema-PhysicalType.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\PhysicalType">PhysicalType</abbr></a></dt>        <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-Parquet-ParquetFile-Schema-Repetition.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\Repetition">Repetition</abbr></a></dt>        <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-Parquet-ParquetFile-Schema-TimeUnit.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\TimeUnit">TimeUnit</abbr></a></dt></dl>
+
+
+
+
+
+
+        
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="packages/Parquet.html#functions" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_array_merge_recursive">
+        array_merge_recursive()
+        <a href="namespaces/flow-parquet.html#function_array_merge_recursive" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/functions.php"><a href="files/src-lib-parquet-src-flow-parquet-functions.html"><abbr title="src/lib/parquet/src/Flow/Parquet/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">9</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">array_merge_recursive</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$array1</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$array2</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$array1</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$array2</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_array_combine_recursive">
+        array_combine_recursive()
+        <a href="namespaces/flow-parquet.html#function_array_combine_recursive" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/functions.php"><a href="files/src-lib-parquet-src-flow-parquet-functions.html"><abbr title="src/lib/parquet/src/Flow/Parquet/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">24</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">array_combine_recursive</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keys</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$keys</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$values</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_array_iterate_at_level">
+        array_iterate_at_level()
+        <a href="namespaces/flow-parquet.html#function_array_iterate_at_level" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/functions.php"><a href="files/src-lib-parquet-src-flow-parquet-functions.html"><abbr title="src/lib/parquet/src/Flow/Parquet/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">64</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Iterate over array at given level.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">array_iterate_at_level</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$array</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$targetLevel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$currentLevel</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$array</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$targetLevel</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$callback</span>
+                : <span class="phpdocumentor-signature__argument__return-type">callable</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$currentLevel</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_array_flatten">
+        array_flatten()
+        <a href="namespaces/flow-parquet.html#function_array_flatten" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/functions.php"><a href="files/src-lib-parquet-src-flow-parquet-functions.html"><abbr title="src/lib/parquet/src/Flow/Parquet/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">array_flatten</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$array</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$array</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_brotli_compress">
+        brotli_compress()
+        <a href="namespaces/default.html#function_brotli_compress" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/stubs.php"><a href="files/src-lib-parquet-src-stubs.html"><abbr title="src/lib/parquet/src/stubs.php">stubs.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">6</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">brotli_compress</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$quality</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">11</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$quality</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">11</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$mode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_brotli_uncompress">
+        brotli_uncompress()
+        <a href="namespaces/default.html#function_brotli_uncompress" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/stubs.php"><a href="files/src-lib-parquet-src-stubs.html"><abbr title="src/lib/parquet/src/stubs.php">stubs.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">13</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">brotli_uncompress</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$length</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$length</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_lz4_compress">
+        lz4_compress()
+        <a href="namespaces/default.html#function_lz4_compress" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/stubs.php"><a href="files/src-lib-parquet-src-stubs.html"><abbr title="src/lib/parquet/src/stubs.php">stubs.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">20</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">lz4_compress</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$extra</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$level</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$extra</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_lz4_uncompress">
+        lz4_uncompress()
+        <a href="namespaces/default.html#function_lz4_uncompress" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/stubs.php"><a href="files/src-lib-parquet-src-stubs.html"><abbr title="src/lib/parquet/src/stubs.php">stubs.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">lz4_uncompress</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxsize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">-1</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">-1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$maxsize</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">-1</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$offset</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">-1</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_zstd_compress">
+        zstd_compress()
+        <a href="namespaces/default.html#function_zstd_compress" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/stubs.php"><a href="files/src-lib-parquet-src-stubs.html"><abbr title="src/lib/parquet/src/stubs.php">stubs.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">zstd_compress</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$level</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">3</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_zstd_uncompress">
+        zstd_uncompress()
+        <a href="namespaces/default.html#function_zstd_uncompress" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/stubs.php"><a href="files/src-lib-parquet-src-stubs.html"><abbr title="src/lib/parquet/src/stubs.php">stubs.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">zstd_uncompress</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+            </section>
+
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
+
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
+
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.open('GET', src, true);
+
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+                            Prism.highlightElement(code);
+                            return;
+                        }
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
+                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
+                    }
+                    modal.classList.add("phpdocumentor-modal__open");
+
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
+                    });
+                });
+            });
+        })();
+    </script>
+
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                            
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                    <li><a href="packages/Parquet.html#toc-interfaces">Interfaces</a></li>
+                                                                <li><a href="packages/Parquet.html#toc-classes">Classes</a></li>
+                                                                                    <li><a href="packages/Parquet.html#toc-enums">Enums</a></li>
+                                                                                    <li><a href="packages/Parquet.html#toc-functions">Functions</a></li>
+                                    </ul>
+            </li>
+
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Functions</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="namespaces/flow-parquet.html#function_array_combine_recursive">array_combine_recursive()</a></li>
+                                                    <li class=""><a href="namespaces/flow-parquet.html#function_array_flatten">array_flatten()</a></li>
+                                                    <li class=""><a href="namespaces/flow-parquet.html#function_array_iterate_at_level">array_iterate_at_level()</a></li>
+                                                    <li class=""><a href="namespaces/flow-parquet.html#function_array_merge_recursive">array_merge_recursive()</a></li>
+                                                    <li class=""><a href="namespaces/default.html#function_brotli_compress">brotli_compress()</a></li>
+                                                    <li class=""><a href="namespaces/default.html#function_brotli_uncompress">brotli_uncompress()</a></li>
+                                                    <li class=""><a href="namespaces/default.html#function_lz4_compress">lz4_compress()</a></li>
+                                                    <li class=""><a href="namespaces/default.html#function_lz4_uncompress">lz4_uncompress()</a></li>
+                                                    <li class=""><a href="namespaces/default.html#function_zstd_compress">zstd_compress()</a></li>
+                                                    <li class=""><a href="namespaces/default.html#function_zstd_uncompress">zstd_uncompress()</a></li>
+                                            </ul>
+                </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="packages/Parquet.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>
