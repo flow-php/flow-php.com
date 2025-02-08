@@ -151,6 +151,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalMetadata.html#method_scale"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalMetadata\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalMetadata.html#method_type"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalMetadata\u003A\u003Aunsigned\u0028\u0029",
             "name": "unsigned",
             "summary": "",
@@ -215,6 +220,11 @@ Search.appendIndex(
             "name": "SCALE",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalMetadata.html#enumcase_SCALE"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalMetadata\u003A\u003ATYPE",
+            "name": "TYPE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalMetadata.html#enumcase_TYPE"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalMetadata\u003A\u003AUNSIGNED",
             "name": "UNSIGNED",
