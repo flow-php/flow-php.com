@@ -20,7 +20,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/syntax_highlight_controller.js": {
-        "path": "\/assets\/controllers\/syntax_highlight_controller-18188b92826b820d5e085c168e04f8a6.js",
+        "path": "\/assets\/controllers\/syntax_highlight_controller-f3f4058d12e9c1cdcda49210dcab42b0.js",
         "type": "js"
     },
     "\/assets\/prismjs\/themes\/prism-flow.css": {
@@ -104,7 +104,7 @@
         "type": "js"
     },
     "@popperjs\/core": {
-        "path": "\/assets\/vendor\/@popperjs\/core\/core.index-644d3145fb9a988a73db5b102874629c.js",
+        "path": "\/assets\/vendor\/@popperjs\/core\/core.index-ceb5b6c0f9e1d3f6c78ef733facfdcda.js",
         "type": "js"
     },
     "flowbite-datepicker": {
@@ -114,5 +114,9 @@
     "flowbite\/dist\/flowbite.min.css": {
         "path": "\/assets\/vendor\/flowbite\/dist\/flowbite.min-31c025f9f6772a66d5fcc61a3e76c101.css",
         "type": "css"
+    },
+    "prismjs\/components\/prism-csv.min.js": {
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-csv.min-3c847e720c4805316f2e6b85169ebb68.js",
+        "type": "js"
     }
 }
