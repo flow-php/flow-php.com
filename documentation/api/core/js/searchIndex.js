@@ -5236,6 +5236,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringStyle"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringTitle\u0028\u0029",
+            "name": "stringTitle",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringTitle"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstrPad\u0028\u0029",
             "name": "strPad",
             "summary": "",
@@ -5430,6 +5435,26 @@ Search.appendIndex(
             "name": "returns",
             "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
             "url": "classes/Flow-ETL-Function-StringStyle.html#method_returns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringTitle",
+            "name": "StringTitle",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringTitle.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringTitle\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringTitle.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringTitle\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringTitle.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringTitle\u003A\u003Areturns\u0028\u0029",
+            "name": "returns",
+            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
+            "url": "classes/Flow-ETL-Function-StringTitle.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StrPad",
             "name": "StrPad",
