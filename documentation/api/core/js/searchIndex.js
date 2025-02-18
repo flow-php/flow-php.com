@@ -5226,6 +5226,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_startsWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringAfter\u0028\u0029",
+            "name": "stringAfter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringAfter"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringFold\u0028\u0029",
             "name": "stringFold",
             "summary": "",
@@ -5375,6 +5380,26 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-StartsWith.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringAfter",
+            "name": "StringAfter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringAfter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringAfter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringAfter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringAfter\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringAfter.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringAfter\u003A\u003Areturns\u0028\u0029",
+            "name": "returns",
+            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
+            "url": "classes/Flow-ETL-Function-StringAfter.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAggregate",
             "name": "StringAggregate",
