@@ -5231,6 +5231,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringAfter"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringBefore\u0028\u0029",
+            "name": "stringBefore",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringBefore"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringFold\u0028\u0029",
             "name": "stringFold",
             "summary": "",
@@ -5420,6 +5425,26 @@ Search.appendIndex(
             "name": "result",
             "summary": "",
             "url": "classes/Flow-ETL-Function-StringAggregate.html#method_result"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringBefore",
+            "name": "StringBefore",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringBefore.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringBefore\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringBefore.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringBefore\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringBefore.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringBefore\u003A\u003Areturns\u0028\u0029",
+            "name": "returns",
+            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
+            "url": "classes/Flow-ETL-Function-StringBefore.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringFold",
             "name": "StringFold",

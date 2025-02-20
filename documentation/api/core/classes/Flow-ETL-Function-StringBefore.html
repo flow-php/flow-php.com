@@ -115,13 +115,16 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    IsNumeric
+    StringBefore
 
         <span class="phpdocumentor-element__extends">
         extends <a href="classes/Flow-ETL-Function-ScalarFunctionChain.html"><abbr title="\Flow\ETL\Function\ScalarFunctionChain">ScalarFunctionChain</abbr></a>
     </span>
     
     
+            <span class="phpdocumentor-element__implements">
+            implements
+                            <a href="classes/Flow-ETL-Function-ScalarFunction-TypedScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction\TypedScalarFunction">TypedScalarFunction</abbr></a>                    </span>
     
     </h2>
 
@@ -133,9 +136,9 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/IsNumeric.php"><a href="files/src-core-etl-src-flow-etl-function-isnumeric.html"><abbr title="src/core/etl/src/Flow/ETL/Function/IsNumeric.php">IsNumeric.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/StringBefore.php"><a href="files/src-core-etl-src-flow-etl-function-stringbefore.html"><abbr title="src/core/etl/src/Flow/ETL/Function/StringBefore.php">StringBefore.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
@@ -149,6 +152,13 @@
 
 
 
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="classes/Flow-ETL-Function-StringBefore.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-ScalarFunction-TypedScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction\TypedScalarFunction">TypedScalarFunction</abbr></a></dt>    </dl>
 
 
 
@@ -159,12 +169,12 @@
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Flow-ETL-Function-IsNumeric.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Flow-ETL-Function-StringBefore.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Function-IsNumeric.html#method___construct">__construct()</a>
+    <a class="" href="classes/Flow-ETL-Function-StringBefore.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -360,9 +370,9 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Function-IsNumeric.html#method_eval">eval()</a>
+    <a class="" href="classes/Flow-ETL-Function-StringBefore.html#method_eval">eval()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -602,6 +612,14 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-StringBefore.html#method_returns">returns()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-PHP-Type-Type.html"><abbr title="\Flow\ETL\PHP\Type\Type">Type</abbr></a>&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Defines the return type of the function which can be used to
+create a type-safe entry even from non deterministic values.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_round">round()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -757,7 +775,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Flow-ETL-Function-IsNumeric.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Flow-ETL-Function-StringBefore.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -768,20 +786,20 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Flow-ETL-Function-IsNumeric.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-ETL-Function-StringBefore.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/IsNumeric.php"><a href="files/src-core-etl-src-flow-etl-function-isnumeric.html"><abbr title="src/core/etl/src/Flow/ETL/Function/IsNumeric.php">IsNumeric.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/StringBefore.php"><a href="files/src-core-etl-src-flow-etl-function-stringbefore.html"><abbr title="src/core/etl/src/Flow/ETL/Function/StringBefore.php">StringBefore.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$needle</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$includeNeedle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -790,9 +808,23 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|string</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$needle</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$includeNeedle</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2308,20 +2340,20 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_eval">
         eval()
-        <a href="classes/Flow-ETL-Function-IsNumeric.html#method_eval" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-ETL-Function-StringBefore.html#method_eval" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/IsNumeric.php"><a href="files/src-core-etl-src-flow-etl-function-isnumeric.html"><abbr title="src/core/etl/src/Flow/ETL/Function/IsNumeric.php">IsNumeric.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/StringBefore.php"><a href="files/src-core-etl-src-flow-etl-function-stringbefore.html"><abbr title="src/core/etl/src/Flow/ETL/Function/StringBefore.php">StringBefore.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">eval</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">eval</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2344,7 +2376,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
             </section>
 
 </article>
@@ -4242,6 +4274,55 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_returns">
+        returns()
+        <a href="classes/Flow-ETL-Function-StringBefore.html#method_returns" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/StringBefore.php"><a href="files/src-core-etl-src-flow-etl-function-stringbefore.html"><abbr title="src/core/etl/src/Flow/ETL/Function/StringBefore.php">StringBefore.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Defines the return type of the function which can be used to
+create a type-safe entry even from non deterministic values.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">returns</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-PHP-Type-Type.html"><abbr title="\Flow\ETL\PHP\Type\Type">Type</abbr></a>&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Non deterministic values satisfies more than one type, so the return type is needed to be specified.
+For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p>
+<ul>
+<li>array</li>
+<li>list<any>
+</li>
+<li>map&lt;any,any&gt;</li>
+</ul>
+</section>
+
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-PHP-Type-Type.html"><abbr title="\Flow\ETL\PHP\Type\Type">Type</abbr></a>&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_round">
         round()
         <a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_round" class="headerlink"><i class="fas fa-link"></i></a>
@@ -5509,7 +5590,7 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/core/etl/src/Flow/ETL/Function/IsNumeric.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/core/etl/src/Flow/ETL/Function/StringBefore.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -5608,7 +5689,7 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                <li><a href="classes/Flow-ETL-Function-IsNumeric.html#toc-methods">Methods</a></li>
+                                                                                <li><a href="classes/Flow-ETL-Function-StringBefore.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
@@ -5616,7 +5697,7 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Flow-ETL-Function-IsNumeric.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-StringBefore.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_and">and()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_andNot">andNot()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_arrayFilter">arrayFilter()</a></li>
@@ -5648,7 +5729,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_domElementValue">domElementValue()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_endsWith">endsWith()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_equals">equals()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Function-IsNumeric.html#method_eval">eval()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-StringBefore.html#method_eval">eval()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_exists">exists()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_expand">expand()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_greaterThan">greaterThan()</a></li>
@@ -5688,6 +5769,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_regexMatch">regexMatch()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_regexMatchAll">regexMatchAll()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_regexReplace">regexReplace()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-StringBefore.html#method_returns">returns()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_round">round()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_same">same()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_sanitize">sanitize()</a></li>
@@ -5731,7 +5813,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/Flow-ETL-Function-IsNumeric.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Flow-ETL-Function-StringBefore.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
