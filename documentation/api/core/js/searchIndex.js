@@ -11511,6 +11511,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformation.html#method_transform"
         },                {
+            "fqsen": "\\Flow\\ETL\\Transformations",
+            "name": "Transformations",
+            "summary": "Collection\u0020of\u0020transformations.",
+            "url": "classes/Flow-ETL-Transformations.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformations\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformations.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformations\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformations.html#method_transform"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformations\u003A\u003A\u0024transformations",
+            "name": "transformations",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformations.html#property_transformations"
+        },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\AutoCastTransformer",
             "name": "AutoCastTransformer",
             "summary": "",

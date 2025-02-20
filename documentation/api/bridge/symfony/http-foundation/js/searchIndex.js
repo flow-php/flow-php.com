@@ -1,6 +1,51 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream",
+            "name": "DataStream",
+            "summary": "FlowStreamedResponse\u0020builder.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003Aopen\u0028\u0029",
+            "name": "open",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_open"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003AsendTo\u0028\u0029",
+            "name": "sendTo",
+            "summary": "Send\u0020the\u0020data\u0020stream\u0020to\u0020the\u0020output.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_sendTo"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "Apply\u0020transformations\u0020to\u0020the\u0020data\u0020stream.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_transform"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003AunderFilename\u0028\u0029",
+            "name": "underFilename",
+            "summary": "Set\u0020the\u0020filename\u0020for\u0020the\u0020response.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_underFilename"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003AwithHeaders\u0028\u0029",
+            "name": "withHeaders",
+            "summary": "Set\u0020additional\u0020headers.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withHeaders"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003AwithoutHeader\u0028\u0029",
+            "name": "withoutHeader",
+            "summary": "Remove\u0020a\u0020specific\u0020header\u0020if\u0020it\u0020exists.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withoutHeader"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003AwithStatus\u0028\u0029",
+            "name": "withStatus",
+            "summary": "Set\u0020the\u0020HTTP\u0020status\u0020code.\u0020Default\u0020is\u0020200.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withStatus"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\FlowStreamedResponse",
             "name": "FlowStreamedResponse",
             "summary": "",
@@ -141,9 +186,54 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output.html#method_type"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex\\StartFrom",
+            "name": "StartFrom",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-AddRowIndex-StartFrom.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex\\StartFrom\u003A\u003AONE",
+            "name": "ONE",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-AddRowIndex-StartFrom.html#enumcase_ONE"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex\\StartFrom\u003A\u003AZERO",
+            "name": "ZERO",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-AddRowIndex-StartFrom.html#enumcase_ZERO"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex",
+            "name": "AddRowIndex",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-AddRowIndex.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-AddRowIndex.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-AddRowIndex.html#method_transform"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\BatchSize",
+            "name": "BatchSize",
+            "summary": "Sets\u0020batch\u0020size\u0020for\u0020DataFrame.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\BatchSize\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\BatchSize\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#method_transform"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\MaskColumns",
             "name": "MaskColumns",
-            "summary": "",
+            "summary": "Mask\u0020columns\u0020in\u0020DataFrame\u0020by\u0020replacing\u0020their\u0020values\u0020with\u0020a\u0020mask.",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-MaskColumns.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\MaskColumns\u003A\u003A__construct\u0028\u0029",
@@ -155,21 +245,6 @@ Search.appendIndex(
             "name": "transform",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-MaskColumns.html#method_transform"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\Transformations",
-            "name": "Transformations",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-Transformations.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\Transformations\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-Transformations.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\Transformations\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-Transformations.html#method_transform"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -200,6 +275,11 @@ Search.appendIndex(
             "name": "Output",
             "summary": "",
             "url": "namespaces/flow-bridge-symfony-httpfoundation-output.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex",
+            "name": "AddRowIndex",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-httpfoundation-transformation-addrowindex.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation",
             "name": "Transformation",
