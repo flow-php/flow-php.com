@@ -51,6 +51,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_withMaximum"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLimitOffsetExtractor\u003A\u003AwithOffset\u0028\u0029",
+            "name": "withOffset",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_withOffset"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLimitOffsetExtractor\u003A\u003AwithPageSize\u0028\u0029",
             "name": "withPageSize",
             "summary": "",

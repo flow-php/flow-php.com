@@ -286,7 +286,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -294,7 +294,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_dbal_limit_offset_qb</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\DBAL\Connection">Connection</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connection</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\DBAL\Query\QueryBuilder">QueryBuilder</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$queryBuilder</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page_size</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maximum</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html"><abbr title="\Flow\ETL\Adapter\Doctrine\DbalLimitOffsetExtractor">DbalLimitOffsetExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_dbal_limit_offset_qb</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\DBAL\Connection">Connection</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connection</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\DBAL\Query\QueryBuilder">QueryBuilder</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$queryBuilder</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page_size</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maximum</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html"><abbr title="\Flow\ETL\Adapter\Doctrine\DbalLimitOffsetExtractor">DbalLimitOffsetExtractor</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -325,7 +325,22 @@
                 : <span class="phpdocumentor-signature__argument__return-type">null|int</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><ul>
+<li>maximum can also be taken from a query builder, $maximum however is used regardless of the query builder if it's set</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$offset</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><ul>
+<li>offset can also be taken from a query builder, $offset however is used regardless of the query builder if it's set to non 0 value</li>
+</ul>
+</section>
+
             </dd>
             </dl>
 
@@ -346,7 +361,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -410,7 +425,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -481,7 +496,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -549,7 +564,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
     </aside>
 
@@ -624,7 +639,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
@@ -697,7 +712,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">205</span>
+    <span class="phpdocumentor-element-found-in__line">208</span>
 
     </aside>
 
@@ -770,7 +785,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">219</span>
+    <span class="phpdocumentor-element-found-in__line">222</span>
 
     </aside>
 
