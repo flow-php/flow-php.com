@@ -167,6 +167,7 @@
     <span>
                                 &nbsp;: void    </span>
 </dt>
+<dd>Insert data into the database in bulk.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Doctrine-Bulk-Bulk.html#method_update">update()</a>
@@ -284,19 +285,23 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Bulk.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulk.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Bulk.php">Bulk.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Insert data into the database in bulk.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">insert</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\DBAL\Connection">Connection</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connection</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-BulkData.html"><abbr title="\Flow\Doctrine\Bulk\BulkData">BulkData</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bulkData</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array{skip_conflicts?: bool, constraint?: string, conflict_columns?: string[], update_columns?: string[]}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$insertOptions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">insert</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\DBAL\Connection">Connection</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connection</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-BulkData.html"><abbr title="\Flow\Doctrine\Bulk\BulkData">BulkData</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bulkData</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-InsertOptions.html"><abbr title="\Flow\Doctrine\Bulk\InsertOptions">InsertOptions</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Insert should be used whenever you want to insert a large number of rows into a table or upsert them.</p>
+<p>Each database platform has its own way of handling bulk inserts, please make sure to use the correct implementation of InsertOptions for your platform.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -321,13 +326,11 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$insertOptions</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array{skip_conflicts?: bool, constraint?: string, conflict_columns?: string[], update_columns?: string[]}</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+                <span class="phpdocumentor-signature__argument__name">$options</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-InsertOptions.html"><abbr title="\Flow\Doctrine\Bulk\InsertOptions">InsertOptions</abbr></a>|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>$insertOptions</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -366,14 +369,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Bulk.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulk.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Bulk.php">Bulk.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">update</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\DBAL\Connection">Connection</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connection</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-BulkData.html"><abbr title="\Flow\Doctrine\Bulk\BulkData">BulkData</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bulkData</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array{primary_key_columns?: string[], update_columns?: string[]}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$updateOptions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">update</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\DBAL\Connection">Connection</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connection</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-BulkData.html"><abbr title="\Flow\Doctrine\Bulk\BulkData">BulkData</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bulkData</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-UpdateOptions.html"><abbr title="\Flow\Doctrine\Bulk\UpdateOptions">UpdateOptions</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -403,13 +406,11 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$updateOptions</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array{primary_key_columns?: string[], update_columns?: string[]}</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+                <span class="phpdocumentor-signature__argument__name">$options</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-UpdateOptions.html"><abbr title="\Flow\Doctrine\Bulk\UpdateOptions">UpdateOptions</abbr></a>|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>$updateOptions</p>
-</section>
-
+                
             </dd>
             </dl>
 

@@ -308,18 +308,38 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\to_dbal_table_insert\u0028\u0029",
             "name": "to_dbal_table_insert",
-            "summary": "In\u0020order\u0020to\u0020control\u0020the\u0020size\u0020of\u0020the\u0020single\u0020insert,\u0020use\u0020DataFrame\u003A\u003AchunkSize\u0028\u0029\u0020method\u0020just\u0020before\u0020calling\u0020DataFrame\u003A\u003Aload\u0028\u0029.",
+            "summary": "Insert\u0020new\u0020rows\u0020into\u0020a\u0020database\u0020table.",
             "url": "namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_table_insert"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\to_dbal_table_update\u0028\u0029",
             "name": "to_dbal_table_update",
-            "summary": "In\u0020order\u0020to\u0020control\u0020the\u0020size\u0020of\u0020the\u0020single\u0020request,\u0020use\u0020DataFrame\u003A\u003AchunkSize\u0028\u0029\u0020method\u0020just\u0020before\u0020calling\u0020DataFrame\u003A\u003Aload\u0028\u0029.",
+            "summary": "Update\u0020existing\u0020rows\u0020in\u0020database.",
             "url": "namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_table_update"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\to_dbal_schema_table\u0028\u0029",
             "name": "to_dbal_schema_table",
             "summary": "Converts\u0020a\u0020Flow\\ETL\\Row\\Schema\u0020to\u0020a\u0020Doctrine\\DBAL\\Schema\\Table.",
             "url": "namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_schema_table"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\postgresql_insert_options\u0028\u0029",
+            "name": "postgresql_insert_options",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-doctrine.html#function_postgresql_insert_options"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\mysql_insert_options\u0028\u0029",
+            "name": "mysql_insert_options",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-doctrine.html#function_mysql_insert_options"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\sqlite_insert_options\u0028\u0029",
+            "name": "sqlite_insert_options",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-doctrine.html#function_sqlite_insert_options"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\postgresql_update_options\u0028\u0029",
+            "name": "postgresql_update_options",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-doctrine.html#function_postgresql_update_options"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\LiteralParameter",
             "name": "LiteralParameter",

@@ -18,7 +18,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Bulk\u003A\u003Ainsert\u0028\u0029",
             "name": "insert",
-            "summary": "",
+            "summary": "Insert\u0020data\u0020into\u0020the\u0020database\u0020in\u0020bulk.",
             "url": "classes/Flow-Doctrine-Bulk-Bulk.html#method_insert"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Bulk\u003A\u003Aupdate\u0028\u0029",
@@ -156,6 +156,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLDialect.html#method_prepareUpdate"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLInsertOptions",
+            "name": "MySQLInsertOptions",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLInsertOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLInsertOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLInsertOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLInsertOptions\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLInsertOptions.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLInsertOptions\u003A\u003Anew\u0028\u0029",
+            "name": "new",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLInsertOptions.html#method_new"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLInsertOptions\u003A\u003A\u0024skipConflicts",
+            "name": "skipConflicts",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLInsertOptions.html#property_skipConflicts"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLInsertOptions\u003A\u003A\u0024updateColumns",
+            "name": "updateColumns",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLInsertOptions.html#property_updateColumns"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLInsertOptions\u003A\u003A\u0024upsert",
+            "name": "upsert",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLInsertOptions.html#property_upsert"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLUpdateOptions",
+            "name": "MySQLUpdateOptions",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLUpdateOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLUpdateOptions\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLUpdateOptions.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLUpdateOptions\u003A\u003Anew\u0028\u0029",
+            "name": "new",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLUpdateOptions.html#method_new"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLDialect",
             "name": "PostgreSQLDialect",
             "summary": "",
@@ -175,6 +225,76 @@ Search.appendIndex(
             "name": "prepareUpdate",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method_prepareUpdate"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLInsertOptions",
+            "name": "PostgreSQLInsertOptions",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLInsertOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLInsertOptions\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLInsertOptions\u003A\u003Anew\u0028\u0029",
+            "name": "new",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#method_new"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLInsertOptions\u003A\u003A\u0024conflictColumns",
+            "name": "conflictColumns",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_conflictColumns"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLInsertOptions\u003A\u003A\u0024constraint",
+            "name": "constraint",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_constraint"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLInsertOptions\u003A\u003A\u0024skipConflicts",
+            "name": "skipConflicts",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_skipConflicts"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLInsertOptions\u003A\u003A\u0024updateColumns",
+            "name": "updateColumns",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_updateColumns"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLUpdateOptions",
+            "name": "PostgreSQLUpdateOptions",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLUpdateOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLUpdateOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLUpdateOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLUpdateOptions\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLUpdateOptions.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLUpdateOptions\u003A\u003Anew\u0028\u0029",
+            "name": "new",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLUpdateOptions.html#method_new"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLUpdateOptions\u003A\u003A\u0024primaryKeyColumns",
+            "name": "primaryKeyColumns",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLUpdateOptions.html#property_primaryKeyColumns"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLUpdateOptions\u003A\u003A\u0024updateColumns",
+            "name": "updateColumns",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLUpdateOptions.html#property_updateColumns"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteDialect",
             "name": "SqliteDialect",
@@ -196,6 +316,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteDialect.html#method_prepareUpdate"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteInsertOptions",
+            "name": "SqliteInsertOptions",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteInsertOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteInsertOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteInsertOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteInsertOptions\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteInsertOptions.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteInsertOptions\u003A\u003Anew\u0028\u0029",
+            "name": "new",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteInsertOptions.html#method_new"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteInsertOptions\u003A\u003A\u0024conflictColumns",
+            "name": "conflictColumns",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteInsertOptions.html#property_conflictColumns"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteInsertOptions\u003A\u003A\u0024skipConflicts",
+            "name": "skipConflicts",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteInsertOptions.html#property_skipConflicts"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteInsertOptions\u003A\u003A\u0024updateColumns",
+            "name": "updateColumns",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteInsertOptions.html#property_updateColumns"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteUpdateOptions",
+            "name": "SqliteUpdateOptions",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteUpdateOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteUpdateOptions\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteUpdateOptions.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteUpdateOptions\u003A\u003Anew\u0028\u0029",
+            "name": "new",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteUpdateOptions.html#method_new"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Exception\\RuntimeException",
             "name": "RuntimeException",
             "summary": "",
@@ -205,6 +375,21 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Exception-RuntimeException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\InsertOptions",
+            "name": "InsertOptions",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-InsertOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\InsertOptions\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-InsertOptions.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\InsertOptions\u003A\u003Anew\u0028\u0029",
+            "name": "new",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-InsertOptions.html#method_new"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\QueryFactory\\DbalQueryFactory",
             "name": "DbalQueryFactory",
@@ -265,6 +450,21 @@ Search.appendIndex(
             "name": "toSqlCastedPlaceholders",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-TableDefinition.html#method_toSqlCastedPlaceholders"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\UpdateOptions",
+            "name": "UpdateOptions",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-UpdateOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\UpdateOptions\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-UpdateOptions.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\UpdateOptions\u003A\u003Anew\u0028\u0029",
+            "name": "new",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-UpdateOptions.html#method_new"
         },                {
             "fqsen": "\\",
             "name": "\\",
