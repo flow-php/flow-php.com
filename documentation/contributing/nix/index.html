@@ -13,7 +13,7 @@
     <meta name="twitter:description" content="Documentation">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/documentation/contributing" />
+    <meta property="og:url" content="https://flow-php.com/documentation/contributing/nix" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
@@ -21,7 +21,7 @@
     <meta name="google-adsense-account" content="ca-pub-2364202911639369">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/documentation/contributing" />
+    <meta property="twitter:url" content="https://flow-php.com/documentation/contributing/nix" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -377,76 +377,92 @@
             </section>
 
             <div class="mb-3 text-left">
-                <a class="btn btn-primary" href="https://github.com/flow-php/flow/edit/1.x/documentation/contributing.md" target="_blank">
+                <a class="btn btn-primary" href="https://github.com/flow-php/flow/edit/1.x/documentation/contributing/nix.md" target="_blank">
                     Edit
                     <img src="https://flow-php.com/assets/images/icons/github-b7e5d858805e5289b575768f10a66b52.svg" alt="external resource" width="16" height="16" class="ml-1">
                 </a>
             </div>
 
-            <h1><a id="flow-php-contributing" href="#content-contributing" class="mr-2" aria-hidden="true" title="Permalink">#</a>Contributing</h1>
-<p>To run tests locally, please make sure you have <a rel="noopener noreferrer" target="_blank" href="https://www.docker.com/">docker</a> up and running.
-You also need <a rel="noopener noreferrer" target="_blank" href="https://www.php.net/">PHP 8.2</a> and <a rel="noopener noreferrer" target="_blank" href="https://getcomposer.org/">composer</a> to be available from your CLI.
-Even though we are supporting 3 PHP versions at the time, we are using the lowest supported one for development, currently it's PHP 8.2.</p>
-<h2><a id="flow-php-before-you-change-anything" href="#content-before-you-change-anything" class="mr-2" aria-hidden="true" title="Permalink">#</a>Before you change anything</h2>
-<p>Please make sure that you are aware of our <a href="/documentation/adrs">Architecture Decision Records</a>.
-It's mandatory to follow all of them without any exceptions unless explicitly overridden by a new ADR.</p>
-<h2><a id="flow-php-prepare-project" href="#content-prepare-project" class="mr-2" aria-hidden="true" title="Permalink">#</a>Prepare Project:</h2>
-<p><strong>HEADS UP</strong> - instead of using php installed on your host machine, consider using Nix Shell.
-You can find detailed instructions how to use Nix in the <a href="/documentation/contributing/nix">Nix Development Environment</a> section.</p>
-<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">cp compose.yml.dist compose.yml
-composer install 
-docker compose up -d
+            <h1><a id="flow-php-nix---development-environment" href="#content-nix---development-environment" class="mr-2" aria-hidden="true" title="Permalink">#</a>Nix - Development Environment</h1>
+<p>Nix is probably the easiest way of setting up the development environment.</p>
+<p>Before you start please make sure you have Nix installed.
+If you don't have it installed, you can install it by following official documentation.</p>
+<p><a rel="noopener noreferrer" target="_blank" href="https://nixos.org/download/">Nix installation instructions</a></p>
+<p>Once you have Nix installed, you can start your development environment
+by going to the project folder and running following command:</p>
+<pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight">nix-shell
 </code></pre>
-<p>For the code coverage, please install <a rel="noopener noreferrer" target="_blank" href="https://pecl.php.net/package/pcov">pcov</a>.</p>
-<p>Pcov extension is not mandatory, and tests are going to pass without it; however, you won't be able to run mutation tests.</p>
-<h2><a id="flow-php-run-test-suite" href="#content-run-test-suite" class="mr-2" aria-hidden="true" title="Permalink">#</a>Run Test Suite</h2>
-<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer test
+<blockquote>
+<p>If you are using Nix for the first time, it might take a while to download all the dependencies.</p>
+</blockquote>
+<blockquote>
+<p>To achieve full isolation, use <code>nix-shell --pure</code> command. This way nix will isolate your development environment from the system.</p>
+</blockquote>
+<p>That's all, after running this command you will have all the necessary tools and dependencies.
+Nix will create a new shell with all the necessary tools and dependencies for the project.</p>
+<p>By default, we’re using <a rel="noopener noreferrer" target="_blank" href="https://starship.rs/">Starship</a> to provide a nice bash prompt.
+You can override it by creating <code>/.nix/shell/starship.toml</code> based on <code>/.nix/shell/starship.toml.dist</code>
+file.</p>
+<p>Once you apply your modification you can run <code>nix-shell</code> again to apply changes.</p>
+<p>To use the php version from nix inside your IDE please start a nix shell <code>nix-shell</code>
+and type:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">type php
 </code></pre>
-<p>Above command will run all tests, including those that require custom extensions.
-In case you want to run tests only for a specific part of the project, you can use:</p>
-<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer test:core
-composer test:lib:doctrine-dbal-bulk
-composer test:lib:parquet
-composer test:adapter:csv
-composer test:bridge:symfony-http-foundation
+<p>This should return you path to your php version that is used inside of the nix shell.
+It will look like this:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">php is /nix/store/p2m5bamh01ncpwjxscdl11p2m9xy8aq6-php-with-extensions-8.2.27/bin/php
 </code></pre>
-<h2><a id="flow-php-run-static-analyze" href="#content-run-static-analyze" class="mr-2" aria-hidden="true" title="Permalink">#</a>Run Static Analyze</h2>
-<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer static:analyze
+<h2><a id="flow-php-phpini" href="#content-phpini" class="mr-2" aria-hidden="true" title="Permalink">#</a>php.ini</h2>
+<p>Nix shell comes with predefined php.ini, but if for any reason
+it wouldn't be enough for you, you can create your own php.ini file in path:</p>
+<p><code>./.nix/php/lib/php.ini</code></p>
+<p>If that file is not present, the default php.ini.dist from the same location will be used.</p>
+<h2><a id="flow-php-pcov" href="#content-pcov" class="mr-2" aria-hidden="true" title="Permalink">#</a>Pcov</h2>
+<ul>
+<li><code>pcov</code> - required for code coverage</li>
+</ul>
+<p>To skip installing pcov extension, you can run nix shell with <code>--arg with-pco false</code> flag:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">
+nix-shell --arg with-pcov false
 </code></pre>
-<p><strong>Important</strong> static analyze <strong>MUST</strong> be executed at the lowest supported PHP version
-and with dependencies locked by <code>composer.lock</code>.
-Please make sure to use PHP 8.2 and that you used the <code>composer install</code> command first.</p>
-<h2><a id="flow-php-fixing-coding-standards" href="#content-fixing-coding-standards" class="mr-2" aria-hidden="true" title="Permalink">#</a>Fixing Coding Standards</h2>
-<p>Before committing your code, please make sure that your code is following our coding standards.</p>
-<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer cs:php:fix
+<p>To configure pcov, you can create a file <code>./.nix/php/lib/pcov.ini</code> with your xdebug configuration.</p>
+<h2><a id="flow-php-xdebug" href="#content-xdebug" class="mr-2" aria-hidden="true" title="Permalink">#</a>Xdebug</h2>
+<ul>
+<li><code>xdebug</code> - required for debugging</li>
+</ul>
+<p>To install xdebug extension, you can run nix shell with <code>--arg with-xdebug true</code> flag:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg with-xdebug true
 </code></pre>
-<p>This command will automatically fix all coding standards issues in your code.
-If you want to first check what needs to be fixed, you can use:</p>
-<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer static:analyze:cs-fixer
-composer static:analyze:rector
+<p>To configure xdebug, you can create a file <code>./.nix/php/lib/xdebug.ini</code> with your xdebug configuration.</p>
+<h2><a id="flow-php-blackfire" href="#content-blackfire" class="mr-2" aria-hidden="true" title="Permalink">#</a>Blackfire</h2>
+<ul>
+<li><code>blackfire</code> - required for profiling</li>
+</ul>
+<p>To install blackfire extension, you can run nix shell with <code>--arg with-blackfire true</code> flag:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg with-blackfire true
 </code></pre>
-<h2><a id="flow-php-test-everything" href="#content-test-everything" class="mr-2" aria-hidden="true" title="Permalink">#</a>Test everything</h2>
-<p>This command will execute exactly the same tests as we run at GitHub Actions before a PR can get merged.
-If it passes locally, you are good to open a pull request.</p>
-<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer build 
+<p>To configure blackfire, you can create a file <code>./.nix/php/lib/blackfire.ini</code> with your blackfire configuration.</p>
+<h2><a id="flow-php-changing-php-versions" href="#content-changing-php-versions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changing PHP Versions</h2>
+<p>To change the PHP version, you can run nix shell with <code>--arg php-version 8.3</code> flag:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg php-version 8.3
 </code></pre>
-<h2><a id="flow-php-building-documentation" href="#content-building-documentation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building Documentation</h2>
-<p>Since documentation for DSL and our entire API is automatically generated, you can build it by running:</p>
-<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer build:docs
-composer build:docs:api
+<blockquote>
+<p>In general, it's not recommended to change the PHP version, as development should always
+be done on the lowest supported PHP version.</p>
+<p>This feature is mostly for testing new integrations
+or lowest/highest versions of dependencies.</p>
+</blockquote>
+<h2><a id="flow-php-local-webserver" href="#content-local-webserver" class="mr-2" aria-hidden="true" title="Permalink">#</a>Local Webserver</h2>
+<p>To run the local webserver for Flow Website development, please use Symfony CLI app
+that is also available in nix shell.</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">cd web/landing
+symfony proxy:start
+symfony server:start -d 
 </code></pre>
-<p><code>composer build:docs</code> must be executed after any adjustments to <code>functions.php</code> files (DSL).</p>
-<h2><a id="flow-php-building-phar" href="#content-building-phar" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building PHAR</h2>
-<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer build:phar
-./build/flow.phar --version
-</code></pre>
-<h2><a id="flow-php-building-docker-image" href="#content-building-docker-image" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building Docker Image</h2>
-<p>In order to build docker image and load it to local registry please use:</p>
-<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">docker buildx build -t flow-php/flow:latest . --progress=plain --load
-</code></pre>
-<p>Usage:</p>
-<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">docker run -v $(pwd):/flow-workspace -it flow-php/flow:latest --version
-</code></pre>
+<p>You can read more about it here:</p>
+<ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://symfony.com/doc/current/setup/symfony_server.html#setting-up-the-local-proxy">How to use .wip domain for development</a></li>
+</ul>
 
 
             <hr class="!mt-8 !mb-8"/>
