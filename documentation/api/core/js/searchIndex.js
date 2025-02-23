@@ -6371,6 +6371,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Loader-TransformerLoader.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\TransformerLoader\u003A\u003Aclosure\u0028\u0029",
+            "name": "closure",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-TransformerLoader.html#method_closure"
+        },                {
             "fqsen": "\\Flow\\ETL\\Loader\\TransformerLoader\u003A\u003Aload\u0028\u0029",
             "name": "load",
             "summary": "",
