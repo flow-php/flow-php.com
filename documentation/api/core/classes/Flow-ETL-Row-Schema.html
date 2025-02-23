@@ -183,6 +183,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Row-Schema.html#method_addMetadata">addMetadata()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Adds metadata to a given definition.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Row-Schema.html#method_count">count()</a>
     <span>
                                 &nbsp;: int    </span>
@@ -220,7 +227,13 @@
 <dd>Detecting schema from the pipeline has several disadvantages.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Row-Schema.html#method_getDefinition">getDefinition()</a>
+    <a class="" href="classes/Flow-ETL-Row-Schema.html#method_get">get()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Row-Schema-Definition.html"><abbr title="\Flow\ETL\Row\Schema\Definition">Definition</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="-deprecated" href="classes/Flow-ETL-Row-Schema.html#method_getDefinition">getDefinition()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Row-Schema-Definition.html"><abbr title="\Flow\ETL\Row\Schema\Definition">Definition</abbr></a>    </span>
 </dt>
@@ -292,6 +305,13 @@
     <span>
                                 &nbsp;: self    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Row-Schema.html#method_setMetadata">setMetadata()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Overwrites metadata for a given definition.</dd>
 
     </dl>
 
@@ -405,6 +425,84 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_addMetadata">
+        addMetadata()
+        <a href="classes/Flow-ETL-Row-Schema.html#method_addMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">101</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Adds metadata to a given definition.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definition</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|string|bool|float|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$definition</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|string|bool|float|array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-ETL-Row-Schema.html#method_addMetadata#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html"><abbr title="\Flow\ETL\Exception\SchemaDefinitionNotFoundException">SchemaDefinitionNotFoundException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_count">
         count()
         <a href="classes/Flow-ETL-Row-Schema.html#method_count" class="headerlink"><i class="fas fa-link"></i></a>
@@ -413,7 +511,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -451,7 +549,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -489,7 +587,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -534,7 +632,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -694,6 +792,69 @@ This way, whatever process would need to use this method, will do just one itera
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_get">
+        get()
+        <a href="classes/Flow-ETL-Row-Schema.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">151</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row-Schema-Definition.html"><abbr title="\Flow\ETL\Row\Schema\Definition">Definition</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$ref</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-ETL-Row-Schema.html#method_get#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html"><abbr title="\Flow\ETL\Exception\SchemaDefinitionNotFoundException">SchemaDefinitionNotFoundException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row-Schema-Definition.html"><abbr title="\Flow\ETL\Row\Schema\Definition">Definition</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+            -deprecated                                            "
+>
     <h4 class="phpdocumentor-element__name" id="method_getDefinition">
         getDefinition()
         <a href="classes/Flow-ETL-Row-Schema.html#method_getDefinition" class="headerlink"><i class="fas fa-link"></i></a>
@@ -702,16 +863,23 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
     
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getDefinition</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row-Schema-Definition.html"><abbr title="\Flow\ETL\Row\Schema\Definition">Definition</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
+        </div>
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                <p>please use Schema::get() instead</p>
+
+            </article>
         </div>
     
     
@@ -765,7 +933,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -814,7 +982,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -862,7 +1030,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">190</span>
+    <span class="phpdocumentor-element-found-in__line">212</span>
 
     </aside>
 
@@ -901,7 +1069,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">229</span>
 
     </aside>
 
@@ -956,7 +1124,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">234</span>
 
     </aside>
 
@@ -1004,7 +1172,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">243</span>
+    <span class="phpdocumentor-element-found-in__line">265</span>
 
     </aside>
 
@@ -1042,7 +1210,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">257</span>
+    <span class="phpdocumentor-element-found-in__line">279</span>
 
     </aside>
 
@@ -1087,7 +1255,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">262</span>
+    <span class="phpdocumentor-element-found-in__line">284</span>
 
     </aside>
 
@@ -1125,7 +1293,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">273</span>
+    <span class="phpdocumentor-element-found-in__line">295</span>
 
     </aside>
 
@@ -1173,7 +1341,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">296</span>
+    <span class="phpdocumentor-element-found-in__line">318</span>
 
     </aside>
 
@@ -1228,7 +1396,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">317</span>
+    <span class="phpdocumentor-element-found-in__line">339</span>
 
     </aside>
 
@@ -1260,6 +1428,77 @@ This way, whatever process would need to use this method, will do just one itera
             </dl>
 
     
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setMetadata">
+        setMetadata()
+        <a href="classes/Flow-ETL-Row-Schema.html#method_setMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Schema.php"><a href="files/src-core-etl-src-flow-etl-row-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Schema.php">Schema.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">365</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Overwrites metadata for a given definition.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definition</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Row-Schema-Metadata.html"><abbr title="\Flow\ETL\Row\Schema\Metadata">Metadata</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$definition</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$metadata</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Row-Schema-Metadata.html"><abbr title="\Flow\ETL\Row\Schema\Metadata">Metadata</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-ETL-Row-Schema.html#method_setMetadata#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html"><abbr title="\Flow\ETL\Exception\SchemaDefinitionNotFoundException">SchemaDefinitionNotFoundException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
 
     
 
@@ -1384,13 +1623,15 @@ This way, whatever process would need to use this method, will do just one itera
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_add">add()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_addMetadata">addMetadata()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_count">count()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_definitions">definitions()</a></li>
                                             <li class="-deprecated"><a href="classes/Flow-ETL-Row-Schema.html#method_entries">entries()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_findDefinition">findDefinition()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_fromPipeline">fromPipeline()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_getDefinition">getDefinition()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_get">get()</a></li>
+                                            <li class="-deprecated"><a href="classes/Flow-ETL-Row-Schema.html#method_getDefinition">getDefinition()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_gracefulRemove">gracefulRemove()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_keep">keep()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_makeNullable">makeNullable()</a></li>
@@ -1402,6 +1643,7 @@ This way, whatever process would need to use this method, will do just one itera
                                             <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_remove">remove()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_rename">rename()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_replace">replace()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Row-Schema.html#method_setMetadata">setMetadata()</a></li>
                                     </ul>
             </li>
                     </ul>

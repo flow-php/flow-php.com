@@ -10631,6 +10631,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Schema-Definition.html#method_xml_element"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Definition\u003A\u003AaddMetadata\u0028\u0029",
+            "name": "addMetadata",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Definition.html#method_addMetadata"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Schema\\Definition\u003A\u003Aentry\u0028\u0029",
             "name": "entry",
             "summary": "",
@@ -10680,6 +10685,11 @@ Search.appendIndex(
             "name": "rename",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Schema-Definition.html#method_rename"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Definition\u003A\u003AsetMetadata\u0028\u0029",
+            "name": "setMetadata",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Definition.html#method_setMetadata"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Schema\\Definition\u003A\u003Atype\u0028\u0029",
             "name": "type",
@@ -10846,6 +10856,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Schema.html#method_add"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\u003A\u003AaddMetadata\u0028\u0029",
+            "name": "addMetadata",
+            "summary": "Adds\u0020metadata\u0020to\u0020a\u0020given\u0020definition.",
+            "url": "classes/Flow-ETL-Row-Schema.html#method_addMetadata"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Schema\u003A\u003Acount\u0028\u0029",
             "name": "count",
             "summary": "",
@@ -10865,6 +10880,11 @@ Search.appendIndex(
             "name": "findDefinition",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Schema.html#method_findDefinition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema.html#method_get"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Schema\u003A\u003AgetDefinition\u0028\u0029",
             "name": "getDefinition",
@@ -10925,6 +10945,11 @@ Search.appendIndex(
             "name": "replace",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Schema.html#method_replace"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\u003A\u003AsetMetadata\u0028\u0029",
+            "name": "setMetadata",
+            "summary": "Overwrites\u0020metadata\u0020for\u0020a\u0020given\u0020definition.",
+            "url": "classes/Flow-ETL-Row-Schema.html#method_setMetadata"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\SortOrder",
             "name": "SortOrder",
