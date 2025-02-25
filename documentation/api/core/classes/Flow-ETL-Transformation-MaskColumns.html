@@ -73,7 +73,19 @@
 </h4>
     <ul class="phpdocumentor-list">
                     <li>
-                <a href="namespaces/flow-bridge.html" class="">Bridge</a>
+                <a href="namespaces/flow-arraycomparison.html" class="">ArrayComparison</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-clock.html" class="">Clock</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-etl.html" class="">ETL</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-serializer.html" class="">Serializer</a>
                 
             </li>
             </ul>
@@ -97,21 +109,19 @@
                                 <section>
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow.html">Flow</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-bridge.html">Bridge</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-bridge-symfony.html">Symfony</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-bridge-symfony-httpfoundation.html">HttpFoundation</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-bridge-symfony-httpfoundation-transformation.html">Transformation</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl.html">ETL</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-transformation.html">Transformation</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    BatchSize
+    MaskColumns
 
     
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Flow\ETL\Transformation">Transformation</abbr>                    </span>
+                            <a href="classes/Flow-ETL-Transformation.html"><abbr title="\Flow\ETL\Transformation">Transformation</abbr></a>                    </span>
     
     </h2>
 
@@ -125,19 +135,16 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/Transformation/BatchSize.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-transformation-batchsize.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/Transformation/BatchSize.php">BatchSize.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Transformation/MaskColumns.php"><a href="files/src-core-etl-src-flow-etl-transformation-maskcolumns.html"><abbr title="src/core/etl/src/Flow/ETL/Transformation/MaskColumns.php">MaskColumns.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Sets batch size for DataFrame.</p>
+            <p class="phpdocumentor-summary">Mask columns in DataFrame by replacing their values with a mask.</p>
 
 
-    <section class="phpdocumentor-description"><p>Small batch size can be useful when processing large data sets since only one row is processed at a time.
-This means that while processing large data sets, memory usage is kept low.</p>
-<p>Normally flow allows to use batch size -1 (which means no batches) but it defeats the purpose of using this transformation on
-Data Streams.</p>
+    <section class="phpdocumentor-description"><p>If column does not exist in DataFrame, it will be added with a mask value.</p>
 </section>
 
 
@@ -149,11 +156,11 @@ Data Streams.</p>
 
     <h4 id="toc-interfaces">
         Interfaces
-        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-ETL-Transformation-MaskColumns.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Transformation">Transformation</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Transformation.html"><abbr title="\Flow\ETL\Transformation">Transformation</abbr></a></dt>    </dl>
 
 
 
@@ -164,20 +171,20 @@ Data Streams.</p>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Flow-ETL-Transformation-MaskColumns.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#method___construct">__construct()</a>
+    <a class="" href="classes/Flow-ETL-Transformation-MaskColumns.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#method_transform">transform()</a>
+    <a class="" href="classes/Flow-ETL-Transformation-MaskColumns.html#method_transform">transform()</a>
     <span>
-                                &nbsp;: <abbr title="\Flow\ETL\DataFrame">DataFrame</abbr>    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-DataFrame.html"><abbr title="\Flow\ETL\DataFrame">DataFrame</abbr></a>    </span>
 </dt>
 
     </dl>
@@ -191,7 +198,7 @@ Data Streams.</p>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Flow-ETL-Transformation-MaskColumns.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -202,20 +209,20 @@ Data Streams.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-ETL-Transformation-MaskColumns.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/Transformation/BatchSize.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-transformation-batchsize.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/Transformation/BatchSize.php">BatchSize.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Transformation/MaskColumns.php"><a href="files/src-core-etl-src-flow-etl-transformation-maskcolumns.html"><abbr title="src/core/etl/src/Flow/ETL/Transformation/MaskColumns.php">MaskColumns.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$size</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mask</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;******&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -224,9 +231,16 @@ Data Streams.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$size</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int<1, max></span>
-                            </dt>
+                <span class="phpdocumentor-signature__argument__name">$columns</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$mask</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;******&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -246,20 +260,20 @@ Data Streams.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_transform">
         transform()
-        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#method_transform" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-ETL-Transformation-MaskColumns.html#method_transform" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/Transformation/BatchSize.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-transformation-batchsize.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/Transformation/BatchSize.php">BatchSize.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Transformation/MaskColumns.php"><a href="files/src-core-etl-src-flow-etl-transformation-maskcolumns.html"><abbr title="src/core/etl/src/Flow/ETL/Transformation/MaskColumns.php">MaskColumns.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">transform</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\ETL\DataFrame">DataFrame</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dataFrame</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\DataFrame">DataFrame</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">transform</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-DataFrame.html"><abbr title="\Flow\ETL\DataFrame">DataFrame</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dataFrame</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-DataFrame.html"><abbr title="\Flow\ETL\DataFrame">DataFrame</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -269,7 +283,7 @@ Data Streams.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$dataFrame</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\ETL\DataFrame">DataFrame</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-DataFrame.html"><abbr title="\Flow\ETL\DataFrame">DataFrame</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -282,7 +296,7 @@ Data Streams.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\DataFrame">DataFrame</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-DataFrame.html"><abbr title="\Flow\ETL\DataFrame">DataFrame</abbr></a></span>
             </section>
 
 </article>
@@ -292,7 +306,7 @@ Data Streams.</p>
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/Transformation/BatchSize.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/core/etl/src/Flow/ETL/Transformation/MaskColumns.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -391,7 +405,7 @@ Data Streams.</p>
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                <li><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#toc-methods">Methods</a></li>
+                                                                                <li><a href="classes/Flow-ETL-Transformation-MaskColumns.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
@@ -399,8 +413,8 @@ Data Streams.</p>
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#method_transform">transform()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Transformation-MaskColumns.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Transformation-MaskColumns.html#method_transform">transform()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -420,7 +434,7 @@ Data Streams.</p>
     </section>
 </section>
         </div>
-        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Flow-ETL-Transformation-MaskColumns.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

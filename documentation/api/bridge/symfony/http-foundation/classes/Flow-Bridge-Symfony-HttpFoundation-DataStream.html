@@ -121,7 +121,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -157,15 +157,43 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_as">as()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Set the filename for the response.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_headers">headers()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Set additional headers.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_open">open()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_sendTo">sendTo()</a>
+    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_response">response()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Bridge-Symfony-HttpFoundation-FlowStreamedResponse.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\FlowStreamedResponse">FlowStreamedResponse</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowBufferedResponse.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Response\FlowBufferedResponse">FlowBufferedResponse</abbr></a>    </span>
+</dt>
+<dd>Create regular response where whole dataset is loaded into the memory.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_status">status()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Set the HTTP status code. Default is 200.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_streamedResponse">streamedResponse()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Response\FlowStreamedResponse">FlowStreamedResponse</abbr></a>    </span>
 </dt>
 <dd>Send the data stream to the output.</dd>
 
@@ -177,32 +205,11 @@
 <dd>Apply transformations to the data stream.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_underFilename">underFilename()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Set the filename for the response.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withHeaders">withHeaders()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Set additional headers.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withoutHeader">withoutHeader()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
 <dd>Remove a specific header if it exists.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withStatus">withStatus()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Set the HTTP status code. Default is 200.</dd>
 
     </dl>
 
@@ -232,7 +239,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -266,6 +273,116 @@
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_as">
+        as()
+        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_as" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set the filename for the response.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">as</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attachment</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>If the attachment flag is set to true, the response will be treated as an attachment meaning that
+the browser will prompt the user to download the file.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$attachment</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_headers">
+        headers()
+        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_headers" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set additional headers.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">headers</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Headers are merged with the default headers.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$headers</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_open">
@@ -276,7 +393,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -316,15 +433,116 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_sendTo">
-        sendTo()
-        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_sendTo" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_response">
+        response()
+        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_response" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create regular response where whole dataset is loaded into the memory.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">response</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Output.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Output">Output</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$output</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowBufferedResponse.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Response\FlowBufferedResponse">FlowBufferedResponse</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>It's highly recommended to use limit transformation to avoid loading entire dataset into the memory.
+Some extractors like Parquet/Elasticsearch/Doctrine allows also for setting offset directly on the extractor.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$output</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Output.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Output">Output</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowBufferedResponse.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Response\FlowBufferedResponse">FlowBufferedResponse</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_status">
+        status()
+        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_status" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">88</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set the HTTP status code. Default is 200.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">status</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$status</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$status</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_streamedResponse">
+        streamedResponse()
+        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_streamedResponse" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -332,7 +550,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sendTo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Output.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Output">Output</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$output</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-FlowStreamedResponse.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\FlowStreamedResponse">FlowStreamedResponse</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">streamedResponse</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Output.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Output">Output</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$output</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Response\FlowStreamedResponse">FlowStreamedResponse</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -355,7 +573,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-FlowStreamedResponse.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\FlowStreamedResponse">FlowStreamedResponse</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Response\FlowStreamedResponse">FlowStreamedResponse</abbr></a></span>
             </section>
 
 </article>
@@ -373,7 +591,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -419,116 +637,6 @@ might significantly slow down the streaming process or even cause out of memory 
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_underFilename">
-        underFilename()
-        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_underFilename" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">79</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Set the filename for the response.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">underFilename</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attachment</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <section class="phpdocumentor-description"><p>If the attachment flag is set to true, the response will be treated as an attachment meaning that
-the browser will prompt the user to download the file.</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$attachment</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_withHeaders">
-        withHeaders()
-        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withHeaders" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">93</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Set additional headers.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withHeaders</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <section class="phpdocumentor-description"><p>Headers are merged with the default headers.</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$headers</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_withoutHeader">
         withoutHeader()
         <a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withoutHeader" class="headerlink"><i class="fas fa-link"></i></a>
@@ -537,7 +645,7 @@ the browser will prompt the user to download the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -558,55 +666,6 @@ the browser will prompt the user to download the file.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$name</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_withStatus">
-        withStatus()
-        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withStatus" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">116</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Set the HTTP status code. Default is 200.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withStatus</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$status</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$status</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -737,13 +796,14 @@ the browser will prompt the user to download the file.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_as">as()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_headers">headers()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_open">open()</a></li>
-                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_sendTo">sendTo()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_response">response()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_status">status()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_streamedResponse">streamedResponse()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_transform">transform()</a></li>
-                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_underFilename">underFilename()</a></li>
-                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withHeaders">withHeaders()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withoutHeader">withoutHeader()</a></li>
-                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withStatus">withStatus()</a></li>
                                     </ul>
             </li>
                     </ul>

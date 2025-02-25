@@ -76,6 +76,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Clock-SystemClock.html#method_now"
         },                {
+            "fqsen": "\\Flow\\ETL\\AddRowIndex\\StartFrom",
+            "name": "StartFrom",
+            "summary": "",
+            "url": "classes/Flow-ETL-AddRowIndex-StartFrom.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\AddRowIndex\\StartFrom\u003A\u003AONE",
+            "name": "ONE",
+            "summary": "",
+            "url": "classes/Flow-ETL-AddRowIndex-StartFrom.html#enumcase_ONE"
+        },                {
+            "fqsen": "\\Flow\\ETL\\AddRowIndex\\StartFrom\u003A\u003AZERO",
+            "name": "ZERO",
+            "summary": "",
+            "url": "classes/Flow-ETL-AddRowIndex-StartFrom.html#enumcase_ZERO"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\DocumentationDSL",
             "name": "DocumentationDSL",
             "summary": "",
@@ -11531,6 +11546,66 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Sort-SortAlgorithms.html#enumcase_SQLITE_SORT"
         },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\AddRowIndex",
+            "name": "AddRowIndex",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-AddRowIndex.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\AddRowIndex\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-AddRowIndex.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\AddRowIndex\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-AddRowIndex.html#method_transform"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\BatchSize",
+            "name": "BatchSize",
+            "summary": "Sets\u0020batch\u0020size\u0020for\u0020DataFrame.",
+            "url": "classes/Flow-ETL-Transformation-BatchSize.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\BatchSize\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-BatchSize.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\BatchSize\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-BatchSize.html#method_transform"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\Limit",
+            "name": "Limit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-Limit.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\Limit\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-Limit.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\Limit\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-Limit.html#method_transform"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\MaskColumns",
+            "name": "MaskColumns",
+            "summary": "Mask\u0020columns\u0020in\u0020DataFrame\u0020by\u0020replacing\u0020their\u0020values\u0020with\u0020a\u0020mask.",
+            "url": "classes/Flow-ETL-Transformation-MaskColumns.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\MaskColumns\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-MaskColumns.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\MaskColumns\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-MaskColumns.html#method_transform"
+        },                {
             "fqsen": "\\Flow\\ETL\\Transformation",
             "name": "Transformation",
             "summary": "",
@@ -12156,6 +12231,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-clock.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\AddRowIndex",
+            "name": "AddRowIndex",
+            "summary": "",
+            "url": "namespaces/flow-etl-addrowindex.html"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute",
             "name": "Attribute",
             "summary": "",
@@ -12430,6 +12510,11 @@ Search.appendIndex(
             "name": "Sort",
             "summary": "",
             "url": "namespaces/flow-etl-sort.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation",
+            "name": "Transformation",
+            "summary": "",
+            "url": "namespaces/flow-etl-transformation.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer",
             "name": "Transformer",

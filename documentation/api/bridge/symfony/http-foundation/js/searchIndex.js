@@ -16,45 +16,65 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_open"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003AsendTo\u0028\u0029",
-            "name": "sendTo",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003Aas\u0028\u0029",
+            "name": "as",
+            "summary": "Set\u0020the\u0020filename\u0020for\u0020the\u0020response.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_as"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003Aheaders\u0028\u0029",
+            "name": "headers",
+            "summary": "Set\u0020additional\u0020headers.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_headers"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003Aresponse\u0028\u0029",
+            "name": "response",
+            "summary": "Create\u0020regular\u0020response\u0020where\u0020whole\u0020dataset\u0020is\u0020loaded\u0020into\u0020the\u0020memory.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_response"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003Astatus\u0028\u0029",
+            "name": "status",
+            "summary": "Set\u0020the\u0020HTTP\u0020status\u0020code.\u0020Default\u0020is\u0020200.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_status"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003AstreamedResponse\u0028\u0029",
+            "name": "streamedResponse",
             "summary": "Send\u0020the\u0020data\u0020stream\u0020to\u0020the\u0020output.",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_sendTo"
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_streamedResponse"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003Atransform\u0028\u0029",
             "name": "transform",
             "summary": "Apply\u0020transformations\u0020to\u0020the\u0020data\u0020stream.",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_transform"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003AunderFilename\u0028\u0029",
-            "name": "underFilename",
-            "summary": "Set\u0020the\u0020filename\u0020for\u0020the\u0020response.",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_underFilename"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003AwithHeaders\u0028\u0029",
-            "name": "withHeaders",
-            "summary": "Set\u0020additional\u0020headers.",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withHeaders"
-        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003AwithoutHeader\u0028\u0029",
             "name": "withoutHeader",
             "summary": "Remove\u0020a\u0020specific\u0020header\u0020if\u0020it\u0020exists.",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withoutHeader"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003AwithStatus\u0028\u0029",
-            "name": "withStatus",
-            "summary": "Set\u0020the\u0020HTTP\u0020status\u0020code.\u0020Default\u0020is\u0020200.",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_withStatus"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\FlowStreamedResponse",
-            "name": "FlowStreamedResponse",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\http_stream_open\u0028\u0029",
+            "name": "http_stream_open",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-FlowStreamedResponse.html"
+            "url": "namespaces/flow-bridge-symfony-httpfoundation.html#function_http_stream_open"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\FlowStreamedResponse\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\http_json_output\u0028\u0029",
+            "name": "http_json_output",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-FlowStreamedResponse.html#method___construct"
+            "url": "namespaces/flow-bridge-symfony-httpfoundation.html#function_http_json_output"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\http_csv_output\u0028\u0029",
+            "name": "http_csv_output",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-httpfoundation.html#function_http_csv_output"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\http_xml_output\u0028\u0029",
+            "name": "http_xml_output",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-httpfoundation.html#function_http_xml_output"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\http_parquet_output\u0028\u0029",
+            "name": "http_parquet_output",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-httpfoundation.html#function_http_parquet_output"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\CSVOutput",
             "name": "CSVOutput",
@@ -66,10 +86,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-CSVOutput.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\CSVOutput\u003A\u003Aloader\u0028\u0029",
-            "name": "loader",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\CSVOutput\u003A\u003AmemoryLoader\u0028\u0029",
+            "name": "memoryLoader",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-CSVOutput.html#method_loader"
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-CSVOutput.html#method_memoryLoader"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\CSVOutput\u003A\u003AstdoutLoader\u0028\u0029",
+            "name": "stdoutLoader",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-CSVOutput.html#method_stdoutLoader"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\CSVOutput\u003A\u003Atype\u0028\u0029",
             "name": "type",
@@ -86,10 +111,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-JsonOutput.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\JsonOutput\u003A\u003Aloader\u0028\u0029",
-            "name": "loader",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\JsonOutput\u003A\u003AmemoryLoader\u0028\u0029",
+            "name": "memoryLoader",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-JsonOutput.html#method_loader"
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-JsonOutput.html#method_memoryLoader"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\JsonOutput\u003A\u003AstdoutLoader\u0028\u0029",
+            "name": "stdoutLoader",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-JsonOutput.html#method_stdoutLoader"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\JsonOutput\u003A\u003Atype\u0028\u0029",
             "name": "type",
@@ -106,10 +136,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-ParquetOutput.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\ParquetOutput\u003A\u003Aloader\u0028\u0029",
-            "name": "loader",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\ParquetOutput\u003A\u003AmemoryLoader\u0028\u0029",
+            "name": "memoryLoader",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-ParquetOutput.html#method_loader"
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-ParquetOutput.html#method_memoryLoader"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\ParquetOutput\u003A\u003AstdoutLoader\u0028\u0029",
+            "name": "stdoutLoader",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-ParquetOutput.html#method_stdoutLoader"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\ParquetOutput\u003A\u003Atype\u0028\u0029",
             "name": "type",
@@ -161,10 +196,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-XMLOutput.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\XMLOutput\u003A\u003Aloader\u0028\u0029",
-            "name": "loader",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\XMLOutput\u003A\u003AmemoryLoader\u0028\u0029",
+            "name": "memoryLoader",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-XMLOutput.html#method_loader"
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-XMLOutput.html#method_memoryLoader"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\XMLOutput\u003A\u003AstdoutLoader\u0028\u0029",
+            "name": "stdoutLoader",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output-XMLOutput.html#method_stdoutLoader"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\XMLOutput\u003A\u003Atype\u0028\u0029",
             "name": "type",
@@ -176,75 +216,50 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output.html"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\u003A\u003Aloader\u0028\u0029",
-            "name": "loader",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\u003A\u003AmemoryLoader\u0028\u0029",
+            "name": "memoryLoader",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output.html#method_loader"
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output.html#method_memoryLoader"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\u003A\u003AstdoutLoader\u0028\u0029",
+            "name": "stdoutLoader",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output.html#method_stdoutLoader"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\u003A\u003Atype\u0028\u0029",
             "name": "type",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Output.html#method_type"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex\\StartFrom",
-            "name": "StartFrom",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Response\\FlowBufferedResponse",
+            "name": "FlowBufferedResponse",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-AddRowIndex-StartFrom.html"
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowBufferedResponse.html"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex\\StartFrom\u003A\u003AONE",
-            "name": "ONE",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-AddRowIndex-StartFrom.html#enumcase_ONE"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex\\StartFrom\u003A\u003AZERO",
-            "name": "ZERO",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-AddRowIndex-StartFrom.html#enumcase_ZERO"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex",
-            "name": "AddRowIndex",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-AddRowIndex.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Response\\FlowBufferedResponse\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-AddRowIndex.html#method___construct"
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowBufferedResponse.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Response\\FlowBufferedResponse\u003A\u003AgetContent\u0028\u0029",
+            "name": "getContent",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-AddRowIndex.html#method_transform"
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowBufferedResponse.html#method_getContent"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\BatchSize",
-            "name": "BatchSize",
-            "summary": "Sets\u0020batch\u0020size\u0020for\u0020DataFrame.",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html"
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Response\\FlowBufferedResponse\u003A\u003AsendContent\u0028\u0029",
+            "name": "sendContent",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowBufferedResponse.html#method_sendContent"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\BatchSize\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Response\\FlowStreamedResponse",
+            "name": "FlowStreamedResponse",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Response\\FlowStreamedResponse\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\BatchSize\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-BatchSize.html#method_transform"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\MaskColumns",
-            "name": "MaskColumns",
-            "summary": "Mask\u0020columns\u0020in\u0020DataFrame\u0020by\u0020replacing\u0020their\u0020values\u0020with\u0020a\u0020mask.",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-MaskColumns.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\MaskColumns\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-MaskColumns.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\MaskColumns\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Transformation-MaskColumns.html#method_transform"
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html#method___construct"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -276,14 +291,9 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-bridge-symfony-httpfoundation-output.html"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation\\AddRowIndex",
-            "name": "AddRowIndex",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Response",
+            "name": "Response",
             "summary": "",
-            "url": "namespaces/flow-bridge-symfony-httpfoundation-transformation-addrowindex.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Transformation",
-            "name": "Transformation",
-            "summary": "",
-            "url": "namespaces/flow-bridge-symfony-httpfoundation-transformation.html"
+            "url": "namespaces/flow-bridge-symfony-httpfoundation-response.html"
         }            ]
 );

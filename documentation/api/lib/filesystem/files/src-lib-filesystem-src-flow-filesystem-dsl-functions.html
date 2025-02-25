@@ -140,7 +140,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php"><a href="files/src-lib-filesystem-src-flow-filesystem-dsl-functions.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -179,7 +179,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php"><a href="files/src-lib-filesystem-src-flow-filesystem-dsl-functions.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -225,7 +225,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php"><a href="files/src-lib-filesystem-src-flow-filesystem-dsl-functions.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -264,7 +264,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php"><a href="files/src-lib-filesystem-src-flow-filesystem-dsl-functions.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -322,7 +322,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php"><a href="files/src-lib-filesystem-src-flow-filesystem-dsl-functions.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -354,6 +354,61 @@
 
 </article>
                     <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_path_memory">
+        path_memory()
+        <a href="namespaces/flow-filesystem-dsl.html#function_path_memory" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php"><a href="files/src-lib-filesystem-src-flow-filesystem-dsl-functions.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">76</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a path to php memory stream.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">path_memory</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|array{'stream': "memory"|"temp"}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$path</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><ul>
+<li>default = '' - path is used as an identifier in memory filesystem, so we can write multiple files to memory at once, each path is a new handle</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$options</span>
+                : <span class="phpdocumentor-signature__argument__return-type">null|array{'stream': "memory"|"temp"}</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><ul>
+<li>when nothing is provided, 'temp' stream is used by default</li>
+</ul>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_path_real">
         path_real()
         <a href="namespaces/flow-filesystem-dsl.html#function_path_real" class="headerlink"><i class="fas fa-link"></i></a>
@@ -362,7 +417,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php"><a href="files/src-lib-filesystem-src-flow-filesystem-dsl-functions.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -409,7 +464,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php"><a href="files/src-lib-filesystem-src-flow-filesystem-dsl-functions.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -438,15 +493,48 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php"><a href="files/src-lib-filesystem-src-flow-filesystem-dsl-functions.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Write-only filesystem useful when we just want to write the output to stdout.</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
                     <span class="phpdocumentor-signature__name">stdout_filesystem</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html"><abbr title="\Flow\Filesystem\Local\StdOutFilesystem">StdOutFilesystem</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>The main use case is for streaming datasets over http.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html"><abbr title="\Flow\Filesystem\Local\StdOutFilesystem">StdOutFilesystem</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_memory_filesystem">
+        memory_filesystem()
+        <a href="namespaces/flow-filesystem-dsl.html#function_memory_filesystem" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php"><a href="files/src-lib-filesystem-src-flow-filesystem-dsl-functions.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">112</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a new memory filesystem and writes data to it in memory.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">memory_filesystem</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html"><abbr title="\Flow\Filesystem\Local\MemoryFilesystem">MemoryFilesystem</abbr></a></span></code>
 
     
     
@@ -454,7 +542,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html"><abbr title="\Flow\Filesystem\Local\StdOutFilesystem">StdOutFilesystem</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html"><abbr title="\Flow\Filesystem\Local\MemoryFilesystem">MemoryFilesystem</abbr></a></span>
             </section>
 
 </article>
@@ -467,7 +555,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php"><a href="files/src-lib-filesystem-src-flow-filesystem-dsl-functions.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -615,10 +703,12 @@ If no filesystems are provided, local filesystem is mounted.</p>
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="namespaces/flow-filesystem-dsl.html#function_fstab">fstab()</a></li>
+                                                    <li class=""><a href="namespaces/flow-filesystem-dsl.html#function_memory_filesystem">memory_filesystem()</a></li>
                                                     <li class=""><a href="namespaces/flow-filesystem-dsl.html#function_native_local_filesystem">native_local_filesystem()</a></li>
                                                     <li class=""><a href="namespaces/flow-filesystem-dsl.html#function_partition">partition()</a></li>
                                                     <li class=""><a href="namespaces/flow-filesystem-dsl.html#function_partitions">partitions()</a></li>
                                                     <li class=""><a href="namespaces/flow-filesystem-dsl.html#function_path">path()</a></li>
+                                                    <li class=""><a href="namespaces/flow-filesystem-dsl.html#function_path_memory">path_memory()</a></li>
                                                     <li class=""><a href="namespaces/flow-filesystem-dsl.html#function_path_real">path_real()</a></li>
                                                     <li class=""><a href="namespaces/flow-filesystem-dsl.html#function_path_stdout">path_stdout()</a></li>
                                                     <li class=""><a href="namespaces/flow-filesystem-dsl.html#function_protocol">protocol()</a></li>

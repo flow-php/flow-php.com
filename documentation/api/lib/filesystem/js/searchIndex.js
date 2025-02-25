@@ -41,6 +41,11 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020path\u0020to\u0020php\u0020stdout\u0020stream.",
             "url": "namespaces/flow-filesystem-dsl.html#function_path_stdout"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\DSL\\path_memory\u0028\u0029",
+            "name": "path_memory",
+            "summary": "Create\u0020a\u0020path\u0020to\u0020php\u0020memory\u0020stream.",
+            "url": "namespaces/flow-filesystem-dsl.html#function_path_memory"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\DSL\\path_real\u0028\u0029",
             "name": "path_real",
             "summary": "Resolve\u0020real\u0020path\u0020from\u0020given\u0020path.",
@@ -53,8 +58,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\DSL\\stdout_filesystem\u0028\u0029",
             "name": "stdout_filesystem",
-            "summary": "",
+            "summary": "Write\u002Donly\u0020filesystem\u0020useful\u0020when\u0020we\u0020just\u0020want\u0020to\u0020write\u0020the\u0020output\u0020to\u0020stdout.",
             "url": "namespaces/flow-filesystem-dsl.html#function_stdout_filesystem"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\DSL\\memory_filesystem\u0028\u0029",
+            "name": "memory_filesystem",
+            "summary": "Create\u0020a\u0020new\u0020memory\u0020filesystem\u0020and\u0020writes\u0020data\u0020to\u0020it\u0020in\u0020memory.",
+            "url": "namespaces/flow-filesystem-dsl.html#function_memory_filesystem"
         },                {
             "fqsen": "\\Flow\\Filesystem\\DSL\\fstab\u0028\u0029",
             "name": "fstab",
@@ -191,6 +201,161 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-FilesystemTable.html#method_unmount"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory",
+            "name": "Memory",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-Memory.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory\u003A\u003A__destruct\u0028\u0029",
+            "name": "__destruct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method___destruct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory\u003A\u003Afor\u0028\u0029",
+            "name": "for",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method_for"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory\u003A\u003Apaths\u0028\u0029",
+            "name": "paths",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method_paths"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream",
+            "name": "MemoryStream",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003A__destruct\u0028\u0029",
+            "name": "__destruct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method___destruct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method_append"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "We\u0020are\u0020not\u0020closing\u0020memory\u0020streams,\u0020in\u0020order\u0020to\u0020cleanup\u0020memory\u0020use\u0020rm\u0020on\u0020Memory\u0020Filesystem.",
+            "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003Acontent\u0028\u0029",
+            "name": "content",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method_content"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003AfromResource\u0028\u0029",
+            "name": "fromResource",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method_fromResource"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003AisOpen\u0028\u0029",
+            "name": "isOpen",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method_isOpen"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003Aiterate\u0028\u0029",
+            "name": "iterate",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method_iterate"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003Apath\u0028\u0029",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method_path"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003AreadLines\u0028\u0029",
+            "name": "readLines",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method_readLines"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003Asize\u0028\u0029",
+            "name": "size",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method_size"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem",
+            "name": "MemoryFilesystem",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003AappendTo\u0028\u0029",
+            "name": "appendTo",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_appendTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003AgetSystemTmpDir\u0028\u0029",
+            "name": "getSystemTmpDir",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_getSystemTmpDir"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_list"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003Amv\u0028\u0029",
+            "name": "mv",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_mv"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003Aprotocol\u0028\u0029",
+            "name": "protocol",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_protocol"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003AreadFrom\u0028\u0029",
+            "name": "readFrom",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_readFrom"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003Arm\u0028\u0029",
+            "name": "rm",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_rm"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003Astatus\u0028\u0029",
+            "name": "status",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_status"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003AwriteTo\u0028\u0029",
+            "name": "writeTo",
+            "summary": "Open\u0020destination\u0020stream\u0020for\u0020writing,\u0020if\u0020file\u0020already\u0020exists\u0020it\u0020will\u0020be\u0020overwritten.",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_writeTo"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem",
             "name": "NativeLocalFilesystem",
             "summary": "This\u0020implementation\u0020is\u0020based\u0020on\u0020the\u0020native\u0020PHP\u0020filesystem\u0020functions\u0020documented\u0020here\u003A\u0020https\u003A\/\/www.php.net\/manual\/en\/book.filesystem.php\nAdditionally,\u0020in\u0020order\u0020to\u0020support\u0020glob\u0020pattern\u0020\u0060\\\/\u002A\u002A\\\/\u0060\u0020for\u0020matching\u0020zero\u0020or\u0020more\u0020directories\u0020it\u0027s\u0020using\u0020webmozart\/glob\u0020library.",
@@ -240,21 +405,6 @@ Search.appendIndex(
             "name": "writeTo",
             "summary": "Open\u0020destination\u0020stream\u0020for\u0020writing,\u0020if\u0020file\u0020already\u0020exists\u0020it\u0020will\u0020be\u0020overwritten.",
             "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_writeTo"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Local\\StdOut\\Filter\\Intercept",
-            "name": "Intercept",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Local-StdOut-Filter-Intercept.html"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Local\\StdOut\\Filter\\Intercept\u003A\u003Afilter\u0028\u0029",
-            "name": "filter",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Local-StdOut-Filter-Intercept.html#method_filter"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Local\\StdOut\\Filter\\Intercept\u003A\u003A\u0024buffer",
-            "name": "buffer",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Local-StdOut-Filter-Intercept.html#property_buffer"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\StdOut\\StdOutDestinationStream",
             "name": "StdOutDestinationStream",
@@ -345,6 +495,21 @@ Search.appendIndex(
             "name": "writeTo",
             "summary": "Open\u0020destination\u0020stream\u0020for\u0020writing,\u0020if\u0020file\u0020already\u0020exists\u0020it\u0020will\u0020be\u0020overwritten.",
             "url": "classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_writeTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\StreamFilter\\Intercept",
+            "name": "Intercept",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-StreamFilter-Intercept.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\StreamFilter\\Intercept\u003A\u003Afilter\u0028\u0029",
+            "name": "filter",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-StreamFilter-Intercept.html#method_filter"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\StreamFilter\\Intercept\u003A\u003A\u0024buffer",
+            "name": "buffer",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-StreamFilter-Intercept.html#property_buffer"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Partition",
             "name": "Partition",
@@ -1406,20 +1571,25 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-filesystem-exception.html"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory",
+            "name": "Memory",
+            "summary": "",
+            "url": "namespaces/flow-filesystem-local-memory.html"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local",
             "name": "Local",
             "summary": "",
             "url": "namespaces/flow-filesystem-local.html"
         },                {
-            "fqsen": "\\Flow\\Filesystem\\Local\\StdOut\\Filter",
-            "name": "Filter",
-            "summary": "",
-            "url": "namespaces/flow-filesystem-local-stdout-filter.html"
-        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\StdOut",
             "name": "StdOut",
             "summary": "",
             "url": "namespaces/flow-filesystem-local-stdout.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\StreamFilter",
+            "name": "StreamFilter",
+            "summary": "",
+            "url": "namespaces/flow-filesystem-local-streamfilter.html"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\Filter",
             "name": "Filter",
