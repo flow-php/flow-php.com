@@ -5033,7 +5033,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AindexOf\u0028\u0029",
             "name": "indexOf",
-            "summary": "",
+            "summary": "Returns\u0020the\u0020index\u0020of\u0020given\u0020\u0024needle\u0020in\u0020string.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_indexOf"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AisEven\u0028\u0029",
@@ -5088,7 +5088,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AisUtf8\u0028\u0029",
             "name": "isUtf8",
-            "summary": "",
+            "summary": "Check\u0020string\u0020is\u0020utf8\u0020and\u0020returns\u0020true\u0020or\u0020false.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_isUtf8"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AjsonDecode\u0028\u0029",
@@ -5243,27 +5243,32 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringAfter\u0028\u0029",
             "name": "stringAfter",
-            "summary": "",
+            "summary": "Returns\u0020the\u0020contents\u0020found\u0020after\u0020the\u0020first\u0020occurrence\u0020of\u0020the\u0020given\u0020string.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringAfter"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringAfterLast\u0028\u0029",
+            "name": "stringAfterLast",
+            "summary": "Returns\u0020the\u0020contents\u0020found\u0020after\u0020the\u0020last\u0020occurrence\u0020of\u0020the\u0020given\u0020string.",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringAfterLast"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringBefore\u0028\u0029",
             "name": "stringBefore",
-            "summary": "",
+            "summary": "Returns\u0020the\u0020contents\u0020found\u0020before\u0020the\u0020first\u0020occurrence\u0020of\u0020the\u0020given\u0020string.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringBefore"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringFold\u0028\u0029",
             "name": "stringFold",
-            "summary": "",
+            "summary": "Returns\u0020a\u0020string\u0020that\u0020you\u0020can\u0020use\u0020in\u0020case\u002Dinsensitive\u0020comparisons.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringFold"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringStyle\u0028\u0029",
             "name": "stringStyle",
-            "summary": "",
+            "summary": "Covert\u0020string\u0020to\u0020a\u0020style\u0020from\u0020enum\u0020list,\u0020passed\u0020in\u0020parameter.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringStyle"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringTitle\u0028\u0029",
             "name": "stringTitle",
-            "summary": "",
+            "summary": "Changes\u0020all\u0020graphemes\/code\u0020points\u0020to\u0020\u0022title\u0020case\u0022.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringTitle"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstrPad\u0028\u0029",
@@ -5420,6 +5425,26 @@ Search.appendIndex(
             "name": "returns",
             "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
             "url": "classes/Flow-ETL-Function-StringAfter.html#method_returns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringAfterLast",
+            "name": "StringAfterLast",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringAfterLast.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringAfterLast\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringAfterLast.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringAfterLast\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringAfterLast.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringAfterLast\u003A\u003Areturns\u0028\u0029",
+            "name": "returns",
+            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
+            "url": "classes/Flow-ETL-Function-StringAfterLast.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAggregate",
             "name": "StringAggregate",

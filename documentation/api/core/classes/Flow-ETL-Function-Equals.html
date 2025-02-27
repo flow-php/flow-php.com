@@ -426,6 +426,7 @@
     <span>
                                 &nbsp;: self    </span>
 </dt>
+<dd>Returns the index of given $needle in string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_isEven">isEven()</a>
@@ -492,6 +493,7 @@
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Function-IsUtf8.html"><abbr title="\Flow\ETL\Function\IsUtf8">IsUtf8</abbr></a>    </span>
 </dt>
+<dd>Check string is utf8 and returns true or false.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_jsonDecode">jsonDecode()</a>
@@ -687,30 +689,42 @@ create a type-safe entry even from non deterministic values.</dd>
     <span>
                                 &nbsp;: self    </span>
 </dt>
+<dd>Returns the contents found after the first occurrence of the given string.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringAfterLast">stringAfterLast()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Returns the contents found after the last occurrence of the given string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringBefore">stringBefore()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
+<dd>Returns the contents found before the first occurrence of the given string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringFold">stringFold()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
+<dd>Returns a string that you can use in case-insensitive comparisons.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringStyle">stringStyle()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
+<dd>Covert string to a style from enum list, passed in parameter.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringTitle">stringTitle()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
+<dd>Changes all graphemes/code points to &quot;title case&quot;.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_strPad">strPad()</a>
@@ -2758,11 +2772,12 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">262</span>
+    <span class="phpdocumentor-element-found-in__line">265</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Returns the index of given $needle in string.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">indexOf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$needle</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ignoreCase</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
@@ -2820,7 +2835,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">267</span>
+    <span class="phpdocumentor-element-found-in__line">270</span>
 
     </aside>
 
@@ -2858,7 +2873,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">272</span>
+    <span class="phpdocumentor-element-found-in__line">275</span>
 
     </aside>
 
@@ -2896,7 +2911,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">277</span>
+    <span class="phpdocumentor-element-found-in__line">280</span>
 
     </aside>
 
@@ -2944,7 +2959,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">285</span>
 
     </aside>
 
@@ -2982,7 +2997,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">287</span>
+    <span class="phpdocumentor-element-found-in__line">290</span>
 
     </aside>
 
@@ -3020,7 +3035,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">292</span>
+    <span class="phpdocumentor-element-found-in__line">295</span>
 
     </aside>
 
@@ -3058,7 +3073,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">297</span>
+    <span class="phpdocumentor-element-found-in__line">300</span>
 
     </aside>
 
@@ -3096,7 +3111,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">302</span>
+    <span class="phpdocumentor-element-found-in__line">305</span>
 
     </aside>
 
@@ -3134,7 +3149,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">307</span>
+    <span class="phpdocumentor-element-found-in__line">310</span>
 
     </aside>
 
@@ -3172,7 +3187,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">315</span>
+    <span class="phpdocumentor-element-found-in__line">318</span>
 
     </aside>
 
@@ -3220,11 +3235,12 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">324</span>
+    <span class="phpdocumentor-element-found-in__line">330</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Check string is utf8 and returns true or false.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isUtf8</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-IsUtf8.html"><abbr title="\Flow\ETL\Function\IsUtf8">IsUtf8</abbr></a></span></code>
@@ -3258,7 +3274,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">329</span>
+    <span class="phpdocumentor-element-found-in__line">335</span>
 
     </aside>
 
@@ -3306,7 +3322,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">334</span>
+    <span class="phpdocumentor-element-found-in__line">340</span>
 
     </aside>
 
@@ -3354,7 +3370,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">339</span>
+    <span class="phpdocumentor-element-found-in__line">345</span>
 
     </aside>
 
@@ -3402,7 +3418,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">344</span>
+    <span class="phpdocumentor-element-found-in__line">350</span>
 
     </aside>
 
@@ -3450,7 +3466,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">349</span>
+    <span class="phpdocumentor-element-found-in__line">355</span>
 
     </aside>
 
@@ -3498,7 +3514,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">354</span>
+    <span class="phpdocumentor-element-found-in__line">360</span>
 
     </aside>
 
@@ -3536,7 +3552,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">359</span>
+    <span class="phpdocumentor-element-found-in__line">365</span>
 
     </aside>
 
@@ -3584,7 +3600,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">364</span>
+    <span class="phpdocumentor-element-found-in__line">370</span>
 
     </aside>
 
@@ -3632,7 +3648,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">369</span>
+    <span class="phpdocumentor-element-found-in__line">375</span>
 
     </aside>
 
@@ -3680,7 +3696,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">374</span>
+    <span class="phpdocumentor-element-found-in__line">380</span>
 
     </aside>
 
@@ -3728,7 +3744,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">379</span>
+    <span class="phpdocumentor-element-found-in__line">385</span>
 
     </aside>
 
@@ -3776,7 +3792,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">384</span>
+    <span class="phpdocumentor-element-found-in__line">390</span>
 
     </aside>
 
@@ -3838,7 +3854,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">395</span>
+    <span class="phpdocumentor-element-found-in__line">401</span>
 
     </aside>
 
@@ -3897,7 +3913,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">400</span>
+    <span class="phpdocumentor-element-found-in__line">406</span>
 
     </aside>
 
@@ -3945,7 +3961,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">405</span>
+    <span class="phpdocumentor-element-found-in__line">411</span>
 
     </aside>
 
@@ -3993,7 +4009,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">410</span>
+    <span class="phpdocumentor-element-found-in__line">416</span>
 
     </aside>
 
@@ -4041,7 +4057,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">415</span>
+    <span class="phpdocumentor-element-found-in__line">421</span>
 
     </aside>
 
@@ -4089,7 +4105,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">420</span>
+    <span class="phpdocumentor-element-found-in__line">426</span>
 
     </aside>
 
@@ -4151,7 +4167,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">425</span>
+    <span class="phpdocumentor-element-found-in__line">431</span>
 
     </aside>
 
@@ -4213,7 +4229,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">430</span>
+    <span class="phpdocumentor-element-found-in__line">436</span>
 
     </aside>
 
@@ -4275,7 +4291,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">435</span>
+    <span class="phpdocumentor-element-found-in__line">441</span>
 
     </aside>
 
@@ -4337,7 +4353,7 @@ create a type-safe entry even from non deterministic values.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">440</span>
+    <span class="phpdocumentor-element-found-in__line">446</span>
 
     </aside>
 
@@ -4448,7 +4464,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">445</span>
+    <span class="phpdocumentor-element-found-in__line">451</span>
 
     </aside>
 
@@ -4503,7 +4519,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">450</span>
+    <span class="phpdocumentor-element-found-in__line">456</span>
 
     </aside>
 
@@ -4551,7 +4567,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">455</span>
+    <span class="phpdocumentor-element-found-in__line">461</span>
 
     </aside>
 
@@ -4606,7 +4622,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">460</span>
+    <span class="phpdocumentor-element-found-in__line">466</span>
 
     </aside>
 
@@ -4644,7 +4660,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">465</span>
+    <span class="phpdocumentor-element-found-in__line">471</span>
 
     </aside>
 
@@ -4706,7 +4722,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">470</span>
+    <span class="phpdocumentor-element-found-in__line">476</span>
 
     </aside>
 
@@ -4761,7 +4777,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">475</span>
+    <span class="phpdocumentor-element-found-in__line">481</span>
 
     </aside>
 
@@ -4809,7 +4825,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">480</span>
+    <span class="phpdocumentor-element-found-in__line">486</span>
 
     </aside>
 
@@ -4857,14 +4873,71 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">485</span>
+    <span class="phpdocumentor-element-found-in__line">494</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Returns the contents found after the first occurrence of the given string.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">stringAfter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$needle</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$includeNeedle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$needle</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$includeNeedle</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_stringAfterLast">
+        stringAfterLast()
+        <a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringAfterLast" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">502</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the contents found after the last occurrence of the given string.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">stringAfterLast</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$needle</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$includeNeedle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -4912,11 +4985,12 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">490</span>
+    <span class="phpdocumentor-element-found-in__line">510</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Returns the contents found before the first occurrence of the given string.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">stringBefore</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$needle</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$includeNeedle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
@@ -4967,11 +5041,12 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">495</span>
+    <span class="phpdocumentor-element-found-in__line">518</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Returns a string that you can use in case-insensitive comparisons.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">stringFold</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
@@ -5005,11 +5080,12 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">500</span>
+    <span class="phpdocumentor-element-found-in__line">527</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Covert string to a style from enum list, passed in parameter.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">stringStyle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|string|<a href="classes/Flow-ETL-Function-StyleConverter-StringStyles.html"><abbr title="\Flow\ETL\Function\StyleConverter\StringStyles">StringStyles</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
@@ -5017,7 +5093,9 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Can be string &quot;upper&quot; or StringStyles::UPPER for Upper (example).</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -5053,11 +5131,12 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">505</span>
+    <span class="phpdocumentor-element-found-in__line">535</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Changes all graphemes/code points to &quot;title case&quot;.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">stringTitle</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allWords</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
@@ -5101,7 +5180,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">510</span>
+    <span class="phpdocumentor-element-found-in__line">540</span>
 
     </aside>
 
@@ -5163,7 +5242,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">515</span>
+    <span class="phpdocumentor-element-found-in__line">545</span>
 
     </aside>
 
@@ -5218,7 +5297,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">520</span>
+    <span class="phpdocumentor-element-found-in__line">550</span>
 
     </aside>
 
@@ -5273,7 +5352,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">525</span>
+    <span class="phpdocumentor-element-found-in__line">555</span>
 
     </aside>
 
@@ -5328,7 +5407,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">534</span>
+    <span class="phpdocumentor-element-found-in__line">564</span>
 
     </aside>
 
@@ -5383,7 +5462,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">542</span>
+    <span class="phpdocumentor-element-found-in__line">572</span>
 
     </aside>
 
@@ -5442,7 +5521,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">551</span>
+    <span class="phpdocumentor-element-found-in__line">581</span>
 
     </aside>
 
@@ -5501,7 +5580,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">556</span>
+    <span class="phpdocumentor-element-found-in__line">586</span>
 
     </aside>
 
@@ -5558,7 +5637,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">580</span>
+    <span class="phpdocumentor-element-found-in__line">610</span>
 
     </aside>
 
@@ -5629,7 +5708,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">585</span>
+    <span class="phpdocumentor-element-found-in__line">615</span>
 
     </aside>
 
@@ -5667,7 +5746,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">590</span>
+    <span class="phpdocumentor-element-found-in__line">620</span>
 
     </aside>
 
@@ -5898,6 +5977,7 @@ For example, <code class="prettyprint">[]</code> (empty array) can be one of:</p
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_sprintf">sprintf()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_startsWith">startsWith()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringAfter">stringAfter()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringAfterLast">stringAfterLast()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringBefore">stringBefore()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringFold">stringFold()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringStyle">stringStyle()</a></li>
