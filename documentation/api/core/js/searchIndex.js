@@ -5256,6 +5256,11 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020contents\u0020found\u0020before\u0020the\u0020first\u0020occurrence\u0020of\u0020the\u0020given\u0020string.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringBefore"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringBeforeLast\u0028\u0029",
+            "name": "stringBeforeLast",
+            "summary": "Returns\u0020the\u0020contents\u0020found\u0020before\u0020the\u0020last\u0020occurrence\u0020of\u0020the\u0020given\u0020string.",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringBeforeLast"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringFold\u0028\u0029",
             "name": "stringFold",
             "summary": "Returns\u0020a\u0020string\u0020that\u0020you\u0020can\u0020use\u0020in\u0020case\u002Dinsensitive\u0020comparisons.",
@@ -5485,6 +5490,26 @@ Search.appendIndex(
             "name": "returns",
             "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
             "url": "classes/Flow-ETL-Function-StringBefore.html#method_returns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringBeforeLast",
+            "name": "StringBeforeLast",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringBeforeLast.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringBeforeLast\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringBeforeLast.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringBeforeLast\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringBeforeLast.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringBeforeLast\u003A\u003Areturns\u0028\u0029",
+            "name": "returns",
+            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
+            "url": "classes/Flow-ETL-Function-StringBeforeLast.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringFold",
             "name": "StringFold",
