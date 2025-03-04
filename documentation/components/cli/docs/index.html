@@ -396,6 +396,10 @@
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer global require flow-php/cli
 </code></pre>
 <p>Now you can run the CLI using the <code>flow</code> command.</p>
+<h3><a id="flow-php-docker" href="#content-docker" class="mr-2" aria-hidden="true" title="Permalink">#</a>Docker</h3>
+<p>Flow CLI application is also available as a docker image:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">docker run -v $(pwd):/flow-workspace -it ghcr.io/flow-php/flow:latest --version
+</code></pre>
 <h2><a id="flow-php-commands" href="#content-commands" class="mr-2" aria-hidden="true" title="Permalink">#</a>Commands</h2>
 <h3><a id="flow-php-config" href="#content-config" class="mr-2" aria-hidden="true" title="Permalink">#</a>Config</h3>
 <p>All Flow CLI Commands can be configured using <code>--config</code> option. The option accepts a path to a configuration file in php that returns an Config or ConfigBuilder instance.</p>
