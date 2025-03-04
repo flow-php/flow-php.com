@@ -56,6 +56,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Arguments-TypedArgument.html#method_asStringNullable"
         },                {
+            "fqsen": "\\Flow\\CLI\\Command\\DatabaseTableListCommand",
+            "name": "DatabaseTableListCommand",
+            "summary": "",
+            "url": "classes/Flow-CLI-Command-DatabaseTableListCommand.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Command\\DatabaseTableListCommand\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Command-DatabaseTableListCommand.html#method_configure"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Command\\DatabaseTableSchemaCommand",
+            "name": "DatabaseTableSchemaCommand",
+            "summary": "",
+            "url": "classes/Flow-CLI-Command-DatabaseTableSchemaCommand.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Command\\DatabaseTableSchemaCommand\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Command-DatabaseTableSchemaCommand.html#method_configure"
+        },                {
             "fqsen": "\\Flow\\CLI\\Command\\FileAnalyzeCommand",
             "name": "FileAnalyzeCommand",
             "summary": "",
@@ -121,6 +141,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Command-PipelineRunCommand.html#method_execute"
         },                {
+            "fqsen": "\\Flow\\CLI\\Command\\SchemaFormatCommand",
+            "name": "SchemaFormatCommand",
+            "summary": "",
+            "url": "classes/Flow-CLI-Command-SchemaFormatCommand.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Command\\SchemaFormatCommand\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Command-SchemaFormatCommand.html#method_configure"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Command\\SchemaFormatCommand\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "",
+            "url": "classes/Flow-CLI-Command-SchemaFormatCommand.html#method_execute"
+        },                {
             "fqsen": "\\Flow\\CLI\\Command\\Traits\\ConfigOptions",
             "name": "ConfigOptions",
             "summary": "",
@@ -130,6 +165,11 @@ Search.appendIndex(
             "name": "CSVOptions",
             "summary": "",
             "url": "classes/Flow-CLI-Command-Traits-CSVOptions.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Command\\Traits\\DBOptions",
+            "name": "DBOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Command-Traits-DBOptions.html"
         },                {
             "fqsen": "\\Flow\\CLI\\Command\\Traits\\JSONOptions",
             "name": "JSONOptions",
@@ -190,6 +230,16 @@ Search.appendIndex(
             "name": "argument_string",
             "summary": "",
             "url": "namespaces/flow-cli.html#function_argument_string"
+        },                {
+            "fqsen": "\\Flow\\CLI\\argument_string_nullable\u0028\u0029",
+            "name": "argument_string_nullable",
+            "summary": "",
+            "url": "namespaces/flow-cli.html#function_argument_string_nullable"
+        },                {
+            "fqsen": "\\Flow\\CLI\\option_include_file\u0028\u0029",
+            "name": "option_include_file",
+            "summary": "",
+            "url": "namespaces/flow-cli.html#function_option_include_file"
         },                {
             "fqsen": "\\Flow\\CLI\\Factory\\CSVExtractorFactory",
             "name": "CSVExtractorFactory",
@@ -405,6 +455,46 @@ Search.appendIndex(
             "name": "get",
             "summary": "",
             "url": "classes/Flow-CLI-Options-FileFormatOption.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\FilePathOption",
+            "name": "FilePathOption",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-FilePathOption.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\FilePathOption\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-FilePathOption.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\FilePathOption\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-FilePathOption.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\FilePathOption\u003A\u003AgetExisting\u0028\u0029",
+            "name": "getExisting",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-FilePathOption.html#method_getExisting"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\FilePathOption\u003A\u003AgetNotExisting\u0028\u0029",
+            "name": "getNotExisting",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-FilePathOption.html#method_getNotExisting"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\IncludeFileOption",
+            "name": "IncludeFileOption",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-IncludeFileOption.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\IncludeFileOption\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-IncludeFileOption.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\IncludeFileOption\u003A\u003Ainclude\u0028\u0029",
+            "name": "include",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-IncludeFileOption.html#method_include"
         },                {
             "fqsen": "\\Flow\\CLI\\Options\\TypedOption",
             "name": "TypedOption",

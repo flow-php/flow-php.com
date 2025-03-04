@@ -321,6 +321,11 @@ Search.appendIndex(
             "summary": "Converts\u0020a\u0020Flow\\ETL\\Row\\Schema\u0020to\u0020a\u0020Doctrine\\DBAL\\Schema\\Table.",
             "url": "namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_schema_table"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\table_schema_to_flow_schema\u0028\u0029",
+            "name": "table_schema_to_flow_schema",
+            "summary": "Converts\u0020a\u0020Doctrine\\DBAL\\Schema\\Table\u0020to\u0020a\u0020Flow\\ETL\\Row\\Schema.",
+            "url": "namespaces/flow-etl-adapter-doctrine.html#function_table_schema_to_flow_schema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\postgresql_insert_options\u0028\u0029",
             "name": "postgresql_insert_options",
             "summary": "",
@@ -516,6 +521,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-SchemaConverter.html#method_toDbalTable"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\SchemaConverter\u003A\u003AtoFlowSchema\u0028\u0029",
+            "name": "toFlowSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-SchemaConverter.html#method_toFlowSchema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\SchemaConverter\u003A\u003ADEFAULT_TYPES",
             "name": "DEFAULT_TYPES",
             "summary": "",
@@ -540,6 +550,36 @@ Search.appendIndex(
             "name": "columns",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-Table.html#property_columns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypesMap",
+            "name": "TypesMap",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TypesMap.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypesMap\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TypesMap.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypesMap\u003A\u003AtoDbalType\u0028\u0029",
+            "name": "toDbalType",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TypesMap.html#method_toDbalType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypesMap\u003A\u003AtoFlowType\u0028\u0029",
+            "name": "toFlowType",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TypesMap.html#method_toFlowType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypesMap\u003A\u003ADBAL_TYPES",
+            "name": "DBAL_TYPES",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TypesMap.html#constant_DBAL_TYPES"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypesMap\u003A\u003AFLOW_TYPES",
+            "name": "FLOW_TYPES",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TypesMap.html#constant_FLOW_TYPES"
         },                {
             "fqsen": "\\",
             "name": "\\",

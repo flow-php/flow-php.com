@@ -1916,6 +1916,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_schema_evolving_matcher"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\schema_metadata\u0028\u0029",
+            "name": "schema_metadata",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_schema_metadata"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\int_schema\u0028\u0029",
             "name": "int_schema",
             "summary": "Alias\u0020for\u0020\u0060int_schema\u0060.",
@@ -7811,10 +7816,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Native-ArrayType.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\ArrayType\u003A\u003Aempty\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\ArrayType\u003A\u003A\u0024empty",
             "name": "empty",
             "summary": "",
-            "url": "classes/Flow-ETL-PHP-Type-Native-ArrayType.html#method_empty"
+            "url": "classes/Flow-ETL-PHP-Type-Native-ArrayType.html#property_empty"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\ArrayType\u003A\u003AfromArray\u0028\u0029",
             "name": "fromArray",
@@ -10766,10 +10771,65 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Schema-Formatter-ASCIISchemaFormatter.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Formatter\\ASCIISchemaFormatter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Formatter-ASCIISchemaFormatter.html#method___construct"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Schema\\Formatter\\ASCIISchemaFormatter\u003A\u003Aformat\u0028\u0029",
             "name": "format",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Schema-Formatter-ASCIISchemaFormatter.html#method_format"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Formatter\\JsonSchemaFormatter",
+            "name": "JsonSchemaFormatter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Formatter-JsonSchemaFormatter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Formatter\\JsonSchemaFormatter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Formatter-JsonSchemaFormatter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Formatter\\JsonSchemaFormatter\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Formatter-JsonSchemaFormatter.html#method_format"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Formatter\\PHPFormatter\\TypeFormatter",
+            "name": "TypeFormatter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Formatter-PHPFormatter-TypeFormatter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Formatter\\PHPFormatter\\TypeFormatter\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Formatter-PHPFormatter-TypeFormatter.html#method_format"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Formatter\\PHPFormatter\\ValueFormatter",
+            "name": "ValueFormatter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Formatter-PHPFormatter-ValueFormatter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Formatter\\PHPFormatter\\ValueFormatter\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Formatter-PHPFormatter-ValueFormatter.html#method_format"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Formatter\\PHPSchemaFormatter",
+            "name": "PHPSchemaFormatter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Formatter-PHPSchemaFormatter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Formatter\\PHPSchemaFormatter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Formatter-PHPSchemaFormatter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Formatter\\PHPSchemaFormatter\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Formatter-PHPSchemaFormatter.html#method_format"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Schema\\Matcher\\EvolvingSchemaMatcher",
             "name": "EvolvingSchemaMatcher",
@@ -10830,6 +10890,11 @@ Search.appendIndex(
             "name": "has",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Schema-Metadata.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Metadata\u003A\u003AisEmpty\u0028\u0029",
+            "name": "isEmpty",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Metadata.html#method_isEmpty"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Schema\\Metadata\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
@@ -12540,6 +12605,11 @@ Search.appendIndex(
             "name": "Formatter",
             "summary": "",
             "url": "namespaces/flow-etl-row-schema-formatter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Formatter\\PHPFormatter",
+            "name": "PHPFormatter",
+            "summary": "",
+            "url": "namespaces/flow-etl-row-schema-formatter-phpformatter.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Schema\\Matcher",
             "name": "Matcher",

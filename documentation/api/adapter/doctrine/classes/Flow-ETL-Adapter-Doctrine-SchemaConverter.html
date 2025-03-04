@@ -112,6 +112,8 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
+
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -172,6 +174,12 @@
     <a class="" href="classes/Flow-ETL-Adapter-Doctrine-SchemaConverter.html#method_toDbalTable">toDbalTable()</a>
     <span>
                                 &nbsp;: <abbr title="\Doctrine\DBAL\Schema\Table">Table</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-Doctrine-SchemaConverter.html#method_toFlowSchema">toFlowSchema()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\ETL\Row\Schema">Schema</abbr>    </span>
 </dt>
 
     </dl>
@@ -240,14 +248,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/SchemaConverter.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-schemaconverter.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/SchemaConverter.php">SchemaConverter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$typesMap</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$map</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -256,7 +264,7 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$typesMap</span>
+                <span class="phpdocumentor-signature__argument__name">$map</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -284,7 +292,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/SchemaConverter.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-schemaconverter.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/SchemaConverter.php">SchemaConverter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -329,6 +337,54 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Doctrine\DBAL\Schema\Table">Table</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toFlowSchema">
+        toFlowSchema()
+        <a href="classes/Flow-ETL-Adapter-Doctrine-SchemaConverter.html#method_toFlowSchema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/SchemaConverter.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-schemaconverter.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/SchemaConverter.php">SchemaConverter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toFlowSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\DBAL\Schema\Table">Table</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\Schema">Schema</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$table</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\DBAL\Schema\Table">Table</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\Schema">Schema</abbr></span>
             </section>
 
 </article>
@@ -454,6 +510,7 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-SchemaConverter.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-SchemaConverter.html#method_toDbalTable">toDbalTable()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-SchemaConverter.html#method_toFlowSchema">toFlowSchema()</a></li>
                                     </ul>
             </li>
                     </ul>
