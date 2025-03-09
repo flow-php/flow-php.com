@@ -556,11 +556,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-PipelineFactory.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\CLI\\PipelineFactory\u003A\u003AfromJson\u0028\u0029",
-            "name": "fromJson",
-            "summary": "",
-            "url": "classes/Flow-CLI-PipelineFactory.html#method_fromJson"
-        },                {
             "fqsen": "\\Flow\\CLI\\PipelineFactory\u003A\u003AfromPHP\u0028\u0029",
             "name": "fromPHP",
             "summary": "",

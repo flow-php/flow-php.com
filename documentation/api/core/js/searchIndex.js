@@ -731,16 +731,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-DataFrame.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AfromArray\u0028\u0029",
-            "name": "fromArray",
-            "summary": "",
-            "url": "classes/Flow-ETL-DataFrame.html#method_fromArray"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AfromJson\u0028\u0029",
-            "name": "fromJson",
-            "summary": "",
-            "url": "classes/Flow-ETL-DataFrame.html#method_fromJson"
-        },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Aaggregate\u0028\u0029",
             "name": "aggregate",
             "summary": "",
