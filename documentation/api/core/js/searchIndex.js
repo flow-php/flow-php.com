@@ -2506,10 +2506,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Exception-SchemaValidationException.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Exception\\SchemaValidationException\u003A\u003Arows\u0028\u0029",
-            "name": "rows",
+            "fqsen": "\\Flow\\ETL\\Exception\\SchemaValidationException\u003A\u003Agiven\u0028\u0029",
+            "name": "given",
             "summary": "",
-            "url": "classes/Flow-ETL-Exception-SchemaValidationException.html#method_rows"
+            "url": "classes/Flow-ETL-Exception-SchemaValidationException.html#method_given"
         },                {
             "fqsen": "\\Flow\\ETL\\Exception\\SchemaValidationException\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
@@ -7316,9 +7316,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Logical-DateTimeType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\DateTimeType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Logical-DateTimeType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\DateTimeType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Logical-DateTimeType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\DateTimeType\u003A\u003AisSame\u0028\u0029",
@@ -7376,9 +7381,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Logical-DateType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\DateType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Logical-DateType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\DateType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Logical-DateType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\DateType\u003A\u003AisSame\u0028\u0029",
@@ -7436,9 +7446,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Logical-JsonType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\JsonType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Logical-JsonType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\JsonType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Logical-JsonType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\JsonType\u003A\u003AisSame\u0028\u0029",
@@ -7501,9 +7516,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Logical-ListType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\ListType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Logical-ListType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\ListType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Logical-ListType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\ListType\u003A\u003AisSame\u0028\u0029",
@@ -7561,9 +7581,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Logical-MapType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\MapType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Logical-MapType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\MapType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Logical-MapType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\MapType\u003A\u003AisSame\u0028\u0029",
@@ -7636,9 +7661,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Logical-StructureType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\StructureType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Logical-StructureType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\StructureType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Logical-StructureType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\StructureType\u003A\u003AisSame\u0028\u0029",
@@ -7696,9 +7726,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Logical-TimeType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\TimeType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Logical-TimeType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\TimeType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Logical-TimeType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\TimeType\u003A\u003AisSame\u0028\u0029",
@@ -7756,9 +7791,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Logical-UuidType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\UuidType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Logical-UuidType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\UuidType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Logical-UuidType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\UuidType\u003A\u003AisSame\u0028\u0029",
@@ -7816,9 +7856,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Logical-XMLElementType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\XMLElementType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Logical-XMLElementType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\XMLElementType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Logical-XMLElementType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\XMLElementType\u003A\u003AisSame\u0028\u0029",
@@ -7876,9 +7921,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Logical-XMLType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\XMLType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Logical-XMLType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\XMLType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Logical-XMLType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Logical\\XMLType\u003A\u003AisSame\u0028\u0029",
@@ -7941,9 +7991,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Native-ArrayType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\ArrayType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Native-ArrayType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\ArrayType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Native-ArrayType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\ArrayType\u003A\u003AisSame\u0028\u0029",
@@ -8001,9 +8056,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Native-BooleanType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\BooleanType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Native-BooleanType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\BooleanType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Native-BooleanType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\BooleanType\u003A\u003AisSame\u0028\u0029",
@@ -8061,9 +8121,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Native-CallableType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\CallableType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Native-CallableType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\CallableType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Native-CallableType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\CallableType\u003A\u003AisSame\u0028\u0029",
@@ -8126,9 +8191,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\EnumType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\EnumType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\EnumType\u003A\u003AisSame\u0028\u0029",
@@ -8191,9 +8261,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Native-FloatType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\FloatType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Native-FloatType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\FloatType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Native-FloatType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\FloatType\u003A\u003AisSame\u0028\u0029",
@@ -8256,9 +8331,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Native-IntegerType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\IntegerType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Native-IntegerType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\IntegerType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Native-IntegerType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\IntegerType\u003A\u003AisSame\u0028\u0029",
@@ -8311,9 +8391,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Native-NullType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\NullType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Native-NullType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\NullType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Native-NullType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\NullType\u003A\u003AisSame\u0028\u0029",
@@ -8371,9 +8456,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Native-ObjectType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\ObjectType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Native-ObjectType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\ObjectType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Native-ObjectType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\ObjectType\u003A\u003AisSame\u0028\u0029",
@@ -8436,9 +8526,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Native-ResourceType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\ResourceType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Native-ResourceType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\ResourceType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Native-ResourceType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\ResourceType\u003A\u003AisSame\u0028\u0029",
@@ -8496,9 +8591,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Native-StringType.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\StringType\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Native-StringType.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\StringType\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Native-StringType.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Native\\StringType\u003A\u003AisSame\u0028\u0029",
@@ -8551,9 +8651,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-PHP-Type-Type.html#method_isComparableWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\PHP\\Type\\Type\u003A\u003AisCompatibleWith\u0028\u0029",
+            "name": "isCompatibleWith",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-PHP-Type-Type.html#method_isCompatibleWith"
+        },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Type\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020equal\u0020to\u0020this\u0020type.\u0020Nullability\u0020is\u0020not\u0020considered\u0020in\u0020this\u0020comparison.",
             "url": "classes/Flow-ETL-PHP-Type-Type.html#method_isEqual"
         },                {
             "fqsen": "\\Flow\\ETL\\PHP\\Type\\Type\u003A\u003AisSame\u0028\u0029",
@@ -11053,7 +11158,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Schema\\SelectiveValidator",
             "name": "SelectiveValidator",
-            "summary": "Matches\u0020only\u0020entries\u0020defined\u0020in\u0020the\u0020schema,\u0020ignoring\u0020every\u0020other\u0020entries\u0020in\u0020the\u0020row.",
+            "summary": "Matches\u0020only\u0020entries\u0020defined\u0020in\u0020the\u0020expected\u0020schema\u0020allowing\u0020for\u0020extra\u0020entries\u0020in\u0020given\u0020schema.",
             "url": "classes/Flow-ETL-Row-Schema-SelectiveValidator.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Schema\\SelectiveValidator\u003A\u003AisValid\u0028\u0029",

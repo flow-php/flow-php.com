@@ -220,11 +220,18 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isCompatibleWith">isCompatibleWith()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Checks if another type is compatible with this type. Nullability is validated from a schema evolution perspective.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isEqual">isEqual()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd>Checks if another type is equal to this type.</dd>
+<dd>Checks if another type is equal to this type. Nullability is not considered in this comparison.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isSame">isSame()</a>
@@ -485,9 +492,9 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_isEqual">
-        isEqual()
-        <a href="classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isEqual" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_isCompatibleWith">
+        isCompatibleWith()
+        <a href="classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isCompatibleWith" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
@@ -497,7 +504,59 @@
 
     </aside>
 
-        <p class="phpdocumentor-summary">Checks if another type is equal to this type.</p>
+        <p class="phpdocumentor-summary">Checks if another type is compatible with this type. Nullability is validated from a schema evolution perspective.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isCompatibleWith</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-PHP-Type-Type.html"><abbr title="\Flow\ETL\PHP\Type\Type">Type</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>This means that when current type is nullable and ther other type is not nullable, it is still compatible.
+When given type is not nullable and current type is nullable, it is not compatible.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$type</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-PHP-Type-Type.html"><abbr title="\Flow\ETL\PHP\Type\Type">Type</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isEqual">
+        isEqual()
+        <a href="classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isEqual" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php"><a href="files/src-core-etl-src-flow-etl-php-type-native-enumtype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php">EnumType.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Checks if another type is equal to this type. Nullability is not considered in this comparison.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -506,9 +565,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Nullability is not considered in this comparison.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -544,7 +601,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php"><a href="files/src-core-etl-src-flow-etl-php-type-native-enumtype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php">EnumType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -593,7 +650,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php"><a href="files/src-core-etl-src-flow-etl-php-type-native-enumtype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php">EnumType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -641,7 +698,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php"><a href="files/src-core-etl-src-flow-etl-php-type-native-enumtype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php">EnumType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -689,7 +746,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php"><a href="files/src-core-etl-src-flow-etl-php-type-native-enumtype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php">EnumType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -737,7 +794,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php"><a href="files/src-core-etl-src-flow-etl-php-type-native-enumtype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php">EnumType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -775,7 +832,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php"><a href="files/src-core-etl-src-flow-etl-php-type-native-enumtype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php">EnumType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -868,7 +925,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php"><a href="files/src-core-etl-src-flow-etl-php-type-native-enumtype.html"><abbr title="src/core/etl/src/Flow/ETL/PHP/Type/Native/EnumType.php">EnumType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -1015,6 +1072,7 @@
                                             <li class=""><a href="classes/Flow-ETL-PHP-Type-Native-EnumType.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isComparableWith">isComparableWith()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isCompatibleWith">isCompatibleWith()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isEqual">isEqual()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isSame">isSame()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-PHP-Type-Native-EnumType.html#method_isValid">isValid()</a></li>
