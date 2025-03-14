@@ -422,7 +422,7 @@ data_frame()
 <p>[!TIP]
 To maximize developer experience, Flow exposes a DSL (Domain Specific Language).
 Flow DSL is a set of functions that can be used to build a data processing pipeline.
-Entire project is written in Object-Oriented style, but DSL is a more convenient way to build a pipeline.
+The entire project is written in Object-Oriented style, but DSL is a more convenient way to build a pipeline.
 Whenever possible, use DSL functions instead of creating objects directly.</p>
 </blockquote>
 <p>It creates a new instance of the <code>Flow\ETL\Flow</code> class, which is the main class of the ETL.</p>
@@ -430,7 +430,7 @@ Whenever possible, use DSL functions instead of creating objects directly.</p>
 <h2><a id="flow-php-extraction---reading" href="#content-extraction---reading" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extraction - Reading</h2>
 <p>The first step in creating a data processing pipeline is to read the data from a data source.
 Extractors are responsible for reading data from a data source and converting it into a format that can be processed by Flow ETL.
-All extractors return \Generator and by design will throw rows one by one, this is to ensure that memory consumption is constant and low.</p>
+All extractors return \Generator and by design will return rows one by one - this is to ensure that memory consumption is constant and low.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
     -&gt;read(from_csv(__DIR__ . '/orders_flow.csv'))
 </code></pre>
@@ -456,7 +456,7 @@ The value of the new column can be a literal value, a reference to an existing c
 <li><code>...-&gt;cast('date')</code> - casts column to a date type.</li>
 <li><code>...-&gt;dateFormat('Y/m')</code> - format date using the <code>Y/m</code> format, as a result created_at becomes a string <code>2023/01</code>.</li>
 </ul>
-<p>You can find all available functions in the <a href="../src/core/etl/src/Flow/ETL/DSL/functions.php">DSL</a>.</p>
+<p>You can find all available functions in the <a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/DSL/functions.php">DSL</a>.</p>
 <blockquote>
 <p>[!TIP]
 DSL is nothing more than a set of functions that return instances of Flow PHP objects.
@@ -479,22 +479,22 @@ truncating the output.</p>
 <p>Second write is writing the data to a CSV file, we're using the <code>mode()</code> function to set the save mode to <code>overwrite</code>.
 There are three save modes available:</p>
 <ul>
-<li><code>SaveMode::Append</code> - If data sink already exists, data will be appended. This solution might cause data duplication since it's not check if given rows already existed.</li>
-<li><code>SaveMode::ExceptionIfExists</code> - If data sink already exists error will be thrown.</li>
+<li><code>SaveMode::Append</code> - If data sink already exists, data will be appended. This solution might cause data duplication since it does not check if the given rows already exist.</li>
+<li><code>SaveMode::ExceptionIfExists</code> - If data sink already exists an error will be thrown.</li>
 <li><code>SaveMode::Ignore</code> - If data sink already exists, writing will be skipped.</li>
 <li><code>SaveMode::Overwrite</code> - If data sink already exists, it will be removed and written again.</li>
 </ul>
 <blockquote>
 <p>[!NOTE]
 Append mode is not really appending anything to existing files, instead it creates a folder in which it stores outputs under randomized file names.
-It can be later read using glob-pattern, for example <code>from_csv('/path/to/folder/*.csv')</code>.</p>
+It can be later read using a glob-pattern, for example <code>from_csv('/path/to/folder/*.csv')</code>.</p>
 </blockquote>
 <p><a href="/data_writing/#example">Loaders Examples</a></p>
 <h2><a id="flow-php-lazy-execution" href="#content-lazy-execution" class="mr-2" aria-hidden="true" title="Permalink">#</a>Lazy Execution</h2>
 <p>Flow ETL is using lazy execution, which means that the pipeline will not be executed until you call the <code>run()</code> function.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">    -&gt;run();
 </code></pre>
-<p>There are few more triggering functions, like <code>fetch()</code>, you can find which functions are <code>@lazy</code> or <code>@trigger</code> looking at
+<p>There are few more triggering functions, like <code>fetch()</code>. You can find which functions are <code>@lazy</code> or <code>@trigger</code> by looking at
 the <a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame</a> source code.</p>
 
 
