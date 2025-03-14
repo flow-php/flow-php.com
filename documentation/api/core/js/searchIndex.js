@@ -1036,6 +1036,121 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Dataset-Report.html#method_statistics"
         },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column",
+            "name": "Column",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003Acalculate\u0028\u0029",
+            "name": "calculate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_calculate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003AdistinctCount\u0028\u0029",
+            "name": "distinctCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_distinctCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003Amax\u0028\u0029",
+            "name": "max",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_max"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003AmaxElementsCount\u0028\u0029",
+            "name": "maxElementsCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_maxElementsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003AmaxLength\u0028\u0029",
+            "name": "maxLength",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_maxLength"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003Amin\u0028\u0029",
+            "name": "min",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_min"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003AminElementsCount\u0028\u0029",
+            "name": "minElementsCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_minElementsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003AminLength\u0028\u0029",
+            "name": "minLength",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_minLength"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003Aname\u0028\u0029",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_name"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003AnullCount\u0028\u0029",
+            "name": "nullCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_nullCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003A\u0024entry",
+            "name": "entry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#property_entry"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Columns",
+            "name": "Columns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Columns.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Columns\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Columns.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Columns\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Columns.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Columns\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Columns.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Columns\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-Columns.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\DistinctCounter",
+            "name": "DistinctCounter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-DistinctCounter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\DistinctCounter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-DistinctCounter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\DistinctCounter\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-DistinctCounter.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\DistinctCounter\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-DistinctCounter.html#method_count"
+        },                {
             "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\ExecutionTime",
             "name": "ExecutionTime",
             "summary": "",
@@ -1140,6 +1255,11 @@ Search.appendIndex(
             "name": "executionTime",
             "summary": "",
             "url": "classes/Flow-ETL-Dataset-Statistics.html#property_executionTime"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\u003A\u003A\u0024columns",
+            "name": "columns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics.html#property_columns"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\df\u0028\u0029",
             "name": "df",

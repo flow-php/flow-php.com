@@ -181,6 +181,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Command-Traits-ParquetOptions.html"
         },                {
+            "fqsen": "\\Flow\\CLI\\Command\\Traits\\StatisticsOptions",
+            "name": "StatisticsOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Command-Traits-StatisticsOptions.html"
+        },                {
             "fqsen": "\\Flow\\CLI\\Command\\Traits\\XMLOptions",
             "name": "XMLOptions",
             "summary": "",
@@ -390,6 +395,36 @@ Search.appendIndex(
             "name": "get",
             "summary": "",
             "url": "classes/Flow-CLI-Factory-XMLLoaderFactory.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Formatter\\PipelineReportFormatter",
+            "name": "PipelineReportFormatter",
+            "summary": "",
+            "url": "classes/Flow-CLI-Formatter-PipelineReportFormatter.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Formatter\\PipelineReportFormatter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-CLI-Formatter-PipelineReportFormatter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Formatter\\PipelineReportFormatter\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Flow-CLI-Formatter-PipelineReportFormatter.html#method_format"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Formatter\\ValueFormatter",
+            "name": "ValueFormatter",
+            "summary": "",
+            "url": "classes/Flow-CLI-Formatter-ValueFormatter.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Formatter\\ValueFormatter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-CLI-Formatter-ValueFormatter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Formatter\\ValueFormatter\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Flow-CLI-Formatter-ValueFormatter.html#method_format"
         },                {
             "fqsen": "\\Flow\\CLI\\Options\\ConfigOption",
             "name": "ConfigOption",
@@ -610,6 +645,11 @@ Search.appendIndex(
             "name": "Factory",
             "summary": "",
             "url": "namespaces/flow-cli-factory.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Formatter",
+            "name": "Formatter",
+            "summary": "",
+            "url": "namespaces/flow-cli-formatter.html"
         },                {
             "fqsen": "\\Flow\\CLI\\Options",
             "name": "Options",

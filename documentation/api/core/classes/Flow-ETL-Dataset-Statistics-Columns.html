@@ -111,11 +111,12 @@
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow.html">Flow</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl.html">ETL</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-dataset.html">Dataset</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-dataset-statistics.html">Statistics</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Statistics
+    Columns
 
     
     
@@ -123,8 +124,6 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
-    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
-
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -132,7 +131,7 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics.php">Statistics.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Columns.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-columns.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Columns.php">Columns.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">9</span>
 
@@ -155,42 +154,35 @@
 
 
 
-<h4 id="toc-properties">
-    Properties
-    <a href="classes/Flow-ETL-Dataset-Statistics.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
-
-</h4>
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-ETL-Dataset-Statistics.html#property_columns">$columns</a>
-    <span>
-                        &nbsp;: <a href="classes/Flow-ETL-Dataset-Statistics-Columns.html"><abbr title="\Flow\ETL\Dataset\Statistics\Columns">Columns</abbr></a>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-ETL-Dataset-Statistics.html#property_executionTime">$executionTime</a>
-    <span>
-                        &nbsp;: <a href="classes/Flow-ETL-Dataset-Statistics-ExecutionTime.html"><abbr title="\Flow\ETL\Dataset\Statistics\ExecutionTime">ExecutionTime</abbr></a>            </span>
-</dt>
-
-    </dl>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Flow-ETL-Dataset-Statistics.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Flow-ETL-Dataset-Statistics-Columns.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Dataset-Statistics.html#method___construct">__construct()</a>
+    <a class="" href="classes/Flow-ETL-Dataset-Statistics-Columns.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Dataset-Statistics.html#method_totalRows">totalRows()</a>
+    <a class="" href="classes/Flow-ETL-Dataset-Statistics-Columns.html#method_add">add()</a>
     <span>
-                                &nbsp;: int    </span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Dataset-Statistics-Columns.html#method_all">all()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, <a href="classes/Flow-ETL-Dataset-Statistics-Column.html"><abbr title="\Flow\ETL\Dataset\Statistics\Column">Column</abbr></a>&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Dataset-Statistics-Columns.html#method_get">get()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Dataset-Statistics-Column.html"><abbr title="\Flow\ETL\Dataset\Statistics\Column">Column</abbr></a>    </span>
 </dt>
 
     </dl>
@@ -200,90 +192,11 @@
         
 
         
-    <section class="phpdocumentor-properties">
-        <h3 class="phpdocumentor-elements__header" id="properties">
-            Properties
-            <a href="classes/Flow-ETL-Dataset-Statistics.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_columns">
-        $columns
-        <a href="classes/Flow-ETL-Dataset-Statistics.html#property_columns" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics.php">Statistics.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">14</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Dataset-Statistics-Columns.html"><abbr title="\Flow\ETL\Dataset\Statistics\Columns">Columns</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$columns</span>
-    </code>
-
-    
-    
-    
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_executionTime">
-        $executionTime
-        <a href="classes/Flow-ETL-Dataset-Statistics.html#property_executionTime" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics.php">Statistics.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">13</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Dataset-Statistics-ExecutionTime.html"><abbr title="\Flow\ETL\Dataset\Statistics\ExecutionTime">ExecutionTime</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$executionTime</span>
-    </code>
-
-    
-    
-    
-
-    
-
-</article>
-            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Flow-ETL-Dataset-Statistics.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Flow-ETL-Dataset-Statistics-Columns.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -294,20 +207,54 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Flow-ETL-Dataset-Statistics.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-ETL-Dataset-Statistics-Columns.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics.php">Statistics.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Columns.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-columns.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Columns.php">Columns.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$totalRows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Dataset-Statistics-ExecutionTime.html"><abbr title="\Flow\ETL\Dataset\Statistics\ExecutionTime">ExecutionTime</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$executionTime</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Dataset-Statistics-Columns.html"><abbr title="\Flow\ETL\Dataset\Statistics\Columns">Columns</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_add">
+        add()
+        <a href="classes/Flow-ETL-Dataset-Statistics-Columns.html#method_add" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Columns.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-columns.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Columns.php">Columns.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">23</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;mixed, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -316,22 +263,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$totalRows</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$executionTime</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Dataset-Statistics-ExecutionTime.html"><abbr title="\Flow\ETL\Dataset\Statistics\ExecutionTime">ExecutionTime</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$columns</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Dataset-Statistics-Columns.html"><abbr title="\Flow\ETL\Dataset\Statistics\Columns">Columns</abbr></a></span>
+                <span class="phpdocumentor-signature__argument__name">$entry</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;mixed, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -350,22 +283,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_totalRows">
-        totalRows()
-        <a href="classes/Flow-ETL-Dataset-Statistics.html#method_totalRows" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_all">
+        all()
+        <a href="classes/Flow-ETL-Dataset-Statistics-Columns.html#method_all" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics.php">Statistics.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Columns.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-columns.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Columns.php">Columns.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">totalRows</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                    <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-ETL-Dataset-Statistics-Column.html"><abbr title="\Flow\ETL\Dataset\Statistics\Column">Column</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -378,7 +311,55 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-ETL-Dataset-Statistics-Column.html"><abbr title="\Flow\ETL\Dataset\Statistics\Column">Column</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get">
+        get()
+        <a href="classes/Flow-ETL-Dataset-Statistics-Columns.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Columns.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-columns.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Columns.php">Columns.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Flow-ETL-Row-EntryReference.html"><abbr title="\Flow\ETL\Row\EntryReference">EntryReference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Statistics-Column.html"><abbr title="\Flow\ETL\Dataset\Statistics\Column">Column</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$ref</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Flow-ETL-Row-EntryReference.html"><abbr title="\Flow\ETL\Row\EntryReference">EntryReference</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Statistics-Column.html"><abbr title="\Flow\ETL\Dataset\Statistics\Column">Column</abbr></a></span>
             </section>
 
 </article>
@@ -388,7 +369,7 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/core/etl/src/Flow/ETL/Dataset/Statistics.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/core/etl/src/Flow/ETL/Dataset/Statistics/Columns.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -487,24 +468,18 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                            <li><a href="classes/Flow-ETL-Dataset-Statistics.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/Flow-ETL-Dataset-Statistics.html#toc-methods">Methods</a></li>
+                                                                                <li><a href="classes/Flow-ETL-Dataset-Statistics-Columns.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
-                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
-                <li>
-                    <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Flow-ETL-Dataset-Statistics.html#property_columns">$columns</a></li>
-                                                    <li class=""><a href="classes/Flow-ETL-Dataset-Statistics.html#property_executionTime">$executionTime</a></li>
-                                            </ul>
-                </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Flow-ETL-Dataset-Statistics.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Dataset-Statistics.html#method_totalRows">totalRows()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Dataset-Statistics-Columns.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Dataset-Statistics-Columns.html#method_add">add()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Dataset-Statistics-Columns.html#method_all">all()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Dataset-Statistics-Columns.html#method_get">get()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -524,7 +499,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/Flow-ETL-Dataset-Statistics.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Flow-ETL-Dataset-Statistics-Columns.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
