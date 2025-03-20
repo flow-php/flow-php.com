@@ -791,6 +791,11 @@ Search.appendIndex(
             "summary": "Drop\u0020all\u0020partitions\u0020from\u0020Rows,\u0020additionally\u0020when\u0020\u0024dropPartitionColumns\u0020is\u0020set\u0020to\u0020true,\u0020partition\u0020columns\u0020are\u0020also\u0020removed.",
             "url": "classes/Flow-ETL-DataFrame.html#method_dropPartitions"
         },                {
+            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AduplicateRow\u0028\u0029",
+            "name": "duplicateRow",
+            "summary": "",
+            "url": "classes/Flow-ETL-DataFrame.html#method_duplicateRow"
+        },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Afetch\u0028\u0029",
             "name": "fetch",
             "summary": "Be\u0020aware\u0020that\u0020fetch\u0020is\u0020not\u0020memory\u0020safe\u0020and\u0020will\u0020load\u0020all\u0020rows\u0020into\u0020memory.",
@@ -2280,6 +2285,11 @@ Search.appendIndex(
             "name": "caster",
             "summary": "Advanced\u0020type\u0020casting\u0020mechanism.",
             "url": "namespaces/flow-etl-dsl.html#function_caster"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\with_entry\u0028\u0029",
+            "name": "with_entry",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_with_entry"
         },                {
             "fqsen": "\\Flow\\ETL\\ErrorHandler\\IgnoreError",
             "name": "IgnoreError",
@@ -9376,6 +9386,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entries.html#method_count"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entries\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entries.html#method_duplicate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entries\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "",
@@ -9481,6 +9496,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-BooleanEntry.html#method_definition"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\BooleanEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-BooleanEntry.html#method_duplicate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\BooleanEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9546,6 +9566,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-DateEntry.html#method_definition"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-DateEntry.html#method_duplicate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9610,6 +9635,11 @@ Search.appendIndex(
             "name": "definition",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-DateTimeEntry.html#method_definition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateTimeEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-DateTimeEntry.html#method_duplicate"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateTimeEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
@@ -9691,6 +9721,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-EnumEntry.html#method_definition"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\EnumEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-EnumEntry.html#method_duplicate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\EnumEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9755,6 +9790,11 @@ Search.appendIndex(
             "name": "definition",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-FloatEntry.html#method_definition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\FloatEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-FloatEntry.html#method_duplicate"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\FloatEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
@@ -9826,6 +9866,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-IntegerEntry.html#method_definition"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\IntegerEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-IntegerEntry.html#method_duplicate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\IntegerEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9896,6 +9941,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-JsonEntry.html#method_definition"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\JsonEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-JsonEntry.html#method_duplicate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\JsonEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9961,6 +10011,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-ListEntry.html#method_definition"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\ListEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-ListEntry.html#method_duplicate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\ListEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -10025,6 +10080,11 @@ Search.appendIndex(
             "name": "definition",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-MapEntry.html#method_definition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\MapEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-MapEntry.html#method_duplicate"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\MapEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
@@ -10106,6 +10166,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-StringEntry.html#method_definition"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\StringEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-StringEntry.html#method_duplicate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\StringEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -10180,6 +10245,11 @@ Search.appendIndex(
             "name": "definition",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-StructureEntry.html#method_definition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\StructureEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-StructureEntry.html#method_duplicate"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\StructureEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
@@ -10281,6 +10351,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-TimeEntry.html#method_definition"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\TimeEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-TimeEntry.html#method_duplicate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\TimeEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -10350,6 +10425,11 @@ Search.appendIndex(
             "name": "definition",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-UuidEntry.html#method_definition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\UuidEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-UuidEntry.html#method_duplicate"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\UuidEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
@@ -10426,6 +10506,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-XMLElementEntry.html#method_definition"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLElementEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-XMLElementEntry.html#method_duplicate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLElementEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -10501,6 +10586,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-XMLEntry.html#method_definition"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-XMLEntry.html#method_duplicate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -10560,6 +10650,11 @@ Search.appendIndex(
             "name": "definition",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry.html#method_definition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry.html#method_duplicate"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\u003A\u003Ais\u0028\u0029",
             "name": "is",
@@ -11341,6 +11436,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row.html#method_add"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row.html#method_duplicate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\u003A\u003Aentries\u0028\u0029",
             "name": "entries",
             "summary": "",
@@ -12081,6 +12181,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-DropPartitionsTransformer.html#method_transform"
         },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\DuplicateRowTransformer",
+            "name": "DuplicateRowTransformer",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-DuplicateRowTransformer.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\DuplicateRowTransformer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-DuplicateRowTransformer.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\DuplicateRowTransformer\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-DuplicateRowTransformer.html#method_transform"
+        },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\EntryNameStyleConverterTransformer",
             "name": "EntryNameStyleConverterTransformer",
             "summary": "",
@@ -12480,6 +12595,26 @@ Search.appendIndex(
             "name": "partitions",
             "summary": "",
             "url": "classes/Flow-ETL-Window.html#method_partitions"
+        },                {
+            "fqsen": "\\Flow\\ETL\\WithEntry",
+            "name": "WithEntry",
+            "summary": "",
+            "url": "classes/Flow-ETL-WithEntry.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\WithEntry\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-WithEntry.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\WithEntry\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-ETL-WithEntry.html#property_name"
+        },                {
+            "fqsen": "\\Flow\\ETL\\WithEntry\u003A\u003A\u0024function",
+            "name": "function",
+            "summary": "",
+            "url": "classes/Flow-ETL-WithEntry.html#property_function"
         },                {
             "fqsen": "\\Flow\\Serializer\\Base64Serializer",
             "name": "Base64Serializer",
