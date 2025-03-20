@@ -4516,6 +4516,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Mod.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ModifyDateTime",
+            "name": "ModifyDateTime",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ModifyDateTime.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ModifyDateTime\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ModifyDateTime.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ModifyDateTime\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ModifyDateTime.html#method_eval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Multiply",
             "name": "Multiply",
             "summary": "",
@@ -5255,6 +5270,11 @@ Search.appendIndex(
             "name": "mod",
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_mod"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AmodifyDateTime\u0028\u0029",
+            "name": "modifyDateTime",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_modifyDateTime"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Amultiply\u0028\u0029",
             "name": "multiply",
