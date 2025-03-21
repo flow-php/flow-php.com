@@ -76,21 +76,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Clock-SystemClock.html#method_now"
         },                {
-            "fqsen": "\\Flow\\ETL\\AddRowIndex\\StartFrom",
-            "name": "StartFrom",
-            "summary": "",
-            "url": "classes/Flow-ETL-AddRowIndex-StartFrom.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\AddRowIndex\\StartFrom\u003A\u003AONE",
-            "name": "ONE",
-            "summary": "",
-            "url": "classes/Flow-ETL-AddRowIndex-StartFrom.html#enumcase_ONE"
-        },                {
-            "fqsen": "\\Flow\\ETL\\AddRowIndex\\StartFrom\u003A\u003AZERO",
-            "name": "ZERO",
-            "summary": "",
-            "url": "classes/Flow-ETL-AddRowIndex-StartFrom.html#enumcase_ZERO"
-        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\DocumentationDSL",
             "name": "DocumentationDSL",
             "summary": "",
@@ -701,6 +686,111 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#property_sort"
         },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\\InMemoryStorage",
+            "name": "InMemoryStorage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint-InMemoryStorage.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\\InMemoryStorage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint-InMemoryStorage.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\\InMemoryStorage\u003A\u003Aclear\u0028\u0029",
+            "name": "clear",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint-InMemoryStorage.html#method_clear"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\\InMemoryStorage\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint-InMemoryStorage.html#method_delete"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\\InMemoryStorage\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint-InMemoryStorage.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\\InMemoryStorage\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint-InMemoryStorage.html#method_set"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\\Storage",
+            "name": "Storage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint-Storage.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\\Storage\u003A\u003Aclear\u0028\u0029",
+            "name": "clear",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint-Storage.html#method_clear"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\\Storage\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint-Storage.html#method_delete"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\\Storage\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint-Storage.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\\Storage\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint-Storage.html#method_set"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint",
+            "name": "UniqueConstraint",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\u003A\u003AisSatisfiedBy\u0028\u0029",
+            "name": "isSatisfiedBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint.html#method_isSatisfiedBy"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\u003A\u003Aviolation\u0028\u0029",
+            "name": "violation",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint.html#method_violation"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\u003A\u003AwithStorage\u0028\u0029",
+            "name": "withStorage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint.html#method_withStorage"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint",
+            "name": "Constraint",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\u003A\u003AisSatisfiedBy\u0028\u0029",
+            "name": "isSatisfiedBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint.html#method_isSatisfiedBy"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\u003A\u003Aviolation\u0028\u0029",
+            "name": "violation",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint.html#method_violation"
+        },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\\GroupedDataFrame",
             "name": "GroupedDataFrame",
             "summary": "",
@@ -760,6 +850,11 @@ Search.appendIndex(
             "name": "collectRefs",
             "summary": "This\u0020method\u0020allows\u0020to\u0020collect\u0020references\u0020to\u0020all\u0020entries\u0020used\u0020in\u0020this\u0020pipeline.",
             "url": "classes/Flow-ETL-DataFrame.html#method_collectRefs"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Aconstrain\u0028\u0029",
+            "name": "constrain",
+            "summary": "",
+            "url": "classes/Flow-ETL-DataFrame.html#method_constrain"
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Acount\u0028\u0029",
             "name": "count",
@@ -2291,6 +2386,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_with_entry"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\constraint_unique\u0028\u0029",
+            "name": "constraint_unique",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_constraint_unique"
+        },                {
             "fqsen": "\\Flow\\ETL\\ErrorHandler\\IgnoreError",
             "name": "IgnoreError",
             "summary": "",
@@ -2370,6 +2470,16 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-ETL-Exception-CastingException.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\ConstraintViolationException",
+            "name": "ConstraintViolationException",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-ConstraintViolationException.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\ConstraintViolationException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-ConstraintViolationException.html#method___construct"
         },                {
             "fqsen": "\\Flow\\ETL\\Exception\\DuplicatedEntriesException",
             "name": "DuplicatedEntriesException",
@@ -8896,6 +9006,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-CachingPipeline.html#method_source"
         },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\ConstrainedPipeline",
+            "name": "ConstrainedPipeline",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-ConstrainedPipeline.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\ConstrainedPipeline\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-ConstrainedPipeline.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\ConstrainedPipeline\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-ConstrainedPipeline.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\ConstrainedPipeline\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-ConstrainedPipeline.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\ConstrainedPipeline\u003A\u003Apipes\u0028\u0029",
+            "name": "pipes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-ConstrainedPipeline.html#method_pipes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\ConstrainedPipeline\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-ConstrainedPipeline.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\ConstrainedPipeline\u003A\u003Asource\u0028\u0029",
+            "name": "source",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-ConstrainedPipeline.html#method_source"
+        },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\GroupByPipeline",
             "name": "GroupByPipeline",
             "summary": "",
@@ -12001,6 +12146,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Sort-SortAlgorithms.html#enumcase_SQLITE_SORT"
         },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\AddRowIndex\\StartFrom",
+            "name": "StartFrom",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-AddRowIndex-StartFrom.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\AddRowIndex\\StartFrom\u003A\u003AONE",
+            "name": "ONE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-AddRowIndex-StartFrom.html#enumcase_ONE"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\AddRowIndex\\StartFrom\u003A\u003AZERO",
+            "name": "ZERO",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-AddRowIndex-StartFrom.html#enumcase_ZERO"
+        },                {
             "fqsen": "\\Flow\\ETL\\Transformation\\AddRowIndex",
             "name": "AddRowIndex",
             "summary": "",
@@ -12721,11 +12881,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-clock.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\AddRowIndex",
-            "name": "AddRowIndex",
-            "summary": "",
-            "url": "namespaces/flow-etl-addrowindex.html"
-        },                {
             "fqsen": "\\Flow\\ETL\\Attribute",
             "name": "Attribute",
             "summary": "",
@@ -12760,6 +12915,16 @@ Search.appendIndex(
             "name": "Sort",
             "summary": "",
             "url": "namespaces/flow-etl-config-sort.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint",
+            "name": "UniqueConstraint",
+            "summary": "",
+            "url": "namespaces/flow-etl-constraint-uniqueconstraint.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint",
+            "name": "Constraint",
+            "summary": "",
+            "url": "namespaces/flow-etl-constraint.html"
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame",
             "name": "DataFrame",
@@ -13005,6 +13170,11 @@ Search.appendIndex(
             "name": "Sort",
             "summary": "",
             "url": "namespaces/flow-etl-sort.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\AddRowIndex",
+            "name": "AddRowIndex",
+            "summary": "",
+            "url": "namespaces/flow-etl-transformation-addrowindex.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformation",
             "name": "Transformation",
