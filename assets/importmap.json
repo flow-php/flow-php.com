@@ -56,7 +56,7 @@
         "type": "css"
     },
     "htmx.org": {
-        "path": "\/assets\/vendor\/htmx.org\/htmx.org.index-023ae86a082913526422a6063298f898.js",
+        "path": "\/assets\/vendor\/htmx.org\/htmx.org.index-9d799499901660625bea62338de0b51a.js",
         "type": "js"
     },
     "clipboard": {
@@ -88,7 +88,7 @@
         "type": "js"
     },
     "prismjs\/components\/prism-markup-templating.min.js": {
-        "path": "\/assets\/vendor\/prismjs\/components\/prism-markup-templating.min-1919ad14f0e4ab43685b3923a0e1cd53.js",
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-markup-templating.min-f0e5fc2ac8f580b42c0046c211c1fdf7.js",
         "type": "js"
     },
     "prismjs\/components\/prism-php.min.js": {
