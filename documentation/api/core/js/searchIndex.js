@@ -76,6 +76,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Clock-SystemClock.html#method_now"
         },                {
+            "fqsen": "\\Flow\\ETL\\Analyze",
+            "name": "Analyze",
+            "summary": "",
+            "url": "classes/Flow-ETL-Analyze.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Analyze\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Analyze.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Analyze\u003A\u003AcollectColumnStatistics\u0028\u0029",
+            "name": "collectColumnStatistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Analyze.html#method_collectColumnStatistics"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Analyze\u003A\u003AcollectSchema\u0028\u0029",
+            "name": "collectSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Analyze.html#method_collectSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Analyze\u003A\u003AwithColumnStatistics\u0028\u0029",
+            "name": "withColumnStatistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Analyze.html#method_withColumnStatistics"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Analyze\u003A\u003AwithSchema\u0028\u0029",
+            "name": "withSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Analyze.html#method_withSchema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\DocumentationDSL",
             "name": "DocumentationDSL",
             "summary": "",
@@ -2390,6 +2420,11 @@ Search.appendIndex(
             "name": "constraint_unique",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_constraint_unique"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\analyze\u0028\u0029",
+            "name": "analyze",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_analyze"
         },                {
             "fqsen": "\\Flow\\ETL\\ErrorHandler\\IgnoreError",
             "name": "IgnoreError",
@@ -12881,6 +12916,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-clock.html"
         },                {
+            "fqsen": "\\Flow\\ETL",
+            "name": "ETL",
+            "summary": "",
+            "url": "namespaces/flow-etl.html"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute",
             "name": "Attribute",
             "summary": "",
@@ -12895,11 +12935,6 @@ Search.appendIndex(
             "name": "Implementation",
             "summary": "",
             "url": "namespaces/flow-etl-cache-implementation.html"
-        },                {
-            "fqsen": "\\Flow\\ETL",
-            "name": "ETL",
-            "summary": "",
-            "url": "namespaces/flow-etl.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Cache",
             "name": "Cache",
