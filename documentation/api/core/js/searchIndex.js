@@ -1226,15 +1226,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_nullCount"
         },                {
-            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003Atype\u0028\u0029",
-            "name": "type",
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_type"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Column\u003A\u003A\u0024entry",
-            "name": "entry",
-            "summary": "",
-            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#property_entry"
+            "url": "classes/Flow-ETL-Dataset-Statistics-Column.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\Columns",
             "name": "Columns",
