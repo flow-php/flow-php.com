@@ -371,6 +371,13 @@
 <p>This document provides guidelines for upgrading between versions of Flow PHP.
 Please follow the instructions for your specific version to ensure a smooth upgrade process.</p>
 <hr />
+<h2><a id="flow-php-upgrading-from-011x-to-014x" href="#content-upgrading-from-011x-to-014x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.11.x to 0.14.x</h2>
+<h3><a id="flow-php-1-replaced-flowetldataframevalidate-with-flowetldataframematch" href="#content-1-replaced-flowetldataframevalidate-with-flowetldataframematch" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Replaced <code>Flow\ETL\DataFrame::validate()</code> with <code>Flow\ETL\DataFrame::match()</code></h3>
+<p>The old method is now deprecated and will be removed in the next release.</p>
+<h3><a id="flow-php-2-replaced-flowetlfunctionscalarfunctiontypedscalarfunction-with-flowetlfunctionscalarfunctionscalarresult" href="#content-2-replaced-flowetlfunctionscalarfunctiontypedscalarfunction-with-flowetlfunctionscalarfunctionscalarresult" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Replaced <code>Flow\ETL\Function\ScalarFunction\TypedScalarFunction</code> with <code>Flow\ETL\Function\ScalarFunction\ScalarResult</code>.</h3>
+<p>The old interface was used to allow define the return type of the ScalarFunctions.
+It was replaced with a ScalarResult value object that is much more flexible than the interface,
+because it's allowing to return any type dynamically without making the scalar function stateful.</p>
 <h2><a id="flow-php-upgrading-from-010x-to-011x" href="#content-upgrading-from-010x-to-011x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.10.x to 0.11.x</h2>
 <h3><a id="flow-php-1-removed-structureelementstructelementstructureelement-from-structuretype-definition" href="#content-1-removed-structureelementstructelementstructureelement-from-structuretype-definition" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Removed StructureElement/struct_element/structure_element from StructureType Definition</h3>
 <p>Before:</p>

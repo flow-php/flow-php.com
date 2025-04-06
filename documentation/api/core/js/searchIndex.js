@@ -1081,6 +1081,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-DataFrame.html#method_map"
         },                {
+            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Amatch\u0028\u0029",
+            "name": "match",
+            "summary": "",
+            "url": "classes/Flow-ETL-DataFrame.html#method_match"
+        },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Amode\u0028\u0029",
             "name": "mode",
             "summary": "SaveMode\u0020defines\u0020how\u0020Flow\u0020should\u0020behave\u0020when\u0020writing\u0020to\u0020a\u0020file\/files\u0020that\u0020already\u0020exists.",

@@ -356,6 +356,12 @@ into previously defined cache.</dd>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-DataFrame.html#method_match">match()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-DataFrame.html#method_mode">mode()</a>
     <span>
                                 &nbsp;: $this    </span>
@@ -492,7 +498,7 @@ into previously defined cache.</dd>
 <dd>The difference between filter and until is that filter will keep filtering rows until extractors finish yielding rows.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-DataFrame.html#method_validate">validate()</a>
+    <a class="-deprecated" href="classes/Flow-ETL-DataFrame.html#method_validate">validate()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
@@ -2442,6 +2448,79 @@ DataFrame::getEachAsArray() : \Generator</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_match">
+        match()
+        <a href="classes/Flow-ETL-DataFrame.html#method_match" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">527</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">match</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Row-Schema.html"><abbr title="\Flow\ETL\Row\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|<a href="classes/Flow-ETL-SchemaValidator.html"><abbr title="\Flow\ETL\SchemaValidator">SchemaValidator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$validator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$schema</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Row-Schema.html"><abbr title="\Flow\ETL\Row\Schema">Schema</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$validator</span>
+                : <span class="phpdocumentor-signature__argument__return-type">null|<a href="classes/Flow-ETL-SchemaValidator.html"><abbr title="\Flow\ETL\SchemaValidator">SchemaValidator</abbr></a></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><ul>
+<li>when null, StrictValidator gets initialized</li>
+</ul>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-ETL-DataFrame.html#method_match#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">lazy</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_mode">
         mode()
         <a href="classes/Flow-ETL-DataFrame.html#method_mode" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2450,7 +2529,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">532</span>
+    <span class="phpdocumentor-element-found-in__line">544</span>
 
     </aside>
 
@@ -2515,7 +2594,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">542</span>
+    <span class="phpdocumentor-element-found-in__line">554</span>
 
     </aside>
 
@@ -2577,7 +2656,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">552</span>
+    <span class="phpdocumentor-element-found-in__line">564</span>
 
     </aside>
 
@@ -2646,7 +2725,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">561</span>
+    <span class="phpdocumentor-element-found-in__line">573</span>
 
     </aside>
 
@@ -2694,7 +2773,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">575</span>
+    <span class="phpdocumentor-element-found-in__line">587</span>
 
     </aside>
 
@@ -2766,7 +2845,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">591</span>
+    <span class="phpdocumentor-element-found-in__line">603</span>
 
     </aside>
 
@@ -2831,7 +2910,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">606</span>
+    <span class="phpdocumentor-element-found-in__line">618</span>
 
     </aside>
 
@@ -2900,7 +2979,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">617</span>
+    <span class="phpdocumentor-element-found-in__line">629</span>
 
     </aside>
 
@@ -2971,7 +3050,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">627</span>
+    <span class="phpdocumentor-element-found-in__line">639</span>
 
     </aside>
 
@@ -3023,7 +3102,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">639</span>
+    <span class="phpdocumentor-element-found-in__line">651</span>
 
     </aside>
 
@@ -3088,7 +3167,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">649</span>
+    <span class="phpdocumentor-element-found-in__line">661</span>
 
     </aside>
 
@@ -3140,7 +3219,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">659</span>
+    <span class="phpdocumentor-element-found-in__line">671</span>
 
     </aside>
 
@@ -3192,7 +3271,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">669</span>
+    <span class="phpdocumentor-element-found-in__line">681</span>
 
     </aside>
 
@@ -3244,7 +3323,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">676</span>
+    <span class="phpdocumentor-element-found-in__line">688</span>
 
     </aside>
 
@@ -3292,7 +3371,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">687</span>
+    <span class="phpdocumentor-element-found-in__line">699</span>
 
     </aside>
 
@@ -3356,7 +3435,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">705</span>
+    <span class="phpdocumentor-element-found-in__line">717</span>
 
     </aside>
 
@@ -3431,7 +3510,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">764</span>
+    <span class="phpdocumentor-element-found-in__line">776</span>
 
     </aside>
 
@@ -3494,7 +3573,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">772</span>
+    <span class="phpdocumentor-element-found-in__line">784</span>
 
     </aside>
 
@@ -3546,7 +3625,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">787</span>
+    <span class="phpdocumentor-element-found-in__line">799</span>
 
     </aside>
 
@@ -3610,7 +3689,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">797</span>
+    <span class="phpdocumentor-element-found-in__line">809</span>
 
     </aside>
 
@@ -3672,7 +3751,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">809</span>
+    <span class="phpdocumentor-element-found-in__line">821</span>
 
     </aside>
 
@@ -3735,7 +3814,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">820</span>
+    <span class="phpdocumentor-element-found-in__line">832</span>
 
     </aside>
 
@@ -3790,7 +3869,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+            -deprecated                                            "
 >
     <h4 class="phpdocumentor-element__name" id="method_validate">
         validate()
@@ -3800,16 +3879,23 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">832</span>
+    <span class="phpdocumentor-element-found-in__line">846</span>
 
     </aside>
 
     
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">validate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Row-Schema.html"><abbr title="\Flow\ETL\Row\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|<a href="classes/Flow-ETL-SchemaValidator.html"><abbr title="\Flow\ETL\SchemaValidator">SchemaValidator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$validator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
+        </div>
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                <p>Please use DataFrame::match instead</p>
+
+            </article>
         </div>
     
     
@@ -3873,7 +3959,7 @@ Please look into \Flow\ETL\Function\StyleConverter\StringStyles class for all av
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">846</span>
+    <span class="phpdocumentor-element-found-in__line">860</span>
 
     </aside>
 
@@ -3930,7 +4016,7 @@ from here no rows are passed forward.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">856</span>
+    <span class="phpdocumentor-element-found-in__line">870</span>
 
     </aside>
 
@@ -3992,7 +4078,7 @@ from here no rows are passed forward.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">884</span>
+    <span class="phpdocumentor-element-found-in__line">898</span>
 
     </aside>
 
@@ -4054,7 +4140,7 @@ from here no rows are passed forward.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">900</span>
+    <span class="phpdocumentor-element-found-in__line">914</span>
 
     </aside>
 
@@ -4123,7 +4209,7 @@ from here no rows are passed forward.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">925</span>
+    <span class="phpdocumentor-element-found-in__line">939</span>
 
     </aside>
 
@@ -4316,6 +4402,7 @@ from here no rows are passed forward.</p>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_limit">limit()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_load">load()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_map">map()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_match">match()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_mode">mode()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_onError">onError()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_partitionBy">partitionBy()</a></li>
@@ -4338,7 +4425,7 @@ from here no rows are passed forward.</p>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_sortBy">sortBy()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_transform">transform()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_until">until()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_validate">validate()</a></li>
+                                            <li class="-deprecated"><a href="classes/Flow-ETL-DataFrame.html#method_validate">validate()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_void">void()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_with">with()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_withEntries">withEntries()</a></li>
