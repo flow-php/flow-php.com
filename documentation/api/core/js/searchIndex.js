@@ -26,6 +26,91 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ArrayComparison-ArraySortByKey.html#method___invoke"
         },                {
+            "fqsen": "\\Flow\\Calculator\\Calculator",
+            "name": "Calculator",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Calculator.html"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Calculator\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Calculator.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Calculator\u003A\u003Adivide\u0028\u0029",
+            "name": "divide",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Calculator.html#method_divide"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Calculator\u003A\u003Amodulus\u0028\u0029",
+            "name": "modulus",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Calculator.html#method_modulus"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Calculator\u003A\u003Amultiply\u0028\u0029",
+            "name": "multiply",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Calculator.html#method_multiply"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Calculator\u003A\u003Apower\u0028\u0029",
+            "name": "power",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Calculator.html#method_power"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Calculator\u003A\u003Asubtract\u0028\u0029",
+            "name": "subtract",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Calculator.html#method_subtract"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Exception\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Exception-Exception.html"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Exception\\InvalidExponentException",
+            "name": "InvalidExponentException",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Exception-InvalidExponentException.html"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Exception\\InvalidExponentException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Exception-InvalidExponentException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Exception\\InvalidScaleException",
+            "name": "InvalidScaleException",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Exception-InvalidScaleException.html"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Exception\\InvalidScaleException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Exception-InvalidScaleException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Exception\\NonNumericValueException",
+            "name": "NonNumericValueException",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Exception-NonNumericValueException.html"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Exception\\NonNumericValueException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Exception-NonNumericValueException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\NumberNormalizer",
+            "name": "NumberNormalizer",
+            "summary": "",
+            "url": "classes/Flow-Calculator-NumberNormalizer.html"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\NumberNormalizer\u003A\u003AtoNumber\u0028\u0029",
+            "name": "toNumber",
+            "summary": "",
+            "url": "classes/Flow-Calculator-NumberNormalizer.html#method_toNumber"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\NumberNormalizer\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-Calculator-NumberNormalizer.html#method_toString"
+        },                {
             "fqsen": "\\Flow\\Clock\\FakeClock",
             "name": "FakeClock",
             "summary": "",
@@ -3766,11 +3851,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Ascii.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Ascii\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-Ascii.html#method_returns"
-        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Average",
             "name": "Average",
             "summary": "",
@@ -3871,11 +3951,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Capitalize.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Capitalize\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-Capitalize.html#method_returns"
-        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Cast",
             "name": "Cast",
             "summary": "",
@@ -3890,11 +3965,6 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Cast.html#method_eval"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Cast\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-Cast.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Coalesce",
             "name": "Coalesce",
@@ -3996,11 +4066,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Concat.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Concat\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-Concat.html#method_returns"
-        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ConcatWithSeparator",
             "name": "ConcatWithSeparator",
             "summary": "",
@@ -4030,11 +4095,6 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Contains.html#method_eval"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Contains\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-Contains.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Count",
             "name": "Count",
@@ -4211,11 +4271,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Equals.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Equals\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-Equals.html#method_returns"
-        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Exists",
             "name": "Exists",
             "summary": "",
@@ -4230,11 +4285,6 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Exists.html#method_eval"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Exists\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-Exists.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\First",
             "name": "First",
@@ -4330,11 +4380,6 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-IndexOf.html#method_eval"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\IndexOf\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-IndexOf.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsIn",
             "name": "IsIn",
@@ -4440,11 +4485,6 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-IsUtf8.html#method_eval"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\IsUtf8\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-IsUtf8.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\JsonDecode",
             "name": "JsonDecode",
@@ -4585,6 +4625,21 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Literal.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Math\\FloatScale",
+            "name": "FloatScale",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Math-FloatScale.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Math\\FloatScale\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Math-FloatScale.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Math\\FloatScale\u003A\u003Ascale\u0028\u0029",
+            "name": "scale",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Math-FloatScale.html#method_scale"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Max",
             "name": "Max",
@@ -4815,6 +4870,11 @@ Search.appendIndex(
             "name": "asBoolean",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Parameter.html#method_asBoolean"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasEntry\u0028\u0029",
+            "name": "asEntry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_asEntry"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasEnum\u0028\u0029",
             "name": "asEnum",
@@ -5096,15 +5156,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunction-ExpandResults.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\\TypedScalarFunction",
-            "name": "TypedScalarFunction",
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\\ScalarResult",
+            "name": "ScalarResult",
             "summary": "",
-            "url": "classes/Flow-ETL-Function-ScalarFunction-TypedScalarFunction.html"
+            "url": "classes/Flow-ETL-Function-ScalarFunction-ScalarResult.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\\TypedScalarFunction\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-ScalarFunction-TypedScalarFunction.html#method_returns"
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\\ScalarResult\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunction-ScalarResult.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\\ScalarResult\u003A\u003Afrom\u0028\u0029",
+            "name": "from",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunction-ScalarResult.html#method_from"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\\ScalarResult\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunction-ScalarResult.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\\ScalarResult\u003A\u003A\u0024value",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunction-ScalarResult.html#property_value"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\\UnpackResults",
             "name": "UnpackResults",
@@ -5253,7 +5328,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Adivide\u0028\u0029",
             "name": "divide",
-            "summary": "",
+            "summary": "Divide\u0020the\u0020value\u0020by\u0020a\u0020number.\u0020Scale\u0020is\u0020determined\u0020by\u0020the\u0020following\u0020logic\u003A",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_divide"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AdomElementAttribute\u0028\u0029",
@@ -5403,12 +5478,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aminus\u0028\u0029",
             "name": "minus",
-            "summary": "",
+            "summary": "Subtract\u0020the\u0020value\u0020from\u0020a\u0020number.\u0020Scale\u0020is\u0020determined\u0020by\u0020the\u0020following\u0020logic\u003A",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_minus"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Amod\u0028\u0029",
             "name": "mod",
-            "summary": "",
+            "summary": "Modulus\u0020\u0028or\u0020remainder\u0029\u0020from\u0020two\u0020numbers.\u0020Scale\u0020is\u0020determined\u0020by\u0020the\u0020following\u0020logic\u003A",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_mod"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AmodifyDateTime\u0028\u0029",
@@ -5418,7 +5493,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Amultiply\u0028\u0029",
             "name": "multiply",
-            "summary": "",
+            "summary": "Multiply\u0020the\u0020value\u0020by\u0020a\u0020number.\u0020Scale\u0020is\u0020determined\u0020by\u0020the\u0020following\u0020logic\u003A",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_multiply"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AnotEquals\u0028\u0029",
@@ -5453,12 +5528,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aplus\u0028\u0029",
             "name": "plus",
-            "summary": "",
+            "summary": "Adds\u0020the\u0020value\u0020to\u0020a\u0020number.\u0020Scale\u0020is\u0020determined\u0020by\u0020the\u0020following\u0020logic\u003A",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_plus"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Apower\u0028\u0029",
             "name": "power",
-            "summary": "",
+            "summary": "Power\u0020a\u0020number.\u0020Scale\u0020is\u0020determined\u0020by\u0020the\u0020following\u0020logic\u003A",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_power"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aregex\u0028\u0029",
@@ -5646,11 +5721,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Slug.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Slug\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-Slug.html#method_returns"
-        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Split",
             "name": "Split",
             "summary": "",
@@ -5711,11 +5781,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-StringAfter.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StringAfter\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-StringAfter.html#method_returns"
-        },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAfterLast",
             "name": "StringAfterLast",
             "summary": "",
@@ -5730,11 +5795,6 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-StringAfterLast.html#method_eval"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StringAfterLast\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-StringAfterLast.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAggregate",
             "name": "StringAggregate",
@@ -5771,11 +5831,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-StringBefore.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StringBefore\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-StringBefore.html#method_returns"
-        },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringBeforeLast",
             "name": "StringBeforeLast",
             "summary": "",
@@ -5790,11 +5845,6 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-StringBeforeLast.html#method_eval"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StringBeforeLast\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-StringBeforeLast.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringFold",
             "name": "StringFold",
@@ -5811,11 +5861,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-StringFold.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StringFold\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-StringFold.html#method_returns"
-        },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringStyle",
             "name": "StringStyle",
             "summary": "",
@@ -5831,11 +5876,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-StringStyle.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StringStyle\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-StringStyle.html#method_returns"
-        },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringTitle",
             "name": "StringTitle",
             "summary": "",
@@ -5850,11 +5890,6 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-StringTitle.html#method_eval"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StringTitle\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-StringTitle.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StrPad",
             "name": "StrPad",
@@ -6036,11 +6071,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-ToDate.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\ToDate\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-ToDate.html#method_returns"
-        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToDateTime",
             "name": "ToDateTime",
             "summary": "",
@@ -6055,11 +6085,6 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-ToDateTime.html#method_eval"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\ToDateTime\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-ToDateTime.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToLower",
             "name": "ToLower",
@@ -6175,11 +6200,6 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Uuid.html#method_eval"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Uuid\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "Defines\u0020the\u0020return\u0020type\u0020of\u0020the\u0020function\u0020which\u0020can\u0020be\u0020used\u0020to\ncreate\u0020a\u0020type\u002Dsafe\u0020entry\u0020even\u0020from\u0020non\u0020deterministic\u0020values.",
-            "url": "classes/Flow-ETL-Function-Uuid.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\When",
             "name": "When",
@@ -12906,6 +12926,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow.html"
         },                {
+            "fqsen": "\\Flow\\Calculator",
+            "name": "Calculator",
+            "summary": "",
+            "url": "namespaces/flow-calculator.html"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "namespaces/flow-calculator-exception.html"
+        },                {
             "fqsen": "\\Flow\\Clock",
             "name": "Clock",
             "summary": "",
@@ -13035,6 +13065,11 @@ Search.appendIndex(
             "name": "Comparison",
             "summary": "",
             "url": "namespaces/flow-etl-function-comparison.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Math",
+            "name": "Math",
+            "summary": "",
+            "url": "namespaces/flow-etl-function-math.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction",
             "name": "ScalarFunction",
