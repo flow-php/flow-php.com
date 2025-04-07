@@ -10976,6 +10976,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-EntryReference.html#method_asc"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\EntryReference\u003A\u003Abase\u0028\u0029",
+            "name": "base",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-EntryReference.html#method_base"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\EntryReference\u003A\u003Adesc\u0028\u0029",
             "name": "desc",
             "summary": "",
@@ -11035,6 +11040,11 @@ Search.appendIndex(
             "name": "as",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Reference.html#method_as"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Reference\u003A\u003Abase\u0028\u0029",
+            "name": "base",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Reference.html#method_base"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Reference\u003A\u003AhasAlias\u0028\u0029",
             "name": "hasAlias",
