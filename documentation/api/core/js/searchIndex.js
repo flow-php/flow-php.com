@@ -96,6 +96,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Calculator-Exception-NonNumericValueException.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Calculator\\Exception\\RoundingNecessaryException",
+            "name": "RoundingNecessaryException",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Exception-RoundingNecessaryException.html"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Exception\\RoundingNecessaryException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Exception-RoundingNecessaryException.html#method___construct"
+        },                {
             "fqsen": "\\Flow\\Calculator\\NumberNormalizer",
             "name": "NumberNormalizer",
             "summary": "",
@@ -110,6 +120,61 @@ Search.appendIndex(
             "name": "toString",
             "summary": "",
             "url": "classes/Flow-Calculator-NumberNormalizer.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Rounding",
+            "name": "Rounding",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Rounding.html"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Rounding\u003A\u003ACEILING",
+            "name": "CEILING",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Rounding.html#enumcase_CEILING"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Rounding\u003A\u003ADOWN",
+            "name": "DOWN",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Rounding.html#enumcase_DOWN"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Rounding\u003A\u003AFLOOR",
+            "name": "FLOOR",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Rounding.html#enumcase_FLOOR"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Rounding\u003A\u003AHALF_CEILING",
+            "name": "HALF_CEILING",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Rounding.html#enumcase_HALF_CEILING"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Rounding\u003A\u003AHALF_DOWN",
+            "name": "HALF_DOWN",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Rounding.html#enumcase_HALF_DOWN"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Rounding\u003A\u003AHALF_EVEN",
+            "name": "HALF_EVEN",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Rounding.html#enumcase_HALF_EVEN"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Rounding\u003A\u003AHALF_FLOOR",
+            "name": "HALF_FLOOR",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Rounding.html#enumcase_HALF_FLOOR"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Rounding\u003A\u003AHALF_UP",
+            "name": "HALF_UP",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Rounding.html#enumcase_HALF_UP"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Rounding\u003A\u003AUNNECESSARY",
+            "name": "UNNECESSARY",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Rounding.html#enumcase_UNNECESSARY"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\Rounding\u003A\u003AUP",
+            "name": "UP",
+            "summary": "",
+            "url": "classes/Flow-Calculator-Rounding.html#enumcase_UP"
         },                {
             "fqsen": "\\Flow\\Clock\\FakeClock",
             "name": "FakeClock",
@@ -4631,21 +4696,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Literal.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Math\\FloatScale",
-            "name": "FloatScale",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-Math-FloatScale.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Math\\FloatScale\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-Math-FloatScale.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Math\\FloatScale\u003A\u003Ascale\u0028\u0029",
-            "name": "scale",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-Math-FloatScale.html#method_scale"
-        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Max",
             "name": "Max",
             "summary": "",
@@ -5333,7 +5383,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Adivide\u0028\u0029",
             "name": "divide",
-            "summary": "Divide\u0020the\u0020value\u0020by\u0020a\u0020number.\u0020Scale\u0020is\u0020determined\u0020by\u0020the\u0020following\u0020logic\u003A",
+            "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_divide"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AdomElementAttribute\u0028\u0029",
@@ -5483,12 +5533,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aminus\u0028\u0029",
             "name": "minus",
-            "summary": "Subtract\u0020the\u0020value\u0020from\u0020a\u0020number.\u0020Scale\u0020is\u0020determined\u0020by\u0020the\u0020following\u0020logic\u003A",
+            "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_minus"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Amod\u0028\u0029",
             "name": "mod",
-            "summary": "Modulus\u0020\u0028or\u0020remainder\u0029\u0020from\u0020two\u0020numbers.\u0020Scale\u0020is\u0020determined\u0020by\u0020the\u0020following\u0020logic\u003A",
+            "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_mod"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AmodifyDateTime\u0028\u0029",
@@ -5498,7 +5548,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Amultiply\u0028\u0029",
             "name": "multiply",
-            "summary": "Multiply\u0020the\u0020value\u0020by\u0020a\u0020number.\u0020Scale\u0020is\u0020determined\u0020by\u0020the\u0020following\u0020logic\u003A",
+            "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_multiply"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AnotEquals\u0028\u0029",
@@ -5533,12 +5583,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aplus\u0028\u0029",
             "name": "plus",
-            "summary": "Adds\u0020the\u0020value\u0020to\u0020a\u0020number.\u0020Scale\u0020is\u0020determined\u0020by\u0020the\u0020following\u0020logic\u003A",
+            "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_plus"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Apower\u0028\u0029",
             "name": "power",
-            "summary": "Power\u0020a\u0020number.\u0020Scale\u0020is\u0020determined\u0020by\u0020the\u0020following\u0020logic\u003A",
+            "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_power"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aregex\u0028\u0029",
@@ -10061,11 +10111,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-FloatEntry.html#method_withValue"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\FloatEntry\u003A\u003A\u0024precision",
-            "name": "precision",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-FloatEntry.html#property_precision"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\IntegerEntry",
             "name": "IntegerEntry",
             "summary": "",
@@ -13080,11 +13125,6 @@ Search.appendIndex(
             "name": "Comparison",
             "summary": "",
             "url": "namespaces/flow-etl-function-comparison.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Math",
-            "name": "Math",
-            "summary": "",
-            "url": "namespaces/flow-etl-function-math.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction",
             "name": "ScalarFunction",
