@@ -11301,15 +11301,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Schema-Definition.html#method_isCompatible"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Definition\u003A\u003AisEqual\u0028\u0029",
-            "name": "isEqual",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Schema-Definition.html#method_isEqual"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Schema\\Definition\u003A\u003AisNullable\u0028\u0029",
             "name": "isNullable",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Schema-Definition.html#method_isNullable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Schema\\Definition\u003A\u003AisSame\u0028\u0029",
+            "name": "isSame",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Schema-Definition.html#method_isSame"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Schema\\Definition\u003A\u003AmakeNullable\u0028\u0029",
             "name": "makeNullable",
