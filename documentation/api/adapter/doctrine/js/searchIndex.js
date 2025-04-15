@@ -318,12 +318,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\to_dbal_schema_table\u0028\u0029",
             "name": "to_dbal_schema_table",
-            "summary": "Converts\u0020a\u0020Flow\\ETL\\Row\\Schema\u0020to\u0020a\u0020Doctrine\\DBAL\\Schema\\Table.",
+            "summary": "Converts\u0020a\u0020Flow\\ETL\\Schema\u0020to\u0020a\u0020Doctrine\\DBAL\\Schema\\Table.",
             "url": "namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_schema_table"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\table_schema_to_flow_schema\u0028\u0029",
             "name": "table_schema_to_flow_schema",
-            "summary": "Converts\u0020a\u0020Doctrine\\DBAL\\Schema\\Table\u0020to\u0020a\u0020Flow\\ETL\\Row\\Schema.",
+            "summary": "Converts\u0020a\u0020Doctrine\\DBAL\\Schema\\Table\u0020to\u0020a\u0020Flow\\ETL\\Schema.",
             "url": "namespaces/flow-etl-adapter-doctrine.html#function_table_schema_to_flow_schema"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\postgresql_insert_options\u0028\u0029",
