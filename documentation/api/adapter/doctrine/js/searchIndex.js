@@ -26,6 +26,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalDataFrameFactory.html#method_withSchema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor",
+            "name": "DbalKeySetExtractor",
+            "summary": "Extractor\u0020implementing\u0020keyset\u0020pagination\u0020for\u0020Doctrine\u0020DBAL\u0020queries.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003Aextract\u0028\u0029",
+            "name": "extract",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_extract"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003AwithMaximum\u0028\u0029",
+            "name": "withMaximum",
+            "summary": "Sets\u0020the\u0020maximum\u0020number\u0020of\u0020rows\u0020to\u0020fetch.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withMaximum"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003AwithPageSize\u0028\u0029",
+            "name": "withPageSize",
+            "summary": "Sets\u0020the\u0020number\u0020of\u0020rows\u0020per\u0020page.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withPageSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003AwithSchema\u0028\u0029",
+            "name": "withSchema",
+            "summary": "Sets\u0020the\u0020schema\u0020for\u0020the\u0020extracted\u0020rows.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withSchema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLimitOffsetExtractor",
             "name": "DbalLimitOffsetExtractor",
             "summary": "",
@@ -286,6 +316,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-adapter-doctrine.html#function_from_dbal_limit_offset_qb"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\from_dbal_key_set_qb\u0028\u0029",
+            "name": "from_dbal_key_set_qb",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-doctrine.html#function_from_dbal_key_set_qb"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\from_dbal_queries\u0028\u0029",
             "name": "from_dbal_queries",
             "summary": "",
@@ -345,6 +380,21 @@ Search.appendIndex(
             "name": "postgresql_update_options",
             "summary": "",
             "url": "namespaces/flow-etl-adapter-doctrine.html#function_postgresql_update_options"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\pagination_key_asc\u0028\u0029",
+            "name": "pagination_key_asc",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-doctrine.html#function_pagination_key_asc"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\pagination_key_desc\u0028\u0029",
+            "name": "pagination_key_desc",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-doctrine.html#function_pagination_key_desc"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\pagination_key_set\u0028\u0029",
+            "name": "pagination_key_set",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-doctrine.html#function_pagination_key_set"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\LiteralParameter",
             "name": "LiteralParameter",
@@ -430,6 +480,71 @@ Search.appendIndex(
             "name": "pageSize",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-Pages.html#property_pageSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\Key",
+            "name": "Key",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-Key.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\Key\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-Key.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\Key\u003A\u003Aasc\u0028\u0029",
+            "name": "asc",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-Key.html#method_asc"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\Key\u003A\u003Adesc\u0028\u0029",
+            "name": "desc",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-Key.html#method_desc"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\Key\u003A\u003A\u0024column",
+            "name": "column",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-Key.html#property_column"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\Key\u003A\u003A\u0024order",
+            "name": "order",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-Key.html#property_order"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\Key\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-Key.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeySet",
+            "name": "KeySet",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeySet.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeySet\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeySet.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeySet\u003A\u003A\u0024keys",
+            "name": "keys",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeySet.html#property_keys"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\Order",
+            "name": "Order",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-Order.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\Order\u003A\u003AASC",
+            "name": "ASC",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-Order.html#enumcase_ASC"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\Order\u003A\u003ADESC",
+            "name": "DESC",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-Order.html#enumcase_DESC"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Parameter",
             "name": "Parameter",
@@ -605,5 +720,10 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination",
+            "name": "Pagination",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-doctrine-pagination.html"
         }            ]
 );
