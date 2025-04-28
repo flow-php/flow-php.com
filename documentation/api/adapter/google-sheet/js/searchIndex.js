@@ -51,6 +51,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_extract"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003AwithDropExtraColumns\u0028\u0029",
+            "name": "withDropExtraColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withDropExtraColumns"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003AwithHeader\u0028\u0029",
             "name": "withHeader",
             "summary": "",
