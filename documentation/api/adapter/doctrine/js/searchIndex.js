@@ -41,6 +41,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_extract"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003AwithKeyAliasSuffix\u0028\u0029",
+            "name": "withKeyAliasSuffix",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withKeyAliasSuffix"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003AwithMaximum\u0028\u0029",
             "name": "withMaximum",
             "summary": "Sets\u0020the\u0020maximum\u0020number\u0020of\u0020rows\u0020to\u0020fetch.",
