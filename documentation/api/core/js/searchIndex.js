@@ -1681,11 +1681,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_rename_replace"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\rename_transliterate\u0028\u0029",
-            "name": "rename_transliterate",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_rename_transliterate"
-        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\bool_entry\u0028\u0029",
             "name": "bool_entry",
             "summary": "",
@@ -12686,30 +12681,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-Rename-RenameReplaceEntryStrategy.html#method_rename"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameTransliterateEntryStrategy",
-            "name": "RenameTransliterateEntryStrategy",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameTransliterateEntryStrategy.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameTransliterateEntryStrategy\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameTransliterateEntryStrategy.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameTransliterateEntryStrategy\u003A\u003Arename\u0028\u0029",
-            "name": "rename",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameTransliterateEntryStrategy.html#method_rename"
-        },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style",
             "name": "Style",
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-Rename-Style.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003AASCII",
+            "name": "ASCII",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-Rename-Style.html#enumcase_ASCII"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003ACAMEL",
+            "name": "CAMEL",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-Rename-Style.html#enumcase_CAMEL"
+        },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003ALOWER",
             "name": "LOWER",
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-Rename-Style.html#enumcase_LOWER"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003ASLUG",
+            "name": "SLUG",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-Rename-Style.html#enumcase_SLUG"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003ATITLE",
+            "name": "TITLE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-Rename-Style.html#enumcase_TITLE"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003AUCFIRST",
             "name": "UCFIRST",
