@@ -125,8 +125,11 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>                    </span>
+                            <a href="classes/Flow-ETL-Pipeline-OverridingPipeline.html"><abbr title="\Flow\ETL\Pipeline\OverridingPipeline">OverridingPipeline</abbr></a>,                             <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>                    </span>
     
+            <span class="phpdocumentor-element__extends">
+            uses
+                            <a href="classes/Flow-ETL-Pipeline-RecursivePipelineIterator.html"><abbr title="\Flow\ETL\Pipeline\RecursivePipelineIterator">RecursivePipelineIterator</abbr></a>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -161,7 +164,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Pipeline">Pipeline</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Pipeline-OverridingPipeline.html"><abbr title="\Flow\ETL\Pipeline\OverridingPipeline">OverridingPipeline</abbr></a></dt><dd>Pipelines implementing OverridingPipeline interface overrides one or more pipelines.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Pipeline">Pipeline</abbr></dt>    </dl>
 
 
 
@@ -205,6 +208,12 @@
     <a class="" href="classes/Flow-ETL-Pipeline-GroupByPipeline.html#method_has">has()</a>
     <span>
                                 &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Pipeline-GroupByPipeline.html#method_pipelines">pipelines()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -255,7 +264,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-groupbypipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php">GroupByPipeline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
@@ -296,7 +305,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-groupbypipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php">GroupByPipeline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
@@ -347,7 +356,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-groupbypipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php">GroupByPipeline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -395,7 +404,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-groupbypipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php">GroupByPipeline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -435,6 +444,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_pipelines">
+        pipelines()
+        <a href="classes/Flow-ETL-Pipeline-GroupByPipeline.html#method_pipelines" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-groupbypipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php">GroupByPipeline.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">29</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">pipelines</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_pipes">
         pipes()
         <a href="classes/Flow-ETL-Pipeline-GroupByPipeline.html#method_pipes" class="headerlink"><i class="fas fa-link"></i></a>
@@ -443,7 +490,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-groupbypipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php">GroupByPipeline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -481,7 +528,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-groupbypipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php">GroupByPipeline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -529,7 +576,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-groupbypipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/GroupByPipeline.php">GroupByPipeline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -676,6 +723,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Pipeline-GroupByPipeline.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Pipeline-GroupByPipeline.html#method_add">add()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Pipeline-GroupByPipeline.html#method_has">has()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Pipeline-GroupByPipeline.html#method_pipelines">pipelines()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Pipeline-GroupByPipeline.html#method_pipes">pipes()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Pipeline-GroupByPipeline.html#method_process">process()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Pipeline-GroupByPipeline.html#method_source">source()</a></li>

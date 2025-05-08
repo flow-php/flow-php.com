@@ -125,7 +125,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>                    </span>
+                            <a href="classes/Flow-ETL-Pipeline-OverridingPipeline.html"><abbr title="\Flow\ETL\Pipeline\OverridingPipeline">OverridingPipeline</abbr></a>,                             <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>                    </span>
     
     </h2>
 
@@ -161,7 +161,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Pipeline">Pipeline</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Pipeline-OverridingPipeline.html"><abbr title="\Flow\ETL\Pipeline\OverridingPipeline">OverridingPipeline</abbr></a></dt><dd>Pipelines implementing OverridingPipeline interface overrides one or more pipelines.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Pipeline">Pipeline</abbr></dt>    </dl>
 
 
 
@@ -192,6 +192,12 @@
     <a class="" href="classes/Flow-ETL-Pipeline-PartitioningPipeline.html#method_has">has()</a>
     <span>
                                 &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Pipeline-PartitioningPipeline.html#method_pipelines">pipelines()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -401,6 +407,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_pipelines">
+        pipelines()
+        <a href="classes/Flow-ETL-Pipeline-PartitioningPipeline.html#method_pipelines" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/PartitioningPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-partitioningpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/PartitioningPipeline.php">PartitioningPipeline.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">58</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">pipelines</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_pipes">
         pipes()
         <a href="classes/Flow-ETL-Pipeline-PartitioningPipeline.html#method_pipes" class="headerlink"><i class="fas fa-link"></i></a>
@@ -409,7 +453,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/PartitioningPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-partitioningpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/PartitioningPipeline.php">PartitioningPipeline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -447,7 +491,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/PartitioningPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-partitioningpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/PartitioningPipeline.php">PartitioningPipeline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -495,7 +539,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/PartitioningPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-partitioningpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/PartitioningPipeline.php">PartitioningPipeline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -635,6 +679,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Pipeline-PartitioningPipeline.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Pipeline-PartitioningPipeline.html#method_add">add()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Pipeline-PartitioningPipeline.html#method_has">has()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Pipeline-PartitioningPipeline.html#method_pipelines">pipelines()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Pipeline-PartitioningPipeline.html#method_pipes">pipes()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Pipeline-PartitioningPipeline.html#method_process">process()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Pipeline-PartitioningPipeline.html#method_source">source()</a></li>

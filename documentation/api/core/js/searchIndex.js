@@ -9071,6 +9071,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-BatchingPipeline.html#method_has"
         },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\BatchingPipeline\u003A\u003Apipelines\u0028\u0029",
+            "name": "pipelines",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-BatchingPipeline.html#method_pipelines"
+        },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\BatchingPipeline\u003A\u003Apipes\u0028\u0029",
             "name": "pipes",
             "summary": "",
@@ -9105,6 +9110,11 @@ Search.appendIndex(
             "name": "has",
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-CachingPipeline.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\CachingPipeline\u003A\u003Apipelines\u0028\u0029",
+            "name": "pipelines",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-CachingPipeline.html#method_pipelines"
         },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\CachingPipeline\u003A\u003Apipes\u0028\u0029",
             "name": "pipes",
@@ -9141,6 +9151,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-ConstrainedPipeline.html#method_has"
         },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\ConstrainedPipeline\u003A\u003Apipelines\u0028\u0029",
+            "name": "pipelines",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-ConstrainedPipeline.html#method_pipelines"
+        },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\ConstrainedPipeline\u003A\u003Apipes\u0028\u0029",
             "name": "pipes",
             "summary": "",
@@ -9175,6 +9190,11 @@ Search.appendIndex(
             "name": "has",
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-GroupByPipeline.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\GroupByPipeline\u003A\u003Apipelines\u0028\u0029",
+            "name": "pipelines",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-GroupByPipeline.html#method_pipelines"
         },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\GroupByPipeline\u003A\u003Apipes\u0028\u0029",
             "name": "pipes",
@@ -9280,6 +9300,11 @@ Search.appendIndex(
             "name": "has",
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-HashJoinPipeline.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\HashJoinPipeline\u003A\u003Apipelines\u0028\u0029",
+            "name": "pipelines",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-HashJoinPipeline.html#method_pipelines"
         },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\HashJoinPipeline\u003A\u003Apipes\u0028\u0029",
             "name": "pipes",
@@ -9436,6 +9461,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-PartitioningPipeline.html#method_has"
         },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\PartitioningPipeline\u003A\u003Apipelines\u0028\u0029",
+            "name": "pipelines",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-PartitioningPipeline.html#method_pipelines"
+        },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\PartitioningPipeline\u003A\u003Apipes\u0028\u0029",
             "name": "pipes",
             "summary": "",
@@ -9491,6 +9521,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-Pipes.html#method_merge"
         },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\RecursivePipelineIterator",
+            "name": "RecursivePipelineIterator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-RecursivePipelineIterator.html"
+        },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\SortingPipeline",
             "name": "SortingPipeline",
             "summary": "",
@@ -9510,6 +9545,11 @@ Search.appendIndex(
             "name": "has",
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-SortingPipeline.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\SortingPipeline\u003A\u003Apipelines\u0028\u0029",
+            "name": "pipelines",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-SortingPipeline.html#method_pipelines"
         },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\SortingPipeline\u003A\u003Apipes\u0028\u0029",
             "name": "pipes",
@@ -9580,6 +9620,11 @@ Search.appendIndex(
             "name": "has",
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-VoidPipeline.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\VoidPipeline\u003A\u003Apipelines\u0028\u0029",
+            "name": "pipelines",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-VoidPipeline.html#method_pipelines"
         },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\VoidPipeline\u003A\u003Apipes\u0028\u0029",
             "name": "pipes",
