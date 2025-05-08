@@ -6031,20 +6031,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003Aall\u0028\u0029",
-            "name": "all",
+            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003AASCII",
+            "name": "ASCII",
             "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#method_all"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003AfromString\u0028\u0029",
-            "name": "fromString",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#method_fromString"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003Aconvert\u0028\u0029",
-            "name": "convert",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#method_convert"
+            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_ASCII"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003ACAMEL",
             "name": "CAMEL",
@@ -6061,6 +6051,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_LOWER"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003ASLUG",
+            "name": "SLUG",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_SLUG"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003ASNAKE",
             "name": "SNAKE",
             "summary": "",
@@ -6070,6 +6065,16 @@ Search.appendIndex(
             "name": "TITLE",
             "summary": "",
             "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_TITLE"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003AUCFIRST",
+            "name": "UCFIRST",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_UCFIRST"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003AUCWORDS",
+            "name": "UCWORDS",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_UCWORDS"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003AUPPER",
             "name": "UPPER",
@@ -12226,6 +12231,76 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Sort-SortAlgorithms.html#enumcase_SQLITE_SORT"
         },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles",
+            "name": "StringStyles",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles\u003A\u003AfromString\u0028\u0029",
+            "name": "fromString",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html#method_fromString"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles\u003A\u003Aconvert\u0028\u0029",
+            "name": "convert",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html#method_convert"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles\u003A\u003AASCII",
+            "name": "ASCII",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html#enumcase_ASCII"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles\u003A\u003ACAMEL",
+            "name": "CAMEL",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html#enumcase_CAMEL"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles\u003A\u003AKEBAB",
+            "name": "KEBAB",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html#enumcase_KEBAB"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles\u003A\u003ALOWER",
+            "name": "LOWER",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html#enumcase_LOWER"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles\u003A\u003ASLUG",
+            "name": "SLUG",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html#enumcase_SLUG"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles\u003A\u003ASNAKE",
+            "name": "SNAKE",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html#enumcase_SNAKE"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles\u003A\u003ATITLE",
+            "name": "TITLE",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html#enumcase_TITLE"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles\u003A\u003AUCFIRST",
+            "name": "UCFIRST",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html#enumcase_UCFIRST"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles\u003A\u003AUCWORDS",
+            "name": "UCWORDS",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html#enumcase_UCWORDS"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String\\StringStyles\u003A\u003AUPPER",
+            "name": "UPPER",
+            "summary": "",
+            "url": "classes/Flow-ETL-String-StringStyles.html#enumcase_UPPER"
+        },                {
             "fqsen": "\\Flow\\ETL\\Transformation\\AddRowIndex\\StartFrom",
             "name": "StartFrom",
             "summary": "",
@@ -12680,51 +12755,6 @@ Search.appendIndex(
             "name": "rename",
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-Rename-RenameReplaceEntryStrategy.html#method_rename"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style",
-            "name": "Style",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-Style.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003AASCII",
-            "name": "ASCII",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-Style.html#enumcase_ASCII"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003ACAMEL",
-            "name": "CAMEL",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-Style.html#enumcase_CAMEL"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003ALOWER",
-            "name": "LOWER",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-Style.html#enumcase_LOWER"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003ASLUG",
-            "name": "SLUG",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-Style.html#enumcase_SLUG"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003ATITLE",
-            "name": "TITLE",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-Style.html#enumcase_TITLE"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003AUCFIRST",
-            "name": "UCFIRST",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-Style.html#enumcase_UCFIRST"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003AUCWORDS",
-            "name": "UCWORDS",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-Style.html#enumcase_UCWORDS"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\Style\u003A\u003AUPPER",
-            "name": "UPPER",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-Style.html#enumcase_UPPER"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\RenameAllCaseTransformer",
             "name": "RenameAllCaseTransformer",
@@ -13365,6 +13395,11 @@ Search.appendIndex(
             "name": "Sort",
             "summary": "",
             "url": "namespaces/flow-etl-sort.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\String",
+            "name": "String",
+            "summary": "",
+            "url": "namespaces/flow-etl-string.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformation\\AddRowIndex",
             "name": "AddRowIndex",
