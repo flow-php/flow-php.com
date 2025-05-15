@@ -9521,11 +9521,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-Pipes.html#method_merge"
         },                {
-            "fqsen": "\\Flow\\ETL\\Pipeline\\RecursivePipelineIterator",
-            "name": "RecursivePipelineIterator",
-            "summary": "",
-            "url": "classes/Flow-ETL-Pipeline-RecursivePipelineIterator.html"
-        },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\SortingPipeline",
             "name": "SortingPipeline",
             "summary": "",
