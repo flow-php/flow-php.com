@@ -128,6 +128,9 @@
                         <td class="phpdocumentor-cell"><a href="reports/deprecated.html#src/core/etl/src/Flow/ETL/DataFrame.php">src/core/etl/src/Flow/ETL/DataFrame.php</a></td>
                     </tr>
                                     <tr>
+                        <td class="phpdocumentor-cell"><a href="reports/deprecated.html#src/core/etl/src/Flow/ETL/DSL/functions.php">src/core/etl/src/Flow/ETL/DSL/functions.php</a></td>
+                    </tr>
+                                    <tr>
                         <td class="phpdocumentor-cell"><a href="reports/deprecated.html#src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php">src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php</a></td>
                     </tr>
                                     <tr>
@@ -162,13 +165,13 @@
                         <th class="phpdocumentor-heading">Reason</th>
                     </tr>
                                                                         <tr>
-                                <td class="phpdocumentor-cell">27</td>
+                                <td class="phpdocumentor-cell">26</td>
                                 <td class="phpdocumentor-cell"><a href="classes/Flow-ETL-Config.html#constant_CACHE_DIR_ENV"><abbr title="\Flow\ETL\Config::CACHE_DIR_ENV">Config::CACHE_DIR_ENV</abbr></a></td>
                                 <td class="phpdocumentor-cell"><p>Use CacheConfig::CACHE_DIR_ENV instead</p>
 </td>
                             </tr>
                                                                                                 <tr>
-                                <td class="phpdocumentor-cell">32</td>
+                                <td class="phpdocumentor-cell">31</td>
                                 <td class="phpdocumentor-cell"><a href="classes/Flow-ETL-Config.html#constant_SORT_MAX_MEMORY_ENV"><abbr title="\Flow\ETL\Config::SORT_MAX_MEMORY_ENV">Config::SORT_MAX_MEMORY_ENV</abbr></a></td>
                                 <td class="phpdocumentor-cell"><p>Use SortConfig::SORT_MAX_MEMORY_ENV instead</p>
 </td>
@@ -225,6 +228,189 @@
 </td>
                             </tr>
                                                             </table>
+                            <a id="src/core/etl/src/Flow/ETL/DSL/functions.php"></a>
+                <h3><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></h3>
+                <table>
+                    <tr>
+                        <th class="phpdocumentor-heading">Line</th>
+                        <th class="phpdocumentor-heading">Element</th>
+                        <th class="phpdocumentor-heading">Reason</th>
+                    </tr>
+                                                                        <tr>
+                                <td class="phpdocumentor-cell">550</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_structure"><abbr title="\Flow\ETL\DSL\type_structure()">type_structure()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_structure(array $elements) instead</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">567</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_union"><abbr title="\Flow\ETL\DSL\type_union()">type_union()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_union(Type $first, Type $second, Type ...$types) : UnionType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">582</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_optional"><abbr title="\Flow\ETL\DSL\type_optional()">type_optional()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_optional(Type $type) : OptionalType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">595</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_from_array"><abbr title="\Flow\ETL\DSL\type_from_array()">type_from_array()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_from_array(array $data) : Type</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">606</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_is_nullable"><abbr title="\Flow\ETL\DSL\is_nullable()">is_nullable()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\is_nullable(Type $type) : bool</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">621</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_equals"><abbr title="\Flow\ETL\DSL\type_equals()">type_equals()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_equals(Type $left, Type $right) : bool</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">632</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_types"><abbr title="\Flow\ETL\DSL\types()">types()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\types(Type ...$types) : Types</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">659</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_list"><abbr title="\Flow\ETL\DSL\type_list()">type_list()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_list(Type $element) : ListType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">674</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_map"><abbr title="\Flow\ETL\DSL\type_map()">type_map()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_map(StringType|IntegerType $key_type, Type $value_type) : MapType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">696</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_json"><abbr title="\Flow\ETL\DSL\type_json()">type_json()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_json() : JsonType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">705</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_datetime"><abbr title="\Flow\ETL\DSL\type_datetime()">type_datetime()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_datetime() : DateTimeType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">714</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_date"><abbr title="\Flow\ETL\DSL\type_date()">type_date()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_date() : DateType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">723</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_time"><abbr title="\Flow\ETL\DSL\type_time()">type_time()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_time() : TimeType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">732</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_xml"><abbr title="\Flow\ETL\DSL\type_xml()">type_xml()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_xml() : XMLType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">741</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_xml_element"><abbr title="\Flow\ETL\DSL\type_xml_element()">type_xml_element()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_xml_element() : XMLElementType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">750</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_uuid"><abbr title="\Flow\ETL\DSL\type_uuid()">type_uuid()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_uuid() : UuidType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">759</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_int"><abbr title="\Flow\ETL\DSL\type_int()">type_int()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_integer() : IntegerType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">768</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_integer"><abbr title="\Flow\ETL\DSL\type_integer()">type_integer()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_integer() : IntegerType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">777</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_string"><abbr title="\Flow\ETL\DSL\type_string()">type_string()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_string() : StringType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">786</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_float"><abbr title="\Flow\ETL\DSL\type_float()">type_float()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_float() : FloatType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">795</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_boolean"><abbr title="\Flow\ETL\DSL\type_boolean()">type_boolean()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_boolean() : BooleanType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">810</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_instance_of"><abbr title="\Flow\ETL\DSL\type_instance_of()">type_instance_of()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_instance_of(string $class) : InstanceOfType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">819</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_resource"><abbr title="\Flow\ETL\DSL\type_resource()">type_resource()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_resource() : ResourceType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">828</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_array"><abbr title="\Flow\ETL\DSL\type_array()">type_array()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_array() : ArrayType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">837</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_callable"><abbr title="\Flow\ETL\DSL\type_callable()">type_callable()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_callable() : CallableType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">846</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_null"><abbr title="\Flow\ETL\DSL\type_null()">type_null()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_null() : NullType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">861</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_enum"><abbr title="\Flow\ETL\DSL\type_enum()">type_enum()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_enum(string $class) : EnumType</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">1863</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_is"><abbr title="\Flow\ETL\DSL\type_is()">type_is()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_is($type, $typeClass): bool instead</p>
+</td>
+                            </tr>
+                                                                                                <tr>
+                                <td class="phpdocumentor-cell">1878</td>
+                                <td class="phpdocumentor-cell"><a href="namespaces/flow-etl-dsl.html#function_type_is_any"><abbr title="\Flow\ETL\DSL\type_is_any()">type_is_any()</abbr></a></td>
+                                <td class="phpdocumentor-cell"><p>please use \Flow\Types\DSL\type_is_any($type, $typeClass, ...$typeClasses): bool instead</p>
+</td>
+                            </tr>
+                                                            </table>
                             <a id="src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php"></a>
                 <h3><abbr title="src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php">FileExtractor.php</abbr></h3>
                 <table>
@@ -264,7 +450,7 @@
                         <th class="phpdocumentor-heading">Reason</th>
                     </tr>
                                                                         <tr>
-                                <td class="phpdocumentor-cell">190</td>
+                                <td class="phpdocumentor-cell">189</td>
                                 <td class="phpdocumentor-cell"><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_domElementAttribute"><abbr title="\Flow\ETL\Function\ScalarFunctionChain::domElementAttribute()">ScalarFunctionChain::domElementAttribute()</abbr></a></td>
                                 <td class="phpdocumentor-cell"><p>Use domElementAttributeValue instead</p>
 </td>
@@ -294,7 +480,7 @@
                         <th class="phpdocumentor-heading">Reason</th>
                     </tr>
                                                                         <tr>
-                                <td class="phpdocumentor-cell">375</td>
+                                <td class="phpdocumentor-cell">443</td>
                                 <td class="phpdocumentor-cell"><a href="classes/Flow-ETL-Schema-Definition.html#method_nullable"><abbr title="\Flow\ETL\Schema\Definition::nullable()">Definition::nullable()</abbr></a></td>
                                 <td class="phpdocumentor-cell"><p>Use makeNullable() instead</p>
 </td>
@@ -309,19 +495,19 @@
                         <th class="phpdocumentor-heading">Reason</th>
                     </tr>
                                                                         <tr>
-                                <td class="phpdocumentor-cell">126</td>
+                                <td class="phpdocumentor-cell">128</td>
                                 <td class="phpdocumentor-cell"><a href="classes/Flow-ETL-Schema.html#method_entries"><abbr title="\Flow\ETL\Schema::entries()">Schema::entries()</abbr></a></td>
                                 <td class="phpdocumentor-cell"><p>use references() : References instead</p>
 </td>
                             </tr>
                                                                                                 <tr>
-                                <td class="phpdocumentor-cell">161</td>
+                                <td class="phpdocumentor-cell">163</td>
                                 <td class="phpdocumentor-cell"><a href="classes/Flow-ETL-Schema.html#method_getDefinition"><abbr title="\Flow\ETL\Schema::getDefinition()">Schema::getDefinition()</abbr></a></td>
                                 <td class="phpdocumentor-cell"><p>please use Schema::get() instead</p>
 </td>
                             </tr>
                                                                                                 <tr>
-                                <td class="phpdocumentor-cell">274</td>
+                                <td class="phpdocumentor-cell">276</td>
                                 <td class="phpdocumentor-cell"><a href="classes/Flow-ETL-Schema.html#method_nullable"><abbr title="\Flow\ETL\Schema::nullable()">Schema::nullable()</abbr></a></td>
                                 <td class="phpdocumentor-cell"><p>use makeNullable instead</p>
 </td>
