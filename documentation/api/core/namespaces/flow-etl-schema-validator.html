@@ -129,7 +129,13 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Schema-Validator-SelectiveValidator.html"><abbr title="\Flow\ETL\Schema\Validator\SelectiveValidator">SelectiveValidator</abbr></a></dt><dd>Matches only entries defined in the expected schema allowing for extra entries in given schema.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Schema-Validator-StrictValidator.html"><abbr title="\Flow\ETL\Schema\Validator\StrictValidator">StrictValidator</abbr></a></dt><dd>Matches all entries in the schema, if row comes with any extra entry it will fail validation.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Schema-Validator-EvolvingValidator.html"><abbr title="\Flow\ETL\Schema\Validator\EvolvingValidator">EvolvingValidator</abbr></a></dt><dd>Rules of evolving schema matching:
+- if schemas are the same, return true
+- if given schema has less fields than expected schema, return false
+- if given schema is making a nullable field non-nullable, return false
+- if given schema is making a non-nullable field nullable, return true
+- if given schema is changing the type of a field, return false
+- if given schema is adding a field, return true</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Schema-Validator-SelectiveValidator.html"><abbr title="\Flow\ETL\Schema\Validator\SelectiveValidator">SelectiveValidator</abbr></a></dt><dd>Matches only entries defined in the expected schema allowing for extra entries in given schema.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Schema-Validator-StrictValidator.html"><abbr title="\Flow\ETL\Schema\Validator\StrictValidator">StrictValidator</abbr></a></dt><dd>Matches all entries in the schema, if row comes with any extra entry it will fail validation.</dd>    </dl>
 
 
 

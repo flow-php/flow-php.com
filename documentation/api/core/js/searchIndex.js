@@ -2306,6 +2306,26 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_schema_to_json"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\schema_validate\u0028\u0029",
+            "name": "schema_validate",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_schema_validate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\schema_evolving_validator\u0028\u0029",
+            "name": "schema_evolving_validator",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_schema_evolving_validator"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\schema_strict_validator\u0028\u0029",
+            "name": "schema_strict_validator",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_schema_strict_validator"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\schema_selective_validator\u0028\u0029",
+            "name": "schema_selective_validator",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_schema_selective_validator"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\schema_from_json\u0028\u0029",
             "name": "schema_from_json",
             "summary": "",
@@ -11935,6 +11955,16 @@ Search.appendIndex(
             "name": "format",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-SchemaFormatter.html#method_format"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\EvolvingValidator",
+            "name": "EvolvingValidator",
+            "summary": "Rules\u0020of\u0020evolving\u0020schema\u0020matching\u003A\n\u002D\u0020if\u0020schemas\u0020are\u0020the\u0020same,\u0020return\u0020true\n\u002D\u0020if\u0020given\u0020schema\u0020has\u0020less\u0020fields\u0020than\u0020expected\u0020schema,\u0020return\u0020false\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020making\u0020a\u0020nullable\u0020field\u0020non\u002Dnullable,\u0020return\u0020false\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020making\u0020a\u0020non\u002Dnullable\u0020field\u0020nullable,\u0020return\u0020true\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020changing\u0020the\u0020type\u0020of\u0020a\u0020field,\u0020return\u0020false\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020adding\u0020a\u0020field,\u0020return\u0020true",
+            "url": "classes/Flow-ETL-Schema-Validator-EvolvingValidator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\EvolvingValidator\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Validator-EvolvingValidator.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Validator\\SelectiveValidator",
             "name": "SelectiveValidator",
