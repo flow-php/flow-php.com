@@ -296,10 +296,10 @@
 <li><a href="/documentation/api/cli/indices/files.html">📁Files</a></li>
 </ul>
 <h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
-<pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/cli:~0.16.2
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer require flow-php/cli:~0.16.2
 </code></pre>
 <p>In some cases, it might make sense to install the CLI globally:</p>
-<pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer global require flow-php/cli:~0.16.2
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer global require flow-php/cli:~0.16.2
 </code></pre>
 <p>Now you can run the CLI using the <code>flow</code> command.</p>
 <h3><a id="flow-php-docker" href="#content-docker" class="mr-2" aria-hidden="true" title="Permalink">#</a>Docker</h3>
@@ -308,7 +308,7 @@
 </code></pre>
 <h2><a id="flow-php-commands" href="#content-commands" class="mr-2" aria-hidden="true" title="Permalink">#</a>Commands</h2>
 <h3><a id="flow-php-config" href="#content-config" class="mr-2" aria-hidden="true" title="Permalink">#</a>Config</h3>
-<p>All Flow CLI Commands can be configured using <code>--config</code> option. The option accepts a path to a configuration file in php that returns an Config or ConfigBuilder instance.</p>
+<p>All Flow CLI Commands can be configured using <code>--config</code> option. The option accepts a path to a configuration file in php that returns a Config or ConfigBuilder instance.</p>
 <p><code>.flow.php</code></p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -318,7 +318,7 @@ return config_builder()
     -&gt;id('execution-id');
 </code></pre>
 <p><code>flow read --config .flow.php orders.csv</code></p>
-<p>One of the most common use cases is to mount custom filesystem into Flow fstab to access remote files through CLI.</p>
+<p>One of the most common use cases is to mount a custom filesystem into Flow fstab to access remote files through CLI.</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow
 Flow PHP - Data processing framework
 
@@ -382,6 +382,9 @@ Options:
       --output-csv-enclosure=OUTPUT-CSV-ENCLOSURE                    CSV enclosure character
       --output-csv-escape=OUTPUT-CSV-ESCAPE                          CSV escape character
       --output-csv-date-time-format=OUTPUT-CSV-DATE-TIME-FORMAT      DateTime format for CSV output
+      --input-excel-header=INPUT-EXCEL-HEADER                        When set, Excel header will be used as a schema
+      --input-excel-sheet-name=INPUT-EXCEL-SHEETNAME                 When set, Excel sheet name will be selected for reading
+      --input-excel-offset=INPUT-EXCEL-OFFSET                        Offset to start reading from
       --input-xml-node-path=INPUT-XML-NODE-PATH                      XML node path to a subtree from which schema should be extracted, for example /root/element This is not xpath, just a node names separated by slash
       --input-xml-buffer-size=INPUT-XML-BUFFER-SIZE                  XML buffer size in bytes
       --input-parquet-columns=INPUT-PARQUET-COLUMNS                  Columns to read from parquet file (multiple values allowed)
@@ -419,6 +422,9 @@ Options:
       --input-csv-separator=INPUT-CSV-SEPARATOR            CSV separator character
       --input-csv-enclosure=INPUT-CSV-ENCLOSURE            CSV enclosure character
       --input-csv-escape=INPUT-CSV-ESCAPE                  CSV escape character
+      --input-excel-header=INPUT-EXCEL-HEADER              When set, Excel header will be used as a schema
+      --input-excel-sheet-name=INPUT-EXCEL-SHEETNAME       When set, Excel sheet name will be selected for reading
+      --input-excel-offset=INPUT-EXCEL-OFFSET              Offset to start reading from
       --input-xml-node-path=INPUT-XML-NODE-PATH            XML node path to a subtree from which schema should be extracted, for example /root/element This is not xpath, just a node names separated by slash
       --input-xml-buffer-size=INPUT-XML-BUFFER-SIZE        XML buffer size in bytes
       --input-parquet-columns=INPUT-PARQUET-COLUMNS        Columns to read from parquet file (multiple values allowed)
@@ -446,7 +452,7 @@ Options:
 7 rows
 </code></pre>
 <h3><a id="flow-php-fileanalyze-alias-analyze" href="#content-fileanalyze-alias-analyze" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:analyze</code> alias <code>analyze</code></h3>
-<pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">file:analyze --help                         
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">file:analyze --help                         
 Description:
   Analyze a file.
 
@@ -469,6 +475,9 @@ Options:
       --input-csv-separator=INPUT-CSV-SEPARATOR            CSV separator character
       --input-csv-enclosure=INPUT-CSV-ENCLOSURE            CSV enclosure character
       --input-csv-escape=INPUT-CSV-ESCAPE                  CSV escape character
+      --input-excel-header=INPUT-EXCEL-HEADER              When set, Excel header will be used as a schema
+      --input-excel-sheet-name=INPUT-EXCEL-SHEETNAME       When set, Excel sheet name will be selected for reading
+      --input-excel-offset=INPUT-EXCEL-OFFSET              Offset to start reading from
       --input-xml-node-path=INPUT-XML-NODE-PATH            XML node path to a subtree from which schema should be extracted, for example /root/element This is not xpath, just a node names separated by slash
       --input-xml-buffer-size=INPUT-XML-BUFFER-SIZE        XML buffer size in bytes
       --input-parquet-columns=INPUT-PARQUET-COLUMNS        Columns to read from parquet file (multiple values allowed)
@@ -509,6 +518,9 @@ Options:
       --input-csv-separator=INPUT-CSV-SEPARATOR            CSV separator character
       --input-csv-enclosure=INPUT-CSV-ENCLOSURE            CSV enclosure character
       --input-csv-escape=INPUT-CSV-ESCAPE                  CSV escape character
+      --input-excel-header=INPUT-EXCEL-HEADER              When set, Excel header will be used as a schema
+      --input-excel-sheet-name=INPUT-EXCEL-SHEETNAME       When set, Excel sheet name will be selected for reading
+      --input-excel-offset=INPUT-EXCEL-OFFSET              Offset to start reading from
       --input-xml-node-path=INPUT-XML-NODE-PATH            XML node path to a subtree from which schema should be extracted, for example /root/element This is not xpath, just a node names separated by slash
       --input-xml-buffer-size=INPUT-XML-BUFFER-SIZE        XML buffer size in bytes
       --input-parquet-columns=INPUT-PARQUET-COLUMNS        Columns to read from parquet file (multiple values allowed)
@@ -520,8 +532,8 @@ Options:
   -n, --no-interaction                                     Do not ask any interactive question
   -v|vv|vvv, --verbose                                     Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 </code></pre>
-<h3><a id="flow-php-filerowscount-alis-count" href="#content-filerowscount-alis-count" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:rows:count</code> alis <code>count</code></h3>
-<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$ flow count --help
+<h3><a id="flow-php-filerowscount-alias-count" href="#content-filerowscount-alias-count" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:rows:count</code> alias <code>count</code></h3>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow count --help
 Description:
   Read data schema from a file.
 
@@ -543,6 +555,9 @@ Options:
       --input-csv-separator=INPUT-CSV-SEPARATOR            CSV separator character
       --input-csv-enclosure=INPUT-CSV-ENCLOSURE            CSV enclosure character
       --input-csv-escape=INPUT-CSV-ESCAPE                  CSV escape character
+      --input-excel-header=INPUT-EXCEL-HEADER              When set, Excel header will be used as a schema
+      --input-excel-sheet-name=INPUT-EXCEL-SHEETNAME       When set, Excel sheet name will be selected for reading
+      --input-excel-offset=INPUT-EXCEL-OFFSET              Offset to start reading from
       --input-xml-node-path=INPUT-XML-NODE-PATH            XML node path to a subtree from which schema should be extracted, for example /root/element This is not xpath, just a node names separated by slash
       --input-xml-buffer-size=INPUT-XML-BUFFER-SIZE        XML buffer size in bytes
       --input-parquet-columns=INPUT-PARQUET-COLUMNS        Columns to read from parquet file (multiple values allowed)
@@ -677,7 +692,7 @@ Help:
   --db-connection-file option takes priority over FLOW_DB_CONNECTION_STRING environment.
 </code></pre>
 <h2><a id="flow-php-schemaformat" href="#content-schemaformat" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>schema:format</code></h2>
-<p>Take a json schema and print it in another format, including PHP
+<p>Take a JSON schema and print it in another format, including PHP,<br />
 which can be then directly used to validate datasets.</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">flow schema:format --help
 Description:
@@ -737,7 +752,10 @@ Options:
             <a href="/documentation/components/adapters/doctrine">Doctrine</a>
         </li>
         <li>
-            <a href="/documentation/components/adapters/elasticsearch">Elastic Search</a>
+            <a href="/documentation/components/adapters/elasticsearch">ElasticSearch</a>
+        </li>
+        <li>
+            <a href="/documentation/components/adapters/excel">Excel</a>
         </li>
         <li>
             <a href="/documentation/components/adapters/google-sheet">Google Sheets</a>
@@ -746,7 +764,7 @@ Options:
             <a href="/documentation/components/adapters/http">HTTP</a>
         </li>
         <li>
-            <a href="/documentation/components/adapters/json">Json</a>
+            <a href="/documentation/components/adapters/json">JSON</a>
         </li>
         <li>
             <a href="/documentation/components/adapters/logger">Logger</a>
@@ -807,6 +825,7 @@ Options:
         </li>
     </ul>
 </div>
+
         </div>
     </div>
 </section>

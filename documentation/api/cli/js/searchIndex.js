@@ -171,6 +171,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Command-Traits-DBOptions.html"
         },                {
+            "fqsen": "\\Flow\\CLI\\Command\\Traits\\ExcelOptions",
+            "name": "ExcelOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Command-Traits-ExcelOptions.html"
+        },                {
             "fqsen": "\\Flow\\CLI\\Command\\Traits\\JSONOptions",
             "name": "JSONOptions",
             "summary": "",
@@ -275,6 +280,21 @@ Search.appendIndex(
             "name": "get",
             "summary": "",
             "url": "classes/Flow-CLI-Factory-CSVLoaderFactory.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Factory\\ExcelExtractorFactory",
+            "name": "ExcelExtractorFactory",
+            "summary": "",
+            "url": "classes/Flow-CLI-Factory-ExcelExtractorFactory.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Factory\\ExcelExtractorFactory\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-CLI-Factory-ExcelExtractorFactory.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Factory\\ExcelExtractorFactory\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Flow-CLI-Factory-ExcelExtractorFactory.html#method_get"
         },                {
             "fqsen": "\\Flow\\CLI\\Factory\\ExtractorFactory",
             "name": "ExtractorFactory",
@@ -461,6 +481,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Options-FileFormat.html#enumcase_JSON"
         },                {
+            "fqsen": "\\Flow\\CLI\\Options\\FileFormat\u003A\u003AODS",
+            "name": "ODS",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-FileFormat.html#enumcase_ODS"
+        },                {
             "fqsen": "\\Flow\\CLI\\Options\\FileFormat\u003A\u003APARQUET",
             "name": "PARQUET",
             "summary": "",
@@ -470,6 +495,11 @@ Search.appendIndex(
             "name": "TEXT",
             "summary": "",
             "url": "classes/Flow-CLI-Options-FileFormat.html#enumcase_TEXT"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\FileFormat\u003A\u003AXLSX",
+            "name": "XLSX",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-FileFormat.html#enumcase_XLSX"
         },                {
             "fqsen": "\\Flow\\CLI\\Options\\FileFormat\u003A\u003AXML",
             "name": "XML",

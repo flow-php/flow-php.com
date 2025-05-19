@@ -341,6 +341,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_ELASTIC_SEARCH"
         },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003AEXCEL",
+            "name": "EXCEL",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_EXCEL"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003AFILESYSTEM",
             "name": "FILESYSTEM",
             "summary": "",
