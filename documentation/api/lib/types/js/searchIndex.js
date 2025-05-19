@@ -21,10 +21,10 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-types-dsl.html#function_type_from_array"
         },                {
-            "fqsen": "\\Flow\\Types\\DSL\\is_nullable\u0028\u0029",
-            "name": "is_nullable",
+            "fqsen": "\\Flow\\Types\\DSL\\type_is_nullable\u0028\u0029",
+            "name": "type_is_nullable",
             "summary": "",
-            "url": "namespaces/flow-types-dsl.html#function_is_nullable"
+            "url": "namespaces/flow-types-dsl.html#function_type_is_nullable"
         },                {
             "fqsen": "\\Flow\\Types\\DSL\\type_equals\u0028\u0029",
             "name": "type_equals",
