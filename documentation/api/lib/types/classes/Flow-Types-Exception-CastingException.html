@@ -73,23 +73,7 @@
 </h4>
     <ul class="phpdocumentor-list">
                     <li>
-                <a href="namespaces/flow-arraycomparison.html" class="">ArrayComparison</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/flow-calculator.html" class="">Calculator</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/flow-clock.html" class="">Clock</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/flow-etl.html" class="">ETL</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/flow-serializer.html" class="">Serializer</a>
+                <a href="namespaces/flow-types.html" class="">Types</a>
                 
             </li>
             </ul>
@@ -113,16 +97,16 @@
                                 <section>
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow.html">Flow</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl.html">ETL</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-exception.html">Exception</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-types.html">Types</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-types-exception.html">Exception</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    InvalidTypeException
+    CastingException
 
         <span class="phpdocumentor-element__extends">
-        extends <a href="classes/Flow-ETL-Exception-InvalidArgumentException.html"><abbr title="\Flow\ETL\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a>
+        extends <a href="classes/Flow-Types-Exception-RuntimeException.html"><abbr title="\Flow\Types\Exception\RuntimeException">RuntimeException</abbr></a>
     </span>
     
     
@@ -137,7 +121,7 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Exception/InvalidTypeException.php"><a href="files/src-core-etl-src-flow-etl-exception-invalidtypeexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/InvalidTypeException.php">InvalidTypeException.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Exception/CastingException.php"><a href="files/src-lib-types-src-flow-types-exception-castingexception.html"><abbr title="src/lib/types/src/Flow/Types/Exception/CastingException.php">CastingException.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">9</span>
 
@@ -160,29 +144,36 @@
 
 
 
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Flow-Types-Exception-CastingException.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-Types-Exception-CastingException.html#property_type">$type</a>
+    <span>
+                        &nbsp;: <a href="classes/Flow-Types-Type-Type.html"><abbr title="\Flow\Types\Type\Type">Type</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-Types-Exception-CastingException.html#property_value">$value</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+    </dl>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Flow-ETL-Exception-InvalidTypeException.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Flow-Types-Exception-CastingException.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Exception-InvalidArgumentException.html#method_because">because()</a>
+    <a class="" href="classes/Flow-Types-Exception-CastingException.html#method___construct">__construct()</a>
     <span>
-                                &nbsp;: self    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Exception-InvalidTypeException.html#method_type">type()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Exception-InvalidTypeException.html#method_value">value()</a>
-    <span>
-                                &nbsp;: self    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 
     </dl>
@@ -192,145 +183,114 @@
         
 
         
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Flow-Types-Exception-CastingException.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_type">
+        $type
+        <a href="classes/Flow-Types-Exception-CastingException.html#property_type" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Exception/CastingException.php"><a href="files/src-lib-types-src-flow-types-exception-castingexception.html"><abbr title="src/lib/types/src/Flow/Types/Exception/CastingException.php">CastingException.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Flow-Types-Type-Type.html"><abbr title="\Flow\Types\Type\Type">Type</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$type</span>
+    </code>
+
+    
+    
+    
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_value">
+        $value
+        <a href="classes/Flow-Types-Exception-CastingException.html#property_value" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Exception/CastingException.php"><a href="files/src-lib-types-src-flow-types-exception-castingexception.html"><abbr title="src/lib/types/src/Flow/Types/Exception/CastingException.php">CastingException.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$value</span>
+    </code>
+
+    
+    
+    
+
+    
+
+</article>
+            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Flow-ETL-Exception-InvalidTypeException.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Flow-Types-Exception-CastingException.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="method_because">
-        because()
-        <a href="classes/Flow-ETL-Exception-InvalidArgumentException.html#method_because" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Flow-Types-Exception-CastingException.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Exception/InvalidArgumentException.php"><a href="files/src-core-etl-src-flow-etl-exception-invalidargumentexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/InvalidArgumentException.php">InvalidArgumentException.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Exception/CastingException.php"><a href="files/src-lib-types-src-flow-types-exception-castingexception.html"><abbr title="src/lib/types/src/Flow/Types/Exception/CastingException.php">CastingException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">because</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float|int|string&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$format</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$parameters</span>
-                : <span class="phpdocumentor-signature__argument__return-type">float|int|string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_type">
-        type()
-        <a href="classes/Flow-ETL-Exception-InvalidTypeException.html#method_type" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Exception/InvalidTypeException.php"><a href="files/src-core-etl-src-flow-etl-exception-invalidtypeexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/InvalidTypeException.php">InvalidTypeException.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">20</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">type</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Type">Type</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$givenType</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Type">Type</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$expectedType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$givenType</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$expectedType</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_value">
-        value()
-        <a href="classes/Flow-ETL-Exception-InvalidTypeException.html#method_value" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Exception/InvalidTypeException.php"><a href="files/src-core-etl-src-flow-etl-exception-invalidtypeexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/InvalidTypeException.php">InvalidTypeException.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">34</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">value</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Type">Type</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$expectedType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Types-Type-Type.html"><abbr title="\Flow\Types\Type\Type">Type</abbr></a>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|<abbr title="\Throwable">Throwable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$previous</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -346,9 +306,16 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$expectedType</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
+                <span class="phpdocumentor-signature__argument__name">$type</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Types-Type-Type.html"><abbr title="\Flow\Types\Type\Type">Type</abbr></a>&lt;string|int, mixed&gt;</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$previous</span>
+                : <span class="phpdocumentor-signature__argument__return-type">null|<abbr title="\Throwable">Throwable</abbr></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -358,11 +325,7 @@
 
     
 
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
+    
 </article>
             </section>
 
@@ -370,7 +333,7 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/core/etl/src/Flow/ETL/Exception/InvalidTypeException.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/lib/types/src/Flow/Types/Exception/CastingException.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -469,17 +432,23 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                <li><a href="classes/Flow-ETL-Exception-InvalidTypeException.html#toc-methods">Methods</a></li>
+                                                            <li><a href="classes/Flow-Types-Exception-CastingException.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Flow-Types-Exception-CastingException.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-Types-Exception-CastingException.html#property_type">$type</a></li>
+                                                    <li class=""><a href="classes/Flow-Types-Exception-CastingException.html#property_value">$value</a></li>
+                                            </ul>
+                </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Flow-ETL-Exception-InvalidArgumentException.html#method_because">because()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Exception-InvalidTypeException.html#method_type">type()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Exception-InvalidTypeException.html#method_value">value()</a></li>
+                                            <li class=""><a href="classes/Flow-Types-Exception-CastingException.html#method___construct">__construct()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -499,7 +468,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/Flow-ETL-Exception-InvalidTypeException.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Flow-Types-Exception-CastingException.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

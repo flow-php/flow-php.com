@@ -2706,26 +2706,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-ErrorHandler.html#method_throw"
         },                {
-            "fqsen": "\\Flow\\ETL\\Exception\\CastingException",
-            "name": "CastingException",
-            "summary": "",
-            "url": "classes/Flow-ETL-Exception-CastingException.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Exception\\CastingException\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Exception-CastingException.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Exception\\CastingException\u003A\u003A\u0024value",
-            "name": "value",
-            "summary": "",
-            "url": "classes/Flow-ETL-Exception-CastingException.html#property_value"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Exception\\CastingException\u003A\u003A\u0024type",
-            "name": "type",
-            "summary": "",
-            "url": "classes/Flow-ETL-Exception-CastingException.html#property_type"
-        },                {
             "fqsen": "\\Flow\\ETL\\Exception\\ConstraintViolationException",
             "name": "ConstraintViolationException",
             "summary": "",
@@ -2785,21 +2765,6 @@ Search.appendIndex(
             "name": "because",
             "summary": "",
             "url": "classes/Flow-ETL-Exception-InvalidLogicException.html#method_because"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Exception\\InvalidTypeException",
-            "name": "InvalidTypeException",
-            "summary": "",
-            "url": "classes/Flow-ETL-Exception-InvalidTypeException.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Exception\\InvalidTypeException\u003A\u003Atype\u0028\u0029",
-            "name": "type",
-            "summary": "",
-            "url": "classes/Flow-ETL-Exception-InvalidTypeException.html#method_type"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Exception\\InvalidTypeException\u003A\u003Avalue\u0028\u0029",
-            "name": "value",
-            "summary": "",
-            "url": "classes/Flow-ETL-Exception-InvalidTypeException.html#method_value"
         },                {
             "fqsen": "\\Flow\\ETL\\Exception\\JoinException",
             "name": "JoinException",

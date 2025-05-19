@@ -136,6 +136,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-types-dsl.html#function_type_null"
         },                {
+            "fqsen": "\\Flow\\Types\\DSL\\type_positive_integer\u0028\u0029",
+            "name": "type_positive_integer",
+            "summary": "",
+            "url": "namespaces/flow-types-dsl.html#function_type_positive_integer"
+        },                {
+            "fqsen": "\\Flow\\Types\\DSL\\type_non_empty_string\u0028\u0029",
+            "name": "type_non_empty_string",
+            "summary": "",
+            "url": "namespaces/flow-types-dsl.html#function_type_non_empty_string"
+        },                {
             "fqsen": "\\Flow\\Types\\DSL\\type_enum\u0028\u0029",
             "name": "type_enum",
             "summary": "",
@@ -150,6 +160,66 @@ Search.appendIndex(
             "name": "type_is_any",
             "summary": "",
             "url": "namespaces/flow-types-dsl.html#function_type_is_any"
+        },                {
+            "fqsen": "\\Flow\\Types\\DSL\\get_type\u0028\u0029",
+            "name": "get_type",
+            "summary": "",
+            "url": "namespaces/flow-types-dsl.html#function_get_type"
+        },                {
+            "fqsen": "\\Flow\\Types\\DSL\\dom_element_to_string\u0028\u0029",
+            "name": "dom_element_to_string",
+            "summary": "",
+            "url": "namespaces/flow-types-dsl.html#function_dom_element_to_string"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\CastingException",
+            "name": "CastingException",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-CastingException.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\CastingException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-CastingException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\CastingException\u003A\u003A\u0024value",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-CastingException.html#property_value"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\CastingException\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-CastingException.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-Exception.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\InvalidArgumentException",
+            "name": "InvalidArgumentException",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-InvalidArgumentException.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\InvalidTypeException",
+            "name": "InvalidTypeException",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-InvalidTypeException.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\InvalidTypeException\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-InvalidTypeException.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\InvalidTypeException\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-InvalidTypeException.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\RuntimeException",
+            "name": "RuntimeException",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-RuntimeException.html"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\ArrayContentDetector",
             "name": "ArrayContentDetector",
@@ -511,6 +581,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-Logical-MapType.html#method_value"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\NonEmptyStringType",
+            "name": "NonEmptyStringType",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-NonEmptyStringType.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\NonEmptyStringType\u003A\u003Aassert\u0028\u0029",
+            "name": "assert",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "url": "classes/Flow-Types-Type-Logical-NonEmptyStringType.html#method_assert"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\NonEmptyStringType\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
+            "summary": "Takes\u0020a\u0020value\u0020and\u0020when\u0020necessary\u0020casts\u0020it\u0020to\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type-Logical-NonEmptyStringType.html#method_cast"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\NonEmptyStringType\u003A\u003AisStringable\u0028\u0029",
+            "name": "isStringable",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-NonEmptyStringType.html#method_isStringable"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\NonEmptyStringType\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type-Logical-NonEmptyStringType.html#method_isValid"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\NonEmptyStringType\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-NonEmptyStringType.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\NonEmptyStringType\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
+            "url": "classes/Flow-Types-Type-Logical-NonEmptyStringType.html#method_toString"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\OptionalType",
             "name": "OptionalType",
             "summary": "",
@@ -555,6 +660,36 @@ Search.appendIndex(
             "name": "toString",
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type-Logical-OptionalType.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\PositiveIntegerType",
+            "name": "PositiveIntegerType",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-PositiveIntegerType.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\PositiveIntegerType\u003A\u003Aassert\u0028\u0029",
+            "name": "assert",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "url": "classes/Flow-Types-Type-Logical-PositiveIntegerType.html#method_assert"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\PositiveIntegerType\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
+            "summary": "Takes\u0020a\u0020value\u0020and\u0020when\u0020necessary\u0020casts\u0020it\u0020to\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type-Logical-PositiveIntegerType.html#method_cast"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\PositiveIntegerType\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type-Logical-PositiveIntegerType.html#method_isValid"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\PositiveIntegerType\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-PositiveIntegerType.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\PositiveIntegerType\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
+            "url": "classes/Flow-Types-Type-Logical-PositiveIntegerType.html#method_toString"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ScalarType",
             "name": "ScalarType",
@@ -1395,6 +1530,11 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "namespaces/flow-types-exception.html"
         },                {
             "fqsen": "\\Flow\\Types\\Type",
             "name": "Type",
