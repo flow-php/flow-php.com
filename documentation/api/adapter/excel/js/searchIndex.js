@@ -21,11 +21,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003Aclosure\u0028\u0029",
-            "name": "closure",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_closure"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
