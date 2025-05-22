@@ -1321,6 +1321,156 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-DataFrameFactory.html#method_from"
         },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Configuration",
+            "name": "Configuration",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Configuration.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Configuration\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Configuration.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Configuration\u003A\u003AisConsumptionBelow\u0028\u0029",
+            "name": "isConsumptionBelow",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Configuration.html#method_isConsumptionBelow"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Configuration\u003A\u003AisInfinite\u0028\u0029",
+            "name": "isInfinite",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Configuration.html#method_isInfinite"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Configuration\u003A\u003AisLessThan\u0028\u0029",
+            "name": "isLessThan",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Configuration.html#method_isLessThan"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Configuration\u003A\u003Alimit\u0028\u0029",
+            "name": "limit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Configuration.html#method_limit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Consumption",
+            "name": "Consumption",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Consumption.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Consumption\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Consumption.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Consumption\u003A\u003Acapture\u0028\u0029",
+            "name": "capture",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Consumption.html#method_capture"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Consumption\u003A\u003AcurrentDiff\u0028\u0029",
+            "name": "currentDiff",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Consumption.html#method_currentDiff"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Consumption\u003A\u003Ainitial\u0028\u0029",
+            "name": "initial",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Consumption.html#method_initial"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Consumption\u003A\u003Amax\u0028\u0029",
+            "name": "max",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Consumption.html#method_max"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Consumption\u003A\u003AmaxDiff\u0028\u0029",
+            "name": "maxDiff",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Consumption.html#method_maxDiff"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Consumption\u003A\u003Amin\u0028\u0029",
+            "name": "min",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Consumption.html#method_min"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Consumption\u003A\u003AminDiff\u0028\u0029",
+            "name": "minDiff",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Consumption.html#method_minDiff"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit",
+            "name": "Unit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003AfromBytes\u0028\u0029",
+            "name": "fromBytes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_fromBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003AfromGb\u0028\u0029",
+            "name": "fromGb",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_fromGb"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003AfromKb\u0028\u0029",
+            "name": "fromKb",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_fromKb"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003AfromMb\u0028\u0029",
+            "name": "fromMb",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_fromMb"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003AfromString\u0028\u0029",
+            "name": "fromString",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_fromString"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003Aabsolute\u0028\u0029",
+            "name": "absolute",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_absolute"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003Adiff\u0028\u0029",
+            "name": "diff",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_diff"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003AinBytes\u0028\u0029",
+            "name": "inBytes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_inBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003AinGb\u0028\u0029",
+            "name": "inGb",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_inGb"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003AinKb\u0028\u0029",
+            "name": "inKb",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_inKb"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003AinMb\u0028\u0029",
+            "name": "inMb",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_inMb"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003AisGreaterThan\u0028\u0029",
+            "name": "isGreaterThan",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_isGreaterThan"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003AisLowerThan\u0028\u0029",
+            "name": "isLowerThan",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_isLowerThan"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit\u003A\u003Apercentage\u0028\u0029",
+            "name": "percentage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-Unit.html#method_percentage"
+        },                {
             "fqsen": "\\Flow\\ETL\\Dataset\\Report",
             "name": "Report",
             "summary": "",
@@ -1555,6 +1705,11 @@ Search.appendIndex(
             "name": "executionTime",
             "summary": "",
             "url": "classes/Flow-ETL-Dataset-Statistics.html#property_executionTime"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\u003A\u003A\u0024memory",
+            "name": "memory",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics.html#property_memory"
         },                {
             "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\u003A\u003A\u0024columns",
             "name": "columns",
@@ -6941,156 +7096,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Memory-Memory.html#method_save"
         },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Configuration",
-            "name": "Configuration",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Configuration.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Configuration\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Configuration.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Configuration\u003A\u003AisConsumptionBelow\u0028\u0029",
-            "name": "isConsumptionBelow",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_isConsumptionBelow"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Configuration\u003A\u003AisInfinite\u0028\u0029",
-            "name": "isInfinite",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_isInfinite"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Configuration\u003A\u003AisLessThan\u0028\u0029",
-            "name": "isLessThan",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_isLessThan"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Configuration\u003A\u003Alimit\u0028\u0029",
-            "name": "limit",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_limit"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Consumption",
-            "name": "Consumption",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Consumption.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Consumption\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Consumption.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Consumption\u003A\u003Acurrent\u0028\u0029",
-            "name": "current",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Consumption.html#method_current"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Consumption\u003A\u003AcurrentDiff\u0028\u0029",
-            "name": "currentDiff",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Consumption.html#method_currentDiff"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Consumption\u003A\u003Ainitial\u0028\u0029",
-            "name": "initial",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Consumption.html#method_initial"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Consumption\u003A\u003Amax\u0028\u0029",
-            "name": "max",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Consumption.html#method_max"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Consumption\u003A\u003AmaxDiff\u0028\u0029",
-            "name": "maxDiff",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Consumption.html#method_maxDiff"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Consumption\u003A\u003Amin\u0028\u0029",
-            "name": "min",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Consumption.html#method_min"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Consumption\u003A\u003AminDiff\u0028\u0029",
-            "name": "minDiff",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Consumption.html#method_minDiff"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit",
-            "name": "Unit",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003AfromBytes\u0028\u0029",
-            "name": "fromBytes",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_fromBytes"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003AfromGb\u0028\u0029",
-            "name": "fromGb",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_fromGb"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003AfromKb\u0028\u0029",
-            "name": "fromKb",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_fromKb"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003AfromMb\u0028\u0029",
-            "name": "fromMb",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_fromMb"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003AfromString\u0028\u0029",
-            "name": "fromString",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_fromString"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003Aabsolute\u0028\u0029",
-            "name": "absolute",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_absolute"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003Adiff\u0028\u0029",
-            "name": "diff",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_diff"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003AinBytes\u0028\u0029",
-            "name": "inBytes",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_inBytes"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003AinGb\u0028\u0029",
-            "name": "inGb",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_inGb"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003AinKb\u0028\u0029",
-            "name": "inKb",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_inKb"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003AinMb\u0028\u0029",
-            "name": "inMb",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_inMb"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003AisGreaterThan\u0028\u0029",
-            "name": "isGreaterThan",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_isGreaterThan"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003AisLowerThan\u0028\u0029",
-            "name": "isLowerThan",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_isLowerThan"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory\\Unit\u003A\u003Apercentage\u0028\u0029",
-            "name": "percentage",
-            "summary": "",
-            "url": "classes/Flow-ETL-Monitoring-Memory-Unit.html#method_percentage"
-        },                {
             "fqsen": "\\Flow\\ETL\\NativePHPRandomValueGenerator",
             "name": "NativePHPRandomValueGenerator",
             "summary": "",
@@ -11251,6 +11256,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dataframe.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory",
+            "name": "Memory",
+            "summary": "",
+            "url": "namespaces/flow-etl-dataset-memory.html"
+        },                {
             "fqsen": "\\Flow\\ETL\\Dataset",
             "name": "Dataset",
             "summary": "",
@@ -11365,16 +11375,6 @@ Search.appendIndex(
             "name": "Memory",
             "summary": "",
             "url": "namespaces/flow-etl-memory.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring\\Memory",
-            "name": "Memory",
-            "summary": "",
-            "url": "namespaces/flow-etl-monitoring-memory.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Monitoring",
-            "name": "Monitoring",
-            "summary": "",
-            "url": "namespaces/flow-etl-monitoring.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Pipeline",
             "name": "Pipeline",

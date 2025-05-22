@@ -114,13 +114,13 @@
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow.html">Flow</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl.html">ETL</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-monitoring.html">Monitoring</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-monitoring-memory.html">Memory</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-dataset.html">Dataset</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-dataset-memory.html">Memory</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Configuration
+    Consumption
 
     
     
@@ -135,9 +135,9 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php"><a href="files/src-core-etl-src-flow-etl-monitoring-memory-configuration.html"><abbr title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php">Configuration.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php"><a href="files/src-core-etl-src-flow-etl-dataset-memory-consumption.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php">Consumption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">7</span>
 
     </aside>
 
@@ -161,38 +161,56 @@
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method___construct">__construct()</a>
+    <a class="" href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_isConsumptionBelow">isConsumptionBelow()</a>
+    <a class="" href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_capture">capture()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_isInfinite">isInfinite()</a>
+    <a class="" href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_currentDiff">currentDiff()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_isLessThan">isLessThan()</a>
+    <a class="" href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_initial">initial()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_limit">limit()</a>
+    <a class="" href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_max">max()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Monitoring-Memory-Unit.html"><abbr title="\Flow\ETL\Monitoring\Memory\Unit">Unit</abbr></a>|null    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_maxDiff">maxDiff()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_min">min()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_minDiff">minDiff()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a>    </span>
 </dt>
 
     </dl>
@@ -206,7 +224,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -217,36 +235,26 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php"><a href="files/src-core-etl-src-flow-etl-monitoring-memory-configuration.html"><abbr title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php">Configuration.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php"><a href="files/src-core-etl-src-flow-etl-dataset-memory-consumption.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php">Consumption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$safetyBufferPercentage</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$safetyBufferPercentage</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
     
@@ -259,52 +267,35 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_isConsumptionBelow">
-        isConsumptionBelow()
-        <a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_isConsumptionBelow" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_capture">
+        capture()
+        <a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_capture" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php"><a href="files/src-core-etl-src-flow-etl-monitoring-memory-configuration.html"><abbr title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php">Configuration.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php"><a href="files/src-core-etl-src-flow-etl-dataset-memory-consumption.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php">Consumption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isConsumptionBelow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Monitoring-Memory-Unit.html"><abbr title="\Flow\ETL\Monitoring\Memory\Unit">Unit</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unit</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limitPercentage</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">capture</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$unit</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Monitoring-Memory-Unit.html"><abbr title="\Flow\ETL\Monitoring\Memory\Unit">Unit</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$limitPercentage</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
     
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span>
             </section>
 
 </article>
@@ -314,22 +305,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_isInfinite">
-        isInfinite()
-        <a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_isInfinite" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_currentDiff">
+        currentDiff()
+        <a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_currentDiff" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php"><a href="files/src-core-etl-src-flow-etl-monitoring-memory-configuration.html"><abbr title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php">Configuration.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php"><a href="files/src-core-etl-src-flow-etl-dataset-memory-consumption.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php">Consumption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isInfinite</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">currentDiff</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -342,7 +333,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span>
             </section>
 
 </article>
@@ -352,45 +343,35 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_isLessThan">
-        isLessThan()
-        <a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_isLessThan" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_initial">
+        initial()
+        <a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_initial" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php"><a href="files/src-core-etl-src-flow-etl-monitoring-memory-configuration.html"><abbr title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php">Configuration.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php"><a href="files/src-core-etl-src-flow-etl-dataset-memory-consumption.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php">Consumption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isLessThan</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Monitoring-Memory-Unit.html"><abbr title="\Flow\ETL\Monitoring\Memory\Unit">Unit</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$memory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">initial</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$memory</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Monitoring-Memory-Unit.html"><abbr title="\Flow\ETL\Monitoring\Memory\Unit">Unit</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
     
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span>
             </section>
 
 </article>
@@ -400,22 +381,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_limit">
-        limit()
-        <a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_limit" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_max">
+        max()
+        <a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_max" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php"><a href="files/src-core-etl-src-flow-etl-monitoring-memory-configuration.html"><abbr title="src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php">Configuration.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php"><a href="files/src-core-etl-src-flow-etl-dataset-memory-consumption.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php">Consumption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">limit</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Monitoring-Memory-Unit.html"><abbr title="\Flow\ETL\Monitoring\Memory\Unit">Unit</abbr></a>|null</span></code>
+                    <span class="phpdocumentor-signature__name">max</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -428,7 +409,121 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Monitoring-Memory-Unit.html"><abbr title="\Flow\ETL\Monitoring\Memory\Unit">Unit</abbr></a>|null</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_maxDiff">
+        maxDiff()
+        <a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_maxDiff" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php"><a href="files/src-core-etl-src-flow-etl-dataset-memory-consumption.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php">Consumption.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">maxDiff</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_min">
+        min()
+        <a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_min" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php"><a href="files/src-core-etl-src-flow-etl-dataset-memory-consumption.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php">Consumption.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">min</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_minDiff">
+        minDiff()
+        <a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_minDiff" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php"><a href="files/src-core-etl-src-flow-etl-dataset-memory-consumption.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php">Consumption.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">62</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">minDiff</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span>
             </section>
 
 </article>
@@ -438,7 +533,7 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/core/etl/src/Flow/ETL/Monitoring/Memory/Configuration.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/core/etl/src/Flow/ETL/Dataset/Memory/Consumption.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -537,7 +632,7 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                <li><a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#toc-methods">Methods</a></li>
+                                                                                <li><a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
@@ -545,11 +640,14 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_isConsumptionBelow">isConsumptionBelow()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_isInfinite">isInfinite()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_isLessThan">isLessThan()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#method_limit">limit()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_capture">capture()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_currentDiff">currentDiff()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_initial">initial()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_max">max()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_maxDiff">maxDiff()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_min">min()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#method_minDiff">minDiff()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -569,7 +667,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/Flow-ETL-Monitoring-Memory-Configuration.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Flow-ETL-Dataset-Memory-Consumption.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
