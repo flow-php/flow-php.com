@@ -8135,7 +8135,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1612</span>
+    <span class="phpdocumentor-element-found-in__line">1615</span>
 
     </aside>
 
@@ -8143,7 +8143,7 @@ That metadata is used to determine if string_entry was created from null or not.
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">map_schema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nullable</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">map_schema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr>&lt;<abbr title="\Flow\ETL\DSL\TKey">TKey</abbr>, <abbr title="\Flow\ETL\DSL\TValue">TValue</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nullable</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -8157,7 +8157,7 @@ That metadata is used to determine if string_entry was created from null or not.
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr>&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr>&lt;<abbr title="\Flow\ETL\DSL\TKey">TKey</abbr>, <abbr title="\Flow\ETL\DSL\TValue">TValue</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -8179,6 +8179,27 @@ That metadata is used to determine if string_entry was created from null or not.
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="namespaces/flow-etl-dsl.html#function_map_schema#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">template</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">template</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -8195,7 +8216,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1621</span>
+    <span class="phpdocumentor-element-found-in__line">1626</span>
 
     </aside>
 
@@ -8203,7 +8224,7 @@ That metadata is used to determine if string_entry was created from null or not.
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">list_schema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nullable</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">list_schema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr>&lt;string|int, <abbr title="\Flow\ETL\DSL\T">T</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nullable</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -8217,7 +8238,7 @@ That metadata is used to determine if string_entry was created from null or not.
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr>&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr>&lt;string|int, <abbr title="\Flow\ETL\DSL\T">T</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -8239,6 +8260,20 @@ That metadata is used to determine if string_entry was created from null or not.
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="namespaces/flow-etl-dsl.html#function_list_schema#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">template</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -8255,7 +8290,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1630</span>
+    <span class="phpdocumentor-element-found-in__line">1635</span>
 
     </aside>
 
@@ -8315,7 +8350,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1636</span>
+    <span class="phpdocumentor-element-found-in__line">1641</span>
 
     </aside>
 
@@ -8361,7 +8396,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1642</span>
+    <span class="phpdocumentor-element-found-in__line">1647</span>
 
     </aside>
 
@@ -8414,7 +8449,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1648</span>
+    <span class="phpdocumentor-element-found-in__line">1653</span>
 
     </aside>
 
@@ -8467,7 +8502,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1654</span>
+    <span class="phpdocumentor-element-found-in__line">1659</span>
 
     </aside>
 
@@ -8520,7 +8555,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1660</span>
+    <span class="phpdocumentor-element-found-in__line">1665</span>
 
     </aside>
 
@@ -8573,7 +8608,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1666</span>
+    <span class="phpdocumentor-element-found-in__line">1671</span>
 
     </aside>
 
@@ -8626,7 +8661,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1672</span>
+    <span class="phpdocumentor-element-found-in__line">1677</span>
 
     </aside>
 
@@ -8679,7 +8714,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1683</span>
+    <span class="phpdocumentor-element-found-in__line">1688</span>
 
     </aside>
 
@@ -8753,7 +8788,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1694</span>
+    <span class="phpdocumentor-element-found-in__line">1699</span>
 
     </aside>
 
@@ -8827,7 +8862,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1700</span>
+    <span class="phpdocumentor-element-found-in__line">1705</span>
 
     </aside>
 
@@ -8880,7 +8915,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1706</span>
+    <span class="phpdocumentor-element-found-in__line">1711</span>
 
     </aside>
 
@@ -8919,7 +8954,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1712</span>
+    <span class="phpdocumentor-element-found-in__line">1717</span>
 
     </aside>
 
@@ -8958,7 +8993,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1718</span>
+    <span class="phpdocumentor-element-found-in__line">1723</span>
 
     </aside>
 
@@ -8987,7 +9022,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1724</span>
+    <span class="phpdocumentor-element-found-in__line">1729</span>
 
     </aside>
 
@@ -9016,7 +9051,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1730</span>
+    <span class="phpdocumentor-element-found-in__line">1735</span>
 
     </aside>
 
@@ -9045,7 +9080,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1736</span>
+    <span class="phpdocumentor-element-found-in__line">1741</span>
 
     </aside>
 
@@ -9074,7 +9109,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1742</span>
+    <span class="phpdocumentor-element-found-in__line">1747</span>
 
     </aside>
 
@@ -9103,7 +9138,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1748</span>
+    <span class="phpdocumentor-element-found-in__line">1753</span>
 
     </aside>
 
@@ -9132,7 +9167,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1759</span>
+    <span class="phpdocumentor-element-found-in__line">1764</span>
 
     </aside>
 
@@ -9178,7 +9213,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1765</span>
+    <span class="phpdocumentor-element-found-in__line">1770</span>
 
     </aside>
 
@@ -9224,7 +9259,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1771</span>
+    <span class="phpdocumentor-element-found-in__line">1776</span>
 
     </aside>
 
@@ -9277,7 +9312,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1777</span>
+    <span class="phpdocumentor-element-found-in__line">1782</span>
 
     </aside>
 
@@ -9323,7 +9358,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1783</span>
+    <span class="phpdocumentor-element-found-in__line">1788</span>
 
     </aside>
 
@@ -9369,7 +9404,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1789</span>
+    <span class="phpdocumentor-element-found-in__line">1794</span>
 
     </aside>
 
@@ -9408,7 +9443,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1795</span>
+    <span class="phpdocumentor-element-found-in__line">1800</span>
 
     </aside>
 
@@ -9447,7 +9482,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1801</span>
+    <span class="phpdocumentor-element-found-in__line">1806</span>
 
     </aside>
 
@@ -9493,7 +9528,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1809</span>
+    <span class="phpdocumentor-element-found-in__line">1814</span>
 
     </aside>
 
@@ -9532,7 +9567,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1815</span>
+    <span class="phpdocumentor-element-found-in__line">1820</span>
 
     </aside>
 
@@ -9561,7 +9596,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1824</span>
+    <span class="phpdocumentor-element-found-in__line">1829</span>
 
     </aside>
 
@@ -9607,7 +9642,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1833</span>
+    <span class="phpdocumentor-element-found-in__line">1838</span>
 
     </aside>
 
@@ -9646,7 +9681,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1842</span>
+    <span class="phpdocumentor-element-found-in__line">1847</span>
 
     </aside>
 
@@ -9692,7 +9727,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1855</span>
+    <span class="phpdocumentor-element-found-in__line">1860</span>
 
     </aside>
 
@@ -9738,7 +9773,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1897</span>
+    <span class="phpdocumentor-element-found-in__line">1902</span>
 
     </aside>
 
@@ -9805,7 +9840,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1912</span>
+    <span class="phpdocumentor-element-found-in__line">1917</span>
 
     </aside>
 
@@ -9879,7 +9914,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1918</span>
+    <span class="phpdocumentor-element-found-in__line">1923</span>
 
     </aside>
 
@@ -9925,7 +9960,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1924</span>
+    <span class="phpdocumentor-element-found-in__line">1929</span>
 
     </aside>
 
@@ -9978,7 +10013,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1930</span>
+    <span class="phpdocumentor-element-found-in__line">1935</span>
 
     </aside>
 
@@ -10024,7 +10059,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1941</span>
+    <span class="phpdocumentor-element-found-in__line">1946</span>
 
     </aside>
 
@@ -10084,7 +10119,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1947</span>
+    <span class="phpdocumentor-element-found-in__line">1952</span>
 
     </aside>
 
@@ -10123,7 +10158,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1964</span>
+    <span class="phpdocumentor-element-found-in__line">1969</span>
 
     </aside>
 
@@ -10162,7 +10197,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1981</span>
+    <span class="phpdocumentor-element-found-in__line">1986</span>
 
     </aside>
 
@@ -10201,7 +10236,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1998</span>
+    <span class="phpdocumentor-element-found-in__line">2003</span>
 
     </aside>
 
@@ -10247,7 +10282,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2004</span>
+    <span class="phpdocumentor-element-found-in__line">2009</span>
 
     </aside>
 
@@ -10293,7 +10328,7 @@ That metadata is used to determine if string_entry was created from null or not.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2010</span>
+    <span class="phpdocumentor-element-found-in__line">2015</span>
 
     </aside>
 
