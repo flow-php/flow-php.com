@@ -13,13 +13,13 @@
     <meta name="twitter:description" content="Documentation">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/documentation/components/libs/types/architecture" />
+    <meta property="og:url" content="https://flow-php.com/documentation/contributing/environment" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/documentation/components/libs/types/architecture" />
+    <meta property="twitter:url" content="https://flow-php.com/documentation/contributing/environment" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -283,141 +283,71 @@
             <hr class="lg:hidden"/>
 
             <div class="mb-3 text-left">
-                <a class="btn btn-primary" href="https://github.com/flow-php/flow/edit/1.x/documentation/components/libs/types/architecture.md" target="_blank">
+                <a class="btn btn-primary" href="https://github.com/flow-php/flow/edit/1.x/documentation/contributing/environment.md" target="_blank">
                     Edit
                     <img src="https://flow-php.com/assets/images/icons/github-b7e5d858805e5289b575768f10a66b52.svg" alt="external resource" width="16" height="16" class="ml-1">
                 </a>
             </div>
 
-            <h1><a id="flow-php-types---architecture" href="#content-types---architecture" class="mr-2" aria-hidden="true" title="Permalink">#</a>Types - Architecture</h1>
-<p>Types is a small library designed to ensure type consistency at runtime.<br />
-The concept is that wherever the system receives input data, one of three operations can be performed:</p>
-<ul>
-<li><code>Type::isValid($value) : bool</code> - checks if the value is of the correct type</li>
-<li><code>Type::cast($value) : mixed</code> - casts the value to a specific type, it must throw <code>\Flow\Types\Exception\CastingException</code> if the value
-cannot be casted to the expected type</li>
-<li><code>Type::assert($value) : void</code> - checks if the value is of the correct type, throwing an <code>Flow\Types\Exception\InvalidTypeException</code> exception if not</li>
-</ul>
-<p>Each operation is executed at runtime, not compile time, but their structure provides significant type information for
-static code analysis tools.</p>
-<p>By using these functions, static analysis tools can predict undesirable situations in the code, such as passing an
-incorrect type to a function or method.</p>
-<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
-
-$userInput = $input-&gt;get('value'); // we expect this value to be an integer
-
-if (\Flow\Types\DSL\type_integer()-&gt;isValid($userInput)) {
-  // at this point static analysis knows that $userInput is an integer
-} 
-
-// make that value an int 
-$int = Flow\Types\DSL\type_integer()-&gt;cast($userInput);
-
-// check if value is an integer, throws an exception if not
-$int = Flow\Types\DSL\type_integer()-&gt;assert($userInput);
+            <h2><a id="flow-php-prepare-project" href="#content-prepare-project" class="mr-2" aria-hidden="true" title="Permalink">#</a>Prepare Project:</h2>
+<p>To run tests locally, please make sure you have <a rel="noopener noreferrer" target="_blank" href="https://www.docker.com/">docker</a> up and running.
+You also need <a rel="noopener noreferrer" target="_blank" href="https://www.php.net/">PHP 8.2</a> and <a rel="noopener noreferrer" target="_blank" href="https://getcomposer.org/">composer</a> to be available from your CLI.
+Even though we are supporting 3 PHP versions at the time, we are using the lowest supported one for development, currently it's PHP 8.2.</p>
+<p><strong>HEADS UP</strong> - instead of using php installed on your host machine, consider using Nix Shell.
+You can find detailed instructions how to use Nix in the <a href="/documentation/contributing/nix">Nix Development Environment</a> section.</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">cp compose.yml.dist compose.yml
+composer install 
+docker compose up -d
 </code></pre>
-<h2><a id="flow-php-building-blocks" href="#content-building-blocks" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building Blocks</h2>
-<p>The main building block of this library is the interface <a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/lib/types/src/Flow/Types/Type.php"><code>Flow\Types\Type</code></a>.</p>
-<p>This interface is implemented by two kinds of types:</p>
-<ul>
-<li>Native Types - those built into PHP, e.g., <code>int</code>, <code>string</code>, <code>bool</code>, <code>float</code>, <code>array</code>, <code>object</code>.</li>
-<li>Logical Types - those that narrow and refine native types, e.g., <code>type_uuid()</code> is a refinement of <code>type_string()</code> and
-checks if a string is a valid UUID.</li>
-</ul>
-<p>Additionally, all types are divided into:</p>
-<ul>
-<li>Composite Types - those composed of other types, e.g., <code>type_optional(type_string())</code> is equivalent to <code>?string</code>,
-i.e., a string or null.</li>
-<li>Simple Types - single types, e.g., <code>type_string()</code>, <code>type_int()</code>, <code>type_bool()</code>, <code>type_float()</code>, <code>type_array()</code>,
-<code>type_object()</code>.</li>
-</ul>
-<h2><a id="flow-php-architecture" href="#content-architecture" class="mr-2" aria-hidden="true" title="Permalink">#</a>Architecture</h2>
-<p>The entire library is written following best object-oriented programming practices and design patterns. Each type is a
-class implementing the <code>Flow\Types\Type</code> interface, enabling easy extension and addition of new types in the future.</p>
-<p>To improve the developer experience, the library includes DSL (Domain Specific Language) functions that simplify
-creating and using types in code.</p>
-<p>For example, <code>new \Flow\Types\Type\Native\StringType()</code> is equivalent to <code>\Flow\Types\DSL\type_string()</code>.</p>
-<p>This library also provides a set of helpers for working with types, that are also covered by the DSL.</p>
-<p>For example, to determine a variable's type, you can use the <code>\Flow\Types\DSL\get_type($value) : Type</code> function, which
-internally creates a new instance of <code>\Flow\Types\Type\TypeDetector</code> and calls its <code>detectType(mixed $value) : Type</code>
-method.</p>
-<p>The DSL definition can thus be considered the library's API, located in the
-file <a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</a>.</p>
-<p>One of the library's key principles is tight integration with static code analysis tools. This is achieved through
-proper use of template mechanisms and type narrowing, <code>@template</code> and <code>@phpstan-assert</code>.</p>
-<p>More details can be found at:</p>
-<ul>
-<li><a rel="noopener noreferrer" target="_blank" href="https://phpstan.org/blog/generics-in-php-using-phpdocs">PHPStan Generic</a></li>
-<li><a rel="noopener noreferrer" target="_blank" href="https://phpstan.org/blog/generics-by-examples">Generic by Examples</a></li>
-<li><a rel="noopener noreferrer" target="_blank" href="https://phpstan.org/writing-php-code/narrowing-types">Narrowing Types</a></li>
-</ul>
-<p>Therefore, it is critical that all classes and functions in this library are properly documented in PHPDoc.</p>
-<h2><a id="flow-php-testing" href="#content-testing" class="mr-2" aria-hidden="true" title="Permalink">#</a>Testing</h2>
-<p>This library provides a set of unit tests that verify the correct operation of all types and DSL functions.<br />
-All tests are located in the directory <a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/lib/types/tests/Flow/Types/Tests/Unit"><code>Flow/Types/Tests/Unit</code></a>.</p>
-<p>Below is an example template that can be used to create cover a type with unit tests:</p>
-<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
-
-declare(strict_types=1);
-
-namespace Flow\Types\Tests\Unit\Type\Native;
-
-use PHPUnit\Framework\TestCase;
-use PHPUnit\Framework\Attributes\DataProvider;
-use Flow\Types\Exception\InvalidTypeException;
-
-final class CustomTypeTest extends TestCase
-{
-    public static function assert_data_provider() : \Generator
-    {
-    }
-
-    #[DataProvider('assert_data_provider')]
-    public function test_assert(mixed $value, ?string $exceptionClass = null) : void
-    {
-        // since assert is based on isValid() we should the same cases as for isValid() but we shold expect it to throw an exception.
-    }
-
-    public static function cast_data_provider() : \Generator
-    {
-    }
-
-    #[DataProvider('cast_data_provider')]
-    public function test_cast(mixed $value, mixed $expected, ?string $exceptionClass) : void
-    {
-        // we want to check if for given output method cast() returns expected value or throws an exception when given value can't be casted
-    }
-
-    public static function is_valid_data_provider() : \Generator
-    {
-    }
-
-    #[DataProvider('is_valid_data_provider')]
-    public function test_is_valid(mixed $value, bool $expected) : void
-    {
-        // we want to check if for given output method isValid() returns true or false
-    }
-    
-    public funciton test_to_string() : void
-    {
-        // we want to check the output of toString() method for type
-    }
-    
-    public function test_normalization() : void
-    {
-        // we want to use normalize() to turn type into an array representation
-        // then we want to use \Flow\Types\DSL\type_from_array() to create a new type from that array and compare it with the original type
-    }
-}
+<p>For the code coverage, please install <a rel="noopener noreferrer" target="_blank" href="https://pecl.php.net/package/pcov">pcov</a>.</p>
+<p>Pcov extension is not mandatory, and tests are going to pass without it; however, you won't be able to run mutation tests.</p>
+<h2><a id="flow-php-run-test-suite" href="#content-run-test-suite" class="mr-2" aria-hidden="true" title="Permalink">#</a>Run Test Suite</h2>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer test
 </code></pre>
-<p>Additionally, if a given type provides any extra functions, they should be tested in separate unit tests, covering all
-possible use cases.</p>
-<p>The Types library is part of the Flow PHP framework for data processing.<br />
-It is developed in a monorepository alongside other framework libraries and components.<br />
-All tools, such as Composer, PHPUnit, PHPStan, Rector, and CS Fixer, are available in the same location.</p>
-<p>Tests can be executed using the following command at the monorepo root level:</p>
-<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">composer test:lib:types
-composer static:analyze
+<p>Above command will run all tests, including those that require custom extensions.
+In case you want to run tests only for a specific part of the project, you can use:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer test:core
+composer test:lib:doctrine-dbal-bulk
+composer test:lib:parquet
+composer test:adapter:csv
+composer test:bridge:symfony-http-foundation
+</code></pre>
+<h2><a id="flow-php-run-static-analyze" href="#content-run-static-analyze" class="mr-2" aria-hidden="true" title="Permalink">#</a>Run Static Analyze</h2>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer static:analyze
+</code></pre>
+<p><strong>Important</strong> static analyze <strong>MUST</strong> be executed at the lowest supported PHP version
+and with dependencies locked by <code>composer.lock</code>.
+Please make sure to use PHP 8.2 and that you used the <code>composer install</code> command first.</p>
+<h2><a id="flow-php-fixing-coding-standards" href="#content-fixing-coding-standards" class="mr-2" aria-hidden="true" title="Permalink">#</a>Fixing Coding Standards</h2>
+<p>Before committing your code, please make sure that your code is following our coding standards.</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer cs:php:fix
+</code></pre>
+<p>This command will automatically fix all coding standards issues in your code.
+If you want to first check what needs to be fixed, you can use:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer static:analyze:cs-fixer
+composer static:analyze:rector
+</code></pre>
+<h2><a id="flow-php-test-everything" href="#content-test-everything" class="mr-2" aria-hidden="true" title="Permalink">#</a>Test everything</h2>
+<p>This command will execute exactly the same tests as we run at GitHub Actions before a PR can get merged.
+If it passes locally, you are good to open a pull request.</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer build 
+</code></pre>
+<h2><a id="flow-php-building-documentation" href="#content-building-documentation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building Documentation</h2>
+<p>Since documentation for DSL and our entire API is automatically generated, you can build it by running:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer build:docs
+composer build:docs:api
+</code></pre>
+<p><code>composer build:docs</code> must be executed after any adjustments to <code>functions.php</code> files (DSL).</p>
+<h2><a id="flow-php-building-phar" href="#content-building-phar" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building PHAR</h2>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer build:phar
+./build/flow.phar --version
+</code></pre>
+<h2><a id="flow-php-building-docker-image" href="#content-building-docker-image" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building Docker Image</h2>
+<p>In order to build docker image and load it to local registry please use:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">docker buildx build -t flow-php/flow:latest . --progress=plain --load
+</code></pre>
+<p>Usage:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">docker run -v $(pwd):/flow-workspace -it flow-php/flow:latest --version
 </code></pre>
 
 
