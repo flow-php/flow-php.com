@@ -1376,36 +1376,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-Native-UnionType.html#method_types"
         },                {
-            "fqsen": "\\Flow\\Types\\Type\\Type",
-            "name": "Type",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Type.html"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Type\u003A\u003Aassert\u0028\u0029",
-            "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
-            "url": "classes/Flow-Types-Type-Type.html#method_assert"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Type\u003A\u003Acast\u0028\u0029",
-            "name": "cast",
-            "summary": "Takes\u0020a\u0020value\u0020and\u0020when\u0020necessary\u0020casts\u0020it\u0020to\u0020the\u0020type\u0020of\u0020this\u0020object.",
-            "url": "classes/Flow-Types-Type-Type.html#method_cast"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Type\u003A\u003AisValid\u0028\u0029",
-            "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
-            "url": "classes/Flow-Types-Type-Type.html#method_isValid"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Type\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Type.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Type\u003A\u003AtoString\u0028\u0029",
-            "name": "toString",
-            "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
-            "url": "classes/Flow-Types-Type-Type.html#method_toString"
-        },                {
             "fqsen": "\\Flow\\Types\\Type\\TypeDetector",
             "name": "TypeDetector",
             "summary": "",
@@ -1516,6 +1486,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-ValueComparator.html#method_assertComparable"
         },                {
+            "fqsen": "\\Flow\\Types\\Type",
+            "name": "Type",
+            "summary": "",
+            "url": "classes/Flow-Types-Type.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\u003A\u003Aassert\u0028\u0029",
+            "name": "assert",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "url": "classes/Flow-Types-Type.html#method_assert"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
+            "summary": "Takes\u0020a\u0020value\u0020and\u0020when\u0020necessary\u0020casts\u0020it\u0020to\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type.html#method_cast"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type.html#method_isValid"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Types-Type.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
+            "url": "classes/Flow-Types-Type.html#method_toString"
+        },                {
             "fqsen": "\\Flow\\Types\\Value\\Uuid",
             "name": "Uuid",
             "summary": "",
@@ -1561,16 +1561,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-types-dsl.html"
         },                {
-            "fqsen": "\\Flow\\Types",
-            "name": "Types",
-            "summary": "",
-            "url": "namespaces/flow-types.html"
-        },                {
-            "fqsen": "\\Flow",
-            "name": "Flow",
-            "summary": "",
-            "url": "namespaces/flow.html"
-        },                {
             "fqsen": "\\Flow\\Types\\Exception",
             "name": "Exception",
             "summary": "",
@@ -1605,6 +1595,16 @@ Search.appendIndex(
             "name": "String",
             "summary": "",
             "url": "namespaces/flow-types-type-native-string.html"
+        },                {
+            "fqsen": "\\Flow\\Types",
+            "name": "Types",
+            "summary": "",
+            "url": "namespaces/flow-types.html"
+        },                {
+            "fqsen": "\\Flow",
+            "name": "Flow",
+            "summary": "",
+            "url": "namespaces/flow.html"
         },                {
             "fqsen": "\\Flow\\Types\\Value",
             "name": "Value",
