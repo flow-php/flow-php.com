@@ -11,6 +11,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-types-dsl.html#function_type_union"
         },                {
+            "fqsen": "\\Flow\\Types\\DSL\\type_intersection\u0028\u0029",
+            "name": "type_intersection",
+            "summary": "",
+            "url": "namespaces/flow-types-dsl.html#function_type_intersection"
+        },                {
             "fqsen": "\\Flow\\Types\\DSL\\type_optional\u0028\u0029",
             "name": "type_optional",
             "summary": "",
@@ -1105,6 +1110,51 @@ Search.appendIndex(
             "name": "toString",
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type-Native-IntegerType.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\IntersectionType",
+            "name": "IntersectionType",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-IntersectionType.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\IntersectionType\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-IntersectionType.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\IntersectionType\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-IntersectionType.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\IntersectionType\u003A\u003Aassert\u0028\u0029",
+            "name": "assert",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "url": "classes/Flow-Types-Type-Native-IntersectionType.html#method_assert"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\IntersectionType\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
+            "summary": "Takes\u0020a\u0020value\u0020and\u0020when\u0020necessary\u0020casts\u0020it\u0020to\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type-Native-IntersectionType.html#method_cast"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\IntersectionType\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type-Native-IntersectionType.html#method_isValid"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\IntersectionType\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-IntersectionType.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\IntersectionType\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
+            "url": "classes/Flow-Types-Type-Native-IntersectionType.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\IntersectionType\u003A\u003Atypes\u0028\u0029",
+            "name": "types",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-IntersectionType.html#method_types"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\MixedType",
             "name": "MixedType",
