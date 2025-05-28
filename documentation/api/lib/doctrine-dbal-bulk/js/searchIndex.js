@@ -16,6 +16,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Bulk.html#method_create"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Bulk\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "Delete\u0020data\u0020from\u0020the\u0020database\u0020in\u0020bulk\u0020based\u0020on\u0020the\u0020provided\u0020bulk\u0020data.",
+            "url": "classes/Flow-Doctrine-Bulk-Bulk.html#method_delete"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Bulk\u003A\u003Ainsert\u0028\u0029",
             "name": "insert",
             "summary": "Insert\u0020data\u0020into\u0020the\u0020database\u0020in\u0020bulk.",
@@ -126,6 +131,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-Dialect.html"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\Dialect\u003A\u003AprepareDelete\u0028\u0029",
+            "name": "prepareDelete",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-Dialect.html#method_prepareDelete"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\Dialect\u003A\u003AprepareInsert\u0028\u0029",
             "name": "prepareInsert",
             "summary": "",
@@ -145,6 +155,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLDialect.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLDialect\u003A\u003AprepareDelete\u0028\u0029",
+            "name": "prepareDelete",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLDialect.html#method_prepareDelete"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLDialect\u003A\u003AprepareInsert\u0028\u0029",
             "name": "prepareInsert",
@@ -215,6 +230,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLDialect\u003A\u003AprepareDelete\u0028\u0029",
+            "name": "prepareDelete",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method_prepareDelete"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLDialect\u003A\u003AprepareInsert\u0028\u0029",
             "name": "prepareInsert",
@@ -306,6 +326,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteDialect.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteDialect\u003A\u003AprepareDelete\u0028\u0029",
+            "name": "prepareDelete",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteDialect.html#method_prepareDelete"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteDialect\u003A\u003AprepareInsert\u0028\u0029",
             "name": "prepareInsert",
             "summary": "",
@@ -396,6 +421,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-QueryFactory-DbalQueryFactory.html"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\QueryFactory\\DbalQueryFactory\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-QueryFactory-DbalQueryFactory.html#method_delete"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\QueryFactory\\DbalQueryFactory\u003A\u003Ainsert\u0028\u0029",
             "name": "insert",
             "summary": "",
@@ -410,6 +440,11 @@ Search.appendIndex(
             "name": "QueryFactory",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-QueryFactory.html"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\QueryFactory\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-QueryFactory.html#method_delete"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\QueryFactory\u003A\u003Ainsert\u0028\u0029",
             "name": "insert",

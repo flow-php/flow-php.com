@@ -844,6 +844,70 @@ InsertOptions are platform specific, so please choose the right one for your dat
 
 </article>
                     <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_to_dbal_table_delete">
+        to_dbal_table_delete()
+        <a href="namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_table_delete" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">246</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Delete rows from database table based on the provided data.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">to_dbal_table_delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, mixed&gt;|<abbr title="\Doctrine\DBAL\Connection">Connection</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connection</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html"><abbr title="\Flow\ETL\Adapter\Doctrine\DbalLoader">DbalLoader</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>In order to control the size of the single request, use DataFrame::chunkSize() method just before calling DataFrame::load().</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$connection</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, mixed&gt;|<abbr title="\Doctrine\DBAL\Connection">Connection</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$table</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_table_delete#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Flow\ETL\Exception\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html"><abbr title="\Flow\ETL\Adapter\Doctrine\DbalLoader">DbalLoader</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_to_dbal_schema_table">
         to_dbal_schema_table()
         <a href="namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_schema_table" class="headerlink"><i class="fas fa-link"></i></a>
@@ -852,7 +916,7 @@ InsertOptions are platform specific, so please choose the right one for your dat
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">240</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 
     </aside>
 
@@ -913,7 +977,7 @@ InsertOptions are platform specific, so please choose the right one for your dat
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">249</span>
+    <span class="phpdocumentor-element-found-in__line">268</span>
 
     </aside>
 
@@ -960,7 +1024,7 @@ InsertOptions are platform specific, so please choose the right one for your dat
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">255</span>
+    <span class="phpdocumentor-element-found-in__line">274</span>
 
     </aside>
 
@@ -1020,7 +1084,7 @@ InsertOptions are platform specific, so please choose the right one for your dat
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">262</span>
+    <span class="phpdocumentor-element-found-in__line">281</span>
 
     </aside>
 
@@ -1073,7 +1137,7 @@ InsertOptions are platform specific, so please choose the right one for your dat
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">268</span>
+    <span class="phpdocumentor-element-found-in__line">287</span>
 
     </aside>
 
@@ -1126,7 +1190,7 @@ InsertOptions are platform specific, so please choose the right one for your dat
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">274</span>
+    <span class="phpdocumentor-element-found-in__line">293</span>
 
     </aside>
 
@@ -1172,7 +1236,7 @@ InsertOptions are platform specific, so please choose the right one for your dat
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">285</span>
+    <span class="phpdocumentor-element-found-in__line">304</span>
 
     </aside>
 
@@ -1218,7 +1282,7 @@ InsertOptions are platform specific, so please choose the right one for your dat
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">291</span>
+    <span class="phpdocumentor-element-found-in__line">310</span>
 
     </aside>
 
@@ -1264,7 +1328,7 @@ InsertOptions are platform specific, so please choose the right one for your dat
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-functions.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">297</span>
+    <span class="phpdocumentor-element-found-in__line">316</span>
 
     </aside>
 
@@ -1427,6 +1491,7 @@ InsertOptions are platform specific, so please choose the right one for your dat
                                                     <li class=""><a href="namespaces/flow-etl-adapter-doctrine.html#function_sqlite_insert_options">sqlite_insert_options()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-adapter-doctrine.html#function_table_schema_to_flow_schema">table_schema_to_flow_schema()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_schema_table">to_dbal_schema_table()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_table_delete">to_dbal_table_delete()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_table_insert">to_dbal_table_insert()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_table_update">to_dbal_table_update()</a></li>
                                             </ul>

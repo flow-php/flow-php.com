@@ -356,6 +356,11 @@ Search.appendIndex(
             "summary": "Update\u0020existing\u0020rows\u0020in\u0020database.",
             "url": "namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_table_update"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\to_dbal_table_delete\u0028\u0029",
+            "name": "to_dbal_table_delete",
+            "summary": "Delete\u0020rows\u0020from\u0020database\u0020table\u0020based\u0020on\u0020the\u0020provided\u0020data.",
+            "url": "namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_table_delete"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\to_dbal_schema_table\u0028\u0029",
             "name": "to_dbal_schema_table",
             "summary": "Converts\u0020a\u0020Flow\\ETL\\Schema\u0020to\u0020a\u0020Doctrine\\DBAL\\Schema\\Table.",
