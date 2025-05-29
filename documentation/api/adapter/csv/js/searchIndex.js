@@ -36,6 +36,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method_source"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor\u003A\u003AwithBOMRemoval\u0028\u0029",
+            "name": "withBOMRemoval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method_withBOMRemoval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor\u003A\u003AwithCharactersReadInLine\u0028\u0029",
             "name": "withCharactersReadInLine",
             "summary": "",
