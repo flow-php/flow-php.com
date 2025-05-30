@@ -36,6 +36,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Monolog-Http-Config-RequestConfig.html#method_includeUri"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Config\\RequestConfig\u003A\u003Asanitizers\u0028\u0029",
+            "name": "sanitizers",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Monolog-Http-Config-RequestConfig.html#method_sanitizers"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Config\\ResponseConfig",
             "name": "ResponseConfig",
             "summary": "",
@@ -76,6 +81,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Monolog-Http-Config-ResponseConfig.html#method_includeStatus"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Config\\ResponseConfig\u003A\u003Asanitizers\u0028\u0029",
+            "name": "sanitizers",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Monolog-Http-Config-ResponseConfig.html#method_sanitizers"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Config",
             "name": "Config",
             "summary": "",
@@ -96,6 +106,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Monolog-Http-Config.html#property_response"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\DSL\\mask\u0028\u0029",
+            "name": "mask",
+            "summary": "Create\u0020a\u0020new\u0020Mask\u0020sanitizer.",
+            "url": "namespaces/flow-bridge-monolog-http-dsl.html#function_mask"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Exception\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Monolog-Http-Exception-Exception.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Exception\\InvalidArgumentException",
+            "name": "InvalidArgumentException",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Monolog-Http-Exception-InvalidArgumentException.html"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\PSR7Processor",
             "name": "PSR7Processor",
             "summary": "",
@@ -110,6 +135,56 @@ Search.appendIndex(
             "name": "__invoke",
             "summary": "",
             "url": "classes/Flow-Bridge-Monolog-Http-PSR7Processor.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Sanitization\\Mask",
+            "name": "Mask",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Monolog-Http-Sanitization-Mask.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Sanitization\\Mask\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Monolog-Http-Sanitization-Mask.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Sanitization\\Mask\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "Create\u0020a\u0020Mask\u0020sanitizer\u0020from\u0020an\u0020array\u0020representation.",
+            "url": "classes/Flow-Bridge-Monolog-Http-Sanitization-Mask.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Sanitization\\Mask\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "Return\u0020an\u0020array\u0020representation\u0020of\u0020the\u0020sanitizer.",
+            "url": "classes/Flow-Bridge-Monolog-Http-Sanitization-Mask.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Sanitization\\Mask\u003A\u003Asanitize\u0028\u0029",
+            "name": "sanitize",
+            "summary": "Sanitize\u0020a\u0020string\u0020value.",
+            "url": "classes/Flow-Bridge-Monolog-Http-Sanitization-Mask.html#method_sanitize"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Sanitization\\Sanitizer",
+            "name": "Sanitizer",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Monolog-Http-Sanitization-Sanitizer.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Sanitization\\Sanitizer\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "Return\u0020an\u0020array\u0020representation\u0020of\u0020the\u0020sanitizer.",
+            "url": "classes/Flow-Bridge-Monolog-Http-Sanitization-Sanitizer.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Sanitization\\Sanitizer\u003A\u003Asanitize\u0028\u0029",
+            "name": "sanitize",
+            "summary": "Sanitize\u0020a\u0020string\u0020value.",
+            "url": "classes/Flow-Bridge-Monolog-Http-Sanitization-Sanitizer.html#method_sanitize"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Sanitization\\SanitizerFactory",
+            "name": "SanitizerFactory",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Monolog-Http-Sanitization-SanitizerFactory.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Sanitization\\SanitizerFactory\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "Create\u0020a\u0020sanitizer\u0020from\u0020an\u0020array\u0020representation.",
+            "url": "classes/Flow-Bridge-Monolog-Http-Sanitization-SanitizerFactory.html#method_fromArray"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -140,5 +215,20 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\DSL",
+            "name": "DSL",
+            "summary": "",
+            "url": "namespaces/flow-bridge-monolog-http-dsl.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "namespaces/flow-bridge-monolog-http-exception.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Http\\Sanitization",
+            "name": "Sanitization",
+            "summary": "",
+            "url": "namespaces/flow-bridge-monolog-http-sanitization.html"
         }            ]
 );

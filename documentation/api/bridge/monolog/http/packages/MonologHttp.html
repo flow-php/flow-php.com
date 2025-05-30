@@ -103,6 +103,13 @@
 
         
 
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="packages/MonologHttp.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Bridge-Monolog-Http-Sanitization-Sanitizer.html"><abbr title="\Flow\Bridge\Monolog\Http\Sanitization\Sanitizer">Sanitizer</abbr></a></dt>    </dl>
 
     <h4 id="toc-classes">
         Classes
@@ -110,7 +117,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Http-Config-RequestConfig.html"><abbr title="\Flow\Bridge\Monolog\Http\Config\RequestConfig">RequestConfig</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Http-Config-ResponseConfig.html"><abbr title="\Flow\Bridge\Monolog\Http\Config\ResponseConfig">ResponseConfig</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Http-Config.html"><abbr title="\Flow\Bridge\Monolog\Http\Config">Config</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Http-PSR7Processor.html"><abbr title="\Flow\Bridge\Monolog\Http\PSR7Processor">PSR7Processor</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Http-Config-RequestConfig.html"><abbr title="\Flow\Bridge\Monolog\Http\Config\RequestConfig">RequestConfig</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Http-Config-ResponseConfig.html"><abbr title="\Flow\Bridge\Monolog\Http\Config\ResponseConfig">ResponseConfig</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Http-Config.html"><abbr title="\Flow\Bridge\Monolog\Http\Config">Config</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Http-Exception-Exception.html"><abbr title="\Flow\Bridge\Monolog\Http\Exception\Exception">Exception</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Http-Exception-InvalidArgumentException.html"><abbr title="\Flow\Bridge\Monolog\Http\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Http-PSR7Processor.html"><abbr title="\Flow\Bridge\Monolog\Http\PSR7Processor">PSR7Processor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Http-Sanitization-Mask.html"><abbr title="\Flow\Bridge\Monolog\Http\Sanitization\Mask">Mask</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Http-Sanitization-SanitizerFactory.html"><abbr title="\Flow\Bridge\Monolog\Http\Sanitization\SanitizerFactory">SanitizerFactory</abbr></a></dt>    </dl>
 
 
 
@@ -122,7 +129,69 @@
 
         
 
-        
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="packages/MonologHttp.html#functions" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_mask">
+        mask()
+        <a href="namespaces/flow-bridge-monolog-http-dsl.html#function_mask" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/DSL/functions.php"><a href="files/src-bridge-monolog-http-src-flow-bridge-monolog-http-dsl-functions.html"><abbr title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">15</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a new Mask sanitizer.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">mask</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$character</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;*&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Monolog-Http-Sanitization-Mask.html"><abbr title="\Flow\Bridge\Monolog\Http\Sanitization\Mask">Mask</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$character</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;*&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><ul>
+<li>character used for masking</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$offset</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><ul>
+<li>start masking values from this offset</li>
+</ul>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Monolog-Http-Sanitization-Mask.html"><abbr title="\Flow\Bridge\Monolog\Http\Sanitization\Mask">Mask</abbr></a></span>
+            </section>
+
+</article>
+            </section>
+
         <div class="phpdocumentor-modal" id="source-view">
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
@@ -226,11 +295,19 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                                        <li><a href="packages/MonologHttp.html#toc-classes">Classes</a></li>
-                                                                                                                    </ul>
+                                                                                    <li><a href="packages/MonologHttp.html#toc-interfaces">Interfaces</a></li>
+                                                                <li><a href="packages/MonologHttp.html#toc-classes">Classes</a></li>
+                                                                                                                            <li><a href="packages/MonologHttp.html#toc-functions">Functions</a></li>
+                                    </ul>
             </li>
 
             
+                            <li class="phpdocumentor-on-this-page-section__title">Functions</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="namespaces/flow-bridge-monolog-http-dsl.html#function_mask">mask()</a></li>
+                                            </ul>
+                </li>
                     </ul>
     </section>
 

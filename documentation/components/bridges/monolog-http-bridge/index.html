@@ -66,15 +66,15 @@
         "flowbite": "https://flow-php.com/assets/vendor/flowbite/flowbite.index-52ed4d07721f65b94d4d6948d82e876b.js",
         "@symfony/stimulus-bundle": "https://flow-php.com/assets/@symfony/stimulus-bundle/loader-9311b8ea36bad0f6168e687b4d6dee73.js",
         "@hotwired/stimulus": "https://flow-php.com/assets/vendor/@hotwired/stimulus/stimulus.index-6f73d85e0fa2bcb3802562288e3f3042.js",
-        "https://flow-php.com/assets/@symfony/stimulus-bundle/controllers.js": "https://flow-php.com/assets/@symfony/stimulus-bundle/controllers-45be3bfeb47517111aa9281be34b7560.js",
+        "https://flow-php.com/assets/@symfony/stimulus-bundle/controllers.js": "https://flow-php.com/assets/@symfony/stimulus-bundle/controllers-097c0f639f1f8a803847626bdd237c97.js",
         "https://flow-php.com/assets/controllers/scroll_to_top_controller.js": "https://flow-php.com/assets/controllers/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
+        "https://flow-php.com/assets/controllers/clipboard_controller.js": "https://flow-php.com/assets/controllers/clipboard_controller-6aefa8a9dec3271dae2f05b464bf9204.js",
+        "https://flow-php.com/assets/controllers/cookie_fallback_controller.js": "https://flow-php.com/assets/controllers/cookie_fallback_controller-ce36427c60fcb887b8bd44d3d08611fe.js",
+        "https://flow-php.com/assets/controllers/cookie_consent_controller.js": "https://flow-php.com/assets/controllers/cookie_consent_controller-13ae41288d40929b4b71be10421129db.js",
+        "https://flow-php.com/assets/controllers/all_links_external_controller.js": "https://flow-php.com/assets/controllers/all_links_external_controller-3d9fa0aa855dc5722728d005bdf6ab1d.js",
         "https://flow-php.com/assets/controllers/syntax_highlight_controller.js": "https://flow-php.com/assets/controllers/syntax_highlight_controller-f3f4058d12e9c1cdcda49210dcab42b0.js",
         "https://flow-php.com/assets/prismjs/themes/prism-flow.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22https%3A%2F%2Fflow-php.com%2Fassets%2Fprismjs%2Fthemes%2Fprism-flow-fd41d42cbe47222136f28692af336476.css%22%7D%29%29",
         "https://flow-php.com/assets/prismjs/plugins/autolinker/autolinker.js": "https://flow-php.com/assets/prismjs/plugins/autolinker/autolinker-e906ddf9b7d89f169c9cf40a53e5605d.js",
-        "https://flow-php.com/assets/controllers/cookie_fallback_controller.js": "https://flow-php.com/assets/controllers/cookie_fallback_controller-ce36427c60fcb887b8bd44d3d08611fe.js",
-        "https://flow-php.com/assets/controllers/all_links_external_controller.js": "https://flow-php.com/assets/controllers/all_links_external_controller-3d9fa0aa855dc5722728d005bdf6ab1d.js",
-        "https://flow-php.com/assets/controllers/clipboard_controller.js": "https://flow-php.com/assets/controllers/clipboard_controller-6aefa8a9dec3271dae2f05b464bf9204.js",
-        "https://flow-php.com/assets/controllers/cookie_consent_controller.js": "https://flow-php.com/assets/controllers/cookie_consent_controller-13ae41288d40929b4b71be10421129db.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22https%3A%2F%2Fflow-php.com%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-08e34691d22388e6974e6cb2bfbcbfd0.css%22%7D%29%29",
         "clipboard": "https://flow-php.com/assets/vendor/clipboard/clipboard.index-dcdefe2499a3b69abd4ab17006bfd09b.js",
         "prismjs": "https://flow-php.com/assets/vendor/prismjs/prismjs.index-32f42fea44a2d889c5304d34764c08b7.js",
@@ -101,7 +101,7 @@
 <link rel="modulepreload" href="https://flow-php.com/assets/vendor/flowbite/flowbite.index-52ed4d07721f65b94d4d6948d82e876b.js">
 <link rel="modulepreload" href="https://flow-php.com/assets/@symfony/stimulus-bundle/loader-9311b8ea36bad0f6168e687b4d6dee73.js">
 <link rel="modulepreload" href="https://flow-php.com/assets/vendor/@hotwired/stimulus/stimulus.index-6f73d85e0fa2bcb3802562288e3f3042.js">
-<link rel="modulepreload" href="https://flow-php.com/assets/@symfony/stimulus-bundle/controllers-45be3bfeb47517111aa9281be34b7560.js">
+<link rel="modulepreload" href="https://flow-php.com/assets/@symfony/stimulus-bundle/controllers-097c0f639f1f8a803847626bdd237c97.js">
 <link rel="modulepreload" href="https://flow-php.com/assets/controllers/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js">
 <script type="module">import 'app';</script>
     </head>
@@ -329,6 +329,90 @@ $logger-&gt;pushHandler(new StreamHandler(__DIR__ . '/logs.txt', LogLevel::DEBUG
 <li><code>Flow\Bridge\Monolog\Http\Config\RequestConfig</code></li>
 <li><code>Flow\Bridge\Monolog\Http\Config\ResponseConfig</code></li>
 </ul>
+<h2><a id="flow-php-sanitization" href="#content-sanitization" class="mr-2" aria-hidden="true" title="Permalink">#</a>Sanitization</h2>
+<p>The bridge provides a way to sanitize sensitive data in the normalized Request/Response objects. This is useful for masking sensitive information like passwords, tokens, and other credentials.</p>
+<h3><a id="flow-php-using-sanitizers" href="#content-using-sanitizers" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using Sanitizers</h3>
+<p>You can configure sanitizers for both request and response objects:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+use Flow\Bridge\Monolog\Http\Config;
+use Flow\Bridge\Monolog\Http\Config\RequestConfig;
+use Flow\Bridge\Monolog\Http\Config\ResponseConfig;
+use Flow\Bridge\Monolog\Http\PSR7Processor;
+use function Flow\Bridge\Monolog\Http\DSL\mask;
+
+$logger = new Logger('logs-test');
+$logger-&gt;pushProcessor(
+    new PSR7Processor(
+        new Config(
+            request: new RequestConfig(
+                withBody: true,
+                sanitizers: [
+                    'password' =&gt; mask(), // Mask the entire value with asterisks (*)
+                    'access_token' =&gt; mask('#'), // Mask the entire value with hash symbols (#)
+                    'key' =&gt; mask('*', 2), // Keep the first 2 characters, mask the rest with asterisks
+                ]
+            ),
+            response: new ResponseConfig(
+                withBody: true,
+                sanitizers: [
+                    'credentials' =&gt; mask(), // Mask the entire value with asterisks
+                    'access_token' =&gt; mask('#', 3), // Keep the first 3 characters, mask the rest with hash symbols
+                ]
+            )
+        )
+    )
+);
+</code></pre>
+<h3><a id="flow-php-sanitizer-types" href="#content-sanitizer-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Sanitizer Types</h3>
+<p>Currently, the bridge supports the following sanitizer types:</p>
+<h4><a id="flow-php-mask-sanitizer" href="#content-mask-sanitizer" class="mr-2" aria-hidden="true" title="Permalink">#</a>Mask Sanitizer</h4>
+<p>The Mask sanitizer replaces characters in a string with a specified character. You can configure:</p>
+<ul>
+<li><code>character</code>: The character used for masking (default is '*')</li>
+<li><code>offset</code>: The position from which to start masking (default is 0, meaning mask the entire string)</li>
+</ul>
+<p>You can create a Mask sanitizer in two ways:</p>
+<ol>
+<li>Using the DSL function:</li>
+</ol>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\Bridge\Monolog\Http\DSL\mask;
+
+// Mask the entire value with asterisks
+$sanitizer = mask();
+
+// Mask the entire value with hash symbols
+$sanitizer = mask('#');
+
+// Keep the first 2 characters, mask the rest with asterisks
+$sanitizer = mask('*', 2);
+</code></pre>
+<ol start="2">
+<li>Using an array configuration:</li>
+</ol>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$sanitizers = [
+    'password' =&gt; ['type' =&gt; 'mask', 'character' =&gt; '*', 'offset' =&gt; 0],
+    'access_token' =&gt; ['type' =&gt; 'mask', 'character' =&gt; '#', 'offset' =&gt; 3],
+];
+</code></pre>
+<h3><a id="flow-php-example" href="#content-example" class="mr-2" aria-hidden="true" title="Permalink">#</a>Example</h3>
+<p>When you log a request with sensitive data:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$logger-&gt;info('HTTP Request', [
+    'request' =&gt; $request, // PSR-7 request with sensitive data in the body
+]);
+</code></pre>
+<p>The sensitive fields will be masked in the log:</p>
+<pre class="language-json"><code class="language-json" data-controller="syntax-highlight">{
+    "username": "john_doe",
+    "password": "***************",
+    "email": "john@example.com",
+    "access_token": "###############",
+    "data": {
+        "key": "se***********",
+        "value": "public_value"
+    }
+}
+</code></pre>
 
 
             <hr class="!mt-8 !mb-8"/>

@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php"><a href="files/src-bridge-monolog-http-src-flow-bridge-monolog-http-config-requestconfig.html"><abbr title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php">RequestConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
@@ -188,6 +188,12 @@
                                 &nbsp;: bool    </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Monolog-Http-Config-RequestConfig.html#method_sanitizers">sanitizers()</a>
+    <span>
+                                &nbsp;: array&lt;string, <a href="classes/Flow-Bridge-Monolog-Http-Sanitization-Sanitizer.html"><abbr title="\Flow\Bridge\Monolog\Http\Sanitization\Sanitizer">Sanitizer</abbr></a>&gt;    </span>
+</dt>
+
     </dl>
 
 
@@ -216,14 +222,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php"><a href="files/src-bridge-monolog-http-src-flow-bridge-monolog-http-config-requestconfig.html"><abbr title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php">RequestConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withMethod</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withUri</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withBody</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bodySizeLimit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1024 * 1024 * 32</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[&#039;host&#039;, &#039;accept&#039;, &#039;user-agent&#039;]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withMethod</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withUri</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withBody</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bodySizeLimit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1024 * 1024 * 32</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[&#039;host&#039;, &#039;accept&#039;, &#039;user-agent&#039;]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string, array&lt;string|int, mixed&gt;|<a href="classes/Flow-Bridge-Monolog-Http-Sanitization-Sanitizer.html"><abbr title="\Flow\Bridge\Monolog\Http\Sanitization\Sanitizer">Sanitizer</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sanitizers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -261,8 +267,15 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$headers</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[&#039;host&#039;, &#039;accept&#039;, &#039;user-agent&#039;]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$sanitizers</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, array&lt;string|int, mixed&gt;|<a href="classes/Flow-Bridge-Monolog-Http-Sanitization-Sanitizer.html"><abbr title="\Flow\Bridge\Monolog\Http\Sanitization\Sanitizer">Sanitizer</abbr></a>&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -288,7 +301,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php"><a href="files/src-bridge-monolog-http-src-flow-bridge-monolog-http-config-requestconfig.html"><abbr title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php">RequestConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -326,7 +339,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php"><a href="files/src-bridge-monolog-http-src-flow-bridge-monolog-http-config-requestconfig.html"><abbr title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php">RequestConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -364,7 +377,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php"><a href="files/src-bridge-monolog-http-src-flow-bridge-monolog-http-config-requestconfig.html"><abbr title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php">RequestConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -402,7 +415,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php"><a href="files/src-bridge-monolog-http-src-flow-bridge-monolog-http-config-requestconfig.html"><abbr title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php">RequestConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -440,7 +453,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php"><a href="files/src-bridge-monolog-http-src-flow-bridge-monolog-http-config-requestconfig.html"><abbr title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php">RequestConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -461,6 +474,44 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_sanitizers">
+        sanitizers()
+        <a href="classes/Flow-Bridge-Monolog-Http-Config-RequestConfig.html#method_sanitizers" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php"><a href="files/src-bridge-monolog-http-src-flow-bridge-monolog-http-config-requestconfig.html"><abbr title="src/bridge/monolog/http/src/Flow/Bridge/Monolog/Http/Config/RequestConfig.php">RequestConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">83</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">sanitizers</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/Flow-Bridge-Monolog-Http-Sanitization-Sanitizer.html"><abbr title="\Flow\Bridge\Monolog\Http\Sanitization\Sanitizer">Sanitizer</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/Flow-Bridge-Monolog-Http-Sanitization-Sanitizer.html"><abbr title="\Flow\Bridge\Monolog\Http\Sanitization\Sanitizer">Sanitizer</abbr></a>&gt;</span>
             </section>
 
 </article>
@@ -583,6 +634,7 @@
                                             <li class=""><a href="classes/Flow-Bridge-Monolog-Http-Config-RequestConfig.html#method_includeHeaders">includeHeaders()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Monolog-Http-Config-RequestConfig.html#method_includeMethod">includeMethod()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Monolog-Http-Config-RequestConfig.html#method_includeUri">includeUri()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Monolog-Http-Config-RequestConfig.html#method_sanitizers">sanitizers()</a></li>
                                     </ul>
             </li>
                     </ul>
