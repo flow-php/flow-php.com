@@ -2276,6 +2276,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_count"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\call\u0028\u0029",
+            "name": "call",
+            "summary": "Calls\u0020a\u0020user\u002Ddefined\u0020function\u0020with\u0020the\u0020given\u0020parameters.",
+            "url": "namespaces/flow-etl-dsl.html#function_call"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\array_unpack\u0028\u0029",
             "name": "array_unpack",
             "summary": "Unpacks\u0020each\u0020element\u0020of\u0020an\u0020array\u0020into\u0020a\u0020new\u0020entry,\u0020using\u0020the\u0020array\u0020key\u0020as\u0020the\u0020entry\u0020name.",
@@ -4216,6 +4221,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Between.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\CallUserFunc",
+            "name": "CallUserFunc",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-CallUserFunc.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\CallUserFunc\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-CallUserFunc.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\CallUserFunc\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-CallUserFunc.html#method_eval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Capitalize",
             "name": "Capitalize",
             "summary": "",
@@ -5535,6 +5555,11 @@ Search.appendIndex(
             "name": "between",
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_between"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Acall\u0028\u0029",
+            "name": "call",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_call"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Acapitalize\u0028\u0029",
             "name": "capitalize",
