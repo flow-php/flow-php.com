@@ -16,6 +16,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-types-dsl.html#function_type_intersection"
         },                {
+            "fqsen": "\\Flow\\Types\\DSL\\type_numeric_string\u0028\u0029",
+            "name": "type_numeric_string",
+            "summary": "",
+            "url": "namespaces/flow-types-dsl.html#function_type_numeric_string"
+        },                {
             "fqsen": "\\Flow\\Types\\DSL\\type_optional\u0028\u0029",
             "name": "type_optional",
             "summary": "",
@@ -630,6 +635,36 @@ Search.appendIndex(
             "name": "toString",
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type-Logical-NonEmptyStringType.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\NumericStringType",
+            "name": "NumericStringType",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-NumericStringType.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\NumericStringType\u003A\u003Aassert\u0028\u0029",
+            "name": "assert",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "url": "classes/Flow-Types-Type-Logical-NumericStringType.html#method_assert"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\NumericStringType\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
+            "summary": "Takes\u0020a\u0020value\u0020and\u0020when\u0020necessary\u0020casts\u0020it\u0020to\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type-Logical-NumericStringType.html#method_cast"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\NumericStringType\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type-Logical-NumericStringType.html#method_isValid"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\NumericStringType\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-NumericStringType.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\NumericStringType\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
+            "url": "classes/Flow-Types-Type-Logical-NumericStringType.html#method_toString"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\OptionalType",
             "name": "OptionalType",
