@@ -2806,6 +2806,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_analyze"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\match_cases\u0028\u0029",
+            "name": "match_cases",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_match_cases"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\match_condition\u0028\u0029",
+            "name": "match_condition",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_match_condition"
+        },                {
             "fqsen": "\\Flow\\ETL\\ErrorHandler\\IgnoreError",
             "name": "IgnoreError",
             "summary": "",
@@ -4910,6 +4920,41 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Literal.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCase",
+            "name": "MatchCase",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-MatchCases-MatchCase.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCase\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-MatchCases-MatchCase.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCase\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-MatchCases-MatchCase.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCase\u003A\u003Avalid\u0028\u0029",
+            "name": "valid",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-MatchCases-MatchCase.html#method_valid"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\MatchCases",
+            "name": "MatchCases",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-MatchCases.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-MatchCases.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-MatchCases.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Max",
             "name": "Max",
@@ -11355,6 +11400,11 @@ Search.appendIndex(
             "name": "Between",
             "summary": "",
             "url": "namespaces/flow-etl-function-between.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\MatchCases",
+            "name": "MatchCases",
+            "summary": "",
+            "url": "namespaces/flow-etl-function-matchcases.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction",
             "name": "ScalarFunction",
