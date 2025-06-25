@@ -126,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php"><a href="files/src-lib-types-src-flow-types-type-logical-structuretype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php">StructureType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -189,6 +189,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Types-Type-Logical-StructureType.html#method_allowsExtra">allowsExtra()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-StructureType.html#method_assert">assert()</a>
     <span>
                                 &nbsp;: <abbr title="\Flow\Types\T">T</abbr>    </span>
@@ -211,7 +217,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-StructureType.html#method_fromArray">fromArray()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Types-Type-Logical-StructureType.html"><abbr title="\Flow\Types\Type\Logical\StructureType">StructureType</abbr></a>&lt;string|int, array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;&gt;    </span>
+                                &nbsp;: <a href="classes/Flow-Types-Type-Logical-StructureType.html"><abbr title="\Flow\Types\Type\Logical\StructureType">StructureType</abbr></a>&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -224,7 +230,13 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-StructureType.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{type: "structure", elements: array}    </span>
+                                &nbsp;: array{type: "structure", elements: array<string,array<string,mixed>>, optional_elements: array<string,array<string,mixed>>, allow_extra: bool}    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Types-Type-Logical-StructureType.html#method_optionalElements">optionalElements()</a>
+    <span>
+                                &nbsp;: array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -262,14 +274,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php"><a href="files/src-lib-types-src-flow-types-type-logical-structuretype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php">StructureType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Logical\T">T</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$elements</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\T">T</abbr>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$elements</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\T">T</abbr>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$optionalElements</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowExtra</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -279,8 +291,22 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$elements</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Types\Type\Logical\T">T</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\T">T</abbr>&gt;&gt;</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$optionalElements</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\T">T</abbr>&gt;&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$allowExtra</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -313,6 +339,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_allowsExtra">
+        allowsExtra()
+        <a href="classes/Flow-Types-Type-Logical-StructureType.html#method_allowsExtra" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php"><a href="files/src-lib-types-src-flow-types-type-logical-structuretype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php">StructureType.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">100</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">allowsExtra</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_assert">
         assert()
         <a href="classes/Flow-Types-Type-Logical-StructureType.html#method_assert" class="headerlink"><i class="fas fa-link"></i></a>
@@ -321,7 +385,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php"><a href="files/src-lib-types-src-flow-types-type-logical-structuretype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php">StructureType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -374,7 +438,7 @@ When assert method is used, it will additionally narrow the type of the returned
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php"><a href="files/src-lib-types-src-flow-types-type-logical-structuretype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php">StructureType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -426,7 +490,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php"><a href="files/src-lib-types-src-flow-types-type-logical-structuretype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php">StructureType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
@@ -464,14 +528,14 @@ When cast method is used, it will additionally narrow the type of the returned v
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php"><a href="files/src-lib-types-src-flow-types-type-logical-structuretype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php">StructureType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{type: "structure", elements: array}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-StructureType.html"><abbr title="\Flow\Types\Type\Logical\StructureType">StructureType</abbr></a>&lt;string|int, array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;&gt;</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-StructureType.html"><abbr title="\Flow\Types\Type\Logical\StructureType">StructureType</abbr></a>&lt;string|int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -481,7 +545,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$data</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array{type: "structure", elements: array}</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -494,7 +558,7 @@ When cast method is used, it will additionally narrow the type of the returned v
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-StructureType.html"><abbr title="\Flow\Types\Type\Logical\StructureType">StructureType</abbr></a>&lt;string|int, array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-StructureType.html"><abbr title="\Flow\Types\Type\Logical\StructureType">StructureType</abbr></a>&lt;string|int, mixed&gt;</span>
             </section>
 
 </article>
@@ -512,7 +576,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php"><a href="files/src-lib-types-src-flow-types-type-logical-structuretype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php">StructureType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
@@ -563,14 +627,14 @@ When cast method is used, it will additionally narrow the type of the returned v
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php"><a href="files/src-lib-types-src-flow-types-type-logical-structuretype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php">StructureType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{type: "structure", elements: array}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{type: "structure", elements: array<string,array<string,mixed>>, optional_elements: array<string,array<string,mixed>>, allow_extra: bool}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -583,7 +647,45 @@ When cast method is used, it will additionally narrow the type of the returned v
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{type: "structure", elements: array}</span>
+        <span class="phpdocumentor-signature__response_type">array{type: "structure", elements: array<string,array<string,mixed>>, optional_elements: array<string,array<string,mixed>>, allow_extra: bool}</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_optionalElements">
+        optionalElements()
+        <a href="classes/Flow-Types-Type-Logical-StructureType.html#method_optionalElements" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php"><a href="files/src-lib-types-src-flow-types-type-logical-structuretype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php">StructureType.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">229</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">optionalElements</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;</span>
             </section>
 
 </article>
@@ -601,7 +703,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php"><a href="files/src-lib-types-src-flow-types-type-logical-structuretype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/StructureType.php">StructureType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">234</span>
 
     </aside>
 
@@ -746,12 +848,14 @@ When cast method is used, it will additionally narrow the type of the returned v
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Types-Type-Logical-StructureType.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-Types-Type-Logical-StructureType.html#method_allowsExtra">allowsExtra()</a></li>
                                             <li class=""><a href="classes/Flow-Types-Type-Logical-StructureType.html#method_assert">assert()</a></li>
                                             <li class=""><a href="classes/Flow-Types-Type-Logical-StructureType.html#method_cast">cast()</a></li>
                                             <li class=""><a href="classes/Flow-Types-Type-Logical-StructureType.html#method_elements">elements()</a></li>
                                             <li class=""><a href="classes/Flow-Types-Type-Logical-StructureType.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-Types-Type-Logical-StructureType.html#method_isValid">isValid()</a></li>
                                             <li class=""><a href="classes/Flow-Types-Type-Logical-StructureType.html#method_normalize">normalize()</a></li>
+                                            <li class=""><a href="classes/Flow-Types-Type-Logical-StructureType.html#method_optionalElements">optionalElements()</a></li>
                                             <li class=""><a href="classes/Flow-Types-Type-Logical-StructureType.html#method_toString">toString()</a></li>
                                     </ul>
             </li>

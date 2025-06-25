@@ -251,6 +251,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Exception-RuntimeException.html"
         },                {
+            "fqsen": "\\Flow\\Types\\PHPStan\\StructureTypeReturnTypeExtension",
+            "name": "StructureTypeReturnTypeExtension",
+            "summary": "",
+            "url": "classes/Flow-Types-PHPStan-StructureTypeReturnTypeExtension.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\PHPStan\\StructureTypeReturnTypeExtension\u003A\u003AgetTypeFromFunctionCall\u0028\u0029",
+            "name": "getTypeFromFunctionCall",
+            "summary": "",
+            "url": "classes/Flow-Types-PHPStan-StructureTypeReturnTypeExtension.html#method_getTypeFromFunctionCall"
+        },                {
+            "fqsen": "\\Flow\\Types\\PHPStan\\StructureTypeReturnTypeExtension\u003A\u003AisFunctionSupported\u0028\u0029",
+            "name": "isFunctionSupported",
+            "summary": "",
+            "url": "classes/Flow-Types-PHPStan-StructureTypeReturnTypeExtension.html#method_isFunctionSupported"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\ArrayContentDetector",
             "name": "ArrayContentDetector",
             "summary": "",
@@ -616,6 +631,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-Logical-LiteralType.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\LiteralType\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-LiteralType.html#method_fromArray"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\LiteralType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
             "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
@@ -881,6 +901,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-Logical-StructureType.html#method_fromArray"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003AallowsExtra\u0028\u0029",
+            "name": "allowsExtra",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-StructureType.html#method_allowsExtra"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
             "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
@@ -905,6 +930,11 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-Types-Type-Logical-StructureType.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003AoptionalElements\u0028\u0029",
+            "name": "optionalElements",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-StructureType.html#method_optionalElements"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003AtoString\u0028\u0029",
             "name": "toString",
@@ -1740,6 +1770,11 @@ Search.appendIndex(
             "name": "Exception",
             "summary": "",
             "url": "namespaces/flow-types-exception.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\PHPStan",
+            "name": "PHPStan",
+            "summary": "",
+            "url": "namespaces/flow-types-phpstan.html"
         },                {
             "fqsen": "\\Flow\\Types\\Type",
             "name": "Type",

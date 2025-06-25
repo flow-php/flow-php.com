@@ -159,7 +159,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-ArrayContentDetector.html#method_firstKeyType">firstKeyType()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Types-Type-Native-IntegerType.html"><abbr title="\Flow\Types\Type\Native\IntegerType">IntegerType</abbr></a>|<a href="classes/Flow-Types-Type-Native-StringType.html"><abbr title="\Flow\Types\Type\Native\StringType">StringType</abbr></a>|null    </span>
+                                &nbsp;: null|<a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, int|string&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -220,14 +220,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php"><a href="files/src-lib-types-src-flow-types-type-arraycontentdetector.html"><abbr title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php">ArrayContentDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Types-Type-Types.html"><abbr title="\Flow\Types\Type\Types">Types</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uniqueKeysType</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Types-Type-Types.html"><abbr title="\Flow\Types\Type\Types">Types</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uniqueValuesType</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isList</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Types-Type-Types.html"><abbr title="\Flow\Types\Type\Types">Types</abbr></a>&lt;string|int, string|int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uniqueKeysType</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Types-Type-Types.html"><abbr title="\Flow\Types\Type\Types">Types</abbr></a>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uniqueValuesType</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isList</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -237,14 +237,14 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$uniqueKeysType</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Types-Type-Types.html"><abbr title="\Flow\Types\Type\Types">Types</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Types-Type-Types.html"><abbr title="\Flow\Types\Type\Types">Types</abbr></a>&lt;string|int, string|int&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$uniqueValuesType</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Types-Type-Types.html"><abbr title="\Flow\Types\Type\Types">Types</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Types-Type-Types.html"><abbr title="\Flow\Types\Type\Types">Types</abbr></a>&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -278,14 +278,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php"><a href="files/src-lib-types-src-flow-types-type-arraycontentdetector.html"><abbr title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php">ArrayContentDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">firstKeyType</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Native-IntegerType.html"><abbr title="\Flow\Types\Type\Native\IntegerType">IntegerType</abbr></a>|<a href="classes/Flow-Types-Type-Native-StringType.html"><abbr title="\Flow\Types\Type\Native\StringType">StringType</abbr></a>|null</span></code>
+                    <span class="phpdocumentor-signature__name">firstKeyType</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, int|string&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -298,7 +298,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Native-IntegerType.html"><abbr title="\Flow\Types\Type\Native\IntegerType">IntegerType</abbr></a>|<a href="classes/Flow-Types-Type-Native-StringType.html"><abbr title="\Flow\Types\Type\Native\StringType">StringType</abbr></a>|null</span>
+        <span class="phpdocumentor-signature__response_type">null|<a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, int|string&gt;</span>
             </section>
 
 </article>
@@ -316,7 +316,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php"><a href="files/src-lib-types-src-flow-types-type-arraycontentdetector.html"><abbr title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php">ArrayContentDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -354,7 +354,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php"><a href="files/src-lib-types-src-flow-types-type-arraycontentdetector.html"><abbr title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php">ArrayContentDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -369,6 +369,22 @@
     
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Types-Type-ArrayContentDetector.html#method_isList#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">phpstan-assert-if-true</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Type<int> $this-&gt;firstKeyType()</p>
+</section>
+
+                                    </dd>
+                                            </dl>
 
     
 
@@ -392,7 +408,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php"><a href="files/src-lib-types-src-flow-types-type-arraycontentdetector.html"><abbr title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php">ArrayContentDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -407,6 +423,22 @@
     
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Types-Type-ArrayContentDetector.html#method_isMap#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">phpstan-assert-if-true</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Type&lt;int|string&gt; $this-&gt;firstKeyType()</p>
+</section>
+
+                                    </dd>
+                                            </dl>
 
     
 
@@ -430,7 +462,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php"><a href="files/src-lib-types-src-flow-types-type-arraycontentdetector.html"><abbr title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php">ArrayContentDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -468,7 +500,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php"><a href="files/src-lib-types-src-flow-types-type-arraycontentdetector.html"><abbr title="src/lib/types/src/Flow/Types/Type/ArrayContentDetector.php">ArrayContentDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 

@@ -2283,7 +2283,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\array_unpack\u0028\u0029",
             "name": "array_unpack",
-            "summary": "Unpacks\u0020each\u0020element\u0020of\u0020an\u0020array\u0020into\u0020a\u0020new\u0020entry,\u0020using\u0020the\u0020array\u0020key\u0020as\u0020the\u0020entry\u0020name.",
+            "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_array_unpack"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\array_expand\u0028\u0029",
@@ -2505,6 +2505,11 @@ Search.appendIndex(
             "name": "schema",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\empty_schema\u0028\u0029",
+            "name": "empty_schema",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_empty_schema"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\schema_to_json\u0028\u0029",
             "name": "schema_to_json",
@@ -4921,25 +4926,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Literal.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCase",
-            "name": "MatchCase",
+            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCondition",
+            "name": "MatchCondition",
             "summary": "",
-            "url": "classes/Flow-ETL-Function-MatchCases-MatchCase.html"
+            "url": "classes/Flow-ETL-Function-MatchCases-MatchCondition.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCase\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCondition\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Function-MatchCases-MatchCase.html#method___construct"
+            "url": "classes/Flow-ETL-Function-MatchCases-MatchCondition.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCase\u003A\u003Aeval\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCondition\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
             "summary": "",
-            "url": "classes/Flow-ETL-Function-MatchCases-MatchCase.html#method_eval"
+            "url": "classes/Flow-ETL-Function-MatchCases-MatchCondition.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCase\u003A\u003Avalid\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCondition\u003A\u003Avalid\u0028\u0029",
             "name": "valid",
             "summary": "",
-            "url": "classes/Flow-ETL-Function-MatchCases-MatchCase.html#method_valid"
+            "url": "classes/Flow-ETL-Function-MatchCases-MatchCondition.html#method_valid"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\MatchCases",
             "name": "MatchCases",
@@ -5998,7 +6003,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aunpack\u0028\u0029",
             "name": "unpack",
-            "summary": "Unpacks\u0020each\u0020element\u0020of\u0020an\u0020array\u0020into\u0020a\u0020new\u0020entry,\u0020using\u0020the\u0020array\u0020key\u0020as\u0020the\u0020entry\u0020name.",
+            "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_unpack"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aupper\u0028\u0029",
@@ -8650,11 +8655,6 @@ Search.appendIndex(
             "name": "toString",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-StringEntry.html#method_toString"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\StringEntry\u003A\u003AtoUppercase\u0028\u0029",
-            "name": "toUppercase",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-StringEntry.html#method_toUppercase"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\StringEntry\u003A\u003Atype\u0028\u0029",
             "name": "type",
