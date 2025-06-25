@@ -2506,11 +2506,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_schema"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\empty_schema\u0028\u0029",
-            "name": "empty_schema",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_empty_schema"
-        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\schema_to_json\u0028\u0029",
             "name": "schema_to_json",
             "summary": "",
