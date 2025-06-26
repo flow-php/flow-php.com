@@ -5241,6 +5241,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Parameter.html#method_asString"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasType\u0028\u0029",
+            "name": "asType",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_asType"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
             "summary": "",

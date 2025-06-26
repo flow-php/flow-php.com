@@ -1681,15 +1681,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-ValueComparator.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Types\\Type\\ValueComparator\u003A\u003AassertAllComparable\u0028\u0029",
-            "name": "assertAllComparable",
+            "fqsen": "\\Flow\\Types\\Type\\ValueComparator\u003A\u003AassertAllTypesComparable\u0028\u0029",
+            "name": "assertAllTypesComparable",
             "summary": "",
-            "url": "classes/Flow-Types-Type-ValueComparator.html#method_assertAllComparable"
+            "url": "classes/Flow-Types-Type-ValueComparator.html#method_assertAllTypesComparable"
         },                {
-            "fqsen": "\\Flow\\Types\\Type\\ValueComparator\u003A\u003AassertComparable\u0028\u0029",
-            "name": "assertComparable",
+            "fqsen": "\\Flow\\Types\\Type\\ValueComparator\u003A\u003AassertComparableTypes\u0028\u0029",
+            "name": "assertComparableTypes",
             "summary": "",
-            "url": "classes/Flow-Types-Type-ValueComparator.html#method_assertComparable"
+            "url": "classes/Flow-Types-Type-ValueComparator.html#method_assertComparableTypes"
         },                {
             "fqsen": "\\Flow\\Types\\Type",
             "name": "Type",
