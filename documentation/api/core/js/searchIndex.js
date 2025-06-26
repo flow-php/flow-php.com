@@ -2511,6 +2511,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_schema_to_json"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\schema_to_php\u0028\u0029",
+            "name": "schema_to_php",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_schema_to_php"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\schema_to_ascii\u0028\u0029",
+            "name": "schema_to_ascii",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_schema_to_ascii"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\schema_validate\u0028\u0029",
             "name": "schema_validate",
             "summary": "",
