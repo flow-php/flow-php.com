@@ -76,6 +76,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method_withSeparator"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLineReader",
+            "name": "CSVLineReader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVLineReader.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLineReader\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVLineReader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLineReader\u003A\u003AreadLines\u0028\u0029",
+            "name": "readLines",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVLineReader.html#method_readLines"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLoader",
             "name": "CSVLoader",
             "summary": "",
@@ -135,6 +150,21 @@ Search.appendIndex(
             "name": "write",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVRowNormalizer",
+            "name": "CSVRowNormalizer",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVRowNormalizer.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVRowNormalizer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVRowNormalizer.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVRowNormalizer\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "Normalize\u0020CSV\u0020row\u0020data\u0020to\u0020match\u0020the\u0020expected\u0020number\u0020of\u0020headers.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVRowNormalizer.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\Detector\\Option",
             "name": "Option",
