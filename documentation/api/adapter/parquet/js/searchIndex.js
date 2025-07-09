@@ -11,6 +11,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-adapter-parquet.html#function_to_parquet"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\array_to_generator\u0028\u0029",
+            "name": "array_to_generator",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-parquet.html#function_array_to_generator"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\empty_generator\u0028\u0029",
+            "name": "empty_generator",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-parquet.html#function_empty_generator"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor",
             "name": "ParquetExtractor",
             "summary": "",
