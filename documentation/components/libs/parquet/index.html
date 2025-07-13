@@ -597,6 +597,220 @@ You will need to play a bit with those values to find the best one for your use 
 <p>Obviously, compression is a trade-off between speed and size.
 If you want to achieve the best compression, you should use <code>GZIP</code> or <code>SNAPPY</code> which is a default compression algorithm.</p>
 <p>For not yet supported algorithms, please check our <a rel="noopener noreferrer" target="_blank" href="https://github.com/orgs/flow-php/projects/1">Roadmap</a> to understand when they will be supported.</p>
+<h2><a id="flow-php-column-encodings" href="#content-column-encodings" class="mr-2" aria-hidden="true" title="Permalink">#</a>Column Encodings</h2>
+<p>Parquet supports various column encoding algorithms that can significantly impact file size and query performance.
+You can specify custom encodings for individual columns using flat path notation.</p>
+<h3><a id="flow-php-available-encodings" href="#content-available-encodings" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Encodings</h3>
+<h4><a id="flow-php-plain" href="#content-plain" class="mr-2" aria-hidden="true" title="Permalink">#</a>PLAIN</h4>
+<p>The default encoding that stores values as-is without any compression scheme.</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>Small datasets where compression overhead isn't justified</li>
+<li>Columns with high cardinality and random distribution</li>
+<li>When you need maximum compatibility with other Parquet readers</li>
+</ul>
+<p><strong>Supported types:</strong> All column types</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Options;
+use Flow\Parquet\Option;
+
+$options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
+    'description' =&gt; 'PLAIN',
+    'uuid' =&gt; 'PLAIN'
+]);
+</code></pre>
+<h4><a id="flow-php-rledictionary" href="#content-rledictionary" class="mr-2" aria-hidden="true" title="Permalink">#</a>RLE_DICTIONARY</h4>
+<p>Run Length Encoding with Dictionary compression. Values are stored in a dictionary and replaced with indices.</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>Columns with low cardinality (many repeated values)</li>
+<li>String columns with repeated categories (status, country, department)</li>
+<li>Enumeration-like data</li>
+<li>Significant file size reduction (often 50-90% smaller)</li>
+</ul>
+<p><strong>Supported types:</strong> All types except <code>FIXED_LEN_BYTE_ARRAY</code></p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
+    'status' =&gt; 'RLE_DICTIONARY',          // 'active', 'inactive', 'pending'  
+    'country_code' =&gt; 'RLE_DICTIONARY',    // 'US', 'UK', 'DE', 'FR'
+    'department' =&gt; 'RLE_DICTIONARY'       // 'engineering', 'sales', 'marketing'
+]);
+</code></pre>
+<h4><a id="flow-php-deltabinarypacked" href="#content-deltabinarypacked" class="mr-2" aria-hidden="true" title="Permalink">#</a>DELTA_BINARY_PACKED</h4>
+<p>Delta encoding with binary packing for integer columns. Stores differences between consecutive values.</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>Sequential or monotonic integer data (IDs, timestamps, counters)</li>
+<li>Time series data with incremental values</li>
+<li>Can achieve 70-95% compression for sequential data</li>
+</ul>
+<p><strong>Supported types:</strong> Only <code>INT32</code> and <code>INT64</code></p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
+    'user_id' =&gt; 'DELTA_BINARY_PACKED',     // 1, 2, 3, 4, 5...
+    'timestamp_ms' =&gt; 'DELTA_BINARY_PACKED', // 1634567890123, 1634567890124...
+    'order_number' =&gt; 'DELTA_BINARY_PACKED'  // Sequential order IDs
+]);
+</code></pre>
+<h3><a id="flow-php-using-custom-encodings" href="#content-using-custom-encodings" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using Custom Encodings</h3>
+<h4><a id="flow-php-basic-column-encoding" href="#content-basic-column-encoding" class="mr-2" aria-hidden="true" title="Permalink">#</a>Basic Column Encoding</h4>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\{Writer, Options, Option};
+use Flow\Parquet\ParquetFile\Schema;
+use Flow\Parquet\ParquetFile\Schema\FlatColumn;
+
+$schema = Schema::with(
+    FlatColumn::int64('user_id'),
+    FlatColumn::string('status'),
+    FlatColumn::string('description')
+);
+
+$options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
+    'user_id' =&gt; 'DELTA_BINARY_PACKED',  // Sequential IDs
+    'status' =&gt; 'RLE_DICTIONARY',        // Limited set of values
+    'description' =&gt; 'PLAIN'             // High variance text
+]);
+
+$writer = new Writer(compressions: Compressions::SNAPPY, options: $options);
+</code></pre>
+<h4><a id="flow-php-nested-column-encoding-flat-path-notation" href="#content-nested-column-encoding-flat-path-notation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Nested Column Encoding (Flat Path Notation)</h4>
+<p>For nested structures, use dot notation to specify the exact column path.
+The flat path follows Parquet's internal structure conventions:</p>
+<p><strong>Flat Path Patterns:</strong></p>
+<ul>
+<li><strong>Struct fields</strong>: <code>parent.field_name</code></li>
+<li><strong>List elements</strong>: <code>list_name.list.element</code></li>
+<li><strong>Map keys</strong>: <code>map_name.key_value.key</code></li>
+<li><strong>Map values</strong>: <code>map_name.key_value.value</code></li>
+</ul>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\ParquetFile\Schema\{NestedColumn, ListElement, MapKey, MapValue};
+
+$schema = Schema::with(
+    NestedColumn::struct('user', [
+        FlatColumn::int64('id'),
+        FlatColumn::string('name'),
+        NestedColumn::struct('address', [
+            FlatColumn::string('street'),
+            FlatColumn::string('city'),
+            FlatColumn::string('country')
+        ])
+    ]),
+    NestedColumn::list('tags', ListElement::string()),
+    NestedColumn::map('metadata', MapKey::string(), MapValue::string())
+);
+</code></pre>
+<p><strong>Understanding Flat Paths:</strong></p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">// STRUCT: Direct field access with dot notation
+'user.id'              // user struct → id field
+'user.name'            // user struct → name field  
+'user.address.street'  // user struct → address struct → street field
+'user.address.city'    // user struct → address struct → city field
+'user.address.country' // user struct → address struct → country field
+
+// LIST: Always includes intermediate '.list.element' structure
+'tags.list.element'    // tags list → list wrapper → element (the actual string values)
+
+// MAP: Always includes intermediate '.key_value' structure  
+'metadata.key_value.key'   // metadata map → key_value wrapper → key (string keys)
+'metadata.key_value.value' // metadata map → key_value wrapper → value (string values)
+</code></pre>
+<p><strong>Applying Custom Encodings:</strong></p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
+    // Struct fields - direct access
+    'user.id' =&gt; 'DELTA_BINARY_PACKED',
+    'user.name' =&gt; 'RLE_DICTIONARY', 
+    'user.address.street' =&gt; 'PLAIN',
+    'user.address.city' =&gt; 'RLE_DICTIONARY',
+    'user.address.country' =&gt; 'RLE_DICTIONARY',
+    
+    // List elements - note the '.list.element' suffix
+    'tags.list.element' =&gt; 'RLE_DICTIONARY',
+    
+    // Map key/value pairs - note the '.key_value.key/value' suffix
+    'metadata.key_value.key' =&gt; 'RLE_DICTIONARY',
+    'metadata.key_value.value' =&gt; 'PLAIN'
+]);
+</code></pre>
+<p><strong>Complex Nested Example:</strong></p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">// Complex nested structure with lists of structs and maps
+$schema = Schema::with(
+    NestedColumn::list('orders', ListElement::structure([
+        FlatColumn::int64('order_id'),
+        FlatColumn::string('status'),
+        NestedColumn::map('attributes', MapKey::string(), MapValue::string())
+    ]))
+);
+
+$options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
+    // List of structs: list_name.list.element.field_name
+    'orders.list.element.order_id' =&gt; 'DELTA_BINARY_PACKED',
+    'orders.list.element.status' =&gt; 'RLE_DICTIONARY',
+    
+    // Map inside list element: list_name.list.element.map_name.key_value.key/value
+    'orders.list.element.attributes.key_value.key' =&gt; 'RLE_DICTIONARY',
+    'orders.list.element.attributes.key_value.value' =&gt; 'PLAIN'
+]);
+</code></pre>
+<h4><a id="flow-php-mixed-encoding-strategy" href="#content-mixed-encoding-strategy" class="mr-2" aria-hidden="true" title="Permalink">#</a>Mixed Encoding Strategy</h4>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
+    // High cardinality sequential data
+    'order_id' =&gt; 'DELTA_BINARY_PACKED',
+    'created_timestamp' =&gt; 'DELTA_BINARY_PACKED',
+    
+    // Low cardinality categorical data  
+    'order_status' =&gt; 'RLE_DICTIONARY',
+    'payment_method' =&gt; 'RLE_DICTIONARY',
+    'shipping_country' =&gt; 'RLE_DICTIONARY',
+    
+    // High variance descriptive data
+    'customer_notes' =&gt; 'PLAIN',
+    'product_description' =&gt; 'PLAIN'
+]);
+</code></pre>
+<h3><a id="flow-php-encoding-compatibility" href="#content-encoding-compatibility" class="mr-2" aria-hidden="true" title="Permalink">#</a>Encoding Compatibility</h3>
+<table>
+<thead>
+<tr>
+<th>Encoding</th>
+<th>INT32/INT64</th>
+<th>BYTE_ARRAY</th>
+<th>BOOLEAN</th>
+<th>FLOAT/DOUBLE</th>
+<th>FIXED_LEN_BYTE_ARRAY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PLAIN</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>RLE_DICTIONARY</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>DELTA_BINARY_PACKED</td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="flow-php-performance-guidelines" href="#content-performance-guidelines" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance Guidelines</h3>
+<ol>
+<li><strong>Analyze your data first</strong> - Check cardinality and distribution patterns</li>
+<li><strong>Use RLE_DICTIONARY for categorical data</strong> - Countries, statuses, departments</li>
+<li><strong>Use DELTA_BINARY_PACKED for sequential integers</strong> - IDs, timestamps, counters</li>
+<li><strong>Use PLAIN for high-variance data</strong> - Descriptions, UUIDs, random data</li>
+<li><strong>Test different combinations</strong> - Measure file size and query performance</li>
+<li><strong>Consider query patterns</strong> - Frequently filtered columns benefit from dictionary encoding</li>
+</ol>
 
 
             <hr class="!mt-8 !mb-8"/>
