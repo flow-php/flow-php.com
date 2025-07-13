@@ -209,10 +209,11 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Parquet-BinaryWriter.html#method_writeVarInts32">writeVarInts32()</a>
+    <a class="" href="classes/Flow-Parquet-BinaryWriter.html#method_writeVarInts">writeVarInts()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
+<dd>Write values using variable-length encoding (VarInt/ULEB128).</dd>
 
     </dl>
 
@@ -776,27 +777,33 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_writeVarInts32">
-        writeVarInts32()
-        <a href="classes/Flow-Parquet-BinaryWriter.html#method_writeVarInts32" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_writeVarInts">
+        writeVarInts()
+        <a href="classes/Flow-Parquet-BinaryWriter.html#method_writeVarInts" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/BinaryWriter.php"><a href="files/src-lib-parquet-src-flow-parquet-binarywriter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/BinaryWriter.php">BinaryWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Write values using variable-length encoding (VarInt/ULEB128).</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">writeVarInts32</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">writeVarInts</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>VarInt encoding uses the most significant bit of each byte as a continuation bit.
+Values are encoded in little-endian byte order with 7 bits of data per byte.
+Negative values are treated as unsigned 64-bit integers for proper encoding.
+This method handles all edge cases including overflow and ZigZag encoded values.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -938,7 +945,7 @@
                                                     <li class=""><a href="classes/Flow-Parquet-BinaryWriter.html#method_writeInts32">writeInts32()</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-BinaryWriter.html#method_writeInts64">writeInts64()</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-BinaryWriter.html#method_writeStrings">writeStrings()</a></li>
-                                                    <li class=""><a href="classes/Flow-Parquet-BinaryWriter.html#method_writeVarInts32">writeVarInts32()</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-BinaryWriter.html#method_writeVarInts">writeVarInts()</a></li>
                                             </ul>
                 </li>
             
