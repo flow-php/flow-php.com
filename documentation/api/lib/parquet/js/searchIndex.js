@@ -1161,6 +1161,11 @@ Search.appendIndex(
             "summary": "Some\u0020parquet\u0020writers\u0020might\u0020not\u0020properly\u0020use\u0020LogicalTyp\u0020for\u0020storing\u0020Strings\u0020or\u0020JSON\u0027s.",
             "url": "classes/Flow-Parquet-Option.html#enumcase_BYTE_ARRAY_TO_STRING"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Option\u003A\u003ACOLUMNS_COMPRESSIONS",
+            "name": "COLUMNS_COMPRESSIONS",
+            "summary": "Per\u002Dcolumn\u0020compression\u0020configuration\u0020using\u0020flat\u0020path\u0020notation.",
+            "url": "classes/Flow-Parquet-Option.html#enumcase_COLUMNS_COMPRESSIONS"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Option\u003A\u003ACOLUMNS_ENCODINGS",
             "name": "COLUMNS_ENCODINGS",
             "summary": "Per\u002Dcolumn\u0020encoding\u0020configuration\u0020using\u0020flat\u0020path\u0020notation.",
@@ -1236,51 +1241,6 @@ Search.appendIndex(
             "summary": "Compression\u0020level\u0020for\u0020ZSTD\u0020codec.\u0020This\u0020option\u0020is\u0020going\u0020to\u0020be\u0020passed\u0020to\u0020zstd_compress\u0020function\u0020when\u0020Compression\u0020is\u0020set\u0020to\u0020ZSTD.",
             "url": "classes/Flow-Parquet-Option.html#enumcase_ZSTD_COMPRESSION_LEVEL"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Options\\ColumnsEncodings",
-            "name": "ColumnsEncodings",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Options-ColumnsEncodings.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Options\\ColumnsEncodings\u003A\u003Acreate\u0028\u0029",
-            "name": "create",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Options-ColumnsEncodings.html#method_create"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Options\\ColumnsEncodings\u003A\u003AfromArray\u0028\u0029",
-            "name": "fromArray",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Options-ColumnsEncodings.html#method_fromArray"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Options\\ColumnsEncodings\u003A\u003Acount\u0028\u0029",
-            "name": "count",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Options-ColumnsEncodings.html#method_count"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Options\\ColumnsEncodings\u003A\u003AgetEncodingForFlatPath\u0028\u0029",
-            "name": "getEncodingForFlatPath",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Options-ColumnsEncodings.html#method_getEncodingForFlatPath"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Options\\ColumnsEncodings\u003A\u003AgetFlatPaths\u0028\u0029",
-            "name": "getFlatPaths",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Options-ColumnsEncodings.html#method_getFlatPaths"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Options\\ColumnsEncodings\u003A\u003AhasFlatPath\u0028\u0029",
-            "name": "hasFlatPath",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Options-ColumnsEncodings.html#method_hasFlatPath"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Options\\ColumnsEncodings\u003A\u003AisEmpty\u0028\u0029",
-            "name": "isEmpty",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Options-ColumnsEncodings.html#method_isEmpty"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Options\\ColumnsEncodings\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Options-ColumnsEncodings.html#method_toArray"
-        },                {
             "fqsen": "\\Flow\\Parquet\\Options",
             "name": "Options",
             "summary": "",
@@ -1301,15 +1261,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Options.html#method_get"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Options\u003A\u003AgetArray\u0028\u0029",
+            "name": "getArray",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Options.html#method_getArray"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Options\u003A\u003AgetBool\u0028\u0029",
             "name": "getBool",
             "summary": "",
             "url": "classes/Flow-Parquet-Options.html#method_getBool"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Options\u003A\u003AgetColumnsEncodings\u0028\u0029",
-            "name": "getColumnsEncodings",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Options.html#method_getColumnsEncodings"
         },                {
             "fqsen": "\\Flow\\Parquet\\Options\u003A\u003AgetInt\u0028\u0029",
             "name": "getInt",
@@ -7570,11 +7530,6 @@ Search.appendIndex(
             "name": "Exception",
             "summary": "",
             "url": "namespaces/flow-parquet-exception.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Options",
-            "name": "Options",
-            "summary": "",
-            "url": "namespaces/flow-parquet-options.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile",
             "name": "ParquetFile",
