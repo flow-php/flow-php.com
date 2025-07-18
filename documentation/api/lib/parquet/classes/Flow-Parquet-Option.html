@@ -631,7 +631,7 @@ return array of bytes (12) that represents INT96.</p>
     
         <section class="phpdocumentor-description"><p>PageBuilder is not going to make it precisely equal to this value, but it will try to make it as close as possible.
 This should be considered as a threshold rather than a strict value.</p>
-<p>Default value is 8Kb</p>
+<p>Default value is 128Kb</p>
 <p>https://parquet.apache.org/docs/file-format/configurations/#data-page--size</p>
 </section>
 
@@ -726,7 +726,7 @@ reader will round nanoseconds to microseconds.</p>
 before flushing it on disk.</p>
 
     
-        <section class="phpdocumentor-description"><p>Default value is 8Mb</p>
+        <section class="phpdocumentor-description"><p>Default value is 32Mb</p>
 <p>In order to be more aligned with apache spark and hadoop, this value should be set between 128 and 512Mb.
 https://parquet.apache.org/docs/file-format/configurations/#row-group-size</p>
 </section>
