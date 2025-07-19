@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballoader.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php">DbalLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
@@ -180,6 +180,13 @@ use this constructor with caution.</dd>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withColumnTypes">withColumnTypes()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Override types taken from Flow Schema with explicitly provided DBAL types.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withOperation">withOperation()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -190,6 +197,13 @@ use this constructor with caution.</dd>
     <span>
                                 &nbsp;: self    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withTypesDetector">withTypesDetector()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Set custom SchemaToTypesConverter with custom TypesMap.</dd>
 
     </dl>
 
@@ -219,7 +233,7 @@ use this constructor with caution.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballoader.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php">DbalLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -270,7 +284,7 @@ use this constructor with caution.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballoader.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php">DbalLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -356,7 +370,7 @@ use this constructor with caution.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballoader.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php">DbalLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -399,6 +413,57 @@ use this constructor with caution.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_withColumnTypes">
+        withColumnTypes()
+        <a href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withColumnTypes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballoader.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php">DbalLoader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">83</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Override types taken from Flow Schema with explicitly provided DBAL types.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withColumnTypes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, <abbr title="\Doctrine\DBAL\Types\Type">Type</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$types</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$types</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, <abbr title="\Doctrine\DBAL\Types\Type">Type</abbr>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Column name =&gt; DBAL Type instance</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_withOperation">
         withOperation()
         <a href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withOperation" class="headerlink"><i class="fas fa-link"></i></a>
@@ -407,7 +472,7 @@ use this constructor with caution.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballoader.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php">DbalLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -470,7 +535,7 @@ use this constructor with caution.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballoader.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php">DbalLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -488,6 +553,55 @@ use this constructor with caution.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$operationOptions</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Doctrine\Bulk\InsertOptions">InsertOptions</abbr>|<abbr title="\Flow\Doctrine\Bulk\UpdateOptions">UpdateOptions</abbr>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withTypesDetector">
+        withTypesDetector()
+        <a href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withTypesDetector" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballoader.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLoader.php">DbalLoader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">114</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set custom SchemaToTypesConverter with custom TypesMap.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withTypesDetector</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Adapter-Doctrine-DbalTypesDetector.html"><abbr title="\Flow\ETL\Adapter\Doctrine\DbalTypesDetector">DbalTypesDetector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$detector</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$detector</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Adapter-Doctrine-DbalTypesDetector.html"><abbr title="\Flow\ETL\Adapter\Doctrine\DbalTypesDetector">DbalTypesDetector</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -620,8 +734,10 @@ use this constructor with caution.</p>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_fromConnection">fromConnection()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_load">load()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withColumnTypes">withColumnTypes()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withOperation">withOperation()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withOperationOptions">withOperationOptions()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withTypesDetector">withTypesDetector()</a></li>
                                     </ul>
             </li>
                     </ul>

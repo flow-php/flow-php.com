@@ -333,19 +333,95 @@ robust and adaptable nature of the Flow PHP ecosystem.</p>
 <h2><a id="flow-php-description" href="#content-description" class="mr-2" aria-hidden="true" title="Permalink">#</a>Description</h2>
 <p>Adapter for <a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl">ETL</a> using bulk operations from <a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/doctrine-dbal-bulk">Doctrine Dbal Bulk</a>.</p>
 <h2><a id="flow-php-loader---dballoader" href="#content-loader---dballoader" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loader - DbalLoader</h2>
-<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\Adapter\Doctrine\to_dbal_table_insert;
+
+data_frame()
     -&gt;read(from_())
-    -&gt;write(new DbalLoader('your-table-name', $bulkSize = 100, ['url' =&gt; \getenv('PGSQL_DATABASE_URL')], ['skip_conflicts' =&gt; true]))
+    -&gt;write(to_dbal_table_insert(['url' =&gt; \getenv('PGSQL_DATABASE_URL')], 'your-table-name'))
     -&gt;run();
 </code></pre>
-<p>All supported types of <code>DbalBulkLoader</code> loading:</p>
+<p>All supported DbalLoader operations via DSL functions:</p>
 <ul>
-<li><code>::insert(Connection $connection, string $table, QueryFactory $queryFactory = null) : self</code></li>
-<li><code>::insertOrSkipOnConflict(Connection $connection, string $table, QueryFactory $queryFactory = null) : self</code></li>
-<li><code>::insertOrUpdateOnConstraintConflict(Connection $connection, string $table, string $constraint, QueryFactory $queryFactory = null) : self</code></li>
+<li><code>to_dbal_table_insert(array|Connection $connection, string $table, ?InsertOptions $options = null)</code> - Insert new rows</li>
+<li><code>to_dbal_table_update(array|Connection $connection, string $table, ?UpdateOptions $options = null)</code> - Update existing rows</li>
+<li><code>to_dbal_table_delete(array|Connection $connection, string $table)</code> - Delete rows</li>
 </ul>
-<p>The <code>bulkSize</code> means how many rows you want to push to a database in a single <code>INSERT</code> query. Each extracted rows set
-is going to be split before inserting data into the database.</p>
+<p>You can also configure bulk operations with platform-specific options:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\Adapter\Doctrine\{to_dbal_table_insert, postgresql_insert_options};
+
+data_frame()
+    -&gt;read(from_())
+    -&gt;write(to_dbal_table_insert(
+        $connection,
+        'users',
+        postgresql_insert_options(conflict_columns: ['id'])
+    ))
+    -&gt;run();
+</code></pre>
+<h3><a id="flow-php-type-detection-and-optimization" href="#content-type-detection-and-optimization" class="mr-2" aria-hidden="true" title="Permalink">#</a>Type Detection and Optimization</h3>
+<p><code>DbalLoader</code> now provides advanced type detection capabilities to optimize database operations:</p>
+<h4><a id="flow-php-automatic-type-detection-from-flow-schema" href="#content-automatic-type-detection-from-flow-schema" class="mr-2" aria-hidden="true" title="Permalink">#</a>Automatic Type Detection from Flow Schema</h4>
+<p>By default, <code>DbalLoader</code> automatically detects column types from the Flow Schema of your data:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\Adapter\Doctrine\to_dbal_table_insert;
+
+data_frame()
+    -&gt;read(from_())
+    -&gt;write(to_dbal_table_insert($connection, 'users'))
+    -&gt;run();
+// Types are automatically detected from the Flow Schema
+</code></pre>
+<h4><a id="flow-php-manual-type-override" href="#content-manual-type-override" class="mr-2" aria-hidden="true" title="Permalink">#</a>Manual Type Override</h4>
+<p>You can override specific column types for fine-grained control:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\Adapter\Doctrine\to_dbal_table_insert;
+use Doctrine\DBAL\Types\Type;
+use Doctrine\DBAL\Types\Types;
+
+data_frame()
+    -&gt;read(from_())
+    -&gt;write(to_dbal_table_insert($connection, 'users')
+        -&gt;withColumnTypes([
+            'id' =&gt; Type::getType(Types::INTEGER),
+            'email' =&gt; Type::getType(Types::STRING),
+            'created_at' =&gt; Type::getType(Types::DATETIME_IMMUTABLE),
+        ]))
+    -&gt;run();
+</code></pre>
+<h4><a id="flow-php-custom-type-detector" href="#content-custom-type-detector" class="mr-2" aria-hidden="true" title="Permalink">#</a>Custom Type Detector</h4>
+<p>For advanced scenarios, you can provide a custom type detector with your own type mapping:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\Adapter\Doctrine\to_dbal_table_insert;
+use Flow\ETL\Adapter\Doctrine\{DbalTypesDetector, TypesMap};
+use Flow\Types\Type\Native\StringType;
+use Doctrine\DBAL\Types\TextType;
+
+$customTypesMap = new TypesMap([
+    StringType::class =&gt; TextType::class, // Map Flow strings to DBAL text type
+]);
+
+data_frame()
+    -&gt;read(from_())
+    -&gt;write(to_dbal_table_insert($connection, 'users')
+        -&gt;withTypesDetector(new DbalTypesDetector($customTypesMap)))
+    -&gt;run();
+</code></pre>
+<h4><a id="flow-php-data-normalization" href="#content-data-normalization" class="mr-2" aria-hidden="true" title="Permalink">#</a>Data Normalization</h4>
+<p><code>DbalLoader</code> automatically handles data normalization for database compatibility:</p>
+<ul>
+<li><strong>XML Entries</strong>: <code>XMLEntry</code> and <code>XMLElementEntry</code> objects are automatically converted to their string representation</li>
+<li><strong>Complex Types</strong>: Lists, Maps, and Structures are serialized as JSON</li>
+<li><strong>Type Safety</strong>: All data is normalized while preserving type information for optimal database performance</li>
+</ul>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\{data_frame, from_array, xml_entry};
+use function Flow\ETL\Adapter\Doctrine\to_dbal_table_insert;
+
+data_frame()
+    -&gt;read(from_array([
+        ['id' =&gt; 1, 'data' =&gt; xml_entry('data', $domDocument)],
+        ['id' =&gt; 2, 'data' =&gt; xml_entry('data', $domElement)],
+    ]))
+    -&gt;write(to_dbal_table_insert($connection, 'xml_table'))
+    -&gt;run();
+// XML entries are automatically converted to strings before database insertion
+</code></pre>
 <h2><a id="flow-php-extractor---dbalquery" href="#content-extractor---dbalquery" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extractor - DbalQuery</h2>
 <p>This simple but powerful extractor let you extract data from a single or multiple parametrized queries.</p>
 <h3><a id="flow-php-single-query" href="#content-single-query" class="mr-2" aria-hidden="true" title="Permalink">#</a>Single Query</h3>
@@ -445,7 +521,7 @@ new Table(
 </code></pre>
 <h3><a id="flow-php-schema-converter---types-map" href="#content-schema-converter---types-map" class="mr-2" aria-hidden="true" title="Permalink">#</a>Schema Converter - Types Map</h3>
 <p>When types map is not provided, the default one will be used:</p>
-<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">public const DEFAULT_TYPES = [
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">public const FLOW_TYPES = [
     StringType::class =&gt; \Doctrine\DBAL\Types\StringType::class,
     IntegerType::class =&gt; \Doctrine\DBAL\Types\IntegerType::class,
     FloatType::class =&gt; \Doctrine\DBAL\Types\FloatType::class,
@@ -461,6 +537,22 @@ new Table(
     MapType::class =&gt; \Doctrine\DBAL\Types\JsonType::class,
     StructureType::class =&gt; \Doctrine\DBAL\Types\JsonType::class,
 ];
+</code></pre>
+<p>The <code>TypesMap</code> class provides bidirectional mapping between Flow types and Doctrine DBAL types, allowing for flexible type conversion in both directions:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\ETL\Adapter\Doctrine\TypesMap;
+use Flow\Types\Type\Native\StringType;
+use Doctrine\DBAL\Types\TextType;
+
+// Create custom type mapping
+$customMap = new TypesMap([
+    StringType::class =&gt; TextType::class,
+]);
+
+// Convert Flow type to DBAL type
+$dbalType = $customMap-&gt;toDbalType(StringType::class);
+
+// Convert DBAL type to Flow type instance
+$flowType = $customMap-&gt;toFlowType(TextType::class);
 </code></pre>
 
 

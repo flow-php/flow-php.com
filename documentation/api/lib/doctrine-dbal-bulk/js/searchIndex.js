@@ -71,6 +71,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPlaceholders"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003Atypes\u0028\u0029",
+            "name": "types",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_types"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Columns",
             "name": "Columns",
             "summary": "",
@@ -481,10 +486,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-TableDefinition.html#method_name"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\TableDefinition\u003A\u003Aplatform\u0028\u0029",
+            "name": "platform",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-TableDefinition.html#method_platform"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\TableDefinition\u003A\u003AtoSqlCastedPlaceholders\u0028\u0029",
             "name": "toSqlCastedPlaceholders",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-TableDefinition.html#method_toSqlCastedPlaceholders"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\TableDefinitions",
+            "name": "TableDefinitions",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-TableDefinitions.html"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\TableDefinitions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-TableDefinitions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\TableDefinitions\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-TableDefinitions.html#method_get"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\UpdateOptions",
             "name": "UpdateOptions",

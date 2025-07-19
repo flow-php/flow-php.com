@@ -341,6 +341,34 @@ $bulk-&gt;insert(
 );
 
 </code></pre>
+<h3><a id="flow-php-type-optimization-with-bulkdata" href="#content-type-optimization-with-bulkdata" class="mr-2" aria-hidden="true" title="Permalink">#</a>Type Optimization with BulkData</h3>
+<p><code>BulkData</code> can accept optional type information to optimize database operations:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Doctrine\DBAL\Types\Type;
+use Doctrine\DBAL\Types\Types;
+
+$bulk = Bulk::create();
+$bulk-&gt;insert(
+    $dbalConnection,
+    'your-table-name',
+    new BulkData(
+        [
+            ['id' =&gt; 1, 'name' =&gt; 'Name One', 'created_at' =&gt; new \DateTime()],
+            ['id' =&gt; 2, 'name' =&gt; 'Name Two', 'created_at' =&gt; new \DateTime()],
+        ],
+        [
+            'id' =&gt; Type::getType(Types::INTEGER),
+            'name' =&gt; Type::getType(Types::STRING),
+            'created_at' =&gt; Type::getType(Types::DATETIME_IMMUTABLE),
+        ]
+    )
+);
+</code></pre>
+<p><strong>Type Detection Behavior:</strong></p>
+<ul>
+<li><strong>With Types</strong>: When column types are provided, <code>BulkData</code> uses them directly for optimal performance</li>
+<li><strong>Without Types</strong>: When no types are provided, <code>BulkData</code> automatically queries the database to understand the table structure and determine appropriate types</li>
+</ul>
+<p>This automatic type detection ensures data consistency but comes with a performance cost due to the additional database query. For optimal performance in high-throughput scenarios, explicitly providing column types is recommended.</p>
 <p>Update:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$bulk = Bulk::create();
 $bulk-&gt;update(
