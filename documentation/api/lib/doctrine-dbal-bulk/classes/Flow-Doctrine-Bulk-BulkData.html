@@ -169,6 +169,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Doctrine-Bulk-BulkData.html#method_parametersStyle">parametersStyle()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-Doctrine-Bulk-SQLParametersStyle.html"><abbr title="\Flow\Doctrine\Bulk\SQLParametersStyle">SQLParametersStyle</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Doctrine-Bulk-BulkData.html#method_rows">rows()</a>
     <span>
                                 &nbsp;: array&lt;int, array&lt;string, mixed&gt;&gt;    </span>
@@ -183,14 +189,57 @@
 <dd>Example:.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlParameters">toSqlParameters()</a>
+    <a class="" href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlCastedPlaceholders">toSqlCastedPlaceholders()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlNamedCastedPlaceholders">toSqlNamedCastedPlaceholders()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlNamedParameters">toSqlNamedParameters()</a>
     <span>
                                 &nbsp;: array&lt;string, mixed&gt;    </span>
 </dt>
 <dd>Example:.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlNamedPlaceholders">toSqlNamedPlaceholders()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlParameters">toSqlParameters()</a>
+    <span>
+                                &nbsp;: array&lt;int<0, max>|string, mixed&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPlaceholders">toSqlPlaceholders()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPositionalCastedPlaceholders">toSqlPositionalCastedPlaceholders()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPositionalParameters">toSqlPositionalParameters()</a>
+    <span>
+                                &nbsp;: array&lt;int<0, max>, mixed&gt;    </span>
+</dt>
+<dd>Example:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPositionalPlaceholders">toSqlPositionalPlaceholders()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -236,7 +285,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;int, array&lt;string, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <abbr title="\Doctrine\DBAL\Types\Type">Type</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$types</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;int, array&lt;string, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <abbr title="\Doctrine\DBAL\Types\Type">Type</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$types</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-SQLParametersStyle.html"><abbr title="\Flow\Doctrine\Bulk\SQLParametersStyle">SQLParametersStyle</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parametersStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">SQLParametersStyle::POSITIONAL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -255,6 +304,13 @@
                 <span class="phpdocumentor-signature__argument__name">$types</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <abbr title="\Doctrine\DBAL\Types\Type">Type</abbr>&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parametersStyle</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-SQLParametersStyle.html"><abbr title="\Flow\Doctrine\Bulk\SQLParametersStyle">SQLParametersStyle</abbr></a></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">SQLParametersStyle::POSITIONAL</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -348,6 +404,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_parametersStyle">
+        parametersStyle()
+        <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_parametersStyle" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulkdata.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">61</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">parametersStyle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Doctrine-Bulk-SQLParametersStyle.html"><abbr title="\Flow\Doctrine\Bulk\SQLParametersStyle">SQLParametersStyle</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Doctrine-Bulk-SQLParametersStyle.html"><abbr title="\Flow\Doctrine\Bulk\SQLParametersStyle">SQLParametersStyle</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_rows">
         rows()
         <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_rows" class="headerlink"><i class="fas fa-link"></i></a>
@@ -356,7 +450,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulkdata.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -400,7 +494,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulkdata.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -436,15 +530,111 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_toSqlParameters">
-        toSqlParameters()
-        <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlParameters" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_toSqlCastedPlaceholders">
+        toSqlCastedPlaceholders()
+        <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlCastedPlaceholders" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulkdata.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toSqlCastedPlaceholders</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html"><abbr title="\Flow\Doctrine\Bulk\TableDefinition">TableDefinition</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$table</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html"><abbr title="\Flow\Doctrine\Bulk\TableDefinition">TableDefinition</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toSqlNamedCastedPlaceholders">
+        toSqlNamedCastedPlaceholders()
+        <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlNamedCastedPlaceholders" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulkdata.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">115</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toSqlNamedCastedPlaceholders</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html"><abbr title="\Flow\Doctrine\Bulk\TableDefinition">TableDefinition</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$table</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html"><abbr title="\Flow\Doctrine\Bulk\TableDefinition">TableDefinition</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toSqlNamedParameters">
+        toSqlNamedParameters()
+        <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlNamedParameters" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulkdata.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -452,7 +642,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">toSqlParameters</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html"><abbr title="\Flow\Doctrine\Bulk\TableDefinition">TableDefinition</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">toSqlNamedParameters</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html"><abbr title="\Flow\Doctrine\Bulk\TableDefinition">TableDefinition</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -490,22 +680,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_toSqlPlaceholders">
-        toSqlPlaceholders()
-        <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPlaceholders" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_toSqlNamedPlaceholders">
+        toSqlNamedPlaceholders()
+        <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlNamedPlaceholders" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulkdata.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">189</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">toSqlPlaceholders</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">toSqlNamedPlaceholders</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -533,6 +723,234 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_toSqlParameters">
+        toSqlParameters()
+        <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlParameters" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulkdata.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">206</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toSqlParameters</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html"><abbr title="\Flow\Doctrine\Bulk\TableDefinition">TableDefinition</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int<0, max>|string, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$table</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html"><abbr title="\Flow\Doctrine\Bulk\TableDefinition">TableDefinition</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int<0, max>|string, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toSqlPlaceholders">
+        toSqlPlaceholders()
+        <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPlaceholders" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulkdata.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">214</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toSqlPlaceholders</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toSqlPositionalCastedPlaceholders">
+        toSqlPositionalCastedPlaceholders()
+        <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPositionalCastedPlaceholders" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulkdata.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">222</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toSqlPositionalCastedPlaceholders</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html"><abbr title="\Flow\Doctrine\Bulk\TableDefinition">TableDefinition</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$table</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html"><abbr title="\Flow\Doctrine\Bulk\TableDefinition">TableDefinition</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toSqlPositionalParameters">
+        toSqlPositionalParameters()
+        <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPositionalParameters" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulkdata.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">266</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Example:.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toSqlPositionalParameters</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html"><abbr title="\Flow\Doctrine\Bulk\TableDefinition">TableDefinition</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int<0, max>, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>[1, 'some name', 2, 'other name']</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$table</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html"><abbr title="\Flow\Doctrine\Bulk\TableDefinition">TableDefinition</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int<0, max>, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toSqlPositionalPlaceholders">
+        toSqlPositionalPlaceholders()
+        <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPositionalPlaceholders" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulkdata.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">292</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toSqlPositionalPlaceholders</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>It returns a string for SQL bulk insert query with positional parameters, eg:
+(?,?,?), (?,?,?), (?,?,?)</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_types">
         types()
         <a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_types" class="headerlink"><i class="fas fa-link"></i></a>
@@ -541,7 +959,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-bulkdata.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/BulkData.php">BulkData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">305</span>
 
     </aside>
 
@@ -681,10 +1099,18 @@
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_columns">columns()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_count">count()</a></li>
+                                            <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_parametersStyle">parametersStyle()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_rows">rows()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_sqlRows">sqlRows()</a></li>
+                                            <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlCastedPlaceholders">toSqlCastedPlaceholders()</a></li>
+                                            <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlNamedCastedPlaceholders">toSqlNamedCastedPlaceholders()</a></li>
+                                            <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlNamedParameters">toSqlNamedParameters()</a></li>
+                                            <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlNamedPlaceholders">toSqlNamedPlaceholders()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlParameters">toSqlParameters()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPlaceholders">toSqlPlaceholders()</a></li>
+                                            <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPositionalCastedPlaceholders">toSqlPositionalCastedPlaceholders()</a></li>
+                                            <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPositionalParameters">toSqlPositionalParameters()</a></li>
+                                            <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPositionalPlaceholders">toSqlPositionalPlaceholders()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-BulkData.html#method_types">types()</a></li>
                                     </ul>
             </li>

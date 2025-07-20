@@ -161,6 +161,18 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalParameterTypes">dbalParameterTypes()</a>
+    <span>
+                                &nbsp;: array&lt;int<0, max>|string, string&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalPositionalTypes">dbalPositionalTypes()</a>
+    <span>
+                                &nbsp;: array&lt;int<0, max>, string&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalTypes">dbalTypes()</a>
     <span>
                                 &nbsp;: array&lt;string, string&gt;    </span>
@@ -176,12 +188,6 @@
     <a class="" href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_platform">platform()</a>
     <span>
                                 &nbsp;: <abbr title="\Doctrine\DBAL\Platforms\AbstractPlatform">AbstractPlatform</abbr>    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_toSqlCastedPlaceholders">toSqlCastedPlaceholders()</a>
-    <span>
-                                &nbsp;: string    </span>
 </dt>
 
     </dl>
@@ -318,6 +324,117 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_dbalParameterTypes">
+        dbalParameterTypes()
+        <a href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalParameterTypes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/TableDefinition.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-tabledefinition.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/TableDefinition.php">TableDefinition.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">dbalParameterTypes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-BulkData.html"><abbr title="\Flow\Doctrine\Bulk\BulkData">BulkData</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bulkData</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int<0, max>|string, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$bulkData</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-BulkData.html"><abbr title="\Flow\Doctrine\Bulk\BulkData">BulkData</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalParameterTypes#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-Doctrine-Bulk-Exception-RuntimeException.html"><abbr title="\Flow\Doctrine\Bulk\Exception\RuntimeException">RuntimeException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int<0, max>|string, string&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_dbalPositionalTypes">
+        dbalPositionalTypes()
+        <a href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalPositionalTypes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/TableDefinition.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-tabledefinition.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/TableDefinition.php">TableDefinition.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">dbalPositionalTypes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-BulkData.html"><abbr title="\Flow\Doctrine\Bulk\BulkData">BulkData</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bulkData</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int<0, max>, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$bulkData</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-BulkData.html"><abbr title="\Flow\Doctrine\Bulk\BulkData">BulkData</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int<0, max>, string&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_dbalTypes">
         dbalTypes()
         <a href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalTypes" class="headerlink"><i class="fas fa-link"></i></a>
@@ -326,7 +443,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/TableDefinition.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-tabledefinition.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/TableDefinition.php">TableDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -389,7 +506,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/TableDefinition.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-tabledefinition.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/TableDefinition.php">TableDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -427,7 +544,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/TableDefinition.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-tabledefinition.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/TableDefinition.php">TableDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -448,61 +565,6 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Doctrine\DBAL\Platforms\AbstractPlatform">AbstractPlatform</abbr></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_toSqlCastedPlaceholders">
-        toSqlCastedPlaceholders()
-        <a href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_toSqlCastedPlaceholders" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/TableDefinition.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-tabledefinition.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/TableDefinition.php">TableDefinition.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">74</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">toSqlCastedPlaceholders</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-BulkData.html"><abbr title="\Flow\Doctrine\Bulk\BulkData">BulkData</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bulkData</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\DBAL\Platforms\AbstractPlatform">AbstractPlatform</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$abstractPlatform</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$bulkData</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Doctrine-Bulk-BulkData.html"><abbr title="\Flow\Doctrine\Bulk\BulkData">BulkData</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$abstractPlatform</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\DBAL\Platforms\AbstractPlatform">AbstractPlatform</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
             </section>
 
 </article>
@@ -621,10 +683,11 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalColumn">dbalColumn()</a></li>
+                                            <li class=""><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalParameterTypes">dbalParameterTypes()</a></li>
+                                            <li class=""><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalPositionalTypes">dbalPositionalTypes()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalTypes">dbalTypes()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_name">name()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_platform">platform()</a></li>
-                                            <li class=""><a href="classes/Flow-Doctrine-Bulk-TableDefinition.html#method_toSqlCastedPlaceholders">toSqlCastedPlaceholders()</a></li>
                                     </ul>
             </li>
                     </ul>

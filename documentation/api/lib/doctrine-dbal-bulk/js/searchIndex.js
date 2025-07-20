@@ -51,6 +51,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_count"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003AparametersStyle\u0028\u0029",
+            "name": "parametersStyle",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_parametersStyle"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003Arows\u0028\u0029",
             "name": "rows",
             "summary": "Example\u003A.",
@@ -61,15 +66,50 @@ Search.appendIndex(
             "summary": "Example\u003A.",
             "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_sqlRows"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003AtoSqlCastedPlaceholders\u0028\u0029",
+            "name": "toSqlCastedPlaceholders",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlCastedPlaceholders"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003AtoSqlNamedCastedPlaceholders\u0028\u0029",
+            "name": "toSqlNamedCastedPlaceholders",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlNamedCastedPlaceholders"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003AtoSqlNamedParameters\u0028\u0029",
+            "name": "toSqlNamedParameters",
+            "summary": "Example\u003A.",
+            "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlNamedParameters"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003AtoSqlNamedPlaceholders\u0028\u0029",
+            "name": "toSqlNamedPlaceholders",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlNamedPlaceholders"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003AtoSqlParameters\u0028\u0029",
             "name": "toSqlParameters",
-            "summary": "Example\u003A.",
+            "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlParameters"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003AtoSqlPlaceholders\u0028\u0029",
             "name": "toSqlPlaceholders",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPlaceholders"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003AtoSqlPositionalCastedPlaceholders\u0028\u0029",
+            "name": "toSqlPositionalCastedPlaceholders",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPositionalCastedPlaceholders"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003AtoSqlPositionalParameters\u0028\u0029",
+            "name": "toSqlPositionalParameters",
+            "summary": "Example\u003A.",
+            "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPositionalParameters"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003AtoSqlPositionalPlaceholders\u0028\u0029",
+            "name": "toSqlPositionalPlaceholders",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_toSqlPositionalPlaceholders"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003Atypes\u0028\u0029",
             "name": "types",
@@ -461,6 +501,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-QueryFactory.html#method_update"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\SQLParametersStyle",
+            "name": "SQLParametersStyle",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-SQLParametersStyle.html"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\SQLParametersStyle\u003A\u003ANAMED",
+            "name": "NAMED",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-SQLParametersStyle.html#enumcase_NAMED"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\SQLParametersStyle\u003A\u003APOSITIONAL",
+            "name": "POSITIONAL",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-SQLParametersStyle.html#enumcase_POSITIONAL"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\TableDefinition",
             "name": "TableDefinition",
             "summary": "",
@@ -476,6 +531,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalColumn"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\TableDefinition\u003A\u003AdbalParameterTypes\u0028\u0029",
+            "name": "dbalParameterTypes",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalParameterTypes"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\TableDefinition\u003A\u003AdbalPositionalTypes\u0028\u0029",
+            "name": "dbalPositionalTypes",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-TableDefinition.html#method_dbalPositionalTypes"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\TableDefinition\u003A\u003AdbalTypes\u0028\u0029",
             "name": "dbalTypes",
             "summary": "",
@@ -490,11 +555,6 @@ Search.appendIndex(
             "name": "platform",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-TableDefinition.html#method_platform"
-        },                {
-            "fqsen": "\\Flow\\Doctrine\\Bulk\\TableDefinition\u003A\u003AtoSqlCastedPlaceholders\u0028\u0029",
-            "name": "toSqlCastedPlaceholders",
-            "summary": "",
-            "url": "classes/Flow-Doctrine-Bulk-TableDefinition.html#method_toSqlCastedPlaceholders"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\TableDefinitions",
             "name": "TableDefinitions",
