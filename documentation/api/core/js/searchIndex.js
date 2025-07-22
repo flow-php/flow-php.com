@@ -3836,6 +3836,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Any.html#method_orNot"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Append",
+            "name": "Append",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Append.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Append\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Append.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Append\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Append.html#method_eval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayExpand\\ArrayExpand",
             "name": "ArrayExpand",
             "summary": "",
@@ -4241,6 +4256,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Between.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\BinaryLength",
+            "name": "BinaryLength",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-BinaryLength.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\BinaryLength\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-BinaryLength.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\BinaryLength\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-BinaryLength.html#method_eval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\CallUserFunc",
             "name": "CallUserFunc",
             "summary": "",
@@ -4286,6 +4316,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Cast.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Chunk",
+            "name": "Chunk",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Chunk.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Chunk\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Chunk.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Chunk\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Chunk.html#method_eval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Coalesce",
             "name": "Coalesce",
             "summary": "",
@@ -4300,6 +4345,36 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Coalesce.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\CodePointLength",
+            "name": "CodePointLength",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-CodePointLength.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\CodePointLength\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-CodePointLength.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\CodePointLength\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-CodePointLength.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\CollapseWhitespace",
+            "name": "CollapseWhitespace",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-CollapseWhitespace.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\CollapseWhitespace\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-CollapseWhitespace.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\CollapseWhitespace\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-CollapseWhitespace.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Collect",
             "name": "Collect",
@@ -4561,6 +4636,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-EndsWith.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\EnsureEnd",
+            "name": "EnsureEnd",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-EnsureEnd.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\EnsureEnd\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-EnsureEnd.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\EnsureEnd\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-EnsureEnd.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\EnsureStart",
+            "name": "EnsureStart",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-EnsureStart.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\EnsureStart\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-EnsureStart.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\EnsureStart\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-EnsureStart.html#method_eval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Equals",
             "name": "Equals",
             "summary": "",
@@ -4685,6 +4790,36 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-IndexOf.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\IndexOfLast",
+            "name": "IndexOfLast",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-IndexOfLast.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\IndexOfLast\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-IndexOfLast.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\IndexOfLast\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-IndexOfLast.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\IsEmpty",
+            "name": "IsEmpty",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-IsEmpty.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\IsEmpty\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-IsEmpty.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\IsEmpty\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-IsEmpty.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsIn",
             "name": "IsIn",
@@ -5281,6 +5416,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Power.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Prepend",
+            "name": "Prepend",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Prepend.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Prepend\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Prepend.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Prepend\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Prepend.html#method_eval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\RandomString",
             "name": "RandomString",
             "summary": "",
@@ -5400,6 +5550,36 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-RegexReplace.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Repeat",
+            "name": "Repeat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Repeat.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Repeat\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Repeat.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Repeat\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Repeat.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Reverse",
+            "name": "Reverse",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Reverse.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Reverse\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Reverse.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Reverse\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Reverse.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Round",
             "name": "Round",
@@ -5546,6 +5726,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_andNot"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_append"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AarrayFilter\u0028\u0029",
             "name": "arrayFilter",
             "summary": "Filters\u0020an\u0020array\u0020by\u0020removing\u0020all\u0020elements\u0020that\u0020matches\u0020passed\u0020value.",
@@ -5616,6 +5801,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_between"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AbinaryLength\u0028\u0029",
+            "name": "binaryLength",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_binaryLength"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Acall\u0028\u0029",
             "name": "call",
             "summary": "",
@@ -5631,10 +5821,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_cast"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Achunk\u0028\u0029",
+            "name": "chunk",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_chunk"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Acoalesce\u0028\u0029",
             "name": "coalesce",
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_coalesce"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AcodePointLength\u0028\u0029",
+            "name": "codePointLength",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_codePointLength"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AcollapseWhitespace\u0028\u0029",
+            "name": "collapseWhitespace",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_collapseWhitespace"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aconcat\u0028\u0029",
             "name": "concat",
@@ -5691,6 +5896,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_endsWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AensureEnd\u0028\u0029",
+            "name": "ensureEnd",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_ensureEnd"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AensureStart\u0028\u0029",
+            "name": "ensureStart",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_ensureStart"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aequals\u0028\u0029",
             "name": "equals",
             "summary": "",
@@ -5725,6 +5940,16 @@ Search.appendIndex(
             "name": "indexOf",
             "summary": "Returns\u0020the\u0020index\u0020of\u0020given\u0020\u0024needle\u0020in\u0020string.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_indexOf"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AindexOfLast\u0028\u0029",
+            "name": "indexOfLast",
+            "summary": "Returns\u0020the\u0020last\u0020index\u0020of\u0020given\u0020\u0024needle\u0020in\u0020string.",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_indexOfLast"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AisEmpty\u0028\u0029",
+            "name": "isEmpty",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_isEmpty"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AisEven\u0028\u0029",
             "name": "isEven",
@@ -5871,6 +6096,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_power"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aprepend\u0028\u0029",
+            "name": "prepend",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_prepend"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aregex\u0028\u0029",
             "name": "regex",
             "summary": "",
@@ -5895,6 +6125,16 @@ Search.appendIndex(
             "name": "regexReplace",
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_regexReplace"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Arepeat\u0028\u0029",
+            "name": "repeat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_repeat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Areverse\u0028\u0029",
+            "name": "reverse",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_reverse"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Around\u0028\u0029",
             "name": "round",
@@ -5956,10 +6196,35 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020contents\u0020found\u0020before\u0020the\u0020last\u0020occurrence\u0020of\u0020the\u0020given\u0020string.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringBeforeLast"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringContainsAny\u0028\u0029",
+            "name": "stringContainsAny",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringContainsAny"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringEqualsTo\u0028\u0029",
+            "name": "stringEqualsTo",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringEqualsTo"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringFold\u0028\u0029",
             "name": "stringFold",
             "summary": "Returns\u0020a\u0020string\u0020that\u0020you\u0020can\u0020use\u0020in\u0020case\u002Dinsensitive\u0020comparisons.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringFold"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringMatch\u0028\u0029",
+            "name": "stringMatch",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringMatch"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringMatchAll\u0028\u0029",
+            "name": "stringMatchAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringMatchAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringNormalize\u0028\u0029",
+            "name": "stringNormalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringNormalize"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringStyle\u0028\u0029",
             "name": "stringStyle",
@@ -5970,6 +6235,11 @@ Search.appendIndex(
             "name": "stringTitle",
             "summary": "Changes\u0020all\u0020graphemes\/code\u0020points\u0020to\u0020\u0022title\u0020case\u0022.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringTitle"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstringWidth\u0028\u0029",
+            "name": "stringWidth",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_stringWidth"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AstrPad\u0028\u0029",
             "name": "strPad",
@@ -6011,6 +6281,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_trim"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Atruncate\u0028\u0029",
+            "name": "truncate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_truncate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AunicodeLength\u0028\u0029",
+            "name": "unicodeLength",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_unicodeLength"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aunpack\u0028\u0029",
             "name": "unpack",
             "summary": "",
@@ -6020,6 +6300,11 @@ Search.appendIndex(
             "name": "upper",
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_upper"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Awordwrap\u0028\u0029",
+            "name": "wordwrap",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_wordwrap"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Axpath\u0028\u0029",
             "name": "xpath",
@@ -6181,6 +6466,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-StringBeforeLast.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringContainsAny",
+            "name": "StringContainsAny",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringContainsAny.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringContainsAny\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringContainsAny.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringContainsAny\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringContainsAny.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringEqualsTo",
+            "name": "StringEqualsTo",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringEqualsTo.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringEqualsTo\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringEqualsTo.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringEqualsTo\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringEqualsTo.html#method_eval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringFold",
             "name": "StringFold",
             "summary": "",
@@ -6195,6 +6510,51 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-StringFold.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringMatch",
+            "name": "StringMatch",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringMatch.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringMatch\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringMatch.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringMatch\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringMatch.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringMatchAll",
+            "name": "StringMatchAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringMatchAll.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringMatchAll\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringMatchAll.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringMatchAll\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringMatchAll.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringNormalize",
+            "name": "StringNormalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringNormalize.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringNormalize\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringNormalize.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringNormalize\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringNormalize.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringStyle",
             "name": "StringStyle",
@@ -6225,6 +6585,21 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-StringTitle.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringWidth",
+            "name": "StringWidth",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringWidth.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringWidth\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringWidth.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringWidth\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringWidth.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StrPad",
             "name": "StrPad",
@@ -6506,6 +6881,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Trim.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Truncate",
+            "name": "Truncate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Truncate.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Truncate\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Truncate.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Truncate\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Truncate.html#method_eval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Ulid",
             "name": "Ulid",
             "summary": "",
@@ -6520,6 +6910,21 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Ulid.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\UnicodeLength",
+            "name": "UnicodeLength",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-UnicodeLength.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\UnicodeLength\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-UnicodeLength.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\UnicodeLength\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-UnicodeLength.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Uuid",
             "name": "Uuid",
@@ -6580,6 +6985,21 @@ Search.appendIndex(
             "name": "window",
             "summary": "",
             "url": "classes/Flow-ETL-Function-WindowFunction.html#method_window"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Wordwrap",
+            "name": "Wordwrap",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Wordwrap.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Wordwrap\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Wordwrap.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Wordwrap\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Wordwrap.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\XPath",
             "name": "XPath",
