@@ -1171,6 +1171,11 @@ Search.appendIndex(
             "summary": "SaveMode\u0020defines\u0020how\u0020Flow\u0020should\u0020behave\u0020when\u0020writing\u0020to\u0020a\u0020file\/files\u0020that\u0020already\u0020exists.",
             "url": "classes/Flow-ETL-DataFrame.html#method_mode"
         },                {
+            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Aoffset\u0028\u0029",
+            "name": "offset",
+            "summary": "Skip\u0020given\u0020number\u0020of\u0020rows\u0020from\u0020the\u0020beginning\u0020of\u0020the\u0020dataset.",
+            "url": "classes/Flow-ETL-DataFrame.html#method_offset"
+        },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AonError\u0028\u0029",
             "name": "onError",
             "summary": "",
@@ -3000,6 +3005,21 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Exception-MissingExtensionException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\OffsetReachedException",
+            "name": "OffsetReachedException",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-OffsetReachedException.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\OffsetReachedException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-OffsetReachedException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\OffsetReachedException\u003A\u003A\u0024offset",
+            "name": "offset",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-OffsetReachedException.html#property_offset"
         },                {
             "fqsen": "\\Flow\\ETL\\Exception\\OutOfMemoryException",
             "name": "OutOfMemoryException",
@@ -7925,6 +7945,46 @@ Search.appendIndex(
             "name": "source",
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-LinkedPipeline.html#method_source"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\OffsetPipeline",
+            "name": "OffsetPipeline",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-OffsetPipeline.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\OffsetPipeline\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-OffsetPipeline.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\OffsetPipeline\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\OffsetPipeline\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\OffsetPipeline\u003A\u003Apipelines\u0028\u0029",
+            "name": "pipelines",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_pipelines"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\OffsetPipeline\u003A\u003Apipes\u0028\u0029",
+            "name": "pipes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_pipes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\OffsetPipeline\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\OffsetPipeline\u003A\u003Asource\u0028\u0029",
+            "name": "source",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_source"
         },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\Optimizer\\BatchSizeOptimization",
             "name": "BatchSizeOptimization",
