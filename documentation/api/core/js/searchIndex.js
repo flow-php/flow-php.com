@@ -10111,6 +10111,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Rows.html#method_hash"
         },                {
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Ahead\u0028\u0029",
+            "name": "head",
+            "summary": "",
+            "url": "classes/Flow-ETL-Rows.html#method_head"
+        },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AisPartitioned\u0028\u0029",
             "name": "isPartitioned",
             "summary": "",
@@ -10140,6 +10145,11 @@ Search.appendIndex(
             "name": "joinRight",
             "summary": "",
             "url": "classes/Flow-ETL-Rows.html#method_joinRight"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Alast\u0028\u0029",
+            "name": "last",
+            "summary": "",
+            "url": "classes/Flow-ETL-Rows.html#method_last"
         },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Amap\u0028\u0029",
             "name": "map",
@@ -10230,6 +10240,11 @@ Search.appendIndex(
             "name": "sortEntries",
             "summary": "",
             "url": "classes/Flow-ETL-Rows.html#method_sortEntries"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Atail\u0028\u0029",
+            "name": "tail",
+            "summary": "",
+            "url": "classes/Flow-ETL-Rows.html#method_tail"
         },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Atake\u0028\u0029",
             "name": "take",
