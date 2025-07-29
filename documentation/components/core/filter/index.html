@@ -248,6 +248,12 @@
                         <a href="/documentation/components/core/building-blocks">Building Blocks</a>
                     </li>
                     <li>
+                        <a href="/documentation/components/core/data-retrieval">Data Retrieval</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/data-manipulation">Data Manipulation</a>
+                    </li>
+                    <li>
                         <a href="/documentation/components/core/select-drop">Select/Drop</a>
                     </li>
                     <li>
@@ -260,25 +266,7 @@
                         <a href="/documentation/components/core/filter">Filter</a>
                     </li>
                     <li>
-                        <a href="/documentation/components/core/error-handling">Error Handling</a>
-                    </li>
-                    <li>
                         <a href="/documentation/components/core/join">Join</a>
-                    </li>
-                    <li>
-                        <a href="/documentation/components/core/until">Until</a>
-                    </li>
-                    <li>
-                        <a href="/documentation/components/core/sort">Sort</a>
-                    </li>
-                    <li>
-                        <a href="/documentation/components/core/display">Display</a>
-                    </li>
-                    <li>
-                        <a href="/documentation/components/core/limit">Limit</a>
-                    </li>
-                    <li>
-                        <a href="/documentation/components/core/schema">Schema</a>
                     </li>
                     <li>
                         <a href="/documentation/components/core/group-by">Group By</a>
@@ -289,7 +277,43 @@
                         </ul>
                     </li>
                     <li>
+                        <a href="/documentation/components/core/pivot">Pivot</a>
+                    </li>
+                    <li>
                         <a href="/documentation/components/core/window-functions">Window Functions</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/sort">Sort</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/limit">Limit</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/offset">Offset</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/until">Until</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/batch-processing">Batch Processing</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/caching">Caching</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/partitioning">Partitioning</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/constraints">Constraints</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/schema">Schema</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/display">Display</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/error-handling">Error Handling</a>
                     </li>
                 </ul>
             </li>
@@ -328,6 +352,30 @@ data_frame()
     -&gt;write(to_output(false))
     -&gt;run();
 </code></pre>
+<h2><a id="flow-php-complex-row-level-filtering" href="#content-complex-row-level-filtering" class="mr-2" aria-hidden="true" title="Permalink">#</a>Complex Row-level Filtering</h2>
+<p>For advanced filtering that requires custom business logic, you can use callback functions:</p>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+use Flow\ETL\Row;
+
+data_frame()
+    -&gt;read($transactionExtractor)
+    -&gt;filter(function(Row $row): bool {
+        $amount = $row-&gt;get('amount')-&gt;value();
+        $type = $row-&gt;get('type')-&gt;value();
+        $date = $row-&gt;get('date')-&gt;value();
+        
+        // Complex business logic
+        return $amount &gt; 1000 
+            &amp;&amp; $type === 'purchase' 
+            &amp;&amp; $date &gt; new DateTime('-30 days');
+    })
+    -&gt;write($highValueTransactionLoader)
+    -&gt;run();
+</code></pre>
+<blockquote>
+<p><strong>Performance Note</strong>: Callback-based filtering cannot be optimized by the engine and should be used sparingly. When possible, prefer built-in scalar functions for better performance.</p>
+</blockquote>
 <ul>
 <li><a href="until">➡️ Until</a></li>
 </ul>

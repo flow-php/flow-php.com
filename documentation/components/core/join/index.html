@@ -248,6 +248,12 @@
                         <a href="/documentation/components/core/building-blocks">Building Blocks</a>
                     </li>
                     <li>
+                        <a href="/documentation/components/core/data-retrieval">Data Retrieval</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/data-manipulation">Data Manipulation</a>
+                    </li>
+                    <li>
                         <a href="/documentation/components/core/select-drop">Select/Drop</a>
                     </li>
                     <li>
@@ -260,25 +266,7 @@
                         <a href="/documentation/components/core/filter">Filter</a>
                     </li>
                     <li>
-                        <a href="/documentation/components/core/error-handling">Error Handling</a>
-                    </li>
-                    <li>
                         <a href="/documentation/components/core/join">Join</a>
-                    </li>
-                    <li>
-                        <a href="/documentation/components/core/until">Until</a>
-                    </li>
-                    <li>
-                        <a href="/documentation/components/core/sort">Sort</a>
-                    </li>
-                    <li>
-                        <a href="/documentation/components/core/display">Display</a>
-                    </li>
-                    <li>
-                        <a href="/documentation/components/core/limit">Limit</a>
-                    </li>
-                    <li>
-                        <a href="/documentation/components/core/schema">Schema</a>
                     </li>
                     <li>
                         <a href="/documentation/components/core/group-by">Group By</a>
@@ -289,7 +277,43 @@
                         </ul>
                     </li>
                     <li>
+                        <a href="/documentation/components/core/pivot">Pivot</a>
+                    </li>
+                    <li>
                         <a href="/documentation/components/core/window-functions">Window Functions</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/sort">Sort</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/limit">Limit</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/offset">Offset</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/until">Until</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/batch-processing">Batch Processing</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/caching">Caching</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/partitioning">Partitioning</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/constraints">Constraints</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/schema">Schema</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/display">Display</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/error-handling">Error Handling</a>
                     </li>
                 </ul>
             </li>
@@ -314,22 +338,47 @@
 <ul>
 <li><a href="/documentation/components/core/core">⬅️️ Back</a></li>
 </ul>
-<p>Joining two data frames is a common operation in data processing.
-It is used to combine data from two different sources into one data frame.
-The join operation is performed on a common column or columns between the two data frames.</p>
+<p>Joining two data frames is a common operation in data processing that combines data from two different sources. Flow PHP
+implements joins using a <strong>hash join algorithm</strong> that creates a hash table from the right DataFrame and probes it with
+rows from the left DataFrame.</p>
 <h2><a id="flow-php-join-methods" href="#content-join-methods" class="mr-2" aria-hidden="true" title="Permalink">#</a>Join Methods</h2>
-<ul>
-<li><code>DataFrame::crossJoin</code> - join each row from the left side with each row on the right side creating <code>count(left) * count(right)</code> rows in total.</li>
-<li><code>DataFrame::join</code> - right side is static for each left Rows set.</li>
-<li><code>DataFrame::joinEach</code> - right side dynamically generated for each left Rows set.</li>
-</ul>
+<h3><a id="flow-php-join-1" href="#content-join-1" class="mr-2" aria-hidden="true" title="Permalink">#</a>join()</h3>
+<p>Main join method that loads the right DataFrame into memory as a hash table for efficient lookups.</p>
+<h3><a id="flow-php-crossjoin---cartesian-product" href="#content-crossjoin---cartesian-product" class="mr-2" aria-hidden="true" title="Permalink">#</a>crossJoin() - Cartesian Product</h3>
+<p>Joins each row from the left side with each row on the right side, creating <code>count(left) * count(right)</code> rows total.</p>
+<h3><a id="flow-php-joineach---streaming-join" href="#content-joineach---streaming-join" class="mr-2" aria-hidden="true" title="Permalink">#</a>joinEach() - Streaming Join</h3>
+<p>Right side is dynamically generated for each left row, useful for large right-side datasets that don't fit in memory.</p>
 <h2><a id="flow-php-join-types" href="#content-join-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Join Types</h2>
-<ul>
-<li><code>left</code></li>
-<li><code>left_anti</code> (keep in left only what does not exist in right)</li>
-<li><code>right</code></li>
-<li><code>inner</code></li>
-</ul>
+<p>Flow PHP supports four join types with specific behaviors:</p>
+<table>
+<thead>
+<tr>
+<th>Join Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Left Join</strong> (<code>Join::left</code>)</td>
+<td>Returns all rows from left DataFrame with matching rows from right (or NULL) - <strong>Default</strong></td>
+</tr>
+<tr>
+<td><strong>Inner Join</strong> (<code>Join::inner</code>)</td>
+<td>Returns only rows that exist in both DataFrames</td>
+</tr>
+<tr>
+<td><strong>Right Join</strong> (<code>Join::right</code>)</td>
+<td>Returns all rows from right DataFrame with matching rows from left (or NULL)</td>
+</tr>
+<tr>
+<td><strong>Left Anti Join</strong> (<code>Join::left_anti</code>)</td>
+<td>Returns rows from left DataFrame that have NO match in right DataFrame</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Flow uses hash join implementation where hashes are stored in sorted buckets to optimize memory usage and performance.</p>
+</blockquote>
 <h2><a id="flow-php-example" href="#content-example" class="mr-2" aria-hidden="true" title="Permalink">#</a>Example</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -344,12 +393,6 @@ $internalProducts = [
     ['id' =&gt; 3, 'sku' =&gt; 'PRODUCT03'],
 ];
 
-/**
- * DataFrame::join will perform joining having both dataframes in memory.
- * This means that if if the right side dataframe is big (as the left side usually will be a batch)
- * then it might become performance bottleneck.
- * In that case please look at DataFrame::joinEach.
- */
 data_frame()
     -&gt;read(from_array($externalProducts))
     -&gt;join(
@@ -361,7 +404,8 @@ data_frame()
     -&gt;run();
 </code></pre>
 <p>Output:</p>
-<pre class="language-console"><code class="language-console" data-controller="syntax-highlight">| id |       sku |
+<pre class="language-console"><code class="language-console" data-controller="syntax-highlight">+----+-----------+
+| id |       sku |
 +----+-----------+
 |  1 | PRODUCT01 |
 +----+-----------+
