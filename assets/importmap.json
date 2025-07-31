@@ -8,27 +8,27 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-a4a38dfe8b05cad8df0c4b5fe449517c.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-278cfe7192d506f3aea18c2f789f1337.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/all_links_external_controller.js": {
+        "path": "\/assets\/controllers\/all_links_external_controller-2814b02105ed2e4f92c5f5747e0e46c8.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/clipboard_controller.js": {
+        "path": "\/assets\/controllers\/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js",
         "type": "js"
     },
     "\/assets\/controllers\/scroll_to_top_controller.js": {
         "path": "\/assets\/controllers\/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
         "type": "js"
     },
-    "\/assets\/controllers\/all_links_external_controller.js": {
-        "path": "\/assets\/controllers\/all_links_external_controller-3d9fa0aa855dc5722728d005bdf6ab1d.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/clipboard_controller.js": {
-        "path": "\/assets\/controllers\/clipboard_controller-6aefa8a9dec3271dae2f05b464bf9204.js",
-        "type": "js"
-    },
     "\/assets\/controllers\/mermaid_controller.js": {
-        "path": "\/assets\/controllers\/mermaid_controller-6239ce5026641ac4dfde4abebd5b3887.js",
+        "path": "\/assets\/controllers\/mermaid_controller-4ec011246a55fcc8b844940a72cd2b54.js",
         "type": "js"
     },
     "\/assets\/controllers\/syntax_highlight_controller.js": {
-        "path": "\/assets\/controllers\/syntax_highlight_controller-f3f4058d12e9c1cdcda49210dcab42b0.js",
+        "path": "\/assets\/controllers\/syntax_highlight_controller-962ec734ce23689f526d17bfce5fbec3.js",
         "type": "js"
     },
     "\/assets\/prismjs\/themes\/prism-flow.css": {
