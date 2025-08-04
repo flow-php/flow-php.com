@@ -351,19 +351,19 @@ It enables you to generate OpenAPI documentation from Flow schemas and vice vers
 
 use function Flow\ETL\DSL\{schema, int_schema, str_schema, bool_schema};
 use function Flow\Bridge\OpenAPI\Specification\DSL\schema_to_openapi_specification;
-use Flow\ETL\Schema\Metadata;
+use Flow\Bridge\OpenAPI\Specification\OpenAPIMetadata;
 
 $userSchema = schema(
-    int_schema('id', false, Metadata::empty()
-        -&gt;add('description', 'Unique user identifier')
-        -&gt;add('example', 123)
+    int_schema('id', false, 
+        OpenAPIMetadata::description('Unique user identifier')
+            -&gt;merge(OpenAPIMetadata::example(123))
     ),
-    str_schema('name', true, Metadata::empty()
-        -&gt;add('description', 'User full name')
-        -&gt;add('example', 'John Doe')
+    str_schema('name', true, 
+        OpenAPIMetadata::description('User full name')
+            -&gt;merge(OpenAPIMetadata::example('John Doe'))
     ),
-    bool_schema('active', false, Metadata::empty()
-        -&gt;add('description', 'Account status')
+    bool_schema('active', false, 
+        OpenAPIMetadata::description('Account status')
     )
 );
 
@@ -428,23 +428,186 @@ $flowSchema = schema_from_openapi_specification($openApiSpec);
 
 // Now you can use $flowSchema in Flow ETL pipelines
 </code></pre>
+<h2><a id="flow-php-openapi-metadata" href="#content-openapi-metadata" class="mr-2" aria-hidden="true" title="Permalink">#</a>OpenAPI Metadata</h2>
+<p>The OpenAPI Specification Bridge provides specialized metadata handling through the <code>OpenAPIMetadata</code> enum, allowing you to add OpenAPI-specific properties to your Flow schema definitions. This metadata is used during schema conversion to generate rich OpenAPI specifications.</p>
+<h3><a id="flow-php-available-openapi-metadata" href="#content-available-openapi-metadata" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available OpenAPI Metadata</h3>
+<p>The <code>OpenAPIMetadata</code> enum provides the following metadata types:</p>
+<ul>
+<li><code>DESCRIPTION</code> - Human-readable description of the property</li>
+<li><code>FORMAT</code> - OpenAPI format specification (e.g., 'email', 'date-time', 'uuid')</li>
+<li><code>EXAMPLE</code> - Example value for the property</li>
+<li><code>EXAMPLES</code> - Multiple named examples</li>
+<li><code>DEPRECATED</code> - Mark property as deprecated</li>
+<li><code>TITLE</code> - Short title for the property</li>
+<li><code>DEFAULT</code> - Default value for the property</li>
+<li><code>READ_ONLY</code> - Mark property as read-only</li>
+<li><code>WRITE_ONLY</code> - Mark property as write-only</li>
+<li><code>NULLABLE</code> - Override schema nullability</li>
+</ul>
+<h3><a id="flow-php-using-openapi-metadata" href="#content-using-openapi-metadata" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using OpenAPI Metadata</h3>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+use function Flow\ETL\DSL\{schema, int_schema, str_schema};
+use Flow\Bridge\OpenAPI\Specification\{OpenAPIConverter, OpenAPIMetadata};
+
+$userSchema = schema(
+    int_schema('id', false, 
+        OpenAPIMetadata::description('Unique user identifier')
+            -&gt;merge(OpenAPIMetadata::format('int64'))
+            -&gt;merge(OpenAPIMetadata::example(12345))
+            -&gt;merge(OpenAPIMetadata::readOnly())
+    ),
+    str_schema('email', false,
+        OpenAPIMetadata::description('User email address')
+            -&gt;merge(OpenAPIMetadata::format('email'))
+            -&gt;merge(OpenAPIMetadata::example('user@example.com'))
+            -&gt;merge(OpenAPIMetadata::title('Email Address'))
+    ),
+    str_schema('password', false,
+        OpenAPIMetadata::description('User password')
+            -&gt;merge(OpenAPIMetadata::format('password'))
+            -&gt;merge(OpenAPIMetadata::writeOnly())
+    ),
+    str_schema('status', false,
+        OpenAPIMetadata::description('Account status')
+            -&gt;merge(OpenAPIMetadata::default('active'))
+            -&gt;merge(OpenAPIMetadata::examples([
+                'active' =&gt; 'active',
+                'inactive' =&gt; 'inactive',
+                'suspended' =&gt; 'suspended'
+            ]))
+    )
+);
+
+$converter = new OpenAPIConverter();
+$openApiSpec = $converter-&gt;toOpenAPI($userSchema);
+
+// Results in:
+// [
+//     'type' =&gt; 'object',
+//     'properties' =&gt; [
+//         'id' =&gt; [
+//             'type' =&gt; 'integer',
+//             'nullable' =&gt; false,
+//             'description' =&gt; 'Unique user identifier',
+//             'format' =&gt; 'int64',
+//             'example' =&gt; 12345,
+//             'readOnly' =&gt; true
+//         ],
+//         'email' =&gt; [
+//             'type' =&gt; 'string',
+//             'nullable' =&gt; false,
+//             'description' =&gt; 'User email address',
+//             'format' =&gt; 'email',
+//             'example' =&gt; 'user@example.com',
+//             'title' =&gt; 'Email Address'
+//         ],
+//         'password' =&gt; [
+//             'type' =&gt; 'string',
+//             'nullable' =&gt; false,
+//             'description' =&gt; 'User password',
+//             'format' =&gt; 'password',
+//             'writeOnly' =&gt; true
+//         ],
+//         'status' =&gt; [
+//             'type' =&gt; 'string',
+//             'nullable' =&gt; false,
+//             'description' =&gt; 'Account status',
+//             'default' =&gt; 'active',
+//             'examples' =&gt; [
+//                 'active' =&gt; 'active',
+//                 'inactive' =&gt; 'inactive',
+//                 'suspended' =&gt; 'suspended'
+//             ]
+//         ]
+//     ]
+// ]
+</code></pre>
+<h3><a id="flow-php-metadata-priority-system" href="#content-metadata-priority-system" class="mr-2" aria-hidden="true" title="Permalink">#</a>Metadata Priority System</h3>
+<p>The OpenAPI bridge uses a priority system when handling metadata:</p>
+<ol>
+<li><strong>OpenAPI-specific metadata</strong> (from <code>OpenAPIMetadata</code>) takes highest priority</li>
+<li><strong>Legacy metadata keys</strong> are used as fallback when OpenAPI metadata is not present</li>
+</ol>
+<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
+
+use Flow\ETL\Schema\Metadata;
+use Flow\Bridge\OpenAPI\Specification\OpenAPIMetadata;
+
+// OpenAPI metadata takes priority over legacy metadata
+$metadata = Metadata::with('description', 'Legacy description')
+    -&gt;merge(OpenAPIMetadata::description('OpenAPI description')) // This wins
+    -&gt;merge(Metadata::with('example', 'Legacy example'))
+    -&gt;merge(OpenAPIMetadata::example('OpenAPI example')); // This wins
+
+$schema = schema(
+    str_schema('field', false, $metadata)
+);
+
+// Result will use OpenAPI values: "OpenAPI description" and "OpenAPI example"
+</code></pre>
+<h3><a id="flow-php-common-openapi-formats" href="#content-common-openapi-formats" class="mr-2" aria-hidden="true" title="Permalink">#</a>Common OpenAPI Formats</h3>
+<p>Here are some commonly used OpenAPI formats you can specify with <code>OpenAPIMetadata::format()</code>:</p>
+<p><strong>String formats:</strong></p>
+<ul>
+<li><code>email</code> - Email address</li>
+<li><code>uri</code> - URI/URL</li>
+<li><code>uuid</code> - UUID string</li>
+<li><code>date</code> - Date (YYYY-MM-DD)</li>
+<li><code>date-time</code> - Date and time (RFC 3339)</li>
+<li><code>password</code> - Password field</li>
+<li><code>byte</code> - Base64 encoded string</li>
+<li><code>binary</code> - Binary data</li>
+</ul>
+<p><strong>Integer formats:</strong></p>
+<ul>
+<li><code>int32</code> - 32-bit integer</li>
+<li><code>int64</code> - 64-bit integer</li>
+</ul>
+<p><strong>Number formats:</strong></p>
+<ul>
+<li><code>float</code> - Floating point number</li>
+<li><code>double</code> - Double precision number</li>
+</ul>
 <h3><a id="flow-php-usage-example" href="#content-usage-example" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage Example</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\ETL\DSL\{schema, int_schema, str_schema, list_schema, structure_schema};
 use function Flow\Types\DSL\{type_list, type_string, type_structure};
 use function Flow\Bridge\OpenAPI\Specification\DSL\schema_to_openapi_specification;
+use Flow\Bridge\OpenAPI\Specification\OpenAPIMetadata;
 
-// Define your data schema
+// Define your data schema with rich OpenAPI metadata
 $productSchema = schema(
-    int_schema('id', false),
-    str_schema('name', false),
-    str_schema('description', true),
+    int_schema('id', false, 
+        OpenAPIMetadata::description('Product identifier')
+            -&gt;merge(OpenAPIMetadata::format('int64'))
+            -&gt;merge(OpenAPIMetadata::example(123))
+            -&gt;merge(OpenAPIMetadata::readOnly())
+    ),
+    str_schema('name', false,
+        OpenAPIMetadata::description('Product name')
+            -&gt;merge(OpenAPIMetadata::title('Name'))
+            -&gt;merge(OpenAPIMetadata::example('iPhone 15'))
+    ),
+    str_schema('description', true,
+        OpenAPIMetadata::description('Detailed product description')
+            -&gt;merge(OpenAPIMetadata::example('Latest smartphone with advanced features'))
+    ),
     structure_schema('category', type_structure([
         'id' =&gt; type_string(),
         'name' =&gt; type_string()
-    ]), false),
-    list_schema('tags', type_list(type_string()), true)
+    ]), false, 
+        OpenAPIMetadata::description('Product category information')
+    ),
+    list_schema('tags', type_list(type_string()), true,
+        OpenAPIMetadata::description('Product tags for categorization')
+            -&gt;merge(OpenAPIMetadata::examples([
+                'electronics' =&gt; 'electronics',
+                'smartphone' =&gt; 'smartphone',
+                'apple' =&gt; 'apple'
+            ]))
+    )
 );
 
 $apiSpec = schema_to_openapi_specification($productSchema);
@@ -478,17 +641,6 @@ $fullApiSpec = [
     ]
 ];
 </code></pre>
-<h2><a id="flow-php-supported-openapi-features" href="#content-supported-openapi-features" class="mr-2" aria-hidden="true" title="Permalink">#</a>Supported OpenAPI Features</h2>
-<h3><a id="flow-php--supported" href="#content--supported" class="mr-2" aria-hidden="true" title="Permalink">#</a>✅ Supported</h3>
-<ul>
-<li>Basic types (boolean, integer, number, string)</li>
-<li>String formats (date, date-time, time, uuid, json, xml)</li>
-<li>Arrays with typed items</li>
-<li>Objects with properties and additionalProperties</li>
-<li>Nullable types</li>
-<li>Descriptions and examples</li>
-<li>Nested structures</li>
-</ul>
 
 
             <hr class="!mt-8 !mb-8"/>
