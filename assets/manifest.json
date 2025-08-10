@@ -1,5 +1,5 @@
 {
-    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-278cfe7192d506f3aea18c2f789f1337.js",
+    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-b43b4f2a8f409314854a421dc956ee40.js",
     "@symfony\/stimulus-bundle\/loader.js": "\/assets\/@symfony\/stimulus-bundle\/loader-5751ad1ee2975e725a94d8121d153d17.js",
     "app.js": "\/assets\/app-d6226daa238de3f1832e60a162430df0.js",
     "bootstrap.js": "\/assets\/bootstrap-d78d7e12c819dedf89372fb4824c072d.js",
@@ -42,6 +42,7 @@
     "images\/icons\/zoom-in.svg": "\/assets\/images\/icons\/zoom-in-9eacdb71210dc279f9ca96379586d107.svg",
     "images\/icons\/zoom-out.svg": "\/assets\/images\/icons\/zoom-out-c8e95172b4e49a372172740fe7081615.svg",
     "images\/logo.svg": "\/assets\/images\/logo-3ed481e55faedcd874c34e4801929d00.svg",
+    "images\/sponsors\/1Password.png": "\/assets\/images\/sponsors\/1Password-af64b2b6d549286c95dcfda0d8709d57.png",
     "images\/sponsors\/blackfire.png": "\/assets\/images\/sponsors\/blackfire-7800a0b88dc05761b6593337af2f6595.png",
     "images\/sponsors\/cloudflare.png": "\/assets\/images\/sponsors\/cloudflare-71d8ae36da66db1c36ec9637e923191d.png",
     "images\/sponsors\/digital-ocean.svg": "\/assets\/images\/sponsors\/digital-ocean-f52161a0d9116636a061591ceff00144.svg",

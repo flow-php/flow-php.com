@@ -8,7 +8,7 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-278cfe7192d506f3aea18c2f789f1337.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-b43b4f2a8f409314854a421dc956ee40.js",
         "type": "js"
     },
     "\/assets\/controllers\/all_links_external_controller.js": {
@@ -17,10 +17,6 @@
     },
     "\/assets\/controllers\/clipboard_controller.js": {
         "path": "\/assets\/controllers\/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/scroll_to_top_controller.js": {
-        "path": "\/assets\/controllers\/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
         "type": "js"
     },
     "\/assets\/controllers\/mermaid_controller.js": {
@@ -37,6 +33,10 @@
     },
     "\/assets\/prismjs\/plugins\/autolinker\/autolinker.js": {
         "path": "\/assets\/prismjs\/plugins\/autolinker\/autolinker-e906ddf9b7d89f169c9cf40a53e5605d.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/scroll_to_top_controller.js": {
+        "path": "\/assets\/controllers\/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
         "type": "js"
     },
     "@symfony\/stimulus-bundle": {
