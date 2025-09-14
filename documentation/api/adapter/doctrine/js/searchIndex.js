@@ -416,6 +416,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-adapter-doctrine.html#function_postgresql_update_options"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\to_dbal_transaction\u0028\u0029",
+            "name": "to_dbal_transaction",
+            "summary": "Execute\u0020multiple\u0020loaders\u0020within\u0020a\u0020database\u0020transaction.",
+            "url": "namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_transaction"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\pagination_key_asc\u0028\u0029",
             "name": "pagination_key_asc",
             "summary": "",
@@ -710,6 +715,31 @@ Search.appendIndex(
             "name": "columns",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-Table.html#property_columns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TransactionalDbalLoader",
+            "name": "TransactionalDbalLoader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TransactionalDbalLoader.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TransactionalDbalLoader\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TransactionalDbalLoader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TransactionalDbalLoader\u003A\u003AfromConnection\u0028\u0029",
+            "name": "fromConnection",
+            "summary": "Since\u0020Connection\u003A\u003AgetParams\u0028\u0029\u0020is\u0020marked\u0020as\u0020an\u0020internal\u0020method,\u0020please\nuse\u0020this\u0020constructor\u0020with\u0020caution.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TransactionalDbalLoader.html#method_fromConnection"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TransactionalDbalLoader\u003A\u003Aload\u0028\u0029",
+            "name": "load",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TransactionalDbalLoader.html#method_load"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TransactionalDbalLoader\u003A\u003AwithIsolationLevel\u0028\u0029",
+            "name": "withIsolationLevel",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TransactionalDbalLoader.html#method_withIsolationLevel"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypesMap",
             "name": "TypesMap",
