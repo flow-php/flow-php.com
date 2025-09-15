@@ -2831,6 +2831,61 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_match_condition"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\retry_any_throwable\u0028\u0029",
+            "name": "retry_any_throwable",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_retry_any_throwable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\retry_on_exception_types\u0028\u0029",
+            "name": "retry_on_exception_types",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_retry_on_exception_types"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\delay_linear\u0028\u0029",
+            "name": "delay_linear",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_delay_linear"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\delay_exponential\u0028\u0029",
+            "name": "delay_exponential",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_delay_exponential"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\delay_jitter\u0028\u0029",
+            "name": "delay_jitter",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_delay_jitter"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\delay_fixed\u0028\u0029",
+            "name": "delay_fixed",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_delay_fixed"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\duration_seconds\u0028\u0029",
+            "name": "duration_seconds",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_duration_seconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\duration_milliseconds\u0028\u0029",
+            "name": "duration_milliseconds",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_duration_milliseconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\duration_microseconds\u0028\u0029",
+            "name": "duration_microseconds",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_duration_microseconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\duration_minutes\u0028\u0029",
+            "name": "duration_minutes",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_duration_minutes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\write_with_retries\u0028\u0029",
+            "name": "write_with_retries",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_write_with_retries"
+        },                {
             "fqsen": "\\Flow\\ETL\\ErrorHandler\\IgnoreError",
             "name": "IgnoreError",
             "summary": "",
@@ -2910,6 +2965,21 @@ Search.appendIndex(
             "name": "Exception",
             "summary": "",
             "url": "classes/Flow-ETL-Exception-Exception.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\FailedRetryException",
+            "name": "FailedRetryException",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-FailedRetryException.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\FailedRetryException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-FailedRetryException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\FailedRetryException\u003A\u003A\u0024record",
+            "name": "record",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-FailedRetryException.html#property_record"
         },                {
             "fqsen": "\\Flow\\ETL\\Exception\\InvalidArgumentException",
             "name": "InvalidArgumentException",
@@ -7401,6 +7471,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Loader-OverridingLoader.html#method_loaders"
         },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\RetryLoader",
+            "name": "RetryLoader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-RetryLoader.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\RetryLoader\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-RetryLoader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\RetryLoader\u003A\u003Aload\u0028\u0029",
+            "name": "load",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-RetryLoader.html#method_load"
+        },                {
             "fqsen": "\\Flow\\ETL\\Loader\\SchemaValidationLoader",
             "name": "SchemaValidationLoader",
             "summary": "",
@@ -8275,6 +8360,181 @@ Search.appendIndex(
             "name": "string",
             "summary": "",
             "url": "classes/Flow-ETL-RandomValueGenerator.html#method_string"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Exponential",
+            "name": "Exponential",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Exponential.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Exponential\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Exponential.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Exponential\u003A\u003Adelay\u0028\u0029",
+            "name": "delay",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Exponential.html#method_delay"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Fixed\\FixedMilliseconds",
+            "name": "FixedMilliseconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Fixed-FixedMilliseconds.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Fixed\\FixedMilliseconds\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Fixed-FixedMilliseconds.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Fixed\\FixedMilliseconds\u003A\u003Adelay\u0028\u0029",
+            "name": "delay",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Fixed-FixedMilliseconds.html#method_delay"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Fixed",
+            "name": "Fixed",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Fixed.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Fixed\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Fixed.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Fixed\u003A\u003Adelay\u0028\u0029",
+            "name": "delay",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Fixed.html#method_delay"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Jitter",
+            "name": "Jitter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Jitter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Jitter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Jitter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Jitter\u003A\u003Adelay\u0028\u0029",
+            "name": "delay",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Jitter.html#method_delay"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Linear",
+            "name": "Linear",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Linear.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Linear\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Linear.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Linear\u003A\u003Adelay\u0028\u0029",
+            "name": "delay",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory-Linear.html#method_delay"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory",
+            "name": "DelayFactory",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\u003A\u003Adelay\u0028\u0029",
+            "name": "delay",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-DelayFactory.html#method_delay"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\FailedRetry",
+            "name": "FailedRetry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-FailedRetry.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\FailedRetry\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-FailedRetry.html#method_create"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\FailedRetry\u003A\u003A\u0024timestamp",
+            "name": "timestamp",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-FailedRetry.html#property_timestamp"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\FailedRetry\u003A\u003A\u0024exception",
+            "name": "exception",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-FailedRetry.html#property_exception"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\FailedRetry\u003A\u003A\u0024attemptNumber",
+            "name": "attemptNumber",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-FailedRetry.html#property_attemptNumber"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetriesRecord",
+            "name": "RetriesRecord",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetriesRecord.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetriesRecord\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetriesRecord.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetriesRecord\u003A\u003Aattempts\u0028\u0029",
+            "name": "attempts",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetriesRecord.html#method_attempts"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetriesRecord\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetriesRecord.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetriesRecord\u003A\u003Alast\u0028\u0029",
+            "name": "last",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetriesRecord.html#method_last"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetryStrategy\\AnyThrowable",
+            "name": "AnyThrowable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetryStrategy-AnyThrowable.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetryStrategy\\AnyThrowable\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetryStrategy-AnyThrowable.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetryStrategy\\AnyThrowable\u003A\u003AshouldRetry\u0028\u0029",
+            "name": "shouldRetry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetryStrategy-AnyThrowable.html#method_shouldRetry"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetryStrategy\\OnExceptionTypes",
+            "name": "OnExceptionTypes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetryStrategy-OnExceptionTypes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetryStrategy\\OnExceptionTypes\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetryStrategy-OnExceptionTypes.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetryStrategy\\OnExceptionTypes\u003A\u003AshouldRetry\u0028\u0029",
+            "name": "shouldRetry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetryStrategy-OnExceptionTypes.html#method_shouldRetry"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetryStrategy",
+            "name": "RetryStrategy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetryStrategy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetryStrategy\u003A\u003AshouldRetry\u0028\u0029",
+            "name": "shouldRetry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetryStrategy.html#method_shouldRetry"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\CartesianProduct",
             "name": "CartesianProduct",
@@ -10981,6 +11241,111 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-String-StringStyles.html#enumcase_UPPER"
         },                {
+            "fqsen": "\\Flow\\ETL\\Time\\Duration",
+            "name": "Duration",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-Duration.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\Duration\u003A\u003AfromMicroseconds\u0028\u0029",
+            "name": "fromMicroseconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-Duration.html#method_fromMicroseconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\Duration\u003A\u003AfromMilliseconds\u0028\u0029",
+            "name": "fromMilliseconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-Duration.html#method_fromMilliseconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\Duration\u003A\u003AfromMinutes\u0028\u0029",
+            "name": "fromMinutes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-Duration.html#method_fromMinutes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\Duration\u003A\u003AfromSeconds\u0028\u0029",
+            "name": "fromSeconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-Duration.html#method_fromSeconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\Duration\u003A\u003Amicroseconds\u0028\u0029",
+            "name": "microseconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-Duration.html#method_microseconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\Duration\u003A\u003Amilliseconds\u0028\u0029",
+            "name": "milliseconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-Duration.html#method_milliseconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\Duration\u003A\u003Aminutes\u0028\u0029",
+            "name": "minutes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-Duration.html#method_minutes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\Duration\u003A\u003Aseconds\u0028\u0029",
+            "name": "seconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-Duration.html#method_seconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\FakeSleep",
+            "name": "FakeSleep",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-FakeSleep.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\FakeSleep\u003A\u003Afor\u0028\u0029",
+            "name": "for",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-FakeSleep.html#method_for"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\FakeSleep\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-FakeSleep.html#method_reset"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\FakeSleep\u003A\u003AsleepCount\u0028\u0029",
+            "name": "sleepCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-FakeSleep.html#method_sleepCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\FakeSleep\u003A\u003AsleepDurations\u0028\u0029",
+            "name": "sleepDurations",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-FakeSleep.html#method_sleepDurations"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\FakeSleep\u003A\u003AtotalMicroseconds\u0028\u0029",
+            "name": "totalMicroseconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-FakeSleep.html#method_totalMicroseconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\FakeSleep\u003A\u003AtotalMilliseconds\u0028\u0029",
+            "name": "totalMilliseconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-FakeSleep.html#method_totalMilliseconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\FakeSleep\u003A\u003AtotalSeconds\u0028\u0029",
+            "name": "totalSeconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-FakeSleep.html#method_totalSeconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\Sleep",
+            "name": "Sleep",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-Sleep.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\Sleep\u003A\u003Afor\u0028\u0029",
+            "name": "for",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-Sleep.html#method_for"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\SystemSleep",
+            "name": "SystemSleep",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-SystemSleep.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time\\SystemSleep\u003A\u003Afor\u0028\u0029",
+            "name": "for",
+            "summary": "",
+            "url": "classes/Flow-ETL-Time-SystemSleep.html#method_for"
+        },                {
             "fqsen": "\\Flow\\ETL\\Transformation\\AddRowIndex\\StartFrom",
             "name": "StartFrom",
             "summary": "",
@@ -11971,6 +12336,26 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-pipeline-optimizer.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory",
+            "name": "DelayFactory",
+            "summary": "",
+            "url": "namespaces/flow-etl-retry-delayfactory.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory\\Fixed",
+            "name": "Fixed",
+            "summary": "",
+            "url": "namespaces/flow-etl-retry-delayfactory-fixed.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry",
+            "name": "Retry",
+            "summary": "",
+            "url": "namespaces/flow-etl-retry.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetryStrategy",
+            "name": "RetryStrategy",
+            "summary": "",
+            "url": "namespaces/flow-etl-retry-retrystrategy.html"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row",
             "name": "Row",
             "summary": "",
@@ -12030,6 +12415,11 @@ Search.appendIndex(
             "name": "String",
             "summary": "",
             "url": "namespaces/flow-etl-string.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Time",
+            "name": "Time",
+            "summary": "",
+            "url": "namespaces/flow-etl-time.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformation\\AddRowIndex",
             "name": "AddRowIndex",
