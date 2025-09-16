@@ -2146,6 +2146,36 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_refs"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\select\u0028\u0029",
+            "name": "select",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_select"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\drop\u0028\u0029",
+            "name": "drop",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_drop"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\add_row_index\u0028\u0029",
+            "name": "add_row_index",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_add_row_index"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\batch_size\u0028\u0029",
+            "name": "batch_size",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_batch_size"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\limit\u0028\u0029",
+            "name": "limit",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_limit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\mask_columns\u0028\u0029",
+            "name": "mask_columns",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_mask_columns"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\optional\u0028\u0029",
             "name": "optional",
             "summary": "",
@@ -11391,6 +11421,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformation-BatchSize.html#method_transform"
         },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\Drop",
+            "name": "Drop",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-Drop.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\Drop\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-Drop.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\Drop\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-Drop.html#method_transform"
+        },                {
             "fqsen": "\\Flow\\ETL\\Transformation\\Limit",
             "name": "Limit",
             "summary": "",
@@ -11420,6 +11465,21 @@ Search.appendIndex(
             "name": "transform",
             "summary": "",
             "url": "classes/Flow-ETL-Transformation-MaskColumns.html#method_transform"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\Select",
+            "name": "Select",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-Select.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\Select\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-Select.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\Select\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-Select.html#method_transform"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformation",
             "name": "Transformation",
