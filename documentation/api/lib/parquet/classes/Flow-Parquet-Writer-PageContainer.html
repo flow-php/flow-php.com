@@ -111,8 +111,6 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
-    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
-
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -122,7 +120,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagecontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php">PageContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
@@ -150,13 +148,7 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-Parquet-Writer-PageContainer.html#property_dictionary">$dictionary</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;|null            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-Parquet-Writer-PageContainer.html#property_pageBuffer">$pageBuffer</a>
+    <a class="" href="classes/Flow-Parquet-Writer-PageContainer.html#property_compressedData">$compressedData</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
@@ -165,18 +157,6 @@
     <a class="" href="classes/Flow-Parquet-Writer-PageContainer.html#property_pageHeader">$pageHeader</a>
     <span>
                         &nbsp;: <a href="classes/Flow-Parquet-ParquetFile-Page-PageHeader.html"><abbr title="\Flow\Parquet\ParquetFile\Page\PageHeader">PageHeader</abbr></a>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-Parquet-Writer-PageContainer.html#property_pageHeaderBuffer">$pageHeaderBuffer</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-Parquet-Writer-PageContainer.html#property_values">$values</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 
     </dl>
@@ -203,6 +183,12 @@
     <a class="" href="classes/Flow-Parquet-Writer-PageContainer.html#method_headerSize">headerSize()</a>
     <span>
                                 &nbsp;: int    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Writer-PageContainer.html#method_serializedHeader">serializedHeader()</a>
+    <span>
+                                &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -237,9 +223,9 @@
             -public
                                                                     "
 >
-    <h4 class="phpdocumentor-element__name" id="property_dictionary">
-        $dictionary
-        <a href="classes/Flow-Parquet-Writer-PageContainer.html#property_dictionary" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_compressedData">
+        $compressedData
+        <a href="classes/Flow-Parquet-Writer-PageContainer.html#property_compressedData" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                             </span>
@@ -247,45 +233,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagecontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php">PageContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;|null</span>
-    <span class="phpdocumentor-signature__name">$dictionary</span>
-    </code>
-
-    
-    
-    
-
-    
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_pageBuffer">
-        $pageBuffer
-        <a href="classes/Flow-Parquet-Writer-PageContainer.html#property_pageBuffer" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagecontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php">PageContainer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -294,7 +242,7 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$pageBuffer</span>
+    <span class="phpdocumentor-signature__name">$compressedData</span>
     </code>
 
     
@@ -323,7 +271,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagecontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php">PageContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -333,82 +281,6 @@
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type"><a href="classes/Flow-Parquet-ParquetFile-Page-PageHeader.html"><abbr title="\Flow\Parquet\ParquetFile\Page\PageHeader">PageHeader</abbr></a></span>
     <span class="phpdocumentor-signature__name">$pageHeader</span>
-    </code>
-
-    
-    
-    
-
-    
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_pageHeaderBuffer">
-        $pageHeaderBuffer
-        <a href="classes/Flow-Parquet-Writer-PageContainer.html#property_pageHeaderBuffer" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagecontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php">PageContainer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">19</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$pageHeaderBuffer</span>
-    </code>
-
-    
-    
-    
-
-    
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_values">
-        $values
-        <a href="classes/Flow-Parquet-Writer-PageContainer.html#property_values" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagecontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php">PageContainer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">21</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$values</span>
     </code>
 
     
@@ -449,7 +321,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageHeaderBuffer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageBuffer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dictionary</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Parquet-ParquetFile-Page-PageHeader.html"><abbr title="\Flow\Parquet\ParquetFile\Page\PageHeader">PageHeader</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageHeader</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$compressedData</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-Parquet-ParquetFile-Page-PageHeader.html"><abbr title="\Flow\Parquet\ParquetFile\Page\PageHeader">PageHeader</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageHeader</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -458,36 +330,15 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pageHeaderBuffer</span>
+                <span class="phpdocumentor-signature__argument__name">$compressedData</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pageBuffer</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$values</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
-<li>when dictionary is present values are indices</li>
+<li>Compressed page data (repetition levels, definition levels, and values)</li>
 </ul>
 </section>
 
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$dictionary</span>
-                : <span class="phpdocumentor-signature__argument__return-type">null|array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pageHeader</span>
@@ -518,7 +369,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagecontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php">PageContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -556,7 +407,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagecontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php">PageContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -586,6 +437,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_serializedHeader">
+        serializedHeader()
+        <a href="classes/Flow-Parquet-Writer-PageContainer.html#method_serializedHeader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagecontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php">PageContainer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">serializedHeader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_totalCompressedSize">
         totalCompressedSize()
         <a href="classes/Flow-Parquet-Writer-PageContainer.html#method_totalCompressedSize" class="headerlink"><i class="fas fa-link"></i></a>
@@ -594,7 +483,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagecontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php">PageContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -632,7 +521,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagecontainer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageContainer.php">PageContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -771,11 +660,8 @@
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Flow-Parquet-Writer-PageContainer.html#property_dictionary">$dictionary</a></li>
-                                                    <li class=""><a href="classes/Flow-Parquet-Writer-PageContainer.html#property_pageBuffer">$pageBuffer</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-Writer-PageContainer.html#property_compressedData">$compressedData</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Writer-PageContainer.html#property_pageHeader">$pageHeader</a></li>
-                                                    <li class=""><a href="classes/Flow-Parquet-Writer-PageContainer.html#property_pageHeaderBuffer">$pageHeaderBuffer</a></li>
-                                                    <li class=""><a href="classes/Flow-Parquet-Writer-PageContainer.html#property_values">$values</a></li>
                                             </ul>
                 </li>
             
@@ -785,6 +671,7 @@
                                             <li class=""><a href="classes/Flow-Parquet-Writer-PageContainer.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-PageContainer.html#method_dataSize">dataSize()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-PageContainer.html#method_headerSize">headerSize()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Writer-PageContainer.html#method_serializedHeader">serializedHeader()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-PageContainer.html#method_totalCompressedSize">totalCompressedSize()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-PageContainer.html#method_totalUncompressedSize">totalUncompressedSize()</a></li>
                                     </ul>
