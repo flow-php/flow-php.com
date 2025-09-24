@@ -51,6 +51,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_withReader"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003AwithSchema\u0028\u0029",
+            "name": "withSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_withSchema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003AwithSheetName\u0028\u0029",
             "name": "withSheetName",
             "summary": "",
