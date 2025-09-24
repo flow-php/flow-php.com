@@ -71,6 +71,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withRowsPerPage"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003AwithSchema\u0028\u0029",
+            "name": "withSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withSchema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\SheetRange",
             "name": "SheetRange",
             "summary": "",
