@@ -306,6 +306,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_withBufferSize"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLParserExtractor\u003A\u003AwithSchema\u0028\u0029",
+            "name": "withSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_withSchema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLParserExtractor\u003A\u003AwithXMLNodePath\u0028\u0029",
             "name": "withXMLNodePath",
             "summary": "",
