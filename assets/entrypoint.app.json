@@ -6,11 +6,12 @@
     "@symfony\/stimulus-bundle",
     "@hotwired\/stimulus",
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js",
+    "\/assets\/controllers\/mermaid_controller.js",
     "\/assets\/controllers\/scroll_to_top_controller.js",
+    "\/assets\/controllers\/all_links_external_controller.js",
     "\/assets\/controllers\/syntax_highlight_controller.js",
     "\/assets\/controllers\/clipboard_controller.js",
-    "\/assets\/controllers\/all_links_external_controller.js",
-    "\/assets\/controllers\/mermaid_controller.js",
+    "@panzoom\/panzoom",
     "prismjs",
     "\/assets\/prismjs\/themes\/prism-flow.css",
     "\/assets\/prismjs\/plugins\/autolinker\/autolinker.js",
@@ -20,6 +21,5 @@
     "prismjs\/components\/prism-bash.min.js",
     "prismjs\/components\/prism-json.min.js",
     "prismjs\/components\/prism-csv.min.js",
-    "clipboard",
-    "@panzoom\/panzoom"
+    "clipboard"
 ]
