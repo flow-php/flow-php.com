@@ -8,19 +8,11 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-e1e63703948c1eec4535f983833f2478.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/mermaid_controller.js": {
-        "path": "\/assets\/controllers\/mermaid_controller-4ec011246a55fcc8b844940a72cd2b54.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-56e66aa9b7f9b5170d0f611cf8c22df2.js",
         "type": "js"
     },
     "\/assets\/controllers\/scroll_to_top_controller.js": {
         "path": "\/assets\/controllers\/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/all_links_external_controller.js": {
-        "path": "\/assets\/controllers\/all_links_external_controller-2814b02105ed2e4f92c5f5747e0e46c8.js",
         "type": "js"
     },
     "\/assets\/controllers\/syntax_highlight_controller.js": {
@@ -37,6 +29,14 @@
     },
     "\/assets\/controllers\/clipboard_controller.js": {
         "path": "\/assets\/controllers\/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/all_links_external_controller.js": {
+        "path": "\/assets\/controllers\/all_links_external_controller-2814b02105ed2e4f92c5f5747e0e46c8.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/mermaid_controller.js": {
+        "path": "\/assets\/controllers\/mermaid_controller-4ec011246a55fcc8b844940a72cd2b54.js",
         "type": "js"
     },
     "@symfony\/stimulus-bundle": {
