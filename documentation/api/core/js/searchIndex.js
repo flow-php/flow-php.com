@@ -296,6 +296,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-DocumentationExample.html#property_example"
         },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\DocumentationExample\u003A\u003A\u0024option",
+            "name": "option",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-DocumentationExample.html#property_option"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module",
             "name": "Module",
             "summary": "",
