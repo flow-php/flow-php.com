@@ -886,6 +886,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#property_sort"
         },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\SortedByConstraint",
+            "name": "SortedByConstraint",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-SortedByConstraint.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\SortedByConstraint\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-SortedByConstraint.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\SortedByConstraint\u003A\u003AisSatisfiedBy\u0028\u0029",
+            "name": "isSatisfiedBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-SortedByConstraint.html#method_isSatisfiedBy"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\SortedByConstraint\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-SortedByConstraint.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\SortedByConstraint\u003A\u003Aviolation\u0028\u0029",
+            "name": "violation",
+            "summary": "",
+            "url": "classes/Flow-ETL-Constraint-SortedByConstraint.html#method_violation"
+        },                {
             "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\\InMemoryStorage",
             "name": "InMemoryStorage",
             "summary": "",
@@ -1030,6 +1055,11 @@ Search.appendIndex(
             "name": "autoCast",
             "summary": "",
             "url": "classes/Flow-ETL-DataFrame.html#method_autoCast"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AbatchBy\u0028\u0029",
+            "name": "batchBy",
+            "summary": "Merge\/Split\u0020Rows\u0020yielded\u0020by\u0020Extractor\u0020into\u0020batches\u0020but\u0020keep\u0020those\u0020with\u0020common\u0020value\u0020in\u0020given\u0020column\u0020together.",
+            "url": "classes/Flow-ETL-DataFrame.html#method_batchBy"
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AbatchSize\u0028\u0029",
             "name": "batchSize",
@@ -1775,6 +1805,16 @@ Search.appendIndex(
             "name": "filesystem_cache",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_filesystem_cache"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\batched_by\u0028\u0029",
+            "name": "batched_by",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_batched_by"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\batches\u0028\u0029",
+            "name": "batches",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_batches"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\chunks_from\u0028\u0029",
             "name": "chunks_from",
@@ -2851,6 +2891,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_constraint_unique"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\constraint_sorted_by\u0028\u0029",
+            "name": "constraint_sorted_by",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_constraint_sorted_by"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\analyze\u0028\u0029",
             "name": "analyze",
             "summary": "",
@@ -3201,6 +3246,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-ArrayExtractor.html#method_withSchema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\BatchByExtractor",
+            "name": "BatchByExtractor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-BatchByExtractor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\BatchByExtractor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-BatchByExtractor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\BatchByExtractor\u003A\u003Aextract\u0028\u0029",
+            "name": "extract",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-BatchByExtractor.html#method_extract"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\BatchByExtractor\u003A\u003Aextractors\u0028\u0029",
+            "name": "extractors",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-BatchByExtractor.html#method_extractors"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\BatchExtractor",
+            "name": "BatchExtractor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-BatchExtractor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\BatchExtractor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-BatchExtractor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\BatchExtractor\u003A\u003Aextract\u0028\u0029",
+            "name": "extract",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-BatchExtractor.html#method_extract"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\BatchExtractor\u003A\u003Aextractors\u0028\u0029",
+            "name": "extractors",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-BatchExtractor.html#method_extractors"
+        },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\CacheExtractor",
             "name": "CacheExtractor",
             "summary": "",
@@ -3245,26 +3330,6 @@ Search.appendIndex(
             "name": "extractors",
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-ChainExtractor.html#method_extractors"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\ChunkExtractor",
-            "name": "ChunkExtractor",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-ChunkExtractor.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\ChunkExtractor\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-ChunkExtractor.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\ChunkExtractor\u003A\u003Aextract\u0028\u0029",
-            "name": "extract",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-ChunkExtractor.html#method_extract"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\ChunkExtractor\u003A\u003Aextractors\u0028\u0029",
-            "name": "extractors",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-ChunkExtractor.html#method_extractors"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\CollectingExtractor",
             "name": "CollectingExtractor",
@@ -7756,6 +7821,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-NativePHPRandomValueGenerator.html#method_string"
         },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\BatchingByPipeline",
+            "name": "BatchingByPipeline",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-BatchingByPipeline.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\BatchingByPipeline\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-BatchingByPipeline.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\BatchingByPipeline\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-BatchingByPipeline.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\BatchingByPipeline\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-BatchingByPipeline.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\BatchingByPipeline\u003A\u003Apipelines\u0028\u0029",
+            "name": "pipelines",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-BatchingByPipeline.html#method_pipelines"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\BatchingByPipeline\u003A\u003Apipes\u0028\u0029",
+            "name": "pipes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-BatchingByPipeline.html#method_pipes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\BatchingByPipeline\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-BatchingByPipeline.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\BatchingByPipeline\u003A\u003Asource\u0028\u0029",
+            "name": "source",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-BatchingByPipeline.html#method_source"
+        },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\BatchingPipeline",
             "name": "BatchingPipeline",
             "summary": "",
@@ -11411,6 +11516,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformation-AddRowIndex.html#method_transform"
         },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\BatchBy",
+            "name": "BatchBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-BatchBy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\BatchBy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-BatchBy.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformation\\BatchBy\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformation-BatchBy.html#method_transform"
+        },                {
             "fqsen": "\\Flow\\ETL\\Transformation\\BatchSize",
             "name": "BatchSize",
             "summary": "Sets\u0020batch\u0020size\u0020for\u0020DataFrame.",
@@ -12246,15 +12366,15 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-config-sort.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint",
-            "name": "UniqueConstraint",
-            "summary": "",
-            "url": "namespaces/flow-etl-constraint-uniqueconstraint.html"
-        },                {
             "fqsen": "\\Flow\\ETL\\Constraint",
             "name": "Constraint",
             "summary": "",
             "url": "namespaces/flow-etl-constraint.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint",
+            "name": "UniqueConstraint",
+            "summary": "",
+            "url": "namespaces/flow-etl-constraint-uniqueconstraint.html"
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame",
             "name": "DataFrame",
