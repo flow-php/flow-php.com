@@ -11776,21 +11776,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-EntryNameStyleConverterTransformer.html#method_transform"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\GroupToArrayTransformer",
-            "name": "GroupToArrayTransformer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-GroupToArrayTransformer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\GroupToArrayTransformer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-GroupToArrayTransformer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\GroupToArrayTransformer\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-GroupToArrayTransformer.html#method_transform"
-        },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\JoinEachRowsTransformer",
             "name": "JoinEachRowsTransformer",
             "summary": "",
