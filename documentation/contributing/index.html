@@ -401,8 +401,29 @@ to be moved to the next milestone.</p>
 <p>Weeks of coding can save you hours of planning.</p>
 </blockquote>
 <p>Opening a pull request without reaching out first might get rejected and eventually closed.</p>
-<p><strong>🐛 Bug Fixes</strong> - bug fixes are the only exception from the above rule. Bug Fixes can be opened directly without a proposal issue.</p>
-<h2><a id="flow-php-before-you-start-coding" href="#content-before-you-start-coding" class="mr-2" aria-hidden="true" title="Permalink">#</a>Before you start coding</h2>
+<p><strong>🐛 Bug Fixes</strong> - bug fixes are the only exception from the above rule. Bug Fixes can be opened directly without a proposal issue.
+Bug fix can should only carry fixes of existing code, additions (especially to our DSL) require a <code>Proposal</code> first.</p>
+<h2><a id="flow-php-issue-types" href="#content-issue-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Issue Types</h2>
+<p>Wondering which issue type to use? Please check below guideliness</p>
+<h3><a id="flow-php-proposal" href="#content-proposal" class="mr-2" aria-hidden="true" title="Permalink">#</a>Proposal</h3>
+<ul>
+<li>New feature request</li>
+<li>Idea of changing/extending existing behavior</li>
+<li>Something is missing and should be added</li>
+<li>UX/DX improvements</li>
+</ul>
+<h3><a id="flow-php-bug" href="#content-bug" class="mr-2" aria-hidden="true" title="Permalink">#</a>Bug</h3>
+<p><strong>Important</strong> - please don't use <code>Bug</code> issue type for reporting missing features. <code>Bug</code> should be reported only against existing code that
+doesn't work as expected. When something is missing it requires a <code>Proposal</code> first.</p>
+<ul>
+<li>Incorrect behavior of an existing code</li>
+<li>Performance degradation</li>
+</ul>
+<h3><a id="flow-php-task" href="#content-task" class="mr-2" aria-hidden="true" title="Permalink">#</a>Task</h3>
+<ul>
+<li>Those issues are meant to be used only by roadmap manager to split bigger items into smaller tasks</li>
+</ul>
+<h2><a id="flow-php-before-coding" href="#content-before-coding" class="mr-2" aria-hidden="true" title="Permalink">#</a>Before coding</h2>
 <p>Please make sure that you are aware of our <a href="/documentation/adrs">Architecture Decision Records</a>.
 It's mandatory to follow all of them without any exceptions unless explicitly overridden by a new ADR.</p>
 <h2><a id="flow-php-next-steps" href="#content-next-steps" class="mr-2" aria-hidden="true" title="Permalink">#</a>Next Steps</h2>
