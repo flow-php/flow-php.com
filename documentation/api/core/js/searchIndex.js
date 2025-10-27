@@ -306,6 +306,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003AAVRO",
+            "name": "AVRO",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_AVRO"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003AAZURE_FILESYSTEM",
             "name": "AZURE_FILESYSTEM",
             "summary": "",
@@ -360,6 +365,11 @@ Search.appendIndex(
             "name": "GOOGLE_SHEET",
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_GOOGLE_SHEET"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003AHTTP",
+            "name": "HTTP",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_HTTP"
         },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003AJSON",
             "name": "JSON",

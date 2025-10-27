@@ -1,6 +1,16 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\from_dynamic_http_requests\u0028\u0029",
+            "name": "from_dynamic_http_requests",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-http.html#function_from_dynamic_http_requests"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\from_static_http_requests\u0028\u0029",
+            "name": "from_static_http_requests",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-http.html#function_from_static_http_requests"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\DynamicExtractor\\NextRequestFactory",
             "name": "NextRequestFactory",
             "summary": "",
@@ -86,11 +96,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/default.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\DynamicExtractor",
-            "name": "DynamicExtractor",
-            "summary": "",
-            "url": "namespaces/flow-etl-adapter-http-dynamicextractor.html"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http",
             "name": "Http",
             "summary": "",
@@ -110,5 +115,10 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\DynamicExtractor",
+            "name": "DynamicExtractor",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-http-dynamicextractor.html"
         }            ]
 );
