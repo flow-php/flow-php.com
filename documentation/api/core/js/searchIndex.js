@@ -10416,11 +10416,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Rows.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AfromArray\u0028\u0029",
-            "name": "fromArray",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_fromArray"
-        },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Apartitioned\u0028\u0029",
             "name": "partitioned",
             "summary": "",
