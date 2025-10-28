@@ -76,6 +76,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-types-dsl.html#function_type_time"
         },                {
+            "fqsen": "\\Flow\\Types\\DSL\\type_time_zone\u0028\u0029",
+            "name": "type_time_zone",
+            "summary": "",
+            "url": "namespaces/flow-types-dsl.html#function_type_time_zone"
+        },                {
             "fqsen": "\\Flow\\Types\\DSL\\type_xml\u0028\u0029",
             "name": "type_xml",
             "summary": "",
@@ -971,6 +976,36 @@ Search.appendIndex(
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type-Logical-TimeType.html#method_toString"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeZoneType",
+            "name": "TimeZoneType",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-TimeZoneType.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeZoneType\u003A\u003Aassert\u0028\u0029",
+            "name": "assert",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "url": "classes/Flow-Types-Type-Logical-TimeZoneType.html#method_assert"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeZoneType\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
+            "summary": "Takes\u0020a\u0020value\u0020and\u0020when\u0020necessary\u0020casts\u0020it\u0020to\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type-Logical-TimeZoneType.html#method_cast"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeZoneType\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type-Logical-TimeZoneType.html#method_isValid"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeZoneType\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-TimeZoneType.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeZoneType\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
+            "url": "classes/Flow-Types-Type-Logical-TimeZoneType.html#method_toString"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\UuidType",
             "name": "UuidType",
             "summary": "",
@@ -1480,6 +1515,11 @@ Search.appendIndex(
             "name": "isNull",
             "summary": "",
             "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisTimeZone\u0028\u0029",
+            "name": "isTimeZone",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isTimeZone"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisUuid\u0028\u0029",
             "name": "isUuid",
