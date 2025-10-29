@@ -2711,6 +2711,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_json_schema"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\html_schema\u0028\u0029",
+            "name": "html_schema",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_html_schema"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\xml_schema\u0028\u0029",
             "name": "xml_schema",
             "summary": "",
@@ -10720,6 +10725,11 @@ Search.appendIndex(
             "name": "fromArray",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\u003A\u003Ahtml\u0028\u0029",
+            "name": "html",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition.html#method_html"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\u003A\u003Ainteger\u0028\u0029",
             "name": "integer",

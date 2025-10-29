@@ -176,6 +176,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-types-dsl.html#function_type_literal"
         },                {
+            "fqsen": "\\Flow\\Types\\DSL\\type_html\u0028\u0029",
+            "name": "type_html",
+            "summary": "",
+            "url": "namespaces/flow-types-dsl.html#function_type_html"
+        },                {
             "fqsen": "\\Flow\\Types\\DSL\\type_is\u0028\u0029",
             "name": "type_is",
             "summary": "",
@@ -505,6 +510,36 @@ Search.appendIndex(
             "name": "toString",
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type-Logical-DateType.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLType",
+            "name": "HTMLType",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-HTMLType.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLType\u003A\u003Aassert\u0028\u0029",
+            "name": "assert",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "url": "classes/Flow-Types-Type-Logical-HTMLType.html#method_assert"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLType\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
+            "summary": "Takes\u0020a\u0020value\u0020and\u0020when\u0020necessary\u0020casts\u0020it\u0020to\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type-Logical-HTMLType.html#method_cast"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLType\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type-Logical-HTMLType.html#method_isValid"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLType\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-HTMLType.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLType\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
+            "url": "classes/Flow-Types-Type-Logical-HTMLType.html#method_toString"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\InstanceOfType",
             "name": "InstanceOfType",
@@ -1501,6 +1536,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isFloat"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisHTML\u0028\u0029",
+            "name": "isHTML",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isHTML"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisInteger\u0028\u0029",
             "name": "isInteger",
             "summary": "",
@@ -1760,6 +1800,36 @@ Search.appendIndex(
             "name": "toString",
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument",
+            "name": "HTMLDocument",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-HTMLDocument.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-HTMLDocument.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument\u003A\u003AfromString\u0028\u0029",
+            "name": "fromString",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-HTMLDocument.html#method_fromString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-HTMLDocument.html#method___toString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument\u003A\u003AisEqual\u0028\u0029",
+            "name": "isEqual",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-HTMLDocument.html#method_isEqual"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-HTMLDocument.html#method_toString"
         },                {
             "fqsen": "\\Flow\\Types\\Value\\Uuid",
             "name": "Uuid",
