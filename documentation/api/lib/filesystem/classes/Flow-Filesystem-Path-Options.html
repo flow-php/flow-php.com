@@ -111,6 +111,8 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
+
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -120,7 +122,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path-options.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">9</span>
 
     </aside>
 
@@ -155,15 +157,9 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Filesystem-Path-Options.html#method_assertHas">assertHas()</a>
+    <a class="" href="classes/Flow-Filesystem-Path-Options.html#method_get">get()</a>
     <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Filesystem-Path-Options.html#method_getAsString">getAsString()</a>
-    <span>
-                                &nbsp;: string|null    </span>
+                                &nbsp;: string|int|bool|float|<abbr title="\UnitEnum">UnitEnum</abbr>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -173,9 +169,21 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Path-Options.html#method_set">set()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Path-Options.html#method_setWhenEmpty">setWhenEmpty()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-Path-Options.html#method_toArray">toArray()</a>
     <span>
-                                &nbsp;: array&lt;string, string&gt;    </span>
+                                &nbsp;: array&lt;string, null|bool|float|int|string|<abbr title="\UnitEnum">UnitEnum</abbr>&gt;    </span>
 </dt>
 
     </dl>
@@ -206,14 +214,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path-options.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, null|bool|float|int|string|<abbr title="\UnitEnum">UnitEnum</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -223,7 +231,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, null|bool|float|int|string|<abbr title="\UnitEnum">UnitEnum</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -242,22 +250,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_assertHas">
-        assertHas()
-        <a href="classes/Flow-Filesystem-Path-Options.html#method_assertHas" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_get">
+        get()
+        <a href="classes/Flow-Filesystem-Path-Options.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path-options.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">assertHas</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$option</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Flow-Filesystem-Path-Option.html"><abbr title="\Flow\Filesystem\Path\Option">Option</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$option</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|int|bool|float|<abbr title="\UnitEnum">UnitEnum</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|int|bool|float|<abbr title="\UnitEnum">UnitEnum</abbr>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -267,58 +275,14 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$option</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getAsString">
-        getAsString()
-        <a href="classes/Flow-Filesystem-Path-Options.html#method_getAsString" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path-options.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php">Options.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">38</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getAsString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$option</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$option</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Flow-Filesystem-Path-Option.html"><abbr title="\Flow\Filesystem\Path\Option">Option</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$default</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|int|bool|float|<abbr title="\UnitEnum">UnitEnum</abbr>|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -331,7 +295,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string|null</span>
+        <span class="phpdocumentor-signature__response_type">string|int|bool|float|<abbr title="\UnitEnum">UnitEnum</abbr>|null</span>
             </section>
 
 </article>
@@ -349,14 +313,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path-options.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">has</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$option</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">has</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Flow-Filesystem-Path-Option.html"><abbr title="\Flow\Filesystem\Path\Option">Option</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$option</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -366,7 +330,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$option</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Flow-Filesystem-Path-Option.html"><abbr title="\Flow\Filesystem\Path\Option">Option</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -389,6 +353,116 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_set">
+        set()
+        <a href="classes/Flow-Filesystem-Path-Options.html#method_set" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path-options.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php">Options.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Flow-Filesystem-Path-Option.html"><abbr title="\Flow\Filesystem\Path\Option">Option</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$option</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|int|bool|float|<abbr title="\UnitEnum">UnitEnum</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$option</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Flow-Filesystem-Path-Option.html"><abbr title="\Flow\Filesystem\Path\Option">Option</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|int|bool|float|<abbr title="\UnitEnum">UnitEnum</abbr>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setWhenEmpty">
+        setWhenEmpty()
+        <a href="classes/Flow-Filesystem-Path-Options.html#method_setWhenEmpty" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path-options.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php">Options.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setWhenEmpty</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Flow-Filesystem-Path-Option.html"><abbr title="\Flow\Filesystem\Path\Option">Option</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$option</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|int|bool|float|<abbr title="\UnitEnum">UnitEnum</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$option</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Flow-Filesystem-Path-Option.html"><abbr title="\Flow\Filesystem\Path\Option">Option</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|int|bool|float|<abbr title="\UnitEnum">UnitEnum</abbr>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_toArray">
         toArray()
         <a href="classes/Flow-Filesystem-Path-Options.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
@@ -397,14 +471,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path-options.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, null|bool|float|int|string|<abbr title="\UnitEnum">UnitEnum</abbr>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -417,7 +491,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, null|bool|float|int|string|<abbr title="\UnitEnum">UnitEnum</abbr>&gt;</span>
             </section>
 
 </article>
@@ -537,9 +611,10 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Filesystem-Path-Options.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-Filesystem-Path-Options.html#method_assertHas">assertHas()</a></li>
-                                            <li class=""><a href="classes/Flow-Filesystem-Path-Options.html#method_getAsString">getAsString()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Path-Options.html#method_get">get()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path-Options.html#method_has">has()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Path-Options.html#method_set">set()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Path-Options.html#method_setWhenEmpty">setWhenEmpty()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path-Options.html#method_toArray">toArray()</a></li>
                                     </ul>
             </li>

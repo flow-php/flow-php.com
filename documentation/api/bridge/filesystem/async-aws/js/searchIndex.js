@@ -201,6 +201,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-BlockList.html#method_toArray"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\ContentTypeDetector",
+            "name": "ContentTypeDetector",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-ContentTypeDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\ContentTypeDetector\u003A\u003Afrom\u0028\u0029",
+            "name": "from",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-ContentTypeDetector.html#method_from"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\DSL\\aws_s3_client\u0028\u0029",
             "name": "aws_s3_client",
             "summary": "",

@@ -666,6 +666,71 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-Filter.html#method_accept"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option\\ContentType",
+            "name": "ContentType",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Option-ContentType.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option\\ContentType\u003A\u003AAVRO",
+            "name": "AVRO",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Option-ContentType.html#enumcase_AVRO"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option\\ContentType\u003A\u003ABINARY",
+            "name": "BINARY",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Option-ContentType.html#enumcase_BINARY"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option\\ContentType\u003A\u003ACSV",
+            "name": "CSV",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Option-ContentType.html#enumcase_CSV"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option\\ContentType\u003A\u003AJSON",
+            "name": "JSON",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Option-ContentType.html#enumcase_JSON"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option\\ContentType\u003A\u003AORC",
+            "name": "ORC",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Option-ContentType.html#enumcase_ORC"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option\\ContentType\u003A\u003APARQUET",
+            "name": "PARQUET",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Option-ContentType.html#enumcase_PARQUET"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option\\ContentType\u003A\u003ATEXT",
+            "name": "TEXT",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Option-ContentType.html#enumcase_TEXT"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option\\ContentType\u003A\u003ATSV",
+            "name": "TSV",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Option-ContentType.html#enumcase_TSV"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option\\ContentType\u003A\u003AXML",
+            "name": "XML",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Option-ContentType.html#enumcase_XML"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option\\ContentType\u003A\u003AZIP",
+            "name": "ZIP",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Option-ContentType.html#enumcase_ZIP"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option",
+            "name": "Option",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Option.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option\u003A\u003ACONTENT_TYPE",
+            "name": "CONTENT_TYPE",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Option.html#enumcase_CONTENT_TYPE"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\Options",
             "name": "Options",
             "summary": "",
@@ -676,20 +741,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-Options.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Filesystem\\Path\\Options\u003A\u003AassertHas\u0028\u0029",
-            "name": "assertHas",
+            "fqsen": "\\Flow\\Filesystem\\Path\\Options\u003A\u003Aget\u0028\u0029",
+            "name": "get",
             "summary": "",
-            "url": "classes/Flow-Filesystem-Path-Options.html#method_assertHas"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Path\\Options\u003A\u003AgetAsString\u0028\u0029",
-            "name": "getAsString",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Path-Options.html#method_getAsString"
+            "url": "classes/Flow-Filesystem-Path-Options.html#method_get"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\Options\u003A\u003Ahas\u0028\u0029",
             "name": "has",
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-Options.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Options\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Options.html#method_set"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Options\u003A\u003AsetWhenEmpty\u0028\u0029",
+            "name": "setWhenEmpty",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Options.html#method_setWhenEmpty"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\Options\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
@@ -821,6 +891,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-UnixPath.html#method_uri"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\UnixPath\u003A\u003AwithOptions\u0028\u0029",
+            "name": "withOptions",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-UnixPath.html#method_withOptions"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\WindowsPath",
             "name": "WindowsPath",
             "summary": "",
@@ -946,6 +1021,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-WindowsPath.html#method_uri"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\WindowsPath\u003A\u003AwithOptions\u0028\u0029",
+            "name": "withOptions",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-WindowsPath.html#method_withOptions"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Path",
             "name": "Path",
             "summary": "",
@@ -955,6 +1035,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Filesystem-Path.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003Afrom\u0028\u0029",
+            "name": "from",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path.html#method_from"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003Arealpath\u0028\u0029",
             "name": "realpath",
@@ -995,6 +1080,16 @@ Search.appendIndex(
             "name": "filename",
             "summary": "",
             "url": "classes/Flow-Filesystem-Path.html#method_filename"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003AgetOption\u0028\u0029",
+            "name": "getOption",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path.html#method_getOption"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003AhasOption\u0028\u0029",
+            "name": "hasOption",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path.html#method_hasOption"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
@@ -1060,6 +1155,16 @@ Search.appendIndex(
             "name": "setExtension",
             "summary": "",
             "url": "classes/Flow-Filesystem-Path.html#method_setExtension"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003AsetOption\u0028\u0029",
+            "name": "setOption",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path.html#method_setOption"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003AsetOptionWhenEmpty\u0028\u0029",
+            "name": "setOptionWhenEmpty",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path.html#method_setOptionWhenEmpty"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003AskipDirectories\u0028\u0029",
             "name": "skipDirectories",
@@ -1850,6 +1955,11 @@ Search.appendIndex(
             "name": "Path",
             "summary": "",
             "url": "namespaces/flow-filesystem-path.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Option",
+            "name": "Option",
+            "summary": "",
+            "url": "namespaces/flow-filesystem-path-option.html"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\Block",
             "name": "Block",
