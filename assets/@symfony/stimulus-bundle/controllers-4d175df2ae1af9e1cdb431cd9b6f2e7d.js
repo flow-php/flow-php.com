@@ -1,0 +1,14 @@
+import controller_0 from "../../controllers/share_code_controller.js";
+import controller_1 from "../../controllers/scroll_to_top_controller.js";
+import controller_2 from "../../controllers/syntax_highlight_controller.js";
+import controller_3 from "../../controllers/clipboard_controller.js";
+import controller_4 from "../../controllers/image_swap_controller.js";
+import controller_5 from "../../controllers/reset_confirm_controller.js";
+import controller_6 from "../../controllers/playground-editor_controller.js";
+import controller_7 from "../../controllers/all_links_external_controller.js";
+import controller_8 from "../../controllers/wasm_controller.js";
+import controller_9 from "../../controllers/code_editor_controller.js";
+import controller_10 from "../../controllers/mermaid_controller.js";
+export const eagerControllers = {"share-code": controller_0, "scroll-to-top": controller_1, "syntax-highlight": controller_2, "clipboard": controller_3, "image-swap": controller_4, "reset-confirm": controller_5, "playground-editor": controller_6, "all-links-external": controller_7, "wasm": controller_8, "code-editor": controller_9, "mermaid": controller_10};
+export const lazyControllers = {};
+export const isApplicationDebug = false;
