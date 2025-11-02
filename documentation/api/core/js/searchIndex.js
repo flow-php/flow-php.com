@@ -1996,6 +1996,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_xml_element_entry"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\html_entry\u0028\u0029",
+            "name": "html_entry",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_html_entry"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\entries\u0028\u0029",
             "name": "entries",
             "summary": "",
@@ -9200,6 +9205,76 @@ Search.appendIndex(
             "name": "withValue",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-FloatEntry.html#method_withValue"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry",
+            "name": "HTMLEntry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method___toString"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003Adefinition\u0028\u0029",
+            "name": "definition",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_definition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003Aduplicate\u0028\u0029",
+            "name": "duplicate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_duplicate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003Ais\u0028\u0029",
+            "name": "is",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_is"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003AisEqual\u0028\u0029",
+            "name": "isEqual",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_isEqual"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003Amap\u0028\u0029",
+            "name": "map",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_map"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003Aname\u0028\u0029",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_name"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003Arename\u0028\u0029",
+            "name": "rename",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_rename"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003AwithValue\u0028\u0029",
+            "name": "withValue",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_withValue"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\IntegerEntry",
             "name": "IntegerEntry",

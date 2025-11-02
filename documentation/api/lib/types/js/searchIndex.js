@@ -1816,6 +1816,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Value-HTMLDocument.html#method_fromString"
         },                {
+            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-HTMLDocument.html#method_isValid"
+        },                {
             "fqsen": "\\Flow\\Types\\Value\\HTMLDocument\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
             "summary": "",
