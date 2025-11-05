@@ -236,9 +236,13 @@
 </div>
         
             <section id="changelog" class="py-10 px-2 sm:px-4 mx-auto max-w-screen-xl">
-        <h2><a id="flow-php-unreleased---2025-11-02" href="#content-unreleased---2025-11-02" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2025-11-02</h2>
+        <h2><a id="flow-php-unreleased---2025-11-05" href="#content-unreleased---2025-11-05" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2025-11-05</h2>
 <h3><a id="flow-php-added" href="#content-added" class="mr-2" aria-hidden="true" title="Permalink">#</a>Added</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1943">#1943</a> - <strong>TypeNarrower interface for type narrowing pattern</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1943">#1943</a> - <strong>StringTypeNarrower class implementing TypeNarrower interface</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1943">#1943</a> - <strong>InstanceOfTypeNarrower class for handling external UUID libraries</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1943">#1943</a> - <strong>Support for detecting additional string types: boolean, integer, float, date, datetime, timezone, null</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1949">#1949</a> - <strong>PHP WAS compilation script</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1949">#1949</a> - <strong>Interactive Playground to website</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1949">#1949</a> - <strong>Basic error handling in interactive playground</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -250,6 +254,10 @@
 </ul>
 <h3><a id="flow-php-changed" href="#content-changed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1943">#1943</a> - <strong>StringTypeChecker renamed to StringTypeNarrower with new interface contract</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1943">#1943</a> - <strong>Refactored EntryFactory to use modular TypeNarrower pattern</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1943">#1943</a> - <strong>EntryFactory now uses InstanceOfTypeNarrower for UUID library detection</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1943">#1943</a> - <strong>JsonType.isValid() method now uses StringTypeNarrower for validation</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1948">#1948</a> - <strong>Make <code>HTMLDocument</code> reliable</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/stloyd">@stloyd</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/commit/2342f961173c05c955f4bd96e9b1b66be7d44f4f">2342f9</a> - <strong>Mark HTMLDocument tests as skipped</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1947">#1947</a> - <strong>Updated nix repository commit</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -263,12 +271,15 @@
 </ul>
 <h3><a id="flow-php-fixed" href="#content-fixed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Fixed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1943">#1943</a> - <strong>Redundant InstanceOfType handling in EntryFactory::create() method</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1943">#1943</a> - <strong>Missing NullType support in EntryFactory::createAs() method</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1942">#1942</a> - <strong>AsyncAWSS3DestinationStream - set correct content type</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1944">#1944</a> - <strong>Incorrect library test group names</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/stloyd">@stloyd</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1945">#1945</a> - <strong>Fixed broken <code>HTMLTypeTest</code></strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/stloyd">@stloyd</a></li>
 </ul>
 <h3><a id="flow-php-removed" href="#content-removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Removed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1943">#1943</a> - <strong>Duplicate UUID library detection logic from EntryFactory</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/commit/26078bf7f1abe3d4f87a634b0419db130014f6d8">26078b</a> - <strong>wasm development lefotvers</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1929">#1929</a> - <strong>Remove <code>Rows::fromArray()</code></strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/stloyd">@stloyd</a></li>
 </ul>
@@ -3150,6 +3161,7 @@
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/Krizhnikov">@Krizhnikov</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/leith">@leith</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/mleczakm">@mleczakm</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/norbertmwk">@norbertmwk</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/owsiakl">@owsiakl</a></li>

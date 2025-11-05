@@ -1811,6 +1811,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Value-Uuid.html#method_fromString"
         },                {
+            "fqsen": "\\Flow\\Types\\Value\\Uuid\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-Uuid.html#method_isValid"
+        },                {
             "fqsen": "\\Flow\\Types\\Value\\Uuid\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
             "summary": "",
@@ -1825,11 +1830,6 @@ Search.appendIndex(
             "name": "toString",
             "summary": "",
             "url": "classes/Flow-Types-Value-Uuid.html#method_toString"
-        },                {
-            "fqsen": "\\Flow\\Types\\Value\\Uuid\u003A\u003AUUID_REGEXP",
-            "name": "UUID_REGEXP",
-            "summary": "This\u0020regexp\u0020is\u0020a\u0020port\u0020of\u0020the\u0020Uuid\u0020library,\nwhich\u0020is\u0020copyright\u0020Ben\u0020Ramsey,\u0020\u0040see\u0020https\u003A\/\/github.com\/ramsey\/uuid.",
-            "url": "classes/Flow-Types-Value-Uuid.html#constant_UUID_REGEXP"
         },                {
             "fqsen": "\\",
             "name": "\\",
