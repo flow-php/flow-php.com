@@ -586,6 +586,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-Logical-InstanceOfType.html#property_class"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\InstanceOfTypeNarrower",
+            "name": "InstanceOfTypeNarrower",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-InstanceOfTypeNarrower.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\InstanceOfTypeNarrower\u003A\u003Anarrow\u0028\u0029",
+            "name": "narrow",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-InstanceOfTypeNarrower.html#method_narrow"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\JsonType",
             "name": "JsonType",
             "summary": "",
@@ -1506,75 +1516,15 @@ Search.appendIndex(
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type-Native-ResourceType.html#method_toString"
         },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker",
-            "name": "StringTypeChecker",
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeNarrower",
+            "name": "StringTypeNarrower",
             "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html"
+            "url": "classes/Flow-Types-Type-Native-String-StringTypeNarrower.html"
         },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeNarrower\u003A\u003Anarrow\u0028\u0029",
+            "name": "narrow",
             "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisBoolean\u0028\u0029",
-            "name": "isBoolean",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isBoolean"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisDate\u0028\u0029",
-            "name": "isDate",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isDate"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisDateTime\u0028\u0029",
-            "name": "isDateTime",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isDateTime"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisFloat\u0028\u0029",
-            "name": "isFloat",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isFloat"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisHTML\u0028\u0029",
-            "name": "isHTML",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isHTML"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisInteger\u0028\u0029",
-            "name": "isInteger",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isInteger"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisJson\u0028\u0029",
-            "name": "isJson",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isJson"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisNull\u0028\u0029",
-            "name": "isNull",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isNull"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisTimeZone\u0028\u0029",
-            "name": "isTimeZone",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isTimeZone"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisUuid\u0028\u0029",
-            "name": "isUuid",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isUuid"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003AisXML\u0028\u0029",
-            "name": "isXML",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_isXML"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeChecker\u003A\u003Avalue\u0028\u0029",
-            "name": "value",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Native-String-StringTypeChecker.html#method_value"
+            "url": "classes/Flow-Types-Type-Native-String-StringTypeNarrower.html#method_narrow"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\StringType",
             "name": "StringType",
@@ -1685,6 +1635,16 @@ Search.appendIndex(
             "name": "fromString",
             "summary": "",
             "url": "classes/Flow-Types-Type-TypeFactory.html#method_fromString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypeNarrower",
+            "name": "TypeNarrower",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-TypeNarrower.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypeNarrower\u003A\u003Anarrow\u0028\u0029",
+            "name": "narrow",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-TypeNarrower.html#method_narrow"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Types",
             "name": "Types",
