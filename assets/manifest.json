@@ -127,7 +127,6 @@
     "vendor\/prismjs\/themes\/prism.min.css": "\/assets\/vendor\/prismjs\/themes\/prism.min-1698e178d1bb208a059f63cb8dcc0517.css",
     "vendor\/style-mod\/style-mod.index.js": "\/assets\/vendor\/style-mod\/style-mod.index-7ca84f6be71aadbef9b1cf2570a9b7e1.js",
     "vendor\/w3c-keyname\/w3c-keyname.index.js": "\/assets\/vendor\/w3c-keyname\/w3c-keyname.index-bcfeb53958d793e468475ae839c7719e.js",
-    "wasm\/_php-cs-fixer.php.wasm": "\/assets\/wasm\/_php-cs-fixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm",
     "wasm\/bin\/cs-fixer.php.wasm": "\/assets\/wasm\/bin\/cs-fixer.php-ac4974a6fd6684a03a024047ab1f831c.wasm",
     "wasm\/data\/orders.csv": "\/assets\/wasm\/data\/orders-a23572d02c810fc9b709f09b0b8c92ef.csv",
     "wasm\/data\/orders.json": "\/assets\/wasm\/data\/orders-09429d88a4f65d938de30e5b8d9aa706.json",
@@ -135,6 +134,7 @@
     "wasm\/flow.phar": "\/assets\/wasm\/flow-c257f05b89a268968a2135e73578dac7.phar",
     "wasm\/php.js": "\/assets\/wasm\/php-f52503392e109aca2c77df49eb37fcd9.js",
     "wasm\/php.wasm": "\/assets\/wasm\/php-b32abed2ea5cde4a304c1b615eb477e2.wasm",
+    "wasm\/phpcsfixer.php.wasm": "\/assets\/wasm\/phpcsfixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm",
     "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-c257f05b89a268968a2135e73578dac7.phar",
     "wasm\/tools\/php-cs-fixer.phar": "\/assets\/wasm\/tools\/php-cs-fixer-de55dbd75a08d2eac0f0435d4168e6bc.phar",
     "wasm\/vendor\/autoload.php.wasm": "\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm"
