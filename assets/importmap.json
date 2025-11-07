@@ -8,11 +8,11 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-4d175df2ae1af9e1cdb431cd9b6f2e7d.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-ba23463749f02248f9b11111f64dd984.js",
         "type": "js"
     },
     "\/assets\/controllers\/share_code_controller.js": {
-        "path": "\/assets\/controllers\/share_code_controller-eae5cf73b2a718e2c501594a888d5b2d.js",
+        "path": "\/assets\/controllers\/share_code_controller-7651005539c8b8ac4a57132dff1542f1.js",
         "type": "js"
     },
     "\/assets\/controllers\/scroll_to_top_controller.js": {
@@ -35,32 +35,60 @@
         "path": "\/assets\/controllers\/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js",
         "type": "js"
     },
+    "\/assets\/controllers\/playground_storage_controller.js": {
+        "path": "\/assets\/controllers\/playground_storage_controller-0a0e7bc112377406b5fa8fc6fd5f1407.js",
+        "type": "js"
+    },
     "\/assets\/controllers\/image_swap_controller.js": {
         "path": "\/assets\/controllers\/image_swap_controller-c22445e2f4c121053a31252d6e4277dd.js",
         "type": "js"
     },
     "\/assets\/controllers\/reset_confirm_controller.js": {
-        "path": "\/assets\/controllers\/reset_confirm_controller-b5c2f8eefa7d80f25fe91613e8b37269.js",
+        "path": "\/assets\/controllers\/reset_confirm_controller-a0c80c550e8da6fbe45d5f1afc594e78.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground-help_controller.js": {
+        "path": "\/assets\/controllers\/playground-help_controller-a3fb78b6830148054578e5e426ecc12c.js",
         "type": "js"
     },
     "\/assets\/controllers\/playground-editor_controller.js": {
-        "path": "\/assets\/controllers\/playground-editor_controller-bb23ba95b652c5599731ed5f13a28b63.js",
+        "path": "\/assets\/controllers\/playground-editor_controller-c6752739fa1e638dc671e172f7b8c873.js",
         "type": "js"
     },
     "\/assets\/controllers\/all_links_external_controller.js": {
         "path": "\/assets\/controllers\/all_links_external_controller-2814b02105ed2e4f92c5f5747e0e46c8.js",
         "type": "js"
     },
+    "\/assets\/controllers\/code_mirror_editor_controller.js": {
+        "path": "\/assets\/controllers\/code_mirror_editor_controller-940181c34a853d30d58613b705ecf622.js",
+        "type": "js"
+    },
+    "\/assets\/codemirror\/themes\/theme-flow.js": {
+        "path": "\/assets\/codemirror\/themes\/theme-flow-7bef93b1493817cf09879a3b5cd589b3.js",
+        "type": "js"
+    },
+    "\/assets\/codemirror\/completions\/flow.js": {
+        "path": "\/assets\/codemirror\/completions\/flow-da7ec46f1fb045fa99ff477b5db69205.js",
+        "type": "js"
+    },
+    "\/assets\/codemirror\/completions\/dsl.js": {
+        "path": "\/assets\/codemirror\/completions\/dsl-d36ad9fc0d2ab5949945d7c5511ecfc7.js",
+        "type": "js"
+    },
+    "\/assets\/codemirror\/completions\/dataframe.js": {
+        "path": "\/assets\/codemirror\/completions\/dataframe-e4e5dacbf1f3cb8396844d80ab59d51b.js",
+        "type": "js"
+    },
+    "\/assets\/codemirror\/completions\/scalarfunctionchain.js": {
+        "path": "\/assets\/codemirror\/completions\/scalarfunctionchain-ed0e7e36594dcfaa410706ed76c341d6.js",
+        "type": "js"
+    },
+    "\/assets\/models\/Violation.js": {
+        "path": "\/assets\/models\/Violation-4c9687032725053c94df98f23f106215.js",
+        "type": "js"
+    },
     "\/assets\/controllers\/wasm_controller.js": {
-        "path": "\/assets\/controllers\/wasm_controller-48963a7954d9dc2878a7c0d0775ce936.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/code_editor_controller.js": {
-        "path": "\/assets\/controllers\/code_editor_controller-53e7482bf2aa196fef9e22c271f1c34e.js",
-        "type": "js"
-    },
-    "\/assets\/ace-themes\/theme-flow.js": {
-        "path": "\/assets\/ace-themes\/theme-flow-bb85d08b9a7249f0c3388075f2a4e7a1.js",
+        "path": "\/assets\/controllers\/wasm_controller-12294702fb66886622e956f959b11bc2.js",
         "type": "js"
     },
     "\/assets\/controllers\/mermaid_controller.js": {
@@ -147,12 +175,104 @@
         "path": "\/assets\/vendor\/@panzoom\/panzoom\/panzoom.index-3b47481c4864977e868c752ba14776d1.js",
         "type": "js"
     },
-    "ace-builds": {
-        "path": "\/assets\/vendor\/ace-builds\/ace-builds.index-12e84423dc798c3c57da7efe1317d8d9.js",
-        "type": "js"
-    },
     "lz-string": {
         "path": "\/assets\/vendor\/lz-string\/lz-string.index-0f0586f428e8cb273726558186e73f13.js",
+        "type": "js"
+    },
+    "codemirror": {
+        "path": "\/assets\/vendor\/codemirror\/codemirror.index-1f2a09c19a3ccefeca2f899d04d1b5fd.js",
+        "type": "js"
+    },
+    "@codemirror\/view": {
+        "path": "\/assets\/vendor\/@codemirror\/view\/view.index-3f8fe27f9c9607a95d6e818ad8e7730c.js",
+        "type": "js"
+    },
+    "@codemirror\/state": {
+        "path": "\/assets\/vendor\/@codemirror\/state\/state.index-4ed4bf1442633c3314cfdb699a2756d7.js",
+        "type": "js"
+    },
+    "@codemirror\/language": {
+        "path": "\/assets\/vendor\/@codemirror\/language\/language.index-bbaa021b0d7eb3d6f725f95258f27a78.js",
+        "type": "js"
+    },
+    "@codemirror\/commands": {
+        "path": "\/assets\/vendor\/@codemirror\/commands\/commands.index-99c438bf62ba6b9d3d8315570d2847cb.js",
+        "type": "js"
+    },
+    "@codemirror\/search": {
+        "path": "\/assets\/vendor\/@codemirror\/search\/search.index-fc99d3c6ca51ed8c47b4e29c9453007c.js",
+        "type": "js"
+    },
+    "@codemirror\/autocomplete": {
+        "path": "\/assets\/vendor\/@codemirror\/autocomplete\/autocomplete.index-d775dffaaf1a27cb1ef488c4002b9f8d.js",
+        "type": "js"
+    },
+    "@codemirror\/lint": {
+        "path": "\/assets\/vendor\/@codemirror\/lint\/lint.index-f875f18c27d79c02bbb36d2fd3c60d7f.js",
+        "type": "js"
+    },
+    "style-mod": {
+        "path": "\/assets\/vendor\/style-mod\/style-mod.index-7ca84f6be71aadbef9b1cf2570a9b7e1.js",
+        "type": "js"
+    },
+    "w3c-keyname": {
+        "path": "\/assets\/vendor\/w3c-keyname\/w3c-keyname.index-bcfeb53958d793e468475ae839c7719e.js",
+        "type": "js"
+    },
+    "crelt": {
+        "path": "\/assets\/vendor\/crelt\/crelt.index-4beada4bb0206836be9643b0dc965166.js",
+        "type": "js"
+    },
+    "@marijn\/find-cluster-break": {
+        "path": "\/assets\/vendor\/@marijn\/find-cluster-break\/find-cluster-break.index-86e4f9a30c1b3ebf2663ea663faf09ce.js",
+        "type": "js"
+    },
+    "@lezer\/common": {
+        "path": "\/assets\/vendor\/@lezer\/common\/common.index-c54ebc45994fc8d401a7abc87acd0931.js",
+        "type": "js"
+    },
+    "@lezer\/highlight": {
+        "path": "\/assets\/vendor\/@lezer\/highlight\/highlight.index-d5ea2a2e12587a834cdd55e7a4c3ea4b.js",
+        "type": "js"
+    },
+    "@codemirror\/lang-php": {
+        "path": "\/assets\/vendor\/@codemirror\/lang-php\/lang-php.index-fd16198f89106f35806b32cf85aec359.js",
+        "type": "js"
+    },
+    "@lezer\/php": {
+        "path": "\/assets\/vendor\/@lezer\/php\/php.index-a1efd84514b21a91d9a98fb11393fa45.js",
+        "type": "js"
+    },
+    "@codemirror\/lang-html": {
+        "path": "\/assets\/vendor\/@codemirror\/lang-html\/lang-html.index-da75f62b553c1b2c5ff8d339e204a578.js",
+        "type": "js"
+    },
+    "@lezer\/lr": {
+        "path": "\/assets\/vendor\/@lezer\/lr\/lr.index-641ba59507ad8f4536be76f23819c86b.js",
+        "type": "js"
+    },
+    "@lezer\/html": {
+        "path": "\/assets\/vendor\/@lezer\/html\/html.index-9f53f583db9eac51b0c3efa4e80b634e.js",
+        "type": "js"
+    },
+    "@codemirror\/lang-css": {
+        "path": "\/assets\/vendor\/@codemirror\/lang-css\/lang-css.index-8d530963c5a66e15705eb3593a1d96f5.js",
+        "type": "js"
+    },
+    "@codemirror\/lang-javascript": {
+        "path": "\/assets\/vendor\/@codemirror\/lang-javascript\/lang-javascript.index-03fe5e4ac5cca9e057b16e8351b11be5.js",
+        "type": "js"
+    },
+    "@lezer\/css": {
+        "path": "\/assets\/vendor\/@lezer\/css\/css.index-7108e5837b54aeb0ff67e68e535a70ae.js",
+        "type": "js"
+    },
+    "@lezer\/javascript": {
+        "path": "\/assets\/vendor\/@lezer\/javascript\/javascript.index-a373e5ce6d4dd6bdea77b15e4476050f.js",
+        "type": "js"
+    },
+    "@codemirror\/theme-one-dark": {
+        "path": "\/assets\/vendor\/@codemirror\/theme-one-dark\/theme-one-dark.index-7373fb053faab89d037ef636d1f263f2.js",
         "type": "js"
     }
 }

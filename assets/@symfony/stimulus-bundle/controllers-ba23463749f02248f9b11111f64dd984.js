@@ -1,0 +1,16 @@
+import controller_0 from "../../controllers/share_code_controller.js";
+import controller_1 from "../../controllers/scroll_to_top_controller.js";
+import controller_2 from "../../controllers/syntax_highlight_controller.js";
+import controller_3 from "../../controllers/clipboard_controller.js";
+import controller_4 from "../../controllers/playground_storage_controller.js";
+import controller_5 from "../../controllers/image_swap_controller.js";
+import controller_6 from "../../controllers/reset_confirm_controller.js";
+import controller_7 from "../../controllers/playground-help_controller.js";
+import controller_8 from "../../controllers/playground-editor_controller.js";
+import controller_9 from "../../controllers/all_links_external_controller.js";
+import controller_10 from "../../controllers/code_mirror_editor_controller.js";
+import controller_11 from "../../controllers/wasm_controller.js";
+import controller_12 from "../../controllers/mermaid_controller.js";
+export const eagerControllers = {"share-code": controller_0, "scroll-to-top": controller_1, "syntax-highlight": controller_2, "clipboard": controller_3, "playground-storage": controller_4, "image-swap": controller_5, "reset-confirm": controller_6, "playground-help": controller_7, "playground-editor": controller_8, "all-links-external": controller_9, "code-mirror-editor": controller_10, "wasm": controller_11, "mermaid": controller_12};
+export const lazyControllers = {};
+export const isApplicationDebug = false;
