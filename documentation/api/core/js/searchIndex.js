@@ -8506,6 +8506,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-VoidPipeline.html#method_source"
         },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\WindowFunctionPipeline",
+            "name": "WindowFunctionPipeline",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-WindowFunctionPipeline.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\WindowFunctionPipeline\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-WindowFunctionPipeline.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\WindowFunctionPipeline\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-WindowFunctionPipeline.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\WindowFunctionPipeline\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-WindowFunctionPipeline.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\WindowFunctionPipeline\u003A\u003Apipelines\u0028\u0029",
+            "name": "pipelines",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-WindowFunctionPipeline.html#method_pipelines"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\WindowFunctionPipeline\u003A\u003Apipes\u0028\u0029",
+            "name": "pipes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-WindowFunctionPipeline.html#method_pipes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\WindowFunctionPipeline\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-WindowFunctionPipeline.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\WindowFunctionPipeline\u003A\u003Asource\u0028\u0029",
+            "name": "source",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-WindowFunctionPipeline.html#method_source"
+        },                {
             "fqsen": "\\Flow\\ETL\\RandomValueGenerator",
             "name": "RandomValueGenerator",
             "summary": "",
@@ -12235,21 +12275,6 @@ Search.appendIndex(
             "name": "transform",
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-UntilTransformer.html#method_transform"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\WindowFunctionTransformer",
-            "name": "WindowFunctionTransformer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-WindowFunctionTransformer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\WindowFunctionTransformer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-WindowFunctionTransformer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\WindowFunctionTransformer\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-WindowFunctionTransformer.html#method_transform"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer",
             "name": "Transformer",
