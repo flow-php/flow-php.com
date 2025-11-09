@@ -202,6 +202,12 @@
                         </a>
                     </li>
                     <li>
+                        <a class="p-3 flex items-center" href="/playground">
+                            Demo
+                            <img src="/assets/images/icons/play-b3d8bbbafaea96f437f51fa0a5041e8f.svg" alt="Flow PHP Playground" width="16" height="16" class="ml-1">
+                        </a>
+                    </li>
+                    <li>
                         <a class="p-3 flex items-center" href="/data_frame/data_reading/array/#example">
                             Examples
                             <img src="/assets/images/icons/code-5d9f22dbc373192322ba3d1f4422371f.svg" alt="external resource" width="16" height="16" class="ml-1">
@@ -245,7 +251,9 @@
     <main id="main">
                     <div class="mx-auto max-w-screen-xl max-lg:text-center px-2 sm:px-4 relative max-lg:py-10 p-[100px]">
     <h1 class="font-bold max-sm:text-5xl max-lg:mx-auto text-6xl tracking-wider leading-[70px] max-w-[450px] mb-8 z-10">UNIFIED DATA PROCESSING FRAMEWORK</h1>
-    <code class="w-fit py-2 px-3 before:content-['$'] before:mr-2 bg-orange-100 rounded"><span id="command">composer require flow-php/etl ~0.26.1</span><button class="ml-2 [&.copied]:after:content-['Copied!'] after:absolute after:translate-x-6 select-none" title="copy command" data-clipboard-target="#command" data-controller="clipboard"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="copy command" width="20" height="20" class="inline"></button></code><p class="mt-5"><a class="text-white" href="https://flow-php.com/changelog">Changelog</a><a class="text-white ml-4" href="https://flow-php.com/blog/2025-03-16/flow-php-release-cycle">Release Cycle</a></p>    <img src="/assets/images/elephant-4b2eb8a559db8a8a34bb8d10d5df26d3.svg" alt="elephant" width="720" class="max-lg:hidden absolute right-0 top-0">
+    <code class="w-fit py-2 px-3 before:content-['$'] before:mr-2 bg-orange-100 rounded"><span id="command">composer require flow-php/etl ~0.26.1</span><button class="ml-2 [&.copied]:after:content-['Copied!'] after:absolute after:translate-x-6 select-none" title="copy command" data-clipboard-target="#command" data-controller="clipboard"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="copy command" width="20" height="20" class="inline"></button></code><p class="mt-5"><a class="text-white" href="https://flow-php.com/changelog">Changelog</a><a class="text-white ml-4" href="https://flow-php.com/blog/2025-03-16/flow-php-release-cycle">Release Cycle</a></p><p class="mt-4"><a class="py-2 px-4 bg-orange-100 rounded font-semibold hover:bg-orange-200 transition-colors whitespace-nowrap text-white" href="/playground"><img src="/assets/images/icons/play-b3d8bbbafaea96f437f51fa0a5041e8f.svg" alt="play" width="20" height="20" class="mr-2 inline-block">
+                Try Flow Online
+            </a></p>    <img src="/assets/images/elephant-4b2eb8a559db8a8a34bb8d10d5df26d3.svg" alt="elephant" width="720" class="max-lg:hidden absolute right-0 top-0">
 </div>
 
 <div class="bg-blue-200">
@@ -305,6 +313,7 @@
 </ul>
 <h3><a id="flow-php-changed" href="#content-changed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1976">#1976</a> - <strong>updated importmap dependencies</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1975">#1975</a> - <strong>narrow phpstan class.notFound suppression to config only and specific classes only</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1960">#1960</a> - <strong><code>HTMLType &amp; </code>HTMLEntry<code>require now</code>\Dom\HTMLDocument`</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/stloyd">@stloyd</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1973">#1973</a> - <strong>Moved logic related to Window functions to pipeline from transformer</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -327,6 +336,7 @@
 </ul>
 <h3><a id="flow-php-fixed" href="#content-fixed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Fixed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1976">#1976</a> - <strong>paths in importmap in website</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/commit/6da7ed106fe0b216ff804986be54b7ae48660a1e">6da7ed</a> - <strong>path to php-cs-fixer.php config in playground</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/commit/6f498185cd4489e07421799fb4593ca048e308cf">6f4981</a> - <strong>removed redundant htaccess file from website public folder</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/commit/b472ecc5ea9ed3a08f82764d82164d43a648aa72">b472ec</a> - <strong>path to php-cs-fixer configuration in playground</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -338,6 +348,7 @@
 </ul>
 <h3><a id="flow-php-removed" href="#content-removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Removed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1976">#1976</a> - <strong>popover-polyfill from website</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1943">#1943</a> - <strong>Duplicate UUID library detection logic from EntryFactory</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/commit/26078bf7f1abe3d4f87a634b0419db130014f6d8">26078b</a> - <strong>wasm development lefotvers</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/1929">#1929</a> - <strong>Remove <code>Rows::fromArray()</code></strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/stloyd">@stloyd</a></li>
