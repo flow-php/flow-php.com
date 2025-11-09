@@ -166,6 +166,27 @@
 
 
 
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Flow-Types-Type-Logical-HTMLType.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Types-Type-Logical-HTMLType.html#constant_HTML_ALIKE_REGEX">HTML_ALIKE_REGEX</a>
+    <span>
+        &nbsp;= &lt;&lt;&lt;&#039;REGXP&#039;
+@^
+    &lt;!DOCTYPE\s+html[^&gt;]*&gt;\s*      # must start with &lt;!DOCTYPE html ...&gt;
+    &lt;html[^&gt;]*&gt;\s*                 # opening &lt;html&gt;
+    &lt;head[^&gt;]*&gt;.*?&lt;\/head&gt;\s*      # exactly one &lt;head&gt; ... &lt;/head&gt;
+    &lt;body[^&gt;]*&gt;.*?&lt;\/body&gt;\s*      # exactly one &lt;body&gt; ... &lt;/body&gt;
+    &lt;\/html&gt;\s*                    # closing &lt;/html&gt;
+$@isx
+REGXP                            </span>
+</dt>
+
+    </dl>
 
 
 
@@ -214,6 +235,52 @@
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Flow-Types-Type-Logical-HTMLType.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_HTML_ALIKE_REGEX">
+        HTML_ALIKE_REGEX
+        <a href="classes/Flow-Types-Type-Logical-HTMLType.html#constant_HTML_ALIKE_REGEX" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/HTMLType.php"><a href="files/src-lib-types-src-flow-types-type-logical-htmltype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/HTMLType.php">HTMLType.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">HTML_ALIKE_REGEX</span>
+    = <span class="phpdocumentor-signature__default-value">&lt;&lt;&lt;&#039;REGXP&#039;
+@^
+    &lt;!DOCTYPE\s+html[^&gt;]*&gt;\s*      # must start with &lt;!DOCTYPE html ...&gt;
+    &lt;html[^&gt;]*&gt;\s*                 # opening &lt;html&gt;
+    &lt;head[^&gt;]*&gt;.*?&lt;\/head&gt;\s*      # exactly one &lt;head&gt; ... &lt;/head&gt;
+    &lt;body[^&gt;]*&gt;.*?&lt;\/body&gt;\s*      # exactly one &lt;body&gt; ... &lt;/body&gt;
+    &lt;\/html&gt;\s*                    # closing &lt;/html&gt;
+$@isx
+REGXP</span>
+</code>
+
+
+    
+    
+    
+
+    
+
+</article>
+            </section>
 
         
 
@@ -237,7 +304,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/HTMLType.php"><a href="files/src-lib-types-src-flow-types-type-logical-htmltype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/HTMLType.php">HTMLType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -290,7 +357,7 @@ When assert method is used, it will additionally narrow the type of the returned
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/HTMLType.php"><a href="files/src-lib-types-src-flow-types-type-logical-htmltype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/HTMLType.php">HTMLType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -342,7 +409,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/HTMLType.php"><a href="files/src-lib-types-src-flow-types-type-logical-htmltype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/HTMLType.php">HTMLType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -393,7 +460,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/HTMLType.php"><a href="files/src-lib-types-src-flow-types-type-logical-htmltype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/HTMLType.php">HTMLType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -431,7 +498,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/HTMLType.php"><a href="files/src-lib-types-src-flow-types-type-logical-htmltype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/HTMLType.php">HTMLType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -569,9 +636,16 @@ When cast method is used, it will additionally narrow the type of the returned v
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Flow-Types-Type-Logical-HTMLType.html#toc-constants">Constants</a></li>
                                                                                 <li><a href="classes/Flow-Types-Type-Logical-HTMLType.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-Types-Type-Logical-HTMLType.html#constant_HTML_ALIKE_REGEX">HTML_ALIKE_REGEX</a></li>
+                                            </ul>
+                </li>
             
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>

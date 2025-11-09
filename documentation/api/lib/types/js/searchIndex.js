@@ -541,6 +541,11 @@ Search.appendIndex(
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type-Logical-HTMLType.html#method_toString"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLType\u003A\u003AHTML_ALIKE_REGEX",
+            "name": "HTML_ALIKE_REGEX",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-HTMLType.html#constant_HTML_ALIKE_REGEX"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\InstanceOfType",
             "name": "InstanceOfType",
             "summary": "",
@@ -1760,41 +1765,6 @@ Search.appendIndex(
             "name": "toString",
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type.html#method_toString"
-        },                {
-            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument",
-            "name": "HTMLDocument",
-            "summary": "",
-            "url": "classes/Flow-Types-Value-HTMLDocument.html"
-        },                {
-            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Types-Value-HTMLDocument.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument\u003A\u003AfromString\u0028\u0029",
-            "name": "fromString",
-            "summary": "",
-            "url": "classes/Flow-Types-Value-HTMLDocument.html#method_fromString"
-        },                {
-            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument\u003A\u003AisValid\u0028\u0029",
-            "name": "isValid",
-            "summary": "",
-            "url": "classes/Flow-Types-Value-HTMLDocument.html#method_isValid"
-        },                {
-            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
-            "summary": "",
-            "url": "classes/Flow-Types-Value-HTMLDocument.html#method___toString"
-        },                {
-            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument\u003A\u003AisEqual\u0028\u0029",
-            "name": "isEqual",
-            "summary": "",
-            "url": "classes/Flow-Types-Value-HTMLDocument.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\Types\\Value\\HTMLDocument\u003A\u003AtoString\u0028\u0029",
-            "name": "toString",
-            "summary": "",
-            "url": "classes/Flow-Types-Value-HTMLDocument.html#method_toString"
         },                {
             "fqsen": "\\Flow\\Types\\Value\\Uuid",
             "name": "Uuid",

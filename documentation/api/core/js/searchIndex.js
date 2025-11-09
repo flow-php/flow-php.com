@@ -3196,6 +3196,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Exception-OutOfMemoryException.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\RequiredPHPVersionException",
+            "name": "RequiredPHPVersionException",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-RequiredPHPVersionException.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\RequiredPHPVersionException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-RequiredPHPVersionException.html#method___construct"
+        },                {
             "fqsen": "\\Flow\\ETL\\Exception\\RuntimeException",
             "name": "RuntimeException",
             "summary": "",
@@ -4986,6 +4996,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Hash.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelector",
+            "name": "HTMLQuerySelector",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-HTMLQuerySelector.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelector\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-HTMLQuerySelector.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelector\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-HTMLQuerySelector.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelectorAll",
+            "name": "HTMLQuerySelectorAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-HTMLQuerySelectorAll.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelectorAll\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-HTMLQuerySelectorAll.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelectorAll\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-HTMLQuerySelectorAll.html#method_eval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\IndexOf",
             "name": "IndexOf",
             "summary": "",
@@ -6145,6 +6185,16 @@ Search.appendIndex(
             "name": "hash",
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_hash"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AhtmlQuerySelector\u0028\u0029",
+            "name": "htmlQuerySelector",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_htmlQuerySelector"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AhtmlQuerySelectorAll\u0028\u0029",
+            "name": "htmlQuerySelectorAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_htmlQuerySelectorAll"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AindexOf\u0028\u0029",
             "name": "indexOf",
