@@ -1,6 +1,6 @@
 {
     "app": {
-        "path": "\/assets\/app-d6226daa238de3f1832e60a162430df0.js",
+        "path": "\/assets\/app-396eb1b280b9b32f53a44b8e87aa6133.js",
         "type": "js"
     },
     "\/assets\/bootstrap.js": {
@@ -100,27 +100,23 @@
         "type": "js"
     },
     "@hotwired\/stimulus": {
-        "path": "\/assets\/vendor\/@hotwired\/stimulus\/stimulus.index-6f73d85e0fa2bcb3802562288e3f3042.js",
+        "path": "\/assets\/vendor\/@hotwired\/stimulus\/stimulus.index-4b8ccd71e6b1c4ddba22853d5a50a26c.js",
         "type": "js"
     },
     "@fontsource-variable\/cabin\/index.min.css": {
-        "path": "\/assets\/vendor\/@fontsource-variable\/cabin\/index.min-9c7d0ada22af1e85cec470dbedd33409.css",
+        "path": "\/assets\/vendor\/@fontsource-variable\/cabin\/index.min-2fd942a10b44e40a5f63d90a3479e0ee.css",
         "type": "css"
     },
     "htmx.org": {
-        "path": "\/assets\/vendor\/htmx.org\/htmx.org.index-9c972342e01d7cc4830a1976259158c7.js",
+        "path": "\/assets\/vendor\/htmx.org\/htmx.org.index-53566a4532aed515ce39aee24ee7c61d.js",
         "type": "js"
     },
     "clipboard": {
         "path": "\/assets\/vendor\/clipboard\/clipboard.index-dcdefe2499a3b69abd4ab17006bfd09b.js",
         "type": "js"
     },
-    "@oddbird\/popover-polyfill": {
-        "path": "\/assets\/vendor\/@oddbird\/popover-polyfill\/popover-polyfill.index-8f1adf02d2fe31ba0e133b65d1faeece.js",
-        "type": "js"
-    },
     "prismjs": {
-        "path": "\/assets\/vendor\/prismjs\/prismjs.index-32f42fea44a2d889c5304d34764c08b7.js",
+        "path": "\/assets\/vendor\/prismjs\/prismjs.index-fcd36a40a087482884638d93c9c09a08.js",
         "type": "js"
     },
     "prismjs\/themes\/prism.min.css": {
@@ -132,27 +128,27 @@
         "type": "css"
     },
     "prismjs\/plugins\/autoloader\/prism-autoloader.js": {
-        "path": "\/assets\/vendor\/prismjs\/plugins\/autoloader\/prism-autoloader-2621d883efb1f028d752ea2f8caa9aec.js",
+        "path": "\/assets\/vendor\/prismjs\/plugins\/autoloader\/prism-autoloader-b1e401ad6aa11bcff3b6a7df2c9f1aeb.js",
         "type": "js"
     },
     "prismjs\/components\/prism-bash.min.js": {
-        "path": "\/assets\/vendor\/prismjs\/components\/prism-bash.min-72368c3e2d2d62a1a3247e93cc16b65b.js",
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-bash.min-035b568f957f7a9c409609feca987649.js",
         "type": "js"
     },
     "prismjs\/components\/prism-markup-templating.min.js": {
-        "path": "\/assets\/vendor\/prismjs\/components\/prism-markup-templating.min-31bae5c74dbd7594d48dd9fdeec55618.js",
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-markup-templating.min-f8276baa858a6435ede0e74dc293470e.js",
         "type": "js"
     },
     "prismjs\/components\/prism-php.min.js": {
-        "path": "\/assets\/vendor\/prismjs\/components\/prism-php.min-167d02a65d581cd13247fd5017c227bd.js",
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-php.min-6c255d4559880fd5d0ac4e068af5b532.js",
         "type": "js"
     },
     "prismjs\/components\/prism-json.min.js": {
-        "path": "\/assets\/vendor\/prismjs\/components\/prism-json.min-4d84eff49b620517add100cd07834b63.js",
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-json.min-5cabe6f69370d46230def939bbf18ad6.js",
         "type": "js"
     },
     "flowbite": {
-        "path": "\/assets\/vendor\/flowbite\/flowbite.index-52ed4d07721f65b94d4d6948d82e876b.js",
+        "path": "\/assets\/vendor\/flowbite\/flowbite.index-436a2bc359dea557905079c12e9dff74.js",
         "type": "js"
     },
     "@popperjs\/core": {
@@ -160,15 +156,15 @@
         "type": "js"
     },
     "flowbite-datepicker": {
-        "path": "\/assets\/vendor\/flowbite-datepicker\/flowbite-datepicker.index-54085376dc28c414f2184ceb5106ef66.js",
+        "path": "\/assets\/vendor\/flowbite-datepicker\/flowbite-datepicker.index-a3d815c01f27f667ac26d339bd8bba30.js",
         "type": "js"
     },
     "flowbite\/dist\/flowbite.min.css": {
-        "path": "\/assets\/vendor\/flowbite\/dist\/flowbite.min-31c025f9f6772a66d5fcc61a3e76c101.css",
+        "path": "\/assets\/vendor\/flowbite\/dist\/flowbite.min-8dc7b9df0aefdab23e2ae95803c89f95.css",
         "type": "css"
     },
     "prismjs\/components\/prism-csv.min.js": {
-        "path": "\/assets\/vendor\/prismjs\/components\/prism-csv.min-6829c2f75a7e3a16dd589364571124ff.js",
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-csv.min-f989d6f69adc8b0a3abb4cc424554e21.js",
         "type": "js"
     },
     "@panzoom\/panzoom": {
@@ -184,7 +180,7 @@
         "type": "js"
     },
     "@codemirror\/view": {
-        "path": "\/assets\/vendor\/@codemirror\/view\/view.index-3f8fe27f9c9607a95d6e818ad8e7730c.js",
+        "path": "\/assets\/vendor\/@codemirror\/view\/view.index-b44c30fabac38dfac12bd5956b34a148.js",
         "type": "js"
     },
     "@codemirror\/state": {
@@ -192,11 +188,11 @@
         "type": "js"
     },
     "@codemirror\/language": {
-        "path": "\/assets\/vendor\/@codemirror\/language\/language.index-bbaa021b0d7eb3d6f725f95258f27a78.js",
+        "path": "\/assets\/vendor\/@codemirror\/language\/language.index-432470646103ecfae391f84f998c6751.js",
         "type": "js"
     },
     "@codemirror\/commands": {
-        "path": "\/assets\/vendor\/@codemirror\/commands\/commands.index-99c438bf62ba6b9d3d8315570d2847cb.js",
+        "path": "\/assets\/vendor\/@codemirror\/commands\/commands.index-61f74654eb609d0c6c33e9b2b10ed47f.js",
         "type": "js"
     },
     "@codemirror\/search": {
@@ -204,15 +200,15 @@
         "type": "js"
     },
     "@codemirror\/autocomplete": {
-        "path": "\/assets\/vendor\/@codemirror\/autocomplete\/autocomplete.index-d775dffaaf1a27cb1ef488c4002b9f8d.js",
+        "path": "\/assets\/vendor\/@codemirror\/autocomplete\/autocomplete.index-61538c62243afe5479f741a3793d50f9.js",
         "type": "js"
     },
     "@codemirror\/lint": {
-        "path": "\/assets\/vendor\/@codemirror\/lint\/lint.index-f875f18c27d79c02bbb36d2fd3c60d7f.js",
+        "path": "\/assets\/vendor\/@codemirror\/lint\/lint.index-bb59d824b60c2c95d88adc6ce39385f6.js",
         "type": "js"
     },
     "style-mod": {
-        "path": "\/assets\/vendor\/style-mod\/style-mod.index-7ca84f6be71aadbef9b1cf2570a9b7e1.js",
+        "path": "\/assets\/vendor\/style-mod\/style-mod.index-863d07f1f22285dc4bae5503b5096791.js",
         "type": "js"
     },
     "w3c-keyname": {
@@ -228,11 +224,11 @@
         "type": "js"
     },
     "@lezer\/common": {
-        "path": "\/assets\/vendor\/@lezer\/common\/common.index-c54ebc45994fc8d401a7abc87acd0931.js",
+        "path": "\/assets\/vendor\/@lezer\/common\/common.index-0ff2444111d94087754b89c42e5ac787.js",
         "type": "js"
     },
     "@lezer\/highlight": {
-        "path": "\/assets\/vendor\/@lezer\/highlight\/highlight.index-d5ea2a2e12587a834cdd55e7a4c3ea4b.js",
+        "path": "\/assets\/vendor\/@lezer\/highlight\/highlight.index-5177a70da99e8a6f9176469f1197bdf5.js",
         "type": "js"
     },
     "@codemirror\/lang-php": {
@@ -240,35 +236,35 @@
         "type": "js"
     },
     "@lezer\/php": {
-        "path": "\/assets\/vendor\/@lezer\/php\/php.index-a1efd84514b21a91d9a98fb11393fa45.js",
+        "path": "\/assets\/vendor\/@lezer\/php\/php.index-0f89c1a1eb79270076b425273a93b109.js",
         "type": "js"
     },
     "@codemirror\/lang-html": {
-        "path": "\/assets\/vendor\/@codemirror\/lang-html\/lang-html.index-da75f62b553c1b2c5ff8d339e204a578.js",
+        "path": "\/assets\/vendor\/@codemirror\/lang-html\/lang-html.index-1a24f2db64e26878eb0e59011eb01a86.js",
         "type": "js"
     },
     "@lezer\/lr": {
-        "path": "\/assets\/vendor\/@lezer\/lr\/lr.index-641ba59507ad8f4536be76f23819c86b.js",
+        "path": "\/assets\/vendor\/@lezer\/lr\/lr.index-28454e593aa80b99a443ab88e02d94ba.js",
         "type": "js"
     },
     "@lezer\/html": {
-        "path": "\/assets\/vendor\/@lezer\/html\/html.index-9f53f583db9eac51b0c3efa4e80b634e.js",
+        "path": "\/assets\/vendor\/@lezer\/html\/html.index-de919dd894d8fb200a6b9645bbd485d6.js",
         "type": "js"
     },
     "@codemirror\/lang-css": {
-        "path": "\/assets\/vendor\/@codemirror\/lang-css\/lang-css.index-8d530963c5a66e15705eb3593a1d96f5.js",
+        "path": "\/assets\/vendor\/@codemirror\/lang-css\/lang-css.index-79c1c442cd9281f09f37ccd37dd1ca3a.js",
         "type": "js"
     },
     "@codemirror\/lang-javascript": {
-        "path": "\/assets\/vendor\/@codemirror\/lang-javascript\/lang-javascript.index-03fe5e4ac5cca9e057b16e8351b11be5.js",
+        "path": "\/assets\/vendor\/@codemirror\/lang-javascript\/lang-javascript.index-71c5c1bbf3bb8f5252291dfdbe83e873.js",
         "type": "js"
     },
     "@lezer\/css": {
-        "path": "\/assets\/vendor\/@lezer\/css\/css.index-7108e5837b54aeb0ff67e68e535a70ae.js",
+        "path": "\/assets\/vendor\/@lezer\/css\/css.index-44a5022af5b464675914b560fc652466.js",
         "type": "js"
     },
     "@lezer\/javascript": {
-        "path": "\/assets\/vendor\/@lezer\/javascript\/javascript.index-a373e5ce6d4dd6bdea77b15e4476050f.js",
+        "path": "\/assets\/vendor\/@lezer\/javascript\/javascript.index-8e256701bdec4b094d259aa068164e5b.js",
         "type": "js"
     },
     "@codemirror\/theme-one-dark": {
