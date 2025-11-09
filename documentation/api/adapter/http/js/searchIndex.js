@@ -1,6 +1,16 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ContentTypeDetector",
+            "name": "ContentTypeDetector",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-ContentTypeDetector.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ContentTypeDetector\u003A\u003AdetectFromResponse\u0028\u0029",
+            "name": "detectFromResponse",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-ContentTypeDetector.html#method_detectFromResponse"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\from_dynamic_http_requests\u0028\u0029",
             "name": "from_dynamic_http_requests",
             "summary": "",
@@ -90,6 +100,31 @@ Search.appendIndex(
             "name": "create",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Http-ResponseEntriesFactory.html#method_create"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ResponseType",
+            "name": "ResponseType",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-ResponseType.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ResponseType\u003A\u003AHTML",
+            "name": "HTML",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-ResponseType.html#enumcase_HTML"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ResponseType\u003A\u003AJSON",
+            "name": "JSON",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-ResponseType.html#enumcase_JSON"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ResponseType\u003A\u003ATEXT",
+            "name": "TEXT",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-ResponseType.html#enumcase_TEXT"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ResponseType\u003A\u003AXML",
+            "name": "XML",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-ResponseType.html#enumcase_XML"
         },                {
             "fqsen": "\\",
             "name": "\\",
