@@ -13,13 +13,13 @@
     <meta name="twitter:description" content="Code example showing data reading data frame.">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/data_frame/data_reading/parquet/" />
+    <meta property="og:url" content="https://flow-php.com/data_frame/data_reading/http_static/" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/data_frame/data_reading/parquet/" />
+    <meta property="twitter:url" content="https://flow-php.com/data_frame/data_reading/http_static/" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -390,7 +390,7 @@
                         </li>
                                             <li>
                             <a href="/data_frame/data_reading/parquet/#example"
-                               class="active inline-block text-sm px-3 py-1 rounded hover:bg-orange-200 transition-colors [&.active]:bg-orange-300 [&.active]:font-medium [&.active]:rounded">
+                               class="inline-block text-sm px-3 py-1 rounded hover:bg-orange-200 transition-colors [&.active]:bg-orange-300 [&.active]:font-medium [&.active]:rounded">
                                 Parquet
                             </a>
                         </li>
@@ -450,7 +450,7 @@
                         </li>
                                             <li>
                             <a href="/data_frame/data_reading/http_static/#example"
-                               class="inline-block text-sm px-3 py-1 rounded hover:bg-orange-200 transition-colors [&.active]:bg-orange-300 [&.active]:font-medium [&.active]:rounded">
+                               class="active inline-block text-sm px-3 py-1 rounded hover:bg-orange-200 transition-colors [&.active]:bg-orange-300 [&.active]:font-medium [&.active]:rounded">
                                 Http static
                             </a>
                         </li>
@@ -458,26 +458,9 @@
             </nav>
             
             <div id="example" class="-mt-36 pt-36">
-                                    <h2 class="text-xl mt-5">Description</h2>
-                    <article id="example-description"
-                             class="rounded px-4 pt-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative mb-5"
-                            data-controller="all-links-external"
-                    >
-                        <p>Read data from a parquet file.</p>
-<pre class="language-php"><code class="language-php" data-controller="syntax-highlight">function from_parquet(string|Path $uri);
-</code></pre>
-<p>Additional options:</p>
-<ul>
-<li><code>withColumns(array $columns)</code> - default [], list of columns to read when not set, all columns will be read</li>
-<li><code>withOptions(Options $options)</code> - custom Parquet Reader <a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/lib/parquet/src/Flow/Parquet/Options.php">Options</a></li>
-<li><code>withByteOrder(ByteOrder $order)</code> - default <code>ByteOrder::LITTLE_ENDIAN</code>, the byte order of the parquet file</li>
-<li><code>withOffset(int $offset)</code> - default null, rows to skip from the beginning of the file</li>
-</ul>
-
-                    </article>
                 
                 <div class="mb-5">
-                                            <a href="https://raw.githubusercontent.com/flow-php/flow/refs/heads/1.x/examples/topics/data_frame/data_reading/parquet/flow_php_example.zip" target="_blank" class="btn btn-primary mb-5">
+                                            <a href="https://raw.githubusercontent.com/flow-php/flow/refs/heads/1.x/examples/topics/data_frame/data_reading/http_static/flow_php_example.zip" target="_blank" class="btn btn-primary mb-5">
                             Download
                         </a>
                                     </div>
@@ -501,41 +484,73 @@
     &quot;license&quot;: &quot;MIT&quot;,
     &quot;type&quot;: &quot;library&quot;,
     &quot;require&quot;: {
+        &quot;php&quot;: &quot;^8.4&quot;,
         &quot;flow-php/etl&quot;: &quot;1.x-dev&quot;,
-        &quot;flow-php/etl-adapter-parquet&quot;: &quot;1.x-dev&quot;
+        &quot;flow-php/etl-adapter-http&quot;: &quot;1.x-dev&quot;,
+        &quot;nyholm/psr7&quot;: &quot;^1.8&quot;,
+        &quot;symfony/http-client&quot;: &quot;^6.4 || ^7.4&quot;
     },
-    &quot;minimum-stability&quot;: &quot;dev&quot;
+    &quot;minimum-stability&quot;: &quot;dev&quot;,
+    &quot;config&quot;: {
+        &quot;allow-plugins&quot;: {
+            &quot;php-http/discovery&quot;: false
+        }
+    }
 }</code></pre></div>                    </details>
                 
                 <code>code.php</code><div id="code" class="relative"><button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#code-php" data-controller="clipboard"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="copy code-php" width="20" height="20" class="inline"></button><pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2"><code id="code-php" class="language-php" data-controller="syntax-highlight" >&lt;?php
 
 declare(strict_types=1);
 
-use function Flow\ETL\Adapter\Parquet\from_parquet;
-use function Flow\ETL\DSL\{data_frame, to_stream};
+use function Flow\ETL\DSL\{data_frame, ref, to_stream};
+use Flow\ETL\Adapter\Http\PsrHttpClientStaticExtractor;
+use Nyholm\Psr7\Factory\Psr17Factory;
+use Symfony\Component\HttpClient\{MockHttpClient, Psr18Client};
+use Symfony\Component\HttpClient\Response\MockResponse;
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
+$requests = static function () : \Generator {
+    yield (new Psr17Factory())
+        -&gt;createRequest(&#039;GET&#039;, &#039;https://example.com&#039;);
+};
+
+$client = new PsrHttpClientStaticExtractor(
+    new Psr18Client(
+        new MockHttpClient(
+            [
+                new MockResponse(
+                    file_get_contents(__DIR__ . &#039;/input/example.com.html&#039;),
+                    [
+                        &#039;response_headers&#039; =&gt; [
+                            &#039;Content-Type&#039; =&gt; &#039;text/html&#039;,
+                        ],
+                    ],
+                ),
+            ],
+        ),
+    ),
+    $requests(),
+);
+
 data_frame()
-    -&gt;read(from_parquet(
-        __DIR__ . &#039;/input/dataset.parquet&#039;,
-    ))
-    -&gt;collect()
+    -&gt;read($client)
+    -&gt;withEntry(&#039;title&#039;, ref(&#039;response_body&#039;)-&gt;htmlQuerySelector(&#039;body div h1&#039;)-&gt;domElementValue())
+    -&gt;withEntry(&#039;paragraphs&#039;, ref(&#039;response_body&#039;)-&gt;htmlQuerySelectorAll(&#039;body p&#039;)-&gt;expand())
+    -&gt;select(&#039;title&#039;, &#039;paragraphs&#039;)
     -&gt;write(to_stream(__DIR__ . &#039;/output.txt&#039;, truncate: false))
     -&gt;run();
 </code></pre></div>            </div>
 
                         <h2 class="text-xl mt-5 mb-5">Output</h2>
             <div id="output" class="relative">
-                <button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#output" data-controller="clipboard"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="copy code" width="20" height="20" class="inline"></button><pre class="rounded p-4 shadow-2xl shadow-gray rounded border-gray border-2"><code id="output" class="language-shell overflow-auto" data-controller="syntax-highlight">+----+--------+------------------+--------+
-| id |   name |            email | active |
-+----+--------+------------------+--------+
-|  1 |   John |   john@email.com |   true |
-|  2 |   Paul |   paul@email.com |   true |
-|  3 | George | george@email.com |  false |
-|  4 |  Ringo |   rino@email.com |   true |
-+----+--------+------------------+--------+
-4 rows
+                <button class="absolute top-[12px] right-[12px] bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20" data-clipboard-target="#output" data-controller="clipboard"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="copy code" width="20" height="20" class="inline"></button><pre class="rounded p-4 shadow-2xl shadow-gray rounded border-gray border-2"><code id="output" class="language-shell overflow-auto" data-controller="syntax-highlight">+----------------+-------------------------------------------------------------------------------------------------------+
+|          title |                                                                                            paragraphs |
++----------------+-------------------------------------------------------------------------------------------------------+
+| Example Domain | This domain is for use in documentation examples without needing permission. Avoid use in operations. |
+| Example Domain |                                             &lt;a href=&quot;https://iana.org/domains/example&quot;&gt;Learn more&lt;/a&gt; |
++----------------+-------------------------------------------------------------------------------------------------------+
+2 rows
 </code></pre>            </div>
             
             <div class="mt-5">
