@@ -691,11 +691,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-SchemaConverter.html#method_toFlowSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\SchemaConverter\u003A\u003ADEFAULT_TYPES",
-            "name": "DEFAULT_TYPES",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-SchemaConverter.html#constant_DEFAULT_TYPES"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Table",
             "name": "Table",
             "summary": "",
