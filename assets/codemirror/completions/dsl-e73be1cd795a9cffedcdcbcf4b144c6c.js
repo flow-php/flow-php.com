@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 344
+ * Total functions: 350
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -86,6 +86,9 @@ const dslFunctions = [
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
                     <span class=\"fn-name\">append</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SaveMode</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Alias for save_mode_append().
                 </div>
                             `
             return div
@@ -1611,6 +1614,9 @@ const dslFunctions = [
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
                     <span class=\"fn-name\">exception_if_exists</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SaveMode</span>
                 </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Alias for save_mode_exception_if_exists().
+                </div>
                             `
             return div
         },
@@ -1630,6 +1636,42 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\ETL\\DSL\\execution_context(" + "$" + "{" + "1:config" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "execution_lenient",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">execution_lenient</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ExecutionMode</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    In this mode, functions returns nulls instead of throwing exceptions.
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\ETL\\DSL\\execution_lenient()"),
+        boost: 10
+    },        {
+        label: "execution_strict",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">execution_strict</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ExecutionMode</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    In this mode, functions throws exceptions if the given entry is not found<br>or passed parameters are invalid.
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\ETL\\DSL\\execution_strict()"),
         boost: 10
     },        {
         label: "exists",
@@ -2469,6 +2511,9 @@ const dslFunctions = [
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
                     <span class=\"fn-name\">ignore</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SaveMode</span>
                 </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Alias for save_mode_ignore().
+                </div>
                             `
             return div
         },
@@ -3099,6 +3144,9 @@ const dslFunctions = [
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
                     <span class=\"fn-name\">overwrite</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SaveMode</span>
                 </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Alias for save_mode_overwrite().
+                </div>
                             `
             return div
         },
@@ -3646,6 +3694,66 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\ETL\\DSL\\sanitize(" + "$" + "{" + "1:value" + "}" + ", " + "$" + "{" + "2:placeholder" + "}" + ", " + "$" + "{" + "3:skipCharacters" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "save_mode_append",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">save_mode_append</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SaveMode</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\ETL\\DSL\\save_mode_append()"),
+        boost: 10
+    },        {
+        label: "save_mode_exception_if_exists",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">save_mode_exception_if_exists</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SaveMode</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\ETL\\DSL\\save_mode_exception_if_exists()"),
+        boost: 10
+    },        {
+        label: "save_mode_ignore",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">save_mode_ignore</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SaveMode</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\ETL\\DSL\\save_mode_ignore()"),
+        boost: 10
+    },        {
+        label: "save_mode_overwrite",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">save_mode_overwrite</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SaveMode</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\ETL\\DSL\\save_mode_overwrite()"),
         boost: 10
     },        {
         label: "schema",

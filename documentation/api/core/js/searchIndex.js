@@ -1213,7 +1213,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Amode\u0028\u0029",
             "name": "mode",
-            "summary": "SaveMode\u0020defines\u0020how\u0020Flow\u0020should\u0020behave\u0020when\u0020writing\u0020to\u0020a\u0020file\/files\u0020that\u0020already\u0020exists.",
+            "summary": "This\u0020method\u0020is\u0020used\u0020to\u0020set\u0020the\u0020behavior\u0020of\u0020the\u0020DataFrame.",
             "url": "classes/Flow-ETL-DataFrame.html#method_mode"
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Aoffset\u0028\u0029",
@@ -2778,23 +2778,53 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\overwrite\u0028\u0029",
             "name": "overwrite",
-            "summary": "",
+            "summary": "Alias\u0020for\u0020save_mode_overwrite\u0028\u0029.",
             "url": "namespaces/flow-etl-dsl.html#function_overwrite"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\save_mode_overwrite\u0028\u0029",
+            "name": "save_mode_overwrite",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_save_mode_overwrite"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\ignore\u0028\u0029",
             "name": "ignore",
-            "summary": "",
+            "summary": "Alias\u0020for\u0020save_mode_ignore\u0028\u0029.",
             "url": "namespaces/flow-etl-dsl.html#function_ignore"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\save_mode_ignore\u0028\u0029",
+            "name": "save_mode_ignore",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_save_mode_ignore"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\exception_if_exists\u0028\u0029",
             "name": "exception_if_exists",
-            "summary": "",
+            "summary": "Alias\u0020for\u0020save_mode_exception_if_exists\u0028\u0029.",
             "url": "namespaces/flow-etl-dsl.html#function_exception_if_exists"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\save_mode_exception_if_exists\u0028\u0029",
+            "name": "save_mode_exception_if_exists",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_save_mode_exception_if_exists"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\append\u0028\u0029",
             "name": "append",
-            "summary": "",
+            "summary": "Alias\u0020for\u0020save_mode_append\u0028\u0029.",
             "url": "namespaces/flow-etl-dsl.html#function_append"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\save_mode_append\u0028\u0029",
+            "name": "save_mode_append",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_save_mode_append"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\execution_strict\u0028\u0029",
+            "name": "execution_strict",
+            "summary": "In\u0020this\u0020mode,\u0020functions\u0020throws\u0020exceptions\u0020if\u0020the\u0020given\u0020entry\u0020is\u0020not\u0020found\nor\u0020passed\u0020parameters\u0020are\u0020invalid.",
+            "url": "namespaces/flow-etl-dsl.html#function_execution_strict"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\execution_lenient\u0028\u0029",
+            "name": "execution_lenient",
+            "summary": "In\u0020this\u0020mode,\u0020functions\u0020returns\u0020nulls\u0020instead\u0020of\u0020throwing\u0020exceptions.",
+            "url": "namespaces/flow-etl-dsl.html#function_execution_lenient"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\get_type\u0028\u0029",
             "name": "get_type",
@@ -3711,10 +3741,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Filesystem-FilesystemStreams.html#method_rm"
         },                {
-            "fqsen": "\\Flow\\ETL\\Filesystem\\FilesystemStreams\u003A\u003AsetSaveMode\u0028\u0029",
-            "name": "setSaveMode",
+            "fqsen": "\\Flow\\ETL\\Filesystem\\FilesystemStreams\u003A\u003AsetMode\u0028\u0029",
+            "name": "setMode",
             "summary": "",
-            "url": "classes/Flow-ETL-Filesystem-FilesystemStreams.html#method_setSaveMode"
+            "url": "classes/Flow-ETL-Filesystem-FilesystemStreams.html#method_setMode"
         },                {
             "fqsen": "\\Flow\\ETL\\Filesystem\\FilesystemStreams\u003A\u003AwriteTo\u0028\u0029",
             "name": "writeTo",
@@ -3830,6 +3860,11 @@ Search.appendIndex(
             "name": "filesystem",
             "summary": "",
             "url": "classes/Flow-ETL-FlowContext.html#method_filesystem"
+        },                {
+            "fqsen": "\\Flow\\ETL\\FlowContext\u003A\u003Afunctions\u0028\u0029",
+            "name": "functions",
+            "summary": "",
+            "url": "classes/Flow-ETL-FlowContext.html#method_functions"
         },                {
             "fqsen": "\\Flow\\ETL\\FlowContext\u003A\u003AsetErrorHandler\u0028\u0029",
             "name": "setErrorHandler",
@@ -4911,6 +4946,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Equals.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ExecutionMode",
+            "name": "ExecutionMode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ExecutionMode.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ExecutionMode\u003A\u003ALENIENT",
+            "name": "LENIENT",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ExecutionMode.html#enumcase_LENIENT"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ExecutionMode\u003A\u003ASTRICT",
+            "name": "STRICT",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ExecutionMode.html#enumcase_STRICT"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Exists",
             "name": "Exists",
             "summary": "",
@@ -4945,6 +4995,26 @@ Search.appendIndex(
             "name": "result",
             "summary": "",
             "url": "classes/Flow-ETL-Function-First.html#method_result"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Functions",
+            "name": "Functions",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Functions.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Functions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Functions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Functions\u003A\u003AinvalidResult\u0028\u0029",
+            "name": "invalidResult",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Functions.html#method_invalidResult"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Functions\u003A\u003AsetMode\u0028\u0029",
+            "name": "setMode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Functions.html#method_setMode"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\GreaterThan",
             "name": "GreaterThan",

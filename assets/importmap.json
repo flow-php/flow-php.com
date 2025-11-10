@@ -72,11 +72,11 @@
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dsl.js": {
-        "path": "\/assets\/codemirror\/completions\/dsl-2c709afa115debccb08a04cc27f7005c.js",
+        "path": "\/assets\/codemirror\/completions\/dsl-e73be1cd795a9cffedcdcbcf4b144c6c.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dataframe.js": {
-        "path": "\/assets\/codemirror\/completions\/dataframe-e4e5dacbf1f3cb8396844d80ab59d51b.js",
+        "path": "\/assets\/codemirror\/completions\/dataframe-a063b465eeccd6d35add721992bf081f.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/scalarfunctionchain.js": {
