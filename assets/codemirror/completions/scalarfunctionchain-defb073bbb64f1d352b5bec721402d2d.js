@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP ScalarFunctionChain Methods
  *
- * ScalarFunctionChain methods: 121
+ * ScalarFunctionChain methods: 122
  * ScalarFunctionChain-returning functions: 53
  *
  * This completer triggers after ScalarFunctionChain-returning DSL functions
@@ -554,6 +554,21 @@ const scalarFunctionChainMethods = [
             return div
         },
         apply: snippet("domElementAttributeValue(" + "$" + "{" + "1:attribute" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "domElementParent",
+        type: "method",
+        detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">domElementParent</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">DOMElementParent</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("domElementParent()"),
         boost: 10
     },        {
         label: "domElementValue",

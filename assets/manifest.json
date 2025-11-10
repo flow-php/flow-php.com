@@ -6,7 +6,7 @@
     "codemirror\/completions\/dataframe.js": "\/assets\/codemirror\/completions\/dataframe-a063b465eeccd6d35add721992bf081f.js",
     "codemirror\/completions\/dsl.js": "\/assets\/codemirror\/completions\/dsl-e73be1cd795a9cffedcdcbcf4b144c6c.js",
     "codemirror\/completions\/flow.js": "\/assets\/codemirror\/completions\/flow-da7ec46f1fb045fa99ff477b5db69205.js",
-    "codemirror\/completions\/scalarfunctionchain.js": "\/assets\/codemirror\/completions\/scalarfunctionchain-6141d747bdcb90be13bea323ab038752.js",
+    "codemirror\/completions\/scalarfunctionchain.js": "\/assets\/codemirror\/completions\/scalarfunctionchain-defb073bbb64f1d352b5bec721402d2d.js",
     "codemirror\/themes\/theme-flow.js": "\/assets\/codemirror\/themes\/theme-flow-7bef93b1493817cf09879a3b5cd589b3.js",
     "controllers\/all_links_external_controller.js": "\/assets\/controllers\/all_links_external_controller-2814b02105ed2e4f92c5f5747e0e46c8.js",
     "controllers\/clipboard_controller.js": "\/assets\/controllers\/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js",
