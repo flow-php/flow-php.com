@@ -4871,6 +4871,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-DOMElementAttributeValue.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\DOMElementNextSibling",
+            "name": "DOMElementNextSibling",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-DOMElementNextSibling.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\DOMElementNextSibling\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-DOMElementNextSibling.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\DOMElementNextSibling\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-DOMElementNextSibling.html#method_eval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementParent",
             "name": "DOMElementParent",
             "summary": "",
@@ -4885,6 +4900,21 @@ Search.appendIndex(
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Function-DOMElementParent.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\DOMElementPreviousSibling",
+            "name": "DOMElementPreviousSibling",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-DOMElementPreviousSibling.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\DOMElementPreviousSibling\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-DOMElementPreviousSibling.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\DOMElementPreviousSibling\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-DOMElementPreviousSibling.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementValue",
             "name": "DOMElementValue",
@@ -6231,10 +6261,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_domElementAttributeValue"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AdomElementNextSibling\u0028\u0029",
+            "name": "domElementNextSibling",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_domElementNextSibling"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AdomElementParent\u0028\u0029",
             "name": "domElementParent",
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_domElementParent"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AdomElementPreviousSibling\u0028\u0029",
+            "name": "domElementPreviousSibling",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_domElementPreviousSibling"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AdomElementValue\u0028\u0029",
             "name": "domElementValue",
