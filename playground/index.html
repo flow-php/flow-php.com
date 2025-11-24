@@ -32,11 +32,11 @@
     <link rel="preload" fetchpriority="high" href="/assets/vendor/@fontsource-variable/cabin/files/cabin-latin-wght-normal-09fde3d26ef53aa9d098832893fb5bd9.woff2" as="font" crossorigin>
 
             <style>@font-face{font-family:'Cabin Variable';font-style:normal;font-display:swap;font-weight:400 700;src:url("/assets/vendor/@fontsource-variable/cabin/files/cabin-vietnamese-wght-normal-06275bf9cc72ae49efb1b4013fdca29c.woff2") format('woff2-variations');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Cabin Variable';font-style:normal;font-display:swap;font-weight:400 700;src:url("/assets/vendor/@fontsource-variable/cabin/files/cabin-latin-ext-wght-normal-cbc8f369e84be095dbe968df9de80ba2.woff2") format('woff2-variations');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Cabin Variable';font-style:normal;font-display:swap;font-weight:400 700;src:url("/assets/vendor/@fontsource-variable/cabin/files/cabin-latin-wght-normal-09fde3d26ef53aa9d098832893fb5bd9.woff2") format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
-        <link rel="stylesheet" href="/assets/styles/app-862fdf160ee3ba5d292c63e5f899b70a.css">
+        <link rel="stylesheet" href="/assets/styles/app-43c2f574385fa4b9bced584d7a45aa5b.css">
     
                         <script defer src="https://cloud.umami.is/script.js" data-website-id="f9c034bb-efdf-4f70-b6ef-34da144ce7b0"></script>
             
-            <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
         <script>
             mermaid.initialize({ startOnLoad: false, theme: 'dark', securityLevel: 'loose' });
         </script>
@@ -56,21 +56,27 @@
         "flowbite": "/assets/vendor/flowbite/flowbite.index-436a2bc359dea557905079c12e9dff74.js",
         "@symfony/stimulus-bundle": "/assets/@symfony/stimulus-bundle/loader-5751ad1ee2975e725a94d8121d153d17.js",
         "@hotwired/stimulus": "/assets/vendor/@hotwired/stimulus/stimulus.index-4b8ccd71e6b1c4ddba22853d5a50a26c.js",
-        "/assets/@symfony/stimulus-bundle/controllers.js": "/assets/@symfony/stimulus-bundle/controllers-ba23463749f02248f9b11111f64dd984.js",
-        "/assets/controllers/share_code_controller.js": "/assets/controllers/share_code_controller-7651005539c8b8ac4a57132dff1542f1.js",
+        "/assets/@symfony/stimulus-bundle/controllers.js": "/assets/@symfony/stimulus-bundle/controllers-4a39170589d758504b96add17a558e07.js",
+        "/assets/controllers/playground_help_controller.js": "/assets/controllers/playground_help_controller-3df04a84275f015ef7e6f86e3d9e7383.js",
+        "/assets/controllers/playground_share_controller.js": "/assets/controllers/playground_share_controller-e4eebf05c9c0b3f61aea9904ceff34f5.js",
+        "/assets/controllers/turnstile_controller.js": "/assets/controllers/turnstile_controller-f38af05e660ec65b36a67bc61a91d1c9.js",
+        "/assets/controllers/playground_format_controller.js": "/assets/controllers/playground_format_controller-b516b8c484e0800edc6f8f8f9afc4318.js",
+        "/assets/controllers/playground_workspace_controller.js": "/assets/controllers/playground_workspace_controller-614b9a669f8450c64090707de9be0918.js",
         "/assets/controllers/scroll_to_top_controller.js": "/assets/controllers/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
         "/assets/controllers/syntax_highlight_controller.js": "/assets/controllers/syntax_highlight_controller-962ec734ce23689f526d17bfce5fbec3.js",
         "/assets/controllers/clipboard_controller.js": "/assets/controllers/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js",
-        "/assets/controllers/playground_storage_controller.js": "/assets/controllers/playground_storage_controller-0a0e7bc112377406b5fa8fc6fd5f1407.js",
+        "/assets/controllers/playground_storage_controller.js": "/assets/controllers/playground_storage_controller-6a7ca976861299204f7365ad9d782ef4.js",
+        "/assets/controllers/playground_reset_controller.js": "/assets/controllers/playground_reset_controller-78985d1d372f9be795ba4fd35d78a527.js",
+        "/assets/controllers/playground_output_controller.js": "/assets/controllers/playground_output_controller-29f780a95240cba1c0e04b482e68c92f.js",
         "/assets/controllers/image_swap_controller.js": "/assets/controllers/image_swap_controller-c22445e2f4c121053a31252d6e4277dd.js",
-        "/assets/controllers/reset_confirm_controller.js": "/assets/controllers/reset_confirm_controller-a0c80c550e8da6fbe45d5f1afc594e78.js",
-        "/assets/controllers/playground-help_controller.js": "/assets/controllers/playground-help_controller-a3fb78b6830148054578e5e426ecc12c.js",
-        "/assets/controllers/playground-editor_controller.js": "/assets/controllers/playground-editor_controller-c6752739fa1e638dc671e172f7b8c873.js",
+        "/assets/controllers/playground_run_controller.js": "/assets/controllers/playground_run_controller-a50f2ca038f884732ed10b51e5745621.js",
         "/assets/controllers/all_links_external_controller.js": "/assets/controllers/all_links_external_controller-2814b02105ed2e4f92c5f5747e0e46c8.js",
-        "/assets/controllers/code_mirror_editor_controller.js": "/assets/controllers/code_mirror_editor_controller-940181c34a853d30d58613b705ecf622.js",
-        "/assets/controllers/wasm_controller.js": "/assets/controllers/wasm_controller-12294702fb66886622e956f959b11bc2.js",
+        "/assets/controllers/playground_controller.js": "/assets/controllers/playground_controller-29a2213a9eb88a2091408fc0595fed1e.js",
+        "/assets/controllers/wasm_controller.js": "/assets/controllers/wasm_controller-6ac57af96dfa39ce2a2cdb201151876a.js",
+        "/assets/controllers/code_editor_controller.js": "/assets/controllers/code_editor_controller-0f31162c9dc5f993b3eb60b5004effda.js",
+        "/assets/controllers/playground_upload_controller.js": "/assets/controllers/playground_upload_controller-3d7160acdfd8d63a8b2fe659b49b1d28.js",
         "/assets/controllers/mermaid_controller.js": "/assets/controllers/mermaid_controller-4ec011246a55fcc8b844940a72cd2b54.js",
-        "lz-string": "/assets/vendor/lz-string/lz-string.index-0f0586f428e8cb273726558186e73f13.js",
+        "/assets/services/snippet-fingerprint.js": "/assets/services/snippet-fingerprint-ecdca9f86dfd0b5152217084cf6bc7b8.js",
         "prismjs": "/assets/vendor/prismjs/prismjs.index-fcd36a40a087482884638d93c9c09a08.js",
         "/assets/prismjs/themes/prism-flow.css": "data:application/javascript,",
         "/assets/prismjs/plugins/autolinker/autolinker.js": "/assets/prismjs/plugins/autolinker/autolinker-e906ddf9b7d89f169c9cf40a53e5605d.js",
@@ -103,6 +109,7 @@
         "@popperjs/core": "/assets/vendor/@popperjs/core/core.index-4013baa633d6c530f3ac068433ba0593.js",
         "flowbite-datepicker": "/assets/vendor/flowbite-datepicker/flowbite-datepicker.index-a3d815c01f27f667ac26d339bd8bba30.js",
         "flowbite/dist/flowbite.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fflowbite%2Fdist%2Fflowbite.min-8dc7b9df0aefdab23e2ae95803c89f95.css%22%7D%29%29",
+        "lz-string": "/assets/vendor/lz-string/lz-string.index-0f0586f428e8cb273726558186e73f13.js",
         "@codemirror/search": "/assets/vendor/@codemirror/search/search.index-fc99d3c6ca51ed8c47b4e29c9453007c.js",
         "@codemirror/lint": "/assets/vendor/@codemirror/lint/lint.index-bb59d824b60c2c95d88adc6ce39385f6.js",
         "style-mod": "/assets/vendor/style-mod/style-mod.index-863d07f1f22285dc4bae5503b5096791.js",
@@ -129,21 +136,27 @@
 <link rel="modulepreload" href="/assets/vendor/flowbite/flowbite.index-436a2bc359dea557905079c12e9dff74.js">
 <link rel="modulepreload" href="/assets/@symfony/stimulus-bundle/loader-5751ad1ee2975e725a94d8121d153d17.js">
 <link rel="modulepreload" href="/assets/vendor/@hotwired/stimulus/stimulus.index-4b8ccd71e6b1c4ddba22853d5a50a26c.js">
-<link rel="modulepreload" href="/assets/@symfony/stimulus-bundle/controllers-ba23463749f02248f9b11111f64dd984.js">
-<link rel="modulepreload" href="/assets/controllers/share_code_controller-7651005539c8b8ac4a57132dff1542f1.js">
+<link rel="modulepreload" href="/assets/@symfony/stimulus-bundle/controllers-4a39170589d758504b96add17a558e07.js">
+<link rel="modulepreload" href="/assets/controllers/playground_help_controller-3df04a84275f015ef7e6f86e3d9e7383.js">
+<link rel="modulepreload" href="/assets/controllers/playground_share_controller-e4eebf05c9c0b3f61aea9904ceff34f5.js">
+<link rel="modulepreload" href="/assets/controllers/turnstile_controller-f38af05e660ec65b36a67bc61a91d1c9.js">
+<link rel="modulepreload" href="/assets/controllers/playground_format_controller-b516b8c484e0800edc6f8f8f9afc4318.js">
+<link rel="modulepreload" href="/assets/controllers/playground_workspace_controller-614b9a669f8450c64090707de9be0918.js">
 <link rel="modulepreload" href="/assets/controllers/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js">
 <link rel="modulepreload" href="/assets/controllers/syntax_highlight_controller-962ec734ce23689f526d17bfce5fbec3.js">
 <link rel="modulepreload" href="/assets/controllers/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js">
-<link rel="modulepreload" href="/assets/controllers/playground_storage_controller-0a0e7bc112377406b5fa8fc6fd5f1407.js">
+<link rel="modulepreload" href="/assets/controllers/playground_storage_controller-6a7ca976861299204f7365ad9d782ef4.js">
+<link rel="modulepreload" href="/assets/controllers/playground_reset_controller-78985d1d372f9be795ba4fd35d78a527.js">
+<link rel="modulepreload" href="/assets/controllers/playground_output_controller-29f780a95240cba1c0e04b482e68c92f.js">
 <link rel="modulepreload" href="/assets/controllers/image_swap_controller-c22445e2f4c121053a31252d6e4277dd.js">
-<link rel="modulepreload" href="/assets/controllers/reset_confirm_controller-a0c80c550e8da6fbe45d5f1afc594e78.js">
-<link rel="modulepreload" href="/assets/controllers/playground-help_controller-a3fb78b6830148054578e5e426ecc12c.js">
-<link rel="modulepreload" href="/assets/controllers/playground-editor_controller-c6752739fa1e638dc671e172f7b8c873.js">
+<link rel="modulepreload" href="/assets/controllers/playground_run_controller-a50f2ca038f884732ed10b51e5745621.js">
 <link rel="modulepreload" href="/assets/controllers/all_links_external_controller-2814b02105ed2e4f92c5f5747e0e46c8.js">
-<link rel="modulepreload" href="/assets/controllers/code_mirror_editor_controller-940181c34a853d30d58613b705ecf622.js">
-<link rel="modulepreload" href="/assets/controllers/wasm_controller-12294702fb66886622e956f959b11bc2.js">
+<link rel="modulepreload" href="/assets/controllers/playground_controller-29a2213a9eb88a2091408fc0595fed1e.js">
+<link rel="modulepreload" href="/assets/controllers/wasm_controller-6ac57af96dfa39ce2a2cdb201151876a.js">
+<link rel="modulepreload" href="/assets/controllers/code_editor_controller-0f31162c9dc5f993b3eb60b5004effda.js">
+<link rel="modulepreload" href="/assets/controllers/playground_upload_controller-3d7160acdfd8d63a8b2fe659b49b1d28.js">
 <link rel="modulepreload" href="/assets/controllers/mermaid_controller-4ec011246a55fcc8b844940a72cd2b54.js">
-<link rel="modulepreload" href="/assets/vendor/lz-string/lz-string.index-0f0586f428e8cb273726558186e73f13.js">
+<link rel="modulepreload" href="/assets/services/snippet-fingerprint-ecdca9f86dfd0b5152217084cf6bc7b8.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/prismjs.index-fcd36a40a087482884638d93c9c09a08.js">
 <link rel="modulepreload" href="/assets/prismjs/plugins/autolinker/autolinker-e906ddf9b7d89f169c9cf40a53e5605d.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/plugins/autoloader/prism-autoloader-b1e401ad6aa11bcff3b6a7df2c9f1aeb.js">
@@ -170,7 +183,9 @@
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-432470646103ecfae391f84f998c6751.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-5177a70da99e8a6f9176469f1197bdf5.js">
 <script type="module">import 'app';</script>
-    </head>
+    
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
 <body class="scroll-smooth bg-black text-white" data-environment="prod">
     <header class="py-2 text-white bg-blue-200">
         <div class="mx-auto max-w-screen-2xl px-4 flex items-center justify-between">
@@ -197,7 +212,7 @@
                     </li>
                     <li>
                         <a class="p-3 flex items-center" href="/playground">
-                            Demo
+                            Playground
                             <img src="/assets/images/icons/play-b3d8bbbafaea96f437f51fa0a5041e8f.svg" alt="Flow PHP Playground" width="16" height="16" class="ml-1">
                         </a>
                     </li>
@@ -245,26 +260,54 @@
     <main id="main">
         
         <div id="playground"
-     data-controller="playground-editor wasm share-code playground-storage playground-help"
-     data-playground-editor-code-mirror-editor-outlet="#code-editor"
-     data-playground-editor-playground-storage-outlet="#playground"
-     data-playground-storage-code-mirror-editor-outlet="#code-editor"
-     data-share-code-code-mirror-editor-outlet="#code-editor"
+     data-controller="wasm turnstile playground-output playground playground-workspace playground-run playground-format playground-upload playground-share playground-storage playground-reset playground-help"
+     data-turnstile-site-key-value="0x4AAAAAACAjJaWImyaJwWCy"
+     data-turnstile-appearance-value="interaction-only"
+     data-turnstile-environment-value="prod"
+     data-playground-share-api-url-value="http://localhost:8787/api/playground/snippets"
+     data-playground-share-snippets-url-value="http://localhost:8787"
      data-wasm-php-js-value="/assets/wasm/php-f52503392e109aca2c77df49eb37fcd9.js"
      data-wasm-php-wasm-value="/assets/wasm/php-b32abed2ea5cde4a304c1b615eb477e2.wasm"
-     data-wasm-resources-value="{&quot;tools\/flow.phar&quot;:&quot;\/assets\/wasm\/tools\/flow-c257f05b89a268968a2135e73578dac7.phar&quot;,&quot;tools\/php-cs-fixer.phar&quot;:&quot;\/assets\/wasm\/tools\/php-cs-fixer-de55dbd75a08d2eac0f0435d4168e6bc.phar&quot;,&quot;vendor\/autoload.php&quot;:&quot;\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm&quot;,&quot;.php-cs-fixer.php&quot;:&quot;\/assets\/wasm\/phpcsfixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm&quot;,&quot;bin\/cs-fixer.php&quot;:&quot;\/assets\/wasm\/bin\/cs-fixer.php-ac4974a6fd6684a03a024047ab1f831c.wasm&quot;,&quot;data\/orders.xml&quot;:&quot;\/assets\/wasm\/data\/orders-8ee52a57261a7825213f3d66b9109591.xml&quot;,&quot;data\/orders.json&quot;:&quot;\/assets\/wasm\/data\/orders-09429d88a4f65d938de30e5b8d9aa706.json&quot;,&quot;data\/orders.csv&quot;:&quot;\/assets\/wasm\/data\/orders-a23572d02c810fc9b709f09b0b8c92ef.csv&quot;}"
-     data-playground-editor-package-icon-value="/assets/images/icons/package-30016a0b8b16a09f8bd0e0c19768ce6e.svg"
-     data-playground-editor-link-icon-value="/assets/images/icons/link-dd3acd183ca5fd1d06ddf52b258a2359.svg"
-     data-playground-editor-folder-icon-value="/assets/images/icons/folder-64f6b064e6522cede2da539b04960480.svg"
-     data-playground-editor-file-icon-value="/assets/images/icons/file-028e2be98c9d50187258f29575a9e7c6.svg"
-     data-action="wasm:ready->playground-editor#onWasmReady
-                  wasm:resources-loaded->playground-editor#onWasmResourcesLoaded
-                  wasm:progress->playground-editor#onWasmProgress
-                  wasm:output->playground-editor#onWasmOutput
-                  wasm:error->playground-editor#onWasmError
-                  playground-storage:loaded-from-storage->playground-editor#onStorageLoaded
-                  share-code:loaded-from-url->playground-editor#onUrlLoaded
-                  share-code:notification->playground-editor#onNotification">
+     data-wasm-resources-value="{&quot;code.php&quot;:&quot;\/assets\/wasm\/code.php-adea9d165ff134819809e92c908e0b90.wasm&quot;,&quot;tools\/flow.phar&quot;:&quot;\/assets\/wasm\/tools\/flow-c257f05b89a268968a2135e73578dac7.phar&quot;,&quot;tools\/php-cs-fixer.phar&quot;:&quot;\/assets\/wasm\/tools\/php-cs-fixer-de55dbd75a08d2eac0f0435d4168e6bc.phar&quot;,&quot;vendor\/autoload.php&quot;:&quot;\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm&quot;,&quot;.php-cs-fixer.php&quot;:&quot;\/assets\/wasm\/phpcsfixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm&quot;,&quot;bin\/cs-fixer.php&quot;:&quot;\/assets\/wasm\/bin\/cs-fixer.php-ac4974a6fd6684a03a024047ab1f831c.wasm&quot;,&quot;data\/orders.xml&quot;:&quot;\/assets\/wasm\/data\/orders-8ee52a57261a7825213f3d66b9109591.xml&quot;,&quot;data\/orders.json&quot;:&quot;\/assets\/wasm\/data\/orders-09429d88a4f65d938de30e5b8d9aa706.json&quot;,&quot;data\/orders.csv&quot;:&quot;\/assets\/wasm\/data\/orders-a23572d02c810fc9b709f09b0b8c92ef.csv&quot;}"
+     data-playground-package-icon-value="/assets/images/icons/package-30016a0b8b16a09f8bd0e0c19768ce6e.svg"
+     data-playground-link-icon-value="/assets/images/icons/link-dd3acd183ca5fd1d06ddf52b258a2359.svg"
+     data-playground-workspace-wasm-outlet="#playground"
+     data-playground-workspace-code-editor-outlet="#code-editor"
+     data-playground-workspace-playground-outlet="#playground"
+     data-playground-workspace-folder-icon-value="/assets/images/icons/folder-64f6b064e6522cede2da539b04960480.svg"
+     data-playground-workspace-file-icon-value="/assets/images/icons/file-028e2be98c9d50187258f29575a9e7c6.svg"
+     data-playground-upload-folder-icon-value="/assets/images/icons/folder-64f6b064e6522cede2da539b04960480.svg"
+     data-playground-upload-file-icon-value="/assets/images/icons/file-028e2be98c9d50187258f29575a9e7c6.svg"
+     data-playground-wasm-outlet="#playground"
+     data-playground-code-editor-outlet="#code-editor"
+     data-playground-turnstile-outlet="#playground"
+     data-playground-playground-output-outlet="#playground"
+     data-playground-run-code-editor-outlet="#code-editor"
+     data-playground-run-wasm-outlet="#playground"
+     data-playground-run-playground-output-outlet="#playground"
+     data-playground-format-code-editor-outlet="#code-editor"
+     data-playground-format-wasm-outlet="#playground"
+     data-playground-format-playground-output-outlet="#playground"
+     data-playground-upload-wasm-outlet="#playground"
+     data-playground-upload-playground-output-outlet="#playground"
+     data-playground-share-code-editor-outlet="#code-editor"
+     data-playground-share-wasm-outlet="#playground"
+     data-playground-share-turnstile-outlet="#playground"
+     data-playground-share-playground-upload-outlet="#playground"
+     data-playground-storage-code-editor-outlet="#code-editor"
+     data-playground-storage-wasm-outlet="#playground"
+     data-playground-reset-playground-storage-outlet="#playground"
+     data-action="wasm:initialized->playground#onWasmInitialized
+                  wasm:initialized->playground-workspace#refreshTree
+                  wasm:initialized->playground-share#onWasmResourcesLoaded
+                  wasm:initialized->playground-storage#onWasmResourcesLoaded
+                  wasm:loading-progress->playground#onWasmLoadingProgress
+                  wasm:output->playground#onWasmOutput
+                  wasm:error->playground#onWasmError
+                  playground-storage:loaded-from-storage->playground#onStorageLoaded
+                  playground-share:loaded-from-url->playground#onUrlLoaded
+                  playground-share:datasets-loaded->playground#onDatasetsLoaded
+                  playground-share:notification->playground#onNotification">
     <div class="playground-header">
         <h1>Playground</h1>
         <button
@@ -275,6 +318,8 @@
             <img src="/assets/images/icons/help-6a6e833271f222c3b337e77c10460d9c.svg" alt="Help" width="20" height="20">
         </button>
     </div>
+
+    <div id="turnstile-widget" class="mb-5 max-w-[550px]"></div>
 
     <div id="help-section"
          data-playground-help-target="helpSection"
@@ -303,8 +348,8 @@
                 <ul>
                     <li><strong>Run</strong> - Executes your PHP code in the playground and displays the output below the editor.</li>
                     <li><strong>Format</strong> - Automatically formats your PHP code using PHP-CS-Fixer rules for consistent code style.</li>
-                    <li><strong>Share</strong> - Generates a shareable URL with your current code so you can share it with others. Your code is compressed and encoded directly into the URL. <br/><em>Important: Never include sensitive information like passwords or API keys in your code when sharing, as they will be visible in the URL.</em></li>
-                    <li><strong>Upload</strong> - Upload local files (CSV, JSON, XML, PHP, PHAR) to the virtual WASM filesystem. <br/><em>Note: Uploaded files are stored only in your browser's memory and will disappear when you refresh the page.</em></li>
+                    <li><strong>Share</strong> - Generates a shareable link by securely uploading your code to our server. Your code and any uploaded datasets are stored for 90 days and accessible via a short URL. You can include up to 3 datasets (CSV, JSON, or XML files, max 2MB each) in your share. <br/><em>Important: Never include sensitive information like passwords, API keys, or personal data in your code when sharing. Shared snippets are publicly accessible to anyone with the link.</em></li>
+                    <li><strong>Upload</strong> - Upload local files (CSV, JSON, XML, PHP, PHAR) to the virtual WASM filesystem. You can upload up to 3 files (max 2MB each). When you share your code, uploaded datasets will be included automatically. <br/><em>Note: Uploaded files are stored only in your browser's memory and will disappear when you refresh the page, unless you share your code.</em></li>
                     <li><strong>Reset</strong> - Clears your code and resets the playground to its default state.</li>
                 </ul>
             </section>
@@ -333,15 +378,15 @@
     </div>
 
     <div id="loader">
-        <div data-playground-editor-target="loadingMessage"></div>
+        <div data-playground-target="loadingMessage"></div>
         <div class="loading-progress">
-            <div data-playground-editor-target="loadingBar" class="loading-bar"></div>
+            <div data-playground-target="loadingBar" class="loading-bar"></div>
         </div>
-        <div data-playground-editor-target="loadingPercent"></div>
+        <div data-playground-target="loadingPercent"></div>
     </div>
 
-    <div class="navigation" data-playground-editor-target="navigation">
-        <div class="storage-indicator" data-playground-editor-target="storageIndicator" style="display: none;"></div>
+    <div class="navigation" data-playground-target="navigation">
+        <div class="storage-indicator" data-playground-target="storageIndicator" style="display: none;"></div>
         <div class="actions">
             <button
                     data-action="click->playground-help#showTopic"
@@ -352,8 +397,7 @@
             </button>
             <button
                     data-controller="image-swap"
-                    data-playground-editor-target="runButton"
-                    data-action="click->playground-editor#run mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
+                    data-action="click->playground-run#run mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
                 Run <img src="/assets/images/icons/play-b3d8bbbafaea96f437f51fa0a5041e8f.svg"
                          alt="Run"
                          class="ml-1 inline-block"
@@ -362,8 +406,7 @@
             </button>
             <button
                     data-controller="image-swap"
-                    data-playground-editor-target="formatButton"
-                    data-action="click->playground-editor#format mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
+                    data-action="click->playground-format#format mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
                 Format <img src="/assets/images/icons/code-5d9f22dbc373192322ba3d1f4422371f.svg"
                             alt="Format"
                             class="ml-1 inline-block"
@@ -372,7 +415,7 @@
             </button>
             <button
                     data-controller="image-swap"
-                    data-action="click->share-code#share mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
+                    data-action="click->playground-share#share mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
                 Share <img src="/assets/images/icons/share-c5606063ebff259b64ea887056279b4e.svg"
                      alt="Share"
                      class="ml-1 inline-block"
@@ -381,8 +424,7 @@
             </button>
             <button
                     data-controller="image-swap"
-                    data-playground-editor-target="uploadButton"
-                    data-action="click->playground-editor#triggerUpload mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
+                    data-action="click->playground-upload#triggerUpload mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
                 Upload <img src="/assets/images/icons/upload-14409a4da46b4ba64c988711c06e9254.svg"
                             alt="Upload"
                             class="ml-1 inline-block"
@@ -390,15 +432,15 @@
                             data-hover-src="/assets/images/icons/upload-active-cfbfac912bb8d54a16ed4f1562c46505.svg">
             </button>
             <input type="file"
-                   data-playground-editor-target="fileInput"
-                   data-action="change->playground-editor#handleFileUpload"
+                   data-playground-upload-target="fileInput"
+                   data-action="change->playground-upload#handleFileUpload"
                    accept=".csv,.json,.xml,.php,.phar"
                    multiple
                    style="display: none;">
             <a href="/playground"
-               data-controller="image-swap reset-confirm"
-               data-reset-confirm-playground-storage-outlet="#playground"
-               data-action="click->reset-confirm#confirmReset mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
+               data-controller="image-swap playground-reset"
+               data-playground-reset-playground-storage-outlet="#playground"
+               data-action="click->playground-reset#confirmReset mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
                 Reset <img src="/assets/images/icons/refresh-71f35c2c6d7ac84cfa617f75a64ee2b1.svg"
                            alt="Reset"
                            class="ml-1 inline-block"
@@ -407,8 +449,8 @@
             </a>
         </div>
     </div>
-    <div class="editor" data-playground-editor-target="editor">
-        <div class="file-browser" data-playground-editor-target="fileBrowser">
+    <div class="editor" data-playground-target="editor">
+        <div class="file-browser">
             <div class="file-browser-header">
                 Workspace
                 <button
@@ -419,49 +461,32 @@
                     <img src="/assets/images/icons/help-6a6e833271f222c3b337e77c10460d9c.svg" alt="Help" width="14" height="14">
                 </button>
             </div>
-            <div class="file-browser-content" data-playground-editor-target="fileBrowserContent">
+            <div class="file-browser-content" data-playground-workspace-target="tree">
                 <!-- Files will be populated by JavaScript -->
             </div>
         </div>
         <div class="code-container">
-                <textarea id="code-editor" data-controller="code-mirror-editor">
+                <textarea id="code-editor" data-controller="code-editor">
 <?php
-
-declare(strict_types=1);
-
-use Flow\ETL\Flow;
-
-use function Flow\ETL\Adapter\CSV\from_csv;
-use function Flow\ETL\DSL\{data_frame, to_output};
-
-require_once 'vendor/autoload.php';
-
-$flow = new Flow();
-
-data_frame()
-    ->read(from_csv(__DIR__ . '/data/orders.csv'))
-    ->limit(10)
-    ->collect()
-    ->write(to_output(truncate: false))
-    ->run();
+// Code will be loaded from /workspace/code.php after WASM initialization
 </textarea>
         </div>
     </div>
-    <div class="output-container" data-playground-editor-target="outputContainer">
+    <div class="output-container" data-playground-target="outputContainer">
         <h2>Output</h2>
-        <pre id="output" data-playground-editor-target="output"></pre>
+        <pre id="output" data-playground-output-target="container"></pre>
     </div>
-    <div class="file-preview-container" data-playground-editor-target="filePreviewContainer" style="display: none;">
+    <div class="file-preview-container" data-playground-target="filePreviewContainer" style="display: none;">
         <div class="file-preview-header">
-            <h2 data-playground-editor-target="filePreviewTitle">File Preview</h2>
+            <h2 data-playground-target="filePreviewTitle">File Preview</h2>
             <div class="file-preview-actions">
-                <button data-action="click->playground-editor#downloadPreviewFile" class="preview-action-btn" aria-label="Download file">
+                <button data-action="click->playground#downloadPreviewFile" class="preview-action-btn" aria-label="Download file">
                     <img src="/assets/images/icons/upload-14409a4da46b4ba64c988711c06e9254.svg" alt="Download" width="16" height="16" style="transform: rotate(180deg);">
                 </button>
-                <button data-action="click->playground-editor#closeFilePreview" class="preview-close-btn" aria-label="Close preview">×</button>
+                <button data-action="click->playground#closeFilePreview" class="preview-close-btn" aria-label="Close preview">×</button>
             </div>
         </div>
-        <pre class="file-preview-content"><code data-playground-editor-target="filePreviewContent"></code></pre>
+        <pre class="file-preview-content"><code data-playground-target="filePreviewContent"></code></pre>
     </div>
 </div>
 

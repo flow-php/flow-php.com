@@ -157,7 +157,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_json</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pointer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|<abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonExtractor.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonExtractor">JsonExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_json</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pointer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\JSON\null">null</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|<abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\JSON\null">null</abbr></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonExtractor.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonExtractor">JsonExtractor</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -176,7 +176,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pointer</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\JSON\null">null</abbr></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>if you want to iterate only results of a subtree, use a pointer, read more at https://github.com/halaxa/json-machine#parsing-a-subtree - @deprecate use withPointer method instead</li>
@@ -187,7 +187,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$schema</span>
                 : <span class="phpdocumentor-signature__argument__return-type">null|<abbr title="\Flow\ETL\Schema">Schema</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\JSON\null">null</abbr></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>enforce schema on the extracted data - @deprecate use withSchema method instead</li>
@@ -266,7 +266,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">to_json</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flags</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">JSON_THROW_ON_ERROR</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_time_format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">DateTimeInterface::ATOM</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$put_rows_in_new_lines</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLoader">JsonLoader</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">to_json</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flags</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\JSON\JSON_THROW_ON_ERROR">JSON_THROW_ON_ERROR</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_time_format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\DateTimeInterface::ATOM">DateTimeInterface::ATOM</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$put_rows_in_new_lines</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\JSON\false">false</abbr></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLoader">JsonLoader</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -281,7 +281,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$flags</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">JSON_THROW_ON_ERROR</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\JSON\JSON_THROW_ON_ERROR">JSON_THROW_ON_ERROR</abbr></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>PHP JSON Flags - @deprecate use withFlags method instead</li>
@@ -292,7 +292,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$date_time_format</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">DateTimeInterface::ATOM</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"><abbr title="\DateTimeInterface::ATOM">DateTimeInterface::ATOM</abbr></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>format for DateTimeInterface::format() - @deprecate use withDateTimeFormat method instead</li>
@@ -303,7 +303,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$put_rows_in_new_lines</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\JSON\false">false</abbr></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>if you want to put each row in a new line - @deprecate use withRowsInNewLines method instead</li>

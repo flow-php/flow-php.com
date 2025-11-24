@@ -133,10 +133,8 @@
 
 
 
-
-
-
-
+    
+    
 
     <h4 id="toc-interfaces">
         Interfaces
@@ -296,8 +294,8 @@
 
     
 
+        
     
-
     
 </article>
                     <article
@@ -340,8 +338,8 @@
 
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr></span>
@@ -378,8 +376,8 @@
     
     
 
+        
     
-
     
 </article>
                     <article
@@ -422,8 +420,8 @@
 
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr></span>
@@ -460,8 +458,8 @@
     
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -489,7 +487,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">openAppend</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\AsyncAws\S3\S3Client">S3Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$s3Client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucket</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Stream\BlockFactory">BlockFactory</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$blockFactory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new NativeLocalFileBlocksFactory()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$blockSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1024 * 1024 * 4</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">openAppend</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\AsyncAws\S3\S3Client">S3Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$s3Client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucket</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Stream\BlockFactory">BlockFactory</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$blockFactory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Stream\Block\NativeLocalFileBlocksFactory">NativeLocalFileBlocksFactory</abbr>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$blockSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1024 * 1024 * 4</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -521,7 +519,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$blockFactory</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Stream\BlockFactory">BlockFactory</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">new NativeLocalFileBlocksFactory()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Stream\Block\NativeLocalFileBlocksFactory">NativeLocalFileBlocksFactory</abbr>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -536,8 +534,8 @@
 
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">self</span>
@@ -565,7 +563,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">openBlank</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\AsyncAws\S3\S3Client">S3Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$s3Client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucket</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Stream\BlockFactory">BlockFactory</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$blockFactory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new NativeLocalFileBlocksFactory()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$blockSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1024 * 1024 * 4</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">openBlank</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\AsyncAws\S3\S3Client">S3Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$s3Client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucket</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Stream\BlockFactory">BlockFactory</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$blockFactory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Stream\Block\NativeLocalFileBlocksFactory">NativeLocalFileBlocksFactory</abbr>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$blockSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1024 * 1024 * 4</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -597,7 +595,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$blockFactory</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Stream\BlockFactory">BlockFactory</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">new NativeLocalFileBlocksFactory()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Stream\Block\NativeLocalFileBlocksFactory">NativeLocalFileBlocksFactory</abbr>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -612,8 +610,8 @@
 
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">self</span>
@@ -650,8 +648,8 @@
     
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Filesystem\Path">Path</abbr></span>

@@ -146,7 +146,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_xml</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$xml_node_path</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html"><abbr title="\Flow\ETL\Adapter\XML\XMLParserExtractor">XMLParserExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_xml</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$xml_node_path</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">''</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html"><abbr title="\Flow\ETL\Adapter\XML\XMLParserExtractor">XMLParserExtractor</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><root>
   <elements>
@@ -170,7 +170,7 @@ of node names separated with slash.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$xml_node_path</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">''</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>@deprecated use <code class="prettyprint">from_xml($file)-&gt;withXMLNodePath($xmlNodePath)</code> method instead</li>
@@ -205,7 +205,7 @@ of node names separated with slash.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">to_xml</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$root_element_name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;rows&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row_element_name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;row&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attribute_prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;_&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_time_format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;Y-m-dTH:i:s.uP&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Adapter-XML-XMLWriter.html"><abbr title="\Flow\ETL\Adapter\XML\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$xml_writer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new DOMDocumentWriter()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html"><abbr title="\Flow\ETL\Adapter\XML\Loader\XMLLoader">XMLLoader</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">to_xml</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$root_element_name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'rows'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row_element_name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'row'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attribute_prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'_'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_time_format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'Y-m-d\TH:i:s.uP'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Adapter-XML-XMLWriter.html"><abbr title="\Flow\ETL\Adapter\XML\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$xml_writer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Adapter-XML-XMLWriter-DOMDocumentWriter.html"><abbr title="\Flow\ETL\Adapter\XML\XMLWriter\DOMDocumentWriter">DOMDocumentWriter</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html"><abbr title="\Flow\ETL\Adapter\XML\Loader\XMLLoader">XMLLoader</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -220,7 +220,7 @@ of node names separated with slash.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$root_element_name</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;rows&#039;</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">'rows'</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>@deprecated use <code class="prettyprint">withRootElementName()</code> method instead</li>
@@ -231,7 +231,7 @@ of node names separated with slash.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$row_element_name</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;row&#039;</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">'row'</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>@deprecated use <code class="prettyprint">withRowElementName()</code> method instead</li>
@@ -242,7 +242,7 @@ of node names separated with slash.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$attribute_prefix</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;_&#039;</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">'_'</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>@deprecated use <code class="prettyprint">withAttributePrefix()</code> method instead</li>
@@ -253,7 +253,7 @@ of node names separated with slash.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$date_time_format</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;Y-m-dTH:i:s.uP&#039;</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">'Y-m-d\TH:i:s.uP'</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>@deprecated use <code class="prettyprint">withDateTimeFormat()</code> method instead</li>
@@ -264,7 +264,7 @@ of node names separated with slash.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$xml_writer</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Adapter-XML-XMLWriter.html"><abbr title="\Flow\ETL\Adapter\XML\XMLWriter">XMLWriter</abbr></a></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">new DOMDocumentWriter()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Adapter-XML-XMLWriter-DOMDocumentWriter.html"><abbr title="\Flow\ETL\Adapter\XML\XMLWriter\DOMDocumentWriter">DOMDocumentWriter</abbr></a>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>

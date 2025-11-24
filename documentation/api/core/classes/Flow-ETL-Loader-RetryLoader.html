@@ -150,10 +150,8 @@
 
 
 
-
-
-
-
+    
+    
 
     <h4 id="toc-interfaces">
         Interfaces
@@ -223,7 +221,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$loader</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Retry-RetryStrategy.html"><abbr title="\Flow\ETL\Retry\RetryStrategy">RetryStrategy</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$retryStrategy</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new AnyThrowable(3)</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Retry-DelayFactory.html"><abbr title="\Flow\ETL\Retry\DelayFactory">DelayFactory</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$delayFactory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new FixedMilliseconds(200)</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Time-Sleep.html"><abbr title="\Flow\ETL\Time\Sleep">Sleep</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sleep</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new SystemSleep()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$loader</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Retry-RetryStrategy.html"><abbr title="\Flow\ETL\Retry\RetryStrategy">RetryStrategy</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$retryStrategy</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Retry-RetryStrategy-AnyThrowable.html"><abbr title="\Flow\ETL\Retry\RetryStrategy\AnyThrowable">AnyThrowable</abbr></a>(3)</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Retry-DelayFactory.html"><abbr title="\Flow\ETL\Retry\DelayFactory">DelayFactory</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$delayFactory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Retry-DelayFactory-Fixed-FixedMilliseconds.html"><abbr title="\Flow\ETL\Retry\DelayFactory\Fixed\FixedMilliseconds">FixedMilliseconds</abbr></a>(200)</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Time-Sleep.html"><abbr title="\Flow\ETL\Time\Sleep">Sleep</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sleep</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Time-SystemSleep.html"><abbr title="\Flow\ETL\Time\SystemSleep">SystemSleep</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -241,21 +239,21 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$retryStrategy</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Retry-RetryStrategy.html"><abbr title="\Flow\ETL\Retry\RetryStrategy">RetryStrategy</abbr></a></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">new AnyThrowable(3)</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Retry-RetryStrategy-AnyThrowable.html"><abbr title="\Flow\ETL\Retry\RetryStrategy\AnyThrowable">AnyThrowable</abbr></a>(3)</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$delayFactory</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Retry-DelayFactory.html"><abbr title="\Flow\ETL\Retry\DelayFactory">DelayFactory</abbr></a></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">new FixedMilliseconds(200)</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Retry-DelayFactory-Fixed-FixedMilliseconds.html"><abbr title="\Flow\ETL\Retry\DelayFactory\Fixed\FixedMilliseconds">FixedMilliseconds</abbr></a>(200)</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$sleep</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Flow-ETL-Time-Sleep.html"><abbr title="\Flow\ETL\Time\Sleep">Sleep</abbr></a></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">new SystemSleep()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Time-SystemSleep.html"><abbr title="\Flow\ETL\Time\SystemSleep">SystemSleep</abbr></a>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -263,8 +261,8 @@
 
     
 
+        
     
-
     
 </article>
                     <article
@@ -314,8 +312,8 @@
 
     
 
+        
     
-
     
 </article>
             </section>

@@ -25,20 +25,15 @@ export default class extends Controller {
         this.#resourcesLoaded = false
     }
 
-    // Public API for execution
-    evaluate(code) {
+    #evaluate(code) {
         if (!this.#phpModuleLoaded) {
             this.#dispatchError('PHP module not loaded yet', null)
             return false
         }
 
-        // Clear output and execute
-        // Error reporting is configured in C code (pib_eval.c)
-        // Code is passed as-is, including <?php tag
         this.#combinedOutput = ''
 
         try {
-            // Change working directory to /workspace before execution
             try {
                 this.#phpModule.FS.chdir('/workspace')
                 this.#log('Changed working directory to /workspace')
@@ -53,10 +48,8 @@ export default class extends Controller {
                 [code]
             )
 
-            // Check if output contains PHP errors (even if execution didn't throw)
             const errorInfo = this.#parseErrorMessage(this.#combinedOutput)
             if (errorInfo) {
-                // Output contains an error, dispatch as error
                 this.#log('Parsed error info:', errorInfo)
                 this.#dispatchError(this.#combinedOutput, errorInfo)
                 return false
@@ -74,7 +67,7 @@ export default class extends Controller {
         }
     }
 
-    formatCode(code, callback) {
+    #formatCode(code, callback) {
         if (!this.#phpModuleLoaded) {
             callback(null, 'PHP module not loaded yet', null)
             return
@@ -85,13 +78,13 @@ export default class extends Controller {
         try {
             this.#phpModule.FS.chdir('/workspace')
 
-            const tempFile = '/workspace/temp_format.php'
+            const codeFile = '/workspace/code.php'
 
-            this.#phpModule.FS.writeFile(tempFile, code)
+            this.#phpModule.FS.writeFile(codeFile, code)
 
             const formatScript = `<?php
 \$argc = 2;
-\$argv = ['cs-fixer.php', '${tempFile}'];
+\$argv = ['cs-fixer.php', '${codeFile}'];
 require '/workspace/bin/cs-fixer.php';
 ?>`
 
@@ -109,7 +102,7 @@ require '/workspace/bin/cs-fixer.php';
                 callback(null, errorMsg, null)
             } else if (output.includes('SUCCESS')) {
                 try {
-                    const formattedCode = this.#phpModule.FS.readFile(tempFile, { encoding: 'utf8' })
+                    const formattedCode = this.#phpModule.FS.readFile(codeFile, { encoding: 'utf8' })
 
                     const appliedFixers = this.#parseAppliedFixers(output)
 
@@ -119,12 +112,6 @@ require '/workspace/bin/cs-fixer.php';
                 }
             } else {
                 callback(null, 'Unexpected output from formatter: ' + output, null)
-            }
-
-            try {
-                this.#phpModule.FS.unlink(tempFile)
-            } catch (e) {
-                this.#log('Failed to delete temp file:', e)
             }
 
         } catch (error) {
@@ -141,18 +128,168 @@ require '/workspace/bin/cs-fixer.php';
         return [];
     }
 
-    // Public API for checking ready state
     isReady() {
         return this.#phpModuleLoaded
     }
 
-    // Public API for accessing PHP module (for filesystem operations)
+    isLoaded() {
+        return this.#phpModuleLoaded
+    }
+
+    async onLoad() {
+        if (this.isLoaded()) return Promise.resolve()
+
+        return new Promise(resolve => {
+            const check = setInterval(() => {
+                if (this.isLoaded()) {
+                    clearInterval(check)
+                    resolve()
+                }
+            }, 50)
+        })
+    }
+
+    areResourcesLoaded() {
+        return this.#resourcesLoaded
+    }
+
     getModule() {
         return this.#phpModule
     }
 
-    // Public API for listing files in WASM filesystem
-    listFiles(path = '/') {
+    async run(code) {
+        if (!this.#phpModuleLoaded) {
+            throw new Error('PHP module not loaded')
+        }
+
+        this.#combinedOutput = ''
+
+        try {
+            this.#phpModule.FS.chdir('/workspace')
+
+            const exitCode = this.#phpModule.ccall('pib_eval', 'number', ['string'], [code])
+
+            const errorInfo = this.#parseErrorMessage(this.#combinedOutput)
+
+            if (errorInfo) {
+                return {
+                    success: false,
+                    error: {
+                        type: errorInfo.type,
+                        message: this.#combinedOutput,
+                        line: errorInfo.line,
+                        column: errorInfo.column,
+                        severity: 'error'
+                    },
+                    output: this.#combinedOutput,
+                    exitCode,
+                    executionTime: 0,
+                    memoryUsed: 0
+                }
+            }
+
+            return {
+                success: true,
+                output: this.#combinedOutput || 'Code executed successfully (no output)',
+                exitCode,
+                executionTime: 0,
+                memoryUsed: 0
+            }
+        } catch (e) {
+            return {
+                success: false,
+                error: {
+                    type: 'Exception',
+                    message: e.message,
+                    severity: 'error'
+                },
+                output: this.#combinedOutput,
+                exitCode: 1,
+                executionTime: 0,
+                memoryUsed: 0
+            }
+        }
+    }
+
+    async format(code) {
+        return new Promise((resolve) => {
+            this.#formatCode(code, (formattedCode, error, appliedFixers) => {
+                if (error) {
+                    resolve({ success: false, error })
+                } else {
+                    resolve({ success: true, code: formattedCode, fixers: appliedFixers })
+                }
+            })
+        })
+    }
+
+    async readFile(path) {
+        const content = this.#readFileSync(path)
+        if (content === null) {
+            return { success: false, error: 'File not found' }
+        }
+        return { success: true, content }
+    }
+
+    async writeFile(path, content) {
+        if (!this.#phpModuleLoaded) {
+            return { success: false, error: 'PHP module not loaded yet', bytesWritten: 0 }
+        }
+
+        try {
+            const FS = this.#phpModule.FS
+            const fileExists = this.#fileExistsSync(path)
+
+            const pathParts = path.split('/')
+            const dirPath = pathParts.slice(0, -1).join('/')
+            if (dirPath) {
+                this.#ensureDirectoryExists(path)
+            }
+
+            const uint8Array = typeof content === 'string'
+                ? new TextEncoder().encode(content)
+                : content
+
+            FS.writeFile(path, uint8Array)
+
+            const eventName = fileExists ? 'file-updated' : 'file-created'
+            this.dispatch(eventName, {
+                detail: { path, size: uint8Array.length },
+                bubbles: true
+            })
+
+            return { success: true, bytesWritten: uint8Array.length }
+        } catch (error) {
+            this.#logError(`Error writing file ${path}:`, error)
+            return { success: false, error: error.message, bytesWritten: 0 }
+        }
+    }
+
+    #fileExistsSync(path) {
+        try {
+            const stat = this.#phpModule.FS.stat(path)
+            return stat !== null
+        } catch (error) {
+            return false
+        }
+    }
+
+    async listFiles(path = '/workspace', recursive = false) {
+        const files = this.#listFilesSync(path, recursive)
+        return { success: true, files }
+    }
+
+    async removeFile(path) {
+        try {
+            this.#phpModule.FS.unlink(path)
+            this.dispatch('file-deleted', { detail: { path }, bubbles: true })
+            return { success: true }
+        } catch (error) {
+            return { success: false, error: error.message }
+        }
+    }
+
+    #listFilesSync(path = '/', recursive = false) {
         if (!this.#phpModuleLoaded) {
             this.#logError('Cannot list files: PHP module not loaded yet')
             return []
@@ -162,12 +299,11 @@ require '/workspace/bin/cs-fixer.php';
             const files = []
             const FS = this.#phpModule.FS
 
-            const readDirectory = (dirPath) => {
+            const readDirectory = (dirPath, shouldRecurse) => {
                 try {
                     const entries = FS.readdir(dirPath)
 
                     for (const entry of entries) {
-                        // Skip . and ..
                         if (entry === '.' || entry === '..') {
                             continue
                         }
@@ -183,8 +319,9 @@ require '/workspace/bin/cs-fixer.php';
                                     path: fullPath,
                                     type: 'directory'
                                 })
-                                // Recursively read subdirectories
-                                readDirectory(fullPath)
+                                if (shouldRecurse) {
+                                    readDirectory(fullPath, true)
+                                }
                             } else {
                                 files.push({
                                     name: entry,
@@ -201,7 +338,7 @@ require '/workspace/bin/cs-fixer.php';
                 }
             }
 
-            readDirectory(path)
+            readDirectory(path, recursive)
             return files
         } catch (error) {
             this.#logError('Error listing files:', error)
@@ -209,8 +346,7 @@ require '/workspace/bin/cs-fixer.php';
         }
     }
 
-    // Public API for reading file content from WASM filesystem
-    readFile(filePath) {
+    #readFileSync(filePath) {
         if (!this.#phpModuleLoaded) {
             this.#logError('Cannot read file: PHP module not loaded yet')
             return null
@@ -227,41 +363,27 @@ require '/workspace/bin/cs-fixer.php';
         }
     }
 
-    // Public API for uploading user files to /workspace/tmp
-    uploadFile(filename, uint8Array) {
+    #uploadFile(filename, uint8Array) {
         if (!this.#phpModuleLoaded) {
             this.#logError('Cannot upload file: PHP module not loaded yet')
             return false
         }
 
         try {
-            const tmpDir = '/workspace/tmp'
-
-            try {
-                const pathInfo = this.#phpModule.FS.analyzePath(tmpDir)
-                if (!pathInfo.exists) {
-                    this.#log(`Creating ${tmpDir} directory`)
-                    this.#phpModule.FS.mkdir(tmpDir)
-                }
-            } catch (dirError) {
-                this.#logError(`Error checking/creating ${tmpDir}:`, dirError)
-                return false
-            }
-
-            const filePath = tmpDir + '/' + filename
-
+            const filePath = '/workspace/uploads/' + filename
+            this.#log(`Writing file to WASM FS: ${filePath} (${uint8Array.length} bytes)`)
             this.#phpModule.FS.writeFile(filePath, uint8Array)
-            this.#log(`Successfully uploaded: ${filePath} (${uint8Array.length} bytes)`)
+            this.#log(`Successfully uploaded: ${filePath}`)
 
             return true
         } catch (error) {
             this.#logError(`Error uploading file ${filename}:`, error)
+            this.#logError('Error details:', error.message, 'errno:', error.errno)
             return false
         }
     }
 
-    // Public API for loading resources into WASM filesystem
-    async loadResources() {
+    async #loadResources() {
         if (!this.#phpModuleLoaded) {
             this.#logError('Cannot load resources: PHP module not loaded yet')
             return false
@@ -272,19 +394,22 @@ require '/workspace/bin/cs-fixer.php';
             return true
         }
 
-        if (!this.resourcesValue || Object.keys(this.resourcesValue).length === 0) {
-            this.#log('No resources configured to load')
-            this.#resourcesLoaded = true
-            this.#dispatchResourcesLoaded()
-            return true
-        }
-
         this.#log('Loading resources into WASM filesystem...', this.resourcesValue)
 
         try {
-            // Create /workspace directory
             this.#log('Creating /workspace directory')
             this.#phpModule.FS.mkdir('/workspace')
+
+            this.#log('Creating /workspace/uploads directory')
+            this.#phpModule.FS.mkdir('/workspace/uploads')
+
+            if (!this.resourcesValue || Object.keys(this.resourcesValue).length === 0) {
+                this.#log('No resources configured to load')
+                this.#resourcesLoaded = true
+                this.#dispatchResourcesLoaded()
+                this.#dispatchInitialized()
+                return true
+            }
 
             const resources = Object.entries(this.resourcesValue)
             const totalResources = resources.length
@@ -295,7 +420,7 @@ require '/workspace/bin/cs-fixer.php';
                 const workspacePath = 'workspace/' + virtualPath
 
                 this.#log(`Loading resource: ${workspacePath} from ${assetUrl}`)
-                this.#dispatchProgress(`Loading ${virtualPath}...`, Math.floor((loadedCount / totalResources) * 100))
+                this.#dispatchLoadingProgress(`Loading ${virtualPath}...`, Math.floor((loadedCount / totalResources) * 100))
 
                 const response = await fetch(assetUrl)
                 if (!response.ok) {
@@ -316,6 +441,7 @@ require '/workspace/bin/cs-fixer.php';
             this.#resourcesLoaded = true
             this.#log('All resources loaded successfully')
             this.#dispatchResourcesLoaded()
+            this.#dispatchInitialized()
             return true
         } catch (error) {
             this.#logError('Failed to load resources:', error)
@@ -351,17 +477,14 @@ require '/workspace/bin/cs-fixer.php';
         this.#log('Loading PHP WebAssembly module...')
         this.#dispatchProgress('Loading PHP WebAssembly...', 0)
 
-        // Remove old script if exists
         const oldScript = document.getElementById('php-wasm-script')
         if (oldScript) {
             oldScript.remove()
         }
 
-        // Reset state
         this.#phpModuleLoaded = false
         this.#phpModule = null
 
-        // Load the PHP WASM script
         const script = document.createElement('script')
         script.id = 'php-wasm-script'
         script.src = this.phpJsValue
@@ -387,15 +510,12 @@ require '/workspace/bin/cs-fixer.php';
                         }
                         return scriptDirectory + path
                     }
-                }).then((module) => {
+                }).then(async (module) => {
                     this.#phpModule = module
                     this.#phpModuleLoaded = true
                     this.#log('PHP module initialized successfully')
-                    this.#dispatchProgress('Ready!', 100)
 
-                    setTimeout(() => {
-                        this.#dispatchReady()
-                    }, 500)
+                    await this.#loadResources()
                 }).catch((err) => {
                     this.#logError('Failed to initialize PHP module:', err)
                     this.#dispatchError('Failed to initialize PHP: ' + err.message)
@@ -418,8 +538,16 @@ require '/workspace/bin/cs-fixer.php';
         this.dispatch('ready')
     }
 
+    #dispatchInitialized() {
+        this.dispatch('initialized')
+    }
+
     #dispatchResourcesLoaded() {
         this.dispatch('resources-loaded')
+    }
+
+    #dispatchLoadingProgress(message, percent) {
+        this.dispatch('loading-progress', { detail: { message, percent } })
     }
 
     #dispatchProgress(message, percent) {

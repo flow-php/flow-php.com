@@ -145,7 +145,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_parquet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Parquet\Options">Options</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new Options()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Parquet\ByteOrder">ByteOrder</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$byte_order</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">ByteOrder::LITTLE_ENDIAN</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html"><abbr title="\Flow\ETL\Adapter\Parquet\ParquetExtractor">ParquetExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_parquet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Parquet\Options">Options</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Parquet\Options">Options</abbr>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Parquet\ByteOrder">ByteOrder</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$byte_order</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\ByteOrder::LITTLE_ENDIAN">ByteOrder::LITTLE_ENDIAN</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\Parquet\null">null</abbr></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html"><abbr title="\Flow\ETL\Adapter\Parquet\ParquetExtractor">ParquetExtractor</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -171,7 +171,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Parquet\Options">Options</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">new Options()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Parquet\Options">Options</abbr>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>@deprecated use <code class="prettyprint">withOptions</code> method instead</li>
@@ -182,7 +182,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$byte_order</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Parquet\ByteOrder">ByteOrder</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">ByteOrder::LITTLE_ENDIAN</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"><abbr title="\ByteOrder::LITTLE_ENDIAN">ByteOrder::LITTLE_ENDIAN</abbr></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>@deprecated use <code class="prettyprint">withByteOrder</code> method instead</li>
@@ -193,7 +193,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$offset</span>
                 : <span class="phpdocumentor-signature__argument__return-type">null|int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\Parquet\null">null</abbr></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>@deprecated use <code class="prettyprint">withOffset</code> method instead</li>
@@ -228,7 +228,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">to_parquet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|<abbr title="\Flow\Parquet\Options">Options</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Parquet\ParquetFile\Compressions">Compressions</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$compressions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">Compressions::SNAPPY</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|<abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Parquet-ParquetLoader.html"><abbr title="\Flow\ETL\Adapter\Parquet\ParquetLoader">ParquetLoader</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">to_parquet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|<abbr title="\Flow\Parquet\Options">Options</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\Parquet\null">null</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Parquet\ParquetFile\Compressions">Compressions</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$compressions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Compressions::SNAPPY">Compressions::SNAPPY</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|<abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\Parquet\null">null</abbr></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Parquet-ParquetLoader.html"><abbr title="\Flow\ETL\Adapter\Parquet\ParquetLoader">ParquetLoader</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -243,7 +243,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">null|<abbr title="\Flow\Parquet\Options">Options</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\Parquet\null">null</abbr></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>@deprecated use <code class="prettyprint">withOptions</code> method instead</li>
@@ -254,7 +254,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$compressions</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Flow\Parquet\ParquetFile\Compressions">Compressions</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">Compressions::SNAPPY</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"><abbr title="\Compressions::SNAPPY">Compressions::SNAPPY</abbr></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>@deprecated use <code class="prettyprint">withCompressions</code> method instead</li>
@@ -265,7 +265,7 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$schema</span>
                 : <span class="phpdocumentor-signature__argument__return-type">null|<abbr title="\Flow\ETL\Schema">Schema</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\Parquet\null">null</abbr></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>@deprecated use <code class="prettyprint">withSchema</code> method instead</li>
