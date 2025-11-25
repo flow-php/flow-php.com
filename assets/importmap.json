@@ -16,7 +16,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/playground_share_controller.js": {
-        "path": "\/assets\/controllers\/playground_share_controller-93011a5eae9ee8e0ccb72ccde1e89e13.js",
+        "path": "\/assets\/controllers\/playground_share_controller-182b14dfdf211b0ee7ddb7e85cf023d6.js",
         "type": "js"
     },
     "\/assets\/services\/snippet-fingerprint.js": {
@@ -28,11 +28,11 @@
         "type": "js"
     },
     "\/assets\/controllers\/playground_format_controller.js": {
-        "path": "\/assets\/controllers\/playground_format_controller-b516b8c484e0800edc6f8f8f9afc4318.js",
+        "path": "\/assets\/controllers\/playground_format_controller-8dfa94c90609232e433cef3b1f0df2c9.js",
         "type": "js"
     },
     "\/assets\/controllers\/playground_workspace_controller.js": {
-        "path": "\/assets\/controllers\/playground_workspace_controller-614b9a669f8450c64090707de9be0918.js",
+        "path": "\/assets\/controllers\/playground_workspace_controller-6db2e9a5fa3a7714f9968fb0a71e8334.js",
         "type": "js"
     },
     "\/assets\/controllers\/scroll_to_top_controller.js": {
@@ -72,7 +72,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/playground_run_controller.js": {
-        "path": "\/assets\/controllers\/playground_run_controller-a50f2ca038f884732ed10b51e5745621.js",
+        "path": "\/assets\/controllers\/playground_run_controller-857150d05b75474ed9ee02b99a51b30d.js",
         "type": "js"
     },
     "\/assets\/controllers\/all_links_external_controller.js": {
@@ -80,7 +80,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/playground_controller.js": {
-        "path": "\/assets\/controllers\/playground_controller-29a2213a9eb88a2091408fc0595fed1e.js",
+        "path": "\/assets\/controllers\/playground_controller-740aa385251baef14b10041e471f284d.js",
         "type": "js"
     },
     "\/assets\/controllers\/wasm_controller.js": {
@@ -116,7 +116,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/playground_upload_controller.js": {
-        "path": "\/assets\/controllers\/playground_upload_controller-3d7160acdfd8d63a8b2fe659b49b1d28.js",
+        "path": "\/assets\/controllers\/playground_upload_controller-4cb4cede53f2a96e04451e9d3d5285bf.js",
         "type": "js"
     },
     "\/assets\/controllers\/mermaid_controller.js": {
