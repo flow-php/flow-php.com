@@ -488,6 +488,33 @@ be done on the lowest supported PHP version.</p>
 <p>This feature is mostly for testing new integrations
 or lowest/highest versions of dependencies.</p>
 </blockquote>
+<h2><a id="flow-php-optional-tool-groups" href="#content-optional-tool-groups" class="mr-2" aria-hidden="true" title="Permalink">#</a>Optional Tool Groups</h2>
+<p>The nix shell supports optional tool groups that can be enabled when needed.
+This keeps the default shell lightweight while allowing access to specialized tools.</p>
+<h3><a id="flow-php-wasm-build-tools" href="#content-wasm-build-tools" class="mr-2" aria-hidden="true" title="Permalink">#</a>WASM Build Tools</h3>
+<p>To include tools for building WebAssembly (emscripten, autoconf, wget, etc.):</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg with-wasm true
+</code></pre>
+<h3><a id="flow-php-terraform" href="#content-terraform" class="mr-2" aria-hidden="true" title="Permalink">#</a>Terraform</h3>
+<p>To include Terraform and Node.js for infrastructure development:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg with-terraform true
+</code></pre>
+<h3><a id="flow-php-pg-query-ext-extension" href="#content-pg-query-ext-extension" class="mr-2" aria-hidden="true" title="Permalink">#</a>pg-query-ext Extension</h3>
+<p>To include the <code>pg-query-ext</code> PHP extension (PostgreSQL SQL parser):</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg with-pg-query-ext true
+</code></pre>
+<p>The extension is built from local source (<code>src/extension/pg-query-ext/ext</code>) and automatically loaded by PHP:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">php -m | grep pg_query
+./tools/phpunit/vendor/bin/phpunit --testsuite=lib-pg-query-unit
+</code></pre>
+<p>This also includes C development tools for extension development. To rebuild after modifying C source code:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">cd src/extension/pg-query-ext &amp;&amp; make rebuild
+</code></pre>
+<p>Note: Re-entering nix-shell will also rebuild the extension if sources changed.</p>
+<h3><a id="flow-php-combining-multiple-options" href="#content-combining-multiple-options" class="mr-2" aria-hidden="true" title="Permalink">#</a>Combining Multiple Options</h3>
+<p>You can combine multiple arguments:</p>
+<pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg with-terraform true --arg with-wasm true
+</code></pre>
 <h2><a id="flow-php-local-webserver" href="#content-local-webserver" class="mr-2" aria-hidden="true" title="Permalink">#</a>Local Webserver</h2>
 <p>To run the local webserver for Flow Website development, please use Symfony CLI app
 that is also available in nix shell.</p>
@@ -610,8 +637,28 @@ symfony server:start -d
             <li>
                 <a href="/documentation/components/libs/snappy">Snappy</a>
             </li>
+            <li>
+                <a href="/documentation/components/libs/pg-query">PostgreSQL Query</a>
+            </li>
         </ul>
+    </div>
+    <div>
+        <h2 class="hidden lg:block">PHP Extensions</h2>
+        <div class="lg:hidden p-2 text-center">
+            <button class="font-bold text-xl" aria-controls="documentation-libraries" data-collapse-toggle="documentation-libraries">
+                PHP Extensions
+
+                <svg class="w-3 h-3 ml-2 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+            </button>
         </div>
+        <ul id="documentation-libraries" class="hidden lg:block">
+            <li>
+                <a href="/documentation/components/extensions/pg-query-ext">pg_query</a>
+            </li>
+        </ul>
+    </div>
     <div>
         <h2 class="hidden lg:block">Bridges</h2>
         <div class="lg:hidden p-2 text-center">
