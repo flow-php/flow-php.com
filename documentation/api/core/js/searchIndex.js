@@ -386,6 +386,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_PARQUET"
         },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003APG_QUERY",
+            "name": "PG_QUERY",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_PG_QUERY"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003AS3_FILESYSTEM",
             "name": "S3_FILESYSTEM",
             "summary": "",
