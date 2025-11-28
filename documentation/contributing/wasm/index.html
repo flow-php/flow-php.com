@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
 
-    <title>Flow PHP - Playground</title>
-    <meta property="og:title" content="Flow PHP - Playground" />
-    <meta name="twitter:title" content="Flow PHP - Playground" >
+    <title>Documentation - Flow PHP - Data Processing Framework</title>
+    <meta property="og:title" content="Documentation - Flow PHP - Data Processing Framework" />
+    <meta name="twitter:title" content="Documentation - Flow PHP - Data Processing Framework" >
 
-    <meta name="description" content="Flow PHP in Browser - An interactive playground to experiment with Flow PHP, a PHP-based, strongly typed data processing framework with low memory footprint.">
-    <meta property="og:description" content="Flow PHP in Browser - An interactive playground to experiment with Flow PHP, a PHP-based, strongly typed data processing framework with low memory footprint.">
-    <meta name="twitter:description" content="Flow PHP in Browser - An interactive playground to experiment with Flow PHP, a PHP-based, strongly typed data processing framework with low memory footprint.">
+    <meta name="description" content="Documentation">
+    <meta property="og:description" content="Documentation">
+    <meta name="twitter:description" content="Documentation">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/playground" />
+    <meta property="og:url" content="https://flow-php.com/documentation/contributing/wasm" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/playground" />
+    <meta property="twitter:url" content="https://flow-php.com/documentation/contributing/wasm" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -36,7 +36,7 @@
     
                         <script defer src="https://cloud.umami.is/script.js" data-website-id="f9c034bb-efdf-4f70-b6ef-34da144ce7b0"></script>
             
-                <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
         <script>
             mermaid.initialize({ startOnLoad: false, theme: 'dark', securityLevel: 'loose' });
         </script>
@@ -183,9 +183,7 @@
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-432470646103ecfae391f84f998c6751.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-5177a70da99e8a6f9176469f1197bdf5.js">
 <script type="module">import 'app';</script>
-    
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-</head>
+    </head>
 <body class="scroll-smooth bg-black text-white" data-environment="prod">
     <header class="py-2 text-white bg-blue-200">
         <div class="mx-auto max-w-screen-2xl px-4 flex items-center justify-between">
@@ -259,263 +257,479 @@
 
     <main id="main">
         
-        <div id="playground"
-     data-controller="wasm turnstile playground-output playground playground-workspace playground-run playground-format playground-upload playground-share playground-storage playground-reset playground-help"
-     data-turnstile-site-key-value="0x4AAAAAACAjJaWImyaJwWCy"
-     data-turnstile-appearance-value="interaction-only"
-     data-turnstile-environment-value="prod"
-     data-playground-share-api-url-value="https://flow-php.com/api/playground/snippets"
-     data-playground-share-snippets-url-value="https://playground-snippets.flow-php.com"
-     data-wasm-php-js-value="/assets/wasm/php-3551d9802eabd366ec1d2f415ede3643.js"
-     data-wasm-php-wasm-value="/assets/wasm/php-5fd82e45a981906deef7403b2e063cda.wasm"
-     data-wasm-resources-value="{&quot;code.php&quot;:&quot;\/assets\/wasm\/code.php-adea9d165ff134819809e92c908e0b90.wasm&quot;,&quot;tools\/flow.phar&quot;:&quot;\/assets\/wasm\/tools\/flow-0bd7b4de5abc528ba8856a39724402f5.phar&quot;,&quot;tools\/php-cs-fixer.phar&quot;:&quot;\/assets\/wasm\/tools\/php-cs-fixer-de55dbd75a08d2eac0f0435d4168e6bc.phar&quot;,&quot;vendor\/autoload.php&quot;:&quot;\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm&quot;,&quot;.php-cs-fixer.php&quot;:&quot;\/assets\/wasm\/phpcsfixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm&quot;,&quot;bin\/cs-fixer.php&quot;:&quot;\/assets\/wasm\/bin\/cs-fixer.php-ac4974a6fd6684a03a024047ab1f831c.wasm&quot;,&quot;data\/orders.xml&quot;:&quot;\/assets\/wasm\/data\/orders-8ee52a57261a7825213f3d66b9109591.xml&quot;,&quot;data\/orders.json&quot;:&quot;\/assets\/wasm\/data\/orders-09429d88a4f65d938de30e5b8d9aa706.json&quot;,&quot;data\/orders.csv&quot;:&quot;\/assets\/wasm\/data\/orders-a23572d02c810fc9b709f09b0b8c92ef.csv&quot;,&quot;data\/orders.parquet&quot;:&quot;\/assets\/wasm\/data\/orders-e8777869fbcc2f3ff6a1471b5978db98.parquet&quot;}"
-     data-playground-package-icon-value="/assets/images/icons/package-30016a0b8b16a09f8bd0e0c19768ce6e.svg"
-     data-playground-link-icon-value="/assets/images/icons/link-dd3acd183ca5fd1d06ddf52b258a2359.svg"
-     data-playground-workspace-wasm-outlet="#playground"
-     data-playground-workspace-code-editor-outlet="#code-editor"
-     data-playground-workspace-playground-outlet="#playground"
-     data-playground-workspace-folder-icon-value="/assets/images/icons/folder-64f6b064e6522cede2da539b04960480.svg"
-     data-playground-workspace-file-icon-value="/assets/images/icons/file-028e2be98c9d50187258f29575a9e7c6.svg"
-     data-playground-upload-folder-icon-value="/assets/images/icons/folder-64f6b064e6522cede2da539b04960480.svg"
-     data-playground-upload-file-icon-value="/assets/images/icons/file-028e2be98c9d50187258f29575a9e7c6.svg"
-     data-playground-wasm-outlet="#playground"
-     data-playground-code-editor-outlet="#code-editor"
-     data-playground-turnstile-outlet="#playground"
-     data-playground-playground-output-outlet="#playground"
-     data-playground-run-code-editor-outlet="#code-editor"
-     data-playground-run-wasm-outlet="#playground"
-     data-playground-run-playground-output-outlet="#playground"
-     data-playground-format-code-editor-outlet="#code-editor"
-     data-playground-format-wasm-outlet="#playground"
-     data-playground-format-playground-output-outlet="#playground"
-     data-playground-upload-wasm-outlet="#playground"
-     data-playground-upload-playground-output-outlet="#playground"
-     data-playground-share-code-editor-outlet="#code-editor"
-     data-playground-share-wasm-outlet="#playground"
-     data-playground-share-turnstile-outlet="#playground"
-     data-playground-share-playground-upload-outlet="#playground"
-     data-playground-storage-code-editor-outlet="#code-editor"
-     data-playground-storage-wasm-outlet="#playground"
-     data-playground-reset-playground-storage-outlet="#playground"
-     data-action="wasm:initialized->playground#onWasmInitialized
-                  wasm:initialized->playground-workspace#refreshTree
-                  wasm:initialized->playground-share#onWasmResourcesLoaded
-                  wasm:initialized->playground-storage#onWasmResourcesLoaded
-                  wasm:loading-progress->playground#onWasmLoadingProgress
-                  wasm:output->playground#onWasmOutput
-                  wasm:error->playground#onWasmError
-                  playground-storage:loaded-from-storage->playground#onStorageLoaded
-                  playground-share:loaded-from-url->playground#onUrlLoaded
-                  playground-share:datasets-loaded->playground#onDatasetsLoaded
-                  playground-share:notification->playground#onNotification
-                  playground-run:action-started->playground#onActionStarted
-                  playground-run:action-finished->playground#onActionFinished
-                  playground-format:action-started->playground#onActionStarted
-                  playground-format:action-finished->playground#onActionFinished
-                  playground-share:action-started->playground#onActionStarted
-                  playground-share:action-finished->playground#onActionFinished
-                  playground-upload:action-started->playground#onActionStarted
-                  playground-upload:action-finished->playground#onActionFinished
-                  playground-run:action-started->playground-workspace#onActionStarted
-                  playground-run:action-finished->playground-workspace#onActionFinished
-                  playground-format:action-started->playground-workspace#onActionStarted
-                  playground-format:action-finished->playground-workspace#onActionFinished
-                  playground-share:action-started->playground-workspace#onActionStarted
-                  playground-share:action-finished->playground-workspace#onActionFinished
-                  playground-upload:action-started->playground-workspace#onActionStarted
-                  playground-upload:action-finished->playground-workspace#onActionFinished">
-    <div class="playground-header">
-        <h1>Playground</h1>
-        <button
-                data-action="click->playground-help#showTopic"
-                data-help-topic="help-about"
-                class="help-trigger mb-4"
-                aria-label="What is Flow Playground?">
-            <img src="/assets/images/icons/help-6a6e833271f222c3b337e77c10460d9c.svg" alt="Help" width="20" height="20">
-        </button>
-    </div>
+        <section id="documentation-page" class="mt-5 mb-5 px-2 sm:px-4 mx-auto max-w-screen-2xl">
+    <div class="grid grid-cols-1 lg:grid-cols-6">
+        <div class="order-1 lg:order-0 lg:col-span-1 lg:sticky lg:top-0 lg:max-h-screen lg:overflow-y-auto">
+            <div class="grid grid-cols-2 lg:grid-cols-1">
+    <div>
+        <h1 class="hidden lg:block">
+            Introduction
+        </h1>
+        <div class="lg:hidden p-2 text-center">
+            <button class="font-bold text-xl" aria-controls="documentation-introduction" data-collapse-toggle="documentation-introduction">
+                Introduction
 
-    <div id="turnstile-widget" class="mb-5 max-w-[550px]"></div>
-
-    <div id="help-section"
-         data-playground-help-target="helpSection"
-         style="display: none;">
-        <div class="help-header">
-            <h2>Help</h2>
-            <button data-action="click->playground-help#close" class="help-close" aria-label="Close help">×</button>
-        </div>
-        <div class="help-content">
-            <section class="help-topic" id="help-about">
-                <h3>Flow PHP Playground</h3>
-                <p>
-                    Flow Playground is an interactive WebAssembly-based environment that runs Flow PHP directly in your browser.<br/>
-                    This means that any code you execute in the editor below, runs in your browser, using a version of php compiled to WebAssembly.<br/>
-                    Other than that, it's just a regular PHP environment.
-                </p>
-                <p>
-                    <strong>Under Development:</strong> This playground is still under active development. <br/>
-                    If you encounter any bugs or have feedback, we'd love to hear from you! Please report issues on <a href="https://github.com/flow-php/flow" target="_blank">GitHub</a> or reach out to us on <a href="https://discord.gg/fAv6Xa6RNr" target="_blank">Discord</a>.
-
-                </p>
-            </section>
-
-            <section class="help-topic" id="help-navigation">
-                <h3>Action Buttons</h3>
-                <ul>
-                    <li><strong>Run</strong> - Executes your PHP code in the playground and displays the output below the editor.</li>
-                    <li><strong>Format</strong> - Automatically formats your PHP code using PHP-CS-Fixer rules for consistent code style.</li>
-                    <li><strong>Share</strong> - Generates a shareable link by securely uploading your code to our server. Your code and any uploaded datasets are stored for 90 days and accessible via a short URL. You can include up to 3 datasets (CSV, JSON, or XML files, max 2MB each) in your share. <br/><em>Important: Never include sensitive information like passwords, API keys, or personal data in your code when sharing. Shared snippets are publicly accessible to anyone with the link.</em></li>
-                    <li><strong>Upload</strong> - Upload local files (CSV, JSON, XML, PHP, PHAR) to the virtual WASM filesystem. You can upload up to 3 files (max 2MB each). When you share your code, uploaded datasets will be included automatically. <br/><em>Note: Uploaded files are stored only in your browser's memory and will disappear when you refresh the page, unless you share your code.</em></li>
-                    <li><strong>Reset</strong> - Clears your code and resets the playground to its default state.</li>
-                </ul>
-            </section>
-
-            <section class="help-topic" id="help-workspace">
-                <h3>Workspace</h3>
-                <p>
-                    The Workspace panel displays the contents of the <code>/workspace</code> folder from the WebAssembly virtual filesystem. This is where your code and uploaded files are stored during your playground session.
-                </p>
-                <p>
-                    All files in the workspace are stored locally in your browser's memory and are never uploaded to any server. <br/>
-                    This means you can safely experiment with real datasets and documents without any privacy concerns. <br/>
-                    However, keep in mind that all files will be lost when you refresh the page or close your browser.
-                </p>
-                <p>
-                    <ul>
-                        <li><code>bin</code> - this is where we keep scripts used by playground, like for exampel code formatter</li>
-                        <li><code>data</code> - here you can find sample datasets to play with, reference them as <code>__DIR__ . '/data/orders.csv</code></li>
-                        <li><code>tmp</code> - this is where we are going to upload your files</li>
-                        <li><code>vendor</code> - place for playground dependencies and autoloader</li>
-                        <li><code>tools</code> - place for playground tools, like <code>flow.phar</code></li>
-                    </ul>
-                </p>
-            </section>
-        </div>
-    </div>
-
-    <div id="loader">
-        <div data-playground-target="loadingMessage"></div>
-        <div class="loading-progress">
-            <div data-playground-target="loadingBar" class="loading-bar"></div>
-        </div>
-        <div data-playground-target="loadingPercent"></div>
-    </div>
-
-    <div class="navigation" data-playground-target="navigation">
-        <div class="storage-indicator" data-playground-target="storageIndicator" style="display: none;"></div>
-        <div class="actions">
-            <span id="action-spinner" class="action-spinner hidden" data-playground-target="actionSpinner">
-                <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                <svg class="w-3 h-3 ml-2 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                 </svg>
-            </span>
-            <button
-                    data-action="click->playground-help#showTopic"
-                    data-help-topic="help-navigation"
-                    class="help-trigger-nav pt-2"
-                    aria-label="What do these buttons do?">
-                <img src="/assets/images/icons/help-6a6e833271f222c3b337e77c10460d9c.svg" alt="Help" width="18" height="18">
             </button>
-            <button
-                    id="action-run"
-                    data-controller="image-swap"
-                    data-action="click->playground-run#run mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
-                Run <img src="/assets/images/icons/play-b3d8bbbafaea96f437f51fa0a5041e8f.svg"
-                         alt="Run"
-                         class="ml-1 inline-block"
-                         data-image-swap-target="image"
-                         data-hover-src="/assets/images/icons/play-active-f01ec77d89066773e6e7681a72cda6b9.svg">
-            </button>
-            <button
-                    id="action-format"
-                    data-controller="image-swap"
-                    data-action="click->playground-format#format mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
-                Format <img src="/assets/images/icons/code-5d9f22dbc373192322ba3d1f4422371f.svg"
-                            alt="Format"
-                            class="ml-1 inline-block"
-                            data-image-swap-target="image"
-                            data-hover-src="/assets/images/icons/code-active-47ea06264a3cf5d9f635b85c748eb38f.svg">
-            </button>
-            <button
-                    id="action-share"
-                    data-controller="image-swap"
-                    data-action="click->playground-share#share mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
-                Share <img src="/assets/images/icons/share-c5606063ebff259b64ea887056279b4e.svg"
-                     alt="Share"
-                     class="ml-1 inline-block"
-                     data-image-swap-target="image"
-                     data-hover-src="/assets/images/icons/share-active-abe8eb04e05b4cebdd7c41cb5a13d7c3.svg">
-            </button>
-            <button
-                    id="action-upload"
-                    data-controller="image-swap"
-                    data-action="click->playground-upload#triggerUpload mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
-                Upload <img src="/assets/images/icons/upload-14409a4da46b4ba64c988711c06e9254.svg"
-                            alt="Upload"
-                            class="ml-1 inline-block"
-                            data-image-swap-target="image"
-                            data-hover-src="/assets/images/icons/upload-active-cfbfac912bb8d54a16ed4f1562c46505.svg">
-            </button>
-            <input type="file"
-                   data-playground-upload-target="fileInput"
-                   data-action="change->playground-upload#handleFileUpload"
-                   accept=".csv,.json,.xml,.php,.phar"
-                   multiple
-                   style="display: none;">
-            <a href="/playground"
-               id="action-reset"
-               data-controller="image-swap playground-reset"
-               data-playground-reset-playground-storage-outlet="#playground"
-               data-action="click->playground-reset#confirmReset mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
-                Reset <img src="/assets/images/icons/refresh-71f35c2c6d7ac84cfa617f75a64ee2b1.svg"
-                           alt="Reset"
-                           class="ml-1 inline-block"
-                           data-image-swap-target="image"
-                           data-hover-src="/assets/images/icons/refresh-active-5a6c0c70183d0f7cb1c1feac68486b85.svg">
-            </a>
+        </div>
+        <div id="documentation-introduction" class="hidden lg:block">
+            <ul>
+                <li>
+                    <a href="/documentation">Features</a>
+                </li>
+                <li>
+                    <a href="/documentation/installation">Installation</a>
+                </li>
+                <li>
+                    <a href="/documentation/quick-start">Quick Start</a>
+                </li>
+                <li>
+                    <a href="/documentation/dsl#dsl-functions">DSL References</a>
+                </li>
+                <li>
+                    <a href="/documentation/adrs">Architecture Decision Records</a>
+                </li>
+                <li>
+                    <a rel="noopener noreferrer" target="_blank" href="https://github.com/orgs/flow-php/projects/1">Project Roadmap</a>
+                </li>
+                <li>
+                    <a href="/documentation/contributing">Contributing</a>
+                </li>
+                <li>
+                    <a href="/documentation/security">Security</a>
+                </li>
+                <li>
+                    <a rel="noopener noreferrer" target="_blank" href="https://discord.gg/5dNXfQyACW">Discord Server</a>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="editor" data-playground-target="editor">
-        <div class="file-browser">
-            <div class="file-browser-header">
-                Workspace
-                <button
-                        data-action="click->playground-help#showTopic"
-                        data-help-topic="help-workspace"
-                        class="help-trigger-workspace"
-                        aria-label="What is the Workspace?">
-                    <img src="/assets/images/icons/help-6a6e833271f222c3b337e77c10460d9c.svg" alt="Help" width="14" height="14">
-                </button>
-            </div>
-            <div class="file-browser-content" data-playground-workspace-target="tree">
-                <!-- Files will be populated by JavaScript -->
-            </div>
+    <div>
+        <h1 class="hidden lg:block">
+            Data Frame
+        </h1>
+        <div class="lg:hidden p-2 text-center">
+            <button class="font-bold text-xl" aria-controls="documentation-core" data-collapse-toggle="documentation-core">
+                Data Frame
+
+                <svg class="w-3 h-3 ml-2 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+            </button>
         </div>
-        <div class="code-container">
-                <textarea id="code-editor" data-controller="code-editor">
-<?php
-// Code will be loaded from /workspace/code.php after WASM initialization
-</textarea>
-        </div>
-    </div>
-    <div class="output-container" data-playground-target="outputContainer">
-        <h2>Output</h2>
-        <pre id="output" data-playground-output-target="container"></pre>
-    </div>
-    <div class="file-preview-container" data-playground-target="filePreviewContainer" style="display: none;">
-        <div class="file-preview-header">
-            <h2 data-playground-target="filePreviewTitle">File Preview</h2>
-            <div class="file-preview-actions">
-                <button data-action="click->playground#downloadPreviewFile" class="preview-action-btn" aria-label="Download file">
-                    <img src="/assets/images/icons/upload-14409a4da46b4ba64c988711c06e9254.svg" alt="Download" width="16" height="16" style="transform: rotate(180deg);">
-                </button>
-                <button data-action="click->playground#closeFilePreview" class="preview-close-btn" aria-label="Close preview">×</button>
-            </div>
-        </div>
-        <pre class="file-preview-content"><code data-playground-target="filePreviewContent"></code></pre>
+        <ul id="documentation-core" class="hidden lg:block">
+            <li>
+                <a href="/documentation/components/core/core">Data Frame</a>
+                <ul>
+                    <li>
+                        <a href="/documentation/components/core/building-blocks">Building Blocks</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/data-retrieval">Data Retrieval</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/data-manipulation">Data Manipulation</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/select-drop">Select/Drop</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/rename">Rename</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/map">Map</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/filter">Filter</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/execution-mode">Execution Mode</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/save-mode">Save Mode</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/join">Join</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/group-by">Group By</a>
+                        <ul>
+                            <li>
+                                <a href="/documentation/components/core/aggregations">Aggregations</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/pivot">Pivot</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/window-functions">Window Functions</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/sort">Sort</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/limit">Limit</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/offset">Offset</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/until">Until</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/batch-processing">Batch Processing</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/caching">Caching</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/partitioning">Partitioning</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/constraints">Constraints</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/schema">Schema</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/display">Display</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/components/core/error-handling">Error Handling</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/documentation/components/cli/docs">CLI</a>
+            </li>
+        </ul>
     </div>
 </div>
+        </div>
+        <div class="order-3 lg:order-1 lg:col-span-4 py-2 px-4">
+            <hr class="lg:hidden"/>
+
+            <div class="mb-3 text-left">
+                <a class="btn btn-primary" href="https://github.com/flow-php/flow/edit/1.x/documentation/contributing/wasm.md" target="_blank">
+                    Edit
+                    <img src="/assets/images/icons/github-b7e5d858805e5289b575768f10a66b52.svg" alt="external resource" width="16" height="16" class="ml-1">
+                </a>
+            </div>
+
+            <h1><a id="flow-php-wasm-build" href="#content-wasm-build" class="mr-2" aria-hidden="true" title="Permalink">#</a>WASM Build</h1>
+<p>This document describes how to build PHP to WebAssembly (WASM) for use in the Flow PHP Interactive Playground.</p>
+<h2><a id="flow-php-overview" href="#content-overview" class="mr-2" aria-hidden="true" title="Permalink">#</a>Overview</h2>
+<p>The WASM build creates a browser-compatible PHP runtime that powers the interactive playground
+at <a rel="noopener noreferrer" target="_blank" href="https://flow-php.com">flow-php.com</a>. It compiles PHP 8.4 with the necessary extensions to run Flow PHP ETL pipelines
+directly in the browser.</p>
+<h2><a id="flow-php-requirements" href="#content-requirements" class="mr-2" aria-hidden="true" title="Permalink">#</a>Requirements</h2>
+<ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://nixos.org/download.html">Nix</a> (recommended)</li>
+<li>Or manually: <a rel="noopener noreferrer" target="_blank" href="https://emscripten.org/docs/getting_started/downloads.html">Emscripten SDK</a> (emcc, emmake, emconfigure),
+standard build tools (make, gcc, autoconf, automake, libtool), wget, git</li>
+</ul>
+<h2><a id="flow-php-building" href="#content-building" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building</h2>
+<p>The recommended way is to use the Nix shell with the <code>with-wasm</code> argument:</p>
+<pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight"># From the repository root
+nix-shell --arg with-wasm true
+
+# Then run the build script
+cd wasm
+./build.sh
+</code></pre>
+<p>This will provide all necessary dependencies including Emscripten, autoconf, wget, and libxml2.</p>
+<p>Alternatively, if you have Emscripten installed manually:</p>
+<pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight">cd wasm
+./build.sh
+</code></pre>
+<p>The build script will:</p>
+<ol>
+<li>Download and compile libxml2 for WebAssembly</li>
+<li>Download and compile libpg_query for WebAssembly</li>
+<li>Download PHP source</li>
+<li>Copy the pg_query and snappy extensions</li>
+<li>Configure and compile PHP with required extensions</li>
+<li>Link everything into <code>php.wasm</code> and <code>php.js</code></li>
+<li>Copy outputs to <code>web/landing/assets/wasm/</code></li>
+</ol>
+<h2><a id="flow-php-included-php-extensions" href="#content-included-php-extensions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Included PHP Extensions</h2>
+<table>
+<thead>
+<tr>
+<th>Extension</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bcmath</td>
+<td>Required by flow-php/parquet for decimal handling</td>
+</tr>
+<tr>
+<td>mbstring</td>
+<td>String handling</td>
+</tr>
+<tr>
+<td>phar</td>
+<td>PHAR archive support</td>
+</tr>
+<tr>
+<td>filter</td>
+<td>Data filtering</td>
+</tr>
+<tr>
+<td>tokenizer</td>
+<td>PHP tokenization</td>
+</tr>
+<tr>
+<td>zlib</td>
+<td>Compression support</td>
+</tr>
+<tr>
+<td>iconv</td>
+<td>Character encoding conversion</td>
+</tr>
+<tr>
+<td>libxml</td>
+<td>Base for XML extensions</td>
+</tr>
+<tr>
+<td>xml</td>
+<td>XML parsing</td>
+</tr>
+<tr>
+<td>dom</td>
+<td>DOM manipulation</td>
+</tr>
+<tr>
+<td>xmlreader</td>
+<td>XML streaming reader</td>
+</tr>
+<tr>
+<td>xmlwriter</td>
+<td>XML streaming writer</td>
+</tr>
+<tr>
+<td>pg_query</td>
+<td>PostgreSQL query parsing (Flow PHP extension)</td>
+</tr>
+<tr>
+<td>snappy</td>
+<td>Snappy compression for Parquet</td>
+</tr>
+</tbody>
+</table>
+<h2><a id="flow-php-architecture-notes" href="#content-architecture-notes" class="mr-2" aria-hidden="true" title="Permalink">#</a>Architecture Notes</h2>
+<h3><a id="flow-php-32-bit-environment" href="#content-32-bit-environment" class="mr-2" aria-hidden="true" title="Permalink">#</a>32-bit Environment</h3>
+<p>WebAssembly runs as a 32-bit environment where <code>PHP_INT_MAX = 2147483647</code>. This affects:</p>
+<ul>
+<li>Large integer values from Thrift/Parquet metadata may overflow to floats</li>
+<li>The parquet library includes <code>(int)</code> casts in <code>fromThrift()</code> methods to handle this</li>
+<li>Hex constants like <code>0x80000000</code> and <code>0xFFFFFFFF</code> require explicit <code>(int)</code> casts</li>
+</ul>
+<h2><a id="flow-php-output-files" href="#content-output-files" class="mr-2" aria-hidden="true" title="Permalink">#</a>Output Files</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>out/php.wasm</code></td>
+<td>Compiled WebAssembly binary</td>
+</tr>
+<tr>
+<td><code>out/php.js</code></td>
+<td>JavaScript loader/glue code</td>
+</tr>
+</tbody>
+</table>
+<p>These are copied to <code>web/landing/assets/wasm/</code> for use by the playground.</p>
+<h2><a id="flow-php-wrapper-code" href="#content-wrapper-code" class="mr-2" aria-hidden="true" title="Permalink">#</a>Wrapper Code</h2>
+<p>The <code>pib_eval.c</code> file provides the C wrapper for evaluating PHP code:</p>
+<ul>
+<li><code>pib_eval(char *code)</code> - Evaluates PHP code and returns the result</li>
+<li><code>pib_force_exit()</code> - Forces exit from the WASM runtime</li>
+</ul>
+<h2><a id="flow-php-troubleshooting" href="#content-troubleshooting" class="mr-2" aria-hidden="true" title="Permalink">#</a>Troubleshooting</h2>
+<h3><a id="flow-php-build-fails-with-configure-errors" href="#content-build-fails-with-configure-errors" class="mr-2" aria-hidden="true" title="Permalink">#</a>Build fails with configure errors</h3>
+<p>Check <code>config.log</code> in the PHP directory for detailed error messages.</p>
+<h3><a id="flow-php-missing-extensions" href="#content-missing-extensions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Missing extensions</h3>
+<p>Ensure all required libraries (libxml2, libpg_query) are built before PHP configuration.</p>
+<h3><a id="flow-php-memory-issues-in-browser" href="#content-memory-issues-in-browser" class="mr-2" aria-hidden="true" title="Permalink">#</a>Memory issues in browser</h3>
+<p>The playground may fail on very large datasets due to WASM memory limits.</p>
+
+
+            <hr class="!mt-8 !mb-8"/>
+
+            <script src="https://giscus.app/client.js"
+                    data-repo="flow-php/flow-php.com"
+                    data-repo-id="R_kgDOHja2Yg"
+                    data-category="Documentation"
+                    data-category-id="DIC_kwDOHja2Ys4Cidc1"
+                    data-mapping="url"
+                    data-strict="0"
+                    data-reactions-enabled="0"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="dark"
+                    data-lang="en"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+        </div>
+        <div class="order-2 lg:order-2 col-span-1 lg:col-span-1 lg:sticky lg:top-0 lg:max-h-screen lg:overflow-y-auto">
+            <div class="grid grid-cols-3 gap-2 lg:grid-cols-1">
+    <div>
+        <h2 class="hidden lg:block">Adapters</h2>
+        <div class="lg:hidden p-2 text-center">
+            <button class="font-bold text-xl" aria-controls="documentation-adapters" data-collapse-toggle="documentation-adapters">
+                Adapters
+
+                <svg class="w-3 h-3 ml-2 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+            </button>
+        </div>
+        <ul id="documentation-adapters" class="hidden lg:block">
+            <li>
+                <a href="/documentation/components/adapters/chartjs">ChartJS</a>
+            </li>
+            <li>
+                <a href="/documentation/components/adapters/csv">CSV</a>
+            </li>
+            <li>
+                <a href="/documentation/components/adapters/doctrine">Doctrine</a>
+            </li>
+            <li>
+                <a href="/documentation/components/adapters/elasticsearch">ElasticSearch</a>
+            </li>
+            <li>
+                <a href="/documentation/components/adapters/excel">Excel</a>
+            </li>
+            <li>
+                <a href="/documentation/components/adapters/google-sheet">Google Sheets</a>
+            </li>
+            <li>
+                <a href="/documentation/components/adapters/http">HTTP</a>
+            </li>
+            <li>
+                <a href="/documentation/components/adapters/json">JSON</a>
+            </li>
+            <li>
+                <a href="/documentation/components/adapters/logger">Logger</a>
+            </li>
+            <li>
+                <a href="/documentation/components/adapters/meilisearch">MeiliSearch</a>
+            </li>
+            <li>
+                <a href="/documentation/components/adapters/parquet">Parquet</a>
+            </li>
+            <li>
+                <a href="/documentation/components/adapters/text">Text</a>
+            </li>
+            <li>
+                <a href="/documentation/components/adapters/xml">XML</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2 class="hidden lg:block">Libraries</h2>
+        <div class="lg:hidden p-2 text-center">
+            <button class="font-bold text-xl" aria-controls="documentation-libraries" data-collapse-toggle="documentation-libraries">
+                Libraries
+
+                <svg class="w-3 h-3 ml-2 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+            </button>
+        </div>
+        <ul id="documentation-libraries" class="hidden lg:block">
+            <li>
+                <a href="/documentation/components/libs/filesystem">Filesystem</a>
+            </li>
+            <li>
+                <a href="/documentation/components/libs/types">Types</a>
+            </li>
+            <li>
+                <a href="/documentation/components/libs/array-dot">Array Dot</a>
+            </li>
+            <li>
+                <a href="/documentation/components/libs/azure-sdk">Azure SDK</a>
+            </li>
+            <li>
+                <a href="/documentation/components/libs/doctrine-dbal-bulk">Doctrine DBAL Bulk</a>
+            </li>
+            <li>
+                <a href="/documentation/components/libs/parquet">Parquet</a>
+            </li>
+            <li>
+                <a href="/documentation/components/libs/parquet-viewer">Parquet Viewer</a>
+            </li>
+            <li>
+                <a href="/documentation/components/libs/snappy">Snappy</a>
+            </li>
+            <li>
+                <a href="/documentation/components/libs/pg-query">PostgreSQL Query</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2 class="hidden lg:block">PHP Extensions</h2>
+        <div class="lg:hidden p-2 text-center">
+            <button class="font-bold text-xl" aria-controls="documentation-libraries" data-collapse-toggle="documentation-libraries">
+                PHP Extensions
+
+                <svg class="w-3 h-3 ml-2 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+            </button>
+        </div>
+        <ul id="documentation-libraries" class="hidden lg:block">
+            <li>
+                <a href="/documentation/components/extensions/pg-query-ext">pg_query</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2 class="hidden lg:block">Bridges</h2>
+        <div class="lg:hidden p-2 text-center">
+            <button class="font-bold text-xl" aria-controls="documentation-bridges" data-collapse-toggle="documentation-bridges">
+                Bridges
+
+                <svg class="w-3 h-3 ml-2 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+            </button>
+        </div>
+        <ul id="documentation-bridges" class="mb-10 hidden lg:block">
+            <li>
+                <a href="/documentation/components/bridges/filesystem-azure-bridge">Filesystem Azure</a>
+            </li>
+            <li>
+                <a href="/documentation/components/bridges/filesystem-async-aws-bridge">Filesystem S3</a>
+            </li>
+            <li>
+                <a href="/documentation/components/bridges/symfony-http-foundation-bridge">Symfony Http Foundation</a>
+            </li>
+            <li>
+                <a href="/documentation/components/bridges/monolog-http-bridge">Monolog Http</a>
+            </li>
+            <li>
+                <a href="/documentation/components/bridges/openapi-specification-bridge">OpenApi Specification</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
 
         <div class="bg-blue-200">
     <section class="mx-auto max-w-screen-2xl sm:flex justify-between items-center py-6 px-2 sm:px-4">
