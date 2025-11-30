@@ -8,7 +8,7 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-4a39170589d758504b96add17a558e07.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-2323813aa2dae8eca58e2b55c801361b.js",
         "type": "js"
     },
     "\/assets\/controllers\/playground_help_controller.js": {
@@ -32,7 +32,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/playground_workspace_controller.js": {
-        "path": "\/assets\/controllers\/playground_workspace_controller-6db2e9a5fa3a7714f9968fb0a71e8334.js",
+        "path": "\/assets\/controllers\/playground_workspace_controller-80a4b67d0d48e0f1724b062960607ab3.js",
         "type": "js"
     },
     "\/assets\/controllers\/scroll_to_top_controller.js": {
@@ -63,6 +63,14 @@
         "path": "\/assets\/controllers\/playground_reset_controller-78985d1d372f9be795ba4fd35d78a527.js",
         "type": "js"
     },
+    "\/assets\/controllers\/playground_tabs_controller.js": {
+        "path": "\/assets\/controllers\/playground_tabs_controller-92e48b227edbdff976c70a4fba370272.js",
+        "type": "js"
+    },
+    "\/assets\/codemirror\/themes\/theme-flow.js": {
+        "path": "\/assets\/codemirror\/themes\/theme-flow-7bef93b1493817cf09879a3b5cd589b3.js",
+        "type": "js"
+    },
     "\/assets\/controllers\/playground_output_controller.js": {
         "path": "\/assets\/controllers\/playground_output_controller-29f780a95240cba1c0e04b482e68c92f.js",
         "type": "js"
@@ -80,7 +88,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/playground_controller.js": {
-        "path": "\/assets\/controllers\/playground_controller-740aa385251baef14b10041e471f284d.js",
+        "path": "\/assets\/controllers\/playground_controller-f2f131fe729dd77fe43f819359926fb5.js",
         "type": "js"
     },
     "\/assets\/controllers\/wasm_controller.js": {
@@ -89,10 +97,6 @@
     },
     "\/assets\/controllers\/code_editor_controller.js": {
         "path": "\/assets\/controllers\/code_editor_controller-0f31162c9dc5f993b3eb60b5004effda.js",
-        "type": "js"
-    },
-    "\/assets\/codemirror\/themes\/theme-flow.js": {
-        "path": "\/assets\/codemirror\/themes\/theme-flow-7bef93b1493817cf09879a3b5cd589b3.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/flow.js": {
@@ -297,6 +301,22 @@
     },
     "@codemirror\/theme-one-dark": {
         "path": "\/assets\/vendor\/@codemirror\/theme-one-dark\/theme-one-dark.index-7373fb053faab89d037ef636d1f263f2.js",
+        "type": "js"
+    },
+    "@codemirror\/lang-json": {
+        "path": "\/assets\/vendor\/@codemirror\/lang-json\/lang-json.index-ba71f9a9b72d0bcdbf1005858fd21b20.js",
+        "type": "js"
+    },
+    "@lezer\/json": {
+        "path": "\/assets\/vendor\/@lezer\/json\/json.index-5f3193a450b6a92b075bc89e048ce9ae.js",
+        "type": "js"
+    },
+    "@codemirror\/lang-xml": {
+        "path": "\/assets\/vendor\/@codemirror\/lang-xml\/lang-xml.index-05d3eee5bb8c7406b241145164ea3a4b.js",
+        "type": "js"
+    },
+    "@lezer\/xml": {
+        "path": "\/assets\/vendor\/@lezer\/xml\/xml.index-a1a7bb08ecf40d1a8061da11ad4eda3e.js",
         "type": "js"
     }
 }
