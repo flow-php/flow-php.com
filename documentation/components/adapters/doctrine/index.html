@@ -427,7 +427,7 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-etl-adapter-doctrine" href="#content-etl-adapter-doctrine" class="mr-2" aria-hidden="true" title="Permalink">#</a>ETL Adapter: Doctrine</h1>
+            <h1><a id="etl-adapter-doctrine" href="#etl-adapter-doctrine" class="mr-2" aria-hidden="true" title="Permalink">#</a>ETL Adapter: Doctrine</h1>
 <ul>
 <li><a href="/documentation/introduction">⬅️️ Back</a></li>
 <li><a href="/documentation/api/adapter/doctrine">📚API Reference</a></li>
@@ -444,12 +444,12 @@ versatile and efficient data processing solutions, making it an excellent choice
 operations in large-scale and data-intensive environments. With Flow PHP's Adapter Doctrine, managing database
 interactions within your ETL workflows becomes a more simplified and efficient endeavor, perfectly aligning with the
 robust and adaptable nature of the Flow PHP ecosystem.</p>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/etl-adapter-doctrine:~0.28.0
 </code></pre>
-<h2><a id="flow-php-description" href="#content-description" class="mr-2" aria-hidden="true" title="Permalink">#</a>Description</h2>
+<h2><a id="description" href="#description" class="mr-2" aria-hidden="true" title="Permalink">#</a>Description</h2>
 <p>Adapter for <a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/etl">ETL</a> using bulk operations from <a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/doctrine-dbal-bulk">Doctrine Dbal Bulk</a>.</p>
-<h2><a id="flow-php-loader---dballoader" href="#content-loader---dballoader" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loader - DbalLoader</h2>
+<h2><a id="loader---dballoader" href="#loader---dballoader" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loader - DbalLoader</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\Adapter\Doctrine\to_dbal_table_insert;
 
 data_frame()
@@ -475,9 +475,9 @@ data_frame()
     ))
     -&gt;run();
 </code></pre>
-<h3><a id="flow-php-type-detection-and-optimization" href="#content-type-detection-and-optimization" class="mr-2" aria-hidden="true" title="Permalink">#</a>Type Detection and Optimization</h3>
+<h3><a id="type-detection-and-optimization" href="#type-detection-and-optimization" class="mr-2" aria-hidden="true" title="Permalink">#</a>Type Detection and Optimization</h3>
 <p><code>DbalLoader</code> now provides advanced type detection capabilities to optimize database operations:</p>
-<h4><a id="flow-php-automatic-type-detection-from-flow-schema" href="#content-automatic-type-detection-from-flow-schema" class="mr-2" aria-hidden="true" title="Permalink">#</a>Automatic Type Detection from Flow Schema</h4>
+<h4><a id="automatic-type-detection-from-flow-schema" href="#automatic-type-detection-from-flow-schema" class="mr-2" aria-hidden="true" title="Permalink">#</a>Automatic Type Detection from Flow Schema</h4>
 <p>By default, <code>DbalLoader</code> automatically detects column types from the Flow Schema of your data:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\Adapter\Doctrine\to_dbal_table_insert;
 
@@ -487,7 +487,7 @@ data_frame()
     -&gt;run();
 // Types are automatically detected from the Flow Schema
 </code></pre>
-<h4><a id="flow-php-manual-type-override" href="#content-manual-type-override" class="mr-2" aria-hidden="true" title="Permalink">#</a>Manual Type Override</h4>
+<h4><a id="manual-type-override" href="#manual-type-override" class="mr-2" aria-hidden="true" title="Permalink">#</a>Manual Type Override</h4>
 <p>You can override specific column types for fine-grained control:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\Adapter\Doctrine\to_dbal_table_insert;
 use Doctrine\DBAL\Types\Type;
@@ -503,7 +503,7 @@ data_frame()
         ]))
     -&gt;run();
 </code></pre>
-<h4><a id="flow-php-custom-type-detector" href="#content-custom-type-detector" class="mr-2" aria-hidden="true" title="Permalink">#</a>Custom Type Detector</h4>
+<h4><a id="custom-type-detector" href="#custom-type-detector" class="mr-2" aria-hidden="true" title="Permalink">#</a>Custom Type Detector</h4>
 <p>For advanced scenarios, you can provide a custom type detector with your own type mapping:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\Adapter\Doctrine\to_dbal_table_insert;
 use Flow\ETL\Adapter\Doctrine\{DbalTypesDetector, TypesMap};
@@ -520,7 +520,7 @@ data_frame()
         -&gt;withTypesDetector(new DbalTypesDetector($customTypesMap)))
     -&gt;run();
 </code></pre>
-<h4><a id="flow-php-data-normalization" href="#content-data-normalization" class="mr-2" aria-hidden="true" title="Permalink">#</a>Data Normalization</h4>
+<h4><a id="data-normalization" href="#data-normalization" class="mr-2" aria-hidden="true" title="Permalink">#</a>Data Normalization</h4>
 <p><code>DbalLoader</code> automatically handles data normalization for database compatibility:</p>
 <ul>
 <li><strong>XML Entries</strong>: <code>XMLEntry</code> and <code>XMLElementEntry</code> objects are automatically converted to their string representation</li>
@@ -539,21 +539,21 @@ data_frame()
     -&gt;run();
 // XML entries are automatically converted to strings before database insertion
 </code></pre>
-<h2><a id="flow-php-extractor---dbalquery" href="#content-extractor---dbalquery" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extractor - DbalQuery</h2>
+<h2><a id="extractor---dbalquery" href="#extractor---dbalquery" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extractor - DbalQuery</h2>
 <p>This simple but powerful extractor let you extract data from a single or multiple parametrized queries.</p>
-<h3><a id="flow-php-single-query" href="#content-single-query" class="mr-2" aria-hidden="true" title="Permalink">#</a>Single Query</h3>
+<h3><a id="single-query" href="#single-query" class="mr-2" aria-hidden="true" title="Permalink">#</a>Single Query</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
     -&gt;read(DbalQueryExtractor::singleQuery($connection, "SELECT * FROM {$table} ORDER BY id"))
     -&gt;write(to_())
     -&gt;run()
 </code></pre>
-<h3><a id="flow-php-single-parametrized-query" href="#content-single-parametrized-query" class="mr-2" aria-hidden="true" title="Permalink">#</a>Single Parametrized Query</h3>
+<h3><a id="single-parametrized-query" href="#single-parametrized-query" class="mr-2" aria-hidden="true" title="Permalink">#</a>Single Parametrized Query</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
     -&gt;read(DbalQueryExtractor::singleQuery($connection, "SELECT * FROM {$table} WHERE id = :id", ['id' =&gt; 1]))
     -&gt;write(to_())
     -&gt;run()
 </code></pre>
-<h3><a id="flow-php-multiple-parametrized-query" href="#content-multiple-parametrized-query" class="mr-2" aria-hidden="true" title="Permalink">#</a>Multiple Parametrized Query</h3>
+<h3><a id="multiple-parametrized-query" href="#multiple-parametrized-query" class="mr-2" aria-hidden="true" title="Permalink">#</a>Multiple Parametrized Query</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">data_frame()
     -&gt;read(
         new DbalQueryExtractor(
@@ -572,7 +572,7 @@ data_frame()
     -&gt;run()
 </code></pre>
 <p>In this case, query will be executed exactly five times, taking every time next entry of parameters from ParametersSet.</p>
-<h2><a id="flow-php-schema-converter" href="#content-schema-converter" class="mr-2" aria-hidden="true" title="Permalink">#</a>Schema Converter</h2>
+<h2><a id="schema-converter" href="#schema-converter" class="mr-2" aria-hidden="true" title="Permalink">#</a>Schema Converter</h2>
 <p>With <code>to_dbal_schema_table()</code> function we can convert any Flow Schema (which represents a dataset)
 to Doctrine DBAL Schema Table.</p>
 <p>By providing metadata defined in <code>\Flow\ETL\Adapter\Doctrine\DbalMetadata</code> we can also add additional information to the schema,
@@ -636,7 +636,7 @@ new Table(
     ]
 );
 </code></pre>
-<h3><a id="flow-php-schema-converter---types-map" href="#content-schema-converter---types-map" class="mr-2" aria-hidden="true" title="Permalink">#</a>Schema Converter - Types Map</h3>
+<h3><a id="schema-converter---types-map" href="#schema-converter---types-map" class="mr-2" aria-hidden="true" title="Permalink">#</a>Schema Converter - Types Map</h3>
 <p>When types map is not provided, the default one will be used:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">public const FLOW_TYPES = [
     StringType::class =&gt; \Doctrine\DBAL\Types\StringType::class,

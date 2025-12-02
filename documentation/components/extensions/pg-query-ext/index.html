@@ -427,13 +427,13 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-pg-query-extension" href="#content-pg-query-extension" class="mr-2" aria-hidden="true" title="Permalink">#</a>PG Query Extension</h1>
+            <h1><a id="pg-query-extension" href="#pg-query-extension" class="mr-2" aria-hidden="true" title="Permalink">#</a>PG Query Extension</h1>
 <ul>
 <li><a href="/documentation/introduction">⬅️️ Back</a></li>
 </ul>
 <p>A compiled PHP extension for PostgreSQL query parsing using <a rel="noopener noreferrer" target="_blank" href="https://github.com/pganalyze/libpg_query">libpg_query</a>.</p>
 <p>This extension provides low-level functions for parsing PostgreSQL SQL queries. For a higher-level, object-oriented interface with strongly-typed AST nodes, see the <a href="/documentation/components/libs/pg-query">pg-query library</a>.</p>
-<h2><a id="flow-php-features" href="#content-features" class="mr-2" aria-hidden="true" title="Permalink">#</a>Features</h2>
+<h2><a id="features" href="#features" class="mr-2" aria-hidden="true" title="Permalink">#</a>Features</h2>
 <ul>
 <li>Parse PostgreSQL SQL queries into JSON or protobuf AST</li>
 <li>Generate query fingerprints for query grouping</li>
@@ -444,7 +444,7 @@
 <li>Scan SQL into tokens</li>
 <li>Generate query summaries for logging/monitoring</li>
 </ul>
-<h2><a id="flow-php-requirements" href="#content-requirements" class="mr-2" aria-hidden="true" title="Permalink">#</a>Requirements</h2>
+<h2><a id="requirements" href="#requirements" class="mr-2" aria-hidden="true" title="Permalink">#</a>Requirements</h2>
 <ul>
 <li>PHP 8.2+</li>
 <li>C compiler (gcc/clang)</li>
@@ -452,8 +452,8 @@
 <li>make</li>
 <li>protobuf-c library</li>
 </ul>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
-<h3><a id="flow-php-using-pie-recommended" href="#content-using-pie-recommended" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using PIE (Recommended)</h3>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h3><a id="using-pie-recommended" href="#using-pie-recommended" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using PIE (Recommended)</h3>
 <p><a rel="noopener noreferrer" target="_blank" href="https://github.com/php/pie">PIE</a> is the modern PHP extension installer.</p>
 <pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight"># Simple installation (auto-downloads libpg_query for PostgreSQL 17)
 pie install flow-php/pg-query-ext
@@ -462,7 +462,7 @@ pie install flow-php/pg-query-ext
 pie install flow-php/pg-query-ext --with-pg-version=16
 </code></pre>
 <p>The extension will automatically download and build the appropriate libpg_query version. Build dependencies (<code>protobuf-c</code>, <code>git</code>, <code>make</code>, <code>gcc</code>) must be available on your system.</p>
-<h3><a id="flow-php-supported-postgresql-versions" href="#content-supported-postgresql-versions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Supported PostgreSQL Versions</h3>
+<h3><a id="supported-postgresql-versions" href="#supported-postgresql-versions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Supported PostgreSQL Versions</h3>
 <table>
 <thead>
 <tr>
@@ -485,14 +485,14 @@ pie install flow-php/pg-query-ext --with-pg-version=16
 </tr>
 </tbody>
 </table>
-<h2><a id="flow-php-loading-the-extension" href="#content-loading-the-extension" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loading the Extension</h2>
-<h3><a id="flow-php-in-phpini" href="#content-in-phpini" class="mr-2" aria-hidden="true" title="Permalink">#</a>In php.ini</h3>
+<h2><a id="loading-the-extension" href="#loading-the-extension" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loading the Extension</h2>
+<h3><a id="in-phpini" href="#in-phpini" class="mr-2" aria-hidden="true" title="Permalink">#</a>In php.ini</h3>
 <pre class="language-ini"><code class="language-ini" data-controller="syntax-highlight">extension=pg_query
 </code></pre>
-<h3><a id="flow-php-during-development" href="#content-during-development" class="mr-2" aria-hidden="true" title="Permalink">#</a>During Development</h3>
+<h3><a id="during-development" href="#during-development" class="mr-2" aria-hidden="true" title="Permalink">#</a>During Development</h3>
 <pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight">php -d extension=/path/to/pg_query.so your_script.php
 </code></pre>
-<h2><a id="flow-php-usage" href="#content-usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h2>
+<h2><a id="usage" href="#usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 // Parse SQL and return JSON AST
@@ -551,7 +551,7 @@ $sql = pg_query_deparse_opts(
 // Generate query summary (protobuf format, useful for logging)
 $summary = pg_query_summary('SELECT * FROM users WHERE id = 1');
 </code></pre>
-<h2><a id="flow-php-functions-reference" href="#content-functions-reference" class="mr-2" aria-hidden="true" title="Permalink">#</a>Functions Reference</h2>
+<h2><a id="functions-reference" href="#functions-reference" class="mr-2" aria-hidden="true" title="Permalink">#</a>Functions Reference</h2>
 <table>
 <thead>
 <tr>
@@ -618,7 +618,7 @@ $summary = pg_query_summary('SELECT * FROM users WHERE id = 1');
 </tr>
 </tbody>
 </table>
-<h3><a id="flow-php-pgquerydeparseopts-parameters" href="#content-pgquerydeparseopts-parameters" class="mr-2" aria-hidden="true" title="Permalink">#</a>pg_query_deparse_opts Parameters</h3>
+<h3><a id="pgquerydeparseopts-parameters" href="#pgquerydeparseopts-parameters" class="mr-2" aria-hidden="true" title="Permalink">#</a>pg_query_deparse_opts Parameters</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">pg_query_deparse_opts(
     string $protobuf,           // Protobuf AST from pg_query_parse_protobuf()
     bool $pretty_print = false, // Enable pretty printing
@@ -628,7 +628,7 @@ $summary = pg_query_summary('SELECT * FROM users WHERE id = 1');
     bool $commas_start_of_line = false // Place commas at line start
 ): string
 </code></pre>
-<h2><a id="flow-php-error-handling" href="#content-error-handling" class="mr-2" aria-hidden="true" title="Permalink">#</a>Error Handling</h2>
+<h2><a id="error-handling" href="#error-handling" class="mr-2" aria-hidden="true" title="Permalink">#</a>Error Handling</h2>
 <p>The extension throws <code>RuntimeException</code> on parse errors:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -638,8 +638,8 @@ try {
     echo "Parse error: " . $e-&gt;getMessage();
 }
 </code></pre>
-<h2><a id="flow-php-development" href="#content-development" class="mr-2" aria-hidden="true" title="Permalink">#</a>Development</h2>
-<h3><a id="flow-php-build-commands" href="#content-build-commands" class="mr-2" aria-hidden="true" title="Permalink">#</a>Build Commands</h3>
+<h2><a id="development" href="#development" class="mr-2" aria-hidden="true" title="Permalink">#</a>Development</h2>
+<h3><a id="build-commands" href="#build-commands" class="mr-2" aria-hidden="true" title="Permalink">#</a>Build Commands</h3>
 <pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight"># Build and run tests
 make test
 
@@ -655,7 +655,7 @@ make clean
 # Remove everything including libpg_query
 make distclean
 </code></pre>
-<h3><a id="flow-php-modifying-the-extension" href="#content-modifying-the-extension" class="mr-2" aria-hidden="true" title="Permalink">#</a>Modifying the Extension</h3>
+<h3><a id="modifying-the-extension" href="#modifying-the-extension" class="mr-2" aria-hidden="true" title="Permalink">#</a>Modifying the Extension</h3>
 <p>When modifying the C source files:</p>
 <pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight"># Inside nix-shell with --arg with-pg-query-ext true
 cd src/extension/pg-query-ext
@@ -664,7 +664,7 @@ make rebuild
 # Test your changes
 make test
 </code></pre>
-<h2><a id="flow-php-architecture" href="#content-architecture" class="mr-2" aria-hidden="true" title="Permalink">#</a>Architecture</h2>
+<h2><a id="architecture" href="#architecture" class="mr-2" aria-hidden="true" title="Permalink">#</a>Architecture</h2>
 <p>The extension is built on top of <a rel="noopener noreferrer" target="_blank" href="https://github.com/pganalyze/libpg_query">libpg_query</a>, which extracts PostgreSQL's query parser into a standalone library. This means you get the exact same SQL parsing behavior as PostgreSQL itself.</p>
 <p>Key implementation details:</p>
 <ul>
@@ -672,7 +672,7 @@ make test
 <li><strong>Build dependency</strong>: Requires <code>protobuf-c</code> library for compilation (libpg_query uses protobuf internally)</li>
 <li><strong>Auto-download</strong>: The build system automatically downloads the correct libpg_query version</li>
 </ul>
-<h2><a id="flow-php-see-also" href="#content-see-also" class="mr-2" aria-hidden="true" title="Permalink">#</a>See Also</h2>
+<h2><a id="see-also" href="#see-also" class="mr-2" aria-hidden="true" title="Permalink">#</a>See Also</h2>
 <ul>
 <li><a href="/documentation/components/libs/pg-query">pg-query library</a> - Higher-level PHP wrapper with strongly-typed AST nodes</li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/pganalyze/libpg_query">libpg_query</a> - The underlying C library</li>

@@ -427,7 +427,7 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-snappy" href="#content-snappy" class="mr-2" aria-hidden="true" title="Permalink">#</a>Snappy</h1>
+            <h1><a id="snappy" href="#snappy" class="mr-2" aria-hidden="true" title="Permalink">#</a>Snappy</h1>
 <ul>
 <li><a href="/documentation/introduction">⬅️️ Back</a></li>
 <li><a href="/documentation/api/lib/snappy">📚API Reference</a></li>
@@ -437,17 +437,17 @@
 <p>This library is a port of javascript <a rel="noopener noreferrer" target="_blank" href="https://github.com/zhipeng-jia/snappyjs">snappyjs</a>.
 Whenever it's possible it's recommended to install <a rel="noopener noreferrer" target="_blank" href="https://github.com/kjdev/php-ext-snappy">PHP Extension</a>,
 otherwise this lib will register polyfill functions.</p>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/snappy:~0.28.0
 </code></pre>
-<h2><a id="flow-php-usage" href="#content-usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h2>
+<h2><a id="usage" href="#usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 $string = 'This is some random string';
 
 echo \snappy_decompress(\snappy_compress($string)); // This is some random string
 </code></pre>
-<h2><a id="flow-php-performance" href="#content-performance" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance</h2>
+<h2><a id="performance" href="#performance" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance</h2>
 <p>PHP Implementation is significantly slower than extension, below you can find a benchmark script and results:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 

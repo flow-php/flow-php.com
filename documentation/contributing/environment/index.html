@@ -427,7 +427,7 @@
                 </a>
             </div>
 
-            <h2><a id="flow-php-prepare-project" href="#content-prepare-project" class="mr-2" aria-hidden="true" title="Permalink">#</a>Prepare Project:</h2>
+            <h2><a id="prepare-project" href="#prepare-project" class="mr-2" aria-hidden="true" title="Permalink">#</a>Prepare Project:</h2>
 <p>To run tests locally, please make sure you have <a rel="noopener noreferrer" target="_blank" href="https://www.docker.com/">docker</a> up and running.
 You also need <a rel="noopener noreferrer" target="_blank" href="https://www.php.net/">PHP 8.2</a> and <a rel="noopener noreferrer" target="_blank" href="https://getcomposer.org/">composer</a> to be available from your CLI.
 Even though we are supporting 3 PHP versions at the time, we are using the lowest supported one for development, currently it's PHP 8.2.</p>
@@ -439,7 +439,7 @@ docker compose up -d
 </code></pre>
 <p>For the code coverage, please install <a rel="noopener noreferrer" target="_blank" href="https://pecl.php.net/package/pcov">pcov</a>.</p>
 <p>Pcov extension is not mandatory, and tests are going to pass without it; however, you won't be able to run mutation tests.</p>
-<h2><a id="flow-php-run-test-suite" href="#content-run-test-suite" class="mr-2" aria-hidden="true" title="Permalink">#</a>Run Test Suite</h2>
+<h2><a id="run-test-suite" href="#run-test-suite" class="mr-2" aria-hidden="true" title="Permalink">#</a>Run Test Suite</h2>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer test
 </code></pre>
 <p>Above command will run all tests, including those that require custom extensions.
@@ -450,13 +450,13 @@ composer test:lib:parquet
 composer test:adapter:csv
 composer test:bridge:symfony-http-foundation
 </code></pre>
-<h2><a id="flow-php-run-static-analyze" href="#content-run-static-analyze" class="mr-2" aria-hidden="true" title="Permalink">#</a>Run Static Analyze</h2>
+<h2><a id="run-static-analyze" href="#run-static-analyze" class="mr-2" aria-hidden="true" title="Permalink">#</a>Run Static Analyze</h2>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer static:analyze
 </code></pre>
 <p><strong>Important</strong> static analyze <strong>MUST</strong> be executed at the lowest supported PHP version
 and with dependencies locked by <code>composer.lock</code>.
 Please make sure to use PHP 8.2 and that you used the <code>composer install</code> command first.</p>
-<h2><a id="flow-php-fixing-coding-standards" href="#content-fixing-coding-standards" class="mr-2" aria-hidden="true" title="Permalink">#</a>Fixing Coding Standards</h2>
+<h2><a id="fixing-coding-standards" href="#fixing-coding-standards" class="mr-2" aria-hidden="true" title="Permalink">#</a>Fixing Coding Standards</h2>
 <p>Before committing your code, please make sure that your code is following our coding standards.</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer cs:php:fix
 </code></pre>
@@ -465,22 +465,22 @@ If you want to first check what needs to be fixed, you can use:</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer static:analyze:cs-fixer
 composer static:analyze:rector
 </code></pre>
-<h2><a id="flow-php-test-everything" href="#content-test-everything" class="mr-2" aria-hidden="true" title="Permalink">#</a>Test everything</h2>
+<h2><a id="test-everything" href="#test-everything" class="mr-2" aria-hidden="true" title="Permalink">#</a>Test everything</h2>
 <p>This command will execute exactly the same tests as we run at GitHub Actions before a PR can get merged.
 If it passes locally, you are good to open a pull request.</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer build 
 </code></pre>
-<h2><a id="flow-php-building-documentation" href="#content-building-documentation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building Documentation</h2>
+<h2><a id="building-documentation" href="#building-documentation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building Documentation</h2>
 <p>Since documentation for DSL and our entire API is automatically generated, you can build it by running:</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer build:docs
 composer build:docs:api
 </code></pre>
 <p><code>composer build:docs</code> must be executed after any adjustments to <code>functions.php</code> files (DSL).</p>
-<h2><a id="flow-php-building-phar" href="#content-building-phar" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building PHAR</h2>
+<h2><a id="building-phar" href="#building-phar" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building PHAR</h2>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer build:phar
 ./build/flow.phar --version
 </code></pre>
-<h2><a id="flow-php-building-docker-image" href="#content-building-docker-image" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building Docker Image</h2>
+<h2><a id="building-docker-image" href="#building-docker-image" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building Docker Image</h2>
 <p>In order to build docker image and load it to local registry please use:</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">docker buildx build -t flow-php/flow:latest . --progress=plain --load
 </code></pre>

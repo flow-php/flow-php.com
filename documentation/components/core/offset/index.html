@@ -427,14 +427,14 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-offset" href="#content-offset" class="mr-2" aria-hidden="true" title="Permalink">#</a>Offset</h1>
+            <h1><a id="offset" href="#offset" class="mr-2" aria-hidden="true" title="Permalink">#</a>Offset</h1>
 <ul>
 <li><a href="/documentation/components/core/core">⬅️️ Back</a></li>
 </ul>
 <p>The offset operation skips a specified number of rows from the beginning of the dataset, commonly used for pagination
 and data sampling.</p>
-<h2><a id="flow-php-basic-offset-usage" href="#content-basic-offset-usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Basic Offset Usage</h2>
-<h3><a id="flow-php-offset---skip-rows-from-beginning" href="#content-offset---skip-rows-from-beginning" class="mr-2" aria-hidden="true" title="Permalink">#</a>offset() - Skip rows from beginning</h3>
+<h2><a id="basic-offset-usage" href="#basic-offset-usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Basic Offset Usage</h2>
+<h3><a id="offset---skip-rows-from-beginning" href="#offset---skip-rows-from-beginning" class="mr-2" aria-hidden="true" title="Permalink">#</a>offset() - Skip rows from beginning</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\ETL\DSL\{data_frame, from_array, to_output};
@@ -453,7 +453,7 @@ $dataFrame = data_frame()
 
 // Output: Charlie, David, Eve
 </code></pre>
-<h2><a id="flow-php-performance-considerations" href="#content-performance-considerations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance Considerations</h2>
+<h2><a id="performance-considerations" href="#performance-considerations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance Considerations</h2>
 <blockquote>
 <p><strong>⚠️ Performance Warning</strong>: The <code>offset()</code> method must iterate through and process all skipped rows to reach the
 offset position. For large offsets (e.g., <code>offset(1000000)</code>), this can significantly impact performance as the DataFrame

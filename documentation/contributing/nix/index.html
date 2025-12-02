@@ -427,7 +427,7 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-nix---development-environment" href="#content-nix---development-environment" class="mr-2" aria-hidden="true" title="Permalink">#</a>Nix - Development Environment</h1>
+            <h1><a id="nix---development-environment" href="#nix---development-environment" class="mr-2" aria-hidden="true" title="Permalink">#</a>Nix - Development Environment</h1>
 <p>Nix is probably the easiest way of setting up the development environment.</p>
 <p>Before you start please make sure you have Nix installed.
 If you don't have it installed, you can install it by following official documentation.</p>
@@ -456,12 +456,12 @@ and type:</p>
 It will look like this:</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">php is /nix/store/p2m5bamh01ncpwjxscdl11p2m9xy8aq6-php-with-extensions-8.2.27/bin/php
 </code></pre>
-<h2><a id="flow-php-phpini" href="#content-phpini" class="mr-2" aria-hidden="true" title="Permalink">#</a>php.ini</h2>
+<h2><a id="phpini" href="#phpini" class="mr-2" aria-hidden="true" title="Permalink">#</a>php.ini</h2>
 <p>Nix shell comes with predefined php.ini, but if for any reason
 it wouldn't be enough for you, you can create your own php.ini file in path:</p>
 <p><code>./.nix/php/lib/php.ini</code></p>
 <p>If that file is not present, the default php.ini.dist from the same location will be used.</p>
-<h2><a id="flow-php-pcov" href="#content-pcov" class="mr-2" aria-hidden="true" title="Permalink">#</a>Pcov</h2>
+<h2><a id="pcov" href="#pcov" class="mr-2" aria-hidden="true" title="Permalink">#</a>Pcov</h2>
 <ul>
 <li><code>pcov</code> - required for code coverage</li>
 </ul>
@@ -470,7 +470,7 @@ it wouldn't be enough for you, you can create your own php.ini file in path:</p>
 nix-shell --arg with-pcov false
 </code></pre>
 <p>To configure pcov, you can create a file <code>./.nix/php/lib/pcov.ini</code> with your xdebug configuration.</p>
-<h2><a id="flow-php-xdebug" href="#content-xdebug" class="mr-2" aria-hidden="true" title="Permalink">#</a>Xdebug</h2>
+<h2><a id="xdebug" href="#xdebug" class="mr-2" aria-hidden="true" title="Permalink">#</a>Xdebug</h2>
 <ul>
 <li><code>xdebug</code> - required for debugging</li>
 </ul>
@@ -478,7 +478,7 @@ nix-shell --arg with-pcov false
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg with-xdebug true
 </code></pre>
 <p>To configure xdebug, you can create a file <code>./.nix/php/lib/xdebug.ini</code> with your xdebug configuration.</p>
-<h2><a id="flow-php-blackfire" href="#content-blackfire" class="mr-2" aria-hidden="true" title="Permalink">#</a>Blackfire</h2>
+<h2><a id="blackfire" href="#blackfire" class="mr-2" aria-hidden="true" title="Permalink">#</a>Blackfire</h2>
 <ul>
 <li><code>blackfire</code> - required for profiling</li>
 </ul>
@@ -486,7 +486,7 @@ nix-shell --arg with-pcov false
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg with-blackfire true
 </code></pre>
 <p>To configure blackfire, you can create a file <code>./.nix/php/lib/blackfire.ini</code> with your blackfire configuration.</p>
-<h2><a id="flow-php-changing-php-versions" href="#content-changing-php-versions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changing PHP Versions</h2>
+<h2><a id="changing-php-versions" href="#changing-php-versions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changing PHP Versions</h2>
 <p>To change the PHP version, you can run nix shell with <code>--arg php-version 8.3</code> flag:</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg php-version 8.3
 </code></pre>
@@ -496,18 +496,18 @@ be done on the lowest supported PHP version.</p>
 <p>This feature is mostly for testing new integrations
 or lowest/highest versions of dependencies.</p>
 </blockquote>
-<h2><a id="flow-php-optional-tool-groups" href="#content-optional-tool-groups" class="mr-2" aria-hidden="true" title="Permalink">#</a>Optional Tool Groups</h2>
+<h2><a id="optional-tool-groups" href="#optional-tool-groups" class="mr-2" aria-hidden="true" title="Permalink">#</a>Optional Tool Groups</h2>
 <p>The nix shell supports optional tool groups that can be enabled when needed.
 This keeps the default shell lightweight while allowing access to specialized tools.</p>
-<h3><a id="flow-php-wasm-build-tools" href="#content-wasm-build-tools" class="mr-2" aria-hidden="true" title="Permalink">#</a>WASM Build Tools</h3>
+<h3><a id="wasm-build-tools" href="#wasm-build-tools" class="mr-2" aria-hidden="true" title="Permalink">#</a>WASM Build Tools</h3>
 <p>To include tools for building WebAssembly (emscripten, autoconf, wget, etc.):</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg with-wasm true
 </code></pre>
-<h3><a id="flow-php-terraform" href="#content-terraform" class="mr-2" aria-hidden="true" title="Permalink">#</a>Terraform</h3>
+<h3><a id="terraform" href="#terraform" class="mr-2" aria-hidden="true" title="Permalink">#</a>Terraform</h3>
 <p>To include Terraform and Node.js for infrastructure development:</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg with-terraform true
 </code></pre>
-<h3><a id="flow-php-pg-query-ext-extension" href="#content-pg-query-ext-extension" class="mr-2" aria-hidden="true" title="Permalink">#</a>pg-query-ext Extension</h3>
+<h3><a id="pg-query-ext-extension" href="#pg-query-ext-extension" class="mr-2" aria-hidden="true" title="Permalink">#</a>pg-query-ext Extension</h3>
 <p>To include the <code>pg-query-ext</code> PHP extension (PostgreSQL SQL parser):</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg with-pg-query-ext true
 </code></pre>
@@ -519,11 +519,11 @@ This keeps the default shell lightweight while allowing access to specialized to
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">cd src/extension/pg-query-ext &amp;&amp; make rebuild
 </code></pre>
 <p>Note: Re-entering nix-shell will also rebuild the extension if sources changed.</p>
-<h3><a id="flow-php-combining-multiple-options" href="#content-combining-multiple-options" class="mr-2" aria-hidden="true" title="Permalink">#</a>Combining Multiple Options</h3>
+<h3><a id="combining-multiple-options" href="#combining-multiple-options" class="mr-2" aria-hidden="true" title="Permalink">#</a>Combining Multiple Options</h3>
 <p>You can combine multiple arguments:</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">nix-shell --arg with-terraform true --arg with-wasm true
 </code></pre>
-<h2><a id="flow-php-local-webserver" href="#content-local-webserver" class="mr-2" aria-hidden="true" title="Permalink">#</a>Local Webserver</h2>
+<h2><a id="local-webserver" href="#local-webserver" class="mr-2" aria-hidden="true" title="Permalink">#</a>Local Webserver</h2>
 <p>To run the local webserver for Flow Website development, please use Symfony CLI app
 that is also available in nix shell.</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">cd web/landing

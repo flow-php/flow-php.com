@@ -427,17 +427,17 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-pg-query" href="#content-pg-query" class="mr-2" aria-hidden="true" title="Permalink">#</a>PG Query</h1>
+            <h1><a id="pg-query" href="#pg-query" class="mr-2" aria-hidden="true" title="Permalink">#</a>PG Query</h1>
 <ul>
 <li><a href="/documentation/introduction">⬅️️ Back</a></li>
 </ul>
 <p>PostgreSQL Query Parser library provides strongly-typed AST (Abstract Syntax Tree) parsing for PostgreSQL SQL queries using the <a rel="noopener noreferrer" target="_blank" href="https://github.com/pganalyze/libpg_query">libpg_query</a> library through a PHP extension.</p>
-<h2><a id="flow-php-requirements" href="#content-requirements" class="mr-2" aria-hidden="true" title="Permalink">#</a>Requirements</h2>
+<h2><a id="requirements" href="#requirements" class="mr-2" aria-hidden="true" title="Permalink">#</a>Requirements</h2>
 <p>This library requires the <code>pg_query</code> PHP extension. See <a href="/documentation/components/extensions/pg-query-ext">pg-query-ext documentation</a> for installation instructions.</p>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/pg-query:~0.28.0
 </code></pre>
-<h2><a id="flow-php-quick-start" href="#content-quick-start" class="mr-2" aria-hidden="true" title="Permalink">#</a>Quick Start</h2>
+<h2><a id="quick-start" href="#quick-start" class="mr-2" aria-hidden="true" title="Permalink">#</a>Quick Start</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\PgQuery\DSL\pg_parse;
@@ -465,7 +465,7 @@ foreach ($query-&gt;functions() as $func) {
     echo $func-&gt;schema(); // schema if qualified (e.g., 'pg_catalog')
 }
 </code></pre>
-<h2><a id="flow-php-parser-class" href="#content-parser-class" class="mr-2" aria-hidden="true" title="Permalink">#</a>Parser Class</h2>
+<h2><a id="parser-class" href="#parser-class" class="mr-2" aria-hidden="true" title="Permalink">#</a>Parser Class</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use Flow\PgQuery\Parser;
@@ -496,7 +496,7 @@ $statements = $parser-&gt;split('SELECT 1; SELECT 2;');
 // Generate query summary (protobuf format, useful for logging)
 $summary = $parser-&gt;summary('SELECT * FROM users WHERE id = 1');
 </code></pre>
-<h2><a id="flow-php-dsl-functions" href="#content-dsl-functions" class="mr-2" aria-hidden="true" title="Permalink">#</a>DSL Functions</h2>
+<h2><a id="dsl-functions" href="#dsl-functions" class="mr-2" aria-hidden="true" title="Permalink">#</a>DSL Functions</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\PgQuery\DSL\{
@@ -531,7 +531,7 @@ $formatted = pg_format('SELECT id,name FROM users WHERE active=true');
 // FROM users
 // WHERE active = true
 </code></pre>
-<h2><a id="flow-php-parsedquery-methods" href="#content-parsedquery-methods" class="mr-2" aria-hidden="true" title="Permalink">#</a>ParsedQuery Methods</h2>
+<h2><a id="parsedquery-methods" href="#parsedquery-methods" class="mr-2" aria-hidden="true" title="Permalink">#</a>ParsedQuery Methods</h2>
 <table>
 <thead>
 <tr>
@@ -573,7 +573,7 @@ $formatted = pg_format('SELECT id,name FROM users WHERE active=true');
 </tr>
 </tbody>
 </table>
-<h2><a id="flow-php-deparsing-ast-to-sql" href="#content-deparsing-ast-to-sql" class="mr-2" aria-hidden="true" title="Permalink">#</a>Deparsing (AST to SQL)</h2>
+<h2><a id="deparsing-ast-to-sql" href="#deparsing-ast-to-sql" class="mr-2" aria-hidden="true" title="Permalink">#</a>Deparsing (AST to SQL)</h2>
 <p>Convert a parsed query back to SQL, optionally with pretty-printing:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -604,7 +604,7 @@ $sql = $query-&gt;deparse(
         -&gt;commasStartOfLine()     // Place commas at line start
 );
 </code></pre>
-<h3><a id="flow-php-deparseoptions" href="#content-deparseoptions" class="mr-2" aria-hidden="true" title="Permalink">#</a>DeparseOptions</h3>
+<h3><a id="deparseoptions" href="#deparseoptions" class="mr-2" aria-hidden="true" title="Permalink">#</a>DeparseOptions</h3>
 <table>
 <thead>
 <tr>
@@ -641,7 +641,7 @@ $sql = $query-&gt;deparse(
 </tr>
 </tbody>
 </table>
-<h2><a id="flow-php-custom-ast-traversal" href="#content-custom-ast-traversal" class="mr-2" aria-hidden="true" title="Permalink">#</a>Custom AST Traversal</h2>
+<h2><a id="custom-ast-traversal" href="#custom-ast-traversal" class="mr-2" aria-hidden="true" title="Permalink">#</a>Custom AST Traversal</h2>
 <p>For advanced use cases, you can traverse the AST with custom visitors:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -678,7 +678,7 @@ $query-&gt;traverse($counter);
 
 echo $counter-&gt;count; // 3
 </code></pre>
-<h3><a id="flow-php-nodevisitor-interface" href="#content-nodevisitor-interface" class="mr-2" aria-hidden="true" title="Permalink">#</a>NodeVisitor Interface</h3>
+<h3><a id="nodevisitor-interface" href="#nodevisitor-interface" class="mr-2" aria-hidden="true" title="Permalink">#</a>NodeVisitor Interface</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">interface NodeVisitor
 {
     public const DONT_TRAVERSE_CHILDREN = 1;
@@ -697,13 +697,13 @@ echo $counter-&gt;count; // 3
 <li><code>DONT_TRAVERSE_CHILDREN</code> - skip children (from <code>enter()</code> only)</li>
 <li><code>STOP_TRAVERSAL</code> - stop entire traversal</li>
 </ul>
-<h3><a id="flow-php-built-in-visitors" href="#content-built-in-visitors" class="mr-2" aria-hidden="true" title="Permalink">#</a>Built-in Visitors</h3>
+<h3><a id="built-in-visitors" href="#built-in-visitors" class="mr-2" aria-hidden="true" title="Permalink">#</a>Built-in Visitors</h3>
 <ul>
 <li><code>ColumnRefCollector</code> - collects all <code>ColumnRef</code> nodes</li>
 <li><code>FuncCallCollector</code> - collects all <code>FuncCall</code> nodes</li>
 <li><code>RangeVarCollector</code> - collects all <code>RangeVar</code> nodes</li>
 </ul>
-<h2><a id="flow-php-raw-ast-access" href="#content-raw-ast-access" class="mr-2" aria-hidden="true" title="Permalink">#</a>Raw AST Access</h2>
+<h2><a id="raw-ast-access" href="#raw-ast-access" class="mr-2" aria-hidden="true" title="Permalink">#</a>Raw AST Access</h2>
 <p>For full control, access the protobuf AST directly:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -724,7 +724,7 @@ foreach ($query-&gt;raw()-&gt;getStmts() as $stmt) {
     // ...
 }
 </code></pre>
-<h2><a id="flow-php-exception-handling" href="#content-exception-handling" class="mr-2" aria-hidden="true" title="Permalink">#</a>Exception Handling</h2>
+<h2><a id="exception-handling" href="#exception-handling" class="mr-2" aria-hidden="true" title="Permalink">#</a>Exception Handling</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use Flow\PgQuery\Parser;
@@ -742,7 +742,7 @@ try {
     echo "Parse error: " . $e-&gt;getMessage();
 }
 </code></pre>
-<h2><a id="flow-php-performance" href="#content-performance" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance</h2>
+<h2><a id="performance" href="#performance" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance</h2>
 <p>For optimal protobuf parsing performance, install the <code>ext-protobuf</code> PHP extension:</p>
 <pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight">pecl install protobuf
 </code></pre>

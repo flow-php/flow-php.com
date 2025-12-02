@@ -427,12 +427,12 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-constraints" href="#content-constraints" class="mr-2" aria-hidden="true" title="Permalink">#</a>Constraints</h1>
+            <h1><a id="constraints" href="#constraints" class="mr-2" aria-hidden="true" title="Permalink">#</a>Constraints</h1>
 <ul>
 <li><a href="/documentation/components/core/core">⬅️️ Back</a></li>
 </ul>
 <p>Data constraints allow you to apply business rules and data integrity checks to ensure data quality during processing. When a constraint is violated, a <code>ConstraintViolationException</code> is thrown with details about the violating row.</p>
-<h2><a id="flow-php-unique-constraints" href="#content-unique-constraints" class="mr-2" aria-hidden="true" title="Permalink">#</a>Unique Constraints</h2>
+<h2><a id="unique-constraints" href="#unique-constraints" class="mr-2" aria-hidden="true" title="Permalink">#</a>Unique Constraints</h2>
 <p>Ensure that values in specified columns are unique across the entire dataset.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -448,7 +448,7 @@ $dataFrame = data_frame()
     -&gt;write(to_output())
     -&gt;run();
 </code></pre>
-<h2><a id="flow-php-multiple-column-constraints" href="#content-multiple-column-constraints" class="mr-2" aria-hidden="true" title="Permalink">#</a>Multiple Column Constraints</h2>
+<h2><a id="multiple-column-constraints" href="#multiple-column-constraints" class="mr-2" aria-hidden="true" title="Permalink">#</a>Multiple Column Constraints</h2>
 <p>Ensure unique combinations across multiple columns:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -460,7 +460,7 @@ $dataFrame = data_frame()
     -&gt;write($loader)
     -&gt;run();
 </code></pre>
-<h2><a id="flow-php-custom-constraints" href="#content-custom-constraints" class="mr-2" aria-hidden="true" title="Permalink">#</a>Custom Constraints</h2>
+<h2><a id="custom-constraints" href="#custom-constraints" class="mr-2" aria-hidden="true" title="Permalink">#</a>Custom Constraints</h2>
 <p>You can implement custom constraints by creating classes that implement the <code>Constraint</code> interface:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 

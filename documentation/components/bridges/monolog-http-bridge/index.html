@@ -427,17 +427,17 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-monolog-http-bridge" href="#content-monolog-http-bridge" class="mr-2" aria-hidden="true" title="Permalink">#</a>Monolog HTTP Bridge</h1>
+            <h1><a id="monolog-http-bridge" href="#monolog-http-bridge" class="mr-2" aria-hidden="true" title="Permalink">#</a>Monolog HTTP Bridge</h1>
 <ul>
 <li><a href="/documentation/introduction">⬅️️ Back</a></li>
 <li><a href="/documentation/api/bridge/monolog/http">📚API Reference</a></li>
 <li><a href="/documentation/api/bridge/monolog/http/indices/files.html">📁Files</a></li>
 </ul>
 <p>Monolog HTTP Bridge is a package that iterates through LogRecord context and normalizes all instances of <code>Request</code> and <code>Response</code> from <a rel="noopener noreferrer" target="_blank" href="https://www.php-fig.org/psr/psr-7/">PSR7</a>.</p>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/monolog-http-bridge:~0.28.0
 </code></pre>
-<h2><a id="flow-php-usage" href="#content-usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h2>
+<h2><a id="usage" href="#usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h2>
 <p>To normalize Request/Response objects in Monolog you need to register monolog Processor.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -460,16 +460,16 @@ $logger-&gt;pushProcessor(
 );
 $logger-&gt;pushHandler(new StreamHandler(__DIR__ . '/logs.txt', LogLevel::DEBUG));
 </code></pre>
-<h2><a id="flow-php-configuration" href="#content-configuration" class="mr-2" aria-hidden="true" title="Permalink">#</a>Configuration</h2>
+<h2><a id="configuration" href="#configuration" class="mr-2" aria-hidden="true" title="Permalink">#</a>Configuration</h2>
 <p>The Processor can be configured to normalize Request/Response objects in different ways.</p>
 <p>For more details, please refer to the following classes:</p>
 <ul>
 <li><code>Flow\Bridge\Monolog\Http\Config\RequestConfig</code></li>
 <li><code>Flow\Bridge\Monolog\Http\Config\ResponseConfig</code></li>
 </ul>
-<h2><a id="flow-php-sanitization" href="#content-sanitization" class="mr-2" aria-hidden="true" title="Permalink">#</a>Sanitization</h2>
+<h2><a id="sanitization" href="#sanitization" class="mr-2" aria-hidden="true" title="Permalink">#</a>Sanitization</h2>
 <p>The bridge provides a way to sanitize sensitive data in the normalized Request/Response objects. This is useful for masking sensitive information like passwords, tokens, and other credentials.</p>
-<h3><a id="flow-php-using-sanitizers" href="#content-using-sanitizers" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using Sanitizers</h3>
+<h3><a id="using-sanitizers" href="#using-sanitizers" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using Sanitizers</h3>
 <p>You can configure sanitizers for both request and response objects:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -502,9 +502,9 @@ $logger-&gt;pushProcessor(
     )
 );
 </code></pre>
-<h3><a id="flow-php-sanitizer-types" href="#content-sanitizer-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Sanitizer Types</h3>
+<h3><a id="sanitizer-types" href="#sanitizer-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Sanitizer Types</h3>
 <p>Currently, the bridge supports the following sanitizer types:</p>
-<h4><a id="flow-php-mask-sanitizer" href="#content-mask-sanitizer" class="mr-2" aria-hidden="true" title="Permalink">#</a>Mask Sanitizer</h4>
+<h4><a id="mask-sanitizer" href="#mask-sanitizer" class="mr-2" aria-hidden="true" title="Permalink">#</a>Mask Sanitizer</h4>
 <p>The Mask sanitizer replaces characters in a string with a specified character. You can configure:</p>
 <ul>
 <li><code>character</code>: The character used for masking (default is '*')</li>
@@ -533,7 +533,7 @@ $sanitizer = mask('*', 2);
     'access_token' =&gt; ['type' =&gt; 'mask', 'character' =&gt; '#', 'offset' =&gt; 3],
 ];
 </code></pre>
-<h3><a id="flow-php-example" href="#content-example" class="mr-2" aria-hidden="true" title="Permalink">#</a>Example</h3>
+<h3><a id="example" href="#example" class="mr-2" aria-hidden="true" title="Permalink">#</a>Example</h3>
 <p>When you log a request with sensitive data:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$logger-&gt;info('HTTP Request', [
     'request' =&gt; $request, // PSR-7 request with sensitive data in the body

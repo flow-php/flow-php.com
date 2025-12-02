@@ -427,13 +427,13 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-batch-processing" href="#content-batch-processing" class="mr-2" aria-hidden="true" title="Permalink">#</a>Batch Processing</h1>
+            <h1><a id="batch-processing" href="#batch-processing" class="mr-2" aria-hidden="true" title="Permalink">#</a>Batch Processing</h1>
 <ul>
 <li><a href="/documentation/components/core/core">⬅️️ Back</a></li>
 </ul>
 <p>Batch processing controls how data flows through the DataFrame pipeline, affecting memory usage and performance.</p>
-<h2><a id="flow-php-batch-size-control" href="#content-batch-size-control" class="mr-2" aria-hidden="true" title="Permalink">#</a>Batch Size Control</h2>
-<h3><a id="flow-php-batchsize---control-processing-chunks" href="#content-batchsize---control-processing-chunks" class="mr-2" aria-hidden="true" title="Permalink">#</a>batchSize() - Control processing chunks</h3>
+<h2><a id="batch-size-control" href="#batch-size-control" class="mr-2" aria-hidden="true" title="Permalink">#</a>Batch Size Control</h2>
+<h3><a id="batchsize---control-processing-chunks" href="#batchsize---control-processing-chunks" class="mr-2" aria-hidden="true" title="Permalink">#</a>batchSize() - Control processing chunks</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\ETL\DSL\{data_frame, from_array, to_output};
@@ -449,7 +449,7 @@ $dataFrame = data_frame()
 <p><strong>Performance Tip</strong>: Optimal batch size depends on your data and available memory. Larger batches reduce I/O
 operations but increase memory usage. Start with 1000-5000 rows and adjust based on your specific use case.</p>
 </blockquote>
-<h3><a id="flow-php-batchby---group-related-records-together" href="#content-batchby---group-related-records-together" class="mr-2" aria-hidden="true" title="Permalink">#</a>batchBy() - Group related records together</h3>
+<h3><a id="batchby---group-related-records-together" href="#batchby---group-related-records-together" class="mr-2" aria-hidden="true" title="Permalink">#</a>batchBy() - Group related records together</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\ETL\DSL\{data_frame, from_array, to_database};
@@ -476,8 +476,8 @@ $dataFrame = data_frame()
 <blockquote>
 <p><strong>Use Case</strong>: If you're loading orders with line items and using a DELETE+INSERT pattern, <code>batchBy('order_id')</code> ensures all line items for an order are in the same batch, preventing foreign key violations.</p>
 </blockquote>
-<h2><a id="flow-php-data-collection" href="#content-data-collection" class="mr-2" aria-hidden="true" title="Permalink">#</a>Data Collection</h2>
-<h3><a id="flow-php-collect---load-all-data-into-memory" href="#content-collect---load-all-data-into-memory" class="mr-2" aria-hidden="true" title="Permalink">#</a>collect() - Load all data into memory</h3>
+<h2><a id="data-collection" href="#data-collection" class="mr-2" aria-hidden="true" title="Permalink">#</a>Data Collection</h2>
+<h3><a id="collect---load-all-data-into-memory" href="#collect---load-all-data-into-memory" class="mr-2" aria-hidden="true" title="Permalink">#</a>collect() - Load all data into memory</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 $dataFrame = data_frame()
@@ -497,8 +497,8 @@ with large datasets. Use only when:</p>
 <li>You're working with small to medium datasets</li>
 </ul>
 </blockquote>
-<h2><a id="flow-php-memory-management-strategies" href="#content-memory-management-strategies" class="mr-2" aria-hidden="true" title="Permalink">#</a>Memory Management Strategies</h2>
-<h2><a id="flow-php-monitoring-memory-usage" href="#content-monitoring-memory-usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Monitoring Memory Usage</h2>
+<h2><a id="memory-management-strategies" href="#memory-management-strategies" class="mr-2" aria-hidden="true" title="Permalink">#</a>Memory Management Strategies</h2>
+<h2><a id="monitoring-memory-usage" href="#monitoring-memory-usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Monitoring Memory Usage</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\ETL\DSL\analyze;

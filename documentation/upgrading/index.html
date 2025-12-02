@@ -427,12 +427,12 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-upgrade-guide" href="#content-upgrade-guide" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrade Guide</h1>
+            <h1><a id="upgrade-guide" href="#upgrade-guide" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrade Guide</h1>
 <p>This document provides guidelines for upgrading between versions of Flow PHP.
 Please follow the instructions for your specific version to ensure a smooth upgrade process.</p>
 <hr />
-<h2><a id="flow-php-upgrading-from-026x-to-027x" href="#content-upgrading-from-026x-to-027x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.26.x to 0.27.x</h2>
-<h3><a id="flow-php-1-force-entryfactory-entryfactory-to-be-required-on-arraytorow--arraytorows" href="#content-1-force-entryfactory-entryfactory-to-be-required-on-arraytorow--arraytorows" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Force <code>EntryFactory $entryFactory</code> to be required on <code>array_to_row</code> &amp; <code>array_to_row(s)</code></h3>
+<h2><a id="upgrading-from-026x-to-027x" href="#upgrading-from-026x-to-027x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.26.x to 0.27.x</h2>
+<h3><a id="1-force-entryfactory-entryfactory-to-be-required-on-arraytorow--arraytorows" href="#1-force-entryfactory-entryfactory-to-be-required-on-arraytorow--arraytorows" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Force <code>EntryFactory $entryFactory</code> to be required on <code>array_to_row</code> &amp; <code>array_to_row(s)</code></h3>
 <p>Before:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">to_entry('name', 'data');
 array_to_row([]);
@@ -443,27 +443,27 @@ array_to_rows([]);
 array_to_row([], flow_context(config())-&gt;entryFactory());
 array_to_rows([], flow_context(config())-&gt;entryFactory());
 </code></pre>
-<h2><a id="flow-php-upgrading-from-016x-to-017x" href="#content-upgrading-from-016x-to-017x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.16.x to 0.17.x</h2>
-<h3><a id="flow-php-1-removed-nullable-property-from-all-types" href="#content-1-removed-nullable-property-from-all-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Removed $nullable property from all types</h3>
+<h2><a id="upgrading-from-016x-to-017x" href="#upgrading-from-016x-to-017x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.16.x to 0.17.x</h2>
+<h3><a id="1-removed-nullable-property-from-all-types" href="#1-removed-nullable-property-from-all-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Removed $nullable property from all types</h3>
 <p>Before:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">type_string(nullable:true)-&gt;toString() // ?string
 </code></pre>
 <p>After:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">type_optional(string())-&gt;toString() // ?string
 </code></pre>
-<h3><a id="flow-php-2-removed-precision-from-floattype" href="#content-2-removed-precision-from-floattype" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Removed precision from <code>float_type()</code></h3>
+<h3><a id="2-removed-precision-from-floattype" href="#2-removed-precision-from-floattype" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Removed precision from <code>float_type()</code></h3>
 <p>Before <code>float_type()</code> use to have default precision 6. This means that any operations on float had to round values
 to given precision. The problem with this approach is that all operations now need to receive a dedicated rounding option.</p>
 <p>Instead, end users should handle precision of float columns through <code>round()</code> scalar function.</p>
-<h3><a id="flow-php-3-moved-all-types-to-flowtypestype-namespace" href="#content-3-moved-all-types-to-flowtypestype-namespace" class="mr-2" aria-hidden="true" title="Permalink">#</a>3) Moved all Types to <code>Flow\Types\Type</code> namespace</h3>
+<h3><a id="3-moved-all-types-to-flowtypestype-namespace" href="#3-moved-all-types-to-flowtypestype-namespace" class="mr-2" aria-hidden="true" title="Permalink">#</a>3) Moved all Types to <code>Flow\Types\Type</code> namespace</h3>
 <p>Before</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">\Flow\ETL\DSL\type_string(); // now deprecated, alias for \Flow\Types\DSL\type_string();
 </code></pre>
 <p>After</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">\Flow\Types\DSL\type_string();
 </code></pre>
-<h2><a id="flow-php-upgrading-from-015x-to-016x" href="#content-upgrading-from-015x-to-016x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.15.x to 0.16.x</h2>
-<h3><a id="flow-php-1-deprecated-flowetldataframerenameall-methods" href="#content-1-deprecated-flowetldataframerenameall-methods" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Deprecated <code>Flow\ETL\DataFrame::renameAll*</code> methods</h3>
+<h2><a id="upgrading-from-015x-to-016x" href="#upgrading-from-015x-to-016x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.15.x to 0.16.x</h2>
+<h3><a id="1-deprecated-flowetldataframerenameall-methods" href="#1-deprecated-flowetldataframerenameall-methods" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Deprecated <code>Flow\ETL\DataFrame::renameAll*</code> methods</h3>
 <p>Methods:</p>
 <ul>
 <li><code>Flow\ETL\DataFrame::renameAll()</code>,</li>
@@ -473,29 +473,29 @@ to given precision. The problem with this approach is that all operations now ne
 <li><code>Flow\ETL\DataFrame::renameAllUpperCaseWord()</code>,</li>
 </ul>
 <p>Were deprecated in favor of using new method: <code>DataFrame::renameEach()</code> with proper <code>RenameEntryStrategy</code> object.</p>
-<h3><a id="flow-php-2-deprecated-renameallcasetransformer--renamestrreplaceallentriestransformer" href="#content-2-deprecated-renameallcasetransformer--renamestrreplaceallentriestransformer" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Deprecated <code>RenameAllCaseTransformer</code> &amp; <code>RenameStrReplaceAllEntriesTransformer</code></h3>
+<h3><a id="2-deprecated-renameallcasetransformer--renamestrreplaceallentriestransformer" href="#2-deprecated-renameallcasetransformer--renamestrreplaceallentriestransformer" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Deprecated <code>RenameAllCaseTransformer</code> &amp; <code>RenameStrReplaceAllEntriesTransformer</code></h3>
 <p>Selected transformers were deprecated in favor of using <code>DataFrame::renameEach()</code> with related <code>RenameEntryStrategy</code>:</p>
 <ul>
 <li><code>RenameAllCaseTransformer</code> -&gt; <code>RenameCaseTransformer</code>,</li>
 <li><code>RenameStrReplaceAllEntriesTransformer</code> -&gt; <code>RenameReplaceStrategy</code>,</li>
 </ul>
 <hr />
-<h2><a id="flow-php-upgrading-from-014x-to-015x" href="#content-upgrading-from-014x-to-015x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.14.x to 0.15.x</h2>
-<h3><a id="flow-php-1-removed-flowetlrowschemamatcher-and-implementations" href="#content-1-removed-flowetlrowschemamatcher-and-implementations" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Removed <code>Flow\ETL\Row\Schema\Matcher</code> and implementations</h3>
+<h2><a id="upgrading-from-014x-to-015x" href="#upgrading-from-014x-to-015x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.14.x to 0.15.x</h2>
+<h3><a id="1-removed-flowetlrowschemamatcher-and-implementations" href="#1-removed-flowetlrowschemamatcher-and-implementations" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Removed <code>Flow\ETL\Row\Schema\Matcher</code> and implementations</h3>
 <p>Schema Matcher was the initial attempt to implement a schema evolution next to schema validation that over
 time got replaced with a different implementation of Schema Validator.</p>
-<h3><a id="flow-php-2-renamed-flowetlrowschema-namespace-into-flowetlschema" href="#content-2-renamed-flowetlrowschema-namespace-into-flowetlschema" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Renamed <code>Flow\ETL\Row\Schema</code> namespace into <code>Flow\ETL\Schema</code>.</h3>
+<h3><a id="2-renamed-flowetlrowschema-namespace-into-flowetlschema" href="#2-renamed-flowetlrowschema-namespace-into-flowetlschema" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Renamed <code>Flow\ETL\Row\Schema</code> namespace into <code>Flow\ETL\Schema</code>.</h3>
 <p>This means all classes related to Schema now live under <code>Flow\ETL\Schema</code> namespace.</p>
 <hr />
-<h2><a id="flow-php-upgrading-from-011x-to-014x" href="#content-upgrading-from-011x-to-014x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.11.x to 0.14.x</h2>
-<h3><a id="flow-php-1-replaced-flowetldataframevalidate-with-flowetldataframematch" href="#content-1-replaced-flowetldataframevalidate-with-flowetldataframematch" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Replaced <code>Flow\ETL\DataFrame::validate()</code> with <code>Flow\ETL\DataFrame::match()</code></h3>
+<h2><a id="upgrading-from-011x-to-014x" href="#upgrading-from-011x-to-014x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.11.x to 0.14.x</h2>
+<h3><a id="1-replaced-flowetldataframevalidate-with-flowetldataframematch" href="#1-replaced-flowetldataframevalidate-with-flowetldataframematch" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Replaced <code>Flow\ETL\DataFrame::validate()</code> with <code>Flow\ETL\DataFrame::match()</code></h3>
 <p>The old method is now deprecated and will be removed in the next release.</p>
-<h3><a id="flow-php-2-replaced-flowetlfunctionscalarfunctiontypedscalarfunction-with-flowetlfunctionscalarfunctionscalarresult" href="#content-2-replaced-flowetlfunctionscalarfunctiontypedscalarfunction-with-flowetlfunctionscalarfunctionscalarresult" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Replaced <code>Flow\ETL\Function\ScalarFunction\TypedScalarFunction</code> with <code>Flow\ETL\Function\ScalarFunction\ScalarResult</code>.</h3>
+<h3><a id="2-replaced-flowetlfunctionscalarfunctiontypedscalarfunction-with-flowetlfunctionscalarfunctionscalarresult" href="#2-replaced-flowetlfunctionscalarfunctiontypedscalarfunction-with-flowetlfunctionscalarfunctionscalarresult" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Replaced <code>Flow\ETL\Function\ScalarFunction\TypedScalarFunction</code> with <code>Flow\ETL\Function\ScalarFunction\ScalarResult</code>.</h3>
 <p>The old interface was used to allow defining the return type of the ScalarFunctions.
 It was replaced with a ScalarResult value object that is much more flexible than the interface,
 because it's allowing to return any type dynamically without making the scalar function stateful.</p>
-<h2><a id="flow-php-upgrading-from-010x-to-011x" href="#content-upgrading-from-010x-to-011x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.10.x to 0.11.x</h2>
-<h3><a id="flow-php-1-removed-structureelementstructelementstructureelement-from-structuretype-definition" href="#content-1-removed-structureelementstructelementstructureelement-from-structuretype-definition" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Removed StructureElement/struct_element/structure_element from StructureType Definition</h3>
+<h2><a id="upgrading-from-010x-to-011x" href="#upgrading-from-010x-to-011x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.10.x to 0.11.x</h2>
+<h3><a id="1-removed-structureelementstructelementstructureelement-from-structuretype-definition" href="#1-removed-structureelementstructelementstructureelement-from-structuretype-definition" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Removed StructureElement/struct_element/structure_element from StructureType Definition</h3>
 <p>Before:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">type_structure([
     struct_element('name', string()),
@@ -508,7 +508,7 @@ because it's allowing to return any type dynamically without making the scalar f
     'age' =&gt; integer(),
 ]);
 </code></pre>
-<h3><a id="flow-php-2-doctrine-dbal-adapter" href="#content-2-doctrine-dbal-adapter" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Doctrine DBAL Adapter</h3>
+<h3><a id="2-doctrine-dbal-adapter" href="#2-doctrine-dbal-adapter" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Doctrine DBAL Adapter</h3>
 <p>From now options for:</p>
 <ul>
 <li><code>to_dbal_table_insert()</code></li>
@@ -536,8 +536,8 @@ so please use the proper class for the platform you are using.</p>
 </ul>
 </li>
 </ul>
-<h2><a id="flow-php-upgrading-from-08x-to-010x" href="#content-upgrading-from-08x-to-010x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.8.x to 0.10.x</h2>
-<h3><a id="flow-php-1-providing-multiple-paths-to-a-single-extractor" href="#content-1-providing-multiple-paths-to-a-single-extractor" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Providing multiple paths to a single extractor</h3>
+<h2><a id="upgrading-from-08x-to-010x" href="#upgrading-from-08x-to-010x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.8.x to 0.10.x</h2>
+<h3><a id="1-providing-multiple-paths-to-a-single-extractor" href="#1-providing-multiple-paths-to-a-single-extractor" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Providing multiple paths to a single extractor</h3>
 <p>From now to read from multiple locations use <code>from_all(Extractor ...$extractors) : Exctractor</code> extractor.</p>
 <p>Before:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
@@ -555,7 +555,7 @@ from_all(
     from_parquet(path(__DIR__ . '/data/2.parquet')),
 );
 </code></pre>
-<h3><a id="flow-php-2-passing-optional-arguments-to-extractorsloaders" href="#content-2-passing-optional-arguments-to-extractorsloaders" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Passing optional arguments to extractors/loaders</h3>
+<h3><a id="2-passing-optional-arguments-to-extractorsloaders" href="#2-passing-optional-arguments-to-extractorsloaders" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Passing optional arguments to extractors/loaders</h3>
 <p>From now all extractors/loaders are accepting only mandatory arguments,
 all optional arguments should be passed through <code>with*</code> methods and fluent interface.</p>
 <p>Before:</p>
@@ -568,8 +568,8 @@ from_parquet(path(__DIR__ . '/data/1.parquet'), schema: $schema);
 
 from_parquet(path(__DIR__ . '/data/1.parquet'))-&gt;withSchema($schema);
 </code></pre>
-<h2><a id="flow-php-upgrading-from-07x-to-08x" href="#content-upgrading-from-07x-to-08x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.7.x to 0.8.x</h2>
-<h3><a id="flow-php-1-joins" href="#content-1-joins" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Joins</h3>
+<h2><a id="upgrading-from-07x-to-08x" href="#upgrading-from-07x-to-08x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.7.x to 0.8.x</h2>
+<h3><a id="1-joins" href="#1-joins" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Joins</h3>
 <p>To support joining bigger datasets, we had to move from initial NestedLoop join algorithm into Hash Join algorithm.</p>
 <ul>
 <li>the only supported coin expression is <code>=</code> (equals) that can be grouped with <code>AND</code> and <code>OR</code> operators.</li>
@@ -583,14 +583,14 @@ from_parquet(path(__DIR__ . '/data/1.parquet'))-&gt;withSchema($schema);
 <li><code>DataFrame::joinEach()</code></li>
 <li><code>DataFrame::crossJoin()</code></li>
 </ul>
-<h3><a id="flow-php-2-groupby" href="#content-2-groupby" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) GroupBy</h3>
+<h3><a id="2-groupby" href="#2-groupby" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) GroupBy</h3>
 <p>From now on, <code>DataFrame::groupBy()</code> method will return <code>GroupedDataFrame</code> object, which is nothing more than a GroupBy
 statement Builder. To get the results, you first need to define the aggregation functions or optionally pivot the data.</p>
-<h2><a id="flow-php-upgrading-from-06x-to-07x" href="#content-upgrading-from-06x-to-07x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.6.x to 0.7.x</h2>
-<h3><a id="flow-php-1-dataframeappendsafe-method-was-removed" href="#content-1-dataframeappendsafe-method-was-removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) DataFrame::appendSafe() method was removed</h3>
+<h2><a id="upgrading-from-06x-to-07x" href="#upgrading-from-06x-to-07x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.6.x to 0.7.x</h2>
+<h3><a id="1-dataframeappendsafe-method-was-removed" href="#1-dataframeappendsafe-method-was-removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) DataFrame::appendSafe() method was removed</h3>
 <p><code>DataFrame::appendSafe()</code> aka <code>DataFrame::threadSafe()</code> method was removed as it was introducing additional complexity and was not used in any of the adapters.</p>
-<h2><a id="flow-php-upgrading-from-05x-to-06x" href="#content-upgrading-from-05x-to-06x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.5.x to 0.6.x</h2>
-<h3><a id="flow-php-1-rowsmerge-accepts-single-instance-of-rows" href="#content-1-rowsmerge-accepts-single-instance-of-rows" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Rows::merge() accepts single instance of Rows</h3>
+<h2><a id="upgrading-from-05x-to-06x" href="#upgrading-from-05x-to-06x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.5.x to 0.6.x</h2>
+<h3><a id="1-rowsmerge-accepts-single-instance-of-rows" href="#1-rowsmerge-accepts-single-instance-of-rows" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Rows::merge() accepts single instance of Rows</h3>
 <p>Before:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">Rows::merge(Rows ...$rows) : Rows
 </code></pre>
@@ -598,21 +598,21 @@ statement Builder. To get the results, you first need to define the aggregation 
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">Rows::merge(Rows $rows) : Rows
 </code></pre>
 <hr />
-<h2><a id="flow-php-upgrading-from-04x-to-05x" href="#content-upgrading-from-04x-to-05x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.4.x to 0.5.x</h2>
-<h3><a id="flow-php-1-entry-factory-moved-from-extractors-to-flowcontext" href="#content-1-entry-factory-moved-from-extractors-to-flowcontext" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Entry factory moved from extractors to <code>FlowContext</code></h3>
+<h2><a id="upgrading-from-04x-to-05x" href="#upgrading-from-04x-to-05x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.4.x to 0.5.x</h2>
+<h3><a id="1-entry-factory-moved-from-extractors-to-flowcontext" href="#1-entry-factory-moved-from-extractors-to-flowcontext" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Entry factory moved from extractors to <code>FlowContext</code></h3>
 <p>To improve code quality and reduce code coupling <code>EntryFactory</code> was removed from all constructors of extractors, in favor of passing it into <code>FlowContext</code> &amp; re-using same entry factory in a whole pipeline.</p>
-<h3><a id="flow-php-2-invalid-schema-has-no-fallback-in-nativeentryfactory" href="#content-2-invalid-schema-has-no-fallback-in-nativeentryfactory" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Invalid schema has no fallback in <code>NativeEntryFactory</code></h3>
+<h3><a id="2-invalid-schema-has-no-fallback-in-nativeentryfactory" href="#2-invalid-schema-has-no-fallback-in-nativeentryfactory" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) Invalid schema has no fallback in <code>NativeEntryFactory</code></h3>
 <p>Before, passing <code>Schema</code> into <code>NativeEntryFactory::create()</code> had fallback when the given entry was not found in a passed schema, now the schema has higher priority &amp; fallback is no longer available, instead when the definition is missing in a passed schema, <code>InvalidArgumentException</code> will be thrown.</p>
-<h3><a id="flow-php-3-bufferloader-was-removed" href="#content-3-bufferloader-was-removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>3) BufferLoader was removed</h3>
+<h3><a id="3-bufferloader-was-removed" href="#3-bufferloader-was-removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>3) BufferLoader was removed</h3>
 <p>BufferLoader was removed in favor of <code>DataFrame::collect(int $batchSize = null)</code> method which now accepts additional
 argument <code>$batchSize</code> that will keep collecting Rows from Extractor until the given batch size is reached.
 Which does exactly the same thing as BufferLoader did, but in a more generic way.</p>
-<h3><a id="flow-php-4-pipeline-closure" href="#content-4-pipeline-closure" class="mr-2" aria-hidden="true" title="Permalink">#</a>4) Pipeline Closure</h3>
+<h3><a id="4-pipeline-closure" href="#4-pipeline-closure" class="mr-2" aria-hidden="true" title="Permalink">#</a>4) Pipeline Closure</h3>
 <p>Pipeline Closure was reduced to be only Loader Closure and it was moved to \Flow\ETL\Loader namespace.
 Additionally, \Closure::close method no longer requires Rows to be passed as an argument.</p>
-<h3><a id="flow-php-5-parallelize" href="#content-5-parallelize" class="mr-2" aria-hidden="true" title="Permalink">#</a>5) Parallelize</h3>
+<h3><a id="5-parallelize" href="#5-parallelize" class="mr-2" aria-hidden="true" title="Permalink">#</a>5) Parallelize</h3>
 <p>DataFrame::parallelize() method is deprecated, and it will be removed, instead use DataFrame::batchSize(int $size) method.</p>
-<h3><a id="flow-php-6-rows-in-batch---extractors" href="#content-6-rows-in-batch---extractors" class="mr-2" aria-hidden="true" title="Permalink">#</a>6) Rows in batch - Extractors</h3>
+<h3><a id="6-rows-in-batch---extractors" href="#6-rows-in-batch---extractors" class="mr-2" aria-hidden="true" title="Permalink">#</a>6) Rows in batch - Extractors</h3>
 <p>From now, file-based Extractors will always throw one Row at time, in order to merge them into bigger groups
 use <code>DataFrame::batchSize(int $size)</code> just after extractor method.</p>
 <p>Before:</p>
@@ -641,23 +641,23 @@ use <code>DataFrame::batchSize(int $size)</code> just after extractor method.</p
 <li>DoctrineDBAL - <code>rows_in_batch</code> wasn't removed, but now results are thrown row by row, instead of whole page.</li>
 <li>GoogleSheet</li>
 </ul>
-<h3><a id="flow-php-7-googlesheetextractor" href="#content-7-googlesheetextractor" class="mr-2" aria-hidden="true" title="Permalink">#</a>7) <code>GoogleSheetExtractor</code></h3>
+<h3><a id="7-googlesheetextractor" href="#7-googlesheetextractor" class="mr-2" aria-hidden="true" title="Permalink">#</a>7) <code>GoogleSheetExtractor</code></h3>
 <p>Argument <code>$rows_in_batch</code> was renamed to <code>$rows_per_page</code> which no longer determines the size of the batch, but the size of the page that will be fetched from Google API.
 Rows are yielded one by one.</p>
-<h3><a id="flow-php-8-dataframethreadsafe-method-was-replaced-by-dataframeappendsafe" href="#content-8-dataframethreadsafe-method-was-replaced-by-dataframeappendsafe" class="mr-2" aria-hidden="true" title="Permalink">#</a>8) <code>DataFrame::threadSafe()</code> method was replaced by <code>DataFrame::appendSafe()</code></h3>
+<h3><a id="8-dataframethreadsafe-method-was-replaced-by-dataframeappendsafe" href="#8-dataframethreadsafe-method-was-replaced-by-dataframeappendsafe" class="mr-2" aria-hidden="true" title="Permalink">#</a>8) <code>DataFrame::threadSafe()</code> method was replaced by <code>DataFrame::appendSafe()</code></h3>
 <p><code>DataFrame::appendSafe()</code> is doing exactly the same thing as the old method, it's just more
 descriptive and self-explanatory.
 It's no longer mandatory to set this flat to true when using SaveMode::APPEND, it's now set automatically.</p>
-<h3><a id="flow-php-9-loaders---chunk-size" href="#content-9-loaders---chunk-size" class="mr-2" aria-hidden="true" title="Permalink">#</a>9) Loaders - chunk size</h3>
+<h3><a id="9-loaders---chunk-size" href="#9-loaders---chunk-size" class="mr-2" aria-hidden="true" title="Permalink">#</a>9) Loaders - chunk size</h3>
 <p>Loaders are no longer accepting chunk_size parameter, from now in order to control
 the number of rows saved at once use <code>DataFrame::batchSize(int $size)</code> method.</p>
-<h3><a id="flow-php-10-removed-dsl-functions-datetimestring-jsonstring" href="#content-10-removed-dsl-functions-datetimestring-jsonstring" class="mr-2" aria-hidden="true" title="Permalink">#</a>10) Removed DSL functions: <code>datetime_string()</code>, <code>json_string()</code></h3>
+<h3><a id="10-removed-dsl-functions-datetimestring-jsonstring" href="#10-removed-dsl-functions-datetimestring-jsonstring" class="mr-2" aria-hidden="true" title="Permalink">#</a>10) Removed DSL functions: <code>datetime_string()</code>, <code>json_string()</code></h3>
 <p>Those functions were removed in favor of accepting string values in related DSL functions:</p>
 <ul>
 <li><code>datetime_string()</code> =&gt; <code>datetime()</code>,</li>
 <li><code>json_string()</code> =&gt; <code>json()</code> &amp; <code>json_object()</code></li>
 </ul>
-<h3><a id="flow-php-11-removed-asynchronous-processing" href="#content-11-removed-asynchronous-processing" class="mr-2" aria-hidden="true" title="Permalink">#</a>11) Removed Asynchronous Processing</h3>
+<h3><a id="11-removed-asynchronous-processing" href="#11-removed-asynchronous-processing" class="mr-2" aria-hidden="true" title="Permalink">#</a>11) Removed Asynchronous Processing</h3>
 <p>More details can be found in <a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/issues/793">this issue</a>.</p>
 <ul>
 <li>Removed etl-adapter-amphp</li>
@@ -665,15 +665,15 @@ the number of rows saved at once use <code>DataFrame::batchSize(int $size)</code
 <li>Removed <code>LocalSocketPipeline</code></li>
 <li>Removed <code>DataFrame::pipeline()</code></li>
 </ul>
-<h3><a id="flow-php-12-collectionentry-removal" href="#content-12-collectionentry-removal" class="mr-2" aria-hidden="true" title="Permalink">#</a>12) <code>CollectionEntry</code> removal</h3>
+<h3><a id="12-collectionentry-removal" href="#12-collectionentry-removal" class="mr-2" aria-hidden="true" title="Permalink">#</a>12) <code>CollectionEntry</code> removal</h3>
 <p>After adding native &amp; logical types into the Flow, we remove the <code>CollectionEntry</code> as obsolete. New types that cover it better are: <code>ListType</code>, <code>MapType</code> &amp; <code>StructureType</code> along with related new entry types.</p>
-<h3><a id="flow-php-13-removed-from-methods-from-scalar-entries" href="#content-13-removed-from-methods-from-scalar-entries" class="mr-2" aria-hidden="true" title="Permalink">#</a>13) Removed <code>from*()</code> methods from scalar entries</h3>
+<h3><a id="13-removed-from-methods-from-scalar-entries" href="#13-removed-from-methods-from-scalar-entries" class="mr-2" aria-hidden="true" title="Permalink">#</a>13) Removed <code>from*()</code> methods from scalar entries</h3>
 <p>Removed <code>BooleanEntry::from()</code>, <code>FloatEntry::from()</code>, <code>IntegerEntry::from()</code>, <code>StringEntry::fromDateTime()</code> methods in favor of using DSL functions.</p>
-<h3><a id="flow-php-14-removed-deprecated-sha1idfactory" href="#content-14-removed-deprecated-sha1idfactory" class="mr-2" aria-hidden="true" title="Permalink">#</a>14) Removed deprecated <code>Sha1IdFactory</code></h3>
+<h3><a id="14-removed-deprecated-sha1idfactory" href="#14-removed-deprecated-sha1idfactory" class="mr-2" aria-hidden="true" title="Permalink">#</a>14) Removed deprecated <code>Sha1IdFactory</code></h3>
 <p>Class <code>Sha1IdFactory</code> was removed, use <code>HashIdFactory</code> class:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">(new HashIdFactory('entry_name'))-&gt;withAlgorithm('sha1');
 </code></pre>
-<h3><a id="flow-php-15-deprecate-dsl-static-classes" href="#content-15-deprecate-dsl-static-classes" class="mr-2" aria-hidden="true" title="Permalink">#</a>15) Deprecate DSL Static classes</h3>
+<h3><a id="15-deprecate-dsl-static-classes" href="#15-deprecate-dsl-static-classes" class="mr-2" aria-hidden="true" title="Permalink">#</a>15) Deprecate DSL Static classes</h3>
 <p>DSL static classes were deprecated in favor of using functions defined in <code>src/core/etl/src/Flow/ETL/DSL/functions.php</code> file.</p>
 <p>Deprecated classes:</p>
 <ul>
@@ -695,8 +695,8 @@ the number of rows saved at once use <code>DataFrame::batchSize(int $size)</code
 <li><code>src/adapter/etl-adapter-xml/src/Flow/ETL/DSL/XML.php</code></li>
 </ul>
 <hr />
-<h2><a id="flow-php-upgrading-from-03x-to-04x" href="#content-upgrading-from-03x-to-04x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.3.x to 0.4.x</h2>
-<h3><a id="flow-php-1-transformers-replaced-with-scalar-functions" href="#content-1-transformers-replaced-with-scalar-functions" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Transformers replaced with scalar functions</h3>
+<h2><a id="upgrading-from-03x-to-04x" href="#upgrading-from-03x-to-04x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.3.x to 0.4.x</h2>
+<h3><a id="1-transformers-replaced-with-scalar-functions" href="#1-transformers-replaced-with-scalar-functions" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Transformers replaced with scalar functions</h3>
 <p>Transformers are a really powerful tool that was used in Flow since the beginning, but that tool was too powerful for the simple cases that were needed, and introduced additional complexity and maintenance issues when they were handwritten.</p>
 <p>We reworked most of the internal transformers to new scalar functions and entry scalar functions (based on the built-in functions), and we still internally use that powerful tool, but we don't expose it to end users, instead, we provide easy-to-use, covering all user needs functions.</p>
 <p>All available functions can be found in <a href="src/core/etl/src/Flow/ETL/Function"><code>ETL\Row\Function</code> folder</a> or in <a href="src/core/etl/src/Flow/ETL/DSL/functions.php"><code>ETL\DSL\functions</code> file</a>, and entry scalar functions are defined in <code>EntryScalarFunction</code>.</p>
@@ -723,7 +723,7 @@ use Flow\ETL\Flow;
     -&gt;read(new MemoryExtractor())
     -&gt;withEntry('name', concat(ref('name'), lit(' '), ref('last name')))
 </code></pre>
-<h3><a id="flow-php-2-ref-function-nullability" href="#content-2-ref-function-nullability" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) <code>ref</code> function nullability</h3>
+<h3><a id="2-ref-function-nullability" href="#2-ref-function-nullability" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) <code>ref</code> function nullability</h3>
 <p><code>ref(&quot;entry_name&quot;)</code> is no longer returning null when the entry is not found. Instead, it throws an exception.
 The same behavior can be achieved through using a newly introduced <code>optional</code> function:</p>
 <p>Before:</p>
@@ -744,7 +744,7 @@ optional(ref('non_existing_column'))-&gt;cast('string');
 // or  
 optional(ref('non_existing_column')-&gt;cast('string'));
 </code></pre>
-<h3><a id="flow-php-3-extractors-output" href="#content-3-extractors-output" class="mr-2" aria-hidden="true" title="Permalink">#</a>3) Extractors output</h3>
+<h3><a id="3-extractors-output" href="#3-extractors-output" class="mr-2" aria-hidden="true" title="Permalink">#</a>3) Extractors output</h3>
 <p>Affected extractors:</p>
 <ul>
 <li>CSV</li>
@@ -780,7 +780,7 @@ please remove it.</p>
     -&gt;write(To::memory($memory = new ArrayMemory()))
     -&gt;run();
 </code></pre>
-<h3><a id="flow-php-4-configbuilderputinputintorows-output-is-now-prefixed-with--underscore" href="#content-4-configbuilderputinputintorows-output-is-now-prefixed-with--underscore" class="mr-2" aria-hidden="true" title="Permalink">#</a>4) ConfigBuilder::putInputIntoRows() output is now prefixed with _ (underscore)</h3>
+<h3><a id="4-configbuilderputinputintorows-output-is-now-prefixed-with--underscore" href="#4-configbuilderputinputintorows-output-is-now-prefixed-with--underscore" class="mr-2" aria-hidden="true" title="Permalink">#</a>4) ConfigBuilder::putInputIntoRows() output is now prefixed with _ (underscore)</h3>
 <p>In order to avoid collisions with datasets columns, additional columns created after using putInputIntoRows()
 would now be prefixed with <code>_</code> (underscore) symbol.</p>
 <p>Before:</p>

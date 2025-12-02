@@ -427,7 +427,7 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-retry-mechanisms" href="#content-retry-mechanisms" class="mr-2" aria-hidden="true" title="Permalink">#</a>Retry Mechanisms</h1>
+            <h1><a id="retry-mechanisms" href="#retry-mechanisms" class="mr-2" aria-hidden="true" title="Permalink">#</a>Retry Mechanisms</h1>
 <ul>
 <li><a href="core">⬅️ Back</a></li>
 <li><a href="/documentation/api/core">📚 API Reference</a></li>
@@ -435,12 +435,12 @@
 <p>The Flow ETL framework provides robust retry mechanisms to handle transient failures during data loading operations.
 This is essential for building resilient data pipelines that can recover from temporary network issues, database
 connection problems, or resource availability conflicts.</p>
-<h2><a id="flow-php-overview" href="#content-overview" class="mr-2" aria-hidden="true" title="Permalink">#</a>Overview</h2>
+<h2><a id="overview" href="#overview" class="mr-2" aria-hidden="true" title="Permalink">#</a>Overview</h2>
 <p>The retry system focuses on <strong>loader operations</strong> - the final step where processed data is written to its destination.
 When a loader encounters a temporary failure, the retry mechanism can automatically reattempt the operation according to
 configurable strategies.</p>
-<h2><a id="flow-php-key-components" href="#content-key-components" class="mr-2" aria-hidden="true" title="Permalink">#</a>Key Components</h2>
-<h3><a id="flow-php-retryloader" href="#content-retryloader" class="mr-2" aria-hidden="true" title="Permalink">#</a>RetryLoader</h3>
+<h2><a id="key-components" href="#key-components" class="mr-2" aria-hidden="true" title="Permalink">#</a>Key Components</h2>
+<h3><a id="retryloader" href="#retryloader" class="mr-2" aria-hidden="true" title="Permalink">#</a>RetryLoader</h3>
 <p>The <code>RetryLoader</code> is a decorator that wraps any existing loader with retry capabilities. It implements the same <code>Loader</code>
 interface, making it transparent to use in your data pipelines.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
@@ -466,15 +466,15 @@ $dataFrame = data_frame()
     ))
     -&gt;run();
 </code></pre>
-<h2><a id="flow-php-retry-strategies" href="#content-retry-strategies" class="mr-2" aria-hidden="true" title="Permalink">#</a>Retry Strategies</h2>
+<h2><a id="retry-strategies" href="#retry-strategies" class="mr-2" aria-hidden="true" title="Permalink">#</a>Retry Strategies</h2>
 <p>Retry strategies determine <strong>when</strong> to retry an operation based on the type of exception thrown.</p>
-<h3><a id="flow-php-anythrowable-strategy" href="#content-anythrowable-strategy" class="mr-2" aria-hidden="true" title="Permalink">#</a>AnyThrowable Strategy</h3>
+<h3><a id="anythrowable-strategy" href="#anythrowable-strategy" class="mr-2" aria-hidden="true" title="Permalink">#</a>AnyThrowable Strategy</h3>
 <p>Retries on any thrown exception up to the specified limit:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\retry_any_throwable;
 
 $strategy = retry_any_throwable(5); // Retry up to 5 times on any exception
 </code></pre>
-<h3><a id="flow-php-specific-exception-types-strategy" href="#content-specific-exception-types-strategy" class="mr-2" aria-hidden="true" title="Permalink">#</a>Specific Exception Types Strategy</h3>
+<h3><a id="specific-exception-types-strategy" href="#specific-exception-types-strategy" class="mr-2" aria-hidden="true" title="Permalink">#</a>Specific Exception Types Strategy</h3>
 <p>Retries only for specified exception types, allowing you to be selective about which failures should trigger retries:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\retry_on_exception_types;
 
@@ -485,17 +485,17 @@ $strategy = retry_on_exception_types([
 ], 3);
 </code></pre>
 <p>This is useful when you want to retry transient failures but immediately fail on logic errors or data validation issues.</p>
-<h2><a id="flow-php-delay-factories" href="#content-delay-factories" class="mr-2" aria-hidden="true" title="Permalink">#</a>Delay Factories</h2>
+<h2><a id="delay-factories" href="#delay-factories" class="mr-2" aria-hidden="true" title="Permalink">#</a>Delay Factories</h2>
 <p>Delay factories determine <strong>how long</strong> to wait between retry attempts. Different strategies help avoid overwhelming
 failing services while providing appropriate backoff behavior.</p>
-<h3><a id="flow-php-fixed-delay" href="#content-fixed-delay" class="mr-2" aria-hidden="true" title="Permalink">#</a>Fixed Delay</h3>
+<h3><a id="fixed-delay" href="#fixed-delay" class="mr-2" aria-hidden="true" title="Permalink">#</a>Fixed Delay</h3>
 <p>Wait a consistent amount of time between each retry:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\{delay_fixed, duration_milliseconds, duration_seconds};
 
 $delay = delay_fixed(duration_milliseconds(200)); // Wait 200ms between retries
 $delay = delay_fixed(duration_seconds(1));        // Wait 1 second between retries
 </code></pre>
-<h3><a id="flow-php-linear-backoff" href="#content-linear-backoff" class="mr-2" aria-hidden="true" title="Permalink">#</a>Linear Backoff</h3>
+<h3><a id="linear-backoff" href="#linear-backoff" class="mr-2" aria-hidden="true" title="Permalink">#</a>Linear Backoff</h3>
 <p>Increase the delay by a fixed increment on each retry:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\delay_linear;
 
@@ -505,7 +505,7 @@ $delay = delay_linear(
     duration_milliseconds(50)    // Increment per retry
 );
 </code></pre>
-<h3><a id="flow-php-exponential-backoff" href="#content-exponential-backoff" class="mr-2" aria-hidden="true" title="Permalink">#</a>Exponential Backoff</h3>
+<h3><a id="exponential-backoff" href="#exponential-backoff" class="mr-2" aria-hidden="true" title="Permalink">#</a>Exponential Backoff</h3>
 <p>Double (or multiply by a factor) the delay on each retry:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\delay_exponential;
 
@@ -516,7 +516,7 @@ $delay = delay_exponential(
     duration_seconds(5)         // Maximum delay cap
 );
 </code></pre>
-<h3><a id="flow-php-jitter" href="#content-jitter" class="mr-2" aria-hidden="true" title="Permalink">#</a>Jitter</h3>
+<h3><a id="jitter" href="#jitter" class="mr-2" aria-hidden="true" title="Permalink">#</a>Jitter</h3>
 <p>Add randomness to any delay strategy to prevent &quot;thundering herd&quot; problems when multiple processes retry simultaneously:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\delay_jitter;
 
@@ -526,10 +526,10 @@ $delay = delay_jitter(
     0.2  // 20% jitter factor (0.0 to 1.0)
 );
 </code></pre>
-<h2><a id="flow-php-idempotent-vs-non-idempotent-operations" href="#content-idempotent-vs-non-idempotent-operations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Idempotent vs Non-Idempotent Operations</h2>
+<h2><a id="idempotent-vs-non-idempotent-operations" href="#idempotent-vs-non-idempotent-operations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Idempotent vs Non-Idempotent Operations</h2>
 <p>Understanding the difference between idempotent and non-idempotent operations is crucial for designing reliable retry
 mechanisms.</p>
-<h3><a id="flow-php-idempotent-operations-recommended" href="#content-idempotent-operations-recommended" class="mr-2" aria-hidden="true" title="Permalink">#</a>Idempotent Operations (Recommended)</h3>
+<h3><a id="idempotent-operations-recommended" href="#idempotent-operations-recommended" class="mr-2" aria-hidden="true" title="Permalink">#</a>Idempotent Operations (Recommended)</h3>
 <p>Idempotent operations can be safely repeated without causing unintended side effects. The same operation executed
 multiple times produces the same result.</p>
 <p><strong>Examples of idempotent loader operations:</strong></p>
@@ -543,7 +543,7 @@ multiple times produces the same result.</p>
 $loader = new DatabaseUpsertLoader($connection, 'users');
 $retryLoader = write_with_retries($loader, retry_any_throwable(5));
 </code></pre>
-<h3><a id="flow-php-non-idempotent-operations-use-with-caution" href="#content-non-idempotent-operations-use-with-caution" class="mr-2" aria-hidden="true" title="Permalink">#</a>Non-Idempotent Operations (Use with Caution)</h3>
+<h3><a id="non-idempotent-operations-use-with-caution" href="#non-idempotent-operations-use-with-caution" class="mr-2" aria-hidden="true" title="Permalink">#</a>Non-Idempotent Operations (Use with Caution)</h3>
 <p>Non-idempotent operations may produce different results or unintended side effects when repeated.</p>
 <p><strong>Examples of non-idempotent operations:</strong></p>
 <ul>
@@ -551,8 +551,8 @@ $retryLoader = write_with_retries($loader, retry_any_throwable(5));
 <li>File appends</li>
 <li>Counter increments</li>
 </ul>
-<h2><a id="flow-php-advanced-configuration" href="#content-advanced-configuration" class="mr-2" aria-hidden="true" title="Permalink">#</a>Advanced Configuration</h2>
-<h3><a id="flow-php-custom-sleep-implementation" href="#content-custom-sleep-implementation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Custom Sleep Implementation</h3>
+<h2><a id="advanced-configuration" href="#advanced-configuration" class="mr-2" aria-hidden="true" title="Permalink">#</a>Advanced Configuration</h2>
+<h3><a id="custom-sleep-implementation" href="#custom-sleep-implementation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Custom Sleep Implementation</h3>
 <p>For testing or special requirements, you can provide a custom sleep implementation:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\ETL\Time\FakeSleep;
 
@@ -564,7 +564,7 @@ $retryLoader = write_with_retries(
     $sleep
 );
 </code></pre>
-<h3><a id="flow-php-complete-configuration-example" href="#content-complete-configuration-example" class="mr-2" aria-hidden="true" title="Permalink">#</a>Complete Configuration Example</h3>
+<h3><a id="complete-configuration-example" href="#complete-configuration-example" class="mr-2" aria-hidden="true" title="Permalink">#</a>Complete Configuration Example</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\ETL\DSL\{
@@ -601,7 +601,7 @@ $result = data_frame()
     ))
     -&gt;run();
 </code></pre>
-<h2><a id="flow-php-error-information" href="#content-error-information" class="mr-2" aria-hidden="true" title="Permalink">#</a>Error Information</h2>
+<h2><a id="error-information" href="#error-information" class="mr-2" aria-hidden="true" title="Permalink">#</a>Error Information</h2>
 <p>When all retries are exhausted, a <code>FailedRetryException</code> is thrown containing detailed information about all attempts:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\ETL\Exception\FailedRetryException;
 

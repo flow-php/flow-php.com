@@ -427,7 +427,7 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-types" href="#content-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Types</h1>
+            <h1><a id="types" href="#types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Types</h1>
 <p>Flow Types is a small library that provides a set of type classes for PHP.
 It's designed to work together with static analysis tools like PHPStan and Psalm.</p>
 <p>The main goal of this library is to simplify common type-related tasks, such as type checking, type casting, and type assertion.</p>
@@ -440,10 +440,10 @@ It's designed to work together with static analysis tools like PHPStan and Psalm
 </ul>
 </li>
 </ul>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/types:~0.28.0
 </code></pre>
-<h3><a id="flow-php-usage" href="#content-usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h3>
+<h3><a id="usage" href="#usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h3>
 <p><strong>Heads Up</strong> - in order to use full potential of <code>type_structure()</code> with PHPStan you need
 to enable a dedicated extension in your <code>phpstan.neon</code> configuration file:</p>
 <pre class="language-neon"><code class="language-neon" data-controller="syntax-highlight">services:
@@ -452,7 +452,7 @@ to enable a dedicated extension in your <code>phpstan.neon</code> configuration 
         tags:
             - phpstan.broker.dynamicFunctionReturnTypeExtension
 </code></pre>
-<h4><a id="flow-php-type-narrowing" href="#content-type-narrowing" class="mr-2" aria-hidden="true" title="Permalink">#</a>Type Narrowing</h4>
+<h4><a id="type-narrowing" href="#type-narrowing" class="mr-2" aria-hidden="true" title="Permalink">#</a>Type Narrowing</h4>
 <p>To narrow a variable to a specific type, you can use one of two available methods:</p>
 <ul>
 <li><code>Type::isValid(mixed $value) : bool</code></li>
@@ -487,7 +487,7 @@ if (type_string()-&gt;isValid($variable)) {
 </code></pre>
 <p>The above code will check if the variable is a string, and if it is, it will call the <code>doSomething</code> function with the variable.
 Thanks to the <code>isValid</code> method, you can use the variable without any additional checks and static analysis tools will not complain about it.</p>
-<h3><a id="flow-php-type-casting" href="#content-type-casting" class="mr-2" aria-hidden="true" title="Permalink">#</a>Type Casting</h3>
+<h3><a id="type-casting" href="#type-casting" class="mr-2" aria-hidden="true" title="Permalink">#</a>Type Casting</h3>
 <p>To cast a variable to a specific type, you just simply need to use the <code>cast</code> method:</p>
 <blockquote>
 <p>Note: The cast method will throw CastingException if the variable cannot be casted to the specified type.</p>
@@ -503,14 +503,14 @@ $variable = $input-&gt;get('some-input');
 
 $string = type_string()-&gt;cast($variable); 
 </code></pre>
-<h3><a id="flow-php-complex-types" href="#content-complex-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Complex Types</h3>
+<h3><a id="complex-types" href="#complex-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Complex Types</h3>
 <p>By default all types are not nullabe, in order to achieve nullability two types needs to be combined:</p>
 <ul>
 <li><code>type_optional(type_string())</code> - results in nullable string '?string'</li>
 <li><code>type_union(type_string(),type_integer(),type_null())</code> - results in <code>union&lt;string,integer,null&gt;</code> which is the same as <code>string|integer|null</code></li>
 <li><code>type_intersection(type_integer(),type_string())</code> - results in <code>intersection&lt;integer,string&gt;</code> which is the same as <code>integer&amp;string</code>, requiring values to be valid for ALL types in the intersection</li>
 </ul>
-<h4><a id="flow-php-lists" href="#content-lists" class="mr-2" aria-hidden="true" title="Permalink">#</a>Lists</h4>
+<h4><a id="lists" href="#lists" class="mr-2" aria-hidden="true" title="Permalink">#</a>Lists</h4>
 <p>List is a collection of elements of the same where keys start from 0 and are auto incremented.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -519,7 +519,7 @@ use Flow\Types\DSL\type_string;
 
 $listOfStrings = type_list(type_string());
 </code></pre>
-<h4><a id="flow-php-maps" href="#content-maps" class="mr-2" aria-hidden="true" title="Permalink">#</a>Maps</h4>
+<h4><a id="maps" href="#maps" class="mr-2" aria-hidden="true" title="Permalink">#</a>Maps</h4>
 <p>Map is a key value data structure where all keys and all values has the same type.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -529,7 +529,7 @@ use Flow\Types\DSL\type_integer;
 
 $mapOfStringToInt = type_map(type_string(), type_integer());
 </code></pre>
-<h4><a id="flow-php-structures" href="#content-structures" class="mr-2" aria-hidden="true" title="Permalink">#</a>Structures</h4>
+<h4><a id="structures" href="#structures" class="mr-2" aria-hidden="true" title="Permalink">#</a>Structures</h4>
 <p>Structure is a associative array with a defined shape.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -542,7 +542,7 @@ $userStructure = type_structure([
     'name' =&gt; type_string()
 ])
 </code></pre>
-<h4><a id="flow-php-combined-types" href="#content-combined-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Combined Types</h4>
+<h4><a id="combined-types" href="#combined-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Combined Types</h4>
 <p>All above types can be easily combined together, so for to get the list of users:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 

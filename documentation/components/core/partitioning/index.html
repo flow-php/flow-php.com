@@ -427,13 +427,13 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-partitioning" href="#content-partitioning" class="mr-2" aria-hidden="true" title="Permalink">#</a>Partitioning</h1>
+            <h1><a id="partitioning" href="#partitioning" class="mr-2" aria-hidden="true" title="Permalink">#</a>Partitioning</h1>
 <ul>
 <li><a href="/documentation/components/core/core">⬅️️ Back</a></li>
 </ul>
 <p>Partitioning divides data into logical groups based on column values, enabling more efficient processing of large datasets and reducing memory usage.</p>
-<h2><a id="flow-php-basic-partitioning" href="#content-basic-partitioning" class="mr-2" aria-hidden="true" title="Permalink">#</a>Basic Partitioning</h2>
-<h3><a id="flow-php-partitionby---partition-by-columns" href="#content-partitionby---partition-by-columns" class="mr-2" aria-hidden="true" title="Permalink">#</a>partitionBy() - Partition by columns</h3>
+<h2><a id="basic-partitioning" href="#basic-partitioning" class="mr-2" aria-hidden="true" title="Permalink">#</a>Basic Partitioning</h2>
+<h3><a id="partitionby---partition-by-columns" href="#partitionby---partition-by-columns" class="mr-2" aria-hidden="true" title="Permalink">#</a>partitionBy() - Partition by columns</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\ETL\DSL\{data_frame, from_array, col, to_parquet};
@@ -457,7 +457,7 @@ data_frame()
     └── sales.parquet       # Contains 2 rows (sales + marketing for Jan 2)
 </code></pre>
 <p>Each partition creates a separate directory with the format <code>column=value</code>, and data files are written inside those directories.</p>
-<h2><a id="flow-php-multi-column-partitioning" href="#content-multi-column-partitioning" class="mr-2" aria-hidden="true" title="Permalink">#</a>Multi-Column Partitioning</h2>
+<h2><a id="multi-column-partitioning" href="#multi-column-partitioning" class="mr-2" aria-hidden="true" title="Permalink">#</a>Multi-Column Partitioning</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 data_frame()
@@ -485,7 +485,7 @@ data_frame()
         └── sales.parquet       # 1 row: marketing on Jan 2
 </code></pre>
 <p>Each partition column creates an additional nesting level in the directory hierarchy.</p>
-<h3><a id="flow-php-dropping-partitions" href="#content-dropping-partitions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Dropping Partitions</h3>
+<h3><a id="dropping-partitions" href="#dropping-partitions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Dropping Partitions</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 $dataFrame = data_frame()
@@ -502,8 +502,8 @@ $dataFrame
     -&gt;dropPartitions(dropPartitionColumns: true) // Also removes 'date' column
     -&gt;run();
 </code></pre>
-<h2><a id="flow-php-performance-considerations" href="#content-performance-considerations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance Considerations</h2>
-<h3><a id="flow-php-choosing-partition-columns" href="#content-choosing-partition-columns" class="mr-2" aria-hidden="true" title="Permalink">#</a>Choosing Partition Columns</h3>
+<h2><a id="performance-considerations" href="#performance-considerations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance Considerations</h2>
+<h3><a id="choosing-partition-columns" href="#choosing-partition-columns" class="mr-2" aria-hidden="true" title="Permalink">#</a>Choosing Partition Columns</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 // Good partitioning - balanced partition sizes

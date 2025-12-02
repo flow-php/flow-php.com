@@ -427,13 +427,13 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-execution-mode" href="#content-execution-mode" class="mr-2" aria-hidden="true" title="Permalink">#</a>Execution Mode</h1>
+            <h1><a id="execution-mode" href="#execution-mode" class="mr-2" aria-hidden="true" title="Permalink">#</a>Execution Mode</h1>
 <p>Flow DataFrame supports two execution modes that control how scalar functions handle validation errors:</p>
 <ul>
 <li><strong>LENIENT</strong> (default): Validation errors are ignored, processing continues with fallback values (null, false, [], '')</li>
 <li><strong>STRICT</strong>: Validation errors throw <code>InvalidArgumentException</code> immediately, stopping execution</li>
 </ul>
-<h2><a id="flow-php-changing-execution-mode" href="#content-changing-execution-mode" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changing Execution Mode</h2>
+<h2><a id="changing-execution-mode" href="#changing-execution-mode" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changing Execution Mode</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\ETL\Function\ExecutionMode;
 
 (data_frame())
@@ -446,8 +446,8 @@
     -&gt;write(to_stream(__DIR__ . '/output.csv', truncate: false))
     -&gt;run();
 </code></pre>
-<h2><a id="flow-php-behavior-comparison" href="#content-behavior-comparison" class="mr-2" aria-hidden="true" title="Permalink">#</a>Behavior Comparison</h2>
-<h3><a id="flow-php-lenient-mode-default" href="#content-lenient-mode-default" class="mr-2" aria-hidden="true" title="Permalink">#</a>LENIENT Mode (Default)</h3>
+<h2><a id="behavior-comparison" href="#behavior-comparison" class="mr-2" aria-hidden="true" title="Permalink">#</a>Behavior Comparison</h2>
+<h3><a id="lenient-mode-default" href="#lenient-mode-default" class="mr-2" aria-hidden="true" title="Permalink">#</a>LENIENT Mode (Default)</h3>
 <p>When invalid data is encountered, functions return fallback values and processing continues:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">(data_frame())
     -&gt;read(from_array([
@@ -463,7 +463,7 @@
 //   ['text' =&gt; null, 'upper' =&gt; null],     // Returns null, continues processing
 // ]
 </code></pre>
-<h3><a id="flow-php-strict-mode" href="#content-strict-mode" class="mr-2" aria-hidden="true" title="Permalink">#</a>STRICT Mode</h3>
+<h3><a id="strict-mode" href="#strict-mode" class="mr-2" aria-hidden="true" title="Permalink">#</a>STRICT Mode</h3>
 <p>When invalid data is encountered, an exception is thrown immediately:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">(data_frame())
     -&gt;mode(ExecutionMode::STRICT)

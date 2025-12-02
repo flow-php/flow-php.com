@@ -427,14 +427,14 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-azure-sdk" href="#content-azure-sdk" class="mr-2" aria-hidden="true" title="Permalink">#</a>Azure SDK</h1>
+            <h1><a id="azure-sdk" href="#azure-sdk" class="mr-2" aria-hidden="true" title="Permalink">#</a>Azure SDK</h1>
 <ul>
 <li><a href="/documentation/introduction">⬅️️ Back</a></li>
 <li><a href="/documentation/api/lib/azure-sdk">📚API Reference</a></li>
 <li><a href="/documentation/api/lib/azure-sdk/indices/files.html">📁Files</a></li>
 </ul>
 <p>Simple, lightweight, dependency-free and efficient Azure SDK for PHP.</p>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight">composer require flow-php/azure-sdk:~0.28.0
 </code></pre>
 <blockquote>
@@ -457,7 +457,7 @@ To fully benefit from SDK features, you need to install the following packages:
 This implementation is not fully covering Azure SDK, only Storage related services are implemented.
 Feel free to contribute to the project and add more services.</p>
 </blockquote>
-<h2><a id="flow-php-usage" href="#content-usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h2>
+<h2><a id="usage" href="#usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h2>
 <p>The absolute minimum configuration to start using the SDK is to provide the account name and the account key.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -470,7 +470,7 @@ $sdk = azure_blob_service(
     azure_shared_key_authorization_factory($account, $accountKey),
 );
 </code></pre>
-<h4><a id="flow-php-advanced" href="#content-advanced" class="mr-2" aria-hidden="true" title="Permalink">#</a>Advanced</h4>
+<h4><a id="advanced" href="#advanced" class="mr-2" aria-hidden="true" title="Permalink">#</a>Advanced</h4>
 <p>Since our goal is to not depend on any specific http client implementation, the library will use <a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/php-http/discovery">php-http/discovery</a>
 to find the factories for the http client and the request/response objects. To gain full control over this library
 it need to be initialized like this:</p>

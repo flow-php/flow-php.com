@@ -427,7 +427,7 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-types---architecture" href="#content-types---architecture" class="mr-2" aria-hidden="true" title="Permalink">#</a>Types - Architecture</h1>
+            <h1><a id="types---architecture" href="#types---architecture" class="mr-2" aria-hidden="true" title="Permalink">#</a>Types - Architecture</h1>
 <p>Types is a small library designed to ensure type consistency at runtime.<br />
 The concept is that wherever the system receives input data, one of three operations can be performed:</p>
 <ul>
@@ -454,7 +454,7 @@ $int = Flow\Types\DSL\type_integer()-&gt;cast($userInput);
 // check if value is an integer, throws an exception if not
 $int = Flow\Types\DSL\type_integer()-&gt;assert($userInput);
 </code></pre>
-<h2><a id="flow-php-building-blocks" href="#content-building-blocks" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building Blocks</h2>
+<h2><a id="building-blocks" href="#building-blocks" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building Blocks</h2>
 <p>The main building block of this library is the interface <a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/lib/types/src/Flow/Types/Type.php"><code>Flow\Types\Type</code></a>.</p>
 <p>This interface is implemented by two kinds of types:</p>
 <ul>
@@ -469,7 +469,7 @@ i.e., a string or null.</li>
 <li>Simple Types - single types, e.g., <code>type_string()</code>, <code>type_int()</code>, <code>type_bool()</code>, <code>type_float()</code>, <code>type_array()</code>,
 <code>type_object()</code>.</li>
 </ul>
-<h2><a id="flow-php-architecture" href="#content-architecture" class="mr-2" aria-hidden="true" title="Permalink">#</a>Architecture</h2>
+<h2><a id="architecture" href="#architecture" class="mr-2" aria-hidden="true" title="Permalink">#</a>Architecture</h2>
 <p>The entire library is written following best object-oriented programming practices and design patterns. Each type is a
 class implementing the <code>Flow\Types\Type</code> interface, enabling easy extension and addition of new types in the future.</p>
 <p>To improve the developer experience, the library includes DSL (Domain Specific Language) functions that simplify
@@ -490,7 +490,7 @@ proper use of template mechanisms and type narrowing, <code>@template</code> and
 <li><a rel="noopener noreferrer" target="_blank" href="https://phpstan.org/writing-php-code/narrowing-types">Narrowing Types</a></li>
 </ul>
 <p>Therefore, it is critical that all classes and functions in this library are properly documented in PHPDoc.</p>
-<h2><a id="flow-php-testing" href="#content-testing" class="mr-2" aria-hidden="true" title="Permalink">#</a>Testing</h2>
+<h2><a id="testing" href="#testing" class="mr-2" aria-hidden="true" title="Permalink">#</a>Testing</h2>
 <p>This library provides a set of unit tests that verify the correct operation of all types and DSL functions.<br />
 All tests are located in the directory <a target="_blank" href="https://github.com/flow-php/flow/blob/1.x/src/lib/types/tests/Flow/Types/Tests/Unit"><code>Flow/Types/Tests/Unit</code></a>.</p>
 <p>Below is an example template that can be used to create cover a type with unit tests:</p>

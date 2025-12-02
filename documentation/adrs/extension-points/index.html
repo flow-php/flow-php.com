@@ -427,10 +427,10 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-extension-points" href="#content-extension-points" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extension Points</h1>
+            <h1><a id="extension-points" href="#extension-points" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extension Points</h1>
 <p>Proposed by: <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a><br />
 Date: 2025-01-09</p>
-<h2><a id="flow-php-context" href="#content-context" class="mr-2" aria-hidden="true" title="Permalink">#</a>Context</h2>
+<h2><a id="context" href="#context" class="mr-2" aria-hidden="true" title="Permalink">#</a>Context</h2>
 <hr />
 <p>Flow is a framework, and as all frameworks, it should provide extension points for developers to hook into the framework and extend its functionality.</p>
 <p>How to find an extension point?</p>
@@ -447,7 +447,7 @@ injected into the DataFrame must be considered as an extension point.</p>
 <p>Why? Because nothing prevents developers from extending those classes and injecting
 their custom version into the DataFrame.</p>
 <p>Those extension points can't be covered by our backward compatibility policy.</p>
-<h2><a id="flow-php-decision" href="#content-decision" class="mr-2" aria-hidden="true" title="Permalink">#</a>Decision</h2>
+<h2><a id="decision" href="#decision" class="mr-2" aria-hidden="true" title="Permalink">#</a>Decision</h2>
 <hr />
 <p><strong>Closed by default</strong></p>
 <p>All classes should be marked as <code>final</code> and whenever we need to expose an extension point,
@@ -461,7 +461,7 @@ the core contributors.</p>
 but we do not guarantee backward compatibility for those cases and everyone should
 do it at their own risk. As a Flow PHP maintainers, we also reserve the right to
 not provide any help or support for those cases.</p>
-<h2><a id="flow-php-pros--cons" href="#content-pros--cons" class="mr-2" aria-hidden="true" title="Permalink">#</a>Pros &amp; Cons</h2>
+<h2><a id="pros--cons" href="#pros--cons" class="mr-2" aria-hidden="true" title="Permalink">#</a>Pros &amp; Cons</h2>
 <hr />
 <ul>
 <li>zero risk of breaking accidentally backward compatibility promise</li>
@@ -470,14 +470,14 @@ not provide any help or support for those cases.</p>
 <li>easier to find an actual extension points</li>
 <li>impossible to mock classes that aren’t marked as <code>final</code> in tests (which is a good thing, users shouldn’t mock Flow classes in their test suites)</li>
 </ul>
-<h2><a id="flow-php-alternatives-considered-optional" href="#content-alternatives-considered-optional" class="mr-2" aria-hidden="true" title="Permalink">#</a>Alternatives Considered (optional)</h2>
+<h2><a id="alternatives-considered-optional" href="#alternatives-considered-optional" class="mr-2" aria-hidden="true" title="Permalink">#</a>Alternatives Considered (optional)</h2>
 <hr />
 <p>Alternatively we could take similar approach to Symfony and mark classes as <code>final</code>
 <a rel="noopener noreferrer" target="_blank" href="https://github.com/symfony/symfony/issues/15233#issuecomment-1566682054">when it makes sense</a>
 but this approach is too easy to get abused.</p>
 <p>Plus, changing non-final class into a final one is much bigger BC break
 then the other way around.</p>
-<h2><a id="flow-php-links-and-references-optional" href="#content-links-and-references-optional" class="mr-2" aria-hidden="true" title="Permalink">#</a>Links and References (optional)</h2>
+<h2><a id="links-and-references-optional" href="#links-and-references-optional" class="mr-2" aria-hidden="true" title="Permalink">#</a>Links and References (optional)</h2>
 <hr />
 <ul>
 <li><a rel="noopener noreferrer" target="_blank" href="https://ocramius.github.io/blog/when-to-declare-classes-final/">When to declare classes final</a></li>

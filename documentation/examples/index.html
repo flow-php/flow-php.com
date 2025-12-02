@@ -427,14 +427,14 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-examples" href="#content-examples" class="mr-2" aria-hidden="true" title="Permalink">#</a>Examples</h1>
+            <h1><a id="examples" href="#examples" class="mr-2" aria-hidden="true" title="Permalink">#</a>Examples</h1>
 <p>This document provides comprehensive guidance for working with Flow PHP examples, including how to add new examples,
 update existing ones, and run them effectively.</p>
-<h2><a id="flow-php-overview" href="#content-overview" class="mr-2" aria-hidden="true" title="Permalink">#</a>Overview</h2>
+<h2><a id="overview" href="#overview" class="mr-2" aria-hidden="true" title="Permalink">#</a>Overview</h2>
 <p>Flow PHP includes a comprehensive collection of executable examples organized by topic, demonstrating all major
 framework features. Each example is self-contained with isolated dependencies and serves as both documentation and
 integration testing.</p>
-<h2><a id="flow-php-directory-structure" href="#content-directory-structure" class="mr-2" aria-hidden="true" title="Permalink">#</a>Directory Structure</h2>
+<h2><a id="directory-structure" href="#directory-structure" class="mr-2" aria-hidden="true" title="Permalink">#</a>Directory Structure</h2>
 <p>Examples are organized hierarchically under <code>/examples/topics/</code> with the following structure:</p>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">examples/
 ├── run.php              # Main execution script
@@ -452,7 +452,7 @@ integration testing.</p>
     ├── types/           # Type system 
     └── window_functions/ # Window functions 
 </code></pre>
-<h3><a id="flow-php-standard-example-structure" href="#content-standard-example-structure" class="mr-2" aria-hidden="true" title="Permalink">#</a>Standard Example Structure</h3>
+<h3><a id="standard-example-structure" href="#standard-example-structure" class="mr-2" aria-hidden="true" title="Permalink">#</a>Standard Example Structure</h3>
 <p>Each example follows this consistent structure:</p>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">examples/topics/{topic}/{example}/
 ├── code.php                    # Main executable script (required)
@@ -467,8 +467,8 @@ integration testing.</p>
 ├── vendor/                     # Composer dependencies (generated)
 └── flow_php_example.zip        # Distribution archive (generated)
 </code></pre>
-<h2><a id="flow-php-running-examples" href="#content-running-examples" class="mr-2" aria-hidden="true" title="Permalink">#</a>Running Examples</h2>
-<h3><a id="flow-php-command-line-interface" href="#content-command-line-interface" class="mr-2" aria-hidden="true" title="Permalink">#</a>Command Line Interface</h3>
+<h2><a id="running-examples" href="#running-examples" class="mr-2" aria-hidden="true" title="Permalink">#</a>Running Examples</h2>
+<h3><a id="command-line-interface" href="#command-line-interface" class="mr-2" aria-hidden="true" title="Permalink">#</a>Command Line Interface</h3>
 <p>Use the main execution script to run examples:</p>
 <pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight"># Run all examples
 ./examples/run.php
@@ -485,14 +485,14 @@ integration testing.</p>
 # Generate distribution archives
 ./examples/run.php --composer-archive
 </code></pre>
-<h3><a id="flow-php-available-options" href="#content-available-options" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Options</h3>
+<h3><a id="available-options" href="#available-options" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Options</h3>
 <ul>
 <li><code>--topic (-t)</code>: Run examples from a specific topic</li>
 <li><code>--example (-e)</code>: Run a specific example (requires --topic)</li>
 <li><code>--composer-update (-u)</code>: Update dependencies instead of install</li>
 <li><code>--composer-archive (-a)</code>: Generate ZIP archives for distribution</li>
 </ul>
-<h3><a id="flow-php-integration-with-build-system" href="#content-integration-with-build-system" class="mr-2" aria-hidden="true" title="Permalink">#</a>Integration with Build System</h3>
+<h3><a id="integration-with-build-system" href="#integration-with-build-system" class="mr-2" aria-hidden="true" title="Permalink">#</a>Integration with Build System</h3>
 <p>Examples are integrated into the build process:</p>
 <pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight"># Run examples as part of test suite
 composer test:examples
@@ -501,8 +501,8 @@ composer test:examples
 composer test
 </code></pre>
 <p>Examples run automatically in CI/CD on changes to <code>examples/**</code> directory.</p>
-<h2><a id="flow-php-adding-new-examples" href="#content-adding-new-examples" class="mr-2" aria-hidden="true" title="Permalink">#</a>Adding New Examples</h2>
-<h3><a id="flow-php-step-by-step-process" href="#content-step-by-step-process" class="mr-2" aria-hidden="true" title="Permalink">#</a>Step-by-Step Process</h3>
+<h2><a id="adding-new-examples" href="#adding-new-examples" class="mr-2" aria-hidden="true" title="Permalink">#</a>Adding New Examples</h2>
+<h3><a id="step-by-step-process" href="#step-by-step-process" class="mr-2" aria-hidden="true" title="Permalink">#</a>Step-by-Step Process</h3>
 <ol>
 <li>
 <p><strong>Choose Topic and Name</strong></p>
@@ -580,8 +580,8 @@ When to use this pattern...
 </code></pre>
 </li>
 </ol>
-<h2><a id="flow-php-updating-existing-examples" href="#content-updating-existing-examples" class="mr-2" aria-hidden="true" title="Permalink">#</a>Updating Existing Examples</h2>
-<h3><a id="flow-php-common-update-scenarios" href="#content-common-update-scenarios" class="mr-2" aria-hidden="true" title="Permalink">#</a>Common Update Scenarios</h3>
+<h2><a id="updating-existing-examples" href="#updating-existing-examples" class="mr-2" aria-hidden="true" title="Permalink">#</a>Updating Existing Examples</h2>
+<h3><a id="common-update-scenarios" href="#common-update-scenarios" class="mr-2" aria-hidden="true" title="Permalink">#</a>Common Update Scenarios</h3>
 <ol>
 <li>
 <p><strong>Code Changes</strong></p>
@@ -614,8 +614,8 @@ When to use this pattern...
 </ul>
 </li>
 </ol>
-<h2><a id="flow-php-priority-and-organization-system" href="#content-priority-and-organization-system" class="mr-2" aria-hidden="true" title="Permalink">#</a>Priority and Organization System</h2>
-<h3><a id="flow-php-priority-system" href="#content-priority-system" class="mr-2" aria-hidden="true" title="Permalink">#</a>Priority System</h3>
+<h2><a id="priority-and-organization-system" href="#priority-and-organization-system" class="mr-2" aria-hidden="true" title="Permalink">#</a>Priority and Organization System</h2>
+<h3><a id="priority-system" href="#priority-system" class="mr-2" aria-hidden="true" title="Permalink">#</a>Priority System</h3>
 <p>Examples use numeric priorities for ordering:</p>
 <ul>
 <li><strong>Range</strong>: 1-99 (lower numbers = higher priority)</li>
@@ -623,14 +623,14 @@ When to use this pattern...
 <li><strong>Application</strong>: Both topics and individual examples</li>
 <li><strong>Display</strong>: Lower priority numbers appear first</li>
 </ul>
-<h3><a id="flow-php-visibility-control" href="#content-visibility-control" class="mr-2" aria-hidden="true" title="Permalink">#</a>Visibility Control</h3>
+<h3><a id="visibility-control" href="#visibility-control" class="mr-2" aria-hidden="true" title="Permalink">#</a>Visibility Control</h3>
 <ul>
 <li><strong><code>hidden.txt</code></strong>: Empty file that hides examples from website</li>
 <li><strong>Use cases</strong>: Internal examples, development utilities, deprecated examples</li>
 <li><strong>Current usage</strong>: Applied to some sequence generator examples</li>
 </ul>
-<h2><a id="flow-php-maintenance-and-cleanup" href="#content-maintenance-and-cleanup" class="mr-2" aria-hidden="true" title="Permalink">#</a>Maintenance and Cleanup</h2>
-<h3><a id="flow-php-cleanup-operations" href="#content-cleanup-operations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Cleanup Operations</h3>
+<h2><a id="maintenance-and-cleanup" href="#maintenance-and-cleanup" class="mr-2" aria-hidden="true" title="Permalink">#</a>Maintenance and Cleanup</h2>
+<h3><a id="cleanup-operations" href="#cleanup-operations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Cleanup Operations</h3>
 <p>Remove generated files and dependencies:</p>
 <pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight"># Clean all examples
 ./examples/clean.php
@@ -639,14 +639,14 @@ When to use this pattern...
 # - vendor/ directories
 # - flow_php_example.zip files
 </code></pre>
-<h3><a id="flow-php-archive-generation" href="#content-archive-generation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Archive Generation</h3>
+<h3><a id="archive-generation" href="#archive-generation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Archive Generation</h3>
 <p>Create distribution packages:</p>
 <pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight"># Generate archives for all examples
 ./examples/run.php --composer-archive
 
 # Archives are created as flow_php_example.zip in each example directory
 </code></pre>
-<h2><a id="flow-php-integration-with-website" href="#content-integration-with-website" class="mr-2" aria-hidden="true" title="Permalink">#</a>Integration with Website</h2>
+<h2><a id="integration-with-website" href="#integration-with-website" class="mr-2" aria-hidden="true" title="Permalink">#</a>Integration with Website</h2>
 <p>Examples are automatically integrated into the Flow PHP website:</p>
 <ul>
 <li><strong>Dynamic content</strong>: Website reads examples directly from filesystem</li>

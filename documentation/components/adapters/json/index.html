@@ -427,7 +427,7 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-etl-adapter-json" href="#content-etl-adapter-json" class="mr-2" aria-hidden="true" title="Permalink">#</a>ETL Adapter: JSON</h1>
+            <h1><a id="etl-adapter-json" href="#etl-adapter-json" class="mr-2" aria-hidden="true" title="Permalink">#</a>ETL Adapter: JSON</h1>
 <ul>
 <li><a href="/documentation/introduction">⬅️️ Back</a></li>
 <li><a href="/documentation/api/adapter/json">📚API Reference</a></li>
@@ -443,14 +443,14 @@ processing and transformation scenarios. This library embodies Flow PHP's commit
 data processing solutions, making it a prime choice for developers dealing with JSON data in large-scale and
 data-intensive environments. With Flow PHP's Adapter JSON, managing JSON data within your ETL workflows becomes a more
 simplified and efficient task, perfectly aligning with the robust and adaptable nature of the Flow PHP ecosystem.</p>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/etl-adapter-json:~0.28.0
 </code></pre>
 <blockquote>
 <p>Json library is not explicitly required, you need to make sure it is available in your composer.json file.
 If you are only using Loader, this dependency is optional.</p>
 </blockquote>
-<h2><a id="flow-php-extractor---jsonmachine---jsonextractor" href="#content-extractor---jsonmachine---jsonextractor" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extractor - JSONMachine - JsonExtractor</h2>
+<h2><a id="extractor---jsonmachine---jsonextractor" href="#extractor---jsonmachine---jsonextractor" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extractor - JSONMachine - JsonExtractor</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use Flow\ETL\Adapter\JSON\JSONMachine\JsonExtractor;
@@ -459,7 +459,7 @@ $rows = (new Flow())
     -&gt;read(from_json(__DIR__ . '/../Fixtures/timezones.json', 5))
     -&gt;fetch()
 </code></pre>
-<h2><a id="flow-php-loader---jsonloader" href="#content-loader---jsonloader" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loader - JsonLoader</h2>
+<h2><a id="loader---jsonloader" href="#loader---jsonloader" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loader - JsonLoader</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\ETL\Adapter\JSON\{to_json};
@@ -482,7 +482,7 @@ use Flow\ETL\Rows;
     -&gt;write(to_json(\sys_get_temp_dir() . '/file.json'))
     -&gt;run();
 </code></pre>
-<h2><a id="flow-php-loader---jsonloader---json-lines" href="#content-loader---jsonloader---json-lines" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loader - JsonLoader - JSON lines</h2>
+<h2><a id="loader---jsonloader---json-lines" href="#loader---jsonloader---json-lines" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loader - JsonLoader - JSON lines</h2>
 <p>It is also possible to export the rows using the <a rel="noopener noreferrer" target="_blank" href="https://jsonlines.org/">json lines</a> format</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 

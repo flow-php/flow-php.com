@@ -427,7 +427,7 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-openapi-specification-bridge" href="#content-openapi-specification-bridge" class="mr-2" aria-hidden="true" title="Permalink">#</a>OpenAPI Specification Bridge</h1>
+            <h1><a id="openapi-specification-bridge" href="#openapi-specification-bridge" class="mr-2" aria-hidden="true" title="Permalink">#</a>OpenAPI Specification Bridge</h1>
 <ul>
 <li><a href="/documentation/introduction">⬅️️ Back</a></li>
 <li><a href="/documentation/api/bridge/openapi/specification">📚API Reference</a></li>
@@ -435,12 +435,12 @@
 </ul>
 <p>This package provides bidirectional conversion between Flow PHP schemas and OpenAPI 3.0 specifications.
 It enables you to generate OpenAPI documentation from Flow schemas and vice versa, facilitating API-first development and documentation workflows.</p>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/openapi-specification-bridge:~0.28.0
 </code></pre>
-<h2><a id="flow-php-usage" href="#content-usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h2>
+<h2><a id="usage" href="#usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h2>
 <p>This bridge allows you to convert Flow PHP schemas to OpenAPI specification format and vice versa.</p>
-<h3><a id="flow-php-converting-flow-schema-to-openapi" href="#content-converting-flow-schema-to-openapi" class="mr-2" aria-hidden="true" title="Permalink">#</a>Converting Flow Schema to OpenAPI</h3>
+<h3><a id="converting-flow-schema-to-openapi" href="#converting-flow-schema-to-openapi" class="mr-2" aria-hidden="true" title="Permalink">#</a>Converting Flow Schema to OpenAPI</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\ETL\DSL\{schema, int_schema, str_schema, bool_schema};
@@ -487,7 +487,7 @@ $openApiSpec = schema_to_openapi_specification($userSchema);
 //     ]
 // ]
 </code></pre>
-<h3><a id="flow-php-converting-openapi-to-flow-schema" href="#content-converting-openapi-to-flow-schema" class="mr-2" aria-hidden="true" title="Permalink">#</a>Converting OpenAPI to Flow Schema</h3>
+<h3><a id="converting-openapi-to-flow-schema" href="#converting-openapi-to-flow-schema" class="mr-2" aria-hidden="true" title="Permalink">#</a>Converting OpenAPI to Flow Schema</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\Bridge\OpenAPI\Specification\DSL\schema_from_openapi_specification;
@@ -522,9 +522,9 @@ $flowSchema = schema_from_openapi_specification($openApiSpec);
 
 // Now you can use $flowSchema in Flow ETL pipelines
 </code></pre>
-<h2><a id="flow-php-openapi-metadata" href="#content-openapi-metadata" class="mr-2" aria-hidden="true" title="Permalink">#</a>OpenAPI Metadata</h2>
+<h2><a id="openapi-metadata" href="#openapi-metadata" class="mr-2" aria-hidden="true" title="Permalink">#</a>OpenAPI Metadata</h2>
 <p>The OpenAPI Specification Bridge provides specialized metadata handling through the <code>OpenAPIMetadata</code> enum, allowing you to add OpenAPI-specific properties to your Flow schema definitions. This metadata is used during schema conversion to generate rich OpenAPI specifications.</p>
-<h3><a id="flow-php-available-openapi-metadata" href="#content-available-openapi-metadata" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available OpenAPI Metadata</h3>
+<h3><a id="available-openapi-metadata" href="#available-openapi-metadata" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available OpenAPI Metadata</h3>
 <p>The <code>OpenAPIMetadata</code> enum provides the following metadata types:</p>
 <ul>
 <li><code>DESCRIPTION</code> - Human-readable description of the property</li>
@@ -538,7 +538,7 @@ $flowSchema = schema_from_openapi_specification($openApiSpec);
 <li><code>WRITE_ONLY</code> - Mark property as write-only</li>
 <li><code>NULLABLE</code> - Override schema nullability</li>
 </ul>
-<h3><a id="flow-php-using-openapi-metadata" href="#content-using-openapi-metadata" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using OpenAPI Metadata</h3>
+<h3><a id="using-openapi-metadata" href="#using-openapi-metadata" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using OpenAPI Metadata</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\ETL\DSL\{schema, int_schema, str_schema};
@@ -617,7 +617,7 @@ $openApiSpec = $converter-&gt;toOpenAPI($userSchema);
 //     ]
 // ]
 </code></pre>
-<h3><a id="flow-php-metadata-priority-system" href="#content-metadata-priority-system" class="mr-2" aria-hidden="true" title="Permalink">#</a>Metadata Priority System</h3>
+<h3><a id="metadata-priority-system" href="#metadata-priority-system" class="mr-2" aria-hidden="true" title="Permalink">#</a>Metadata Priority System</h3>
 <p>The OpenAPI bridge uses a priority system when handling metadata:</p>
 <ol>
 <li><strong>OpenAPI-specific metadata</strong> (from <code>OpenAPIMetadata</code>) takes highest priority</li>
@@ -640,7 +640,7 @@ $schema = schema(
 
 // Result will use OpenAPI values: "OpenAPI description" and "OpenAPI example"
 </code></pre>
-<h3><a id="flow-php-common-openapi-formats" href="#content-common-openapi-formats" class="mr-2" aria-hidden="true" title="Permalink">#</a>Common OpenAPI Formats</h3>
+<h3><a id="common-openapi-formats" href="#common-openapi-formats" class="mr-2" aria-hidden="true" title="Permalink">#</a>Common OpenAPI Formats</h3>
 <p>Here are some commonly used OpenAPI formats you can specify with <code>OpenAPIMetadata::format()</code>:</p>
 <p><strong>String formats:</strong></p>
 <ul>
@@ -663,7 +663,7 @@ $schema = schema(
 <li><code>float</code> - Floating point number</li>
 <li><code>double</code> - Double precision number</li>
 </ul>
-<h3><a id="flow-php-usage-example" href="#content-usage-example" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage Example</h3>
+<h3><a id="usage-example" href="#usage-example" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage Example</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\ETL\DSL\{schema, int_schema, str_schema, list_schema, structure_schema};

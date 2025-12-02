@@ -427,15 +427,15 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-data-retrieval" href="#content-data-retrieval" class="mr-2" aria-hidden="true" title="Permalink">#</a>Data Retrieval</h1>
+            <h1><a id="data-retrieval" href="#data-retrieval" class="mr-2" aria-hidden="true" title="Permalink">#</a>Data Retrieval</h1>
 <ul>
 <li><a href="/documentation/components/core/core">⬅️️ Back</a></li>
 </ul>
 <p>DataFrame provides several methods for retrieving processed data. These methods are trigger operations that execute the
 entire pipeline.</p>
-<h2><a id="flow-php-memory-safe-retrieval-recommended" href="#content-memory-safe-retrieval-recommended" class="mr-2" aria-hidden="true" title="Permalink">#</a>Memory-Safe Retrieval (Recommended)</h2>
+<h2><a id="memory-safe-retrieval-recommended" href="#memory-safe-retrieval-recommended" class="mr-2" aria-hidden="true" title="Permalink">#</a>Memory-Safe Retrieval (Recommended)</h2>
 <p>These methods use generators to maintain constant memory usage regardless of dataset size:</p>
-<h3><a id="flow-php-get---retrieve-as-rows-batches" href="#content-get---retrieve-as-rows-batches" class="mr-2" aria-hidden="true" title="Permalink">#</a>get() - Retrieve as Rows batches</h3>
+<h3><a id="get---retrieve-as-rows-batches" href="#get---retrieve-as-rows-batches" class="mr-2" aria-hidden="true" title="Permalink">#</a>get() - Retrieve as Rows batches</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 use function Flow\ETL\DSL\{data_frame, from_array};
@@ -450,7 +450,7 @@ foreach ($dataFrame-&gt;get() as $rows) {
     }
 }
 </code></pre>
-<h3><a id="flow-php-geteach---retrieve-individual-rows" href="#content-geteach---retrieve-individual-rows" class="mr-2" aria-hidden="true" title="Permalink">#</a>getEach() - Retrieve individual Rows</h3>
+<h3><a id="geteach---retrieve-individual-rows" href="#geteach---retrieve-individual-rows" class="mr-2" aria-hidden="true" title="Permalink">#</a>getEach() - Retrieve individual Rows</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 foreach ($dataFrame-&gt;getEach() as $row) {
@@ -458,7 +458,7 @@ foreach ($dataFrame-&gt;getEach() as $row) {
     echo "Name: " . $row-&gt;get('name')-&gt;value() . "\n";
 }
 </code></pre>
-<h3><a id="flow-php-getasarray---retrieve-as-array-batches" href="#content-getasarray---retrieve-as-array-batches" class="mr-2" aria-hidden="true" title="Permalink">#</a>getAsArray() - Retrieve as array batches</h3>
+<h3><a id="getasarray---retrieve-as-array-batches" href="#getasarray---retrieve-as-array-batches" class="mr-2" aria-hidden="true" title="Permalink">#</a>getAsArray() - Retrieve as array batches</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 foreach ($dataFrame-&gt;getAsArray() as $rowsArray) {
@@ -468,7 +468,7 @@ foreach ($dataFrame-&gt;getAsArray() as $rowsArray) {
     }
 }
 </code></pre>
-<h3><a id="flow-php-geteachasarray---retrieve-individual-arrays" href="#content-geteachasarray---retrieve-individual-arrays" class="mr-2" aria-hidden="true" title="Permalink">#</a>getEachAsArray() - Retrieve individual arrays</h3>
+<h3><a id="geteachasarray---retrieve-individual-arrays" href="#geteachasarray---retrieve-individual-arrays" class="mr-2" aria-hidden="true" title="Permalink">#</a>getEachAsArray() - Retrieve individual arrays</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 foreach ($dataFrame-&gt;getEachAsArray() as $rowArray) {
@@ -476,7 +476,7 @@ foreach ($dataFrame-&gt;getEachAsArray() as $rowArray) {
     echo "Name: " . $rowArray['name'] . "\n";
 }
 </code></pre>
-<h3><a id="flow-php-fetch---load-into-memory" href="#content-fetch---load-into-memory" class="mr-2" aria-hidden="true" title="Permalink">#</a>fetch() - Load into memory</h3>
+<h3><a id="fetch---load-into-memory" href="#fetch---load-into-memory" class="mr-2" aria-hidden="true" title="Permalink">#</a>fetch() - Load into memory</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 // Fetch limited results (safe)
@@ -493,7 +493,7 @@ $allRows = $dataFrame-&gt;fetch(); // Can cause memory exhaustion
 it will attempt to load the entire dataset into memory, which can cause memory exhaustion. Always use with a reasonable
 limit or prefer generator-based methods.</p>
 </blockquote>
-<h3><a id="flow-php-count---count-total-rows" href="#content-count---count-total-rows" class="mr-2" aria-hidden="true" title="Permalink">#</a>count() - Count total rows</h3>
+<h3><a id="count---count-total-rows" href="#count---count-total-rows" class="mr-2" aria-hidden="true" title="Permalink">#</a>count() - Count total rows</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 $totalCount = $dataFrame-&gt;count();
@@ -504,8 +504,8 @@ echo "Total rows: $totalCount\n";
 be expensive for large datasets. Consider whether you actually need the exact count or if an approximation would
 suffice.</p>
 </blockquote>
-<h2><a id="flow-php-iteration-with-callback" href="#content-iteration-with-callback" class="mr-2" aria-hidden="true" title="Permalink">#</a>Iteration with Callback</h2>
-<h3><a id="flow-php-foreach---process-with-callback" href="#content-foreach---process-with-callback" class="mr-2" aria-hidden="true" title="Permalink">#</a>forEach() - Process with callback</h3>
+<h2><a id="iteration-with-callback" href="#iteration-with-callback" class="mr-2" aria-hidden="true" title="Permalink">#</a>Iteration with Callback</h2>
+<h3><a id="foreach---process-with-callback" href="#foreach---process-with-callback" class="mr-2" aria-hidden="true" title="Permalink">#</a>forEach() - Process with callback</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 $dataFrame-&gt;forEach(function (Rows $rows) {

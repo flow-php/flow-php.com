@@ -427,21 +427,21 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-join" href="#content-join" class="mr-2" aria-hidden="true" title="Permalink">#</a>Join</h1>
+            <h1><a id="join" href="#join" class="mr-2" aria-hidden="true" title="Permalink">#</a>Join</h1>
 <ul>
 <li><a href="/documentation/components/core/core">⬅️️ Back</a></li>
 </ul>
 <p>Joining two data frames is a common operation in data processing that combines data from two different sources. Flow PHP
 implements joins using a <strong>hash join algorithm</strong> that creates a hash table from the right DataFrame and probes it with
 rows from the left DataFrame.</p>
-<h2><a id="flow-php-join-methods" href="#content-join-methods" class="mr-2" aria-hidden="true" title="Permalink">#</a>Join Methods</h2>
-<h3><a id="flow-php-join-1" href="#content-join-1" class="mr-2" aria-hidden="true" title="Permalink">#</a>join()</h3>
+<h2><a id="join-methods" href="#join-methods" class="mr-2" aria-hidden="true" title="Permalink">#</a>Join Methods</h2>
+<h3><a id="join-1" href="#join-1" class="mr-2" aria-hidden="true" title="Permalink">#</a>join()</h3>
 <p>Main join method that loads the right DataFrame into memory as a hash table for efficient lookups.</p>
-<h3><a id="flow-php-crossjoin---cartesian-product" href="#content-crossjoin---cartesian-product" class="mr-2" aria-hidden="true" title="Permalink">#</a>crossJoin() - Cartesian Product</h3>
+<h3><a id="crossjoin---cartesian-product" href="#crossjoin---cartesian-product" class="mr-2" aria-hidden="true" title="Permalink">#</a>crossJoin() - Cartesian Product</h3>
 <p>Joins each row from the left side with each row on the right side, creating <code>count(left) * count(right)</code> rows total.</p>
-<h3><a id="flow-php-joineach---streaming-join" href="#content-joineach---streaming-join" class="mr-2" aria-hidden="true" title="Permalink">#</a>joinEach() - Streaming Join</h3>
+<h3><a id="joineach---streaming-join" href="#joineach---streaming-join" class="mr-2" aria-hidden="true" title="Permalink">#</a>joinEach() - Streaming Join</h3>
 <p>Right side is dynamically generated for each left row, useful for large right-side datasets that don't fit in memory.</p>
-<h2><a id="flow-php-join-types" href="#content-join-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Join Types</h2>
+<h2><a id="join-types" href="#join-types" class="mr-2" aria-hidden="true" title="Permalink">#</a>Join Types</h2>
 <p>Flow PHP supports four join types with specific behaviors:</p>
 <table>
 <thead>
@@ -472,7 +472,7 @@ rows from the left DataFrame.</p>
 <blockquote>
 <p>Flow uses hash join implementation where hashes are stored in sorted buckets to optimize memory usage and performance.</p>
 </blockquote>
-<h2><a id="flow-php-example" href="#content-example" class="mr-2" aria-hidden="true" title="Permalink">#</a>Example</h2>
+<h2><a id="example" href="#example" class="mr-2" aria-hidden="true" title="Permalink">#</a>Example</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 $externalProducts = [

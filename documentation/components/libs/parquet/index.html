@@ -427,20 +427,20 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-parquet" href="#content-parquet" class="mr-2" aria-hidden="true" title="Permalink">#</a>Parquet</h1>
+            <h1><a id="parquet" href="#parquet" class="mr-2" aria-hidden="true" title="Permalink">#</a>Parquet</h1>
 <ul>
 <li><a href="/documentation/introduction">⬅️️ Back</a></li>
 <li><a href="/documentation/api/lib/parquet">📚API Reference</a></li>
 <li><a href="/documentation/api/lib/parquet/indices/files.html">📁Files</a></li>
 </ul>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/parquet:~0.28.0
 </code></pre>
-<h2><a id="flow-php-what-is-parquet" href="#content-what-is-parquet" class="mr-2" aria-hidden="true" title="Permalink">#</a>What is Parquet</h2>
+<h2><a id="what-is-parquet" href="#what-is-parquet" class="mr-2" aria-hidden="true" title="Permalink">#</a>What is Parquet</h2>
 <p>Apache Parquet is an open source, column-oriented data file format designed for efficient data storage and retrieval.
 It provides efficient data compression and encoding schemes with enhanced performance to handle complex data in bulk.
 Parquet is available in multiple languages including Java, C++, Python, etc... <strong>Now also in PHP!</strong></p>
-<h2><a id="flow-php-columnar-storage" href="#content-columnar-storage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Columnar Storage</h2>
+<h2><a id="columnar-storage" href="#columnar-storage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Columnar Storage</h2>
 <p>Parquet stores data in a columnar format, but what does it means?</p>
 <p>Row-based format:</p>
 <hr />
@@ -470,7 +470,7 @@ Parquet is available in multiple languages including Java, C++, Python, etc... <
 </tr>
 </tbody>
 </table>
-<h2><a id="flow-php-column-based-format" href="#content-column-based-format" class="mr-2" aria-hidden="true" title="Permalink">#</a>Column-based format:</h2>
+<h2><a id="column-based-format" href="#column-based-format" class="mr-2" aria-hidden="true" title="Permalink">#</a>Column-based format:</h2>
 <table>
 <thead>
 <tr>
@@ -503,7 +503,7 @@ Parquet is available in multiple languages including Java, C++, Python, etc... <
 <li><strong>Data skipping</strong>: When querying a subset of rows, we can skip reading the other rows. This is especially useful when the rows are large.</li>
 <li><strong>Reading selective columns</strong>: When querying a subset of columns, we can skip reading the other columns. This is especially useful when the columns are large.</li>
 </ul>
-<h3><a id="flow-php-parquet-file-structure" href="#content-parquet-file-structure" class="mr-2" aria-hidden="true" title="Permalink">#</a>Parquet File Structure</h3>
+<h3><a id="parquet-file-structure" href="#parquet-file-structure" class="mr-2" aria-hidden="true" title="Permalink">#</a>Parquet File Structure</h3>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">4-byte magic number "PAR1"
 &lt;Column 1 Chunk 1 + Column Metadata&gt;
 &lt;Column 2 Chunk 1 + Column Metadata&gt;
@@ -523,7 +523,7 @@ File Metadata
 4-byte magic number "PAR1"
 </code></pre>
 <p><img src="https://parquet.apache.org/images/FileLayout.gif" alt="Parquet File Structure" /></p>
-<h2><a id="flow-php-reading-parquet-files" href="#content-reading-parquet-files" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading Parquet Files</h2>
+<h2><a id="reading-parquet-files" href="#reading-parquet-files" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading Parquet Files</h2>
 <p>The first thing we need to do is to create a reader.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Reader;
 
@@ -538,11 +538,11 @@ $reader = new Reader();
 <blockquote>
 <p>Please be aware that not all options are affecting reader.</p>
 </blockquote>
-<h3><a id="flow-php-reader-options" href="#content-reader-options" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reader Options</h3>
+<h3><a id="reader-options" href="#reader-options" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reader Options</h3>
 <ul>
 <li><code>INT_96_AS_DATETIME</code> - default: <code>true</code> - if set to <code>true</code> then <code>INT96</code> values will be converted to <code>DateTime</code> objects.</li>
 </ul>
-<h3><a id="flow-php-reading-a-file" href="#content-reading-a-file" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading a file</h3>
+<h3><a id="reading-a-file" href="#reading-a-file" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading a file</h3>
 <p>Once we have reader we can read a file.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Reader;
 
@@ -558,7 +558,7 @@ $file = $reader-&gt;readStream(\fopen('path/to/file.parquet', 'rb'));
 <li><code>ParquetFile::metadata() : Metadata</code></li>
 <li><code>ParquetFile::schema() : Schema</code> - shortcut for <code>ParquetFile::metadata()-&gt;schema()</code></li>
 </ul>
-<h3><a id="flow-php-reading-the-whole-file" href="#content-reading-the-whole-file" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading the whole file:</h3>
+<h3><a id="reading-the-whole-file" href="#reading-the-whole-file" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading the whole file:</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Reader;
 
 $reader = new Reader();
@@ -568,7 +568,7 @@ foreach ($file-&gt;values() as $row) {
     // do something with $row
 }
 </code></pre>
-<h3><a id="flow-php-reading-selected-columns" href="#content-reading-selected-columns" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading selected columns</h3>
+<h3><a id="reading-selected-columns" href="#reading-selected-columns" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading selected columns</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\Reader;
 
 $reader = new Reader();
@@ -578,7 +578,7 @@ foreach ($file-&gt;values(["column_1", "column_2"]) as $row) {
     // do something with $row
 }
 </code></pre>
-<h3><a id="flow-php-pagination" href="#content-pagination" class="mr-2" aria-hidden="true" title="Permalink">#</a>Pagination</h3>
+<h3><a id="pagination" href="#pagination" class="mr-2" aria-hidden="true" title="Permalink">#</a>Pagination</h3>
 <blockquote>
 <p>[!NOTE]
 Paginating over parquet file is a bit tricky, especially if we want to keep memory usage low.
@@ -593,7 +593,7 @@ foreach ($file-&gt;values(["column_1", "column_2"], limit: 100, offset: 1000) as
     // do something with $row
 }
 </code></pre>
-<h2><a id="flow-php-writing-parquet-files" href="#content-writing-parquet-files" class="mr-2" aria-hidden="true" title="Permalink">#</a>Writing Parquet Files</h2>
+<h2><a id="writing-parquet-files" href="#writing-parquet-files" class="mr-2" aria-hidden="true" title="Permalink">#</a>Writing Parquet Files</h2>
 <p>Since parquet is a binary format, we need to provide a schema for the writer so it can know how
 to encode values in specific columns.</p>
 <p>Here is how we can create a schema:</p>
@@ -639,7 +639,7 @@ $writer = new Writer();
 </code></pre>
 <p>This approach will open a parquet file, create a group writer, write all data and close the file.
 It requires to keep whole dataset in memory which usually is not the best approach.</p>
-<h3><a id="flow-php-writing-data-in-chunks" href="#content-writing-data-in-chunks" class="mr-2" aria-hidden="true" title="Permalink">#</a>Writing data in chunks</h3>
+<h3><a id="writing-data-in-chunks" href="#writing-data-in-chunks" class="mr-2" aria-hidden="true" title="Permalink">#</a>Writing data in chunks</h3>
 <p>Before we can write a batch of rows, we need to open a file.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$writer-&gt;open($path, $schema);
 $writer-&gt;writeBatch([$row, $row]);
@@ -652,7 +652,7 @@ $writer-&gt;close();
 <p>We can also open a file for a resource:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$writer-&gt;openForStream($stream, $schema);
 </code></pre>
-<h3><a id="flow-php-writing-a-single-row" href="#content-writing-a-single-row" class="mr-2" aria-hidden="true" title="Permalink">#</a>Writing a single row</h3>
+<h3><a id="writing-a-single-row" href="#writing-a-single-row" class="mr-2" aria-hidden="true" title="Permalink">#</a>Writing a single row</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$writer-&gt;open($path, $schema);
 $writer-&gt;writeRow($row);
 $writer-&gt;writeRow($row);
@@ -666,7 +666,7 @@ $writer-&gt;close();
 At this point, schema evolution is not yet supported.
 We need to make sure that schema is the same as the one used to create a file.</p>
 </blockquote>
-<h3><a id="flow-php-writer-options" href="#content-writer-options" class="mr-2" aria-hidden="true" title="Permalink">#</a>Writer Options</h3>
+<h3><a id="writer-options" href="#writer-options" class="mr-2" aria-hidden="true" title="Permalink">#</a>Writer Options</h3>
 <ul>
 <li><code>BYTE_ARRAY_TO_STRING</code> - default: <code>true</code> - if set to <code>true</code> then <code>BYTE_ARRAY</code> values will be converted to <code>string</code> objects.</li>
 <li><code>DICTIONARY_PAGE_MIN_CARDINALITY_RATION</code> - default '0.4' - minimum ratio of unique values to total values for a column to have dictionary encoding.</li>
@@ -699,7 +699,7 @@ But it will take a little longer to write to these files, because writer has to 
 more frequently.</p>
 <p>Unfortunately, there is no one size fits all solution here.
 You will need to play a bit with those values to find the best one for your use case.</p>
-<h2><a id="flow-php-compressions" href="#content-compressions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Compressions</h2>
+<h2><a id="compressions" href="#compressions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Compressions</h2>
 <p>Parquet supports several compression algorithms.</p>
 <ul>
 <li><code>BROTLI</code> - supported if <a rel="noopener noreferrer" target="_blank" href="https://github.com/kjdev/php-ext-brotli">Brotli Extension</a> is installed</li>
@@ -714,9 +714,9 @@ You will need to play a bit with those values to find the best one for your use 
 <p>Obviously, compression is a trade-off between speed and size.
 If you want to achieve the best compression, you should use <code>GZIP</code> or <code>SNAPPY</code> which is a default compression algorithm.</p>
 <p>For not yet supported algorithms, please check our <a rel="noopener noreferrer" target="_blank" href="https://github.com/orgs/flow-php/projects/1">Roadmap</a> to understand when they will be supported.</p>
-<h3><a id="flow-php-per-column-compression" href="#content-per-column-compression" class="mr-2" aria-hidden="true" title="Permalink">#</a>Per-Column Compression</h3>
+<h3><a id="per-column-compression" href="#per-column-compression" class="mr-2" aria-hidden="true" title="Permalink">#</a>Per-Column Compression</h3>
 <p>You can specify different compression algorithms for individual columns using flat path notation. This allows fine-grained control over the compression strategy for optimal storage and performance.</p>
-<h4><a id="flow-php-when-to-use-per-column-compression" href="#content-when-to-use-per-column-compression" class="mr-2" aria-hidden="true" title="Permalink">#</a>When to Use Per-Column Compression</h4>
+<h4><a id="when-to-use-per-column-compression" href="#when-to-use-per-column-compression" class="mr-2" aria-hidden="true" title="Permalink">#</a>When to Use Per-Column Compression</h4>
 <p><strong>Different data characteristics require different compression strategies:</strong></p>
 <ul>
 <li><strong>Fast access columns</strong> (IDs, timestamps) - Use <code>UNCOMPRESSED</code> or <code>LZ4</code> for minimal decompression overhead</li>
@@ -725,7 +725,7 @@ If you want to achieve the best compression, you should use <code>GZIP</code> or
 <li><strong>Numerical data</strong> - Use <code>LZ4</code> or <code>SNAPPY</code> for good compression with fast access</li>
 <li><strong>Archival columns</strong> - Use <code>ZSTD</code> for maximum compression when access speed is less critical</li>
 </ul>
-<h4><a id="flow-php-basic-per-column-compression" href="#content-basic-per-column-compression" class="mr-2" aria-hidden="true" title="Permalink">#</a>Basic Per-Column Compression</h4>
+<h4><a id="basic-per-column-compression" href="#basic-per-column-compression" class="mr-2" aria-hidden="true" title="Permalink">#</a>Basic Per-Column Compression</h4>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\{Writer, Options, Option};
 use Flow\Parquet\ParquetFile\{Schema, Compressions};
 use Flow\Parquet\ParquetFile\Schema\FlatColumn;
@@ -747,7 +747,7 @@ $options = Options::default()-&gt;set(Option::COLUMNS_COMPRESSIONS, [
 // Global compression serves as fallback for unspecified columns
 $writer = new Writer(compressions: Compressions::GZIP, options: $options);
 </code></pre>
-<h4><a id="flow-php-nested-column-compression" href="#content-nested-column-compression" class="mr-2" aria-hidden="true" title="Permalink">#</a>Nested Column Compression</h4>
+<h4><a id="nested-column-compression" href="#nested-column-compression" class="mr-2" aria-hidden="true" title="Permalink">#</a>Nested Column Compression</h4>
 <p>For nested structures, use the same flat path notation as column encodings:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\ParquetFile\Schema\{NestedColumn, ListElement, MapKey, MapValue};
 
@@ -781,7 +781,7 @@ $options = Options::default()-&gt;set(Option::COLUMNS_COMPRESSIONS, [
     'metadata.key_value.value' =&gt; Compressions::ZSTD   // Max compression for metadata values
 ]);
 </code></pre>
-<h4><a id="flow-php-performance-optimized-strategies" href="#content-performance-optimized-strategies" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance-Optimized Strategies</h4>
+<h4><a id="performance-optimized-strategies" href="#performance-optimized-strategies" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance-Optimized Strategies</h4>
 <p><strong>Query-Optimized Strategy:</strong></p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$options = Options::default()-&gt;set(Option::COLUMNS_COMPRESSIONS, [
     // Frequently queried columns - prioritize speed
@@ -810,7 +810,7 @@ $options = Options::default()-&gt;set(Option::COLUMNS_COMPRESSIONS, [
     'attributes' =&gt; Compressions::ZSTD
 ]);
 </code></pre>
-<h4><a id="flow-php-combined-compression-and-encoding-strategy" href="#content-combined-compression-and-encoding-strategy" class="mr-2" aria-hidden="true" title="Permalink">#</a>Combined Compression and Encoding Strategy</h4>
+<h4><a id="combined-compression-and-encoding-strategy" href="#combined-compression-and-encoding-strategy" class="mr-2" aria-hidden="true" title="Permalink">#</a>Combined Compression and Encoding Strategy</h4>
 <p>You can combine per-column compression with custom encodings for optimal results:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$options = Options::default()
     -&gt;set(Option::COLUMNS_COMPRESSIONS, [
@@ -824,7 +824,7 @@ $options = Options::default()-&gt;set(Option::COLUMNS_COMPRESSIONS, [
         'metadata' =&gt; Encodings::PLAIN                    // No encoding overhead for compressed data
     ]);
 </code></pre>
-<h4><a id="flow-php-compression-selection-guidelines" href="#content-compression-selection-guidelines" class="mr-2" aria-hidden="true" title="Permalink">#</a>Compression Selection Guidelines</h4>
+<h4><a id="compression-selection-guidelines" href="#compression-selection-guidelines" class="mr-2" aria-hidden="true" title="Permalink">#</a>Compression Selection Guidelines</h4>
 <table>
 <thead>
 <tr>
@@ -879,7 +879,7 @@ $options = Options::default()-&gt;set(Option::COLUMNS_COMPRESSIONS, [
 </tr>
 </tbody>
 </table>
-<h4><a id="flow-php-performance-vs-compression-trade-offs" href="#content-performance-vs-compression-trade-offs" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance vs. Compression Trade-offs</h4>
+<h4><a id="performance-vs-compression-trade-offs" href="#performance-vs-compression-trade-offs" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance vs. Compression Trade-offs</h4>
 <p><strong>Compression Ratio (Best to Worst):</strong></p>
 <ol>
 <li><code>ZSTD</code> - Best compression, slower decompression</li>
@@ -898,11 +898,11 @@ $options = Options::default()-&gt;set(Option::COLUMNS_COMPRESSIONS, [
 <li><code>BROTLI</code> - Slower decompression</li>
 <li><code>ZSTD</code> - Configurable, generally slower for high compression</li>
 </ol>
-<h2><a id="flow-php-column-encodings" href="#content-column-encodings" class="mr-2" aria-hidden="true" title="Permalink">#</a>Column Encodings</h2>
+<h2><a id="column-encodings" href="#column-encodings" class="mr-2" aria-hidden="true" title="Permalink">#</a>Column Encodings</h2>
 <p>Parquet supports various column encoding algorithms that can significantly impact file size and query performance.
 You can specify custom encodings for individual columns using flat path notation.</p>
-<h3><a id="flow-php-available-encodings" href="#content-available-encodings" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Encodings</h3>
-<h4><a id="flow-php-plain" href="#content-plain" class="mr-2" aria-hidden="true" title="Permalink">#</a>PLAIN</h4>
+<h3><a id="available-encodings" href="#available-encodings" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Encodings</h3>
+<h4><a id="plain" href="#plain" class="mr-2" aria-hidden="true" title="Permalink">#</a>PLAIN</h4>
 <p>The default encoding that stores values as-is without any compression scheme.</p>
 <p><strong>When to use:</strong></p>
 <ul>
@@ -919,7 +919,7 @@ $options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
     'uuid' =&gt; Encodings::PLAIN
 ]);
 </code></pre>
-<h4><a id="flow-php-rledictionary" href="#content-rledictionary" class="mr-2" aria-hidden="true" title="Permalink">#</a>RLE_DICTIONARY</h4>
+<h4><a id="rledictionary" href="#rledictionary" class="mr-2" aria-hidden="true" title="Permalink">#</a>RLE_DICTIONARY</h4>
 <p>Run Length Encoding with Dictionary compression. Values are stored in a dictionary and replaced with indices.</p>
 <p><strong>When to use:</strong></p>
 <ul>
@@ -935,7 +935,7 @@ $options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
     'department' =&gt; Encodings::RLE_DICTIONARY       // 'engineering', 'sales', 'marketing'
 ]);
 </code></pre>
-<h4><a id="flow-php-deltabinarypacked" href="#content-deltabinarypacked" class="mr-2" aria-hidden="true" title="Permalink">#</a>DELTA_BINARY_PACKED</h4>
+<h4><a id="deltabinarypacked" href="#deltabinarypacked" class="mr-2" aria-hidden="true" title="Permalink">#</a>DELTA_BINARY_PACKED</h4>
 <p>Delta encoding with binary packing for integer columns. Stores differences between consecutive values.</p>
 <p><strong>When to use:</strong></p>
 <ul>
@@ -950,8 +950,8 @@ $options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
     'order_number' =&gt; Encodings::DELTA_BINARY_PACKED  // Sequential order IDs
 ]);
 </code></pre>
-<h3><a id="flow-php-using-custom-encodings" href="#content-using-custom-encodings" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using Custom Encodings</h3>
-<h4><a id="flow-php-basic-column-encoding" href="#content-basic-column-encoding" class="mr-2" aria-hidden="true" title="Permalink">#</a>Basic Column Encoding</h4>
+<h3><a id="using-custom-encodings" href="#using-custom-encodings" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using Custom Encodings</h3>
+<h4><a id="basic-column-encoding" href="#basic-column-encoding" class="mr-2" aria-hidden="true" title="Permalink">#</a>Basic Column Encoding</h4>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\Parquet\{Writer, Options, Option};
 use Flow\Parquet\ParquetFile\{Schema, Compressions, Encodings};
 use Flow\Parquet\ParquetFile\Schema\FlatColumn;
@@ -970,7 +970,7 @@ $options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
 
 $writer = new Writer(compressions: Compressions::SNAPPY, options: $options);
 </code></pre>
-<h4><a id="flow-php-nested-column-encoding-flat-path-notation" href="#content-nested-column-encoding-flat-path-notation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Nested Column Encoding (Flat Path Notation)</h4>
+<h4><a id="nested-column-encoding-flat-path-notation" href="#nested-column-encoding-flat-path-notation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Nested Column Encoding (Flat Path Notation)</h4>
 <p>For nested structures, use dot notation to specify the exact column path.
 The flat path follows Parquet's internal structure conventions:</p>
 <p><strong>Flat Path Patterns:</strong></p>
@@ -1048,7 +1048,7 @@ $options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
     'orders.list.element.attributes.key_value.value' =&gt; Encodings::PLAIN
 ]);
 </code></pre>
-<h4><a id="flow-php-mixed-encoding-strategy" href="#content-mixed-encoding-strategy" class="mr-2" aria-hidden="true" title="Permalink">#</a>Mixed Encoding Strategy</h4>
+<h4><a id="mixed-encoding-strategy" href="#mixed-encoding-strategy" class="mr-2" aria-hidden="true" title="Permalink">#</a>Mixed Encoding Strategy</h4>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">$options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
     // High cardinality sequential data
     'order_id' =&gt; Encodings::DELTA_BINARY_PACKED,
@@ -1064,7 +1064,7 @@ $options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
     'product_description' =&gt; Encodings::PLAIN
 ]);
 </code></pre>
-<h3><a id="flow-php-encoding-compatibility" href="#content-encoding-compatibility" class="mr-2" aria-hidden="true" title="Permalink">#</a>Encoding Compatibility</h3>
+<h3><a id="encoding-compatibility" href="#encoding-compatibility" class="mr-2" aria-hidden="true" title="Permalink">#</a>Encoding Compatibility</h3>
 <table>
 <thead>
 <tr>
@@ -1103,7 +1103,7 @@ $options = Options::default()-&gt;set(Option::COLUMNS_ENCODINGS, [
 </tr>
 </tbody>
 </table>
-<h3><a id="flow-php-performance-guidelines" href="#content-performance-guidelines" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance Guidelines</h3>
+<h3><a id="performance-guidelines" href="#performance-guidelines" class="mr-2" aria-hidden="true" title="Permalink">#</a>Performance Guidelines</h3>
 <ol>
 <li><strong>Analyze your data first</strong> - Check cardinality and distribution patterns</li>
 <li><strong>Use RLE_DICTIONARY for categorical data</strong> - Countries, statuses, departments</li>

@@ -427,7 +427,7 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-array-dot" href="#content-array-dot" class="mr-2" aria-hidden="true" title="Permalink">#</a>Array Dot</h1>
+            <h1><a id="array-dot" href="#array-dot" class="mr-2" aria-hidden="true" title="Permalink">#</a>Array Dot</h1>
 <ul>
 <li><a href="/documentation/introduction">⬅️️ Back</a></li>
 <li><a href="/documentation/api/lib/array-dot">📚API Reference</a></li>
@@ -442,10 +442,10 @@ operations. This library aligns well with Flow PHP's core ethos of efficient dat
 it a valuable asset for developers aiming to streamline their array handling tasks in PHP. Whether dealing with
 configuration data, nested JSON objects, or any other complex array structures, the Array Dot library is a reliable
 companion for achieving cleaner and more efficient array operations.</p>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/array-dot:~0.28.0
 </code></pre>
-<h2><a id="flow-php-available-functions" href="#content-available-functions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Functions</h2>
+<h2><a id="available-functions" href="#available-functions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Functions</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php 
 
 array_dot_get(array $array, string $path) : mixed;
@@ -454,7 +454,7 @@ array_dot_rename(array $array, string $path, string $newName) : mixed;
 array_dot_exists(array $array, string $path) : bool;
 array_dot_steps(string $path) : array;
 </code></pre>
-<h3><a id="flow-php-dot-notation---basic-syntax" href="#content-dot-notation---basic-syntax" class="mr-2" aria-hidden="true" title="Permalink">#</a>Dot Notation - Basic Syntax</h3>
+<h3><a id="dot-notation---basic-syntax" href="#dot-notation---basic-syntax" class="mr-2" aria-hidden="true" title="Permalink">#</a>Dot Notation - Basic Syntax</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php 
 
 $array = [
@@ -472,17 +472,17 @@ $array = array_dot_set([], 'foo.bar.baz', 1000); // ['foo' =&gt; ['bar' =&gt; ['
 <p>In above example <code>foo.bar.baz</code> is path which also supports integer keys. For example
 <code>foo.0.baz</code>.</p>
 <p><code>foo</code>, <code>bar</code>, <code>baz</code> represents single steps (keys) of path.</p>
-<h3><a id="flow-php-dot-notation---custom-operators" href="#content-dot-notation---custom-operators" class="mr-2" aria-hidden="true" title="Permalink">#</a>Dot Notation - Custom Operators</h3>
+<h3><a id="dot-notation---custom-operators" href="#dot-notation---custom-operators" class="mr-2" aria-hidden="true" title="Permalink">#</a>Dot Notation - Custom Operators</h3>
 <ul>
 <li><code>?</code> - nullsafe</li>
 <li><code>*</code> - wildcard</li>
 <li><code>?*</code> - nullsafe wildcar</li>
 </ul>
-<h3><a id="flow-php-dot-notation---custom-syntax" href="#content-dot-notation---custom-syntax" class="mr-2" aria-hidden="true" title="Permalink">#</a>Dot Notation - Custom Syntax</h3>
+<h3><a id="dot-notation---custom-syntax" href="#dot-notation---custom-syntax" class="mr-2" aria-hidden="true" title="Permalink">#</a>Dot Notation - Custom Syntax</h3>
 <ul>
 <li><code>{}</code> - multipath</li>
 </ul>
-<h4><a id="flow-php-nullsafe-operator---" href="#content-nullsafe-operator---" class="mr-2" aria-hidden="true" title="Permalink">#</a>Nullsafe Operator - ?</h4>
+<h4><a id="nullsafe-operator---" href="#nullsafe-operator---" class="mr-2" aria-hidden="true" title="Permalink">#</a>Nullsafe Operator - ?</h4>
 <p>Supported in functions:</p>
 <ul>
 <li><code>array_dot_get</code></li>
@@ -516,7 +516,7 @@ $array = [
 
 $value = array_dot_get('foo.?bar.nothing'); // null
 </code></pre>
-<h4><a id="flow-php-wildcard-operator---" href="#content-wildcard-operator---" class="mr-2" aria-hidden="true" title="Permalink">#</a>Wildcard Operator - *</h4>
+<h4><a id="wildcard-operator---" href="#wildcard-operator---" class="mr-2" aria-hidden="true" title="Permalink">#</a>Wildcard Operator - *</h4>
 <p>Supported in functions:</p>
 <ul>
 <li><code>array_dot_get</code></li>
@@ -539,7 +539,7 @@ $array = [
 
 $value = array_dot_get('users.*.id'); // [1, 2]
 </code></pre>
-<h4><a id="flow-php-nullsafe-wildcard-operator---" href="#content-nullsafe-wildcard-operator---" class="mr-2" aria-hidden="true" title="Permalink">#</a>Nullsafe Wildcard Operator - ?*</h4>
+<h4><a id="nullsafe-wildcard-operator---" href="#nullsafe-wildcard-operator---" class="mr-2" aria-hidden="true" title="Permalink">#</a>Nullsafe Wildcard Operator - ?*</h4>
 <p>Supported in functions:</p>
 <ul>
 <li><code>array_dot_get</code></li>
@@ -562,7 +562,7 @@ $array = [
 
 $value = array_dot_get('users.*.name'); // ['John']
 </code></pre>
-<h4><a id="flow-php-multipath-syntax---" href="#content-multipath-syntax---" class="mr-2" aria-hidden="true" title="Permalink">#</a>Multipath Syntax - {}</h4>
+<h4><a id="multipath-syntax---" href="#multipath-syntax---" class="mr-2" aria-hidden="true" title="Permalink">#</a>Multipath Syntax - {}</h4>
 <p>Supported in functions:</p>
 <ul>
 <li><code>array_dot_get</code></li>

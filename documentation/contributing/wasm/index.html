@@ -427,19 +427,19 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-wasm-build" href="#content-wasm-build" class="mr-2" aria-hidden="true" title="Permalink">#</a>WASM Build</h1>
+            <h1><a id="wasm-build" href="#wasm-build" class="mr-2" aria-hidden="true" title="Permalink">#</a>WASM Build</h1>
 <p>This document describes how to build PHP to WebAssembly (WASM) for use in the Flow PHP Interactive Playground.</p>
-<h2><a id="flow-php-overview" href="#content-overview" class="mr-2" aria-hidden="true" title="Permalink">#</a>Overview</h2>
+<h2><a id="overview" href="#overview" class="mr-2" aria-hidden="true" title="Permalink">#</a>Overview</h2>
 <p>The WASM build creates a browser-compatible PHP runtime that powers the interactive playground
 at <a rel="noopener noreferrer" target="_blank" href="https://flow-php.com">flow-php.com</a>. It compiles PHP 8.4 with the necessary extensions to run Flow PHP ETL pipelines
 directly in the browser.</p>
-<h2><a id="flow-php-requirements" href="#content-requirements" class="mr-2" aria-hidden="true" title="Permalink">#</a>Requirements</h2>
+<h2><a id="requirements" href="#requirements" class="mr-2" aria-hidden="true" title="Permalink">#</a>Requirements</h2>
 <ul>
 <li><a rel="noopener noreferrer" target="_blank" href="https://nixos.org/download.html">Nix</a> (recommended)</li>
 <li>Or manually: <a rel="noopener noreferrer" target="_blank" href="https://emscripten.org/docs/getting_started/downloads.html">Emscripten SDK</a> (emcc, emmake, emconfigure),
 standard build tools (make, gcc, autoconf, automake, libtool), wget, git</li>
 </ul>
-<h2><a id="flow-php-building" href="#content-building" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building</h2>
+<h2><a id="building" href="#building" class="mr-2" aria-hidden="true" title="Permalink">#</a>Building</h2>
 <p>The recommended way is to use the Nix shell with the <code>with-wasm</code> argument:</p>
 <pre class="language-bash"><code class="language-bash" data-controller="syntax-highlight"># From the repository root
 nix-shell --arg with-wasm true
@@ -463,7 +463,7 @@ cd wasm
 <li>Link everything into <code>php.wasm</code> and <code>php.js</code></li>
 <li>Copy outputs to <code>web/landing/assets/wasm/</code></li>
 </ol>
-<h2><a id="flow-php-included-php-extensions" href="#content-included-php-extensions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Included PHP Extensions</h2>
+<h2><a id="included-php-extensions" href="#included-php-extensions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Included PHP Extensions</h2>
 <table>
 <thead>
 <tr>
@@ -530,15 +530,15 @@ cd wasm
 </tr>
 </tbody>
 </table>
-<h2><a id="flow-php-architecture-notes" href="#content-architecture-notes" class="mr-2" aria-hidden="true" title="Permalink">#</a>Architecture Notes</h2>
-<h3><a id="flow-php-32-bit-environment" href="#content-32-bit-environment" class="mr-2" aria-hidden="true" title="Permalink">#</a>32-bit Environment</h3>
+<h2><a id="architecture-notes" href="#architecture-notes" class="mr-2" aria-hidden="true" title="Permalink">#</a>Architecture Notes</h2>
+<h3><a id="32-bit-environment" href="#32-bit-environment" class="mr-2" aria-hidden="true" title="Permalink">#</a>32-bit Environment</h3>
 <p>WebAssembly runs as a 32-bit environment where <code>PHP_INT_MAX = 2147483647</code>. This affects:</p>
 <ul>
 <li>Large integer values from Thrift/Parquet metadata may overflow to floats</li>
 <li>The parquet library includes <code>(int)</code> casts in <code>fromThrift()</code> methods to handle this</li>
 <li>Hex constants like <code>0x80000000</code> and <code>0xFFFFFFFF</code> require explicit <code>(int)</code> casts</li>
 </ul>
-<h2><a id="flow-php-output-files" href="#content-output-files" class="mr-2" aria-hidden="true" title="Permalink">#</a>Output Files</h2>
+<h2><a id="output-files" href="#output-files" class="mr-2" aria-hidden="true" title="Permalink">#</a>Output Files</h2>
 <table>
 <thead>
 <tr>
@@ -558,18 +558,18 @@ cd wasm
 </tbody>
 </table>
 <p>These are copied to <code>web/landing/assets/wasm/</code> for use by the playground.</p>
-<h2><a id="flow-php-wrapper-code" href="#content-wrapper-code" class="mr-2" aria-hidden="true" title="Permalink">#</a>Wrapper Code</h2>
+<h2><a id="wrapper-code" href="#wrapper-code" class="mr-2" aria-hidden="true" title="Permalink">#</a>Wrapper Code</h2>
 <p>The <code>pib_eval.c</code> file provides the C wrapper for evaluating PHP code:</p>
 <ul>
 <li><code>pib_eval(char *code)</code> - Evaluates PHP code and returns the result</li>
 <li><code>pib_force_exit()</code> - Forces exit from the WASM runtime</li>
 </ul>
-<h2><a id="flow-php-troubleshooting" href="#content-troubleshooting" class="mr-2" aria-hidden="true" title="Permalink">#</a>Troubleshooting</h2>
-<h3><a id="flow-php-build-fails-with-configure-errors" href="#content-build-fails-with-configure-errors" class="mr-2" aria-hidden="true" title="Permalink">#</a>Build fails with configure errors</h3>
+<h2><a id="troubleshooting" href="#troubleshooting" class="mr-2" aria-hidden="true" title="Permalink">#</a>Troubleshooting</h2>
+<h3><a id="build-fails-with-configure-errors" href="#build-fails-with-configure-errors" class="mr-2" aria-hidden="true" title="Permalink">#</a>Build fails with configure errors</h3>
 <p>Check <code>config.log</code> in the PHP directory for detailed error messages.</p>
-<h3><a id="flow-php-missing-extensions" href="#content-missing-extensions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Missing extensions</h3>
+<h3><a id="missing-extensions" href="#missing-extensions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Missing extensions</h3>
 <p>Ensure all required libraries (libxml2, libpg_query) are built before PHP configuration.</p>
-<h3><a id="flow-php-memory-issues-in-browser" href="#content-memory-issues-in-browser" class="mr-2" aria-hidden="true" title="Permalink">#</a>Memory issues in browser</h3>
+<h3><a id="memory-issues-in-browser" href="#memory-issues-in-browser" class="mr-2" aria-hidden="true" title="Permalink">#</a>Memory issues in browser</h3>
 <p>The playground may fail on very large datasets due to WASM memory limits.</p>
 
 

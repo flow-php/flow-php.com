@@ -427,12 +427,12 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-rename" href="#content-rename" class="mr-2" aria-hidden="true" title="Permalink">#</a>Rename</h1>
+            <h1><a id="rename" href="#rename" class="mr-2" aria-hidden="true" title="Permalink">#</a>Rename</h1>
 <ul>
 <li><a href="/documentation/components/core/core">⬅️️ Back</a></li>
 </ul>
 <p>DataFrame provides several methods for renaming entries (columns) in your data. These operations are lazy and don't execute until a trigger operation is called.</p>
-<h2><a id="flow-php-single-column-rename" href="#content-single-column-rename" class="mr-2" aria-hidden="true" title="Permalink">#</a>Single Column Rename</h2>
+<h2><a id="single-column-rename" href="#single-column-rename" class="mr-2" aria-hidden="true" title="Permalink">#</a>Single Column Rename</h2>
 <p>To rename a single entry, use <code>DataFrame::rename()</code>:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php 
 
@@ -447,9 +447,9 @@ data_frame()
     -&gt;write(to_output())
     -&gt;run();
 </code></pre>
-<h2><a id="flow-php-batch-renaming" href="#content-batch-renaming" class="mr-2" aria-hidden="true" title="Permalink">#</a>Batch Renaming</h2>
+<h2><a id="batch-renaming" href="#batch-renaming" class="mr-2" aria-hidden="true" title="Permalink">#</a>Batch Renaming</h2>
 <p>The <code>renameEach()</code> method allows you to rename multiple columns at once using various strategies:</p>
-<h3><a id="flow-php-available-strategies" href="#content-available-strategies" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Strategies</h3>
+<h3><a id="available-strategies" href="#available-strategies" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Strategies</h3>
 <ul>
 <li><strong><code>rename_style()</code></strong> - Changes entry names using string style conventions (camelCase, snake_case, etc.)</li>
 <li><strong><code>rename_replace()</code></strong> - Replaces parts of entry names using search and replace patterns</li>

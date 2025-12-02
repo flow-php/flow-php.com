@@ -427,25 +427,25 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-flow-command-line-interface" href="#content-flow-command-line-interface" class="mr-2" aria-hidden="true" title="Permalink">#</a>Flow Command Line Interface</h1>
+            <h1><a id="flow-command-line-interface" href="#flow-command-line-interface" class="mr-2" aria-hidden="true" title="Permalink">#</a>Flow Command Line Interface</h1>
 <ul>
 <li><a href="/documentation/quick-start">⬅️️ Back</a></li>
 <li><a href="/documentation/api/cli">📚API Reference</a></li>
 <li><a href="/documentation/api/cli/indices/files.html">📁Files</a></li>
 </ul>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer require flow-php/cli:~0.28.0
 </code></pre>
 <p>In some cases, it might make sense to install the CLI globally:</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">composer global require flow-php/cli:~0.28.0
 </code></pre>
 <p>Now you can run the CLI using the <code>flow</code> command.</p>
-<h3><a id="flow-php-docker" href="#content-docker" class="mr-2" aria-hidden="true" title="Permalink">#</a>Docker</h3>
+<h3><a id="docker" href="#docker" class="mr-2" aria-hidden="true" title="Permalink">#</a>Docker</h3>
 <p>Flow CLI application is also available as a docker image:</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">docker run -v $(pwd):/flow-workspace -it ghcr.io/flow-php/flow:latest --version
 </code></pre>
-<h2><a id="flow-php-commands" href="#content-commands" class="mr-2" aria-hidden="true" title="Permalink">#</a>Commands</h2>
-<h3><a id="flow-php-config" href="#content-config" class="mr-2" aria-hidden="true" title="Permalink">#</a>Config</h3>
+<h2><a id="commands" href="#commands" class="mr-2" aria-hidden="true" title="Permalink">#</a>Commands</h2>
+<h3><a id="config" href="#config" class="mr-2" aria-hidden="true" title="Permalink">#</a>Config</h3>
 <p>All Flow CLI Commands can be configured using <code>--config</code> option. The option accepts a path to a configuration file in php that returns a Config or ConfigBuilder instance.</p>
 <p><code>.flow.php</code></p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
@@ -486,7 +486,7 @@ Available commands:
  pipeline
   pipeline:run           [run] Execute ETL pipeline from a php/json file.
 </code></pre>
-<h3><a id="flow-php-fileconvert-alias-convert" href="#content-fileconvert-alias-convert" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:convert</code> alias <code>convert</code></h3>
+<h3><a id="fileconvert-alias-convert" href="#fileconvert-alias-convert" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:convert</code> alias <code>convert</code></h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">Description:
   Read data from a file.
 
@@ -534,7 +534,7 @@ Options:
   -n, --no-interaction                                               Do not ask any interactive question
   -v|vv|vvv, --verbose                                               Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 </code></pre>
-<h3><a id="flow-php-fileschema-alias-schema" href="#content-fileschema-alias-schema" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:schema</code> alias <code>schema</code></h3>
+<h3><a id="fileschema-alias-schema" href="#fileschema-alias-schema" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:schema</code> alias <code>schema</code></h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow file:schema --help
 Description:
   Read data schema from a file.
@@ -589,7 +589,7 @@ Options:
 +------------+----------+----------+-------------+----------+
 7 rows
 </code></pre>
-<h3><a id="flow-php-fileanalyze-alias-analyze" href="#content-fileanalyze-alias-analyze" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:analyze</code> alias <code>analyze</code></h3>
+<h3><a id="fileanalyze-alias-analyze" href="#fileanalyze-alias-analyze" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:analyze</code> alias <code>analyze</code></h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">file:analyze --help                         
 Description:
   Analyze a file.
@@ -630,7 +630,7 @@ Options:
   -n, --no-interaction                                     Do not ask any interactive question
   -v|vv|vvv, --verbose                                     Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 </code></pre>
-<h3><a id="flow-php-fileread-alias-read" href="#content-fileread-alias-read" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:read</code> alias <code>read</code></h3>
+<h3><a id="fileread-alias-read" href="#fileread-alias-read" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:read</code> alias <code>read</code></h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow read --help
 Description:
   Read data from a file.
@@ -670,7 +670,7 @@ Options:
   -n, --no-interaction                                     Do not ask any interactive question
   -v|vv|vvv, --verbose                                     Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 </code></pre>
-<h3><a id="flow-php-filerowscount-alias-count" href="#content-filerowscount-alias-count" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:rows:count</code> alias <code>count</code></h3>
+<h3><a id="filerowscount-alias-count" href="#filerowscount-alias-count" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>file:rows:count</code> alias <code>count</code></h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow count --help
 Description:
   Read data schema from a file.
@@ -707,7 +707,7 @@ Options:
   -n, --no-interaction                                     Do not ask any interactive question
   -v|vv|vvv, --verbose                                     Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 </code></pre>
-<h3><a id="flow-php-parquetreadmetadata" href="#content-parquetreadmetadata" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>parquet:read:metadata</code></h3>
+<h3><a id="parquetreadmetadata" href="#parquetreadmetadata" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>parquet:read:metadata</code></h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow parquet:read:metadata --help
 Description:
   Read metadata from parquet file
@@ -731,7 +731,7 @@ Options:
   -n, --no-interaction  Do not ask any interactive question
   -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 </code></pre>
-<h3><a id="flow-php-pipelinerun" href="#content-pipelinerun" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>pipeline:run</code></h3>
+<h3><a id="pipelinerun" href="#pipelinerun" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>pipeline:run</code></h3>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">$ flow pipeline:run --help
 Description:
   Execute data processing pipeline from a php file.
@@ -771,7 +771,7 @@ Help:
       -&gt;collect()
       -&gt;write(to_output());
 </code></pre>
-<h2><a id="flow-php-dbtableschema" href="#content-dbtableschema" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>db:table:schema</code></h2>
+<h2><a id="dbtableschema" href="#dbtableschema" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>db:table:schema</code></h2>
 <p>Prints a schema of a dataset from a database table.</p>
 <blockquote>
 <p>Note: Database connection string can be passed through <code>FLOW_DB_CONNECTION_STRING</code> environment variable, otherwise command will ask for it.
@@ -805,7 +805,7 @@ Help:
   Database connection string can be passed through FLOW_DB_CONNECTION_STRING environment variable, otherwise command will ask for it.
   --db-connection-file option takes priority over FLOW_DB_CONNECTION_STRING environment.
 </code></pre>
-<h2><a id="flow-php-dbtablelist" href="#content-dbtablelist" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>db:table:list</code></h2>
+<h2><a id="dbtablelist" href="#dbtablelist" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>db:table:list</code></h2>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">flow db:table:list --help  
 Description:
   Print list of datasets from a database.
@@ -829,7 +829,7 @@ Help:
   Database connection string can be passed through FLOW_DB_CONNECTION_STRING environment variable, otherwise command will ask for it.
   --db-connection-file option takes priority over FLOW_DB_CONNECTION_STRING environment.
 </code></pre>
-<h2><a id="flow-php-schemaformat" href="#content-schemaformat" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>schema:format</code></h2>
+<h2><a id="schemaformat" href="#schemaformat" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>schema:format</code></h2>
 <p>Take a JSON schema and print it in another format, including PHP,<br />
 which can be then directly used to validate datasets.</p>
 <pre class="language-shell"><code class="language-shell" data-controller="syntax-highlight">flow schema:format --help

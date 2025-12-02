@@ -427,7 +427,7 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-csv-adapter" href="#content-csv-adapter" class="mr-2" aria-hidden="true" title="Permalink">#</a>CSV Adapter</h1>
+            <h1><a id="csv-adapter" href="#csv-adapter" class="mr-2" aria-hidden="true" title="Permalink">#</a>CSV Adapter</h1>
 <ul>
 <li><a href="/documentation/introduction">⬅️️ Back</a></li>
 <li><a href="/documentation/api/adapter/csv">📚API Reference</a></li>
@@ -443,17 +443,17 @@ scenarios. This library embodies Flow PHP's dedication to offering versatile and
 making it a prime choice for developers dealing with CSV data in large-scale and data-intensive projects. With Flow
 PHP's Adapter CSV, managing CSV data within your ETL workflows becomes a more simplified and efficient task, perfectly
 aligning with the robust and adaptable framework of the Flow PHP ecosystem.</p>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/etl-adapter-csv:~0.28.0
 </code></pre>
-<h2><a id="flow-php-extractor" href="#content-extractor" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extractor</h2>
+<h2><a id="extractor" href="#extractor" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extractor</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 $rows = data_frame()
     -&gt;read(from_csv($path))
     -&gt;fetch();
 </code></pre>
-<h2><a id="flow-php-loader" href="#content-loader" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loader</h2>
+<h2><a id="loader" href="#loader" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loader</h2>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 data_frame()

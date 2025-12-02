@@ -427,13 +427,13 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-data-manipulation" href="#content-data-manipulation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Data Manipulation</h1>
+            <h1><a id="data-manipulation" href="#data-manipulation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Data Manipulation</h1>
 <ul>
 <li><a href="/documentation/components/core/core">⬅️️ Back</a></li>
 </ul>
 <p>DataFrame provides several methods for manipulating data structures and values within your datasets. These operations
 allow you to add, modify, cast, and clean data efficiently.</p>
-<h2><a id="flow-php-type-casting-with-autocast" href="#content-type-casting-with-autocast" class="mr-2" aria-hidden="true" title="Permalink">#</a>Type Casting with autoCast()</h2>
+<h2><a id="type-casting-with-autocast" href="#type-casting-with-autocast" class="mr-2" aria-hidden="true" title="Permalink">#</a>Type Casting with autoCast()</h2>
 <p>Automatically cast data types based on content analysis:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -455,7 +455,7 @@ data_frame()
 <p><strong>Note</strong>: <code>autoCast()</code> analyzes data patterns and attempts to convert string values to more appropriate types like
 integers, floats, booleans, and dates. Use with caution on large datasets as it requires data analysis.</p>
 </blockquote>
-<h2><a id="flow-php-adding-entries-with-withentry" href="#content-adding-entries-with-withentry" class="mr-2" aria-hidden="true" title="Permalink">#</a>Adding Entries with withEntry()</h2>
+<h2><a id="adding-entries-with-withentry" href="#adding-entries-with-withentry" class="mr-2" aria-hidden="true" title="Permalink">#</a>Adding Entries with withEntry()</h2>
 <p>Add new columns or modify existing ones using expressions:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -471,9 +471,9 @@ data_frame()
     -&gt;write(to_output())
     -&gt;run();
 </code></pre>
-<h2><a id="flow-php-duplicating-rows" href="#content-duplicating-rows" class="mr-2" aria-hidden="true" title="Permalink">#</a>Duplicating Rows</h2>
+<h2><a id="duplicating-rows" href="#duplicating-rows" class="mr-2" aria-hidden="true" title="Permalink">#</a>Duplicating Rows</h2>
 <p>Create duplicate rows for testing or data expansion:</p>
-<h3><a id="flow-php-duplicaterow---duplicate-specific-row" href="#content-duplicaterow---duplicate-specific-row" class="mr-2" aria-hidden="true" title="Permalink">#</a>duplicateRow() - Duplicate Specific Row</h3>
+<h3><a id="duplicaterow---duplicate-specific-row" href="#duplicaterow---duplicate-specific-row" class="mr-2" aria-hidden="true" title="Permalink">#</a>duplicateRow() - Duplicate Specific Row</h3>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
 data_frame()
@@ -488,7 +488,7 @@ data_frame()
 
 // Result: Row with id=2 appears twice in the output
 </code></pre>
-<h2><a id="flow-php-removing-duplicates" href="#content-removing-duplicates" class="mr-2" aria-hidden="true" title="Permalink">#</a>Removing Duplicates</h2>
+<h2><a id="removing-duplicates" href="#removing-duplicates" class="mr-2" aria-hidden="true" title="Permalink">#</a>Removing Duplicates</h2>
 <p>Remove duplicate rows from your dataset:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 
@@ -506,7 +506,7 @@ data_frame()
 
 // Result: Only unique rows remain
 </code></pre>
-<h3><a id="flow-php-selective-duplicate-removal" href="#content-selective-duplicate-removal" class="mr-2" aria-hidden="true" title="Permalink">#</a>Selective Duplicate Removal</h3>
+<h3><a id="selective-duplicate-removal" href="#selective-duplicate-removal" class="mr-2" aria-hidden="true" title="Permalink">#</a>Selective Duplicate Removal</h3>
 <p>Remove duplicates based on specific columns:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">&lt;?php
 

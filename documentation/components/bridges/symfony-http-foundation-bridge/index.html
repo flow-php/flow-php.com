@@ -427,7 +427,7 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-symfony-http-foundation-bridge" href="#content-symfony-http-foundation-bridge" class="mr-2" aria-hidden="true" title="Permalink">#</a>Symfony Http Foundation Bridge</h1>
+            <h1><a id="symfony-http-foundation-bridge" href="#symfony-http-foundation-bridge" class="mr-2" aria-hidden="true" title="Permalink">#</a>Symfony Http Foundation Bridge</h1>
 <ul>
 <li><a href="/documentation/introduction">⬅️️ Back</a></li>
 <li><a href="/documentation/api/bridge/symfony/http-foundation">📚API Reference</a></li>
@@ -441,10 +441,10 @@
 <li>stream large datasets that normally would not fit in memory</li>
 <li>use ETL to convert data on the fly</li>
 </ul>
-<h2><a id="flow-php-installation" href="#content-installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
+<h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <pre class="language-plain"><code class="language-plain" data-controller="syntax-highlight">composer require flow-php/symfony-http-foundation-bridge:~0.28.0
 </code></pre>
-<h2><a id="flow-php-usage" href="#content-usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h2>
+<h2><a id="usage" href="#usage" class="mr-2" aria-hidden="true" title="Permalink">#</a>Usage</h2>
 <p>Stream a large parquet file converting it on the fly to CSV format.
 Since Flow is extracting data from datasets in chunk, FlowStreamedResponse allows to stream
 files that normally would not fit in memory.</p>
@@ -493,14 +493,14 @@ final class ReportsController extends AbstractController
     }
 }
 </code></pre>
-<h2><a id="flow-php-available-outputs" href="#content-available-outputs" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Outputs</h2>
+<h2><a id="available-outputs" href="#available-outputs" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Outputs</h2>
 <ul>
 <li><code>Flow\Bridge\Symfony\HttpFoundation\Output\CSVOutput</code> - <code>http_csv_output()</code> - converts dataset to CSV format.</li>
 <li><code>Flow\Bridge\Symfony\HttpFoundation\Output\JSONOutput</code> - <code>http_json_output()</code> -converts dataset to JSON format.</li>
 <li><code>Flow\Bridge\Symfony\HttpFoundation\Output\ParquetOutput</code> - <code>http_parquet_output()</code> -converts dataset to Parquet format.</li>
 <li><code>Flow\Bridge\Symfony\HttpFoundation\Output\XMLOutput</code> - <code>http_xml_output()</code> -converts dataset to XML format.</li>
 </ul>
-<h2><a id="flow-php-modify-output-on-the-fly" href="#content-modify-output-on-the-fly" class="mr-2" aria-hidden="true" title="Permalink">#</a>Modify output on the fly</h2>
+<h2><a id="modify-output-on-the-fly" href="#modify-output-on-the-fly" class="mr-2" aria-hidden="true" title="Permalink">#</a>Modify output on the fly</h2>
 <p>Sometimes we need to modify the output on the fly.
 To do that, FlowStreamedResponse allows passing a Transformation that will be applied on the dataset.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">new class implements Transformation {

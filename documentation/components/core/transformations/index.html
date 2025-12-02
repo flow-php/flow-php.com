@@ -427,11 +427,11 @@
                 </a>
             </div>
 
-            <h1><a id="flow-php-transformations" href="#content-transformations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Transformations</h1>
+            <h1><a id="transformations" href="#transformations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Transformations</h1>
 <ul>
 <li><a href="/documentation/components/core/core">⬅️️ Back</a></li>
 </ul>
-<h2><a id="flow-php-introduction" href="#content-introduction" class="mr-2" aria-hidden="true" title="Permalink">#</a>Introduction</h2>
+<h2><a id="introduction" href="#introduction" class="mr-2" aria-hidden="true" title="Permalink">#</a>Introduction</h2>
 <p>Transformations are a powerful abstraction in Flow PHP that allow you to modify DataFrames in a composable and reusable
 way. Unlike Transformers which operate on individual Rows, Transformations work at the DataFrame level, providing access
 to the full processing pipeline.</p>
@@ -441,7 +441,7 @@ to the full processing pipeline.</p>
     public function transform(DataFrame $dataFrame): DataFrame;
 }
 </code></pre>
-<h2><a id="flow-php-using-transformations" href="#content-using-transformations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using Transformations</h2>
+<h2><a id="using-transformations" href="#using-transformations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using Transformations</h2>
 <p>Transformations can be applied to DataFrames using two methods:</p>
 <ul>
 <li><code>with()</code> - Applies one or more transformations</li>
@@ -464,8 +464,8 @@ df()
     -&gt;write(to_output())
     -&gt;run();
 </code></pre>
-<h2><a id="flow-php-available-transformations" href="#content-available-transformations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Transformations</h2>
-<h3><a id="flow-php-select" href="#content-select" class="mr-2" aria-hidden="true" title="Permalink">#</a>Select</h3>
+<h2><a id="available-transformations" href="#available-transformations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Transformations</h2>
+<h3><a id="select" href="#select" class="mr-2" aria-hidden="true" title="Permalink">#</a>Select</h3>
 <p>Select specific columns from the DataFrame, keeping only the columns you need.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\{df, from_array, select, ref};
 
@@ -486,7 +486,7 @@ df()
     -&gt;write(to_output())
     -&gt;run();
 </code></pre>
-<h3><a id="flow-php-drop" href="#content-drop" class="mr-2" aria-hidden="true" title="Permalink">#</a>Drop</h3>
+<h3><a id="drop" href="#drop" class="mr-2" aria-hidden="true" title="Permalink">#</a>Drop</h3>
 <p>Remove unwanted columns from the DataFrame, keeping all other columns.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\{df, from_array, drop, ref};
 
@@ -507,7 +507,7 @@ df()
     -&gt;write(to_output())
     -&gt;run();
 </code></pre>
-<h3><a id="flow-php-batch-size" href="#content-batch-size" class="mr-2" aria-hidden="true" title="Permalink">#</a>Batch Size</h3>
+<h3><a id="batch-size" href="#batch-size" class="mr-2" aria-hidden="true" title="Permalink">#</a>Batch Size</h3>
 <p>Control memory usage by setting the batch size for processing. Smaller batch sizes reduce memory consumption when
 processing large datasets.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\{df, from_csv, batch_size};
@@ -519,7 +519,7 @@ df()
     -&gt;write(to_database('users'))
     -&gt;run();
 </code></pre>
-<h3><a id="flow-php-add-row-index" href="#content-add-row-index" class="mr-2" aria-hidden="true" title="Permalink">#</a>Add Row Index</h3>
+<h3><a id="add-row-index" href="#add-row-index" class="mr-2" aria-hidden="true" title="Permalink">#</a>Add Row Index</h3>
 <p>Add an index column to each row, useful for tracking row position or creating unique identifiers.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\{df, from_array, add_row_index};
 use Flow\ETL\Transformation\AddRowIndex\StartFrom;
@@ -542,7 +542,7 @@ df()
     -&gt;write(to_output())
     -&gt;run();
 </code></pre>
-<h3><a id="flow-php-limit" href="#content-limit" class="mr-2" aria-hidden="true" title="Permalink">#</a>Limit</h3>
+<h3><a id="limit" href="#limit" class="mr-2" aria-hidden="true" title="Permalink">#</a>Limit</h3>
 <p>Restrict the number of rows processed, useful for debugging or sampling data.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\{df, from_database, limit};
 
@@ -560,7 +560,7 @@ df()
     -&gt;write(to_output())
     -&gt;run();
 </code></pre>
-<h3><a id="flow-php-mask-columns" href="#content-mask-columns" class="mr-2" aria-hidden="true" title="Permalink">#</a>Mask Columns</h3>
+<h3><a id="mask-columns" href="#mask-columns" class="mr-2" aria-hidden="true" title="Permalink">#</a>Mask Columns</h3>
 <p>Replace column values with a mask string, useful for hiding sensitive information.</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\{df, from_array, mask_columns};
 
@@ -582,7 +582,7 @@ df()
     -&gt;write(to_output())
     -&gt;run();
 </code></pre>
-<h2><a id="flow-php-chaining-transformations" href="#content-chaining-transformations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Chaining Transformations</h2>
+<h2><a id="chaining-transformations" href="#chaining-transformations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Chaining Transformations</h2>
 <p>Transformations can be chained together to create complex data processing pipelines:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\{df, from_csv, select, add_row_index, limit, batch_size};
 
@@ -595,7 +595,7 @@ df()
     -&gt;write(to_json('users_sample.json'))
     -&gt;run();
 </code></pre>
-<h2><a id="flow-php-using-with-totransformation-loader" href="#content-using-with-totransformation-loader" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using with to_transformation Loader</h2>
+<h2><a id="using-with-totransformation-loader" href="#using-with-totransformation-loader" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using with to_transformation Loader</h2>
 <p>The <code>to_transformation</code> loader allows you to apply transformations as part of the loading phase, enabling complex ETL
 patterns:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use function Flow\ETL\DSL\{df, from_array, to_transformation, to_csv, select};
@@ -617,7 +617,7 @@ df()
 <li>Create transformation pipelines that can be reused</li>
 <li>Separate transformation logic from extraction and loading</li>
 </ul>
-<h2><a id="flow-php-creating-custom-transformations" href="#content-creating-custom-transformations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Creating Custom Transformations</h2>
+<h2><a id="creating-custom-transformations" href="#creating-custom-transformations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Creating Custom Transformations</h2>
 <p>You can create custom transformations by implementing the <code>Transformation</code> interface:</p>
 <pre class="language-php"><code class="language-php" data-controller="syntax-highlight">use Flow\ETL\{DataFrame, Transformation};
 
