@@ -1,10 +1,10 @@
 {
-    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-2323813aa2dae8eca58e2b55c801361b.js",
+    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-a326ab67ab4ee208b6dee4e3272966d2.js",
     "@symfony\/stimulus-bundle\/loader.js": "\/assets\/@symfony\/stimulus-bundle\/loader-5751ad1ee2975e725a94d8121d153d17.js",
     "app.js": "\/assets\/app-396eb1b280b9b32f53a44b8e87aa6133.js",
     "bootstrap.js": "\/assets\/bootstrap-13edb607a8c6b40c285e5deacc875a08.js",
     "codemirror\/completions\/dataframe.js": "\/assets\/codemirror\/completions\/dataframe-a063b465eeccd6d35add721992bf081f.js",
-    "codemirror\/completions\/dsl.js": "\/assets\/codemirror\/completions\/dsl-6e8d274d648de957afca2b30b8186bec.js",
+    "codemirror\/completions\/dsl.js": "\/assets\/codemirror\/completions\/dsl-4bf8d9476cf5eea6e78db35a7a6917f9.js",
     "codemirror\/completions\/flow.js": "\/assets\/codemirror\/completions\/flow-da7ec46f1fb045fa99ff477b5db69205.js",
     "codemirror\/completions\/scalarfunctionchain.js": "\/assets\/codemirror\/completions\/scalarfunctionchain-57b0c20876bdcf39fb770ec75743e3fc.js",
     "codemirror\/themes\/theme-flow.js": "\/assets\/codemirror\/themes\/theme-flow-7bef93b1493817cf09879a3b5cd589b3.js",
@@ -26,6 +26,7 @@
     "controllers\/playground_workspace_controller.js": "\/assets\/controllers\/playground_workspace_controller-80a4b67d0d48e0f1724b062960607ab3.js",
     "controllers\/scroll_to_top_controller.js": "\/assets\/controllers\/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
     "controllers\/syntax_highlight_controller.js": "\/assets\/controllers\/syntax_highlight_controller-962ec734ce23689f526d17bfce5fbec3.js",
+    "controllers\/toc_controller.js": "\/assets\/controllers\/toc_controller-1a77aa51990b50e3d6247942ca0d73fa.js",
     "controllers\/turnstile_controller.js": "\/assets\/controllers\/turnstile_controller-f38af05e660ec65b36a67bc61a91d1c9.js",
     "controllers\/wasm_controller.js": "\/assets\/controllers\/wasm_controller-6ac57af96dfa39ce2a2cdb201151876a.js",
     "images\/banner.png": "\/assets\/images\/banner-a491e037b6fca6069571c39eb216acc9.png",
@@ -86,7 +87,7 @@
     "prismjs\/plugins\/autolinker\/autolinker.js": "\/assets\/prismjs\/plugins\/autolinker\/autolinker-e906ddf9b7d89f169c9cf40a53e5605d.js",
     "prismjs\/themes\/prism-flow.css": "\/assets\/prismjs\/themes\/prism-flow-d263e9954eae08005f616dbe0de07974.css",
     "services\/snippet-fingerprint.js": "\/assets\/services\/snippet-fingerprint-ecdca9f86dfd0b5152217084cf6bc7b8.js",
-    "styles\/app.css": "\/assets\/styles\/app-fd19a5f3ecd833b577ab8ce1ea249742.css",
+    "styles\/app.css": "\/assets\/styles\/app-86fe2f691e9615047a5230ba9a83670e.css",
     "styles\/changelog.css": "\/assets\/styles\/changelog-140c9dc3ab542002ac195827220fa968.css",
     "vendor\/@codemirror\/autocomplete\/autocomplete.index.js": "\/assets\/vendor\/@codemirror\/autocomplete\/autocomplete.index-61538c62243afe5479f741a3793d50f9.js",
     "vendor\/@codemirror\/commands\/commands.index.js": "\/assets\/vendor\/@codemirror\/commands\/commands.index-61f74654eb609d0c6c33e9b2b10ed47f.js",
@@ -148,7 +149,7 @@
     "wasm\/php.js": "\/assets\/wasm\/php-efe717082103712187d38a1e0aecf4a5.js",
     "wasm\/php.wasm": "\/assets\/wasm\/php-8f0f307bdd99263d3102236b035d9d5f.wasm",
     "wasm\/phpcsfixer.php.wasm": "\/assets\/wasm\/phpcsfixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm",
-    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-f36976af1a8c3f12e148880ce3ae5e62.phar",
+    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-f50dd173ea7c5fcf12e8c9b7eee7963a.phar",
     "wasm\/tools\/php-cs-fixer.phar": "\/assets\/wasm\/tools\/php-cs-fixer-de55dbd75a08d2eac0f0435d4168e6bc.phar",
     "wasm\/vendor\/autoload.php.wasm": "\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm"
 }

@@ -8,7 +8,7 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-2323813aa2dae8eca58e2b55c801361b.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-a326ab67ab4ee208b6dee4e3272966d2.js",
         "type": "js"
     },
     "\/assets\/controllers\/playground_help_controller.js": {
@@ -29,6 +29,10 @@
     },
     "\/assets\/controllers\/playground_format_controller.js": {
         "path": "\/assets\/controllers\/playground_format_controller-8dfa94c90609232e433cef3b1f0df2c9.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/toc_controller.js": {
+        "path": "\/assets\/controllers\/toc_controller-1a77aa51990b50e3d6247942ca0d73fa.js",
         "type": "js"
     },
     "\/assets\/controllers\/playground_workspace_controller.js": {
@@ -104,7 +108,7 @@
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dsl.js": {
-        "path": "\/assets\/codemirror\/completions\/dsl-6e8d274d648de957afca2b30b8186bec.js",
+        "path": "\/assets\/codemirror\/completions\/dsl-4bf8d9476cf5eea6e78db35a7a6917f9.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dataframe.js": {

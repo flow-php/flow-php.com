@@ -9,6 +9,7 @@
     "\/assets\/controllers\/playground_share_controller.js",
     "\/assets\/controllers\/turnstile_controller.js",
     "\/assets\/controllers\/playground_format_controller.js",
+    "\/assets\/controllers\/toc_controller.js",
     "\/assets\/controllers\/playground_workspace_controller.js",
     "\/assets\/controllers\/scroll_to_top_controller.js",
     "\/assets\/controllers\/syntax_highlight_controller.js",
