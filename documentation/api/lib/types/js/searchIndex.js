@@ -1801,6 +1801,61 @@ Search.appendIndex(
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type.html#method_toString"
         },                {
+            "fqsen": "\\Flow\\Types\\Value\\Json",
+            "name": "Json",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-Json.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\Json\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-Json.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\Json\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-Json.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\Json\u003A\u003AfromString\u0028\u0029",
+            "name": "fromString",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-Json.html#method_fromString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\Json\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-Json.html#method_isValid"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\Json\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-Json.html#method___toString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\Json\u003A\u003AisEqual\u0028\u0029",
+            "name": "isEqual",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-Json.html#method_isEqual"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\Json\u003A\u003AisObject\u0028\u0029",
+            "name": "isObject",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-Json.html#method_isObject"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\Json\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-Json.html#method_jsonSerialize"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\Json\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-Json.html#method_toArray"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\Json\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-Json.html#method_toString"
+        },                {
             "fqsen": "\\Flow\\Types\\Value\\Uuid",
             "name": "Uuid",
             "summary": "",
