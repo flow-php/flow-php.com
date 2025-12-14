@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 543
+ * Total functions: 545
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -970,10 +970,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">bool_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<bool>
+                    <span class=\"fn-name\">bool_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">BooleanDefinition</span>
                 </div>
                             `
             return div
@@ -1756,10 +1753,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">datetime_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<\\DateTimeInterface>
+                    <span class=\"fn-name\">datetime_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">DateTimeDefinition</span>
                 </div>
                             `
             return div
@@ -1837,10 +1831,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">date_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<\\DateTimeInterface>
+                    <span class=\"fn-name\">date_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">DateDefinition</span>
                 </div>
                             `
             return div
@@ -1915,6 +1906,42 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\dbal_from_query(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:query" + "}" + ", " + "$" + "{" + "3:parameters" + "}" + ", " + "$" + "{" + "4:types" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "definition_from_array",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dschema",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">definition_from_array</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">array</span> <span class=\"fn-param\">$definition</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a Definition from an array representation.<br>@param array<array-key, mixed> $definition<br>@return Definition<mixed>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\ETL\\DSL\\definition_from_array(" + "$" + "{" + "1:definition" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "definition_from_type",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dschema",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">definition_from_type</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Reference|string</span> <span class=\"fn-param\">$ref</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a Definition from a Type.<br>@param Type<mixed> $type<br>@return Definition<mixed>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\ETL\\DSL\\definition_from_type(" + "$" + "{" + "1:ref" + "}" + ", " + "$" + "{" + "2:type" + "}" + ", " + "$" + "{" + "3:nullable" + "}" + ", " + "$" + "{" + "4:metadata" + "}" + ")"),
         boost: 10
     },        {
         label: "delay_exponential",
@@ -2353,10 +2380,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">enum_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">string</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
+                    <span class=\"fn-name\">enum_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">string</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">EnumDefinition</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @template T of \\UnitEnum<br>@param class-string<T> $type<br>@return Definition<T>
+                    @template T of \\UnitEnum<br>@param class-string<T> $type<br>@return EnumDefinition<T>
                 </div>
                             `
             return div
@@ -2605,10 +2632,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">float_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<float>
+                    <span class=\"fn-name\">float_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">FloatDefinition</span>
                 </div>
                             `
             return div
@@ -3556,10 +3580,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">html_element_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<HTMLElement>
+                    <span class=\"fn-name\">html_element_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">HTMLElementDefinition</span>
                 </div>
                             `
             return div
@@ -3592,10 +3613,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">html_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<HTMLDocument>
+                    <span class=\"fn-name\">html_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">HTMLDefinition</span>
                 </div>
                             `
             return div
@@ -3838,10 +3856,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">integer_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<int>
+                    <span class=\"fn-name\">integer_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">IntegerDefinition</span>
                 </div>
                             `
             return div
@@ -3874,10 +3889,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">int_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
+                    <span class=\"fn-name\">int_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">IntegerDefinition</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Alias for \`int_schema\`.<br>@return Definition<int>
+                    Alias for \`integer_schema\`.
                 </div>
                             `
             return div
@@ -4195,10 +4210,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">json_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<Json>
+                    <span class=\"fn-name\">json_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">JsonDefinition</span>
                 </div>
                             `
             return div
@@ -4360,10 +4372,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">list_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
+                    <span class=\"fn-name\">list_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ListType|Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ListDefinition</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @template T<br>@param Type<list<T>> $type<br>@return Definition<list<T>>
+                    @template T<br>@param ListType<T>|Type<list<T>> $type<br>@return ListDefinition<T>
                 </div>
                             `
             return div
@@ -4498,10 +4510,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">map_entry</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$value</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Type</span> <span class=\"fn-param\">$mapType</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Entry</span>
+                    <span class=\"fn-name\">map_entry</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$value</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">MapType</span> <span class=\"fn-param\">$mapType</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Entry</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @template TKey of array-key<br>@template TValue<br>@param ?array<array-key, mixed> $value<br>@param Type<array<TKey, TValue>> $mapType<br>@return Entry<?array<TKey, TValue>>
+                    @template TKey of array-key<br>@template TValue<br>@param ?array<array-key, mixed> $value<br>@param MapType<TKey, TValue> $mapType<br>@return Entry<?array<TKey, TValue>>
                 </div>
                             `
             return div
@@ -4516,10 +4528,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">map_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
+                    <span class=\"fn-name\">map_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">MapType|Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">MapDefinition</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @template TKey of array-key<br>@template TValue<br>@param Type<array<TKey, TValue>> $type<br>@return Definition<array<TKey, TValue>>
+                    @template TKey of array-key<br>@template TValue<br>@param MapType<TKey, TValue>|Type<array<TKey, TValue>> $type<br>@return MapDefinition<TKey, TValue>
                 </div>
                             `
             return div
@@ -4822,10 +4834,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">null_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<string>
+                    <span class=\"fn-name\">null_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">StringDefinition</span>
                 </div>
                             `
             return div
@@ -7306,10 +7315,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">string_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<string>
+                    <span class=\"fn-name\">string_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">StringDefinition</span>
                 </div>
                             `
             return div
@@ -7324,10 +7330,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">structure_entry</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$value</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Entry</span>
+                    <span class=\"fn-name\">structure_entry</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$value</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">StructureType</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Entry</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @template T<br>@param ?array<string, mixed> $value<br>@param Type<array<string, T>> $type<br>@return Entry<?array<string, T>>
+                    @template T<br>@param ?array<string, mixed> $value<br>@param StructureType<T> $type<br>@return Entry<?array<string, T>>
                 </div>
                             `
             return div
@@ -7357,10 +7363,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">structure_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
+                    <span class=\"fn-name\">structure_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">StructureType|Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">StructureDefinition</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @template T<br>@param Type<T> $type<br>@return Definition<T>
+                    @template T<br>@param StructureType<T>|Type<array<string, T>> $type<br>@return StructureDefinition<T>
                 </div>
                             `
             return div
@@ -7375,10 +7381,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">struct_entry</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$value</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Entry</span>
+                    <span class=\"fn-name\">struct_entry</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$value</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">StructureType</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Entry</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @template T<br>@param ?array<string, mixed> $value<br>@param Type<array<string, T>> $type<br>@return Entry<?array<string, T>>
+                    @template T<br>@param ?array<string, mixed> $value<br>@param StructureType<T> $type<br>@return Entry<?array<string, T>>
                 </div>
                             `
             return div
@@ -7393,10 +7399,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">struct_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
+                    <span class=\"fn-name\">struct_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">StructureType|Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">StructureDefinition</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @template T<br>@param Type<T> $type<br>@return Definition<T><br>@deprecated Use \`structure_schema()\` instead
+                    @template T<br>@param StructureType<T>|Type<array<string, T>> $type<br>@return StructureDefinition<T><br>@deprecated Use \`structure_schema()\` instead
                 </div>
                             `
             return div
@@ -7429,10 +7435,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">str_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
+                    <span class=\"fn-name\">str_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">StringDefinition</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Alias for \`string_schema\`.<br>@return Definition<string>
+                    Alias for \`string_schema\`.
                 </div>
                             `
             return div
@@ -7585,10 +7591,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">time_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<\\DateInterval>
+                    <span class=\"fn-name\">time_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TimeDefinition</span>
                 </div>
                             `
             return div
@@ -8626,10 +8629,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">type_map</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Type</span> <span class=\"fn-param\">$key_type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Type</span> <span class=\"fn-param\">$value_type</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Type</span>
+                    <span class=\"fn-name\">type_map</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Type</span> <span class=\"fn-param\">$key_type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Type</span> <span class=\"fn-param\">$value_type</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">MapType</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @template TKey of array-key<br>@template TValue<br>@param Type<TKey> $key_type<br>@param Type<TValue> $value_type<br>@return Type<array<TKey, TValue>>
+                    @template TKey of array-key<br>@template TValue<br>@param Type<TKey> $key_type<br>@param Type<TValue> $value_type<br>@return MapType<TKey, TValue>
                 </div>
                             `
             return div
@@ -8824,10 +8827,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">type_structure</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">array</span> <span class=\"fn-param\">$elements</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$optional_elements</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$allow_extra</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Type</span>
+                    <span class=\"fn-name\">type_structure</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">array</span> <span class=\"fn-param\">$elements</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$optional_elements</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$allow_extra</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">StructureType</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @template T<br>@param array<string, Type<T>> $elements<br>@param array<string, Type<T>> $optional_elements<br>@return Type<array<string, T>>
+                    @template T<br>@param array<string, Type<T>> $elements<br>@param array<string, Type<T>> $optional_elements<br>@return StructureType<T>
                 </div>
                             `
             return div
@@ -9034,10 +9037,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">uuid_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<\\Flow\\Types\\Value\\Uuid>
+                    <span class=\"fn-name\">uuid_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">UuidDefinition</span>
                 </div>
                             `
             return div
@@ -9268,10 +9268,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">xml_element_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<\\DOMElement>
+                    <span class=\"fn-name\">xml_element_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">XMLElementDefinition</span>
                 </div>
                             `
             return div
@@ -9304,10 +9301,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">xml_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Definition</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    @return Definition<\\DOMDocument>
+                    <span class=\"fn-name\">xml_schema</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$nullable</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">XMLDefinition</span>
                 </div>
                             `
             return div
