@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 555
+ * Total functions: 558
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -1747,6 +1747,60 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\cte(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:query" + "}" + ", " + "$" + "{" + "3:columnNames" + "}" + ", " + "$" + "{" + "4:materialization" + "}" + ", " + "$" + "{" + "5:recursive" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "current_date",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">current_date</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SQLValueFunctionExpression</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    SQL standard CURRENT_DATE function.<br>Returns the current date (at the start of the transaction).<br>Useful as a column default value or in SELECT queries.<br>Example: column(\'birth_date\', data_type_date())->default(current_date())<br>Example: select()->select(current_date()->as(\'today\'))
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\current_date()"),
+        boost: 10
+    },        {
+        label: "current_time",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">current_time</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SQLValueFunctionExpression</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    SQL standard CURRENT_TIME function.<br>Returns the current time (at the start of the transaction).<br>Useful as a column default value or in SELECT queries.<br>Example: column(\'start_time\', data_type_time())->default(current_time())<br>Example: select()->select(current_time()->as(\'now_time\'))
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\current_time()"),
+        boost: 10
+    },        {
+        label: "current_timestamp",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">current_timestamp</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SQLValueFunctionExpression</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    SQL standard CURRENT_TIMESTAMP function.<br>Returns the current date and time (at the start of the transaction).<br>Useful as a column default value or in SELECT queries.<br>Example: column(\'created_at\', data_type_timestamp())->default(current_timestamp())<br>Example: select()->select(current_timestamp()->as(\'now\'))
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\current_timestamp()"),
         boost: 10
     },        {
         label: "data_frame",
