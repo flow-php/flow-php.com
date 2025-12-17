@@ -565,7 +565,7 @@ execute it with the Client, and map results to objects.</p>
 <tr>
 <td><code>ext-pg_query</code></td>
 <td>Query Builder, SQL Parser (AST parsing, manipulation)</td>
-<td><a href="/documentation/components/extensions/postgresql-ext">postgresql-ext documentation</a></td>
+<td><a href="/documentation/components/extensions/pg-query-ext">postgresql-ext documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -754,33 +754,47 @@ echo $query-&gt;toSQL();
 <h3><a id="available-builders" href="#available-builders" class="mr-2" aria-hidden="true" title="Permalink">#</a>Available Builders</h3>
 <p><strong>Data Queries (DML)</strong></p>
 <ul>
-<li><a href="/documentation/components/libs/postgresql/select-query-builder">Select Query Builder</a> - SELECT with JOINs, CTEs, window functions, subqueries</li>
-<li><a href="/documentation/components/libs/postgresql/insert-query-builder">Insert Query Builder</a> - INSERT with ON CONFLICT (upsert), RETURNING</li>
-<li><a href="/documentation/components/libs/postgresql/update-query-builder">Update Query Builder</a> - UPDATE with FROM clause, RETURNING</li>
-<li><a href="/documentation/components/libs/postgresql/delete-query-builder">Delete Query Builder</a> - DELETE with USING clause, RETURNING</li>
+<li><a href="/documentation/components/libs/postgresql/select-query-builder">Select Query Builder</a> - SELECT with JOINs, CTEs,
+window functions, subqueries</li>
+<li><a href="/documentation/components/libs/postgresql/insert-query-builder">Insert Query Builder</a> - INSERT with ON CONFLICT (
+upsert), RETURNING</li>
+<li><a href="/documentation/components/libs/postgresql/update-query-builder">Update Query Builder</a> - UPDATE with FROM clause,
+RETURNING</li>
+<li><a href="/documentation/components/libs/postgresql/delete-query-builder">Delete Query Builder</a> - DELETE with USING clause,
+RETURNING</li>
 <li><a href="/documentation/components/libs/postgresql/merge-query-builder">Merge Query Builder</a> - MERGE (SQL:2008 upsert)</li>
 </ul>
 <p><strong>Schema Management (DDL)</strong></p>
 <ul>
 <li><a href="/documentation/components/libs/postgresql/table-query-builder">Table Query Builder</a> - CREATE/ALTER/DROP TABLE</li>
 <li><a href="/documentation/components/libs/postgresql/index-query-builder">Index Query Builder</a> - CREATE/DROP INDEX</li>
-<li><a href="/documentation/components/libs/postgresql/view-query-builder">View Query Builder</a> - CREATE/DROP VIEW, materialized views</li>
-<li><a href="/documentation/components/libs/postgresql/sequence-query-builder">Sequence Query Builder</a> - CREATE/ALTER/DROP SEQUENCE</li>
+<li><a href="/documentation/components/libs/postgresql/view-query-builder">View Query Builder</a> - CREATE/DROP VIEW, materialized
+views</li>
+<li><a href="/documentation/components/libs/postgresql/sequence-query-builder">Sequence Query Builder</a> - CREATE/ALTER/DROP
+SEQUENCE</li>
 <li><a href="/documentation/components/libs/postgresql/schema-query-builder">Schema Query Builder</a> - CREATE/DROP SCHEMA</li>
 </ul>
 <p><strong>Database Administration</strong></p>
 <ul>
-<li><a href="/documentation/components/libs/postgresql/transaction-query-builder">Transaction Query Builder</a> - BEGIN, COMMIT, ROLLBACK, SAVEPOINT</li>
-<li><a href="/documentation/components/libs/postgresql/role-grant-query-builder">Role &amp; Grant Query Builder</a> - CREATE/ALTER ROLE, GRANT/REVOKE</li>
-<li><a href="/documentation/components/libs/postgresql/utility-query-builder">Utility Query Builder</a> - VACUUM, ANALYZE, EXPLAIN, LOCK, CLUSTER</li>
+<li><a href="/documentation/components/libs/postgresql/transaction-query-builder">Transaction Query Builder</a> - BEGIN, COMMIT,
+ROLLBACK, SAVEPOINT</li>
+<li><a href="/documentation/components/libs/postgresql/role-grant-query-builder">Role &amp; Grant Query Builder</a> - CREATE/ALTER
+ROLE, GRANT/REVOKE</li>
+<li><a href="/documentation/components/libs/postgresql/utility-query-builder">Utility Query Builder</a> - VACUUM, ANALYZE,
+EXPLAIN, LOCK, CLUSTER</li>
 </ul>
 <p><strong>Extensions &amp; Types</strong></p>
 <ul>
-<li><a href="/documentation/components/libs/postgresql/copy-query-builder">Copy Query Builder</a> - COPY for bulk data import/export</li>
-<li><a href="/documentation/components/libs/postgresql/trigger-rule-query-builder">Trigger &amp; Rule Query Builder</a> - CREATE/DROP TRIGGER, RULE</li>
-<li><a href="/documentation/components/libs/postgresql/function-procedure-query-builder">Function &amp; Procedure Query Builder</a> - CREATE/DROP FUNCTION, PROCEDURE</li>
-<li><a href="/documentation/components/libs/postgresql/extension-query-builder">Extension Query Builder</a> - CREATE/DROP EXTENSION</li>
-<li><a href="/documentation/components/libs/postgresql/type-query-builder">Type Query Builder</a> - CREATE/DROP TYPE (enum, composite, range)</li>
+<li><a href="/documentation/components/libs/postgresql/copy-query-builder">Copy Query Builder</a> - COPY for bulk data
+import/export</li>
+<li><a href="/documentation/components/libs/postgresql/trigger-rule-query-builder">Trigger &amp; Rule Query Builder</a> - CREATE/DROP
+TRIGGER, RULE</li>
+<li><a href="/documentation/components/libs/postgresql/function-procedure-query-builder">Function &amp; Procedure Query Builder</a> -
+CREATE/DROP FUNCTION, PROCEDURE</li>
+<li><a href="/documentation/components/libs/postgresql/extension-query-builder">Extension Query Builder</a> - CREATE/DROP
+EXTENSION</li>
+<li><a href="/documentation/components/libs/postgresql/type-query-builder">Type Query Builder</a> - CREATE/DROP TYPE (enum,
+composite, range)</li>
 <li><a href="/documentation/components/libs/postgresql/domain-query-builder">Domain Query Builder</a> - CREATE/DROP DOMAIN</li>
 </ul>
 <hr />
@@ -814,11 +828,15 @@ $client-&gt;close();
 </code></pre>
 <h3><a id="detailed-documentation" href="#detailed-documentation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Detailed Documentation</h3>
 <ul>
-<li><a href="/documentation/components/libs/postgresql/client-connection">Connection</a> - Connection parameters, DSN parsing, lifecycle</li>
+<li><a href="/documentation/components/libs/postgresql/client-connection">Connection</a> - Connection parameters, DSN parsing,
+lifecycle</li>
 <li><a href="/documentation/components/libs/postgresql/client-fetching">Fetching Data</a> - fetch, fetchOne, fetchAll, fetchScalar</li>
-<li><a href="/documentation/components/libs/postgresql/client-object-mapping">Object Mapping</a> - Map rows to objects with RowMapper</li>
-<li><a href="/documentation/components/libs/postgresql/client-cursor">Cursors</a> - Memory-efficient streaming for large result sets</li>
-<li><a href="/documentation/components/libs/postgresql/client-transactions">Transactions</a> - Transaction callback pattern, nesting</li>
+<li><a href="/documentation/components/libs/postgresql/client-object-mapping">Object Mapping</a> - Map rows to objects with
+RowMapper</li>
+<li><a href="/documentation/components/libs/postgresql/client-cursor">Cursors</a> - Memory-efficient streaming for large result
+sets</li>
+<li><a href="/documentation/components/libs/postgresql/client-transactions">Transactions</a> - Transaction callback pattern,
+nesting</li>
 <li><a href="/documentation/components/libs/postgresql/client-types">Type System</a> - Value converters, TypedValue, custom types</li>
 </ul>
 <hr />
