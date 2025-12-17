@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 557
+ * Total functions: 558
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -7291,6 +7291,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_query_columns(" + "$" + "{" + "1:query" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "sql_query_depth",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">sql_query_depth</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$sql</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">int</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Get the maximum nesting depth of a SQL query.<br>Example:<br>- \"SELECT * FROM t\" => 1<br>- \"SELECT * FROM (SELECT * FROM t)\" => 2<br>- \"SELECT * FROM (SELECT * FROM (SELECT * FROM t))\" => 3
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_query_depth(" + "$" + "{" + "1:sql" + "}" + ")"),
         boost: 10
     },        {
         label: "sql_query_functions",
