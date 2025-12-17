@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 558
+ * Total functions: 557
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -7417,24 +7417,6 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_to_paginated_query(" + "$" + "{" + "1:sql" + "}" + ", " + "$" + "{" + "2:limit" + "}" + ", " + "$" + "{" + "3:offset" + "}" + ")"),
-        boost: 10
-    },        {
-        label: "sql_to_query_builder",
-        type: "function",
-        detail: "flow\u002Ddsl\u002Dhelpers",
-        info: () => {
-            const div = document.createElement("div")
-            div.innerHTML = `
-                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">sql_to_query_builder</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$sql</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SelectBuilder|InsertBuilder|UpdateBuilder|DeleteBuilder</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    Parse SQL and convert to a QueryBuilder for modification.<br>Only works for single-statement queries. For multiple statements,<br>use pg_split() to parse statements individually.<br>@throws \\InvalidArgumentException if query contains multiple statements or unsupported statement type
-                </div>
-                            `
-            return div
-        },
-        apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_to_query_builder(" + "$" + "{" + "1:sql" + "}" + ")"),
         boost: 10
     },        {
         label: "star",
