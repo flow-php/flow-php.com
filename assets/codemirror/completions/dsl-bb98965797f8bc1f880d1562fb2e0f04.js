@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 558
+ * Total functions: 563
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -7119,6 +7119,24 @@ const dslFunctions = [
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\sqlite_insert_options(" + "$" + "{" + "1:skip_conflicts" + "}" + ", " + "$" + "{" + "2:conflict_columns" + "}" + ", " + "$" + "{" + "3:update_columns" + "}" + ")"),
         boost: 10
     },        {
+        label: "sql_analyze",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">sql_analyze</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Plan</span> <span class=\"fn-param\">$plan</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PlanAnalyzer</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a plan analyzer for analyzing EXPLAIN plans.<br>@param Plan $plan The execution plan to analyze<br>@return PlanAnalyzer The analyzer for extracting insights
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_analyze(" + "$" + "{" + "1:plan" + "}" + ")"),
+        boost: 10
+    },        {
         label: "sql_deparse",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7153,6 +7171,60 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_deparse_options()"),
+        boost: 10
+    },        {
+        label: "sql_explain_config",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">sql_explain_config</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">bool</span> <span class=\"fn-param\">$analyze</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">true</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$verbose</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$costs</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">true</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$buffers</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">true</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$timing</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">true</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ExplainFormat</span> <span class=\"fn-param\">$format</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\PostgreSql\\QueryBuilder\\Utility\\ExplainFormat::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ExplainConfig</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create an ExplainConfig for customizing EXPLAIN options.<br>@param bool $analyze Whether to actually execute the query (ANALYZE)<br>@param bool $verbose Include verbose output<br>@param bool $costs Include cost estimates (default true)<br>@param bool $buffers Include buffer usage statistics (requires analyze)<br>@param bool $timing Include timing information (requires analyze)<br>@param ExplainFormat $format Output format (JSON recommended for parsing)
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_explain_config(" + "$" + "{" + "1:analyze" + "}" + ", " + "$" + "{" + "2:verbose" + "}" + ", " + "$" + "{" + "3:costs" + "}" + ", " + "$" + "{" + "4:buffers" + "}" + ", " + "$" + "{" + "5:timing" + "}" + ", " + "$" + "{" + "6:format" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "sql_explain_modifier",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">sql_explain_modifier</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">ExplainConfig</span> <span class=\"fn-param\">$config</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ExplainModifier</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create an ExplainModifier for transforming queries into EXPLAIN queries.
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_explain_modifier(" + "$" + "{" + "1:config" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "sql_explain_parse",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">sql_explain_parse</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$jsonOutput</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Plan</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Parse EXPLAIN JSON output into a Plan object.<br>@param string $jsonOutput The JSON output from EXPLAIN (FORMAT JSON)<br>@return Plan The parsed execution plan
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_explain_parse(" + "$" + "{" + "1:jsonOutput" + "}" + ")"),
         boost: 10
     },        {
         label: "sql_fingerprint",
@@ -7399,6 +7471,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_to_count_query(" + "$" + "{" + "1:sql" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "sql_to_explain",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">sql_to_explain</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$sql</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ExplainConfig</span> <span class=\"fn-param\">$config</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">string</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Transform a SQL query into an EXPLAIN query.<br>Returns the modified SQL with EXPLAIN wrapped around it.<br>Defaults to EXPLAIN ANALYZE with JSON format for easy parsing.<br>@param string $sql The SQL query to explain<br>@param null|ExplainConfig $config EXPLAIN configuration (defaults to forAnalysis())<br>@return string The EXPLAIN query
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_to_explain(" + "$" + "{" + "1:sql" + "}" + ", " + "$" + "{" + "2:config" + "}" + ")"),
         boost: 10
     },        {
         label: "sql_to_keyset_query",
