@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 563
+ * Total functions: 610
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -5793,6 +5793,711 @@ const dslFunctions = [
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_mapper()"),
         boost: 10
     },        {
+        label: "pgsql_type_bigint",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_bigint</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_bigint()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_bit",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_bit</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_bit()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_bool",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_bool</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_bool()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_boolean",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_boolean</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_boolean()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_bool_array",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_bool_array</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_bool_array()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_bpchar",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_bpchar</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_bpchar()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_bytea",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_bytea</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_bytea()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_char",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_char</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_char()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_cidr",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_cidr</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_cidr()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_date",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_date</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_date()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_double",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_double</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_double()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_float4",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_float4</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_float4()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_float4_array",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_float4_array</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_float4_array()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_float8",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_float8</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_float8()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_float8_array",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_float8_array</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_float8_array()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_inet",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_inet</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_inet()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_int2",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_int2</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_int2()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_int2_array",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_int2_array</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_int2_array()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_int4",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_int4</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_int4()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_int4_array",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_int4_array</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_int4_array()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_int8",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_int8</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_int8()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_int8_array",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_int8_array</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_int8_array()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_integer",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_integer</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_integer()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_interval",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_interval</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_interval()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_json",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_json</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_json()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_jsonb",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_jsonb</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_jsonb()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_jsonb_array",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_jsonb_array</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_jsonb_array()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_json_array",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_json_array</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_json_array()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_macaddr",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_macaddr</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_macaddr()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_macaddr8",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_macaddr8</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_macaddr8()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_money",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_money</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_money()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_numeric",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_numeric</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_numeric()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_oid",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_oid</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_oid()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_real",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_real</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_real()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_smallint",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_smallint</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_smallint()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_text",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_text</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_text()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_text_array",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_text_array</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_text_array()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_time",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_time</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_time()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_timestamp",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_timestamp</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_timestamp()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_timestamptz",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_timestamptz</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_timestamptz()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_timetz",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_timetz</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_timetz()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_uuid",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_uuid</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_uuid()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_uuid_array",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_uuid_array</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_uuid_array()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_varbit",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_varbit</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_varbit()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_varchar",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_varchar</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_varchar()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_varchar_array",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_varchar_array</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_varchar_array()"),
+        boost: 10
+    },        {
+        label: "pgsql_type_xml",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">pgsql_type_xml</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlType</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_xml()"),
+        boost: 10
+    },        {
         label: "pie_chart",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8467,15 +9172,15 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">typed</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">mixed</span> <span class=\"fn-param\">$value</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TypedValue</span>
+                    <span class=\"fn-name\">typed</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">mixed</span> <span class=\"fn-param\">$value</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">PostgreSqlType</span> <span class=\"fn-param\">$targetType</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TypedValue</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Wrap a value with explicit type for parameter binding.<br>Use when auto-detection isn\'t sufficient, e.g.:<br>- String that should be UUID<br>- String that should be JSON<br>- DateTime that should be DATE (not TIMESTAMP)<br>@param mixed $value The value to bind<br>@param Type<mixed> $type The Flow type to use for conversion<br>@example<br>$client->fetch(<br>    \'SELECT * FROM users WHERE id = $1 AND metadata = $2\',<br>    [<br>        typed(\'550e8400-e29b-41d4-a716-446655440000\', type_uuid()),<br>        typed(\'{\"key\": \"value\"}\', type_json()),<br>    ]<br>);
+                    Wrap a value with explicit PostgreSQL type information for parameter binding.<br>Use when auto-detection isn\'t sufficient or when you need to specify<br>the exact PostgreSQL type (since one PHP type can map to multiple PostgreSQL types):<br>- int could be INT2, INT4, or INT8<br>- string could be TEXT, VARCHAR, or CHAR<br>- array must always use typed() since auto-detection cannot determine element type<br>- DateTimeInterface could be TIMESTAMP or TIMESTAMPTZ<br>- Json could be JSON or JSONB<br>@param mixed $value The value to bind<br>@param PostgreSqlType $targetType The PostgreSQL type to convert the value to<br>@example<br>$client->fetch(<br>    \'SELECT * FROM users WHERE id = $1 AND tags = $2\',<br>    [<br>        typed(\'550e8400-e29b-41d4-a716-446655440000\', PostgreSqlType::UUID),<br>        typed([\'tag1\', \'tag2\'], PostgreSqlType::TEXT_ARRAY),<br>    ]<br>);
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\PostgreSql\\DSL\\typed(" + "$" + "{" + "1:value" + "}" + ", " + "$" + "{" + "2:type" + "}" + ")"),
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\typed(" + "$" + "{" + "1:value" + "}" + ", " + "$" + "{" + "2:targetType" + "}" + ")"),
         boost: 10
     },        {
         label: "types",
