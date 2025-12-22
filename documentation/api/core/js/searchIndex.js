@@ -391,6 +391,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_PG_QUERY"
         },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003APOSTGRESQL",
+            "name": "POSTGRESQL",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_POSTGRESQL"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003AS3_FILESYSTEM",
             "name": "S3_FILESYSTEM",
             "summary": "",

@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 610
+ * Total functions: 611
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -976,6 +976,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\ETL\\DSL\\bool_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "bulk_insert",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">bulk_insert</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$table</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$columns</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">int</span> <span class=\"fn-param\">$rowCount</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">BulkInsert</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create an optimized bulk INSERT query for high-performance multi-row inserts.<br>Unlike insert() which uses immutable builder patterns (O(n²) for n rows),<br>this function generates SQL directly using string operations (O(n) complexity).<br>@param string $table Table name<br>@param list<string> $columns Column names<br>@param int $rowCount Number of rows to insert
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\bulk_insert(" + "$" + "{" + "1:table" + "}" + ", " + "$" + "{" + "2:columns" + "}" + ", " + "$" + "{" + "3:rowCount" + "}" + ")"),
         boost: 10
     },        {
         label: "call",
