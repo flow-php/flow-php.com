@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 611
+ * Total functions: 612
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -610,7 +610,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">asc</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Expression</span> <span class=\"fn-param\">$expr</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">NullsPosition</span> <span class=\"fn-param\">$nulls</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\PostgreSql\\QueryBuilder\\Clause\\NullsPosition::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">OrderByItem</span>
+                    <span class=\"fn-name\">asc</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Expression</span> <span class=\"fn-param\">$expr</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">NullsPosition</span> <span class=\"fn-param\">$nulls</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\PostgreSql\\QueryBuilder\\Clause\\NullsPosition::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">OrderBy</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
                     Create an ORDER BY item with ASC direction.
@@ -2692,7 +2692,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">desc</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Expression</span> <span class=\"fn-param\">$expr</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">NullsPosition</span> <span class=\"fn-param\">$nulls</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\PostgreSql\\QueryBuilder\\Clause\\NullsPosition::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">OrderByItem</span>
+                    <span class=\"fn-name\">desc</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Expression</span> <span class=\"fn-param\">$expr</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">NullsPosition</span> <span class=\"fn-param\">$nulls</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\PostgreSql\\QueryBuilder\\Clause\\NullsPosition::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">OrderBy</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
                     Create an ORDER BY item with DESC direction.
@@ -5527,7 +5527,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">order_by</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Expression</span> <span class=\"fn-param\">$expr</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">SortDirection</span> <span class=\"fn-param\">$direction</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\PostgreSql\\QueryBuilder\\Clause\\SortDirection::...</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">NullsPosition</span> <span class=\"fn-param\">$nulls</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\PostgreSql\\QueryBuilder\\Clause\\NullsPosition::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">OrderByItem</span>
+                    <span class=\"fn-name\">order_by</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Expression</span> <span class=\"fn-param\">$expr</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">SortDirection</span> <span class=\"fn-param\">$direction</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\PostgreSql\\QueryBuilder\\Clause\\SortDirection::...</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">NullsPosition</span> <span class=\"fn-param\">$nulls</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\PostgreSql\\QueryBuilder\\Clause\\NullsPosition::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">OrderBy</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
                     Create an ORDER BY item.
@@ -8124,6 +8124,24 @@ const dslFunctions = [
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_query_functions(" + "$" + "{" + "1:query" + "}" + ")"),
         boost: 10
     },        {
+        label: "sql_query_order_by",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">sql_query_order_by</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">ParsedQuery</span> <span class=\"fn-param\">$query</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">OrderBy</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Extract ORDER BY clauses from a parsed SQL query.
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_query_order_by(" + "$" + "{" + "1:query" + "}" + ")"),
+        boost: 10
+    },        {
         label: "sql_query_tables",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10198,7 +10216,7 @@ const dslFunctions = [
                     <span class=\"fn-name\">window_def</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$partitionBy</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$orderBy</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">WindowFrame</span> <span class=\"fn-param\">$frame</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">WindowDefinition</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Create a window definition for WINDOW clause.<br>@param string $name Window name<br>@param list<Expression> $partitionBy PARTITION BY expressions<br>@param list<OrderBy|OrderByItem> $orderBy ORDER BY items<br>@param null|WindowFrame $frame Window frame specification
+                    Create a window definition for WINDOW clause.<br>@param string $name Window name<br>@param list<Expression> $partitionBy PARTITION BY expressions<br>@param list<OrderBy> $orderBy ORDER BY items<br>@param null|WindowFrame $frame Window frame specification
                 </div>
                             `
             return div
@@ -10234,7 +10252,7 @@ const dslFunctions = [
                     <span class=\"fn-name\">window_func</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$args</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$partitionBy</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$orderBy</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">WindowFunction</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Create a window function.<br>@param string $name Function name<br>@param list<Expression> $args Function arguments<br>@param list<Expression> $partitionBy PARTITION BY expressions<br>@param list<OrderBy|OrderByItem> $orderBy ORDER BY items
+                    Create a window function.<br>@param string $name Function name<br>@param list<Expression> $args Function arguments<br>@param list<Expression> $partitionBy PARTITION BY expressions<br>@param list<OrderBy> $orderBy ORDER BY items
                 </div>
                             `
             return div
