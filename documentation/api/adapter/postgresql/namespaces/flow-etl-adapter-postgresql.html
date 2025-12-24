@@ -113,7 +113,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\EntryTypesMap">EntryTypesMap</abbr></a></dt><dd>Maps ETL Entry types to PostgreSQL types.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlKeySetExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlKeySetExtractor">PostgreSqlKeySetExtractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLimitOffsetExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlLimitOffsetExtractor">PostgreSqlLimitOffsetExtractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLoader.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlLoader">PostgreSqlLoader</abbr></a></dt><dd>PostgreSQL loader for ETL pipelines.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\EntryTypesMap">EntryTypesMap</abbr></a></dt><dd>Maps ETL Entry types to PostgreSQL types.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlCursorExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlCursorExtractor">PostgreSqlCursorExtractor</abbr></a></dt><dd>PostgreSQL extractor using server-side cursors for memory-efficient extraction.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlKeySetExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlKeySetExtractor">PostgreSqlKeySetExtractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLimitOffsetExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlLimitOffsetExtractor">PostgreSqlLimitOffsetExtractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLoader.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlLoader">PostgreSqlLoader</abbr></a></dt><dd>PostgreSQL loader for ETL pipelines.</dd>    </dl>
 
     <h4 id="namespaces">
         Namespaces
@@ -151,6 +151,88 @@
 
         </h3>
                     <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_from_pgsql_cursor">
+        from_pgsql_cursor()
+        <a href="namespaces/flow-etl-adapter-postgresql.html#function_from_pgsql_cursor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a PostgreSQL cursor extractor using server-side cursors for memory-efficient extraction.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">from_pgsql_cursor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\QueryBuilder\SqlQuery">SqlQuery</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fetchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maximum</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlCursorExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlCursorExtractor">PostgreSqlCursorExtractor</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Uses DECLARE CURSOR + FETCH to stream data without loading entire result set into memory.
+This is the only way to achieve true low memory extraction with PHP's ext-pgsql.</p>
+<p>Note: Requires a transaction context (auto-started if not in one).</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$client</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>PostgreSQL client</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$query</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\PostgreSql\QueryBuilder\SqlQuery">SqlQuery</abbr>|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>SQL query to execute (wrapped in DECLARE CURSOR)</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$parameters</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, mixed&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Positional parameters for the query</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$fetchSize</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">1000</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Number of rows to fetch per batch (default: 1000)</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$maximum</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Maximum number of rows to extract (null for unlimited)</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlCursorExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlCursorExtractor">PostgreSqlCursorExtractor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_from_pgsql_limit_offset">
         from_pgsql_limit_offset()
         <a href="namespaces/flow-etl-adapter-postgresql.html#function_from_pgsql_limit_offset" class="headerlink"><i class="fas fa-link"></i></a>
@@ -159,7 +241,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -219,7 +301,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -286,7 +368,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -325,7 +407,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -364,7 +446,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -403,7 +485,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -449,7 +531,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -518,7 +600,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -560,7 +642,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -710,6 +792,7 @@
                             <li class="phpdocumentor-on-this-page-section__title">Functions</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-postgresql.html#function_from_pgsql_cursor">from_pgsql_cursor()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-adapter-postgresql.html#function_from_pgsql_key_set">from_pgsql_key_set()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-adapter-postgresql.html#function_from_pgsql_limit_offset">from_pgsql_limit_offset()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-adapter-postgresql.html#function_pgsql_delete_options">pgsql_delete_options()</a></li>

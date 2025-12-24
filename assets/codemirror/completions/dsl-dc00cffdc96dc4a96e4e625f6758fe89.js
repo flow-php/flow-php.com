@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 612
+ * Total functions: 615
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -1135,6 +1135,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\ETL\\DSL\\chunks_from(" + "$" + "{" + "1:extractor" + "}" + ", " + "$" + "{" + "2:chunk_size" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "close_cursor",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">close_cursor</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$cursorName</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">CloseCursorFinalStep</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Close a cursor.<br>Example: close_cursor(\'my_cursor\')<br>Produces: CLOSE my_cursor<br>Example: close_cursor() - closes all cursors<br>Produces: CLOSE ALL<br>@param null|string $cursorName Cursor to close, or null to close all
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\close_cursor(" + "$" + "{" + "1:cursorName" + "}" + ")"),
         boost: 10
     },        {
         label: "cluster",
@@ -2520,6 +2538,24 @@ const dslFunctions = [
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\dbal_from_query(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:query" + "}" + ", " + "$" + "{" + "3:parameters" + "}" + ", " + "$" + "{" + "4:types" + "}" + ")"),
         boost: 10
     },        {
+        label: "declare_cursor",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">declare_cursor</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$cursorName</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">SelectFinalStep|SqlQuery|string</span> <span class=\"fn-param\">$query</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">DeclareCursorOptionsStep</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Declare a server-side cursor for a query.<br>Cursors must be declared within a transaction and provide memory-efficient<br>iteration over large result sets via FETCH commands.<br>Example with query builder:<br>  declare_cursor(\'my_cursor\', select(star())->from(table(\'users\')))->noScroll()<br>  Produces: DECLARE my_cursor NO SCROLL CURSOR FOR SELECT * FROM users<br>Example with raw SQL:<br>  declare_cursor(\'my_cursor\', \'SELECT * FROM users WHERE active = true\')->withHold()<br>  Produces: DECLARE my_cursor NO SCROLL CURSOR WITH HOLD FOR SELECT * FROM users WHERE active = true<br>@param string $cursorName Unique cursor name<br>@param SelectFinalStep|SqlQuery|string $query Query to iterate over
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\declare_cursor(" + "$" + "{" + "1:cursorName" + "}" + ", " + "$" + "{" + "2:query" + "}" + ")"),
+        boost: 10
+    },        {
         label: "definition_from_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -3172,6 +3208,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\explain(" + "$" + "{" + "1:query" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "fetch",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">fetch</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$cursorName</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">FetchCursorBuilder</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Fetch rows from a cursor.<br>Example: fetch(\'my_cursor\')->forward(100)<br>Produces: FETCH FORWARD 100 my_cursor<br>Example: fetch(\'my_cursor\')->all()<br>Produces: FETCH ALL my_cursor<br>@param string $cursorName Cursor to fetch from
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\fetch(" + "$" + "{" + "1:cursorName" + "}" + ")"),
         boost: 10
     },        {
         label: "files",
