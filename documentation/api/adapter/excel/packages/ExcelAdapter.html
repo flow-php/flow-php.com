@@ -103,6 +103,13 @@
 
         
 
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="packages/ExcelAdapter.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Adapter-Excel-CellStyler.html"><abbr title="\Flow\ETL\Adapter\Excel\CellStyler">CellStyler</abbr></a></dt>    </dl>
 
     <h4 id="toc-classes">
         Classes
@@ -110,7 +117,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html"><abbr title="\Flow\ETL\Adapter\Excel\ExcelExtractor">ExcelExtractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-Excel-Function-IsValidExcelSheetName.html"><abbr title="\Flow\ETL\Adapter\Excel\Function\IsValidExcelSheetName">IsValidExcelSheetName</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-Excel-Sheet-SheetNameAssertion.html"><abbr title="\Flow\ETL\Adapter\Excel\Sheet\SheetNameAssertion">SheetNameAssertion</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-Excel-Sheet-SheetsManager.html"><abbr title="\Flow\ETL\Adapter\Excel\Sheet\SheetsManager">SheetsManager</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html"><abbr title="\Flow\ETL\Adapter\Excel\ExcelExtractor">ExcelExtractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-Excel-ExcelLoader.html"><abbr title="\Flow\ETL\Adapter\Excel\ExcelLoader">ExcelLoader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-Excel-Function-IsValidExcelSheetName.html"><abbr title="\Flow\ETL\Adapter\Excel\Function\IsValidExcelSheetName">IsValidExcelSheetName</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-Excel-RowsNormalizer-ExcelRowsNormalizer.html"><abbr title="\Flow\ETL\Adapter\Excel\RowsNormalizer\ExcelRowsNormalizer">ExcelRowsNormalizer</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-Excel-Sheet-SheetNameAssertion.html"><abbr title="\Flow\ETL\Adapter\Excel\Sheet\SheetNameAssertion">SheetNameAssertion</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-Excel-Sheet-SheetsManager.html"><abbr title="\Flow\ETL\Adapter\Excel\Sheet\SheetsManager">SheetsManager</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-Excel-WorkbookManager.html"><abbr title="\Flow\ETL\Adapter\Excel\WorkbookManager">WorkbookManager</abbr></a></dt>    </dl>
 
 
 
@@ -120,7 +127,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-ETL-Adapter-Excel-ExcelReader.html"><abbr title="\Flow\ETL\Adapter\Excel\ExcelReader">ExcelReader</abbr></a></dt></dl>
+            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-ETL-Adapter-Excel-ExcelReader.html"><abbr title="\Flow\ETL\Adapter\Excel\ExcelReader">ExcelReader</abbr></a></dt>        <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-ETL-Adapter-Excel-ExcelWriter.html"><abbr title="\Flow\ETL\Adapter\Excel\ExcelWriter">ExcelWriter</abbr></a></dt></dl>
 
 
 
@@ -175,6 +182,45 @@
 
 </article>
                     <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_to_excel">
+        to_excel()
+        <a href="namespaces/flow-etl-adapter-excel-dsl.html#function_to_excel" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/DSL/functions.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-dsl-functions.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">24</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">to_excel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|<abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Excel-ExcelLoader.html"><abbr title="\Flow\ETL\Adapter\Excel\ExcelLoader">ExcelLoader</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|<abbr title="\Flow\Filesystem\Path">Path</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Excel-ExcelLoader.html"><abbr title="\Flow\ETL\Adapter\Excel\ExcelLoader">ExcelLoader</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_is_valid_excel_sheet_name">
         is_valid_excel_sheet_name()
         <a href="namespaces/flow-etl-adapter-excel-dsl.html#function_is_valid_excel_sheet_name" class="headerlink"><i class="fas fa-link"></i></a>
@@ -183,7 +229,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/DSL/functions.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-dsl-functions.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -320,7 +366,8 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                                        <li><a href="packages/ExcelAdapter.html#toc-classes">Classes</a></li>
+                                                                                    <li><a href="packages/ExcelAdapter.html#toc-interfaces">Interfaces</a></li>
+                                                                <li><a href="packages/ExcelAdapter.html#toc-classes">Classes</a></li>
                                                                                     <li><a href="packages/ExcelAdapter.html#toc-enums">Enums</a></li>
                                                                                     <li><a href="packages/ExcelAdapter.html#toc-functions">Functions</a></li>
                                     </ul>
@@ -332,6 +379,7 @@
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="namespaces/flow-etl-adapter-excel-dsl.html#function_from_excel">from_excel()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-adapter-excel-dsl.html#function_is_valid_excel_sheet_name">is_valid_excel_sheet_name()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-excel-dsl.html#function_to_excel">to_excel()</a></li>
                                             </ul>
                 </li>
                     </ul>
