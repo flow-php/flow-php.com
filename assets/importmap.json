@@ -68,7 +68,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/playground_tabs_controller.js": {
-        "path": "\/assets\/controllers\/playground_tabs_controller-92e48b227edbdff976c70a4fba370272.js",
+        "path": "\/assets\/controllers\/playground_tabs_controller-f99c56fc34f1e2fae627a13aeb15348f.js",
         "type": "js"
     },
     "\/assets\/codemirror\/themes\/theme-flow.js": {
@@ -96,7 +96,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/wasm_controller.js": {
-        "path": "\/assets\/controllers\/wasm_controller-6ac57af96dfa39ce2a2cdb201151876a.js",
+        "path": "\/assets\/controllers\/wasm_controller-59ee13a1a4a6c819d3a5c311093e9572.js",
         "type": "js"
     },
     "\/assets\/controllers\/code_editor_controller.js": {
