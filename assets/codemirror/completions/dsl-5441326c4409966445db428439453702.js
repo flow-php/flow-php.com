@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 616
+ * Total functions: 617
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -1510,6 +1510,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\ETL\\DSL\\concat_ws(" + "$" + "{" + "1:separator" + "}" + ", " + "$" + "{" + "2:functions" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "conditions",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">conditions</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ConditionBuilder</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a condition builder for fluent condition composition.<br>This builder allows incremental condition building with a fluent API:<br>\`\`\`php<br>$builder = conditions();<br>if ($hasFilter) {<br>    $builder = $builder->and(eq(col(\'status\'), literal(\'active\')));<br>}<br>if (!$builder->isEmpty()) {<br>    $query = select()->from(table(\'users\'))->where($builder);<br>}<br>\`\`\`
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\conditions()"),
         boost: 10
     },        {
         label: "cond_and",
