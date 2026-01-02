@@ -48,12 +48,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\from_pgsql_limit_offset\u0028\u0029",
             "name": "from_pgsql_limit_offset",
-            "summary": "",
+            "summary": "Create\u0020a\u0020PostgreSQL\u0020extractor\u0020using\u0020LIMIT\/OFFSET\u0020pagination.",
             "url": "namespaces/flow-etl-adapter-postgresql.html#function_from_pgsql_limit_offset"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\from_pgsql_key_set\u0028\u0029",
             "name": "from_pgsql_key_set",
-            "summary": "",
+            "summary": "Create\u0020a\u0020PostgreSQL\u0020extractor\u0020using\u0020keyset\u0020\u0028cursor\u002Dbased\u0029\u0020pagination.",
             "url": "namespaces/flow-etl-adapter-postgresql.html#function_from_pgsql_key_set"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\pgsql_pagination_key_asc\u0028\u0029",
