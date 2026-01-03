@@ -310,9 +310,13 @@
 </div>
         
             <section id="changelog" class="py-10 px-2 sm:px-4 mx-auto max-w-screen-2xl">
-        <h2><a id="unreleased---2026-01-01" href="#unreleased---2026-01-01" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2026-01-01</h2>
+        <h2><a id="unreleased---2026-01-02" href="#unreleased---2026-01-02" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2026-01-02</h2>
 <h3><a id="added" href="#added" class="mr-2" aria-hidden="true" title="Permalink">#</a>Added</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2121">#2121</a> - <strong>postgresql - query parameters support for from_pgsql_cursor(), from_pgsql_limit_offset() and from_pgsql_key_set() extractors</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2121">#2121</a> - <strong>postgresql - ParamRefCollector visitor for collecting parameter references from AST</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2121">#2121</a> - <strong>postgresql - parseResult() method to ModificationContext for context-aware AST modifications</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2121">#2121</a> - <strong>postgresql - auto-detection of existing query parameters in keyset pagination (placeholders are appended after the highest existing parameter number)</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2120">#2120</a> - <strong>postgresql - support modification connection parameters</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2119">#2119</a> - <strong>expose tables through from statement of select statement</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2113">#2113</a> - <strong>postgresql - condition builder fluent interface</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -336,6 +340,9 @@
 </ul>
 <h3><a id="changed" href="#changed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2121">#2121</a> - <strong>simplified DSL functions (from_pgsql_cursor, from_pgsql_limit_offset, from_pgsql_key_set) - removed optional parameters (pageSize, fetchSize, maximum) in favor of -&gt;withXXX() fluent methods</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2121">#2121</a> - <strong>postgresql - ModificationContext now requires ParseResult parameter for full AST access</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2121">#2121</a> - <strong>postgresql - KeysetPaginationModifier now auto-detects parameter offset instead of requiring it in config</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2111">#2111</a> - <strong>split query and result exception in postgresql client</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2110">#2110</a> - <strong>updated openspout to accept only latest version</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2103">#2103</a> - <strong>Simplify a little bit the <code>ExcelLoader</code> code</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/stloyd">@stloyd</a></li>
