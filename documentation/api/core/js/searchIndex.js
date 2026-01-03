@@ -706,6 +706,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Aanalyze\u0028\u0029",
+            "name": "analyze",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_analyze"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Abuild\u0028\u0029",
             "name": "build",
             "summary": "",
@@ -845,6 +850,11 @@ Search.appendIndex(
             "name": "default",
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#method_default"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\u003A\u003Aanalyze\u0028\u0029",
+            "name": "analyze",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config.html#method_analyze"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\u003A\u003Aclock\u0028\u0029",
             "name": "clock",
@@ -3315,6 +3325,26 @@ Search.appendIndex(
             "name": "TypeAssertionException",
             "summary": "",
             "url": "classes/Flow-ETL-Exception-TypeAssertionException.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Execution\\ReportCollector",
+            "name": "ReportCollector",
+            "summary": "",
+            "url": "classes/Flow-ETL-Execution-ReportCollector.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Execution\\ReportCollector\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Execution-ReportCollector.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Execution\\ReportCollector\u003A\u003Acapture\u0028\u0029",
+            "name": "capture",
+            "summary": "",
+            "url": "classes/Flow-ETL-Execution-ReportCollector.html#method_capture"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Execution\\ReportCollector\u003A\u003Areport\u0028\u0029",
+            "name": "report",
+            "summary": "",
+            "url": "classes/Flow-ETL-Execution-ReportCollector.html#method_report"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\ArrayExtractor",
             "name": "ArrayExtractor",
@@ -14065,6 +14095,11 @@ Search.appendIndex(
             "name": "Exception",
             "summary": "",
             "url": "namespaces/flow-etl-exception.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Execution",
+            "name": "Execution",
+            "summary": "",
+            "url": "namespaces/flow-etl-execution.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor",
             "name": "Extractor",

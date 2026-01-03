@@ -440,7 +440,13 @@
 <div class="toc-wrapper" data-controller="toc"><div class="toc-header" data-action="click-&gt;toc#toggle"><span>Table of Contents</span><svg class="toc-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg></div><div class="toc-content"><ul class="table-of-contents"><li><a href="#installation">Installation</a></li>
 <li><a href="#usage">Usage</a></li>
 <li><a href="#available-outputs">Available Outputs</a></li>
-<li><a href="#modify-output-on-the-fly">Modify output on the fly</a></li></ul></div></div>
+<li><a href="#modify-output-on-the-fly">Modify output on the fly</a></li>
+<li><a href="#collecting-telemetry-after-streaming">Collecting Telemetry After Streaming</a>
+<ul>
+<li><a href="#analyze-options">Analyze Options</a></li>
+<li><a href="#report-contents">Report Contents</a></li>
+</ul>
+</li></ul></div></div>
 <p>Http Foundation Bridge provides seamless integration between Symfony Http Foundation and Flow PHP.</p>
 <p><code>FlowStreamedResponse</code> is a Symfony Streamed Response that can:</p>
 <ul>
@@ -519,6 +525,83 @@ To do that, FlowStreamedResponse allows passing a Transformation that will be ap
 }
 </code></pre>
 <p>Above example will add a new column <code>time</code> to the dataset with the current timestamp.</p>
+<h2><a id="collecting-telemetry-after-streaming" href="#collecting-telemetry-after-streaming" class="mr-2" aria-hidden="true" title="Permalink">#</a>Collecting Telemetry After Streaming</h2>
+<p>When streaming large datasets, you may want to collect telemetry data such as total row counts, execution time,
+or memory usage after the streaming completes. Flow provides a <code>StreamClosure</code> mechanism that gets called
+with a <code>Report</code> containing statistics about the streamed data.</p>
+<p>To receive a <code>Report</code>, you need to:</p>
+<ol>
+<li>Configure <code>Analyze</code> in the <code>Config</code> using <code>config()</code> method</li>
+<li>Set an <code>onComplete()</code> callback using <code>http_on_complete()</code> DSL function</li>
+</ol>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+namespace Symfony\Application\Controller;
+
+use Flow\Bridge\Symfony\HttpFoundation\Response\FlowStreamedResponse;
+use Flow\ETL\Config;
+use Flow\ETL\Dataset\Report;
+use Psr\Log\LoggerInterface;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Attribute\Route;
+use function Flow\Bridge\Symfony\HttpFoundation\http_json_output;
+use function Flow\Bridge\Symfony\HttpFoundation\http_on_complete;
+use function Flow\Bridge\Symfony\HttpFoundation\http_stream_open;
+use function Flow\ETL\Adapter\Parquet\from_parquet;
+use function Flow\ETL\DSL\analyze;
+
+final class ReportsController extends AbstractController
+{
+    public function __construct(
+        private readonly LoggerInterface $logger,
+    ) {}
+
+    #[Route('/report/stream', name: 'report_stream')]
+    public function streamReport() : FlowStreamedResponse
+    {
+        return http_stream_open(from_parquet(__DIR__ . '/reports/orders.parquet'))
+            -&gt;config(Config::builder()-&gt;analyze(analyze()))
+            -&gt;onComplete(http_on_complete(function (?Report $report) : void {
+                if ($report === null) {
+                    return;
+                }
+
+                $this-&gt;logger-&gt;info('Stream completed', [
+                    'total_rows' =&gt; $report-&gt;statistics()-&gt;totalRows(),
+                    'execution_time_seconds' =&gt; $report-&gt;statistics()-&gt;executionTime-&gt;inSeconds(),
+                    'memory_peak_mb' =&gt; $report-&gt;statistics()-&gt;memory-&gt;max()-&gt;inMb(),
+                ]);
+            }))
+            -&gt;as('orders.json')
+            -&gt;streamedResponse(http_json_output());
+    }
+}
+</code></pre>
+<h3><a id="analyze-options" href="#analyze-options" class="mr-2" aria-hidden="true" title="Permalink">#</a>Analyze Options</h3>
+<p>The <code>analyze()</code> function supports additional options for collecting more detailed statistics:</p>
+<ul>
+<li><code>analyze()</code> - Basic statistics (row count, execution time, memory usage)</li>
+<li><code>analyze()-&gt;withSchema()</code> - Also collects schema information about the dataset</li>
+<li><code>analyze()-&gt;withColumnStatistics()</code> - Also collects per-column statistics (min, max, null counts)</li>
+<li><code>analyze()-&gt;withSchema()-&gt;withColumnStatistics()</code> - Collects all available statistics</li>
+</ul>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">// Collect schema information along with basic statistics
+-&gt;config(Config::builder()-&gt;analyze(analyze()-&gt;withSchema()))
+
+// Collect everything
+-&gt;config(Config::builder()-&gt;analyze(analyze()-&gt;withSchema()-&gt;withColumnStatistics()))
+</code></pre>
+<h3><a id="report-contents" href="#report-contents" class="mr-2" aria-hidden="true" title="Permalink">#</a>Report Contents</h3>
+<p>The <code>Report</code> object provides access to:</p>
+<ul>
+<li><code>$report-&gt;statistics()-&gt;totalRows()</code> - Total number of rows streamed</li>
+<li><code>$report-&gt;statistics()-&gt;executionTime-&gt;inSeconds()</code> - Execution duration</li>
+<li><code>$report-&gt;statistics()-&gt;executionTime-&gt;startedAt</code> - Start timestamp</li>
+<li><code>$report-&gt;statistics()-&gt;executionTime-&gt;finishedAt</code> - End timestamp</li>
+<li><code>$report-&gt;statistics()-&gt;memory-&gt;max()</code> - Peak memory usage</li>
+<li><code>$report-&gt;schema()</code> - Dataset schema (when <code>withSchema()</code> is enabled)</li>
+<li><code>$report-&gt;statistics()-&gt;columns</code> - Column statistics (when <code>withColumnStatistics()</code> is enabled)</li>
+</ul>
 
 
             <hr class="!mt-8 !mb-8"/>

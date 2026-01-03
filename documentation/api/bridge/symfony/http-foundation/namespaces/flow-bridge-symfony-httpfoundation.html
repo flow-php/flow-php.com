@@ -112,7 +112,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Output.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Output">Output</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Output.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Output">Output</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\StreamClosure">StreamClosure</abbr></a></dt><dd>Interface for closures that are called after streaming completes.</dd>    </dl>
 
     <h4 id="toc-classes">
         Classes
@@ -156,7 +156,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-functions.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">11</span>
 
     </aside>
 
@@ -195,7 +195,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-functions.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -224,7 +224,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-functions.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -253,7 +253,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-functions.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -282,7 +282,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-functions.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -299,6 +299,46 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Output-ParquetOutput.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Output\ParquetOutput">ParquetOutput</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_on_complete">
+        http_on_complete()
+        <a href="namespaces/flow-bridge-symfony-httpfoundation.html#function_http_on_complete" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-functions.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a StreamClosure from a callable.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_on_complete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">callable(Array): void&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\StreamClosure">StreamClosure</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$callback</span>
+                : <span class="phpdocumentor-argument-list__argument__type">callable(Array): void</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\StreamClosure">StreamClosure</abbr></a></span>
             </section>
 
 </article>
@@ -421,6 +461,7 @@
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="namespaces/flow-bridge-symfony-httpfoundation.html#function_http_csv_output">http_csv_output()</a></li>
                                                     <li class=""><a href="namespaces/flow-bridge-symfony-httpfoundation.html#function_http_json_output">http_json_output()</a></li>
+                                                    <li class=""><a href="namespaces/flow-bridge-symfony-httpfoundation.html#function_http_on_complete">http_on_complete()</a></li>
                                                     <li class=""><a href="namespaces/flow-bridge-symfony-httpfoundation.html#function_http_parquet_output">http_parquet_output()</a></li>
                                                     <li class=""><a href="namespaces/flow-bridge-symfony-httpfoundation.html#function_http_stream_open">http_stream_open()</a></li>
                                                     <li class=""><a href="namespaces/flow-bridge-symfony-httpfoundation.html#function_http_xml_output">http_xml_output()</a></li>

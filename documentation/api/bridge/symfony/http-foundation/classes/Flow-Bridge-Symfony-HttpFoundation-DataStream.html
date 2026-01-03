@@ -121,7 +121,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
@@ -162,11 +162,25 @@
 <dd>Set the filename for the response.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_config">config()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Set the Config for the DataFrame execution.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_headers">headers()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
 <dd>Set additional headers.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_onComplete">onComplete()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Set a closure to be called after streaming completes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_open">open()</a>
@@ -237,7 +251,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -281,7 +295,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -332,6 +346,57 @@ the browser will prompt the user to download the file.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_config">
+        config()
+        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_config" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set the Config for the DataFrame execution.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">config</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Config">Config</abbr>|<abbr title="\Flow\ETL\Config\ConfigBuilder">ConfigBuilder</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Use this to configure Analyze for enabling Report generation.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$config</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Config">Config</abbr>|<abbr title="\Flow\ETL\Config\ConfigBuilder">ConfigBuilder</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_headers">
         headers()
         <a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_headers" class="headerlink"><i class="fas fa-link"></i></a>
@@ -340,7 +405,7 @@ the browser will prompt the user to download the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -381,6 +446,58 @@ the browser will prompt the user to download the file.</p>
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_onComplete">
+        onComplete()
+        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_onComplete" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">90</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set a closure to be called after streaming completes.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">onComplete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\StreamClosure">StreamClosure</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$streamClosure</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>The closure receives the Report from DataFrame execution.
+Note: Report will be null unless Analyze is configured via config().</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$streamClosure</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\StreamClosure">StreamClosure</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_open">
@@ -391,7 +508,7 @@ the browser will prompt the user to download the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -439,7 +556,7 @@ the browser will prompt the user to download the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -491,7 +608,7 @@ Some extractors like Parquet/Elasticsearch/Doctrine allows also for setting offs
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -540,7 +657,7 @@ Some extractors like Parquet/Elasticsearch/Doctrine allows also for setting offs
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -589,7 +706,7 @@ Some extractors like Parquet/Elasticsearch/Doctrine allows also for setting offs
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -643,7 +760,7 @@ might significantly slow down the streaming process or even cause out of memory 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-datastream.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/DataStream.php">DataStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -797,7 +914,9 @@ might significantly slow down the streaming process or even cause out of memory 
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_as">as()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_config">config()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_headers">headers()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_onComplete">onComplete()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_open">open()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_response">response()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_status">status()</a></li>

@@ -100,35 +100,25 @@
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-bridge.html">Bridge</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-bridge-symfony.html">Symfony</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-bridge-symfony-httpfoundation.html">HttpFoundation</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-bridge-symfony-httpfoundation-response.html">Response</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -class">
+    <article class="phpdocumentor-element -interface">
         <h2 class="phpdocumentor-content__title">
-    FlowStreamedResponse
-
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr>
-    </span>
-    
-    
-    
-    </h2>
-
-<div class="phpdocumentor-label-line">
-
-
-</div>
+    StreamClosure
+        </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/Response/FlowStreamedResponse.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-response-flowstreamedresponse.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/Response/FlowStreamedResponse.php">FlowStreamedResponse.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/StreamClosure.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-streamclosure.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/StreamClosure.php">StreamClosure.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">Interface for closures that are called after streaming completes.</p>
 
+
+    <section class="phpdocumentor-description"><p>Implementations receive the Report from the DataFrame execution.</p>
+</section>
 
 
 
@@ -145,28 +135,27 @@
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html#method___construct">__construct()</a>
+    <a class="" href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html#method_onComplete">onComplete()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 
     </dl>
 
 
 
-        
 
         
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -175,22 +164,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_onComplete">
+        onComplete()
+        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html#method_onComplete" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/Response/FlowStreamedResponse.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-response-flowstreamedresponse.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/Response/FlowStreamedResponse.php">FlowStreamedResponse.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/StreamClosure.php"><a href="files/src-bridge-symfony-http-foundation-src-flow-bridge-symfony-httpfoundation-streamclosure.html"><abbr title="src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/StreamClosure.php">StreamClosure.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Extractor">Extractor</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$extractor</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Output.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Output">Output</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$output</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Transformation">Transformation</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$transformations</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\ETL\Transformations">Transformations</abbr>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$status</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">200</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Config">Config</abbr>|<abbr title="\Flow\ETL\Config\ConfigBuilder">ConfigBuilder</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\StreamClosure">StreamClosure</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$streamClosure</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">onComplete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Dataset\Report">Report</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$report</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -199,51 +188,9 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$extractor</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$report</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Dataset\Report">Report</abbr>|null</span>
                             </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$output</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Output.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\Output">Output</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$transformations</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Transformation">Transformation</abbr></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\ETL\Transformations">Transformations</abbr>()</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$status</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">200</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$headers</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, mixed&gt;</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$config</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Config">Config</abbr>|<abbr title="\Flow\ETL\Config\ConfigBuilder">ConfigBuilder</abbr>|null</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$streamClosure</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html"><abbr title="\Flow\Bridge\Symfony\HttpFoundation\StreamClosure">StreamClosure</abbr></a>|null</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -261,7 +208,7 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/Response/FlowStreamedResponse.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/StreamClosure.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -354,7 +301,7 @@
     </article>
                                 </section>
                 <section class="phpdocumentor-on-this-page__sidebar">
-                                
+                            
     <section class="phpdocumentor-on-this-page__content">
         <strong class="phpdocumentor-on-this-page__title">On this page</strong>
 
@@ -362,17 +309,17 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                <li><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html#toc-methods">Methods</a></li>
-                                    </ul>
+                    <li><a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html#toc-constants">Constants</a></li>
+                    <li><a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html#toc-methods">Methods</a></li>
+                </ul>
             </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html#method_onComplete">onComplete()</a></li>
+                                            </ul>
+                </li>
             
-            
-                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
-            <li>
-                <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html#method___construct">__construct()</a></li>
-                                    </ul>
-            </li>
                     </ul>
     </section>
 
@@ -390,7 +337,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

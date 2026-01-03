@@ -21,10 +21,20 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020filename\u0020for\u0020the\u0020response.",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_as"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003Aconfig\u0028\u0029",
+            "name": "config",
+            "summary": "Set\u0020the\u0020Config\u0020for\u0020the\u0020DataFrame\u0020execution.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_config"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003Aheaders\u0028\u0029",
             "name": "headers",
             "summary": "Set\u0020additional\u0020headers.",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_headers"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003AonComplete\u0028\u0029",
+            "name": "onComplete",
+            "summary": "Set\u0020a\u0020closure\u0020to\u0020be\u0020called\u0020after\u0020streaming\u0020completes.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_onComplete"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003Aresponse\u0028\u0029",
             "name": "response",
@@ -75,6 +85,11 @@ Search.appendIndex(
             "name": "http_parquet_output",
             "summary": "",
             "url": "namespaces/flow-bridge-symfony-httpfoundation.html#function_http_parquet_output"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\http_on_complete\u0028\u0029",
+            "name": "http_on_complete",
+            "summary": "Create\u0020a\u0020StreamClosure\u0020from\u0020a\u0020callable.",
+            "url": "namespaces/flow-bridge-symfony-httpfoundation.html#function_http_on_complete"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\CSVOutput",
             "name": "CSVOutput",
@@ -260,6 +275,16 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\StreamClosure",
+            "name": "StreamClosure",
+            "summary": "Interface\u0020for\u0020closures\u0020that\u0020are\u0020called\u0020after\u0020streaming\u0020completes.",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\StreamClosure\u003A\u003AonComplete\u0028\u0029",
+            "name": "onComplete",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html#method_onComplete"
         },                {
             "fqsen": "\\",
             "name": "\\",
