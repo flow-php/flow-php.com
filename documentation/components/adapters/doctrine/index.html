@@ -444,8 +444,7 @@
 <li><a href="#type-detection-and-optimization">Type Detection and Optimization</a>
 <ul>
 <li><a href="#automatic-type-detection-from-flow-schema">Automatic Type Detection from Flow Schema</a></li>
-<li><a href="#manual-type-override">Manual Type Override</a></li>
-<li><a href="#custom-type-detector">Custom Type Detector</a></li>
+<li><a href="#custom-types-map">Custom Types Map</a></li>
 <li><a href="#data-normalization">Data Normalization</a></li>
 </ul>
 </li>
@@ -517,26 +516,10 @@ data_frame()
     -&gt;run();
 // Types are automatically detected from the Flow Schema
 </code></pre>
-<h4><a id="manual-type-override" href="#manual-type-override" class="mr-2" aria-hidden="true" title="Permalink">#</a>Manual Type Override</h4>
-<p>You can override specific column types for fine-grained control:</p>
+<h4><a id="custom-types-map" href="#custom-types-map" class="mr-2" aria-hidden="true" title="Permalink">#</a>Custom Types Map</h4>
+<p>For advanced scenarios, you can provide a custom type mapping to control how Flow types are converted to DBAL types:</p>
 <pre class="language-php" data-controller="syntax-highlight"><code class="language-php">use function Flow\ETL\Adapter\Doctrine\to_dbal_table_insert;
-use Doctrine\DBAL\Types\Type;
-use Doctrine\DBAL\Types\Types;
-
-data_frame()
-    -&gt;read(from_())
-    -&gt;write(to_dbal_table_insert($connection, 'users')
-        -&gt;withColumnTypes([
-            'id' =&gt; Type::getType(Types::INTEGER),
-            'email' =&gt; Type::getType(Types::STRING),
-            'created_at' =&gt; Type::getType(Types::DATETIME_IMMUTABLE),
-        ]))
-    -&gt;run();
-</code></pre>
-<h4><a id="custom-type-detector" href="#custom-type-detector" class="mr-2" aria-hidden="true" title="Permalink">#</a>Custom Type Detector</h4>
-<p>For advanced scenarios, you can provide a custom type detector with your own type mapping:</p>
-<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">use function Flow\ETL\Adapter\Doctrine\to_dbal_table_insert;
-use Flow\ETL\Adapter\Doctrine\{DbalTypesDetector, TypesMap};
+use Flow\ETL\Adapter\Doctrine\TypesMap;
 use Flow\Types\Type\Native\StringType;
 use Doctrine\DBAL\Types\TextType;
 
@@ -547,7 +530,7 @@ $customTypesMap = new TypesMap([
 data_frame()
     -&gt;read(from_())
     -&gt;write(to_dbal_table_insert($connection, 'users')
-        -&gt;withTypesDetector(new DbalTypesDetector($customTypesMap)))
+        -&gt;withTypesMap($customTypesMap))
     -&gt;run();
 </code></pre>
 <h4><a id="data-normalization" href="#data-normalization" class="mr-2" aria-hidden="true" title="Permalink">#</a>Data Normalization</h4>

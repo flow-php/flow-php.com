@@ -12776,6 +12776,11 @@ Search.appendIndex(
             "summary": "Gracefully\u0020remove\u0020entries\u0020from\u0020schema\u0020without\u0020throwing\u0020an\u0020exception\u0020if\u0020entry\u0020does\u0020not\u0020exist.",
             "url": "classes/Flow-ETL-Schema.html#method_gracefulRemove"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AisSame\u0028\u0029",
+            "name": "isSame",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema.html#method_isSame"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\u003A\u003Akeep\u0028\u0029",
             "name": "keep",
             "summary": "",

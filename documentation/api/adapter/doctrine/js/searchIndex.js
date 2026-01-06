@@ -121,11 +121,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_load"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLoader\u003A\u003AwithColumnTypes\u0028\u0029",
-            "name": "withColumnTypes",
-            "summary": "Override\u0020types\u0020taken\u0020from\u0020Flow\u0020Schema\u0020with\u0020explicitly\u0020provided\u0020DBAL\u0020types.",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withColumnTypes"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLoader\u003A\u003AwithOperation\u0028\u0029",
             "name": "withOperation",
             "summary": "",
@@ -136,10 +131,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withOperationOptions"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLoader\u003A\u003AwithTypesDetector\u0028\u0029",
-            "name": "withTypesDetector",
-            "summary": "Set\u0020custom\u0020SchemaToTypesConverter\u0020with\u0020custom\u0020TypesMap.",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withTypesDetector"
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLoader\u003A\u003AwithTypesMap\u0028\u0029",
+            "name": "withTypesMap",
+            "summary": "Set\u0020custom\u0020types\u0020map\u0020for\u0020Flow\u0020Type\u0020to\u0020DBAL\u0020Type\u0020conversion.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLoader.html#method_withTypesMap"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalMetadata",
             "name": "DbalMetadata",
@@ -315,21 +310,6 @@ Search.appendIndex(
             "name": "withTypes",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalQueryExtractor.html#method_withTypes"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalTypesDetector",
-            "name": "DbalTypesDetector",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalTypesDetector.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalTypesDetector\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalTypesDetector.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalTypesDetector\u003A\u003Aconvert\u0028\u0029",
-            "name": "convert",
-            "summary": "Converts\u0020Flow\u0020Schema\u0020to\u0020DBAL\u0020Types\u0020array.",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalTypesDetector.html#method_convert"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\dbal_dataframe_factory\u0028\u0029",
             "name": "dbal_dataframe_factory",
@@ -745,6 +725,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-TypesMap.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypesMap\u003A\u003AflowRowTypes\u0028\u0029",
+            "name": "flowRowTypes",
+            "summary": "Build\u0020DBAL\u0020types\u0020array\u0020from\u0020a\u0020row\u0027s\u0020entries.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TypesMap.html#method_flowRowTypes"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypesMap\u003A\u003AtoDbalType\u0028\u0029",
             "name": "toDbalType",
