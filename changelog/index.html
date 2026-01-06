@@ -310,9 +310,12 @@
 </div>
         
             <section id="changelog" class="py-10 px-2 sm:px-4 mx-auto max-w-screen-2xl">
-        <h2><a id="unreleased---2026-01-03" href="#unreleased---2026-01-03" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2026-01-03</h2>
+        <h2><a id="unreleased---2026-01-06" href="#unreleased---2026-01-06" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2026-01-06</h2>
 <h3><a id="added" href="#added" class="mr-2" aria-hidden="true" title="Permalink">#</a>Added</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2129">#2129</a> - <strong>Schema::isSame to use it for early exit merge operation when schema is the same</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2129">#2129</a> - <strong>TypesMap::flowRowTypes() method for Entry-based type detection in DbalLoader</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2129">#2129</a> - <strong>EnumType to TypesMap FLOW_TYPES mapping (maps to DBAL StringType)</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2122">#2122</a> - <strong>StreamClosure interface for HTTP streaming completion callbacks</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2122">#2122</a> - <strong>http_on_complete() DSL function to create stream closures from callables</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2122">#2122</a> - <strong>DataStream::onComplete() method to set post-streaming callbacks</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -347,6 +350,13 @@
 </ul>
 <h3><a id="changed" href="#changed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2129">#2129</a> - <strong>Run benchamrks on CI/CD synchronously</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2129">#2129</a> - <strong>Improve loaders benchmarks performance</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2129">#2129</a> - <strong>Increase benchmarks iterations on CI/CD to 3</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2129">#2129</a> - <strong>Entry type now is directly extracted from Definition</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2129">#2129</a> - <strong>DbalLoader now uses Entry-based type detection instead of Schema-based detection for better performance</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2129">#2129</a> - <strong>Replaced DbalLoader::withTypesDetector() with withTypesMap() for simpler API</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2129">#2129</a> - <strong>DbalLoader now skips processing when rows are empty</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2122">#2122</a> - <strong>DataFrame::run() now respects Analyze configured at Config level when not explicitly passed</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2122">#2122</a> - <strong>DataFrame::run() refactored to use ReportCollector for cleaner code and better static analysis</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2122">#2122</a> - <strong>FlowStreamedResponse now accepts optional StreamClosure and Config parameters</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -380,6 +390,8 @@
 </ul>
 <h3><a id="removed" href="#removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Removed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2129">#2129</a> - <strong>DbalTypesDetector class - functionality consolidated into TypesMap</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2129">#2129</a> - <strong>DbalLoader::withColumnTypes() method - use withTypesMap() instead</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2112">#2112</a> - <strong>Remove old OpenSpout code fallback</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/stloyd">@stloyd</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2095">#2095</a> - <strong>symfony/polyfill-83 dependency</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 </ul>

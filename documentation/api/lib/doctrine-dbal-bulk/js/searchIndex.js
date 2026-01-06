@@ -251,6 +251,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLInsertOptions.html#property_upsert"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLInsertOptions\u003A\u003A\u0024preserveExistingValues",
+            "name": "preserveExistingValues",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLInsertOptions.html#property_preserveExistingValues"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLUpdateOptions",
             "name": "MySQLUpdateOptions",
             "summary": "",
@@ -331,6 +336,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_updateColumns"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLInsertOptions\u003A\u003A\u0024preserveExistingValues",
+            "name": "preserveExistingValues",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_preserveExistingValues"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLUpdateOptions",
             "name": "PostgreSQLUpdateOptions",
             "summary": "",
@@ -360,6 +370,11 @@ Search.appendIndex(
             "name": "updateColumns",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLUpdateOptions.html#property_updateColumns"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLUpdateOptions\u003A\u003A\u0024preserveExistingValues",
+            "name": "preserveExistingValues",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLUpdateOptions.html#property_preserveExistingValues"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteDialect",
             "name": "SqliteDialect",
@@ -420,6 +435,11 @@ Search.appendIndex(
             "name": "updateColumns",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteInsertOptions.html#property_updateColumns"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteInsertOptions\u003A\u003A\u0024preserveExistingValues",
+            "name": "preserveExistingValues",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteInsertOptions.html#property_preserveExistingValues"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteUpdateOptions",
             "name": "SqliteUpdateOptions",

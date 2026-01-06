@@ -171,6 +171,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_preserveExistingValues">$preserveExistingValues</a>
+    <span>
+                        &nbsp;: bool|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_skipConflicts">$skipConflicts</a>
     <span>
                         &nbsp;: bool|null            </span>
@@ -326,6 +332,43 @@
             -public
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_preserveExistingValues">
+        $preserveExistingValues
+        <a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_preserveExistingValues" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-dialect-postgresqlinsertoptions.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php">PostgreSQLInsertOptions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">21</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$preserveExistingValues</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_skipConflicts">
         $skipConflicts
         <a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_skipConflicts" class="headerlink"><i class="fas fa-link"></i></a>
@@ -422,7 +465,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$skipConflicts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$constraint</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conflictColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$updateColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$skipConflicts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$constraint</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conflictColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$updateColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$preserveExistingValues</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -458,6 +501,13 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$preserveExistingValues</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -480,7 +530,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-dialect-postgresqlinsertoptions.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php">PostgreSQLInsertOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -528,7 +578,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-dialect-postgresqlinsertoptions.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php">PostgreSQLInsertOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -576,7 +626,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-dialect-postgresqlinsertoptions.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php">PostgreSQLInsertOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -624,7 +674,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-dialect-postgresqlinsertoptions.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php">PostgreSQLInsertOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -662,7 +712,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-dialect-postgresqlinsertoptions.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php">PostgreSQLInsertOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -710,14 +760,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-dialect-postgresqlinsertoptions.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLInsertOptions.php">PostgreSQLInsertOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">updateColumns</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$updateColumns</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">updateColumns</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$updateColumns</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$preserveExistingValues</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -729,6 +779,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$updateColumns</span>
                 : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, string&gt;</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$preserveExistingValues</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -861,6 +918,7 @@
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_conflictColumns">$conflictColumns</a></li>
                                                     <li class=""><a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_constraint">$constraint</a></li>
+                                                    <li class=""><a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_preserveExistingValues">$preserveExistingValues</a></li>
                                                     <li class=""><a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_skipConflicts">$skipConflicts</a></li>
                                                     <li class=""><a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLInsertOptions.html#property_updateColumns">$updateColumns</a></li>
                                             </ul>
