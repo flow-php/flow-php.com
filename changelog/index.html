@@ -310,9 +310,10 @@
 </div>
         
             <section id="changelog" class="py-10 px-2 sm:px-4 mx-auto max-w-screen-2xl">
-        <h2><a id="unreleased---2026-01-09" href="#unreleased---2026-01-09" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2026-01-09</h2>
+        <h2><a id="unreleased---2026-01-10" href="#unreleased---2026-01-10" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2026-01-10</h2>
 <h3><a id="added" href="#added" class="mr-2" aria-hidden="true" title="Permalink">#</a>Added</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2140">#2140</a> - <strong>Benchmark documentation explaining infrastructure, workflow, and how to run benchmarks</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2136">#2136</a> - <strong>Added normalize() and fromArray() methods to PostgreSQL Explain Plan classes (Cost, Timing, Buffers, PlanNode, Plan, ExplainConfig) for serialization/deserialization support</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2136">#2136</a> - <strong>Added PHPStan type aliases (PlanNodeShape, TimingShape, BuffersShape) for improved type documentation</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2134">#2134</a> - <strong>InvalidExplainConfigException - exception for invalid EXPLAIN config flag combinations</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -332,6 +333,7 @@
 </ul>
 <h3><a id="changed" href="#changed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2140">#2140</a> - <strong>GitHub Actions benchmarks now run on dedicated self-hosted runner (flow-php-runner) for consistent results</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2131">#2131</a> - <strong>Update Homebrew TAP formula: flow-php to version: 0.30.0</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2136">#2136</a> - <strong>Optimized PostgreSqlCursorExtractor to break cursor loop early when fetched rows are less than fetch size, avoiding unnecessary database round-trips</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2134">#2134</a> - <strong>ExplainConfig::withoutAnalyze() auto-disables buffers, timing, and wal options</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
