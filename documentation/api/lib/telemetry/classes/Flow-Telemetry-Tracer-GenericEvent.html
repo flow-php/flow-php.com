@@ -125,7 +125,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-genericevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php">GenericEvent.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -133,10 +133,9 @@
 
 
     <section class="phpdocumentor-description"><p>GenericEvent provides a simple, immutable implementation for recording
-events within a span. Events can be created with explicit timestamps
-or automatically use the current time.</p>
+events within a span. Events are created with explicit timestamps.</p>
 <p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$event = GenericEvent::now('user.login', ['user.id' =&gt; '12345']);
+<pre class="prettyprint"><code class="language-php">$event = GenericEvent::create('user.login', $clock-&gt;now(), ['user.id' =&gt; '12345']);
 echo $event-&gt;name(); // &quot;user.login&quot;
 </code></pre>
 </section>
@@ -211,23 +210,16 @@ echo $event-&gt;name(); // &quot;user.login&quot;
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Tracer-GenericEvent.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}    </span>
+                                &nbsp;: array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}    </span>
 </dt>
 <dd>Normalize the GenericEvent to an array representation for serialization.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Telemetry-Tracer-GenericEvent.html#method_now">now()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Create an event with the current timestamp.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Tracer-GenericEvent.html#method_timestamp">timestamp()</a>
     <span>
-                                &nbsp;: int    </span>
+                                &nbsp;: <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>    </span>
 </dt>
-<dd>Get the event timestamp in nanoseconds since Unix epoch.</dd>
+<dd>Get the event timestamp.</dd>
 
     </dl>
 
@@ -257,14 +249,14 @@ echo $event-&gt;name(); // &quot;user.login&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-genericevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php">GenericEvent.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timestamp</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributesObject</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timestamp</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributesObject</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -281,7 +273,7 @@ echo $event-&gt;name(); // &quot;user.login&quot;
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$timestamp</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -315,7 +307,7 @@ echo $event-&gt;name(); // &quot;user.login&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-genericevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php">GenericEvent.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -354,7 +346,7 @@ echo $event-&gt;name(); // &quot;user.login&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-genericevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php">GenericEvent.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -393,7 +385,7 @@ echo $event-&gt;name(); // &quot;user.login&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-genericevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php">GenericEvent.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -401,7 +393,7 @@ echo $event-&gt;name(); // &quot;user.login&quot;
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timestamp</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timestamp</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -420,10 +412,10 @@ echo $event-&gt;name(); // &quot;user.login&quot;
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$timestamp</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Timestamp in nanoseconds since Unix epoch</p>
+                    <section class="phpdocumentor-description"><p>Event timestamp</p>
 </section>
 
             </dd>
@@ -462,7 +454,7 @@ echo $event-&gt;name(); // &quot;user.login&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-genericevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php">GenericEvent.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -470,7 +462,7 @@ echo $event-&gt;name(); // &quot;user.login&quot;
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -480,7 +472,7 @@ echo $event-&gt;name(); // &quot;user.login&quot;
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$data</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Normalized event data</p>
@@ -513,7 +505,7 @@ echo $event-&gt;name(); // &quot;user.login&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-genericevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php">GenericEvent.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -552,7 +544,7 @@ echo $event-&gt;name(); // &quot;user.login&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-genericevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php">GenericEvent.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -560,7 +552,7 @@ echo $event-&gt;name(); // &quot;user.login&quot;
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -573,67 +565,7 @@ echo $event-&gt;name(); // &quot;user.login&quot;
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_now">
-        now()
-        <a href="classes/Flow-Telemetry-Tracer-GenericEvent.html#method_now" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-genericevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php">GenericEvent.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">63</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Create an event with the current timestamp.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">now</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$name</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Event name</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Event attributes</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
+        <span class="phpdocumentor-signature__response_type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span>
             </section>
 
 </article>
@@ -651,15 +583,15 @@ echo $event-&gt;name(); // &quot;user.login&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-genericevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/GenericEvent.php">GenericEvent.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get the event timestamp in nanoseconds since Unix epoch.</p>
+        <p class="phpdocumentor-summary">Get the event timestamp.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">timestamp</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                    <span class="phpdocumentor-signature__name">timestamp</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -672,7 +604,7 @@ echo $event-&gt;name(); // &quot;user.login&quot;
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr></span>
             </section>
 
 </article>
@@ -798,7 +730,6 @@ echo $event-&gt;name(); // &quot;user.login&quot;
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-GenericEvent.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-GenericEvent.html#method_name">name()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-GenericEvent.html#method_normalize">normalize()</a></li>
-                                            <li class=""><a href="classes/Flow-Telemetry-Tracer-GenericEvent.html#method_now">now()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-GenericEvent.html#method_timestamp">timestamp()</a></li>
                                     </ul>
             </li>

@@ -170,16 +170,16 @@ such as errors, state changes, or notable occurrences.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}    </span>
+                                &nbsp;: array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}    </span>
 </dt>
 <dd>Normalize the event to an array representation for serialization.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_timestamp">timestamp()</a>
     <span>
-                                &nbsp;: int    </span>
+                                &nbsp;: <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>    </span>
 </dt>
-<dd>Get the event timestamp in nanoseconds since Unix epoch.</dd>
+<dd>Get the event timestamp.</dd>
 
     </dl>
 
@@ -294,7 +294,7 @@ such as errors, state changes, or notable occurrences.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -304,7 +304,7 @@ such as errors, state changes, or notable occurrences.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$data</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Normalized event data</p>
@@ -384,7 +384,7 @@ such as errors, state changes, or notable occurrences.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -397,7 +397,7 @@ such as errors, state changes, or notable occurrences.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span>
+        <span class="phpdocumentor-signature__response_type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span>
             </section>
 
 </article>
@@ -419,11 +419,11 @@ such as errors, state changes, or notable occurrences.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get the event timestamp in nanoseconds since Unix epoch.</p>
+        <p class="phpdocumentor-summary">Get the event timestamp.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">timestamp</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                    <span class="phpdocumentor-signature__name">timestamp</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -436,7 +436,7 @@ such as errors, state changes, or notable occurrences.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr></span>
             </section>
 
 </article>

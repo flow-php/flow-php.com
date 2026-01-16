@@ -8593,15 +8593,15 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">span_event</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$attributes</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">GenericEvent</span>
+                    <span class=\"fn-name\">span_event</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">DateTimeImmutable</span> <span class=\"fn-param\">$timestamp</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$attributes</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">GenericEvent</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Create a SpanEvent (GenericEvent) with the current timestamp.<br>@param string $name Event name<br>@param array<string, array<bool|float|int|string>|bool|float|int|string> $attributes Event attributes
+                    Create a SpanEvent (GenericEvent) with an explicit timestamp.<br>@param string $name Event name<br>@param \\DateTimeImmutable $timestamp Event timestamp<br>@param array<string, array<bool|float|int|string>|bool|float|int|string> $attributes Event attributes
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\Telemetry\\DSL\\span_event(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:attributes" + "}" + ")"),
+        apply: snippet("\\Flow\\Telemetry\\DSL\\span_event(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:timestamp" + "}" + ", " + "$" + "{" + "3:attributes" + "}" + ")"),
         boost: 10
     },        {
         label: "span_id",

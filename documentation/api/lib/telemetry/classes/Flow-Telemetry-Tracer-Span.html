@@ -133,7 +133,7 @@ Spans are mutable during their lifetime and can accumulate state.</p>
 <p>Example usage:</p>
 <pre class="prettyprint"><code class="language-php">$span = new Span('process-order', $context, SpanKind::INTERNAL, new \DateTimeImmutable());
 $span-&gt;setAttribute('order.id', '12345')
-     -&gt;recordEvent(GenericEvent::now('validation.passed'))
+     -&gt;recordEvent(GenericEvent::create('validation.passed', new \DateTimeImmutable()))
      -&gt;setStatus(SpanStatus::ok())
      -&gt;end();
 </code></pre>
@@ -280,7 +280,7 @@ $span-&gt;setAttribute('order.id', '12345')
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Tracer-Span.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{name: string, context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags: array{byte: int}, traceState: array{entries: array<string,string>}}, kind: string, startTime: string, endTime: null|string, resource: array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, scope: array{name: string, version: string, schemaUrl: null|string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, events: array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], links: array{context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], status: null|array{code: int, description: null|string}, isRecording: bool}    </span>
+                                &nbsp;: array{name: string, context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags: array{byte: int}, traceState: array{entries: array<string,string>}}, kind: string, startTime: string, endTime: null|string, resource: array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, scope: array{name: string, version: string, schemaUrl: null|string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, events: array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], links: array{context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], status: null|array{code: int, description: null|string}, isRecording: bool}    </span>
 </dt>
 <dd>Normalize the Span to an array representation for serialization.</dd>
 
@@ -812,7 +812,7 @@ $span-&gt;setAttribute('order.id', '12345')
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{name: string, context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags: array{byte: int}, traceState: array{entries: array<string,string>}}, kind: string, startTime: string, endTime: null|string, resource: array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, scope: array{name: string, version: string, schemaUrl: null|string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, events: array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], links: array{context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], status: null|array{code: int, description: null|string}, isRecording: bool}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{name: string, context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags: array{byte: int}, traceState: array{entries: array<string,string>}}, kind: string, startTime: string, endTime: null|string, resource: array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, scope: array{name: string, version: string, schemaUrl: null|string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, events: array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], links: array{context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], status: null|array{code: int, description: null|string}, isRecording: bool}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -825,7 +825,7 @@ since it represents a completed span that was serialized.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$data</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array{name: string, context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags: array{byte: int}, traceState: array{entries: array<string,string>}}, kind: string, startTime: string, endTime: null|string, resource: array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, scope: array{name: string, version: string, schemaUrl: null|string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, events: array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], links: array{context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], status: null|array{code: int, description: null|string}, isRecording: bool}</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array{name: string, context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags: array{byte: int}, traceState: array{entries: array<string,string>}}, kind: string, startTime: string, endTime: null|string, resource: array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, scope: array{name: string, version: string, schemaUrl: null|string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, events: array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], links: array{context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], status: null|array{code: int, description: null|string}, isRecording: bool}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Normalized Span data</p>
@@ -1065,7 +1065,7 @@ context but don't record any data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{name: string, context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags: array{byte: int}, traceState: array{entries: array<string,string>}}, kind: string, startTime: string, endTime: null|string, resource: array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, scope: array{name: string, version: string, schemaUrl: null|string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, events: array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], links: array{context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], status: null|array{code: int, description: null|string}, isRecording: bool}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{name: string, context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags: array{byte: int}, traceState: array{entries: array<string,string>}}, kind: string, startTime: string, endTime: null|string, resource: array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, scope: array{name: string, version: string, schemaUrl: null|string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, events: array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], links: array{context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], status: null|array{code: int, description: null|string}, isRecording: bool}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1078,7 +1078,7 @@ context but don't record any data.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{name: string, context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags: array{byte: int}, traceState: array{entries: array<string,string>}}, kind: string, startTime: string, endTime: null|string, resource: array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, scope: array{name: string, version: string, schemaUrl: null|string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, events: array{name: string, timestamp: int, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], links: array{context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], status: null|array{code: int, description: null|string}, isRecording: bool}</span>
+        <span class="phpdocumentor-signature__response_type">array{name: string, context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags: array{byte: int}, traceState: array{entries: array<string,string>}}, kind: string, startTime: string, endTime: null|string, resource: array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, scope: array{name: string, version: string, schemaUrl: null|string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, events: array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], links: array{context: array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool}, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}[], status: null|array{code: int, description: null|string}, isRecording: bool}</span>
             </section>
 
 </article>
@@ -1145,7 +1145,7 @@ context but don't record any data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-span.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php">Span.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">316</span>
+    <span class="phpdocumentor-element-found-in__line">317</span>
 
     </aside>
 
@@ -1153,7 +1153,7 @@ context but don't record any data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">recordException</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Throwable">Throwable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exception</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">recordException</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Throwable">Throwable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exception</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timestamp</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1169,6 +1169,15 @@ context but don't record any data.</p>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The exception to record</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$timestamp</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The timestamp when the exception occurred</p>
 </section>
 
             </dd>
@@ -1207,7 +1216,7 @@ context but don't record any data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-span.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php">Span.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">334</span>
+    <span class="phpdocumentor-element-found-in__line">335</span>
 
     </aside>
 
@@ -1256,7 +1265,7 @@ context but don't record any data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-span.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php">Span.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">344</span>
+    <span class="phpdocumentor-element-found-in__line">345</span>
 
     </aside>
 
@@ -1295,7 +1304,7 @@ context but don't record any data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-span.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php">Span.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">352</span>
+    <span class="phpdocumentor-element-found-in__line">353</span>
 
     </aside>
 
@@ -1334,7 +1343,7 @@ context but don't record any data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-span.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php">Span.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">364</span>
+    <span class="phpdocumentor-element-found-in__line">365</span>
 
     </aside>
 
@@ -1390,7 +1399,7 @@ context but don't record any data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-span.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php">Span.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">378</span>
+    <span class="phpdocumentor-element-found-in__line">379</span>
 
     </aside>
 
@@ -1439,7 +1448,7 @@ context but don't record any data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-span.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php">Span.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">390</span>
+    <span class="phpdocumentor-element-found-in__line">391</span>
 
     </aside>
 
@@ -1488,7 +1497,7 @@ context but don't record any data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-span.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php">Span.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">400</span>
+    <span class="phpdocumentor-element-found-in__line">401</span>
 
     </aside>
 
@@ -1527,7 +1536,7 @@ context but don't record any data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-span.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Span.php">Span.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">408</span>
+    <span class="phpdocumentor-element-found-in__line">409</span>
 
     </aside>
 

@@ -503,7 +503,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\span_event\u0028\u0029",
             "name": "span_event",
-            "summary": "Create\u0020a\u0020SpanEvent\u0020\u0028GenericEvent\u0029\u0020with\u0020the\u0020current\u0020timestamp.",
+            "summary": "Create\u0020a\u0020SpanEvent\u0020\u0028GenericEvent\u0029\u0020with\u0020an\u0020explicit\u0020timestamp.",
             "url": "namespaces/flow-telemetry-dsl.html#function_span_event"
         },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\span_link\u0028\u0029",
@@ -1771,11 +1771,6 @@ Search.appendIndex(
             "summary": "Get\u0020a\u0020value\u0020by\u0020key.",
             "url": "classes/Flow-Telemetry-Propagation-ArrayCarrier.html#method_get"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Propagation\\ArrayCarrier\u003A\u003Akeys\u0028\u0029",
-            "name": "keys",
-            "summary": "Get\u0020all\u0020available\u0020keys.",
-            "url": "classes/Flow-Telemetry-Propagation-ArrayCarrier.html#method_keys"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\ArrayCarrier\u003A\u003Aset\u0028\u0029",
             "name": "set",
             "summary": "Set\u0020a\u0020value.",
@@ -1795,11 +1790,6 @@ Search.appendIndex(
             "name": "get",
             "summary": "Get\u0020a\u0020value\u0020by\u0020key.",
             "url": "classes/Flow-Telemetry-Propagation-Carrier.html#method_get"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Propagation\\Carrier\u003A\u003Akeys\u0028\u0029",
-            "name": "keys",
-            "summary": "Get\u0020all\u0020available\u0020keys.",
-            "url": "classes/Flow-Telemetry-Propagation-Carrier.html#method_keys"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\Carrier\u003A\u003Aset\u0028\u0029",
             "name": "set",
@@ -1895,11 +1885,6 @@ Search.appendIndex(
             "name": "get",
             "summary": "Get\u0020a\u0020value\u0020by\u0020key.",
             "url": "classes/Flow-Telemetry-Propagation-SuperglobalCarrier.html#method_get"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Propagation\\SuperglobalCarrier\u003A\u003Akeys\u0028\u0029",
-            "name": "keys",
-            "summary": "Get\u0020all\u0020available\u0020keys.",
-            "url": "classes/Flow-Telemetry-Propagation-SuperglobalCarrier.html#method_keys"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\SuperglobalCarrier\u003A\u003Aset\u0028\u0029",
             "name": "set",
@@ -2611,11 +2596,6 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020GenericEvent\u0020from\u0020a\u0020normalized\u0020array\u0020representation.",
             "url": "classes/Flow-Telemetry-Tracer-GenericEvent.html#method_fromArray"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\GenericEvent\u003A\u003Anow\u0028\u0029",
-            "name": "now",
-            "summary": "Create\u0020an\u0020event\u0020with\u0020the\u0020current\u0020timestamp.",
-            "url": "classes/Flow-Telemetry-Tracer-GenericEvent.html#method_now"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\GenericEvent\u003A\u003Aattributes\u0028\u0029",
             "name": "attributes",
             "summary": "Get\u0020the\u0020event\u0020attributes.",
@@ -2638,7 +2618,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\GenericEvent\u003A\u003Atimestamp\u0028\u0029",
             "name": "timestamp",
-            "summary": "Get\u0020the\u0020event\u0020timestamp\u0020in\u0020nanoseconds\u0020since\u0020Unix\u0020epoch.",
+            "summary": "Get\u0020the\u0020event\u0020timestamp.",
             "url": "classes/Flow-Telemetry-Tracer-GenericEvent.html#method_timestamp"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\BatchingSpanProcessor",
@@ -3138,7 +3118,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanEvent\u003A\u003Atimestamp\u0028\u0029",
             "name": "timestamp",
-            "summary": "Get\u0020the\u0020event\u0020timestamp\u0020in\u0020nanoseconds\u0020since\u0020Unix\u0020epoch.",
+            "summary": "Get\u0020the\u0020event\u0020timestamp.",
             "url": "classes/Flow-Telemetry-Tracer-SpanEvent.html#method_timestamp"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanExporter",
