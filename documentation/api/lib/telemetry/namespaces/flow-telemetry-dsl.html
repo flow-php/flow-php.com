@@ -1,0 +1,2350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>Flow PHP</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+    
+            <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <div class="flow-header-wrapper">
+    <header class="phpdocumentor-header phpdocumentor-section">
+        <h1 class="phpdocumentor-title"><a href="/documentation" class="phpdocumentor-title__link">Flow PHP</a></h1>
+        <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+        <label class="phpdocumentor-header__menu-icon" for="menu-button">
+            <i class="fas fa-bars"></i>
+        </label>
+        <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+        <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+                        <li class="phpdocumentor-topnav__menu-item -menu">
+                <a href="/documentation">
+                    <span>
+                                                                        Back
+                    </span>
+                </a>
+            </li>
+                </ul>
+</nav>
+    </header>
+</div>
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                                <section class="phpdocumentor-sidebar__category -namespaces">
+                <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                            <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/flow.html" class="">Flow</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/flow-telemetry.html" class="">Telemetry</a>
+                
+            </li>
+            </ul>
+
+                                </section>
+                                    
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow.html">Flow</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-telemetry.html">Telemetry</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -namespace">
+        <h2 class="phpdocumentor-content__title">DSL</h2>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+        
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="namespaces/flow-telemetry-dsl.html#functions" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_trace_id">
+        trace_id()
+        <a href="namespaces/flow-telemetry-dsl.html#function_trace_id" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a TraceId.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">trace_id</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hex</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>If a hex string is provided, creates a TraceId from it.
+Otherwise, generates a new random TraceId.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$hex</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Optional 32-character hexadecimal string</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="namespaces/flow-telemetry-dsl.html#function_trace_id#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>if the hex string is invalid</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_span_id">
+        span_id()
+        <a href="namespaces/flow-telemetry-dsl.html#function_span_id" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a SpanId.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">span_id</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hex</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>If a hex string is provided, creates a SpanId from it.
+Otherwise, generates a new random SpanId.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$hex</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Optional 16-character hexadecimal string</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="namespaces/flow-telemetry-dsl.html#function_span_id#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>if the hex string is invalid</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_baggage">
+        baggage()
+        <a href="namespaces/flow-telemetry-dsl.html#function_baggage" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">71</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a Baggage.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">baggage</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entries</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$entries</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, string&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Initial key-value entries</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_context">
+        context()
+        <a href="namespaces/flow-telemetry-dsl.html#function_context" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">86</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a Context.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">context</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$traceId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baggage</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-Context.html"><abbr title="\Flow\Telemetry\Context\Context">Context</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>If no TraceId is provided, generates a new one.
+If no Baggage is provided, creates an empty one.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$traceId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Optional TraceId to use</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$baggage</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Optional Baggage to use</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-Context.html"><abbr title="\Flow\Telemetry\Context\Context">Context</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_memory_context_storage">
+        memory_context_storage()
+        <a href="namespaces/flow-telemetry-dsl.html#function_memory_context_storage" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">103</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a MemoryContextStorage.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">memory_context_storage</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Telemetry-Context-Context.html"><abbr title="\Flow\Telemetry\Context\Context">Context</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-MemoryContextStorage.html"><abbr title="\Flow\Telemetry\Context\MemoryContextStorage">MemoryContextStorage</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>In-memory context storage for storing and retrieving the current context.
+A single instance should be shared across all providers within a request lifecycle.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$context</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-Telemetry-Context-Context.html"><abbr title="\Flow\Telemetry\Context\Context">Context</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Optional initial context</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-MemoryContextStorage.html"><abbr title="\Flow\Telemetry\Context\MemoryContextStorage">MemoryContextStorage</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_resource">
+        resource()
+        <a href="namespaces/flow-telemetry-dsl.html#function_resource" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">114</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a Resource.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">resource</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Resource.html"><abbr title="\Flow\Telemetry\Resource">Resource</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Resource attributes</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Resource.html"><abbr title="\Flow\Telemetry\Resource">Resource</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_span_context">
+        span_context()
+        <a href="namespaces/flow-telemetry-dsl.html#function_span_context" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">127</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a SpanContext.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">span_context</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$traceId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spanId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentSpanId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$traceId</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The trace ID</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$spanId</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The span ID</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$parentSpanId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Optional parent span ID</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_span_event">
+        span_event()
+        <a href="namespaces/flow-telemetry-dsl.html#function_span_event" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">139</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a SpanEvent (GenericEvent) with the current timestamp.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">span_event</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-GenericEvent.html"><abbr title="\Flow\Telemetry\Tracer\GenericEvent">GenericEvent</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Event name</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Event attributes</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-GenericEvent.html"><abbr title="\Flow\Telemetry\Tracer\GenericEvent">GenericEvent</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_span_link">
+        span_link()
+        <a href="namespaces/flow-telemetry-dsl.html#function_span_link" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">151</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a SpanLink.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">span_link</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-SpanLink.html"><abbr title="\Flow\Telemetry\Tracer\SpanLink">SpanLink</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$context</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The linked span context</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Link attributes</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-SpanLink.html"><abbr title="\Flow\Telemetry\Tracer\SpanLink">SpanLink</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_void_span_processor">
+        void_span_processor()
+        <a href="namespaces/flow-telemetry-dsl.html#function_void_span_processor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">163</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a VoidSpanProcessor.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">void_span_processor</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Void-VoidSpanProcessor.html"><abbr title="\Flow\Telemetry\Provider\Void\VoidSpanProcessor">VoidSpanProcessor</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>No-op span processor that discards all data.
+Use this when tracing is disabled to minimize overhead.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Void-VoidSpanProcessor.html"><abbr title="\Flow\Telemetry\Provider\Void\VoidSpanProcessor">VoidSpanProcessor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_void_metric_processor">
+        void_metric_processor()
+        <a href="namespaces/flow-telemetry-dsl.html#function_void_metric_processor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">175</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a VoidMetricProcessor.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">void_metric_processor</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Void-VoidMetricProcessor.html"><abbr title="\Flow\Telemetry\Provider\Void\VoidMetricProcessor">VoidMetricProcessor</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>No-op metric processor that discards all data.
+Use this when metrics collection is disabled to minimize overhead.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Void-VoidMetricProcessor.html"><abbr title="\Flow\Telemetry\Provider\Void\VoidMetricProcessor">VoidMetricProcessor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_void_log_processor">
+        void_log_processor()
+        <a href="namespaces/flow-telemetry-dsl.html#function_void_log_processor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">187</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a VoidLogProcessor.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">void_log_processor</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Void-VoidLogProcessor.html"><abbr title="\Flow\Telemetry\Provider\Void\VoidLogProcessor">VoidLogProcessor</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>No-op log processor that discards all data.
+Use this when logging is disabled to minimize overhead.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Void-VoidLogProcessor.html"><abbr title="\Flow\Telemetry\Provider\Void\VoidLogProcessor">VoidLogProcessor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_void_span_exporter">
+        void_span_exporter()
+        <a href="namespaces/flow-telemetry-dsl.html#function_void_span_exporter" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">199</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a VoidSpanExporter.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">void_span_exporter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Void-VoidSpanExporter.html"><abbr title="\Flow\Telemetry\Provider\Void\VoidSpanExporter">VoidSpanExporter</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>No-op span exporter that discards all data.
+Use this when telemetry export is disabled to minimize overhead.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Void-VoidSpanExporter.html"><abbr title="\Flow\Telemetry\Provider\Void\VoidSpanExporter">VoidSpanExporter</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_void_metric_exporter">
+        void_metric_exporter()
+        <a href="namespaces/flow-telemetry-dsl.html#function_void_metric_exporter" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">211</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a VoidMetricExporter.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">void_metric_exporter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Void-VoidMetricExporter.html"><abbr title="\Flow\Telemetry\Provider\Void\VoidMetricExporter">VoidMetricExporter</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>No-op metric exporter that discards all data.
+Use this when telemetry export is disabled to minimize overhead.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Void-VoidMetricExporter.html"><abbr title="\Flow\Telemetry\Provider\Void\VoidMetricExporter">VoidMetricExporter</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_void_log_exporter">
+        void_log_exporter()
+        <a href="namespaces/flow-telemetry-dsl.html#function_void_log_exporter" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">223</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a VoidLogExporter.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">void_log_exporter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Void-VoidLogExporter.html"><abbr title="\Flow\Telemetry\Provider\Void\VoidLogExporter">VoidLogExporter</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>No-op log exporter that discards all data.
+Use this when telemetry export is disabled to minimize overhead.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Void-VoidLogExporter.html"><abbr title="\Flow\Telemetry\Provider\Void\VoidLogExporter">VoidLogExporter</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_memory_span_exporter">
+        memory_span_exporter()
+        <a href="namespaces/flow-telemetry-dsl.html#function_memory_span_exporter" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">236</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a MemorySpanExporter.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">memory_span_exporter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Memory-MemorySpanExporter.html"><abbr title="\Flow\Telemetry\Provider\Memory\MemorySpanExporter">MemorySpanExporter</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Span exporter that stores data in memory.
+Provides direct getter access to exported spans.
+Useful for testing and inspection without serialization.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Memory-MemorySpanExporter.html"><abbr title="\Flow\Telemetry\Provider\Memory\MemorySpanExporter">MemorySpanExporter</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_memory_metric_exporter">
+        memory_metric_exporter()
+        <a href="namespaces/flow-telemetry-dsl.html#function_memory_metric_exporter" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">249</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a MemoryMetricExporter.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">memory_metric_exporter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Memory-MemoryMetricExporter.html"><abbr title="\Flow\Telemetry\Provider\Memory\MemoryMetricExporter">MemoryMetricExporter</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Metric exporter that stores data in memory.
+Provides direct getter access to exported metrics.
+Useful for testing and inspection without serialization.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Memory-MemoryMetricExporter.html"><abbr title="\Flow\Telemetry\Provider\Memory\MemoryMetricExporter">MemoryMetricExporter</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_memory_log_exporter">
+        memory_log_exporter()
+        <a href="namespaces/flow-telemetry-dsl.html#function_memory_log_exporter" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">262</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a MemoryLogExporter.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">memory_log_exporter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Memory-MemoryLogExporter.html"><abbr title="\Flow\Telemetry\Provider\Memory\MemoryLogExporter">MemoryLogExporter</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Log exporter that stores data in memory.
+Provides direct getter access to exported log entries.
+Useful for testing and inspection without serialization.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Memory-MemoryLogExporter.html"><abbr title="\Flow\Telemetry\Provider\Memory\MemoryLogExporter">MemoryLogExporter</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_memory_span_processor">
+        memory_span_processor()
+        <a href="namespaces/flow-telemetry-dsl.html#function_memory_span_processor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">276</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a MemorySpanProcessor.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">memory_span_processor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanExporter.html"><abbr title="\Flow\Telemetry\Tracer\SpanExporter">SpanExporter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Memory-MemorySpanProcessor.html"><abbr title="\Flow\Telemetry\Provider\Memory\MemorySpanProcessor">MemorySpanProcessor</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Span processor that stores spans in memory and exports via configured exporter.
+Useful for testing.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exporter</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanExporter.html"><abbr title="\Flow\Telemetry\Tracer\SpanExporter">SpanExporter</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The exporter to send spans to</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Memory-MemorySpanProcessor.html"><abbr title="\Flow\Telemetry\Provider\Memory\MemorySpanProcessor">MemorySpanProcessor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_memory_metric_processor">
+        memory_metric_processor()
+        <a href="namespaces/flow-telemetry-dsl.html#function_memory_metric_processor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">290</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a MemoryMetricProcessor.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">memory_metric_processor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricExporter.html"><abbr title="\Flow\Telemetry\Meter\MetricExporter">MetricExporter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Memory-MemoryMetricProcessor.html"><abbr title="\Flow\Telemetry\Provider\Memory\MemoryMetricProcessor">MemoryMetricProcessor</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Metric processor that stores metrics in memory and exports via configured exporter.
+Useful for testing.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exporter</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricExporter.html"><abbr title="\Flow\Telemetry\Meter\MetricExporter">MetricExporter</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The exporter to send metrics to</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Memory-MemoryMetricProcessor.html"><abbr title="\Flow\Telemetry\Provider\Memory\MemoryMetricProcessor">MemoryMetricProcessor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_memory_log_processor">
+        memory_log_processor()
+        <a href="namespaces/flow-telemetry-dsl.html#function_memory_log_processor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">304</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a MemoryLogProcessor.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">memory_log_processor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Logger-LogExporter.html"><abbr title="\Flow\Telemetry\Logger\LogExporter">LogExporter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Memory-MemoryLogProcessor.html"><abbr title="\Flow\Telemetry\Provider\Memory\MemoryLogProcessor">MemoryLogProcessor</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Log processor that stores log records in memory and exports via configured exporter.
+Useful for testing.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exporter</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Logger-LogExporter.html"><abbr title="\Flow\Telemetry\Logger\LogExporter">LogExporter</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The exporter to send logs to</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Memory-MemoryLogProcessor.html"><abbr title="\Flow\Telemetry\Provider\Memory\MemoryLogProcessor">MemoryLogProcessor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_tracer_provider">
+        tracer_provider()
+        <a href="namespaces/flow-telemetry-dsl.html#function_tracer_provider" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">322</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a TracerProvider.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">tracer_provider</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanProcessor.html"><abbr title="\Flow\Telemetry\Tracer\SpanProcessor">SpanProcessor</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$processor</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clock</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Context-ContextStorage.html"><abbr title="\Flow\Telemetry\Context\ContextStorage">ContextStorage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contextStorage</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-Sampler-Sampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\Sampler">Sampler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sampler</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Tracer-Sampler-AlwaysOnSampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\AlwaysOnSampler">AlwaysOnSampler</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-TracerProvider.html"><abbr title="\Flow\Telemetry\Tracer\TracerProvider">TracerProvider</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Creates a provider that uses a SpanProcessor for processing spans.
+For void/disabled tracing, pass void_processor().
+For memory-based testing, pass memory_processor() with exporters.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$processor</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanProcessor.html"><abbr title="\Flow\Telemetry\Tracer\SpanProcessor">SpanProcessor</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The processor for spans</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$clock</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The clock for timestamps</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$contextStorage</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Context-ContextStorage.html"><abbr title="\Flow\Telemetry\Context\ContextStorage">ContextStorage</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Storage for context propagation</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$sampler</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Tracer-Sampler-Sampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\Sampler">Sampler</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Telemetry-Tracer-Sampler-AlwaysOnSampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\AlwaysOnSampler">AlwaysOnSampler</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Sampling strategy for spans</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-TracerProvider.html"><abbr title="\Flow\Telemetry\Tracer\TracerProvider">TracerProvider</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_logger_provider">
+        logger_provider()
+        <a href="namespaces/flow-telemetry-dsl.html#function_logger_provider" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">348</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a LoggerProvider.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">logger_provider</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$processor</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clock</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Context-ContextStorage.html"><abbr title="\Flow\Telemetry\Context\ContextStorage">ContextStorage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contextStorage</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Logger-LoggerProvider.html"><abbr title="\Flow\Telemetry\Logger\LoggerProvider">LoggerProvider</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Creates a provider that uses a LogProcessor for processing logs.
+For void/disabled logging, pass void_processor().
+For memory-based testing, pass memory_processor() with exporters.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$processor</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The processor for logs</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$clock</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The clock for timestamps</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$contextStorage</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Context-ContextStorage.html"><abbr title="\Flow\Telemetry\Context\ContextStorage">ContextStorage</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Storage for span correlation</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Logger-LoggerProvider.html"><abbr title="\Flow\Telemetry\Logger\LoggerProvider">LoggerProvider</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_meter_provider">
+        meter_provider()
+        <a href="namespaces/flow-telemetry-dsl.html#function_meter_provider" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">373</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a MeterProvider.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">meter_provider</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricProcessor.html"><abbr title="\Flow\Telemetry\Meter\MetricProcessor">MetricProcessor</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$processor</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clock</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-AggregationTemporality.html"><abbr title="\Flow\Telemetry\Meter\AggregationTemporality">AggregationTemporality</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$temporality</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Telemetry-Meter-AggregationTemporality.html#enumcase_CUMULATIVE"><abbr title="\Flow\Telemetry\Meter\AggregationTemporality::CUMULATIVE">AggregationTemporality::CUMULATIVE</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-Exemplar-ExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\ExemplarFilter">ExemplarFilter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exemplarFilter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-Exemplar-TraceBasedExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\TraceBasedExemplarFilter">TraceBasedExemplarFilter</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Meter-MeterProvider.html"><abbr title="\Flow\Telemetry\Meter\MeterProvider">MeterProvider</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Creates a provider that uses a MetricProcessor for processing metrics.
+For void/disabled metrics, pass void_processor().
+For memory-based testing, pass memory_processor() with exporters.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$processor</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricProcessor.html"><abbr title="\Flow\Telemetry\Meter\MetricProcessor">MetricProcessor</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The processor for metrics</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$clock</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The clock for timestamps</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$temporality</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Meter-AggregationTemporality.html"><abbr title="\Flow\Telemetry\Meter\AggregationTemporality">AggregationTemporality</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-Telemetry-Meter-AggregationTemporality.html#enumcase_CUMULATIVE"><abbr title="\Flow\Telemetry\Meter\AggregationTemporality::CUMULATIVE">AggregationTemporality::CUMULATIVE</abbr></a></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Aggregation temporality for metrics</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exemplarFilter</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Meter-Exemplar-ExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\ExemplarFilter">ExemplarFilter</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-Exemplar-TraceBasedExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\TraceBasedExemplarFilter">TraceBasedExemplarFilter</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Filter for exemplar sampling (default: TraceBasedExemplarFilter)</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Meter-MeterProvider.html"><abbr title="\Flow\Telemetry\Meter\MeterProvider">MeterProvider</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_telemetry">
+        telemetry()
+        <a href="namespaces/flow-telemetry-dsl.html#function_telemetry" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">398</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a new Telemetry instance with the given providers.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">telemetry</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Telemetry-Tracer-TracerProvider.html"><abbr title="\Flow\Telemetry\Tracer\TracerProvider">TracerProvider</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tracerProvider</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Telemetry-Meter-MeterProvider.html"><abbr title="\Flow\Telemetry\Meter\MeterProvider">MeterProvider</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meterProvider</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Telemetry-Logger-LoggerProvider.html"><abbr title="\Flow\Telemetry\Logger\LoggerProvider">LoggerProvider</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$loggerProvider</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Telemetry.html"><abbr title="\Flow\Telemetry\Telemetry">Telemetry</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>If providers are not specified, void providers (no-op) are used.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$resource</span>
+                : <span class="phpdocumentor-argument-list__argument__type">resource</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The resource describing the entity producing telemetry</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$tracerProvider</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-Telemetry-Tracer-TracerProvider.html"><abbr title="\Flow\Telemetry\Tracer\TracerProvider">TracerProvider</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The tracer provider (null for void/disabled)</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$meterProvider</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-Telemetry-Meter-MeterProvider.html"><abbr title="\Flow\Telemetry\Meter\MeterProvider">MeterProvider</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The meter provider (null for void/disabled)</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$loggerProvider</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-Telemetry-Logger-LoggerProvider.html"><abbr title="\Flow\Telemetry\Logger\LoggerProvider">LoggerProvider</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The logger provider (null for void/disabled)</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Telemetry.html"><abbr title="\Flow\Telemetry\Telemetry">Telemetry</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_instrumentation_scope">
+        instrumentation_scope()
+        <a href="namespaces/flow-telemetry-dsl.html#function_instrumentation_scope" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">423</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create an InstrumentationScope.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">instrumentation_scope</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'unknown'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schemaUrl</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-InstrumentationScope.html"><abbr title="\Flow\Telemetry\InstrumentationScope">InstrumentationScope</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The instrumentation scope name</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$version</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">'unknown'</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The instrumentation scope version</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$schemaUrl</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Optional schema URL</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-InstrumentationScope.html"><abbr title="\Flow\Telemetry\InstrumentationScope">InstrumentationScope</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_batching_span_processor">
+        batching_span_processor()
+        <a href="namespaces/flow-telemetry-dsl.html#function_batching_span_processor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">442</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a BatchingSpanProcessor.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">batching_span_processor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanExporter.html"><abbr title="\Flow\Telemetry\Tracer\SpanExporter">SpanExporter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">512</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-Processor-BatchingSpanProcessor.html"><abbr title="\Flow\Telemetry\Tracer\Processor\BatchingSpanProcessor">BatchingSpanProcessor</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Collects spans in memory and exports them in batches for efficiency.
+Spans are exported when batch size is reached, flush() is called, or shutdown().</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exporter</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanExporter.html"><abbr title="\Flow\Telemetry\Tracer\SpanExporter">SpanExporter</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The exporter to send spans to</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$batchSize</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">512</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Number of spans to collect before exporting (default 512)</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-Processor-BatchingSpanProcessor.html"><abbr title="\Flow\Telemetry\Tracer\Processor\BatchingSpanProcessor">BatchingSpanProcessor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_pass_through_span_processor">
+        pass_through_span_processor()
+        <a href="namespaces/flow-telemetry-dsl.html#function_pass_through_span_processor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">456</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a PassThroughSpanProcessor.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">pass_through_span_processor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanExporter.html"><abbr title="\Flow\Telemetry\Tracer\SpanExporter">SpanExporter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html"><abbr title="\Flow\Telemetry\Tracer\Processor\PassThroughSpanProcessor">PassThroughSpanProcessor</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Exports each span immediately when it ends.
+Useful for debugging where immediate visibility is more important than performance.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exporter</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanExporter.html"><abbr title="\Flow\Telemetry\Tracer\SpanExporter">SpanExporter</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The exporter to send spans to</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html"><abbr title="\Flow\Telemetry\Tracer\Processor\PassThroughSpanProcessor">PassThroughSpanProcessor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_batching_metric_processor">
+        batching_metric_processor()
+        <a href="namespaces/flow-telemetry-dsl.html#function_batching_metric_processor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">471</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a BatchingMetricProcessor.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">batching_metric_processor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricExporter.html"><abbr title="\Flow\Telemetry\Meter\MetricExporter">MetricExporter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">512</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Meter-Processor-BatchingMetricProcessor.html"><abbr title="\Flow\Telemetry\Meter\Processor\BatchingMetricProcessor">BatchingMetricProcessor</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Collects metrics in memory and exports them in batches for efficiency.
+Metrics are exported when batch size is reached, flush() is called, or shutdown().</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exporter</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricExporter.html"><abbr title="\Flow\Telemetry\Meter\MetricExporter">MetricExporter</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The exporter to send metrics to</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$batchSize</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">512</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Number of metrics to collect before exporting (default 512)</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Meter-Processor-BatchingMetricProcessor.html"><abbr title="\Flow\Telemetry\Meter\Processor\BatchingMetricProcessor">BatchingMetricProcessor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_pass_through_metric_processor">
+        pass_through_metric_processor()
+        <a href="namespaces/flow-telemetry-dsl.html#function_pass_through_metric_processor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">485</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a PassThroughMetricProcessor.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">pass_through_metric_processor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricExporter.html"><abbr title="\Flow\Telemetry\Meter\MetricExporter">MetricExporter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Meter-Processor-PassThroughMetricProcessor.html"><abbr title="\Flow\Telemetry\Meter\Processor\PassThroughMetricProcessor">PassThroughMetricProcessor</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Exports each metric immediately when processed.
+Useful for debugging where immediate visibility is more important than performance.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exporter</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricExporter.html"><abbr title="\Flow\Telemetry\Meter\MetricExporter">MetricExporter</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The exporter to send metrics to</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Meter-Processor-PassThroughMetricProcessor.html"><abbr title="\Flow\Telemetry\Meter\Processor\PassThroughMetricProcessor">PassThroughMetricProcessor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_batching_log_processor">
+        batching_log_processor()
+        <a href="namespaces/flow-telemetry-dsl.html#function_batching_log_processor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">500</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a BatchingLogProcessor.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">batching_log_processor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Logger-LogExporter.html"><abbr title="\Flow\Telemetry\Logger\LogExporter">LogExporter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">512</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Logger-Processor-BatchingLogProcessor.html"><abbr title="\Flow\Telemetry\Logger\Processor\BatchingLogProcessor">BatchingLogProcessor</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Collects log records in memory and exports them in batches for efficiency.
+Logs are exported when batch size is reached, flush() is called, or shutdown().</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exporter</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Logger-LogExporter.html"><abbr title="\Flow\Telemetry\Logger\LogExporter">LogExporter</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The exporter to send logs to</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$batchSize</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">512</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Number of logs to collect before exporting (default 512)</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Logger-Processor-BatchingLogProcessor.html"><abbr title="\Flow\Telemetry\Logger\Processor\BatchingLogProcessor">BatchingLogProcessor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_pass_through_log_processor">
+        pass_through_log_processor()
+        <a href="namespaces/flow-telemetry-dsl.html#function_pass_through_log_processor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">514</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a PassThroughLogProcessor.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">pass_through_log_processor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Logger-LogExporter.html"><abbr title="\Flow\Telemetry\Logger\LogExporter">LogExporter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Logger-Processor-PassThroughLogProcessor.html"><abbr title="\Flow\Telemetry\Logger\Processor\PassThroughLogProcessor">PassThroughLogProcessor</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Exports each log record immediately when processed.
+Useful for debugging where immediate visibility is more important than performance.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exporter</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Logger-LogExporter.html"><abbr title="\Flow\Telemetry\Logger\LogExporter">LogExporter</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The exporter to send logs to</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Logger-Processor-PassThroughLogProcessor.html"><abbr title="\Flow\Telemetry\Logger\Processor\PassThroughLogProcessor">PassThroughLogProcessor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_console_span_exporter">
+        console_span_exporter()
+        <a href="namespaces/flow-telemetry-dsl.html#function_console_span_exporter" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">528</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a ConsoleSpanExporter.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">console_span_exporter</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$colors</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Console-ConsoleSpanExporter.html"><abbr title="\Flow\Telemetry\Provider\Console\ConsoleSpanExporter">ConsoleSpanExporter</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Outputs spans to the console with ASCII table formatting.
+Useful for debugging and development.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$colors</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Whether to use ANSI colors (default: true)</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Console-ConsoleSpanExporter.html"><abbr title="\Flow\Telemetry\Provider\Console\ConsoleSpanExporter">ConsoleSpanExporter</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_console_metric_exporter">
+        console_metric_exporter()
+        <a href="namespaces/flow-telemetry-dsl.html#function_console_metric_exporter" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">542</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a ConsoleMetricExporter.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">console_metric_exporter</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$colors</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Console-ConsoleMetricExporter.html"><abbr title="\Flow\Telemetry\Provider\Console\ConsoleMetricExporter">ConsoleMetricExporter</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Outputs metrics to the console with ASCII table formatting.
+Useful for debugging and development.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$colors</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Whether to use ANSI colors (default: true)</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Console-ConsoleMetricExporter.html"><abbr title="\Flow\Telemetry\Provider\Console\ConsoleMetricExporter">ConsoleMetricExporter</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_console_log_exporter">
+        console_log_exporter()
+        <a href="namespaces/flow-telemetry-dsl.html#function_console_log_exporter" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">557</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a ConsoleLogExporter.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">console_log_exporter</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$colors</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxBodyLength</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">100</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Console-ConsoleLogExporter.html"><abbr title="\Flow\Telemetry\Provider\Console\ConsoleLogExporter">ConsoleLogExporter</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Outputs log records to the console with severity-based coloring.
+Useful for debugging and development.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$colors</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Whether to use ANSI colors (default: true)</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$maxBodyLength</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">100</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Maximum length for body+attributes column (null = no limit, default: 100)</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Provider-Console-ConsoleLogExporter.html"><abbr title="\Flow\Telemetry\Provider\Console\ConsoleLogExporter">ConsoleLogExporter</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_always_on_exemplar_filter">
+        always_on_exemplar_filter()
+        <a href="namespaces/flow-telemetry-dsl.html#function_always_on_exemplar_filter" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">569</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create an AlwaysOnExemplarFilter.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">always_on_exemplar_filter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Meter-Exemplar-AlwaysOnExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\AlwaysOnExemplarFilter">AlwaysOnExemplarFilter</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Records exemplars whenever a span context is present.
+Use this filter for debugging or when complete trace context is important.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Meter-Exemplar-AlwaysOnExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\AlwaysOnExemplarFilter">AlwaysOnExemplarFilter</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_always_off_exemplar_filter">
+        always_off_exemplar_filter()
+        <a href="namespaces/flow-telemetry-dsl.html#function_always_off_exemplar_filter" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">581</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create an AlwaysOffExemplarFilter.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">always_off_exemplar_filter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Meter-Exemplar-AlwaysOffExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\AlwaysOffExemplarFilter">AlwaysOffExemplarFilter</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Never records exemplars. Use this filter to disable exemplar collection
+entirely for performance optimization.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Meter-Exemplar-AlwaysOffExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\AlwaysOffExemplarFilter">AlwaysOffExemplarFilter</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_trace_based_exemplar_filter">
+        trace_based_exemplar_filter()
+        <a href="namespaces/flow-telemetry-dsl.html#function_trace_based_exemplar_filter" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">593</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a TraceBasedExemplarFilter.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">trace_based_exemplar_filter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Meter-Exemplar-TraceBasedExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\TraceBasedExemplarFilter">TraceBasedExemplarFilter</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Records exemplars only when the span is sampled (has SAMPLED trace flag).
+This is the default filter, balancing exemplar collection with performance.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Meter-Exemplar-TraceBasedExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\TraceBasedExemplarFilter">TraceBasedExemplarFilter</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_propagation_context">
+        propagation_context()
+        <a href="namespaces/flow-telemetry-dsl.html#function_propagation_context" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">608</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a PropagationContext.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">propagation_context</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spanContext</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baggage</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-PropagationContext.html"><abbr title="\Flow\Telemetry\Propagation\PropagationContext">PropagationContext</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Value object containing both trace context (SpanContext) and application
+data (Baggage) that can be propagated across process boundaries.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$spanContext</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Optional span context</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$baggage</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Optional baggage</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-PropagationContext.html"><abbr title="\Flow\Telemetry\Propagation\PropagationContext">PropagationContext</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_array_carrier">
+        array_carrier()
+        <a href="namespaces/flow-telemetry-dsl.html#function_array_carrier" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">621</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create an ArrayCarrier.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">array_carrier</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-ArrayCarrier.html"><abbr title="\Flow\Telemetry\Propagation\ArrayCarrier">ArrayCarrier</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Carrier backed by an associative array with case-insensitive key lookup.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$data</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, string&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Initial carrier data</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-ArrayCarrier.html"><abbr title="\Flow\Telemetry\Propagation\ArrayCarrier">ArrayCarrier</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_superglobal_carrier">
+        superglobal_carrier()
+        <a href="namespaces/flow-telemetry-dsl.html#function_superglobal_carrier" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">633</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a SuperglobalCarrier.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">superglobal_carrier</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-SuperglobalCarrier.html"><abbr title="\Flow\Telemetry\Propagation\SuperglobalCarrier">SuperglobalCarrier</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Read-only carrier that extracts context from PHP superglobals
+($_SERVER, $_GET, $_POST, $_COOKIE).</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-SuperglobalCarrier.html"><abbr title="\Flow\Telemetry\Propagation\SuperglobalCarrier">SuperglobalCarrier</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_w3c_trace_context">
+        w3c_trace_context()
+        <a href="namespaces/flow-telemetry-dsl.html#function_w3c_trace_context" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">645</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a W3CTraceContext propagator.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">w3c_trace_context</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-W3CTraceContext.html"><abbr title="\Flow\Telemetry\Propagation\W3CTraceContext">W3CTraceContext</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Implements W3C Trace Context specification for propagating trace context
+using traceparent and tracestate headers.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-W3CTraceContext.html"><abbr title="\Flow\Telemetry\Propagation\W3CTraceContext">W3CTraceContext</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_w3c_baggage">
+        w3c_baggage()
+        <a href="namespaces/flow-telemetry-dsl.html#function_w3c_baggage" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">657</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a W3CBaggage propagator.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">w3c_baggage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-W3CBaggage.html"><abbr title="\Flow\Telemetry\Propagation\W3CBaggage">W3CBaggage</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Implements W3C Baggage specification for propagating application-specific
+key-value pairs using the baggage header.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-W3CBaggage.html"><abbr title="\Flow\Telemetry\Propagation\W3CBaggage">W3CBaggage</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_composite_propagator">
+        composite_propagator()
+        <a href="namespaces/flow-telemetry-dsl.html#function_composite_propagator" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">671</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a CompositePropagator.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">composite_propagator</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Propagation-Propagator.html"><abbr title="\Flow\Telemetry\Propagation\Propagator">Propagator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$propagators</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-CompositePropagator.html"><abbr title="\Flow\Telemetry\Propagation\CompositePropagator">CompositePropagator</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Combines multiple propagators into one. On extract, all propagators are
+invoked and their contexts are merged. On inject, all propagators are invoked.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$propagators</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Propagation-Propagator.html"><abbr title="\Flow\Telemetry\Propagation\Propagator">Propagator</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The propagators to combine</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-CompositePropagator.html"><abbr title="\Flow\Telemetry\Propagation\CompositePropagator">CompositePropagator</abbr></a></span>
+            </section>
+
+</article>
+            </section>
+
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
+
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
+
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.open('GET', src, true);
+
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+                            Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
+                            return;
+                        }
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
+                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
+                    }
+                    modal.classList.add("phpdocumentor-modal__open");
+
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
+                    });
+                });
+            });
+        })();
+    </script>
+
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                            
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                                        <li><a href="namespaces/flow-telemetry-dsl.html#toc-functions">Functions</a></li>
+                                                                                                </ul>
+            </li>
+
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Functions</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_always_off_exemplar_filter">always_off_exemplar_filter()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_always_on_exemplar_filter">always_on_exemplar_filter()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_array_carrier">array_carrier()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_baggage">baggage()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_batching_log_processor">batching_log_processor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_batching_metric_processor">batching_metric_processor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_batching_span_processor">batching_span_processor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_composite_propagator">composite_propagator()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_console_log_exporter">console_log_exporter()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_console_metric_exporter">console_metric_exporter()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_console_span_exporter">console_span_exporter()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_context">context()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_instrumentation_scope">instrumentation_scope()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_logger_provider">logger_provider()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_memory_context_storage">memory_context_storage()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_memory_log_exporter">memory_log_exporter()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_memory_log_processor">memory_log_processor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_memory_metric_exporter">memory_metric_exporter()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_memory_metric_processor">memory_metric_processor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_memory_span_exporter">memory_span_exporter()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_memory_span_processor">memory_span_processor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_meter_provider">meter_provider()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_pass_through_log_processor">pass_through_log_processor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_pass_through_metric_processor">pass_through_metric_processor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_pass_through_span_processor">pass_through_span_processor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_propagation_context">propagation_context()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_resource">resource()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_span_context">span_context()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_span_event">span_event()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_span_id">span_id()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_span_link">span_link()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_superglobal_carrier">superglobal_carrier()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_telemetry">telemetry()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_trace_based_exemplar_filter">trace_based_exemplar_filter()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_trace_id">trace_id()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_tracer_provider">tracer_provider()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_void_log_exporter">void_log_exporter()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_void_log_processor">void_log_processor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_void_metric_exporter">void_metric_exporter()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_void_metric_processor">void_metric_processor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_void_span_exporter">void_span_exporter()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_void_span_processor">void_span_processor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_w3c_baggage">w3c_baggage()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_w3c_trace_context">w3c_trace_context()</a></li>
+                                            </ul>
+                </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="namespaces/flow-telemetry-dsl.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

@@ -401,6 +401,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_S3_FILESYSTEM"
         },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003ATELEMETRY",
+            "name": "TELEMETRY",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_TELEMETRY"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003ATELEMETRY_OTLP",
+            "name": "TELEMETRY_OTLP",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_TELEMETRY_OTLP"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003ATEXT",
             "name": "TEXT",
             "summary": "",
