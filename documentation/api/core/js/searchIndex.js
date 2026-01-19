@@ -381,6 +381,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_MEILI_SEARCH"
         },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003AMONOLOG_TELEMETRY_BRIDGE",
+            "name": "MONOLOG_TELEMETRY_BRIDGE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_MONOLOG_TELEMETRY_BRIDGE"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003APARQUET",
             "name": "PARQUET",
             "summary": "",
