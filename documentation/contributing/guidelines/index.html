@@ -530,7 +530,6 @@ commands.</li>
 <p>In some cases on that level, there might be some test helpers, like:</p>
 <ul>
 <li><code>Doubles</code> - mocks / stubs / fakses used across tests</li>
-<li><code>Benchark</code> - performance tests written using <code>phpbench</code> library</li>
 </ul>
 <h3><a id="packages-dependencies" href="#packages-dependencies" class="mr-2" aria-hidden="true" title="Permalink">#</a>Packages Dependencies</h3>
 <p>The rule is that we should keep as few dependencies as possible. But when we are adding dependency, it should be
@@ -568,8 +567,6 @@ a combination of all other test commands:</li>
 <li>...</li>
 <li><code>composer test:adapter:xml</code></li>
 <li>...</li>
-<li><code>composer test:benchmark</code> runs the benchmark tests to measure the performance of the certain parts of the
-project.</li>
 <li><code>composer test:website</code> runs the tests for the website</li>
 <li><code>composer test:examples</code> runs all examples</li>
 <li><code>composer test:mutation</code> runs the mutation tests to check the quality of the tests.</li>
