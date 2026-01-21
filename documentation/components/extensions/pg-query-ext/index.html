@@ -486,6 +486,7 @@ interface with strongly-typed AST nodes, see the <a href="/documentation/compone
 <li>Split multiple SQL statements</li>
 <li>Scan SQL into tokens</li>
 <li>Generate query summaries for logging/monitoring</li>
+<li>Check if queries contain utility/DDL statements (without full parsing)</li>
 </ul>
 <h2><a id="requirements" href="#requirements" class="mr-2" aria-hidden="true" title="Permalink">#</a>Requirements</h2>
 <ul>
@@ -498,11 +499,8 @@ interface with strongly-typed AST nodes, see the <a href="/documentation/compone
 <h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
 <h3><a id="using-pie-recommended" href="#using-pie-recommended" class="mr-2" aria-hidden="true" title="Permalink">#</a>Using PIE (Recommended)</h3>
 <p><a rel="noopener noreferrer" target="_blank" href="https://github.com/php/pie">PIE</a> is the modern PHP extension installer.</p>
-<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash"># Simple installation (auto-downloads libpg_query for PostgreSQL 17)
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash"># Simple installation
 pie install flow-php/pg-query-ext
-
-# Install with a specific PostgreSQL grammar version (15, 16, or 17)
-pie install flow-php/pg-query-ext --with-pg-version=16
 </code></pre>
 <p>The extension will automatically download and build the appropriate libpg_query version. Build dependencies (
 <code>protobuf-c</code>, <code>git</code>, <code>make</code>, <code>gcc</code>) must be available on your system.</p>
@@ -517,7 +515,7 @@ pie install flow-php/pg-query-ext --with-pg-version=16
 <tbody>
 <tr>
 <td>17</td>
-<td>17-6.1.0 (default)</td>
+<td>17-6.2.1 (default)</td>
 </tr>
 <tr>
 <td>16</td>
@@ -594,6 +592,13 @@ $sql = pg_query_deparse_opts(
 
 // Generate query summary (protobuf format, useful for logging)
 $summary = pg_query_summary('SELECT * FROM users WHERE id = 1');
+
+// Check if query contains utility statements (DDL) - fast, without full parsing
+$isUtility = pg_query_is_utility_stmt('CREATE TABLE users (id int)');
+// Returns: true
+
+$isUtility = pg_query_is_utility_stmt('SELECT * FROM users');
+// Returns: false
 </code></pre>
 <h2><a id="functions-reference" href="#functions-reference" class="mr-2" aria-hidden="true" title="Permalink">#</a>Functions Reference</h2>
 <table>
@@ -659,6 +664,11 @@ $summary = pg_query_summary('SELECT * FROM users WHERE id = 1');
 <td><code>pg_query_summary(string $sql, int $options, int $truncate)</code></td>
 <td>Generate query summary</td>
 <td><code>string</code> (protobuf)</td>
+</tr>
+<tr>
+<td><code>pg_query_is_utility_stmt(string $sql)</code></td>
+<td>Check if query contains utility/DDL statements</td>
+<td><code>bool</code></td>
 </tr>
 </tbody>
 </table>
