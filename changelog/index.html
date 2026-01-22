@@ -318,14 +318,21 @@
 </div>
         
             <section id="changelog" class="py-10 px-2 sm:px-4 mx-auto max-w-screen-2xl">
-        <h2><a id="unreleased---2026-01-21" href="#unreleased---2026-01-21" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2026-01-21</h2>
+        <h2><a id="unreleased---2026-01-22" href="#unreleased---2026-01-22" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2026-01-22</h2>
 <h3><a id="added" href="#added" class="mr-2" aria-hidden="true" title="Permalink">#</a>Added</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2167">#2167</a> - <strong>New flow-php/symfony-http-foundation-telemetry-bridge package for Symfony HttpFoundation telemetry context propagation</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2167">#2167</a> - <strong>PHPStan generics support to Carrier interface</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2167">#2167</a> - <strong>Unified unwrap() method to all Carrier implementations</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2167">#2167</a> - <strong>Fluent chaining support for Carrier::set()</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2164">#2164</a> - <strong>Added pg_query_is_utility_stmt(string $sql) : bool function</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2164">#2164</a> - <strong>extension installation tests on macos on ci/cd</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 </ul>
 <h3><a id="changed" href="#changed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2167">#2167</a> - <strong>[BC] Carrier::set() return type changed from void to static</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2167">#2167</a> - <strong>[BC] ArrayCarrier::toArray() replaced by unwrap()</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2167">#2167</a> - <strong>[BC] ResponseCarrier::getResponse() replaced by unwrap()</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2164">#2164</a> - <strong>Updated libpg_query to latest version</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2164">#2164</a> - <strong>ci/cd workflow testing installation of the extension through pie</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/commit/6f98ff4fbe2c550f007d2c0b2b9cc75ea028c3db">6f98ff</a> - <strong>chore: set runner.time_unit to milliseconds in phpbench config</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
