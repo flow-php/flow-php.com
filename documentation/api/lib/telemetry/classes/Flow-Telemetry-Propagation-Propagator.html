@@ -129,7 +129,7 @@ $ctx = $propagator-&gt;extract($carrier);
 // Inject context into outgoing request headers
 $carrier = new ArrayCarrier();
 $propagator-&gt;inject($ctx, $carrier);
-$headers = $carrier-&gt;toArray();
+$headers = $carrier-&gt;unwrap();
 </code></pre>
 </section>
 
@@ -208,7 +208,7 @@ $headers = $carrier-&gt;toArray();
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">extract</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Propagation-Carrier.html"><abbr title="\Flow\Telemetry\Propagation\Carrier">Carrier</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$carrier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-PropagationContext.html"><abbr title="\Flow\Telemetry\Propagation\PropagationContext">PropagationContext</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">extract</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Propagation-Carrier.html"><abbr title="\Flow\Telemetry\Propagation\Carrier">Carrier</abbr></a>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$carrier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Propagation-PropagationContext.html"><abbr title="\Flow\Telemetry\Propagation\PropagationContext">PropagationContext</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -218,7 +218,7 @@ $headers = $carrier-&gt;toArray();
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$carrier</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Propagation-Carrier.html"><abbr title="\Flow\Telemetry\Propagation\Carrier">Carrier</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Propagation-Carrier.html"><abbr title="\Flow\Telemetry\Propagation\Carrier">Carrier</abbr></a>&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The carrier to extract from</p>
@@ -308,7 +308,7 @@ $headers = $carrier-&gt;toArray();
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">inject</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Propagation-PropagationContext.html"><abbr title="\Flow\Telemetry\Propagation\PropagationContext">PropagationContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Propagation-Carrier.html"><abbr title="\Flow\Telemetry\Propagation\Carrier">Carrier</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$carrier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">inject</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Propagation-PropagationContext.html"><abbr title="\Flow\Telemetry\Propagation\PropagationContext">PropagationContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Propagation-Carrier.html"><abbr title="\Flow\Telemetry\Propagation\Carrier">Carrier</abbr></a>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$carrier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -327,7 +327,7 @@ $headers = $carrier-&gt;toArray();
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$carrier</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Propagation-Carrier.html"><abbr title="\Flow\Telemetry\Propagation\Carrier">Carrier</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Propagation-Carrier.html"><abbr title="\Flow\Telemetry\Propagation\Carrier">Carrier</abbr></a>&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The carrier to inject into</p>

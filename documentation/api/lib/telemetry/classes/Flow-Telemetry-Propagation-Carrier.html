@@ -109,7 +109,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-carrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php">Carrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -119,27 +119,34 @@
     <section class="phpdocumentor-description"><p>A carrier is the transport mechanism for context propagation headers.
 Implementations handle specific transport types (HTTP headers, gRPC
 metadata, message queue headers, etc.).</p>
-<p>Example implementation for PSR-7:</p>
-<pre class="prettyprint"><code class="language-php">final class Psr7Carrier implements Carrier
-{
-    public function __construct(private RequestInterface $request) }
+<p>Example usage:</p>
+<pre class="prettyprint"><code class="language-php">// Inject context into a carrier
+$carrier = new ResponseCarrier($response);
+$propagator-&gt;inject($context, $carrier);
+$modifiedResponse = $carrier-&gt;unwrap();
 
-    public function get(string $key): ?string
-    {
-        $values = $this-&gt;request-&gt;getHeader($key);
-        return $values[0] ?? null;
-    }
-
-    public function set(string $key, string $value): void
-    {
-        $this-&gt;request = $this-&gt;request-&gt;withHeader($key, $value);
-    }
-
-}
+// With fluent chaining
+$response = (new ResponseCarrier($response))
+    -&gt;set('X-Custom', 'value')
+    -&gt;unwrap();
 </code></pre>
 </section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Telemetry-Propagation-Carrier.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">template-covariant</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
     
     
@@ -168,9 +175,16 @@ metadata, message queue headers, etc.).</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Propagation-Carrier.html#method_set">set()</a>
     <span>
-                                &nbsp;: void    </span>
+                                &nbsp;: static    </span>
 </dt>
 <dd>Set a value.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Telemetry-Propagation-Carrier.html#method_unwrap">unwrap()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\Telemetry\Propagation\TWrapped">TWrapped</abbr>    </span>
+</dt>
+<dd>Unwrap and return the underlying data structure.</dd>
 
     </dl>
 
@@ -199,7 +213,7 @@ metadata, message queue headers, etc.).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-carrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php">Carrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -256,7 +270,7 @@ metadata, message queue headers, etc.).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-carrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php">Carrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -264,7 +278,7 @@ metadata, message queue headers, etc.).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -296,7 +310,58 @@ metadata, message queue headers, etc.).</p>
 
         
     
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>For fluent chaining</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_unwrap">
+        unwrap()
+        <a href="classes/Flow-Telemetry-Propagation-Carrier.html#method_unwrap" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-carrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php">Carrier.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Unwrap and return the underlying data structure.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">unwrap</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Telemetry\Propagation\TWrapped">TWrapped</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
     
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Telemetry\Propagation\TWrapped">TWrapped</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The wrapped data structure</p>
+</section>
+
+            </section>
+
 </article>
             </section>
 
@@ -414,6 +479,7 @@ metadata, message queue headers, etc.).</p>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-Telemetry-Propagation-Carrier.html#method_get">get()</a></li>
                                                     <li class=""><a href="classes/Flow-Telemetry-Propagation-Carrier.html#method_set">set()</a></li>
+                                                    <li class=""><a href="classes/Flow-Telemetry-Propagation-Carrier.html#method_unwrap">unwrap()</a></li>
                                             </ul>
                 </li>
             

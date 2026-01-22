@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 678
+ * Total functions: 682
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -7425,6 +7425,36 @@ const dslFunctions = [
         apply: snippet("\\Flow\\Filesystem\\DSL\\protocol(" + "$" + "{" + "1:protocol" + "}" + ")"),
         boost: 10
     },        {
+        label: "psr7_request_carrier",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">psr7_request_carrier</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">ServerRequestInterface</span> <span class=\"fn-param\">$request</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">RequestCarrier</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Bridge\\Psr7\\Telemetry\\DSL\\psr7_request_carrier(" + "$" + "{" + "1:request" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "psr7_response_carrier",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">psr7_response_carrier</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">ResponseInterface</span> <span class=\"fn-param\">$response</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ResponseCarrier</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Bridge\\Psr7\\Telemetry\\DSL\\psr7_response_carrier(" + "$" + "{" + "1:response" + "}" + ")"),
+        boost: 10
+    },        {
         label: "random_string",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -9424,6 +9454,36 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\superglobal_carrier()"),
+        boost: 10
+    },        {
+        label: "symfony_request_carrier",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">symfony_request_carrier</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Request</span> <span class=\"fn-param\">$request</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">RequestCarrier</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Bridge\\Symfony\\HttpFoundationTelemetry\\DSL\\symfony_request_carrier(" + "$" + "{" + "1:request" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "symfony_response_carrier",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">symfony_response_carrier</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Response</span> <span class=\"fn-param\">$response</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ResponseCarrier</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Bridge\\Symfony\\HttpFoundationTelemetry\\DSL\\symfony_response_carrier(" + "$" + "{" + "1:response" + "}" + ")"),
         boost: 10
     },        {
         label: "table",

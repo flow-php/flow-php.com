@@ -401,10 +401,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_POSTGRESQL"
         },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003APSR7_TELEMETRY_BRIDGE",
+            "name": "PSR7_TELEMETRY_BRIDGE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_PSR7_TELEMETRY_BRIDGE"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003AS3_FILESYSTEM",
             "name": "S3_FILESYSTEM",
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_S3_FILESYSTEM"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003ASYMFONY_HTTP_FOUNDATION_TELEMETRY_BRIDGE",
+            "name": "SYMFONY_HTTP_FOUNDATION_TELEMETRY_BRIDGE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_SYMFONY_HTTP_FOUNDATION_TELEMETRY_BRIDGE"
         },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003ATELEMETRY",
             "name": "TELEMETRY",

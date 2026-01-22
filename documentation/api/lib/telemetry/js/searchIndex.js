@@ -1776,10 +1776,10 @@ Search.appendIndex(
             "summary": "Set\u0020a\u0020value.",
             "url": "classes/Flow-Telemetry-Propagation-ArrayCarrier.html#method_set"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Propagation\\ArrayCarrier\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "Get\u0020the\u0020carrier\u0020data\u0020as\u0020an\u0020array.",
-            "url": "classes/Flow-Telemetry-Propagation-ArrayCarrier.html#method_toArray"
+            "fqsen": "\\Flow\\Telemetry\\Propagation\\ArrayCarrier\u003A\u003Aunwrap\u0028\u0029",
+            "name": "unwrap",
+            "summary": "Unwrap\u0020and\u0020return\u0020the\u0020underlying\u0020data\u0020structure.",
+            "url": "classes/Flow-Telemetry-Propagation-ArrayCarrier.html#method_unwrap"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\Carrier",
             "name": "Carrier",
@@ -1795,6 +1795,11 @@ Search.appendIndex(
             "name": "set",
             "summary": "Set\u0020a\u0020value.",
             "url": "classes/Flow-Telemetry-Propagation-Carrier.html#method_set"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Propagation\\Carrier\u003A\u003Aunwrap\u0028\u0029",
+            "name": "unwrap",
+            "summary": "Unwrap\u0020and\u0020return\u0020the\u0020underlying\u0020data\u0020structure.",
+            "url": "classes/Flow-Telemetry-Propagation-Carrier.html#method_unwrap"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\CompositePropagator",
             "name": "CompositePropagator",
@@ -1881,6 +1886,11 @@ Search.appendIndex(
             "summary": "Read\u002Donly\u0020carrier\u0020backed\u0020by\u0020PHP\u0020superglobals.",
             "url": "classes/Flow-Telemetry-Propagation-SuperglobalCarrier.html"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Propagation\\SuperglobalCarrier\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Propagation-SuperglobalCarrier.html#method___construct"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\SuperglobalCarrier\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "Get\u0020a\u0020value\u0020by\u0020key.",
@@ -1890,6 +1900,11 @@ Search.appendIndex(
             "name": "set",
             "summary": "Set\u0020a\u0020value.",
             "url": "classes/Flow-Telemetry-Propagation-SuperglobalCarrier.html#method_set"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Propagation\\SuperglobalCarrier\u003A\u003Aunwrap\u0028\u0029",
+            "name": "unwrap",
+            "summary": "Unwrap\u0020and\u0020return\u0020the\u0020underlying\u0020data\u0020structure.",
+            "url": "classes/Flow-Telemetry-Propagation-SuperglobalCarrier.html#method_unwrap"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\W3CBaggage",
             "name": "W3CBaggage",
