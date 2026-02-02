@@ -114,24 +114,23 @@
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow.html">Flow</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl.html">ETL</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-pipeline.html">Pipeline</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-processor.html">Processor</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-processor-hashjoin.html">HashJoin</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    OffsetPipeline
+    Bucket
 
     
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Flow-ETL-Pipeline-OverridingPipeline.html"><abbr title="\Flow\ETL\Pipeline\OverridingPipeline">OverridingPipeline</abbr></a>,                             <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>                    </span>
+                            <abbr title="\Countable">Countable</abbr>                    </span>
     
     </h2>
 
 <div class="phpdocumentor-label-line">
-    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
-
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -139,7 +138,7 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-offsetpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php">OffsetPipeline.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php"><a href="files/src-core-etl-src-flow-etl-processor-hashjoin-bucket.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php">Bucket.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">11</span>
 
@@ -155,11 +154,11 @@
 
     <h4 id="toc-interfaces">
         Interfaces
-        <a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Pipeline-OverridingPipeline.html"><abbr title="\Flow\ETL\Pipeline\OverridingPipeline">OverridingPipeline</abbr></a></dt><dd>Pipelines implementing OverridingPipeline interface overrides one or more pipelines.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Pipeline">Pipeline</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Countable">Countable</abbr></dt>    </dl>
 
 
 
@@ -167,53 +166,60 @@
 
 
 
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#property_hash">$hash</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+
+    </dl>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method___construct">__construct()</a>
+    <a class="" href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_add">add()</a>
+    <a class="" href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_add">add()</a>
     <span>
-                                &nbsp;: self    </span>
+                                &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_has">has()</a>
+    <a class="" href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_count">count()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: int    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_pipelines">pipelines()</a>
+    <a class="" href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_findMatch">findMatch()</a>
     <span>
-                                &nbsp;: array&lt;string|int, <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>&gt;    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_pipes">pipes()</a>
+    <a class="" href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_rows">rows()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Pipeline-Pipes.html"><abbr title="\Flow\ETL\Pipeline\Pipes">Pipes</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_process">process()</a>
+    <a class="" href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_unmatchedRows">unmatchedRows()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_source">source()</a>
-    <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a>    </span>
+                                &nbsp;: array&lt;string|int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;    </span>
 </dt>
 
     </dl>
@@ -223,11 +229,55 @@
         
 
         
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_hash">
+        $hash
+        <a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#property_hash" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php"><a href="files/src-core-etl-src-flow-etl-processor-hashjoin-bucket.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php">Bucket.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$hash</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -238,20 +288,20 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-offsetpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php">OffsetPipeline.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php"><a href="files/src-core-etl-src-flow-etl-processor-hashjoin-bucket.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php">Bucket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pipeline</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int<0, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hash</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -260,37 +310,19 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$pipeline</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Pipeline">Pipeline</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$hash</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$offset</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int<0, max></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><ul>
+<li>hash of the bucket calculated from join expression columns and row</li>
+</ul>
+</section>
+
             </dd>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method___construct#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Exception-InvalidArgumentException.html"><abbr title="\Flow\ETL\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></span>
-                                                            
-                                             
-                                    </dd>
-                                            </dl>
 
         
     
@@ -304,20 +336,20 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_add">
         add()
-        <a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_add" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_add" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-offsetpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php">OffsetPipeline.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php"><a href="files/src-core-etl-src-flow-etl-processor-hashjoin-bucket.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php">Bucket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>|<a href="classes/Flow-ETL-Transformer.html"><abbr title="\Flow\ETL\Transformer">Transformer</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pipe</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -326,8 +358,97 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$pipe</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>|<a href="classes/Flow-ETL-Transformer.html"><abbr title="\Flow\ETL\Transformer">Transformer</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$row</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_count">
+        count()
+        <a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_count" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php"><a href="files/src-core-etl-src-flow-etl-processor-hashjoin-bucket.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php">Bucket.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">count</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_findMatch">
+        findMatch()
+        <a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_findMatch" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php"><a href="files/src-core-etl-src-flow-etl-processor-hashjoin-bucket.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php">Bucket.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">findMatch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Join-Expression.html"><abbr title="\Flow\ETL\Join\Expression">Expression</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$expression</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$row</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$expression</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Join-Expression.html"><abbr title="\Flow\ETL\Join\Expression">Expression</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -340,7 +461,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>|null</span>
             </section>
 
 </article>
@@ -350,70 +471,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_has">
-        has()
-        <a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_has" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_rows">
+        rows()
+        <a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_rows" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-offsetpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php">OffsetPipeline.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php"><a href="files/src-core-etl-src-flow-etl-processor-hashjoin-bucket.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php">Bucket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">has</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$transformerClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$transformerClass</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_pipelines">
-        pipelines()
-        <a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_pipelines" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-offsetpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php">OffsetPipeline.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">37</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">pipelines</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">rows</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -426,7 +499,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
             </section>
 
 </article>
@@ -436,22 +509,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_pipes">
-        pipes()
-        <a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_pipes" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_unmatchedRows">
+        unmatchedRows()
+        <a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_unmatchedRows" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-offsetpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php">OffsetPipeline.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php"><a href="files/src-core-etl-src-flow-etl-processor-hashjoin-bucket.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php">Bucket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">pipes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Pipeline-Pipes.html"><abbr title="\Flow\ETL\Pipeline\Pipes">Pipes</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">unmatchedRows</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -464,93 +537,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Pipeline-Pipes.html"><abbr title="\Flow\ETL\Pipeline\Pipes">Pipes</abbr></a></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_process">
-        process()
-        <a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_process" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-offsetpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php">OffsetPipeline.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">47</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">process</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$context</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_source">
-        source()
-        <a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_source" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php"><a href="files/src-core-etl-src-flow-etl-pipeline-offsetpipeline.html"><abbr title="src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php">OffsetPipeline.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">78</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">source</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;</span>
             </section>
 
 </article>
@@ -560,7 +547,7 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/core/etl/src/Flow/ETL/Pipeline/OffsetPipeline.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/core/etl/src/Flow/ETL/Processor/HashJoin/Bucket.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -661,21 +648,27 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                <li><a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#toc-methods">Methods</a></li>
+                                                            <li><a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#property_hash">$hash</a></li>
+                                            </ul>
+                </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_add">add()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_has">has()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_pipelines">pipelines()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_pipes">pipes()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_process">process()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#method_source">source()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_add">add()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_count">count()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_findMatch">findMatch()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_rows">rows()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_unmatchedRows">unmatchedRows()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -695,7 +688,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/Flow-ETL-Pipeline-OffsetPipeline.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Flow-ETL-Processor-HashJoin-Bucket.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

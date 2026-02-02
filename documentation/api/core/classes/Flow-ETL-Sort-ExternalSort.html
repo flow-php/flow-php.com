@@ -139,7 +139,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -183,9 +183,9 @@ https://web.archive.org/web/20150202022830/http://faculty.simpson.edu/lydia.sina
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Sort-ExternalSort.html#method_sortBy">sortBy()</a>
+    <a class="" href="classes/Flow-ETL-Sort-ExternalSort.html#method_sortGenerator">sortGenerator()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a>    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>    </span>
 </dt>
 
     </dl>
@@ -216,7 +216,7 @@ https://web.archive.org/web/20150202022830/http://faculty.simpson.edu/lydia.sina
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -263,22 +263,22 @@ https://web.archive.org/web/20150202022830/http://faculty.simpson.edu/lydia.sina
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_sortBy">
-        sortBy()
-        <a href="classes/Flow-ETL-Sort-ExternalSort.html#method_sortBy" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_sortGenerator">
+        sortGenerator()
+        <a href="classes/Flow-ETL-Sort-ExternalSort.html#method_sortGenerator" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sortBy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pipeline</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-References.html"><abbr title="\Flow\ETL\Row\References">References</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refs</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">sortGenerator</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-References.html"><abbr title="\Flow\ETL\Row\References">References</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refs</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -287,8 +287,8 @@ https://web.archive.org/web/20150202022830/http://faculty.simpson.edu/lydia.sina
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$pipeline</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Pipeline">Pipeline</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -315,7 +315,7 @@ https://web.archive.org/web/20150202022830/http://faculty.simpson.edu/lydia.sina
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span>
             </section>
 
 </article>
@@ -435,7 +435,7 @@ https://web.archive.org/web/20150202022830/http://faculty.simpson.edu/lydia.sina
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Sort-ExternalSort.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Sort-ExternalSort.html#method_sortBy">sortBy()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Sort-ExternalSort.html#method_sortGenerator">sortGenerator()</a></li>
                                     </ul>
             </li>
                     </ul>
