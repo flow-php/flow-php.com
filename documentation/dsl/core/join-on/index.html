@@ -594,7 +594,7 @@ $dbDataFrameFactory = new class implements DataFrameFactory {
 
         return (new Rows(...$rowsFromDb))
             // this would be a database SQL query in real life
-            -&gt;filter(fn (Row $row) =&gt; \in_array($row-&gt;valueOf(&#039;id&#039;), $rows-&gt;reduceToArray(&#039;id&#039;), true));
+            -&gt;filter(static fn (Row $row) =&gt; \in_array($row-&gt;valueOf(&#039;id&#039;), $rows-&gt;reduceToArray(&#039;id&#039;), true));
     }
 };
 
