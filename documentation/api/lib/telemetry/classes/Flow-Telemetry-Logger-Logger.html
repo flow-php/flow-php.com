@@ -120,7 +120,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logger.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -139,6 +139,31 @@ $logger-&gt;error('Processing failed', ['error.message' =&gt; $e-&gt;getMessage(
 </section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Telemetry-Logger-Logger.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">phpstan-import-type</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>TAttributeValue from Attributes</p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">phpstan-import-type</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>TAttributeValueMap from Attributes</p>
+</section>
+
+                                    </dd>
+                                            </dl>
 
     
     
@@ -190,6 +215,13 @@ $logger-&gt;error('Processing failed', ['error.message' =&gt; $e-&gt;getMessage(
                                 &nbsp;: void    </span>
 </dt>
 <dd>Emit a FATAL level log.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Telemetry-Logger-Logger.html#method_flush">flush()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Flush all pending logs to the exporter.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Logger-Logger.html#method_info">info()</a>
@@ -261,7 +293,7 @@ $logger-&gt;error('Processing failed', ['error.message' =&gt; $e-&gt;getMessage(
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logger.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -333,7 +365,7 @@ $logger-&gt;error('Processing failed', ['error.message' =&gt; $e-&gt;getMessage(
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logger.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -341,7 +373,7 @@ $logger-&gt;error('Processing failed', ['error.message' =&gt; $e-&gt;getMessage(
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">debug</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">debug</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>|<abbr title="\Flow\Telemetry\Logger\TAttributeValueMap">TAttributeValueMap</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -363,7 +395,7 @@ and debugging sessions.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>|<abbr title="\Flow\Telemetry\Logger\TAttributeValueMap">TAttributeValueMap</abbr></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Optional attributes</p>
@@ -392,7 +424,7 @@ and debugging sessions.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logger.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -442,7 +474,7 @@ such as setting a custom timestamp or recording an exception.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logger.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -450,7 +482,7 @@ such as setting a custom timestamp or recording an exception.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">error</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">error</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>|<abbr title="\Flow\Telemetry\Logger\TAttributeValueMap">TAttributeValueMap</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -472,7 +504,7 @@ running.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>|<abbr title="\Flow\Telemetry\Logger\TAttributeValueMap">TAttributeValueMap</abbr></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Optional attributes</p>
@@ -501,7 +533,7 @@ running.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logger.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -509,7 +541,7 @@ running.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">fatal</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">fatal</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>|<abbr title="\Flow\Telemetry\Logger\TAttributeValueMap">TAttributeValueMap</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -531,7 +563,7 @@ to terminate or become unusable.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>|<abbr title="\Flow\Telemetry\Logger\TAttributeValueMap">TAttributeValueMap</abbr></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Optional attributes</p>
@@ -552,6 +584,45 @@ to terminate or become unusable.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_flush">
+        flush()
+        <a href="classes/Flow-Telemetry-Logger-Logger.html#method_flush" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logger.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php">Logger.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">110</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Flush all pending logs to the exporter.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">flush</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_info">
         info()
         <a href="classes/Flow-Telemetry-Logger-Logger.html#method_info" class="headerlink"><i class="fas fa-link"></i></a>
@@ -560,7 +631,7 @@ to terminate or become unusable.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logger.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -568,7 +639,7 @@ to terminate or become unusable.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">info</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">info</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>|<abbr title="\Flow\Telemetry\Logger\TAttributeValueMap">TAttributeValueMap</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -590,7 +661,7 @@ normal behavior.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>|<abbr title="\Flow\Telemetry\Logger\TAttributeValueMap">TAttributeValueMap</abbr></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Optional attributes</p>
@@ -619,7 +690,7 @@ normal behavior.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logger.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -658,7 +729,7 @@ normal behavior.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logger.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -697,7 +768,7 @@ normal behavior.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logger.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -705,7 +776,7 @@ normal behavior.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">trace</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">trace</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>|<abbr title="\Flow\Telemetry\Logger\TAttributeValueMap">TAttributeValueMap</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -727,7 +798,7 @@ enabled during development or troubleshooting.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>|<abbr title="\Flow\Telemetry\Logger\TAttributeValueMap">TAttributeValueMap</abbr></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Optional attributes</p>
@@ -756,7 +827,7 @@ enabled during development or troubleshooting.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logger.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">168</span>
 
     </aside>
 
@@ -764,7 +835,7 @@ enabled during development or troubleshooting.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">warn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">warn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;|<a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -786,7 +857,7 @@ the application from functioning.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;|<a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Optional attributes</p>
@@ -815,7 +886,7 @@ the application from functioning.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logger.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">178</span>
 
     </aside>
 
@@ -972,6 +1043,7 @@ the application from functioning.</p>
                                             <li class=""><a href="classes/Flow-Telemetry-Logger-Logger.html#method_emit">emit()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Logger-Logger.html#method_error">error()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Logger-Logger.html#method_fatal">fatal()</a></li>
+                                            <li class=""><a href="classes/Flow-Telemetry-Logger-Logger.html#method_flush">flush()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Logger-Logger.html#method_info">info()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Logger-Logger.html#method_instrumentationScope">instrumentationScope()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Logger-Logger.html#method_processor">processor()</a></li>

@@ -41,6 +41,11 @@ Search.appendIndex(
             "summary": "Check\u0020if\u0020attribute\u0020exists.",
             "url": "classes/Flow-Telemetry-Attributes.html#method_has"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Attributes\u003A\u003Aid\u0028\u0029",
+            "name": "id",
+            "summary": "Create\u0020a\u0020stable\u0020identity\u0020string\u0020from\u0020scalar\u0020attributes.",
+            "url": "classes/Flow-Telemetry-Attributes.html#method_id"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Attributes\u003A\u003AisEmpty\u0028\u0029",
             "name": "isEmpty",
             "summary": "Check\u0020if\u0020empty.",
@@ -626,6 +631,11 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020PassThroughLogProcessor.",
             "url": "namespaces/flow-telemetry-dsl.html#function_pass_through_log_processor"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\severity_filtering_log_processor\u0028\u0029",
+            "name": "severity_filtering_log_processor",
+            "summary": "Create\u0020a\u0020SeverityFilteringLogProcessor.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_severity_filtering_log_processor"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\console_span_exporter\u0028\u0029",
             "name": "console_span_exporter",
             "summary": "Create\u0020a\u0020ConsoleSpanExporter.",
@@ -836,6 +846,11 @@ Search.appendIndex(
             "summary": "Emit\u0020a\u0020FATAL\u0020level\u0020log.",
             "url": "classes/Flow-Telemetry-Logger-Logger.html#method_fatal"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Logger\u003A\u003Aflush\u0028\u0029",
+            "name": "flush",
+            "summary": "Flush\u0020all\u0020pending\u0020logs\u0020to\u0020the\u0020exporter.",
+            "url": "classes/Flow-Telemetry-Logger-Logger.html#method_flush"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Logger\u003A\u003Ainfo\u0028\u0029",
             "name": "info",
             "summary": "Emit\u0020an\u0020INFO\u0020level\u0020log.",
@@ -956,6 +971,11 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020timestamp\u0020for\u0020this\u0020log\u0020record.",
             "url": "classes/Flow-Telemetry-Logger-LogRecord.html#method_setTimestamp"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecord\u003A\u003A\u0024attributes",
+            "name": "attributes",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Logger-LogRecord.html#property_attributes"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecord\u003A\u003A\u0024severity",
             "name": "severity",
             "summary": "",
@@ -965,11 +985,6 @@ Search.appendIndex(
             "name": "body",
             "summary": "",
             "url": "classes/Flow-Telemetry-Logger-LogRecord.html#property_body"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecord\u003A\u003A\u0024attributes",
-            "name": "attributes",
-            "summary": "",
-            "url": "classes/Flow-Telemetry-Logger-LogRecord.html#property_attributes"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecord\u003A\u003A\u0024timestamp",
             "name": "timestamp",
@@ -1060,6 +1075,31 @@ Search.appendIndex(
             "name": "process",
             "summary": "Process\u0020a\u0020log\u0020entry.",
             "url": "classes/Flow-Telemetry-Logger-Processor-PassThroughLogProcessor.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor",
+            "name": "SeverityFilteringLogProcessor",
+            "summary": "Filters\u0020log\u0020entries\u0020based\u0020on\u0020minimum\u0020severity\u0020level.",
+            "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor\u003A\u003Aexporter\u0028\u0029",
+            "name": "exporter",
+            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
+            "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html#method_exporter"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor\u003A\u003Aflush\u0028\u0029",
+            "name": "flush",
+            "summary": "Export\u0020all\u0020pending\u0020log\u0020records.",
+            "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html#method_flush"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "Process\u0020a\u0020log\u0020entry.",
+            "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html#method_process"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Severity",
             "name": "Severity",
@@ -1431,6 +1471,41 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020unit\u0020of\u0020measurement.",
             "url": "classes/Flow-Telemetry-Meter-Instrument-Instrument.html#method_unit"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Throughput",
+            "name": "Throughput",
+            "summary": "Throughput\u0020instrument\u0020for\u0020tracking\u0020rate\u0020of\u0020items\u0020processed\u0020over\u0020time.",
+            "url": "classes/Flow-Telemetry-Meter-Instrument-Throughput.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Throughput\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Meter-Instrument-Throughput.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Throughput\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "Add\u0020to\u0020the\u0020accumulated\u0020count.",
+            "url": "classes/Flow-Telemetry-Meter-Instrument-Throughput.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Throughput\u003A\u003Acollect\u0028\u0029",
+            "name": "collect",
+            "summary": "Collect\u0020aggregated\u0020metrics\u0020for\u0020export.",
+            "url": "classes/Flow-Telemetry-Meter-Instrument-Throughput.html#method_collect"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Throughput\u003A\u003Adescription\u0028\u0029",
+            "name": "description",
+            "summary": "Get\u0020the\u0020instrument\u0020description.",
+            "url": "classes/Flow-Telemetry-Meter-Instrument-Throughput.html#method_description"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Throughput\u003A\u003Aname\u0028\u0029",
+            "name": "name",
+            "summary": "Get\u0020the\u0020instrument\u0020name.",
+            "url": "classes/Flow-Telemetry-Meter-Instrument-Throughput.html#method_name"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Throughput\u003A\u003Aunit\u0028\u0029",
+            "name": "unit",
+            "summary": "Get\u0020the\u0020unit\u0020of\u0020measurement.",
+            "url": "classes/Flow-Telemetry-Meter-Instrument-Throughput.html#method_unit"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\UpDownCounter",
             "name": "UpDownCounter",
             "summary": "UpDownCounter\u0020instrument\u0020for\u0020recording\u0020increments\u0020and\u0020decrements.",
@@ -1481,6 +1556,11 @@ Search.appendIndex(
             "summary": "Collect\u0020all\u0020aggregated\u0020metrics\u0020from\u0020all\u0020instruments.",
             "url": "classes/Flow-Telemetry-Meter-Meter.html#method_collect"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Meter\u003A\u003Acomplete\u0028\u0029",
+            "name": "complete",
+            "summary": "Complete\u0020an\u0020instrument\u0020and\u0020pass\u0020its\u0020metrics\u0020to\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Meter-Meter.html#method_complete"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Meter\u003A\u003AcreateCounter\u0028\u0029",
             "name": "createCounter",
             "summary": "Create\u0020or\u0020get\u0020a\u0020Counter\u0020instrument.",
@@ -1496,10 +1576,20 @@ Search.appendIndex(
             "summary": "Create\u0020or\u0020get\u0020a\u0020Histogram\u0020instrument.",
             "url": "classes/Flow-Telemetry-Meter-Meter.html#method_createHistogram"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Meter\u003A\u003AcreateThroughput\u0028\u0029",
+            "name": "createThroughput",
+            "summary": "Create\u0020or\u0020get\u0020a\u0020Throughput\u0020instrument.",
+            "url": "classes/Flow-Telemetry-Meter-Meter.html#method_createThroughput"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Meter\u003A\u003AcreateUpDownCounter\u0028\u0029",
             "name": "createUpDownCounter",
             "summary": "Create\u0020or\u0020get\u0020an\u0020UpDownCounter\u0020instrument.",
             "url": "classes/Flow-Telemetry-Meter-Meter.html#method_createUpDownCounter"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Meter\u003A\u003Aflush\u0028\u0029",
+            "name": "flush",
+            "summary": "Collect\u0020all\u0020metrics\u0020and\u0020flush\u0020to\u0020processor.",
+            "url": "classes/Flow-Telemetry-Meter-Meter.html#method_flush"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Meter\u003A\u003AinstrumentationScope\u0028\u0029",
             "name": "instrumentationScope",
@@ -1615,6 +1705,11 @@ Search.appendIndex(
             "name": "exemplars",
             "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Metric.html#property_exemplars"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Metric\u003A\u003A\u0024startTimestamp",
+            "name": "startTimestamp",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Meter-Metric.html#property_startTimestamp"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MetricExporter",
             "name": "MetricExporter",
@@ -1755,6 +1850,41 @@ Search.appendIndex(
             "name": "process",
             "summary": "Process\u0020a\u0020metric\u0020measurement.",
             "url": "classes/Flow-Telemetry-Meter-Processor-PassThroughMetricProcessor.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\TimeUnit",
+            "name": "TimeUnit",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Meter-TimeUnit.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\TimeUnit\u003A\u003AfromNanoseconds\u0028\u0029",
+            "name": "fromNanoseconds",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Meter-TimeUnit.html#method_fromNanoseconds"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\TimeUnit\u003A\u003AMICROSECONDS",
+            "name": "MICROSECONDS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Meter-TimeUnit.html#enumcase_MICROSECONDS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\TimeUnit\u003A\u003AMILLISECONDS",
+            "name": "MILLISECONDS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Meter-TimeUnit.html#enumcase_MILLISECONDS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\TimeUnit\u003A\u003AMINUTES",
+            "name": "MINUTES",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Meter-TimeUnit.html#enumcase_MINUTES"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\TimeUnit\u003A\u003ANANOSECONDS",
+            "name": "NANOSECONDS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Meter-TimeUnit.html#enumcase_NANOSECONDS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\TimeUnit\u003A\u003ASECONDS",
+            "name": "SECONDS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Meter-TimeUnit.html#enumcase_SECONDS"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\ArrayCarrier",
             "name": "ArrayCarrier",
@@ -2851,15 +2981,15 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020result\u0020indicating\u0020the\u0020span\u0020should\u0020be\u0020recorded\u0020but\u0020not\u0020exported.",
             "url": "classes/Flow-Telemetry-Tracer-Sampler-SamplingResult.html#method_recordOnly"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SamplingResult\u003A\u003A\u0024decision",
-            "name": "decision",
-            "summary": "",
-            "url": "classes/Flow-Telemetry-Tracer-Sampler-SamplingResult.html#property_decision"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SamplingResult\u003A\u003A\u0024attributes",
             "name": "attributes",
             "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Sampler-SamplingResult.html#property_attributes"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SamplingResult\u003A\u003A\u0024decision",
+            "name": "decision",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Tracer-Sampler-SamplingResult.html#property_decision"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SamplingResult\u003A\u003A\u0024traceState",
             "name": "traceState",
@@ -3395,6 +3525,11 @@ Search.appendIndex(
             "name": "context",
             "summary": "Get\u0020the\u0020tracer\u0027s\u0020context.",
             "url": "classes/Flow-Telemetry-Tracer-Tracer.html#method_context"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Tracer\u003A\u003Aflush\u0028\u0029",
+            "name": "flush",
+            "summary": "Flush\u0020all\u0020pending\u0020spans\u0020to\u0020the\u0020exporter.",
+            "url": "classes/Flow-Telemetry-Tracer-Tracer.html#method_flush"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Tracer\u003A\u003AinstrumentationScope\u0028\u0029",
             "name": "instrumentationScope",

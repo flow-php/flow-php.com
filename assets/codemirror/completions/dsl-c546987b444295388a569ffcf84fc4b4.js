@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 682
+ * Total functions: 684
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -7936,10 +7936,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">resource</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">array</span> <span class=\"fn-param\">$attributes</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Resource</span>
+                    <span class=\"fn-name\">resource</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Attributes|array</span> <span class=\"fn-param\">$attributes</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Resource</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Create a Resource.<br>@param array<string, array<bool|float|int|string>|bool|float|int|string> $attributes Resource attributes
+                    Create a Resource.<br>@param array<string, array<bool|float|int|string>|bool|float|int|string>|Attributes $attributes Resource attributes
                 </div>
                             `
             return div
@@ -8568,6 +8568,24 @@ const dslFunctions = [
         apply: snippet("\\Flow\\PostgreSql\\DSL\\set_transaction()"),
         boost: 10
     },        {
+        label: "severity_filtering_log_processor",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">severity_filtering_log_processor</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">LogProcessor</span> <span class=\"fn-param\">$processor</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Severity</span> <span class=\"fn-param\">$minimumSeverity</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Telemetry\\Logger\\Severity::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SeverityFilteringLogProcessor</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a SeverityFilteringLogProcessor.<br>Filters log entries based on minimum severity level. Only entries at or above<br>the configured threshold are passed to the wrapped processor.<br>@param LogProcessor $processor The processor to wrap<br>@param Severity $minimumSeverity Minimum severity level (default: INFO)
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\severity_filtering_log_processor(" + "$" + "{" + "1:processor" + "}" + ", " + "$" + "{" + "2:minimumSeverity" + "}" + ")"),
+        boost: 10
+    },        {
         label: "severity_mapper",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8659,10 +8677,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">span_event</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">DateTimeImmutable</span> <span class=\"fn-param\">$timestamp</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$attributes</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">GenericEvent</span>
+                    <span class=\"fn-name\">span_event</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">DateTimeImmutable</span> <span class=\"fn-param\">$timestamp</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Attributes|array</span> <span class=\"fn-param\">$attributes</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">GenericEvent</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Create a SpanEvent (GenericEvent) with an explicit timestamp.<br>@param string $name Event name<br>@param \\DateTimeImmutable $timestamp Event timestamp<br>@param array<string, array<bool|float|int|string>|bool|float|int|string> $attributes Event attributes
+                    Create a SpanEvent (GenericEvent) with an explicit timestamp.<br>@param string $name Event name<br>@param \\DateTimeImmutable $timestamp Event timestamp<br>@param array<string, array<bool|float|int|string>|bool|float|int|string>|Attributes $attributes Event attributes
                 </div>
                             `
             return div
@@ -8695,10 +8713,10 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">span_link</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">SpanContext</span> <span class=\"fn-param\">$context</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$attributes</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SpanLink</span>
+                    <span class=\"fn-name\">span_link</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">SpanContext</span> <span class=\"fn-param\">$context</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Attributes|array</span> <span class=\"fn-param\">$attributes</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SpanLink</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Create a SpanLink.<br>@param SpanContext $context The linked span context<br>@param array<string, array<bool|float|int|string>|bool|float|int|string> $attributes Link attributes
+                    Create a SpanLink.<br>@param SpanContext $context The linked span context<br>@param array<string, array<bool|float|int|string>|bool|float|int|string>|Attributes $attributes Link attributes
                 </div>
                             `
             return div
@@ -9574,6 +9592,21 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\Bridge\\Monolog\\Telemetry\\DSL\\telemetry_handler(" + "$" + "{" + "1:logger" + "}" + ", " + "$" + "{" + "2:converter" + "}" + ", " + "$" + "{" + "3:level" + "}" + ", " + "$" + "{" + "4:bubble" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "telemetry_options",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">telemetry_options</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">bool</span> <span class=\"fn-param\">$trace_loading</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$trace_transformations</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$collect_metrics</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TelemetryOptions</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\ETL\\DSL\\telemetry_options(" + "$" + "{" + "1:trace_loading" + "}" + ", " + "$" + "{" + "2:trace_transformations" + "}" + ", " + "$" + "{" + "3:collect_metrics" + "}" + ")"),
         boost: 10
     },        {
         label: "text_search_match",

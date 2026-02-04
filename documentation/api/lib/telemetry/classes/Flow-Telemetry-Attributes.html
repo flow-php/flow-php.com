@@ -121,7 +121,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php"><a href="files/src-lib-telemetry-src-flow-telemetry-attributes.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php">Attributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -142,6 +142,31 @@ Throwable, or arrays of primitive types.</p>
 </section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Telemetry-Attributes.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">phpstan-type</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>TAttributeValue = array&lt;bool|\DateTimeInterface|float|int|string|\Throwable&gt;|bool|\DateTimeInterface|float|int|string|\Throwable</p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">phpstan-type</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>TAttributeValueMap = array&lt;string, TAttributeValue&gt;</p>
+</section>
+
+                                    </dd>
+                                            </dl>
 
     
     
@@ -197,7 +222,7 @@ Throwable, or arrays of primitive types.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Attributes.html#method_get">get()</a>
     <span>
-                                &nbsp;: null|array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>    </span>
+                                &nbsp;: null|<abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr>    </span>
 </dt>
 <dd>Get a specific attribute value.</dd>
 
@@ -207,6 +232,13 @@ Throwable, or arrays of primitive types.</p>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Check if attribute exists.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Telemetry-Attributes.html#method_id">id()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Create a stable identity string from scalar attributes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Attributes.html#method_isEmpty">isEmpty()</a>
@@ -264,14 +296,14 @@ Throwable, or arrays of primitive types.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php"><a href="files/src-lib-telemetry-src-flow-telemetry-attributes.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php">Attributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string, null|<abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -281,7 +313,7 @@ Throwable, or arrays of primitive types.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$values</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, null|<abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr>&gt;</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -308,7 +340,7 @@ Throwable, or arrays of primitive types.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php"><a href="files/src-lib-telemetry-src-flow-telemetry-attributes.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php">Attributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -347,7 +379,7 @@ Throwable, or arrays of primitive types.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php"><a href="files/src-lib-telemetry-src-flow-telemetry-attributes.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php">Attributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -355,7 +387,7 @@ Throwable, or arrays of primitive types.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string, null|<abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -365,7 +397,7 @@ Throwable, or arrays of primitive types.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$values</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, null|<abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr>&gt;</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -396,7 +428,7 @@ Throwable, or arrays of primitive types.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php"><a href="files/src-lib-telemetry-src-flow-telemetry-attributes.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php">Attributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -435,7 +467,7 @@ Throwable, or arrays of primitive types.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php"><a href="files/src-lib-telemetry-src-flow-telemetry-attributes.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php">Attributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -443,7 +475,7 @@ Throwable, or arrays of primitive types.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, null|<abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -453,7 +485,7 @@ Throwable, or arrays of primitive types.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$data</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, null|<abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -484,7 +516,7 @@ Throwable, or arrays of primitive types.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php"><a href="files/src-lib-telemetry-src-flow-telemetry-attributes.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php">Attributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -492,7 +524,7 @@ Throwable, or arrays of primitive types.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -515,7 +547,7 @@ Throwable, or arrays of primitive types.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">null|array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr></span>
+        <span class="phpdocumentor-signature__response_type">null|<abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr></span>
             </section>
 
 </article>
@@ -533,7 +565,7 @@ Throwable, or arrays of primitive types.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php"><a href="files/src-lib-telemetry-src-flow-telemetry-attributes.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php">Attributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -574,6 +606,49 @@ Throwable, or arrays of primitive types.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_id">
+        id()
+        <a href="classes/Flow-Telemetry-Attributes.html#method_id" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php"><a href="files/src-lib-telemetry-src-flow-telemetry-attributes.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php">Attributes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">104</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a stable identity string from scalar attributes.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">id</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Sorts attributes by key and joins them as key=value pairs separated by pipes.
+Useful for grouping/keying metrics by attribute set.</p>
+<p>Returns empty string for empty attributes.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_isEmpty">
         isEmpty()
         <a href="classes/Flow-Telemetry-Attributes.html#method_isEmpty" class="headerlink"><i class="fas fa-link"></i></a>
@@ -582,7 +657,7 @@ Throwable, or arrays of primitive types.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php"><a href="files/src-lib-telemetry-src-flow-telemetry-attributes.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php">Attributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -621,7 +696,7 @@ Throwable, or arrays of primitive types.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php"><a href="files/src-lib-telemetry-src-flow-telemetry-attributes.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php">Attributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -673,7 +748,7 @@ attributes when keys overlap.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php"><a href="files/src-lib-telemetry-src-flow-telemetry-attributes.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php">Attributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -687,7 +762,8 @@ attributes when keys overlap.</p>
         </div>
     
         <section class="phpdocumentor-description"><p>DateTimeInterface values are converted to ISO 8601 strings.
-Throwable values are converted to structured arrays with type, message, and stacktrace.</p>
+Throwable values are converted to structured arrays with type, message, and stacktrace.
+Null values are excluded from the result.</p>
 </section>
 
     
@@ -715,7 +791,7 @@ Throwable values are converted to structured arrays with type, message, and stac
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php"><a href="files/src-lib-telemetry-src-flow-telemetry-attributes.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Attributes.php">Attributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">133</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -723,7 +799,7 @@ Throwable values are converted to structured arrays with type, message, and stac
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">with</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">with</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -742,7 +818,7 @@ Throwable values are converted to structured arrays with type, message, and stac
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$value</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -881,6 +957,7 @@ Throwable values are converted to structured arrays with type, message, and stac
                                             <li class=""><a href="classes/Flow-Telemetry-Attributes.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Attributes.html#method_get">get()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Attributes.html#method_has">has()</a></li>
+                                            <li class=""><a href="classes/Flow-Telemetry-Attributes.html#method_id">id()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Attributes.html#method_isEmpty">isEmpty()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Attributes.html#method_merge">merge()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Attributes.html#method_normalize">normalize()</a></li>

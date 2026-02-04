@@ -197,6 +197,13 @@ try {
 <dd>Get the tracer&#039;s context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Telemetry-Tracer-Tracer.html#method_flush">flush()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Flush all pending spans to the exporter.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Tracer-Tracer.html#method_instrumentationScope">instrumentationScope()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-Telemetry-InstrumentationScope.html"><abbr title="\Flow\Telemetry\InstrumentationScope">InstrumentationScope</abbr></a>    </span>
@@ -470,6 +477,45 @@ active span stack, and notifies the processor.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_flush">
+        flush()
+        <a href="classes/Flow-Telemetry-Tracer-Tracer.html#method_flush" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">117</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Flush all pending spans to the exporter.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">flush</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_instrumentationScope">
         instrumentationScope()
         <a href="classes/Flow-Telemetry-Tracer-Tracer.html#method_instrumentationScope" class="headerlink"><i class="fas fa-link"></i></a>
@@ -478,7 +524,7 @@ active span stack, and notifies the processor.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -517,7 +563,7 @@ active span stack, and notifies the processor.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
@@ -556,7 +602,7 @@ active span stack, and notifies the processor.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">133</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
@@ -595,7 +641,7 @@ active span stack, and notifies the processor.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -603,7 +649,7 @@ active span stack, and notifies the processor.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">span</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanKind.html"><abbr title="\Flow\Telemetry\Tracer\SpanKind">SpanKind</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kind</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Telemetry-Tracer-SpanKind.html#enumcase_INTERNAL"><abbr title="\Flow\Telemetry\Tracer\SpanKind::INTERNAL">SpanKind::INTERNAL</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Flow-Telemetry-Tracer-SpanLink.html"><abbr title="\Flow\Telemetry\Tracer\SpanLink">SpanLink</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$links</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-Span.html"><abbr title="\Flow\Telemetry\Tracer\Span">Span</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">span</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanKind.html"><abbr title="\Flow\Telemetry\Tracer\SpanKind">SpanKind</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kind</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Telemetry-Tracer-SpanKind.html#enumcase_INTERNAL"><abbr title="\Flow\Telemetry\Tracer\SpanKind::INTERNAL">SpanKind::INTERNAL</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;|<a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Flow-Telemetry-Tracer-SpanLink.html"><abbr title="\Flow\Telemetry\Tracer\SpanLink">SpanLink</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$links</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|false|<a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentContext</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-Span.html"><abbr title="\Flow\Telemetry\Tracer\Span">Span</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -634,7 +680,7 @@ The new span is pushed onto the stack and becomes the active span.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;|<a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Initial attributes</p>
@@ -647,6 +693,20 @@ The new span is pushed onto the stack and becomes the active span.</p>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Links to other spans</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$parentContext</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|false|<a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Explicit parent control:</p>
+<ul>
+<li>null (default): automatic detection from stack/context</li>
+<li>SpanContext: use as explicit parent</li>
+<li>false: create root span (no parent)</li>
+</ul>
 </section>
 
             </dd>
@@ -676,7 +736,7 @@ The new span is pushed onto the stack and becomes the active span.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">249</span>
+    <span class="phpdocumentor-element-found-in__line">264</span>
 
     </aside>
 
@@ -684,7 +744,7 @@ The new span is pushed onto the stack and becomes the active span.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">trace</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">callable(): <abbr title="\Flow\Telemetry\Tracer\T">T</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanKind.html"><abbr title="\Flow\Telemetry\Tracer\SpanKind">SpanKind</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kind</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Telemetry-Tracer-SpanKind.html#enumcase_INTERNAL"><abbr title="\Flow\Telemetry\Tracer\SpanKind::INTERNAL">SpanKind::INTERNAL</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Telemetry\Tracer\T">T</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">trace</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">callable(): <abbr title="\Flow\Telemetry\Tracer\T">T</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanKind.html"><abbr title="\Flow\Telemetry\Tracer\SpanKind">SpanKind</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kind</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Telemetry-Tracer-SpanKind.html#enumcase_INTERNAL"><abbr title="\Flow\Telemetry\Tracer\SpanKind::INTERNAL">SpanKind::INTERNAL</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|false|<a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentContext</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Telemetry\Tracer\T">T</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -720,6 +780,15 @@ thrown, it is recorded as an event and the status is set to error.</p>
                  = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-Telemetry-Tracer-SpanKind.html#enumcase_INTERNAL"><abbr title="\Flow\Telemetry\Tracer\SpanKind::INTERNAL">SpanKind::INTERNAL</abbr></a></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The span kind</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$parentContext</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|false|<a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Explicit parent control (see span() for details)</p>
 </section>
 
             </dd>
@@ -777,7 +846,7 @@ thrown, it is recorded as an event and the status is set to error.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">271</span>
+    <span class="phpdocumentor-element-found-in__line">286</span>
 
     </aside>
 
@@ -816,7 +885,7 @@ thrown, it is recorded as an event and the status is set to error.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">296</span>
 
     </aside>
 
@@ -972,6 +1041,7 @@ thrown, it is recorded as an event and the status is set to error.</p>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-Tracer.html#method_activeSpan">activeSpan()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-Tracer.html#method_complete">complete()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-Tracer.html#method_context">context()</a></li>
+                                            <li class=""><a href="classes/Flow-Telemetry-Tracer-Tracer.html#method_flush">flush()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-Tracer.html#method_instrumentationScope">instrumentationScope()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-Tracer.html#method_name">name()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-Tracer.html#method_processor">processor()</a></li>

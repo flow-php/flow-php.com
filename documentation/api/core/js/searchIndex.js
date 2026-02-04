@@ -801,6 +801,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_unmount"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AwithTelemetry\u0028\u0029",
+            "name": "withTelemetry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_withTelemetry"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003A\u0024sort",
             "name": "sort",
             "summary": "",
@@ -855,6 +860,146 @@ Search.appendIndex(
             "name": "DEFAULT_SORT_MEMORY_PERCENTAGE",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Sort-SortConfigBuilder.html#constant_DEFAULT_SORT_MEMORY_PERCENTAGE"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes",
+            "name": "TelemetryAttributes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_LOADER_DESTINATION_URI",
+            "name": "ATTR_LOADER_DESTINATION_URI",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_LOADER_DESTINATION_URI"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_LOADING_ROWS",
+            "name": "ATTR_LOADING_ROWS",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_LOADING_ROWS"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_TRANSFORMATION_INPUT_ROWS",
+            "name": "ATTR_TRANSFORMATION_INPUT_ROWS",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_TRANSFORMATION_INPUT_ROWS"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_TRANSFORMATION_OUTPUT_ROWS",
+            "name": "ATTR_TRANSFORMATION_OUTPUT_ROWS",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_TRANSFORMATION_OUTPUT_ROWS"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryConfig",
+            "name": "TelemetryConfig",
+            "summary": "Immutable\u0020telemetry\u0020configuration\u0020for\u0020DataFrame\u0020operations.",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryConfig.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryConfig.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryConfig\u003A\u003Adefault\u0028\u0029",
+            "name": "default",
+            "summary": "Create\u0020a\u0020default\u0020telemetry\u0020configuration\u0020with\u0020void\u0020exporters.",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryConfig.html#method_default"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryConfig\u003A\u003A\u0024telemetry",
+            "name": "telemetry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryConfig.html#property_telemetry"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryConfig\u003A\u003A\u0024options",
+            "name": "options",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryConfig.html#property_options"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext",
+            "name": "TelemetryContext",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003AdataFrameBatchProcessed\u0028\u0029",
+            "name": "dataFrameBatchProcessed",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_dataFrameBatchProcessed"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003AdataFrameCompleted\u0028\u0029",
+            "name": "dataFrameCompleted",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_dataFrameCompleted"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003AdataFrameStarted\u0028\u0029",
+            "name": "dataFrameStarted",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_dataFrameStarted"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003AloadingCompleted\u0028\u0029",
+            "name": "loadingCompleted",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_loadingCompleted"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003AloadingFailed\u0028\u0029",
+            "name": "loadingFailed",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_loadingFailed"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003AloadingStarted\u0028\u0029",
+            "name": "loadingStarted",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_loadingStarted"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003Alogger\u0028\u0029",
+            "name": "logger",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_logger"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003AtransformationCompleted\u0028\u0029",
+            "name": "transformationCompleted",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_transformationCompleted"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003AtransformationFailed\u0028\u0029",
+            "name": "transformationFailed",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_transformationFailed"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003AtransformationStarted\u0028\u0029",
+            "name": "transformationStarted",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_transformationStarted"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003A\u0024options",
+            "name": "options",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#property_options"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryOptions",
+            "name": "TelemetryOptions",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryOptions.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryOptions\u003A\u003A\u0024collectMetrics",
+            "name": "collectMetrics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryOptions.html#property_collectMetrics"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryOptions\u003A\u003A\u0024traceLoading",
+            "name": "traceLoading",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryOptions.html#property_traceLoading"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryOptions\u003A\u003A\u0024traceTransformations",
+            "name": "traceTransformations",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryOptions.html#property_traceTransformations"
         },                {
             "fqsen": "\\Flow\\ETL\\Config",
             "name": "Config",
@@ -921,6 +1066,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#method_shouldPutInputIntoRows"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\u003A\u003Aversion\u0028\u0029",
+            "name": "version",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config.html#method_version"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\u003A\u003ACACHE_DIR_ENV",
             "name": "CACHE_DIR_ENV",
             "summary": "",
@@ -940,6 +1090,11 @@ Search.appendIndex(
             "name": "sort",
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#property_sort"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\u003A\u003A\u0024telemetry",
+            "name": "telemetry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config.html#property_telemetry"
         },                {
             "fqsen": "\\Flow\\ETL\\Constraint\\SortedByConstraint",
             "name": "SortedByConstraint",
@@ -1761,6 +1916,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Dataset-Statistics-HighResolutionTime.html#method_toArray"
         },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\HighResolutionTime\u003A\u003AtoNanoseconds\u0028\u0029",
+            "name": "toNanoseconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Statistics-HighResolutionTime.html#method_toNanoseconds"
+        },                {
             "fqsen": "\\Flow\\ETL\\Dataset\\Statistics\\HighResolutionTime\u003A\u003AtoSeconds\u0028\u0029",
             "name": "toSeconds",
             "summary": "",
@@ -1820,6 +1980,11 @@ Search.appendIndex(
             "name": "data_frame",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_data_frame"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\telemetry_options\u0028\u0029",
+            "name": "telemetry_options",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_telemetry_options"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\from_rows\u0028\u0029",
             "name": "from_rows",
@@ -3351,25 +3516,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Exception-TypeAssertionException.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Execution\\ReportCollector",
-            "name": "ReportCollector",
+            "fqsen": "\\Flow\\ETL\\Execution\\StatisticsCollector",
+            "name": "StatisticsCollector",
             "summary": "",
-            "url": "classes/Flow-ETL-Execution-ReportCollector.html"
+            "url": "classes/Flow-ETL-Execution-StatisticsCollector.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Execution\\ReportCollector\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Execution\\StatisticsCollector\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Execution-ReportCollector.html#method___construct"
+            "url": "classes/Flow-ETL-Execution-StatisticsCollector.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Execution\\ReportCollector\u003A\u003Acapture\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Execution\\StatisticsCollector\u003A\u003Acapture\u0028\u0029",
             "name": "capture",
             "summary": "",
-            "url": "classes/Flow-ETL-Execution-ReportCollector.html#method_capture"
+            "url": "classes/Flow-ETL-Execution-StatisticsCollector.html#method_capture"
         },                {
-            "fqsen": "\\Flow\\ETL\\Execution\\ReportCollector\u003A\u003Areport\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Execution\\StatisticsCollector\u003A\u003Aend\u0028\u0029",
+            "name": "end",
+            "summary": "",
+            "url": "classes/Flow-ETL-Execution-StatisticsCollector.html#method_end"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Execution\\StatisticsCollector\u003A\u003Areport\u0028\u0029",
             "name": "report",
             "summary": "",
-            "url": "classes/Flow-ETL-Execution-ReportCollector.html#method_report"
+            "url": "classes/Flow-ETL-Execution-StatisticsCollector.html#method_report"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\ArrayExtractor",
             "name": "ArrayExtractor",
@@ -3950,6 +4120,11 @@ Search.appendIndex(
             "name": "streams",
             "summary": "",
             "url": "classes/Flow-ETL-FlowContext.html#method_streams"
+        },                {
+            "fqsen": "\\Flow\\ETL\\FlowContext\u003A\u003Atelemetry\u0028\u0029",
+            "name": "telemetry",
+            "summary": "",
+            "url": "classes/Flow-ETL-FlowContext.html#method_telemetry"
         },                {
             "fqsen": "\\Flow\\ETL\\FlowContext\u003A\u003A\u0024config",
             "name": "config",
@@ -8170,6 +8345,11 @@ Search.appendIndex(
             "name": "disabled",
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-Optimizer.html#method_disabled"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Pipeline\\Optimizer\u003A\u003Aoptimizations\u0028\u0029",
+            "name": "optimizations",
+            "summary": "",
+            "url": "classes/Flow-ETL-Pipeline-Optimizer.html#method_optimizations"
         },                {
             "fqsen": "\\Flow\\ETL\\Pipeline\\Optimizer\u003A\u003Aoptimize\u0028\u0029",
             "name": "optimize",
@@ -13510,6 +13690,11 @@ Search.appendIndex(
             "name": "Sort",
             "summary": "",
             "url": "namespaces/flow-etl-config-sort.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry",
+            "name": "Telemetry",
+            "summary": "",
+            "url": "namespaces/flow-etl-config-telemetry.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Constraint",
             "name": "Constraint",

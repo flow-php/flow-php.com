@@ -186,6 +186,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-FilesystemTable.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\FilesystemTable\u003A\u003Afilesystems\u0028\u0029",
+            "name": "filesystems",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-FilesystemTable.html#method_filesystems"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\FilesystemTable\u003A\u003Afor\u0028\u0029",
             "name": "for",
             "summary": "",
