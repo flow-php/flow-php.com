@@ -233,6 +233,13 @@ echo $context-&gt;traceFlags-&gt;isSampled() ? 'sampled' : 'not sampled';
 <dd>Create a SpanContext from a normalized array representation.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Telemetry-Tracer-SpanContext.html#method_getInvalid">getInvalid()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Get an invalid SpanContext with all-zero trace and span IDs.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Tracer-SpanContext.html#method_isRoot">isRoot()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -798,6 +805,47 @@ echo $context-&gt;traceFlags-&gt;isSampled() ? 'sampled' : 'not sampled';
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getInvalid">
+        getInvalid()
+        <a href="classes/Flow-Telemetry-Tracer-SpanContext.html#method_getInvalid" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanContext.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-spancontext.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanContext.php">SpanContext.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">107</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get an invalid SpanContext with all-zero trace and span IDs.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getInvalid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Returns a context representing no active trace.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_isRoot">
@@ -808,7 +856,7 @@ echo $context-&gt;traceFlags-&gt;isSampled() ? 'sampled' : 'not sampled';
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanContext.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-spancontext.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanContext.php">SpanContext.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -847,7 +895,7 @@ echo $context-&gt;traceFlags-&gt;isSampled() ? 'sampled' : 'not sampled';
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanContext.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-spancontext.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanContext.php">SpanContext.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -861,8 +909,7 @@ echo $context-&gt;traceFlags-&gt;isSampled() ? 'sampled' : 'not sampled';
         </div>
     
         <section class="phpdocumentor-description"><p>A SpanContext is valid when both the trace ID and span ID are non-zero.
-Note: SpanId and TraceId already reject all-zero values at construction,
-so any successfully created SpanContext is valid by construction.</p>
+An invalid SpanContext indicates no active trace context.</p>
 </section>
 
     
@@ -890,7 +937,7 @@ so any successfully created SpanContext is valid by construction.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanContext.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-spancontext.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanContext.php">SpanContext.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -929,7 +976,7 @@ so any successfully created SpanContext is valid by construction.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanContext.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-spancontext.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanContext.php">SpanContext.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -978,7 +1025,7 @@ so any successfully created SpanContext is valid by construction.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanContext.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-spancontext.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanContext.php">SpanContext.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -1144,6 +1191,7 @@ so any successfully created SpanContext is valid by construction.</p>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-SpanContext.html#method_create">create()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-SpanContext.html#method_createRemote">createRemote()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-SpanContext.html#method_fromArray">fromArray()</a></li>
+                                            <li class=""><a href="classes/Flow-Telemetry-Tracer-SpanContext.html#method_getInvalid">getInvalid()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-SpanContext.html#method_isRoot">isRoot()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-SpanContext.html#method_isValid">isValid()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-SpanContext.html#method_normalize">normalize()</a></li>

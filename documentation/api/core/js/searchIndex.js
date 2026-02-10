@@ -401,6 +401,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_POSTGRESQL"
         },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003APSR18_TELEMETRY_BRIDGE",
+            "name": "PSR18_TELEMETRY_BRIDGE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_PSR18_TELEMETRY_BRIDGE"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003APSR7_TELEMETRY_BRIDGE",
             "name": "PSR7_TELEMETRY_BRIDGE",
             "summary": "",
@@ -415,6 +420,11 @@ Search.appendIndex(
             "name": "SYMFONY_HTTP_FOUNDATION_TELEMETRY_BRIDGE",
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_SYMFONY_HTTP_FOUNDATION_TELEMETRY_BRIDGE"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003ASYMFONY_TELEMETRY_BUNDLE",
+            "name": "SYMFONY_TELEMETRY_BUNDLE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_SYMFONY_TELEMETRY_BUNDLE"
         },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003ATELEMETRY",
             "name": "TELEMETRY",

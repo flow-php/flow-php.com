@@ -133,7 +133,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003Acreate\u0028\u0029",
             "name": "create",
-            "summary": "Create\u0020a\u0020new\u0020Context\u0020with\u0020a\u0020fresh\u0020TraceId.",
+            "summary": "Create\u0020a\u0020new\u0020Context\u0020with\u0020an\u0020invalid\u0020TraceId\u0020\u0028all\u0020zeros\u0029.",
             "url": "classes/Flow-Telemetry-Context-Context.html#method_create"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003AfromArray\u0028\u0029",
@@ -246,6 +246,11 @@ Search.appendIndex(
             "summary": "Generate\u0020a\u0020new\u0020random\u0020SpanId.",
             "url": "classes/Flow-Telemetry-Context-SpanId.html#method_generate"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\SpanId\u003A\u003Ainvalid\u0028\u0029",
+            "name": "invalid",
+            "summary": "Get\u0020an\u0020invalid\u0020SpanId\u0020\u0028all\u0020zeros\u0029.",
+            "url": "classes/Flow-Telemetry-Context-SpanId.html#method_invalid"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\SpanId\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
             "summary": "",
@@ -255,6 +260,11 @@ Search.appendIndex(
             "name": "equals",
             "summary": "Check\u0020if\u0020this\u0020SpanId\u0020equals\u0020another\u0020SpanId.",
             "url": "classes/Flow-Telemetry-Context-SpanId.html#method_equals"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\SpanId\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "Check\u0020if\u0020this\u0020SpanId\u0020is\u0020valid\u0020\u0028not\u0020all\u0020zeros\u0029.",
+            "url": "classes/Flow-Telemetry-Context-SpanId.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\SpanId\u003A\u003Anormalize\u0028\u0029",
             "name": "normalize",
@@ -270,6 +280,11 @@ Search.appendIndex(
             "name": "toHex",
             "summary": "Get\u0020the\u0020SpanId\u0020as\u0020a\u002016\u002Dcharacter\u0020lowercase\u0020hexadecimal\u0020string.",
             "url": "classes/Flow-Telemetry-Context-SpanId.html#method_toHex"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\SpanId\u003A\u003AINVALID",
+            "name": "INVALID",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-SpanId.html#constant_INVALID"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\TraceFlags",
             "name": "TraceFlags",
@@ -381,6 +396,11 @@ Search.appendIndex(
             "summary": "Generate\u0020a\u0020new\u0020random\u0020TraceId.",
             "url": "classes/Flow-Telemetry-Context-TraceId.html#method_generate"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\TraceId\u003A\u003Ainvalid\u0028\u0029",
+            "name": "invalid",
+            "summary": "Get\u0020an\u0020invalid\u0020TraceId\u0020\u0028all\u0020zeros\u0029.",
+            "url": "classes/Flow-Telemetry-Context-TraceId.html#method_invalid"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\TraceId\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
             "summary": "",
@@ -390,6 +410,11 @@ Search.appendIndex(
             "name": "equals",
             "summary": "Check\u0020if\u0020this\u0020TraceId\u0020equals\u0020another\u0020TraceId.",
             "url": "classes/Flow-Telemetry-Context-TraceId.html#method_equals"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\TraceId\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "Check\u0020if\u0020this\u0020TraceId\u0020is\u0020valid\u0020\u0028not\u0020all\u0020zeros\u0029.",
+            "url": "classes/Flow-Telemetry-Context-TraceId.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\TraceId\u003A\u003Anormalize\u0028\u0029",
             "name": "normalize",
@@ -405,6 +430,11 @@ Search.appendIndex(
             "name": "toHex",
             "summary": "Get\u0020the\u0020TraceId\u0020as\u0020a\u002032\u002Dcharacter\u0020lowercase\u0020hexadecimal\u0020string.",
             "url": "classes/Flow-Telemetry-Context-TraceId.html#method_toHex"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\TraceId\u003A\u003AINVALID",
+            "name": "INVALID",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-TraceId.html#constant_INVALID"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\TraceState",
             "name": "TraceState",
@@ -695,6 +725,51 @@ Search.appendIndex(
             "name": "composite_propagator",
             "summary": "Create\u0020a\u0020CompositePropagator.",
             "url": "namespaces/flow-telemetry-dsl.html#function_composite_propagator"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\chain_detector\u0028\u0029",
+            "name": "chain_detector",
+            "summary": "Create\u0020a\u0020ChainDetector.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_chain_detector"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\os_detector\u0028\u0029",
+            "name": "os_detector",
+            "summary": "Create\u0020an\u0020OsDetector.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_os_detector"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\host_detector\u0028\u0029",
+            "name": "host_detector",
+            "summary": "Create\u0020a\u0020HostDetector.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_host_detector"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\process_detector\u0028\u0029",
+            "name": "process_detector",
+            "summary": "Create\u0020a\u0020ProcessDetector.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_process_detector"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\environment_detector\u0028\u0029",
+            "name": "environment_detector",
+            "summary": "Create\u0020an\u0020EnvironmentDetector.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_environment_detector"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\composer_detector\u0028\u0029",
+            "name": "composer_detector",
+            "summary": "Create\u0020a\u0020ComposerDetector.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_composer_detector"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\manual_detector\u0028\u0029",
+            "name": "manual_detector",
+            "summary": "Create\u0020a\u0020ManualDetector.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_manual_detector"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\caching_detector\u0028\u0029",
+            "name": "caching_detector",
+            "summary": "Create\u0020a\u0020CachingDetector.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_caching_detector"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\resource_detector\u0028\u0029",
+            "name": "resource_detector",
+            "summary": "Create\u0020a\u0020resource\u0020detector\u0020chain.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_resource_detector"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Exception\\Exception",
             "name": "Exception",
@@ -1886,6 +1961,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Meter-TimeUnit.html#enumcase_SECONDS"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\PackageVersion",
+            "name": "PackageVersion",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-PackageVersion.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\PackageVersion\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-PackageVersion.html#method_get"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\ArrayCarrier",
             "name": "ArrayCarrier",
             "summary": "Carrier\u0020backed\u0020by\u0020an\u0020associative\u0020array.",
@@ -2591,6 +2676,321 @@ Search.appendIndex(
             "summary": "Called\u0020when\u0020a\u0020span\u0020starts.",
             "url": "classes/Flow-Telemetry-Provider-Void-VoidSpanProcessor.html#method_onStart"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ContainerAttribute",
+            "name": "ContainerAttribute",
+            "summary": "Container\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ContainerAttribute.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ContainerAttribute\u003A\u003ACOMMAND",
+            "name": "COMMAND",
+            "summary": "The\u0020command\u0020used\u0020to\u0020run\u0020the\u0020container.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ContainerAttribute.html#enumcase_COMMAND"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ContainerAttribute\u003A\u003ACOMMAND_ARGS",
+            "name": "COMMAND_ARGS",
+            "summary": "All\u0020the\u0020command\u0020arguments\u0020\u0028including\u0020the\u0020command\/executable\u0029\u0020as\u0020received.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ContainerAttribute.html#enumcase_COMMAND_ARGS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ContainerAttribute\u003A\u003ACOMMAND_LINE",
+            "name": "COMMAND_LINE",
+            "summary": "The\u0020full\u0020command\u0020run\u0020by\u0020the\u0020container.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ContainerAttribute.html#enumcase_COMMAND_LINE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ContainerAttribute\u003A\u003AID",
+            "name": "ID",
+            "summary": "Container\u0020ID.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ContainerAttribute.html#enumcase_ID"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ContainerAttribute\u003A\u003AIMAGE_ID",
+            "name": "IMAGE_ID",
+            "summary": "Container\u0020image\u0020ID.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ContainerAttribute.html#enumcase_IMAGE_ID"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ContainerAttribute\u003A\u003AIMAGE_NAME",
+            "name": "IMAGE_NAME",
+            "summary": "Name\u0020of\u0020the\u0020image\u0020the\u0020container\u0020was\u0020built\u0020on.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ContainerAttribute.html#enumcase_IMAGE_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ContainerAttribute\u003A\u003AIMAGE_TAG",
+            "name": "IMAGE_TAG",
+            "summary": "Container\u0020image\u0020tag.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ContainerAttribute.html#enumcase_IMAGE_TAG"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ContainerAttribute\u003A\u003ANAME",
+            "name": "NAME",
+            "summary": "Container\u0020name\u0020used\u0020by\u0020container\u0020runtime.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ContainerAttribute.html#enumcase_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ContainerAttribute\u003A\u003ARUNTIME",
+            "name": "RUNTIME",
+            "summary": "The\u0020container\u0020runtime\u0020managing\u0020this\u0020container.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ContainerAttribute.html#enumcase_RUNTIME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\DeploymentAttribute",
+            "name": "DeploymentAttribute",
+            "summary": "Deployment\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-DeploymentAttribute.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\DeploymentAttribute\u003A\u003AENVIRONMENT_NAME",
+            "name": "ENVIRONMENT_NAME",
+            "summary": "Name\u0020of\u0020the\u0020deployment\u0020environment.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-DeploymentAttribute.html#enumcase_ENVIRONMENT_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\HostAttribute",
+            "name": "HostAttribute",
+            "summary": "Host\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-HostAttribute.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\HostAttribute\u003A\u003AARCH",
+            "name": "ARCH",
+            "summary": "The\u0020CPU\u0020architecture\u0020the\u0020host\u0020system\u0020is\u0020running\u0020on.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-HostAttribute.html#enumcase_ARCH"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\HostAttribute\u003A\u003AID",
+            "name": "ID",
+            "summary": "Unique\u0020host\u0020ID.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-HostAttribute.html#enumcase_ID"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\HostAttribute\u003A\u003AIP",
+            "name": "IP",
+            "summary": "Available\u0020IP\u0020addresses\u0020of\u0020the\u0020host.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-HostAttribute.html#enumcase_IP"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\HostAttribute\u003A\u003AMAC",
+            "name": "MAC",
+            "summary": "Available\u0020MAC\u0020addresses\u0020of\u0020the\u0020host.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-HostAttribute.html#enumcase_MAC"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\HostAttribute\u003A\u003ANAME",
+            "name": "NAME",
+            "summary": "Name\u0020of\u0020the\u0020host.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-HostAttribute.html#enumcase_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\HostAttribute\u003A\u003ATYPE",
+            "name": "TYPE",
+            "summary": "Type\u0020of\u0020host.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-HostAttribute.html#enumcase_TYPE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\OsAttribute",
+            "name": "OsAttribute",
+            "summary": "Operating\u0020system\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-OsAttribute.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\OsAttribute\u003A\u003ABUILD_ID",
+            "name": "BUILD_ID",
+            "summary": "Unique\u0020identifier\u0020for\u0020a\u0020particular\u0020build\u0020of\u0020the\u0020operating\u0020system.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-OsAttribute.html#enumcase_BUILD_ID"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\OsAttribute\u003A\u003ADESCRIPTION",
+            "name": "DESCRIPTION",
+            "summary": "Human\u002Dreadable\u0020description\u0020of\u0020the\u0020OS.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-OsAttribute.html#enumcase_DESCRIPTION"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\OsAttribute\u003A\u003ANAME",
+            "name": "NAME",
+            "summary": "Human\u002Dreadable\u0020name\u0020of\u0020the\u0020OS.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-OsAttribute.html#enumcase_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\OsAttribute\u003A\u003ATYPE",
+            "name": "TYPE",
+            "summary": "Operating\u0020system\u0020type.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-OsAttribute.html#enumcase_TYPE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\OsAttribute\u003A\u003AVERSION",
+            "name": "VERSION",
+            "summary": "Version\u0020string\u0020of\u0020the\u0020operating\u0020system.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-OsAttribute.html#enumcase_VERSION"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute",
+            "name": "ProcessAttribute",
+            "summary": "Process\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ProcessAttribute.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute\u003A\u003ACOMMAND",
+            "name": "COMMAND",
+            "summary": "The\u0020command\u0020used\u0020to\u0020launch\u0020the\u0020process.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ProcessAttribute.html#enumcase_COMMAND"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute\u003A\u003ACOMMAND_ARGS",
+            "name": "COMMAND_ARGS",
+            "summary": "All\u0020the\u0020command\u0020arguments\u0020\u0028including\u0020the\u0020command\/executable\u0029\u0020as\u0020received.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ProcessAttribute.html#enumcase_COMMAND_ARGS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute\u003A\u003ACOMMAND_LINE",
+            "name": "COMMAND_LINE",
+            "summary": "The\u0020full\u0020command\u0020line\u0020as\u0020a\u0020single\u0020string.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ProcessAttribute.html#enumcase_COMMAND_LINE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute\u003A\u003AEXECUTABLE_NAME",
+            "name": "EXECUTABLE_NAME",
+            "summary": "The\u0020name\u0020of\u0020the\u0020process\u0020executable.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ProcessAttribute.html#enumcase_EXECUTABLE_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute\u003A\u003AEXECUTABLE_PATH",
+            "name": "EXECUTABLE_PATH",
+            "summary": "The\u0020full\u0020path\u0020to\u0020the\u0020process\u0020executable.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ProcessAttribute.html#enumcase_EXECUTABLE_PATH"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute\u003A\u003AOWNER",
+            "name": "OWNER",
+            "summary": "The\u0020username\u0020of\u0020the\u0020user\u0020that\u0020owns\u0020the\u0020process.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ProcessAttribute.html#enumcase_OWNER"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute\u003A\u003APARENT_PID",
+            "name": "PARENT_PID",
+            "summary": "Parent\u0020process\u0020ID\u0020\u0028PID\u0029.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ProcessAttribute.html#enumcase_PARENT_PID"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute\u003A\u003APID",
+            "name": "PID",
+            "summary": "Process\u0020ID\u0020\u0028PID\u0029.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ProcessAttribute.html#enumcase_PID"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute\u003A\u003ARUNTIME_DESCRIPTION",
+            "name": "RUNTIME_DESCRIPTION",
+            "summary": "An\u0020additional\u0020description\u0020about\u0020the\u0020runtime.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ProcessAttribute.html#enumcase_RUNTIME_DESCRIPTION"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute\u003A\u003ARUNTIME_NAME",
+            "name": "RUNTIME_NAME",
+            "summary": "The\u0020name\u0020of\u0020the\u0020runtime\u0020of\u0020this\u0020process.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ProcessAttribute.html#enumcase_RUNTIME_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute\u003A\u003ARUNTIME_VERSION",
+            "name": "RUNTIME_VERSION",
+            "summary": "The\u0020version\u0020of\u0020the\u0020runtime.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ProcessAttribute.html#enumcase_RUNTIME_VERSION"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ServiceAttribute",
+            "name": "ServiceAttribute",
+            "summary": "Service\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ServiceAttribute.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ServiceAttribute\u003A\u003AINSTANCE_ID",
+            "name": "INSTANCE_ID",
+            "summary": "The\u0020string\u0020ID\u0020of\u0020the\u0020service\u0020instance.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ServiceAttribute.html#enumcase_INSTANCE_ID"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ServiceAttribute\u003A\u003ANAME",
+            "name": "NAME",
+            "summary": "Logical\u0020name\u0020of\u0020the\u0020service.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ServiceAttribute.html#enumcase_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ServiceAttribute\u003A\u003ANAMESPACE",
+            "name": "NAMESPACE",
+            "summary": "A\u0020namespace\u0020for\u0020service.name.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ServiceAttribute.html#enumcase_NAMESPACE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ServiceAttribute\u003A\u003AVERSION",
+            "name": "VERSION",
+            "summary": "The\u0020version\u0020string\u0020of\u0020the\u0020service\u0020API\u0020or\u0020implementation.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ServiceAttribute.html#enumcase_VERSION"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\CachingDetector",
+            "name": "CachingDetector",
+            "summary": "Decorator\u0020that\u0020caches\u0020resource\u0020detection\u0020results\u0020to\u0020a\u0020file.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-CachingDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\CachingDetector\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Resource-Detector-CachingDetector.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\CachingDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-CachingDetector.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ChainDetector",
+            "name": "ChainDetector",
+            "summary": "Combines\u0020multiple\u0020resource\u0020detectors\u0020into\u0020a\u0020chain.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-ChainDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ChainDetector\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Resource-Detector-ChainDetector.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ChainDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-ChainDetector.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ComposerDetector",
+            "name": "ComposerDetector",
+            "summary": "Detects\u0020service\u0020information\u0020from\u0020Composer\u0027s\u0020InstalledVersions.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-ComposerDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ComposerDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-ComposerDetector.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\EnvironmentDetector",
+            "name": "EnvironmentDetector",
+            "summary": "Detects\u0020resource\u0020attributes\u0020from\u0020environment\u0020variables.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-EnvironmentDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\EnvironmentDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-EnvironmentDetector.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\HostDetector",
+            "name": "HostDetector",
+            "summary": "Detects\u0020host\u0020information.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-HostDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\HostDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-HostDetector.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ManualDetector",
+            "name": "ManualDetector",
+            "summary": "Detector\u0020that\u0020returns\u0020manually\u0020specified\u0020resource\u0020attributes.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-ManualDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ManualDetector\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Resource-Detector-ManualDetector.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ManualDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-ManualDetector.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\OsDetector",
+            "name": "OsDetector",
+            "summary": "Detects\u0020operating\u0020system\u0020information.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-OsDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\OsDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-OsDetector.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ProcessDetector",
+            "name": "ProcessDetector",
+            "summary": "Detects\u0020process\u0020information.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-ProcessDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ProcessDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-ProcessDetector.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\ResourceDetector",
+            "name": "ResourceDetector",
+            "summary": "Interface\u0020for\u0020detecting\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
+            "url": "classes/Flow-Telemetry-Resource-ResourceDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\ResourceDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
+            "url": "classes/Flow-Telemetry-Resource-ResourceDetector.html#method_detect"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Resource",
             "name": "Resource",
             "summary": "Entity\u0020metadata\u0020attached\u0020to\u0020all\u0020telemetry\u0020signals.",
@@ -3176,6 +3576,11 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020SpanContext\u0020from\u0020a\u0020normalized\u0020array\u0020representation.",
             "url": "classes/Flow-Telemetry-Tracer-SpanContext.html#method_fromArray"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanContext\u003A\u003AgetInvalid\u0028\u0029",
+            "name": "getInvalid",
+            "summary": "Get\u0020an\u0020invalid\u0020SpanContext\u0020with\u0020all\u002Dzero\u0020trace\u0020and\u0020span\u0020IDs.",
+            "url": "classes/Flow-Telemetry-Tracer-SpanContext.html#method_getInvalid"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanContext\u003A\u003AisRoot\u0028\u0029",
             "name": "isRoot",
             "summary": "Check\u0020if\u0020this\u0020is\u0020a\u0020root\u0020span\u0020\u0028no\u0020parent\u0029.",
@@ -3720,6 +4125,21 @@ Search.appendIndex(
             "name": "Void",
             "summary": "",
             "url": "namespaces/flow-telemetry-provider-void.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute",
+            "name": "Attribute",
+            "summary": "",
+            "url": "namespaces/flow-telemetry-resource-attribute.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector",
+            "name": "Detector",
+            "summary": "",
+            "url": "namespaces/flow-telemetry-resource-detector.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource",
+            "name": "Resource",
+            "summary": "",
+            "url": "namespaces/flow-telemetry-resource.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Serializer",
             "name": "Serializer",

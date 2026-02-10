@@ -44,7 +44,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/syntax_highlight_controller.js": {
-        "path": "\/assets\/controllers\/syntax_highlight_controller-962ec734ce23689f526d17bfce5fbec3.js",
+        "path": "\/assets\/controllers\/syntax_highlight_controller-100481964fda5d8851adf00323b7f397.js",
         "type": "js"
     },
     "\/assets\/prismjs\/themes\/prism-flow.css": {
@@ -108,7 +108,7 @@
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dsl.js": {
-        "path": "\/assets\/codemirror\/completions\/dsl-c546987b444295388a569ffcf84fc4b4.js",
+        "path": "\/assets\/codemirror\/completions\/dsl-6a3fb1309ec7b15855150a02deebbec4.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dataframe.js": {
@@ -201,6 +201,10 @@
     },
     "prismjs\/components\/prism-csv.min.js": {
         "path": "\/assets\/vendor\/prismjs\/components\/prism-csv.min-f989d6f69adc8b0a3abb4cc424554e21.js",
+        "type": "js"
+    },
+    "prismjs\/components\/prism-yaml.min.js": {
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-yaml.min-8e645e1cfd62f2be3e0aaee808c9f82e.js",
         "type": "js"
     },
     "@panzoom\/panzoom": {

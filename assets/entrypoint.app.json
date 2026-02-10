@@ -36,6 +36,7 @@
     "prismjs\/components\/prism-bash.min.js",
     "prismjs\/components\/prism-json.min.js",
     "prismjs\/components\/prism-csv.min.js",
+    "prismjs\/components\/prism-yaml.min.js",
     "clipboard",
     "codemirror",
     "@codemirror\/state",

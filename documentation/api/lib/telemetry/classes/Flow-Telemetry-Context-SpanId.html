@@ -125,7 +125,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-spanid.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php">SpanId.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -133,10 +133,14 @@
 
 
     <section class="phpdocumentor-description"><p>SpanIds uniquely identify a span within a trace.
-All-zero SpanIds are rejected at construction time per W3C spec.</p>
+An all-zero SpanId is considered &quot;invalid&quot; and indicates no active span.</p>
 <p>Example usage:</p>
 <pre class="prettyprint"><code class="language-php">$spanId = SpanId::generate();
 echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
+
+// Invalid span ID (all zeros)
+$invalid = SpanId::invalid();
+echo $invalid-&gt;isValid(); // false
 </code></pre>
 </section>
 
@@ -157,6 +161,19 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
 
 
 
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Flow-Telemetry-Context-SpanId.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Telemetry-Context-SpanId.html#constant_INVALID">INVALID</a>
+    <span>
+        &nbsp;= &#039;0000000000000000&#039;                            </span>
+</dt>
+
+    </dl>
 
 
 
@@ -208,6 +225,20 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
 <dd>Generate a new random SpanId.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Telemetry-Context-SpanId.html#method_invalid">invalid()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Get an invalid SpanId (all zeros).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Telemetry-Context-SpanId.html#method_isValid">isValid()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Check if this SpanId is valid (not all zeros).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Context-SpanId.html#method_normalize">normalize()</a>
     <span>
                                 &nbsp;: array{hex: string}    </span>
@@ -233,6 +264,43 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Flow-Telemetry-Context-SpanId.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_INVALID">
+        INVALID
+        <a href="classes/Flow-Telemetry-Context-SpanId.html#constant_INVALID" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-spanid.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php">SpanId.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">25</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">INVALID</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;0000000000000000&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+            </section>
 
         
 
@@ -256,7 +324,7 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-spanid.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php">SpanId.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -294,7 +362,7 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-spanid.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php">SpanId.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -343,7 +411,7 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-spanid.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php">SpanId.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -411,7 +479,7 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-spanid.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php">SpanId.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -451,7 +519,7 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
                                                             
-                                                 <section class="phpdocumentor-description"><p>if the byte string is not exactly 8 bytes or is all zeros</p>
+                                                 <section class="phpdocumentor-description"><p>if the byte string is not exactly 8 bytes</p>
 </section>
 
                                     </dd>
@@ -479,7 +547,7 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-spanid.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php">SpanId.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -519,7 +587,7 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
                                                             
-                                                 <section class="phpdocumentor-description"><p>if the hex string is invalid or represents all zeros</p>
+                                                 <section class="phpdocumentor-description"><p>if the hex string is invalid</p>
 </section>
 
                                     </dd>
@@ -547,7 +615,7 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-spanid.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php">SpanId.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -576,6 +644,88 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_invalid">
+        invalid()
+        <a href="classes/Flow-Telemetry-Context-SpanId.html#method_invalid" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-spanid.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php">SpanId.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">111</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get an invalid SpanId (all zeros).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">invalid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Invalid SpanIds indicate no active span context.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isValid">
+        isValid()
+        <a href="classes/Flow-Telemetry-Context-SpanId.html#method_isValid" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-spanid.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php">SpanId.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">134</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Check if this SpanId is valid (not all zeros).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isValid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>An all-zero SpanId indicates no active span context.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_normalize">
@@ -586,7 +736,7 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-spanid.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php">SpanId.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -625,7 +775,7 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-spanid.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php">SpanId.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -664,7 +814,7 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-spanid.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/SpanId.php">SpanId.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">160</span>
 
     </aside>
 
@@ -796,9 +946,16 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Flow-Telemetry-Context-SpanId.html#toc-constants">Constants</a></li>
                                                                                 <li><a href="classes/Flow-Telemetry-Context-SpanId.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-Telemetry-Context-SpanId.html#constant_INVALID">INVALID</a></li>
+                                            </ul>
+                </li>
             
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
@@ -810,6 +967,8 @@ echo $spanId-&gt;toHex(); // &quot;00f067aa0ba902b7&quot;
                                             <li class=""><a href="classes/Flow-Telemetry-Context-SpanId.html#method_fromBytes">fromBytes()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Context-SpanId.html#method_fromHex">fromHex()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Context-SpanId.html#method_generate">generate()</a></li>
+                                            <li class=""><a href="classes/Flow-Telemetry-Context-SpanId.html#method_invalid">invalid()</a></li>
+                                            <li class=""><a href="classes/Flow-Telemetry-Context-SpanId.html#method_isValid">isValid()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Context-SpanId.html#method_normalize">normalize()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Context-SpanId.html#method_toBytes">toBytes()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Context-SpanId.html#method_toHex">toHex()</a></li>

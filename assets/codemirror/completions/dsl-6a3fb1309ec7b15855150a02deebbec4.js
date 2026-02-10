@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 684
+ * Total functions: 694
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -1122,6 +1122,24 @@ const dslFunctions = [
         apply: snippet("\\Flow\\PostgreSql\\DSL\\bulk_insert(" + "$" + "{" + "1:table" + "}" + ", " + "$" + "{" + "2:columns" + "}" + ", " + "$" + "{" + "3:rowCount" + "}" + ")"),
         boost: 10
     },        {
+        label: "caching_detector",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">caching_detector</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">ResourceDetector</span> <span class=\"fn-param\">$detector</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">string</span> <span class=\"fn-param\">$cachePath</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">CachingDetector</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a CachingDetector.<br>Wraps another detector and caches its results to a file. On subsequent<br>calls, returns the cached resource instead of running detection again.<br>@param ResourceDetector $detector The detector to wrap<br>@param null|string $cachePath Cache file path (default: sys_get_temp_dir()/flow_telemetry_resource.cache)
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\caching_detector(" + "$" + "{" + "1:detector" + "}" + ", " + "$" + "{" + "2:cachePath" + "}" + ")"),
+        boost: 10
+    },        {
         label: "call",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -1225,6 +1243,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\cast(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:dataType" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "chain_detector",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">chain_detector</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">ResourceDetector</span> <span class=\"fn-param\">$detectors</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ChainDetector</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a ChainDetector.<br>Combines multiple resource detectors into a chain. Detectors are executed<br>in order and their results are merged. Later detectors take precedence<br>over earlier ones when there are conflicting attribute keys.<br>@param ResourceDetector ...$detectors The detectors to chain
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\chain_detector(" + "$" + "{" + "1:detectors" + "}" + ")"),
         boost: 10
     },        {
         label: "check_constraint",
@@ -1600,6 +1636,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\ETL\\DSL\\compare_entries_by_type_desc(" + "$" + "{" + "1:priorities" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "composer_detector",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">composer_detector</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ComposerDetector</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a ComposerDetector.<br>Detects service.name and service.version from Composer\'s InstalledVersions<br>using the root package information.
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\composer_detector()"),
         boost: 10
     },        {
         label: "composite_propagator",
@@ -3273,6 +3327,24 @@ const dslFunctions = [
         apply: snippet("\\Flow\\ETL\\DSL\\enum_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:type" + "}" + ", " + "$" + "{" + "3:nullable" + "}" + ", " + "$" + "{" + "4:metadata" + "}" + ")"),
         boost: 10
     },        {
+        label: "environment_detector",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">environment_detector</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">EnvironmentDetector</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create an EnvironmentDetector.<br>Detects resource attributes from OpenTelemetry standard environment variables:<br>- OTEL_SERVICE_NAME: Sets service.name attribute<br>- OTEL_RESOURCE_ATTRIBUTES: Sets additional attributes in key=value,key2=value2 format
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\environment_detector()"),
+        boost: 10
+    },        {
         label: "eq",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4455,6 +4527,24 @@ const dslFunctions = [
         apply: snippet("\\Flow\\ETL\\Adapter\\Elasticsearch\\hash_id_factory(" + "$" + "{" + "1:entry_names" + "}" + ")"),
         boost: 10
     },        {
+        label: "host_detector",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">host_detector</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">HostDetector</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a HostDetector.<br>Detects host information including host.name, host.arch, and host.id<br>(from /etc/machine-id on Linux or IOPlatformUUID on macOS).
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\host_detector()"),
+        boost: 10
+    },        {
         label: "html_element_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -5457,6 +5547,24 @@ const dslFunctions = [
         apply: snippet("\\Flow\\PostgreSql\\DSL\\lte(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
     },        {
+        label: "manual_detector",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">manual_detector</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">array</span> <span class=\"fn-param\">$attributes</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ManualDetector</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a ManualDetector.<br>Returns manually specified resource attributes. Use this when you need<br>to set attributes explicitly rather than detecting them automatically.<br>@param array<string, array<bool|float|int|string>|bool|float|int|string> $attributes Resource attributes
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\manual_detector(" + "$" + "{" + "1:attributes" + "}" + ")"),
+        boost: 10
+    },        {
         label: "map_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -6022,6 +6130,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\order_by(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:direction" + "}" + ", " + "$" + "{" + "3:nulls" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "os_detector",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">os_detector</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">OsDetector</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create an OsDetector.<br>Detects operating system information including os.type, os.name, os.version,<br>and os.description using PHP\'s php_uname() function.
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\os_detector()"),
         boost: 10
     },        {
         label: "otlp_curl_options",
@@ -7392,6 +7518,24 @@ const dslFunctions = [
         apply: snippet("\\Flow\\ETL\\DSL\\print_schema(" + "$" + "{" + "1:schema" + "}" + ", " + "$" + "{" + "2:formatter" + "}" + ")"),
         boost: 10
     },        {
+        label: "process_detector",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">process_detector</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ProcessDetector</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a ProcessDetector.<br>Detects process information including process.pid, process.executable.path,<br>process.runtime.name (PHP), process.runtime.version, process.command,<br>and process.owner (on POSIX systems).
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\process_detector()"),
+        boost: 10
+    },        {
         label: "propagation_context",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -7453,6 +7597,21 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\Bridge\\Psr7\\Telemetry\\DSL\\psr7_response_carrier(" + "$" + "{" + "1:response" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "psr18_traceable_client",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">psr18_traceable_client</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">ClientInterface</span> <span class=\"fn-param\">$client</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Telemetry</span> <span class=\"fn-param\">$telemetry</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PSR18TraceableClient</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Bridge\\Psr18\\Telemetry\\DSL\\psr18_traceable_client(" + "$" + "{" + "1:client" + "}" + ", " + "$" + "{" + "2:telemetry" + "}" + ")"),
         boost: 10
     },        {
         label: "random_string",
@@ -7945,6 +8104,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\resource(" + "$" + "{" + "1:attributes" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "resource_detector",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">resource_detector</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">array</span> <span class=\"fn-param\">$detectors</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ChainDetector</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a resource detector chain.<br>When no detectors are provided, uses the default detector chain:<br>1. OsDetector - Operating system information<br>2. HostDetector - Host information<br>3. ProcessDetector - Process information<br>4. ComposerDetector - Service information from Composer<br>5. EnvironmentDetector - Environment variable overrides (highest precedence)<br>When detectors are provided, uses only those detectors.<br>@param array<ResourceDetector> $detectors Optional custom detectors (empty = use defaults)
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\resource_detector(" + "$" + "{" + "1:detectors" + "}" + ")"),
         boost: 10
     },        {
         label: "retry_any_throwable",

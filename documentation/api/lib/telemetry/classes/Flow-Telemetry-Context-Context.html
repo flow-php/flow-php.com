@@ -197,7 +197,7 @@ echo $context-&gt;traceId-&gt;toHex();
     <span>
                                 &nbsp;: self    </span>
 </dt>
-<dd>Create a new Context with a fresh TraceId.</dd>
+<dd>Create a new Context with an invalid TraceId (all zeros).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_fromArray">fromArray()</a>
@@ -408,7 +408,7 @@ echo $context-&gt;traceId-&gt;toHex();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -451,11 +451,11 @@ echo $context-&gt;traceId-&gt;toHex();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create a new Context with a fresh TraceId.</p>
+        <p class="phpdocumentor-summary">Create a new Context with an invalid TraceId (all zeros).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -464,7 +464,11 @@ echo $context-&gt;traceId-&gt;toHex();
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Use this when you want to create a context without starting a trace.
+Logs and spans emitted in this context will not have a trace ID until
+a trace is explicitly started.</p>
+</section>
+
     
     
 
@@ -490,7 +494,7 @@ echo $context-&gt;traceId-&gt;toHex();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -541,7 +545,7 @@ echo $context-&gt;traceId-&gt;toHex();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -583,7 +587,7 @@ in this context would be a root span.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -622,7 +626,7 @@ in this context would be a root span.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -677,7 +681,7 @@ in this context would be a root span.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -732,7 +736,7 @@ in this context would be a root span.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -775,7 +779,7 @@ in this context would be a root span.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
