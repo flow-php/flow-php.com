@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 694
+ * Total functions: 697
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -3562,6 +3562,42 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\ETL\\DSL\\filesystem_cache(" + "$" + "{" + "1:cache_dir" + "}" + ", " + "$" + "{" + "2:filesystem" + "}" + ", " + "$" + "{" + "3:serializer" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "filesystem_telemetry_config",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">filesystem_telemetry_config</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Telemetry</span> <span class=\"fn-param\">$telemetry</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ClockInterface</span> <span class=\"fn-param\">$clock</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">FilesystemTelemetryOptions</span> <span class=\"fn-param\">$options</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">FilesystemTelemetryConfig</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a telemetry configuration for the filesystem.
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Filesystem\\DSL\\filesystem_telemetry_config(" + "$" + "{" + "1:telemetry" + "}" + ", " + "$" + "{" + "2:clock" + "}" + ", " + "$" + "{" + "3:options" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "filesystem_telemetry_options",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">filesystem_telemetry_options</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">bool</span> <span class=\"fn-param\">$traceStreams</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">true</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$collectMetrics</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">true</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">FilesystemTelemetryOptions</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create options for filesystem telemetry.<br>@param bool $traceStreams Create a single span per stream lifecycle (default: ON)<br>@param bool $collectMetrics Collect metrics for bytes/operation counts (default: ON)
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Filesystem\\DSL\\filesystem_telemetry_options(" + "$" + "{" + "1:traceStreams" + "}" + ", " + "$" + "{" + "2:collectMetrics" + "}" + ")"),
         boost: 10
     },        {
         label: "first",
@@ -9778,12 +9814,12 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">telemetry_options</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">bool</span> <span class=\"fn-param\">$trace_loading</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$trace_transformations</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$collect_metrics</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TelemetryOptions</span>
+                    <span class=\"fn-name\">telemetry_options</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">bool</span> <span class=\"fn-param\">$trace_loading</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$trace_transformations</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$collect_metrics</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">FilesystemTelemetryOptions</span> <span class=\"fn-param\">$filesystem</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TelemetryOptions</span>
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\ETL\\DSL\\telemetry_options(" + "$" + "{" + "1:trace_loading" + "}" + ", " + "$" + "{" + "2:trace_transformations" + "}" + ", " + "$" + "{" + "3:collect_metrics" + "}" + ")"),
+        apply: snippet("\\Flow\\ETL\\DSL\\telemetry_options(" + "$" + "{" + "1:trace_loading" + "}" + ", " + "$" + "{" + "2:trace_transformations" + "}" + ", " + "$" + "{" + "3:collect_metrics" + "}" + ", " + "$" + "{" + "4:filesystem" + "}" + ")"),
         boost: 10
     },        {
         label: "text_search_match",
@@ -10402,6 +10438,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\XML\\to_xml(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:root_element_name" + "}" + ", " + "$" + "{" + "3:row_element_name" + "}" + ", " + "$" + "{" + "4:attribute_prefix" + "}" + ", " + "$" + "{" + "5:date_time_format" + "}" + ", " + "$" + "{" + "6:xml_writer" + "}" + ")"),
+        boost: 10
+    },        {
+        label: "traceable_filesystem",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">traceable_filesystem</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Filesystem</span> <span class=\"fn-param\">$filesystem</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">FilesystemTelemetryConfig</span> <span class=\"fn-param\">$telemetryConfig</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TraceableFilesystem</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Wrap a filesystem with telemetry tracing support.<br>All filesystem and stream operations will be traced according to the configuration.
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Filesystem\\DSL\\traceable_filesystem(" + "$" + "{" + "1:filesystem" + "}" + ", " + "$" + "{" + "2:telemetryConfig" + "}" + ")"),
         boost: 10
     },        {
         label: "tracer_provider",

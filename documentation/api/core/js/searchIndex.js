@@ -1001,6 +1001,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Telemetry-TelemetryOptions.html#property_collectMetrics"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryOptions\u003A\u003A\u0024filesystem",
+            "name": "filesystem",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryOptions.html#property_filesystem"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryOptions\u003A\u003A\u0024traceLoading",
             "name": "traceLoading",
             "summary": "",
