@@ -96,6 +96,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-SheetRange.html#method_toString"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\SheetRange\u003A\u003A\u0024endRow",
+            "name": "endRow",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-SheetRange.html#property_endRow"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\SheetRange\u003A\u003A\u0024columnRange",
             "name": "columnRange",
             "summary": "",
@@ -105,11 +110,6 @@ Search.appendIndex(
             "name": "startRow",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-SheetRange.html#property_startRow"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\SheetRange\u003A\u003A\u0024endRow",
-            "name": "endRow",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-SheetRange.html#property_endRow"
         },                {
             "fqsen": "\\",
             "name": "\\",
