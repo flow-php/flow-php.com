@@ -250,14 +250,14 @@ $counter-&gt;add(-2, ['queue.name' =&gt; 'tasks']); // Removed 2 items
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/UpDownCounter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-instrument-updowncounter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/UpDownCounter.php">UpDownCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-InstrumentationScope.html"><abbr title="\Flow\Telemetry\InstrumentationScope">InstrumentationScope</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scope</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clock</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-AggregationTemporality.html"><abbr title="\Flow\Telemetry\Meter\AggregationTemporality">AggregationTemporality</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$temporality</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Telemetry-Meter-AggregationTemporality.html#enumcase_CUMULATIVE"><abbr title="\Flow\Telemetry\Meter\AggregationTemporality::CUMULATIVE">AggregationTemporality::CUMULATIVE</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-Exemplar-ExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\ExemplarFilter">ExemplarFilter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exemplarFilter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-Exemplar-TraceBasedExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\TraceBasedExemplarFilter">TraceBasedExemplarFilter</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$description</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-InstrumentationScope.html"><abbr title="\Flow\Telemetry\InstrumentationScope">InstrumentationScope</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scope</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clock</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-AggregationTemporality.html"><abbr title="\Flow\Telemetry\Meter\AggregationTemporality">AggregationTemporality</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$temporality</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Telemetry-Meter-AggregationTemporality.html#enumcase_CUMULATIVE"><abbr title="\Flow\Telemetry\Meter\AggregationTemporality::CUMULATIVE">AggregationTemporality::CUMULATIVE</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-Exemplar-ExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\ExemplarFilter">ExemplarFilter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exemplarFilter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-Exemplar-TraceBasedExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\TraceBasedExemplarFilter">TraceBasedExemplarFilter</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricLimits.html"><abbr title="\Flow\Telemetry\Meter\MetricLimits">MetricLimits</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limits</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-MetricLimits.html"><abbr title="\Flow\Telemetry\Meter\MetricLimits">MetricLimits</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$description</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -320,6 +320,15 @@ $counter-&gt;add(-2, ['queue.name' =&gt; 'tasks']); // Removed 2 items
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$limits</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricLimits.html"><abbr title="\Flow\Telemetry\Meter\MetricLimits">MetricLimits</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-MetricLimits.html"><abbr title="\Flow\Telemetry\Meter\MetricLimits">MetricLimits</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Cardinality limits for this instrument</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$unit</span>
                 : <span class="phpdocumentor-argument-list__argument__type">null|string</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
@@ -359,7 +368,7 @@ $counter-&gt;add(-2, ['queue.name' =&gt; 'tasks']); // Removed 2 items
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/UpDownCounter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-instrument-updowncounter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/UpDownCounter.php">UpDownCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -424,7 +433,7 @@ $counter-&gt;add(-2, ['queue.name' =&gt; 'tasks']); // Removed 2 items
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/UpDownCounter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-instrument-updowncounter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/UpDownCounter.php">UpDownCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -470,7 +479,7 @@ then resets the internal aggregation state.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/UpDownCounter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-instrument-updowncounter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/UpDownCounter.php">UpDownCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -509,7 +518,7 @@ then resets the internal aggregation state.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/UpDownCounter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-instrument-updowncounter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/UpDownCounter.php">UpDownCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -548,7 +557,7 @@ then resets the internal aggregation state.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/UpDownCounter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-instrument-updowncounter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/UpDownCounter.php">UpDownCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 

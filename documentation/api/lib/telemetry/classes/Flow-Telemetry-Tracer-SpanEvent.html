@@ -154,6 +154,13 @@ such as errors, state changes, or notable occurrences.</p>
 <dd>Get the event attributes as an Attributes object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_droppedAttributeCount">droppedAttributeCount()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>Get the count of attributes that were dropped due to limits.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_fromArray">fromArray()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -170,7 +177,7 @@ such as errors, state changes, or notable occurrences.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}    </span>
+                                &nbsp;: array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, droppedAttributeCount: int}    </span>
 </dt>
 <dd>Normalize the event to an array representation for serialization.</dd>
 
@@ -276,6 +283,45 @@ such as errors, state changes, or notable occurrences.</p>
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_droppedAttributeCount">
+        droppedAttributeCount()
+        <a href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_droppedAttributeCount" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-spanevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanEvent.php">SpanEvent.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">39</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the count of attributes that were dropped due to limits.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">droppedAttributeCount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_fromArray">
@@ -294,7 +340,7 @@ such as errors, state changes, or notable occurrences.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, droppedAttributeCount?: int}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -304,7 +350,7 @@ such as errors, state changes, or notable occurrences.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$data</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, droppedAttributeCount?: int}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Normalized event data</p>
@@ -337,7 +383,7 @@ such as errors, state changes, or notable occurrences.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-spanevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanEvent.php">SpanEvent.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -376,7 +422,7 @@ such as errors, state changes, or notable occurrences.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-spanevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanEvent.php">SpanEvent.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -384,7 +430,7 @@ such as errors, state changes, or notable occurrences.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, droppedAttributeCount: int}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -397,7 +443,7 @@ such as errors, state changes, or notable occurrences.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span>
+        <span class="phpdocumentor-signature__response_type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, droppedAttributeCount: int}</span>
             </section>
 
 </article>
@@ -415,7 +461,7 @@ such as errors, state changes, or notable occurrences.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanEvent.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-spanevent.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/SpanEvent.php">SpanEvent.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -556,6 +602,7 @@ such as errors, state changes, or notable occurrences.</p>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_attributes">attributes()</a></li>
                                                     <li class=""><a href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_attributesObject">attributesObject()</a></li>
+                                                    <li class=""><a href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_droppedAttributeCount">droppedAttributeCount()</a></li>
                                                     <li class=""><a href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_fromArray">fromArray()</a></li>
                                                     <li class=""><a href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_name">name()</a></li>
                                                     <li class=""><a href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_normalize">normalize()</a></li>

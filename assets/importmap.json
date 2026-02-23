@@ -104,19 +104,19 @@
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/flow.js": {
-        "path": "\/assets\/codemirror\/completions\/flow-da7ec46f1fb045fa99ff477b5db69205.js",
+        "path": "\/assets\/codemirror\/completions\/flow-c7997ccc000acf4732769caf91350cda.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dsl.js": {
-        "path": "\/assets\/codemirror\/completions\/dsl-1fb7328e01dcf77ef7f5ae2fa44ef5d9.js",
+        "path": "\/assets\/codemirror\/completions\/dsl-0c227fbdce27e7f900fab9f45d90ee62.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dataframe.js": {
-        "path": "\/assets\/codemirror\/completions\/dataframe-a063b465eeccd6d35add721992bf081f.js",
+        "path": "\/assets\/codemirror\/completions\/dataframe-b95ce4aae1bcd877b1cbc2f0417a673b.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/scalarfunctionchain.js": {
-        "path": "\/assets\/codemirror\/completions\/scalarfunctionchain-57b0c20876bdcf39fb770ec75743e3fc.js",
+        "path": "\/assets\/codemirror\/completions\/scalarfunctionchain-1e6742cecce8b01290d87d25cd18a536.js",
         "type": "js"
     },
     "\/assets\/models\/Violation.js": {

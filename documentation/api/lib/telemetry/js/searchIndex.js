@@ -1,6 +1,16 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Flow\\Telemetry\\AttributeLimitsEnforcer",
+            "name": "AttributeLimitsEnforcer",
+            "summary": "Stateless\u0020service\u0020that\u0020enforces\u0020attribute\u0020limits\u0020per\u0020OpenTelemetry\u0020specification.",
+            "url": "classes/Flow-Telemetry-AttributeLimitsEnforcer.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\AttributeLimitsEnforcer\u003A\u003Aenforce\u0028\u0029",
+            "name": "enforce",
+            "summary": "Enforce\u0020limits\u0020on\u0020attributes.",
+            "url": "classes/Flow-Telemetry-AttributeLimitsEnforcer.html#method_enforce"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Attributes",
             "name": "Attributes",
             "summary": "Immutable\u0020container\u0020for\u0020telemetry\u0020attributes.",
@@ -186,20 +196,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Context-Context.html#property_baggage"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\ContextScope",
+            "name": "ContextScope",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-ContextScope.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\ContextScope\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-ContextScope.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\ContextScope\u003A\u003Adetach\u0028\u0029",
+            "name": "detach",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-ContextScope.html#method_detach"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\ContextScope\u003A\u003ADETACHED",
+            "name": "DETACHED",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-ContextScope.html#constant_DETACHED"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\ContextStorage",
             "name": "ContextStorage",
             "summary": "",
             "url": "classes/Flow-Telemetry-Context-ContextStorage.html"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\ContextStorage\u003A\u003Aattach\u0028\u0029",
+            "name": "attach",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-ContextStorage.html#method_attach"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\ContextStorage\u003A\u003Acurrent\u0028\u0029",
             "name": "current",
             "summary": "",
             "url": "classes/Flow-Telemetry-Context-ContextStorage.html#method_current"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Context\\ContextStorage\u003A\u003Astore\u0028\u0029",
-            "name": "store",
-            "summary": "",
-            "url": "classes/Flow-Telemetry-Context-ContextStorage.html#method_store"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\MemoryContextStorage",
             "name": "MemoryContextStorage",
@@ -211,15 +241,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Context-MemoryContextStorage.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\MemoryContextStorage\u003A\u003Aattach\u0028\u0029",
+            "name": "attach",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-MemoryContextStorage.html#method_attach"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\MemoryContextStorage\u003A\u003Acurrent\u0028\u0029",
             "name": "current",
             "summary": "",
             "url": "classes/Flow-Telemetry-Context-MemoryContextStorage.html#method_current"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Context\\MemoryContextStorage\u003A\u003Astore\u0028\u0029",
-            "name": "store",
+            "fqsen": "\\Flow\\Telemetry\\Context\\Scope",
+            "name": "Scope",
             "summary": "",
-            "url": "classes/Flow-Telemetry-Context-MemoryContextStorage.html#method_store"
+            "url": "classes/Flow-Telemetry-Context-Scope.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\Scope\u003A\u003Adetach\u0028\u0029",
+            "name": "detach",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-Scope.html#method_detach"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\SpanId",
             "name": "SpanId",
@@ -546,6 +586,21 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020SpanLink.",
             "url": "namespaces/flow-telemetry-dsl.html#function_span_link"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\span_limits\u0028\u0029",
+            "name": "span_limits",
+            "summary": "Create\u0020SpanLimits\u0020configuration.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_span_limits"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\log_record_limits\u0028\u0029",
+            "name": "log_record_limits",
+            "summary": "Create\u0020LogRecordLimits\u0020configuration.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_log_record_limits"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\metric_limits\u0028\u0029",
+            "name": "metric_limits",
+            "summary": "Create\u0020MetricLimits\u0020configuration.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_metric_limits"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\void_span_processor\u0028\u0029",
             "name": "void_span_processor",
             "summary": "Create\u0020a\u0020VoidSpanProcessor.",
@@ -771,6 +826,26 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020resource\u0020detector\u0020chain.",
             "url": "namespaces/flow-telemetry-dsl.html#function_resource_detector"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\EnforcedAttributes",
+            "name": "EnforcedAttributes",
+            "summary": "Result\u0020of\u0020enforcing\u0020limits\u0020on\u0020Attributes.",
+            "url": "classes/Flow-Telemetry-EnforcedAttributes.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\EnforcedAttributes\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-EnforcedAttributes.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\EnforcedAttributes\u003A\u003A\u0024attributes",
+            "name": "attributes",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-EnforcedAttributes.html#property_attributes"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\EnforcedAttributes\u003A\u003A\u0024droppedAttributeCount",
+            "name": "droppedAttributeCount",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-EnforcedAttributes.html#property_droppedAttributeCount"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Exception\\Exception",
             "name": "Exception",
             "summary": "",
@@ -875,6 +950,11 @@ Search.appendIndex(
             "name": "spanContext",
             "summary": "",
             "url": "classes/Flow-Telemetry-Logger-LogEntry.html#property_spanContext"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\LogEntry\u003A\u003A\u0024droppedAttributeCount",
+            "name": "droppedAttributeCount",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Logger-LogEntry.html#property_droppedAttributeCount"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogExporter",
             "name": "LogExporter",
@@ -1070,6 +1150,36 @@ Search.appendIndex(
             "name": "observedTimestamp",
             "summary": "",
             "url": "classes/Flow-Telemetry-Logger-LogRecord.html#property_observedTimestamp"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecordLimits",
+            "name": "LogRecordLimits",
+            "summary": "Configuration\u0020limits\u0020for\u0020log\u0020record\u0020data.",
+            "url": "classes/Flow-Telemetry-Logger-LogRecordLimits.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecordLimits\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Logger-LogRecordLimits.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecordLimits\u003A\u003Adefault\u0028\u0029",
+            "name": "default",
+            "summary": "Create\u0020LogRecordLimits\u0020with\u0020default\u0020values.",
+            "url": "classes/Flow-Telemetry-Logger-LogRecordLimits.html#method_default"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecordLimits\u003A\u003Aunlimited\u0028\u0029",
+            "name": "unlimited",
+            "summary": "Create\u0020LogRecordLimits\u0020with\u0020unlimited\u0020values\u0020\u0028for\u0020development\/debugging\u0029.",
+            "url": "classes/Flow-Telemetry-Logger-LogRecordLimits.html#method_unlimited"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecordLimits\u003A\u003A\u0024attributeCountLimit",
+            "name": "attributeCountLimit",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Logger-LogRecordLimits.html#property_attributeCountLimit"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecordLimits\u003A\u003A\u0024attributeValueLengthLimit",
+            "name": "attributeValueLengthLimit",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Logger-LogRecordLimits.html#property_attributeValueLengthLimit"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\BatchingLogProcessor",
             "name": "BatchingLogProcessor",
@@ -1801,6 +1911,36 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
             "url": "classes/Flow-Telemetry-Meter-MetricExporter.html#method_transports"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\MetricLimits",
+            "name": "MetricLimits",
+            "summary": "Configuration\u0020for\u0020metric\u0020cardinality\u0020limits.",
+            "url": "classes/Flow-Telemetry-Meter-MetricLimits.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\MetricLimits\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Meter-MetricLimits.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\MetricLimits\u003A\u003Adefault\u0028\u0029",
+            "name": "default",
+            "summary": "Create\u0020limits\u0020with\u0020default\u0020values.",
+            "url": "classes/Flow-Telemetry-Meter-MetricLimits.html#method_default"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\MetricLimits\u003A\u003Aunlimited\u0028\u0029",
+            "name": "unlimited",
+            "summary": "Create\u0020limits\u0020with\u0020no\u0020cardinality\u0020restrictions.",
+            "url": "classes/Flow-Telemetry-Meter-MetricLimits.html#method_unlimited"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\MetricLimits\u003A\u003AOVERFLOW_ATTRIBUTE",
+            "name": "OVERFLOW_ATTRIBUTE",
+            "summary": "Attribute\u0020key\u0020used\u0020to\u0020identify\u0020overflow\u0020aggregations.",
+            "url": "classes/Flow-Telemetry-Meter-MetricLimits.html#constant_OVERFLOW_ATTRIBUTE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\MetricLimits\u003A\u003A\u0024cardinalityLimit",
+            "name": "cardinalityLimit",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Meter-MetricLimits.html#property_cardinalityLimit"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MetricProcessor",
             "name": "MetricProcessor",
             "summary": "Interface\u0020for\u0020processing\u0020metric\u0020measurements.",
@@ -1960,6 +2100,16 @@ Search.appendIndex(
             "name": "SECONDS",
             "summary": "",
             "url": "classes/Flow-Telemetry-Meter-TimeUnit.html#enumcase_SECONDS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ObjectExtractor",
+            "name": "ObjectExtractor",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ObjectExtractor.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ObjectExtractor\u003A\u003AshortName\u0028\u0029",
+            "name": "shortName",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ObjectExtractor.html#method_shortName"
         },                {
             "fqsen": "\\Flow\\Telemetry\\PackageVersion",
             "name": "PackageVersion",
@@ -3151,6 +3301,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020event\u0020attributes\u0020as\u0020an\u0020Attributes\u0020object.",
             "url": "classes/Flow-Telemetry-Tracer-GenericEvent.html#method_attributesObject"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\GenericEvent\u003A\u003AdroppedAttributeCount\u0028\u0029",
+            "name": "droppedAttributeCount",
+            "summary": "Get\u0020the\u0020count\u0020of\u0020attributes\u0020that\u0020were\u0020dropped\u0020due\u0020to\u0020limits.",
+            "url": "classes/Flow-Telemetry-Tracer-GenericEvent.html#method_droppedAttributeCount"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\GenericEvent\u003A\u003Aname\u0028\u0029",
             "name": "name",
             "summary": "Get\u0020the\u0020event\u0020name.",
@@ -3451,6 +3606,26 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020span\u0020context.",
             "url": "classes/Flow-Telemetry-Tracer-Span.html#method_context"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003AcontextScope\u0028\u0029",
+            "name": "contextScope",
+            "summary": "Get\u0020the\u0020context\u0020scope\u0020for\u0020this\u0020span.",
+            "url": "classes/Flow-Telemetry-Tracer-Span.html#method_contextScope"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003AdroppedAttributeCount\u0028\u0029",
+            "name": "droppedAttributeCount",
+            "summary": "Get\u0020the\u0020count\u0020of\u0020attributes\u0020that\u0020were\u0020dropped\u0020due\u0020to\u0020limits.",
+            "url": "classes/Flow-Telemetry-Tracer-Span.html#method_droppedAttributeCount"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003AdroppedEventsCount\u0028\u0029",
+            "name": "droppedEventsCount",
+            "summary": "Get\u0020the\u0020count\u0020of\u0020events\u0020that\u0020were\u0020dropped\u0020due\u0020to\u0020limits.",
+            "url": "classes/Flow-Telemetry-Tracer-Span.html#method_droppedEventsCount"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003AdroppedLinksCount\u0028\u0029",
+            "name": "droppedLinksCount",
+            "summary": "Get\u0020the\u0020count\u0020of\u0020links\u0020that\u0020were\u0020dropped\u0020due\u0020to\u0020limits.",
+            "url": "classes/Flow-Telemetry-Tracer-Span.html#method_droppedLinksCount"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003Aduration\u0028\u0029",
             "name": "duration",
             "summary": "Get\u0020the\u0020span\u0020duration\u0020in\u0020milliseconds.",
@@ -3535,6 +3710,11 @@ Search.appendIndex(
             "name": "setAttributes",
             "summary": "Set\u0020multiple\u0020attributes\u0020at\u0020once.",
             "url": "classes/Flow-Telemetry-Tracer-Span.html#method_setAttributes"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003AsetContextScope\u0028\u0029",
+            "name": "setContextScope",
+            "summary": "Set\u0020the\u0020context\u0020scope\u0020for\u0020this\u0020span.",
+            "url": "classes/Flow-Telemetry-Tracer-Span.html#method_setContextScope"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003AsetStatus\u0028\u0029",
             "name": "setStatus",
@@ -3655,6 +3835,11 @@ Search.appendIndex(
             "name": "attributesObject",
             "summary": "Get\u0020the\u0020event\u0020attributes\u0020as\u0020an\u0020Attributes\u0020object.",
             "url": "classes/Flow-Telemetry-Tracer-SpanEvent.html#method_attributesObject"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanEvent\u003A\u003AdroppedAttributeCount\u0028\u0029",
+            "name": "droppedAttributeCount",
+            "summary": "Get\u0020the\u0020count\u0020of\u0020attributes\u0020that\u0020were\u0020dropped\u0020due\u0020to\u0020limits.",
+            "url": "classes/Flow-Telemetry-Tracer-SpanEvent.html#method_droppedAttributeCount"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanEvent\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -3800,6 +3985,11 @@ Search.appendIndex(
             "name": "attributes",
             "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-SpanLink.html#property_attributes"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanLink\u003A\u003A\u0024droppedAttributeCount",
+            "name": "droppedAttributeCount",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Tracer-SpanLink.html#property_droppedAttributeCount"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanProcessor",
             "name": "SpanProcessor",

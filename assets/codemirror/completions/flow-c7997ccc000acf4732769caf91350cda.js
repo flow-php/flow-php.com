@@ -15,7 +15,7 @@ const flowFunctions = [
 
 // Flow methods
 const flowMethods = [
-        {
+                {
         label: "setUp",
         type: "method",
         detail: "Flow\\\\ETL\\\\Flow",
@@ -30,7 +30,7 @@ const flowMethods = [
         },
         apply: snippet("setUp(" + "$" + "{" + "1:config" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "extract",
         type: "method",
         detail: "Flow\\\\ETL\\\\Flow",
@@ -45,7 +45,7 @@ const flowMethods = [
         },
         apply: snippet("extract(" + "$" + "{" + "1:extractor" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from",
         type: "method",
         detail: "Flow\\\\ETL\\\\Flow",
@@ -60,7 +60,7 @@ const flowMethods = [
         },
         apply: snippet("from(" + "$" + "{" + "1:extractor" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "process",
         type: "method",
         detail: "Flow\\\\ETL\\\\Flow",
@@ -75,7 +75,7 @@ const flowMethods = [
         },
         apply: snippet("process(" + "$" + "{" + "1:rows" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "read",
         type: "method",
         detail: "Flow\\\\ETL\\\\Flow",

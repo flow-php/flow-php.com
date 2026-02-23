@@ -250,14 +250,14 @@ $gauge-&gt;record(1024 * 1024 * 480, ['host' =&gt; 'server-1']); // Replaces pre
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/Gauge.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-instrument-gauge.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/Gauge.php">Gauge.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-InstrumentationScope.html"><abbr title="\Flow\Telemetry\InstrumentationScope">InstrumentationScope</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scope</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clock</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-Exemplar-ExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\ExemplarFilter">ExemplarFilter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exemplarFilter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-Exemplar-TraceBasedExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\TraceBasedExemplarFilter">TraceBasedExemplarFilter</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$description</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-InstrumentationScope.html"><abbr title="\Flow\Telemetry\InstrumentationScope">InstrumentationScope</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scope</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clock</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-Exemplar-ExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\ExemplarFilter">ExemplarFilter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exemplarFilter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-Exemplar-TraceBasedExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\TraceBasedExemplarFilter">TraceBasedExemplarFilter</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricLimits.html"><abbr title="\Flow\Telemetry\Meter\MetricLimits">MetricLimits</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limits</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-MetricLimits.html"><abbr title="\Flow\Telemetry\Meter\MetricLimits">MetricLimits</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$description</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -311,6 +311,15 @@ $gauge-&gt;record(1024 * 1024 * 480, ['host' =&gt; 'server-1']); // Replaces pre
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$limits</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricLimits.html"><abbr title="\Flow\Telemetry\Meter\MetricLimits">MetricLimits</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-MetricLimits.html"><abbr title="\Flow\Telemetry\Meter\MetricLimits">MetricLimits</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Cardinality limits for this instrument</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$unit</span>
                 : <span class="phpdocumentor-argument-list__argument__type">null|string</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
@@ -350,7 +359,7 @@ $gauge-&gt;record(1024 * 1024 * 480, ['host' =&gt; 'server-1']); // Replaces pre
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/Gauge.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-instrument-gauge.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/Gauge.php">Gauge.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -396,7 +405,7 @@ then resets the internal aggregation state.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/Gauge.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-instrument-gauge.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/Gauge.php">Gauge.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -435,7 +444,7 @@ then resets the internal aggregation state.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/Gauge.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-instrument-gauge.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/Gauge.php">Gauge.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -474,7 +483,7 @@ then resets the internal aggregation state.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/Gauge.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-instrument-gauge.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/Gauge.php">Gauge.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -539,7 +548,7 @@ then resets the internal aggregation state.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/Gauge.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-instrument-gauge.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Instrument/Gauge.php">Gauge.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 

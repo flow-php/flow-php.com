@@ -14,7 +14,7 @@ const dataframeReturningMethods = {"flow":["extract","from","process","read"],"d
 
 // DataFrame methods
 const dataframeMethods = [
-        {
+    {
         label: "aggregate",
         type: "method",
         detail: "Flow\\\\ETL\\\\DataFrame",
@@ -907,7 +907,7 @@ const dataframeMethods = [
                     <span class=\"fn-name\">schema</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Schema</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @return Schema
+                    @trigger<br>@return Schema
                 </div>
                             `
             return div
@@ -1094,7 +1094,7 @@ const dataframeMethods = [
         },
         apply: snippet("write(" + "$" + "{" + "1:loader" + "}" + ")"),
         boost: 10
-    }    ]
+    }        ]
 
 /**
  * DataFrame method completion source for CodeMirror

@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 697
+ * Total functions: 703
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -17,7 +17,7 @@ import { CompletionContext, snippet } from "@codemirror/autocomplete"
 
 // All DSL functions
 const dslFunctions = [
-        {
+                {
         label: "add_row_index",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtransformers",
@@ -32,7 +32,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\add_row_index(" + "$" + "{" + "1:column" + "}" + ", " + "$" + "{" + "2:startFrom" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "agg",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -50,7 +50,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\agg(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:args" + "}" + ", " + "$" + "{" + "3:distinct" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "agg_avg",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -68,7 +68,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\agg_avg(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:distinct" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "agg_count",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -86,7 +86,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\agg_count(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:distinct" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "agg_max",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -104,7 +104,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\agg_max(" + "$" + "{" + "1:expr" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "agg_min",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -122,7 +122,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\agg_min(" + "$" + "{" + "1:expr" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "agg_sum",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -140,7 +140,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\agg_sum(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:distinct" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "all",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -155,7 +155,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\all(" + "$" + "{" + "1:functions" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "all_sub_select",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -173,7 +173,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\all_sub_select(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:operator" + "}" + ", " + "$" + "{" + "3:subquery" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "alter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -191,7 +191,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\alter()"),
         boost: 10
-    },        {
+    },                {
         label: "always_off_exemplar_filter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -209,7 +209,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\always_off_exemplar_filter()"),
         boost: 10
-    },        {
+    },                {
         label: "always_on_exemplar_filter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -227,7 +227,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\always_on_exemplar_filter()"),
         boost: 10
-    },        {
+    },                {
         label: "analyze",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -242,7 +242,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\analyze()"),
         boost: 10
-    },        {
+    },                {
         label: "analyze",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -260,7 +260,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\analyze()"),
         boost: 10
-    },        {
+    },                {
         label: "any",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -275,7 +275,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\any(" + "$" + "{" + "1:values" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "any_sub_select",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -293,7 +293,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\any_sub_select(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:operator" + "}" + ", " + "$" + "{" + "3:subquery" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "append",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -311,7 +311,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\append()"),
         boost: 10
-    },        {
+    },                {
         label: "array_carrier",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -329,7 +329,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\array_carrier(" + "$" + "{" + "1:data" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_contained_by",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -347,7 +347,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\array_contained_by(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_contains",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -365,7 +365,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\array_contains(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_exists",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -383,7 +383,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_exists(" + "$" + "{" + "1:ref" + "}" + ", " + "$" + "{" + "2:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_expand",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -401,7 +401,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_expand(" + "$" + "{" + "1:function" + "}" + ", " + "$" + "{" + "2:expand" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_expr",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -419,7 +419,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\array_expr(" + "$" + "{" + "1:elements" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_get",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -434,7 +434,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_get(" + "$" + "{" + "1:ref" + "}" + ", " + "$" + "{" + "2:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_get_collection",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -452,7 +452,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_get_collection(" + "$" + "{" + "1:ref" + "}" + ", " + "$" + "{" + "2:keys" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_get_collection_first",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -467,7 +467,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_get_collection_first(" + "$" + "{" + "1:ref" + "}" + ", " + "$" + "{" + "2:keys" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_keys_style_convert",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -482,7 +482,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_keys_style_convert(" + "$" + "{" + "1:ref" + "}" + ", " + "$" + "{" + "2:style" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_key_rename",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -497,7 +497,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_key_rename(" + "$" + "{" + "1:ref" + "}" + ", " + "$" + "{" + "2:path" + "}" + ", " + "$" + "{" + "3:newName" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_merge",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -515,7 +515,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_merge(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_merge_collection",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -533,7 +533,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_merge_collection(" + "$" + "{" + "1:array" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_overlap",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -551,7 +551,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\array_overlap(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_reverse",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -569,7 +569,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_reverse(" + "$" + "{" + "1:function" + "}" + ", " + "$" + "{" + "2:preserveKeys" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_sort",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -584,7 +584,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_sort(" + "$" + "{" + "1:function" + "}" + ", " + "$" + "{" + "2:sort_function" + "}" + ", " + "$" + "{" + "3:flags" + "}" + ", " + "$" + "{" + "4:recursive" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_to_generator",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -602,7 +602,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Parquet\\array_to_generator(" + "$" + "{" + "1:data" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_to_row",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -620,7 +620,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_to_row(" + "$" + "{" + "1:data" + "}" + ", " + "$" + "{" + "2:entryFactory" + "}" + ", " + "$" + "{" + "3:partitions" + "}" + ", " + "$" + "{" + "4:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_to_rows",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -638,7 +638,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_to_rows(" + "$" + "{" + "1:data" + "}" + ", " + "$" + "{" + "2:entryFactory" + "}" + ", " + "$" + "{" + "3:partitions" + "}" + ", " + "$" + "{" + "4:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "array_unpack",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -656,7 +656,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\array_unpack(" + "$" + "{" + "1:array" + "}" + ", " + "$" + "{" + "2:skip_keys" + "}" + ", " + "$" + "{" + "3:entry_prefix" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "asc",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -674,7 +674,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\asc(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:nulls" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "average",
         type: "function",
         detail: "flow\u002Ddsl\u002Daggregating\u002Dfunctions",
@@ -689,7 +689,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\average(" + "$" + "{" + "1:ref" + "}" + ", " + "$" + "{" + "2:scale" + "}" + ", " + "$" + "{" + "3:rounding" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "aws_s3_client",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -707,7 +707,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\Bridge\\AsyncAWS\\DSL\\aws_s3_client(" + "$" + "{" + "1:configuration" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "aws_s3_filesystem",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -722,7 +722,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\Bridge\\AsyncAWS\\DSL\\aws_s3_filesystem(" + "$" + "{" + "1:bucket" + "}" + ", " + "$" + "{" + "2:s3Client" + "}" + ", " + "$" + "{" + "3:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "azure_blob_service",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -737,7 +737,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Azure\\SDK\\DSL\\azure_blob_service(" + "$" + "{" + "1:configuration" + "}" + ", " + "$" + "{" + "2:azure_authorization_factory" + "}" + ", " + "$" + "{" + "3:client" + "}" + ", " + "$" + "{" + "4:azure_http_factory" + "}" + ", " + "$" + "{" + "5:azure_url_factory" + "}" + ", " + "$" + "{" + "6:logger" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "azure_blob_service_config",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -752,7 +752,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Azure\\SDK\\DSL\\azure_blob_service_config(" + "$" + "{" + "1:account" + "}" + ", " + "$" + "{" + "2:container" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "azure_filesystem",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -767,7 +767,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\Bridge\\Azure\\DSL\\azure_filesystem(" + "$" + "{" + "1:blob_service" + "}" + ", " + "$" + "{" + "2:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "azure_filesystem_options",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -782,7 +782,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\Bridge\\Azure\\DSL\\azure_filesystem_options()"),
         boost: 10
-    },        {
+    },                {
         label: "azure_http_factory",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -797,7 +797,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Azure\\SDK\\DSL\\azure_http_factory(" + "$" + "{" + "1:request_factory" + "}" + ", " + "$" + "{" + "2:stream_factory" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "azure_shared_key_authorization_factory",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -812,7 +812,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Azure\\SDK\\DSL\\azure_shared_key_authorization_factory(" + "$" + "{" + "1:account" + "}" + ", " + "$" + "{" + "2:key" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "azure_url_factory",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -827,7 +827,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Azure\\SDK\\DSL\\azure_url_factory(" + "$" + "{" + "1:host" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "azurite_url_factory",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -842,7 +842,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Azure\\SDK\\DSL\\azurite_url_factory(" + "$" + "{" + "1:host" + "}" + ", " + "$" + "{" + "2:port" + "}" + ", " + "$" + "{" + "3:secure" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "baggage",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -860,7 +860,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\baggage(" + "$" + "{" + "1:entries" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "bar_chart",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -875,7 +875,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\ChartJS\\bar_chart(" + "$" + "{" + "1:label" + "}" + ", " + "$" + "{" + "2:datasets" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "batched_by",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -893,7 +893,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\batched_by(" + "$" + "{" + "1:extractor" + "}" + ", " + "$" + "{" + "2:column" + "}" + ", " + "$" + "{" + "3:min_size" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "batches",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -911,7 +911,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\batches(" + "$" + "{" + "1:extractor" + "}" + ", " + "$" + "{" + "2:size" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "batching_log_processor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -929,7 +929,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\batching_log_processor(" + "$" + "{" + "1:exporter" + "}" + ", " + "$" + "{" + "2:batchSize" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "batching_metric_processor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -947,7 +947,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\batching_metric_processor(" + "$" + "{" + "1:exporter" + "}" + ", " + "$" + "{" + "2:batchSize" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "batching_span_processor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -965,7 +965,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\batching_span_processor(" + "$" + "{" + "1:exporter" + "}" + ", " + "$" + "{" + "2:batchSize" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "batch_size",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtransformers",
@@ -983,7 +983,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\batch_size(" + "$" + "{" + "1:size" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "begin",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1001,7 +1001,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\begin()"),
         boost: 10
-    },        {
+    },                {
         label: "between",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -1016,7 +1016,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\between(" + "$" + "{" + "1:value" + "}" + ", " + "$" + "{" + "2:lower_bound" + "}" + ", " + "$" + "{" + "3:upper_bound" + "}" + ", " + "$" + "{" + "4:boundary" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "between",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1034,7 +1034,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\between(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:low" + "}" + ", " + "$" + "{" + "3:high" + "}" + ", " + "$" + "{" + "4:not" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "binary_expr",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1052,7 +1052,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\binary_expr(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:operator" + "}" + ", " + "$" + "{" + "3:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "boolean_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -1070,7 +1070,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\boolean_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "bool_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -1088,7 +1088,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\bool_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "bool_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -1103,7 +1103,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\bool_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "bulk_insert",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1121,7 +1121,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\bulk_insert(" + "$" + "{" + "1:table" + "}" + ", " + "$" + "{" + "2:columns" + "}" + ", " + "$" + "{" + "3:rowCount" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "caching_detector",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1139,7 +1139,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\caching_detector(" + "$" + "{" + "1:detector" + "}" + ", " + "$" + "{" + "2:cachePath" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "call",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -1157,7 +1157,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\call(" + "$" + "{" + "1:callable" + "}" + ", " + "$" + "{" + "2:parameters" + "}" + ", " + "$" + "{" + "3:return_type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "call",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1175,7 +1175,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\call(" + "$" + "{" + "1:procedure" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "capitalize",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -1190,7 +1190,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\capitalize(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "case_when",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1208,7 +1208,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\case_when(" + "$" + "{" + "1:whenClauses" + "}" + ", " + "$" + "{" + "2:elseResult" + "}" + ", " + "$" + "{" + "3:operand" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "cast",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -1226,7 +1226,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\cast(" + "$" + "{" + "1:value" + "}" + ", " + "$" + "{" + "2:type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "cast",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1244,7 +1244,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\cast(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:dataType" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "chain_detector",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1262,7 +1262,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\chain_detector(" + "$" + "{" + "1:detectors" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "check_constraint",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1280,7 +1280,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\check_constraint(" + "$" + "{" + "1:expression" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "chunks_from",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -1298,7 +1298,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\chunks_from(" + "$" + "{" + "1:extractor" + "}" + ", " + "$" + "{" + "2:chunk_size" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "close_cursor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1316,7 +1316,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\close_cursor(" + "$" + "{" + "1:cursorName" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "cluster",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1334,7 +1334,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\cluster()"),
         boost: 10
-    },        {
+    },                {
         label: "coalesce",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -1349,7 +1349,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\coalesce(" + "$" + "{" + "1:values" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "coalesce",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1367,7 +1367,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\coalesce(" + "$" + "{" + "1:expressions" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "col",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -1385,7 +1385,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\col(" + "$" + "{" + "1:entry" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "col",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1403,7 +1403,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\col(" + "$" + "{" + "1:column" + "}" + ", " + "$" + "{" + "2:table" + "}" + ", " + "$" + "{" + "3:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "collect",
         type: "function",
         detail: "flow\u002Ddsl\u002Daggregating\u002Dfunctions",
@@ -1418,7 +1418,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\collect(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "collect_unique",
         type: "function",
         detail: "flow\u002Ddsl\u002Daggregating\u002Dfunctions",
@@ -1433,7 +1433,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\collect_unique(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "column",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1451,7 +1451,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\column(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "combine",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -1469,7 +1469,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\combine(" + "$" + "{" + "1:keys" + "}" + ", " + "$" + "{" + "2:values" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "comment",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1487,7 +1487,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\comment(" + "$" + "{" + "1:target" + "}" + ", " + "$" + "{" + "2:name" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "commit",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1505,7 +1505,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\commit()"),
         boost: 10
-    },        {
+    },                {
         label: "commit_prepared",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1523,7 +1523,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\commit_prepared(" + "$" + "{" + "1:transactionId" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "compare_all",
         type: "function",
         detail: "flow\u002Ddsl\u002Dcomparisons",
@@ -1538,7 +1538,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\compare_all(" + "$" + "{" + "1:comparisons" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "compare_any",
         type: "function",
         detail: "flow\u002Ddsl\u002Dcomparisons",
@@ -1553,7 +1553,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\compare_any(" + "$" + "{" + "1:comparisons" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "compare_entries_by_name",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -1568,7 +1568,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\compare_entries_by_name(" + "$" + "{" + "1:order" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "compare_entries_by_name_desc",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -1583,7 +1583,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\compare_entries_by_name_desc()"),
         boost: 10
-    },        {
+    },                {
         label: "compare_entries_by_type",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -1601,7 +1601,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\compare_entries_by_type(" + "$" + "{" + "1:priorities" + "}" + ", " + "$" + "{" + "2:order" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "compare_entries_by_type_and_name",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -1619,7 +1619,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\compare_entries_by_type_and_name(" + "$" + "{" + "1:priorities" + "}" + ", " + "$" + "{" + "2:order" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "compare_entries_by_type_desc",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -1637,7 +1637,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\compare_entries_by_type_desc(" + "$" + "{" + "1:priorities" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "composer_detector",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1655,7 +1655,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\composer_detector()"),
         boost: 10
-    },        {
+    },                {
         label: "composite_propagator",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1673,7 +1673,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\composite_propagator(" + "$" + "{" + "1:propagators" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "concat",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -1691,7 +1691,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\concat(" + "$" + "{" + "1:functions" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "concat_ws",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -1709,7 +1709,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\concat_ws(" + "$" + "{" + "1:separator" + "}" + ", " + "$" + "{" + "2:functions" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "conditions",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1727,7 +1727,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\conditions()"),
         boost: 10
-    },        {
+    },                {
         label: "cond_and",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1745,7 +1745,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\cond_and(" + "$" + "{" + "1:conditions" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "cond_false",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1763,7 +1763,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\cond_false()"),
         boost: 10
-    },        {
+    },                {
         label: "cond_not",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1781,7 +1781,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\cond_not(" + "$" + "{" + "1:condition" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "cond_or",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1799,7 +1799,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\cond_or(" + "$" + "{" + "1:conditions" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "cond_true",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1817,7 +1817,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\cond_true()"),
         boost: 10
-    },        {
+    },                {
         label: "config",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -1832,7 +1832,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\config()"),
         boost: 10
-    },        {
+    },                {
         label: "config_builder",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -1847,7 +1847,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\config_builder()"),
         boost: 10
-    },        {
+    },                {
         label: "conflict_columns",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1865,7 +1865,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\conflict_columns(" + "$" + "{" + "1:columns" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "conflict_constraint",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1883,7 +1883,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\conflict_constraint(" + "$" + "{" + "1:name" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "console_log_exporter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1901,7 +1901,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\console_log_exporter(" + "$" + "{" + "1:colors" + "}" + ", " + "$" + "{" + "2:maxBodyLength" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "console_metric_exporter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1919,7 +1919,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\console_metric_exporter(" + "$" + "{" + "1:colors" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "console_span_exporter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1937,7 +1937,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\console_span_exporter(" + "$" + "{" + "1:colors" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "constraint_sorted_by",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1952,7 +1952,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\constraint_sorted_by(" + "$" + "{" + "1:column" + "}" + ", " + "$" + "{" + "2:columns" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "constraint_unique",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -1967,7 +1967,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\constraint_unique(" + "$" + "{" + "1:reference" + "}" + ", " + "$" + "{" + "2:references" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "context",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -1985,7 +1985,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\context(" + "$" + "{" + "1:traceId" + "}" + ", " + "$" + "{" + "2:baggage" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "copy",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2003,7 +2003,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\copy()"),
         boost: 10
-    },        {
+    },                {
         label: "count",
         type: "function",
         detail: "flow\u002Ddsl\u002Daggregating\u002Dfunctions",
@@ -2018,7 +2018,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\count(" + "$" + "{" + "1:function" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "create",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -2036,7 +2036,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\create()"),
         boost: 10
-    },        {
+    },                {
         label: "csv_detect_separator",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2054,7 +2054,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\CSV\\csv_detect_separator(" + "$" + "{" + "1:stream" + "}" + ", " + "$" + "{" + "2:lines" + "}" + ", " + "$" + "{" + "3:fallback" + "}" + ", " + "$" + "{" + "4:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "cte",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2072,7 +2072,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\cte(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:query" + "}" + ", " + "$" + "{" + "3:columnNames" + "}" + ", " + "$" + "{" + "4:materialization" + "}" + ", " + "$" + "{" + "5:recursive" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "current_date",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2090,7 +2090,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\current_date()"),
         boost: 10
-    },        {
+    },                {
         label: "current_time",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2108,7 +2108,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\current_time()"),
         boost: 10
-    },        {
+    },                {
         label: "current_timestamp",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2126,7 +2126,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\current_timestamp()"),
         boost: 10
-    },        {
+    },                {
         label: "data_frame",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -2141,7 +2141,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\data_frame(" + "$" + "{" + "1:config" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2159,7 +2159,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_array(" + "$" + "{" + "1:elementType" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_bigint",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2177,7 +2177,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_bigint()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_bigserial",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2195,7 +2195,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_bigserial()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_boolean",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2213,7 +2213,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_boolean()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_bytea",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2231,7 +2231,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_bytea()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_char",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2249,7 +2249,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_char(" + "$" + "{" + "1:length" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_cidr",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2267,7 +2267,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_cidr()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_custom",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2285,7 +2285,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_custom(" + "$" + "{" + "1:typeName" + "}" + ", " + "$" + "{" + "2:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_date",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2303,7 +2303,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_date()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_decimal",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2321,7 +2321,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_decimal(" + "$" + "{" + "1:precision" + "}" + ", " + "$" + "{" + "2:scale" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_double_precision",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2339,7 +2339,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_double_precision()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_inet",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2357,7 +2357,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_inet()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_integer",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2375,7 +2375,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_integer()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_interval",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2393,7 +2393,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_interval()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_json",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2411,7 +2411,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_json()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_jsonb",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2429,7 +2429,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_jsonb()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_macaddr",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2447,7 +2447,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_macaddr()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_numeric",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2465,7 +2465,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_numeric(" + "$" + "{" + "1:precision" + "}" + ", " + "$" + "{" + "2:scale" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_real",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2483,7 +2483,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_real()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_serial",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2501,7 +2501,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_serial()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_smallint",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2519,7 +2519,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_smallint()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_smallserial",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2537,7 +2537,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_smallserial()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_text",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2555,7 +2555,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_text()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_time",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2573,7 +2573,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_time(" + "$" + "{" + "1:precision" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_timestamp",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2591,7 +2591,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_timestamp(" + "$" + "{" + "1:precision" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_timestamptz",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2609,7 +2609,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_timestamptz(" + "$" + "{" + "1:precision" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_uuid",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2627,7 +2627,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_uuid()"),
         boost: 10
-    },        {
+    },                {
         label: "data_type_varchar",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2645,7 +2645,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\data_type_varchar(" + "$" + "{" + "1:length" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "datetime_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -2663,7 +2663,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\datetime_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "datetime_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -2678,7 +2678,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\datetime_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "date_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -2696,7 +2696,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\date_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "date_interval_to_microseconds",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2711,7 +2711,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\date_interval_to_microseconds(" + "$" + "{" + "1:interval" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "date_interval_to_milliseconds",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2726,7 +2726,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\date_interval_to_milliseconds(" + "$" + "{" + "1:interval" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "date_interval_to_seconds",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2741,7 +2741,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\date_interval_to_seconds(" + "$" + "{" + "1:interval" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "date_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -2756,7 +2756,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\date_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "date_time_format",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -2771,7 +2771,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\date_time_format(" + "$" + "{" + "1:ref" + "}" + ", " + "$" + "{" + "2:format" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "dbal_dataframe_factory",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2789,7 +2789,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\dbal_dataframe_factory(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:query" + "}" + ", " + "$" + "{" + "3:parameters" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "dbal_from_queries",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -2807,7 +2807,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\dbal_from_queries(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:query" + "}" + ", " + "$" + "{" + "3:parameters_set" + "}" + ", " + "$" + "{" + "4:types" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "dbal_from_query",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -2825,7 +2825,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\dbal_from_query(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:query" + "}" + ", " + "$" + "{" + "3:parameters" + "}" + ", " + "$" + "{" + "4:types" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "declare_cursor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2843,7 +2843,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\declare_cursor(" + "$" + "{" + "1:cursorName" + "}" + ", " + "$" + "{" + "2:query" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "definition_from_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -2861,7 +2861,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\definition_from_array(" + "$" + "{" + "1:definition" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "definition_from_type",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -2879,7 +2879,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\definition_from_type(" + "$" + "{" + "1:ref" + "}" + ", " + "$" + "{" + "2:type" + "}" + ", " + "$" + "{" + "3:nullable" + "}" + ", " + "$" + "{" + "4:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "delay_exponential",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2894,7 +2894,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\delay_exponential(" + "$" + "{" + "1:base" + "}" + ", " + "$" + "{" + "2:multiplier" + "}" + ", " + "$" + "{" + "3:max_delay" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "delay_fixed",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2909,7 +2909,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\delay_fixed(" + "$" + "{" + "1:delay" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "delay_jitter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2927,7 +2927,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\delay_jitter(" + "$" + "{" + "1:delay" + "}" + ", " + "$" + "{" + "2:jitter_factor" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "delay_linear",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2942,7 +2942,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\delay_linear(" + "$" + "{" + "1:delay" + "}" + ", " + "$" + "{" + "2:increment" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "delete",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -2960,7 +2960,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\delete()"),
         boost: 10
-    },        {
+    },                {
         label: "dense_rank",
         type: "function",
         detail: "flow\u002Ddsl\u002Dwindow\u002Dfunctions",
@@ -2975,7 +2975,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\dense_rank()"),
         boost: 10
-    },        {
+    },                {
         label: "dens_rank",
         type: "function",
         detail: "flow\u002Ddsl\u002Dwindow\u002Dfunctions",
@@ -2990,7 +2990,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\dens_rank()"),
         boost: 10
-    },        {
+    },                {
         label: "derived",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3008,7 +3008,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\derived(" + "$" + "{" + "1:query" + "}" + ", " + "$" + "{" + "2:alias" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "desc",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3026,7 +3026,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\desc(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:nulls" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "df",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -3044,7 +3044,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\df(" + "$" + "{" + "1:config" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "discard",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3062,7 +3062,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\discard(" + "$" + "{" + "1:type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "dom_element_to_string",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -3080,7 +3080,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\dom_element_to_string(" + "$" + "{" + "1:element" + "}" + ", " + "$" + "{" + "2:format_output" + "}" + ", " + "$" + "{" + "3:preserver_white_space" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "dom_element_to_string",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3095,7 +3095,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\dom_element_to_string(" + "$" + "{" + "1:element" + "}" + ", " + "$" + "{" + "2:format_output" + "}" + ", " + "$" + "{" + "3:preserver_white_space" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "do_block",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3113,7 +3113,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\do_block(" + "$" + "{" + "1:code" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "drop",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtransformers",
@@ -3128,7 +3128,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\drop(" + "$" + "{" + "1:entries" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "drop",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -3146,7 +3146,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\drop()"),
         boost: 10
-    },        {
+    },                {
         label: "drop_owned",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3164,7 +3164,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\drop_owned(" + "$" + "{" + "1:roles" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "duration_microseconds",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3179,7 +3179,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\duration_microseconds(" + "$" + "{" + "1:microseconds" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "duration_milliseconds",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3194,7 +3194,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\duration_milliseconds(" + "$" + "{" + "1:milliseconds" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "duration_minutes",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3209,7 +3209,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\duration_minutes(" + "$" + "{" + "1:minutes" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "duration_seconds",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3224,7 +3224,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\duration_seconds(" + "$" + "{" + "1:seconds" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "empty_generator",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3239,7 +3239,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Parquet\\empty_generator()"),
         boost: 10
-    },        {
+    },                {
         label: "entries",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -3257,7 +3257,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\entries(" + "$" + "{" + "1:entries" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -3275,7 +3275,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\entry(" + "$" + "{" + "1:entry" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "entry_id_factory",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3290,7 +3290,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Elasticsearch\\entry_id_factory(" + "$" + "{" + "1:entry_name" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "enum_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -3308,7 +3308,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\enum_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:enum" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "enum_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -3326,7 +3326,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\enum_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:type" + "}" + ", " + "$" + "{" + "3:nullable" + "}" + ", " + "$" + "{" + "4:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "environment_detector",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3344,7 +3344,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\environment_detector()"),
         boost: 10
-    },        {
+    },                {
         label: "eq",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3362,7 +3362,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\eq(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "equal",
         type: "function",
         detail: "flow\u002Ddsl\u002Dcomparisons",
@@ -3377,7 +3377,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\equal(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "es_hits_to_rows",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3395,7 +3395,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Elasticsearch\\es_hits_to_rows(" + "$" + "{" + "1:source" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "exception_if_exists",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -3413,7 +3413,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\exception_if_exists()"),
         boost: 10
-    },        {
+    },                {
         label: "execution_context",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -3428,7 +3428,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\execution_context(" + "$" + "{" + "1:config" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "execution_lenient",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -3446,7 +3446,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\execution_lenient()"),
         boost: 10
-    },        {
+    },                {
         label: "execution_strict",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -3464,7 +3464,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\execution_strict()"),
         boost: 10
-    },        {
+    },                {
         label: "exists",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -3479,7 +3479,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\exists(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "exists",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3497,7 +3497,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\exists(" + "$" + "{" + "1:subquery" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "explain",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3515,7 +3515,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\explain(" + "$" + "{" + "1:query" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "fetch",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3533,7 +3533,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\fetch(" + "$" + "{" + "1:cursorName" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "files",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -3548,7 +3548,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\files(" + "$" + "{" + "1:directory" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "filesystem_cache",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -3563,7 +3563,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\filesystem_cache(" + "$" + "{" + "1:cache_dir" + "}" + ", " + "$" + "{" + "2:filesystem" + "}" + ", " + "$" + "{" + "3:serializer" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "filesystem_telemetry_config",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3581,7 +3581,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\filesystem_telemetry_config(" + "$" + "{" + "1:telemetry" + "}" + ", " + "$" + "{" + "2:clock" + "}" + ", " + "$" + "{" + "3:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "filesystem_telemetry_options",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3599,7 +3599,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\filesystem_telemetry_options(" + "$" + "{" + "1:traceStreams" + "}" + ", " + "$" + "{" + "2:collectMetrics" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "first",
         type: "function",
         detail: "flow\u002Ddsl\u002Daggregating\u002Dfunctions",
@@ -3614,7 +3614,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\first(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "float_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -3632,7 +3632,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\float_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "float_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -3647,7 +3647,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\float_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "flow_context",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -3662,7 +3662,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\flow_context(" + "$" + "{" + "1:config" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "foreign_key",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3680,7 +3680,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\foreign_key(" + "$" + "{" + "1:columns" + "}" + ", " + "$" + "{" + "2:referenceTable" + "}" + ", " + "$" + "{" + "3:referenceColumns" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "for_share",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3698,7 +3698,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\for_share(" + "$" + "{" + "1:tables" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "for_update",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3716,7 +3716,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\for_update(" + "$" + "{" + "1:tables" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "frame_current_row",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3734,7 +3734,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\frame_current_row()"),
         boost: 10
-    },        {
+    },                {
         label: "frame_following",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3752,7 +3752,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\frame_following(" + "$" + "{" + "1:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "frame_preceding",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3770,7 +3770,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\frame_preceding(" + "$" + "{" + "1:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "frame_unbounded_following",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3788,7 +3788,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\frame_unbounded_following()"),
         boost: 10
-    },        {
+    },                {
         label: "frame_unbounded_preceding",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -3806,7 +3806,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\frame_unbounded_preceding()"),
         boost: 10
-    },        {
+    },                {
         label: "from_all",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -3821,7 +3821,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\from_all(" + "$" + "{" + "1:extractors" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -3839,7 +3839,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\from_array(" + "$" + "{" + "1:array" + "}" + ", " + "$" + "{" + "2:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_avro",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -3854,7 +3854,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\Adapter\\Avro\\from_avro(" + "$" + "{" + "1:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_cache",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -3872,7 +3872,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\from_cache(" + "$" + "{" + "1:id" + "}" + ", " + "$" + "{" + "2:fallback_extractor" + "}" + ", " + "$" + "{" + "3:clear" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_csv",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -3890,7 +3890,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\CSV\\from_csv(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:with_header" + "}" + ", " + "$" + "{" + "3:empty_to_null" + "}" + ", " + "$" + "{" + "4:separator" + "}" + ", " + "$" + "{" + "5:enclosure" + "}" + ", " + "$" + "{" + "6:escape" + "}" + ", " + "$" + "{" + "7:characters_read_in_line" + "}" + ", " + "$" + "{" + "8:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_data_frame",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -3905,7 +3905,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\from_data_frame(" + "$" + "{" + "1:data_frame" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_dbal_key_set_qb",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -3920,7 +3920,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\from_dbal_key_set_qb(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:queryBuilder" + "}" + ", " + "$" + "{" + "3:key_set" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_dbal_limit_offset",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -3938,7 +3938,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\from_dbal_limit_offset(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:table" + "}" + ", " + "$" + "{" + "3:order_by" + "}" + ", " + "$" + "{" + "4:page_size" + "}" + ", " + "$" + "{" + "5:maximum" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_dbal_limit_offset_qb",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -3956,7 +3956,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\from_dbal_limit_offset_qb(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:queryBuilder" + "}" + ", " + "$" + "{" + "3:page_size" + "}" + ", " + "$" + "{" + "4:maximum" + "}" + ", " + "$" + "{" + "5:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_dbal_queries",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -3974,7 +3974,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\from_dbal_queries(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:query" + "}" + ", " + "$" + "{" + "3:parameters_set" + "}" + ", " + "$" + "{" + "4:types" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_dbal_query",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -3992,7 +3992,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\from_dbal_query(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:query" + "}" + ", " + "$" + "{" + "3:parameters" + "}" + ", " + "$" + "{" + "4:types" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_dynamic_http_requests",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4007,7 +4007,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Http\\from_dynamic_http_requests(" + "$" + "{" + "1:client" + "}" + ", " + "$" + "{" + "2:requestFactory" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_es",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4025,7 +4025,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Elasticsearch\\from_es(" + "$" + "{" + "1:config" + "}" + ", " + "$" + "{" + "2:parameters" + "}" + ", " + "$" + "{" + "3:pit_params" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_excel",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4040,7 +4040,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Excel\\DSL\\from_excel(" + "$" + "{" + "1:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_google_sheet",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4058,7 +4058,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\GoogleSheet\\from_google_sheet(" + "$" + "{" + "1:auth_config" + "}" + ", " + "$" + "{" + "2:spreadsheet_id" + "}" + ", " + "$" + "{" + "3:sheet_name" + "}" + ", " + "$" + "{" + "4:with_header" + "}" + ", " + "$" + "{" + "5:rows_per_page" + "}" + ", " + "$" + "{" + "6:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_google_sheet_columns",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4076,7 +4076,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\GoogleSheet\\from_google_sheet_columns(" + "$" + "{" + "1:auth_config" + "}" + ", " + "$" + "{" + "2:spreadsheet_id" + "}" + ", " + "$" + "{" + "3:sheet_name" + "}" + ", " + "$" + "{" + "4:start_range_column" + "}" + ", " + "$" + "{" + "5:end_range_column" + "}" + ", " + "$" + "{" + "6:with_header" + "}" + ", " + "$" + "{" + "7:rows_per_page" + "}" + ", " + "$" + "{" + "8:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_json",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4094,7 +4094,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\JSON\\from_json(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:pointer" + "}" + ", " + "$" + "{" + "3:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_json_lines",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4112,7 +4112,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\JSON\\from_json_lines(" + "$" + "{" + "1:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_meilisearch",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4130,7 +4130,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Meilisearch\\from_meilisearch(" + "$" + "{" + "1:config" + "}" + ", " + "$" + "{" + "2:params" + "}" + ", " + "$" + "{" + "3:index" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_memory",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4145,7 +4145,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\from_memory(" + "$" + "{" + "1:memory" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_parquet",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4163,7 +4163,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Parquet\\from_parquet(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:columns" + "}" + ", " + "$" + "{" + "3:options" + "}" + ", " + "$" + "{" + "4:byte_order" + "}" + ", " + "$" + "{" + "5:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_path_partitions",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4178,7 +4178,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\from_path_partitions(" + "$" + "{" + "1:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_pipeline",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4193,7 +4193,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\from_pipeline(" + "$" + "{" + "1:pipeline" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_rows",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4208,7 +4208,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\from_rows(" + "$" + "{" + "1:rows" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_sequence_date_period",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4223,7 +4223,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\from_sequence_date_period(" + "$" + "{" + "1:entry_name" + "}" + ", " + "$" + "{" + "2:start" + "}" + ", " + "$" + "{" + "3:interval" + "}" + ", " + "$" + "{" + "4:end" + "}" + ", " + "$" + "{" + "5:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_sequence_date_period_recurrences",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4238,7 +4238,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\from_sequence_date_period_recurrences(" + "$" + "{" + "1:entry_name" + "}" + ", " + "$" + "{" + "2:start" + "}" + ", " + "$" + "{" + "3:interval" + "}" + ", " + "$" + "{" + "4:recurrences" + "}" + ", " + "$" + "{" + "5:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_sequence_number",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4253,7 +4253,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\from_sequence_number(" + "$" + "{" + "1:entry_name" + "}" + ", " + "$" + "{" + "2:start" + "}" + ", " + "$" + "{" + "3:end" + "}" + ", " + "$" + "{" + "4:step" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_static_http_requests",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4271,7 +4271,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Http\\from_static_http_requests(" + "$" + "{" + "1:client" + "}" + ", " + "$" + "{" + "2:requests" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_text",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4289,7 +4289,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Text\\from_text(" + "$" + "{" + "1:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "from_xml",
         type: "function",
         detail: "flow\u002Ddsl\u002Dextractors",
@@ -4307,7 +4307,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\XML\\from_xml(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:xml_node_path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "fstab",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4325,7 +4325,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\fstab(" + "$" + "{" + "1:filesystems" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "func",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4343,7 +4343,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\func(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:args" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "func_arg",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4361,7 +4361,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\func_arg(" + "$" + "{" + "1:type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "generate_random_int",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -4376,7 +4376,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\generate_random_int(" + "$" + "{" + "1:start" + "}" + ", " + "$" + "{" + "2:end" + "}" + ", " + "$" + "{" + "3:generator" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "generate_random_string",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -4391,7 +4391,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\generate_random_string(" + "$" + "{" + "1:length" + "}" + ", " + "$" + "{" + "2:generator" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "get_type",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -4409,7 +4409,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\get_type(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "get_type",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4427,7 +4427,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\get_type(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "grant",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4445,7 +4445,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\grant(" + "$" + "{" + "1:privileges" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "grant_role",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4463,7 +4463,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\grant_role(" + "$" + "{" + "1:roles" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "greatest",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -4478,7 +4478,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\greatest(" + "$" + "{" + "1:values" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "greatest",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4496,7 +4496,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\greatest(" + "$" + "{" + "1:expressions" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "gt",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4514,7 +4514,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\gt(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "gte",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4532,7 +4532,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\gte(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "hash",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -4547,7 +4547,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\hash(" + "$" + "{" + "1:value" + "}" + ", " + "$" + "{" + "2:algorithm" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "hash_id_factory",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4562,7 +4562,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Elasticsearch\\hash_id_factory(" + "$" + "{" + "1:entry_names" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "host_detector",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4580,7 +4580,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\host_detector()"),
         boost: 10
-    },        {
+    },                {
         label: "html_element_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -4598,7 +4598,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\html_element_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "html_element_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -4613,7 +4613,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\html_element_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "html_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -4631,7 +4631,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\html_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "html_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -4646,7 +4646,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\html_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "identical",
         type: "function",
         detail: "flow\u002Ddsl\u002Dcomparisons",
@@ -4661,7 +4661,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\identical(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "ignore",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -4679,7 +4679,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\ignore()"),
         boost: 10
-    },        {
+    },                {
         label: "ignore_error_handler",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -4694,7 +4694,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\ignore_error_handler()"),
         boost: 10
-    },        {
+    },                {
         label: "index_col",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -4712,7 +4712,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\index_col(" + "$" + "{" + "1:name" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "index_expr",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -4730,7 +4730,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\index_expr(" + "$" + "{" + "1:expression" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "index_method_brin",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4748,7 +4748,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\index_method_brin()"),
         boost: 10
-    },        {
+    },                {
         label: "index_method_btree",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4766,7 +4766,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\index_method_btree()"),
         boost: 10
-    },        {
+    },                {
         label: "index_method_gin",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4784,7 +4784,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\index_method_gin()"),
         boost: 10
-    },        {
+    },                {
         label: "index_method_gist",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4802,7 +4802,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\index_method_gist()"),
         boost: 10
-    },        {
+    },                {
         label: "index_method_hash",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4820,7 +4820,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\index_method_hash()"),
         boost: 10
-    },        {
+    },                {
         label: "index_method_spgist",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4838,7 +4838,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\index_method_spgist()"),
         boost: 10
-    },        {
+    },                {
         label: "insert",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4856,7 +4856,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\insert()"),
         boost: 10
-    },        {
+    },                {
         label: "instrumentation_scope",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -4874,7 +4874,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\instrumentation_scope(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:version" + "}" + ", " + "$" + "{" + "3:schemaUrl" + "}" + ", " + "$" + "{" + "4:attributes" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "integer_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -4892,7 +4892,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\integer_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "integer_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -4907,7 +4907,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\integer_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "int_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -4925,7 +4925,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\int_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "int_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -4943,7 +4943,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\int_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "is_distinct_from",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4961,7 +4961,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\is_distinct_from(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ", " + "$" + "{" + "3:not" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "is_in",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4979,7 +4979,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\is_in(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:values" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "is_null",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -4997,7 +4997,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\is_null(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:not" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "is_type",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -5015,7 +5015,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\is_type(" + "$" + "{" + "1:type" + "}" + ", " + "$" + "{" + "2:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "is_valid_excel_sheet_name",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5030,7 +5030,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Excel\\DSL\\is_valid_excel_sheet_name(" + "$" + "{" + "1:sheet_name" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "join_on",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -5048,7 +5048,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\join_on(" + "$" + "{" + "1:comparisons" + "}" + ", " + "$" + "{" + "2:join_prefix" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "json_contained_by",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5066,7 +5066,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\json_contained_by(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "json_contains",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5084,7 +5084,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\json_contains(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "json_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -5102,7 +5102,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\json_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:data" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "json_exists",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5120,7 +5120,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\json_exists(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:key" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "json_exists_all",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5138,7 +5138,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\json_exists_all(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:keys" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "json_exists_any",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5156,7 +5156,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\json_exists_any(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:keys" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "json_get",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5174,7 +5174,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\json_get(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:key" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "json_get_text",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5192,7 +5192,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\json_get_text(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:key" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "json_object_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -5210,7 +5210,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\json_object_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:data" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "json_path",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5228,7 +5228,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\json_path(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "json_path_text",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5246,7 +5246,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\json_path_text(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "json_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -5261,7 +5261,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\json_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "last",
         type: "function",
         detail: "flow\u002Ddsl\u002Daggregating\u002Dfunctions",
@@ -5276,7 +5276,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\last(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "lateral",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5294,7 +5294,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\lateral(" + "$" + "{" + "1:reference" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "least",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -5309,7 +5309,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\least(" + "$" + "{" + "1:values" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "least",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5327,7 +5327,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\least(" + "$" + "{" + "1:expressions" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "like",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5345,7 +5345,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\like(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:pattern" + "}" + ", " + "$" + "{" + "3:caseInsensitive" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "limit",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtransformers",
@@ -5360,7 +5360,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\limit(" + "$" + "{" + "1:limit" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "line_chart",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5375,7 +5375,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\ChartJS\\line_chart(" + "$" + "{" + "1:label" + "}" + ", " + "$" + "{" + "2:datasets" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "list_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -5393,7 +5393,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\list_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:type" + "}" + ", " + "$" + "{" + "4:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "list_ref",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -5408,7 +5408,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\list_ref(" + "$" + "{" + "1:entry" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "list_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -5426,7 +5426,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\list_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:type" + "}" + ", " + "$" + "{" + "3:nullable" + "}" + ", " + "$" + "{" + "4:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "lit",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -5441,7 +5441,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\lit(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "literal",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5459,7 +5459,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\literal(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "lock_for",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5477,7 +5477,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\lock_for(" + "$" + "{" + "1:strength" + "}" + ", " + "$" + "{" + "2:tables" + "}" + ", " + "$" + "{" + "3:waitPolicy" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "lock_table",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5495,7 +5495,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\lock_table(" + "$" + "{" + "1:tables" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "logger_provider",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5503,17 +5503,17 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">logger_provider</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">LogProcessor</span> <span class=\"fn-param\">$processor</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ClockInterface</span> <span class=\"fn-param\">$clock</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ContextStorage</span> <span class=\"fn-param\">$contextStorage</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">LoggerProvider</span>
+                    <span class=\"fn-name\">logger_provider</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">LogProcessor</span> <span class=\"fn-param\">$processor</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ClockInterface</span> <span class=\"fn-param\">$clock</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ContextStorage</span> <span class=\"fn-param\">$contextStorage</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">LogRecordLimits</span> <span class=\"fn-param\">$limits</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Telemetry\\Logger\\LogRecordLimits::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">LoggerProvider</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Create a LoggerProvider.<br>Creates a provider that uses a LogProcessor for processing logs.<br>For void/disabled logging, pass void_processor().<br>For memory-based testing, pass memory_processor() with exporters.<br>@param LogProcessor $processor The processor for logs<br>@param ClockInterface $clock The clock for timestamps<br>@param ContextStorage $contextStorage Storage for span correlation
+                    Create a LoggerProvider.<br>Creates a provider that uses a LogProcessor for processing logs.<br>For void/disabled logging, pass void_processor().<br>For memory-based testing, pass memory_processor() with exporters.<br>@param LogProcessor $processor The processor for logs<br>@param ClockInterface $clock The clock for timestamps<br>@param ContextStorage $contextStorage Storage for span correlation<br>@param LogRecordLimits $limits Limits for log record attributes
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\Telemetry\\DSL\\logger_provider(" + "$" + "{" + "1:processor" + "}" + ", " + "$" + "{" + "2:clock" + "}" + ", " + "$" + "{" + "3:contextStorage" + "}" + ")"),
+        apply: snippet("\\Flow\\Telemetry\\DSL\\logger_provider(" + "$" + "{" + "1:processor" + "}" + ", " + "$" + "{" + "2:clock" + "}" + ", " + "$" + "{" + "3:contextStorage" + "}" + ", " + "$" + "{" + "4:limits" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "log_record_converter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5531,7 +5531,25 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Monolog\\Telemetry\\DSL\\log_record_converter(" + "$" + "{" + "1:severityMapper" + "}" + ", " + "$" + "{" + "2:valueNormalizer" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
+        label: "log_record_limits",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">log_record_limits</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">int</span> <span class=\"fn-param\">$attributeCountLimit</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">128</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">int</span> <span class=\"fn-param\">$attributeValueLengthLimit</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">LogRecordLimits</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create LogRecordLimits configuration.<br>LogRecordLimits controls the maximum amount of data a log record can collect,<br>preventing unbounded memory growth and ensuring reasonable log record sizes.<br>@param int $attributeCountLimit Maximum number of attributes per log record<br>@param null|int $attributeValueLengthLimit Maximum length for string attribute values (null = unlimited)
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\log_record_limits(" + "$" + "{" + "1:attributeCountLimit" + "}" + ", " + "$" + "{" + "2:attributeValueLengthLimit" + "}" + ")"),
+        boost: 10
+    },                {
         label: "lower",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -5546,7 +5564,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\lower(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "lt",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5564,7 +5582,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\lt(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "lte",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5582,7 +5600,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\lte(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "manual_detector",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5600,7 +5618,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\manual_detector(" + "$" + "{" + "1:attributes" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "map_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -5618,7 +5636,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\map_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:mapType" + "}" + ", " + "$" + "{" + "4:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "map_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -5636,7 +5654,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\map_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:type" + "}" + ", " + "$" + "{" + "3:nullable" + "}" + ", " + "$" + "{" + "4:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "mask_columns",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtransformers",
@@ -5654,7 +5672,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\mask_columns(" + "$" + "{" + "1:columns" + "}" + ", " + "$" + "{" + "2:mask" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "match_cases",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -5672,7 +5690,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\match_cases(" + "$" + "{" + "1:cases" + "}" + ", " + "$" + "{" + "2:default" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "match_condition",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -5687,7 +5705,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\match_condition(" + "$" + "{" + "1:condition" + "}" + ", " + "$" + "{" + "2:then" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "max",
         type: "function",
         detail: "flow\u002Ddsl\u002Daggregating\u002Dfunctions",
@@ -5702,7 +5720,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\max(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "meilisearch_hits_to_rows",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5720,7 +5738,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Meilisearch\\meilisearch_hits_to_rows()"),
         boost: 10
-    },        {
+    },                {
         label: "memory_context_storage",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5738,7 +5756,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\memory_context_storage(" + "$" + "{" + "1:context" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "memory_filesystem",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5756,7 +5774,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\memory_filesystem()"),
         boost: 10
-    },        {
+    },                {
         label: "memory_log_exporter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5774,7 +5792,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\memory_log_exporter()"),
         boost: 10
-    },        {
+    },                {
         label: "memory_log_processor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5792,7 +5810,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\memory_log_processor(" + "$" + "{" + "1:exporter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "memory_metric_exporter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5810,7 +5828,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\memory_metric_exporter()"),
         boost: 10
-    },        {
+    },                {
         label: "memory_metric_processor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5828,7 +5846,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\memory_metric_processor(" + "$" + "{" + "1:exporter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "memory_span_exporter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5846,7 +5864,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\memory_span_exporter()"),
         boost: 10
-    },        {
+    },                {
         label: "memory_span_processor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5864,7 +5882,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\memory_span_processor(" + "$" + "{" + "1:exporter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "merge",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5882,7 +5900,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\merge(" + "$" + "{" + "1:table" + "}" + ", " + "$" + "{" + "2:alias" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "meter_provider",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5890,17 +5908,35 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">meter_provider</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">MetricProcessor</span> <span class=\"fn-param\">$processor</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ClockInterface</span> <span class=\"fn-param\">$clock</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">AggregationTemporality</span> <span class=\"fn-param\">$temporality</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Telemetry\\Meter\\AggregationTemporality::...</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ExemplarFilter</span> <span class=\"fn-param\">$exemplarFilter</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Telemetry\\Meter\\Exemplar\\TraceBasedExemplarFilter::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">MeterProvider</span>
+                    <span class=\"fn-name\">meter_provider</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">MetricProcessor</span> <span class=\"fn-param\">$processor</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ClockInterface</span> <span class=\"fn-param\">$clock</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">AggregationTemporality</span> <span class=\"fn-param\">$temporality</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Telemetry\\Meter\\AggregationTemporality::...</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ExemplarFilter</span> <span class=\"fn-param\">$exemplarFilter</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Telemetry\\Meter\\Exemplar\\TraceBasedExemplarFilter::...</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">MetricLimits</span> <span class=\"fn-param\">$limits</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Telemetry\\Meter\\MetricLimits::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">MeterProvider</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Create a MeterProvider.<br>Creates a provider that uses a MetricProcessor for processing metrics.<br>For void/disabled metrics, pass void_processor().<br>For memory-based testing, pass memory_processor() with exporters.<br>@param MetricProcessor $processor The processor for metrics<br>@param ClockInterface $clock The clock for timestamps<br>@param AggregationTemporality $temporality Aggregation temporality for metrics<br>@param ExemplarFilter $exemplarFilter Filter for exemplar sampling (default: TraceBasedExemplarFilter)
+                    Create a MeterProvider.<br>Creates a provider that uses a MetricProcessor for processing metrics.<br>For void/disabled metrics, pass void_processor().<br>For memory-based testing, pass memory_processor() with exporters.<br>@param MetricProcessor $processor The processor for metrics<br>@param ClockInterface $clock The clock for timestamps<br>@param AggregationTemporality $temporality Aggregation temporality for metrics<br>@param ExemplarFilter $exemplarFilter Filter for exemplar sampling (default: TraceBasedExemplarFilter)<br>@param MetricLimits $limits Cardinality limits for metric instruments
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\Telemetry\\DSL\\meter_provider(" + "$" + "{" + "1:processor" + "}" + ", " + "$" + "{" + "2:clock" + "}" + ", " + "$" + "{" + "3:temporality" + "}" + ", " + "$" + "{" + "4:exemplarFilter" + "}" + ")"),
+        apply: snippet("\\Flow\\Telemetry\\DSL\\meter_provider(" + "$" + "{" + "1:processor" + "}" + ", " + "$" + "{" + "2:clock" + "}" + ", " + "$" + "{" + "3:temporality" + "}" + ", " + "$" + "{" + "4:exemplarFilter" + "}" + ", " + "$" + "{" + "5:limits" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
+        label: "metric_limits",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">metric_limits</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">int</span> <span class=\"fn-param\">$cardinalityLimit</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">2000</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">MetricLimits</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create MetricLimits configuration.<br>MetricLimits controls the maximum cardinality (unique attribute combinations)<br>per metric instrument, preventing memory exhaustion from high-cardinality attributes.<br>When the cardinality limit is exceeded, new attribute combinations are aggregated<br>into an overflow data point with \`otel.metric.overflow: true\` attribute.<br>Note: Unlike spans and logs, metrics are EXEMPT from attribute count and value<br>length limits per the OpenTelemetry specification. Only cardinality is limited.<br>@param int $cardinalityLimit Maximum number of unique attribute combinations per instrument
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\metric_limits(" + "$" + "{" + "1:cardinalityLimit" + "}" + ")"),
+        boost: 10
+    },                {
         label: "min",
         type: "function",
         detail: "flow\u002Ddsl\u002Daggregating\u002Dfunctions",
@@ -5915,7 +5951,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\min(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "mysql_insert_options",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5933,7 +5969,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\mysql_insert_options(" + "$" + "{" + "1:skip_conflicts" + "}" + ", " + "$" + "{" + "2:upsert" + "}" + ", " + "$" + "{" + "3:update_columns" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "native_local_filesystem",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5948,7 +5984,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\native_local_filesystem()"),
         boost: 10
-    },        {
+    },                {
         label: "neq",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5966,7 +6002,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\neq(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "not",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -5981,7 +6017,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\not(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "not_regex_imatch",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -5999,7 +6035,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\not_regex_imatch(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:pattern" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "not_regex_match",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6017,7 +6053,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\not_regex_match(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:pattern" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "now",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -6032,7 +6068,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\now(" + "$" + "{" + "1:time_zone" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "nullif",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6050,7 +6086,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\nullif(" + "$" + "{" + "1:expr1" + "}" + ", " + "$" + "{" + "2:expr2" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "null_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -6068,7 +6104,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\null_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "null_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -6083,7 +6119,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\null_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "number_format",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -6098,7 +6134,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\number_format(" + "$" + "{" + "1:value" + "}" + ", " + "$" + "{" + "2:decimals" + "}" + ", " + "$" + "{" + "3:decimal_separator" + "}" + ", " + "$" + "{" + "4:thousands_separator" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "on_conflict_nothing",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6116,7 +6152,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\on_conflict_nothing(" + "$" + "{" + "1:target" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "on_conflict_update",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6134,7 +6170,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\on_conflict_update(" + "$" + "{" + "1:target" + "}" + ", " + "$" + "{" + "2:updates" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "optional",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -6149,7 +6185,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\optional(" + "$" + "{" + "1:function" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "order_by",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6167,7 +6203,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\order_by(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:direction" + "}" + ", " + "$" + "{" + "3:nulls" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "os_detector",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6185,7 +6221,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\os_detector()"),
         boost: 10
-    },        {
+    },                {
         label: "otlp_curl_options",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6203,7 +6239,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Telemetry\\OTLP\\DSL\\otlp_curl_options()"),
         boost: 10
-    },        {
+    },                {
         label: "otlp_curl_transport",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6221,7 +6257,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Telemetry\\OTLP\\DSL\\otlp_curl_transport(" + "$" + "{" + "1:endpoint" + "}" + ", " + "$" + "{" + "2:serializer" + "}" + ", " + "$" + "{" + "3:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "otlp_grpc_transport",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6239,7 +6275,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Telemetry\\OTLP\\DSL\\otlp_grpc_transport(" + "$" + "{" + "1:endpoint" + "}" + ", " + "$" + "{" + "2:serializer" + "}" + ", " + "$" + "{" + "3:headers" + "}" + ", " + "$" + "{" + "4:insecure" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "otlp_http_transport",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6257,7 +6293,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Telemetry\\OTLP\\DSL\\otlp_http_transport(" + "$" + "{" + "1:client" + "}" + ", " + "$" + "{" + "2:requestFactory" + "}" + ", " + "$" + "{" + "3:streamFactory" + "}" + ", " + "$" + "{" + "4:endpoint" + "}" + ", " + "$" + "{" + "5:serializer" + "}" + ", " + "$" + "{" + "6:headers" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "otlp_json_serializer",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6275,7 +6311,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Telemetry\\OTLP\\DSL\\otlp_json_serializer()"),
         boost: 10
-    },        {
+    },                {
         label: "otlp_logger_provider",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6293,7 +6329,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Telemetry\\OTLP\\DSL\\otlp_logger_provider(" + "$" + "{" + "1:processor" + "}" + ", " + "$" + "{" + "2:clock" + "}" + ", " + "$" + "{" + "3:contextStorage" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "otlp_log_exporter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6311,7 +6347,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Telemetry\\OTLP\\DSL\\otlp_log_exporter(" + "$" + "{" + "1:transport" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "otlp_meter_provider",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6329,7 +6365,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Telemetry\\OTLP\\DSL\\otlp_meter_provider(" + "$" + "{" + "1:processor" + "}" + ", " + "$" + "{" + "2:clock" + "}" + ", " + "$" + "{" + "3:temporality" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "otlp_metric_exporter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6347,7 +6383,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Telemetry\\OTLP\\DSL\\otlp_metric_exporter(" + "$" + "{" + "1:transport" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "otlp_protobuf_serializer",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6365,7 +6401,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Telemetry\\OTLP\\DSL\\otlp_protobuf_serializer()"),
         boost: 10
-    },        {
+    },                {
         label: "otlp_span_exporter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6383,7 +6419,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Telemetry\\OTLP\\DSL\\otlp_span_exporter(" + "$" + "{" + "1:transport" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "otlp_tracer_provider",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6401,7 +6437,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Telemetry\\OTLP\\DSL\\otlp_tracer_provider(" + "$" + "{" + "1:processor" + "}" + ", " + "$" + "{" + "2:clock" + "}" + ", " + "$" + "{" + "3:sampler" + "}" + ", " + "$" + "{" + "4:contextStorage" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "overwrite",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -6419,7 +6455,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\overwrite()"),
         boost: 10
-    },        {
+    },                {
         label: "pagination_key_asc",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6434,7 +6470,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\pagination_key_asc(" + "$" + "{" + "1:column" + "}" + ", " + "$" + "{" + "2:type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "pagination_key_desc",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6449,7 +6485,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\pagination_key_desc(" + "$" + "{" + "1:column" + "}" + ", " + "$" + "{" + "2:type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "pagination_key_set",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6464,7 +6500,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\pagination_key_set(" + "$" + "{" + "1:keys" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "param",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6482,7 +6518,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\param(" + "$" + "{" + "1:position" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "partition",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6497,7 +6533,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\partition(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "partitions",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6512,7 +6548,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\partitions(" + "$" + "{" + "1:partition" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "pass_through_log_processor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6530,7 +6566,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\pass_through_log_processor(" + "$" + "{" + "1:exporter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "pass_through_metric_processor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6548,7 +6584,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\pass_through_metric_processor(" + "$" + "{" + "1:exporter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "pass_through_span_processor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6566,7 +6602,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\pass_through_span_processor(" + "$" + "{" + "1:exporter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "path",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6584,7 +6620,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\path(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "path_memory",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6602,7 +6638,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\path_memory(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "path_real",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6620,7 +6656,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\path_real(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "path_stdout",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6638,7 +6674,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\path_stdout(" + "$" + "{" + "1:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_client",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6656,7 +6692,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_client(" + "$" + "{" + "1:params" + "}" + ", " + "$" + "{" + "2:valueConverters" + "}" + ", " + "$" + "{" + "3:mapper" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_connection",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6674,7 +6710,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_connection(" + "$" + "{" + "1:connectionString" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_connection_dsn",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6692,7 +6728,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_connection_dsn(" + "$" + "{" + "1:dsn" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_connection_params",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6710,7 +6746,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_connection_params(" + "$" + "{" + "1:database" + "}" + ", " + "$" + "{" + "2:host" + "}" + ", " + "$" + "{" + "3:port" + "}" + ", " + "$" + "{" + "4:user" + "}" + ", " + "$" + "{" + "5:password" + "}" + ", " + "$" + "{" + "6:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_mapper",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6728,7 +6764,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_mapper()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_bigint",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6743,7 +6779,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_bigint()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_bit",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6758,7 +6794,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_bit()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_bool",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6773,7 +6809,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_bool()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_boolean",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6788,7 +6824,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_boolean()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_bool_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6803,7 +6839,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_bool_array()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_bpchar",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6818,7 +6854,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_bpchar()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_bytea",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6833,7 +6869,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_bytea()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_char",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6848,7 +6884,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_char()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_cidr",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6863,7 +6899,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_cidr()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_date",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6878,7 +6914,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_date()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_double",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6893,7 +6929,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_double()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_float4",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6908,7 +6944,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_float4()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_float4_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6923,7 +6959,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_float4_array()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_float8",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6938,7 +6974,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_float8()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_float8_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6953,7 +6989,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_float8_array()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_inet",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6968,7 +7004,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_inet()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_int2",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6983,7 +7019,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_int2()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_int2_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6998,7 +7034,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_int2_array()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_int4",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7013,7 +7049,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_int4()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_int4_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7028,7 +7064,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_int4_array()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_int8",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7043,7 +7079,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_int8()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_int8_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7058,7 +7094,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_int8_array()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_integer",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7073,7 +7109,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_integer()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_interval",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7088,7 +7124,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_interval()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_json",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7103,7 +7139,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_json()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_jsonb",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7118,7 +7154,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_jsonb()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_jsonb_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7133,7 +7169,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_jsonb_array()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_json_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7148,7 +7184,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_json_array()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_macaddr",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7163,7 +7199,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_macaddr()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_macaddr8",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7178,7 +7214,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_macaddr8()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_money",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7193,7 +7229,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_money()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_numeric",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7208,7 +7244,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_numeric()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_oid",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7223,7 +7259,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_oid()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_real",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7238,7 +7274,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_real()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_smallint",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7253,7 +7289,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_smallint()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_text",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7268,7 +7304,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_text()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_text_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7283,7 +7319,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_text_array()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_time",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7298,7 +7334,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_time()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_timestamp",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7313,7 +7349,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_timestamp()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_timestamptz",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7328,7 +7364,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_timestamptz()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_timetz",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7343,7 +7379,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_timetz()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_uuid",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7358,7 +7394,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_uuid()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_uuid_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7373,7 +7409,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_uuid_array()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_varbit",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7388,7 +7424,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_varbit()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_varchar",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7403,7 +7439,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_varchar()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_varchar_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7418,7 +7454,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_varchar_array()"),
         boost: 10
-    },        {
+    },                {
         label: "pgsql_type_xml",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7433,7 +7469,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_type_xml()"),
         boost: 10
-    },        {
+    },                {
         label: "pie_chart",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7448,7 +7484,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\ChartJS\\pie_chart(" + "$" + "{" + "1:label" + "}" + ", " + "$" + "{" + "2:datasets" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "postgresql_insert_options",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7466,7 +7502,43 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\postgresql_insert_options(" + "$" + "{" + "1:skip_conflicts" + "}" + ", " + "$" + "{" + "2:constraint" + "}" + ", " + "$" + "{" + "3:conflict_columns" + "}" + ", " + "$" + "{" + "4:update_columns" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
+        label: "postgresql_telemetry_config",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">postgresql_telemetry_config</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Telemetry</span> <span class=\"fn-param\">$telemetry</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ClockInterface</span> <span class=\"fn-param\">$clock</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">PostgreSqlTelemetryOptions</span> <span class=\"fn-param\">$options</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlTelemetryConfig</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create telemetry configuration for PostgreSQL client.<br>Bundles telemetry instance, clock, and options needed to instrument a PostgreSQL client.<br>@param Telemetry $telemetry The telemetry instance<br>@param ClockInterface $clock Clock for timestamps<br>@param null|PostgreSqlTelemetryOptions $options Telemetry options (default: all enabled)<br>@example<br>$config = postgresql_telemetry_config(<br>    telemetry(resource([\'service.name\' => \'my-app\'])),<br>    new SystemClock(),<br>);
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\postgresql_telemetry_config(" + "$" + "{" + "1:telemetry" + "}" + ", " + "$" + "{" + "2:clock" + "}" + ", " + "$" + "{" + "3:options" + "}" + ")"),
+        boost: 10
+    },                {
+        label: "postgresql_telemetry_options",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">postgresql_telemetry_options</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">bool</span> <span class=\"fn-param\">$traceQueries</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">true</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$traceTransactions</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">true</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$collectMetrics</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">true</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$logQueries</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">int</span> <span class=\"fn-param\">$maxQueryLength</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">1000</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$includeParameters</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">int</span> <span class=\"fn-param\">$maxParameters</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">10</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">int</span> <span class=\"fn-param\">$maxParameterLength</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">100</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">PostgreSqlTelemetryOptions</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create telemetry options for PostgreSQL client instrumentation.<br>Controls which telemetry signals (traces, metrics, logs) are enabled<br>and how query information is captured.<br>@param bool $traceQueries Create spans for query execution (default: true)<br>@param bool $traceTransactions Create spans for transactions (default: true)<br>@param bool $collectMetrics Collect duration and row count metrics (default: true)<br>@param bool $logQueries Log executed queries (default: false)<br>@param null|int $maxQueryLength Maximum query text length in telemetry (default: 1000, null = unlimited)<br>@param bool $includeParameters Include query parameters in telemetry (default: false, security consideration)<br>@example<br>// Default options (traces and metrics enabled)<br>$options = postgresql_telemetry_options();<br>// Enable query logging<br>$options = postgresql_telemetry_options(logQueries: true);<br>// Disable all but metrics<br>$options = postgresql_telemetry_options(<br>    traceQueries: false,<br>    traceTransactions: false,<br>    collectMetrics: true,<br>);
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\postgresql_telemetry_options(" + "$" + "{" + "1:traceQueries" + "}" + ", " + "$" + "{" + "2:traceTransactions" + "}" + ", " + "$" + "{" + "3:collectMetrics" + "}" + ", " + "$" + "{" + "4:logQueries" + "}" + ", " + "$" + "{" + "5:maxQueryLength" + "}" + ", " + "$" + "{" + "6:includeParameters" + "}" + ", " + "$" + "{" + "7:maxParameters" + "}" + ", " + "$" + "{" + "8:maxParameterLength" + "}" + ")"),
+        boost: 10
+    },                {
         label: "postgresql_update_options",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7484,7 +7556,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\postgresql_update_options(" + "$" + "{" + "1:primary_key_columns" + "}" + ", " + "$" + "{" + "2:update_columns" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "prepare_transaction",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7502,7 +7574,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\prepare_transaction(" + "$" + "{" + "1:transactionId" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "primary_key",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7520,7 +7592,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\primary_key(" + "$" + "{" + "1:columns" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "print_rows",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -7535,7 +7607,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\print_rows(" + "$" + "{" + "1:rows" + "}" + ", " + "$" + "{" + "2:truncate" + "}" + ", " + "$" + "{" + "3:formatter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "print_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -7553,7 +7625,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\print_schema(" + "$" + "{" + "1:schema" + "}" + ", " + "$" + "{" + "2:formatter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "process_detector",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7571,7 +7643,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\process_detector()"),
         boost: 10
-    },        {
+    },                {
         label: "propagation_context",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -7589,7 +7661,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\propagation_context(" + "$" + "{" + "1:spanContext" + "}" + ", " + "$" + "{" + "2:baggage" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "protocol",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7604,7 +7676,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\protocol(" + "$" + "{" + "1:protocol" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "psr7_request_carrier",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7619,7 +7691,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Psr7\\Telemetry\\DSL\\psr7_request_carrier(" + "$" + "{" + "1:request" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "psr7_response_carrier",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7634,7 +7706,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Psr7\\Telemetry\\DSL\\psr7_response_carrier(" + "$" + "{" + "1:response" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "psr18_traceable_client",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7649,7 +7721,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Psr18\\Telemetry\\DSL\\psr18_traceable_client(" + "$" + "{" + "1:client" + "}" + ", " + "$" + "{" + "2:telemetry" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "random_string",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -7664,7 +7736,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\random_string(" + "$" + "{" + "1:length" + "}" + ", " + "$" + "{" + "2:generator" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "rank",
         type: "function",
         detail: "flow\u002Ddsl\u002Dwindow\u002Dfunctions",
@@ -7679,7 +7751,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\rank()"),
         boost: 10
-    },        {
+    },                {
         label: "raw_cond",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7697,7 +7769,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\raw_cond(" + "$" + "{" + "1:sql" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "raw_expr",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7715,7 +7787,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\raw_expr(" + "$" + "{" + "1:sql" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "reassign_owned",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7733,7 +7805,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\reassign_owned(" + "$" + "{" + "1:roles" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "ref",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -7748,7 +7820,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\ref(" + "$" + "{" + "1:entry" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "refresh_materialized_view",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -7766,7 +7838,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\refresh_materialized_view(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "refs",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -7781,7 +7853,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\refs(" + "$" + "{" + "1:entries" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "ref_action_cascade",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7799,7 +7871,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\ref_action_cascade()"),
         boost: 10
-    },        {
+    },                {
         label: "ref_action_no_action",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7817,7 +7889,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\ref_action_no_action()"),
         boost: 10
-    },        {
+    },                {
         label: "ref_action_restrict",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7835,7 +7907,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\ref_action_restrict()"),
         boost: 10
-    },        {
+    },                {
         label: "ref_action_set_default",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7853,7 +7925,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\ref_action_set_default()"),
         boost: 10
-    },        {
+    },                {
         label: "ref_action_set_null",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7871,7 +7943,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\ref_action_set_null()"),
         boost: 10
-    },        {
+    },                {
         label: "regex",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -7886,7 +7958,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\regex(" + "$" + "{" + "1:pattern" + "}" + ", " + "$" + "{" + "2:subject" + "}" + ", " + "$" + "{" + "3:flags" + "}" + ", " + "$" + "{" + "4:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "regex_all",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -7901,7 +7973,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\regex_all(" + "$" + "{" + "1:pattern" + "}" + ", " + "$" + "{" + "2:subject" + "}" + ", " + "$" + "{" + "3:flags" + "}" + ", " + "$" + "{" + "4:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "regex_imatch",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7919,7 +7991,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\regex_imatch(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:pattern" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "regex_match",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -7934,7 +8006,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\regex_match(" + "$" + "{" + "1:pattern" + "}" + ", " + "$" + "{" + "2:subject" + "}" + ", " + "$" + "{" + "3:flags" + "}" + ", " + "$" + "{" + "4:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "regex_match",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -7952,7 +8024,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\regex_match(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:pattern" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "regex_match_all",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -7967,7 +8039,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\regex_match_all(" + "$" + "{" + "1:pattern" + "}" + ", " + "$" + "{" + "2:subject" + "}" + ", " + "$" + "{" + "3:flags" + "}" + ", " + "$" + "{" + "4:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "regex_replace",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -7982,7 +8054,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\regex_replace(" + "$" + "{" + "1:pattern" + "}" + ", " + "$" + "{" + "2:replacement" + "}" + ", " + "$" + "{" + "3:subject" + "}" + ", " + "$" + "{" + "4:limit" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "reindex_database",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -8000,7 +8072,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\reindex_database(" + "$" + "{" + "1:name" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "reindex_index",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -8018,7 +8090,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\reindex_index(" + "$" + "{" + "1:name" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "reindex_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -8036,7 +8108,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\reindex_schema(" + "$" + "{" + "1:name" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "reindex_table",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -8054,7 +8126,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\reindex_table(" + "$" + "{" + "1:name" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "release_savepoint",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8072,7 +8144,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\release_savepoint(" + "$" + "{" + "1:name" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "rename_replace",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtransformers",
@@ -8090,7 +8162,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\rename_replace(" + "$" + "{" + "1:search" + "}" + ", " + "$" + "{" + "2:replace" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "rename_style",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtransformers",
@@ -8105,7 +8177,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\rename_style(" + "$" + "{" + "1:style" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "reset_role",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8123,7 +8195,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\reset_role()"),
         boost: 10
-    },        {
+    },                {
         label: "resource",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -8141,7 +8213,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\resource(" + "$" + "{" + "1:attributes" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "resource_detector",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8159,7 +8231,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\resource_detector(" + "$" + "{" + "1:detectors" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "retry_any_throwable",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8174,7 +8246,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\retry_any_throwable(" + "$" + "{" + "1:limit" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "retry_on_exception_types",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8192,7 +8264,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\retry_on_exception_types(" + "$" + "{" + "1:exception_types" + "}" + ", " + "$" + "{" + "2:limit" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "returning",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8210,7 +8282,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\returning(" + "$" + "{" + "1:expressions" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "returning_all",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8228,7 +8300,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\returning_all()"),
         boost: 10
-    },        {
+    },                {
         label: "revoke",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8246,7 +8318,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\revoke(" + "$" + "{" + "1:privileges" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "revoke_role",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8264,7 +8336,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\revoke_role(" + "$" + "{" + "1:roles" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "rollback",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8282,7 +8354,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\rollback()"),
         boost: 10
-    },        {
+    },                {
         label: "rollback_prepared",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8300,7 +8372,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\rollback_prepared(" + "$" + "{" + "1:transactionId" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "round",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -8315,7 +8387,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\round(" + "$" + "{" + "1:value" + "}" + ", " + "$" + "{" + "2:precision" + "}" + ", " + "$" + "{" + "3:mode" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "row",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -8333,7 +8405,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\row(" + "$" + "{" + "1:entry" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "rows",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -8348,7 +8420,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\rows(" + "$" + "{" + "1:row" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "rows_partitioned",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -8366,7 +8438,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\rows_partitioned(" + "$" + "{" + "1:rows" + "}" + ", " + "$" + "{" + "2:partitions" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "row_expr",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8384,7 +8456,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\row_expr(" + "$" + "{" + "1:elements" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "row_number",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -8399,7 +8471,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\row_number()"),
         boost: 10
-    },        {
+    },                {
         label: "sanitize",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -8414,7 +8486,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\sanitize(" + "$" + "{" + "1:value" + "}" + ", " + "$" + "{" + "2:placeholder" + "}" + ", " + "$" + "{" + "3:skipCharacters" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "savepoint",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8432,7 +8504,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\savepoint(" + "$" + "{" + "1:name" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "save_mode_append",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -8447,7 +8519,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\save_mode_append()"),
         boost: 10
-    },        {
+    },                {
         label: "save_mode_exception_if_exists",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -8462,7 +8534,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\save_mode_exception_if_exists()"),
         boost: 10
-    },        {
+    },                {
         label: "save_mode_ignore",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -8477,7 +8549,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\save_mode_ignore()"),
         boost: 10
-    },        {
+    },                {
         label: "save_mode_overwrite",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -8492,7 +8564,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\save_mode_overwrite()"),
         boost: 10
-    },        {
+    },                {
         label: "schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -8510,7 +8582,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\schema(" + "$" + "{" + "1:definitions" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "schema_evolving_validator",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8525,7 +8597,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\schema_evolving_validator()"),
         boost: 10
-    },        {
+    },                {
         label: "schema_from_json",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8543,7 +8615,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\schema_from_json(" + "$" + "{" + "1:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "schema_from_parquet",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8558,7 +8630,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Parquet\\schema_from_parquet(" + "$" + "{" + "1:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "schema_metadata",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8576,7 +8648,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\schema_metadata(" + "$" + "{" + "1:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "schema_selective_validator",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8591,7 +8663,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\schema_selective_validator()"),
         boost: 10
-    },        {
+    },                {
         label: "schema_strict_validator",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8606,7 +8678,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\schema_strict_validator()"),
         boost: 10
-    },        {
+    },                {
         label: "schema_to_ascii",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8624,7 +8696,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\schema_to_ascii(" + "$" + "{" + "1:schema" + "}" + ", " + "$" + "{" + "2:formatter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "schema_to_json",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8642,7 +8714,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\schema_to_json(" + "$" + "{" + "1:schema" + "}" + ", " + "$" + "{" + "2:pretty" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "schema_to_parquet",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8657,7 +8729,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Parquet\\schema_to_parquet(" + "$" + "{" + "1:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "schema_to_php",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8675,7 +8747,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\schema_to_php(" + "$" + "{" + "1:schema" + "}" + ", " + "$" + "{" + "2:valueFormatter" + "}" + ", " + "$" + "{" + "3:typeFormatter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "schema_validate",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8693,7 +8765,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\schema_validate(" + "$" + "{" + "1:expected" + "}" + ", " + "$" + "{" + "2:given" + "}" + ", " + "$" + "{" + "3:validator" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "select",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtransformers",
@@ -8708,7 +8780,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\select(" + "$" + "{" + "1:entries" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "select",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8726,7 +8798,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\select(" + "$" + "{" + "1:expressions" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "set_role",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8744,7 +8816,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\set_role(" + "$" + "{" + "1:role" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "set_session_transaction",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8762,7 +8834,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\set_session_transaction()"),
         boost: 10
-    },        {
+    },                {
         label: "set_transaction",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8780,7 +8852,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\set_transaction()"),
         boost: 10
-    },        {
+    },                {
         label: "severity_filtering_log_processor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8798,7 +8870,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\severity_filtering_log_processor(" + "$" + "{" + "1:processor" + "}" + ", " + "$" + "{" + "2:minimumSeverity" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "severity_mapper",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8816,7 +8888,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Monolog\\Telemetry\\DSL\\severity_mapper(" + "$" + "{" + "1:customMapping" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "similar_to",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8834,7 +8906,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\similar_to(" + "$" + "{" + "1:expr" + "}" + ", " + "$" + "{" + "2:pattern" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "size",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -8849,7 +8921,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\size(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "skip_rows_handler",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -8864,7 +8936,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\skip_rows_handler()"),
         boost: 10
-    },        {
+    },                {
         label: "span_context",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -8882,7 +8954,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\span_context(" + "$" + "{" + "1:traceId" + "}" + ", " + "$" + "{" + "2:spanId" + "}" + ", " + "$" + "{" + "3:parentSpanId" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "span_event",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -8900,7 +8972,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\span_event(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:timestamp" + "}" + ", " + "$" + "{" + "3:attributes" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "span_id",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -8918,7 +8990,25 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\span_id(" + "$" + "{" + "1:hex" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
+        label: "span_limits",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">span_limits</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">int</span> <span class=\"fn-param\">$attributeCountLimit</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">128</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">int</span> <span class=\"fn-param\">$eventCountLimit</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">128</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">int</span> <span class=\"fn-param\">$linkCountLimit</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">128</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">int</span> <span class=\"fn-param\">$attributePerEventCountLimit</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">128</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">int</span> <span class=\"fn-param\">$attributePerLinkCountLimit</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">128</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">int</span> <span class=\"fn-param\">$attributeValueLengthLimit</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">SpanLimits</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create SpanLimits configuration.<br>SpanLimits controls the maximum amount of data a span can collect,<br>preventing unbounded memory growth and ensuring reasonable span sizes.<br>@param int $attributeCountLimit Maximum number of attributes per span<br>@param int $eventCountLimit Maximum number of events per span<br>@param int $linkCountLimit Maximum number of links per span<br>@param int $attributePerEventCountLimit Maximum number of attributes per event<br>@param int $attributePerLinkCountLimit Maximum number of attributes per link<br>@param null|int $attributeValueLengthLimit Maximum length for string attribute values (null = unlimited)
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\span_limits(" + "$" + "{" + "1:attributeCountLimit" + "}" + ", " + "$" + "{" + "2:eventCountLimit" + "}" + ", " + "$" + "{" + "3:linkCountLimit" + "}" + ", " + "$" + "{" + "4:attributePerEventCountLimit" + "}" + ", " + "$" + "{" + "5:attributePerLinkCountLimit" + "}" + ", " + "$" + "{" + "6:attributeValueLengthLimit" + "}" + ")"),
+        boost: 10
+    },                {
         label: "span_link",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -8936,7 +9026,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\span_link(" + "$" + "{" + "1:context" + "}" + ", " + "$" + "{" + "2:attributes" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "split",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -8951,7 +9041,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\split(" + "$" + "{" + "1:value" + "}" + ", " + "$" + "{" + "2:separator" + "}" + ", " + "$" + "{" + "3:limit" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sprintf",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -8966,7 +9056,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\sprintf(" + "$" + "{" + "1:format" + "}" + ", " + "$" + "{" + "2:args" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sqlite_insert_options",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -8984,7 +9074,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\sqlite_insert_options(" + "$" + "{" + "1:skip_conflicts" + "}" + ", " + "$" + "{" + "2:conflict_columns" + "}" + ", " + "$" + "{" + "3:update_columns" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_analyze",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9002,7 +9092,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_analyze(" + "$" + "{" + "1:plan" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_deparse",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9020,7 +9110,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_deparse(" + "$" + "{" + "1:query" + "}" + ", " + "$" + "{" + "2:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_deparse_options",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9038,7 +9128,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_deparse_options()"),
         boost: 10
-    },        {
+    },                {
         label: "sql_explain_config",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9056,7 +9146,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_explain_config(" + "$" + "{" + "1:analyze" + "}" + ", " + "$" + "{" + "2:verbose" + "}" + ", " + "$" + "{" + "3:costs" + "}" + ", " + "$" + "{" + "4:buffers" + "}" + ", " + "$" + "{" + "5:timing" + "}" + ", " + "$" + "{" + "6:format" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_explain_modifier",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9074,7 +9164,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_explain_modifier(" + "$" + "{" + "1:config" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_explain_parse",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9092,7 +9182,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_explain_parse(" + "$" + "{" + "1:jsonOutput" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_fingerprint",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9110,7 +9200,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_fingerprint(" + "$" + "{" + "1:sql" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_format",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9128,7 +9218,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_format(" + "$" + "{" + "1:sql" + "}" + ", " + "$" + "{" + "2:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_keyset_column",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9146,7 +9236,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_keyset_column(" + "$" + "{" + "1:column" + "}" + ", " + "$" + "{" + "2:order" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_normalize",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9164,7 +9254,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_normalize(" + "$" + "{" + "1:sql" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_normalize_utility",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9182,7 +9272,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_normalize_utility(" + "$" + "{" + "1:sql" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_parse",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9197,7 +9287,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_parse(" + "$" + "{" + "1:sql" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_parser",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9212,7 +9302,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_parser()"),
         boost: 10
-    },        {
+    },                {
         label: "sql_query_columns",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9230,7 +9320,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_query_columns(" + "$" + "{" + "1:query" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_query_depth",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9248,7 +9338,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_query_depth(" + "$" + "{" + "1:sql" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_query_functions",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9266,7 +9356,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_query_functions(" + "$" + "{" + "1:query" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_query_order_by",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9284,7 +9374,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_query_order_by(" + "$" + "{" + "1:query" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_query_tables",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9302,7 +9392,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_query_tables(" + "$" + "{" + "1:query" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_split",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9320,7 +9410,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_split(" + "$" + "{" + "1:sql" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_summary",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9338,7 +9428,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_summary(" + "$" + "{" + "1:sql" + "}" + ", " + "$" + "{" + "2:options" + "}" + ", " + "$" + "{" + "3:truncateLimit" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_to_count_query",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9356,7 +9446,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_to_count_query(" + "$" + "{" + "1:sql" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_to_explain",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9374,7 +9464,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_to_explain(" + "$" + "{" + "1:sql" + "}" + ", " + "$" + "{" + "2:config" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_to_keyset_query",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9392,7 +9482,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_to_keyset_query(" + "$" + "{" + "1:sql" + "}" + ", " + "$" + "{" + "2:limit" + "}" + ", " + "$" + "{" + "3:columns" + "}" + ", " + "$" + "{" + "4:cursor" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_to_limited_query",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9410,7 +9500,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_to_limited_query(" + "$" + "{" + "1:sql" + "}" + ", " + "$" + "{" + "2:limit" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sql_to_paginated_query",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9428,7 +9518,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sql_to_paginated_query(" + "$" + "{" + "1:sql" + "}" + ", " + "$" + "{" + "2:limit" + "}" + ", " + "$" + "{" + "3:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "star",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9446,7 +9536,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\star(" + "$" + "{" + "1:table" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "stdout_filesystem",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9464,7 +9554,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\stdout_filesystem()"),
         boost: 10
-    },        {
+    },                {
         label: "string_agg",
         type: "function",
         detail: "flow\u002Ddsl\u002Daggregating\u002Dfunctions",
@@ -9479,7 +9569,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\string_agg(" + "$" + "{" + "1:ref" + "}" + ", " + "$" + "{" + "2:separator" + "}" + ", " + "$" + "{" + "3:sort" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "string_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -9497,7 +9587,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\string_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "string_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -9512,7 +9602,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\string_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "structure_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -9530,7 +9620,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\structure_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:type" + "}" + ", " + "$" + "{" + "4:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "structure_ref",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -9545,7 +9635,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\structure_ref(" + "$" + "{" + "1:entry" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "structure_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -9563,7 +9653,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\structure_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:type" + "}" + ", " + "$" + "{" + "3:nullable" + "}" + ", " + "$" + "{" + "4:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "struct_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -9581,7 +9671,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\struct_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:type" + "}" + ", " + "$" + "{" + "4:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "struct_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -9599,7 +9689,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\struct_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:type" + "}" + ", " + "$" + "{" + "3:nullable" + "}" + ", " + "$" + "{" + "4:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "str_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -9617,7 +9707,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\str_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "str_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -9635,7 +9725,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\str_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sub_select",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9653,7 +9743,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\sub_select(" + "$" + "{" + "1:query" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sum",
         type: "function",
         detail: "flow\u002Ddsl\u002Daggregating\u002Dfunctions",
@@ -9668,7 +9758,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\sum(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "superglobal_carrier",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9686,7 +9776,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\superglobal_carrier()"),
         boost: 10
-    },        {
+    },                {
         label: "symfony_request_carrier",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9701,7 +9791,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Symfony\\HttpFoundationTelemetry\\DSL\\symfony_request_carrier(" + "$" + "{" + "1:request" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "symfony_response_carrier",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9716,7 +9806,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Symfony\\HttpFoundationTelemetry\\DSL\\symfony_response_carrier(" + "$" + "{" + "1:response" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "table",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9734,7 +9824,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\table(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "table_func",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9752,7 +9842,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\table_func(" + "$" + "{" + "1:function" + "}" + ", " + "$" + "{" + "2:withOrdinality" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "table_schema_to_flow_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9770,7 +9860,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\table_schema_to_flow_schema(" + "$" + "{" + "1:table" + "}" + ", " + "$" + "{" + "2:types_map" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "telemetry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9788,7 +9878,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\telemetry(" + "$" + "{" + "1:resource" + "}" + ", " + "$" + "{" + "2:tracerProvider" + "}" + ", " + "$" + "{" + "3:meterProvider" + "}" + ", " + "$" + "{" + "4:loggerProvider" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "telemetry_handler",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9806,7 +9896,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Monolog\\Telemetry\\DSL\\telemetry_handler(" + "$" + "{" + "1:logger" + "}" + ", " + "$" + "{" + "2:converter" + "}" + ", " + "$" + "{" + "3:level" + "}" + ", " + "$" + "{" + "4:bubble" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "telemetry_options",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9814,14 +9904,14 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">telemetry_options</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">bool</span> <span class=\"fn-param\">$trace_loading</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$trace_transformations</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$collect_metrics</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">FilesystemTelemetryOptions</span> <span class=\"fn-param\">$filesystem</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TelemetryOptions</span>
+                    <span class=\"fn-name\">telemetry_options</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">bool</span> <span class=\"fn-param\">$trace_loading</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$trace_transformations</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$trace_cache</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$collect_metrics</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">FilesystemTelemetryOptions</span> <span class=\"fn-param\">$filesystem</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TelemetryOptions</span>
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\ETL\\DSL\\telemetry_options(" + "$" + "{" + "1:trace_loading" + "}" + ", " + "$" + "{" + "2:trace_transformations" + "}" + ", " + "$" + "{" + "3:collect_metrics" + "}" + ", " + "$" + "{" + "4:filesystem" + "}" + ")"),
+        apply: snippet("\\Flow\\ETL\\DSL\\telemetry_options(" + "$" + "{" + "1:trace_loading" + "}" + ", " + "$" + "{" + "2:trace_transformations" + "}" + ", " + "$" + "{" + "3:trace_cache" + "}" + ", " + "$" + "{" + "4:collect_metrics" + "}" + ", " + "$" + "{" + "5:filesystem" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "text_search_match",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -9839,7 +9929,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\text_search_match(" + "$" + "{" + "1:document" + "}" + ", " + "$" + "{" + "2:query" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "throw_error_handler",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -9854,7 +9944,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\throw_error_handler()"),
         boost: 10
-    },        {
+    },                {
         label: "time_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -9872,7 +9962,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\time_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "time_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -9887,7 +9977,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\time_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -9905,7 +9995,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\to_array(" + "$" + "{" + "1:array" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_avro",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -9920,7 +10010,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\Adapter\\Avro\\to_avro(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_branch",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -9935,7 +10025,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\to_branch(" + "$" + "{" + "1:condition" + "}" + ", " + "$" + "{" + "2:loader" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_callable",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -9950,7 +10040,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\to_callable(" + "$" + "{" + "1:callable" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_chartjs",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -9965,7 +10055,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\ChartJS\\to_chartjs(" + "$" + "{" + "1:type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_chartjs_file",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -9983,7 +10073,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\ChartJS\\to_chartjs_file(" + "$" + "{" + "1:type" + "}" + ", " + "$" + "{" + "2:output" + "}" + ", " + "$" + "{" + "3:template" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_chartjs_var",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10001,7 +10091,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\ChartJS\\to_chartjs_var(" + "$" + "{" + "1:type" + "}" + ", " + "$" + "{" + "2:output" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_csv",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10019,7 +10109,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\CSV\\to_csv(" + "$" + "{" + "1:uri" + "}" + ", " + "$" + "{" + "2:with_header" + "}" + ", " + "$" + "{" + "3:separator" + "}" + ", " + "$" + "{" + "4:enclosure" + "}" + ", " + "$" + "{" + "5:escape" + "}" + ", " + "$" + "{" + "6:new_line_separator" + "}" + ", " + "$" + "{" + "7:datetime_format" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_date",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -10034,7 +10124,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\to_date(" + "$" + "{" + "1:ref" + "}" + ", " + "$" + "{" + "2:format" + "}" + ", " + "$" + "{" + "3:timeZone" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_date_time",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -10049,7 +10139,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\to_date_time(" + "$" + "{" + "1:ref" + "}" + ", " + "$" + "{" + "2:format" + "}" + ", " + "$" + "{" + "3:timeZone" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_dbal_schema_table",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10067,7 +10157,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\to_dbal_schema_table(" + "$" + "{" + "1:schema" + "}" + ", " + "$" + "{" + "2:table_name" + "}" + ", " + "$" + "{" + "3:table_options" + "}" + ", " + "$" + "{" + "4:types_map" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_dbal_table_delete",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10085,7 +10175,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\to_dbal_table_delete(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:table" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_dbal_table_insert",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10103,7 +10193,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\to_dbal_table_insert(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:table" + "}" + ", " + "$" + "{" + "3:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_dbal_table_update",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10121,7 +10211,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\to_dbal_table_update(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:table" + "}" + ", " + "$" + "{" + "3:options" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_dbal_transaction",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10139,7 +10229,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Doctrine\\to_dbal_transaction(" + "$" + "{" + "1:connection" + "}" + ", " + "$" + "{" + "2:loaders" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -10157,7 +10247,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\to_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:data" + "}" + ", " + "$" + "{" + "3:entryFactory" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_es_bulk_index",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10175,7 +10265,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Elasticsearch\\to_es_bulk_index(" + "$" + "{" + "1:config" + "}" + ", " + "$" + "{" + "2:index" + "}" + ", " + "$" + "{" + "3:id_factory" + "}" + ", " + "$" + "{" + "4:parameters" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_es_bulk_update",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10193,7 +10283,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Elasticsearch\\to_es_bulk_update(" + "$" + "{" + "1:config" + "}" + ", " + "$" + "{" + "2:index" + "}" + ", " + "$" + "{" + "3:id_factory" + "}" + ", " + "$" + "{" + "4:parameters" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_excel",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10208,7 +10298,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Excel\\DSL\\to_excel(" + "$" + "{" + "1:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_json",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10226,7 +10316,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\JSON\\to_json(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:flags" + "}" + ", " + "$" + "{" + "3:date_time_format" + "}" + ", " + "$" + "{" + "4:put_rows_in_new_lines" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_json_lines",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10244,7 +10334,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\JSON\\to_json_lines(" + "$" + "{" + "1:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_meilisearch_bulk_index",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10262,7 +10352,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Meilisearch\\to_meilisearch_bulk_index(" + "$" + "{" + "1:config" + "}" + ", " + "$" + "{" + "2:index" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_meilisearch_bulk_update",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10280,7 +10370,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Meilisearch\\to_meilisearch_bulk_update(" + "$" + "{" + "1:config" + "}" + ", " + "$" + "{" + "2:index" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_memory",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10295,7 +10385,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\to_memory(" + "$" + "{" + "1:memory" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_output",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10310,7 +10400,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\to_output(" + "$" + "{" + "1:truncate" + "}" + ", " + "$" + "{" + "2:output" + "}" + ", " + "$" + "{" + "3:formatter" + "}" + ", " + "$" + "{" + "4:schemaFormatter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_parquet",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10328,7 +10418,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Parquet\\to_parquet(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:options" + "}" + ", " + "$" + "{" + "3:compressions" + "}" + ", " + "$" + "{" + "4:schema" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_stderr",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10343,7 +10433,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\to_stderr(" + "$" + "{" + "1:truncate" + "}" + ", " + "$" + "{" + "2:output" + "}" + ", " + "$" + "{" + "3:formatter" + "}" + ", " + "$" + "{" + "4:schemaFormatter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_stdout",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10358,7 +10448,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\to_stdout(" + "$" + "{" + "1:truncate" + "}" + ", " + "$" + "{" + "2:output" + "}" + ", " + "$" + "{" + "3:formatter" + "}" + ", " + "$" + "{" + "4:schemaFormatter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_stream",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10373,7 +10463,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\to_stream(" + "$" + "{" + "1:uri" + "}" + ", " + "$" + "{" + "2:truncate" + "}" + ", " + "$" + "{" + "3:output" + "}" + ", " + "$" + "{" + "4:mode" + "}" + ", " + "$" + "{" + "5:formatter" + "}" + ", " + "$" + "{" + "6:schemaFormatter" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_text",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10391,7 +10481,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\Text\\to_text(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:new_line_separator" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_timezone",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -10406,7 +10496,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\to_timezone(" + "$" + "{" + "1:value" + "}" + ", " + "$" + "{" + "2:timeZone" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_transformation",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10421,7 +10511,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\to_transformation(" + "$" + "{" + "1:transformer" + "}" + ", " + "$" + "{" + "2:loader" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "to_xml",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -10439,7 +10529,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\XML\\to_xml(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:root_element_name" + "}" + ", " + "$" + "{" + "3:row_element_name" + "}" + ", " + "$" + "{" + "4:attribute_prefix" + "}" + ", " + "$" + "{" + "5:date_time_format" + "}" + ", " + "$" + "{" + "6:xml_writer" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "traceable_filesystem",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10457,7 +10547,25 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\traceable_filesystem(" + "$" + "{" + "1:filesystem" + "}" + ", " + "$" + "{" + "2:telemetryConfig" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
+        label: "traceable_postgresql_client",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">traceable_postgresql_client</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Client</span> <span class=\"fn-param\">$client</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">PostgreSqlTelemetryConfig</span> <span class=\"fn-param\">$telemetryConfig</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TraceableClient</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Wrap a PostgreSQL client with telemetry instrumentation.<br>Returns a decorator that adds spans, metrics, and logs to all<br>query and transaction operations following OpenTelemetry conventions.<br>@param Client\\Client $client The PostgreSQL client to instrument<br>@param PostgreSqlTelemetryConfig $telemetryConfig Telemetry configuration<br>@example<br>$client = pgsql_client(pgsql_connection(\'host=localhost dbname=mydb\'));<br>$traceableClient = traceable_postgresql_client(<br>    $client,<br>    postgresql_telemetry_config(<br>        telemetry(resource([\'service.name\' => \'my-app\'])),<br>        new SystemClock(),<br>        postgresql_telemetry_options(<br>            traceQueries: true,<br>            traceTransactions: true,<br>            collectMetrics: true,<br>            logQueries: true,<br>            maxQueryLength: 500,<br>        ),<br>    ),<br>);<br>// All operations now traced<br>$traceableClient->transaction(function (Client $client) {<br>    $user = $client->fetchOne(\'SELECT * FROM users WHERE id = $1\', [123]);<br>    $client->execute(\'UPDATE users SET last_login = NOW() WHERE id = $1\', [123]);<br>});
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\traceable_postgresql_client(" + "$" + "{" + "1:client" + "}" + ", " + "$" + "{" + "2:telemetryConfig" + "}" + ")"),
+        boost: 10
+    },                {
         label: "tracer_provider",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10465,17 +10573,17 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">tracer_provider</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">SpanProcessor</span> <span class=\"fn-param\">$processor</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ClockInterface</span> <span class=\"fn-param\">$clock</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ContextStorage</span> <span class=\"fn-param\">$contextStorage</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Sampler</span> <span class=\"fn-param\">$sampler</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Telemetry\\Tracer\\Sampler\\AlwaysOnSampler::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TracerProvider</span>
+                    <span class=\"fn-name\">tracer_provider</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">SpanProcessor</span> <span class=\"fn-param\">$processor</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ClockInterface</span> <span class=\"fn-param\">$clock</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ContextStorage</span> <span class=\"fn-param\">$contextStorage</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Sampler</span> <span class=\"fn-param\">$sampler</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Telemetry\\Tracer\\Sampler\\AlwaysOnSampler::...</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">SpanLimits</span> <span class=\"fn-param\">$limits</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Telemetry\\Tracer\\SpanLimits::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TracerProvider</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Create a TracerProvider.<br>Creates a provider that uses a SpanProcessor for processing spans.<br>For void/disabled tracing, pass void_processor().<br>For memory-based testing, pass memory_processor() with exporters.<br>@param SpanProcessor $processor The processor for spans<br>@param ClockInterface $clock The clock for timestamps<br>@param ContextStorage $contextStorage Storage for context propagation<br>@param Sampler $sampler Sampling strategy for spans
+                    Create a TracerProvider.<br>Creates a provider that uses a SpanProcessor for processing spans.<br>For void/disabled tracing, pass void_processor().<br>For memory-based testing, pass memory_processor() with exporters.<br>@param SpanProcessor $processor The processor for spans<br>@param ClockInterface $clock The clock for timestamps<br>@param ContextStorage $contextStorage Storage for context propagation<br>@param Sampler $sampler Sampling strategy for spans<br>@param SpanLimits $limits Limits for span attributes, events, and links
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\Telemetry\\DSL\\tracer_provider(" + "$" + "{" + "1:processor" + "}" + ", " + "$" + "{" + "2:clock" + "}" + ", " + "$" + "{" + "3:contextStorage" + "}" + ", " + "$" + "{" + "4:sampler" + "}" + ")"),
+        apply: snippet("\\Flow\\Telemetry\\DSL\\tracer_provider(" + "$" + "{" + "1:processor" + "}" + ", " + "$" + "{" + "2:clock" + "}" + ", " + "$" + "{" + "3:contextStorage" + "}" + ", " + "$" + "{" + "4:sampler" + "}" + ", " + "$" + "{" + "5:limits" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "trace_based_exemplar_filter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10493,7 +10601,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\trace_based_exemplar_filter()"),
         boost: 10
-    },        {
+    },                {
         label: "trace_id",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10511,7 +10619,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\trace_id(" + "$" + "{" + "1:hex" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "transaction_snapshot",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10529,7 +10637,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\transaction_snapshot(" + "$" + "{" + "1:snapshotId" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "truncate_table",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10547,7 +10655,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\truncate_table(" + "$" + "{" + "1:tables" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "typed",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10565,7 +10673,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\typed(" + "$" + "{" + "1:value" + "}" + ", " + "$" + "{" + "2:targetType" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "types",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10583,7 +10691,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\types(" + "$" + "{" + "1:types" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10601,7 +10709,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_array()"),
         boost: 10
-    },        {
+    },                {
         label: "type_attr",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10619,7 +10727,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\type_attr(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_boolean",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10637,7 +10745,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_boolean()"),
         boost: 10
-    },        {
+    },                {
         label: "type_callable",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10655,7 +10763,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_callable()"),
         boost: 10
-    },        {
+    },                {
         label: "type_class_string",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10673,7 +10781,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_class_string(" + "$" + "{" + "1:class" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_date",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10691,7 +10799,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\type_date()"),
         boost: 10
-    },        {
+    },                {
         label: "type_date",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10709,7 +10817,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_date()"),
         boost: 10
-    },        {
+    },                {
         label: "type_datetime",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10727,7 +10835,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_datetime()"),
         boost: 10
-    },        {
+    },                {
         label: "type_enum",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10745,7 +10853,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_enum(" + "$" + "{" + "1:class" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_equals",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10763,7 +10871,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_equals(" + "$" + "{" + "1:left" + "}" + ", " + "$" + "{" + "2:right" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_float",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10781,7 +10889,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_float()"),
         boost: 10
-    },        {
+    },                {
         label: "type_from_array",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10799,7 +10907,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_from_array(" + "$" + "{" + "1:data" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_html",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10817,7 +10925,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_html()"),
         boost: 10
-    },        {
+    },                {
         label: "type_html_element",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10835,7 +10943,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_html_element()"),
         boost: 10
-    },        {
+    },                {
         label: "type_instance_of",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10853,7 +10961,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_instance_of(" + "$" + "{" + "1:class" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_int",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10871,7 +10979,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\type_int()"),
         boost: 10
-    },        {
+    },                {
         label: "type_integer",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10889,7 +10997,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_integer()"),
         boost: 10
-    },        {
+    },                {
         label: "type_intersection",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10907,7 +11015,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_intersection(" + "$" + "{" + "1:first" + "}" + ", " + "$" + "{" + "2:second" + "}" + ", " + "$" + "{" + "3:types" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_is",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10925,7 +11033,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_is(" + "$" + "{" + "1:type" + "}" + ", " + "$" + "{" + "2:typeClass" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_is_any",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10943,7 +11051,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_is_any(" + "$" + "{" + "1:type" + "}" + ", " + "$" + "{" + "2:typeClass" + "}" + ", " + "$" + "{" + "3:typeClasses" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_is_nullable",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -10961,7 +11069,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_is_nullable(" + "$" + "{" + "1:type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_json",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10979,7 +11087,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_json()"),
         boost: 10
-    },        {
+    },                {
         label: "type_list",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -10997,7 +11105,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_list(" + "$" + "{" + "1:element" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_literal",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11015,7 +11123,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_literal(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_map",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11033,7 +11141,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_map(" + "$" + "{" + "1:key_type" + "}" + ", " + "$" + "{" + "2:value_type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_mixed",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11051,7 +11159,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_mixed()"),
         boost: 10
-    },        {
+    },                {
         label: "type_non_empty_string",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11069,7 +11177,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_non_empty_string()"),
         boost: 10
-    },        {
+    },                {
         label: "type_null",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11087,7 +11195,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_null()"),
         boost: 10
-    },        {
+    },                {
         label: "type_numeric_string",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11105,7 +11213,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_numeric_string()"),
         boost: 10
-    },        {
+    },                {
         label: "type_object",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11123,7 +11231,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_object()"),
         boost: 10
-    },        {
+    },                {
         label: "type_optional",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11141,7 +11249,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_optional(" + "$" + "{" + "1:type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_positive_integer",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11159,7 +11267,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_positive_integer()"),
         boost: 10
-    },        {
+    },                {
         label: "type_resource",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11177,7 +11285,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_resource()"),
         boost: 10
-    },        {
+    },                {
         label: "type_scalar",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11195,7 +11303,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_scalar()"),
         boost: 10
-    },        {
+    },                {
         label: "type_string",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11213,7 +11321,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_string()"),
         boost: 10
-    },        {
+    },                {
         label: "type_structure",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11231,7 +11339,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_structure(" + "$" + "{" + "1:elements" + "}" + ", " + "$" + "{" + "2:optional_elements" + "}" + ", " + "$" + "{" + "3:allow_extra" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_time",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11249,7 +11357,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_time()"),
         boost: 10
-    },        {
+    },                {
         label: "type_time_zone",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11267,7 +11375,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_time_zone()"),
         boost: 10
-    },        {
+    },                {
         label: "type_union",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11285,7 +11393,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_union(" + "$" + "{" + "1:first" + "}" + ", " + "$" + "{" + "2:second" + "}" + ", " + "$" + "{" + "3:types" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "type_uuid",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11303,7 +11411,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_uuid()"),
         boost: 10
-    },        {
+    },                {
         label: "type_xml",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11321,7 +11429,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_xml()"),
         boost: 10
-    },        {
+    },                {
         label: "type_xml_element",
         type: "function",
         detail: "flow\u002Ddsl\u002Dtype",
@@ -11339,7 +11447,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Types\\DSL\\type_xml_element()"),
         boost: 10
-    },        {
+    },                {
         label: "ulid",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -11354,7 +11462,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\ulid(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "unique_constraint",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11372,7 +11480,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\unique_constraint(" + "$" + "{" + "1:columns" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "update",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11390,7 +11498,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\update()"),
         boost: 10
-    },        {
+    },                {
         label: "upper",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -11405,7 +11513,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\upper(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "uuid_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -11423,7 +11531,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\uuid_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "uuid_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -11438,7 +11546,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\uuid_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "uuid_v4",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -11453,7 +11561,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\uuid_v4()"),
         boost: 10
-    },        {
+    },                {
         label: "uuid_v7",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -11468,7 +11576,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\uuid_v7(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "vacuum",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11486,7 +11594,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\vacuum()"),
         boost: 10
-    },        {
+    },                {
         label: "values_table",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11504,7 +11612,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\values_table(" + "$" + "{" + "1:rows" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "value_normalizer",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11522,7 +11630,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Bridge\\Monolog\\Telemetry\\DSL\\value_normalizer()"),
         boost: 10
-    },        {
+    },                {
         label: "void_log_exporter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11540,7 +11648,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\void_log_exporter()"),
         boost: 10
-    },        {
+    },                {
         label: "void_log_processor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11558,7 +11666,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\void_log_processor()"),
         boost: 10
-    },        {
+    },                {
         label: "void_metric_exporter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11576,7 +11684,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\void_metric_exporter()"),
         boost: 10
-    },        {
+    },                {
         label: "void_metric_processor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11594,7 +11702,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\void_metric_processor()"),
         boost: 10
-    },        {
+    },                {
         label: "void_span_exporter",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11612,7 +11720,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\void_span_exporter()"),
         boost: 10
-    },        {
+    },                {
         label: "void_span_processor",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11630,7 +11738,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\void_span_processor()"),
         boost: 10
-    },        {
+    },                {
         label: "w3c_baggage",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11648,7 +11756,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\w3c_baggage()"),
         boost: 10
-    },        {
+    },                {
         label: "w3c_trace_context",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11666,7 +11774,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\w3c_trace_context()"),
         boost: 10
-    },        {
+    },                {
         label: "when",
         type: "function",
         detail: "flow\u002Ddsl\u002Dscalar\u002Dfunctions",
@@ -11681,7 +11789,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\when(" + "$" + "{" + "1:condition" + "}" + ", " + "$" + "{" + "2:then" + "}" + ", " + "$" + "{" + "3:else" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "when",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11699,7 +11807,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\when(" + "$" + "{" + "1:condition" + "}" + ", " + "$" + "{" + "2:result" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "window",
         type: "function",
         detail: "flow\u002Ddsl\u002Ddata\u002Dframe",
@@ -11714,7 +11822,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\window()"),
         boost: 10
-    },        {
+    },                {
         label: "window_def",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11732,7 +11840,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\window_def(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:partitionBy" + "}" + ", " + "$" + "{" + "3:orderBy" + "}" + ", " + "$" + "{" + "4:frame" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "window_frame",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11750,7 +11858,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\window_frame(" + "$" + "{" + "1:mode" + "}" + ", " + "$" + "{" + "2:start" + "}" + ", " + "$" + "{" + "3:end" + "}" + ", " + "$" + "{" + "4:exclusion" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "window_func",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11768,7 +11876,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\window_func(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:args" + "}" + ", " + "$" + "{" + "3:partitionBy" + "}" + ", " + "$" + "{" + "4:orderBy" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "with",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11786,7 +11894,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\with(" + "$" + "{" + "1:ctes" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "with_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -11801,7 +11909,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\with_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:function" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "write_with_retries",
         type: "function",
         detail: "flow\u002Ddsl\u002Dloaders",
@@ -11816,7 +11924,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\write_with_retries(" + "$" + "{" + "1:loader" + "}" + ", " + "$" + "{" + "2:retry_strategy" + "}" + ", " + "$" + "{" + "3:delay_factory" + "}" + ", " + "$" + "{" + "4:sleep" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "xml_element_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -11834,7 +11942,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\xml_element_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "xml_element_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",
@@ -11849,7 +11957,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\xml_element_schema(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:nullable" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "xml_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -11867,7 +11975,7 @@ const dslFunctions = [
         },
         apply: snippet("\\Flow\\ETL\\DSL\\xml_entry(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:value" + "}" + ", " + "$" + "{" + "3:metadata" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "xml_schema",
         type: "function",
         detail: "flow\u002Ddsl\u002Dschema",

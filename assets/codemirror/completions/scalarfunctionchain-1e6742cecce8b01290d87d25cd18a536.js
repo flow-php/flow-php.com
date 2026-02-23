@@ -15,7 +15,7 @@ const scalarFunctionChainFunctions = [
 
 // ScalarFunctionChain methods
 const scalarFunctionChainMethods = [
-        {
+                {
         label: "and",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -30,7 +30,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("and(" + "$" + "{" + "1:function" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "andNot",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -45,7 +45,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("andNot(" + "$" + "{" + "1:function" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "append",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -60,7 +60,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("append(" + "$" + "{" + "1:suffix" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "arrayFilter",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -78,7 +78,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("arrayFilter(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "arrayGet",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -93,7 +93,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("arrayGet(" + "$" + "{" + "1:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "arrayGetCollection",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -111,7 +111,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("arrayGetCollection(" + "$" + "{" + "1:keys" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "arrayGetCollectionFirst",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -126,7 +126,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("arrayGetCollectionFirst(" + "$" + "{" + "1:keys" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "arrayKeep",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -144,7 +144,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("arrayKeep(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "arrayKeys",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -162,7 +162,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("arrayKeys()"),
         boost: 10
-    },        {
+    },                {
         label: "arrayMerge",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -180,7 +180,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("arrayMerge(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "arrayMergeCollection",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -195,7 +195,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("arrayMergeCollection()"),
         boost: 10
-    },        {
+    },                {
         label: "arrayPathExists",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -210,7 +210,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("arrayPathExists(" + "$" + "{" + "1:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "arrayReverse",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -225,7 +225,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("arrayReverse(" + "$" + "{" + "1:preserveKeys" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "arraySort",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -240,7 +240,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("arraySort(" + "$" + "{" + "1:sortFunction" + "}" + ", " + "$" + "{" + "2:flags" + "}" + ", " + "$" + "{" + "3:recursive" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "arrayValues",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -258,7 +258,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("arrayValues()"),
         boost: 10
-    },        {
+    },                {
         label: "ascii",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -273,7 +273,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("ascii()"),
         boost: 10
-    },        {
+    },                {
         label: "between",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -291,7 +291,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("between(" + "$" + "{" + "1:lowerBoundRef" + "}" + ", " + "$" + "{" + "2:upperBoundRef" + "}" + ", " + "$" + "{" + "3:boundary" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "binaryLength",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -306,7 +306,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("binaryLength()"),
         boost: 10
-    },        {
+    },                {
         label: "call",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -324,7 +324,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("call(" + "$" + "{" + "1:callable" + "}" + ", " + "$" + "{" + "2:arguments" + "}" + ", " + "$" + "{" + "3:refAlias" + "}" + ", " + "$" + "{" + "4:returnType" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "capitalize",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -339,7 +339,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("capitalize()"),
         boost: 10
-    },        {
+    },                {
         label: "cast",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -357,7 +357,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("cast(" + "$" + "{" + "1:type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "chunk",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -372,7 +372,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("chunk(" + "$" + "{" + "1:size" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "coalesce",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -387,7 +387,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("coalesce(" + "$" + "{" + "1:params" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "codePointLength",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -402,7 +402,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("codePointLength()"),
         boost: 10
-    },        {
+    },                {
         label: "collapseWhitespace",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -417,7 +417,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("collapseWhitespace()"),
         boost: 10
-    },        {
+    },                {
         label: "concat",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -432,7 +432,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("concat(" + "$" + "{" + "1:params" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "concatWithSeparator",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -447,7 +447,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("concatWithSeparator(" + "$" + "{" + "1:separator" + "}" + ", " + "$" + "{" + "2:params" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "contains",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -462,7 +462,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("contains(" + "$" + "{" + "1:needle" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "dateFormat",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -477,7 +477,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("dateFormat(" + "$" + "{" + "1:format" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "dateTimeFormat",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -492,7 +492,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("dateTimeFormat(" + "$" + "{" + "1:format" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "divide",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -507,7 +507,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("divide(" + "$" + "{" + "1:value" + "}" + ", " + "$" + "{" + "2:scale" + "}" + ", " + "$" + "{" + "3:rounding" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "domElementAttribute",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -525,7 +525,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("domElementAttribute(" + "$" + "{" + "1:attribute" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "domElementAttributesCount",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -540,7 +540,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("domElementAttributesCount()"),
         boost: 10
-    },        {
+    },                {
         label: "domElementAttributeValue",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -555,7 +555,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("domElementAttributeValue(" + "$" + "{" + "1:attribute" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "domElementNextSibling",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -570,7 +570,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("domElementNextSibling(" + "$" + "{" + "1:allowOnlyElement" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "domElementParent",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -585,7 +585,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("domElementParent()"),
         boost: 10
-    },        {
+    },                {
         label: "domElementPreviousSibling",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -600,7 +600,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("domElementPreviousSibling(" + "$" + "{" + "1:allowOnlyElement" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "domElementValue",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -615,7 +615,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("domElementValue()"),
         boost: 10
-    },        {
+    },                {
         label: "endsWith",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -630,7 +630,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("endsWith(" + "$" + "{" + "1:needle" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "ensureEnd",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -645,7 +645,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("ensureEnd(" + "$" + "{" + "1:suffix" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "ensureStart",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -660,7 +660,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("ensureStart(" + "$" + "{" + "1:prefix" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "equals",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -675,7 +675,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("equals(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "exists",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -690,7 +690,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("exists()"),
         boost: 10
-    },        {
+    },                {
         label: "expand",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -708,7 +708,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("expand(" + "$" + "{" + "1:expand" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "greaterThan",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -723,7 +723,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("greaterThan(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "greaterThanEqual",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -738,7 +738,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("greaterThanEqual(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "hash",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -753,7 +753,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("hash(" + "$" + "{" + "1:algorithm" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "htmlQuerySelector",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -768,7 +768,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("htmlQuerySelector(" + "$" + "{" + "1:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "htmlQuerySelectorAll",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -783,7 +783,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("htmlQuerySelectorAll(" + "$" + "{" + "1:path" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "indexOf",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -801,7 +801,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("indexOf(" + "$" + "{" + "1:needle" + "}" + ", " + "$" + "{" + "2:ignoreCase" + "}" + ", " + "$" + "{" + "3:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "indexOfLast",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -819,7 +819,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("indexOfLast(" + "$" + "{" + "1:needle" + "}" + ", " + "$" + "{" + "2:ignoreCase" + "}" + ", " + "$" + "{" + "3:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "isEmpty",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -834,7 +834,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("isEmpty()"),
         boost: 10
-    },        {
+    },                {
         label: "isEven",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -849,7 +849,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("isEven()"),
         boost: 10
-    },        {
+    },                {
         label: "isFalse",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -864,7 +864,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("isFalse()"),
         boost: 10
-    },        {
+    },                {
         label: "isIn",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -882,7 +882,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("isIn(" + "$" + "{" + "1:haystack" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "isNotNull",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -897,7 +897,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("isNotNull()"),
         boost: 10
-    },        {
+    },                {
         label: "isNotNumeric",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -912,7 +912,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("isNotNumeric()"),
         boost: 10
-    },        {
+    },                {
         label: "isNull",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -927,7 +927,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("isNull()"),
         boost: 10
-    },        {
+    },                {
         label: "isNumeric",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -942,7 +942,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("isNumeric()"),
         boost: 10
-    },        {
+    },                {
         label: "isOdd",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -957,7 +957,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("isOdd()"),
         boost: 10
-    },        {
+    },                {
         label: "isTrue",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -972,7 +972,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("isTrue()"),
         boost: 10
-    },        {
+    },                {
         label: "isType",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -990,7 +990,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("isType(" + "$" + "{" + "1:types" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "isUtf8",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1008,7 +1008,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("isUtf8()"),
         boost: 10
-    },        {
+    },                {
         label: "jsonDecode",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1023,7 +1023,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("jsonDecode(" + "$" + "{" + "1:flags" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "jsonEncode",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1038,7 +1038,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("jsonEncode(" + "$" + "{" + "1:flags" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "lessThan",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1053,7 +1053,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("lessThan(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "lessThanEqual",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1068,7 +1068,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("lessThanEqual(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "literal",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1083,7 +1083,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("literal(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "lower",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1098,7 +1098,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("lower()"),
         boost: 10
-    },        {
+    },                {
         label: "minus",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1113,7 +1113,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("minus(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "mod",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1128,7 +1128,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("mod(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "modifyDateTime",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1143,7 +1143,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("modifyDateTime(" + "$" + "{" + "1:modifier" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "multiply",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1158,7 +1158,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("multiply(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "notEquals",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1173,7 +1173,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("notEquals(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "notSame",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1188,7 +1188,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("notSame(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "numberFormat",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1203,7 +1203,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("numberFormat(" + "$" + "{" + "1:decimals" + "}" + ", " + "$" + "{" + "2:decimalSeparator" + "}" + ", " + "$" + "{" + "3:thousandsSeparator" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "onEach",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1221,7 +1221,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("onEach(" + "$" + "{" + "1:function" + "}" + ", " + "$" + "{" + "2:preserveKeys" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "or",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1236,7 +1236,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("or(" + "$" + "{" + "1:function" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "orNot",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1251,7 +1251,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("orNot(" + "$" + "{" + "1:function" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "plus",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1266,7 +1266,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("plus(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "power",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1281,7 +1281,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("power(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "prepend",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1296,7 +1296,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("prepend(" + "$" + "{" + "1:prefix" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "regex",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1311,7 +1311,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("regex(" + "$" + "{" + "1:pattern" + "}" + ", " + "$" + "{" + "2:flags" + "}" + ", " + "$" + "{" + "3:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "regexAll",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1326,7 +1326,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("regexAll(" + "$" + "{" + "1:pattern" + "}" + ", " + "$" + "{" + "2:flags" + "}" + ", " + "$" + "{" + "3:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "regexMatch",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1341,7 +1341,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("regexMatch(" + "$" + "{" + "1:pattern" + "}" + ", " + "$" + "{" + "2:flags" + "}" + ", " + "$" + "{" + "3:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "regexMatchAll",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1356,7 +1356,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("regexMatchAll(" + "$" + "{" + "1:pattern" + "}" + ", " + "$" + "{" + "2:flags" + "}" + ", " + "$" + "{" + "3:offset" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "regexReplace",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1371,7 +1371,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("regexReplace(" + "$" + "{" + "1:pattern" + "}" + ", " + "$" + "{" + "2:replacement" + "}" + ", " + "$" + "{" + "3:limit" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "repeat",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1386,7 +1386,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("repeat(" + "$" + "{" + "1:times" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "reverse",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1401,7 +1401,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("reverse()"),
         boost: 10
-    },        {
+    },                {
         label: "round",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1416,7 +1416,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("round(" + "$" + "{" + "1:precision" + "}" + ", " + "$" + "{" + "2:mode" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "same",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1431,7 +1431,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("same(" + "$" + "{" + "1:value" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sanitize",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1446,7 +1446,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("sanitize(" + "$" + "{" + "1:placeholder" + "}" + ", " + "$" + "{" + "2:skipCharacters" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "size",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1461,7 +1461,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("size()"),
         boost: 10
-    },        {
+    },                {
         label: "slug",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1479,7 +1479,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("slug(" + "$" + "{" + "1:separator" + "}" + ", " + "$" + "{" + "2:locale" + "}" + ", " + "$" + "{" + "3:symbolsMap" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "split",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1494,7 +1494,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("split(" + "$" + "{" + "1:separator" + "}" + ", " + "$" + "{" + "2:limit" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "sprintf",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1509,7 +1509,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("sprintf(" + "$" + "{" + "1:params" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "startsWith",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1524,7 +1524,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("startsWith(" + "$" + "{" + "1:needle" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "stringAfter",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1542,7 +1542,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("stringAfter(" + "$" + "{" + "1:needle" + "}" + ", " + "$" + "{" + "2:includeNeedle" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "stringAfterLast",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1560,7 +1560,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("stringAfterLast(" + "$" + "{" + "1:needle" + "}" + ", " + "$" + "{" + "2:includeNeedle" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "stringBefore",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1578,7 +1578,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("stringBefore(" + "$" + "{" + "1:needle" + "}" + ", " + "$" + "{" + "2:includeNeedle" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "stringBeforeLast",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1596,7 +1596,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("stringBeforeLast(" + "$" + "{" + "1:needle" + "}" + ", " + "$" + "{" + "2:includeNeedle" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "stringContainsAny",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1614,7 +1614,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("stringContainsAny(" + "$" + "{" + "1:needles" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "stringEqualsTo",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1629,7 +1629,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("stringEqualsTo(" + "$" + "{" + "1:string" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "stringFold",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1647,7 +1647,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("stringFold()"),
         boost: 10
-    },        {
+    },                {
         label: "stringMatch",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1662,7 +1662,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("stringMatch(" + "$" + "{" + "1:pattern" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "stringMatchAll",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1677,7 +1677,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("stringMatchAll(" + "$" + "{" + "1:pattern" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "stringNormalize",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1692,7 +1692,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("stringNormalize(" + "$" + "{" + "1:form" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "stringStyle",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1710,7 +1710,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("stringStyle(" + "$" + "{" + "1:style" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "stringTitle",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1728,7 +1728,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("stringTitle(" + "$" + "{" + "1:allWords" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "stringWidth",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1743,7 +1743,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("stringWidth()"),
         boost: 10
-    },        {
+    },                {
         label: "strPad",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1758,7 +1758,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("strPad(" + "$" + "{" + "1:length" + "}" + ", " + "$" + "{" + "2:pad_string" + "}" + ", " + "$" + "{" + "3:type" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "strPadBoth",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1773,7 +1773,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("strPadBoth(" + "$" + "{" + "1:length" + "}" + ", " + "$" + "{" + "2:pad_string" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "strPadLeft",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1788,7 +1788,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("strPadLeft(" + "$" + "{" + "1:length" + "}" + ", " + "$" + "{" + "2:pad_string" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "strPadRight",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1803,7 +1803,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("strPadRight(" + "$" + "{" + "1:length" + "}" + ", " + "$" + "{" + "2:pad_string" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "strReplace",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1821,7 +1821,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("strReplace(" + "$" + "{" + "1:search" + "}" + ", " + "$" + "{" + "2:replace" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "toDate",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1839,7 +1839,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("toDate(" + "$" + "{" + "1:format" + "}" + ", " + "$" + "{" + "2:timeZone" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "toDateTime",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1857,7 +1857,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("toDateTime(" + "$" + "{" + "1:format" + "}" + ", " + "$" + "{" + "2:timeZone" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "trim",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1872,7 +1872,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("trim(" + "$" + "{" + "1:type" + "}" + ", " + "$" + "{" + "2:characters" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "truncate",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1887,7 +1887,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("truncate(" + "$" + "{" + "1:length" + "}" + ", " + "$" + "{" + "2:ellipsis" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "unicodeLength",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1902,7 +1902,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("unicodeLength()"),
         boost: 10
-    },        {
+    },                {
         label: "unpack",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1920,7 +1920,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("unpack(" + "$" + "{" + "1:skipKeys" + "}" + ", " + "$" + "{" + "2:entryPrefix" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "upper",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1935,7 +1935,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("upper()"),
         boost: 10
-    },        {
+    },                {
         label: "wordwrap",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",
@@ -1950,7 +1950,7 @@ const scalarFunctionChainMethods = [
         },
         apply: snippet("wordwrap(" + "$" + "{" + "1:width" + "}" + ", " + "$" + "{" + "2:break" + "}" + ", " + "$" + "{" + "3:cut" + "}" + ")"),
         boost: 10
-    },        {
+    },                {
         label: "xpath",
         type: "method",
         detail: "Flow\\\\ETL\\\\Function\\\\ScalarFunctionChain",

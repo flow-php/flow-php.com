@@ -651,6 +651,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Cache-Implementation-PSRSimpleCache.html#method_set"
         },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\TraceableCache",
+            "name": "TraceableCache",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-TraceableCache.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\TraceableCache\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-TraceableCache.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\TraceableCache\u003A\u003Aclear\u0028\u0029",
+            "name": "clear",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-TraceableCache.html#method_clear"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\TraceableCache\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-TraceableCache.html#method_delete"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\TraceableCache\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-TraceableCache.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\TraceableCache\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-TraceableCache.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\TraceableCache\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-TraceableCache.html#method_set"
+        },                {
             "fqsen": "\\Flow\\ETL\\Cache",
             "name": "Cache",
             "summary": "",
@@ -781,6 +816,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_mount"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Aname\u0028\u0029",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_name"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Aoptimizer\u0028\u0029",
             "name": "optimizer",
             "summary": "",
@@ -876,6 +916,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_DATAFRAME_NAME",
+            "name": "ATTR_DATAFRAME_NAME",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_DATAFRAME_NAME"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_LOADER_DESTINATION_URI",
             "name": "ATTR_LOADER_DESTINATION_URI",
             "summary": "",
@@ -940,6 +985,11 @@ Search.appendIndex(
             "name": "dataFrameCompleted",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_dataFrameCompleted"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003AdataFrameFailed\u0028\u0029",
+            "name": "dataFrameFailed",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_dataFrameFailed"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003AdataFrameStarted\u0028\u0029",
             "name": "dataFrameStarted",
@@ -1006,6 +1056,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Telemetry-TelemetryOptions.html#property_filesystem"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryOptions\u003A\u003A\u0024traceCache",
+            "name": "traceCache",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryOptions.html#property_traceCache"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryOptions\u003A\u003A\u0024traceLoading",
             "name": "traceLoading",
             "summary": "",
@@ -1065,6 +1120,11 @@ Search.appendIndex(
             "name": "id",
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#method_id"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\u003A\u003Aname\u0028\u0029",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config.html#method_name"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\u003A\u003Aoptimizer\u0028\u0029",
             "name": "optimizer",
