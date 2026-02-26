@@ -736,6 +736,36 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020ConsoleLogExporter.",
             "url": "namespaces/flow-telemetry-dsl.html#function_console_log_exporter"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\console_span_options\u0028\u0029",
+            "name": "console_span_options",
+            "summary": "Create\u0020ConsoleSpanOptions\u0020with\u0020all\u0020display\u0020options\u0020enabled\u0020\u0028default\u0020behavior\u0029.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_console_span_options"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\console_span_options_minimal\u0028\u0029",
+            "name": "console_span_options_minimal",
+            "summary": "Create\u0020ConsoleSpanOptions\u0020with\u0020minimal\u0020display\u0020\u0028legacy\u0020compact\u0020format\u0029.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_console_span_options_minimal"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\console_log_options\u0028\u0029",
+            "name": "console_log_options",
+            "summary": "Create\u0020ConsoleLogOptions\u0020with\u0020all\u0020display\u0020options\u0020enabled\u0020\u0028default\u0020behavior\u0029.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_console_log_options"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\console_log_options_minimal\u0028\u0029",
+            "name": "console_log_options_minimal",
+            "summary": "Create\u0020ConsoleLogOptions\u0020with\u0020minimal\u0020display\u0020\u0028legacy\u0020compact\u0020format\u0029.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_console_log_options_minimal"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\console_metric_options\u0028\u0029",
+            "name": "console_metric_options",
+            "summary": "Create\u0020ConsoleMetricOptions\u0020with\u0020all\u0020display\u0020options\u0020enabled\u0020\u0028default\u0020behavior\u0029.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_console_metric_options"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\console_metric_options_minimal\u0028\u0029",
+            "name": "console_metric_options_minimal",
+            "summary": "Create\u0020ConsoleMetricOptions\u0020with\u0020minimal\u0020display\u0020\u0028legacy\u0020compact\u0020format\u0029.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_console_metric_options_minimal"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\always_on_exemplar_filter\u0028\u0029",
             "name": "always_on_exemplar_filter",
             "summary": "Create\u0020an\u0020AlwaysOnExemplarFilter.",
@@ -2346,6 +2376,66 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
             "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogExporter.html#method_transports"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogOptions",
+            "name": "ConsoleLogOptions",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogOptions\u003A\u003Adefault\u0028\u0029",
+            "name": "default",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogOptions.html#method_default"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogOptions\u003A\u003Aminimal\u0028\u0029",
+            "name": "minimal",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogOptions.html#method_minimal"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogOptions\u003A\u003AwithDroppedAttributeCount\u0028\u0029",
+            "name": "withDroppedAttributeCount",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogOptions.html#method_withDroppedAttributeCount"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogOptions\u003A\u003AwithInstrumentationScope\u0028\u0029",
+            "name": "withInstrumentationScope",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogOptions.html#method_withInstrumentationScope"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogOptions\u003A\u003AwithObservedTimestamp\u0028\u0029",
+            "name": "withObservedTimestamp",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogOptions.html#method_withObservedTimestamp"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogOptions\u003A\u003AwithResourceAttributes\u0028\u0029",
+            "name": "withResourceAttributes",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogOptions.html#method_withResourceAttributes"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogOptions\u003A\u003A\u0024showResourceAttributes",
+            "name": "showResourceAttributes",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogOptions.html#property_showResourceAttributes"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogOptions\u003A\u003A\u0024showInstrumentationScope",
+            "name": "showInstrumentationScope",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogOptions.html#property_showInstrumentationScope"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogOptions\u003A\u003A\u0024showObservedTimestamp",
+            "name": "showObservedTimestamp",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogOptions.html#property_showObservedTimestamp"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogOptions\u003A\u003A\u0024showDroppedAttributeCount",
+            "name": "showDroppedAttributeCount",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogOptions.html#property_showDroppedAttributeCount"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricExporter",
             "name": "ConsoleMetricExporter",
             "summary": "Console\u0020exporter\u0020for\u0020metrics\u0020with\u0020ASCII\u0020table\u0020visualization.",
@@ -2365,6 +2455,86 @@ Search.appendIndex(
             "name": "transports",
             "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
             "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricExporter.html#method_transports"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions",
+            "name": "ConsoleMetricOptions",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003Adefault\u0028\u0029",
+            "name": "default",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#method_default"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003Aminimal\u0028\u0029",
+            "name": "minimal",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#method_minimal"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003AwithAggregationTemporality\u0028\u0029",
+            "name": "withAggregationTemporality",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#method_withAggregationTemporality"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003AwithAllExemplars\u0028\u0029",
+            "name": "withAllExemplars",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#method_withAllExemplars"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003AwithDescription\u0028\u0029",
+            "name": "withDescription",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#method_withDescription"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003AwithInstrumentationScope\u0028\u0029",
+            "name": "withInstrumentationScope",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#method_withInstrumentationScope"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003AwithResourceAttributes\u0028\u0029",
+            "name": "withResourceAttributes",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#method_withResourceAttributes"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003AwithStartTimestamp\u0028\u0029",
+            "name": "withStartTimestamp",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#method_withStartTimestamp"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003A\u0024showResourceAttributes",
+            "name": "showResourceAttributes",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#property_showResourceAttributes"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003A\u0024showInstrumentationScope",
+            "name": "showInstrumentationScope",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#property_showInstrumentationScope"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003A\u0024showDescription",
+            "name": "showDescription",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#property_showDescription"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003A\u0024showAggregationTemporality",
+            "name": "showAggregationTemporality",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#property_showAggregationTemporality"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003A\u0024showStartTimestamp",
+            "name": "showStartTimestamp",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#property_showStartTimestamp"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions\u003A\u003A\u0024showAllExemplars",
+            "name": "showAllExemplars",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricOptions.html#property_showAllExemplars"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleOutput",
             "name": "ConsoleOutput",
@@ -2480,6 +2650,76 @@ Search.appendIndex(
             "name": "transports",
             "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
             "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanExporter.html#method_transports"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions",
+            "name": "ConsoleSpanOptions",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions\u003A\u003Adefault\u0028\u0029",
+            "name": "default",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#method_default"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions\u003A\u003Aminimal\u0028\u0029",
+            "name": "minimal",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#method_minimal"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions\u003A\u003AwithDroppedCounts\u0028\u0029",
+            "name": "withDroppedCounts",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#method_withDroppedCounts"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions\u003A\u003AwithInstrumentationScope\u0028\u0029",
+            "name": "withInstrumentationScope",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#method_withInstrumentationScope"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions\u003A\u003AwithLinks\u0028\u0029",
+            "name": "withLinks",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#method_withLinks"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions\u003A\u003AwithResourceAttributes\u0028\u0029",
+            "name": "withResourceAttributes",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#method_withResourceAttributes"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions\u003A\u003AwithStatusDescription\u0028\u0029",
+            "name": "withStatusDescription",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#method_withStatusDescription"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions\u003A\u003A\u0024showResourceAttributes",
+            "name": "showResourceAttributes",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#property_showResourceAttributes"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions\u003A\u003A\u0024showInstrumentationScope",
+            "name": "showInstrumentationScope",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#property_showInstrumentationScope"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions\u003A\u003A\u0024showLinks",
+            "name": "showLinks",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#property_showLinks"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions\u003A\u003A\u0024showStatusDescription",
+            "name": "showStatusDescription",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#property_showStatusDescription"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions\u003A\u003A\u0024showDroppedCounts",
+            "name": "showDroppedCounts",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#property_showDroppedCounts"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryLogExporter",
             "name": "MemoryLogExporter",

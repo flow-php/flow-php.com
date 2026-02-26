@@ -3321,6 +3321,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_write_with_retries"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\clock\u0028\u0029",
+            "name": "clock",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_clock"
+        },                {
             "fqsen": "\\Flow\\ETL\\ErrorHandler\\IgnoreError",
             "name": "IgnoreError",
             "summary": "",
