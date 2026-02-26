@@ -48,6 +48,29 @@
                     defaults: '2026-01-30'
                 })
             </script>
+                            <script>
+                (function(h,o,u,n,d) {
+                    h = h[d] = h[d] || { q: [], onReady: function (c) { h.q.push(c) } }
+                    d = o.createElement(u); d.async = 1; d.src = n; d.crossOrigin=''
+                    n = o.getElementsByTagName(u)[0]; n.parentNode.insertBefore(d, n)
+                })(window, document, 'script', 'https://www.datadoghq-browser-agent.com/eu1/v6/datadog-rum.js', 'DD_RUM')
+
+                window.DD_RUM.onReady(function () {
+                    window.DD_RUM.init({
+                        applicationId: '4a297124-5ea7-4fc5-b75a-6fb71e699f54',
+                        clientToken: 'pubf4d7626f7fd335a27355e01cd877c277',
+                        site: 'datadoghq.eu',
+                        service: 'flow-php-website',
+                        env: 'prod',
+                        version: '0.32.0',
+                        sessionSampleRate: 100,
+                        sessionReplaySampleRate: 20,
+                        trackResources: true,
+                        trackUserInteractions: true,
+                        trackLongTasks: true,
+                    });
+                });
+            </script>
             
             <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
         <script>

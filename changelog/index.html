@@ -48,6 +48,29 @@
                     defaults: '2026-01-30'
                 })
             </script>
+                            <script>
+                (function(h,o,u,n,d) {
+                    h = h[d] = h[d] || { q: [], onReady: function (c) { h.q.push(c) } }
+                    d = o.createElement(u); d.async = 1; d.src = n; d.crossOrigin=''
+                    n = o.getElementsByTagName(u)[0]; n.parentNode.insertBefore(d, n)
+                })(window, document, 'script', 'https://www.datadoghq-browser-agent.com/eu1/v6/datadog-rum.js', 'DD_RUM')
+
+                window.DD_RUM.onReady(function () {
+                    window.DD_RUM.init({
+                        applicationId: '4a297124-5ea7-4fc5-b75a-6fb71e699f54',
+                        clientToken: 'pubf4d7626f7fd335a27355e01cd877c277',
+                        site: 'datadoghq.eu',
+                        service: 'flow-php-website',
+                        env: 'prod',
+                        version: '0.32.0',
+                        sessionSampleRate: 100,
+                        sessionReplaySampleRate: 20,
+                        trackResources: true,
+                        trackUserInteractions: true,
+                        trackLongTasks: true,
+                    });
+                });
+            </script>
             
             <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
         <script>
@@ -340,6 +363,7 @@
 </ul>
 <h3><a id="changed" href="#changed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/commit/be622a89dd6761f790f7383407c1cc9882880f95">be622a</a> - <strong>refactor: add retry pattern to e2e website test, enable posthog integration</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/commit/41b8d4f16c9d38547d59a59c247e64f252629f93">41b8d4</a> - <strong>chore: migrate website analytics from umami to posthog</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/commit/7bd77ce35fc52f2e5ff409bee6baeabebd4c05e9">7bd77c</a> - <strong>chore: add datadog to list of sponsors</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2231">#2231</a> - <strong>simplified telemetry examples</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>

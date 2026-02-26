@@ -42,6 +42,29 @@
                     defaults: '2026-01-30'
                 })
             </script>
+                            <script>
+                (function(h,o,u,n,d) {
+                    h = h[d] = h[d] || { q: [], onReady: function (c) { h.q.push(c) } }
+                    d = o.createElement(u); d.async = 1; d.src = n; d.crossOrigin=''
+                    n = o.getElementsByTagName(u)[0]; n.parentNode.insertBefore(d, n)
+                })(window, document, 'script', 'https://www.datadoghq-browser-agent.com/eu1/v6/datadog-rum.js', 'DD_RUM')
+
+                window.DD_RUM.onReady(function () {
+                    window.DD_RUM.init({
+                        applicationId: '4a297124-5ea7-4fc5-b75a-6fb71e699f54',
+                        clientToken: 'pubf4d7626f7fd335a27355e01cd877c277',
+                        site: 'datadoghq.eu',
+                        service: 'flow-php-website',
+                        env: 'prod',
+                        version: '0.32.0',
+                        sessionSampleRate: 100,
+                        sessionReplaySampleRate: 20,
+                        trackResources: true,
+                        trackUserInteractions: true,
+                        trackLongTasks: true,
+                    });
+                });
+            </script>
             
                 <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
         <script>
@@ -298,7 +321,7 @@
           data-playground-share-is-example-value="true"
           data-wasm-php-js-value="/assets/wasm/php-854edac03a51f967b58c16849625fb22.js"
      data-wasm-php-wasm-value="/assets/wasm/php-2c153f5537d6d5ef169b6c07f35bd236.wasm"
-     data-wasm-resources-value="{&quot;code.php&quot;:&quot;\/assets\/wasm\/code.php-adea9d165ff134819809e92c908e0b90.wasm&quot;,&quot;tools\/flow.phar&quot;:&quot;\/assets\/wasm\/tools\/flow-ada74793c6c28e57adf51d065f98659a.phar&quot;,&quot;tools\/php-cs-fixer.phar&quot;:&quot;\/assets\/wasm\/tools\/php-cs-fixer-de55dbd75a08d2eac0f0435d4168e6bc.phar&quot;,&quot;vendor\/autoload.php&quot;:&quot;\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm&quot;,&quot;.php-cs-fixer.php&quot;:&quot;\/assets\/wasm\/phpcsfixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm&quot;,&quot;bin\/cs-fixer.php&quot;:&quot;\/assets\/wasm\/bin\/cs-fixer.php-ac4974a6fd6684a03a024047ab1f831c.wasm&quot;,&quot;data\/orders.xml&quot;:&quot;\/assets\/wasm\/data\/orders-8ee52a57261a7825213f3d66b9109591.xml&quot;,&quot;data\/orders.json&quot;:&quot;\/assets\/wasm\/data\/orders-09429d88a4f65d938de30e5b8d9aa706.json&quot;,&quot;data\/orders.csv&quot;:&quot;\/assets\/wasm\/data\/orders-a23572d02c810fc9b709f09b0b8c92ef.csv&quot;,&quot;data\/orders.parquet&quot;:&quot;\/assets\/wasm\/data\/orders-e8777869fbcc2f3ff6a1471b5978db98.parquet&quot;,&quot;input\/dataset.jsonl&quot;:&quot;\/playground\/data_frame\/data_reading\/jsonl\/data\/input\/dataset.jsonl&quot;}"
+     data-wasm-resources-value="{&quot;code.php&quot;:&quot;\/assets\/wasm\/code.php-adea9d165ff134819809e92c908e0b90.wasm&quot;,&quot;tools\/flow.phar&quot;:&quot;\/assets\/wasm\/tools\/flow-f6aae5cea2ea6978ba52750368ba2c3a.phar&quot;,&quot;tools\/php-cs-fixer.phar&quot;:&quot;\/assets\/wasm\/tools\/php-cs-fixer-de55dbd75a08d2eac0f0435d4168e6bc.phar&quot;,&quot;vendor\/autoload.php&quot;:&quot;\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm&quot;,&quot;.php-cs-fixer.php&quot;:&quot;\/assets\/wasm\/phpcsfixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm&quot;,&quot;bin\/cs-fixer.php&quot;:&quot;\/assets\/wasm\/bin\/cs-fixer.php-ac4974a6fd6684a03a024047ab1f831c.wasm&quot;,&quot;data\/orders.xml&quot;:&quot;\/assets\/wasm\/data\/orders-8ee52a57261a7825213f3d66b9109591.xml&quot;,&quot;data\/orders.json&quot;:&quot;\/assets\/wasm\/data\/orders-09429d88a4f65d938de30e5b8d9aa706.json&quot;,&quot;data\/orders.csv&quot;:&quot;\/assets\/wasm\/data\/orders-a23572d02c810fc9b709f09b0b8c92ef.csv&quot;,&quot;data\/orders.parquet&quot;:&quot;\/assets\/wasm\/data\/orders-e8777869fbcc2f3ff6a1471b5978db98.parquet&quot;,&quot;input\/dataset.jsonl&quot;:&quot;\/playground\/data_frame\/data_reading\/jsonl\/data\/input\/dataset.jsonl&quot;}"
      data-playground-package-icon-value="/assets/images/icons/package-30016a0b8b16a09f8bd0e0c19768ce6e.svg"
      data-playground-link-icon-value="/assets/images/icons/link-dd3acd183ca5fd1d06ddf52b258a2359.svg"
      data-playground-example-icon-value="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg"
