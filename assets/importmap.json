@@ -8,99 +8,63 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-a326ab67ab4ee208b6dee4e3272966d2.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_help_controller.js": {
-        "path": "\/assets\/controllers\/playground_help_controller-3df04a84275f015ef7e6f86e3d9e7383.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_share_controller.js": {
-        "path": "\/assets\/controllers\/playground_share_controller-182b14dfdf211b0ee7ddb7e85cf023d6.js",
-        "type": "js"
-    },
-    "\/assets\/services\/snippet-fingerprint.js": {
-        "path": "\/assets\/services\/snippet-fingerprint-ecdca9f86dfd0b5152217084cf6bc7b8.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/turnstile_controller.js": {
-        "path": "\/assets\/controllers\/turnstile_controller-f38af05e660ec65b36a67bc61a91d1c9.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_format_controller.js": {
-        "path": "\/assets\/controllers\/playground_format_controller-8dfa94c90609232e433cef3b1f0df2c9.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/toc_controller.js": {
-        "path": "\/assets\/controllers\/toc_controller-1a77aa51990b50e3d6247942ca0d73fa.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-8616438c363a536c42f52cdd99fb388e.js",
         "type": "js"
     },
     "\/assets\/controllers\/playground_workspace_controller.js": {
         "path": "\/assets\/controllers\/playground_workspace_controller-80a4b67d0d48e0f1724b062960607ab3.js",
         "type": "js"
     },
-    "\/assets\/controllers\/scroll_to_top_controller.js": {
-        "path": "\/assets\/controllers\/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/syntax_highlight_controller.js": {
-        "path": "\/assets\/controllers\/syntax_highlight_controller-100481964fda5d8851adf00323b7f397.js",
-        "type": "js"
-    },
-    "\/assets\/prismjs\/themes\/prism-flow.css": {
-        "path": "\/assets\/prismjs\/themes\/prism-flow-d263e9954eae08005f616dbe0de07974.css",
-        "type": "css"
-    },
-    "\/assets\/prismjs\/plugins\/autolinker\/autolinker.js": {
-        "path": "\/assets\/prismjs\/plugins\/autolinker\/autolinker-e906ddf9b7d89f169c9cf40a53e5605d.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/clipboard_controller.js": {
-        "path": "\/assets\/controllers\/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_storage_controller.js": {
-        "path": "\/assets\/controllers\/playground_storage_controller-6a7ca976861299204f7365ad9d782ef4.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_reset_controller.js": {
-        "path": "\/assets\/controllers\/playground_reset_controller-78985d1d372f9be795ba4fd35d78a527.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_tabs_controller.js": {
-        "path": "\/assets\/controllers\/playground_tabs_controller-f99c56fc34f1e2fae627a13aeb15348f.js",
-        "type": "js"
-    },
-    "\/assets\/codemirror\/themes\/theme-flow.js": {
-        "path": "\/assets\/codemirror\/themes\/theme-flow-7bef93b1493817cf09879a3b5cd589b3.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_output_controller.js": {
-        "path": "\/assets\/controllers\/playground_output_controller-29f780a95240cba1c0e04b482e68c92f.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/image_swap_controller.js": {
-        "path": "\/assets\/controllers\/image_swap_controller-c22445e2f4c121053a31252d6e4277dd.js",
+    "\/assets\/controllers\/turnstile_controller.js": {
+        "path": "\/assets\/controllers\/turnstile_controller-f38af05e660ec65b36a67bc61a91d1c9.js",
         "type": "js"
     },
     "\/assets\/controllers\/playground_run_controller.js": {
         "path": "\/assets\/controllers\/playground_run_controller-857150d05b75474ed9ee02b99a51b30d.js",
         "type": "js"
     },
+    "\/assets\/controllers\/mermaid_controller.js": {
+        "path": "\/assets\/controllers\/mermaid_controller-4ec011246a55fcc8b844940a72cd2b54.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/image_swap_controller.js": {
+        "path": "\/assets\/controllers\/image_swap_controller-c22445e2f4c121053a31252d6e4277dd.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_reset_controller.js": {
+        "path": "\/assets\/controllers\/playground_reset_controller-78985d1d372f9be795ba4fd35d78a527.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/horizontal_scroll_controller.js": {
+        "path": "\/assets\/controllers\/horizontal_scroll_controller-85b5b3c13fb04790459b8167be1ca1fd.js",
+        "type": "js"
+    },
     "\/assets\/controllers\/all_links_external_controller.js": {
         "path": "\/assets\/controllers\/all_links_external_controller-2814b02105ed2e4f92c5f5747e0e46c8.js",
         "type": "js"
     },
-    "\/assets\/controllers\/playground_controller.js": {
-        "path": "\/assets\/controllers\/playground_controller-f2f131fe729dd77fe43f819359926fb5.js",
+    "\/assets\/controllers\/playground_format_controller.js": {
+        "path": "\/assets\/controllers\/playground_format_controller-8dfa94c90609232e433cef3b1f0df2c9.js",
         "type": "js"
     },
     "\/assets\/controllers\/wasm_controller.js": {
         "path": "\/assets\/controllers\/wasm_controller-59ee13a1a4a6c819d3a5c311093e9572.js",
         "type": "js"
     },
+    "\/assets\/controllers\/toc_controller.js": {
+        "path": "\/assets\/controllers\/toc_controller-1a77aa51990b50e3d6247942ca0d73fa.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_controller.js": {
+        "path": "\/assets\/controllers\/playground_controller-1f562b582f45127d6acc3ad9d0a6bc1d.js",
+        "type": "js"
+    },
     "\/assets\/controllers\/code_editor_controller.js": {
         "path": "\/assets\/controllers\/code_editor_controller-0f31162c9dc5f993b3eb60b5004effda.js",
+        "type": "js"
+    },
+    "\/assets\/codemirror\/themes\/theme-flow.js": {
+        "path": "\/assets\/codemirror\/themes\/theme-flow-7bef93b1493817cf09879a3b5cd589b3.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/flow.js": {
@@ -123,12 +87,52 @@
         "path": "\/assets\/models\/Violation-4c9687032725053c94df98f23f106215.js",
         "type": "js"
     },
+    "\/assets\/controllers\/playground_help_controller.js": {
+        "path": "\/assets\/controllers\/playground_help_controller-3df04a84275f015ef7e6f86e3d9e7383.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_share_controller.js": {
+        "path": "\/assets\/controllers\/playground_share_controller-c7400138becc4b9dc045a29f264a1ae8.js",
+        "type": "js"
+    },
+    "\/assets\/services\/snippet-fingerprint.js": {
+        "path": "\/assets\/services\/snippet-fingerprint-ecdca9f86dfd0b5152217084cf6bc7b8.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_tabs_controller.js": {
+        "path": "\/assets\/controllers\/playground_tabs_controller-f99c56fc34f1e2fae627a13aeb15348f.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/scroll_to_top_controller.js": {
+        "path": "\/assets\/controllers\/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
+        "type": "js"
+    },
     "\/assets\/controllers\/playground_upload_controller.js": {
         "path": "\/assets\/controllers\/playground_upload_controller-4cb4cede53f2a96e04451e9d3d5285bf.js",
         "type": "js"
     },
-    "\/assets\/controllers\/mermaid_controller.js": {
-        "path": "\/assets\/controllers\/mermaid_controller-4ec011246a55fcc8b844940a72cd2b54.js",
+    "\/assets\/controllers\/clipboard_controller.js": {
+        "path": "\/assets\/controllers\/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/syntax_highlight_controller.js": {
+        "path": "\/assets\/controllers\/syntax_highlight_controller-100481964fda5d8851adf00323b7f397.js",
+        "type": "js"
+    },
+    "\/assets\/prismjs\/themes\/prism-flow.css": {
+        "path": "\/assets\/prismjs\/themes\/prism-flow-d263e9954eae08005f616dbe0de07974.css",
+        "type": "css"
+    },
+    "\/assets\/prismjs\/plugins\/autolinker\/autolinker.js": {
+        "path": "\/assets\/prismjs\/plugins\/autolinker\/autolinker-e906ddf9b7d89f169c9cf40a53e5605d.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_storage_controller.js": {
+        "path": "\/assets\/controllers\/playground_storage_controller-46f3868ddb676ed42885cbff21bb4140.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_output_controller.js": {
+        "path": "\/assets\/controllers\/playground_output_controller-29f780a95240cba1c0e04b482e68c92f.js",
         "type": "js"
     },
     "@symfony\/stimulus-bundle": {
