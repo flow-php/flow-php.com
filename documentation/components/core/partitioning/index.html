@@ -495,6 +495,20 @@
 <ul>
 <li><a href="#choosing-partition-columns">Choosing Partition Columns</a></li>
 </ul>
+</li>
+<li><a href="#save-modes-with-partitioning">Save Modes with Partitioning</a>
+<ul>
+<li><a href="#overwrite-mode">Overwrite Mode</a></li>
+<li><a href="#append-mode">Append Mode</a></li>
+<li><a href="#ignore-mode">Ignore Mode</a></li>
+<li><a href="#exception-if-exists-mode-default">Exception If Exists Mode (Default)</a></li>
+</ul>
+</li>
+<li><a href="#reading-partitioned-data">Reading Partitioned Data</a>
+<ul>
+<li><a href="#partition-pruning">Partition Pruning</a></li>
+<li><a href="#path-partitions">Path Partitions</a></li>
+</ul>
 </li></ul></div></div>
 <p>Partitioning divides data into logical groups based on column values, enabling more efficient processing of large datasets and reducing memory usage.</p>
 <h2><a id="basic-partitioning" href="#basic-partitioning" class="mr-2" aria-hidden="true" title="Permalink">#</a>Basic Partitioning</h2>
@@ -580,6 +594,134 @@ $dataFrame-&gt;partitionBy('id'); // If IDs are unique, creates many tiny partit
 // Good partitioning - moderate cardinality
 $dataFrame-&gt;partitionBy('department'); // Assuming reasonable number of departments
 </code></pre>
+<h2><a id="save-modes-with-partitioning" href="#save-modes-with-partitioning" class="mr-2" aria-hidden="true" title="Permalink">#</a>Save Modes with Partitioning</h2>
+<p>When writing partitioned data, the save mode determines how existing partition directories are handled.</p>
+<h3><a id="overwrite-mode" href="#overwrite-mode" class="mr-2" aria-hidden="true" title="Permalink">#</a>Overwrite Mode</h3>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+use function Flow\ETL\DSL\{data_frame, from_array, overwrite, ref};
+use function Flow\ETL\Adapter\CSV\to_csv;
+
+data_frame()
+    -&gt;read(from_array([
+        ['date' =&gt; '2024-01-01', 'amount' =&gt; 100],
+        ['date' =&gt; '2024-01-02', 'amount' =&gt; 200],
+    ]))
+    -&gt;partitionBy(ref('date'))
+    -&gt;mode(overwrite())
+    -&gt;write(to_csv(__DIR__ . '/output/sales.csv'))
+    -&gt;run();
+</code></pre>
+<p><strong>Behavior:</strong></p>
+<ul>
+<li>Removes ALL files within partition directories being written to</li>
+<li>Partitions NOT in the current dataset are preserved</li>
+<li>Running twice with the same partition values replaces the first write completely</li>
+</ul>
+<p><strong>Common pitfall:</strong> If you write two separate DataFrames to the same partitions using <code>overwrite()</code>, the second write deletes data from the first:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+// First write - creates date=2024-01-01/sales.csv with amount=100
+data_frame()
+    -&gt;read(from_array([['date' =&gt; '2024-01-01', 'amount' =&gt; 100]]))
+    -&gt;partitionBy(ref('date'))
+    -&gt;mode(overwrite())
+    -&gt;write(to_csv(__DIR__ . '/output/sales.csv'))
+    -&gt;run();
+
+// Second write - DELETES the 100 and writes 200
+data_frame()
+    -&gt;read(from_array([['date' =&gt; '2024-01-01', 'amount' =&gt; 200]]))
+    -&gt;partitionBy(ref('date'))
+    -&gt;mode(overwrite())
+    -&gt;write(to_csv(__DIR__ . '/output/sales.csv'))
+    -&gt;run();
+
+// Result: date=2024-01-01/sales.csv contains ONLY amount=200
+</code></pre>
+<p>To combine data from multiple sources into the same partition, use <code>append()</code> mode or merge data before writing.</p>
+<h3><a id="append-mode" href="#append-mode" class="mr-2" aria-hidden="true" title="Permalink">#</a>Append Mode</h3>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+data_frame()
+    -&gt;read(from_array([['date' =&gt; '2024-01-01', 'amount' =&gt; 100]]))
+    -&gt;partitionBy(ref('date'))
+    -&gt;mode(append())
+    -&gt;write(to_csv(__DIR__ . '/output/sales.csv'))
+    -&gt;run();
+</code></pre>
+<p><strong>Behavior:</strong></p>
+<ul>
+<li>Creates new files with randomized suffixes in existing partition directories</li>
+<li>Does not remove existing files</li>
+<li>Multiple runs accumulate files (may cause duplicates)</li>
+</ul>
+<h3><a id="ignore-mode" href="#ignore-mode" class="mr-2" aria-hidden="true" title="Permalink">#</a>Ignore Mode</h3>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+data_frame()
+    -&gt;read(from_array([['date' =&gt; '2024-01-01', 'amount' =&gt; 100]]))
+    -&gt;partitionBy(ref('date'))
+    -&gt;mode(ignore())
+    -&gt;write(to_csv(__DIR__ . '/output/sales.csv'))
+    -&gt;run();
+</code></pre>
+<p><strong>Behavior:</strong></p>
+<ul>
+<li>Skips writing if partition directory already exists</li>
+<li>No error thrown, silently continues</li>
+</ul>
+<h3><a id="exception-if-exists-mode-default" href="#exception-if-exists-mode-default" class="mr-2" aria-hidden="true" title="Permalink">#</a>Exception If Exists Mode (Default)</h3>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+data_frame()
+    -&gt;read(from_array([['date' =&gt; '2024-01-01', 'amount' =&gt; 100]]))
+    -&gt;partitionBy(ref('date'))
+    -&gt;write(to_csv(__DIR__ . '/output/sales.csv')) // Default mode
+    -&gt;run();
+</code></pre>
+<p><strong>Behavior:</strong></p>
+<ul>
+<li>Throws <code>RuntimeException</code> if any partition path already exists</li>
+<li>Safest option to prevent accidental overwrites</li>
+</ul>
+<h2><a id="reading-partitioned-data" href="#reading-partitioned-data" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading Partitioned Data</h2>
+<p>Read partitioned data using glob patterns to match partition directories:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+use function Flow\ETL\Adapter\CSV\from_csv;
+use function Flow\ETL\DSL\{data_frame, to_output};
+
+data_frame()
+    -&gt;read(from_csv(__DIR__ . '/output/date=*/*.csv'))
+    -&gt;write(to_output())
+    -&gt;run();
+</code></pre>
+<h3><a id="partition-pruning" href="#partition-pruning" class="mr-2" aria-hidden="true" title="Permalink">#</a>Partition Pruning</h3>
+<p>Skip entire partitions without reading their contents using <code>filterPartitions()</code>:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+data_frame()
+    -&gt;read(from_csv(__DIR__ . '/output/date=*/department=*/*.csv'))
+    -&gt;filterPartitions(ref('date')-&gt;greaterThanEqual(lit('2024-01-01')))
+    -&gt;write(to_output())
+    -&gt;run();
+</code></pre>
+<p>Unlike <code>filter()</code> which reads all data then discards non-matching rows, <code>filterPartitions()</code> evaluates partition metadata first and only reads matching partitions - significantly improving performance for large datasets.</p>
+<h3><a id="path-partitions" href="#path-partitions" class="mr-2" aria-hidden="true" title="Permalink">#</a>Path Partitions</h3>
+<p>Extract partition metadata without reading file contents using <code>from_path_partitions()</code>:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+use function Flow\ETL\DSL\{data_frame, from_path_partitions, to_output};
+
+data_frame()
+    -&gt;read(from_path_partitions(__DIR__ . '/output/date=*/department=*/*.csv'))
+    -&gt;write(to_output())
+    -&gt;run();
+
+// Output includes 'path' and 'partitions' columns
+</code></pre>
+<p>Useful for discovering available partitions or building file manifests before processing data.</p>
 
 
             <hr class="!mt-8 !mb-8"/>

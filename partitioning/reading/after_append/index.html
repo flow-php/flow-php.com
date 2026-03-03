@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
 
-    <title>Flow PHP - Partitioning - Reading - Playground</title>
-    <meta property="og:title" content="Flow PHP - Partitioning - Reading - Playground" />
-    <meta name="twitter:title" content="Flow PHP - Partitioning - Reading - Playground" >
+    <title>Flow PHP - Partitioning - Reading - Example</title>
+    <meta property="og:title" content="Flow PHP - Partitioning - Reading - Example" />
+    <meta name="twitter:title" content="Flow PHP - Partitioning - Reading - Example" >
 
-    <meta name="description" content="Interactive playground for Reading example.">
-    <meta property="og:description" content="Interactive playground for Reading example.">
-    <meta name="twitter:description" content="Interactive playground for Reading example.">
+    <meta name="description" content="Code example showing reading partitioning.">
+    <meta property="og:description" content="Code example showing reading partitioning.">
+    <meta name="twitter:description" content="Code example showing reading partitioning.">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/playground/partitioning/reading" />
+    <meta property="og:url" content="https://flow-php.com/partitioning/reading/after_append/" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/playground/partitioning/reading" />
+    <meta property="twitter:url" content="https://flow-php.com/partitioning/reading/after_append/" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -66,7 +66,7 @@
                 });
             </script>
             
-                <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
         <script>
             mermaid.initialize({
                 startOnLoad: false,
@@ -235,9 +235,7 @@
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-432470646103ecfae391f84f998c6751.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-5177a70da99e8a6f9176469f1197bdf5.js">
 <script type="module">import 'app';</script>
-    
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-</head>
+    </head>
 <body class="scroll-smooth bg-black text-white" data-environment="prod">
         <header class="py-2 text-white bg-blue-200">
         <div class="mx-auto max-w-screen-2xl px-4 flex items-center justify-between">
@@ -310,310 +308,248 @@
     </header>
     
     <main id="main">
-        
-                                                                            <div id="playground"
-     data-controller="wasm turnstile playground-output playground playground-workspace playground-run playground-format playground-upload playground-share playground-storage playground-reset playground-help"
-     data-turnstile-site-key-value="0x4AAAAAACAjJaWImyaJwWCy"
-     data-turnstile-appearance-value="interaction-only"
-     data-turnstile-environment-value="prod"
-     data-playground-share-api-url-value="https://flow-php.com/api/playground/snippets"
-     data-playground-share-snippets-url-value="https://playground-snippets.flow-php.com"
-          data-playground-share-is-example-value="true"
-          data-wasm-php-js-value="/assets/wasm/php-854edac03a51f967b58c16849625fb22.js"
-     data-wasm-php-wasm-value="/assets/wasm/php-2c153f5537d6d5ef169b6c07f35bd236.wasm"
-     data-wasm-resources-value="{&quot;code.php&quot;:&quot;\/assets\/wasm\/code.php-adea9d165ff134819809e92c908e0b90.wasm&quot;,&quot;tools\/flow.phar&quot;:&quot;\/assets\/wasm\/tools\/flow-4d5b337984fe5ad3ff48efdf7c811e87.phar&quot;,&quot;tools\/php-cs-fixer.phar&quot;:&quot;\/assets\/wasm\/tools\/php-cs-fixer-de55dbd75a08d2eac0f0435d4168e6bc.phar&quot;,&quot;vendor\/autoload.php&quot;:&quot;\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm&quot;,&quot;.php-cs-fixer.php&quot;:&quot;\/assets\/wasm\/phpcsfixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm&quot;,&quot;bin\/cs-fixer.php&quot;:&quot;\/assets\/wasm\/bin\/cs-fixer.php-ac4974a6fd6684a03a024047ab1f831c.wasm&quot;,&quot;data\/orders.xml&quot;:&quot;\/assets\/wasm\/data\/orders-8ee52a57261a7825213f3d66b9109591.xml&quot;,&quot;data\/orders.json&quot;:&quot;\/assets\/wasm\/data\/orders-09429d88a4f65d938de30e5b8d9aa706.json&quot;,&quot;data\/orders.csv&quot;:&quot;\/assets\/wasm\/data\/orders-a23572d02c810fc9b709f09b0b8c92ef.csv&quot;,&quot;data\/orders.parquet&quot;:&quot;\/assets\/wasm\/data\/orders-e8777869fbcc2f3ff6a1471b5978db98.parquet&quot;,&quot;input\/color=blue\/sku=A\/data.csv&quot;:&quot;\/playground\/partitioning\/reading\/data\/input\/color=blue\/sku=A\/data.csv&quot;,&quot;input\/color=green\/sku=A\/data.csv&quot;:&quot;\/playground\/partitioning\/reading\/data\/input\/color=green\/sku=A\/data.csv&quot;,&quot;input\/color=red\/sku=B\/data.csv&quot;:&quot;\/playground\/partitioning\/reading\/data\/input\/color=red\/sku=B\/data.csv&quot;,&quot;input\/color=red\/sku=A\/data.csv&quot;:&quot;\/playground\/partitioning\/reading\/data\/input\/color=red\/sku=A\/data.csv&quot;}"
-     data-playground-package-icon-value="/assets/images/icons/package-30016a0b8b16a09f8bd0e0c19768ce6e.svg"
-     data-playground-link-icon-value="/assets/images/icons/link-dd3acd183ca5fd1d06ddf52b258a2359.svg"
-     data-playground-example-icon-value="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg"
-     data-playground-workspace-wasm-outlet="#playground"
-     data-playground-workspace-code-editor-outlet="#code-editor"
-     data-playground-workspace-playground-outlet="#playground"
-     data-playground-workspace-folder-icon-value="/assets/images/icons/folder-64f6b064e6522cede2da539b04960480.svg"
-     data-playground-workspace-file-icon-value="/assets/images/icons/file-028e2be98c9d50187258f29575a9e7c6.svg"
-     data-playground-upload-folder-icon-value="/assets/images/icons/folder-64f6b064e6522cede2da539b04960480.svg"
-     data-playground-upload-file-icon-value="/assets/images/icons/file-028e2be98c9d50187258f29575a9e7c6.svg"
-     data-playground-wasm-outlet="#playground"
-     data-playground-code-editor-outlet="#code-editor"
-     data-playground-turnstile-outlet="#playground"
-     data-playground-playground-output-outlet="#playground"
-     data-playground-run-code-editor-outlet="#code-editor"
-     data-playground-run-wasm-outlet="#playground"
-     data-playground-run-playground-output-outlet="#playground"
-     data-playground-format-code-editor-outlet="#code-editor"
-     data-playground-format-wasm-outlet="#playground"
-     data-playground-format-playground-output-outlet="#playground"
-     data-playground-upload-wasm-outlet="#playground"
-     data-playground-upload-playground-output-outlet="#playground"
-     data-playground-share-code-editor-outlet="#code-editor"
-     data-playground-share-wasm-outlet="#playground"
-     data-playground-share-turnstile-outlet="#playground"
-     data-playground-share-playground-upload-outlet="#playground"
-     data-playground-storage-code-editor-outlet="#code-editor"
-     data-playground-storage-wasm-outlet="#playground"
-          data-playground-storage-initial-code-value="&lt;&#x3F;php&#x0A;&#x0A;declare&#x28;strict_types&#x3D;1&#x29;&#x3B;&#x0A;&#x0A;use&#x20;function&#x20;Flow&#x5C;ETL&#x5C;Adapter&#x5C;CSV&#x5C;from_csv&#x3B;&#x0A;use&#x20;function&#x20;Flow&#x5C;ETL&#x5C;DSL&#x5C;&#x7B;data_frame,&#x20;to_output&#x7D;&#x3B;&#x0A;&#x0A;require&#x20;__DIR__&#x20;.&#x20;&#x27;&#x2F;vendor&#x2F;autoload.php&#x27;&#x3B;&#x0A;&#x0A;data_frame&#x28;&#x29;&#x0A;&#x20;&#x20;&#x20;&#x20;-&gt;read&#x28;from_csv&#x28;__DIR__&#x20;.&#x20;&#x27;&#x2F;input&#x2F;color&#x3D;&#x2A;&#x2F;sku&#x3D;&#x2A;&#x2F;&#x2A;.csv&#x27;&#x29;&#x29;&#x0A;&#x20;&#x20;&#x20;&#x20;-&gt;write&#x28;to_output&#x28;truncate&#x3A;&#x20;false&#x29;&#x29;&#x0A;&#x20;&#x20;&#x20;&#x20;-&gt;run&#x28;&#x29;&#x3B;&#x0A;"
-          data-playground-reset-playground-storage-outlet="#playground"
-     data-playground-playground-tabs-outlet="#playground-editor"
-     data-action="wasm:initialized->playground#onWasmInitialized
-                  wasm:initialized->playground-workspace#refreshTree
-                  wasm:initialized->playground-share#onWasmResourcesLoaded
-                  wasm:initialized->playground-storage#onWasmResourcesLoaded
-                  wasm:loading-progress->playground#onWasmLoadingProgress
-                  wasm:output->playground#onWasmOutput
-                  wasm:error->playground#onWasmError
-                  playground-storage:loaded-from-storage->playground#onStorageLoaded
-                  playground-storage:loaded-from-example->playground#onExampleLoaded
-                  playground-share:loaded-from-url->playground#onUrlLoaded
-                  playground-share:datasets-loaded->playground#onDatasetsLoaded
-                  playground-share:notification->playground#onNotification
-                  playground-run:action-started->playground#onActionStarted
-                  playground-run:action-finished->playground#onActionFinished
-                  playground-format:action-started->playground#onActionStarted
-                  playground-format:action-finished->playground#onActionFinished
-                  playground-share:action-started->playground#onActionStarted
-                  playground-share:action-finished->playground#onActionFinished
-                  playground-upload:action-started->playground#onActionStarted
-                  playground-upload:action-finished->playground#onActionFinished
-                  playground-run:action-started->playground-workspace#onActionStarted
-                  playground-run:action-finished->playground-workspace#onActionFinished
-                  playground-format:action-started->playground-workspace#onActionStarted
-                  playground-format:action-finished->playground-workspace#onActionFinished
-                  playground-share:action-started->playground-workspace#onActionStarted
-                  playground-share:action-finished->playground-workspace#onActionFinished
-                  playground-upload:action-started->playground-workspace#onActionStarted
-                  playground-upload:action-finished->playground-workspace#onActionFinished">
-    <div class="playground-header">
-        <h1>Playground</h1>
-                <a href="/partitioning/reading/" class="back-link">
-            <img src="/assets/images/icons/arrow-left-0eccc028b01da49a0505495ddab78075.svg" alt="" width="16" height="16">
-            Back to Example
-        </a>
-                <button
-                data-action="click->playground-help#showTopic"
-                data-help-topic="help-about"
-                class="help-trigger mb-4"
-                aria-label="What is Flow Playground?">
-            <img src="/assets/images/icons/help-6a6e833271f222c3b337e77c10460d9c.svg" alt="Help" width="20" height="20">
-        </button>
-    </div>
+                    <div class="mx-auto max-w-screen-2xl max-lg:text-center px-2 sm:px-4 relative max-lg:py-10 p-[100px]">
+    <h1 class="font-bold max-sm:text-5xl max-lg:mx-auto text-6xl tracking-wider leading-[70px] max-w-[450px] mb-8 z-10">UNIFIED DATA PROCESSING FRAMEWORK</h1>
+    <code class="w-fit py-2 px-3 before:content-['$'] before:mr-2 bg-orange-100 rounded"><span id="command">composer require flow-php/etl ~0.32.0</span><button class="ml-2 [&.copied]:after:content-['Copied!'] after:absolute after:translate-x-6 select-none" title="copy command" data-clipboard-target="#command" data-controller="clipboard"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="copy command" width="20" height="20" class="inline"></button></code><p class="mt-5"><a class="text-white" href="https://flow-php.com/changelog">Changelog</a><a class="text-white ml-4" href="https://flow-php.com/blog/2025-03-16/flow-php-release-cycle">Release Cycle</a></p><p class="mt-4"><a class="py-2 px-4 bg-orange-100 rounded font-semibold hover:bg-orange-200 transition-colors whitespace-nowrap text-white" href="/playground"><img src="/assets/images/icons/play-b3d8bbbafaea96f437f51fa0a5041e8f.svg" alt="play" width="20" height="20" class="mr-2 inline-block">
+                Try Playground
+            </a></p>    <img src="/assets/images/elephant-4b2eb8a559db8a8a34bb8d10d5df26d3.svg" alt="elephant" width="720" class="max-lg:hidden absolute right-0 top-0">
+</div>
 
-    <div id="turnstile-widget" class="mb-5 max-w-[550px]"></div>
-
-    <div id="help-section"
-         data-playground-help-target="helpSection"
-         style="display: none;">
-        <div class="help-header">
-            <h2>Help</h2>
-            <button data-action="click->playground-help#close" class="help-close" aria-label="Close help">×</button>
+<div class="bg-blue-200">
+    <div class="mx-auto max-w-screen-2xl max-sm:px-2 py-4 flex flex-wrap sm:flex-nowrap items-start text-center lg:pr-[550px]">
+        <div class="basis-2/5 sm:basis-1/3">
+            <img src="/assets/images/icons/extract-733c1cf43ee630c5056b7d09e9406522.svg" alt="extract" width="64" height="64" class="inline">
+            <h2 class="my-2 text-2xl font-semibold tracking-wide">Extracts</h2>
+            <p>Read from various data sources.</p>
         </div>
-        <div class="help-content">
-            <section class="help-topic" id="help-about">
-                <h3>Flow PHP Playground</h3>
-                <p>
-                    Flow Playground is an interactive WebAssembly-based environment that runs Flow PHP directly in your browser.<br/>
-                    This means that any code you execute in the editor below, runs in your browser, using a version of php compiled to WebAssembly.<br/>
-                    Other than that, it's just a regular PHP environment.
-                </p>
-                <p>
-                    <strong>Under Development:</strong> This playground is still under active development. <br/>
-                    If you encounter any bugs or have feedback, we'd love to hear from you! Please report issues on <a href="https://github.com/flow-php/flow" target="_blank">GitHub</a> or reach out to us on <a href="https://discord.gg/fAv6Xa6RNr" target="_blank">Discord</a>.
 
-                </p>
-            </section>
+        <span class="basis-1/5 self-center sm:flex-none sm:mx-2">
+                    <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow" width="32" height="32" class="mx-auto">
+                </span>
 
-            <section class="help-topic" id="help-navigation">
-                <h3>Action Buttons</h3>
-                <ul>
-                    <li><strong>Run</strong> - Executes your PHP code in the playground and displays the output below the editor.</li>
-                    <li><strong>Format</strong> - Automatically formats your PHP code using PHP-CS-Fixer rules for consistent code style.</li>
-                    <li><strong>Share</strong> - Generates a shareable link by securely uploading your code to our server. Your code and any uploaded datasets are stored for 90 days and accessible via a short URL. You can include up to 3 datasets (CSV, JSON, or XML files, max 2MB each) in your share. <br/><em>Important: Never include sensitive information like passwords, API keys, or personal data in your code when sharing. Shared snippets are publicly accessible to anyone with the link.</em></li>
-                    <li><strong>Upload</strong> - Upload local files (CSV, JSON, XML, PHP, PHAR) to the virtual WASM filesystem. You can upload up to 3 files (max 2MB each). When you share your code, uploaded datasets will be included automatically. <br/><em>Note: Uploaded files are stored only in your browser's memory and will disappear when you refresh the page, unless you share your code.</em></li>
-                    <li><strong>Reset</strong> - Clears your code and resets the playground to its default state.</li>
-                </ul>
-            </section>
+        <div class="basis-2/5 sm:basis-1/3">
+            <img src="/assets/images/icons/transform-0c0a9fd75cc66af8420fe905a301e543.svg" alt="transform" width="64" height="64" class="inline">
+            <h2 class="my-2 text-2xl font-semibold tracking-wide">Transforms</h2>
+            <p>Shape and optimize for your needs.</p>
+        </div>
 
-            <section class="help-topic" id="help-workspace">
-                <h3>Workspace</h3>
-                <p>
-                    The Workspace panel displays the contents of the <code>/workspace</code> folder from the WebAssembly virtual filesystem. This is where your code and uploaded files are stored during your playground session.
-                </p>
-                <p>
-                    All files in the workspace are stored locally in your browser's memory and are never uploaded to any server. <br/>
-                    This means you can safely experiment with real datasets and documents without any privacy concerns. <br/>
-                    However, keep in mind that all files will be lost when you refresh the page or close your browser.
-                </p>
-                <p>
-                    <ul>
-                        <li><code>bin</code> - this is where we keep scripts used by playground, like for exampel code formatter</li>
-                        <li><code>data</code> - here you can find sample datasets to play with, reference them as <code>__DIR__ . '/data/orders.csv</code></li>
-                        <li><code>tmp</code> - this is where we are going to upload your files</li>
-                        <li><code>vendor</code> - place for playground dependencies and autoloader</li>
-                        <li><code>tools</code> - place for playground tools, like <code>flow.phar</code></li>
-                    </ul>
-                </p>
-            </section>
-        </div>
-    </div>
+        <span class="basis-2/5 self-center ml-auto mt-6 sm:flex-none sm:my-0 sm:mx-2">
+            <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="arrow" width="32" height="32" class="max-sm:rotate-[135deg]">
+        </span>
 
-    <div id="loader">
-        <div data-playground-target="loadingMessage"></div>
-        <div class="loading-progress">
-            <div data-playground-target="loadingBar" class="loading-bar"></div>
-        </div>
-        <div data-playground-target="loadingPercent"></div>
-    </div>
-
-    <div class="navigation" data-playground-target="navigation">
-        <div class="storage-indicator" data-playground-target="storageIndicator" style="display: none;"></div>
-        <div class="actions">
-            <span id="action-spinner" class="action-spinner hidden" data-playground-target="actionSpinner">
-                <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-            </span>
-            <button
-                    data-action="click->playground-help#showTopic"
-                    data-help-topic="help-navigation"
-                    class="help-trigger-nav pt-2"
-                    aria-label="What do these buttons do?">
-                <img src="/assets/images/icons/help-6a6e833271f222c3b337e77c10460d9c.svg" alt="Help" width="18" height="18">
-            </button>
-            <button
-                    id="action-run"
-                    data-controller="image-swap"
-                    data-action="click->playground-run#run mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
-                Run <img src="/assets/images/icons/play-b3d8bbbafaea96f437f51fa0a5041e8f.svg"
-                         alt="Run"
-                         class="ml-1 inline-block"
-                         data-image-swap-target="image"
-                         data-hover-src="/assets/images/icons/play-active-f01ec77d89066773e6e7681a72cda6b9.svg">
-            </button>
-            <button
-                    id="action-format"
-                    data-controller="image-swap"
-                    data-action="click->playground-format#format mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
-                Format <img src="/assets/images/icons/code-5d9f22dbc373192322ba3d1f4422371f.svg"
-                            alt="Format"
-                            class="ml-1 inline-block"
-                            data-image-swap-target="image"
-                            data-hover-src="/assets/images/icons/code-active-47ea06264a3cf5d9f635b85c748eb38f.svg">
-            </button>
-                        <button
-                    id="action-share"
-                    data-controller="image-swap"
-                    data-action="click->playground-share#share mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
-                Share <img src="/assets/images/icons/share-c5606063ebff259b64ea887056279b4e.svg"
-                     alt="Share"
-                     class="ml-1 inline-block"
-                     data-image-swap-target="image"
-                     data-hover-src="/assets/images/icons/share-active-abe8eb04e05b4cebdd7c41cb5a13d7c3.svg">
-            </button>
-                        <button
-                    id="action-upload"
-                    data-controller="image-swap"
-                    data-action="click->playground-upload#triggerUpload mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
-                Upload <img src="/assets/images/icons/upload-14409a4da46b4ba64c988711c06e9254.svg"
-                            alt="Upload"
-                            class="ml-1 inline-block"
-                            data-image-swap-target="image"
-                            data-hover-src="/assets/images/icons/upload-active-cfbfac912bb8d54a16ed4f1562c46505.svg">
-            </button>
-            <input type="file"
-                   data-playground-upload-target="fileInput"
-                   data-action="change->playground-upload#handleFileUpload"
-                   accept=".csv,.json,.xml,.php,.phar"
-                   multiple
-                   style="display: none;">
-            <a href="/playground"
-               id="action-reset"
-               data-controller="image-swap playground-reset"
-               data-playground-reset-playground-storage-outlet="#playground"
-               data-action="click->playground-reset#confirmReset mouseenter->image-swap#mouseEnter mouseleave->image-swap#mouseLeave">
-                Reset <img src="/assets/images/icons/refresh-71f35c2c6d7ac84cfa617f75a64ee2b1.svg"
-                           alt="Reset"
-                           class="ml-1 inline-block"
-                           data-image-swap-target="image"
-                           data-hover-src="/assets/images/icons/refresh-active-5a6c0c70183d0f7cb1c1feac68486b85.svg">
-            </a>
-        </div>
-    </div>
-    <div id="playground-editor" class="editor" data-playground-target="editor"
-         data-controller="playground-tabs"
-         data-playground-tabs-wasm-outlet="#playground"
-         data-playground-tabs-code-editor-outlet="#code-editor">
-        <div class="file-browser-mobile">
-            <label for="file-select" class="file-browser-label">
-                Workspace
-                <button
-                        data-action="click->playground-help#showTopic"
-                        data-help-topic="help-workspace"
-                        class="help-trigger-workspace"
-                        aria-label="What is the Workspace?">
-                    <img src="/assets/images/icons/help-6a6e833271f222c3b337e77c10460d9c.svg" alt="Help" width="14" height="14">
-                </button>
-            </label>
-            <select id="file-select"
-                    class="file-select"
-                    data-playground-workspace-target="dropdown"
-                    data-action="change->playground-tabs#openFileFromDropdown">
-                <option value="">Select a file...</option>
-            </select>
-        </div>
-        <div class="file-browser">
-            <div class="file-browser-header">
-                Workspace
-                <button
-                        data-action="click->playground-help#showTopic"
-                        data-help-topic="help-workspace"
-                        class="help-trigger-workspace"
-                        aria-label="What is the Workspace?">
-                    <img src="/assets/images/icons/help-6a6e833271f222c3b337e77c10460d9c.svg" alt="Help" width="14" height="14">
-                </button>
-            </div>
-            <div class="file-browser-content" data-playground-workspace-target="tree">
-                <!-- Files will be populated by JavaScript -->
-            </div>
-        </div>
-        <div class="editor-main">
-            <div class="code-container">
-                <div class="tab-bar" data-playground-tabs-target="tabBar">
-                    <button class="tab active"
-                            data-playground-tabs-target="codeTab"
-                            data-action="click->playground-tabs#switchToCode">
-                        <img src="/assets/images/icons/file-028e2be98c9d50187258f29575a9e7c6.svg" alt="" width="14" height="14">
-                        <span>code.php</span>
-                    </button>
-                    <button class="tab"
-                            data-playground-tabs-target="previewTab"
-                            data-action="click->playground-tabs#switchToPreview"
-                            style="display: none;">
-                        <img src="/assets/images/icons/file-028e2be98c9d50187258f29575a9e7c6.svg" alt="" width="14" height="14">
-                        <span data-playground-tabs-target="previewTabName"></span>
-                        <span class="tab-close" data-action="click->playground-tabs#closePreview">&times;</span>
-                    </button>
-                    <button class="tab-action"
-                            data-action="click->playground-tabs#downloadPreviewFile"
-                            data-playground-tabs-target="downloadBtn"
-                            style="display: none;"
-                            aria-label="Download file">
-                        <img src="/assets/images/icons/upload-14409a4da46b4ba64c988711c06e9254.svg" alt="Download" width="14" height="14" style="transform: rotate(180deg);">
-                    </button>
-                </div>
-                <div class="editor-panel" data-playground-tabs-target="codePanel">
-                    <textarea id="code-editor" data-controller="code-editor">
-<?php
-// Code will be loaded from /workspace/code.php after WASM initialization
-</textarea>
-                </div>
-                <div class="editor-panel" data-playground-tabs-target="previewPanel" style="display: none;"></div>
-            </div>
-            <div class="output-container" data-playground-target="outputContainer">
-                <h2>Output</h2>
-                <pre id="output" data-playground-output-target="container"></pre>
-            </div>
+        <div class="basis-full sm:basis-1/3">
+            <img src="/assets/images/icons/load-9d1ae77f76eb4e7003f46be915c17949.svg" alt="load" width="64" height="64" class="inline">
+            <h2 class="my-2 text-2xl font-semibold tracking-wide">Loads</h2>
+            <p>Store and secure in one of many available data sinks.</p>
         </div>
     </div>
 </div>
+        
+            <div class="py-10 px-2 sm:px-4 mx-auto max-w-screen-2xl">
+        <h2 class="mb-4 text-2xl font-semibold tracking-wide">Examples:</h2>
+        <nav class="font-medium text-center bg-orange-100 rounded">
+            <ul class="flex whitespace-nowrap overflow-auto justify-between">
+                                    <li class="grow">
+                        <a href="/data_frame/data_reading/array/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                            Data frame
+                        </a>
+                    </li>
+                                    <li class="grow">
+                        <a href="/transformations/array/expand/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                            Transformations
+                        </a>
+                    </li>
+                                    <li class="grow">
+                        <a href="/schema/validate/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                            Schema
+                        </a>
+                    </li>
+                                    <li class="grow">
+                        <a href="/join/join/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                            Join
+                        </a>
+                    </li>
+                                    <li class="grow">
+                        <a href="/aggregations/grouping/group_by/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                            Aggregations
+                        </a>
+                    </li>
+                                    <li class="grow">
+                        <a href="/partitioning/partitioning/overwrite/#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                            Partitioning
+                        </a>
+                    </li>
+                                    <li class="grow">
+                        <a href="/filesystem/local/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                            Filesystem
+                        </a>
+                    </li>
+                                    <li class="grow">
+                        <a href="/types/assertions/scalar/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                            Types
+                        </a>
+                    </li>
+                                    <li class="grow">
+                        <a href="/telemetry/tracer/#example" class="inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                            Telemetry
+                        </a>
+                    </li>
+                            </ul>
+        </nav>
+
+        <div class="-mt-20 pt-20">
+            <nav>
+                <ul class="flex whitespace-nowrap overflow-auto py-2">
+                                            <li>
+                            <a href="/partitioning/partitioning/overwrite/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
+                                Partitioning
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/partitioning/reading/basic/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
+                                Reading
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/partitioning/partition_pruning/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
+                                Partition pruning
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/partitioning/path_partitions/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                                <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
+                                Path partitions
+                            </a>
+                        </li>
+                                    </ul>
+            </nav>
+
+                        <nav class="bg-gray-50 rounded pb-2 mb-4"
+                 data-controller="horizontal-scroll">
+                                <ul class="flex whitespace-nowrap overflow-auto gap-1 scroll-smooth"
+                    data-horizontal-scroll-target="container">
+                                            <li>
+                            <a href="/partitioning/reading/basic/#example"
+                               class="inline-block text-sm px-3 py-1 rounded hover:bg-orange-200 transition-colors [&.active]:bg-orange-300 [&.active]:font-medium [&.active]:rounded">
+                                Basic
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/partitioning/reading/after_overwrite/#example"
+                               class="inline-block text-sm px-3 py-1 rounded hover:bg-orange-200 transition-colors [&.active]:bg-orange-300 [&.active]:font-medium [&.active]:rounded">
+                                After overwrite
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/partitioning/reading/after_append/#example"
+                               class="active inline-block text-sm px-3 py-1 rounded hover:bg-orange-200 transition-colors [&.active]:bg-orange-300 [&.active]:font-medium [&.active]:rounded">
+                                After append
+                            </a>
+                        </li>
+                                    </ul>
+
+                                <div class="flex justify-between mt-1 px-2">
+                    <button type="button"
+                            class="w-8 h-8 flex items-center justify-center bg-orange-300 hover:bg-orange-200 rounded-full shadow transition-all duration-200 opacity-0 pointer-events-none"
+                            data-horizontal-scroll-target="leftArrow"
+                            data-action="click->horizontal-scroll#scrollLeft">
+                        <img src="/assets/images/icons/arrow-left-0eccc028b01da49a0505495ddab78075.svg" alt="scroll left" width="16" height="16">
+                    </button>
+                    <button type="button"
+                            class="w-8 h-8 flex items-center justify-center bg-orange-300 hover:bg-orange-200 rounded-full shadow transition-all duration-200 opacity-0 pointer-events-none"
+                            data-horizontal-scroll-target="rightArrow"
+                            data-action="click->horizontal-scroll#scrollRight">
+                        <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="scroll right" width="16" height="16">
+                    </button>
+                </div>
+            </nav>
+            
+            <div id="example" class="-mt-36 pt-36">
+                                    <h2 class="text-xl mt-5">Description</h2>
+                    <article id="example-description"
+                             class="rounded px-4 pt-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative mb-5"
+                            data-controller="all-links-external"
+                    >
+                        <p>Read partitioned data after multiple writes with append mode. Flow automatically combines all files matching <code>filename*.ext</code> pattern in each partition.</p>
+
+                    </article>
+                
+                                    <h2 class="text-xl mt-5">Documentation</h2>
+                    <article class="rounded px-4 pt-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative mb-5">
+                        <ul>
+<li><a href="/documentation/components/core/partitioning">Partitioning</a></li>
+<li><a href="/documentation/components/core/save-mode">Save Mode</a></li>
+</ul>
+
+                    </article>
+                
+                <h2 class="text-xl mt-5 mb-5" id="documentation">Code</h2><div id="code" class="relative"><div class="absolute top-[12px] right-[12px] flex gap-2"><a href="/playground/partitioning/reading/after_append"
+                           class="bg-orange-100 rounded px-4 leading-9 hover:bg-orange-200"
+                           title="Try in Playground"><img src="/assets/images/icons/play-b3d8bbbafaea96f437f51fa0a5041e8f.svg" alt="play" width="20" height="20" class="inline"></a><button class="bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20"
+                                data-clipboard-target="#code-php"
+                                data-controller="clipboard"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="copy code-php" width="20" height="20" class="inline"></button></div><pre class="rounded p-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 language-php" data-controller="syntax-highlight" ><code id="code-php">&lt;?php
+
+declare(strict_types=1);
+
+use function Flow\ETL\Adapter\CSV\{from_csv, to_csv};
+use function Flow\ETL\DSL\{append, data_frame, from_array, ref, to_output};
+
+require __DIR__ . &#039;/vendor/autoload.php&#039;;
+
+$outputPath = __DIR__ . &#039;/output&#039;;
+
+data_frame()
+    -&gt;read(from_array(
+        [
+            [&#039;id&#039; =&gt; 1, &#039;color&#039; =&gt; &#039;red&#039;, &#039;name&#039; =&gt; &#039;Widget&#039;],
+            [&#039;id&#039; =&gt; 2, &#039;color&#039; =&gt; &#039;blue&#039;, &#039;name&#039; =&gt; &#039;Gadget&#039;],
+        ]
+    ))
+    -&gt;partitionBy(ref(&#039;color&#039;))
+    -&gt;mode(append())
+    -&gt;write(to_csv($outputPath . &#039;/products.csv&#039;))
+    -&gt;run();
+
+data_frame()
+    -&gt;read(from_array(
+        [
+            [&#039;id&#039; =&gt; 3, &#039;color&#039; =&gt; &#039;red&#039;, &#039;name&#039; =&gt; &#039;Sprocket&#039;],
+            [&#039;id&#039; =&gt; 4, &#039;color&#039; =&gt; &#039;blue&#039;, &#039;name&#039; =&gt; &#039;Gear&#039;],
+        ]
+    ))
+    -&gt;partitionBy(ref(&#039;color&#039;))
+    -&gt;mode(append())
+    -&gt;write(to_csv($outputPath . &#039;/products.csv&#039;))
+    -&gt;run();
+
+data_frame()
+    -&gt;read(from_csv($outputPath . &#039;/color=*/*.csv&#039;))
+    -&gt;write(to_output(truncate: false))
+    -&gt;run();
+</code></pre></div>            </div>
+
+            <div class="mt-5">
+                <script src="https://giscus.app/client.js"
+                        data-repo="flow-php/flow-php.com"
+                        data-repo-id="R_kgDOHja2Yg"
+                        data-category="Examples"
+                        data-category-id="DIC_kwDOHja2Ys4CieC7"
+                        data-mapping="url"
+                        data-strict="0"
+                        data-reactions-enabled="0"
+                        data-emit-metadata="0"
+                        data-input-position="bottom"
+                        data-theme="dark"
+                        data-lang="en"
+                        crossorigin="anonymous"
+                        async>
+                </script>
+            </div>
+        </div>
+    </div>
 
         <div class="bg-blue-200">
     <section class="mx-auto max-w-screen-2xl sm:flex justify-between items-center py-6 px-2 sm:px-4">

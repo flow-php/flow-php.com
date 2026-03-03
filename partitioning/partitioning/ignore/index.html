@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
 
-    <title>Flow PHP - Partitioning - Reading - Example</title>
-    <meta property="og:title" content="Flow PHP - Partitioning - Reading - Example" />
-    <meta name="twitter:title" content="Flow PHP - Partitioning - Reading - Example" >
+    <title>Flow PHP - Partitioning - Partitioning - Example</title>
+    <meta property="og:title" content="Flow PHP - Partitioning - Partitioning - Example" />
+    <meta name="twitter:title" content="Flow PHP - Partitioning - Partitioning - Example" >
 
-    <meta name="description" content="Code example showing reading partitioning.">
-    <meta property="og:description" content="Code example showing reading partitioning.">
-    <meta name="twitter:description" content="Code example showing reading partitioning.">
+    <meta name="description" content="Code example showing partitioning partitioning.">
+    <meta property="og:description" content="Code example showing partitioning partitioning.">
+    <meta name="twitter:description" content="Code example showing partitioning partitioning.">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flow-php.com/partitioning/reading/" />
+    <meta property="og:url" content="https://flow-php.com/partitioning/partitioning/ignore/" />
     <meta property="og:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png" />
     <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:alt" content="Flow PHP - Unified data processing framework" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flow-php.com/partitioning/reading/" />
+    <meta property="twitter:url" content="https://flow-php.com/partitioning/partitioning/ignore/" />
     <meta name="twitter:image" content="https://flow-php.com/assets/images/banner-a491e037b6fca6069571c39eb216acc9.png">
     <meta name="twitter:site" content="@norbert_tech" />
     <meta name="twitter:creator" content="@norbert_tech" />
@@ -375,7 +375,7 @@
                         </a>
                     </li>
                                     <li class="grow">
-                        <a href="/partitioning/partitioning/#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                        <a href="/partitioning/partitioning/overwrite/#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
                             Partitioning
                         </a>
                     </li>
@@ -401,13 +401,13 @@
             <nav>
                 <ul class="flex whitespace-nowrap overflow-auto py-2">
                                             <li>
-                            <a href="/partitioning/partitioning/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/partitioning/partitioning/overwrite/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Partitioning
                             </a>
                         </li>
                                             <li>
-                            <a href="/partitioning/reading/#example" class="active w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/partitioning/reading/basic/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Reading
                             </a>
@@ -427,18 +427,95 @@
                                     </ul>
             </nav>
 
+                        <nav class="bg-gray-50 rounded pb-2 mb-4"
+                 data-controller="horizontal-scroll">
+                                <ul class="flex whitespace-nowrap overflow-auto gap-1 scroll-smooth"
+                    data-horizontal-scroll-target="container">
+                                            <li>
+                            <a href="/partitioning/partitioning/overwrite/#example"
+                               class="inline-block text-sm px-3 py-1 rounded hover:bg-orange-200 transition-colors [&.active]:bg-orange-300 [&.active]:font-medium [&.active]:rounded">
+                                Overwrite
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/partitioning/partitioning/append/#example"
+                               class="inline-block text-sm px-3 py-1 rounded hover:bg-orange-200 transition-colors [&.active]:bg-orange-300 [&.active]:font-medium [&.active]:rounded">
+                                Append
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/partitioning/partitioning/ignore/#example"
+                               class="active inline-block text-sm px-3 py-1 rounded hover:bg-orange-200 transition-colors [&.active]:bg-orange-300 [&.active]:font-medium [&.active]:rounded">
+                                Ignore
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/partitioning/partitioning/exception_if_exists/#example"
+                               class="inline-block text-sm px-3 py-1 rounded hover:bg-orange-200 transition-colors [&.active]:bg-orange-300 [&.active]:font-medium [&.active]:rounded">
+                                Exception if exists
+                            </a>
+                        </li>
+                                    </ul>
+
+                                <div class="flex justify-between mt-1 px-2">
+                    <button type="button"
+                            class="w-8 h-8 flex items-center justify-center bg-orange-300 hover:bg-orange-200 rounded-full shadow transition-all duration-200 opacity-0 pointer-events-none"
+                            data-horizontal-scroll-target="leftArrow"
+                            data-action="click->horizontal-scroll#scrollLeft">
+                        <img src="/assets/images/icons/arrow-left-0eccc028b01da49a0505495ddab78075.svg" alt="scroll left" width="16" height="16">
+                    </button>
+                    <button type="button"
+                            class="w-8 h-8 flex items-center justify-center bg-orange-300 hover:bg-orange-200 rounded-full shadow transition-all duration-200 opacity-0 pointer-events-none"
+                            data-horizontal-scroll-target="rightArrow"
+                            data-action="click->horizontal-scroll#scrollRight">
+                        <img src="/assets/images/icons/arrow-right-e59f98fecacd3a460302167440c20248.svg" alt="scroll right" width="16" height="16">
+                    </button>
+                </div>
+            </nav>
             
             <div id="example" class="-mt-36 pt-36">
+                                    <h2 class="text-xl mt-5">Description</h2>
+                    <article id="example-description"
+                             class="rounded px-4 pt-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative mb-5"
+                            data-controller="all-links-external"
+                    >
+                        <p>Divide large datasets into smaller, organized parts based on column values. Flow uses Hive partitioning convention, creating a directory structure where each folder represents a partition value.</p>
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">output
+├── color=blue
+│   ├── sku=PRODUCT01
+│   │   └── products.csv
+│   └── sku=PRODUCT02
+│       └── products.csv
+├── color=green
+│   ├── sku=PRODUCT01
+│   │   └── products.csv
+│   ├── sku=PRODUCT02
+│   │   └── products.csv
+│   └── sku=PRODUCT03
+│       └── products.csv
+└── color=red
+    ├── sku=PRODUCT01
+    │   └── products.csv
+    ├── sku=PRODUCT02
+    │   └── products.csv
+    └── sku=PRODUCT03
+        └── products.csv
+</code></pre>
+<hr />
+<p>Write partitioned data with ignore mode. If a partition path already exists, writing is silently skipped. Useful for idempotent pipelines where re-running should not duplicate data.</p>
+
+                    </article>
                 
                                     <h2 class="text-xl mt-5">Documentation</h2>
                     <article class="rounded px-4 pt-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative mb-5">
                         <ul>
 <li><a href="/documentation/components/core/partitioning">Partitioning</a></li>
+<li><a href="/documentation/components/core/save-mode">Save Mode</a></li>
 </ul>
 
                     </article>
                 
-                <h2 class="text-xl mt-5 mb-5" id="documentation">Code</h2><div id="code" class="relative"><div class="absolute top-[12px] right-[12px] flex gap-2"><a href="/playground/partitioning/reading"
+                <h2 class="text-xl mt-5 mb-5" id="documentation">Code</h2><div id="code" class="relative"><div class="absolute top-[12px] right-[12px] flex gap-2"><a href="/playground/partitioning/partitioning/ignore"
                            class="bg-orange-100 rounded px-4 leading-9 hover:bg-orange-200"
                            title="Try in Playground"><img src="/assets/images/icons/play-b3d8bbbafaea96f437f51fa0a5041e8f.svg" alt="play" width="20" height="20" class="inline"></a><button class="bg-orange-100 rounded px-4 leading-9 [&.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20"
                                 data-clipboard-target="#code-php"
@@ -446,14 +523,27 @@
 
 declare(strict_types=1);
 
-use function Flow\ETL\Adapter\CSV\from_csv;
-use function Flow\ETL\DSL\{data_frame, to_output};
+use function Flow\ETL\Adapter\CSV\to_csv;
+use function Flow\ETL\DSL\{data_frame, from_array, ignore, ref};
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
 data_frame()
-    -&gt;read(from_csv(__DIR__ . &#039;/input/color=*/sku=*/*.csv&#039;))
-    -&gt;write(to_output(truncate: false))
+    -&gt;read(from_array(
+        [
+            [&#039;id&#039; =&gt; 1, &#039;color&#039; =&gt; &#039;red&#039;, &#039;sku&#039; =&gt; &#039;PRODUCT01&#039;],
+            [&#039;id&#039; =&gt; 2, &#039;color&#039; =&gt; &#039;red&#039;, &#039;sku&#039; =&gt; &#039;PRODUCT02&#039;],
+            [&#039;id&#039; =&gt; 3, &#039;color&#039; =&gt; &#039;red&#039;, &#039;sku&#039; =&gt; &#039;PRODUCT03&#039;],
+            [&#039;id&#039; =&gt; 4, &#039;color&#039; =&gt; &#039;green&#039;, &#039;sku&#039; =&gt; &#039;PRODUCT01&#039;],
+            [&#039;id&#039; =&gt; 5, &#039;color&#039; =&gt; &#039;green&#039;, &#039;sku&#039; =&gt; &#039;PRODUCT02&#039;],
+            [&#039;id&#039; =&gt; 6, &#039;color&#039; =&gt; &#039;green&#039;, &#039;sku&#039; =&gt; &#039;PRODUCT03&#039;],
+            [&#039;id&#039; =&gt; 7, &#039;color&#039; =&gt; &#039;blue&#039;, &#039;sku&#039; =&gt; &#039;PRODUCT01&#039;],
+            [&#039;id&#039; =&gt; 8, &#039;color&#039; =&gt; &#039;blue&#039;, &#039;sku&#039; =&gt; &#039;PRODUCT02&#039;],
+        ]
+    ))
+    -&gt;partitionBy(ref(&#039;color&#039;), ref(&#039;sku&#039;))
+    -&gt;mode(ignore())
+    -&gt;write(to_csv(__DIR__ . &#039;/output/products.csv&#039;))
     -&gt;run();
 </code></pre></div>            </div>
 

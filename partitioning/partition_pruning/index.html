@@ -375,7 +375,7 @@
                         </a>
                     </li>
                                     <li class="grow">
-                        <a href="/partitioning/partitioning/#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
+                        <a href="/partitioning/partitioning/overwrite/#example" class="active inline-block leading-10 px-4 py-2 w-full [&.active]:bg-orange-300 rounded">
                             Partitioning
                         </a>
                     </li>
@@ -401,13 +401,13 @@
             <nav>
                 <ul class="flex whitespace-nowrap overflow-auto py-2">
                                             <li>
-                            <a href="/partitioning/partitioning/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/partitioning/partitioning/overwrite/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Partitioning
                             </a>
                         </li>
                                             <li>
-                            <a href="/partitioning/reading/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
+                            <a href="/partitioning/reading/basic/#example" class="w-max tracking-wide flex items-center leading-8 px-2 [&.active]:bg-orange-300 rounded">
                                 <img src="/assets/images/icons/flow-cafc61a123235340b0846daa351952ee.svg" alt="flow php icon" width="16" height="16" class="mr-2">
                                 Reading
                             </a>
@@ -429,6 +429,14 @@
 
             
             <div id="example" class="-mt-36 pt-36">
+                                    <h2 class="text-xl mt-5">Description</h2>
+                    <article id="example-description"
+                             class="rounded px-4 pt-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative mb-5"
+                            data-controller="all-links-external"
+                    >
+                        <p>Skip entire partitions without reading their data using filterPartitions(). Unlike filter() which reads all data then filters, partition pruning evaluates metadata first and only reads matching partitions - dramatically improving performance for large datasets.</p>
+
+                    </article>
                 
                                     <h2 class="text-xl mt-5">Documentation</h2>
                     <article class="rounded px-4 pt-4 overflow-auto shadow-2xl shadow-gray rounded border-gray border-2 relative mb-5">
