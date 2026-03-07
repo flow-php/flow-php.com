@@ -72,15 +72,15 @@
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dsl.js": {
-        "path": "\/assets\/codemirror\/completions\/dsl-d818b383a79b5b76188f7864274ab078.js",
+        "path": "\/assets\/codemirror\/completions\/dsl-f174a72e2f904bc753745ba8bc0f506b.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dataframe.js": {
-        "path": "\/assets\/codemirror\/completions\/dataframe-b95ce4aae1bcd877b1cbc2f0417a673b.js",
+        "path": "\/assets\/codemirror\/completions\/dataframe-85116d52ce67713a5545b5911a1f86fe.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/scalarfunctionchain.js": {
-        "path": "\/assets\/codemirror\/completions\/scalarfunctionchain-1e6742cecce8b01290d87d25cd18a536.js",
+        "path": "\/assets\/codemirror\/completions\/scalarfunctionchain-0aa2eb319a5773bc2edf5b2c9e79add5.js",
         "type": "js"
     },
     "\/assets\/models\/Violation.js": {

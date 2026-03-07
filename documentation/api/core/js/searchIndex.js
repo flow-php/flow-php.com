@@ -1526,36 +1526,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-DataFrame.html#method_rename"
         },                {
-            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003ArenameAll\u0028\u0029",
-            "name": "renameAll",
-            "summary": "",
-            "url": "classes/Flow-ETL-DataFrame.html#method_renameAll"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003ArenameAllLowerCase\u0028\u0029",
-            "name": "renameAllLowerCase",
-            "summary": "",
-            "url": "classes/Flow-ETL-DataFrame.html#method_renameAllLowerCase"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003ArenameAllStyle\u0028\u0029",
-            "name": "renameAllStyle",
-            "summary": "",
-            "url": "classes/Flow-ETL-DataFrame.html#method_renameAllStyle"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003ArenameAllUpperCase\u0028\u0029",
-            "name": "renameAllUpperCase",
-            "summary": "",
-            "url": "classes/Flow-ETL-DataFrame.html#method_renameAllUpperCase"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003ArenameAllUpperCaseFirst\u0028\u0029",
-            "name": "renameAllUpperCaseFirst",
-            "summary": "",
-            "url": "classes/Flow-ETL-DataFrame.html#method_renameAllUpperCaseFirst"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003ArenameAllUpperCaseWord\u0028\u0029",
-            "name": "renameAllUpperCaseWord",
-            "summary": "",
-            "url": "classes/Flow-ETL-DataFrame.html#method_renameAllUpperCaseWord"
-        },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003ArenameEach\u0028\u0029",
             "name": "renameEach",
             "summary": "",
@@ -2195,6 +2165,11 @@ Search.appendIndex(
             "name": "rename_replace",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_rename_replace"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\rename_map\u0028\u0029",
+            "name": "rename_map",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_rename_map"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\bool_entry\u0028\u0029",
             "name": "bool_entry",
@@ -7406,61 +7381,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-StyleConverter-ArrayKeyConverter.html#method_convert"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles",
-            "name": "StringStyles",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003AASCII",
-            "name": "ASCII",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_ASCII"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003ACAMEL",
-            "name": "CAMEL",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_CAMEL"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003AKEBAB",
-            "name": "KEBAB",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_KEBAB"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003ALOWER",
-            "name": "LOWER",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_LOWER"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003ASLUG",
-            "name": "SLUG",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_SLUG"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003ASNAKE",
-            "name": "SNAKE",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_SNAKE"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003ATITLE",
-            "name": "TITLE",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_TITLE"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003AUCFIRST",
-            "name": "UCFIRST",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_UCFIRST"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003AUCWORDS",
-            "name": "UCWORDS",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_UCWORDS"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\StyleConverter\\StringStyles\u003A\u003AUPPER",
-            "name": "UPPER",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-StyleConverter-StringStyles.html#enumcase_UPPER"
-        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sum",
             "name": "Sum",
             "summary": "",
@@ -8820,6 +8740,11 @@ Search.appendIndex(
             "name": "rename",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entries.html#method_rename"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entries\u003A\u003ArenameMany\u0028\u0029",
+            "name": "renameMany",
+            "summary": "Rename\u0020multiple\u0020entries\u0020in\u0020a\u0020single\u0020pass.",
+            "url": "classes/Flow-ETL-Row-Entries.html#method_renameMany"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entries\u003A\u003Aset\u0028\u0029",
             "name": "set",
@@ -10525,6 +10450,11 @@ Search.appendIndex(
             "name": "rename",
             "summary": "",
             "url": "classes/Flow-ETL-Row.html#method_rename"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\u003A\u003ArenameMany\u0028\u0029",
+            "name": "renameMany",
+            "summary": "Rename\u0020multiple\u0020entries\u0020in\u0020a\u0020single\u0020pass.",
+            "url": "classes/Flow-ETL-Row.html#method_renameMany"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
@@ -13196,21 +13126,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-DuplicateRowTransformer.html#method_transform"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\EntryNameStyleConverterTransformer",
-            "name": "EntryNameStyleConverterTransformer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-EntryNameStyleConverterTransformer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\EntryNameStyleConverterTransformer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-EntryNameStyleConverterTransformer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\EntryNameStyleConverterTransformer\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-EntryNameStyleConverterTransformer.html#method_transform"
-        },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\JoinEachRowsTransformer",
             "name": "JoinEachRowsTransformer",
             "summary": "",
@@ -13391,6 +13306,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-Rename-RenameEntryStrategy.html#method_rename"
         },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameMapEntryStrategy",
+            "name": "RenameMapEntryStrategy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameMapEntryStrategy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameMapEntryStrategy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameMapEntryStrategy.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameMapEntryStrategy\u003A\u003Arename\u0028\u0029",
+            "name": "rename",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameMapEntryStrategy.html#method_rename"
+        },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameReplaceEntryStrategy",
             "name": "RenameReplaceEntryStrategy",
             "summary": "",
@@ -13405,21 +13335,6 @@ Search.appendIndex(
             "name": "rename",
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-Rename-RenameReplaceEntryStrategy.html#method_rename"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameAllCaseTransformer",
-            "name": "RenameAllCaseTransformer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameAllCaseTransformer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameAllCaseTransformer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameAllCaseTransformer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameAllCaseTransformer\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameAllCaseTransformer.html#method_transform"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\RenameEachEntryTransformer",
             "name": "RenameEachEntryTransformer",
@@ -13450,21 +13365,6 @@ Search.appendIndex(
             "name": "transform",
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-RenameEntryTransformer.html#method_transform"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameStrReplaceAllEntriesTransformer",
-            "name": "RenameStrReplaceAllEntriesTransformer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameStrReplaceAllEntriesTransformer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameStrReplaceAllEntriesTransformer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameStrReplaceAllEntriesTransformer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameStrReplaceAllEntriesTransformer\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameStrReplaceAllEntriesTransformer.html#method_transform"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\ScalarFunctionFilterTransformer",
             "name": "ScalarFunctionFilterTransformer",
