@@ -1146,16 +1146,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#method_version"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\u003A\u003ACACHE_DIR_ENV",
-            "name": "CACHE_DIR_ENV",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config.html#constant_CACHE_DIR_ENV"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\u003A\u003ASORT_MAX_MEMORY_ENV",
-            "name": "SORT_MAX_MEMORY_ENV",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config.html#constant_SORT_MAX_MEMORY_ENV"
-        },                {
             "fqsen": "\\Flow\\ETL\\Config\u003A\u003A\u0024cache",
             "name": "cache",
             "summary": "",
@@ -1575,11 +1565,6 @@ Search.appendIndex(
             "name": "until",
             "summary": "The\u0020difference\u0020between\u0020filter\u0020and\u0020until\u0020is\u0020that\u0020filter\u0020will\u0020keep\u0020filtering\u0020rows\u0020until\u0020extractors\u0020finish\u0020yielding\nrows.\u0020Until\u0020will\u0020send\u0020a\u0020STOP\u0020signal\u0020to\u0020the\u0020Extractor\u0020when\u0020the\u0020condition\u0020is\u0020not\u0020met.",
             "url": "classes/Flow-ETL-DataFrame.html#method_until"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Avalidate\u0028\u0029",
-            "name": "validate",
-            "summary": "",
-            "url": "classes/Flow-ETL-DataFrame.html#method_validate"
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Avoid\u0028\u0029",
             "name": "void",
@@ -2081,11 +2066,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_batches"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\chunks_from\u0028\u0029",
-            "name": "chunks_from",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_chunks_from"
-        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\from_pipeline\u0028\u0029",
             "name": "from_pipeline",
             "summary": "",
@@ -2281,150 +2261,15 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_structure_entry"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_structure\u0028\u0029",
-            "name": "type_structure",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_structure"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_union\u0028\u0029",
-            "name": "type_union",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_union"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_optional\u0028\u0029",
-            "name": "type_optional",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_optional"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_from_array\u0028\u0029",
-            "name": "type_from_array",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_from_array"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\is_nullable\u0028\u0029",
-            "name": "is_nullable",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_is_nullable"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_equals\u0028\u0029",
-            "name": "type_equals",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_equals"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\types\u0028\u0029",
-            "name": "types",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_types"
-        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\list_entry\u0028\u0029",
             "name": "list_entry",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_list_entry"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_list\u0028\u0029",
-            "name": "type_list",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_list"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_map\u0028\u0029",
-            "name": "type_map",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_map"
-        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\map_entry\u0028\u0029",
             "name": "map_entry",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_map_entry"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_json\u0028\u0029",
-            "name": "type_json",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_json"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_datetime\u0028\u0029",
-            "name": "type_datetime",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_datetime"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_date\u0028\u0029",
-            "name": "type_date",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_date"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_time\u0028\u0029",
-            "name": "type_time",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_time"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_xml\u0028\u0029",
-            "name": "type_xml",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_xml"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_xml_element\u0028\u0029",
-            "name": "type_xml_element",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_xml_element"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_uuid\u0028\u0029",
-            "name": "type_uuid",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_uuid"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_int\u0028\u0029",
-            "name": "type_int",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_int"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_integer\u0028\u0029",
-            "name": "type_integer",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_integer"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_string\u0028\u0029",
-            "name": "type_string",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_string"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_float\u0028\u0029",
-            "name": "type_float",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_float"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_boolean\u0028\u0029",
-            "name": "type_boolean",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_boolean"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_instance_of\u0028\u0029",
-            "name": "type_instance_of",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_instance_of"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_resource\u0028\u0029",
-            "name": "type_resource",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_resource"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_array\u0028\u0029",
-            "name": "type_array",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_array"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_callable\u0028\u0029",
-            "name": "type_callable",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_callable"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_null\u0028\u0029",
-            "name": "type_null",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_null"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_enum\u0028\u0029",
-            "name": "type_enum",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_enum"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\row\u0028\u0029",
             "name": "row",
@@ -3001,11 +2846,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_xml_element_schema"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\struct_schema\u0028\u0029",
-            "name": "struct_schema",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_struct_schema"
-        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\structure_schema\u0028\u0029",
             "name": "structure_schema",
             "summary": "",
@@ -3096,16 +2936,6 @@ Search.appendIndex(
             "summary": "In\u0020this\u0020mode,\u0020functions\u0020returns\u0020nulls\u0020instead\u0020of\u0020throwing\u0020exceptions.",
             "url": "namespaces/flow-etl-dsl.html#function_execution_lenient"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\get_type\u0028\u0029",
-            "name": "get_type",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_get_type"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\print_schema\u0028\u0029",
-            "name": "print_schema",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_print_schema"
-        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\print_rows\u0028\u0029",
             "name": "print_rows",
             "summary": "",
@@ -3166,16 +2996,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_is_type"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_is\u0028\u0029",
-            "name": "type_is",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_is"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\type_is_any\u0028\u0029",
-            "name": "type_is_any",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_type_is_any"
-        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\generate_random_string\u0028\u0029",
             "name": "generate_random_string",
             "summary": "",
@@ -3190,11 +3010,6 @@ Search.appendIndex(
             "name": "random_string",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_random_string"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\dom_element_to_string\u0028\u0029",
-            "name": "dom_element_to_string",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_dom_element_to_string"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\date_interval_to_milliseconds\u0028\u0029",
             "name": "date_interval_to_milliseconds",
@@ -3741,11 +3556,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-FileExtractor.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileExtractor\u003A\u003AaddFilter\u0028\u0029",
-            "name": "addFilter",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FileExtractor.html#method_addFilter"
-        },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\FileExtractor\u003A\u003Afilter\u0028\u0029",
             "name": "filter",
             "summary": "",
@@ -3860,11 +3670,6 @@ Search.appendIndex(
             "name": "PathFiltering",
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-PathFiltering.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PathFiltering\u003A\u003AaddFilter\u0028\u0029",
-            "name": "addFilter",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-PathFiltering.html#method_addFilter"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\PathFiltering\u003A\u003Afilter\u0028\u0029",
             "name": "filter",
@@ -6550,11 +6355,6 @@ Search.appendIndex(
             "name": "divide",
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_divide"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AdomElementAttribute\u0028\u0029",
-            "name": "domElementAttribute",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_domElementAttribute"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AdomElementAttributesCount\u0028\u0029",
             "name": "domElementAttributesCount",
@@ -10816,11 +10616,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-BooleanDefinition.html#method_normalize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\BooleanDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-BooleanDefinition.html#method_nullable"
-        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\BooleanDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
             "summary": "",
@@ -10896,11 +10691,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-DateDefinition.html#method_normalize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-DateDefinition.html#method_nullable"
-        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
             "summary": "",
@@ -10975,11 +10765,6 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-DateTimeDefinition.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateTimeDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-DateTimeDefinition.html#method_nullable"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateTimeDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
@@ -11061,11 +10846,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-EnumDefinition.html#method_normalize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\EnumDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-EnumDefinition.html#method_nullable"
-        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\EnumDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
             "summary": "",
@@ -11140,11 +10920,6 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-FloatDefinition.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\FloatDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-FloatDefinition.html#method_nullable"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\FloatDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
@@ -11221,11 +10996,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-HTMLDefinition.html#method_normalize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-HTMLDefinition.html#method_nullable"
-        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
             "summary": "",
@@ -11300,11 +11070,6 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-HTMLElementDefinition.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLElementDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-HTMLElementDefinition.html#method_nullable"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLElementDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
@@ -11381,11 +11146,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-IntegerDefinition.html#method_normalize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\IntegerDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-IntegerDefinition.html#method_nullable"
-        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\IntegerDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
             "summary": "",
@@ -11460,11 +11220,6 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-JsonDefinition.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\JsonDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-JsonDefinition.html#method_nullable"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\JsonDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
@@ -11541,11 +11296,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-ListDefinition.html#method_normalize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ListDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-ListDefinition.html#method_nullable"
-        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ListDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
             "summary": "",
@@ -11620,11 +11370,6 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-MapDefinition.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\MapDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-MapDefinition.html#method_nullable"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\MapDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
@@ -11701,11 +11446,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-StringDefinition.html#method_normalize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StringDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-StringDefinition.html#method_nullable"
-        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StringDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
             "summary": "",
@@ -11780,11 +11520,6 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-StructureDefinition.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StructureDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-StructureDefinition.html#method_nullable"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StructureDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
@@ -11861,11 +11596,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-TimeDefinition.html#method_normalize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TimeDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-TimeDefinition.html#method_nullable"
-        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TimeDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
             "summary": "",
@@ -11940,11 +11670,6 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-UuidDefinition.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UuidDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UuidDefinition.html#method_nullable"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UuidDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
@@ -12021,11 +11746,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-XMLDefinition.html#method_normalize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-XMLDefinition.html#method_nullable"
-        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
             "summary": "",
@@ -12101,11 +11821,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-XMLElementDefinition.html#method_normalize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLElementDefinition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-XMLElementDefinition.html#method_nullable"
-        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLElementDefinition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
             "summary": "",
@@ -12175,11 +11890,6 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition.html#method_nullable"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\u003A\u003Arename\u0028\u0029",
             "name": "rename",
@@ -12396,11 +12106,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema.html#method_definitions"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003Aentries\u0028\u0029",
-            "name": "entries",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema.html#method_entries"
-        },                {
             "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AfindDefinition\u0028\u0029",
             "name": "findDefinition",
             "summary": "",
@@ -12410,11 +12115,6 @@ Search.appendIndex(
             "name": "get",
             "summary": "",
             "url": "classes/Flow-ETL-Schema.html#method_get"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AgetDefinition\u0028\u0029",
-            "name": "getDefinition",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema.html#method_getDefinition"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AgracefulRemove\u0028\u0029",
             "name": "gracefulRemove",
@@ -12445,11 +12145,6 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-ETL-Schema.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003Anullable\u0028\u0029",
-            "name": "nullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema.html#method_nullable"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\u003A\u003Areferences\u0028\u0029",
             "name": "references",
