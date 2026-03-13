@@ -137,7 +137,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/functions.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-functions.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -145,7 +145,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_parquet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Parquet\Options">Options</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Parquet\Options">Options</abbr>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Parquet\ByteOrder">ByteOrder</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$byte_order</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\Parquet\ByteOrder::LITTLE_ENDIAN">ByteOrder::LITTLE_ENDIAN</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html"><abbr title="\Flow\ETL\Adapter\Parquet\ParquetExtractor">ParquetExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_parquet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Parquet\Options">Options</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Parquet\Options">Options</abbr>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Parquet\Binary\ByteOrder">ByteOrder</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$byte_order</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\Parquet\Binary\ByteOrder::LITTLE_ENDIAN">ByteOrder::LITTLE_ENDIAN</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html"><abbr title="\Flow\ETL\Adapter\Parquet\ParquetExtractor">ParquetExtractor</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -181,8 +181,8 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$byte_order</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Parquet\ByteOrder">ByteOrder</abbr></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value"><abbr title="\Flow\Parquet\ByteOrder::LITTLE_ENDIAN">ByteOrder::LITTLE_ENDIAN</abbr></span>            </dt>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Parquet\Binary\ByteOrder">ByteOrder</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><abbr title="\Flow\Parquet\Binary\ByteOrder::LITTLE_ENDIAN">ByteOrder::LITTLE_ENDIAN</abbr></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>@deprecated use <code class="prettyprint">withByteOrder</code> method instead</li>
@@ -220,7 +220,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/functions.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-functions.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -292,7 +292,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/functions.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-functions.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -345,7 +345,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/functions.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-functions.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -374,7 +374,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/functions.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-functions.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -413,7 +413,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/functions.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-functions.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 

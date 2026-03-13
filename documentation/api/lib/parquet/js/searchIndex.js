@@ -1,6 +1,196 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Flow\\Parquet\\Binary\\ByteOrder",
+            "name": "ByteOrder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-ByteOrder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\ByteOrder\u003A\u003ABIG_ENDIAN",
+            "name": "BIG_ENDIAN",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-ByteOrder.html#enumcase_BIG_ENDIAN"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\ByteOrder\u003A\u003ALITTLE_ENDIAN",
+            "name": "LITTLE_ENDIAN",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-ByteOrder.html#enumcase_LITTLE_ENDIAN"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes",
+            "name": "Bytes",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-Bytes.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-Bytes.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AfromString\u0028\u0029",
+            "name": "fromString",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_fromString"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AgetIterator\u0028\u0029",
+            "name": "getIterator",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_getIterator"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AoffsetExists\u0028\u0029",
+            "name": "offsetExists",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_offsetExists"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_offsetGet"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AoffsetSet\u0028\u0029",
+            "name": "offsetSet",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_offsetSet"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AoffsetUnset\u0028\u0029",
+            "name": "offsetUnset",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_offsetUnset"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003Asize\u0028\u0029",
+            "name": "size",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_size"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_toArray"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AtoInt\u0028\u0029",
+            "name": "toInt",
+            "summary": "Convert\u0020bytes\u0020to\u0020a\u0020single\u0020integer.",
+            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_toInt"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\encode_i8\u0028\u0029",
+            "name": "encode_i8",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_encode_i8"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\decode_i8\u0028\u0029",
+            "name": "decode_i8",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_decode_i8"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\encode_i16\u0028\u0029",
+            "name": "encode_i16",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_encode_i16"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\decode_i16\u0028\u0029",
+            "name": "decode_i16",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_decode_i16"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\encode_i32\u0028\u0029",
+            "name": "encode_i32",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_encode_i32"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\decode_i32\u0028\u0029",
+            "name": "decode_i32",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_decode_i32"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\encode_i64\u0028\u0029",
+            "name": "encode_i64",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_encode_i64"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\decode_i64\u0028\u0029",
+            "name": "decode_i64",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_decode_i64"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\encode_u8\u0028\u0029",
+            "name": "encode_u8",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_encode_u8"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\decode_u8\u0028\u0029",
+            "name": "decode_u8",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_decode_u8"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\encode_u16\u0028\u0029",
+            "name": "encode_u16",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_encode_u16"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\decode_u16\u0028\u0029",
+            "name": "decode_u16",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_decode_u16"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\encode_u32\u0028\u0029",
+            "name": "encode_u32",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_encode_u32"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\decode_u32\u0028\u0029",
+            "name": "decode_u32",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_decode_u32"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\encode_u64\u0028\u0029",
+            "name": "encode_u64",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_encode_u64"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\decode_u64\u0028\u0029",
+            "name": "decode_u64",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_decode_u64"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\encode_f32\u0028\u0029",
+            "name": "encode_f32",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_encode_f32"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\decode_f32\u0028\u0029",
+            "name": "decode_f32",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_decode_f32"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\encode_f64\u0028\u0029",
+            "name": "encode_f64",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_encode_f64"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\decode_f64\u0028\u0029",
+            "name": "decode_f64",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_decode_f64"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\encode_decimal\u0028\u0029",
+            "name": "encode_decimal",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_encode_decimal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\decode_decimal\u0028\u0029",
+            "name": "decode_decimal",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_decode_decimal"
+        },                {
             "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader",
             "name": "BinaryBufferReader",
             "summary": "",
@@ -26,70 +216,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readBits"
         },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadBooleans\u0028\u0029",
-            "name": "readBooleans",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readBooleans"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadByteArrays\u0028\u0029",
-            "name": "readByteArrays",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readByteArrays"
-        },                {
             "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadBytes\u0028\u0029",
             "name": "readBytes",
             "summary": "",
             "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readBytes"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadDecimals\u0028\u0029",
-            "name": "readDecimals",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readDecimals"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadDoubles\u0028\u0029",
-            "name": "readDoubles",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readDoubles"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadFloats\u0028\u0029",
-            "name": "readFloats",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readFloats"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadInts16\u0028\u0029",
-            "name": "readInts16",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readInts16"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadInts32\u0028\u0029",
-            "name": "readInts32",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readInts32"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadInts64\u0028\u0029",
-            "name": "readInts64",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readInts64"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadInts96\u0028\u0029",
-            "name": "readInts96",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readInts96"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadStrings\u0028\u0029",
-            "name": "readStrings",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readStrings"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadUInts32\u0028\u0029",
-            "name": "readUInts32",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readUInts32"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadUInts64\u0028\u0029",
-            "name": "readUInts64",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_readUInts64"
         },                {
             "fqsen": "\\Flow\\Parquet\\BinaryReader\\BinaryBufferReader\u003A\u003AreadVarInt\u0028\u0029",
             "name": "readVarInt",
@@ -111,71 +241,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-BinaryReader-BinaryBufferReader.html#method_seekBytes"
         },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\Bytes",
-            "name": "Bytes",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-Bytes.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\Bytes\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-Bytes.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\Bytes\u003A\u003AfromString\u0028\u0029",
-            "name": "fromString",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-Bytes.html#method_fromString"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\Bytes\u003A\u003Acount\u0028\u0029",
-            "name": "count",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-Bytes.html#method_count"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\Bytes\u003A\u003AgetIterator\u0028\u0029",
-            "name": "getIterator",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-Bytes.html#method_getIterator"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\Bytes\u003A\u003AoffsetExists\u0028\u0029",
-            "name": "offsetExists",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-Bytes.html#method_offsetExists"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\Bytes\u003A\u003AoffsetGet\u0028\u0029",
-            "name": "offsetGet",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-Bytes.html#method_offsetGet"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\Bytes\u003A\u003AoffsetSet\u0028\u0029",
-            "name": "offsetSet",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-Bytes.html#method_offsetSet"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\Bytes\u003A\u003AoffsetUnset\u0028\u0029",
-            "name": "offsetUnset",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-Bytes.html#method_offsetUnset"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\Bytes\u003A\u003Asize\u0028\u0029",
-            "name": "size",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-Bytes.html#method_size"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\Bytes\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-Bytes.html#method_toArray"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\Bytes\u003A\u003AtoInt\u0028\u0029",
-            "name": "toInt",
-            "summary": "Convert\u0020bytes\u0020to\u0020a\u0020single\u0020integer.",
-            "url": "classes/Flow-Parquet-BinaryReader-Bytes.html#method_toInt"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\\Bytes\u003A\u003AtoString\u0028\u0029",
-            "name": "toString",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader-Bytes.html#method_toString"
-        },                {
             "fqsen": "\\Flow\\Parquet\\BinaryReader",
             "name": "BinaryReader",
             "summary": "",
@@ -196,70 +261,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-BinaryReader.html#method_readBits"
         },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadBooleans\u0028\u0029",
-            "name": "readBooleans",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader.html#method_readBooleans"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadByteArrays\u0028\u0029",
-            "name": "readByteArrays",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader.html#method_readByteArrays"
-        },                {
             "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadBytes\u0028\u0029",
             "name": "readBytes",
             "summary": "",
             "url": "classes/Flow-Parquet-BinaryReader.html#method_readBytes"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadDecimals\u0028\u0029",
-            "name": "readDecimals",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader.html#method_readDecimals"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadDoubles\u0028\u0029",
-            "name": "readDoubles",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader.html#method_readDoubles"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadFloats\u0028\u0029",
-            "name": "readFloats",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader.html#method_readFloats"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadInts16\u0028\u0029",
-            "name": "readInts16",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader.html#method_readInts16"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadInts32\u0028\u0029",
-            "name": "readInts32",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader.html#method_readInts32"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadInts64\u0028\u0029",
-            "name": "readInts64",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader.html#method_readInts64"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadInts96\u0028\u0029",
-            "name": "readInts96",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader.html#method_readInts96"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadStrings\u0028\u0029",
-            "name": "readStrings",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader.html#method_readStrings"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadUInts32\u0028\u0029",
-            "name": "readUInts32",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader.html#method_readUInts32"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadUInts64\u0028\u0029",
-            "name": "readUInts64",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryReader.html#method_readUInts64"
         },                {
             "fqsen": "\\Flow\\Parquet\\BinaryReader\u003A\u003AreadVarInt\u0028\u0029",
             "name": "readVarInt",
@@ -306,50 +311,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-BinaryWriter-BinaryBufferWriter.html#method_writeBits"
         },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\\BinaryBufferWriter\u003A\u003AwriteBooleans\u0028\u0029",
-            "name": "writeBooleans",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter-BinaryBufferWriter.html#method_writeBooleans"
-        },                {
             "fqsen": "\\Flow\\Parquet\\BinaryWriter\\BinaryBufferWriter\u003A\u003AwriteBytes\u0028\u0029",
             "name": "writeBytes",
             "summary": "",
             "url": "classes/Flow-Parquet-BinaryWriter-BinaryBufferWriter.html#method_writeBytes"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\\BinaryBufferWriter\u003A\u003AwriteDecimals\u0028\u0029",
-            "name": "writeDecimals",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter-BinaryBufferWriter.html#method_writeDecimals"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\\BinaryBufferWriter\u003A\u003AwriteDoubles\u0028\u0029",
-            "name": "writeDoubles",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter-BinaryBufferWriter.html#method_writeDoubles"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\\BinaryBufferWriter\u003A\u003AwriteFloats\u0028\u0029",
-            "name": "writeFloats",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter-BinaryBufferWriter.html#method_writeFloats"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\\BinaryBufferWriter\u003A\u003AwriteInts16\u0028\u0029",
-            "name": "writeInts16",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter-BinaryBufferWriter.html#method_writeInts16"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\\BinaryBufferWriter\u003A\u003AwriteInts32\u0028\u0029",
-            "name": "writeInts32",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter-BinaryBufferWriter.html#method_writeInts32"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\\BinaryBufferWriter\u003A\u003AwriteInts64\u0028\u0029",
-            "name": "writeInts64",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter-BinaryBufferWriter.html#method_writeInts64"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\\BinaryBufferWriter\u003A\u003AwriteStrings\u0028\u0029",
-            "name": "writeStrings",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter-BinaryBufferWriter.html#method_writeStrings"
         },                {
             "fqsen": "\\Flow\\Parquet\\BinaryWriter\\BinaryBufferWriter\u003A\u003AwriteVarInts\u0028\u0029",
             "name": "writeVarInts",
@@ -376,70 +341,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-BinaryWriter.html#method_writeBits"
         },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\u003A\u003AwriteBooleans\u0028\u0029",
-            "name": "writeBooleans",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter.html#method_writeBooleans"
-        },                {
             "fqsen": "\\Flow\\Parquet\\BinaryWriter\u003A\u003AwriteBytes\u0028\u0029",
             "name": "writeBytes",
             "summary": "",
             "url": "classes/Flow-Parquet-BinaryWriter.html#method_writeBytes"
         },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\u003A\u003AwriteDecimals\u0028\u0029",
-            "name": "writeDecimals",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter.html#method_writeDecimals"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\u003A\u003AwriteDoubles\u0028\u0029",
-            "name": "writeDoubles",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter.html#method_writeDoubles"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\u003A\u003AwriteFloats\u0028\u0029",
-            "name": "writeFloats",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter.html#method_writeFloats"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\u003A\u003AwriteInts16\u0028\u0029",
-            "name": "writeInts16",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter.html#method_writeInts16"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\u003A\u003AwriteInts32\u0028\u0029",
-            "name": "writeInts32",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter.html#method_writeInts32"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\u003A\u003AwriteInts64\u0028\u0029",
-            "name": "writeInts64",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter.html#method_writeInts64"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\BinaryWriter\u003A\u003AwriteStrings\u0028\u0029",
-            "name": "writeStrings",
-            "summary": "",
-            "url": "classes/Flow-Parquet-BinaryWriter.html#method_writeStrings"
-        },                {
             "fqsen": "\\Flow\\Parquet\\BinaryWriter\u003A\u003AwriteVarInts\u0028\u0029",
             "name": "writeVarInts",
             "summary": "Write\u0020values\u0020using\u0020variable\u002Dlength\u0020encoding\u0020\u0028VarInt\/ULEB128\u0029.",
             "url": "classes/Flow-Parquet-BinaryWriter.html#method_writeVarInts"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ByteOrder",
-            "name": "ByteOrder",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ByteOrder.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ByteOrder\u003A\u003ABIG_ENDIAN",
-            "name": "BIG_ENDIAN",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ByteOrder.html#enumcase_BIG_ENDIAN"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ByteOrder\u003A\u003ALITTLE_ENDIAN",
-            "name": "LITTLE_ENDIAN",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ByteOrder.html#enumcase_LITTLE_ENDIAN"
         },                {
             "fqsen": "\\Flow\\Parquet\\Consts",
             "name": "Consts",
@@ -735,6 +645,11 @@ Search.appendIndex(
             "name": "__debugInfo",
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-ColumnData-FlatValue.html#method___debugInfo"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\FlatValue\u003A\u003A\u0024flatPath",
+            "name": "flatPath",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Dremel-ColumnData-FlatValue.html#property_flatPath"
         },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\FlatValue\u003A\u003A\u0024column",
             "name": "column",
@@ -2450,6 +2365,11 @@ Search.appendIndex(
             "name": "enum",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html#method_enum"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\FlatColumn\u003A\u003AfixedSizeByteArray\u0028\u0029",
+            "name": "fixedSizeByteArray",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html#method_fixedSizeByteArray"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\FlatColumn\u003A\u003Afloat\u0028\u0029",
             "name": "float",
@@ -7268,7 +7188,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder\u003A\u003AisEmpty\u0028\u0029",
             "name": "isEmpty",
-            "summary": "Checks\u0020if\u0020the\u0020builder\u0020has\u0020any\u0020data\u0020that\u0020needs\u0020to\u0020be\u0020written.",
+            "summary": "",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-DeltaBinaryPackedColumnChunkBuilder.html#method_isEmpty"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder\u003A\u003AisFull\u0028\u0029",
@@ -7353,7 +7273,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder\u003A\u003AisEmpty\u0028\u0029",
             "name": "isEmpty",
-            "summary": "Checks\u0020if\u0020the\u0020builder\u0020has\u0020any\u0020data\u0020that\u0020needs\u0020to\u0020be\u0020written.",
+            "summary": "",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-PlainFlatColumnChunkBuilder.html#method_isEmpty"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder\u003A\u003AisFull\u0028\u0029",
@@ -7398,7 +7318,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\RLEDictionaryChunkBuilder\u003A\u003AisEmpty\u0028\u0029",
             "name": "isEmpty",
-            "summary": "Checks\u0020if\u0020the\u0020builder\u0020has\u0020any\u0020data\u0020that\u0020needs\u0020to\u0020be\u0020written.",
+            "summary": "",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-RLEDictionaryChunkBuilder.html#method_isEmpty"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\RLEDictionaryChunkBuilder\u003A\u003AisFull\u0028\u0029",
@@ -7826,6 +7746,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ValueStorage-BufferValueStorage.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\BufferValueStorage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-BufferValueStorage.html#method___construct"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\BufferValueStorage\u003A\u003AaddValues\u0028\u0029",
             "name": "addValues",
             "summary": "",
@@ -8000,6 +7925,11 @@ Search.appendIndex(
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary",
+            "name": "Binary",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\BinaryReader",
             "name": "BinaryReader",
