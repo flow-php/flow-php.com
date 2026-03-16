@@ -115,6 +115,8 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
+
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -124,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilder-nestedcolumnchunkbuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php">NestedColumnChunkBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
@@ -164,7 +166,7 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method_addRow">addRow()</a>
+    <a class="" href="classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method_addColumn">addColumn()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -228,7 +230,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilder-nestedcolumnchunkbuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php">NestedColumnChunkBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -271,22 +273,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_addRow">
-        addRow()
-        <a href="classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method_addRow" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_addColumn">
+        addColumn()
+        <a href="classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method_addColumn" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilder-nestedcolumnchunkbuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php">NestedColumnChunkBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Dremel-WriteColumnData.html"><abbr title="\Flow\Parquet\Dremel\WriteColumnData">WriteColumnData</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnData</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">addColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html"><abbr title="\Flow\Parquet\Dremel\ColumnData\WriteFlatColumnValues">WriteFlatColumnValues</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnValues</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -295,8 +297,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$columnData</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Dremel-WriteColumnData.html"><abbr title="\Flow\Parquet\Dremel\WriteColumnData">WriteColumnData</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$columnValues</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html"><abbr title="\Flow\Parquet\Dremel\ColumnData\WriteFlatColumnValues">WriteFlatColumnValues</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -323,7 +325,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilder-nestedcolumnchunkbuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php">NestedColumnChunkBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -357,7 +359,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilder-nestedcolumnchunkbuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php">NestedColumnChunkBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -395,7 +397,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilder-nestedcolumnchunkbuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php">NestedColumnChunkBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -443,7 +445,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilder-nestedcolumnchunkbuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php">NestedColumnChunkBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -481,7 +483,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilder-nestedcolumnchunkbuilder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilder/NestedColumnChunkBuilder.php">NestedColumnChunkBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -622,7 +624,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method_addRow">addRow()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method_addColumn">addColumn()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method_closePage">closePage()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method_column">column()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method_flush">flush()</a></li>

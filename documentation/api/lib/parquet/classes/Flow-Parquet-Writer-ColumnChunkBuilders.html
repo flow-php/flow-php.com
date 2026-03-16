@@ -120,7 +120,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
@@ -153,7 +153,7 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_add">add()</a>
+    <a class="" href="classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_addColumnByFlatPath">addColumnByFlatPath()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -224,7 +224,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -260,22 +260,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_add">
-        add()
-        <a href="classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_add" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_addColumnByFlatPath">
+        addColumnByFlatPath()
+        <a href="classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_addColumnByFlatPath" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Dremel-WriteColumnData.html"><abbr title="\Flow\Parquet\Dremel\WriteColumnData">WriteColumnData</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnData</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">addColumnByFlatPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flatPath</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html"><abbr title="\Flow\Parquet\Dremel\ColumnData\WriteFlatColumnValues">WriteFlatColumnValues</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnValues</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -284,8 +284,15 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$columnData</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Dremel-WriteColumnData.html"><abbr title="\Flow\Parquet\Dremel\WriteColumnData">WriteColumnData</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$flatPath</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$columnValues</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html"><abbr title="\Flow\Parquet\Dremel\ColumnData\WriteFlatColumnValues">WriteFlatColumnValues</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -312,7 +319,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -350,7 +357,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -385,7 +392,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -433,7 +440,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -495,7 +502,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -534,7 +541,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -674,7 +681,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_add">add()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_addColumnByFlatPath">addColumnByFlatPath()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_builders">builders()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_closePages">closePages()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_flush">flush()</a></li>

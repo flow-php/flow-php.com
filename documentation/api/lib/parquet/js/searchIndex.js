@@ -16,71 +16,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Binary-ByteOrder.html#enumcase_LITTLE_ENDIAN"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes",
-            "name": "Bytes",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Binary-Bytes.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Binary-Bytes.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AfromString\u0028\u0029",
-            "name": "fromString",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_fromString"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003Acount\u0028\u0029",
-            "name": "count",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_count"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AgetIterator\u0028\u0029",
-            "name": "getIterator",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_getIterator"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AoffsetExists\u0028\u0029",
-            "name": "offsetExists",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_offsetExists"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AoffsetGet\u0028\u0029",
-            "name": "offsetGet",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_offsetGet"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AoffsetSet\u0028\u0029",
-            "name": "offsetSet",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_offsetSet"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AoffsetUnset\u0028\u0029",
-            "name": "offsetUnset",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_offsetUnset"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003Asize\u0028\u0029",
-            "name": "size",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_size"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_toArray"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AtoInt\u0028\u0029",
-            "name": "toInt",
-            "summary": "Convert\u0020bytes\u0020to\u0020a\u0020single\u0020integer.",
-            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_toInt"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Binary\\Bytes\u003A\u003AtoString\u0028\u0029",
-            "name": "toString",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Binary-Bytes.html#method_toString"
-        },                {
             "fqsen": "\\Flow\\Parquet\\Binary\\encode_i8\u0028\u0029",
             "name": "encode_i8",
             "summary": "",
@@ -696,6 +631,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-ColumnData-ReadFlatColumnValues.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\ReadFlatColumnValues\u003A\u003AassembleFlat\u0028\u0029",
+            "name": "assembleFlat",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Dremel-ColumnData-ReadFlatColumnValues.html#method_assembleFlat"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\ReadFlatColumnValues\u003A\u003AdefinitionLevels\u0028\u0029",
             "name": "definitionLevels",
             "summary": "",
@@ -766,10 +706,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_add"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003AdefinitionLevels\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003AaddRaw\u0028\u0029",
+            "name": "addRaw",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_addRaw"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003A\u0024definitionLevels",
             "name": "definitionLevels",
             "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_definitionLevels"
+            "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_definitionLevels"
         },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003AdefinitionLevelsCount\u0028\u0029",
             "name": "definitionLevelsCount",
@@ -801,10 +746,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_nullCount"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003ArepetitionLevels\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003A\u0024repetitionLevels",
             "name": "repetitionLevels",
             "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_repetitionLevels"
+            "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_repetitionLevels"
         },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003ArowsCount\u0028\u0029",
             "name": "rowsCount",
@@ -821,10 +766,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_splitByRows"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003Avalues\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003A\u0024values",
             "name": "values",
             "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_values"
+            "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_values"
         },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003A\u0024column",
             "name": "column",
@@ -950,71 +895,6 @@ Search.appendIndex(
             "name": "validate",
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-Validator.html#method_validate"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\WriteColumnData",
-            "name": "WriteColumnData",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-WriteColumnData.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\WriteColumnData\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-WriteColumnData.html#method_initialize"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\WriteColumnData\u003A\u003AaddValue\u0028\u0029",
-            "name": "addValue",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-WriteColumnData.html#method_addValue"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\WriteColumnData\u003A\u003AaddValues\u0028\u0029",
-            "name": "addValues",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-WriteColumnData.html#method_addValues"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\WriteColumnData\u003A\u003AflatValues\u0028\u0029",
-            "name": "flatValues",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-WriteColumnData.html#method_flatValues"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\WriteColumnData\u003A\u003AisEmpty\u0028\u0029",
-            "name": "isEmpty",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-WriteColumnData.html#method_isEmpty"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\WriteColumnData\u003A\u003Aiterator\u0028\u0029",
-            "name": "iterator",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-WriteColumnData.html#method_iterator"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\WriteColumnData\u003A\u003Amerge\u0028\u0029",
-            "name": "merge",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-WriteColumnData.html#method_merge"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\WriteColumnData\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-WriteColumnData.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\WriteColumnData\u003A\u003AtoFlatColumnData\u0028\u0029",
-            "name": "toFlatColumnData",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-WriteColumnData.html#method_toFlatColumnData"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\WriteColumnData\u003A\u003AtoReadColumnData\u0028\u0029",
-            "name": "toReadColumnData",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-WriteColumnData.html#method_toReadColumnData"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\WriteColumnData\u003A\u003Avalues\u0028\u0029",
-            "name": "values",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-WriteColumnData.html#method_values"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\WriteColumnData\u003A\u003A\u0024column",
-            "name": "column",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-WriteColumnData.html#property_column"
         },                {
             "fqsen": "\\Flow\\Parquet\\Exception\\DataConversionException",
             "name": "DataConversionException",
@@ -1445,6 +1325,11 @@ Search.appendIndex(
             "name": "fromParquetType",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-DataConverter.html#method_fromParquetType"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\DataConverter\u003A\u003AresolveConverter\u0028\u0029",
+            "name": "resolveConverter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-DataConverter.html#method_resolveConverter"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\DataConverter\u003A\u003AtoParquetType\u0028\u0029",
             "name": "toParquetType",
@@ -7166,10 +7051,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-DeltaBinaryPackedColumnChunkBuilder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder\u003A\u003AaddRow\u0028\u0029",
-            "name": "addRow",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder\u003A\u003AaddColumn\u0028\u0029",
+            "name": "addColumn",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-DeltaBinaryPackedColumnChunkBuilder.html#method_addRow"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-DeltaBinaryPackedColumnChunkBuilder.html#method_addColumn"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder\u003A\u003AclosePage\u0028\u0029",
             "name": "closePage",
@@ -7211,10 +7096,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\NestedColumnChunkBuilder\u003A\u003AaddRow\u0028\u0029",
-            "name": "addRow",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\NestedColumnChunkBuilder\u003A\u003AaddColumn\u0028\u0029",
+            "name": "addColumn",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method_addRow"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method_addColumn"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\NestedColumnChunkBuilder\u003A\u003AclosePage\u0028\u0029",
             "name": "closePage",
@@ -7251,10 +7136,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-PlainFlatColumnChunkBuilder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder\u003A\u003AaddRow\u0028\u0029",
-            "name": "addRow",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder\u003A\u003AaddColumn\u0028\u0029",
+            "name": "addColumn",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-PlainFlatColumnChunkBuilder.html#method_addRow"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-PlainFlatColumnChunkBuilder.html#method_addColumn"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder\u003A\u003AclosePage\u0028\u0029",
             "name": "closePage",
@@ -7296,10 +7181,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-RLEDictionaryChunkBuilder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\RLEDictionaryChunkBuilder\u003A\u003AaddRow\u0028\u0029",
-            "name": "addRow",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\RLEDictionaryChunkBuilder\u003A\u003AaddColumn\u0028\u0029",
+            "name": "addColumn",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-RLEDictionaryChunkBuilder.html#method_addRow"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-RLEDictionaryChunkBuilder.html#method_addColumn"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\RLEDictionaryChunkBuilder\u003A\u003AclosePage\u0028\u0029",
             "name": "closePage",
@@ -7336,10 +7221,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder.html"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\u003A\u003AaddRow\u0028\u0029",
-            "name": "addRow",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\u003A\u003AaddColumn\u0028\u0029",
+            "name": "addColumn",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder.html#method_addRow"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder.html#method_addColumn"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\u003A\u003AclosePage\u0028\u0029",
             "name": "closePage",
@@ -7391,10 +7276,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_initialize"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilders\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilders\u003A\u003AaddColumnByFlatPath\u0028\u0029",
+            "name": "addColumnByFlatPath",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_add"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_addColumnByFlatPath"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilders\u003A\u003Abuilders\u0028\u0029",
             "name": "builders",
@@ -7636,6 +7521,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-RowGroupBuilder.html#method_addRow"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\RowGroupBuilder\u003A\u003AaddRows\u0028\u0029",
+            "name": "addRows",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-RowGroupBuilder.html#method_addRows"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\RowGroupBuilder\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "",
@@ -7670,6 +7560,11 @@ Search.appendIndex(
             "name": "add",
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-StatisticsCounter.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsCounter\u003A\u003AaddBatch\u0028\u0029",
+            "name": "addBatch",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-StatisticsCounter.html#method_addBatch"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsCounter\u003A\u003Amax\u0028\u0029",
             "name": "max",

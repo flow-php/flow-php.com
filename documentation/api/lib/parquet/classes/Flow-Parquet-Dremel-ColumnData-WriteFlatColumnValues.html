@@ -121,7 +121,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">9</span>
 
     </aside>
 
@@ -152,6 +152,24 @@
                         &nbsp;: <a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a>            </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_definitionLevels">$definitionLevels</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_repetitionLevels">$repetitionLevels</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_values">$values</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+
     </dl>
 
 <h4 id="toc-methods">
@@ -168,6 +186,12 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_add">add()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_addRaw">addRaw()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -241,7 +265,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_values">values()</a>
     <span>
-                                &nbsp;: array&lt;string|int, null|<a href="classes/Flow-Parquet-Binary-Bytes.html"><abbr title="\Flow\Parquet\Binary\Bytes">Bytes</abbr></a>|scalar&gt;    </span>
+                                &nbsp;: array&lt;string|int, null|scalar&gt;    </span>
 </dt>
 
     </dl>
@@ -274,7 +298,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -285,6 +309,117 @@
             <span class="phpdocumentor-signature__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a></span>
     <span class="phpdocumentor-signature__name">$column</span>
     </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_definitionLevels">
+        $definitionLevels
+        <a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_definitionLevels" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">22</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$definitionLevels</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_repetitionLevels">
+        $repetitionLevels
+        <a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_repetitionLevels" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">21</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$repetitionLevels</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_values">
+        $values
+        <a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_values" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">23</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$values</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -316,14 +451,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repetitionLevels</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definitionLevels</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, null|<a href="classes/Flow-Parquet-Binary-Bytes.html"><abbr title="\Flow\Parquet\Binary\Bytes">Bytes</abbr></a>|scalar&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repetitionLevels</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definitionLevels</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, null|scalar&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -354,7 +489,7 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$values</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, null|<a href="classes/Flow-Parquet-Binary-Bytes.html"><abbr title="\Flow\Parquet\Binary\Bytes">Bytes</abbr></a>|scalar&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, null|scalar&gt;</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -381,7 +516,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -417,6 +552,64 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_addRaw">
+        addRaw()
+        <a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_addRaw" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addRaw</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repetitionLevel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definitionLevel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">null|scalar&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$repetitionLevel</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$definitionLevel</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|scalar</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_definitionLevels">
         definitionLevels()
         <a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_definitionLevels" class="headerlink"><i class="fas fa-link"></i></a>
@@ -425,7 +618,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -463,7 +656,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -501,7 +694,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -539,7 +732,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -577,7 +770,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -615,7 +808,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -663,7 +856,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -701,7 +894,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -739,7 +932,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -777,7 +970,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -825,7 +1018,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">195</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 
     </aside>
 
@@ -873,14 +1066,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php"><a href="files/src-lib-parquet-src-flow-parquet-dremel-columndata-writeflatcolumnvalues.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Dremel/ColumnData/WriteFlatColumnValues.php">WriteFlatColumnValues.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">252</span>
+    <span class="phpdocumentor-element-found-in__line">264</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">values</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, null|<a href="classes/Flow-Parquet-Binary-Bytes.html"><abbr title="\Flow\Parquet\Binary\Bytes">Bytes</abbr></a>|scalar&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">values</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, null|scalar&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -893,7 +1086,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, null|<a href="classes/Flow-Parquet-Binary-Bytes.html"><abbr title="\Flow\Parquet\Binary\Bytes">Bytes</abbr></a>|scalar&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, null|scalar&gt;</span>
             </section>
 
 </article>
@@ -1013,6 +1206,9 @@
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_column">$column</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_definitionLevels">$definitionLevels</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_repetitionLevels">$repetitionLevels</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_values">$values</a></li>
                                             </ul>
                 </li>
             
@@ -1021,6 +1217,7 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_add">add()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_addRaw">addRaw()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_definitionLevels">definitionLevels()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_definitionLevelsCount">definitionLevelsCount()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_flatPath">flatPath()</a></li>
