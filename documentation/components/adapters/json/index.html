@@ -509,32 +509,29 @@ If you are only using Loader, this dependency is optional.</p>
 <h2><a id="extractor---jsonmachine---jsonextractor" href="#extractor---jsonmachine---jsonextractor" class="mr-2" aria-hidden="true" title="Permalink">#</a>Extractor - JSONMachine - JsonExtractor</h2>
 <pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
-use Flow\ETL\Adapter\JSON\JSONMachine\JsonExtractor;
+use function Flow\ETL\Adapter\JSON\from_json;
+use function Flow\ETL\DSL\{data_frame, to_output};
 
-$rows = (new Flow())
-    -&gt;read(from_json(__DIR__ . '/../Fixtures/timezones.json', 5))
-    -&gt;fetch()
+data_frame()
+    -&gt;read(from_json(__DIR__ . '/data.json'))
+    -&gt;collect()
+    -&gt;write(to_output())
+    -&gt;run();
 </code></pre>
 <h2><a id="loader---jsonloader" href="#loader---jsonloader" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loader - JsonLoader</h2>
 <pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
-use function Flow\ETL\Adapter\JSON\{to_json};
-use Flow\ETL\Flow;
-use Flow\ETL\Row;
-use Flow\ETL\Rows;
+use function Flow\ETL\Adapter\JSON\to_json;
+use function Flow\ETL\DSL\{data_frame, from_array};
 
-(new Flow())
-    -&gt;process(
-        new Rows(
-            ...\array_map(
-                fn (int $i) : Row =&gt; Row::create(
-                    new Row\Entry\IntegerEntry('id', $i),
-                    new Row\Entry\StringEntry('name', 'name_' . $i)
-                ),
-                \range(0, 10)
-            )
+data_frame()
+    -&gt;read(from_array(
+        \array_map(
+            fn (int $i) : array =&gt; ['id' =&gt; $i, 'name' =&gt; 'name_' . $i],
+            \range(0, 10)
         )
-    )
+    ))
+    -&gt;collect()
     -&gt;write(to_json(\sys_get_temp_dir() . '/file.json'))
     -&gt;run();
 </code></pre>
@@ -542,24 +539,18 @@ use Flow\ETL\Rows;
 <p>It is also possible to export the rows using the <a rel="noopener noreferrer" target="_blank" href="https://jsonlines.org/">json lines</a> format</p>
 <pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
-use function Flow\ETL\Adapter\JSON\{to_json};
-use Flow\ETL\Flow;
-use Flow\ETL\Row;
-use Flow\ETL\Rows;
+use function Flow\ETL\Adapter\JSON\to_json_lines;
+use function Flow\ETL\DSL\{data_frame, from_array};
 
-(new Flow())
-    -&gt;process(
-        new Rows(
-            ...\array_map(
-                fn (int $i) : Row =&gt; Row::create(
-                    new Row\Entry\IntegerEntry('id', $i),
-                    new Row\Entry\StringEntry('name', 'name_' . $i)
-                ),
-                \range(0, 10)
-            )
+data_frame()
+    -&gt;read(from_array(
+        \array_map(
+            fn (int $i) : array =&gt; ['id' =&gt; $i, 'name' =&gt; 'name_' . $i],
+            \range(0, 10)
         )
-    )
-    -&gt;write(to_json(\sys_get_temp_dir() . '/file.jsonl')-&gt;asJsonl())
+    ))
+    -&gt;collect()
+    -&gt;write(to_json_lines(\sys_get_temp_dir() . '/file.jsonl'))
     -&gt;run();
 </code></pre>
 

@@ -572,6 +572,12 @@ use Flow\ETL\Adapter\Doctrine\{Order, OrderBy};
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
+if (!\extension_loaded(&#039;pdo_sqlite&#039;)) {
+    print &#039;Example skipped. Requires PDO SQLite extension which is not available in this environment.&#039; . PHP_EOL;
+
+    return;
+}
+
 $connection = DriverManager::getConnection([
     &#039;path&#039; =&gt; __DIR__ . &#039;/input/orders.db&#039;,
     &#039;driver&#039; =&gt; &#039;pdo_sqlite&#039;,

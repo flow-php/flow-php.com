@@ -566,22 +566,12 @@
 declare(strict_types=1);
 
 use function Flow\ETL\Adapter\JSON\from_json;
-use function Flow\ETL\DSL\{bool_schema, data_frame, int_schema, schema, str_schema, to_output};
+use function Flow\ETL\DSL\{data_frame, to_output};
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
-$schema = schema(
-    int_schema(&#039;id&#039;),
-    str_schema(&#039;name&#039;),
-    str_schema(&#039;email&#039;),
-    bool_schema(&#039;active&#039;),
-);
-
 data_frame()
-    -&gt;read(
-        from_json(__DIR__ . &#039;/input/dataset.json&#039;)
-            -&gt;withSchema($schema)
-    )
+    -&gt;read(from_json(__DIR__ . &#039;/data/orders.json&#039;))
     -&gt;collect()
     -&gt;write(to_output(truncate: false))
     -&gt;run();
