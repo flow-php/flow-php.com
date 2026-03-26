@@ -167,6 +167,18 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Reader.html#method_arrow">arrow()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Reader.html#method_php">php()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Reader.html#method_read">read()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-Parquet-ParquetFile.html"><abbr title="\Flow\Parquet\ParquetFile">ParquetFile</abbr></a>    </span>
@@ -208,7 +220,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Reader.php"><a href="files/src-lib-parquet-src-flow-parquet-reader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader.php">Reader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -250,14 +262,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Reader.php"><a href="files/src-lib-parquet-src-flow-parquet-reader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader.php">Reader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Binary-ByteOrder.html"><abbr title="\Flow\Parquet\Binary\ByteOrder">ByteOrder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$byteOrder</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Parquet-Binary-ByteOrder.html#enumcase_LITTLE_ENDIAN"><abbr title="\Flow\Parquet\Binary\ByteOrder::LITTLE_ENDIAN">ByteOrder::LITTLE_ENDIAN</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Binary-ByteOrder.html"><abbr title="\Flow\Parquet\Binary\ByteOrder">ByteOrder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$byteOrder</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Parquet-Binary-ByteOrder.html#enumcase_LITTLE_ENDIAN"><abbr title="\Flow\Parquet\Binary\ByteOrder::LITTLE_ENDIAN">ByteOrder::LITTLE_ENDIAN</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetEngine.html"><abbr title="\Flow\Parquet\ParquetEngine">ParquetEngine</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$engine</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -279,6 +291,13 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$engine</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetEngine.html"><abbr title="\Flow\Parquet\ParquetEngine">ParquetEngine</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -286,6 +305,102 @@
         
     
     
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_arrow">
+        arrow()
+        <a href="classes/Flow-Parquet-Reader.html#method_arrow" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Reader.php"><a href="files/src-lib-parquet-src-flow-parquet-reader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader.php">Reader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">24</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">arrow</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$options</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_php">
+        php()
+        <a href="classes/Flow-Parquet-Reader.html#method_php" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Reader.php"><a href="files/src-lib-parquet-src-flow-parquet-reader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader.php">Reader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">29</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">php</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$options</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -301,7 +416,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Reader.php"><a href="files/src-lib-parquet-src-flow-parquet-reader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader.php">Reader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -349,7 +464,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Reader.php"><a href="files/src-lib-parquet-src-flow-parquet-reader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader.php">Reader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -506,6 +621,8 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Parquet-Reader.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Reader.html#method_arrow">arrow()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Reader.html#method_php">php()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Reader.html#method_read">read()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Reader.html#method_readStream">readStream()</a></li>
                                     </ul>

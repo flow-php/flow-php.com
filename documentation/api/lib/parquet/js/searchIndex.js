@@ -656,6 +656,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-ColumnData-ReadFlatColumnValues.html#method_iterator"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\ReadFlatColumnValues\u003A\u003ArawValues\u0028\u0029",
+            "name": "rawValues",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Dremel-ColumnData-ReadFlatColumnValues.html#method_rawValues"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\ReadFlatColumnValues\u003A\u003ArepetitionLevels\u0028\u0029",
             "name": "repetitionLevels",
             "summary": "",
@@ -896,6 +901,186 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-Validator.html#method_validate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine",
+            "name": "AdaptiveParquetEngine",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003AcloseWrite\u0028\u0029",
+            "name": "closeWrite",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_closeWrite"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003AopenForWrite\u0028\u0029",
+            "name": "openForWrite",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_openForWrite"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003AreadValues\u0028\u0029",
+            "name": "readValues",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_readValues"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003AwriteBatch\u0028\u0029",
+            "name": "writeBatch",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_writeBatch"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003AwriteRow\u0028\u0029",
+            "name": "writeRow",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_writeRow"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003AwriteRows\u0028\u0029",
+            "name": "writeRows",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_writeRows"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\DestinationStreamAdapter",
+            "name": "DestinationStreamAdapter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-DestinationStreamAdapter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\DestinationStreamAdapter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-DestinationStreamAdapter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\DestinationStreamAdapter\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-DestinationStreamAdapter.html#method_append"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\OptionsConverter",
+            "name": "OptionsConverter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-OptionsConverter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\OptionsConverter\u003A\u003AtoExtension\u0028\u0029",
+            "name": "toExtension",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-OptionsConverter.html#method_toExtension"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\SchemaConverter",
+            "name": "SchemaConverter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-SchemaConverter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\SchemaConverter\u003A\u003AtoExtension\u0028\u0029",
+            "name": "toExtension",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-SchemaConverter.html#method_toExtension"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\SourceStreamAdapter",
+            "name": "SourceStreamAdapter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-SourceStreamAdapter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\SourceStreamAdapter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-SourceStreamAdapter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\SourceStreamAdapter\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-SourceStreamAdapter.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\SourceStreamAdapter\u003A\u003Asize\u0028\u0029",
+            "name": "size",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-SourceStreamAdapter.html#method_size"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine",
+            "name": "ArrowParquetEngine",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine\u003A\u003AmapCompression\u0028\u0029",
+            "name": "mapCompression",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method_mapCompression"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine\u003A\u003AcloseWrite\u0028\u0029",
+            "name": "closeWrite",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method_closeWrite"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine\u003A\u003AopenForWrite\u0028\u0029",
+            "name": "openForWrite",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method_openForWrite"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine\u003A\u003AreadValues\u0028\u0029",
+            "name": "readValues",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method_readValues"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine\u003A\u003AwriteBatch\u0028\u0029",
+            "name": "writeBatch",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method_writeBatch"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine\u003A\u003AwriteRow\u0028\u0029",
+            "name": "writeRow",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method_writeRow"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine\u003A\u003AwriteRows\u0028\u0029",
+            "name": "writeRows",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method_writeRows"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine",
+            "name": "PhpParquetEngine",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003AcloseWrite\u0028\u0029",
+            "name": "closeWrite",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method_closeWrite"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003AopenForWrite\u0028\u0029",
+            "name": "openForWrite",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method_openForWrite"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003AreadValues\u0028\u0029",
+            "name": "readValues",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method_readValues"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003AwriteBatch\u0028\u0029",
+            "name": "writeBatch",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method_writeBatch"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003AwriteRow\u0028\u0029",
+            "name": "writeRow",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method_writeRow"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003AwriteRows\u0028\u0029",
+            "name": "writeRows",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method_writeRows"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Exception\\DataConversionException",
             "name": "DataConversionException",
             "summary": "",
@@ -945,6 +1130,16 @@ Search.appendIndex(
             "name": "Option",
             "summary": "",
             "url": "classes/Flow-Parquet-Option.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Option\u003A\u003AARROW_BATCH_SIZE",
+            "name": "ARROW_BATCH_SIZE",
+            "summary": "When\u0020using\u0020the\u0020Arrow\u0020engine,\u0020controls\u0020how\u0020many\u0020rows\u0020are\u0020returned\u0020per\u0020internal\u0020read\u0020call.",
+            "url": "classes/Flow-Parquet-Option.html#enumcase_ARROW_BATCH_SIZE"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Option\u003A\u003AARROW_WRITE_BATCH_SIZE",
+            "name": "ARROW_WRITE_BATCH_SIZE",
+            "summary": "When\u0020using\u0020the\u0020Arrow\u0020engine,\u0020controls\u0020how\u0020many\u0020rows\u0020are\u0020buffered\u0020in\u0020PHP\nbefore\u0020sending\u0020them\u0020to\u0020the\u0020extension\u0027s\u0020writeBatch\u0028\u0029\u0020in\u0020a\u0020single\u0020call.",
+            "url": "classes/Flow-Parquet-Option.html#enumcase_ARROW_WRITE_BATCH_SIZE"
         },                {
             "fqsen": "\\Flow\\Parquet\\Option\u003A\u003ABROTLI_COMPRESSION_LEVEL",
             "name": "BROTLI_COMPRESSION_LEVEL",
@@ -1071,6 +1266,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Options.html#method_getInt"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Options\u003A\u003AgetString\u0028\u0029",
+            "name": "getString",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Options.html#method_getString"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Options\u003A\u003Ahas\u0028\u0029",
             "name": "has",
             "summary": "",
@@ -1080,6 +1280,41 @@ Search.appendIndex(
             "name": "set",
             "summary": "",
             "url": "classes/Flow-Parquet-Options.html#method_set"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetEngine",
+            "name": "ParquetEngine",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetEngine.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003AcloseWrite\u0028\u0029",
+            "name": "closeWrite",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetEngine.html#method_closeWrite"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003AopenForWrite\u0028\u0029",
+            "name": "openForWrite",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetEngine.html#method_openForWrite"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003AreadValues\u0028\u0029",
+            "name": "readValues",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetEngine.html#method_readValues"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003AwriteBatch\u0028\u0029",
+            "name": "writeBatch",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetEngine.html#method_writeBatch"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003AwriteRow\u0028\u0029",
+            "name": "writeRow",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetEngine.html#method_writeRow"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003AwriteRows\u0028\u0029",
+            "name": "writeRows",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetEngine.html#method_writeRows"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Compressions",
             "name": "Compressions",
@@ -2726,6 +2961,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Schema-LogicalType.html#constant_ENUM"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\LogicalType\u003A\u003AFLOAT16",
+            "name": "FLOAT16",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Schema-LogicalType.html#constant_FLOAT16"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\LogicalType\u003A\u003AINTEGER",
             "name": "INTEGER",
             "summary": "",
@@ -3500,6 +3740,16 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Parquet-Reader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\u003A\u003Aarrow\u0028\u0029",
+            "name": "arrow",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader.html#method_arrow"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\u003A\u003Aphp\u0028\u0029",
+            "name": "php",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader.html#method_php"
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\u003A\u003Aread\u0028\u0029",
             "name": "read",
@@ -7741,6 +7991,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\u003A\u003Aarrow\u0028\u0029",
+            "name": "arrow",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer.html#method_arrow"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\u003A\u003Aphp\u0028\u0029",
+            "name": "php",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer.html#method_php"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Writer\u003A\u003A__destruct\u0028\u0029",
             "name": "__destruct",
             "summary": "",
@@ -7763,27 +8023,27 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\u003A\u003AopenForStream\u0028\u0029",
             "name": "openForStream",
-            "summary": "Opens\u0020a\u0020writer\u0020for\u0020an\u0020existing\u0020stream.",
+            "summary": "",
             "url": "classes/Flow-Parquet-Writer.html#method_openForStream"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\u003A\u003Awrite\u0028\u0029",
             "name": "write",
-            "summary": "Create\u0020new\u0020parquet\u0020file,\u0020write\u0020rows,\u0020write\u0020metadata\u0020and\u0020close\u0020the\u0020file.",
+            "summary": "",
             "url": "classes/Flow-Parquet-Writer.html#method_write"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\u003A\u003AwriteBatch\u0028\u0029",
             "name": "writeBatch",
-            "summary": "Write\u0020a\u0020batch\u0020of\u0020rows\u0020into\u0020a\u0020parquet\u0020file.",
+            "summary": "",
             "url": "classes/Flow-Parquet-Writer.html#method_writeBatch"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\u003A\u003AwriteRow\u0028\u0029",
             "name": "writeRow",
-            "summary": "Write\u0020a\u0020single\u0020row\u0020into\u0020a\u0020parquet\u0020file.",
+            "summary": "",
             "url": "classes/Flow-Parquet-Writer.html#method_writeRow"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\u003A\u003AwriteStream\u0028\u0029",
             "name": "writeStream",
-            "summary": "Create\u0020new\u0020parquet\u0020file\u0020directly\u0020in\u0020stream,\u0020write\u0020rows,\u0020write\u0020metadata\u0020and\u0020close\u0020the\u0020file.",
+            "summary": "",
             "url": "classes/Flow-Parquet-Writer.html#method_writeStream"
         },                {
             "fqsen": "\\brotli_compress\u0028\u0029",
@@ -7870,6 +8130,16 @@ Search.appendIndex(
             "name": "Validator",
             "summary": "",
             "url": "namespaces/flow-parquet-dremel-validator.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine",
+            "name": "Engine",
+            "summary": "",
+            "url": "namespaces/flow-parquet-engine.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow",
+            "name": "Arrow",
+            "summary": "",
+            "url": "namespaces/flow-parquet-engine-arrow.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Exception",
             "name": "Exception",

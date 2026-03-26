@@ -137,6 +137,21 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a class="" href="classes/Flow-Parquet-Option.html#enumcase_ARROW_BATCH_SIZE">ARROW_BATCH_SIZE</a>
+    <span>
+                                    </span>
+</dt>
+<dd>When using the Arrow engine, controls how many rows are returned per internal read call.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a class="" href="classes/Flow-Parquet-Option.html#enumcase_ARROW_WRITE_BATCH_SIZE">ARROW_WRITE_BATCH_SIZE</a>
+    <span>
+                                    </span>
+</dt>
+<dd>When using the Arrow engine, controls how many rows are buffered in PHP
+before sending them to the extension&#039;s writeBatch() in a single call.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Parquet-Option.html#enumcase_BROTLI_COMPRESSION_LEVEL">BROTLI_COMPRESSION_LEVEL</a>
     <span>
                                     </span>
@@ -282,6 +297,70 @@ before flushing it on disk.</dd>
             -enum-case
         "
 >
+    <h4 class="phpdocumentor-element__name" id="enumcase_ARROW_BATCH_SIZE">
+        ARROW_BATCH_SIZE
+        <a href="classes/Flow-Parquet-Option.html#enumcase_ARROW_BATCH_SIZE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">18</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">When using the Arrow engine, controls how many rows are returned per internal read call.</p>
+
+    
+        <section class="phpdocumentor-description"><p>Reduces peak memory usage for large row groups by streaming batches of this size.</p>
+<p>Only affects the Arrow engine. Ignored by the PHP engine.
+Set to null to read entire row groups at once (maximum throughput).</p>
+<p>Default: 1024</p>
+</section>
+
+    
+    
+
+        
+    </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -enum-case
+        "
+>
+    <h4 class="phpdocumentor-element__name" id="enumcase_ARROW_WRITE_BATCH_SIZE">
+        ARROW_WRITE_BATCH_SIZE
+        <a href="classes/Flow-Parquet-Option.html#enumcase_ARROW_WRITE_BATCH_SIZE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">29</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">When using the Arrow engine, controls how many rows are buffered in PHP
+before sending them to the extension&#039;s writeBatch() in a single call.</p>
+
+    
+        <section class="phpdocumentor-description"><p>Larger values reduce call overhead but increase PHP memory usage.</p>
+<p>Only affects the Arrow engine. Ignored by the PHP engine.</p>
+<p>Default: 1000</p>
+</section>
+
+    
+    
+
+        
+    </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -enum-case
+        "
+>
     <h4 class="phpdocumentor-element__name" id="enumcase_BROTLI_COMPRESSION_LEVEL">
         BROTLI_COMPRESSION_LEVEL
         <a href="classes/Flow-Parquet-Option.html#enumcase_BROTLI_COMPRESSION_LEVEL" class="headerlink"><i class="fas fa-link"></i></a>
@@ -290,7 +369,7 @@ before flushing it on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -320,7 +399,7 @@ before flushing it on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -350,7 +429,7 @@ before flushing it on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -388,7 +467,7 @@ before flushing it on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -426,7 +505,7 @@ before flushing it on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -458,7 +537,7 @@ when dictionary size gets above DICTIONARY_PAGE_SIZE.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -487,7 +566,7 @@ when dictionary size gets above DICTIONARY_PAGE_SIZE.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -517,7 +596,7 @@ when dictionary size gets above DICTIONARY_PAGE_SIZE.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -552,7 +631,7 @@ return array of bytes (12) that represents INT96.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -582,7 +661,7 @@ return array of bytes (12) that represents INT96.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -612,7 +691,7 @@ return array of bytes (12) that represents INT96.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -644,7 +723,7 @@ This should be considered as a threshold rather than a strict value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -675,7 +754,7 @@ If the value is set to 100, ColumnChunksBuilder is going to check the size only 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -705,7 +784,7 @@ reader will round nanoseconds to microseconds.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -737,7 +816,7 @@ https://parquet.apache.org/docs/file-format/configurations/#row-group-size</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 
     </aside>
 
@@ -768,7 +847,7 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -797,7 +876,7 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">173</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -831,7 +910,7 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">181</span>
+    <span class="phpdocumentor-element-found-in__line">203</span>
 
     </aside>
 
@@ -961,6 +1040,8 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
                             <li class="phpdocumentor-on-this-page-section__title">Cases</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_ARROW_BATCH_SIZE">ARROW_BATCH_SIZE</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_ARROW_WRITE_BATCH_SIZE">ARROW_WRITE_BATCH_SIZE</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_BROTLI_COMPRESSION_LEVEL">BROTLI_COMPRESSION_LEVEL</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_BYTE_ARRAY_TO_STRING">BYTE_ARRAY_TO_STRING</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_COMPRESSIONS">COLUMNS_COMPRESSIONS</a></li>

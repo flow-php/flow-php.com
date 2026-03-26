@@ -119,7 +119,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -158,6 +158,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Writer.html#method_arrow">arrow()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Writer.html#method_close">close()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -180,35 +186,36 @@
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Opens a writer for an existing stream.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Writer.html#method_php">php()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Writer.html#method_write">write()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Create new parquet file, write rows, write metadata and close the file.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Writer.html#method_writeBatch">writeBatch()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Write a batch of rows into a parquet file.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Writer.html#method_writeRow">writeRow()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Write a single row into a parquet file.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Writer.html#method_writeStream">writeStream()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Create new parquet file directly in stream, write rows, write metadata and close the file.</dd>
 
     </dl>
 
@@ -238,14 +245,106 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Compressions.html"><abbr title="\Flow\Parquet\ParquetFile\Compressions">Compressions</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$compression</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Parquet-ParquetFile-Compressions.html#enumcase_SNAPPY"><abbr title="\Flow\Parquet\ParquetFile\Compressions::SNAPPY">Compressions::SNAPPY</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Compressions.html"><abbr title="\Flow\Parquet\ParquetFile\Compressions">Compressions</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$compression</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Parquet-ParquetFile-Compressions.html#enumcase_SNAPPY"><abbr title="\Flow\Parquet\ParquetFile\Compressions::SNAPPY">Compressions::SNAPPY</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetEngine.html"><abbr title="\Flow\Parquet\ParquetEngine">ParquetEngine</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$engine</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html"><abbr title="\Flow\Parquet\Engine\AdaptiveParquetEngine">AdaptiveParquetEngine</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$compression</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Compressions.html"><abbr title="\Flow\Parquet\ParquetFile\Compressions">Compressions</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-Parquet-ParquetFile-Compressions.html#enumcase_SNAPPY"><abbr title="\Flow\Parquet\ParquetFile\Compressions::SNAPPY">Compressions::SNAPPY</abbr></a></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$options</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$engine</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetEngine.html"><abbr title="\Flow\Parquet\ParquetEngine">ParquetEngine</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html"><abbr title="\Flow\Parquet\Engine\AdaptiveParquetEngine">AdaptiveParquetEngine</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___destruct">
+        __destruct()
+        <a href="classes/Flow-Parquet-Writer.html#method___destruct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">48</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__destruct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_arrow">
+        arrow()
+        <a href="classes/Flow-Parquet-Writer.html#method_arrow" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">38</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">arrow</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Compressions.html"><abbr title="\Flow\Parquet\ParquetFile\Compressions">Compressions</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$compression</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Parquet-ParquetFile-Compressions.html#enumcase_SNAPPY"><abbr title="\Flow\Parquet\ParquetFile\Compressions::SNAPPY">Compressions::SNAPPY</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -273,41 +372,11 @@
 
         
     
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___destruct">
-        __destruct()
-        <a href="classes/Flow-Parquet-Writer.html#method___destruct" class="headerlink"><i class="fas fa-link"></i></a>
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
 
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">53</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__destruct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-    
 </article>
                     <article
         class="phpdocumentor-element
@@ -323,7 +392,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -357,7 +426,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -395,7 +464,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -446,12 +515,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Opens a writer for an existing stream.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">openForStream</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema.html"><abbr title="\Flow\Parquet\ParquetFile\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
@@ -488,6 +556,61 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_php">
+        php()
+        <a href="classes/Flow-Parquet-Writer.html#method_php" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">php</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Compressions.html"><abbr title="\Flow\Parquet\ParquetFile\Compressions">Compressions</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$compression</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Parquet-ParquetFile-Compressions.html#enumcase_SNAPPY"><abbr title="\Flow\Parquet\ParquetFile\Compressions::SNAPPY">Compressions::SNAPPY</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$compression</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Compressions.html"><abbr title="\Flow\Parquet\ParquetFile\Compressions">Compressions</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-Parquet-ParquetFile-Compressions.html#enumcase_SNAPPY"><abbr title="\Flow\Parquet\ParquetFile\Compressions::SNAPPY">Compressions::SNAPPY</abbr></a></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$options</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_write">
@@ -498,12 +621,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create new parquet file, write rows, write metadata and close the file.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">write</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema.html"><abbr title="\Flow\Parquet\ParquetFile\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">iterable&lt;string|int, array&lt;string, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
@@ -557,12 +679,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Write a batch of rows into a parquet file.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">writeBatch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">iterable&lt;string|int, array&lt;string, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
@@ -570,10 +691,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Before using this method, you should call open() or openForStream() method to open the writer.
-Once all rows are written, you should call close() method to close the writer.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -605,12 +723,11 @@ Once all rows are written, you should call close() method to close the writer.</
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Write a single row into a parquet file.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">writeRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
@@ -618,10 +735,7 @@ Once all rows are written, you should call close() method to close the writer.</
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Before using this method, you should call open() or openForStream() method to open the writer.
-Once all rows are written, you should call close() method to close the writer.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -653,15 +767,14 @@ Once all rows are written, you should call close() method to close the writer.</
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer.php"><a href="files/src-lib-parquet-src-flow-parquet-writer.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer.php">Writer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create new parquet file directly in stream, write rows, write metadata and close the file.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">writeStream</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema.html"><abbr title="\Flow\Parquet\ParquetFile\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">iterable&lt;string|int, array&lt;string, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">writeStream</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema.html"><abbr title="\Flow\Parquet\ParquetFile\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">iterable&lt;string|int, array&lt;string, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -670,7 +783,7 @@ Once all rows are written, you should call close() method to close the writer.</
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$resource</span>
+                <span class="phpdocumentor-argument-list__argument__name">$stream</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -815,10 +928,12 @@ Once all rows are written, you should call close() method to close the writer.</
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Parquet-Writer.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer.html#method___destruct">__destruct()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Writer.html#method_arrow">arrow()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer.html#method_close">close()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer.html#method_isOpen">isOpen()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer.html#method_open">open()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer.html#method_openForStream">openForStream()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Writer.html#method_php">php()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer.html#method_write">write()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer.html#method_writeBatch">writeBatch()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer.html#method_writeRow">writeRow()</a></li>
