@@ -8,11 +8,11 @@
     <meta property="og:title" content="Installing Arrow Extension - Flow PHP - Data Processing Framework" />
     <meta name="twitter:title" content="Installing Arrow Extension - Flow PHP - Data Processing Framework" >
 
-    <meta name="description" content="How to install flow-php/arrow-ext PHP extension using PIE.
+    <meta name="description" content="How to install flow-php/arrow-ext PHP extension using precompiled binaries or PIE.
 ">
-    <meta property="og:description" content="How to install flow-php/arrow-ext PHP extension using PIE.
+    <meta property="og:description" content="How to install flow-php/arrow-ext PHP extension using precompiled binaries or PIE.
 ">
-    <meta name="twitter:description" content="How to install flow-php/arrow-ext PHP extension using PIE.
+    <meta name="twitter:description" content="How to install flow-php/arrow-ext PHP extension using precompiled binaries or PIE.
 ">
 
     <meta property="og:type" content="website" />
@@ -486,8 +486,38 @@
 <li><a href="/documentation/components/extensions/arrow-ext">📜 Documentation</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/arrow-ext">📦 Packagist</a></li>
 </ul>
-<div class="toc-wrapper" data-controller="toc"><div class="toc-header" data-action="click-&gt;toc#toggle"><span>Table of Contents</span><svg class="toc-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg></div><div class="toc-content"><ul class="table-of-contents"><li><a href="#pie">PIE</a></li>
+<div class="toc-wrapper" data-controller="toc"><div class="toc-header" data-action="click-&gt;toc#toggle"><span>Table of Contents</span><svg class="toc-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg></div><div class="toc-content"><ul class="table-of-contents"><li><a href="#precompiled-binaries">Precompiled Binaries</a>
+<ul>
+<li><a href="#installation">Installation</a></li>
+</ul>
+</li>
+<li><a href="#pie">PIE</a></li>
 <li><a href="#build-prerequisites">Build Prerequisites</a></li></ul></div></div>
+<h2><a id="precompiled-binaries" href="#precompiled-binaries" class="mr-2" aria-hidden="true" title="Permalink">#</a>Precompiled Binaries</h2>
+<p>Precompiled binaries are available for download from the <a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/arrow-ext/releases/latest">GitHub Releases</a> page.</p>
+<p>Binary names follow the <a rel="noopener noreferrer" target="_blank" href="https://github.com/php/pie/blob/1.4.x/docs/extension-maintainers.md">PIE naming convention</a>:</p>
+<p><code>php_arrow-{Version}_php{PhpVersion}-{Arch}-{OS}-{Libc}[-{TSMode}].zip</code></p>
+<p>Available platforms:</p>
+<ul>
+<li>macOS ARM64 (Apple Silicon)</li>
+<li>Linux ARM64</li>
+<li>Linux x86_64</li>
+</ul>
+<p>PHP versions: 8.3, 8.4, 8.5 (each with NTS and ZTS variants).</p>
+<h3><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h3>
+<p>Download the matching zip for your platform, then:</p>
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash"># Unzip the archive
+unzip php_arrow-*.zip
+
+# Copy to your PHP extensions directory
+cp arrow.so $(php -r "echo ini_get('extension_dir');")
+
+# Enable it
+echo "extension=arrow" &gt; $(php -r "echo PHP_CONFIG_FILE_SCAN_DIR;")/arrow.ini
+
+# Verify
+php -m | grep arrow
+</code></pre>
 <h2><a id="pie" href="#pie" class="mr-2" aria-hidden="true" title="Permalink">#</a>PIE</h2>
 <p><a rel="noopener noreferrer" target="_blank" href="https://github.com/php/pie">PIE</a> is the modern PHP extension installer.</p>
 <pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">pie install flow-php/arrow-ext
