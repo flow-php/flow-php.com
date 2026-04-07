@@ -401,6 +401,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_POSTGRESQL"
         },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003APOSTGRESQL_MIGRATIONS",
+            "name": "POSTGRESQL_MIGRATIONS",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_POSTGRESQL_MIGRATIONS"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003APSR18_TELEMETRY_BRIDGE",
             "name": "PSR18_TELEMETRY_BRIDGE",
             "summary": "",
