@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 755
+ * Total functions: 759
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -2674,6 +2674,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\ETL\\DSL\\count(" + "$" + "{" + "1:function" + "}" + ")"),
+        boost: 10
+    },                {
+        label: "count_all",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">count_all</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">AggregateCall</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create COUNT(*) aggregate.
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\count_all()"),
         boost: 10
     },                {
         label: "create",
@@ -5526,6 +5544,24 @@ const dslFunctions = [
         apply: snippet("\\Flow\\ETL\\Adapter\\ChartJS\\line_chart(" + "$" + "{" + "1:label" + "}" + ", " + "$" + "{" + "2:datasets" + "}" + ")"),
         boost: 10
     },                {
+        label: "listen",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">listen</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$channel</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">ListenFinalStep</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a LISTEN statement to subscribe the current session to a notification channel.<br>Usage:<br>  listen(\'my_channel\')->toSql()  // LISTEN my_channel
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\listen(" + "$" + "{" + "1:channel" + "}" + ")"),
+        boost: 10
+    },                {
         label: "list_entry",
         type: "function",
         detail: "flow\u002Ddsl\u002Dentries",
@@ -6175,6 +6211,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\ETL\\DSL\\not(" + "$" + "{" + "1:value" + "}" + ")"),
+        boost: 10
+    },                {
+        label: "notify",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">notify</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$channel</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">NotifyFinalStep</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a NOTIFY statement to send a notification on a channel, optionally with a payload.<br>Usage:<br>  notify(\'my_channel\')->toSql()                           // NOTIFY my_channel<br>  notify(\'my_channel\')->withPayload(\'hello\')->toSql()     // NOTIFY my_channel, \'hello\'
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\notify(" + "$" + "{" + "1:channel" + "}" + ")"),
         boost: 10
     },                {
         label: "not_",
@@ -11578,6 +11632,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\unique_constraint(" + "$" + "{" + "1:columns" + "}" + ")"),
+        boost: 10
+    },                {
+        label: "unlisten",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">unlisten</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$channel</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">UnlistenFinalStep</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create an UNLISTEN statement to unsubscribe the current session from a notification channel.<br>Usage:<br>  unlisten(\'my_channel\')->toSql()  // UNLISTEN my_channel
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\unlisten(" + "$" + "{" + "1:channel" + "}" + ")"),
         boost: 10
     },                {
         label: "update",
