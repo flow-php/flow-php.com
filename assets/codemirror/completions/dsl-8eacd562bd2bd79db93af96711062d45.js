@@ -5191,7 +5191,7 @@ const dslFunctions = [
                     <span class=\"fn-name\">join_on</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Comparison|array</span> <span class=\"fn-param\">$comparisons</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">string</span> <span class=\"fn-param\">$join_prefix</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">&#039;&#039;</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Expression</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @param array<\\Flow\\ETL\\Join\\Comparison|string>|Comparison $comparisons
+                    @param array<Comparison|string>|Comparison $comparisons
                 </div>
                             `
             return div
@@ -7993,7 +7993,7 @@ const dslFunctions = [
                     <span class=\"fn-name\">rows_partitioned</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">array</span> <span class=\"fn-param\">$rows</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Partitions|array</span> <span class=\"fn-param\">$partitions</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Rows</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @param array<Row> $rows<br>@param array<\\Flow\\Filesystem\\Partition|string>|Partitions $partitions
+                    @param array<Row> $rows<br>@param array<Partition|string>|Partitions $partitions
                 </div>
                             `
             return div
