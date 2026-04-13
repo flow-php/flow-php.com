@@ -5104,7 +5104,7 @@ const dslFunctions = [
                     <span class=\"fn-name\">in_</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Expression|string</span> <span class=\"fn-param\">$expr</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$values</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">In</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Create an IN condition.<br>@param Expression|string $expr Expression to check<br>@param list<Expression> $values List of values
+                    Create an IN condition.<br>@param Expression|string $expr Expression to check<br>@param list<Expression> $values List of values (must be non-empty)<br>@throws \\InvalidArgumentException when values array is empty
                 </div>
                             `
             return div
