@@ -11302,15 +11302,15 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">type_mapper</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TypeMapper</span>
+                    <span class=\"fn-name\">type_mapper</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">RowMapper</span> <span class=\"fn-param\">$next</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TypeMapper</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @template T<br>@param FlowType<T> $type<br>@return TypeMapper<T>
+                    @template TType<br>@template TNext = never<br>@param FlowType<TType> $type<br>@param null|RowMapper<TNext> $next<br>@return TypeMapper<TType, TNext>
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\PostgreSql\\DSL\\type_mapper(" + "$" + "{" + "1:type" + "}" + ")"),
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\type_mapper(" + "$" + "{" + "1:type" + "}" + ", " + "$" + "{" + "2:next" + "}" + ")"),
         boost: 10
     },                {
         label: "type_mixed",
