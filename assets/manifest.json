@@ -153,7 +153,7 @@
     "wasm\/php.js": "\/assets\/wasm\/php-854edac03a51f967b58c16849625fb22.js",
     "wasm\/php.wasm": "\/assets\/wasm\/php-2c153f5537d6d5ef169b6c07f35bd236.wasm",
     "wasm\/phpcsfixer.php.wasm": "\/assets\/wasm\/phpcsfixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm",
-    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-509ec929bb0b5c53fb9f1c1644b4d3d1.phar",
+    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-2c303ff8a992b098f290711954842e18.phar",
     "wasm\/tools\/php-cs-fixer.phar": "\/assets\/wasm\/tools\/php-cs-fixer-de55dbd75a08d2eac0f0435d4168e6bc.phar",
     "wasm\/vendor\/autoload.php.wasm": "\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm"
 }
