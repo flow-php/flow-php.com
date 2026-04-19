@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 760
+ * Total functions: 762
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -7021,15 +7021,15 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">pgsql_client</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">ConnectionParameters</span> <span class=\"fn-param\">$params</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ValueConverters</span> <span class=\"fn-param\">$valueConverters</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Client</span>
+                    <span class=\"fn-name\">pgsql_client</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">ConnectionParameters</span> <span class=\"fn-param\">$params</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ValueConverters</span> <span class=\"fn-param\">$valueConverters</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Context</span> <span class=\"fn-param\">$context</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Client</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Create a PostgreSQL client using ext-pgsql.<br>The client connects immediately and is ready to execute queries.<br>@param Client\\ConnectionParameters $params Connection parameters<br>@param null|ValueConverters $valueConverters Custom type converters (optional)<br>@throws ConnectionException If connection fails
+                    Create a PostgreSQL client using ext-pgsql.<br>The client connects immediately and is ready to execute queries.<br>@param Client\\ConnectionParameters $params Connection parameters<br>@param null|ValueConverters $valueConverters Custom type converters (optional)<br>@param null|Context $context Base mapper Context — the Client enriches it with sql/parameters/self per query before handing it to RowMapper::map()<br>@throws ConnectionException If connection fails
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_client(" + "$" + "{" + "1:params" + "}" + ", " + "$" + "{" + "2:valueConverters" + "}" + ")"),
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\pgsql_client(" + "$" + "{" + "1:params" + "}" + ", " + "$" + "{" + "2:valueConverters" + "}" + ", " + "$" + "{" + "3:context" + "}" + ")"),
         boost: 10
     },                {
         label: "pgsql_connection",
@@ -7099,6 +7099,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\ETL\\Adapter\\ChartJS\\pie_chart(" + "$" + "{" + "1:label" + "}" + ", " + "$" + "{" + "2:datasets" + "}" + ")"),
+        boost: 10
+    },                {
+        label: "postgresql_context",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">postgresql_context</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">array</span> <span class=\"fn-param\">$data</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Catalog</span> <span class=\"fn-param\">$catalog</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Context</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a RowMapper Context seeded with user-supplied key/value data and an optional Catalog.<br>The Context is later enriched with a Query (sql + parameters) and the executing Client by the<br>PostgreSQL Client before being handed to RowMapper::map().<br>@param array<string, mixed> $data User-supplied key/value pairs
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\postgresql_context(" + "$" + "{" + "1:data" + "}" + ", " + "$" + "{" + "2:catalog" + "}" + ")"),
         boost: 10
     },                {
         label: "postgresql_insert_options",
@@ -9778,6 +9796,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\star(" + "$" + "{" + "1:table" + "}" + ")"),
+        boost: 10
+    },                {
+        label: "static_factory_mapper",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">static_factory_mapper</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$class</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">string</span> <span class=\"fn-param\">$method</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">StaticFactoryMapper</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a row mapper backed by a public static factory method.<br>The factory method must accept a single array<string, mixed> $row and return<br>an instance of the target class. If your factory needs access to the mapping<br>Context (sql/parameters/client/catalog/user-data), implement RowMapper directly.<br>@template T of object<br>@param class-string<T> $class<br>@param non-empty-string $method<br>@return StaticFactoryMapper<T>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\static_factory_mapper(" + "$" + "{" + "1:class" + "}" + ", " + "$" + "{" + "2:method" + "}" + ")"),
         boost: 10
     },                {
         label: "stdout_filesystem",
