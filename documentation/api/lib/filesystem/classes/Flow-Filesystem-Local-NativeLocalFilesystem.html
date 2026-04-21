@@ -114,6 +114,8 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
+
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -123,7 +125,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -159,6 +161,12 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_appendTo">appendTo()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-Filesystem-DestinationStream.html"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr></a>    </span>
@@ -177,15 +185,15 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_mv">mv()</a>
+    <a class="" href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_mount">mount()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: <a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_protocol">protocol()</a>
+    <a class="" href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_mv">mv()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Filesystem-Protocol.html"><abbr title="\Flow\Filesystem\Protocol">Protocol</abbr></a>    </span>
+                                &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -233,6 +241,50 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">21</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mount</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>('file')</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$mount</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>('file')</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_appendTo">
         appendTo()
         <a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_appendTo" class="headerlink"><i class="fas fa-link"></i></a>
@@ -241,7 +293,7 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -289,7 +341,7 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -327,7 +379,7 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -374,6 +426,44 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_mount">
+        mount()
+        <a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_mount" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">74</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">mount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_mv">
         mv()
         <a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_mv" class="headerlink"><i class="fas fa-link"></i></a>
@@ -382,7 +472,7 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -429,44 +519,6 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_protocol">
-        protocol()
-        <a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_protocol" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">84</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">protocol</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Protocol.html"><abbr title="\Flow\Filesystem\Protocol">Protocol</abbr></a></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Protocol.html"><abbr title="\Flow\Filesystem\Protocol">Protocol</abbr></a></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_readFrom">
         readFrom()
         <a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_readFrom" class="headerlink"><i class="fas fa-link"></i></a>
@@ -475,7 +527,7 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -523,7 +575,7 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -571,7 +623,7 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
@@ -619,7 +671,7 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -769,11 +821,12 @@ Additionally, in order to support glob pattern `\/**\/` for matching zero or mor
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_appendTo">appendTo()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_getSystemTmpDir">getSystemTmpDir()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_list">list()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_mount">mount()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_mv">mv()</a></li>
-                                            <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_protocol">protocol()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_readFrom">readFrom()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_rm">rm()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_status">status()</a></li>

@@ -86,15 +86,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-AzureBlobFilesystem.html#method_list"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\AzureBlobFilesystem\u003A\u003Amount\u0028\u0029",
+            "name": "mount",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-AzureBlobFilesystem.html#method_mount"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\AzureBlobFilesystem\u003A\u003Amv\u0028\u0029",
             "name": "mv",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-AzureBlobFilesystem.html#method_mv"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\AzureBlobFilesystem\u003A\u003Aprotocol\u0028\u0029",
-            "name": "protocol",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Bridge-Azure-AzureBlobFilesystem.html#method_protocol"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\AzureBlobFilesystem\u003A\u003AreadFrom\u0028\u0029",
             "name": "readFrom",

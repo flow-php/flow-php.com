@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 762
+ * Total functions: 763
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -748,12 +748,12 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">aws_s3_filesystem</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$bucket</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">S3Client</span> <span class=\"fn-param\">$s3Client</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Options</span> <span class=\"fn-param\">$options</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Filesystem\\Bridge\\AsyncAWS\\Options::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">AsyncAWSS3Filesystem</span>
+                    <span class=\"fn-name\">aws_s3_filesystem</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$bucket</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">S3Client</span> <span class=\"fn-param\">$s3Client</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Options</span> <span class=\"fn-param\">$options</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Filesystem\\Bridge\\AsyncAWS\\Options::...</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">string</span> <span class=\"fn-param\">$protocol</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">&#039;aws-s3&#039;</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">AsyncAWSS3Filesystem</span>
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\Filesystem\\Bridge\\AsyncAWS\\DSL\\aws_s3_filesystem(" + "$" + "{" + "1:bucket" + "}" + ", " + "$" + "{" + "2:s3Client" + "}" + ", " + "$" + "{" + "3:options" + "}" + ")"),
+        apply: snippet("\\Flow\\Filesystem\\Bridge\\AsyncAWS\\DSL\\aws_s3_filesystem(" + "$" + "{" + "1:bucket" + "}" + ", " + "$" + "{" + "2:s3Client" + "}" + ", " + "$" + "{" + "3:options" + "}" + ", " + "$" + "{" + "4:protocol" + "}" + ")"),
         boost: 10
     },                {
         label: "azure_blob_service",
@@ -793,12 +793,12 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">azure_filesystem</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">BlobServiceInterface</span> <span class=\"fn-param\">$blob_service</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Options</span> <span class=\"fn-param\">$options</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Filesystem\\Bridge\\Azure\\Options::...</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">AzureBlobFilesystem</span>
+                    <span class=\"fn-name\">azure_filesystem</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">BlobServiceInterface</span> <span class=\"fn-param\">$blob_service</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Options</span> <span class=\"fn-param\">$options</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">Flow\\Filesystem\\Bridge\\Azure\\Options::...</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">string</span> <span class=\"fn-param\">$protocol</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">&#039;azure-blob&#039;</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">AzureBlobFilesystem</span>
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\Filesystem\\Bridge\\Azure\\DSL\\azure_filesystem(" + "$" + "{" + "1:blob_service" + "}" + ", " + "$" + "{" + "2:options" + "}" + ")"),
+        apply: snippet("\\Flow\\Filesystem\\Bridge\\Azure\\DSL\\azure_filesystem(" + "$" + "{" + "1:blob_service" + "}" + ", " + "$" + "{" + "2:options" + "}" + ", " + "$" + "{" + "3:protocol" + "}" + ")"),
         boost: 10
     },                {
         label: "azure_filesystem_options",
@@ -3789,6 +3789,42 @@ const dslFunctions = [
         apply: snippet("\\Flow\\Filesystem\\DSL\\filesystem_telemetry_options(" + "$" + "{" + "1:traceStreams" + "}" + ", " + "$" + "{" + "2:collectMetrics" + "}" + ")"),
         boost: 10
     },                {
+        label: "file_copy",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">file_copy</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">FilesystemTable</span> <span class=\"fn-param\">$table</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">OperationOptions</span> <span class=\"fn-param\">$options</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Copy</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Copy a file from one path to another, across any filesystems mounted in the table.<br>Always streams bytes; same-filesystem copies do not use server-side optimizations<br>because \`Filesystem::mv\` is a move, not a copy.
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Filesystem\\DSL\\file_copy(" + "$" + "{" + "1:table" + "}" + ", " + "$" + "{" + "2:options" + "}" + ")"),
+        boost: 10
+    },                {
+        label: "file_move",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">file_move</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">FilesystemTable</span> <span class=\"fn-param\">$table</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">OperationOptions</span> <span class=\"fn-param\">$options</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Move</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Move a file from one path to another, across any filesystems mounted in the table.<br>Intra-filesystem moves delegate to \`Filesystem::mv\` for server-side optimizations;<br>cross-filesystem moves stream-copy then remove the source (non-atomic).
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Filesystem\\DSL\\file_move(" + "$" + "{" + "1:table" + "}" + ", " + "$" + "{" + "2:options" + "}" + ")"),
+        boost: 10
+    },                {
         label: "first",
         type: "function",
         detail: "flow\u002Ddsl\u002Daggregating\u002Dfunctions",
@@ -5962,7 +5998,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">memory_filesystem</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">MemoryFilesystem</span>
+                    <span class=\"fn-name\">memory_filesystem</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$protocol</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">&#039;memory&#039;</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">MemoryFilesystem</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
                     Create a new memory filesystem and writes data to it in memory.
@@ -5970,7 +6006,7 @@ const dslFunctions = [
                             `
             return div
         },
-        apply: snippet("\\Flow\\Filesystem\\DSL\\memory_filesystem()"),
+        apply: snippet("\\Flow\\Filesystem\\DSL\\memory_filesystem(" + "$" + "{" + "1:protocol" + "}" + ")"),
         boost: 10
     },                {
         label: "memory_log_exporter",
@@ -6150,6 +6186,21 @@ const dslFunctions = [
         apply: snippet("\\Flow\\ETL\\DSL\\min(" + "$" + "{" + "1:ref" + "}" + ")"),
         boost: 10
     },                {
+        label: "mount",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">mount</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$protocol</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Mount</span>
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Filesystem\\DSL\\mount(" + "$" + "{" + "1:protocol" + "}" + ")"),
+        boost: 10
+    },                {
         label: "mysql_insert_options",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6175,12 +6226,12 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">native_local_filesystem</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">NativeLocalFilesystem</span>
+                    <span class=\"fn-name\">native_local_filesystem</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$protocol</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">&#039;file&#039;</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">NativeLocalFilesystem</span>
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\Filesystem\\DSL\\native_local_filesystem()"),
+        apply: snippet("\\Flow\\Filesystem\\DSL\\native_local_filesystem(" + "$" + "{" + "1:protocol" + "}" + ")"),
         boost: 10
     },                {
         label: "ne",
@@ -6454,6 +6505,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\on_conflict_update(" + "$" + "{" + "1:target" + "}" + ", " + "$" + "{" + "2:updates" + "}" + ")"),
+        boost: 10
+    },                {
+        label: "operation_options",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">operation_options</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">int</span> <span class=\"fn-param\">$chunkSize</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">8192</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">OperationOptions</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Options shared by filesystem operations.<br>@param int $chunkSize Number of bytes read/written per iteration when streaming across filesystems (default: 8192)
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Filesystem\\DSL\\operation_options(" + "$" + "{" + "1:chunkSize" + "}" + ")"),
         boost: 10
     },                {
         label: "optional",
@@ -6960,24 +7029,6 @@ const dslFunctions = [
         apply: snippet("\\Flow\\Filesystem\\DSL\\path(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:options" + "}" + ")"),
         boost: 10
     },                {
-        label: "path_memory",
-        type: "function",
-        detail: "flow\u002Ddsl\u002Dhelpers",
-        info: () => {
-            const div = document.createElement("div")
-            div.innerHTML = `
-                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">path_memory</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$path</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">&#039;&#039;</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$options</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Path</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    Create a path to php memory stream.<br>@param string $path - default = \'\' - path is used as an identifier in memory filesystem, so we can write multiple files to memory at once, each path is a new handle<br>@param null|array{\'stream\': \'memory\'|\'temp\'} $options - when nothing is provided, \'temp\' stream is used by default<br>@return Path
-                </div>
-                            `
-            return div
-        },
-        apply: snippet("\\Flow\\Filesystem\\DSL\\path_memory(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:options" + "}" + ")"),
-        boost: 10
-    },                {
         label: "path_real",
         type: "function",
         detail: "flow\u002Ddsl\u002Dhelpers",
@@ -6994,24 +7045,6 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\Filesystem\\DSL\\path_real(" + "$" + "{" + "1:path" + "}" + ", " + "$" + "{" + "2:options" + "}" + ")"),
-        boost: 10
-    },                {
-        label: "path_stdout",
-        type: "function",
-        detail: "flow\u002Ddsl\u002Dhelpers",
-        info: () => {
-            const div = document.createElement("div")
-            div.innerHTML = `
-                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">path_stdout</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">array</span> <span class=\"fn-param\">$options</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Path</span>
-                </div>
-                                <div style="color: #8b949e; font-size: 13px;">
-                    Create a path to php stdout stream.<br>@param null|array{\'stream\': \'output\'|\'stderr\'|\'stdout\'} $options<br>@return Path
-                </div>
-                            `
-            return div
-        },
-        apply: snippet("\\Flow\\Filesystem\\DSL\\path_stdout(" + "$" + "{" + "1:options" + "}" + ")"),
         boost: 10
     },                {
         label: "pgsql_client",
@@ -7276,21 +7309,6 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\Telemetry\\DSL\\propagation_context(" + "$" + "{" + "1:spanContext" + "}" + ", " + "$" + "{" + "2:baggage" + "}" + ")"),
-        boost: 10
-    },                {
-        label: "protocol",
-        type: "function",
-        detail: "flow\u002Ddsl\u002Dhelpers",
-        info: () => {
-            const div = document.createElement("div")
-            div.innerHTML = `
-                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">protocol</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$protocol</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Protocol</span>
-                </div>
-                            `
-            return div
-        },
-        apply: snippet("\\Flow\\Filesystem\\DSL\\protocol(" + "$" + "{" + "1:protocol" + "}" + ")"),
         boost: 10
     },                {
         label: "psr7_request_carrier",
@@ -9823,7 +9841,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">stdout_filesystem</span><span class=\"fn-operator\">(</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">StdOutFilesystem</span>
+                    <span class=\"fn-name\">stdout_filesystem</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$protocol</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">&#039;stdout&#039;</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">StdOutFilesystem</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
                     Write-only filesystem useful when we just want to write the output to stdout.<br>The main use case is for streaming datasets over http.
@@ -9831,7 +9849,7 @@ const dslFunctions = [
                             `
             return div
         },
-        apply: snippet("\\Flow\\Filesystem\\DSL\\stdout_filesystem()"),
+        apply: snippet("\\Flow\\Filesystem\\DSL\\stdout_filesystem(" + "$" + "{" + "1:protocol" + "}" + ")"),
         boost: 10
     },                {
         label: "string_agg",

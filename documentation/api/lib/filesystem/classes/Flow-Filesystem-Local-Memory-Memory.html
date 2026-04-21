@@ -178,9 +178,21 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Local-Memory-Memory.html#method_lastModifiedAt">lastModifiedAt()</a>
+    <span>
+                                &nbsp;: <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-Local-Memory-Memory.html#method_paths">paths()</a>
     <span>
                                 &nbsp;: array&lt;string|int, <a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a>&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Local-Memory-Memory.html#method_size">size()</a>
+    <span>
+                                &nbsp;: int|null    </span>
 </dt>
 
     </dl>
@@ -211,7 +223,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memory.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php">Memory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -255,7 +267,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memory.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php">Memory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -289,7 +301,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memory.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php">Memory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -333,7 +345,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memory.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php">Memory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -381,7 +393,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memory.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php">Memory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -421,6 +433,54 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_lastModifiedAt">
+        lastModifiedAt()
+        <a href="classes/Flow-Filesystem-Local-Memory-Memory.html#method_lastModifiedAt" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memory.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php">Memory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">83</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">lastModifiedAt</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_paths">
         paths()
         <a href="classes/Flow-Filesystem-Local-Memory-Memory.html#method_paths" class="headerlink"><i class="fas fa-link"></i></a>
@@ -429,7 +489,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memory.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php">Memory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -450,6 +510,54 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_size">
+        size()
+        <a href="classes/Flow-Filesystem-Local-Memory-Memory.html#method_size" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memory.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/Memory.php">Memory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">96</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">size</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int|null</span>
             </section>
 
 </article>
@@ -573,7 +681,9 @@
                                             <li class=""><a href="classes/Flow-Filesystem-Local-Memory-Memory.html#method_close">close()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-Memory-Memory.html#method_for">for()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-Memory-Memory.html#method_has">has()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Local-Memory-Memory.html#method_lastModifiedAt">lastModifiedAt()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-Memory-Memory.html#method_paths">paths()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Local-Memory-Memory.html#method_size">size()</a></li>
                                     </ul>
             </li>
                     </ul>

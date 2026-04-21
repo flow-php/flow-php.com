@@ -177,6 +177,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-SizeUnits.html#method_humanReadable">humanReadable()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Format a byte count as a human-readable string (binary units: B, KiB, MiB, GiB, TiB, PiB).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-SizeUnits.html#method_kbToBytes">kbToBytes()</a>
     <span>
                                 &nbsp;: int    </span>
@@ -353,6 +360,95 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_humanReadable">
+        humanReadable()
+        <a href="classes/Flow-Filesystem-SizeUnits.html#method_humanReadable" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/SizeUnits.php"><a href="files/src-lib-filesystem-src-flow-filesystem-sizeunits.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/SizeUnits.php">SizeUnits.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Format a byte count as a human-readable string (binary units: B, KiB, MiB, GiB, TiB, PiB).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">humanReadable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bytes</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$decimals</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">2</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$decimalSeparator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'.'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$thousandsSeparator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">','</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$null</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'-'</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>The tail arguments mirror PHP's number_format signature for the fractional part.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bytes</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>size in bytes, or null for &quot;unknown&quot; (returns $null)</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$decimals</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">2</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Number of fractional digits for non-byte units. Ignored for raw bytes.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$decimalSeparator</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">'.'</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>decimal separator (passed to number_format)</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$thousandsSeparator</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">','</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>thousands separator for the integer part (passed to number_format)</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$null</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">'-'</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>placeholder returned when $bytes is null</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_kbToBytes">
         kbToBytes()
         <a href="classes/Flow-Filesystem-SizeUnits.html#method_kbToBytes" class="headerlink"><i class="fas fa-link"></i></a>
@@ -361,7 +457,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/SizeUnits.php"><a href="files/src-lib-filesystem-src-flow-filesystem-sizeunits.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/SizeUnits.php">SizeUnits.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -409,7 +505,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/SizeUnits.php"><a href="files/src-lib-filesystem-src-flow-filesystem-sizeunits.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/SizeUnits.php">SizeUnits.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -568,6 +664,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Filesystem-SizeUnits.html#method_gbToBytes">gbToBytes()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-SizeUnits.html#method_humanReadable">humanReadable()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-SizeUnits.html#method_kbToBytes">kbToBytes()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-SizeUnits.html#method_mbToBytes">mbToBytes()</a></li>
                                     </ul>

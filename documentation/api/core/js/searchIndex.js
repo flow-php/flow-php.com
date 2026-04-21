@@ -756,6 +756,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Cache-CacheConfig.html#property_externalSortBucketsCount"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfig\u003A\u003A\u0024filesystemProtocol",
+            "name": "filesystemProtocol",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Cache-CacheConfig.html#property_filesystemProtocol"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfigBuilder",
             "name": "CacheConfigBuilder",
             "summary": "",
@@ -775,6 +780,11 @@ Search.appendIndex(
             "name": "externalSortBucketsCount",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_externalSortBucketsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfigBuilder\u003A\u003AfilesystemProtocol\u0028\u0029",
+            "name": "filesystemProtocol",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_filesystemProtocol"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder",
             "name": "ConfigBuilder",
@@ -801,6 +811,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#property_cache"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AcacheFilesystem\u0028\u0029",
+            "name": "cacheFilesystem",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_cacheFilesystem"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Aclock\u0028\u0029",
             "name": "clock",
             "summary": "",
@@ -815,6 +830,11 @@ Search.appendIndex(
             "name": "externalSortBucketsCount",
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_externalSortBucketsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AexternalSortFilesystem\u0028\u0029",
+            "name": "externalSortFilesystem",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_externalSortFilesystem"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Aid\u0028\u0029",
             "name": "id",
@@ -896,6 +916,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Sort-SortConfig.html#property_memoryLimit"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfig\u003A\u003A\u0024filesystemProtocol",
+            "name": "filesystemProtocol",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-SortConfig.html#property_filesystemProtocol"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfigBuilder",
             "name": "SortConfigBuilder",
             "summary": "",
@@ -910,6 +935,11 @@ Search.appendIndex(
             "name": "build",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Sort-SortConfigBuilder.html#method_build"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfigBuilder\u003A\u003AfilesystemProtocol\u0028\u0029",
+            "name": "filesystemProtocol",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-SortConfigBuilder.html#method_filesystemProtocol"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfigBuilder\u003A\u003AsortMemoryLimit\u0028\u0029",
             "name": "sortMemoryLimit",

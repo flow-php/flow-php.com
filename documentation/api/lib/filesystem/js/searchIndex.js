@@ -16,10 +16,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-DestinationStream.html#method_fromResource"
         },                {
-            "fqsen": "\\Flow\\Filesystem\\DSL\\protocol\u0028\u0029",
-            "name": "protocol",
+            "fqsen": "\\Flow\\Filesystem\\DSL\\mount\u0028\u0029",
+            "name": "mount",
             "summary": "",
-            "url": "namespaces/flow-filesystem-dsl.html#function_protocol"
+            "url": "namespaces/flow-filesystem-dsl.html#function_mount"
         },                {
             "fqsen": "\\Flow\\Filesystem\\DSL\\partition\u0028\u0029",
             "name": "partition",
@@ -35,16 +35,6 @@ Search.appendIndex(
             "name": "path",
             "summary": "Path\u0020supports\u0020glob\u0020patterns.",
             "url": "namespaces/flow-filesystem-dsl.html#function_path"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\DSL\\path_stdout\u0028\u0029",
-            "name": "path_stdout",
-            "summary": "Create\u0020a\u0020path\u0020to\u0020php\u0020stdout\u0020stream.",
-            "url": "namespaces/flow-filesystem-dsl.html#function_path_stdout"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\DSL\\path_memory\u0028\u0029",
-            "name": "path_memory",
-            "summary": "Create\u0020a\u0020path\u0020to\u0020php\u0020memory\u0020stream.",
-            "url": "namespaces/flow-filesystem-dsl.html#function_path_memory"
         },                {
             "fqsen": "\\Flow\\Filesystem\\DSL\\path_real\u0028\u0029",
             "name": "path_real",
@@ -85,6 +75,21 @@ Search.appendIndex(
             "name": "filesystem_telemetry_options",
             "summary": "Create\u0020options\u0020for\u0020filesystem\u0020telemetry.",
             "url": "namespaces/flow-filesystem-dsl.html#function_filesystem_telemetry_options"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\DSL\\file_copy\u0028\u0029",
+            "name": "file_copy",
+            "summary": "Copy\u0020a\u0020file\u0020from\u0020one\u0020path\u0020to\u0020another,\u0020across\u0020any\u0020filesystems\u0020mounted\u0020in\u0020the\u0020table.",
+            "url": "namespaces/flow-filesystem-dsl.html#function_file_copy"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\DSL\\file_move\u0028\u0029",
+            "name": "file_move",
+            "summary": "Move\u0020a\u0020file\u0020from\u0020one\u0020path\u0020to\u0020another,\u0020across\u0020any\u0020filesystems\u0020mounted\u0020in\u0020the\u0020table.",
+            "url": "namespaces/flow-filesystem-dsl.html#function_file_move"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\DSL\\operation_options\u0028\u0029",
+            "name": "operation_options",
+            "summary": "Options\u0020shared\u0020by\u0020filesystem\u0020operations.",
+            "url": "namespaces/flow-filesystem-dsl.html#function_operation_options"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Exception\\Exception",
             "name": "Exception",
@@ -141,6 +146,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-FileStatus.html#property_path"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\FileStatus\u003A\u003A\u0024size",
+            "name": "size",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-FileStatus.html#property_size"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\FileStatus\u003A\u003A\u0024lastModifiedAt",
+            "name": "lastModifiedAt",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-FileStatus.html#property_lastModifiedAt"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Filesystem",
             "name": "Filesystem",
             "summary": "",
@@ -161,15 +176,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Filesystem.html#method_list"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Filesystem\u003A\u003Amount\u0028\u0029",
+            "name": "mount",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Filesystem.html#method_mount"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Filesystem\u003A\u003Amv\u0028\u0029",
             "name": "mv",
             "summary": "",
             "url": "classes/Flow-Filesystem-Filesystem.html#method_mv"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Filesystem\u003A\u003Aprotocol\u0028\u0029",
-            "name": "protocol",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Filesystem.html#method_protocol"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Filesystem\u003A\u003AreadFrom\u0028\u0029",
             "name": "readFrom",
@@ -256,10 +271,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method_has"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory\u003A\u003AlastModifiedAt\u0028\u0029",
+            "name": "lastModifiedAt",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method_lastModifiedAt"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory\u003A\u003Apaths\u0028\u0029",
             "name": "paths",
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method_paths"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory\u003A\u003Asize\u0028\u0029",
+            "name": "size",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method_size"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream",
             "name": "MemoryStream",
@@ -351,15 +376,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_list"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003Amount\u0028\u0029",
+            "name": "mount",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_mount"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003Amv\u0028\u0029",
             "name": "mv",
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_mv"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003Aprotocol\u0028\u0029",
-            "name": "protocol",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_protocol"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003AreadFrom\u0028\u0029",
             "name": "readFrom",
@@ -386,6 +411,11 @@ Search.appendIndex(
             "summary": "This\u0020implementation\u0020is\u0020based\u0020on\u0020the\u0020native\u0020PHP\u0020filesystem\u0020functions\u0020documented\u0020here\u003A\u0020https\u003A\/\/www.php.net\/manual\/en\/book.filesystem.php\nAdditionally,\u0020in\u0020order\u0020to\u0020support\u0020glob\u0020pattern\u0020\u0060\\\/\u002A\u002A\\\/\u0060\u0020for\u0020matching\u0020zero\u0020or\u0020more\u0020directories\u0020it\u0027s\u0020using\u0020webmozart\/glob\u0020library.",
             "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method___construct"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003AappendTo\u0028\u0029",
             "name": "appendTo",
             "summary": "",
@@ -401,15 +431,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_list"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003Amount\u0028\u0029",
+            "name": "mount",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_mount"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003Amv\u0028\u0029",
             "name": "mv",
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_mv"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003Aprotocol\u0028\u0029",
-            "name": "protocol",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_protocol"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003AreadFrom\u0028\u0029",
             "name": "readFrom",
@@ -491,15 +521,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_list"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\StdOutFilesystem\u003A\u003Amount\u0028\u0029",
+            "name": "mount",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_mount"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\StdOutFilesystem\u003A\u003Amv\u0028\u0029",
             "name": "mv",
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_mv"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Local\\StdOutFilesystem\u003A\u003Aprotocol\u0028\u0029",
-            "name": "protocol",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_protocol"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\StdOutFilesystem\u003A\u003AreadFrom\u0028\u0029",
             "name": "readFrom",
@@ -535,6 +565,71 @@ Search.appendIndex(
             "name": "buffer",
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-StreamFilter-Intercept.html#property_buffer"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Mount",
+            "name": "Mount",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Mount.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Mount\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Mount.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Mount\u003A\u003Asupports\u0028\u0029",
+            "name": "supports",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Mount.html#method_supports"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Mount\u003A\u003A\u0024protocol",
+            "name": "protocol",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Mount.html#property_protocol"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Operations\\Copy",
+            "name": "Copy",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Operations-Copy.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Operations\\Copy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Operations-Copy.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Operations\\Copy\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Operations-Copy.html#method_execute"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Operations\\Move",
+            "name": "Move",
+            "summary": "Intra\u002Dfilesystem\u0020moves\u0020delegate\u0020to\u0020\u0060Filesystem\u003A\u003Amv\u0060\u0020for\u0020server\u002Dside\u0020optimizations\n\u0028local\u0020rename,\u0020S3\u0020CopyObject\u0020\u002B\u0020DeleteObject\u0029.\u0020Cross\u002Dfilesystem\u0020moves\u0020stream\u002Dcopy\nthen\u0020remove\u0020the\u0020source\u0020and\u0020are\u0020NOT\u0020atomic\u003A\u0020if\u0020the\u0020source\u0020removal\u0020fails\u0020after\u0020a\nsuccessful\u0020write,\u0020the\u0020destination\u0020is\u0020present\u0020and\u0020the\u0020source\u0020remains\u003B\u0020re\u002Drunning\n\u0060execute\u0060\u0020on\u0020the\u0020same\u0020pair\u0020is\u0020idempotent.",
+            "url": "classes/Flow-Filesystem-Operations-Move.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Operations\\Move\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Operations-Move.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Operations\\Move\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Operations-Move.html#method_execute"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Operations\\OperationOptions",
+            "name": "OperationOptions",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Operations-OperationOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Operations\\OperationOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Operations-OperationOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Operations\\OperationOptions\u003A\u003A\u0024chunkSize",
+            "name": "chunkSize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Operations-OperationOptions.html#property_chunkSize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Partition",
             "name": "Partition",
@@ -1226,36 +1321,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Paths.html#method_partitions"
         },                {
-            "fqsen": "\\Flow\\Filesystem\\Protocol",
-            "name": "Protocol",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Protocol.html"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Protocol\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Protocol.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Protocol\u003A\u003Ais\u0028\u0029",
-            "name": "is",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Protocol.html#method_is"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Protocol\u003A\u003Ascheme\u0028\u0029",
-            "name": "scheme",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Protocol.html#method_scheme"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Protocol\u003A\u003AvalidateScheme\u0028\u0029",
-            "name": "validateScheme",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Protocol.html#method_validateScheme"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Protocol\u003A\u003A\u0024name",
-            "name": "name",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Protocol.html#property_name"
-        },                {
             "fqsen": "\\Flow\\Filesystem\\SizeUnits",
             "name": "SizeUnits",
             "summary": "",
@@ -1265,6 +1330,11 @@ Search.appendIndex(
             "name": "gbToBytes",
             "summary": "",
             "url": "classes/Flow-Filesystem-SizeUnits.html#method_gbToBytes"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\SizeUnits\u003A\u003AhumanReadable\u0028\u0029",
+            "name": "humanReadable",
+            "summary": "Format\u0020a\u0020byte\u0020count\u0020as\u0020a\u0020human\u002Dreadable\u0020string\u0020\u0028binary\u0020units\u003A\u0020B,\u0020KiB,\u0020MiB,\u0020GiB,\u0020TiB,\u0020PiB\u0029.",
+            "url": "classes/Flow-Filesystem-SizeUnits.html#method_humanReadable"
         },                {
             "fqsen": "\\Flow\\Filesystem\\SizeUnits\u003A\u003AkbToBytes\u0028\u0029",
             "name": "kbToBytes",
@@ -2091,15 +2161,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_list"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem\u003A\u003Amount\u0028\u0029",
+            "name": "mount",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_mount"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem\u003A\u003Amv\u0028\u0029",
             "name": "mv",
             "summary": "",
             "url": "classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_mv"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem\u003A\u003Aprotocol\u0028\u0029",
-            "name": "protocol",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_protocol"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem\u003A\u003AreadFrom\u0028\u0029",
             "name": "readFrom",
@@ -2215,6 +2285,11 @@ Search.appendIndex(
             "name": "StreamFilter",
             "summary": "",
             "url": "namespaces/flow-filesystem-local-streamfilter.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Operations",
+            "name": "Operations",
+            "summary": "",
+            "url": "namespaces/flow-filesystem-operations.html"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\Filter",
             "name": "Filter",

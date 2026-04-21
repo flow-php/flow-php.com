@@ -183,15 +183,15 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_mv">mv()</a>
+    <a class="" href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_mount">mount()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: <a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_protocol">protocol()</a>
+    <a class="" href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_mv">mv()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Filesystem-Protocol.html"><abbr title="\Flow\Filesystem\Protocol">Protocol</abbr></a>    </span>
+                                &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -254,7 +254,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><abbr title="\php_user_filter">php_user_filter</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mount</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>('memory')</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\php_user_filter">php_user_filter</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -262,6 +262,13 @@
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$mount</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>('memory')</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$filter</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\php_user_filter">php_user_filter</abbr>|null</span>
@@ -424,6 +431,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_mount">
+        mount()
+        <a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_mount" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/MemoryFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memoryfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/MemoryFilesystem.php">MemoryFilesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">mount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_mv">
         mv()
         <a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_mv" class="headerlink"><i class="fas fa-link"></i></a>
@@ -432,7 +477,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/MemoryFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memoryfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/MemoryFilesystem.php">MemoryFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -470,44 +515,6 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_protocol">
-        protocol()
-        <a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_protocol" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/MemoryFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memoryfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/MemoryFilesystem.php">MemoryFilesystem.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">68</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">protocol</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Protocol.html"><abbr title="\Flow\Filesystem\Protocol">Protocol</abbr></a></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Protocol.html"><abbr title="\Flow\Filesystem\Protocol">Protocol</abbr></a></span>
             </section>
 
 </article>
@@ -823,8 +830,8 @@
                                             <li class=""><a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_appendTo">appendTo()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_getSystemTmpDir">getSystemTmpDir()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_list">list()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_mount">mount()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_mv">mv()</a></li>
-                                            <li class=""><a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_protocol">protocol()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_readFrom">readFrom()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_rm">rm()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_status">status()</a></li>

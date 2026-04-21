@@ -114,8 +114,6 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
-    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
-
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -125,7 +123,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-stdoutfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php">StdOutFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -183,15 +181,15 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_mv">mv()</a>
+    <a class="" href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_mount">mount()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: <a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_protocol">protocol()</a>
+    <a class="" href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_mv">mv()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Filesystem-Protocol.html"><abbr title="\Flow\Filesystem\Protocol">Protocol</abbr></a>    </span>
+                                &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -247,14 +245,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-stdoutfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php">StdOutFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><abbr title="\php_user_filter">php_user_filter</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mount</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>('stdout')</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\php_user_filter">php_user_filter</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -262,6 +260,13 @@
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$mount</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>('stdout')</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$filter</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\php_user_filter">php_user_filter</abbr>|null</span>
@@ -291,7 +296,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-stdoutfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php">StdOutFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -339,7 +344,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-stdoutfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php">StdOutFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -377,7 +382,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-stdoutfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php">StdOutFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -424,6 +429,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_mount">
+        mount()
+        <a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_mount" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-stdoutfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php">StdOutFilesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">47</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">mount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_mv">
         mv()
         <a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_mv" class="headerlink"><i class="fas fa-link"></i></a>
@@ -432,7 +475,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-stdoutfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php">StdOutFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -479,44 +522,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_protocol">
-        protocol()
-        <a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_protocol" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-stdoutfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php">StdOutFilesystem.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">41</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">protocol</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Protocol.html"><abbr title="\Flow\Filesystem\Protocol">Protocol</abbr></a></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Protocol.html"><abbr title="\Flow\Filesystem\Protocol">Protocol</abbr></a></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_readFrom">
         readFrom()
         <a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_readFrom" class="headerlink"><i class="fas fa-link"></i></a>
@@ -525,7 +530,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-stdoutfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php">StdOutFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -573,7 +578,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-stdoutfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php">StdOutFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -621,7 +626,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-stdoutfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php">StdOutFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -669,7 +674,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-stdoutfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/StdOutFilesystem.php">StdOutFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -823,8 +828,8 @@
                                             <li class=""><a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_appendTo">appendTo()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_getSystemTmpDir">getSystemTmpDir()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_list">list()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_mount">mount()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_mv">mv()</a></li>
-                                            <li class=""><a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_protocol">protocol()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_readFrom">readFrom()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_rm">rm()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_status">status()</a></li>

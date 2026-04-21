@@ -476,6 +476,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_content"
         },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlobProperties\\BlobProperties\u003A\u003AlastModifiedAt\u0028\u0029",
+            "name": "lastModifiedAt",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_lastModifiedAt"
+        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlobProperties\\BlobProperties\u003A\u003Asize\u0028\u0029",
             "name": "size",
             "summary": "",
@@ -655,6 +660,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-ListBlobs-Blob.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\ListBlobs\\Blob\u003A\u003AlastModifiedAt\u0028\u0029",
+            "name": "lastModifiedAt",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-ListBlobs-Blob.html#method_lastModifiedAt"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\ListBlobs\\Blob\u003A\u003Aname\u0028\u0029",
             "name": "name",
