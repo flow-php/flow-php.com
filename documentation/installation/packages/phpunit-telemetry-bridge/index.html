@@ -487,7 +487,8 @@
 <li><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/phpunit-telemetry-bridge">📦 Packagist</a></li>
 </ul>
 <div class="toc-wrapper" data-controller="toc"><div class="toc-header" data-action="click-&gt;toc#toggle"><span>Table of Contents</span><svg class="toc-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg></div><div class="toc-content"><ul class="table-of-contents"><li><a href="#composer">Composer</a></li>
-<li><a href="#core-dependencies">Core Dependencies</a></li></ul></div></div>
+<li><a href="#core-dependencies">Core Dependencies</a></li>
+<li><a href="#optional-dependencies">Optional Dependencies</a></li></ul></div></div>
 <h2><a id="composer" href="#composer" class="mr-2" aria-hidden="true" title="Permalink">#</a>Composer</h2>
 <pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">composer require flow-php/phpunit-telemetry-bridge:~0.36.0
 </code></pre>
@@ -495,6 +496,16 @@
 <ul>
 <li><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/phpunit/phpunit">phpunit/phpunit</a></li>
 </ul>
+<h2><a id="optional-dependencies" href="#optional-dependencies" class="mr-2" aria-hidden="true" title="Permalink">#</a>Optional Dependencies</h2>
+<p>The default <code>curl</code> transport works with the core dependencies only. To use the <code>grpc</code> transport, install:</p>
+<ul>
+<li>PHP extension <a rel="noopener noreferrer" target="_blank" href="https://github.com/grpc/grpc/tree/master/src/php">ext-grpc</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/grpc/grpc">grpc/grpc</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/google/protobuf">google/protobuf</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/open-telemetry/gen-otlp-protobuf">open-telemetry/gen-otlp-protobuf</a></li>
+</ul>
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">composer require --dev grpc/grpc google/protobuf open-telemetry/gen-otlp-protobuf
+</code></pre>
 
 
             <hr class="!mt-8 !mb-8"/>

@@ -478,7 +478,8 @@
             </div>
 
             <h1><a id="phpunit-telemetry-bridge" href="#phpunit-telemetry-bridge" class="mr-2" aria-hidden="true" title="Permalink">#</a>PHPUnit Telemetry Bridge</h1>
-<p>PHPUnit extension allowing to collect test suite telemetry and export to OTEL collector.</p>
+<p>PHPUnit extension allowing to collect test suite telemetry and export it to any OTLP-compatible backend (OpenTelemetry
+Collector, Grafana Alloy, Honeycomb, Datadog, Jaeger, etc.).</p>
 <ul>
 <li><a href="/documentation/introduction">Back</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://packagist.org/packages/flow-php/phpunit-telemetry-bridge">Packagist</a></li>
@@ -488,7 +489,17 @@
 </ul>
 <div class="toc-wrapper" data-controller="toc"><div class="toc-header" data-action="click-&gt;toc#toggle"><span>Table of Contents</span><svg class="toc-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg></div><div class="toc-content"><ul class="table-of-contents"><li><a href="#installation">Installation</a></li>
 <li><a href="#configuration">Configuration</a></li>
-<li><a href="#configuration-parameters">Configuration Parameters</a></li>
+<li><a href="#configuration-parameters">Configuration Parameters</a>
+<ul>
+<li><a href="#shared">Shared</a></li>
+<li><a href="#curl-transport-transportcurl">Curl transport (transport=curl)</a></li>
+<li><a href="#grpc-transport-transportgrpc">gRPC transport (transport=grpc)</a></li>
+</ul>
+</li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#grpc-transport">gRPC Transport</a></li>
+<li><a href="#environment-variables">Environment Variables</a></li>
+<li><a href="#deprecation-otelcollectorurl">Deprecation: otel_collector_url</a></li>
 <li><a href="#features">Features</a>
 <ul>
 <li><a href="#traces">Traces</a></li>
@@ -497,25 +508,29 @@
 </li>
 <li><a href="#running-with-docker-compose">Running with Docker Compose</a></li></ul></div></div>
 <h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
-<p>For detailed installation instructions, see the <a href="/documentation/installation/packages/phpunit-telemetry-bridge">installation page</a>.</p>
+<p>For detailed installation instructions, see
+the <a href="/documentation/installation/packages/phpunit-telemetry-bridge">installation page</a>.</p>
 <h2><a id="configuration" href="#configuration" class="mr-2" aria-hidden="true" title="Permalink">#</a>Configuration</h2>
 <p>Add the extension to your <code>phpunit.xml.dist</code>:</p>
-<pre class="language-xml" data-controller="syntax-highlight"><code class="language-xml">&lt;extensions&gt;
+<pre class="language-xml" data-controller="syntax-highlight"><code class="language-xml">
+&lt;extensions&gt;
     &lt;bootstrap class="Flow\Bridge\PHPUnit\Telemetry\TelemetryExtension"&gt;
         &lt;parameter name="service_name" value="my-test-suite"/&gt;
-        &lt;parameter name="otel_collector_url" value="http://localhost:4318"/&gt;
+        &lt;parameter name="endpoint" value="http://localhost:4318"/&gt;
         &lt;parameter name="emit_traces" value="true"/&gt;
         &lt;parameter name="emit_metrics" value="true"/&gt;
-        &lt;parameter name="emit_test_spans" value="false"/&gt;
-        &lt;parameter name="emit_test_case_spans" value="false"/&gt;
+        &lt;parameter name="emit_test_spans" value="true"/&gt;
+        &lt;parameter name="emit_test_case_spans" value="true"/&gt;
     &lt;/bootstrap&gt;
 &lt;/extensions&gt;
 </code></pre>
 <h2><a id="configuration-parameters" href="#configuration-parameters" class="mr-2" aria-hidden="true" title="Permalink">#</a>Configuration Parameters</h2>
+<h3><a id="shared" href="#shared" class="mr-2" aria-hidden="true" title="Permalink">#</a>Shared</h3>
 <table>
 <thead>
 <tr>
 <th>Parameter</th>
+<th>Environment variable</th>
 <th>Default</th>
 <th>Description</th>
 </tr>
@@ -523,36 +538,206 @@
 <tbody>
 <tr>
 <td><code>service_name</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_SERVICE_NAME</code></td>
 <td><code>phpunit</code></td>
-<td>Service name used in telemetry data</td>
+<td>Service name reported in telemetry data</td>
 </tr>
 <tr>
-<td><code>otel_collector_url</code></td>
+<td><code>transport</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_TRANSPORT</code></td>
+<td><code>curl</code></td>
+<td>Transport type: <code>curl</code> or <code>grpc</code></td>
+</tr>
+<tr>
+<td><code>endpoint</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_ENDPOINT</code></td>
 <td><code>http://localhost:4318</code></td>
-<td>OTLP HTTP endpoint URL</td>
+<td>OTLP endpoint URL (for <code>grpc</code> use host:port, e.g. <code>otel:4317</code>)</td>
+</tr>
+<tr>
+<td><code>headers</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_HEADERS</code></td>
+<td>—</td>
+<td>Additional headers (see <a href="#authentication">Authentication</a>)</td>
 </tr>
 <tr>
 <td><code>emit_traces</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_EMIT_TRACES</code></td>
 <td><code>true</code></td>
 <td>Enable/disable trace emission</td>
 </tr>
 <tr>
 <td><code>emit_metrics</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_EMIT_METRICS</code></td>
 <td><code>true</code></td>
 <td>Enable/disable metric emission</td>
 </tr>
 <tr>
 <td><code>emit_test_spans</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_EMIT_TEST_SPANS</code></td>
 <td><code>true</code></td>
 <td>Create individual spans for each test</td>
 </tr>
 <tr>
 <td><code>emit_test_case_spans</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_EMIT_TEST_CASE_SPANS</code></td>
 <td><code>true</code></td>
 <td>Create spans for test case classes</td>
 </tr>
 </tbody>
 </table>
+<h3><a id="curl-transport-transportcurl" href="#curl-transport-transportcurl" class="mr-2" aria-hidden="true" title="Permalink">#</a>Curl transport (<code>transport=curl</code>)</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Environment variable</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>curl_timeout</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_CURL_TIMEOUT</code></td>
+<td><code>30</code></td>
+<td>Request timeout in seconds</td>
+</tr>
+<tr>
+<td><code>curl_connect_timeout</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_CURL_CONNECT_TIMEOUT</code></td>
+<td><code>10</code></td>
+<td>Connection timeout in seconds</td>
+</tr>
+<tr>
+<td><code>curl_compression</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_CURL_COMPRESSION</code></td>
+<td><code>false</code></td>
+<td>Enable automatic response decompression</td>
+</tr>
+<tr>
+<td><code>curl_follow_redirects</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_CURL_FOLLOW_REDIRECTS</code></td>
+<td><code>true</code></td>
+<td>Follow HTTP redirects</td>
+</tr>
+<tr>
+<td><code>curl_max_redirects</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_CURL_MAX_REDIRECTS</code></td>
+<td><code>3</code></td>
+<td>Maximum number of redirects to follow</td>
+</tr>
+<tr>
+<td><code>curl_proxy</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_CURL_PROXY</code></td>
+<td>—</td>
+<td>Proxy server URL (e.g. <code>http://proxy:8080</code>)</td>
+</tr>
+<tr>
+<td><code>curl_ssl_verify_peer</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_CURL_SSL_VERIFY_PEER</code></td>
+<td><code>true</code></td>
+<td>Verify SSL peer certificate</td>
+</tr>
+<tr>
+<td><code>curl_ssl_verify_host</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_CURL_SSL_VERIFY_HOST</code></td>
+<td><code>true</code></td>
+<td>Verify SSL host name</td>
+</tr>
+<tr>
+<td><code>curl_ssl_cert_path</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_CURL_SSL_CERT_PATH</code></td>
+<td>—</td>
+<td>Path to client SSL certificate</td>
+</tr>
+<tr>
+<td><code>curl_ssl_key_path</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_CURL_SSL_KEY_PATH</code></td>
+<td>—</td>
+<td>Path to client SSL private key</td>
+</tr>
+<tr>
+<td><code>curl_ca_info_path</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_CURL_CA_INFO_PATH</code></td>
+<td>—</td>
+<td>Path to CA certificate bundle</td>
+</tr>
+<tr>
+<td><code>curl_serializer</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_CURL_SERIALIZER</code></td>
+<td><code>json</code></td>
+<td>Payload serializer: <code>json</code> or <code>protobuf</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="grpc-transport-transportgrpc" href="#grpc-transport-transportgrpc" class="mr-2" aria-hidden="true" title="Permalink">#</a>gRPC transport (<code>transport=grpc</code>)</h3>
+<p>Requires the <code>grpc</code> PHP extension and the <code>google/protobuf</code> + <code>open-telemetry/gen-otlp-protobuf</code> packages. Payload is
+always protobuf (per OTLP/gRPC spec).</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Environment variable</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>grpc_insecure</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_GRPC_INSECURE</code></td>
+<td><code>true</code></td>
+<td>Use insecure channel credentials</td>
+</tr>
+</tbody>
+</table>
+<h2><a id="authentication" href="#authentication" class="mr-2" aria-hidden="true" title="Permalink">#</a>Authentication</h2>
+<p>OTLP endpoints that require authentication (Grafana Alloy with Bearer auth, Honeycomb with <code>x-honeycomb-team</code>, vendor
+tenant headers, etc.) are configured through the <code>headers</code> parameter.</p>
+<p>Headers use the OpenTelemetry spec format: comma-separated <code>name=value</code> pairs, with values URL-encoded (so commas,
+spaces and equal signs inside values don't collide with the delimiter):</p>
+<pre class="language-xml" data-controller="syntax-highlight"><code class="language-xml">
+&lt;parameter name="endpoint" value="https://alloy.example.com:4318"/&gt;
+&lt;parameter name="headers" value="Authorization=Bearer%20xxx,X-Scope-OrgID=tenant-1"/&gt;
+</code></pre>
+<p>Invalid header format (missing <code>=</code>, empty name) will throw <code>InvalidArgumentException</code> when PHPUnit boots the extension.</p>
+<h2><a id="grpc-transport" href="#grpc-transport" class="mr-2" aria-hidden="true" title="Permalink">#</a>gRPC Transport</h2>
+<pre class="language-xml" data-controller="syntax-highlight"><code class="language-xml">
+&lt;extensions&gt;
+    &lt;bootstrap class="Flow\Bridge\PHPUnit\Telemetry\TelemetryExtension"&gt;
+        &lt;parameter name="transport" value="grpc"/&gt;
+        &lt;parameter name="endpoint" value="otel.example.com:4317"/&gt;
+        &lt;parameter name="headers" value="api-key=xxx"/&gt;
+        &lt;parameter name="grpc_insecure" value="false"/&gt;
+    &lt;/bootstrap&gt;
+&lt;/extensions&gt;
+</code></pre>
+<h2><a id="environment-variables" href="#environment-variables" class="mr-2" aria-hidden="true" title="Permalink">#</a>Environment Variables</h2>
+<p>Every parameter has an env var counterpart (see the tables above).</p>
+<p><strong>Precedence:</strong> environment variable &gt; <code>&lt;parameter&gt;</code> in <code>phpunit.xml</code> &gt; default. Empty-string env vars are treated as unset.</p>
+<p><strong>Lookup order:</strong> <code>$_ENV</code> → <code>$_SERVER</code> → <code>getenv()</code>. Values loaded by Symfony DotEnv or <code>vlucas/phpdotenv</code>
+(which populate <code>$_ENV</code> / <code>$_SERVER</code> but don't always call <code>putenv()</code>) are picked up the same as shell env vars.</p>
+<blockquote>
+<p>[!IMPORTANT]
+When setting boolean env vars through PHPUnit's <code>&lt;env&gt;</code> directive in <code>phpunit.xml.dist</code>, add <code>verbatim=&quot;true&quot;</code> — otherwise
+PHPUnit casts the bare strings <code>&quot;true&quot;</code> / <code>&quot;false&quot;</code> to PHP booleans, which <code>putenv()</code> then stringifies to <code>&quot;1&quot;</code> / <code>&quot;&quot;</code>, and
+the empty string is treated as unset by the resolver (falling back to the default).</p>
+<pre class="language-xml" data-controller="syntax-highlight"><code class="language-xml">&lt;env name="FLOW_PHPUNIT_OTEL_EMIT_TEST_SPANS" value="false" verbatim="true"/&gt;
+</code></pre>
+<p>This only applies to <code>&lt;env&gt;</code> in PHPUnit XML; real shell env vars and <code>.env</code> entries are already plain strings.</p>
+</blockquote>
+<p>Typical usage — credentials stay out of version control:</p>
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">export FLOW_PHPUNIT_OTEL_ENDPOINT="https://alloy.example.com:4318"
+export FLOW_PHPUNIT_OTEL_HEADERS="Authorization=Bearer%20${ALLOY_TOKEN}"
+
+./vendor/bin/phpunit
+</code></pre>
+<h2><a id="deprecation-otelcollectorurl" href="#deprecation-otelcollectorurl" class="mr-2" aria-hidden="true" title="Permalink">#</a>Deprecation: <code>otel_collector_url</code></h2>
+<p>The <code>otel_collector_url</code> parameter and its <code>FLOW_PHPUNIT_OTEL_COLLECTOR_URL</code> environment variable are deprecated and
+trigger <code>E_USER_DEPRECATED</code>. They remain functional as an alias for <code>endpoint</code> with <code>transport=curl</code>.</p>
+<p>Mixing the deprecated parameter with any of the new-shape parameters (<code>transport</code>, <code>endpoint</code>, <code>headers</code>, <code>curl_*</code>,
+<code>grpc_*</code>) throws <code>InvalidArgumentException</code> — migrate fully when you switch.</p>
 <h2><a id="features" href="#features" class="mr-2" aria-hidden="true" title="Permalink">#</a>Features</h2>
 <h3><a id="traces" href="#traces" class="mr-2" aria-hidden="true" title="Permalink">#</a>Traces</h3>
 <p>When enabled, the extension creates spans for:</p>
