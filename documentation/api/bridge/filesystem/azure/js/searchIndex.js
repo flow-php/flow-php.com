@@ -196,6 +196,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_blockSize"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AfileFastPath\u0028\u0029",
+            "name": "fileFastPath",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_fileFastPath"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AlistBlobOptions\u0028\u0029",
             "name": "listBlobOptions",
             "summary": "",
@@ -215,6 +220,11 @@ Search.appendIndex(
             "name": "withBlockSize",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_withBlockSize"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AwithFileFastPath\u0028\u0029",
+            "name": "withFileFastPath",
+            "summary": "When\u0020enabled\u0020\u0028default\u0029,\u0020list\u0028\u0029\u0020on\u0020a\u0020single\u002Dfile\u0020path\u0020will\u0020first\u0020attempt\u0020getBlobProperties\u0020on\u0020the\u0020blob.",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_withFileFastPath"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AwithListBlobInclude\u0028\u0029",
             "name": "withListBlobInclude",
