@@ -311,7 +311,7 @@
         
         <section id="documentation-page" class="mt-5 mb-5 px-4 lg:px-8 xl:px-12">
     <div class="grid grid-cols-1 lg:grid-cols-[16rem_1fr_14rem] xl:grid-cols-[18rem_1fr_16rem] gap-4">
-        <div class="order-1 lg:order-0 lg:sticky lg:top-0 lg:max-h-screen lg:overflow-y-auto lg:pr-4">
+        <div class="order-1 lg:order-0 lg:sticky lg:top-0 lg:max lg:overflow-y-auto lg:pr-4">
             <div class="grid grid-cols-2 lg:grid-cols-1">
     <div>
         <h1 class="hidden lg:block">
@@ -514,6 +514,13 @@ console commands for managing files across mounted protocols, and first-class Op
 <li><a href="#mkdir-is-intentionally-absent">mkdir is intentionally absent</a></li>
 </ul>
 </li>
+<li><a href="#symfony-cache-integration">Symfony Cache Integration</a>
+<ul>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#configuration-options-per-pool">Configuration Options (per pool)</a></li>
+<li><a href="#pruning">Pruning</a></li>
+</ul>
+</li>
 <li><a href="#multi-fstab-support">Multi-Fstab Support</a></li>
 <li><a href="#custom-filesystem-factory">Custom Filesystem Factory</a>
 <ul>
@@ -538,6 +545,7 @@ console commands for managing files across mounted protocols, and first-class Op
 <li><strong>Pluggable filesystem factories</strong> — register custom backends with the <code>#[AsFilesystemFactory]</code> attribute or a DI tag</li>
 <li><strong>Built-in factories</strong> — <code>file</code>, <code>memory</code>, <code>stdout</code>, <code>aws_s3</code>, and <code>azure_blob</code> ship out of the box</li>
 <li><strong>Console commands</strong> — <code>flow:filesystem:*</code> (alias <code>flow:fs:*</code>) for <code>ls</code>, <code>cat</code>, <code>cp</code>, <code>mv</code>, <code>rm</code>, <code>stat</code>, <code>touch</code> against any configured filesystem</li>
+<li><strong>Symfony Cache pools</strong> — register PSR-6 cache pools backed by any mounted filesystem (local disk, S3, Azure Blob …) when <a href="/documentation/components/bridges/symfony-filesystem-cache-bridge">flow-php/symfony-filesystem-cache-bridge</a> is installed</li>
 <li><strong>Telemetry integration</strong> — wrap every filesystem in <code>TraceableFilesystem</code> via OpenTelemetry</li>
 <li><strong>Multi-fstab support</strong> <em>(advanced)</em> — configure several independent <code>FilesystemTable</code> services when you really need them</li>
 </ul>
@@ -609,7 +617,7 @@ different protocols — two S3 buckets as <code>warehouse</code> and <code>archi
           bucket: '%env(S3_ARCHIVE_BUCKET)%'
           client_service_id: app.s3_client
 </code></pre>
-<p>The fstab is wired as a private <code>.flow_filesystem.fstab.&lt;name&gt;</code> service and aliased to
+<p>The fstab is wired as a private <code>.flow.filesystem.fstab.&lt;name&gt;</code> service and aliased to
 <code>Flow\Filesystem\FilesystemTable</code> for autowiring.</p>
 <h3><a id="default-fstab" href="#default-fstab" class="mr-2" aria-hidden="true" title="Permalink">#</a>Default Fstab</h3>
 <p>When you only have one fstab, the bundle picks it as the default automatically — no <code>default_fstab</code> key
@@ -909,6 +917,132 @@ bin/console flow:filesystem:cp file:///tmp/file.csv azure-blob://container/file.
 <p>Remote object stores (S3, Azure Blob, …) do not have a real concept of directories — they expose flat
 keyspaces with <code>/</code> as a convention. Rather than emulate <code>mkdir</code> inconsistently across backends, the bundle
 omits the command entirely. Directories appear when files appear inside them.</p>
+<h2><a id="symfony-cache-integration" href="#symfony-cache-integration" class="mr-2" aria-hidden="true" title="Permalink">#</a>Symfony Cache Integration</h2>
+<p>The bundle integrates with <a href="/documentation/components/bridges/symfony-filesystem-cache-bridge">flow-php/symfony-filesystem-cache-bridge</a> to provide PSR-6 / Symfony Cache pools backed by any filesystem already mounted in a fstab — local disk, S3, Azure Blob, anything the bundle's factories can build. The adapter implements <code>PruneableInterface</code>, so <code>cache:pool:prune</code> works out of the box.</p>
+<p>Each pool resolves its filesystem <strong>through a fstab mount</strong>, not by referencing a service id directly. Filesystems must already be declared under <code>flow_filesystem.fstabs.&lt;fstab&gt;.filesystems.&lt;protocol&gt;</code> before a cache pool can target them. This keeps fstab the single place where filesystems live and avoids the cache and the rest of the app drifting into separate filesystem definitions.</p>
+<h3><a id="setup" href="#setup" class="mr-2" aria-hidden="true" title="Permalink">#</a>Setup</h3>
+<ol>
+<li>Install the cache bridge:</li>
+</ol>
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">composer require flow-php/symfony-filesystem-cache-bridge:~0.36.0
+</code></pre>
+<ol start="2">
+<li>Define one or more pools under <code>flow_filesystem.cache.pools</code>. Each pool names a fstab mount (the YAML key under <code>filesystems:</code>) and a base path inside it:</li>
+</ol>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml"># config/packages/flow_filesystem.yaml
+flow_filesystem:
+    fstabs:
+        default:
+            filesystems:
+                file:
+                    type: file
+
+    cache:
+        pools:
+            app:
+                filesystem: file                                       # mount protocol from the default fstab
+                path: '%kernel.project_dir%/var/cache/flow/app'
+                default_lifetime: 3600
+
+            sessions:
+                filesystem: file
+                path: '%kernel.project_dir%/var/cache/flow/sessions'
+                namespace: 'sess.'
+                default_lifetime: 86400
+</code></pre>
+<p><code>fstab</code> is optional and defaults to the bundle's resolved default fstab — same rule the <code>flow:filesystem:*</code> CLI commands follow. Set it explicitly when you want a pool to use a non-default fstab:</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_filesystem:
+    default_fstab: primary
+    fstabs:
+        primary:
+            filesystems:
+                file:
+                    type: file
+        archive:
+            filesystems:
+                aws-s3:
+                    type: aws_s3
+                    bucket: '%env(ARCHIVE_BUCKET)%'
+
+    cache:
+        pools:
+            cold_storage:
+                fstab: archive
+                filesystem: aws-s3
+                path: '/cache/cold'
+                default_lifetime: 86400
+</code></pre>
+<p>Each pool registers as <code>flow.filesystem.cache.pool.&lt;name&gt;</code> (public).</p>
+<ol start="3">
+<li>Wire the pools into Symfony's cache framework via <code>cache.adapter.psr6</code>:</li>
+</ol>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml"># config/packages/framework.yaml
+framework:
+    cache:
+        pools:
+            cache.app_fs:
+                adapter: cache.adapter.psr6
+                provider: flow.filesystem.cache.pool.app
+
+            cache.sessions_fs:
+                adapter: cache.adapter.psr6
+                provider: flow.filesystem.cache.pool.sessions
+</code></pre>
+<p>The <code>cache.adapter.psr6</code> wrapper is required because Symfony's <code>CachePoolPass</code> overwrites the first constructor argument of any service used directly as <code>adapter:</code>, which conflicts with this bridge's strict <code>Filesystem</code> typing on argument 0.</p>
+<h3><a id="configuration-options-per-pool" href="#configuration-options-per-pool" class="mr-2" aria-hidden="true" title="Permalink">#</a>Configuration Options (per pool)</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fstab</code></td>
+<td>default fstab</td>
+<td>Fstab name. Defaults to the bundle's resolved default fstab when omitted.</td>
+</tr>
+<tr>
+<td><code>filesystem</code></td>
+<td><em>required</em></td>
+<td>Mount protocol within the chosen fstab (the YAML key under <code>filesystems:</code>).</td>
+</tr>
+<tr>
+<td><code>path</code></td>
+<td><em>required</em></td>
+<td>Base directory inside the chosen filesystem where cache files are stored.</td>
+</tr>
+<tr>
+<td><code>namespace</code></td>
+<td><code>''</code></td>
+<td>Cache pool namespace; chars in <code>[-+.A-Za-z0-9]</code> only.</td>
+</tr>
+<tr>
+<td><code>default_lifetime</code></td>
+<td><code>0</code></td>
+<td>Default TTL in seconds; <code>0</code> means no expiry.</td>
+</tr>
+<tr>
+<td><code>marshaller_service_id</code></td>
+<td><code>null</code></td>
+<td>Service ID of a custom <code>MarshallerInterface</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Validation runs at container compile time:</p>
+<ul>
+<li>A pool referencing a missing fstab fails with <code>flow_filesystem.cache.pools.&lt;name&gt;: fstab &quot;&lt;x&gt;&quot; is not declared. Available fstabs: [...]</code>.</li>
+<li>A pool referencing a mount protocol that is not registered in the chosen fstab fails with <code>flow_filesystem.cache.pools.&lt;name&gt;: filesystem &quot;&lt;x&gt;&quot; is not mounted in fstab &quot;&lt;y&gt;&quot;. Available mounts: [...]</code>.</li>
+<li><code>flow_filesystem.cache.pools</code> is configured but <code>flow-php/symfony-filesystem-cache-bridge</code> is not installed → fails fast with a message pointing at the missing package.</li>
+</ul>
+<h3><a id="pruning" href="#pruning" class="mr-2" aria-hidden="true" title="Permalink">#</a>Pruning</h3>
+<p>Schedule the standard Symfony command on a cron to remove expired files:</p>
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">php bin/console cache:pool:prune
+</code></pre>
+<p>Without pruning, expired files accumulate under each pool's directory. They are filtered out on read but only deleted when either the same key is fetched again or <code>cache:pool:prune</code> runs.</p>
+<p>For full documentation, see the <a href="/documentation/components/bridges/symfony-filesystem-cache-bridge">Symfony Filesystem Cache Bridge</a>.</p>
 <h2><a id="multi-fstab-support" href="#multi-fstab-support" class="mr-2" aria-hidden="true" title="Permalink">#</a>Multi-Fstab Support</h2>
 <blockquote>
 <p><strong>Advanced.</strong> Most applications should stick to a single fstab with multiple filesystems mounted under
@@ -938,7 +1072,7 @@ that should never bleed across to one another.</p>
           type: aws_s3
           bucket: '%env(ARCHIVE_BUCKET)%'
 </code></pre>
-<p>Each fstab gets its own <code>.flow_filesystem.fstab.&lt;name&gt;</code> service. The default fstab is automatically aliased
+<p>Each fstab gets its own <code>.flow.filesystem.fstab.&lt;name&gt;</code> service. The default fstab is automatically aliased
 to <code>Flow\Filesystem\FilesystemTable</code>, allowing direct type-hint injection without specifying a fstab name.
 Each named fstab is also aliased as <code>Flow\Filesystem\FilesystemTable $&lt;camelCasedName&gt;Fstab</code> for
 named-argument autowiring:</p>
@@ -1004,16 +1138,16 @@ final class MyFilesystemFactory implements FilesystemFactory
 }
 </code></pre>
 <p>As long as your service is autoconfigured (the default in <code>services.yaml</code> for everything under your <code>App\</code>
-namespace), the bundle automatically attaches the <code>flow_filesystem.factory</code> tag with the right <code>type</code>
+namespace), the bundle automatically attaches the <code>flow.filesystem.factory</code> tag with the right <code>type</code>
 attribute.</p>
 <h3><a id="explicit-tag" href="#explicit-tag" class="mr-2" aria-hidden="true" title="Permalink">#</a>Explicit Tag</h3>
 <p>Useful if your factory lives in a service that doesn't have autoconfigure enabled (e.g. third-party
 namespaces, manual definitions):</p>
 <pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">services:
-  app.flow_filesystem.factory.my_backend:
+  app.flow.filesystem.factory.my_backend:
     class: App\Flow\MyFilesystemFactory
     tags:
-      - { name: flow_filesystem.factory, type: my_backend }
+      - { name: flow.filesystem.factory, type: my_backend }
 </code></pre>
 <p>Either way, you can then mount the backend under any protocol in any fstab:</p>
 <pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_filesystem:
@@ -1040,7 +1174,7 @@ Flysystem Bundle wires individual filesystems keyed only by name.</li>
 <li><strong>Mount-protocol routing:</strong> filesystems inside a fstab are resolved at runtime via
 <code>$table-&gt;for('warehouse')</code> / <code>$table-&gt;for($path)</code>, so application code can hand-off across protocols
 without knowing service ids.</li>
-<li><strong>Factory tag:</strong> filesystem types are pluggable via a standard <code>flow_filesystem.factory</code> DI tag;
+<li><strong>Factory tag:</strong> filesystem types are pluggable via a standard <code>flow.filesystem.factory</code> DI tag;
 third-party libraries can ship their own factory without bundle changes.</li>
 <li><strong>CLI commands:</strong> <code>flow:filesystem:*</code> ship with the bundle and operate on any configured fstab.
 Flysystem Bundle does not ship any console commands.</li>
@@ -1097,7 +1231,7 @@ flow_filesystem:
                     async>
             </script>
         </div>
-        <div class="order-2 lg:order-2 lg:sticky lg:top-0 lg:max-h-screen lg:overflow-y-auto lg:pl-4">
+        <div class="order-2 lg:order-2 lg:sticky lg:top-0 lg:max lg:overflow-y-auto lg:pl-4">
             <div class="grid grid-cols-3 gap-2 lg:grid-cols-1">
     <div>
         <h2 class="hidden lg:block">Adapters</h2>
@@ -1229,19 +1363,28 @@ flow_filesystem:
         </div>
         <ul id="documentation-bridges" class="mb-5 hidden lg:block">
             <li>
+                <a href="/documentation/components/bridges/symfony-postgresql-bundle">PostgreSQL Bundle</a>
+            </li>
+            <li>
                 <a href="/documentation/components/bridges/symfony-filesystem-bundle">Filesystem Bundle</a>
             </li>
             <li>
                 <a href="/documentation/components/bridges/symfony-telemetry-bundle">Telemetry Bundle</a>
             </li>
             <li>
-                <a href="/documentation/components/bridges/symfony-postgresql-bundle">PostgreSQL Bundle</a>
+                <a href="/documentation/components/bridges/symfony-filesystem-cache-bridge">Filesystem Cache - Bridge</a>
             </li>
             <li>
-                <a href="/documentation/components/bridges/symfony-postgresql-messenger-bridge">PostgreSQL Messenger</a>
+                <a href="/documentation/components/bridges/symfony-postgresql-cache-bridge">PostgreSQL Cache - Bridge</a>
             </li>
             <li>
-                <a href="/documentation/components/bridges/symfony-http-foundation-bridge">Streamed Response</a>
+                <a href="/documentation/components/bridges/symfony-postgresql-messenger-bridge">PostgreSQL Messenger - Bridge</a>
+            </li>
+            <li>
+                <a href="/documentation/components/bridges/symfony-postgresql-session-bridge">PostgreSQL Session - Bridge</a>
+            </li>
+            <li>
+                <a href="/documentation/components/bridges/symfony-http-foundation-bridge">Streamed Response - Bridge</a>
             </li>
             <li>
                 <a href="/documentation/components/bridges/symfony-http-foundation-telemetry-bridge">HttpFoundation Telemetry - Bridge</a>
