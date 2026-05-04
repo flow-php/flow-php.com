@@ -416,6 +416,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_PSR18_TELEMETRY_BRIDGE"
         },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003APSR3_TELEMETRY_BRIDGE",
+            "name": "PSR3_TELEMETRY_BRIDGE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_PSR3_TELEMETRY_BRIDGE"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003APSR7_TELEMETRY_BRIDGE",
             "name": "PSR7_TELEMETRY_BRIDGE",
             "summary": "",

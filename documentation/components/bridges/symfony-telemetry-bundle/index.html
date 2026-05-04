@@ -546,6 +546,7 @@ backends.</p>
 </ul>
 </li>
 <li><a href="#named-instruments">Named Instruments</a></li>
+<li><a href="#main-logger">Main Logger</a></li>
 </ul>
 </li>
 <li><a href="#pattern-matching">Pattern Matching</a>
@@ -586,7 +587,7 @@ and cache</li>
       static:
         cache:
           enabled: true  # Cache static attributes (default: true)
-          path: null     # Cache path (default: kernel cache dir)
+          path: null     # Cache file path (default: sys_get_temp_dir()/flow_telemetry_resource.cache)
         os:
           enabled: true  # Detect os.type, os.name, os.version, os.description
         host:
@@ -655,6 +656,11 @@ and cache</li>
 </tbody>
 </table>
 <p>Static detectors are cached by default. Dynamic detectors run on every request/command.</p>
+<p>The cache file lives outside Symfony's cache lifecycle on purpose: building the Symfony cache
+(via <code>cache:warmup</code>) at image build time would otherwise freeze runtime-dependent attributes
+such as <code>host.name</code> or <code>process.pid</code> from the build container. Defaulting to
+<code>sys_get_temp_dir()</code> keeps the cache per-runtime and avoids that pitfall. To invalidate it,
+delete the cache file or restart the process; <code>cache:clear</code> does not touch it.</p>
 <p>Custom attributes override auto-detected values.</p>
 <h3><a id="clock-configuration" href="#clock-configuration" class="mr-2" aria-hidden="true" title="Permalink">#</a>Clock Configuration</h3>
 <ul>
@@ -1394,6 +1400,41 @@ instrument.</p>
     my_logger:
       version: '1.0.0'  # default: 'unknown'
 </code></pre>
+<h3><a id="main-logger" href="#main-logger" class="mr-2" aria-hidden="true" title="Permalink">#</a>Main Logger</h3>
+<p>The bundle depends on <a href="/documentation/components/bridges/psr3-telemetry-bridge">PSR-3 Telemetry Bridge</a> and registers a PSR-3 wrapper service for every named Telemetry logger at <code>flow.telemetry.&lt;name&gt;.logger.psr3</code>. This makes Flow Telemetry loggers usable as Symfony's <code>logger</code> service, removing the need for Monolog when telemetry is the only logging destination.</p>
+<p>In addition, the bundle always registers a <code>default</code> logger, meter, and tracer — <code>flow.telemetry.default.logger</code>, <code>flow.telemetry.default.logger.psr3</code>, <code>flow.telemetry.default.meter</code>, <code>flow.telemetry.default.tracer</code> — regardless of what is configured under <code>loggers</code>/<code>meters</code>/<code>tracers</code>. Defining your own <code>default</code> entry under those keys is allowed and will override the auto-default.</p>
+<p><strong>Options:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>framework_logger</code></td>
+<td><code>string | null</code></td>
+<td><code>null</code></td>
+<td>Name of a logger configured under <code>loggers</code> (or the always-available <code>default</code>) to alias as Symfony <code>logger</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Behavior:</strong></p>
+<ul>
+<li>When <code>framework_logger</code> is set, the bundle aliases the Symfony <code>logger</code> service to <code>flow.telemetry.&lt;framework_logger&gt;.logger.psr3</code>. If no logger with that name exists, container compilation fails with a clear error.</li>
+<li>When <code>framework_logger</code> is <code>null</code> and Symfony's <code>logger</code> service is the default <code>Symfony\Component\HttpKernel\Log\Logger</code>, the bundle automatically aliases <code>logger</code> to <code>flow.telemetry.default.logger.psr3</code>.</li>
+<li>When <code>framework_logger</code> is <code>null</code> and <code>logger</code> is provided by another bundle (Monolog, custom alias, etc.), the bundle leaves <code>logger</code> alone.</li>
+</ul>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_telemetry:
+  loggers:
+    app:
+      version: '1.0.0'
+
+  framework_logger: app   # Symfony "logger" service -&gt; flow.telemetry.app.logger.psr3
+</code></pre>
 <h2><a id="pattern-matching" href="#pattern-matching" class="mr-2" aria-hidden="true" title="Permalink">#</a>Pattern Matching</h2>
 <p>Several configuration options support pattern matching for exclusion lists (paths, commands, templates, etc.).</p>
 <h3><a id="exact-string-matching" href="#exact-string-matching" class="mr-2" aria-hidden="true" title="Permalink">#</a>Exact String Matching</h3>
@@ -1547,6 +1588,22 @@ flow_telemetry:
           otlp:
             transport:
               endpoint: '%env(OTEL_EXPORTER_OTLP_LOGS_ENDPOINT)%'
+
+  loggers:
+    app:
+      version: '%env(APP_VERSION)%'
+    audit:
+      version: '%env(APP_VERSION)%'
+      attributes:
+        channel: audit
+  meters:
+    business:
+      version: '%env(APP_VERSION)%'
+  tracers:
+    checkout:
+      version: '%env(APP_VERSION)%'
+
+  framework_logger: app   # Symfony "logger" service -&gt; flow.telemetry.app.logger.psr3
 
   instrumentation:
     http_kernel:
@@ -1771,6 +1828,9 @@ flow_telemetry:
             </li>
             <li>
                 <a href="/documentation/components/bridges/filesystem-async-aws-bridge">Filesystem S3</a>
+            </li>
+            <li>
+                <a href="/documentation/components/bridges/psr3-telemetry-bridge">PSR-3 Telemetry</a>
             </li>
             <li>
                 <a href="/documentation/components/bridges/psr7-telemetry-bridge">PSR-7 Telemetry</a>
