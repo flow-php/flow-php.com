@@ -7816,6 +7816,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-StatisticsCounter.html#method_addBatch"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsCounter\u003A\u003AaddNulls\u0028\u0029",
+            "name": "addNulls",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-StatisticsCounter.html#method_addNulls"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsCounter\u003A\u003Amax\u0028\u0029",
             "name": "max",
             "summary": "",
