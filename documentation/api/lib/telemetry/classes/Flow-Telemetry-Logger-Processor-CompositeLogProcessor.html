@@ -126,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-processor-compositelogprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php">CompositeLogProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -139,12 +139,6 @@
 <li>Combine batching with memory storage for testing</li>
 <li>Add custom processing alongside export</li>
 </ul>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$processor = new CompositeLogProcessor([
-    new BatchingLogProcessor($otlpExporter),
-    new MemoryLogProcessor(),
-]);
-</code></pre>
 </section>
 
 
@@ -180,13 +174,6 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_exporter">exporter()</a>
-    <span>
-                                &nbsp;: <a href="classes/Flow-Telemetry-Logger-LogExporter.html"><abbr title="\Flow\Telemetry\Logger\LogExporter">LogExporter</abbr></a>    </span>
-</dt>
-<dd>Get the exporter used by this processor.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_flush">flush()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -206,6 +193,13 @@
                                 &nbsp;: array&lt;string|int, <a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a>&gt;    </span>
 </dt>
 <dd>Get all processors in this composite.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_shutdown">shutdown()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Shutdown the processor.</dd>
 
     </dl>
 
@@ -235,14 +229,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-processor-compositelogprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php">CompositeLogProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$processors</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$processors</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorHandler</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorLogHandler">ErrorLogHandler</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -254,6 +248,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$processors</span>
                 : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a>&gt;</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$errorHandler</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorLogHandler">ErrorLogHandler</abbr></a>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -271,45 +272,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_exporter">
-        exporter()
-        <a href="classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_exporter" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-processor-compositelogprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php">CompositeLogProcessor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">35</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get the exporter used by this processor.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">exporter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Logger-LogExporter.html"><abbr title="\Flow\Telemetry\Logger\LogExporter">LogExporter</abbr></a></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Logger-LogExporter.html"><abbr title="\Flow\Telemetry\Logger\LogExporter">LogExporter</abbr></a></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_flush">
         flush()
         <a href="classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_flush" class="headerlink"><i class="fas fa-link"></i></a>
@@ -318,7 +280,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-processor-compositelogprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php">CompositeLogProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -363,7 +325,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-processor-compositelogprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php">CompositeLogProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -414,7 +376,7 @@ on filtering rules.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-processor-compositelogprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php">CompositeLogProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -438,6 +400,44 @@ on filtering rules.</p>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a>&gt;</span>
             </section>
 
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_shutdown">
+        shutdown()
+        <a href="classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_shutdown" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-processor-compositelogprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/CompositeLogProcessor.php">CompositeLogProcessor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Shutdown the processor.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">shutdown</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Implementations SHOULD flush() pending data before delegating shutdown
+to the underlying exporter. MUST be idempotent and MUST NOT throw.</p>
+</section>
+
+    
+    
+
+        
+    
+    
 </article>
             </section>
 
@@ -555,10 +555,10 @@ on filtering rules.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_exporter">exporter()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_flush">flush()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_process">process()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_processors">processors()</a></li>
+                                            <li class=""><a href="classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_shutdown">shutdown()</a></li>
                                     </ul>
             </li>
                     </ul>

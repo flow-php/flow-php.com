@@ -616,35 +616,15 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020VoidLogProcessor.",
             "url": "namespaces/flow-telemetry-dsl.html#function_void_log_processor"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\DSL\\void_span_exporter\u0028\u0029",
-            "name": "void_span_exporter",
-            "summary": "Create\u0020a\u0020VoidSpanExporter.",
-            "url": "namespaces/flow-telemetry-dsl.html#function_void_span_exporter"
+            "fqsen": "\\Flow\\Telemetry\\DSL\\void_exporter\u0028\u0029",
+            "name": "void_exporter",
+            "summary": "Create\u0020a\u0020VoidExporter.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_void_exporter"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\DSL\\void_metric_exporter\u0028\u0029",
-            "name": "void_metric_exporter",
-            "summary": "Create\u0020a\u0020VoidMetricExporter.",
-            "url": "namespaces/flow-telemetry-dsl.html#function_void_metric_exporter"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\DSL\\void_log_exporter\u0028\u0029",
-            "name": "void_log_exporter",
-            "summary": "Create\u0020a\u0020VoidLogExporter.",
-            "url": "namespaces/flow-telemetry-dsl.html#function_void_log_exporter"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\DSL\\memory_span_exporter\u0028\u0029",
-            "name": "memory_span_exporter",
-            "summary": "Create\u0020a\u0020MemorySpanExporter.",
-            "url": "namespaces/flow-telemetry-dsl.html#function_memory_span_exporter"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\DSL\\memory_metric_exporter\u0028\u0029",
-            "name": "memory_metric_exporter",
-            "summary": "Create\u0020a\u0020MemoryMetricExporter.",
-            "url": "namespaces/flow-telemetry-dsl.html#function_memory_metric_exporter"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\DSL\\memory_log_exporter\u0028\u0029",
-            "name": "memory_log_exporter",
-            "summary": "Create\u0020a\u0020MemoryLogExporter.",
-            "url": "namespaces/flow-telemetry-dsl.html#function_memory_log_exporter"
+            "fqsen": "\\Flow\\Telemetry\\DSL\\memory_exporter\u0028\u0029",
+            "name": "memory_exporter",
+            "summary": "Create\u0020a\u0020MemoryExporter.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_memory_exporter"
         },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\memory_span_processor\u0028\u0029",
             "name": "memory_span_processor",
@@ -721,20 +701,10 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020SeverityFilteringLogProcessor.",
             "url": "namespaces/flow-telemetry-dsl.html#function_severity_filtering_log_processor"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\DSL\\console_span_exporter\u0028\u0029",
-            "name": "console_span_exporter",
-            "summary": "Create\u0020a\u0020ConsoleSpanExporter.",
-            "url": "namespaces/flow-telemetry-dsl.html#function_console_span_exporter"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\DSL\\console_metric_exporter\u0028\u0029",
-            "name": "console_metric_exporter",
-            "summary": "Create\u0020a\u0020ConsoleMetricExporter.",
-            "url": "namespaces/flow-telemetry-dsl.html#function_console_metric_exporter"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\DSL\\console_log_exporter\u0028\u0029",
-            "name": "console_log_exporter",
-            "summary": "Create\u0020a\u0020ConsoleLogExporter.",
-            "url": "namespaces/flow-telemetry-dsl.html#function_console_log_exporter"
+            "fqsen": "\\Flow\\Telemetry\\DSL\\console_exporter\u0028\u0029",
+            "name": "console_exporter",
+            "summary": "Create\u0020a\u0020unified\u0020ConsoleExporter\u0020for\u0020logs,\u0020metrics,\u0020and\u0020spans.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_console_exporter"
         },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\console_span_options\u0028\u0029",
             "name": "console_span_options",
@@ -856,6 +826,36 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020resource\u0020detector\u0020chain.",
             "url": "namespaces/flow-telemetry-dsl.html#function_resource_detector"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\error_log_handler\u0028\u0029",
+            "name": "error_log_handler",
+            "summary": "Create\u0020the\u0020default\u0020ErrorLogHandler.\u0020Writes\u0020via\u0020PHP\u0027s\u0020error_log\u0028\u0029.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_error_log_handler"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\stream_error_handler\u0028\u0029",
+            "name": "stream_error_handler",
+            "summary": "Create\u0020a\u0020StreamHandler.\u0020Appends\u0020formatted\u0020Throwables\u0020\u0028one\u0020per\u0020line\u0029\u0020to\u0020a\u0020file\npath\u0020or\u0020php\u003A\/\/\u0020stream\u0020wrapper.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_stream_error_handler"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\syslog_error_handler\u0028\u0029",
+            "name": "syslog_error_handler",
+            "summary": "Create\u0020a\u0020SyslogHandler.\u0020Writes\u0020via\u0020openlog\/syslog\/closelog.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_syslog_error_handler"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\udp_syslog_error_handler\u0028\u0029",
+            "name": "udp_syslog_error_handler",
+            "summary": "Create\u0020a\u0020UdpSyslogHandler.\u0020Sends\u0020RFC\u00205424\u002Dstyle\u0020syslog\u0020frames\u0020over\u0020UDP.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_udp_syslog_error_handler"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\composite_error_handler\u0028\u0029",
+            "name": "composite_error_handler",
+            "summary": "Fan\u0020errors\u0020out\u0020to\u0020multiple\u0020handlers.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_composite_error_handler"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\null_error_handler\u0028\u0029",
+            "name": "null_error_handler",
+            "summary": "Discard\u0020every\u0020error.\u0020Use\u0020only\u0020in\u0020tests\u0020or\u0020for\u0020explicit\u0020silence.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_null_error_handler"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\EnforcedAttributes",
             "name": "EnforcedAttributes",
             "summary": "Result\u0020of\u0020enforcing\u0020limits\u0020on\u0020Attributes.",
@@ -876,6 +876,281 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-EnforcedAttributes.html#property_droppedAttributeCount"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\CompositeErrorHandler",
+            "name": "CompositeErrorHandler",
+            "summary": "Fans\u0020an\u0020error\u0020out\u0020to\u0020multiple\u0020handlers.\u0020Each\u0020child\u0020invocation\u0020is\u0020wrapped\u0020so\u0020a\nmisbehaving\u0020handler\u0020cannot\u0020prevent\u0020siblings\u0020from\u0020running.",
+            "url": "classes/Flow-Telemetry-ErrorHandler-CompositeErrorHandler.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\CompositeErrorHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-CompositeErrorHandler.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\CompositeErrorHandler\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-CompositeErrorHandler.html#method_handle"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\CompositeErrorHandler\u003A\u003Ahandlers\u0028\u0029",
+            "name": "handlers",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-CompositeErrorHandler.html#method_handlers"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorHandler",
+            "name": "ErrorHandler",
+            "summary": "Receives\u0020Throwables\u0020raised\u0020inside\u0020the\u0020SDK\u0020at\u0020runtime.",
+            "url": "classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorHandler\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html#method_handle"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorLogHandler",
+            "name": "ErrorLogHandler",
+            "summary": "Default\u0020ErrorHandler.\u0020Writes\u0020formatted\u0020Throwables\u0020via\u0020PHP\u0027s\u0020error_log\u0028\u0029\u0020\u2014\nstderr\u0020in\u0020CLI\u0020by\u0020default,\u0020or\u0020the\u0020error_log\u0020ini\u0020setting\u0020otherwise.",
+            "url": "classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorLogHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorLogHandler\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html#method_handle"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorLogMessageType",
+            "name": "ErrorLogMessageType",
+            "summary": "Backed\u0020counterpart\u0020of\u0020PHP\u0027s\u0020error_log\u0028\u0029\u0020\u0024message_type\u0020argument.",
+            "url": "classes/Flow-Telemetry-ErrorHandler-ErrorLogMessageType.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorLogMessageType\u003A\u003AEmail",
+            "name": "Email",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-ErrorLogMessageType.html#enumcase_Email"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorLogMessageType\u003A\u003AFile",
+            "name": "File",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-ErrorLogMessageType.html#enumcase_File"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorLogMessageType\u003A\u003AOperatingSystem",
+            "name": "OperatingSystem",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-ErrorLogMessageType.html#enumcase_OperatingSystem"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorLogMessageType\u003A\u003ASapi",
+            "name": "Sapi",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-ErrorLogMessageType.html#enumcase_Sapi"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\NullErrorHandler",
+            "name": "NullErrorHandler",
+            "summary": "Discards\u0020every\u0020Throwable.",
+            "url": "classes/Flow-Telemetry-ErrorHandler-NullErrorHandler.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\NullErrorHandler\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-NullErrorHandler.html#method_handle"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\StreamHandler",
+            "name": "StreamHandler",
+            "summary": "Appends\u0020formatted\u0020Throwables\u0020\u0028one\u0020per\u0020line\u0029\u0020to\u0020a\u0020file\u0020path\u0020or\u0020php\u003A\/\/\u0020stream\nwrapper.\u0020The\u0020stream\u0020is\u0020opened\u0020lazily\u0020on\u0020the\u0020first\u0020handle\u0028\u0029\u0020call\u0020and\u0020reused\nacross\u0020subsequent\u0020calls\u003B\u0020__destruct\u0028\u0029\u0020closes\u0020it.",
+            "url": "classes/Flow-Telemetry-ErrorHandler-StreamHandler.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\StreamHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-StreamHandler.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\StreamHandler\u003A\u003A__destruct\u0028\u0029",
+            "name": "__destruct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-StreamHandler.html#method___destruct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\StreamHandler\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-StreamHandler.html#method_handle"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility",
+            "name": "SyslogFacility",
+            "summary": "RFC\u00205424\u0020syslog\u0020facility\u0020codes.",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003AAuth",
+            "name": "Auth",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Auth"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003ACron",
+            "name": "Cron",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Cron"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003ADaemon",
+            "name": "Daemon",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Daemon"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003AKernel",
+            "name": "Kernel",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Kernel"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003ALocal0",
+            "name": "Local0",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Local0"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003ALocal1",
+            "name": "Local1",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Local1"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003ALocal2",
+            "name": "Local2",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Local2"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003ALocal3",
+            "name": "Local3",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Local3"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003ALocal4",
+            "name": "Local4",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Local4"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003ALocal5",
+            "name": "Local5",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Local5"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003ALocal6",
+            "name": "Local6",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Local6"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003ALocal7",
+            "name": "Local7",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Local7"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003ALpr",
+            "name": "Lpr",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Lpr"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003AMail",
+            "name": "Mail",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Mail"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003ANews",
+            "name": "News",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_News"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003ASyslog",
+            "name": "Syslog",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Syslog"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003AUser",
+            "name": "User",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_User"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogFacility\u003A\u003AUucp",
+            "name": "Uucp",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogFacility.html#enumcase_Uucp"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogHandler",
+            "name": "SyslogHandler",
+            "summary": "Writes\u0020formatted\u0020Throwables\u0020to\u0020the\u0020OS\u0020syslog\u0020facility\u0020via\u0020openlog\/syslog\/closelog.",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogHandler.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogHandler.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogHandler\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogHandler.html#method_handle"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogSeverity",
+            "name": "SyslogSeverity",
+            "summary": "RFC\u00205424\u0020syslog\u0020severity\u0020levels.",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogSeverity.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogSeverity\u003A\u003AAlert",
+            "name": "Alert",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogSeverity.html#enumcase_Alert"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogSeverity\u003A\u003ACritical",
+            "name": "Critical",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogSeverity.html#enumcase_Critical"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogSeverity\u003A\u003ADebug",
+            "name": "Debug",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogSeverity.html#enumcase_Debug"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogSeverity\u003A\u003AEmergency",
+            "name": "Emergency",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogSeverity.html#enumcase_Emergency"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogSeverity\u003A\u003AError",
+            "name": "Error",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogSeverity.html#enumcase_Error"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogSeverity\u003A\u003AInfo",
+            "name": "Info",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogSeverity.html#enumcase_Info"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogSeverity\u003A\u003ANotice",
+            "name": "Notice",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogSeverity.html#enumcase_Notice"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\SyslogSeverity\u003A\u003AWarning",
+            "name": "Warning",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-SyslogSeverity.html#enumcase_Warning"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\UdpSyslogHandler",
+            "name": "UdpSyslogHandler",
+            "summary": "Writes\u0020RFC\u00205424\u002Dstyle\u0020syslog\u0020frames\u0020over\u0020UDP\u0020to\u0020a\u0020remote\u0020collector.",
+            "url": "classes/Flow-Telemetry-ErrorHandler-UdpSyslogHandler.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\UdpSyslogHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-UdpSyslogHandler.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\UdpSyslogHandler\u003A\u003A__destruct\u0028\u0029",
+            "name": "__destruct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-UdpSyslogHandler.html#method___destruct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\UdpSyslogHandler\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ErrorHandler-UdpSyslogHandler.html#method_handle"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Exception\\Exception",
             "name": "Exception",
             "summary": "",
@@ -885,6 +1160,21 @@ Search.appendIndex(
             "name": "RuntimeException",
             "summary": "",
             "url": "classes/Flow-Telemetry-Exception-RuntimeException.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Exporter\\Exporter",
+            "name": "Exporter",
+            "summary": "Interface\u0020for\u0020exporting\u0020telemetry\u0020signals\u0020to\u0020external\u0020systems.",
+            "url": "classes/Flow-Telemetry-Exporter-Exporter.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Exporter\\Exporter\u003A\u003Aexport\u0028\u0029",
+            "name": "export",
+            "summary": "Export\u0020a\u0020signal\u0020batch.",
+            "url": "classes/Flow-Telemetry-Exporter-Exporter.html#method_export"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Exporter\\Exporter\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020exporter\u0020and\u0020any\u0020owned\u0020transports.",
+            "url": "classes/Flow-Telemetry-Exporter-Exporter.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\InstrumentationScope",
             "name": "InstrumentationScope",
@@ -986,21 +1276,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Logger-LogEntry.html#property_droppedAttributeCount"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\LogExporter",
-            "name": "LogExporter",
-            "summary": "Interface\u0020for\u0020exporting\u0020log\u0020records\u0020to\u0020external\u0020systems.",
-            "url": "classes/Flow-Telemetry-Logger-LogExporter.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\LogExporter\u003A\u003Aexport\u0028\u0029",
-            "name": "export",
-            "summary": "Export\u0020a\u0020batch\u0020of\u0020log\u0020entries.",
-            "url": "classes/Flow-Telemetry-Logger-LogExporter.html#method_export"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\LogExporter\u003A\u003Atransports\u0028\u0029",
-            "name": "transports",
-            "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
-            "url": "classes/Flow-Telemetry-Logger-LogExporter.html#method_transports"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Logger",
             "name": "Logger",
             "summary": "Logger\u0020implementation\u0020for\u0020emitting\u0020log\u0020records.",
@@ -1086,11 +1361,6 @@ Search.appendIndex(
             "summary": "Interface\u0020for\u0020processing\u0020log\u0020records.",
             "url": "classes/Flow-Telemetry-Logger-LogProcessor.html"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\LogProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Logger-LogProcessor.html#method_exporter"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "Export\u0020all\u0020pending\u0020log\u0020records.",
@@ -1100,6 +1370,11 @@ Search.appendIndex(
             "name": "process",
             "summary": "Process\u0020a\u0020log\u0020entry.",
             "url": "classes/Flow-Telemetry-Logger-LogProcessor.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\LogProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Logger-LogProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecord",
             "name": "LogRecord",
@@ -1221,11 +1496,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Logger-Processor-BatchingLogProcessor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\BatchingLogProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Logger-Processor-BatchingLogProcessor.html#method_exporter"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\BatchingLogProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "Export\u0020all\u0020pending\u0020log\u0020records.",
@@ -1236,6 +1506,11 @@ Search.appendIndex(
             "summary": "Process\u0020a\u0020log\u0020entry.",
             "url": "classes/Flow-Telemetry-Logger-Processor-BatchingLogProcessor.html#method_process"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\BatchingLogProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Logger-Processor-BatchingLogProcessor.html#method_shutdown"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\CompositeLogProcessor",
             "name": "CompositeLogProcessor",
             "summary": "Forwards\u0020log\u0020records\u0020to\u0020multiple\u0020processors.",
@@ -1245,11 +1520,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\CompositeLogProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_exporter"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\CompositeLogProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
@@ -1266,6 +1536,11 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020processors\u0020in\u0020this\u0020composite.",
             "url": "classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_processors"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\CompositeLogProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html#method_shutdown"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\PassThroughLogProcessor",
             "name": "PassThroughLogProcessor",
             "summary": "Exports\u0020each\u0020log\u0020record\u0020immediately\u0020when\u0020processed.",
@@ -1275,11 +1550,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Telemetry-Logger-Processor-PassThroughLogProcessor.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\PassThroughLogProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Logger-Processor-PassThroughLogProcessor.html#method_exporter"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\PassThroughLogProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
@@ -1291,6 +1561,11 @@ Search.appendIndex(
             "summary": "Process\u0020a\u0020log\u0020entry.",
             "url": "classes/Flow-Telemetry-Logger-Processor-PassThroughLogProcessor.html#method_process"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\PassThroughLogProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Logger-Processor-PassThroughLogProcessor.html#method_shutdown"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor",
             "name": "SeverityFilteringLogProcessor",
             "summary": "Filters\u0020log\u0020entries\u0020based\u0020on\u0020minimum\u0020severity\u0020level.",
@@ -1301,11 +1576,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html#method_exporter"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "Export\u0020all\u0020pending\u0020log\u0020records.",
@@ -1315,6 +1585,11 @@ Search.appendIndex(
             "name": "process",
             "summary": "Process\u0020a\u0020log\u0020entry.",
             "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Severity",
             "name": "Severity",
@@ -1926,21 +2201,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Metric.html#property_startTimestamp"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Meter\\MetricExporter",
-            "name": "MetricExporter",
-            "summary": "Interface\u0020for\u0020exporting\u0020metrics\u0020to\u0020external\u0020systems.",
-            "url": "classes/Flow-Telemetry-Meter-MetricExporter.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Meter\\MetricExporter\u003A\u003Aexport\u0028\u0029",
-            "name": "export",
-            "summary": "Export\u0020a\u0020batch\u0020of\u0020metrics.",
-            "url": "classes/Flow-Telemetry-Meter-MetricExporter.html#method_export"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Meter\\MetricExporter\u003A\u003Atransports\u0028\u0029",
-            "name": "transports",
-            "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
-            "url": "classes/Flow-Telemetry-Meter-MetricExporter.html#method_transports"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MetricLimits",
             "name": "MetricLimits",
             "summary": "Configuration\u0020for\u0020metric\u0020cardinality\u0020limits.",
@@ -1976,11 +2236,6 @@ Search.appendIndex(
             "summary": "Interface\u0020for\u0020processing\u0020metric\u0020measurements.",
             "url": "classes/Flow-Telemetry-Meter-MetricProcessor.html"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Meter\\MetricProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Meter-MetricProcessor.html#method_exporter"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MetricProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "Export\u0020all\u0020pending\u0020metrics.",
@@ -1990,6 +2245,11 @@ Search.appendIndex(
             "name": "process",
             "summary": "Process\u0020a\u0020metric\u0020measurement.",
             "url": "classes/Flow-Telemetry-Meter-MetricProcessor.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\MetricProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Meter-MetricProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MetricType",
             "name": "MetricType",
@@ -2026,11 +2286,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Processor-BatchingMetricProcessor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\BatchingMetricProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Meter-Processor-BatchingMetricProcessor.html#method_exporter"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\BatchingMetricProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "Export\u0020all\u0020pending\u0020metrics.",
@@ -2041,6 +2296,11 @@ Search.appendIndex(
             "summary": "Process\u0020a\u0020metric\u0020measurement.",
             "url": "classes/Flow-Telemetry-Meter-Processor-BatchingMetricProcessor.html#method_process"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\BatchingMetricProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Meter-Processor-BatchingMetricProcessor.html#method_shutdown"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\CompositeMetricProcessor",
             "name": "CompositeMetricProcessor",
             "summary": "Forwards\u0020metrics\u0020to\u0020multiple\u0020processors.",
@@ -2050,11 +2310,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Processor-CompositeMetricProcessor.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\CompositeMetricProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Meter-Processor-CompositeMetricProcessor.html#method_exporter"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\CompositeMetricProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
@@ -2071,6 +2326,11 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020processors\u0020in\u0020this\u0020composite.",
             "url": "classes/Flow-Telemetry-Meter-Processor-CompositeMetricProcessor.html#method_processors"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\CompositeMetricProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Meter-Processor-CompositeMetricProcessor.html#method_shutdown"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\PassThroughMetricProcessor",
             "name": "PassThroughMetricProcessor",
             "summary": "Exports\u0020each\u0020metric\u0020immediately\u0020when\u0020processed.",
@@ -2081,11 +2341,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Processor-PassThroughMetricProcessor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\PassThroughMetricProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Meter-Processor-PassThroughMetricProcessor.html#method_exporter"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\PassThroughMetricProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "Export\u0020all\u0020pending\u0020metrics.",
@@ -2095,6 +2350,11 @@ Search.appendIndex(
             "name": "process",
             "summary": "Process\u0020a\u0020metric\u0020measurement.",
             "url": "classes/Flow-Telemetry-Meter-Processor-PassThroughMetricProcessor.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\PassThroughMetricProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Meter-Processor-PassThroughMetricProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\TimeUnit",
             "name": "TimeUnit",
@@ -2356,25 +2616,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Propagation-W3CTraceContext.html#constant_HEADER_TRACESTATE"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogExporter",
-            "name": "ConsoleLogExporter",
-            "summary": "Console\u0020exporter\u0020for\u0020logs\u0020with\u0020ASCII\u0020table\u0020visualization.",
-            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogExporter.html"
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleExporter",
+            "name": "ConsoleExporter",
+            "summary": "Unified\u0020console\u0020exporter\u0020for\u0020logs,\u0020metrics,\u0020and\u0020spans.",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleExporter.html"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogExporter\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleExporter\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogExporter.html#method___construct"
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleExporter.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogExporter\u003A\u003Aexport\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleExporter\u003A\u003Aexport\u0028\u0029",
             "name": "export",
-            "summary": "Export\u0020a\u0020batch\u0020of\u0020log\u0020entries.",
-            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogExporter.html#method_export"
+            "summary": "Export\u0020a\u0020signal\u0020batch.",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleExporter.html#method_export"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogExporter\u003A\u003Atransports\u0028\u0029",
-            "name": "transports",
-            "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
-            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogExporter.html#method_transports"
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleExporter\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020exporter\u0020and\u0020any\u0020owned\u0020transports.",
+            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleExporter.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleLogOptions",
             "name": "ConsoleLogOptions",
@@ -2435,26 +2695,6 @@ Search.appendIndex(
             "name": "showDroppedAttributeCount",
             "summary": "",
             "url": "classes/Flow-Telemetry-Provider-Console-ConsoleLogOptions.html#property_showDroppedAttributeCount"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricExporter",
-            "name": "ConsoleMetricExporter",
-            "summary": "Console\u0020exporter\u0020for\u0020metrics\u0020with\u0020ASCII\u0020table\u0020visualization.",
-            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricExporter.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricExporter\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricExporter.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricExporter\u003A\u003Aexport\u0028\u0029",
-            "name": "export",
-            "summary": "Export\u0020a\u0020batch\u0020of\u0020metrics.",
-            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricExporter.html#method_export"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricExporter\u003A\u003Atransports\u0028\u0029",
-            "name": "transports",
-            "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
-            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleMetricExporter.html#method_transports"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleMetricOptions",
             "name": "ConsoleMetricOptions",
@@ -2631,26 +2871,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Provider-Console-ConsoleOutput.html#method_yellow"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanExporter",
-            "name": "ConsoleSpanExporter",
-            "summary": "Console\u0020exporter\u0020for\u0020spans\u0020with\u0020ASCII\u0020table\u0020visualization.",
-            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanExporter.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanExporter\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanExporter.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanExporter\u003A\u003Aexport\u0028\u0029",
-            "name": "export",
-            "summary": "Export\u0020a\u0020batch\u0020of\u0020spans.",
-            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanExporter.html#method_export"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanExporter\u003A\u003Atransports\u0028\u0029",
-            "name": "transports",
-            "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
-            "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanExporter.html#method_transports"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleSpanOptions",
             "name": "ConsoleSpanOptions",
             "summary": "",
@@ -2721,30 +2941,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Provider-Console-ConsoleSpanOptions.html#property_showDroppedCounts"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryLogExporter",
-            "name": "MemoryLogExporter",
-            "summary": "Exporter\u0020that\u0020stores\u0020log\u0020entries\u0020in\u0020memory\u0020for\u0020direct\u0020access.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryLogExporter.html"
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryExporter",
+            "name": "MemoryExporter",
+            "summary": "Exporter\u0020that\u0020stores\u0020telemetry\u0020batches\u0020in\u0020memory\u0020for\u0020direct\u0020access.",
+            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryLogExporter\u003A\u003Aentries\u0028\u0029",
-            "name": "entries",
-            "summary": "Get\u0020all\u0020exported\u0020log\u0020entries.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryLogExporter.html#method_entries"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryLogExporter\u003A\u003Aexport\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryExporter\u003A\u003Aexport\u0028\u0029",
             "name": "export",
-            "summary": "Export\u0020a\u0020batch\u0020of\u0020log\u0020entries.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryLogExporter.html#method_export"
+            "summary": "Export\u0020a\u0020signal\u0020batch.",
+            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method_export"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryLogExporter\u003A\u003Areset\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryExporter\u003A\u003Alogs\u0028\u0029",
+            "name": "logs",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method_logs"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryExporter\u003A\u003Ametrics\u0028\u0029",
+            "name": "metrics",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method_metrics"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryExporter\u003A\u003Areset\u0028\u0029",
             "name": "reset",
-            "summary": "Reset\u0020all\u0020stored\u0020data.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryLogExporter.html#method_reset"
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method_reset"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryLogExporter\u003A\u003Atransports\u0028\u0029",
-            "name": "transports",
-            "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryLogExporter.html#method_transports"
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryExporter\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020exporter\u0020and\u0020any\u0020owned\u0020transports.",
+            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method_shutdown"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryExporter\u003A\u003Aspans\u0028\u0029",
+            "name": "spans",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method_spans"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryLogProcessor",
             "name": "MemoryLogProcessor",
@@ -2776,11 +3006,6 @@ Search.appendIndex(
             "summary": "Filter\u0020log\u0020entries\u0020by\u0020severity.",
             "url": "classes/Flow-Telemetry-Provider-Memory-MemoryLogProcessor.html#method_entriesWithSeverity"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryLogProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryLogProcessor.html#method_exporter"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryLogProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "Export\u0020all\u0020pending\u0020log\u0020records.",
@@ -2793,33 +3018,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryLogProcessor\u003A\u003Areset\u0028\u0029",
             "name": "reset",
-            "summary": "Reset\u0020all\u0020stored\u0020data.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Provider-Memory-MemoryLogProcessor.html#method_reset"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricExporter",
-            "name": "MemoryMetricExporter",
-            "summary": "Exporter\u0020that\u0020stores\u0020metrics\u0020in\u0020memory\u0020for\u0020direct\u0020access.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryMetricExporter.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricExporter\u003A\u003Aexport\u0028\u0029",
-            "name": "export",
-            "summary": "Export\u0020a\u0020batch\u0020of\u0020metrics.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryMetricExporter.html#method_export"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricExporter\u003A\u003Ametrics\u0028\u0029",
-            "name": "metrics",
-            "summary": "Get\u0020all\u0020exported\u0020metrics.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryMetricExporter.html#method_metrics"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricExporter\u003A\u003Areset\u0028\u0029",
-            "name": "reset",
-            "summary": "Reset\u0020all\u0020stored\u0020data.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryMetricExporter.html#method_reset"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricExporter\u003A\u003Atransports\u0028\u0029",
-            "name": "transports",
-            "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryMetricExporter.html#method_transports"
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryLogProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryLogProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricProcessor",
             "name": "MemoryMetricProcessor",
@@ -2833,13 +3038,8 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricProcessor\u003A\u003AcountMetrics\u0028\u0029",
             "name": "countMetrics",
-            "summary": "Get\u0020the\u0020total\u0020number\u0020of\u0020recorded\u0020metrics.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Provider-Memory-MemoryMetricProcessor.html#method_countMetrics"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryMetricProcessor.html#method_exporter"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
@@ -2848,17 +3048,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricProcessor\u003A\u003Ametrics\u0028\u0029",
             "name": "metrics",
-            "summary": "Get\u0020all\u0020recorded\u0020metrics.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Provider-Memory-MemoryMetricProcessor.html#method_metrics"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricProcessor\u003A\u003AmetricsOfType\u0028\u0029",
             "name": "metricsOfType",
-            "summary": "Get\u0020all\u0020metrics\u0020of\u0020a\u0020specific\u0020type.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Provider-Memory-MemoryMetricProcessor.html#method_metricsOfType"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricProcessor\u003A\u003AmetricsWithName\u0028\u0029",
             "name": "metricsWithName",
-            "summary": "Get\u0020all\u0020metrics\u0020with\u0020a\u0020specific\u0020name.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Provider-Memory-MemoryMetricProcessor.html#method_metricsWithName"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricProcessor\u003A\u003Aprocess\u0028\u0029",
@@ -2868,33 +3068,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricProcessor\u003A\u003Areset\u0028\u0029",
             "name": "reset",
-            "summary": "Reset\u0020all\u0020stored\u0020data.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Provider-Memory-MemoryMetricProcessor.html#method_reset"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemorySpanExporter",
-            "name": "MemorySpanExporter",
-            "summary": "Exporter\u0020that\u0020stores\u0020spans\u0020in\u0020memory\u0020for\u0020direct\u0020access.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemorySpanExporter.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemorySpanExporter\u003A\u003Aexport\u0028\u0029",
-            "name": "export",
-            "summary": "Export\u0020a\u0020batch\u0020of\u0020spans.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemorySpanExporter.html#method_export"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemorySpanExporter\u003A\u003Areset\u0028\u0029",
-            "name": "reset",
-            "summary": "Reset\u0020all\u0020stored\u0020data.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemorySpanExporter.html#method_reset"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemorySpanExporter\u003A\u003Aspans\u0028\u0029",
-            "name": "spans",
-            "summary": "Get\u0020all\u0020exported\u0020spans.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemorySpanExporter.html#method_spans"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemorySpanExporter\u003A\u003Atransports\u0028\u0029",
-            "name": "transports",
-            "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemorySpanExporter.html#method_transports"
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryMetricProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryMetricProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemorySpanProcessor",
             "name": "MemorySpanProcessor",
@@ -2916,11 +3096,6 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020ended\u0020spans\u0020for\u0020a\u0020specific\u0020trace.",
             "url": "classes/Flow-Telemetry-Provider-Memory-MemorySpanProcessor.html#method_endedSpansForTrace"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemorySpanProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Provider-Memory-MemorySpanProcessor.html#method_exporter"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemorySpanProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "Export\u0020all\u0020pending\u0020spans\u0020and\u0020return\u0020success\u0020status.",
@@ -2938,8 +3113,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemorySpanProcessor\u003A\u003Areset\u0028\u0029",
             "name": "reset",
-            "summary": "Reset\u0020all\u0020stored\u0020data.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Provider-Memory-MemorySpanProcessor.html#method_reset"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemorySpanProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Provider-Memory-MemorySpanProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemorySpanProcessor\u003A\u003AstartedSpans\u0028\u0029",
             "name": "startedSpans",
@@ -2956,30 +3136,25 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020trace\u0020IDs\u0020that\u0020have\u0020spans\u0020recorded.",
             "url": "classes/Flow-Telemetry-Provider-Memory-MemorySpanProcessor.html#method_traceIds"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidLogExporter",
-            "name": "VoidLogExporter",
-            "summary": "No\u002Dop\u0020log\u0020exporter\u0020that\u0020discards\u0020all\u0020data.",
-            "url": "classes/Flow-Telemetry-Provider-Void-VoidLogExporter.html"
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidExporter",
+            "name": "VoidExporter",
+            "summary": "No\u002Dop\u0020exporter\u0020that\u0020discards\u0020all\u0020data.",
+            "url": "classes/Flow-Telemetry-Provider-Void-VoidExporter.html"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidLogExporter\u003A\u003Aexport\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidExporter\u003A\u003Aexport\u0028\u0029",
             "name": "export",
-            "summary": "Export\u0020a\u0020batch\u0020of\u0020log\u0020entries.",
-            "url": "classes/Flow-Telemetry-Provider-Void-VoidLogExporter.html#method_export"
+            "summary": "Export\u0020a\u0020signal\u0020batch.",
+            "url": "classes/Flow-Telemetry-Provider-Void-VoidExporter.html#method_export"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidLogExporter\u003A\u003Atransports\u0028\u0029",
-            "name": "transports",
-            "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
-            "url": "classes/Flow-Telemetry-Provider-Void-VoidLogExporter.html#method_transports"
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidExporter\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020exporter\u0020and\u0020any\u0020owned\u0020transports.",
+            "url": "classes/Flow-Telemetry-Provider-Void-VoidExporter.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidLogProcessor",
             "name": "VoidLogProcessor",
             "summary": "No\u002Dop\u0020log\u0020processor\u0020that\u0020discards\u0020all\u0020data.",
             "url": "classes/Flow-Telemetry-Provider-Void-VoidLogProcessor.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidLogProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Provider-Void-VoidLogProcessor.html#method_exporter"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidLogProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
@@ -2991,30 +3166,15 @@ Search.appendIndex(
             "summary": "Process\u0020a\u0020log\u0020entry.",
             "url": "classes/Flow-Telemetry-Provider-Void-VoidLogProcessor.html#method_process"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidMetricExporter",
-            "name": "VoidMetricExporter",
-            "summary": "No\u002Dop\u0020metric\u0020exporter\u0020that\u0020discards\u0020all\u0020data.",
-            "url": "classes/Flow-Telemetry-Provider-Void-VoidMetricExporter.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidMetricExporter\u003A\u003Aexport\u0028\u0029",
-            "name": "export",
-            "summary": "Export\u0020a\u0020batch\u0020of\u0020metrics.",
-            "url": "classes/Flow-Telemetry-Provider-Void-VoidMetricExporter.html#method_export"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidMetricExporter\u003A\u003Atransports\u0028\u0029",
-            "name": "transports",
-            "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
-            "url": "classes/Flow-Telemetry-Provider-Void-VoidMetricExporter.html#method_transports"
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidLogProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Provider-Void-VoidLogProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidMetricProcessor",
             "name": "VoidMetricProcessor",
             "summary": "No\u002Dop\u0020metric\u0020processor\u0020that\u0020discards\u0020all\u0020data.",
             "url": "classes/Flow-Telemetry-Provider-Void-VoidMetricProcessor.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidMetricProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Provider-Void-VoidMetricProcessor.html#method_exporter"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidMetricProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
@@ -3026,30 +3186,15 @@ Search.appendIndex(
             "summary": "Process\u0020a\u0020metric\u0020measurement.",
             "url": "classes/Flow-Telemetry-Provider-Void-VoidMetricProcessor.html#method_process"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidSpanExporter",
-            "name": "VoidSpanExporter",
-            "summary": "No\u002Dop\u0020span\u0020exporter\u0020that\u0020discards\u0020all\u0020data.",
-            "url": "classes/Flow-Telemetry-Provider-Void-VoidSpanExporter.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidSpanExporter\u003A\u003Aexport\u0028\u0029",
-            "name": "export",
-            "summary": "Export\u0020a\u0020batch\u0020of\u0020spans.",
-            "url": "classes/Flow-Telemetry-Provider-Void-VoidSpanExporter.html#method_export"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidSpanExporter\u003A\u003Atransports\u0028\u0029",
-            "name": "transports",
-            "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
-            "url": "classes/Flow-Telemetry-Provider-Void-VoidSpanExporter.html#method_transports"
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidMetricProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Provider-Void-VoidMetricProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidSpanProcessor",
             "name": "VoidSpanProcessor",
             "summary": "No\u002Dop\u0020span\u0020processor\u0020that\u0020discards\u0020all\u0020data.",
             "url": "classes/Flow-Telemetry-Provider-Void-VoidSpanProcessor.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidSpanProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Provider-Void-VoidSpanProcessor.html#method_exporter"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidSpanProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
@@ -3065,6 +3210,11 @@ Search.appendIndex(
             "name": "onStart",
             "summary": "Called\u0020when\u0020a\u0020span\u0020starts.",
             "url": "classes/Flow-Telemetry-Provider-Void-VoidSpanProcessor.html#method_onStart"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Void\\VoidSpanProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Provider-Void-VoidSpanProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ContainerAttribute",
             "name": "ContainerAttribute",
@@ -3451,25 +3601,75 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Resource.html#property_attributes"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Serializer\\Serializer",
-            "name": "Serializer",
-            "summary": "Interface\u0020for\u0020telemetry\u0020serializers.",
-            "url": "classes/Flow-Telemetry-Serializer-Serializer.html"
+            "fqsen": "\\Flow\\Telemetry\\Signal\\Signals",
+            "name": "Signals",
+            "summary": "A\u0020typed\u0020collection\u0020of\u0020telemetry\u0020items\u0020for\u0020one\u0020signal\u0020type.",
+            "url": "classes/Flow-Telemetry-Signal-Signals.html"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Serializer\\Serializer\u003A\u003AserializeLogs\u0028\u0029",
-            "name": "serializeLogs",
-            "summary": "Serialize\u0020log\u0020records\u0020batch\u0020to\u0020wire\u0020format.",
-            "url": "classes/Flow-Telemetry-Serializer-Serializer.html#method_serializeLogs"
+            "fqsen": "\\Flow\\Telemetry\\Signal\\Signals\u003A\u003Alogs\u0028\u0029",
+            "name": "logs",
+            "summary": "Construct\u0020a\u0020logs\u0020signal\u0020collection.",
+            "url": "classes/Flow-Telemetry-Signal-Signals.html#method_logs"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Serializer\\Serializer\u003A\u003AserializeMetrics\u0028\u0029",
-            "name": "serializeMetrics",
-            "summary": "Serialize\u0020metrics\u0020batch\u0020to\u0020wire\u0020format.",
-            "url": "classes/Flow-Telemetry-Serializer-Serializer.html#method_serializeMetrics"
+            "fqsen": "\\Flow\\Telemetry\\Signal\\Signals\u003A\u003Ametrics\u0028\u0029",
+            "name": "metrics",
+            "summary": "Construct\u0020a\u0020metrics\u0020signal\u0020collection.",
+            "url": "classes/Flow-Telemetry-Signal-Signals.html#method_metrics"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Serializer\\Serializer\u003A\u003AserializeSpans\u0028\u0029",
-            "name": "serializeSpans",
-            "summary": "Serialize\u0020spans\u0020batch\u0020to\u0020wire\u0020format.",
-            "url": "classes/Flow-Telemetry-Serializer-Serializer.html#method_serializeSpans"
+            "fqsen": "\\Flow\\Telemetry\\Signal\\Signals\u003A\u003Atraces\u0028\u0029",
+            "name": "traces",
+            "summary": "Construct\u0020a\u0020traces\u0020signal\u0020collection.",
+            "url": "classes/Flow-Telemetry-Signal-Signals.html#method_traces"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Signal\\Signals\u003A\u003AallLogs\u0028\u0029",
+            "name": "allLogs",
+            "summary": "Read\u0020the\u0020log\u0020entries\u0020from\u0020a\u0020logs\u0020signal\u0020collection.",
+            "url": "classes/Flow-Telemetry-Signal-Signals.html#method_allLogs"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Signal\\Signals\u003A\u003AallMetrics\u0028\u0029",
+            "name": "allMetrics",
+            "summary": "Read\u0020the\u0020metrics\u0020from\u0020a\u0020metrics\u0020signal\u0020collection.",
+            "url": "classes/Flow-Telemetry-Signal-Signals.html#method_allMetrics"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Signal\\Signals\u003A\u003AallSpans\u0028\u0029",
+            "name": "allSpans",
+            "summary": "Read\u0020the\u0020spans\u0020from\u0020a\u0020traces\u0020signal\u0020collection.",
+            "url": "classes/Flow-Telemetry-Signal-Signals.html#method_allSpans"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Signal\\Signals\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Signal-Signals.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Signal\\Signals\u003A\u003AisEmpty\u0028\u0029",
+            "name": "isEmpty",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Signal-Signals.html#method_isEmpty"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Signal\\Signals\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Signal-Signals.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Signal\\SignalType",
+            "name": "SignalType",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Signal-SignalType.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Signal\\SignalType\u003A\u003ALOGS",
+            "name": "LOGS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Signal-SignalType.html#enumcase_LOGS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Signal\\SignalType\u003A\u003AMETRICS",
+            "name": "METRICS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Signal-SignalType.html#enumcase_METRICS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Signal\\SignalType\u003A\u003ATRACES",
+            "name": "TRACES",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Signal-SignalType.html#enumcase_TRACES"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Telemetry",
             "name": "Telemetry",
@@ -3571,11 +3771,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Processor-BatchingSpanProcessor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\BatchingSpanProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Tracer-Processor-BatchingSpanProcessor.html#method_exporter"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\BatchingSpanProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "Export\u0020all\u0020pending\u0020spans\u0020and\u0020return\u0020success\u0020status.",
@@ -3591,6 +3786,11 @@ Search.appendIndex(
             "summary": "Called\u0020when\u0020a\u0020span\u0020starts.",
             "url": "classes/Flow-Telemetry-Tracer-Processor-BatchingSpanProcessor.html#method_onStart"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\BatchingSpanProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Tracer-Processor-BatchingSpanProcessor.html#method_shutdown"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\CompositeSpanProcessor",
             "name": "CompositeSpanProcessor",
             "summary": "Forwards\u0020spans\u0020to\u0020multiple\u0020processors.",
@@ -3600,11 +3800,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Processor-CompositeSpanProcessor.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\CompositeSpanProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Tracer-Processor-CompositeSpanProcessor.html#method_exporter"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\CompositeSpanProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
@@ -3626,6 +3821,11 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020processors\u0020in\u0020this\u0020composite.",
             "url": "classes/Flow-Telemetry-Tracer-Processor-CompositeSpanProcessor.html#method_processors"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\CompositeSpanProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Tracer-Processor-CompositeSpanProcessor.html#method_shutdown"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\PassThroughSpanProcessor",
             "name": "PassThroughSpanProcessor",
             "summary": "Exports\u0020each\u0020span\u0020immediately\u0020when\u0020it\u0020ends.",
@@ -3635,11 +3835,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\PassThroughSpanProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_exporter"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\PassThroughSpanProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
@@ -3655,6 +3850,11 @@ Search.appendIndex(
             "name": "onStart",
             "summary": "Called\u0020when\u0020a\u0020span\u0020starts.",
             "url": "classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_onStart"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\PassThroughSpanProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AlwaysOffSampler",
             "name": "AlwaysOffSampler",
@@ -4096,21 +4296,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020event\u0020timestamp.",
             "url": "classes/Flow-Telemetry-Tracer-SpanEvent.html#method_timestamp"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanExporter",
-            "name": "SpanExporter",
-            "summary": "Interface\u0020for\u0020exporting\u0020spans\u0020to\u0020external\u0020systems.",
-            "url": "classes/Flow-Telemetry-Tracer-SpanExporter.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanExporter\u003A\u003Aexport\u0028\u0029",
-            "name": "export",
-            "summary": "Export\u0020a\u0020batch\u0020of\u0020spans.",
-            "url": "classes/Flow-Telemetry-Tracer-SpanExporter.html#method_export"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanExporter\u003A\u003Atransports\u0028\u0029",
-            "name": "transports",
-            "summary": "Get\u0020the\u0020transports\u0020used\u0020by\u0020this\u0020exporter.",
-            "url": "classes/Flow-Telemetry-Tracer-SpanExporter.html#method_transports"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanKind",
             "name": "SpanKind",
             "summary": "Describes\u0020the\u0020relationship\u0020between\u0020a\u0020span\u0020and\u0020its\u0020parent\/children.",
@@ -4236,11 +4421,6 @@ Search.appendIndex(
             "summary": "Interface\u0020for\u0020processing\u0020spans\u0020when\u0020they\u0020start\u0020and\u0020end.",
             "url": "classes/Flow-Telemetry-Tracer-SpanProcessor.html"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanProcessor\u003A\u003Aexporter\u0028\u0029",
-            "name": "exporter",
-            "summary": "Get\u0020the\u0020exporter\u0020used\u0020by\u0020this\u0020processor.",
-            "url": "classes/Flow-Telemetry-Tracer-SpanProcessor.html#method_exporter"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "Export\u0020all\u0020pending\u0020spans\u0020and\u0020return\u0020success\u0020status.",
@@ -4255,6 +4435,11 @@ Search.appendIndex(
             "name": "onStart",
             "summary": "Called\u0020when\u0020a\u0020span\u0020starts.",
             "url": "classes/Flow-Telemetry-Tracer-SpanProcessor.html#method_onStart"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Tracer-SpanProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanStatus",
             "name": "SpanStatus",
@@ -4416,61 +4601,6 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020tracer\u0020for\u0020the\u0020given\u0020instrumentation\u0020scope.",
             "url": "classes/Flow-Telemetry-Tracer-TracerProvider.html#method_tracer"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Transport\\Transport",
-            "name": "Transport",
-            "summary": "Interface\u0020for\u0020sending\u0020telemetry\u0020data\u0020to\u0020backends.",
-            "url": "classes/Flow-Telemetry-Transport-Transport.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Transport\\Transport\u003A\u003AsendLogs\u0028\u0029",
-            "name": "sendLogs",
-            "summary": "Send\u0020log\u0020entries\u0020to\u0020the\u0020backend.",
-            "url": "classes/Flow-Telemetry-Transport-Transport.html#method_sendLogs"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Transport\\Transport\u003A\u003AsendMetrics\u0028\u0029",
-            "name": "sendMetrics",
-            "summary": "Send\u0020metrics\u0020to\u0020the\u0020backend.",
-            "url": "classes/Flow-Telemetry-Transport-Transport.html#method_sendMetrics"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Transport\\Transport\u003A\u003AsendSpans\u0028\u0029",
-            "name": "sendSpans",
-            "summary": "Send\u0020spans\u0020to\u0020the\u0020backend.",
-            "url": "classes/Flow-Telemetry-Transport-Transport.html#method_sendSpans"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Transport\\Transport\u003A\u003Ashutdown\u0028\u0029",
-            "name": "shutdown",
-            "summary": "Shutdown\u0020the\u0020transport,\u0020releasing\u0020any\u0020resources.",
-            "url": "classes/Flow-Telemetry-Transport-Transport.html#method_shutdown"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Transport\\TransportException",
-            "name": "TransportException",
-            "summary": "Exception\u0020thrown\u0020when\u0020a\u0020transport\u0020operation\u0020fails.",
-            "url": "classes/Flow-Telemetry-Transport-TransportException.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Transport\\VoidTransport",
-            "name": "VoidTransport",
-            "summary": "A\u0020no\u002Dop\u0020transport\u0020for\u0020exporters\u0020that\u0020don\u0027t\u0020need\u0020actual\u0020transport.",
-            "url": "classes/Flow-Telemetry-Transport-VoidTransport.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Transport\\VoidTransport\u003A\u003AsendLogs\u0028\u0029",
-            "name": "sendLogs",
-            "summary": "Send\u0020log\u0020entries\u0020to\u0020the\u0020backend.",
-            "url": "classes/Flow-Telemetry-Transport-VoidTransport.html#method_sendLogs"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Transport\\VoidTransport\u003A\u003AsendMetrics\u0028\u0029",
-            "name": "sendMetrics",
-            "summary": "Send\u0020metrics\u0020to\u0020the\u0020backend.",
-            "url": "classes/Flow-Telemetry-Transport-VoidTransport.html#method_sendMetrics"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Transport\\VoidTransport\u003A\u003AsendSpans\u0028\u0029",
-            "name": "sendSpans",
-            "summary": "Send\u0020spans\u0020to\u0020the\u0020backend.",
-            "url": "classes/Flow-Telemetry-Transport-VoidTransport.html#method_sendSpans"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Transport\\VoidTransport\u003A\u003Ashutdown\u0028\u0029",
-            "name": "shutdown",
-            "summary": "Shutdown\u0020the\u0020transport,\u0020releasing\u0020any\u0020resources.",
-            "url": "classes/Flow-Telemetry-Transport-VoidTransport.html#method_shutdown"
-        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -4496,10 +4626,20 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-telemetry-dsl.html"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\ErrorHandler",
+            "name": "ErrorHandler",
+            "summary": "",
+            "url": "namespaces/flow-telemetry-errorhandler.html"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Exception",
             "name": "Exception",
             "summary": "",
             "url": "namespaces/flow-telemetry-exception.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Exporter",
+            "name": "Exporter",
+            "summary": "",
+            "url": "namespaces/flow-telemetry-exporter.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger",
             "name": "Logger",
@@ -4571,10 +4711,10 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-telemetry-resource.html"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Serializer",
-            "name": "Serializer",
+            "fqsen": "\\Flow\\Telemetry\\Signal",
+            "name": "Signal",
             "summary": "",
-            "url": "namespaces/flow-telemetry-serializer.html"
+            "url": "namespaces/flow-telemetry-signal.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer",
             "name": "Tracer",
@@ -4590,10 +4730,5 @@ Search.appendIndex(
             "name": "Sampler",
             "summary": "",
             "url": "namespaces/flow-telemetry-tracer-sampler.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Transport",
-            "name": "Transport",
-            "summary": "",
-            "url": "namespaces/flow-telemetry-transport.html"
         }            ]
 );

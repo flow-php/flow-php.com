@@ -126,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-passthroughspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php">PassThroughSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -136,9 +136,6 @@
     <section class="phpdocumentor-description"><p>Unlike BatchingSpanProcessor, this processor exports spans synchronously
 one at a time. This is useful for debugging and development where
 immediate visibility of spans is more important than performance.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$processor = new PassThroughSpanProcessor($spanExporter);
-</code></pre>
 </section>
 
 
@@ -174,13 +171,6 @@ immediate visibility of spans is more important than performance.</p>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_exporter">exporter()</a>
-    <span>
-                                &nbsp;: <a href="classes/Flow-Telemetry-Tracer-SpanExporter.html"><abbr title="\Flow\Telemetry\Tracer\SpanExporter">SpanExporter</abbr></a>    </span>
-</dt>
-<dd>Get the exporter used by this processor.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_flush">flush()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -200,6 +190,13 @@ immediate visibility of spans is more important than performance.</p>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Called when a span starts.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_shutdown">shutdown()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Shutdown the processor.</dd>
 
     </dl>
 
@@ -229,14 +226,14 @@ immediate visibility of spans is more important than performance.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-passthroughspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php">PassThroughSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanExporter.html"><abbr title="\Flow\Telemetry\Tracer\SpanExporter">SpanExporter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Exporter-Exporter.html"><abbr title="\Flow\Telemetry\Exporter\Exporter">Exporter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorHandler</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorLogHandler">ErrorLogHandler</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -246,8 +243,15 @@ immediate visibility of spans is more important than performance.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$exporter</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanExporter.html"><abbr title="\Flow\Telemetry\Tracer\SpanExporter">SpanExporter</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Exporter-Exporter.html"><abbr title="\Flow\Telemetry\Exporter\Exporter">Exporter</abbr></a></span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$errorHandler</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorLogHandler">ErrorLogHandler</abbr></a>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -265,45 +269,6 @@ immediate visibility of spans is more important than performance.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_exporter">
-        exporter()
-        <a href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_exporter" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-passthroughspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php">PassThroughSpanProcessor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">28</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get the exporter used by this processor.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">exporter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-SpanExporter.html"><abbr title="\Flow\Telemetry\Tracer\SpanExporter">SpanExporter</abbr></a></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-SpanExporter.html"><abbr title="\Flow\Telemetry\Tracer\SpanExporter">SpanExporter</abbr></a></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_flush">
         flush()
         <a href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_flush" class="headerlink"><i class="fas fa-link"></i></a>
@@ -312,7 +277,7 @@ immediate visibility of spans is more important than performance.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-passthroughspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php">PassThroughSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -354,7 +319,7 @@ if all spans were successfully exported.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-passthroughspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php">PassThroughSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -402,7 +367,7 @@ is fully populated at this point (end time, status, all attributes).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-passthroughspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php">PassThroughSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -430,6 +395,44 @@ should avoid blocking operations in this method.</p>
             </dd>
             </dl>
 
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_shutdown">
+        shutdown()
+        <a href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_shutdown" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-passthroughspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/PassThroughSpanProcessor.php">PassThroughSpanProcessor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Shutdown the processor.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">shutdown</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Implementations SHOULD flush() pending data before delegating shutdown
+to the underlying exporter. MUST be idempotent and MUST NOT throw.</p>
+</section>
+
+    
     
 
         
@@ -552,10 +555,10 @@ should avoid blocking operations in this method.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_exporter">exporter()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_flush">flush()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_onEnd">onEnd()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_onStart">onStart()</a></li>
+                                            <li class=""><a href="classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html#method_shutdown">shutdown()</a></li>
                                     </ul>
             </li>
                     </ul>

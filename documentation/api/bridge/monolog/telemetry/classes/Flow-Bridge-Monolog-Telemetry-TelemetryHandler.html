@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/telemetry/src/Flow/Bridge/Monolog/Telemetry/TelemetryHandler.php"><a href="files/src-bridge-monolog-telemetry-src-flow-bridge-monolog-telemetry-telemetryhandler.html"><abbr title="src/bridge/monolog/telemetry/src/Flow/Bridge/Monolog/Telemetry/TelemetryHandler.php">TelemetryHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -201,14 +201,14 @@ $monolog-&gt;info('User logged in', ['user_id' =&gt; 123]);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/telemetry/src/Flow/Bridge/Monolog/Telemetry/TelemetryHandler.php"><a href="files/src-bridge-monolog-telemetry-src-flow-bridge-monolog-telemetry-telemetryhandler.html"><abbr title="src/bridge/monolog/telemetry/src/Flow/Bridge/Monolog/Telemetry/TelemetryHandler.php">TelemetryHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Logger\Logger">Logger</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Monolog-Telemetry-LogRecordConverter.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\LogRecordConverter">LogRecordConverter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$converter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Bridge-Monolog-Telemetry-LogRecordConverter.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\LogRecordConverter">LogRecordConverter</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Monolog\Level">Level</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Monolog\Level::Debug">Level::Debug</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bubble</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Logger\Logger">Logger</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Monolog-Telemetry-LogRecordConverter.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\LogRecordConverter">LogRecordConverter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$converter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Bridge-Monolog-Telemetry-LogRecordConverter.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\LogRecordConverter">LogRecordConverter</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Monolog\Level">Level</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Monolog\Level::Debug">Level::Debug</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bubble</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorHandler</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Telemetry\ErrorHandler\ErrorLogHandler">ErrorLogHandler</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -251,6 +251,13 @@ $monolog-&gt;info('User logged in', ['user_id' =&gt; 123]);
                     <section class="phpdocumentor-description"><p>Whether messages handled by this handler should bubble up to other handlers</p>
 </section>
 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$errorHandler</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Telemetry\ErrorHandler\ErrorLogHandler">ErrorLogHandler</abbr>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
             </dd>
             </dl>
 

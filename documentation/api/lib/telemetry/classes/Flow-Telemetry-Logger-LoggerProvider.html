@@ -122,7 +122,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/LoggerProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-loggerprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/LoggerProvider.php">LoggerProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -133,11 +133,11 @@
 The behavior (void, memory, OTLP, etc.) is determined by the injected processor.</p>
 <p>Example usage:</p>
 <pre class="prettyprint"><code class="language-php">// For testing with memory storage
-$processor = new MemoryProcessor($exporter, $exporter, $exporter);
+$processor = new MemoryLogProcessor(new MemoryExporter());
 $provider = new LoggerProvider($processor, new SystemClock());
 
 // For OTLP export
-$processor = batching_log_processor(otlp_log_exporter($transport));
+$processor = batching_log_processor(otlp_exporter($transport));
 $provider = new LoggerProvider($processor, new SystemClock());
 
 // For void/disabled logging
@@ -208,14 +208,14 @@ $logger-&gt;info('Application started');
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/LoggerProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-loggerprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/LoggerProvider.php">LoggerProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$processor</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clock</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Context-ContextStorage.html"><abbr title="\Flow\Telemetry\Context\ContextStorage">ContextStorage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contextStorage</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Logger-LogRecordLimits.html"><abbr title="\Flow\Telemetry\Logger\LogRecordLimits">LogRecordLimits</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limits</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Logger-LogRecordLimits.html"><abbr title="\Flow\Telemetry\Logger\LogRecordLimits">LogRecordLimits</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$processor</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clock</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Context-ContextStorage.html"><abbr title="\Flow\Telemetry\Context\ContextStorage">ContextStorage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contextStorage</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Logger-LogRecordLimits.html"><abbr title="\Flow\Telemetry\Logger\LogRecordLimits">LogRecordLimits</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limits</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Logger-LogRecordLimits.html"><abbr title="\Flow\Telemetry\Logger\LogRecordLimits">LogRecordLimits</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorHandler</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorLogHandler">ErrorLogHandler</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -251,6 +251,13 @@ $logger-&gt;info('Application started');
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$errorHandler</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorLogHandler">ErrorLogHandler</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -273,7 +280,7 @@ $logger-&gt;info('Application started');
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/LoggerProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-loggerprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/LoggerProvider.php">LoggerProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 

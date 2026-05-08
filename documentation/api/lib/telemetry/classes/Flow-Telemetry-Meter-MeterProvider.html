@@ -122,7 +122,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/MeterProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meterprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/MeterProvider.php">MeterProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -133,11 +133,11 @@
 The behavior (void, memory, OTLP, etc.) is determined by the injected processor.</p>
 <p>Example usage:</p>
 <pre class="prettyprint"><code class="language-php">// For testing with memory storage
-$processor = new MemoryProcessor($exporter, $exporter, $exporter);
+$processor = new MemoryMetricProcessor(new MemoryExporter());
 $provider = new MeterProvider($processor, new SystemClock());
 
 // For OTLP export
-$processor = batching_metric_processor(otlp_metric_exporter($transport));
+$processor = batching_metric_processor(otlp_exporter($transport));
 $provider = new MeterProvider($processor, new SystemClock());
 
 // For void/disabled metrics
@@ -209,14 +209,14 @@ $counter-&gt;add(1);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/MeterProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meterprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/MeterProvider.php">MeterProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricProcessor.html"><abbr title="\Flow\Telemetry\Meter\MetricProcessor">MetricProcessor</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$processor</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clock</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Telemetry\Provider\Clock\SystemClock">SystemClock</abbr>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-AggregationTemporality.html"><abbr title="\Flow\Telemetry\Meter\AggregationTemporality">AggregationTemporality</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$temporality</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Telemetry-Meter-AggregationTemporality.html#enumcase_CUMULATIVE"><abbr title="\Flow\Telemetry\Meter\AggregationTemporality::CUMULATIVE">AggregationTemporality::CUMULATIVE</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-Exemplar-ExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\ExemplarFilter">ExemplarFilter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exemplarFilter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-Exemplar-TraceBasedExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\TraceBasedExemplarFilter">TraceBasedExemplarFilter</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricLimits.html"><abbr title="\Flow\Telemetry\Meter\MetricLimits">MetricLimits</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limits</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-MetricLimits.html"><abbr title="\Flow\Telemetry\Meter\MetricLimits">MetricLimits</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricProcessor.html"><abbr title="\Flow\Telemetry\Meter\MetricProcessor">MetricProcessor</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$processor</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Clock\ClockInterface">ClockInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clock</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Telemetry\Provider\Clock\SystemClock">SystemClock</abbr>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-AggregationTemporality.html"><abbr title="\Flow\Telemetry\Meter\AggregationTemporality">AggregationTemporality</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$temporality</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Telemetry-Meter-AggregationTemporality.html#enumcase_CUMULATIVE"><abbr title="\Flow\Telemetry\Meter\AggregationTemporality::CUMULATIVE">AggregationTemporality::CUMULATIVE</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-Exemplar-ExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\ExemplarFilter">ExemplarFilter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exemplarFilter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-Exemplar-TraceBasedExemplarFilter.html"><abbr title="\Flow\Telemetry\Meter\Exemplar\TraceBasedExemplarFilter">TraceBasedExemplarFilter</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Meter-MetricLimits.html"><abbr title="\Flow\Telemetry\Meter\MetricLimits">MetricLimits</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limits</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Meter-MetricLimits.html"><abbr title="\Flow\Telemetry\Meter\MetricLimits">MetricLimits</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorHandler</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorLogHandler">ErrorLogHandler</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -259,6 +259,13 @@ $counter-&gt;add(1);
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$errorHandler</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorLogHandler">ErrorLogHandler</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -281,7 +288,7 @@ $counter-&gt;add(1);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/MeterProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meterprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/MeterProvider.php">MeterProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 

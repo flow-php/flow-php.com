@@ -16,10 +16,80 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#method_fromParameters"
         },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003ADEFAULT_BATCH_SIZE",
+            "name": "DEFAULT_BATCH_SIZE",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_DEFAULT_BATCH_SIZE"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003ADEFAULT_CONNECT_TIMEOUT_MS",
+            "name": "DEFAULT_CONNECT_TIMEOUT_MS",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_DEFAULT_CONNECT_TIMEOUT_MS"
+        },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003ADEFAULT_ENDPOINT",
             "name": "DEFAULT_ENDPOINT",
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_DEFAULT_ENDPOINT"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003ADEFAULT_FILE_PERMISSIONS",
+            "name": "DEFAULT_FILE_PERMISSIONS",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_DEFAULT_FILE_PERMISSIONS"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003ADEFAULT_MESSAGE_PREFIX",
+            "name": "DEFAULT_MESSAGE_PREFIX",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_DEFAULT_MESSAGE_PREFIX"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003ADEFAULT_SHUTDOWN_TIMEOUT_MS",
+            "name": "DEFAULT_SHUTDOWN_TIMEOUT_MS",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_DEFAULT_SHUTDOWN_TIMEOUT_MS"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003ADEFAULT_TIMEOUT_MS",
+            "name": "DEFAULT_TIMEOUT_MS",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_DEFAULT_TIMEOUT_MS"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003AERROR_HANDLER_LOG",
+            "name": "ERROR_HANDLER_LOG",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_ERROR_HANDLER_LOG"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003AERROR_HANDLER_NOOP",
+            "name": "ERROR_HANDLER_NOOP",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_ERROR_HANDLER_NOOP"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003AERROR_HANDLER_STREAM",
+            "name": "ERROR_HANDLER_STREAM",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_ERROR_HANDLER_STREAM"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003AERROR_HANDLER_SYSLOG",
+            "name": "ERROR_HANDLER_SYSLOG",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_ERROR_HANDLER_SYSLOG"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003AERROR_HANDLER_UDP_SYSLOG",
+            "name": "ERROR_HANDLER_UDP_SYSLOG",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_ERROR_HANDLER_UDP_SYSLOG"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003ATRANSPORT_CURL",
+            "name": "TRANSPORT_CURL",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_TRANSPORT_CURL"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003ATRANSPORT_GRPC",
+            "name": "TRANSPORT_GRPC",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_TRANSPORT_GRPC"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003ATRANSPORT_STREAM",
+            "name": "TRANSPORT_STREAM",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#constant_TRANSPORT_STREAM"
         },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003A\u0024serviceName",
             "name": "serviceName",
@@ -51,6 +121,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#property_emitTestCaseSpans"
         },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003A\u0024batchSize",
+            "name": "batchSize",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#property_batchSize"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003A\u0024errorHandler",
+            "name": "errorHandler",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#property_errorHandler"
+        },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\CurlTransportConfig",
             "name": "CurlTransportConfig",
             "summary": "",
@@ -71,15 +151,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-CurlTransportConfig.html#property_headers"
         },                {
-            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\CurlTransportConfig\u003A\u003A\u0024timeout",
-            "name": "timeout",
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\CurlTransportConfig\u003A\u003A\u0024timeoutMs",
+            "name": "timeoutMs",
             "summary": "",
-            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-CurlTransportConfig.html#property_timeout"
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-CurlTransportConfig.html#property_timeoutMs"
         },                {
-            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\CurlTransportConfig\u003A\u003A\u0024connectTimeout",
-            "name": "connectTimeout",
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\CurlTransportConfig\u003A\u003A\u0024connectTimeoutMs",
+            "name": "connectTimeoutMs",
             "summary": "",
-            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-CurlTransportConfig.html#property_connectTimeout"
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-CurlTransportConfig.html#property_connectTimeoutMs"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\CurlTransportConfig\u003A\u003A\u0024shutdownTimeoutMs",
+            "name": "shutdownTimeoutMs",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-CurlTransportConfig.html#property_shutdownTimeoutMs"
         },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\CurlTransportConfig\u003A\u003A\u0024compression",
             "name": "compression",
@@ -131,6 +216,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-CurlTransportConfig.html#property_serializer"
         },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\ErrorLogHandlerConfig",
+            "name": "ErrorLogHandlerConfig",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-ErrorLogHandlerConfig.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\ErrorLogHandlerConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-ErrorLogHandlerConfig.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\ErrorLogHandlerConfig\u003A\u003A\u0024messageType",
+            "name": "messageType",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-ErrorLogHandlerConfig.html#property_messageType"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\ErrorLogHandlerConfig\u003A\u003A\u0024expandNewlines",
+            "name": "expandNewlines",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-ErrorLogHandlerConfig.html#property_expandNewlines"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\ErrorLogHandlerConfig\u003A\u003A\u0024messagePrefix",
+            "name": "messagePrefix",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-ErrorLogHandlerConfig.html#property_messagePrefix"
+        },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\GrpcTransportConfig",
             "name": "GrpcTransportConfig",
             "summary": "",
@@ -155,6 +265,21 @@ Search.appendIndex(
             "name": "insecure",
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-GrpcTransportConfig.html#property_insecure"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\GrpcTransportConfig\u003A\u003A\u0024timeoutMs",
+            "name": "timeoutMs",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-GrpcTransportConfig.html#property_timeoutMs"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\GrpcTransportConfig\u003A\u003A\u0024shutdownTimeoutMs",
+            "name": "shutdownTimeoutMs",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-GrpcTransportConfig.html#property_shutdownTimeoutMs"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\NullErrorHandlerConfig",
+            "name": "NullErrorHandlerConfig",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-NullErrorHandlerConfig.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SerializerType",
             "name": "SerializerType",
@@ -220,6 +345,61 @@ Search.appendIndex(
             "name": "setSuiteSpan",
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SpanStack.html#method_setSuiteSpan"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\StreamErrorHandlerConfig",
+            "name": "StreamErrorHandlerConfig",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-StreamErrorHandlerConfig.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\StreamErrorHandlerConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-StreamErrorHandlerConfig.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\StreamErrorHandlerConfig\u003A\u003A\u0024destination",
+            "name": "destination",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-StreamErrorHandlerConfig.html#property_destination"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\StreamErrorHandlerConfig\u003A\u003A\u0024filePermissions",
+            "name": "filePermissions",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-StreamErrorHandlerConfig.html#property_filePermissions"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\StreamErrorHandlerConfig\u003A\u003A\u0024createDirectories",
+            "name": "createDirectories",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-StreamErrorHandlerConfig.html#property_createDirectories"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\StreamErrorHandlerConfig\u003A\u003A\u0024messagePrefix",
+            "name": "messagePrefix",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-StreamErrorHandlerConfig.html#property_messagePrefix"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\StreamTransportConfig",
+            "name": "StreamTransportConfig",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-StreamTransportConfig.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\StreamTransportConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-StreamTransportConfig.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\StreamTransportConfig\u003A\u003A\u0024destination",
+            "name": "destination",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-StreamTransportConfig.html#property_destination"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\StreamTransportConfig\u003A\u003A\u0024filePermissions",
+            "name": "filePermissions",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-StreamTransportConfig.html#property_filePermissions"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\StreamTransportConfig\u003A\u003A\u0024createDirectories",
+            "name": "createDirectories",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-StreamTransportConfig.html#property_createDirectories"
         },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Subscriber\\TestErroredSubscriber",
             "name": "TestErroredSubscriber",
@@ -356,6 +536,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Subscriber-TestSuiteStartedSubscriber.html#method_notify"
         },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SyslogErrorHandlerConfig",
+            "name": "SyslogErrorHandlerConfig",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SyslogErrorHandlerConfig.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SyslogErrorHandlerConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SyslogErrorHandlerConfig.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SyslogErrorHandlerConfig\u003A\u003A\u0024ident",
+            "name": "ident",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SyslogErrorHandlerConfig.html#property_ident"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SyslogErrorHandlerConfig\u003A\u003A\u0024facility",
+            "name": "facility",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SyslogErrorHandlerConfig.html#property_facility"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SyslogErrorHandlerConfig\u003A\u003A\u0024logOpts",
+            "name": "logOpts",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SyslogErrorHandlerConfig.html#property_logOpts"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SyslogErrorHandlerConfig\u003A\u003A\u0024severity",
+            "name": "severity",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SyslogErrorHandlerConfig.html#property_severity"
+        },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\TelemetryExtension",
             "name": "TelemetryExtension",
             "summary": "",
@@ -400,6 +610,41 @@ Search.appendIndex(
             "name": "setStatus",
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-TestStatusRegistry.html#method_setStatus"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\UdpSyslogErrorHandlerConfig",
+            "name": "UdpSyslogErrorHandlerConfig",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-UdpSyslogErrorHandlerConfig.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\UdpSyslogErrorHandlerConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-UdpSyslogErrorHandlerConfig.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\UdpSyslogErrorHandlerConfig\u003A\u003A\u0024host",
+            "name": "host",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-UdpSyslogErrorHandlerConfig.html#property_host"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\UdpSyslogErrorHandlerConfig\u003A\u003A\u0024port",
+            "name": "port",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-UdpSyslogErrorHandlerConfig.html#property_port"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\UdpSyslogErrorHandlerConfig\u003A\u003A\u0024ident",
+            "name": "ident",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-UdpSyslogErrorHandlerConfig.html#property_ident"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\UdpSyslogErrorHandlerConfig\u003A\u003A\u0024facility",
+            "name": "facility",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-UdpSyslogErrorHandlerConfig.html#property_facility"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\UdpSyslogErrorHandlerConfig\u003A\u003A\u0024severity",
+            "name": "severity",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-UdpSyslogErrorHandlerConfig.html#property_severity"
         },                {
             "fqsen": "\\",
             "name": "\\",
