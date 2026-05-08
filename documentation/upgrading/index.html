@@ -478,7 +478,23 @@
             </div>
 
             <h1><a id="upgrade-guide" href="#upgrade-guide" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrade Guide</h1>
-<div class="toc-wrapper" data-controller="toc"><div class="toc-header" data-action="click-&gt;toc#toggle"><span>Table of Contents</span><svg class="toc-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg></div><div class="toc-content"><ul class="table-of-contents"><li><a href="#upgrading-from-035x-to-036x">Upgrading from 0.35.x to 0.36.x</a>
+<div class="toc-wrapper" data-controller="toc"><div class="toc-header" data-action="click-&gt;toc#toggle"><span>Table of Contents</span><svg class="toc-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg></div><div class="toc-content"><ul class="table-of-contents"><li><a href="#upgrading-from-036x-to-037x">Upgrading from 0.36.x to 0.37.x</a>
+<ul>
+<li><a href="#1-flow-phptelemetry---per-signal-exporter-contracts-merged-into-exporter">1) flow-php/telemetry - Per-signal exporter contracts merged into Exporter</a></li>
+<li><a href="#2-flow-phptelemetry---transport-contract-relocated-to-otlp-bridge">2) flow-php/telemetry - Transport contract relocated to OTLP bridge</a></li>
+<li><a href="#3-flow-phptelemetry---processor-interfaces">3) flow-php/telemetry - Processor interfaces</a></li>
+<li><a href="#4-flow-phptelemetry---serializer-contract-removed">4) flow-php/telemetry - Serializer contract removed</a></li>
+<li><a href="#5-flow-phptelemetry---errorhandler-contract-added">5) flow-php/telemetry - ErrorHandler contract added</a></li>
+<li><a href="#6-flow-phptelemetry-otlp-bridge---httptransport-removed">6) flow-php/telemetry-otlp-bridge - HttpTransport removed</a></li>
+<li><a href="#7-flow-phptelemetry-otlp-bridge---per-signal-otlp-exporters-merged">7) flow-php/telemetry-otlp-bridge - Per-signal OTLP exporters merged</a></li>
+<li><a href="#8-flow-phptelemetry-otlp-bridge---curlgrpc-timeouts-switched-to-milliseconds">8) flow-php/telemetry-otlp-bridge - Curl/gRPC timeouts switched to milliseconds</a></li>
+<li><a href="#9-flow-phptelemetry-otlp-bridge---streamtransport-added">9) flow-php/telemetry-otlp-bridge - StreamTransport added</a></li>
+<li><a href="#10-flow-phptelemetry-otlp-bridge---open-telemetrygen-otlp-protobuf-dependency-dropped">10) flow-php/telemetry-otlp-bridge - open-telemetry/gen-otlp-protobuf dependency dropped</a></li>
+<li><a href="#11-flow-phpsymfony-telemetry-bundle---configuration-schema-rewrite">11) flow-php/symfony-telemetry-bundle - Configuration schema rewrite</a></li>
+<li><a href="#12-flow-phpphpunit-telemetry-bridge---configuration-parameters">12) flow-php/phpunit-telemetry-bridge - Configuration parameters</a></li>
+</ul>
+</li>
+<li><a href="#upgrading-from-035x-to-036x">Upgrading from 0.35.x to 0.36.x</a>
 <ul>
 <li><a href="#1-flow-phppostgresql---rawcondition-and-rawexpression-removed">1) flow-php/postgresql - RawCondition and RawExpression removed</a></li>
 <li><a href="#2-flow-phppostgresql---condition-now-extends-expression">2) flow-php/postgresql - Condition now extends Expression</a></li>
@@ -491,7 +507,7 @@
 <li><a href="#9-flow-phpsymfony-filesystem-bundle---filesystemfactory-interface-and-attribute-changed">9) flow-php/symfony-filesystem-bundle - FilesystemFactory interface and attribute changed</a></li>
 <li><a href="#10-flow-phpsymfony-filesystem-bundle---flowfilesystemls-cli-flags-reshuffled">10) flow-php/symfony-filesystem-bundle - flow:filesystem:ls CLI flags reshuffled</a></li>
 <li><a href="#11-flow-phpsymfony-filesystem-bundle---flowfilesystemstat-rejects-pattern-paths">11) flow-php/symfony-filesystem-bundle - flow:filesystem:stat rejects pattern paths</a></li>
-<li><a href="#12-flow-phpfilesystem-async-aws-bridge-flow-phpfilesystem-azure-bridge---dsl-protocol-is-the-last-argument-with-a-default">12) flow-php/filesystem-async-aws-bridge, flow-php/filesystem-azure-bridge - DSL protocol is the last argument with a default</a></li>
+<li><a href="#12-flow-phpfilesystem-async-aws-bridge">12) flow-php/filesystem-async-aws-bridge,</a></li>
 <li><a href="#13-flow-phpfilesystem---pathmemory-and-pathstdout-dsl-helpers-removed">13) flow-php/filesystem - path_memory() and path_stdout() DSL helpers removed</a></li>
 <li><a href="#14-flow-phpetl---configbuildercachefilesystem-and-externalsortfilesystem-added">14) flow-php/etl - ConfigBuilder::cacheFilesystem() and externalSortFilesystem() added</a></li>
 <li><a href="#15-flow-phpsymfony-http-foundation-bridge---output-interface-collapsed-to-a-single-loaderpath">15) flow-php/symfony-http-foundation-bridge - Output interface collapsed to a single loader(Path)</a></li>
@@ -610,6 +626,462 @@
 </li></ul></div></div>
 <p>This document provides guidelines for upgrading between versions of Flow PHP.
 Please follow the instructions for your specific version to ensure a smooth upgrade process.</p>
+<hr />
+<h2><a id="upgrading-from-036x-to-037x" href="#upgrading-from-036x-to-037x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.36.x to 0.37.x</h2>
+<h3><a id="1-flow-phptelemetry---per-signal-exporter-contracts-merged-into-exporter" href="#1-flow-phptelemetry---per-signal-exporter-contracts-merged-into-exporter" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) <code>flow-php/telemetry</code> - Per-signal exporter contracts merged into <code>Exporter</code></h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Flow\Telemetry\Tracer\SpanExporter</code> (interface)</td>
+<td><code>Flow\Telemetry\Exporter\Exporter</code></td>
+</tr>
+<tr>
+<td><code>Flow\Telemetry\Meter\MetricExporter</code> (interface)</td>
+<td><code>Flow\Telemetry\Exporter\Exporter</code></td>
+</tr>
+<tr>
+<td><code>Flow\Telemetry\Logger\LogExporter</code> (interface)</td>
+<td><code>Flow\Telemetry\Exporter\Exporter</code></td>
+</tr>
+<tr>
+<td><code>VoidSpanExporter</code>, <code>VoidMetricExporter</code>, <code>VoidLogExporter</code></td>
+<td><code>Flow\Telemetry\Provider\Void\VoidExporter</code></td>
+</tr>
+<tr>
+<td><code>MemorySpanExporter</code>, <code>MemoryMetricExporter</code>, <code>MemoryLogExporter</code></td>
+<td><code>Flow\Telemetry\Provider\Memory\MemoryExporter</code></td>
+</tr>
+<tr>
+<td><code>ConsoleSpanExporter</code>, <code>ConsoleMetricExporter</code>, <code>ConsoleLogExporter</code></td>
+<td><code>Flow\Telemetry\Provider\Console\ConsoleExporter</code></td>
+</tr>
+<tr>
+<td><code>void_span_exporter()</code> / <code>void_metric_exporter()</code> / <code>void_log_exporter()</code></td>
+<td><code>void_exporter()</code></td>
+</tr>
+<tr>
+<td><code>memory_span_exporter()</code> / <code>memory_metric_exporter()</code> / <code>memory_log_exporter()</code></td>
+<td><code>memory_exporter()</code></td>
+</tr>
+<tr>
+<td><code>console_span_exporter()</code> / <code>console_metric_exporter()</code> / <code>console_log_exporter()</code></td>
+<td><code>console_exporter()</code></td>
+</tr>
+<tr>
+<td><code>MemoryLogExporter::entries()</code></td>
+<td><code>MemoryExporter::logs()</code></td>
+</tr>
+<tr>
+<td><code>MemorySpanExporter::spans()</code></td>
+<td><code>MemoryExporter::spans()</code></td>
+</tr>
+<tr>
+<td><code>MemoryMetricExporter::metrics()</code></td>
+<td><code>MemoryExporter::metrics()</code></td>
+</tr>
+<tr>
+<td><code>Exporter::transports()</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>(Span|Metric|Log)Exporter::export(array $items) : bool</code></td>
+<td><code>Exporter::export(Flow\Telemetry\Signal\Signals $signal) : bool</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>Exporter::shutdown() : void</code> (added)</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="2-flow-phptelemetry---transport-contract-relocated-to-otlp-bridge" href="#2-flow-phptelemetry---transport-contract-relocated-to-otlp-bridge" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) <code>flow-php/telemetry</code> - <code>Transport</code> contract relocated to OTLP bridge</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Flow\Telemetry\Transport\Transport</code></td>
+<td><code>Flow\Bridge\Telemetry\OTLP\Transport\Transport</code></td>
+</tr>
+<tr>
+<td><code>Flow\Telemetry\Transport\TransportException</code></td>
+<td><code>Flow\Bridge\Telemetry\OTLP\Transport\TransportException</code></td>
+</tr>
+<tr>
+<td><code>Flow\Telemetry\Transport\VoidTransport</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>Transport::sendSpans()</code> / <code>sendMetrics()</code> / <code>sendLogs()</code></td>
+<td><code>Transport::send(Flow\Telemetry\Signal\Signals $signal)</code></td>
+</tr>
+<tr>
+<td><code>Flow\Bridge\Telemetry\OTLP\Exception\Exception</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>Flow\Bridge\Telemetry\OTLP\Exception\TransportException</code></td>
+<td><code>Flow\Bridge\Telemetry\OTLP\Transport\TransportException</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="3-flow-phptelemetry---processor-interfaces" href="#3-flow-phptelemetry---processor-interfaces" class="mr-2" aria-hidden="true" title="Permalink">#</a>3) <code>flow-php/telemetry</code> - Processor interfaces</h3>
+<p>Applies to <code>SpanProcessor</code>, <code>MetricProcessor</code>, <code>LogProcessor</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>exporter() : SpanExporter</code> (etc.)</td>
+<td>removed</td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>shutdown() : void</code> (added)</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="4-flow-phptelemetry---serializer-contract-removed" href="#4-flow-phptelemetry---serializer-contract-removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>4) <code>flow-php/telemetry</code> - <code>Serializer</code> contract removed</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Flow\Telemetry\Serializer\Serializer</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>Flow\Bridge\Telemetry\OTLP\Serializer\GrpcSerializer</code> (interface)</td>
+<td>renamed to <code>Flow\Bridge\Telemetry\OTLP\Serializer\GrpcRequestFactory</code> (class)</td>
+</tr>
+<tr>
+<td><code>CurlTransport(string $endpoint, Serializer $serializer, …)</code></td>
+<td><code>CurlTransport(string $endpoint, JsonSerializer|ProtobufSerializer $serializer = new JsonSerializer(), …)</code></td>
+</tr>
+<tr>
+<td><code>GrpcTransport(string $endpoint, ProtobufSerializer $serializer, …)</code></td>
+<td><code>GrpcTransport(string $endpoint, …)</code> — serializer parameter removed</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="5-flow-phptelemetry---errorhandler-contract-added" href="#5-flow-phptelemetry---errorhandler-contract-added" class="mr-2" aria-hidden="true" title="Permalink">#</a>5) <code>flow-php/telemetry</code> - <code>ErrorHandler</code> contract added</h3>
+<p>New namespace <code>Flow\Telemetry\ErrorHandler</code> with: <code>ErrorHandler</code> (interface), <code>ErrorLogHandler</code>, <code>NullErrorHandler</code>,
+<code>StreamHandler</code>, <code>SyslogHandler</code>, <code>UdpSyslogHandler</code>, <code>CompositeErrorHandler</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>otlp_exporter($transport)</code></td>
+<td><code>otlp_exporter($transport, ErrorHandler $errorHandler = new ErrorLogHandler())</code></td>
+</tr>
+<tr>
+<td><code>telemetry_handler($logger, $converter, $level, $bubble)</code> (Monolog)</td>
+<td><code>telemetry_handler($logger, $converter, $level, $bubble, ErrorHandler $errorHandler = new ErrorLogHandler())</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="6-flow-phptelemetry-otlp-bridge---httptransport-removed" href="#6-flow-phptelemetry-otlp-bridge---httptransport-removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>6) <code>flow-php/telemetry-otlp-bridge</code> - <code>HttpTransport</code> removed</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Flow\Bridge\Telemetry\OTLP\Transport\HttpTransport</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>otlp_http_transport()</code></td>
+<td>removed (use <code>otlp_curl_transport()</code>)</td>
+</tr>
+<tr>
+<td><code>psr/http-client</code> (runtime require)</td>
+<td>removed (dev only)</td>
+</tr>
+<tr>
+<td><code>psr/http-factory</code> (runtime require)</td>
+<td>removed (dev only)</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="7-flow-phptelemetry-otlp-bridge---per-signal-otlp-exporters-merged" href="#7-flow-phptelemetry-otlp-bridge---per-signal-otlp-exporters-merged" class="mr-2" aria-hidden="true" title="Permalink">#</a>7) <code>flow-php/telemetry-otlp-bridge</code> - Per-signal OTLP exporters merged</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>OTLPSpanExporter</code>, <code>OTLPMetricExporter</code>, <code>OTLPLogExporter</code></td>
+<td><code>Flow\Bridge\Telemetry\OTLP\Exporter\OTLPExporter</code></td>
+</tr>
+<tr>
+<td><code>otlp_span_exporter($transport)</code></td>
+<td><code>otlp_exporter($transport)</code></td>
+</tr>
+<tr>
+<td><code>otlp_metric_exporter($transport)</code></td>
+<td><code>otlp_exporter($transport)</code></td>
+</tr>
+<tr>
+<td><code>otlp_log_exporter($transport)</code></td>
+<td><code>otlp_exporter($transport)</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="8-flow-phptelemetry-otlp-bridge---curlgrpc-timeouts-switched-to-milliseconds" href="#8-flow-phptelemetry-otlp-bridge---curlgrpc-timeouts-switched-to-milliseconds" class="mr-2" aria-hidden="true" title="Permalink">#</a>8) <code>flow-php/telemetry-otlp-bridge</code> - Curl/gRPC timeouts switched to milliseconds</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CurlTransportOptions::withTimeout(int $seconds)</code>, default <code>30</code></td>
+<td><code>CurlTransportOptions::withTimeout(int $milliseconds)</code>, default <code>250</code></td>
+</tr>
+<tr>
+<td><code>CurlTransportOptions::withConnectTimeout(int $seconds)</code>, default <code>10</code></td>
+<td><code>CurlTransportOptions::withConnectTimeout(int $milliseconds)</code>, default <code>250</code></td>
+</tr>
+<tr>
+<td><code>CurlTransportOptions::timeout()</code></td>
+<td><code>CurlTransportOptions::timeoutMs()</code></td>
+</tr>
+<tr>
+<td><code>CurlTransportOptions::connectTimeout()</code></td>
+<td><code>CurlTransportOptions::connectTimeoutMs()</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>CurlTransportOptions::withShutdownTimeout(int $milliseconds)</code> / <code>shutdownTimeoutMs()</code>, default <code>5000</code> (added)</td>
+</tr>
+<tr>
+<td><code>otlp_curl_transport(string $endpoint, Serializer $serializer, CurlTransportOptions $options)</code></td>
+<td><code>otlp_curl_transport(string $endpoint, JsonSerializer|ProtobufSerializer $serializer = new JsonSerializer(), CurlTransportOptions $options = new CurlTransportOptions(), ?Transport $failover = null)</code></td>
+</tr>
+<tr>
+<td><code>otlp_grpc_transport(string $endpoint, ProtobufSerializer $serializer, array $headers = [], bool $insecure = true)</code></td>
+<td><code>otlp_grpc_transport(string $endpoint, array $headers = [], bool $insecure = true, int $timeoutMs = 250, int $shutdownTimeoutMs = 5000, ?Transport $failover = null)</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="9-flow-phptelemetry-otlp-bridge---streamtransport-added" href="#9-flow-phptelemetry-otlp-bridge---streamtransport-added" class="mr-2" aria-hidden="true" title="Permalink">#</a>9) <code>flow-php/telemetry-otlp-bridge</code> - <code>StreamTransport</code> added</h3>
+<p>New transport, no removal counterpart.</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td><code>Flow\Bridge\Telemetry\OTLP\Transport\StreamTransport</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>otlp_stream_transport(string $destination, int $filePermissions = 0644, bool $createDirectories = true)</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="10-flow-phptelemetry-otlp-bridge---open-telemetrygen-otlp-protobuf-dependency-dropped" href="#10-flow-phptelemetry-otlp-bridge---open-telemetrygen-otlp-protobuf-dependency-dropped" class="mr-2" aria-hidden="true" title="Permalink">#</a>10) <code>flow-php/telemetry-otlp-bridge</code> - <code>open-telemetry/gen-otlp-protobuf</code> dependency dropped</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>open-telemetry/gen-otlp-protobuf</code> (required dep)</td>
+<td>removed; protobuf classes shipped inside the bridge under the same <code>Opentelemetry\Proto\…</code> namespace</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="11-flow-phpsymfony-telemetry-bundle---configuration-schema-rewrite" href="#11-flow-phpsymfony-telemetry-bundle---configuration-schema-rewrite" class="mr-2" aria-hidden="true" title="Permalink">#</a>11) <code>flow-php/symfony-telemetry-bundle</code> - Configuration schema rewrite</h3>
+<p>No BC shim. Configurations from 0.36 must be rewritten.</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>exporters.&lt;name&gt;.type: otlp|service|console|memory|void</code></td>
+<td>sub-block keyed by implementation: <code>otlp:</code>, <code>service:</code>, <code>console:</code>, <code>memory:</code>, <code>void:</code></td>
+</tr>
+<tr>
+<td><code>exporters.&lt;name&gt;.service_id: &lt;id&gt;</code> (under <code>type: service</code>)</td>
+<td><code>exporters.&lt;name&gt;.service: { id: &lt;id&gt; }</code></td>
+</tr>
+<tr>
+<td>Inline <code>processor.exporter: { type: otlp, transport: {...} }</code></td>
+<td><code>processor.exporter: &lt;name&gt;</code> referencing top-level <code>exporters:</code> map</td>
+</tr>
+<tr>
+<td><code>transport.type: http</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>transport.timeout</code> (seconds, default <code>30</code>)</td>
+<td><code>transport.timeout_ms</code> (default <code>250</code>)</td>
+</tr>
+<tr>
+<td><code>transport.connect_timeout</code> (seconds, default <code>10</code>)</td>
+<td><code>transport.connect_timeout_ms</code> (default <code>250</code>)</td>
+</tr>
+<tr>
+<td><code>transport.http_client_service_id</code> / <code>request_factory_service_id</code> / <code>stream_factory_service_id</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>transport.type: stream</code> (added)</td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>transport.shutdown_timeout_ms</code> default <code>5000</code> (added)</td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>transport.failover: { type: …, … }</code> on curl/grpc primaries (added)</td>
+</tr>
+<tr>
+<td>—</td>
+<td>top-level <code>error_handlers:</code> map (added)</td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>error_handler: &lt;name&gt;</code> references on providers, processors, otlp exporter (added)</td>
+</tr>
+<tr>
+<td>—</td>
+<td>top-level <code>framework_logger: &lt;name&gt;</code> (added)</td>
+</tr>
+</tbody>
+</table>
+<p>Before:</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_telemetry:
+  exporters:
+    otlp:
+      type: otlp
+      transport:
+        type: curl
+        endpoint: 'http://otel-collector:4318'
+        timeout: 30
+        connect_timeout: 10
+    custom: { type: service, service_id: 'app.x' }
+    debug: { type: console }
+
+  tracer_provider:
+    processor:
+      type: batching
+      exporter: { type: otlp, transport: { type: curl, endpoint: 'http://otel-collector:4318' } }
+</code></pre>
+<p>After:</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_telemetry:
+  error_handlers:
+    default: { type: error_log }
+
+  exporters:
+    otlp:
+      otlp:
+        transport:
+          type: curl
+          endpoint: 'http://otel-collector:4318'
+          timeout_ms: 250
+          connect_timeout_ms: 250
+    custom: { service: { id: 'app.x' } }
+    debug: { console: ~ }
+
+  tracer_provider:
+    processor:
+      type: batching
+      exporter: otlp
+</code></pre>
+<h3><a id="12-flow-phpphpunit-telemetry-bridge---configuration-parameters" href="#12-flow-phpphpunit-telemetry-bridge---configuration-parameters" class="mr-2" aria-hidden="true" title="Permalink">#</a>12) <code>flow-php/phpunit-telemetry-bridge</code> - Configuration parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Before (parameter / default)</th>
+<th>After (parameter / default)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>curl_timeout</code> / <code>30</code> (seconds)</td>
+<td><code>curl_timeout_ms</code> / <code>250</code> (ms)</td>
+</tr>
+<tr>
+<td><code>curl_connect_timeout</code> / <code>10</code> (s)</td>
+<td><code>curl_connect_timeout_ms</code> / <code>250</code> (ms)</td>
+</tr>
+<tr>
+<td><code>transport: curl|grpc</code></td>
+<td><code>transport: curl|grpc|stream</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>grpc_timeout_ms</code> / <code>250</code> (added)</td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>shutdown_timeout_ms</code> / <code>5000</code> (added)</td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>batch_size</code> / <code>512</code> (added)</td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>error_handler</code> / <code>error_log</code> and <code>error_handler_*</code> family (added)</td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>stream_file_permissions</code> / <code>0644</code>, <code>stream_create_directories</code> / <code>true</code> (added)</td>
+</tr>
+<tr>
+<td>Default span/metric/log processors: pass-through</td>
+<td>Default span/metric/log processors: batching (<code>batch_size: 512</code>)</td>
+</tr>
+</tbody>
+</table>
+<p><code>otel_collector_url</code> / <code>FLOW_PHPUNIT_OTEL_COLLECTOR_URL</code> remain deprecated aliases for <code>endpoint</code> with
+<code>transport=curl</code>.</p>
 <hr />
 <h2><a id="upgrading-from-035x-to-036x" href="#upgrading-from-035x-to-036x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.35.x to 0.36.x</h2>
 <h3><a id="1-flow-phppostgresql---rawcondition-and-rawexpression-removed" href="#1-flow-phppostgresql---rawcondition-and-rawexpression-removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) <code>flow-php/postgresql</code> - <code>RawCondition</code> and <code>RawExpression</code> removed</h3>
@@ -1079,7 +1551,8 @@ binary units, Modified as ISO-8601 — both read from the backend listing respon
 <p><code>stat</code> now returns <code>Command::FAILURE</code> with a clear error when given a pattern path (<code>memory://*.txt</code>,
 <code>**/*.parquet</code>, …). Previously it returned metadata for the first match — confusing semantics. Use
 <code>flow:filesystem:ls</code> for pattern inspection.</p>
-<h3><a id="12-flow-phpfilesystem-async-aws-bridge-flow-phpfilesystem-azure-bridge---dsl-protocol-is-the-last-argument-with-a-default" href="#12-flow-phpfilesystem-async-aws-bridge-flow-phpfilesystem-azure-bridge---dsl-protocol-is-the-last-argument-with-a-default" class="mr-2" aria-hidden="true" title="Permalink">#</a>12) <code>flow-php/filesystem-async-aws-bridge</code>, <code>flow-php/filesystem-azure-bridge</code> - DSL protocol is the last argument with a default</h3>
+<h3><a id="12-flow-phpfilesystem-async-aws-bridge" href="#12-flow-phpfilesystem-async-aws-bridge" class="mr-2" aria-hidden="true" title="Permalink">#</a>12) <code>flow-php/filesystem-async-aws-bridge</code>,</h3>
+<p><code>flow-php/filesystem-azure-bridge</code> - DSL protocol is the last argument with a default</p>
 <p>The DSL factories expose the mount protocol as an optional last argument, defaulted to the
 conventional scheme. Common cases work without passing it:</p>
 <pre class="language-php" data-controller="syntax-highlight"><code class="language-php">aws_s3_filesystem($bucket, $client);                              // mounts under 'aws-s3'
