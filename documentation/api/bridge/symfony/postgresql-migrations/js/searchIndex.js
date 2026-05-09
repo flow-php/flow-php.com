@@ -176,30 +176,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-DependencyInjection-Compiler-CatalogProviderPass.html#method_process"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\DependencyInjection\\Configuration",
-            "name": "Configuration",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\DependencyInjection\\Compiler\\CommandLocatorPass",
+            "name": "CommandLocatorPass",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-DependencyInjection-Configuration.html"
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-DependencyInjection-Compiler-CommandLocatorPass.html"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\DependencyInjection\\Configuration\u003A\u003AgetConfigTreeBuilder\u0028\u0029",
-            "name": "getConfigTreeBuilder",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\DependencyInjection\\Compiler\\CommandLocatorPass\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-DependencyInjection-Configuration.html#method_getConfigTreeBuilder"
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-DependencyInjection-Compiler-CommandLocatorPass.html#method_process"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\DependencyInjection\\FlowPostgreSqlExtension",
-            "name": "FlowPostgreSqlExtension",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\DependencyInjection\\Compiler\\CommandLocatorPass\u003A\u003ALOCATOR_SERVICE_ID",
+            "name": "LOCATOR_SERVICE_ID",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-DependencyInjection-FlowPostgreSqlExtension.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\DependencyInjection\\FlowPostgreSqlExtension\u003A\u003AgetAlias\u0028\u0029",
-            "name": "getAlias",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-DependencyInjection-FlowPostgreSqlExtension.html#method_getAlias"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\DependencyInjection\\FlowPostgreSqlExtension\u003A\u003Aload\u0028\u0029",
-            "name": "load",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-DependencyInjection-FlowPostgreSqlExtension.html#method_load"
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-DependencyInjection-Compiler-CommandLocatorPass.html#constant_LOCATOR_SERVICE_ID"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\FlowPostgreSqlBundle",
             "name": "FlowPostgreSqlBundle",
@@ -211,10 +201,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_build"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\FlowPostgreSqlBundle\u003A\u003AgetContainerExtension\u0028\u0029",
-            "name": "getContainerExtension",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\FlowPostgreSqlBundle\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_getContainerExtension"
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_configure"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\FlowPostgreSqlBundle\u003A\u003AloadExtension\u0028\u0029",
+            "name": "loadExtension",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_loadExtension"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Generator\\TwigMigrationGenerator",
             "name": "TwigMigrationGenerator",

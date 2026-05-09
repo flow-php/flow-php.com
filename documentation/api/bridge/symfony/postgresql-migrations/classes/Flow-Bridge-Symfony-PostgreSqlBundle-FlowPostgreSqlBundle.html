@@ -107,7 +107,7 @@
     FlowPostgreSqlBundle
 
         <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Symfony\Component\HttpKernel\Bundle\Bundle">Bundle</abbr>
+        extends <abbr title="\Symfony\Component\HttpKernel\Bundle\AbstractBundle">AbstractBundle</abbr>
     </span>
     
     
@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/FlowPostgreSqlBundle.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-flowpostgresqlbundle.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/FlowPostgreSqlBundle.php">FlowPostgreSqlBundle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -157,9 +157,15 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_getContainerExtension">getContainerExtension()</a>
+    <a class="" href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_configure">configure()</a>
     <span>
-                                &nbsp;: <abbr title="\Symfony\Component\DependencyInjection\Extension\ExtensionInterface">ExtensionInterface</abbr>    </span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_loadExtension">loadExtension()</a>
+    <span>
+                                &nbsp;: void    </span>
 </dt>
 
     </dl>
@@ -190,7 +196,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/FlowPostgreSqlBundle.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-flowpostgresqlbundle.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/FlowPostgreSqlBundle.php">FlowPostgreSqlBundle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -237,34 +243,44 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getContainerExtension">
-        getContainerExtension()
-        <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_getContainerExtension" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_configure">
+        configure()
+        <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_configure" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/FlowPostgreSqlBundle.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-flowpostgresqlbundle.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/FlowPostgreSqlBundle.php">FlowPostgreSqlBundle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getContainerExtension</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\DependencyInjection\Extension\ExtensionInterface">ExtensionInterface</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">configure</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Symfony\Component\Config\Definition\Configurator\DefinitionConfigurator">DefinitionConfigurator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definition</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$definition</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Symfony\Component\Config\Definition\Configurator\DefinitionConfigurator">DefinitionConfigurator</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         
             <section class="phpdocumentor-attributes">
             <h5 class="phpdocumentor-elements__header" id="attributes">
-                Attributes <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_getContainerExtension#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+                Attributes <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_configure#attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
             </h5>
                             <dl class="phpdocumentor-argument-list">
@@ -274,11 +290,76 @@
     </dl>
                     </section>
     
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\DependencyInjection\Extension\ExtensionInterface">ExtensionInterface</abbr></span>
-            </section>
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_loadExtension">
+        loadExtension()
+        <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_loadExtension" class="headerlink"><i class="fas fa-link"></i></a>
 
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/FlowPostgreSqlBundle.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-flowpostgresqlbundle.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/FlowPostgreSqlBundle.php">FlowPostgreSqlBundle.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">245</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">loadExtension</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{connections: array<string,array{dsn: string, test_transaction_rollback: bool, context?: array<string,mixed>, telemetry?: array{service_id: string, clock_service_id: ?string, trace_queries: bool, trace_transactions: bool, collect_metrics: bool, log_queries: bool, max_query_length: int, include_parameters: bool, max_parameters: int, max_parameter_length: int}}>, messenger: array{enabled: bool, table_name: string, schema: string}, cache: array{pools?: array<string,array{connection: ?string, table_name: string, schema: string, id_col: string, data_col: string, lifetime_col: string, time_col: string, namespace: string, default_lifetime: int, marshaller_service_id: ?string, share_connection: bool}>}, session: array{enabled: bool, connection: ?string, table_name: string, schema: string, id_col: string, data_col: string, lifetime_col: string, time_col: string, lock_mode: string, ttl: ?int, share_connection: bool}, migrations: array{enabled: bool, directory: string, namespace: string, table_name: string, table_schema: string, migration_file_name: string, rollback_file_name: string, all_or_nothing: bool, generate_rollback: bool}, catalog_providers: list<array{catalog_provider_id: ?string, catalog: ?array<string,mixed>}>}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator">ContainerConfigurator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$configurator</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Symfony\Component\DependencyInjection\ContainerBuilder">ContainerBuilder</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$container</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$config</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array{connections: array<string,array{dsn: string, test_transaction_rollback: bool, context?: array<string,mixed>, telemetry?: array{service_id: string, clock_service_id: ?string, trace_queries: bool, trace_transactions: bool, collect_metrics: bool, log_queries: bool, max_query_length: int, include_parameters: bool, max_parameters: int, max_parameter_length: int}}>, messenger: array{enabled: bool, table_name: string, schema: string}, cache: array{pools?: array<string,array{connection: ?string, table_name: string, schema: string, id_col: string, data_col: string, lifetime_col: string, time_col: string, namespace: string, default_lifetime: int, marshaller_service_id: ?string, share_connection: bool}>}, session: array{enabled: bool, connection: ?string, table_name: string, schema: string, id_col: string, data_col: string, lifetime_col: string, time_col: string, lock_mode: string, ttl: ?int, share_connection: bool}, migrations: array{enabled: bool, directory: string, namespace: string, table_name: string, table_schema: string, migration_file_name: string, rollback_file_name: string, all_or_nothing: bool, generate_rollback: bool}, catalog_providers: list<array{catalog_provider_id: ?string, catalog: ?array<string,mixed>}>}</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$configurator</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator">ContainerConfigurator</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$container</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Symfony\Component\DependencyInjection\ContainerBuilder">ContainerBuilder</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="attributes">
+                Attributes <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_loadExtension#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Override">Override</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
 </article>
             </section>
 
@@ -396,7 +477,8 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_build">build()</a></li>
-                                            <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_getContainerExtension">getContainerExtension()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_configure">configure()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_loadExtension">loadExtension()</a></li>
                                     </ul>
             </li>
                     </ul>
