@@ -1,5 +1,5 @@
 {
-    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-eb774f9ff5d6b360f448d2505051a1fd.js",
+    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-c3e72876773158e3b9398a3faef13180.js",
     "@symfony\/stimulus-bundle\/loader.js": "\/assets\/@symfony\/stimulus-bundle\/loader-20ecc10cbbb74d097d458e14577bcd99.js",
     "app.js": "\/assets\/app-396eb1b280b9b32f53a44b8e87aa6133.js",
     "bootstrap.js": "\/assets\/bootstrap-13edb607a8c6b40c285e5deacc875a08.js",
@@ -26,6 +26,7 @@
     "controllers\/playground_upload_controller.js": "\/assets\/controllers\/playground_upload_controller-4cb4cede53f2a96e04451e9d3d5285bf.js",
     "controllers\/playground_workspace_controller.js": "\/assets\/controllers\/playground_workspace_controller-80a4b67d0d48e0f1724b062960607ab3.js",
     "controllers\/scroll_to_top_controller.js": "\/assets\/controllers\/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
+    "controllers\/site_search_controller.js": "\/assets\/controllers\/site_search_controller-029496c3b4940e01daf05c753a5c160d.js",
     "controllers\/syntax_highlight_controller.js": "\/assets\/controllers\/syntax_highlight_controller-100481964fda5d8851adf00323b7f397.js",
     "controllers\/toc_controller.js": "\/assets\/controllers\/toc_controller-1a77aa51990b50e3d6247942ca0d73fa.js",
     "controllers\/turnstile_controller.js": "\/assets\/controllers\/turnstile_controller-f38af05e660ec65b36a67bc61a91d1c9.js",
@@ -68,6 +69,7 @@
     "images\/icons\/play.svg": "\/assets\/images\/icons\/play-b3d8bbbafaea96f437f51fa0a5041e8f.svg",
     "images\/icons\/refresh-active.svg": "\/assets\/images\/icons\/refresh-active-5a6c0c70183d0f7cb1c1feac68486b85.svg",
     "images\/icons\/refresh.svg": "\/assets\/images\/icons\/refresh-71f35c2c6d7ac84cfa617f75a64ee2b1.svg",
+    "images\/icons\/search.svg": "\/assets\/images\/icons\/search-c0c3974ccfc4f5e78cf3acf83e7d2ca3.svg",
     "images\/icons\/share-active.svg": "\/assets\/images\/icons\/share-active-abe8eb04e05b4cebdd7c41cb5a13d7c3.svg",
     "images\/icons\/share.svg": "\/assets\/images\/icons\/share-c5606063ebff259b64ea887056279b4e.svg",
     "images\/icons\/tools.svg": "\/assets\/images\/icons\/tools-08f26d8f68dd6769d8c8101d767320d7.svg",
@@ -90,8 +92,8 @@
     "prismjs\/plugins\/autolinker\/autolinker.js": "\/assets\/prismjs\/plugins\/autolinker\/autolinker-e906ddf9b7d89f169c9cf40a53e5605d.js",
     "prismjs\/themes\/prism-flow.css": "\/assets\/prismjs\/themes\/prism-flow-d263e9954eae08005f616dbe0de07974.css",
     "services\/snippet-fingerprint.js": "\/assets\/services\/snippet-fingerprint-ecdca9f86dfd0b5152217084cf6bc7b8.js",
-    "styles\/app.css": "\/assets\/styles\/app-780679ffb534ef195a1466233d96187b.css",
-    "styles\/changelog.css": "\/assets\/styles\/changelog-140c9dc3ab542002ac195827220fa968.css",
+    "styles\/app.css": "\/assets\/styles\/app-06c3eb149f025016836af132fc81ecf6.css",
+    "styles\/changelog.css": "\/assets\/styles\/changelog-3232d756ea21d7eb8f8bad14a0ab57b2.css",
     "vendor\/@codemirror\/autocomplete\/autocomplete.index.js": "\/assets\/vendor\/@codemirror\/autocomplete\/autocomplete.index-61538c62243afe5479f741a3793d50f9.js",
     "vendor\/@codemirror\/commands\/commands.index.js": "\/assets\/vendor\/@codemirror\/commands\/commands.index-61f74654eb609d0c6c33e9b2b10ed47f.js",
     "vendor\/@codemirror\/lang-css\/lang-css.index.js": "\/assets\/vendor\/@codemirror\/lang-css\/lang-css.index-79c1c442cd9281f09f37ccd37dd1ca3a.js",
@@ -153,7 +155,7 @@
     "wasm\/php.js": "\/assets\/wasm\/php-854edac03a51f967b58c16849625fb22.js",
     "wasm\/php.wasm": "\/assets\/wasm\/php-2c153f5537d6d5ef169b6c07f35bd236.wasm",
     "wasm\/phpcsfixer.php.wasm": "\/assets\/wasm\/phpcsfixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm",
-    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-14db6b41787744333ddf56657b006a97.phar",
+    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-a878d093c11ac024f5da7fb04e01d35d.phar",
     "wasm\/tools\/php-cs-fixer.phar": "\/assets\/wasm\/tools\/php-cs-fixer-de55dbd75a08d2eac0f0435d4168e6bc.phar",
     "wasm\/vendor\/autoload.php.wasm": "\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm"
 }

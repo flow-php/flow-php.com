@@ -8,7 +8,7 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-eb774f9ff5d6b360f448d2505051a1fd.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-c3e72876773158e3b9398a3faef13180.js",
         "type": "js"
     },
     "\/assets\/controllers\/image_swap_controller.js": {
@@ -61,6 +61,10 @@
     },
     "\/assets\/controllers\/wasm_controller.js": {
         "path": "\/assets\/controllers\/wasm_controller-59ee13a1a4a6c819d3a5c311093e9572.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/site_search_controller.js": {
+        "path": "\/assets\/controllers\/site_search_controller-029496c3b4940e01daf05c753a5c160d.js",
         "type": "js"
     },
     "\/assets\/controllers\/toc_controller.js": {

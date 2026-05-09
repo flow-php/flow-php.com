@@ -17,6 +17,7 @@
     "\/assets\/controllers\/playground_format_controller.js",
     "\/assets\/controllers\/playground_output_controller.js",
     "\/assets\/controllers\/wasm_controller.js",
+    "\/assets\/controllers\/site_search_controller.js",
     "\/assets\/controllers\/toc_controller.js",
     "\/assets\/controllers\/playground_reset_controller.js",
     "\/assets\/controllers\/playground_storage_controller.js",
