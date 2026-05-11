@@ -586,6 +586,14 @@
                                 </a>
                             </li>
                                                                                 <li>
+                                <a href="/data_frame/data_writing/excel/#example"
+                                   class="inline-block text-sm px-3 py-1.5 rounded-lg no-underline transition-colors
+                                          text-white/75 hover:text-white hover:bg-white/[0.06]"
+                                   >
+                                    Excel
+                                </a>
+                            </li>
+                                                                                <li>
                                 <a href="/data_frame/data_writing/jsonl/#example"
                                    class="inline-block text-sm px-3 py-1.5 rounded-lg no-underline transition-colors
                                           text-white/75 hover:text-white hover:bg-white/[0.06]"
@@ -699,7 +707,7 @@ require __DIR__ . &#039;/vendor/autoload.php&#039;;
 $fs = fstab()-&gt;for(&#039;file&#039;);
 
 if ($fs-&gt;status(path(__DIR__ . &#039;/.env&#039;)) === null) {
-    print &#039;Example skipped. Please create .env file with Azure Storage Account credentials.&#039; . PHP_EOL;
+    print &#039;Example skipped. Please create .env file with ELASTICSEARCH_URL.&#039; . PHP_EOL;
 
     return;
 }

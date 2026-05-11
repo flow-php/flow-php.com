@@ -586,6 +586,14 @@
                                 </a>
                             </li>
                                                                                 <li>
+                                <a href="/data_frame/data_writing/excel/#example"
+                                   class="inline-block text-sm px-3 py-1.5 rounded-lg no-underline transition-colors
+                                          text-white/75 hover:text-white hover:bg-white/[0.06]"
+                                   >
+                                    Excel
+                                </a>
+                            </li>
+                                                                                <li>
                                 <a href="/data_frame/data_writing/jsonl/#example"
                                    class="inline-block text-sm px-3 py-1.5 rounded-lg no-underline transition-colors
                                           text-white/75 hover:text-white hover:bg-white/[0.06]"
@@ -700,14 +708,18 @@ use function Flow\ETL\Adapter\Doctrine\{
     sqlite_insert_options,
     to_dbal_table_delete,
     to_dbal_table_insert};
-use function Flow\ETL\DSL\{data_frame, from_array};
+use function Flow\ETL\DSL\{data_frame, from_array, from_csv};
 use Doctrine\DBAL\DriverManager;
 use Doctrine\DBAL\Schema\{Column, Table, UniqueConstraint};
 use Doctrine\DBAL\Types\{Type, Types};
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
-require __DIR__ . &#039;/generate_static_orders.php&#039;;
+if (!\extension_loaded(&#039;pdo_sqlite&#039;)) {
+    print &#039;Example skipped. Requires PDO SQLite extension which is not available in this environment.&#039; . PHP_EOL;
+
+    return;
+}
 
 $connection = DriverManager::getConnection([
     &#039;path&#039; =&gt; __DIR__ . &#039;/output/orders.db&#039;,
@@ -736,21 +748,10 @@ if (!$schemaManager-&gt;tablesExist([&#039;orders&#039;])) {
     ));
 }
 
-$orderIds = [
-    &#039;c0a43894-0102-4a4e-9fcd-393ef9e4f16a&#039;,
-    &#039;83fd51a4-9bd1-4b40-8f6e-6a7cc940bb5a&#039;,
-    &#039;7c65db1a-410f-4e91-8aeb-66fb3f1665f7&#039;,
-    &#039;5af1d56c-a9f7-411e-8738-865942d6c40f&#039;,
-    &#039;3a3ae1a9-debd-425a-8f9d-63c3315bc483&#039;,
-    &#039;27d8ee4d-94cc-47fa-bc14-209a4ab2eb45&#039;,
-    &#039;cc4fd722-1407-4781-9ad4-fa53966060af&#039;,
-    &#039;718360e1-c4c9-40f4-84e2-6f7898788883&#039;,
-    &#039;ea7c731c-ce3b-40bb-bbf8-79f1c717b6ca&#039;,
-    &#039;17b0d6c5-dd8f-4d5a-ae06-1df15b67c82c&#039;,
-];
-
 data_frame()
-    -&gt;read(from_array(generateStaticOrders($orderIds)))
+    -&gt;read(from_csv(__DIR__ . &#039;/data/orders.csv&#039;))
+    -&gt;select(&#039;order_id&#039;, &#039;created_at&#039;, &#039;updated_at&#039;, &#039;discount&#039;, &#039;email&#039;, &#039;customer&#039;, &#039;address&#039;, &#039;notes&#039;, &#039;items&#039;)
+    -&gt;limit(10)
     -&gt;write(
         to_dbal_table_insert(
             DriverManager::getConnection([&#039;path&#039; =&gt; __DIR__ . &#039;/output/orders.db&#039;, &#039;driver&#039; =&gt; &#039;pdo_sqlite&#039;]),
@@ -759,6 +760,11 @@ data_frame()
         )
     )
     -&gt;run();
+
+$orderIds = \array_column(
+    $connection-&gt;fetchAllAssociative(&#039;SELECT order_id FROM orders&#039;),
+    &#039;order_id&#039;
+);
 
 data_frame()
     -&gt;read(from_array(\array_map(static fn (string $id) =&gt; [&#039;order_id&#039; =&gt; $id], $orderIds)))
@@ -770,7 +776,7 @@ data_frame()
     )
     -&gt;run();
 
-$orders = $connection-&gt;fetchAllAssociative($connection-&gt;createQueryBuilder()-&gt;select(&#039;*&#039;)-&gt;from(&#039;orders&#039;)-&gt;orderBy(&#039;order_id&#039;)-&gt;getSQL());
+$orders = $connection-&gt;fetchAllAssociative(&#039;SELECT * FROM orders ORDER BY order_id&#039;);
 
 assert(\count($orders) === 0, &#039;There should be no orders left in the database after deletion.&#039;);
 </code></pre></div>            </div>

@@ -789,7 +789,7 @@ use function Flow\Types\DSL\type_html;
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
-$html = &#039;&lt;html&gt;&lt;body&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#039;;
+$html = &#039;&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;Example&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#039;;
 
 echo &#039;Cast HTML: &#039; . type_html()-&gt;cast($html)-&gt;saveHTML();
 </code></pre></div>            </div>

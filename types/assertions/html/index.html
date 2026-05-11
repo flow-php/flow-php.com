@@ -790,9 +790,9 @@ use function Flow\Types\DSL\type_html;
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
-$html = &#039;&lt;html&gt;&lt;body&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#039;;
+$document = \Dom\HTMLDocument::createFromString(&#039;&lt;html&gt;&lt;body&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#039;, \LIBXML_NOERROR);
 
-echo &#039;Assert HTML: &#039; . type_html()-&gt;assert($html)-&gt;saveHTML();
+echo &#039;Assert HTML: &#039; . type_html()-&gt;assert($document)-&gt;saveHTML();
 </code></pre></div>            </div>
 
             <div class="mt-5">

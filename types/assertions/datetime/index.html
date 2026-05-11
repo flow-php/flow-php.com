@@ -790,8 +790,8 @@ use function Flow\Types\DSL\type_datetime;
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
-echo &#039;From string: &#039; . type_datetime()-&gt;assert(&#039;2024-06-15 14:30:00&#039;)-&gt;format(&#039;Y-m-d H:i:s&#039;) . &quot;\n&quot;;
-echo &#039;From timestamp: &#039; . type_datetime()-&gt;assert(1704067200)-&gt;format(&#039;Y-m-d H:i:s&#039;) . &quot;\n&quot;;
+echo &#039;From DateTimeImmutable: &#039; . type_datetime()-&gt;assert(new \DateTimeImmutable(&#039;2024-06-15 14:30:00&#039;))-&gt;format(&#039;Y-m-d H:i:s&#039;) . &quot;\n&quot;;
+echo &#039;From DateTime: &#039; . type_datetime()-&gt;assert(new \DateTime(&#039;@1704067200&#039;))-&gt;format(&#039;Y-m-d H:i:s&#039;) . &quot;\n&quot;;
 </code></pre></div>            </div>
 
             <div class="mt-5">

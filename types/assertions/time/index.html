@@ -790,8 +790,8 @@ use function Flow\Types\DSL\type_time;
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
-echo &#039;From time string: &#039; . type_time()-&gt;assert(&#039;14:30:00&#039;)-&gt;format(&#039;H:i:s&#039;) . &quot;\n&quot;;
-echo &#039;From short time: &#039; . type_time()-&gt;assert(&#039;09:15&#039;)-&gt;format(&#039;H:i:s&#039;) . &quot;\n&quot;;
+echo &#039;From DateInterval: &#039; . type_time()-&gt;assert(new \DateInterval(&#039;PT14H30M0S&#039;))-&gt;format(&#039;%H:%I:%S&#039;) . &quot;\n&quot;;
+echo &#039;From short interval: &#039; . type_time()-&gt;assert(new \DateInterval(&#039;PT9H15M0S&#039;))-&gt;format(&#039;%H:%I:%S&#039;) . &quot;\n&quot;;
 </code></pre></div>            </div>
 
             <div class="mt-5">

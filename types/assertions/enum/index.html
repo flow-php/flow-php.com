@@ -797,8 +797,8 @@ enum Status: string
     case Completed = &#039;completed&#039;;
 }
 
-echo &#039;From string: &#039; . type_enum(Status::class)-&gt;assert(&#039;active&#039;)-&gt;name . &quot;\n&quot;;
-echo &#039;From enum: &#039; . type_enum(Status::class)-&gt;assert(Status::Pending)-&gt;name . &quot;\n&quot;;
+echo &#039;Active: &#039; . type_enum(Status::class)-&gt;assert(Status::Active)-&gt;name . &quot;\n&quot;;
+echo &#039;Pending: &#039; . type_enum(Status::class)-&gt;assert(Status::Pending)-&gt;name . &quot;\n&quot;;
 </code></pre></div>            </div>
 
             <div class="mt-5">

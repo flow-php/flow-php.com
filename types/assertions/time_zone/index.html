@@ -790,8 +790,8 @@ use function Flow\Types\DSL\type_time_zone;
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
-echo &#039;From string: &#039; . type_time_zone()-&gt;assert(&#039;Europe/Warsaw&#039;)-&gt;getName() . &quot;\n&quot;;
-echo &#039;From UTC: &#039; . type_time_zone()-&gt;assert(&#039;UTC&#039;)-&gt;getName() . &quot;\n&quot;;
+echo &#039;From DateTimeZone: &#039; . type_time_zone()-&gt;assert(new \DateTimeZone(&#039;Europe/Warsaw&#039;))-&gt;getName() . &quot;\n&quot;;
+echo &#039;From UTC: &#039; . type_time_zone()-&gt;assert(new \DateTimeZone(&#039;UTC&#039;))-&gt;getName() . &quot;\n&quot;;
 </code></pre></div>            </div>
 
             <div class="mt-5">

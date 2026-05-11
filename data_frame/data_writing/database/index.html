@@ -586,6 +586,14 @@
                                 </a>
                             </li>
                                                                                 <li>
+                                <a href="/data_frame/data_writing/excel/#example"
+                                   class="inline-block text-sm px-3 py-1.5 rounded-lg no-underline transition-colors
+                                          text-white/75 hover:text-white hover:bg-white/[0.06]"
+                                   >
+                                    Excel
+                                </a>
+                            </li>
+                                                                                <li>
                                 <a href="/data_frame/data_writing/jsonl/#example"
                                    class="inline-block text-sm px-3 py-1.5 rounded-lg no-underline transition-colors
                                           text-white/75 hover:text-white hover:bg-white/[0.06]"
@@ -689,14 +697,18 @@
 declare(strict_types=1);
 
 use function Flow\ETL\Adapter\Doctrine\to_dbal_table_insert;
-use function Flow\ETL\DSL\{data_frame, from_array, overwrite};
+use function Flow\ETL\DSL\{data_frame, from_csv, overwrite};
 use Doctrine\DBAL\DriverManager;
 use Doctrine\DBAL\Schema\{Column, Table};
 use Doctrine\DBAL\Types\{Type, Types};
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
-require __DIR__ . &#039;/generate_orders.php&#039;;
+if (!\extension_loaded(&#039;pdo_sqlite&#039;)) {
+    print &#039;Example skipped. Requires PDO SQLite extension which is not available in this environment.&#039; . PHP_EOL;
+
+    return;
+}
 
 $connection = DriverManager::getConnection([
     &#039;path&#039; =&gt; __DIR__ . &#039;/output/orders.db&#039;,
@@ -725,7 +737,9 @@ $schemaManager-&gt;createTable(new Table(
 ));
 
 data_frame()
-    -&gt;read(from_array(generateOrders(10)))
+    -&gt;read(from_csv(__DIR__ . &#039;/data/orders.csv&#039;))
+    -&gt;select(&#039;order_id&#039;, &#039;created_at&#039;, &#039;updated_at&#039;, &#039;discount&#039;, &#039;email&#039;, &#039;customer&#039;, &#039;address&#039;, &#039;notes&#039;, &#039;items&#039;)
+    -&gt;limit(10)
     -&gt;saveMode(overwrite())
     -&gt;write(
         to_dbal_table_insert(

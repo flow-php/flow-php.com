@@ -790,9 +790,10 @@ use function Flow\Types\DSL\type_xml;
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
-$xml = &#039;&lt;?xml version=&quot;1.0&quot;?&gt;&lt;root&gt;&lt;item&gt;value&lt;/item&gt;&lt;/root&gt;&#039;;
+$document = new \DOMDocument();
+$document-&gt;loadXML(&#039;&lt;?xml version=&quot;1.0&quot;?&gt;&lt;root&gt;&lt;item&gt;value&lt;/item&gt;&lt;/root&gt;&#039;);
 
-echo &#039;Assert XML: &#039; . type_xml()-&gt;assert($xml)-&gt;saveXML();
+echo &#039;Assert XML: &#039; . type_xml()-&gt;assert($document)-&gt;saveXML();
 </code></pre></div>            </div>
 
             <div class="mt-5">

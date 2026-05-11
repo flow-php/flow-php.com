@@ -787,11 +787,12 @@ $stringValue = type_string()-&gt;assert($value);
 declare(strict_types=1);
 
 use function Flow\Types\DSL\type_uuid;
+use Flow\Types\Value\Uuid;
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
-echo &#039;UUID: &#039; . type_uuid()-&gt;assert(&#039;550e8400-e29b-41d4-a716-446655440000&#039;)-&gt;toString() . &quot;\n&quot;;
-echo &#039;Uppercase: &#039; . type_uuid()-&gt;assert(&#039;550E8400-E29B-41D4-A716-446655440000&#039;)-&gt;toString() . &quot;\n&quot;;
+echo &#039;UUID: &#039; . type_uuid()-&gt;assert(new Uuid(&#039;550e8400-e29b-41d4-a716-446655440000&#039;))-&gt;toString() . &quot;\n&quot;;
+echo &#039;Uppercase: &#039; . type_uuid()-&gt;assert(new Uuid(&#039;550E8400-E29B-41D4-A716-446655440000&#039;))-&gt;toString() . &quot;\n&quot;;
 </code></pre></div>            </div>
 
             <div class="mt-5">

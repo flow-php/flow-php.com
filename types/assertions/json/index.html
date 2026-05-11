@@ -787,11 +787,12 @@ $stringValue = type_string()-&gt;assert($value);
 declare(strict_types=1);
 
 use function Flow\Types\DSL\type_json;
+use Flow\Types\Value\Json;
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
-echo &#039;From string: &#039; . type_json()-&gt;assert(&#039;{&quot;user&quot;:&quot;john&quot;,&quot;active&quot;:true}&#039;)-&gt;toString() . &quot;\n&quot;;
-echo &#039;From array: &#039; . type_json()-&gt;assert([&#039;product&#039; =&gt; &#039;Widget&#039;, &#039;price&#039; =&gt; 29.99])-&gt;toString() . &quot;\n&quot;;
+echo &#039;From Json string: &#039; . type_json()-&gt;assert(Json::fromString(&#039;{&quot;user&quot;:&quot;john&quot;,&quot;active&quot;:true}&#039;))-&gt;toString() . &quot;\n&quot;;
+echo &#039;From Json array: &#039; . type_json()-&gt;assert(Json::fromArray([&#039;product&#039; =&gt; &#039;Widget&#039;, &#039;price&#039; =&gt; 29.99]))-&gt;toString() . &quot;\n&quot;;
 </code></pre></div>            </div>
 
             <div class="mt-5">

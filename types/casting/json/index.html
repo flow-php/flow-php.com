@@ -791,7 +791,7 @@ require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
 echo &#039;From array: &#039; . type_json()-&gt;cast([&#039;id&#039; =&gt; 1, &#039;name&#039; =&gt; &#039;Alice&#039;])-&gt;toString() . &quot;\n&quot;;
 echo &#039;From string: &#039; . type_json()-&gt;cast(&#039;{&quot;product&quot;:&quot;Widget&quot;}&#039;)-&gt;toString() . &quot;\n&quot;;
-echo &#039;Access data: &#039; . type_json()-&gt;cast(&#039;{&quot;price&quot;:29.99}&#039;)-&gt;data()[&#039;price&#039;] . &quot;\n&quot;;
+echo &#039;Access data: &#039; . type_json()-&gt;cast(&#039;{&quot;price&quot;:29.99}&#039;)-&gt;toArray()[&#039;price&#039;] . &quot;\n&quot;;
 </code></pre></div>            </div>
 
             <div class="mt-5">
