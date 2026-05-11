@@ -8,7 +8,7 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-c3e72876773158e3b9398a3faef13180.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-d10f348456976c83616e83f6bcc17bd3.js",
         "type": "js"
     },
     "\/assets\/controllers\/image_swap_controller.js": {
@@ -28,7 +28,7 @@
         "type": "js"
     },
     "\/assets\/codemirror\/themes\/theme-flow.js": {
-        "path": "\/assets\/codemirror\/themes\/theme-flow-7bef93b1493817cf09879a3b5cd589b3.js",
+        "path": "\/assets\/codemirror\/themes\/theme-flow-c283b27bdc168b368c52dcbdba9fc8e0.js",
         "type": "js"
     },
     "\/assets\/controllers\/playground_controller.js": {
@@ -40,7 +40,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/mermaid_controller.js": {
-        "path": "\/assets\/controllers\/mermaid_controller-4ec011246a55fcc8b844940a72cd2b54.js",
+        "path": "\/assets\/controllers\/mermaid_controller-cec4bc99b6c151eed890a3b4335d9b52.js",
         "type": "js"
     },
     "\/assets\/controllers\/playground_upload_controller.js": {
@@ -79,12 +79,16 @@
         "path": "\/assets\/controllers\/playground_storage_controller-46f3868ddb676ed42885cbff21bb4140.js",
         "type": "js"
     },
+    "\/assets\/controllers\/theme_switch_controller.js": {
+        "path": "\/assets\/controllers\/theme_switch_controller-2add5c8740f12415f479a153622011bf.js",
+        "type": "js"
+    },
     "\/assets\/controllers\/syntax_highlight_controller.js": {
         "path": "\/assets\/controllers\/syntax_highlight_controller-100481964fda5d8851adf00323b7f397.js",
         "type": "js"
     },
     "\/assets\/prismjs\/themes\/prism-flow.css": {
-        "path": "\/assets\/prismjs\/themes\/prism-flow-d263e9954eae08005f616dbe0de07974.css",
+        "path": "\/assets\/prismjs\/themes\/prism-flow-b46b11f7f7a760aeb62b5e588f943d9b.css",
         "type": "css"
     },
     "\/assets\/prismjs\/plugins\/autolinker\/autolinker.js": {
@@ -112,7 +116,7 @@
         "type": "js"
     },
     "\/assets\/controllers\/code_editor_controller.js": {
-        "path": "\/assets\/controllers\/code_editor_controller-0f31162c9dc5f993b3eb60b5004effda.js",
+        "path": "\/assets\/controllers\/code_editor_controller-1aec5cafe47b6524909867e285e3c1f6.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/flow.js": {

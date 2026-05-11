@@ -1,0 +1,41 @@
+section#changelog {
+    @apply text-slate-700 dark:text-white/85;
+}
+
+section#changelog h1 {
+    @apply font-bold text-3xl tracking-tight text-slate-900 mt-2 mb-5 dark:text-white;
+}
+
+section#changelog h2 {
+    @apply font-bold text-2xl tracking-tight text-slate-900 mt-10 mb-3 dark:text-white;
+}
+
+section#changelog h3 {
+    @apply font-semibold text-xl text-slate-900 mt-7 mb-2 dark:text-white;
+}
+
+section#changelog p {
+    @apply mb-3;
+}
+
+section#changelog a {
+    @apply text-blue-300 underline-offset-2 hover:text-orange-300 transition-colors
+           dark:text-blue-100 dark:hover:text-orange-100;
+}
+
+section#changelog ul {
+    @apply list-disc pl-6 mb-4 space-y-1;
+}
+
+section#changelog ul li strong {
+    @apply font-semibold text-slate-900 dark:text-white;
+}
+
+section#changelog hr {
+    @apply my-8 border-0 h-px bg-slate-200 dark:bg-white/10;
+}
+
+section#changelog :not(pre) > code {
+    @apply font-mono text-[0.9em] px-1.5 py-0.5 rounded bg-violet-50 text-violet-700
+           dark:bg-white/[0.06] dark:text-[#d2a8ff];
+}
