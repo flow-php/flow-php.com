@@ -164,6 +164,14 @@
                                                                                                         
                                     </dd>
                                 <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">template-covariant</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>of array&lt;string, T&gt;|null</p>
+</section>
+
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
                 <span class="phpdocumentor-tag__name">implements</span>
             </dt>
                             <dd class="phpdocumentor-tag-list__definition">
@@ -214,12 +222,6 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_duplicate">duplicate()</a>
-    <span>
-                                &nbsp;: static    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_is">is()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -229,12 +231,6 @@
     <a class="" href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_isEqual">isEqual()</a>
     <span>
                                 &nbsp;: bool    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_map">map()</a>
-    <span>
-                                &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -252,7 +248,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_rename">rename()</a>
     <span>
-                                &nbsp;: static    </span>
+                                &nbsp;: <abbr title="static<\Flow\ETL\Row\T>">T></abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -270,13 +266,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_value">value()</a>
     <span>
-                                &nbsp;: <abbr title="\Flow\ETL\Row\T">T</abbr>    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_withValue">withValue()</a>
-    <span>
-                                &nbsp;: static    </span>
+                                &nbsp;: <abbr title="\Flow\ETL\Row\Entry\TStruct">TStruct</abbr>    </span>
 </dt>
 
     </dl>
@@ -307,14 +297,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Types\Type\Logical\StructureType">StructureType</abbr>&lt;string|int, <abbr title="\Flow\ETL\Row\Entry\T">T</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Row\Entry\TStruct">TStruct</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Types\Type\Logical\StructureType">StructureType</abbr>&lt;string|int, <abbr title="\Flow\ETL\Row\Entry\T">T</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -331,7 +321,7 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$value</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;|null</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Row\Entry\TStruct">TStruct</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -386,7 +376,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -424,7 +414,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -454,44 +444,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_duplicate">
-        duplicate()
-        <a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_duplicate" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">85</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">duplicate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_is">
         is()
         <a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_is" class="headerlink"><i class="fas fa-link"></i></a>
@@ -500,7 +452,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -548,7 +500,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -588,54 +540,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_map">
-        map()
-        <a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_map" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">124</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">map</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mapper</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$mapper</span>
-                : <span class="phpdocumentor-argument-list__argument__type">callable</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_name">
         name()
         <a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_name" class="headerlink"><i class="fas fa-link"></i></a>
@@ -644,7 +548,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -720,14 +624,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">rename</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+                    <span class="phpdocumentor-signature__name">rename</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="static<\Flow\ETL\Row\T>">T></abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -750,7 +654,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="static<\Flow\ETL\Row\T>">T></abbr></span>
             </section>
 
 </article>
@@ -768,7 +672,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -806,7 +710,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -844,14 +748,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">value</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\T">T</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">value</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\Entry\TStruct">TStruct</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -864,55 +768,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\T">T</abbr></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_withValue">
-        withValue()
-        <a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_withValue" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-structureentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/StructureEntry.php">StructureEntry.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">161</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$value</span>
-                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\Entry\TStruct">TStruct</abbr></span>
             </section>
 
 </article>
@@ -941,17 +797,14 @@
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method___toString">__toString()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_definition">definition()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_duplicate">duplicate()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_is">is()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_isEqual">isEqual()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_map">map()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_name">name()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-EntryRef.html#method_ref">ref()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_rename">rename()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_toString">toString()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_type">type()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_value">value()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Row-Entry-StructureEntry.html#method_withValue">withValue()</a></li>
                                     </ul>
             </li>
                     </ul>

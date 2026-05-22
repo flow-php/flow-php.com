@@ -428,7 +428,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ClassStringType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-ClassStringType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ClassStringType\u003A\u003Acast\u0028\u0029",
@@ -438,7 +438,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ClassStringType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-ClassStringType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ClassStringType\u003A\u003Anormalize\u0028\u0029",
@@ -463,7 +463,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\DateTimeType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-DateTimeType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\DateTimeType\u003A\u003Acast\u0028\u0029",
@@ -473,7 +473,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\DateTimeType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-DateTimeType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\DateTimeType\u003A\u003Anormalize\u0028\u0029",
@@ -493,7 +493,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\DateType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-DateType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\DateType\u003A\u003Acast\u0028\u0029",
@@ -503,7 +503,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\DateType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-DateType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\DateType\u003A\u003Anormalize\u0028\u0029",
@@ -523,7 +523,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLElementType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-HTMLElementType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLElementType\u003A\u003Acast\u0028\u0029",
@@ -533,7 +533,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLElementType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-HTMLElementType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLElementType\u003A\u003Anormalize\u0028\u0029",
@@ -553,7 +553,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-HTMLType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLType\u003A\u003Acast\u0028\u0029",
@@ -563,7 +563,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-HTMLType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLType\u003A\u003Anormalize\u0028\u0029",
@@ -598,7 +598,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\InstanceOfType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-InstanceOfType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\InstanceOfType\u003A\u003Acast\u0028\u0029",
@@ -608,7 +608,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\InstanceOfType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-InstanceOfType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\InstanceOfType\u003A\u003Anormalize\u0028\u0029",
@@ -643,7 +643,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\JsonType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-JsonType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\JsonType\u003A\u003Acast\u0028\u0029",
@@ -653,7 +653,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\JsonType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-JsonType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\JsonType\u003A\u003Anormalize\u0028\u0029",
@@ -683,7 +683,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ListType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-ListType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ListType\u003A\u003Acast\u0028\u0029",
@@ -698,7 +698,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ListType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-ListType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ListType\u003A\u003Anormalize\u0028\u0029",
@@ -728,7 +728,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\LiteralType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-LiteralType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\LiteralType\u003A\u003Acast\u0028\u0029",
@@ -738,7 +738,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\LiteralType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-LiteralType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\LiteralType\u003A\u003Anormalize\u0028\u0029",
@@ -768,7 +768,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\MapType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-MapType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\MapType\u003A\u003Acast\u0028\u0029",
@@ -778,7 +778,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\MapType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-MapType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\MapType\u003A\u003Akey\u0028\u0029",
@@ -808,7 +808,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\NonEmptyStringType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-NonEmptyStringType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\NonEmptyStringType\u003A\u003Acast\u0028\u0029",
@@ -823,7 +823,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\NonEmptyStringType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-NonEmptyStringType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\NonEmptyStringType\u003A\u003Anormalize\u0028\u0029",
@@ -843,7 +843,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\NumericStringType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-NumericStringType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\NumericStringType\u003A\u003Acast\u0028\u0029",
@@ -853,7 +853,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\NumericStringType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-NumericStringType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\NumericStringType\u003A\u003Anormalize\u0028\u0029",
@@ -883,7 +883,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\OptionalType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-OptionalType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\OptionalType\u003A\u003Abase\u0028\u0029",
@@ -898,7 +898,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\OptionalType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-OptionalType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\OptionalType\u003A\u003Anormalize\u0028\u0029",
@@ -918,7 +918,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\PositiveIntegerType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-PositiveIntegerType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\PositiveIntegerType\u003A\u003Acast\u0028\u0029",
@@ -928,7 +928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\PositiveIntegerType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-PositiveIntegerType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\PositiveIntegerType\u003A\u003Anormalize\u0028\u0029",
@@ -953,7 +953,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ScalarType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-ScalarType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ScalarType\u003A\u003Acast\u0028\u0029",
@@ -963,7 +963,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ScalarType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-ScalarType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ScalarType\u003A\u003Anormalize\u0028\u0029",
@@ -998,7 +998,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-StructureType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003Acast\u0028\u0029",
@@ -1013,7 +1013,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-StructureType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003Anormalize\u0028\u0029",
@@ -1038,7 +1038,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-TimeType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeType\u003A\u003Acast\u0028\u0029",
@@ -1048,7 +1048,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-TimeType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeType\u003A\u003Anormalize\u0028\u0029",
@@ -1068,7 +1068,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeZoneType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-TimeZoneType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeZoneType\u003A\u003Acast\u0028\u0029",
@@ -1078,7 +1078,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeZoneType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-TimeZoneType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\TimeZoneType\u003A\u003Anormalize\u0028\u0029",
@@ -1098,7 +1098,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\UuidType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-UuidType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\UuidType\u003A\u003Acast\u0028\u0029",
@@ -1108,7 +1108,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\UuidType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-UuidType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\UuidType\u003A\u003Anormalize\u0028\u0029",
@@ -1138,7 +1138,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\XMLElementType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-XMLElementType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\XMLElementType\u003A\u003Acast\u0028\u0029",
@@ -1148,7 +1148,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\XMLElementType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-XMLElementType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\XMLElementType\u003A\u003Anormalize\u0028\u0029",
@@ -1168,7 +1168,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\XMLType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Logical-XMLType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\XMLType\u003A\u003Acast\u0028\u0029",
@@ -1178,7 +1178,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\XMLType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Logical-XMLType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\XMLType\u003A\u003Anormalize\u0028\u0029",
@@ -1198,7 +1198,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\ArrayType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Native-ArrayType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\ArrayType\u003A\u003Acast\u0028\u0029",
@@ -1208,7 +1208,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\ArrayType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-ArrayType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\ArrayType\u003A\u003Anormalize\u0028\u0029",
@@ -1228,7 +1228,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\BooleanType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Native-BooleanType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\BooleanType\u003A\u003Acast\u0028\u0029",
@@ -1238,7 +1238,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\BooleanType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-BooleanType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\BooleanType\u003A\u003Anormalize\u0028\u0029",
@@ -1258,7 +1258,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\CallableType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Native-CallableType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\CallableType\u003A\u003Acast\u0028\u0029",
@@ -1268,7 +1268,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\CallableType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-CallableType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\CallableType\u003A\u003Anormalize\u0028\u0029",
@@ -1298,7 +1298,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\EnumType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Native-EnumType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\EnumType\u003A\u003Acast\u0028\u0029",
@@ -1308,7 +1308,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\EnumType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-EnumType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\EnumType\u003A\u003Anormalize\u0028\u0029",
@@ -1333,7 +1333,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\FloatType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Native-FloatType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\FloatType\u003A\u003Acast\u0028\u0029",
@@ -1343,7 +1343,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\FloatType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-FloatType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\FloatType\u003A\u003Anormalize\u0028\u0029",
@@ -1363,7 +1363,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\IntegerType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Native-IntegerType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\IntegerType\u003A\u003Acast\u0028\u0029",
@@ -1373,7 +1373,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\IntegerType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-IntegerType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\IntegerType\u003A\u003Anormalize\u0028\u0029",
@@ -1403,7 +1403,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\IntersectionType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Native-IntersectionType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\IntersectionType\u003A\u003Acast\u0028\u0029",
@@ -1413,7 +1413,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\IntersectionType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-IntersectionType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\IntersectionType\u003A\u003Anormalize\u0028\u0029",
@@ -1438,7 +1438,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\MixedType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Native-MixedType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\MixedType\u003A\u003Acast\u0028\u0029",
@@ -1448,7 +1448,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\MixedType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-MixedType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\MixedType\u003A\u003Anormalize\u0028\u0029",
@@ -1468,7 +1468,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\NullType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Native-NullType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\NullType\u003A\u003Acast\u0028\u0029",
@@ -1478,7 +1478,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\NullType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-NullType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\NullType\u003A\u003Anormalize\u0028\u0029",
@@ -1503,7 +1503,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\ObjectType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Native-ObjectType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\ObjectType\u003A\u003Acast\u0028\u0029",
@@ -1513,7 +1513,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\ObjectType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-ObjectType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\ObjectType\u003A\u003Anormalize\u0028\u0029",
@@ -1533,7 +1533,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\ResourceType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Native-ResourceType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\ResourceType\u003A\u003Acast\u0028\u0029",
@@ -1543,7 +1543,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\ResourceType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-ResourceType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\ResourceType\u003A\u003Anormalize\u0028\u0029",
@@ -1573,7 +1573,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\StringType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Native-StringType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\StringType\u003A\u003Acast\u0028\u0029",
@@ -1588,7 +1588,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\StringType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-StringType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\StringType\u003A\u003Anormalize\u0028\u0029",
@@ -1618,7 +1618,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\UnionType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type-Native-UnionType.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\UnionType\u003A\u003Acast\u0028\u0029",
@@ -1633,7 +1633,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\UnionType\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-UnionType.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\UnionType\u003A\u003Anormalize\u0028\u0029",
@@ -1778,7 +1778,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020given\u0020type.",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
             "url": "classes/Flow-Types-Type.html#method_assert"
         },                {
             "fqsen": "\\Flow\\Types\\Type\u003A\u003Acast\u0028\u0029",
@@ -1788,7 +1788,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
-            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type.html#method_isValid"
         },                {
             "fqsen": "\\Flow\\Types\\Type\u003A\u003Anormalize\u0028\u0029",

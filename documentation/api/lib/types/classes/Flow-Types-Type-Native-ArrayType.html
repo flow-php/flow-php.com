@@ -177,7 +177,7 @@
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Checks if the value is of the type of given type.</dd>
+<dd>Checks that the value is of the type of this object, throwing when it is not.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Native-ArrayType.html#method_cast">cast()</a>
@@ -191,7 +191,7 @@
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd>Checks if the value is of the type of this object.</dd>
+<dd>Checks if the value is of the type of this object, returning a boolean instead of throwing.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Native-ArrayType.html#method_normalize">normalize()</a>
@@ -238,7 +238,7 @@
 
     </aside>
 
-        <p class="phpdocumentor-summary">Checks if the value is of the type of given type.</p>
+        <p class="phpdocumentor-summary">Checks that the value is of the type of this object, throwing when it is not.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -336,7 +336,7 @@
 
     </aside>
 
-        <p class="phpdocumentor-summary">Checks if the value is of the type of this object.</p>
+        <p class="phpdocumentor-summary">Checks if the value is of the type of this object, returning a boolean instead of throwing.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -345,7 +345,9 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>When isValid method is used, it will not narrow the type of the value for static analysis tools.</p>
+        <section class="phpdocumentor-description"><p>When this method returns true, static analysis tools narrow the value's type to T at the call site
+(via @phpstan-assert-if-true). Use this when you want to branch on the result; use assert() when you
+want the call to fail loudly on a mismatch.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>

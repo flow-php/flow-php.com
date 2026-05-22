@@ -143,7 +143,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -158,6 +158,14 @@
     </h5>
     <dl class="phpdocumentor-tag-list">
                     <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">template-covariant</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>of \UnitEnum|null</p>
+</section>
+
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
                 <span class="phpdocumentor-tag__name">implements</span>
             </dt>
                             <dd class="phpdocumentor-tag-list__definition">
@@ -208,12 +216,6 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_duplicate">duplicate()</a>
-    <span>
-                                &nbsp;: static    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_is">is()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -223,12 +225,6 @@
     <a class="" href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_isEqual">isEqual()</a>
     <span>
                                 &nbsp;: bool    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_map">map()</a>
-    <span>
-                                &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -246,7 +242,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_rename">rename()</a>
     <span>
-                                &nbsp;: static    </span>
+                                &nbsp;: <abbr title="self<\Flow\ETL\Row\Entry\T>">T></abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -264,13 +260,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_value">value()</a>
     <span>
-                                &nbsp;: <abbr title="\Flow\ETL\Row\T">T</abbr>    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_withValue">withValue()</a>
-    <span>
-                                &nbsp;: static    </span>
+                                &nbsp;: <abbr title="\Flow\ETL\Row\Entry\T">T</abbr>    </span>
 </dt>
 
     </dl>
@@ -301,14 +291,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\UnitEnum">UnitEnum</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Row\Entry\T">T</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -325,7 +315,7 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$value</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\UnitEnum">UnitEnum</abbr>|null</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Row\Entry\T">T</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -359,7 +349,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -397,7 +387,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -427,44 +417,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_duplicate">
-        duplicate()
-        <a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_duplicate" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">61</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">duplicate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_is">
         is()
         <a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_is" class="headerlink"><i class="fas fa-link"></i></a>
@@ -473,7 +425,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -521,7 +473,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -552,54 +504,6 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_map">
-        map()
-        <a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_map" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">80</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">map</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mapper</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$mapper</span>
-                : <span class="phpdocumentor-argument-list__argument__type">callable</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
             </section>
 
 </article>
@@ -693,14 +597,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">rename</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+                    <span class="phpdocumentor-signature__name">rename</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="self<\Flow\ETL\Row\Entry\T>">T></abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -723,7 +627,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="self<\Flow\ETL\Row\Entry\T>">T></abbr></span>
             </section>
 
 </article>
@@ -741,7 +645,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -779,7 +683,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -817,14 +721,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">value</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\T">T</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">value</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\Entry\T">T</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -837,55 +741,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\T">T</abbr></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_withValue">
-        withValue()
-        <a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_withValue" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php"><a href="files/src-core-etl-src-flow-etl-row-entry-enumentry.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EnumEntry.php">EnumEntry.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">117</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$value</span>
-                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\Entry\T">T</abbr></span>
             </section>
 
 </article>
@@ -914,17 +770,14 @@
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method___toString">__toString()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_definition">definition()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_duplicate">duplicate()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_is">is()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_isEqual">isEqual()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_map">map()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_name">name()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-EntryRef.html#method_ref">ref()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_rename">rename()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_toString">toString()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_type">type()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_value">value()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Row-Entry-EnumEntry.html#method_withValue">withValue()</a></li>
                                     </ul>
             </li>
                     </ul>

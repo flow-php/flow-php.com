@@ -8511,11 +8511,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entries.html#method_count"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entries\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entries.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entries\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "",
@@ -8626,11 +8621,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-BooleanEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\BooleanEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-BooleanEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\BooleanEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -8640,11 +8630,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-BooleanEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\BooleanEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-BooleanEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\BooleanEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -8671,11 +8656,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-BooleanEntry.html#method_value"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\BooleanEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-BooleanEntry.html#method_withValue"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateEntry",
             "name": "DateEntry",
             "summary": "",
@@ -8696,11 +8676,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-DateEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-DateEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -8710,11 +8685,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-DateEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-DateEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -8741,11 +8711,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-DateEntry.html#method_value"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-DateEntry.html#method_withValue"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateTimeEntry",
             "name": "DateTimeEntry",
             "summary": "",
@@ -8766,11 +8731,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-DateTimeEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateTimeEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-DateTimeEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateTimeEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -8780,11 +8740,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-DateTimeEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateTimeEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-DateTimeEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateTimeEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -8810,11 +8765,6 @@ Search.appendIndex(
             "name": "value",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-DateTimeEntry.html#method_value"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\DateTimeEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-DateTimeEntry.html#method_withValue"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\EntryRef",
             "name": "EntryRef",
@@ -8851,11 +8801,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-EnumEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\EnumEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-EnumEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\EnumEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -8865,11 +8810,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-EnumEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\EnumEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-EnumEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\EnumEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -8896,11 +8836,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-EnumEntry.html#method_value"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\EnumEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-EnumEntry.html#method_withValue"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\FloatEntry",
             "name": "FloatEntry",
             "summary": "",
@@ -8921,11 +8856,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-FloatEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\FloatEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-FloatEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\FloatEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -8935,11 +8865,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-FloatEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\FloatEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-FloatEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\FloatEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -8966,11 +8891,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-FloatEntry.html#method_value"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\FloatEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-FloatEntry.html#method_withValue"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLElementEntry",
             "name": "HTMLElementEntry",
             "summary": "",
@@ -8980,6 +8900,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-HTMLElementEntry.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLElementEntry\u003A\u003AfromString\u0028\u0029",
+            "name": "fromString",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLElementEntry.html#method_fromString"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLElementEntry\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
@@ -8991,11 +8916,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-HTMLElementEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLElementEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-HTMLElementEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLElementEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9005,11 +8925,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-HTMLElementEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLElementEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-HTMLElementEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLElementEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -9036,11 +8951,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-HTMLElementEntry.html#method_value"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLElementEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-HTMLElementEntry.html#method_withValue"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry",
             "name": "HTMLEntry",
             "summary": "",
@@ -9050,6 +8960,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003AfromString\u0028\u0029",
+            "name": "fromString",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_fromString"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
@@ -9061,11 +8976,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9075,11 +8985,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -9106,11 +9011,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_value"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\HTMLEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_withValue"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\IntegerEntry",
             "name": "IntegerEntry",
             "summary": "",
@@ -9131,11 +9031,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-IntegerEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\IntegerEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-IntegerEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\IntegerEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9145,11 +9040,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-IntegerEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\IntegerEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-IntegerEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\IntegerEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -9176,11 +9066,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-IntegerEntry.html#method_value"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\IntegerEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-IntegerEntry.html#method_withValue"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\JsonEntry",
             "name": "JsonEntry",
             "summary": "",
@@ -9206,11 +9091,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-JsonEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\JsonEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-JsonEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\JsonEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9220,11 +9100,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-JsonEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\JsonEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-JsonEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\JsonEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -9251,11 +9126,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-JsonEntry.html#method_value"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\JsonEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-JsonEntry.html#method_withValue"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\ListEntry",
             "name": "ListEntry",
             "summary": "",
@@ -9276,11 +9146,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-ListEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\ListEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-ListEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\ListEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9290,11 +9155,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-ListEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\ListEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-ListEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\ListEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -9321,11 +9181,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-ListEntry.html#method_value"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\ListEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-ListEntry.html#method_withValue"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\MapEntry",
             "name": "MapEntry",
             "summary": "",
@@ -9346,11 +9201,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-MapEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\MapEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-MapEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\MapEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9360,11 +9210,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-MapEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\MapEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-MapEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\MapEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -9390,11 +9235,6 @@ Search.appendIndex(
             "name": "value",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-MapEntry.html#method_value"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\MapEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-MapEntry.html#method_withValue"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\StringEntry",
             "name": "StringEntry",
@@ -9431,11 +9271,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-StringEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\StringEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-StringEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\StringEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9445,11 +9280,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-StringEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\StringEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-StringEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\StringEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -9481,11 +9311,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-StringEntry.html#method_value"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\StringEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-StringEntry.html#method_withValue"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\StructureEntry",
             "name": "StructureEntry",
             "summary": "",
@@ -9506,11 +9331,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-StructureEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\StructureEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-StructureEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\StructureEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9520,11 +9340,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-StructureEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\StructureEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-StructureEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\StructureEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -9550,11 +9365,6 @@ Search.appendIndex(
             "name": "value",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-StructureEntry.html#method_value"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\StructureEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-StructureEntry.html#method_withValue"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\TimeEntry",
             "name": "TimeEntry",
@@ -9611,11 +9421,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-TimeEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\TimeEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-TimeEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\TimeEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9625,11 +9430,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-TimeEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\TimeEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-TimeEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\TimeEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -9656,11 +9456,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-TimeEntry.html#method_value"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\TimeEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-TimeEntry.html#method_withValue"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\UuidEntry",
             "name": "UuidEntry",
             "summary": "",
@@ -9686,11 +9481,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-UuidEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\UuidEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-UuidEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\UuidEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9700,11 +9490,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-UuidEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\UuidEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-UuidEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\UuidEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -9730,11 +9515,6 @@ Search.appendIndex(
             "name": "value",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-UuidEntry.html#method_value"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\UuidEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-UuidEntry.html#method_withValue"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLElementEntry",
             "name": "XMLElementEntry",
@@ -9766,11 +9546,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-XMLElementEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLElementEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-XMLElementEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLElementEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9780,11 +9555,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-XMLElementEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLElementEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-XMLElementEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLElementEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -9810,11 +9580,6 @@ Search.appendIndex(
             "name": "value",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-XMLElementEntry.html#method_value"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLElementEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-XMLElementEntry.html#method_withValue"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLEntry",
             "name": "XMLEntry",
@@ -9846,11 +9611,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-XMLEntry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLEntry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-XMLEntry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLEntry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9860,11 +9620,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-XMLEntry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLEntry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-XMLEntry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLEntry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -9891,11 +9646,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-XMLEntry.html#method_value"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\XMLEntry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-XMLEntry.html#method_withValue"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry",
             "name": "Entry",
             "summary": "",
@@ -9911,11 +9661,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry.html#method_definition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry.html#method_duplicate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
@@ -9925,11 +9670,6 @@ Search.appendIndex(
             "name": "isEqual",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry.html#method_isEqual"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -9960,11 +9700,6 @@ Search.appendIndex(
             "name": "value",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry.html#method_value"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\u003A\u003AwithValue\u0028\u0029",
-            "name": "withValue",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry.html#method_withValue"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\EntryFactory",
             "name": "EntryFactory",
@@ -10240,11 +9975,6 @@ Search.appendIndex(
             "name": "add",
             "summary": "",
             "url": "classes/Flow-ETL-Row.html#method_add"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\u003A\u003Aduplicate\u0028\u0029",
-            "name": "duplicate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row.html#method_duplicate"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\u003A\u003Aentries\u0028\u0029",
             "name": "entries",

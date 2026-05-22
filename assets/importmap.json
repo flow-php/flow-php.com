@@ -44,15 +44,15 @@
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dsl.js": {
-        "path": "\/assets\/codemirror\/completions\/dsl-6bcf8153131b189b7243ad3e5cd7aed7.js",
+        "path": "\/assets\/codemirror\/completions\/dsl-951bfeaa3a6b6a7a88abf3084c4f4ff1.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dataframe.js": {
-        "path": "\/assets\/codemirror\/completions\/dataframe-a4e453b73d3a2050c4d3ff60fcc857ca.js",
+        "path": "\/assets\/codemirror\/completions\/dataframe-52a47f7f071871d08d635c76d889e9e3.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/scalarfunctionchain.js": {
-        "path": "\/assets\/codemirror\/completions\/scalarfunctionchain-f232b13e453757fdffe26880787e8e0f.js",
+        "path": "\/assets\/codemirror\/completions\/scalarfunctionchain-6c073f61e4374617d4bc3be58cbf2e73.js",
         "type": "js"
     },
     "\/assets\/models\/Violation.js": {
