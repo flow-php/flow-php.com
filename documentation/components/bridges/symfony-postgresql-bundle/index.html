@@ -73,7 +73,7 @@
                         site: 'datadoghq.eu',
                         service: 'flow-php-website',
                         env: 'prod',
-                        version: '0.37.0',
+                        version: '0.38.0',
                         sessionSampleRate: 100,
                         sessionReplaySampleRate: 20,
                         trackResources: true,
@@ -1823,7 +1823,7 @@ to provide a Symfony Messenger transport backed by Flow's native PostgreSQL clie
 <ol>
 <li>Install the messenger bridge:</li>
 </ol>
-<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">composer require flow-php/symfony-postgresql-messenger-bridge:~0.37.0
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">composer require flow-php/symfony-postgresql-messenger-bridge:~0.38.0
 </code></pre>
 <ol start="2">
 <li>Enable messenger:</li>
@@ -1909,7 +1909,7 @@ participating in (and being rolled back by) a transaction held by the caller.</p
 <ol>
 <li>Install the cache bridge:</li>
 </ol>
-<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">composer require flow-php/symfony-postgresql-cache-bridge:~0.37.0
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">composer require flow-php/symfony-postgresql-cache-bridge:~0.38.0
 </code></pre>
 <ol start="2">
 <li>Define one or more pools under <code>flow_postgresql.cache.pools</code>:</li>
@@ -2040,7 +2040,7 @@ session's transaction lives on a dedicated connection and never wraps unrelated 
 <ol>
 <li>Install the session bridge:</li>
 </ol>
-<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">composer require flow-php/symfony-postgresql-session-bridge:~0.37.0
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">composer require flow-php/symfony-postgresql-session-bridge:~0.38.0
 </code></pre>
 <ol start="2">
 <li>Enable the session handler:</li>
@@ -2176,7 +2176,7 @@ test database clean without manual teardown.</p>
 <ol>
 <li>Install the PHPUnit bridge:</li>
 </ol>
-<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">composer require --dev flow-php/phpunit-postgresql-bridge:~0.37.0
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">composer require --dev flow-php/phpunit-postgresql-bridge:~0.38.0
 </code></pre>
 <ol start="2">
 <li>Register the PHPUnit extension in <code>phpunit.xml.dist</code>:</li>
