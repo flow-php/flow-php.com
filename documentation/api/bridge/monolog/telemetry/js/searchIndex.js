@@ -83,7 +83,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\ValueNormalizer\u003A\u003Anormalize\u0028\u0029",
             "name": "normalize",
-            "summary": "Normalize\u0020a\u0020value\u0020to\u0020a\u0020type\u0020acceptable\u0020by\u0020Telemetry\u0020attributes.",
+            "summary": "",
             "url": "classes/Flow-Bridge-Monolog-Telemetry-ValueNormalizer.html#method_normalize"
         },                {
             "fqsen": "\\",

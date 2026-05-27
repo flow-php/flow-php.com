@@ -236,7 +236,7 @@ $logger-&gt;emit($record);
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Logger-LogRecord.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{severity: int, body: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, timestamp: null|string, observedTimestamp: null|string}    </span>
+                                &nbsp;: array{severity: int, body: string, attributes: array<string,mixed>, timestamp: null|string, observedTimestamp: null|string}    </span>
 </dt>
 <dd>Normalize the LogRecord to an array representation for serialization.</dd>
 
@@ -599,7 +599,7 @@ $logger-&gt;emit($record);
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="array{severity: int, body: string, attributes: \Flow\Telemetry\Logger\TAttributeValueMap, timestamp: null|string, observedTimestamp: null|string}">TAttributeValueMap, timestamp: null|string, observedTimestamp: null|string}</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{severity: int, body: string, attributes: array<string,mixed>, timestamp: null|string, observedTimestamp: null|string}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -609,7 +609,7 @@ $logger-&gt;emit($record);
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$data</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="array{severity: int, body: string, attributes: \Flow\Telemetry\Logger\TAttributeValueMap, timestamp: null|string, observedTimestamp: null|string}">TAttributeValueMap, timestamp: null|string, observedTimestamp: null|string}</abbr></span>
+                : <span class="phpdocumentor-argument-list__argument__type">array{severity: int, body: string, attributes: array<string,mixed>, timestamp: null|string, observedTimestamp: null|string}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Normalized LogRecord data</p>
@@ -650,7 +650,7 @@ $logger-&gt;emit($record);
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{severity: int, body: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, timestamp: null|string, observedTimestamp: null|string}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{severity: int, body: string, attributes: array<string,mixed>, timestamp: null|string, observedTimestamp: null|string}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -663,7 +663,7 @@ $logger-&gt;emit($record);
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{severity: int, body: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, timestamp: null|string, observedTimestamp: null|string}</span>
+        <span class="phpdocumentor-signature__response_type">array{severity: int, body: string, attributes: array<string,mixed>, timestamp: null|string, observedTimestamp: null|string}</span>
             </section>
 
 </article>

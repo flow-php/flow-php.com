@@ -121,7 +121,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -147,6 +147,26 @@ context that is attached to all traces, logs, and metrics.</p>
 </section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Telemetry-Resource.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">phpstan-import-type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>TAttributeValue from Attributes</p>
+</section>
+
+                                    </dd>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>TAttributeValueMap from Attributes</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
     
     
@@ -187,7 +207,7 @@ context that is attached to all traces, logs, and metrics.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Resource.html#method_all">all()</a>
     <span>
-                                &nbsp;: array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;    </span>
+                                &nbsp;: array&lt;string, array&lt;string|int, mixed&gt;|bool|float|int|string&gt;    </span>
 </dt>
 <dd>Get all attributes.</dd>
 
@@ -203,7 +223,6 @@ context that is attached to all traces, logs, and metrics.</p>
     <span>
                                 &nbsp;: self    </span>
 </dt>
-<dd>Create a new Resource with the given attributes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Resource.html#method_empty">empty()</a>
@@ -222,7 +241,7 @@ context that is attached to all traces, logs, and metrics.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Resource.html#method_get">get()</a>
     <span>
-                                &nbsp;: null|array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>    </span>
+                                &nbsp;: null|<abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr>    </span>
 </dt>
 <dd>Get the value of an attribute.</dd>
 
@@ -250,7 +269,7 @@ context that is attached to all traces, logs, and metrics.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Resource.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}    </span>
+                                &nbsp;: array{attributes: array<string,mixed>}    </span>
 </dt>
 <dd>Normalize the Resource to an array representation for serialization.</dd>
 
@@ -291,7 +310,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -333,7 +352,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -377,7 +396,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -385,7 +404,7 @@ context that is attached to all traces, logs, and metrics.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string|int, mixed&gt;|bool|float|int|string&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -398,7 +417,7 @@ context that is attached to all traces, logs, and metrics.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string|int, mixed&gt;|bool|float|int|string&gt;</span>
             </section>
 
 </article>
@@ -416,7 +435,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -455,15 +474,14 @@ context that is attached to all traces, logs, and metrics.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create a new Resource with the given attributes.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;|<a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\TAttributeValueMap">TAttributeValueMap</abbr>|<a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -473,7 +491,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;|<a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Telemetry\TAttributeValueMap">TAttributeValueMap</abbr>|<a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -504,7 +522,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -543,7 +561,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -551,7 +569,7 @@ context that is attached to all traces, logs, and metrics.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{attributes: array<string,mixed>}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -561,7 +579,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$data</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array{attributes: array<string,mixed>}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Normalized Resource data</p>
@@ -594,7 +612,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -602,7 +620,7 @@ context that is attached to all traces, logs, and metrics.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -627,7 +645,7 @@ context that is attached to all traces, logs, and metrics.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">null|array&lt;string|int, bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr></span>
+        <span class="phpdocumentor-signature__response_type">null|<abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr></span>
                     &mdash;
                 <section class="phpdocumentor-description"><p>The attribute value, or null if not found</p>
 </section>
@@ -649,7 +667,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -700,7 +718,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -739,7 +757,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -794,7 +812,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -802,7 +820,7 @@ context that is attached to all traces, logs, and metrics.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{attributes: array<string,mixed>}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -815,7 +833,7 @@ context that is attached to all traces, logs, and metrics.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>}</span>
+        <span class="phpdocumentor-signature__response_type">array{attributes: array<string,mixed>}</span>
             </section>
 
 </article>
@@ -833,7 +851,7 @@ context that is attached to all traces, logs, and metrics.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
@@ -841,7 +859,7 @@ context that is attached to all traces, logs, and metrics.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">with</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">with</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -862,7 +880,7 @@ context that is attached to all traces, logs, and metrics.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$value</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Telemetry\TAttributeValue">TAttributeValue</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Attribute value</p>

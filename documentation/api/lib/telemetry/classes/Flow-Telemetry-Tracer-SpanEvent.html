@@ -142,7 +142,7 @@ such as errors, state changes, or notable occurrences.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_attributes">attributes()</a>
     <span>
-                                &nbsp;: array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;    </span>
+                                &nbsp;: array&lt;string, mixed&gt;    </span>
 </dt>
 <dd>Get the event attributes.</dd>
 
@@ -177,7 +177,7 @@ such as errors, state changes, or notable occurrences.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Tracer-SpanEvent.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, droppedAttributeCount: int}    </span>
+                                &nbsp;: array{name: string, timestamp: string, attributes: array<string,mixed>, droppedAttributeCount: int}    </span>
 </dt>
 <dd>Normalize the event to an array representation for serialization.</dd>
 
@@ -225,7 +225,7 @@ such as errors, state changes, or notable occurrences.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">attributes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">attributes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -238,7 +238,7 @@ such as errors, state changes, or notable occurrences.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span>
             </section>
 
 </article>
@@ -342,7 +342,7 @@ such as errors, state changes, or notable occurrences.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, droppedAttributeCount?: int}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{name: string, timestamp: string, attributes: array<string,mixed>, droppedAttributeCount?: int}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -352,7 +352,7 @@ such as errors, state changes, or notable occurrences.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$data</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, droppedAttributeCount?: int}</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array{name: string, timestamp: string, attributes: array<string,mixed>, droppedAttributeCount?: int}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Normalized event data</p>
@@ -432,7 +432,7 @@ such as errors, state changes, or notable occurrences.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, droppedAttributeCount: int}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{name: string, timestamp: string, attributes: array<string,mixed>, droppedAttributeCount: int}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -445,7 +445,7 @@ such as errors, state changes, or notable occurrences.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{name: string, timestamp: string, attributes: array<string,(bool|float|int|string)[]|bool|float|int|string>, droppedAttributeCount: int}</span>
+        <span class="phpdocumentor-signature__response_type">array{name: string, timestamp: string, attributes: array<string,mixed>, droppedAttributeCount: int}</span>
             </section>
 
 </article>

@@ -23,17 +23,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Attributes\u003A\u003Acreate\u0028\u0029",
             "name": "create",
-            "summary": "Create\u0020Attributes\u0020from\u0020key\u002Dvalue\u0020pairs.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Attributes.html#method_create"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Attributes\u003A\u003Aempty\u0028\u0029",
             "name": "empty",
-            "summary": "Create\u0020empty\u0020Attributes.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Attributes.html#method_empty"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Attributes\u003A\u003AfromArray\u0028\u0029",
             "name": "fromArray",
-            "summary": "Create\u0020Attributes\u0020from\u0020normalized\u0020array.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Attributes.html#method_fromArray"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Attributes\u003A\u003Acount\u0028\u0029",
@@ -3543,7 +3543,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\u003A\u003Acreate\u0028\u0029",
             "name": "create",
-            "summary": "Create\u0020a\u0020new\u0020Resource\u0020with\u0020the\u0020given\u0020attributes.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Resource.html#method_create"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\u003A\u003Aempty\u0028\u0029",

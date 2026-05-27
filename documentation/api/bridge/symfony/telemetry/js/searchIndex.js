@@ -61,26 +61,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-Psr18ClientTelemetryPass.html#method_process"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Configuration",
-            "name": "Configuration",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Configuration.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Configuration\u003A\u003AgetConfigTreeBuilder\u0028\u0029",
-            "name": "getConfigTreeBuilder",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Configuration.html#method_getConfigTreeBuilder"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\FlowTelemetryExtension",
-            "name": "FlowTelemetryExtension",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-FlowTelemetryExtension.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\FlowTelemetryExtension\u003A\u003Aload\u0028\u0029",
-            "name": "load",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-FlowTelemetryExtension.html#method_load"
-        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Exception\\Exception",
             "name": "Exception",
             "summary": "",
@@ -100,6 +80,16 @@ Search.appendIndex(
             "name": "build",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-FlowTelemetryBundle.html#method_build"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\FlowTelemetryBundle\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-FlowTelemetryBundle.html#method_configure"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\FlowTelemetryBundle\u003A\u003AloadExtension\u0028\u0029",
+            "name": "loadExtension",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-FlowTelemetryBundle.html#method_loadExtension"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Cache\\TagAwareTraceableCacheAdapter",
             "name": "TagAwareTraceableCacheAdapter",
