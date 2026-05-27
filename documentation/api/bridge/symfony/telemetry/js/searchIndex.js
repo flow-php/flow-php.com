@@ -301,6 +301,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleSpanSubscriber.html#method_onTerminate"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection",
+            "name": "TracingConnection",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection\u003A\u003AbeginTransaction\u0028\u0029",
+            "name": "beginTransaction",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html#method_beginTransaction"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection\u003A\u003Acommit\u0028\u0029",
+            "name": "commit",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html#method_commit"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection\u003A\u003Aexec\u0028\u0029",
+            "name": "exec",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html#method_exec"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection\u003A\u003Aprepare\u0028\u0029",
+            "name": "prepare",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html#method_prepare"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection\u003A\u003Aquery\u0028\u0029",
+            "name": "query",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html#method_query"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection\u003A\u003ArollBack\u0028\u0029",
+            "name": "rollBack",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html#method_rollBack"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingDriver",
+            "name": "TracingDriver",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingDriver.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingDriver\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingDriver.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingDriver\u003A\u003Aconnect\u0028\u0029",
+            "name": "connect",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingDriver.html#method_connect"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingMiddleware",
             "name": "TracingMiddleware",
             "summary": "",
@@ -316,145 +371,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingMiddleware.html#method_wrap"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingConnection",
-            "name": "TracingConnection",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingConnection.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingConnection\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingConnection.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingConnection\u003A\u003AbeginTransaction\u0028\u0029",
-            "name": "beginTransaction",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingConnection.html#method_beginTransaction"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingConnection\u003A\u003Acommit\u0028\u0029",
-            "name": "commit",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingConnection.html#method_commit"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingConnection\u003A\u003Aexec\u0028\u0029",
-            "name": "exec",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingConnection.html#method_exec"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingConnection\u003A\u003Aprepare\u0028\u0029",
-            "name": "prepare",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingConnection.html#method_prepare"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingConnection\u003A\u003Aquery\u0028\u0029",
-            "name": "query",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingConnection.html#method_query"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingConnection\u003A\u003ArollBack\u0028\u0029",
-            "name": "rollBack",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingConnection.html#method_rollBack"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingDriver",
-            "name": "TracingDriver",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingDriver.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingDriver\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingDriver.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingDriver\u003A\u003Aconnect\u0028\u0029",
-            "name": "connect",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingDriver.html#method_connect"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingStatement",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingStatement",
             "name": "TracingStatement",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingStatement.html"
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingStatement\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingStatement\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingStatement.html#method___construct"
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3\\TracingStatement\u003A\u003Aexecute\u0028\u0029",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingStatement\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V3-TracingStatement.html#method_execute"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingConnection",
-            "name": "TracingConnection",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingConnection.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingConnection\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingConnection.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingConnection\u003A\u003AbeginTransaction\u0028\u0029",
-            "name": "beginTransaction",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingConnection.html#method_beginTransaction"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingConnection\u003A\u003Acommit\u0028\u0029",
-            "name": "commit",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingConnection.html#method_commit"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingConnection\u003A\u003Aexec\u0028\u0029",
-            "name": "exec",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingConnection.html#method_exec"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingConnection\u003A\u003Aprepare\u0028\u0029",
-            "name": "prepare",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingConnection.html#method_prepare"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingConnection\u003A\u003Aquery\u0028\u0029",
-            "name": "query",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingConnection.html#method_query"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingConnection\u003A\u003ArollBack\u0028\u0029",
-            "name": "rollBack",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingConnection.html#method_rollBack"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingDriver",
-            "name": "TracingDriver",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingDriver.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingDriver\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingDriver.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingDriver\u003A\u003Aconnect\u0028\u0029",
-            "name": "connect",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingDriver.html#method_connect"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingStatement",
-            "name": "TracingStatement",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingStatement.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingStatement\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingStatement.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4\\TracingStatement\u003A\u003Aexecute\u0028\u0029",
-            "name": "execute",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-V4-TracingStatement.html#method_execute"
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method_execute"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\TracableHttpClient",
             "name": "TracableHttpClient",
@@ -740,16 +670,6 @@ Search.appendIndex(
             "name": "Doctrine",
             "summary": "",
             "url": "namespaces/flow-bridge-symfony-telemetrybundle-instrumentation-doctrine.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V3",
-            "name": "V3",
-            "summary": "",
-            "url": "namespaces/flow-bridge-symfony-telemetrybundle-instrumentation-doctrine-dbal-v3.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\V4",
-            "name": "V4",
-            "summary": "",
-            "url": "namespaces/flow-bridge-symfony-telemetrybundle-instrumentation-doctrine-dbal-v4.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient",
             "name": "HttpClient",
