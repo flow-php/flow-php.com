@@ -323,7 +323,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "In\u0020order\u0020to\u0020iterate\u0020only\u0020over\u0020\u003Celement\u003E\u0020nodes\u0020us\u0020root\/elements\/element.",
             "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html#method___construct"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003Aextract\u0028\u0029",

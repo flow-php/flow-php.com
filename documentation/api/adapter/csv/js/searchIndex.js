@@ -281,6 +281,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-RowsNormalizer-EntryNormalizer.html#method_normalize"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\RowsNormalizer\\ScalarCast",
+            "name": "ScalarCast",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-RowsNormalizer-ScalarCast.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\RowsNormalizer\\ScalarCast\u003A\u003AfromMixed\u0028\u0029",
+            "name": "fromMixed",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-RowsNormalizer-ScalarCast.html#method_fromMixed"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\RowsNormalizer",
             "name": "RowsNormalizer",
             "summary": "",

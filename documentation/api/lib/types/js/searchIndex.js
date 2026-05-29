@@ -266,21 +266,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Exception-RuntimeException.html"
         },                {
-            "fqsen": "\\Flow\\Types\\PHPStan\\StructureTypeReturnTypeExtension",
-            "name": "StructureTypeReturnTypeExtension",
-            "summary": "",
-            "url": "classes/Flow-Types-PHPStan-StructureTypeReturnTypeExtension.html"
-        },                {
-            "fqsen": "\\Flow\\Types\\PHPStan\\StructureTypeReturnTypeExtension\u003A\u003AgetTypeFromFunctionCall\u0028\u0029",
-            "name": "getTypeFromFunctionCall",
-            "summary": "",
-            "url": "classes/Flow-Types-PHPStan-StructureTypeReturnTypeExtension.html#method_getTypeFromFunctionCall"
-        },                {
-            "fqsen": "\\Flow\\Types\\PHPStan\\StructureTypeReturnTypeExtension\u003A\u003AisFunctionSupported\u0028\u0029",
-            "name": "isFunctionSupported",
-            "summary": "",
-            "url": "classes/Flow-Types-PHPStan-StructureTypeReturnTypeExtension.html#method_isFunctionSupported"
-        },                {
             "fqsen": "\\Flow\\Types\\Type\\ArrayContentDetector",
             "name": "ArrayContentDetector",
             "summary": "",
@@ -1905,11 +1890,6 @@ Search.appendIndex(
             "name": "Exception",
             "summary": "",
             "url": "namespaces/flow-types-exception.html"
-        },                {
-            "fqsen": "\\Flow\\Types\\PHPStan",
-            "name": "PHPStan",
-            "summary": "",
-            "url": "namespaces/flow-types-phpstan.html"
         },                {
             "fqsen": "\\Flow\\Types\\Type",
             "name": "Type",
