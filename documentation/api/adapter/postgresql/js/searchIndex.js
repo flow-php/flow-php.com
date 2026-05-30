@@ -3,7 +3,7 @@ Search.appendIndex(
                 {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap",
             "name": "EntryTypesMap",
-            "summary": "Maps\u0020ETL\u0020Entry\u0020types\u0020to\u0020PostgreSQL\u0020types.",
+            "summary": "Maps\u0020between\u0020Flow\u0020ETL\u0020types\u0020and\u0020PostgreSQL\u0020types.",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003A__construct\u0028\u0029",
@@ -15,6 +15,16 @@ Search.appendIndex(
             "name": "mapEntry",
             "summary": "Maps\u0020an\u0020Entry\u0020to\u0020a\u0020TypedValue\u0020suitable\u0020for\u0020PostgreSQL\u0020queries.",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_mapEntry"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003AtoColumnType\u0028\u0029",
+            "name": "toColumnType",
+            "summary": "Maps\u0020a\u0020Flow\u0020type\u0020to\u0020a\u0020PostgreSQL\u0020DDL\u0020column\u0020type.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toColumnType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003AtoFlowType\u0028\u0029",
+            "name": "toFlowType",
+            "summary": "Maps\u0020a\u0020PostgreSQL\u0020DDL\u0020column\u0020type\u0020back\u0020to\u0020a\u0020canonical\u0020Flow\u0020type.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toFlowType"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003ADEFAULT_TYPES",
             "name": "DEFAULT_TYPES",
@@ -36,10 +46,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-Exception-TypeMappingException.html#method_ambiguousEntryType"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Exception\\TypeMappingException\u003A\u003AunsupportedColumnType\u0028\u0029",
+            "name": "unsupportedColumnType",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Exception-TypeMappingException.html#method_unsupportedColumnType"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Exception\\TypeMappingException\u003A\u003AunsupportedEntryType\u0028\u0029",
             "name": "unsupportedEntryType",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-Exception-TypeMappingException.html#method_unsupportedEntryType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Exception\\TypeMappingException\u003A\u003AunsupportedFlowType\u0028\u0029",
+            "name": "unsupportedFlowType",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Exception-TypeMappingException.html#method_unsupportedFlowType"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\from_pgsql_cursor\u0028\u0029",
             "name": "from_pgsql_cursor",
@@ -90,6 +110,16 @@ Search.appendIndex(
             "name": "pgsql_delete_options",
             "summary": "Create\u0020delete\u0020options\u0020for\u0020PostgreSQL\u0020loader.",
             "url": "namespaces/flow-etl-adapter-postgresql.html#function_pgsql_delete_options"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\to_pgsql_schema_table\u0028\u0029",
+            "name": "to_pgsql_schema_table",
+            "summary": "Convert\u0020a\u0020Flow\u0020Schema\u0020into\u0020a\u0020PostgreSQL\u0020table\u0020definition.",
+            "url": "namespaces/flow-etl-adapter-postgresql.html#function_to_pgsql_schema_table"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\pgsql_table_to_flow_schema\u0028\u0029",
+            "name": "pgsql_table_to_flow_schema",
+            "summary": "Convert\u0020a\u0020PostgreSQL\u0020table\u0020definition\u0020into\u0020a\u0020Flow\u0020Schema.",
+            "url": "namespaces/flow-etl-adapter-postgresql.html#function_pgsql_table_to_flow_schema"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\LoaderOptions\\DeleteOptions",
             "name": "DeleteOptions",
@@ -396,6 +426,111 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLoader.html#method_withUpdateOptions"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata",
+            "name": "PostgreSqlMetadata",
+            "summary": "Per\u002Dcolumn\u0020metadata\u0020keys\u0020understood\u0020by\u0020\u007B\u0040see\u0020SchemaConverter\u007D\u0020when\u0020converting\u0020a\u0020Flow\u0020Schema\u0020to\u0020a\nPostgreSQL\u0020table.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003Adefault\u0028\u0029",
+            "name": "default",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#method_default"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003Agenerated\u0028\u0029",
+            "name": "generated",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#method_generated"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003Aidentity\u0028\u0029",
+            "name": "identity",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#method_identity"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#method_index"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003AindexUnique\u0028\u0029",
+            "name": "indexUnique",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#method_indexUnique"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003Alength\u0028\u0029",
+            "name": "length",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#method_length"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003Aprecision\u0028\u0029",
+            "name": "precision",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#method_precision"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003AprimaryKey\u0028\u0029",
+            "name": "primaryKey",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#method_primaryKey"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003Ascale\u0028\u0029",
+            "name": "scale",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#method_scale"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003ADEFAULT",
+            "name": "DEFAULT",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#enumcase_DEFAULT"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003AGENERATED",
+            "name": "GENERATED",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#enumcase_GENERATED"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003AIDENTITY",
+            "name": "IDENTITY",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#enumcase_IDENTITY"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003AINDEX",
+            "name": "INDEX",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#enumcase_INDEX"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003AINDEX_UNIQUE",
+            "name": "INDEX_UNIQUE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#enumcase_INDEX_UNIQUE"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003ALENGTH",
+            "name": "LENGTH",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#enumcase_LENGTH"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003APRECISION",
+            "name": "PRECISION",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#enumcase_PRECISION"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003APRIMARY_KEY",
+            "name": "PRIMARY_KEY",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#enumcase_PRIMARY_KEY"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003ASCALE",
+            "name": "SCALE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#enumcase_SCALE"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlMetadata\u003A\u003ATYPE",
+            "name": "TYPE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#enumcase_TYPE"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\QueryBuilder\\DeleteQueryBuilder",
             "name": "DeleteQueryBuilder",
             "summary": "",
@@ -440,6 +575,26 @@ Search.appendIndex(
             "name": "build",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-QueryBuilder-UpdateQueryBuilder.html#method_build"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\SchemaConverter",
+            "name": "SchemaConverter",
+            "summary": "Converts\u0020between\u0020a\u0020Flow\u0020\u007B\u0040see\u0020Schema\u007D\u0020and\u0020a\u0020PostgreSQL\u0020\u007B\u0040see\u0020Table\u007D.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-SchemaConverter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\SchemaConverter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-SchemaConverter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\SchemaConverter\u003A\u003AtoFlowSchema\u0028\u0029",
+            "name": "toFlowSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-SchemaConverter.html#method_toFlowSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\SchemaConverter\u003A\u003AtoPostgreSqlTable\u0028\u0029",
+            "name": "toPostgreSqlTable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-SchemaConverter.html#method_toPostgreSqlTable"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ValueConverter\\EnumConverter",
             "name": "EnumConverter",
