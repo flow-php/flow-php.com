@@ -1515,6 +1515,7 @@ the <a href="/documentation/installation/packages/phpunit-telemetry-bridge">inst
         &lt;parameter name="emit_metrics" value="true"/&gt;
         &lt;parameter name="emit_test_spans" value="true"/&gt;
         &lt;parameter name="emit_test_case_spans" value="true"/&gt;
+        &lt;parameter name="memory_real_usage" value="false"/&gt;
     &lt;/bootstrap&gt;
 &lt;/extensions&gt;
 </code></pre>
@@ -1577,6 +1578,12 @@ the <a href="/documentation/installation/packages/phpunit-telemetry-bridge">inst
 <td><code>FLOW_PHPUNIT_OTEL_EMIT_TEST_CASE_SPANS</code></td>
 <td><code>true</code></td>
 <td>Create spans for test case classes</td>
+</tr>
+<tr>
+<td><code>memory_real_usage</code></td>
+<td><code>FLOW_PHPUNIT_OTEL_MEMORY_REAL_USAGE</code></td>
+<td><code>false</code></td>
+<td>Report total system-allocated memory (<code>real_usage=true</code>) instead of emalloc usage for memory metrics/attributes</td>
 </tr>
 <tr>
 <td><code>batch_size</code></td>

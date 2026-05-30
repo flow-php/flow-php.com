@@ -131,6 +131,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#property_errorHandler"
         },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003A\u0024memoryRealUsage",
+            "name": "memoryRealUsage",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#property_memoryRealUsage"
+        },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\CurlTransportConfig",
             "name": "CurlTransportConfig",
             "summary": "",
@@ -585,6 +590,26 @@ Search.appendIndex(
             "name": "create",
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-TelemetryFactory.html#method_create"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\TestMemoryRegistry",
+            "name": "TestMemoryRegistry",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-TestMemoryRegistry.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\TestMemoryRegistry\u003A\u003Aclear\u0028\u0029",
+            "name": "clear",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-TestMemoryRegistry.html#method_clear"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\TestMemoryRegistry\u003A\u003AgetStart\u0028\u0029",
+            "name": "getStart",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-TestMemoryRegistry.html#method_getStart"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\TestMemoryRegistry\u003A\u003AsetStart\u0028\u0029",
+            "name": "setStart",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-TestMemoryRegistry.html#method_setStart"
         },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\TestStatusRegistry",
             "name": "TestStatusRegistry",
