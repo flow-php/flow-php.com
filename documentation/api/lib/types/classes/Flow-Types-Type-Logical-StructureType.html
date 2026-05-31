@@ -207,7 +207,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-StructureType.html#method_elements">elements()</a>
     <span>
-                                &nbsp;: array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;    </span>
+                                &nbsp;: array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -226,13 +226,13 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-StructureType.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{type: "structure", elements: array<string,array<string,mixed>>, optional_elements: array<string,array<string,mixed>>, allow_extra: bool}    </span>
+                                &nbsp;: array{type: "structure", elements: array<array-key,array<string,mixed>>, optional_elements: array<array-key,array<string,mixed>>, allow_extra: bool}    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-StructureType.html#method_optionalElements">optionalElements()</a>
     <span>
-                                &nbsp;: array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;    </span>
+                                &nbsp;: array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -277,7 +277,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\T">T</abbr>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$elements</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\T">T</abbr>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$optionalElements</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowExtra</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\T">T</abbr>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$elements</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\T">T</abbr>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$optionalElements</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowExtra</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -287,14 +287,14 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$elements</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\T">T</abbr>&gt;&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\T">T</abbr>&gt;&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$optionalElements</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\T">T</abbr>&gt;&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\T">T</abbr>&gt;&gt;</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -491,7 +491,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">elements</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">elements</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -504,7 +504,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;</span>
             </section>
 
 </article>
@@ -630,7 +630,7 @@ want the call to fail loudly on a mismatch.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{type: "structure", elements: array<string,array<string,mixed>>, optional_elements: array<string,array<string,mixed>>, allow_extra: bool}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{type: "structure", elements: array<array-key,array<string,mixed>>, optional_elements: array<array-key,array<string,mixed>>, allow_extra: bool}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -643,7 +643,7 @@ want the call to fail loudly on a mismatch.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{type: "structure", elements: array<string,array<string,mixed>>, optional_elements: array<string,array<string,mixed>>, allow_extra: bool}</span>
+        <span class="phpdocumentor-signature__response_type">array{type: "structure", elements: array<array-key,array<string,mixed>>, optional_elements: array<array-key,array<string,mixed>>, allow_extra: bool}</span>
             </section>
 
 </article>
@@ -668,7 +668,7 @@ want the call to fail loudly on a mismatch.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">optionalElements</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">optionalElements</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -681,7 +681,7 @@ want the call to fail loudly on a mismatch.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;</span>
             </section>
 
 </article>

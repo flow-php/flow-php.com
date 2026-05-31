@@ -9892,7 +9892,7 @@ const dslFunctions = [
                     <span class=\"fn-name\">structure_entry</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$value</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Entry</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @param ?array<string, mixed> $value<br>@param Type<mixed> $type<br>@return ($value is null ? Entry<null> : Entry<array<string, mixed>>)
+                    @template TShape of array<array-key, mixed><br>@param ?TShape $value<br>@param StructureType<mixed>|Type<TShape> $type<br>@return ($value is null ? Entry<null> : Entry<TShape>)
                 </div>
                             `
             return div
@@ -9943,7 +9943,7 @@ const dslFunctions = [
                     <span class=\"fn-name\">struct_entry</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$name</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$value</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Type</span> <span class=\"fn-param\">$type</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Metadata</span> <span class=\"fn-param\">$metadata</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Entry</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @param ?array<string, mixed> $value<br>@param Type<mixed> $type<br>@return ($value is null ? Entry<null> : Entry<array<string, mixed>>)
+                    @template TShape of array<array-key, mixed><br>@param ?TShape $value<br>@param StructureType<mixed>|Type<TShape> $type<br>@return ($value is null ? Entry<null> : Entry<TShape>)
                 </div>
                             `
             return div
@@ -11557,7 +11557,7 @@ const dslFunctions = [
                     <span class=\"fn-name\">type_structure</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">array</span> <span class=\"fn-param\">$elements</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$optional_elements</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$allow_extra</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Type</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    @param array<string, Type<mixed>> $elements<br>@param array<string, Type<mixed>> $optional_elements<br>@return Type<array<string, mixed>>
+                    @template T<br>@param array<array-key, Type<T>> $elements<br>@param array<array-key, Type<T>> $optional_elements<br>@return StructureType<T>
                 </div>
                             `
             return div

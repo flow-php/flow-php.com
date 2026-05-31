@@ -151,7 +151,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -159,21 +159,21 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">type_structure</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$elements</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$optional_elements</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allow_extra</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, array&lt;string, mixed&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">type_structure</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\DSL\T">T</abbr>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$elements</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\DSL\T">T</abbr>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$optional_elements</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allow_extra</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-StructureType.html"><abbr title="\Flow\Types\Type\Logical\StructureType">StructureType</abbr></a>&lt;string|int, <abbr title="\Flow\Types\DSL\T">T</abbr>&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$elements</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\DSL\T">T</abbr>&gt;&gt;</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$optional_elements</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, mixed&gt;&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\DSL\T">T</abbr>&gt;&gt;</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -188,10 +188,23 @@
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="function_type_structure_tags">
+        Tags
+        <a href="namespaces/flow-types-dsl.html#function_type_structure_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">template</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, array&lt;string, mixed&gt;&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-StructureType.html"><abbr title="\Flow\Types\Type\Logical\StructureType">StructureType</abbr></a>&lt;string|int, <abbr title="\Flow\Types\DSL\T">T</abbr>&gt;</span>
             </section>
 
 </article>
@@ -204,7 +217,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -270,7 +283,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -336,7 +349,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -365,7 +378,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -417,7 +430,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -456,7 +469,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -508,7 +521,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
@@ -554,7 +567,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -606,7 +619,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
@@ -658,7 +671,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">214</span>
 
     </aside>
 
@@ -720,7 +733,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">221</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -749,7 +762,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">230</span>
+    <span class="phpdocumentor-element-found-in__line">232</span>
 
     </aside>
 
@@ -778,7 +791,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">239</span>
+    <span class="phpdocumentor-element-found-in__line">241</span>
 
     </aside>
 
@@ -807,7 +820,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">248</span>
+    <span class="phpdocumentor-element-found-in__line">250</span>
 
     </aside>
 
@@ -836,7 +849,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">257</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 
     </aside>
 
@@ -865,7 +878,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">266</span>
+    <span class="phpdocumentor-element-found-in__line">268</span>
 
     </aside>
 
@@ -894,7 +907,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">275</span>
+    <span class="phpdocumentor-element-found-in__line">277</span>
 
     </aside>
 
@@ -923,7 +936,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">284</span>
+    <span class="phpdocumentor-element-found-in__line">286</span>
 
     </aside>
 
@@ -952,7 +965,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">293</span>
+    <span class="phpdocumentor-element-found-in__line">295</span>
 
     </aside>
 
@@ -981,7 +994,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">302</span>
+    <span class="phpdocumentor-element-found-in__line">304</span>
 
     </aside>
 
@@ -1010,7 +1023,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">311</span>
+    <span class="phpdocumentor-element-found-in__line">313</span>
 
     </aside>
 
@@ -1039,7 +1052,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">320</span>
+    <span class="phpdocumentor-element-found-in__line">322</span>
 
     </aside>
 
@@ -1068,7 +1081,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">333</span>
+    <span class="phpdocumentor-element-found-in__line">335</span>
 
     </aside>
 
@@ -1120,7 +1133,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">342</span>
+    <span class="phpdocumentor-element-found-in__line">344</span>
 
     </aside>
 
@@ -1149,7 +1162,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">351</span>
+    <span class="phpdocumentor-element-found-in__line">353</span>
 
     </aside>
 
@@ -1178,7 +1191,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">360</span>
+    <span class="phpdocumentor-element-found-in__line">362</span>
 
     </aside>
 
@@ -1207,7 +1220,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">369</span>
+    <span class="phpdocumentor-element-found-in__line">371</span>
 
     </aside>
 
@@ -1236,7 +1249,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">378</span>
+    <span class="phpdocumentor-element-found-in__line">380</span>
 
     </aside>
 
@@ -1265,7 +1278,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">387</span>
+    <span class="phpdocumentor-element-found-in__line">389</span>
 
     </aside>
 
@@ -1294,7 +1307,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">396</span>
+    <span class="phpdocumentor-element-found-in__line">398</span>
 
     </aside>
 
@@ -1323,7 +1336,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">405</span>
+    <span class="phpdocumentor-element-found-in__line">407</span>
 
     </aside>
 
@@ -1352,7 +1365,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">414</span>
+    <span class="phpdocumentor-element-found-in__line">416</span>
 
     </aside>
 
@@ -1381,7 +1394,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">427</span>
+    <span class="phpdocumentor-element-found-in__line">429</span>
 
     </aside>
 
@@ -1433,7 +1446,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">440</span>
+    <span class="phpdocumentor-element-found-in__line">442</span>
 
     </aside>
 
@@ -1485,7 +1498,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">449</span>
+    <span class="phpdocumentor-element-found-in__line">451</span>
 
     </aside>
 
@@ -1514,7 +1527,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">458</span>
+    <span class="phpdocumentor-element-found-in__line">460</span>
 
     </aside>
 
@@ -1543,7 +1556,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">470</span>
+    <span class="phpdocumentor-element-found-in__line">472</span>
 
     </aside>
 
@@ -1602,7 +1615,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">483</span>
+    <span class="phpdocumentor-element-found-in__line">485</span>
 
     </aside>
 
@@ -1668,7 +1681,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">492</span>
+    <span class="phpdocumentor-element-found-in__line">494</span>
 
     </aside>
 
@@ -1707,7 +1720,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">505</span>
+    <span class="phpdocumentor-element-found-in__line">507</span>
 
     </aside>
 
@@ -1759,7 +1772,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/DSL/functions.php"><a href="files/src-lib-types-src-flow-types-dsl-functions.html"><abbr title="src/lib/types/src/Flow/Types/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">511</span>
+    <span class="phpdocumentor-element-found-in__line">513</span>
 
     </aside>
 
