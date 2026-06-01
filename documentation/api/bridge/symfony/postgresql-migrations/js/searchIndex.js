@@ -166,6 +166,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Command-UpToDateCommand.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Connection\\ConnectionParametersFactory",
+            "name": "ConnectionParametersFactory",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Connection-ConnectionParametersFactory.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Connection\\ConnectionParametersFactory\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Connection-ConnectionParametersFactory.html#method_create"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\DependencyInjection\\Compiler\\CatalogProviderPass",
             "name": "CatalogProviderPass",
             "summary": "",
@@ -310,6 +320,11 @@ Search.appendIndex(
             "name": "Command",
             "summary": "",
             "url": "namespaces/flow-bridge-symfony-postgresqlbundle-command.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Connection",
+            "name": "Connection",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-postgresqlbundle-connection.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\DependencyInjection\\Compiler",
             "name": "Compiler",

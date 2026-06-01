@@ -1475,6 +1475,11 @@ schema migrations, catalog-driven schema diffing, and optional telemetry for que
 <li><a href="#configuration-reference">Configuration Reference</a>
 <ul>
 <li><a href="#connections">Connections</a></li>
+<li><a href="#connection-overrides">Connection Overrides</a>
+<ul>
+<li><a href="#dbnamesuffix-for-parallel-tests">dbname_suffix for parallel tests</a></li>
+</ul>
+</li>
 <li><a href="#telemetry">Telemetry</a></li>
 <li><a href="#migrations">Migrations</a></li>
 <li><a href="#catalog-providers">Catalog Providers</a>
@@ -1560,6 +1565,87 @@ expose a configured <code>Telemetry</code> service referenced via <code>telemetr
   connections:
     default:
       dsn: '%env(DATABASE_URL)%'
+</code></pre>
+<h3><a id="connection-overrides" href="#connection-overrides" class="mr-2" aria-hidden="true" title="Permalink">#</a>Connection Overrides</h3>
+<p>Each connection may override individual parts of the parsed DSN. Every key maps 1:1 onto an immutable
+<code>ConnectionParameters</code> method in the <code>flow-php/postgresql</code> library; the bundle adds no logic of its own.
+Overrides are applied at service-factory time, so values may be <code>%env(...)%</code> placeholders — they are
+resolved at runtime, not when the configuration is parsed.</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_postgresql:
+  connections:
+    default:
+      dsn: '%env(DATABASE_URL)%'
+
+      dbname: null            # Replaces the database name parsed from the DSN
+      host: null              # Replaces the host parsed from the DSN
+      port: null              # Replaces the port parsed from the DSN
+      user: null              # Replaces the user parsed from the DSN
+      password: null          # Replaces the password parsed from the DSN
+      dbname_suffix: ''       # Appends the given suffix to the configured database name
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Default</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dbname</code></td>
+<td>string</td>
+<td><code>null</code></td>
+<td>Replaces the database name parsed from the DSN.</td>
+</tr>
+<tr>
+<td><code>host</code></td>
+<td>string</td>
+<td><code>null</code></td>
+<td>Replaces the host parsed from the DSN.</td>
+</tr>
+<tr>
+<td><code>port</code></td>
+<td>int</td>
+<td><code>null</code></td>
+<td>Replaces the port parsed from the DSN.</td>
+</tr>
+<tr>
+<td><code>user</code></td>
+<td>string</td>
+<td><code>null</code></td>
+<td>Replaces the user parsed from the DSN.</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>string</td>
+<td><code>null</code></td>
+<td>Replaces the password parsed from the DSN.</td>
+</tr>
+<tr>
+<td><code>dbname_suffix</code></td>
+<td>string</td>
+<td><code>''</code></td>
+<td>Appends the given suffix to the configured database name.</td>
+</tr>
+</tbody>
+</table>
+<p><code>dbname</code>/<code>host</code>/<code>port</code>/<code>user</code>/<code>password</code> are applied first, then <code>dbname_suffix</code> <strong>last</strong> — so
+<code>dbname: 'foo'</code> + <code>dbname_suffix: '_test'</code> yields <code>foo_test</code>. A connection with only <code>dsn</code> behaves
+exactly as before.</p>
+<h4><a id="dbnamesuffix-for-parallel-tests" href="#dbnamesuffix-for-parallel-tests" class="mr-2" aria-hidden="true" title="Permalink">#</a><code>dbname_suffix</code> for parallel tests</h4>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml"># config/packages/flow_postgresql.yaml
+flow_postgresql:
+  connections:
+    default:
+      dsn: '%env(DATABASE_ANALYTICAL_URL)%'
+
+when@test:
+  flow_postgresql:
+    connections:
+      default:
+        dbname_suffix: '_test%env(default::TEST_TOKEN)%'
 </code></pre>
 <h3><a id="telemetry" href="#telemetry" class="mr-2" aria-hidden="true" title="Permalink">#</a>Telemetry</h3>
 <p>Enable telemetry per connection to get distributed tracing, query logging, and metrics.</p>

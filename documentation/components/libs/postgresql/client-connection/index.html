@@ -1471,6 +1471,11 @@
 <div class="toc-wrapper" data-controller="toc"><div class="toc-header" data-action="click-&gt;toc#toggle"><span>Table of Contents</span><svg class="toc-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg></div><div class="toc-content"><ul class="table-of-contents"><li><a href="#connection-string">Connection String</a></li>
 <li><a href="#dsn-url">DSN URL</a></li>
 <li><a href="#explicit-parameters">Explicit Parameters</a></li>
+<li><a href="#overriding-parsed-parameters">Overriding Parsed Parameters</a>
+<ul>
+<li><a href="#database-suffix">Database Suffix</a></li>
+</ul>
+</li>
 <li><a href="#connection-lifecycle">Connection Lifecycle</a>
 <ul>
 <li><a href="#checking-connection-status">Checking Connection Status</a></li>
@@ -1558,6 +1563,35 @@ $client = pgsql_client(
     )
 );
 </code></pre>
+<h2><a id="overriding-parsed-parameters" href="#overriding-parsed-parameters" class="mr-2" aria-hidden="true" title="Permalink">#</a>Overriding Parsed Parameters</h2>
+<p><code>ConnectionParameters</code> is immutable. Each <code>with*()</code> method returns a new instance, so a parsed DSN
+can be adjusted without re-parsing.</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+use Flow\PostgreSql\Client\DsnParser;
+
+$params = (new DsnParser())-&gt;parse('postgresql://user:pass@localhost:5432/mydb')
+    -&gt;withHost('db.internal')
+    -&gt;withPort(5544)
+    -&gt;withUser('svc')
+    -&gt;withPassword('secret')
+    -&gt;withDatabase('analytics');
+</code></pre>
+<h3><a id="database-suffix" href="#database-suffix" class="mr-2" aria-hidden="true" title="Permalink">#</a>Database Suffix</h3>
+<p><code>withDatabaseSuffix()</code> appends a suffix to the configured database name. The base DSN stays constant
+and only the suffix changes per environment, which makes per-worker parallel-test databases work
+(<code>mydb</code> → <code>mydb_test7</code>) without a second DSN. The suffix is appended verbatim — nothing is inserted
+automatically, so include a separator yourself if you want one (e.g. <code>_test7</code>). An empty suffix is a
+no-op:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+use Flow\PostgreSql\Client\DsnParser;
+
+$params = (new DsnParser())-&gt;parse('postgresql://user:pass@localhost:5432/mydb')
+    -&gt;withDatabaseSuffix('_test7'); // database() === 'mydb_test7'
+</code></pre>
+<p>When combined with <code>withDatabase()</code>, apply the override first — the suffix is appended to the
+overridden name (<code>withDatabase('other')-&gt;withDatabaseSuffix('_test')</code> ⇒ <code>other_test</code>).</p>
 <h2><a id="connection-lifecycle" href="#connection-lifecycle" class="mr-2" aria-hidden="true" title="Permalink">#</a>Connection Lifecycle</h2>
 <h3><a id="checking-connection-status" href="#checking-connection-status" class="mr-2" aria-hidden="true" title="Permalink">#</a>Checking Connection Status</h3>
 <pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
