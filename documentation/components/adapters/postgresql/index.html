@@ -1513,6 +1513,7 @@
 <li><a href="#upsert-on-constraint">Upsert on Constraint</a></li>
 <li><a href="#update-existing-rows">Update Existing Rows</a></li>
 <li><a href="#delete-rows">Delete Rows</a></li>
+<li><a href="#transactional-loading">Transactional Loading</a></li>
 </ul>
 </li>
 <li><a href="#loader-dsl-functions-reference">Loader DSL Functions Reference</a></li>
@@ -1894,6 +1895,26 @@ df()
     )
     -&gt;run();
 </code></pre>
+<h3><a id="transactional-loading" href="#transactional-loading" class="mr-2" aria-hidden="true" title="Permalink">#</a>Transactional Loading</h3>
+<p><code>to_pgsql_transaction()</code> wraps one or more loaders so each batch of rows is loaded inside a single transaction. If any
+loader throws, the whole batch is rolled back:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">use Flow\PostgreSql\QueryBuilder\Transaction\IsolationLevel;
+
+use function Flow\ETL\Adapter\PostgreSql\{to_pgsql_table, to_pgsql_transaction};
+
+df()
+    -&gt;read(from_array($data))
+    -&gt;write(to_pgsql_transaction(
+        $client,
+        to_pgsql_table($client, 'users'),
+        to_pgsql_table($client, 'users_audit'),
+    ))
+    -&gt;run();
+</code></pre>
+<p>Use <code>withIsolationLevel()</code> to set the transaction isolation level:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">to_pgsql_transaction($client, to_pgsql_table($client, 'users'))
+    -&gt;withIsolationLevel(IsolationLevel::SERIALIZABLE);
+</code></pre>
 <h2><a id="loader-dsl-functions-reference" href="#loader-dsl-functions-reference" class="mr-2" aria-hidden="true" title="Permalink">#</a>Loader DSL Functions Reference</h2>
 <table>
 <thead>
@@ -1906,6 +1927,10 @@ df()
 <tr>
 <td><code>to_pgsql_table($client, $table)</code></td>
 <td>Create a PostgreSQL loader for a table</td>
+</tr>
+<tr>
+<td><code>to_pgsql_transaction($client, ...$loaders)</code></td>
+<td>Run multiple loaders within a single transaction</td>
 </tr>
 <tr>
 <td><code>pgsql_insert_options(...)</code></td>

@@ -96,6 +96,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-adapter-postgresql.html#function_to_pgsql_table"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\to_pgsql_transaction\u0028\u0029",
+            "name": "to_pgsql_transaction",
+            "summary": "Execute\u0020multiple\u0020loaders\u0020within\u0020a\u0020single\u0020PostgreSQL\u0020transaction.",
+            "url": "namespaces/flow-etl-adapter-postgresql.html#function_to_pgsql_transaction"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\pgsql_insert_options\u0028\u0029",
             "name": "pgsql_insert_options",
             "summary": "Create\u0020insert\u0020options\u0020for\u0020PostgreSQL\u0020loader.",
@@ -595,6 +600,26 @@ Search.appendIndex(
             "name": "toPostgreSqlTable",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-SchemaConverter.html#method_toPostgreSqlTable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TransactionalPostgreSqlLoader",
+            "name": "TransactionalPostgreSqlLoader",
+            "summary": "Execute\u0020multiple\u0020loaders\u0020within\u0020a\u0020single\u0020PostgreSQL\u0020transaction.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-TransactionalPostgreSqlLoader.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TransactionalPostgreSqlLoader\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-TransactionalPostgreSqlLoader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TransactionalPostgreSqlLoader\u003A\u003Aload\u0028\u0029",
+            "name": "load",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-TransactionalPostgreSqlLoader.html#method_load"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TransactionalPostgreSqlLoader\u003A\u003AwithIsolationLevel\u0028\u0029",
+            "name": "withIsolationLevel",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-TransactionalPostgreSqlLoader.html#method_withIsolationLevel"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ValueConverter\\EnumConverter",
             "name": "EnumConverter",
