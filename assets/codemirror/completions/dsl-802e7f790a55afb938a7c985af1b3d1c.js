@@ -1303,7 +1303,7 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">catalog_comparator</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">RenameStrategy</span> <span class=\"fn-param\">$renameStrategy</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ViewDependencyResolver</span> <span class=\"fn-param\">$viewDependencyResolver</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ExecutionOrderStrategy</span> <span class=\"fn-param\">$tableOrderStrategy</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">CatalogComparator</span>
+                    <span class=\"fn-name\">catalog_comparator</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">RenameStrategy</span> <span class=\"fn-param\">$renameStrategy</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ViewDependencyResolver</span> <span class=\"fn-param\">$viewDependencyResolver</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">ExecutionOrderStrategy</span> <span class=\"fn-param\">$tableOrderStrategy</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$dropIfExists</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">CatalogComparator</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
                     @param null|ExecutionOrderStrategy<\\Flow\\PostgreSql\\Schema\\Table> $tableOrderStrategy
@@ -1311,7 +1311,7 @@ const dslFunctions = [
                             `
             return div
         },
-        apply: snippet("\\Flow\\PostgreSql\\DSL\\catalog_comparator(" + "$" + "{" + "1:renameStrategy" + "}" + ", " + "$" + "{" + "2:viewDependencyResolver" + "}" + ", " + "$" + "{" + "3:tableOrderStrategy" + "}" + ")"),
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\catalog_comparator(" + "$" + "{" + "1:renameStrategy" + "}" + ", " + "$" + "{" + "2:viewDependencyResolver" + "}" + ", " + "$" + "{" + "3:tableOrderStrategy" + "}" + ", " + "$" + "{" + "4:dropIfExists" + "}" + ")"),
         boost: 10
     },                {
         label: "chain_catalog_provider",

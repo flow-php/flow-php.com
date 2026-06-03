@@ -66,6 +66,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-Configuration.html#property_exclusionPolicy"
         },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Configuration\u003A\u003A\u0024dropIfExists",
+            "name": "dropIfExists",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Configuration.html#property_dropIfExists"
+        },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\Direction",
             "name": "Direction",
             "summary": "",
