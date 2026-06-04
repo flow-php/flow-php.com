@@ -286,21 +286,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-NullErrorHandlerConfig.html"
         },                {
-            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SerializerType",
-            "name": "SerializerType",
-            "summary": "",
-            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SerializerType.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SerializerType\u003A\u003AJSON",
-            "name": "JSON",
-            "summary": "",
-            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SerializerType.html#enumcase_JSON"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SerializerType\u003A\u003APROTOBUF",
-            "name": "PROTOBUF",
-            "summary": "",
-            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SerializerType.html#enumcase_PROTOBUF"
-        },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SpanStack",
             "name": "SpanStack",
             "summary": "",
