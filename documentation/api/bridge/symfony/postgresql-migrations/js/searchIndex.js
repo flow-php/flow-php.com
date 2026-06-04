@@ -221,6 +221,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_loadExtension"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\FlowPostgreSqlBundle\u003A\u003ASERVICE_CONTAINER",
+            "name": "SERVICE_CONTAINER",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#constant_SERVICE_CONTAINER"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Generator\\TwigMigrationGenerator",
             "name": "TwigMigrationGenerator",
             "summary": "",

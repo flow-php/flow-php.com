@@ -1484,6 +1484,8 @@ schema migrations, catalog-driven schema diffing, and optional telemetry for que
 <li><a href="#migrations">Migrations</a>
 <ul>
 <li><a href="#dropifexists">drop_if_exists</a></li>
+<li><a href="#accessing-the-service-container-in-a-migration">Accessing the service container in a migration</a></li>
+<li><a href="#passing-custom-attributes-via-configuration">Passing custom attributes via configuration</a></li>
 </ul>
 </li>
 <li><a href="#catalog-providers">Catalog Providers</a>
@@ -1694,6 +1696,77 @@ when running migration commands.</p>
 <p>Set <code>drop_if_exists: true</code> to render every diff-generated <code>DROP</code> with <code>IF EXISTS</code> — useful for convergence migrations
 that run against both fresh and legacy databases. Default <code>false</code>, so a missing object fails loudly (drift detection).
 Override for a single run with the <a href="#generating-migrations-from-schema-diff"><code>--drop-if-exists</code></a> flag.</p>
+<h4><a id="accessing-the-service-container-in-a-migration" href="#accessing-the-service-container-in-a-migration" class="mr-2" aria-hidden="true" title="Permalink">#</a>Accessing the service container in a migration</h4>
+<p>When migrations are enabled, the bundle injects the application's service container into the migration context under
+<code>FlowPostgreSqlBundle::SERVICE_CONTAINER</code>. This gives migrations access to resolved parameters — including values
+that Symfony resolves at container build time, such as decrypted secrets and <code>%env(...)%</code> processors — and to any
+service, matching the behaviour of Doctrine's container-aware migrations.</p>
+<p>Read it through <code>MigrationContext::attribute()</code>, which throws when the attribute is absent (use <code>hasAttribute()</code> to
+check first):</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+declare(strict_types=1);
+
+use Flow\Bridge\Symfony\PostgreSqlBundle\FlowPostgreSqlBundle;
+use Flow\PostgreSql\Migrations\Migration;
+use Flow\PostgreSql\Migrations\MigrationContext;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+
+return new class implements Migration {
+    public function migrate(MigrationContext $context): void
+    {
+        /** @var ContainerInterface $container */
+        $container = $context-&gt;attribute(FlowPostgreSqlBundle::SERVICE_CONTAINER);
+
+        $dsn = $container-&gt;getParameter('app.analytics_database_url_readonly');
+
+        // ... use the resolved value, e.g. to provision a role ...
+    }
+
+    public function transactional(): bool
+    {
+        return true;
+    }
+};
+</code></pre>
+<h4><a id="passing-custom-attributes-via-configuration" href="#passing-custom-attributes-via-configuration" class="mr-2" aria-hidden="true" title="Permalink">#</a>Passing custom attributes via configuration</h4>
+<p>Injecting the whole container forces any service a migration needs to be public. To avoid that, declare extra
+attributes under <code>migrations.context</code> — they are merged into the migration context next to the container. Each value
+can be a literal, an <code>@service_id</code> reference (use <code>@@</code> to keep a literal leading <code>@</code>), a <code>%parameter%</code> placeholder, or
+a <code>%env(VAR)%</code> expression. Referenced services may be private.</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_postgresql:
+  migrations:
+    enabled: true
+    context:
+      report_generator: '@app.report_generator'        # service (may be private)
+      readonly_url: '%env(DATABASE_READONLY_URL)%'      # resolved env
+      batch_size: 500                                   # literal
+</code></pre>
+<p>Each key is read in a migration via <code>MigrationContext::attribute()</code>:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+declare(strict_types=1);
+
+use App\Migration\ReportGenerator;
+use Flow\PostgreSql\Migrations\Migration;
+use Flow\PostgreSql\Migrations\MigrationContext;
+
+return new class implements Migration {
+    public function migrate(MigrationContext $context): void
+    {
+        /** @var ReportGenerator $reports */
+        $reports = $context-&gt;attribute('report_generator');
+
+        // ... use the injected service / value ...
+    }
+
+    public function transactional(): bool
+    {
+        return true;
+    }
+};
+</code></pre>
+<p>The <code>service_container</code> key is always present and cannot be overridden by a <code>context</code> entry.</p>
 <h3><a id="catalog-providers" href="#catalog-providers" class="mr-2" aria-hidden="true" title="Permalink">#</a>Catalog Providers</h3>
 <p>Catalog providers define the target database schema. When you run <code>flow:migrations:diff</code>, the bundle compares
 the current database state to the catalog and generates migration SQL to reconcile the differences.</p>

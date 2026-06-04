@@ -71,6 +71,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-Configuration.html#property_dropIfExists"
         },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Configuration\u003A\u003A\u0024attributes",
+            "name": "attributes",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Configuration.html#property_attributes"
+        },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\Direction",
             "name": "Direction",
             "summary": "",
@@ -90,6 +95,11 @@ Search.appendIndex(
             "name": "MigrationException",
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Exception\\MigrationException\u003A\u003AattributeNotFound\u0028\u0029",
+            "name": "attributeNotFound",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_attributeNotFound"
         },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\Exception\\MigrationException\u003A\u003AconfigurationFileNotFound\u0028\u0029",
             "name": "configurationFileNotFound",
@@ -281,10 +291,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-MigrationContext.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\MigrationContext\u003A\u003Aattribute\u0028\u0029",
+            "name": "attribute",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-MigrationContext.html#method_attribute"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\MigrationContext\u003A\u003AhasAttribute\u0028\u0029",
+            "name": "hasAttribute",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-MigrationContext.html#method_hasAttribute"
+        },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\MigrationContext\u003A\u003A\u0024client",
             "name": "client",
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-MigrationContext.html#property_client"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\MigrationContext\u003A\u003A\u0024attributes",
+            "name": "attributes",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-MigrationContext.html#property_attributes"
         },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\MigrationPlan",
             "name": "MigrationPlan",
