@@ -1471,7 +1471,12 @@
 <li><a href="#development-setup">Development Setup</a></li>
 <li><a href="#project-structure">Project Structure</a></li>
 <li><a href="#commands">Commands</a></li>
-<li><a href="#make-targets">Make Targets</a></li></ul></div></div>
+<li><a href="#make-targets">Make Targets</a></li>
+<li><a href="#upgrading-libpgquery-keep-the-c-nix-and-php-sides-in-sync">Upgrading libpg_query (keep the C, nix, and PHP sides in sync)</a>
+<ul>
+<li><a href="#always-validate-against-the-full-php-suite-not-just-the-phpt-tests">Always validate against the full PHP suite, not just the PHPT tests</a></li>
+</ul>
+</li></ul></div></div>
 <p>This document describes how to develop the <code>pg-query-ext</code> PHP extension, which is written in C
 and wraps <a rel="noopener noreferrer" target="_blank" href="https://github.com/pganalyze/libpg_query">libpg_query</a> — a C library that uses the
 actual PostgreSQL parser.</p>
@@ -1549,6 +1554,66 @@ for building the extension from source.</p>
 </tr>
 </tbody>
 </table>
+<h2><a id="upgrading-libpgquery-keep-the-c-nix-and-php-sides-in-sync" href="#upgrading-libpgquery-keep-the-c-nix-and-php-sides-in-sync" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading libpg_query (keep the C, nix, and PHP sides in sync)</h2>
+<p>The extension is only half of the story. A given <code>libpg_query</code> version pins a specific PostgreSQL
+<strong>grammar</strong>, and that grammar is shared across three places that must always agree:</p>
+<table>
+<thead>
+<tr>
+<th>Place</th>
+<th>What it is</th>
+<th>Used by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>src/extension/pg-query-ext/vendor/libpg_query</code> (Makefile <code>PG_VERSION</code>)</td>
+<td>the C library compiled into the extension</td>
+<td>CI (<code>pie</code> build)</td>
+</tr>
+<tr>
+<td><code>.nix/pkgs/php-pg-query-ext/package.nix</code> (<code>libpg_query</code> <code>version</code>/<code>rev</code>/<code>hash</code>)</td>
+<td>the C library compiled into the <strong>nix dev shell</strong></td>
+<td>local <code>nix-shell</code></td>
+</tr>
+<tr>
+<td><code>src/lib/postgresql/resources/proto/pg_query.proto</code> + the generated stubs in <code>src/lib/postgresql/src/Flow/PostgreSql/Protobuf/</code></td>
+<td>the protobuf schema the PHP side serializes/deserializes parse trees with</td>
+<td>the <code>flow-php/postgresql</code> library</td>
+</tr>
+</tbody>
+</table>
+<p>The PHP library round-trips parse trees as protobuf (<code>pg_query_parse_protobuf</code> → mutate → <code>pg_query_deparse</code>).
+Protobuf encodes each <code>Node</code> oneof case by its <strong>field number</strong>. When a new PG major inserts a node, every
+later field number shifts — so if the C library is bumped but the PHP stubs are left stale, PHP serializes
+parse trees with the wrong tags and <code>pg_query_deparse</code> can fail to unpack them and <strong>segfault</strong> (a real
+incident: PG17→PG18 left the stubs stale and crashed CI intermittently, while a stale nix pin hid it locally).</p>
+<p>When you change the <code>libpg_query</code> version, do <strong>all</strong> of the following, then run the full PHP suite:</p>
+<ol>
+<li>Bump the C side (<code>src/extension/pg-query-ext/Makefile</code> <code>PG_VERSION</code> / vendored copy).</li>
+<li>Bump the nix pin in <code>.nix/pkgs/php-pg-query-ext/package.nix</code> to the <strong>same</strong> <code>libpg_query</code> tag, and
+update its <code>hash</code> (<code>nix-prefetch-url --unpack &lt;github-archive-url&gt;</code> → <code>nix hash convert --to sri</code>).</li>
+<li>Regenerate the PHP stubs from the new grammar — sync <code>resources/proto/pg_query.proto</code> from
+<code>vendor/libpg_query/protobuf/pg_query.proto</code> (keep the <code>option php_namespace</code> / <code>php_metadata_namespace</code>
+lines) then run <code>just gen-protobuf-pg</code> inside <code>nix-shell --arg with-protoc true</code>.</li>
+<li>Handle any grammar changes in the query builder / AST (e.g. new <code>Constraint</code> fields, restructured
+clauses) — <code>mago analyze</code> and the suite will surface these.</li>
+</ol>
+<h3><a id="always-validate-against-the-full-php-suite-not-just-the-phpt-tests" href="#always-validate-against-the-full-php-suite-not-just-the-phpt-tests" class="mr-2" aria-hidden="true" title="Permalink">#</a>Always validate against the full PHP suite, not just the PHPT tests</h3>
+<p><code>make test</code> only runs the C-level PHPT tests; it does <strong>not</strong> exercise the PHP <code>flow-php/postgresql</code>
+parse/deparse round-trips where grammar drift bites. After any extension change, run the full suite in a
+shell whose extension matches what you changed:</p>
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash"># uses the nix-built extension (the package.nix pin) — must match the vendored/CI version
+nix-shell --run "just test"
+
+# or, at minimum, the suites that exercise parse/deparse round-trips:
+nix-shell --run "tools/phpunit/vendor/bin/phpunit --testsuite lib-postgresql-unit,lib-postgresql-integration,bridge-phpunit-postgresql-unit,bridge-phpunit-postgresql-integration"
+</code></pre>
+<p>A segfault here shows up as <code>signal 11</code> / exit <code>139</code>. To capture a backtrace, run the failing command
+under <code>lldb</code> (macOS) or <code>gdb</code> (Linux):</p>
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">nix-shell --run 'lldb -b -o "settings set target.process.stop-on-exec false" -o run -o bt -o quit \
+  -- "$(command -v php)" tools/phpunit/vendor/bin/phpunit --testsuite lib-postgresql-unit'
+</code></pre>
 
 
             <p class="!mt-12 !mb-8 text-sm text-slate-500 dark:text-white/55" data-pagefind-ignore>
