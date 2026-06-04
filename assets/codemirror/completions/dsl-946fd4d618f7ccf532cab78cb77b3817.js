@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 769
+ * Total functions: 770
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -8974,6 +8974,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\PostgreSql\\DSL\\schema_table(" + "$" + "{" + "1:name" + "}" + ", " + "$" + "{" + "2:columns" + "}" + ", " + "$" + "{" + "3:primaryKey" + "}" + ", " + "$" + "{" + "4:indexes" + "}" + ", " + "$" + "{" + "5:foreignKeys" + "}" + ", " + "$" + "{" + "6:uniqueConstraints" + "}" + ", " + "$" + "{" + "7:checkConstraints" + "}" + ", " + "$" + "{" + "8:excludeConstraints" + "}" + ", " + "$" + "{" + "9:triggers" + "}" + ", " + "$" + "{" + "10:schema" + "}" + ", " + "$" + "{" + "11:unlogged" + "}" + ", " + "$" + "{" + "12:partitionStrategy" + "}" + ", " + "$" + "{" + "13:partitionColumns" + "}" + ", " + "$" + "{" + "14:inherits" + "}" + ", " + "$" + "{" + "15:tablespace" + "}" + ")"),
+        boost: 10
+    },                {
+        label: "schema_table_options",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">schema_table_options</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">array</span> <span class=\"fn-param\">$foreignKeys</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$checkConstraints</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$excludeConstraints</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$triggers</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$unlogged</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">false</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">PartitionStrategy</span> <span class=\"fn-param\">$partitionStrategy</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$partitionColumns</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">array</span> <span class=\"fn-param\">$inherits</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">[]</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">string</span> <span class=\"fn-param\">$tablespace</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">TableOptions</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    @param list<SchemaForeignKey> $foreignKeys<br>@param list<SchemaCheckConstraint> $checkConstraints<br>@param list<SchemaExcludeConstraint> $excludeConstraints<br>@param list<SchemaTrigger> $triggers<br>@param list<string> $partitionColumns<br>@param list<string> $inherits
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\PostgreSql\\DSL\\schema_table_options(" + "$" + "{" + "1:foreignKeys" + "}" + ", " + "$" + "{" + "2:checkConstraints" + "}" + ", " + "$" + "{" + "3:excludeConstraints" + "}" + ", " + "$" + "{" + "4:triggers" + "}" + ", " + "$" + "{" + "5:unlogged" + "}" + ", " + "$" + "{" + "6:partitionStrategy" + "}" + ", " + "$" + "{" + "7:partitionColumns" + "}" + ", " + "$" + "{" + "8:inherits" + "}" + ", " + "$" + "{" + "9:tablespace" + "}" + ")"),
         boost: 10
     },                {
         label: "schema_to_ascii",

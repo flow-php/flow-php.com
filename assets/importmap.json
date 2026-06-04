@@ -64,7 +64,7 @@
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dsl.js": {
-        "path": "\/assets\/codemirror\/completions\/dsl-802e7f790a55afb938a7c985af1b3d1c.js",
+        "path": "\/assets\/codemirror\/completions\/dsl-946fd4d618f7ccf532cab78cb77b3817.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dataframe.js": {
@@ -180,7 +180,7 @@
         "type": "js"
     },
     "prismjs\/components\/prism-bash.min.js": {
-        "path": "\/assets\/vendor\/prismjs\/components\/prism-bash.min-e41dbb11a1488141f3298bdf86e9f0b7.js",
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-bash.min-035b568f957f7a9c409609feca987649.js",
         "type": "js"
     },
     "prismjs\/components\/prism-markup-templating.min.js": {
