@@ -1,6 +1,21 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Attribute\\WithTelemetryChannel",
+            "name": "WithTelemetryChannel",
+            "summary": "Routes\u0020a\u0020service\u0027s\u0020logger\u0020to\u0020a\u0020named\u0020Flow\u0020telemetry\u0020channel.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Attribute-WithTelemetryChannel.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Attribute\\WithTelemetryChannel\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Attribute-WithTelemetryChannel.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Attribute\\WithTelemetryChannel\u003A\u003A\u0024channel",
+            "name": "channel",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Attribute-WithTelemetryChannel.html#property_channel"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\CacheTelemetryPass",
             "name": "CacheTelemetryPass",
             "summary": "",
@@ -10,6 +25,21 @@ Search.appendIndex(
             "name": "process",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-CacheTelemetryPass.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ChannelLoggerPass",
+            "name": "ChannelLoggerPass",
+            "summary": "Routes\u0020services\u0020to\u0020a\u0020named\u0020telemetry\u0020logger\u0020based\u0020on\u0020their\u0020logging\u0020channel.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ChannelLoggerPass.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ChannelLoggerPass\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ChannelLoggerPass.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ChannelLoggerPass\u003A\u003ATAG",
+            "name": "TAG",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ChannelLoggerPass.html#constant_TAG"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\DBALTelemetryPass",
             "name": "DBALTelemetryPass",
@@ -90,6 +120,11 @@ Search.appendIndex(
             "name": "loadExtension",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-FlowTelemetryBundle.html#method_loadExtension"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\FlowTelemetryBundle\u003A\u003AdefineLogger\u0028\u0029",
+            "name": "defineLogger",
+            "summary": "Register\u0020the\u0020named\u0020logger\u0020and\u0020its\u0020PSR\u002D3\u0020wrapper,\u0020returning\u0020the\u0020PSR\u002D3\u0020service\u0020id.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-FlowTelemetryBundle.html#method_defineLogger"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Cache\\TagAwareTraceableCacheAdapter",
             "name": "TagAwareTraceableCacheAdapter",
@@ -610,6 +645,11 @@ Search.appendIndex(
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Attribute",
+            "name": "Attribute",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-telemetrybundle-attribute.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler",
             "name": "Compiler",

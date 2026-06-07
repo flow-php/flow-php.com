@@ -1542,6 +1542,12 @@ backends.</p>
 </li>
 <li><a href="#named-instruments">Named Instruments</a></li>
 <li><a href="#main-logger">Main Logger</a></li>
+<li><a href="#logging-channels">Logging Channels</a>
+<ul>
+<li><a href="#capturing-framework-channels">Capturing Framework Channels</a></li>
+<li><a href="#coexisting-with-monologbundle">Coexisting with MonologBundle</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#pattern-matching">Pattern Matching</a>
@@ -1560,9 +1566,12 @@ backends.</p>
 </li>
 <li><a href="#complete-production-example">Complete Production Example</a></li></ul></div></div>
 <h2><a id="installation" href="#installation" class="mr-2" aria-hidden="true" title="Permalink">#</a>Installation</h2>
-<p>For detailed installation instructions, see the <a href="/documentation/installation/packages/symfony-telemetry-bundle">installation page</a>.</p>
+<p>For detailed installation instructions, see
+the <a href="/documentation/installation/packages/symfony-telemetry-bundle">installation page</a>.</p>
 <h2><a id="overview" href="#overview" class="mr-2" aria-hidden="true" title="Permalink">#</a>Overview</h2>
-<p>This bundle is built on top of <a href="/documentation/components/libs/telemetry">flow-php/telemetry</a> — see that page for the underlying <code>Telemetry</code>, tracer/meter/logger API, and processor/exporter primitives. For exporting to OTLP-compatible backends, it also uses the <a href="/documentation/components/bridges/telemetry-otlp-bridge">Telemetry OTLP Bridge</a>.</p>
+<p>This bundle is built on top of <a href="/documentation/components/libs/telemetry">flow-php/telemetry</a> — see that page for the
+underlying <code>Telemetry</code>, tracer/meter/logger API, and processor/exporter primitives. For exporting to OTLP-compatible
+backends, it also uses the <a href="/documentation/components/bridges/telemetry-otlp-bridge">Telemetry OTLP Bridge</a>.</p>
 <p>This bundle integrates Flow PHP's Telemetry library with Symfony applications. It provides:</p>
 <ul>
 <li><strong>Automatic resource detection</strong> - Detects service name, version, environment, OS, host, and process information</li>
@@ -1739,7 +1748,7 @@ referenced from provider, processor, and OTLP exporter blocks via <code>error_ha
 
     fanout:
       type: composite
-      handlers: [default, to_file, to_syslog]
+      handlers: [ default, to_file, to_syslog ]
 
     silent:
       type: noop
@@ -1755,7 +1764,8 @@ referenced from provider, processor, and OTLP exporter blocks via <code>error_ha
 <li><code>flow.telemetry.error_handler.&lt;name&gt;</code> — e.g. <code>flow.telemetry.error_handler.default</code></li>
 </ul>
 <h4><a id="errorlog-default" href="#errorlog-default" class="mr-2" aria-hidden="true" title="Permalink">#</a>error_log (default)</h4>
-<p>Writes formatted Throwables via PHP's <code>error_log()</code> — stderr in CLI by default, or the <code>error_log</code> ini setting otherwise.
+<p>Writes formatted Throwables via PHP's <code>error_log()</code> — stderr in CLI by default, or the <code>error_log</code> ini setting
+otherwise.
 Matches the OTEL spec recommendation to log to standard error output.</p>
 <table>
 <thead>
@@ -1931,7 +1941,7 @@ siblings from running.</p>
 </table>
 <pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">fanout:
   type: composite
-  handlers: [default, to_file]
+  handlers: [ default, to_file ]
 </code></pre>
 <h4><a id="noop" href="#noop" class="mr-2" aria-hidden="true" title="Permalink">#</a>noop</h4>
 <p>Discards every Throwable. Intended for tests or explicit silence.</p>
@@ -2065,8 +2075,8 @@ under each entry — there is no separate <code>type:</code> key. Each exporter 
 sub-blocks: <code>otlp</code>, <code>service</code>, <code>console</code>, <code>memory</code>, <code>void</code>. Per-signal processors reference exporters by name.</p>
 <pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_telemetry:
   exporters:
-    otlp:                              # exporter name
-      otlp:                            # sub-block selects implementation
+    otlp: # exporter name
+      otlp: # sub-block selects implementation
         transport:
           type: curl
           endpoint: 'http://otel-collector:4318'
@@ -2643,9 +2653,9 @@ Collector's <code>otlpjsonfile</code> receiver handles mixed <code>resourceLogs<
   tracer_provider:
     processor: { type: batching, exporter: otlp_traces,  batch_size: 1024 }
   meter_provider:
-    processor: { type: batching, exporter: otlp_metrics, batch_size: 256  }
+    processor: { type: batching, exporter: otlp_metrics, batch_size: 256 }
   logger_provider:
-    processor: { type: batching, exporter: otlp_logs,    batch_size: 100  }
+    processor: { type: batching, exporter: otlp_logs,    batch_size: 100 }
 </code></pre>
 <h3><a id="migrating-from-older-config" href="#migrating-from-older-config" class="mr-2" aria-hidden="true" title="Permalink">#</a>Migrating from older config</h3>
 <p>The schema replaced the <code>type: &lt;name&gt;</code> discriminator with a sub-block whose key matches the implementation. There is no
@@ -2824,8 +2834,14 @@ instrument.</p>
       version: '1.0.0'  # default: 'unknown'
 </code></pre>
 <h3><a id="main-logger" href="#main-logger" class="mr-2" aria-hidden="true" title="Permalink">#</a>Main Logger</h3>
-<p>The bundle depends on <a href="/documentation/components/bridges/psr3-telemetry-bridge">PSR-3 Telemetry Bridge</a> and registers a PSR-3 wrapper service for every named Telemetry logger at <code>flow.telemetry.&lt;name&gt;.logger.psr3</code>. This makes Flow Telemetry loggers usable as Symfony's <code>logger</code> service, removing the need for Monolog when telemetry is the only logging destination.</p>
-<p>In addition, the bundle always registers a <code>default</code> logger, meter, and tracer — <code>flow.telemetry.default.logger</code>, <code>flow.telemetry.default.logger.psr3</code>, <code>flow.telemetry.default.meter</code>, <code>flow.telemetry.default.tracer</code> — regardless of what is configured under <code>loggers</code>/<code>meters</code>/<code>tracers</code>. Defining your own <code>default</code> entry under those keys is allowed and will override the auto-default.</p>
+<p>The bundle depends on <a href="/documentation/components/bridges/psr3-telemetry-bridge">PSR-3 Telemetry Bridge</a> and registers
+a PSR-3 wrapper service for every named Telemetry logger at <code>flow.telemetry.&lt;name&gt;.logger.psr3</code>. This makes Flow
+Telemetry loggers usable as Symfony's <code>logger</code> service, removing the need for Monolog when telemetry is the only logging
+destination.</p>
+<p>In addition, the bundle always registers a <code>default</code> logger, meter, and tracer — <code>flow.telemetry.default.logger</code>,
+<code>flow.telemetry.default.logger.psr3</code>, <code>flow.telemetry.default.meter</code>, <code>flow.telemetry.default.tracer</code> — regardless of
+what is configured under <code>loggers</code>/<code>meters</code>/<code>tracers</code>. Defining your own <code>default</code> entry under those keys is allowed and
+will override the auto-default.</p>
 <p><strong>Options:</strong></p>
 <table>
 <thead>
@@ -2847,9 +2863,14 @@ instrument.</p>
 </table>
 <p><strong>Behavior:</strong></p>
 <ul>
-<li>When <code>framework_logger</code> is set, the bundle aliases the Symfony <code>logger</code> service to <code>flow.telemetry.&lt;framework_logger&gt;.logger.psr3</code>. If no logger with that name exists, container compilation fails with a clear error.</li>
-<li>When <code>framework_logger</code> is <code>null</code> and Symfony's <code>logger</code> service is the default <code>Symfony\Component\HttpKernel\Log\Logger</code>, the bundle automatically aliases <code>logger</code> to <code>flow.telemetry.default.logger.psr3</code>.</li>
-<li>When <code>framework_logger</code> is <code>null</code> and <code>logger</code> is provided by another bundle (Monolog, custom alias, etc.), the bundle leaves <code>logger</code> alone.</li>
+<li>When <code>framework_logger</code> is set, the bundle aliases the Symfony <code>logger</code> service to
+<code>flow.telemetry.&lt;framework_logger&gt;.logger.psr3</code>. If no logger with that name exists, container compilation fails with
+a clear error.</li>
+<li>When <code>framework_logger</code> is <code>null</code> and Symfony's <code>logger</code> service is the default
+<code>Symfony\Component\HttpKernel\Log\Logger</code>, the bundle automatically aliases <code>logger</code> to
+<code>flow.telemetry.default.logger.psr3</code>.</li>
+<li>When <code>framework_logger</code> is <code>null</code> and <code>logger</code> is provided by another bundle (Monolog, custom alias, etc.), the bundle
+leaves <code>logger</code> alone.</li>
 </ul>
 <pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_telemetry:
   loggers:
@@ -2858,6 +2879,109 @@ instrument.</p>
 
   framework_logger: app   # Symfony "logger" service -&gt; flow.telemetry.app.logger.psr3
 </code></pre>
+<h3><a id="logging-channels" href="#logging-channels" class="mr-2" aria-hidden="true" title="Permalink">#</a>Logging Channels</h3>
+<p>Channels let you route different parts of your application to different telemetry loggers — the Flow Telemetry
+equivalent of Monolog channels — without installing Monolog. Each channel is a <a href="#named-instruments">named logger</a>;
+messages emitted through it are tagged with a <code>log.channel</code> scope attribute, so you can filter and group them per
+channel in your backend.</p>
+<p>A service opts into a channel by carrying the <code>flow.telemetry.channel</code> tag. The recommended way is the
+<code>#[WithTelemetryChannel]</code> attribute:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+namespace App\Messaging;
+
+use Flow\Bridge\Symfony\TelemetryBundle\Attribute\WithTelemetryChannel;
+use Psr\Log\LoggerInterface;
+
+#[WithTelemetryChannel('events')]
+final class OrderSubscriber
+{
+    public function __construct(
+        private readonly LoggerInterface $logger, // resolves to the "events" channel logger
+    ) {
+    }
+}
+</code></pre>
+<p>The autowired <code>LoggerInterface</code> now resolves to <code>flow.telemetry.events.logger.psr3</code> instead of the default logger. A
+tagged service may instead typehint the native <code>Flow\Telemetry\Logger\Logger</code> — it resolves to that channel's native
+logger (<code>flow.telemetry.events.logger</code>), the instance the PSR-3 wrapper delegates to. Both the PSR-3 interface and the
+native class are bound, so either typehint works.</p>
+<p>The channel can also be requested with a raw tag in <code>services.yaml</code>:</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">services:
+  App\Messaging\OrderSubscriber:
+    tags:
+      - { name: 'flow.telemetry.channel', channel: 'events' }
+</code></pre>
+<p><strong>Behavior:</strong></p>
+<ul>
+<li>Each distinct channel is synthesized on demand as <code>flow.telemetry.&lt;channel&gt;.logger</code> (+ its PSR-3 wrapper
+<code>flow.telemetry.&lt;channel&gt;.logger.psr3</code>), carrying a <code>log.channel: &lt;channel&gt;</code> scope attribute — unless a logger of that
+name already exists, which is then reused untouched (so the <code>log.channel</code> attribute is only added to loggers the
+bundle creates).</li>
+<li>To route a service to the bundle's main logger, use the <code>default</code> channel (<code>#[WithTelemetryChannel('default')]</code>).
+A <code>default</code> logger always exists, so it is reused as-is rather than re-created. Every channel name — including <code>app</code>,
+which carries no special meaning here — behaves the same way.</li>
+<li>For every channel in use, two named-argument autowiring aliases are registered — <code>LoggerInterface $&lt;channel&gt;Logger</code>
+(the PSR-3 wrapper) and <code>Logger $&lt;channel&gt;Logger</code> (the native Flow <code>Logger</code>) — so any service can request a channel
+logger by argument name (e.g. <code>LoggerInterface $eventsLogger</code>, <code>Logger $httpClientLogger</code>) without the tag.</li>
+<li>On a tagged service, an explicit <code>@logger</code> reference is rewritten to the channel logger as well — in both constructor
+arguments and method calls (e.g. <code>setLogger()</code>), preserving the reference's invalid-behavior flag.</li>
+<li>A channel already declared under <code>loggers</code> is <strong>not</strong> overwritten, so you can customise its <code>version</code>, <code>schema_url</code>,
+or <code>attributes</code>. Because declaring it opts out of synthesis, set <code>log.channel</code> yourself if you want it:</li>
+</ul>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_telemetry:
+  loggers:
+    events:
+      version: '1.0.0'
+      attributes:
+        log.channel: events      # not auto-added for a declared logger — set it explicitly
+        team: checkout
+</code></pre>
+<h4><a id="capturing-framework-channels" href="#capturing-framework-channels" class="mr-2" aria-hidden="true" title="Permalink">#</a>Capturing Framework Channels</h4>
+<p>Symfony's own services already declare channels by tagging themselves <code>monolog.logger</code> (the router, the request logger,
+the event dispatcher, the HTTP client, cache pools, the messenger, …) — that tag comes from FrameworkBundle and is
+present whether or not MonologBundle is installed. Enable <code>capture_framework_channels</code> and the bundle <strong>consumes that
+tag</strong>, routing these framework channels to Flow telemetry loggers exactly the way MonologBundle would — making it a
+drop-in replacement for Monolog's channel routing, without Monolog.</p>
+<p>It is <strong>disabled by default</strong>, because MonologBundle claims the same <code>monolog.logger</code> tag: if both are installed and
+both process it, they fight over the same services. Enable it only when Flow telemetry owns channel routing (i.e. you
+are not running MonologBundle):</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_telemetry:
+  capture_framework_channels: true   # default: false
+</code></pre>
+<p>Each framework channel becomes <code>flow.telemetry.&lt;channel&gt;.logger</code> (e.g. <code>flow.telemetry.router.logger</code>,
+<code>flow.telemetry.http_client.logger</code>), carries the <code>log.channel</code> scope attribute, and gets the
+<code>LoggerInterface $&lt;channel&gt;Logger</code> / <code>Logger $&lt;channel&gt;Logger</code> autowiring aliases — the same treatment as an explicitly
+tagged service. A channel you declare under <code>loggers</code> still wins, so you can customise any framework channel's scope.</p>
+<p>Services that opt in explicitly via <code>#[WithTelemetryChannel]</code> / the <code>flow.telemetry.channel</code> tag are always routed
+regardless of this flag.</p>
+<blockquote>
+<p>[!NOTE]
+<code>capture_framework_channels</code> rewrites the <code>logger</code> reference on framework services to their channel logger. A
+service-specific channel takes precedence over the global <a href="#main-logger"><code>framework_logger</code></a> redirect.</p>
+</blockquote>
+<h4><a id="coexisting-with-monologbundle" href="#coexisting-with-monologbundle" class="mr-2" aria-hidden="true" title="Permalink">#</a>Coexisting with MonologBundle</h4>
+<p>You can run this bundle <strong>alongside MonologBundle</strong> — as long as <code>capture_framework_channels</code> stays <code>false</code> (the
+default). The two are independent because they read different DI tags: framework capture reads Symfony's
+<code>monolog.logger</code>, while the <code>#[WithTelemetryChannel]</code> attribute uses this bundle's own <code>flow.telemetry.channel</code> tag,
+which Monolog never looks at. With the flag off, this bundle never touches <code>monolog.logger</code>, so:</p>
+<ul>
+<li>MonologBundle keeps full ownership of every framework channel (router, request, Doctrine, …) and the default <code>app</code>
+logger — uncontested.</li>
+<li><code>#[WithTelemetryChannel('events')]</code> still scopes an individual class: it binds only that service's <code>LoggerInterface</code>
+(and native <code>Logger</code>) to the Flow telemetry channel logger. Because the binding fills the argument directly, it wins
+over Monolog's global <code>LoggerInterface</code> autowiring alias for that one class; every other class keeps resolving to
+Monolog.</li>
+</ul>
+<p>What you <strong>cannot</strong> do is enable <code>capture_framework_channels</code> <em>and</em> keep MonologBundle: both passes then rewrite the same
+<code>monolog.logger</code>-tagged services, and the outcome depends on compiler-pass ordering. Ownership of the framework channels
+is all-or-nothing:</p>
+<ul>
+<li><strong>Flow telemetry owns the framework channels</strong> — <code>capture_framework_channels: true</code>, MonologBundle not installed.</li>
+<li><strong>Monolog owns the framework channels, Flow scopes specific classes</strong> — <code>capture_framework_channels: false</code>,
+MonologBundle installed.</li>
+</ul>
+<p>The <code>#[WithTelemetryChannel]</code> attribute works in both setups.</p>
 <h2><a id="pattern-matching" href="#pattern-matching" class="mr-2" aria-hidden="true" title="Permalink">#</a>Pattern Matching</h2>
 <p>Several configuration options support pattern matching for exclusion lists (paths, commands, templates, etc.).</p>
 <h3><a id="exact-string-matching" href="#exact-string-matching" class="mr-2" aria-hidden="true" title="Permalink">#</a>Exact String Matching</h3>
