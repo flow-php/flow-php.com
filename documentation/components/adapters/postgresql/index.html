@@ -1520,7 +1520,12 @@
 <li><a href="#schema-conversion">Schema Conversion</a>
 <ul>
 <li><a href="#creating-a-table-from-a-flow-schema">Creating a Table from a Flow Schema</a></li>
-<li><a href="#steering-the-conversion-with-metadata">Steering the Conversion with Metadata</a></li>
+<li><a href="#steering-the-conversion-with-metadata">Steering the Conversion with Metadata</a>
+<ul>
+<li><a href="#ordering-columns-within-an-index">Ordering Columns Within an Index</a></li>
+<li><a href="#a-column-in-multiple-indexes">A Column in Multiple Indexes</a></li>
+</ul>
+</li>
 <li><a href="#reading-a-flow-schema-back-from-a-table">Reading a Flow Schema back from a Table</a></li>
 <li><a href="#customizing-the-type-mapping">Customizing the Type Mapping</a></li>
 <li><a href="#schema-conversion-dsl-functions-reference">Schema Conversion DSL Functions Reference</a></li>
@@ -2026,12 +2031,12 @@ $schema = schema(
 <td>Include the column in the table primary key</td>
 </tr>
 <tr>
-<td><code>PostgreSqlMetadata::indexUnique($name)</code></td>
-<td>Include the column in a named <code>UNIQUE</code> constraint</td>
+<td><code>PostgreSqlMetadata::indexUnique($name, $position)</code></td>
+<td>Include the column in a named <code>UNIQUE</code> constraint, optionally at an explicit position</td>
 </tr>
 <tr>
-<td><code>PostgreSqlMetadata::index($name)</code></td>
-<td>Include the column in a named index</td>
+<td><code>PostgreSqlMetadata::index($name, $position)</code></td>
+<td>Include the column in a named index, optionally at an explicit position</td>
 </tr>
 <tr>
 <td><code>PostgreSqlMetadata::identity($generation)</code></td>
@@ -2045,6 +2050,42 @@ $schema = schema(
 </table>
 <p>Columns sharing the same primary key, unique constraint, or index name are grouped together, so composite keys are
 expressed by attaching the same name to several definitions.</p>
+<h4><a id="ordering-columns-within-an-index" href="#ordering-columns-within-an-index" class="mr-2" aria-hidden="true" title="Permalink">#</a>Ordering Columns Within an Index</h4>
+<p>For composite indexes and unique constraints, column order matters. By default columns are ordered the way they appear
+in the schema. Pass an explicit <code>$position</code> (ascending, lower first) to <code>index()</code> / <code>indexUnique()</code> to control the
+order independently of schema field order — useful, for example, for a keyset-pagination index where the leading
+column must serve <code>ORDER BY</code>:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">use Flow\ETL\Adapter\PostgreSql\PostgreSqlMetadata;
+
+use function Flow\ETL\Adapter\PostgreSql\to_pgsql_schema_table;
+use function Flow\ETL\DSL\{datetime_schema, int_schema, schema};
+
+// `id` is field 0, `created_at` is field 1, but the index must lead with `created_at`.
+$table = to_pgsql_schema_table(
+    schema(
+        int_schema('id', metadata: PostgreSqlMetadata::index('orders_created_at_id_idx', position: 2)),
+        datetime_schema('created_at', metadata: PostgreSqlMetadata::index('orders_created_at_id_idx', position: 1)),
+    ),
+    'orders',
+);
+
+// =&gt; CREATE INDEX orders_created_at_id_idx ON public.orders (created_at, id)
+</code></pre>
+<p>Columns without an explicit position default to the end (<code>PHP_INT_MAX</code>), and schema order breaks ties — so leaving
+positions off keeps the schema-order behavior.</p>
+<h4><a id="a-column-in-multiple-indexes" href="#a-column-in-multiple-indexes" class="mr-2" aria-hidden="true" title="Permalink">#</a>A Column in Multiple Indexes</h4>
+<p>Because each index is tracked under its own metadata key, a single column can belong to several indexes at once. Chain
+<code>merge()</code> to attach more than one:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">$schema = schema(
+    int_schema('id', metadata: PostgreSqlMetadata::primaryKey('pk_orders')
+        -&gt;merge(PostgreSqlMetadata::index('orders_created_at_id_idx', position: 2))),
+    datetime_schema('created_at', metadata: PostgreSqlMetadata::index('orders_created_at_id_idx', position: 1)),
+);
+</code></pre>
+<blockquote>
+<p>Index and unique-constraint names must not contain a colon (<code>:</code>) — it is reserved internally as the name/position
+separator and passing one throws an <code>InvalidArgumentException</code>.</p>
+</blockquote>
 <h3><a id="reading-a-flow-schema-back-from-a-table" href="#reading-a-flow-schema-back-from-a-table" class="mr-2" aria-hidden="true" title="Permalink">#</a>Reading a Flow Schema back from a Table</h3>
 <p><code>pgsql_table_to_flow_schema()</code> takes a <code>Flow\PostgreSql\Schema\Table</code> and returns a Flow <code>Schema</code>. Combine it with the
 PostgreSQL library's catalog provider to derive a Flow schema from a live table:</p>
