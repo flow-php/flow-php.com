@@ -126,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/ChannelLoggerPass.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-dependencyinjection-compiler-channelloggerpass.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/ChannelLoggerPass.php">ChannelLoggerPass.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -151,8 +151,10 @@ calls) is rewritten to the PSR-3 logger, preserving the reference's
 invalid-behavior flag. Per channel, both a &quot;LoggerInterface $<channel>Logger&quot; and
 a &quot;Logger $<channel>Logger&quot; autowiring alias are registered so any service can
 request a channel logger by named argument. Each channel is synthesized on demand
-carrying a &quot;log.channel&quot; scope attribute; a logger already declared under that
-name (e.g. the always-present &quot;default&quot;) is reused as-is.</p>
+carrying a &quot;log.channel&quot; attribute; where it is placed - the instrumentation scope,
+every emitted record, or both - is governed by the
+&quot;flow.telemetry.channel_attribute_target&quot; parameter (default &quot;both&quot;). A logger
+already declared under that name (e.g. the always-present &quot;default&quot;) is reused as-is.</p>
 </section>
 
 
@@ -221,7 +223,7 @@ name (e.g. the always-present &quot;default&quot;) is reused as-is.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/ChannelLoggerPass.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-dependencyinjection-compiler-channelloggerpass.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/ChannelLoggerPass.php">ChannelLoggerPass.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -265,7 +267,7 @@ name (e.g. the always-present &quot;default&quot;) is reused as-is.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/ChannelLoggerPass.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-dependencyinjection-compiler-channelloggerpass.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/ChannelLoggerPass.php">ChannelLoggerPass.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 

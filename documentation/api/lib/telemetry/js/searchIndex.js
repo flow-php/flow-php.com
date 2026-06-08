@@ -41,6 +41,11 @@ Search.appendIndex(
             "summary": "Get\u0020attribute\u0020count.",
             "url": "classes/Flow-Telemetry-Attributes.html#method_count"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Attributes\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "The\u0020raw\u0020attribute\u0020map,\u0020without\u0020normalization.",
+            "url": "classes/Flow-Telemetry-Attributes.html#method_all"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Attributes\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "Get\u0020a\u0020specific\u0020attribute\u0020value.",
@@ -696,10 +701,60 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020PassThroughLogProcessor.",
             "url": "namespaces/flow-telemetry-dsl.html#function_pass_through_log_processor"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\DSL\\severity_filtering_log_processor\u0028\u0029",
-            "name": "severity_filtering_log_processor",
-            "summary": "Create\u0020a\u0020SeverityFilteringLogProcessor.",
-            "url": "namespaces/flow-telemetry-dsl.html#function_severity_filtering_log_processor"
+            "fqsen": "\\Flow\\Telemetry\\DSL\\pipeline_log_processor\u0028\u0029",
+            "name": "pipeline_log_processor",
+            "summary": "Create\u0020a\u0020PipelineLogProcessor\u003A\u0020run\u0020each\u0020log\u0020entry\u0020through\u0020an\u0020ordered\u0020chain\u0020of\nmiddleware,\u0020then\u0020forward\u0020the\u0020survivors\u0020to\u0020a\u0020single\u0020sink.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_pipeline_log_processor"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\enriching_log_middleware\u0028\u0029",
+            "name": "enriching_log_middleware",
+            "summary": "Create\u0020an\u0020EnrichingLogMiddleware\u0020that\u0020merges\u0020default\u0020attributes\u0020into\u0020every\u0020log\nentry.\u0020Attributes\u0020set\u0020at\u0020the\u0020call\u0020site\u0020win\u0020over\u0020these\u0020defaults.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_enriching_log_middleware"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\attribute_filtering_log_middleware\u0028\u0029",
+            "name": "attribute_filtering_log_middleware",
+            "summary": "Create\u0020an\u0020AttributeFilteringLogMiddleware\u0020that\u0020drops\u0020log\u0020entries\u0020matching\u0020the\u0020filter.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_attribute_filtering_log_middleware"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\severity_filtering_log_middleware\u0028\u0029",
+            "name": "severity_filtering_log_middleware",
+            "summary": "Create\u0020a\u0020SeverityFilteringLogMiddleware\u0020that\u0020drops\u0020log\u0020entries\u0020below\u0020a\u0020minimum\u0020severity.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_severity_filtering_log_middleware"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\attribute_rule\u0028\u0029",
+            "name": "attribute_rule",
+            "summary": "Create\u0020a\u0020single\u0020attribute\u002Dmatching\u0020rule\u0020for\u0020an\u0020AttributeFilter.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_attribute_rule"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\all\u0028\u0029",
+            "name": "all",
+            "summary": "Combine\u0020matchers\u0020so\u0020that\u0020every\u0020one\u0020must\u0020match\u0020\u0028logical\u0020AND\u0029.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_all"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\any\u0028\u0029",
+            "name": "any",
+            "summary": "Combine\u0020matchers\u0020so\u0020that\u0020at\u0020least\u0020one\u0020must\u0020match\u0020\u0028logical\u0020OR\u0029.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_any"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\not\u0028\u0029",
+            "name": "not",
+            "summary": "Negate\u0020a\u0020matcher\u0020\u0028logical\u0020NOT\u0029.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_not"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\attribute_filter\u0028\u0029",
+            "name": "attribute_filter",
+            "summary": "Create\u0020an\u0020AttributeFilter\u0020from\u0020a\u0020matcher.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_attribute_filter"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\attribute_filtering_metric_processor\u0028\u0029",
+            "name": "attribute_filtering_metric_processor",
+            "summary": "Create\u0020an\u0020AttributeFilteringMetricProcessor.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_attribute_filtering_metric_processor"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\attribute_filtering_span_processor\u0028\u0029",
+            "name": "attribute_filtering_span_processor",
+            "summary": "Create\u0020an\u0020AttributeFilteringSpanProcessor.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_attribute_filtering_span_processor"
         },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\console_exporter\u0028\u0029",
             "name": "console_exporter",
@@ -750,6 +805,31 @@ Search.appendIndex(
             "name": "trace_based_exemplar_filter",
             "summary": "Create\u0020a\u0020TraceBasedExemplarFilter.",
             "url": "namespaces/flow-telemetry-dsl.html#function_trace_based_exemplar_filter"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\always_on_sampler\u0028\u0029",
+            "name": "always_on_sampler",
+            "summary": "Create\u0020an\u0020AlwaysOnSampler.\u0020Records\u0020and\u0020samples\u0020every\u0020span.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_always_on_sampler"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\always_off_sampler\u0028\u0029",
+            "name": "always_off_sampler",
+            "summary": "Create\u0020an\u0020AlwaysOffSampler.\u0020Drops\u0020every\u0020span.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_always_off_sampler"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\trace_id_ratio_based_sampler\u0028\u0029",
+            "name": "trace_id_ratio_based_sampler",
+            "summary": "Create\u0020a\u0020TraceIdRatioBasedSampler.\u0020Samples\u0020a\u0020deterministic\u0020fraction\u0020of\u0020traces.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_trace_id_ratio_based_sampler"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\parent_based_sampler\u0028\u0029",
+            "name": "parent_based_sampler",
+            "summary": "Create\u0020a\u0020ParentBasedSampler.\u0020Honors\u0020the\u0020parent\u0020span\u0027s\u0020sampling\u0020decision,\u0020falling\nback\u0020to\u0020the\u0020root\u0020sampler\u0020for\u0020spans\u0020without\u0020a\u0020parent.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_parent_based_sampler"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\attribute_matching_sampler\u0028\u0029",
+            "name": "attribute_matching_sampler",
+            "summary": "Create\u0020an\u0020AttributeMatchingSampler.\u0020Drops\u0020spans\u0020whose\u0020start\u002Dtime\u0020attributes\u0020match\nthe\u0020filter\u0020\u0028or\u0020keeps\u0020ONLY\u0020matching\u0020spans\u0020when\u0020the\u0020filter\u0027s\u0020exclude\u0020is\u0020false\u0029,\u0020and\ndefers\u0020all\u0020other\u0020spans\u0020to\u0020the\u0020delegate\u0020sampler.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_attribute_matching_sampler"
         },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\propagation_context\u0028\u0029",
             "name": "propagation_context",
@@ -1176,6 +1256,321 @@ Search.appendIndex(
             "summary": "Shutdown\u0020the\u0020exporter\u0020and\u0020any\u0020owned\u0020transports.",
             "url": "classes/Flow-Telemetry-Exporter-Exporter.html#method_shutdown"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\All",
+            "name": "All",
+            "summary": "Matches\u0020when\u0020every\u0020nested\u0020matcher\u0020matches\u0020\u0028logical\u0020AND\u0029.",
+            "url": "classes/Flow-Telemetry-Filter-All.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\All\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-All.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\All\u003A\u003Amatches\u0028\u0029",
+            "name": "matches",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-All.html#method_matches"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\All\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Render\u0020this\u0020matcher\u0020as\u0020a\u0020PHP\u0020boolean\u0020expression\u0020operating\u0020on\u0020the\u0020attribute\nvariable\u0020named\u0020by\u0020\u007B\u0040see\u0020Compilation\u003A\u003A\u0024subject\u007D\u0020\u0028e.g.\u0020\u0027\u0024a\u0027\u0029.",
+            "url": "classes/Flow-Telemetry-Filter-All.html#method_compile"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Any",
+            "name": "Any",
+            "summary": "Matches\u0020when\u0020at\u0020least\u0020one\u0020nested\u0020matcher\u0020matches\u0020\u0028logical\u0020OR\u0029.",
+            "url": "classes/Flow-Telemetry-Filter-Any.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Any\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-Any.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Any\u003A\u003Amatches\u0028\u0029",
+            "name": "matches",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-Any.html#method_matches"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Any\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Render\u0020this\u0020matcher\u0020as\u0020a\u0020PHP\u0020boolean\u0020expression\u0020operating\u0020on\u0020the\u0020attribute\nvariable\u0020named\u0020by\u0020\u007B\u0040see\u0020Compilation\u003A\u003A\u0024subject\u007D\u0020\u0028e.g.\u0020\u0027\u0024a\u0027\u0029.",
+            "url": "classes/Flow-Telemetry-Filter-Any.html#method_compile"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeFilter",
+            "name": "AttributeFilter",
+            "summary": "Decides\u0020whether\u0020a\u0020telemetry\u0020signal\u0020should\u0020be\u0020dropped\u0020based\u0020on\u0020its\u0020attributes.",
+            "url": "classes/Flow-Telemetry-Filter-AttributeFilter.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeFilter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeFilter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeFilter\u003A\u003Asources\u0028\u0029",
+            "name": "sources",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeFilter.html#method_sources"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeFilter\u003A\u003AdropFunction\u0028\u0029",
+            "name": "dropFunction",
+            "summary": "The\u0020compiled\u0020drop\u0020decision\u003A\u0020true\u0020when\u0020a\u0020signal\u0020carrying\u0020the\u0020given\u0020per\u002Dsource\nattributes\u0020should\u0020be\u0020dropped.\u0020Pass\u0020one\u0020\u007B\u0040see\u0020Attributes\u007D\u0020per\u0020configured\u0020source\n\u0028see\u0020\u007B\u0040see\u0020self\u003A\u003Asources\u0028\u0029\u007D\u0029\u003B\u0020the\u0020matcher\u0020is\u0020OR\u002Dcombined\u0020across\u0020them.\u0020Processors\nhold\u0020this\u0020closure\u0020and\u0020call\u0020it\u0020directly\u0020to\u0020skip\u0020the\u0020\u007B\u0040see\u0020self\u003A\u003AshouldDrop\u0028\u0029\u007D\nmethod\u002Dcall\u0020layer\u0020on\u0020the\u0020hot\u0020path.",
+            "url": "classes/Flow-Telemetry-Filter-AttributeFilter.html#method_dropFunction"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeFilter\u003A\u003AshouldDrop\u0028\u0029",
+            "name": "shouldDrop",
+            "summary": "True\u0020when\u0020a\u0020signal\u0020carrying\u0020these\u0020per\u002Dsource\u0020attributes\u0020should\u0020be\u0020dropped.",
+            "url": "classes/Flow-Telemetry-Filter-AttributeFilter.html#method_shouldDrop"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch",
+            "name": "AttributeMatch",
+            "summary": "Stateless\u0020matching\u0020primitives\u0020shared\u0020by\u0020the\u0020interpreted\u0020\u0028\u007B\u0040see\u0020AttributeRule\u003A\u003Amatches\u0028\u0029\u007D\u0029\nand\u0020the\u0020compiled\u0020\u0028\u007B\u0040see\u0020AttributeRule\u003A\u003Acompile\u0028\u0029\u007D\u0029\u0020matching\u0020paths.",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "Resolve\u0020a\u0020nested\u0020attribute\u0020path,\u0020descending\u0020into\u0020array\u0020values.",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#method_resolve"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003AstringForm\u0028\u0029",
+            "name": "stringForm",
+            "summary": "String\u0020form\u0020of\u0020an\u0020AnyValue\u0020for\u0020the\u0020substring\/regexp\u0020modes.",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#method_stringForm"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#method_equal"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003AnotEqual\u0028\u0029",
+            "name": "notEqual",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#method_notEqual"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003AgreaterThan\u0028\u0029",
+            "name": "greaterThan",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#method_greaterThan"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003AgreaterThanEqual\u0028\u0029",
+            "name": "greaterThanEqual",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#method_greaterThanEqual"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003AlessThan\u0028\u0029",
+            "name": "lessThan",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#method_lessThan"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003AlessThanEqual\u0028\u0029",
+            "name": "lessThanEqual",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#method_lessThanEqual"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003AstartsWith\u0028\u0029",
+            "name": "startsWith",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#method_startsWith"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003AendsWith\u0028\u0029",
+            "name": "endsWith",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#method_endsWith"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003Acontains\u0028\u0029",
+            "name": "contains",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#method_contains"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003Aregexp\u0028\u0029",
+            "name": "regexp",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#method_regexp"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003AMISSING",
+            "name": "MISSING",
+            "summary": "Sentinel\u0020returned\u0020by\u0020\u007B\u0040see\u0020self\u003A\u003Aresolve\u0028\u0029\u007D\u0020when\u0020a\u0020path\u0020segment\u0020is\u0020absent.",
+            "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#constant_MISSING"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeRule",
+            "name": "AttributeRule",
+            "summary": "A\u0020single\u0020attribute\u002Dmatching\u0020rule\u003A\u0020a\u0020path\u0020into\u0020an\u0020attribute\u0020set,\u0020a\u0020comparison\n\u007B\u0040see\u0020MatchMode\u007D,\u0020and\u0020an\u0020expected\u0020value.\u0020The\u0020leaf\u0020\u007B\u0040see\u0020Matcher\u007D.",
+            "url": "classes/Flow-Telemetry-Filter-AttributeRule.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeRule\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeRule.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeRule\u003A\u003Amatches\u0028\u0029",
+            "name": "matches",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeRule.html#method_matches"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeRule\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Render\u0020this\u0020rule\u0020as\u0020an\u0020inlined\u0020PHP\u0020boolean\u0020expression\u0020that\u0020reproduces\n\u007B\u0040see\u0020AttributeMatch\u007D\u0020semantics\u0020without\u0020the\u0020per\u002Dcall\u0020dispatch\u0020of\u0020the\ninterpreted\u0020path.\u0020Expected\u0020values\u0020are\u0020scalar\u0020and\u0020emitted\u0020via\n\u007B\u0040see\u0020var_export\u0028\u0029\u007D,\u0020never\u0020concatenated\u0020raw.",
+            "url": "classes/Flow-Telemetry-Filter-AttributeRule.html#method_compile"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeSource",
+            "name": "AttributeSource",
+            "summary": "Which\u0020attribute\u0020set\u0020on\u0020a\u0020signal\u0020an\u0020\u007B\u0040see\u0020AttributeFilter\u007D\u0020inspects.",
+            "url": "classes/Flow-Telemetry-Filter-AttributeSource.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeSource\u003A\u003Aselect\u0028\u0029",
+            "name": "select",
+            "summary": "Resolve\u0020each\u0020configured\u0020source\u0020to\u0020its\u0020attribute\u0020set,\u0020preserving\u0020order.\u0020The\nsingle\u0020place\u0020the\u0020source\u002Dto\u002Dattributes\u0020mapping\u0020lives,\u0020shared\u0020by\u0020every\u0020consumer\nthat\u0020feeds\u0020\u007B\u0040see\u0020AttributeFilter\u003A\u003AdropFunction\u0028\u0029\u007D\u0020\u0028log\/span\/metric\u0020filters\u0020and\nthe\u0020attribute\u002Dmatching\u0020sampler\u0029.",
+            "url": "classes/Flow-Telemetry-Filter-AttributeSource.html#method_select"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeSource\u003A\u003ASIGNAL",
+            "name": "SIGNAL",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeSource.html#enumcase_SIGNAL"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeSource\u003A\u003ARESOURCE",
+            "name": "RESOURCE",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeSource.html#enumcase_RESOURCE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeSource\u003A\u003ASCOPE",
+            "name": "SCOPE",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-AttributeSource.html#enumcase_SCOPE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\CompilableMatcher",
+            "name": "CompilableMatcher",
+            "summary": "A\u0020\u007B\u0040see\u0020Matcher\u007D\u0020that\u0020can\u0020render\u0020itself\u0020as\u0020an\u0020inlined\u0020PHP\u0020boolean\u0020expression,\nletting\u0020\u007B\u0040see\u0020CompiledMatcher\u007D\u0020compile\u0020the\u0020whole\u0020matcher\u0020tree\u0020to\u0020a\u0020cached\u0020PHP\nfile\u0020instead\u0020of\u0020evaluating\u0020it\u0020through\u0020\u007B\u0040see\u0020Matcher\u003A\u003Amatches\u0028\u0029\u007D.",
+            "url": "classes/Flow-Telemetry-Filter-CompilableMatcher.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\CompilableMatcher\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Render\u0020this\u0020matcher\u0020as\u0020a\u0020PHP\u0020boolean\u0020expression\u0020operating\u0020on\u0020the\u0020attribute\nvariable\u0020named\u0020by\u0020\u007B\u0040see\u0020Compilation\u003A\u003A\u0024subject\u007D\u0020\u0028e.g.\u0020\u0027\u0024a\u0027\u0029.",
+            "url": "classes/Flow-Telemetry-Filter-CompilableMatcher.html#method_compile"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Compilation",
+            "name": "Compilation",
+            "summary": "Mutable\u0020context\u0020threaded\u0020through\u0020\u007B\u0040see\u0020CompilableMatcher\u003A\u003Acompile\u0028\u0029\u007D.",
+            "url": "classes/Flow-Telemetry-Filter-Compilation.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Compilation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-Compilation.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Compilation\u003A\u003Atemp\u0028\u0029",
+            "name": "temp",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-Compilation.html#method_temp"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Compilation\u003A\u003A\u0024subject",
+            "name": "subject",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-Compilation.html#property_subject"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Compilation\u003A\u003A\u0024values",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-Compilation.html#property_values"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\CompiledMatcher",
+            "name": "CompiledMatcher",
+            "summary": "Builds\u0020the\u0020closure\u0020that\u0020an\u0020\u007B\u0040see\u0020AttributeFilter\u007D\u0020uses\u0020to\u0020evaluate\u0020its\u0020matcher.",
+            "url": "classes/Flow-Telemetry-Filter-CompiledMatcher.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\CompiledMatcher\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "Build\u0020the\u0020closure\u0020that\u0020evaluates\u0020the\u0020matcher\u0020against\u0020a\u0020single\u0020attribute\u0020set.",
+            "url": "classes/Flow-Telemetry-Filter-CompiledMatcher.html#method_build"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Matcher",
+            "name": "Matcher",
+            "summary": "A\u0020predicate\u0020over\u0020a\u0020signal\u0027s\u0020attributes.",
+            "url": "classes/Flow-Telemetry-Filter-Matcher.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Matcher\u003A\u003Amatches\u0028\u0029",
+            "name": "matches",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-Matcher.html#method_matches"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\MatchMode",
+            "name": "MatchMode",
+            "summary": "Comparison\u0020applied\u0020by\u0020an\u0020\u007B\u0040see\u0020AttributeRule\u007D\u0020between\u0020the\u0020value\u0020found\u0020at\u0020its\npath\u0020and\u0020the\u0020rule\u0027s\u0020expected\u0020value.",
+            "url": "classes/Flow-Telemetry-Filter-MatchMode.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\MatchMode\u003A\u003AEQUAL",
+            "name": "EQUAL",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-MatchMode.html#enumcase_EQUAL"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\MatchMode\u003A\u003ANOT_EQUAL",
+            "name": "NOT_EQUAL",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-MatchMode.html#enumcase_NOT_EQUAL"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\MatchMode\u003A\u003AGREATER_THAN",
+            "name": "GREATER_THAN",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-MatchMode.html#enumcase_GREATER_THAN"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\MatchMode\u003A\u003AGREATER_THAN_EQUAL",
+            "name": "GREATER_THAN_EQUAL",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-MatchMode.html#enumcase_GREATER_THAN_EQUAL"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\MatchMode\u003A\u003ALESS_THAN",
+            "name": "LESS_THAN",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-MatchMode.html#enumcase_LESS_THAN"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\MatchMode\u003A\u003ALESS_THAN_EQUAL",
+            "name": "LESS_THAN_EQUAL",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-MatchMode.html#enumcase_LESS_THAN_EQUAL"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\MatchMode\u003A\u003AREGEXP",
+            "name": "REGEXP",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-MatchMode.html#enumcase_REGEXP"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\MatchMode\u003A\u003ASTARTS_WITH",
+            "name": "STARTS_WITH",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-MatchMode.html#enumcase_STARTS_WITH"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\MatchMode\u003A\u003AENDS_WITH",
+            "name": "ENDS_WITH",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-MatchMode.html#enumcase_ENDS_WITH"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\MatchMode\u003A\u003ACONTAINS",
+            "name": "CONTAINS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-MatchMode.html#enumcase_CONTAINS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Not",
+            "name": "Not",
+            "summary": "Matches\u0020when\u0020the\u0020nested\u0020matcher\u0020does\u0020not\u0020match\u0020\u0028logical\u0020NOT\u0029.",
+            "url": "classes/Flow-Telemetry-Filter-Not.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Not\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-Not.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Not\u003A\u003Amatches\u0028\u0029",
+            "name": "matches",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Filter-Not.html#method_matches"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\Not\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Render\u0020this\u0020matcher\u0020as\u0020a\u0020PHP\u0020boolean\u0020expression\u0020operating\u0020on\u0020the\u0020attribute\nvariable\u0020named\u0020by\u0020\u007B\u0040see\u0020Compilation\u003A\u003A\u0024subject\u007D\u0020\u0028e.g.\u0020\u0027\u0024a\u0027\u0029.",
+            "url": "classes/Flow-Telemetry-Filter-Not.html#method_compile"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter\\NotCompilable",
+            "name": "NotCompilable",
+            "summary": "Thrown\u0020by\u0020\u007B\u0040see\u0020CompilableMatcher\u003A\u003Acompile\u0028\u0029\u007D\u0020when\u0020a\u0020matcher\u0020cannot\u0020be\u0020inlined\nas\u0020PHP.\u0020It\u0020is\u0020an\u0020internal\u0020control\u002Dflow\u0020signal\u003A\u0020\u007B\u0040see\u0020CompiledMatcher\u007D\u0020catches\nit\u0020and\u0020falls\u0020back\u0020to\u0020interpreted\u0020matching.",
+            "url": "classes/Flow-Telemetry-Filter-NotCompilable.html"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\InstrumentationScope",
             "name": "InstrumentationScope",
             "summary": "Represents\u0020the\u0020instrumentation\u0020scope\u0020\u0028library\u0029\u0020producing\u0020telemetry.",
@@ -1356,6 +1751,16 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020logger\u0020for\u0020the\u0020given\u0020instrumentation\u0020scope.",
             "url": "classes/Flow-Telemetry-Logger-LoggerProvider.html#method_logger"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\LogMiddleware",
+            "name": "LogMiddleware",
+            "summary": "A\u0020chainable\u0020log\u002Dprocessing\u0020step\u0020inside\u0020a\u0020\u007B\u0040see\u0020Processor\\PipelineLogProcessor\u007D.",
+            "url": "classes/Flow-Telemetry-Logger-LogMiddleware.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\LogMiddleware\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "Transform\u0020or\u0020filter\u0020a\u0020log\u0020entry.",
+            "url": "classes/Flow-Telemetry-Logger-LogMiddleware.html#method_process"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogProcessor",
             "name": "LogProcessor",
             "summary": "Interface\u0020for\u0020processing\u0020log\u0020records.",
@@ -1486,6 +1891,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Logger-LogRecordLimits.html#property_attributeValueLengthLimit"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\LogSink",
+            "name": "LogSink",
+            "summary": "A\u0020terminal\u0020\u007B\u0040see\u0020LogProcessor\u007D\u0020\u002D\u0020the\u0020leaf\/final\u0020step\u0020of\u0020a\n\u007B\u0040see\u0020Processor\\PipelineLogProcessor\u007D,\u0020which\u0020exports\u0020\u0028or\u0020otherwise\u0020consumes\u0029\nthe\u0020entries\u0020that\u0020survive\u0020the\u0020middleware\u0020chain.",
+            "url": "classes/Flow-Telemetry-Logger-LogSink.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\AttributeFilteringLogMiddleware",
+            "name": "AttributeFilteringLogMiddleware",
+            "summary": "Drops\u0020log\u0020entries\u0020whose\u0020attributes\u0020match\u0020a\u0020configured\u0020\u007B\u0040see\u0020AttributeFilter\u007D.",
+            "url": "classes/Flow-Telemetry-Logger-Middleware-AttributeFilteringLogMiddleware.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\AttributeFilteringLogMiddleware\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Logger-Middleware-AttributeFilteringLogMiddleware.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\AttributeFilteringLogMiddleware\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "Transform\u0020or\u0020filter\u0020a\u0020log\u0020entry.",
+            "url": "classes/Flow-Telemetry-Logger-Middleware-AttributeFilteringLogMiddleware.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\EnrichingLogMiddleware",
+            "name": "EnrichingLogMiddleware",
+            "summary": "Merges\u0020a\u0020fixed\u0020set\u0020of\u0020attributes\u0020into\u0020every\u0020log\u0020entry\u0020that\u0020passes\u0020through.",
+            "url": "classes/Flow-Telemetry-Logger-Middleware-EnrichingLogMiddleware.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\EnrichingLogMiddleware\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Logger-Middleware-EnrichingLogMiddleware.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\EnrichingLogMiddleware\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "Transform\u0020or\u0020filter\u0020a\u0020log\u0020entry.",
+            "url": "classes/Flow-Telemetry-Logger-Middleware-EnrichingLogMiddleware.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\SeverityFilteringLogMiddleware",
+            "name": "SeverityFilteringLogMiddleware",
+            "summary": "Drops\u0020log\u0020entries\u0020below\u0020a\u0020minimum\u0020severity\u0020level.",
+            "url": "classes/Flow-Telemetry-Logger-Middleware-SeverityFilteringLogMiddleware.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\SeverityFilteringLogMiddleware\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Logger-Middleware-SeverityFilteringLogMiddleware.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\SeverityFilteringLogMiddleware\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "Transform\u0020or\u0020filter\u0020a\u0020log\u0020entry.",
+            "url": "classes/Flow-Telemetry-Logger-Middleware-SeverityFilteringLogMiddleware.html#method_process"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\BatchingLogProcessor",
             "name": "BatchingLogProcessor",
             "summary": "Batches\u0020log\u0020records\u0020for\u0020efficient\u0020export.",
@@ -1566,30 +2021,30 @@ Search.appendIndex(
             "summary": "Shutdown\u0020the\u0020processor.",
             "url": "classes/Flow-Telemetry-Logger-Processor-PassThroughLogProcessor.html#method_shutdown"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor",
-            "name": "SeverityFilteringLogProcessor",
-            "summary": "Filters\u0020log\u0020entries\u0020based\u0020on\u0020minimum\u0020severity\u0020level.",
-            "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html"
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\PipelineLogProcessor",
+            "name": "PipelineLogProcessor",
+            "summary": "Runs\u0020a\u0020log\u0020entry\u0020through\u0020an\u0020ordered\u0020chain\u0020of\u0020\u007B\u0040see\u0020LogMiddleware\u007D\u0020and\u0020forwards\nthe\u0020survivors\u0020to\u0020a\u0020single\u0020\u007B\u0040see\u0020LogSink\u007D.",
+            "url": "classes/Flow-Telemetry-Logger-Processor-PipelineLogProcessor.html"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\PipelineLogProcessor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html#method___construct"
+            "url": "classes/Flow-Telemetry-Logger-Processor-PipelineLogProcessor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor\u003A\u003Aflush\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\PipelineLogProcessor\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "Export\u0020all\u0020pending\u0020log\u0020records.",
-            "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html#method_flush"
+            "url": "classes/Flow-Telemetry-Logger-Processor-PipelineLogProcessor.html#method_flush"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor\u003A\u003Aprocess\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\PipelineLogProcessor\u003A\u003Aprocess\u0028\u0029",
             "name": "process",
             "summary": "Process\u0020a\u0020log\u0020entry.",
-            "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html#method_process"
+            "url": "classes/Flow-Telemetry-Logger-Processor-PipelineLogProcessor.html#method_process"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\SeverityFilteringLogProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\PipelineLogProcessor\u003A\u003Ashutdown\u0028\u0029",
             "name": "shutdown",
             "summary": "Shutdown\u0020the\u0020processor.",
-            "url": "classes/Flow-Telemetry-Logger-Processor-SeverityFilteringLogProcessor.html#method_shutdown"
+            "url": "classes/Flow-Telemetry-Logger-Processor-PipelineLogProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Severity",
             "name": "Severity",
@@ -2275,6 +2730,31 @@ Search.appendIndex(
             "name": "UP_DOWN_COUNTER",
             "summary": "Counter\u0020that\u0020can\u0020increase\u0020or\u0020decrease.",
             "url": "classes/Flow-Telemetry-Meter-MetricType.html#enumcase_UP_DOWN_COUNTER"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\AttributeFilteringMetricProcessor",
+            "name": "AttributeFilteringMetricProcessor",
+            "summary": "Filters\u0020metrics\u0020by\u0020their\u0020attributes.",
+            "url": "classes/Flow-Telemetry-Meter-Processor-AttributeFilteringMetricProcessor.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\AttributeFilteringMetricProcessor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Meter-Processor-AttributeFilteringMetricProcessor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\AttributeFilteringMetricProcessor\u003A\u003Aflush\u0028\u0029",
+            "name": "flush",
+            "summary": "Export\u0020all\u0020pending\u0020metrics.",
+            "url": "classes/Flow-Telemetry-Meter-Processor-AttributeFilteringMetricProcessor.html#method_flush"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\AttributeFilteringMetricProcessor\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "Process\u0020a\u0020metric\u0020measurement.",
+            "url": "classes/Flow-Telemetry-Meter-Processor-AttributeFilteringMetricProcessor.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\AttributeFilteringMetricProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Meter-Processor-AttributeFilteringMetricProcessor.html#method_shutdown"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\BatchingMetricProcessor",
             "name": "BatchingMetricProcessor",
@@ -3761,6 +4241,36 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020event\u0020timestamp.",
             "url": "classes/Flow-Telemetry-Tracer-GenericEvent.html#method_timestamp"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\AttributeFilteringSpanProcessor",
+            "name": "AttributeFilteringSpanProcessor",
+            "summary": "Filters\u0020spans\u0020by\u0020their\u0020attributes.",
+            "url": "classes/Flow-Telemetry-Tracer-Processor-AttributeFilteringSpanProcessor.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\AttributeFilteringSpanProcessor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Tracer-Processor-AttributeFilteringSpanProcessor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\AttributeFilteringSpanProcessor\u003A\u003Aflush\u0028\u0029",
+            "name": "flush",
+            "summary": "Export\u0020all\u0020pending\u0020spans\u0020and\u0020return\u0020success\u0020status.",
+            "url": "classes/Flow-Telemetry-Tracer-Processor-AttributeFilteringSpanProcessor.html#method_flush"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\AttributeFilteringSpanProcessor\u003A\u003AonEnd\u0028\u0029",
+            "name": "onEnd",
+            "summary": "Called\u0020when\u0020a\u0020span\u0020ends.",
+            "url": "classes/Flow-Telemetry-Tracer-Processor-AttributeFilteringSpanProcessor.html#method_onEnd"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\AttributeFilteringSpanProcessor\u003A\u003AonStart\u0028\u0029",
+            "name": "onStart",
+            "summary": "Called\u0020when\u0020a\u0020span\u0020starts.",
+            "url": "classes/Flow-Telemetry-Tracer-Processor-AttributeFilteringSpanProcessor.html#method_onStart"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\AttributeFilteringSpanProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020processor.",
+            "url": "classes/Flow-Telemetry-Tracer-Processor-AttributeFilteringSpanProcessor.html#method_shutdown"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\BatchingSpanProcessor",
             "name": "BatchingSpanProcessor",
             "summary": "Batches\u0020spans\u0020for\u0020efficient\u0020export.",
@@ -3885,6 +4395,26 @@ Search.appendIndex(
             "name": "shouldSample",
             "summary": "Determine\u0020if\u0020a\u0020span\u0020should\u0020be\u0020sampled.",
             "url": "classes/Flow-Telemetry-Tracer-Sampler-AlwaysOnSampler.html#method_shouldSample"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AttributeMatchingSampler",
+            "name": "AttributeMatchingSampler",
+            "summary": "Drops\u0020spans\u0020whose\u0020start\u002Dtime\u0020attributes\u0020match\u0020an\u0020\u007B\u0040see\u0020AttributeFilter\u007D,\u0020and\ndefers\u0020every\u0020other\u0020span\u0020to\u0020a\u0020delegate\u0020sampler.",
+            "url": "classes/Flow-Telemetry-Tracer-Sampler-AttributeMatchingSampler.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AttributeMatchingSampler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Tracer-Sampler-AttributeMatchingSampler.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AttributeMatchingSampler\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Get\u0020a\u0020string\u0020representation\u0020of\u0020this\u0020sampler\u0020for\u0020debugging.",
+            "url": "classes/Flow-Telemetry-Tracer-Sampler-AttributeMatchingSampler.html#method___toString"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AttributeMatchingSampler\u003A\u003AshouldSample\u0028\u0029",
+            "name": "shouldSample",
+            "summary": "Determine\u0020if\u0020a\u0020span\u0020should\u0020be\u0020sampled.",
+            "url": "classes/Flow-Telemetry-Tracer-Sampler-AttributeMatchingSampler.html#method_shouldSample"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\ParentBasedSampler",
             "name": "ParentBasedSampler",
@@ -4641,10 +5171,20 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-telemetry-exporter.html"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Filter",
+            "name": "Filter",
+            "summary": "",
+            "url": "namespaces/flow-telemetry-filter.html"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Logger",
             "name": "Logger",
             "summary": "",
             "url": "namespaces/flow-telemetry-logger.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware",
+            "name": "Middleware",
+            "summary": "",
+            "url": "namespaces/flow-telemetry-logger-middleware.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor",
             "name": "Processor",

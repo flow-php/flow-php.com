@@ -111,7 +111,9 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a></dt><dd>Interface for processing log records.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogMiddleware.html"><abbr title="\Flow\Telemetry\Logger\LogMiddleware">LogMiddleware</abbr></a></dt><dd>A chainable log-processing step inside a {@see Processor\PipelineLogProcessor}.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a></dt><dd>Interface for processing log records.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogSink.html"><abbr title="\Flow\Telemetry\Logger\LogSink">LogSink</abbr></a></dt><dd>A terminal {@see LogProcessor} - the leaf/final step of a
+{@see Processor\PipelineLogProcessor}, which exports (or otherwise consumes)
+the entries that survive the middleware chain.</dd>    </dl>
 
     <h4 id="toc-classes">
         Classes
@@ -127,6 +129,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/flow-telemetry-logger-middleware.html"><abbr title="\Flow\Telemetry\Logger\Middleware">Middleware</abbr></a></dt>
                     <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/flow-telemetry-logger-processor.html"><abbr title="\Flow\Telemetry\Logger\Processor">Processor</abbr></a></dt>
             </dl>
 
