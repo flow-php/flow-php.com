@@ -184,7 +184,7 @@
         "prismjs/plugins/autoloader/prism-autoloader.js": "/assets/vendor/prismjs/plugins/autoloader/prism-autoloader-b1e401ad6aa11bcff3b6a7df2c9f1aeb.js",
         "prismjs/components/prism-markup-templating.min.js": "/assets/vendor/prismjs/components/prism-markup-templating.min-f8276baa858a6435ede0e74dc293470e.js",
         "prismjs/components/prism-php.min.js": "/assets/vendor/prismjs/components/prism-php.min-6c255d4559880fd5d0ac4e068af5b532.js",
-        "prismjs/components/prism-bash.min.js": "/assets/vendor/prismjs/components/prism-bash.min-e41dbb11a1488141f3298bdf86e9f0b7.js",
+        "prismjs/components/prism-bash.min.js": "/assets/vendor/prismjs/components/prism-bash.min-035b568f957f7a9c409609feca987649.js",
         "prismjs/components/prism-json.min.js": "/assets/vendor/prismjs/components/prism-json.min-5cabe6f69370d46230def939bbf18ad6.js",
         "prismjs/components/prism-csv.min.js": "/assets/vendor/prismjs/components/prism-csv.min-f989d6f69adc8b0a3abb4cc424554e21.js",
         "prismjs/components/prism-yaml.min.js": "/assets/vendor/prismjs/components/prism-yaml.min-8e645e1cfd62f2be3e0aaee808c9f82e.js",
@@ -273,7 +273,7 @@
 <link rel="modulepreload" href="/assets/vendor/prismjs/plugins/autoloader/prism-autoloader-b1e401ad6aa11bcff3b6a7df2c9f1aeb.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-markup-templating.min-f8276baa858a6435ede0e74dc293470e.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-php.min-6c255d4559880fd5d0ac4e068af5b532.js">
-<link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-bash.min-e41dbb11a1488141f3298bdf86e9f0b7.js">
+<link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-bash.min-035b568f957f7a9c409609feca987649.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-json.min-5cabe6f69370d46230def939bbf18ad6.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-csv.min-f989d6f69adc8b0a3abb4cc424554e21.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-yaml.min-8e645e1cfd62f2be3e0aaee808c9f82e.js">
@@ -1495,7 +1495,8 @@
 <li><strong>Result casting</strong>: Converting PostgreSQL results back to PHP types</li>
 </ul>
 <h2><a id="result-casting" href="#result-casting" class="mr-2" aria-hidden="true" title="Permalink">#</a>Result Casting</h2>
-<p>When fetching data, PostgreSQL returns all values as strings. The client automatically casts <strong>unambiguous types</strong> to their
+<p>When fetching data, PostgreSQL returns all values as strings. The client automatically casts <strong>unambiguous types</strong> to
+their
 native PHP equivalents:</p>
 <table>
 <thead>
@@ -1596,8 +1597,8 @@ $createdAt = new \DateTimeImmutable($row['created_at']);
 </tr>
 <tr>
 <td><code>\DateTimeInterface</code></td>
-<td>TIMESTAMPTZ</td>
-<td>Formatted as ISO 8601 with timezone</td>
+<td>TIMESTAMP</td>
+<td>Normalized to UTC; use <code>typed()</code> with <code>ValueType::TIMESTAMPTZ</code> to keep the offset</td>
 </tr>
 <tr>
 <td><code>array</code></td>
@@ -1961,8 +1962,13 @@ when you use <code>typed()</code>:</p>
 <td><code>bool</code></td>
 </tr>
 <tr>
-<td>DateTimeConverter</td>
-<td>TIMESTAMP, TIMESTAMPTZ</td>
+<td>TimestampConverter</td>
+<td>TIMESTAMP</td>
+<td><code>\DateTimeInterface</code> (UTC)</td>
+</tr>
+<tr>
+<td>TimestampTzConverter</td>
+<td>TIMESTAMPTZ</td>
 <td><code>\DateTimeInterface</code></td>
 </tr>
 <tr>
