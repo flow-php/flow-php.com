@@ -1474,6 +1474,7 @@
 <li><a href="#3-flow-phpsymfony-telemetry-bundle---named-scope-attributes-split-into-scope-and-signal">3) flow-php/symfony-telemetry-bundle - named scope attributes split into scope and signal</a></li>
 <li><a href="#4-flow-phppostgresql---datetimeconverter-split-into-timestampconverter-and-timestamptzconverter">4) flow-php/postgresql - DateTimeConverter split into TimestampConverter and TimestampTzConverter</a></li>
 <li><a href="#5-flow-phpetl-adapter-postgresql---datetimeentry-maps-to-timestamp-instead-of-timestamptz">5) flow-php/etl-adapter-postgresql - DateTimeEntry maps to timestamp instead of timestamptz</a></li>
+<li><a href="#6-flow-phpsymfony-postgresql-messenger---messengermessages-time-columns-use-timestamp-instead-of-timestamptz">6) flow-php/symfony-postgresql-messenger - messenger_messages time columns use timestamp instead of timestamptz</a></li>
 </ul>
 </li>
 <li><a href="#upgrading-from-037x-to-038x">Upgrading from 0.37.x to 0.38.x</a>
@@ -1761,6 +1762,34 @@ attributes; scope attributes move under <code>attributes.scope</code>.</p>
     [DateTimeEntry::class =&gt; ValueType::TIMESTAMPTZ],
     [DateTimeType::class =&gt; ColumnType::timestamptz()],
 ));
+</code></pre>
+<h3><a id="6-flow-phpsymfony-postgresql-messenger---messengermessages-time-columns-use-timestamp-instead-of-timestamptz" href="#6-flow-phpsymfony-postgresql-messenger---messengermessages-time-columns-use-timestamp-instead-of-timestamptz" class="mr-2" aria-hidden="true" title="Permalink">#</a>6) <code>flow-php/symfony-postgresql-messenger</code> - <code>messenger_messages</code> time columns use <code>timestamp</code> instead of <code>timestamptz</code></h3>
+<table>
+<thead>
+<tr>
+<th>Column type for <code>created_at</code>, <code>available_at</code>, <code>delivered_at</code></th>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MessengerCatalogProvider</code> (DDL)</td>
+<td><code>timestamptz</code></td>
+<td><code>timestamp</code></td>
+</tr>
+<tr>
+<td><code>Connection</code> bindings</td>
+<td><code>TIMESTAMPTZ</code></td>
+<td><code>TIMESTAMP</code></td>
+</tr>
+</tbody>
+</table>
+<p>Existing tables, realign the column type (UTC instants preserved):</p>
+<pre class="language-sql" data-controller="syntax-highlight"><code class="language-sql">ALTER TABLE messenger_messages
+    ALTER COLUMN created_at   TYPE timestamp USING created_at   AT TIME ZONE 'UTC',
+    ALTER COLUMN available_at TYPE timestamp USING available_at AT TIME ZONE 'UTC',
+    ALTER COLUMN delivered_at TYPE timestamp USING delivered_at AT TIME ZONE 'UTC';
 </code></pre>
 <hr />
 <h2><a id="upgrading-from-037x-to-038x" href="#upgrading-from-037x-to-038x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.37.x to 0.38.x</h2>
