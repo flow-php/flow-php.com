@@ -136,6 +136,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#property_memoryRealUsage"
         },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\Configuration\u003A\u003A\u0024resourceAttributes",
+            "name": "resourceAttributes",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Configuration.html#property_resourceAttributes"
+        },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\CurlTransportConfig",
             "name": "CurlTransportConfig",
             "summary": "",

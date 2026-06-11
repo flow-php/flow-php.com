@@ -126,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/EnvironmentDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-detector-environmentdetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/EnvironmentDetector.php">EnvironmentDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -141,8 +141,10 @@
 <p>Attributes from OTEL_RESOURCE_ATTRIBUTES follow the format specified by OpenTelemetry:</p>
 <pre class="prettyprint"><code class="prettyprint">OTEL_RESOURCE_ATTRIBUTES=key1=value1,key2=value2
 </code></pre>
-<p>Special characters in values can be escaped with backslash:</p>
-<pre class="prettyprint"><code class="prettyprint">OTEL_RESOURCE_ATTRIBUTES=key=value\,with\,commas
+<p>Per the OpenTelemetry Resource SDK specification, the <code class="prettyprint">,</code> and <code class="prettyprint">=</code> characters in keys and
+values MUST be percent-encoded (other characters MAY be percent-encoded); both keys and
+values are percent-decoded:</p>
+<pre class="prettyprint"><code class="prettyprint">OTEL_RESOURCE_ATTRIBUTES=key=value%2Cwith%2Ccommas
 </code></pre>
 <p>OTEL_SERVICE_NAME takes precedence over service.name in OTEL_RESOURCE_ATTRIBUTES.</p>
 <p>Example:</p>
@@ -212,7 +214,7 @@ export OTEL_RESOURCE_ATTRIBUTES=service.version=1.0.0,deployment.environment.nam
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/EnvironmentDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-detector-environmentdetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/EnvironmentDetector.php">EnvironmentDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
