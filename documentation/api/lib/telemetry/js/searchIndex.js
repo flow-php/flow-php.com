@@ -1911,6 +1911,16 @@ Search.appendIndex(
             "summary": "Transform\u0020or\u0020filter\u0020a\u0020log\u0020entry.",
             "url": "classes/Flow-Telemetry-Logger-Middleware-AttributeFilteringLogMiddleware.html#method_process"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\AttributeFilteringLogMiddleware\u003A\u003ASEVERITY_KEY",
+            "name": "SEVERITY_KEY",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Logger-Middleware-AttributeFilteringLogMiddleware.html#constant_SEVERITY_KEY"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\AttributeFilteringLogMiddleware\u003A\u003ASEVERITY_NAME_KEY",
+            "name": "SEVERITY_NAME_KEY",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Logger-Middleware-AttributeFilteringLogMiddleware.html#constant_SEVERITY_NAME_KEY"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\EnrichingLogMiddleware",
             "name": "EnrichingLogMiddleware",
             "summary": "Merges\u0020a\u0020fixed\u0020set\u0020of\u0020attributes\u0020into\u0020every\u0020log\u0020entry\u0020that\u0020passes\u0020through.",
