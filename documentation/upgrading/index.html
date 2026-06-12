@@ -1469,7 +1469,8 @@
             <h1><a id="upgrade-guide" href="#upgrade-guide" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrade Guide</h1>
 <div class="toc-wrapper" data-controller="toc"><div class="toc-header" data-action="click-&gt;toc#toggle"><span>Table of Contents</span><svg class="toc-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg></div><div class="toc-content"><ul class="table-of-contents"><li><a href="#upgrading-from-039x-to-040x">Upgrading from 0.39.x to 0.40.x</a>
 <ul>
-<li><a href="#1-flow-phptelemetry---log-severity-filtering-moved-to-a-pipeline-middleware">1) flow-php/telemetry - Log severity filtering moved to a pipeline middleware</a></li>
+<li><a href="#1-flow-phppostgresql---column-and-domain-defaults-are-modeled-as-columndefault">1) flow-php/postgresql - column and domain defaults are modeled as ColumnDefault</a></li>
+<li><a href="#2-flow-phptelemetry---log-severity-filtering-moved-to-a-pipeline-middleware">2) flow-php/telemetry - Log severity filtering moved to a pipeline middleware</a></li>
 <li><a href="#2-flow-phpsymfony-telemetry-bundle---severityfiltering-log-processor-type-replaced-by-pipeline">2) flow-php/symfony-telemetry-bundle - severity_filtering log processor type replaced by pipeline</a></li>
 <li><a href="#3-flow-phpsymfony-telemetry-bundle---named-scope-attributes-split-into-scope-and-signal">3) flow-php/symfony-telemetry-bundle - named scope attributes split into scope and signal</a></li>
 <li><a href="#4-flow-phppostgresql---datetimeconverter-split-into-timestampconverter-and-timestamptzconverter">4) flow-php/postgresql - DateTimeConverter split into TimestampConverter and TimestampTzConverter</a></li>
@@ -1633,7 +1634,37 @@
 Please follow the instructions for your specific version to ensure a smooth upgrade process.</p>
 <hr />
 <h2><a id="upgrading-from-039x-to-040x" href="#upgrading-from-039x-to-040x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.39.x to 0.40.x</h2>
-<h3><a id="1-flow-phptelemetry---log-severity-filtering-moved-to-a-pipeline-middleware" href="#1-flow-phptelemetry---log-severity-filtering-moved-to-a-pipeline-middleware" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) <code>flow-php/telemetry</code> - Log severity filtering moved to a pipeline middleware</h3>
+<h3><a id="1-flow-phppostgresql---column-and-domain-defaults-are-modeled-as-columndefault" href="#1-flow-phppostgresql---column-and-domain-defaults-are-modeled-as-columndefault" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) <code>flow-php/postgresql</code> - column and domain defaults are modeled as <code>ColumnDefault</code></h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Column::$default</code> / <code>Domain::$default</code> type <code>?string</code></td>
+<td><code>?Flow\PostgreSql\Schema\ColumnDefault</code></td>
+</tr>
+<tr>
+<td><code>new Column('c', $type, true, &quot;'0'&quot;)</code></td>
+<td><code>new Column('c', $type, true, ColumnDefault::fromExpression(&quot;'0'&quot;, $type))</code></td>
+</tr>
+<tr>
+<td><code>$column-&gt;default</code> (string)</td>
+<td><code>$column-&gt;default?-&gt;literal</code> / <code>$column-&gt;default?-&gt;applicableSql()</code></td>
+</tr>
+<tr>
+<td><code>ColumnShape['default']</code> / <code>DomainShape['default']</code> <code>?string</code></td>
+<td><code>?array{literal: string, type: ?ColumnTypeShape, kind: string}</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>Column::create()</code> / <code>Domain::create()</code> still accept <code>bool|float|int|string|Expression|null</code>.
+Schema arrays serialized by <code>Column::normalize()</code> / <code>Domain::normalize()</code> before 0.40 must be
+regenerated — <code>fromArray()</code> reads the nested <code>default</code> shape only.</p>
+<h3><a id="2-flow-phptelemetry---log-severity-filtering-moved-to-a-pipeline-middleware" href="#2-flow-phptelemetry---log-severity-filtering-moved-to-a-pipeline-middleware" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) <code>flow-php/telemetry</code> - Log severity filtering moved to a pipeline middleware</h3>
 <table>
 <thead>
 <tr>
