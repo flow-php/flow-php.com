@@ -81,6 +81,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-OTLPAvailabilityPass.html#method_process"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ProfilerSignalCapturePass",
+            "name": "ProfilerSignalCapturePass",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ProfilerSignalCapturePass.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ProfilerSignalCapturePass\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ProfilerSignalCapturePass.html#method_process"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\Psr18ClientTelemetryPass",
             "name": "Psr18ClientTelemetryPass",
             "summary": "",
@@ -105,6 +115,11 @@ Search.appendIndex(
             "name": "FlowTelemetryBundle",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-FlowTelemetryBundle.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\FlowTelemetryBundle\u003A\u003AgetPath\u0028\u0029",
+            "name": "getPath",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-FlowTelemetryBundle.html#method_getPath"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\FlowTelemetryBundle\u003A\u003Abuild\u0028\u0029",
             "name": "build",
@@ -626,6 +641,81 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Twig-TracingTwigExtension.html#method_leave"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector",
+            "name": "FlowTelemetryDataCollector",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003Acollect\u0028\u0029",
+            "name": "collect",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_collect"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AlateCollect\u0028\u0029",
+            "name": "lateCollect",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_lateCollect"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_reset"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getName"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetSpans\u0028\u0029",
+            "name": "getSpans",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getSpans"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetMetrics\u0028\u0029",
+            "name": "getMetrics",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getMetrics"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetLogs\u0028\u0029",
+            "name": "getLogs",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getLogs"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetSpanCount\u0028\u0029",
+            "name": "getSpanCount",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getSpanCount"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetMetricCount\u0028\u0029",
+            "name": "getMetricCount",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getMetricCount"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetLogCount\u0028\u0029",
+            "name": "getLogCount",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getLogCount"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetSignalCount\u0028\u0029",
+            "name": "getSignalCount",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getSignalCount"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetTotalDurationMs\u0028\u0029",
+            "name": "getTotalDurationMs",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getTotalDurationMs"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetTimelineDurationMs\u0028\u0029",
+            "name": "getTimelineDurationMs",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getTimelineDurationMs"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Resource\\Detector\\SymfonyDeploymentDetector",
             "name": "SymfonyDeploymentDetector",
             "summary": "Detects\u0020deployment\u0020environment\u0020from\u0020Symfony\u0020kernel\u0020environment.",
@@ -730,6 +820,11 @@ Search.appendIndex(
             "name": "Twig",
             "summary": "",
             "url": "namespaces/flow-bridge-symfony-telemetrybundle-instrumentation-twig.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler",
+            "name": "Profiler",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-telemetrybundle-profiler.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Resource\\Detector",
             "name": "Detector",

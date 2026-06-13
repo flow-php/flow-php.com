@@ -3106,6 +3106,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Propagation-W3CTraceContext.html#constant_HEADER_TRACESTATE"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Composite\\CompositeExporter",
+            "name": "CompositeExporter",
+            "summary": "Fans\u0020every\u0020exported\u0020batch\u0020out\u0020to\u0020multiple\u0020exporters.",
+            "url": "classes/Flow-Telemetry-Provider-Composite-CompositeExporter.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Composite\\CompositeExporter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Composite-CompositeExporter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Composite\\CompositeExporter\u003A\u003Aexport\u0028\u0029",
+            "name": "export",
+            "summary": "Export\u0020a\u0020signal\u0020batch.",
+            "url": "classes/Flow-Telemetry-Provider-Composite-CompositeExporter.html#method_export"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Composite\\CompositeExporter\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020exporter\u0020and\u0020any\u0020owned\u0020transports.",
+            "url": "classes/Flow-Telemetry-Provider-Composite-CompositeExporter.html#method_shutdown"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleExporter",
             "name": "ConsoleExporter",
             "summary": "Unified\u0020console\u0020exporter\u0020for\u0020logs,\u0020metrics,\u0020and\u0020spans.",
@@ -5230,6 +5250,11 @@ Search.appendIndex(
             "name": "Provider",
             "summary": "",
             "url": "namespaces/flow-telemetry-provider.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Composite",
+            "name": "Composite",
+            "summary": "",
+            "url": "namespaces/flow-telemetry-provider-composite.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Console",
             "name": "Console",

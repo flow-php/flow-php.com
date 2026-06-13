@@ -1541,6 +1541,7 @@ backends.</p>
 <li><a href="#cache">Cache</a></li>
 </ul>
 </li>
+<li><a href="#web-profiler">Web Profiler</a></li>
 <li><a href="#named-instruments">Named Instruments</a></li>
 <li><a href="#main-logger">Main Logger</a></li>
 <li><a href="#logging-channels">Logging Channels</a>
@@ -2415,7 +2416,8 @@ traffic before it is exported. On <code>tracer_provider</code> and <code>meter_p
 <li><code>all: [ … ]</code> — a list of child matchers; matches when <strong>every</strong> child matches (AND).</li>
 <li><code>any: [ … ]</code> — a list of child matchers; matches when <strong>at least one</strong> child matches (OR).</li>
 <li><code>not: { … }</code> — a single child matcher; matches when the child does <strong>not</strong>.</li>
-<li>a <strong>leaf rule</strong> carrying a <code>path</code> (the four kinds are mutually exclusive — mixing them in one node is a configuration error).</li>
+<li>a <strong>leaf rule</strong> carrying a <code>path</code> (the four kinds are mutually exclusive — mixing them in one node is a configuration
+error).</li>
 </ul>
 <p>Composites and leaves nest to any depth, so arbitrary combinations of ANDs, ORs and NOTs are expressible. A leaf rule
 accepts:</p>
@@ -2479,7 +2481,7 @@ middleware inside a <a href="#pipeline-logger_provider-only"><code>pipeline</cod
     processor:
       type: attribute_filtering
       exclude: false
-      sources: [scope]
+      sources: [ scope ]
       matcher:
         all:
           - { path: name, mode: equal, value: app.payments }
@@ -2494,7 +2496,7 @@ signal itself <strong>or</strong> on the resource:</p>
   tracer_provider:
     processor:
       type: attribute_filtering
-      sources: [signal, resource]
+      sources: [ signal, resource ]
       matcher: { path: http.route, mode: equal, value: /health }
       inner_processor:
         type: batching
@@ -2509,7 +2511,7 @@ signal itself <strong>or</strong> on the resource:</p>
       matcher:
         any:
           - all:
-              - { path: [timing, duration_ms], mode: less_than, value: 5 }
+              - { path: [ timing, duration_ms ], mode: less_than, value: 5 }
               - { path: internal, mode: equal, value: true }
           - all:
               - { path: tenant, mode: equal, value: a }
@@ -3064,6 +3066,22 @@ instrument.</p>
         - 'cache.system'
         - '/^cache\.validator.*/'
 </code></pre>
+<h3><a id="web-profiler" href="#web-profiler" class="mr-2" aria-hidden="true" title="Permalink">#</a>Web Profiler</h3>
+<p>Adds a <strong>Flow Telemetry</strong> panel to the Symfony Web Profiler showing the signals captured during the
+current request — spans as a timeline waterfall, metrics, and (when <code>capture_logs</code> is enabled) logs —
+so telemetry is visible locally without an external OTLP backend. The toolbar shows the total signal
+count; the panel breaks it down per signal type.</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_telemetry:
+  profiler:
+    # enabled: null (default) auto-enables when WebProfilerBundle is registered; true forces it on
+    # (throws if WebProfilerBundle is absent); false forces it off.
+    enabled: ~
+    capture_logs: false # also capture logs and render them in the panel's Logs section (off by default)
+</code></pre>
+<p>When enabled, the bundle mirrors every exported traces/metrics batch into a shared in-memory store by
+decorating the exporters the <code>tracer_provider</code> / <code>meter_provider</code> (and, with <code>capture_logs: true</code>, the
+<code>logger_provider</code>) reference. OTLP export is unaffected — the real exporter still receives every batch.</p>
+<p>The store is exposed under the stable, public service id <strong><code>flow.telemetry.profiler.store</code></strong>.</p>
 <h3><a id="named-instruments" href="#named-instruments" class="mr-2" aria-hidden="true" title="Permalink">#</a>Named Instruments</h3>
 <p>Configure named tracers, meters, and loggers with custom attributes.</p>
 <p><strong>Options:</strong></p>
@@ -3218,7 +3236,8 @@ native class are bound, so either typehint works.</p>
 <ul>
 <li>Each distinct channel is synthesized on demand as <code>flow.telemetry.&lt;channel&gt;.logger</code> (+ its PSR-3 wrapper
 <code>flow.telemetry.&lt;channel&gt;.logger.psr3</code>), carrying a <code>log.channel: &lt;channel&gt;</code> attribute placed per
-<a href="#channel-attribute-placement"><code>channel_attribute_target</code></a> — unless a logger of that name already exists, which is then
+<a href="#channel-attribute-placement"><code>channel_attribute_target</code></a> — unless a logger of that name already exists, which is
+then
 reused untouched (so the <code>log.channel</code> attribute is only added to loggers the bundle creates).</li>
 <li>To route a service to the bundle's main logger, use the <code>default</code> channel (<code>#[WithTelemetryChannel('default')]</code>).
 A <code>default</code> logger always exists, so it is reused as-is rather than re-created. Every channel name — including <code>app</code>,
@@ -3294,7 +3313,8 @@ logger — uncontested.</li>
 over Monolog's global <code>LoggerInterface</code> autowiring alias for that one class; every other class keeps resolving to
 Monolog.</li>
 </ul>
-<p>What you <strong>cannot</strong> do is enable <code>capture_framework_channels</code> <em>and</em> keep MonologBundle: both passes then rewrite the same
+<p>What you <strong>cannot</strong> do is enable <code>capture_framework_channels</code> <em>and</em> keep MonologBundle: both passes then rewrite the
+same
 <code>monolog.logger</code>-tagged services, and the outcome depends on compiler-pass ordering. Ownership of the framework channels
 is all-or-nothing:</p>
 <ul>

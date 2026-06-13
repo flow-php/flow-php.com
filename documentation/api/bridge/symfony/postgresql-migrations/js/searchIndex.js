@@ -206,6 +206,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\FlowPostgreSqlBundle\u003A\u003AgetPath\u0028\u0029",
+            "name": "getPath",
+            "summary": "The\u0020bundle\u0020class\u0020lives\u0020directly\u0020in\u0020its\u0020package\u0020root\u0020rather\u0020than\u0020the\u0020\u0022modern\u0022\u0020\u0060\u003Croot\u003E\/src\/\u0060\nlayout\u0020that\u0020\u007B\u0040see\u0020AbstractBundle\u003A\u003AgetPath\u0028\u0029\u007D\u0020assumes\u0020\u0028it\u0020returns\u0020\u0060dirname\u0028file,\u00202\u0029\u0060\u0029,\u0020so\u0020the\ndefault\u0020overshoots\u0020by\u0020one\u0020directory\u0020and\u0020Twig\u0020never\u0020registers\u0020the\u0020\u0060\u0040FlowPostgreSql\u0060\u0020view\nnamespace.\u0020Pin\u0020the\u0020path\u0020to\u0020this\u0020directory\u0020so\u0020\u0060Resources\/views\u0060\u0020resolves.",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-FlowPostgreSqlBundle.html#method_getPath"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\FlowPostgreSqlBundle\u003A\u003Abuild\u0028\u0029",
             "name": "build",
             "summary": "",
@@ -265,6 +270,66 @@ Search.appendIndex(
             "name": "supports",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Messenger-FlowPostgreSqlTransportFactory.html#method_supports"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowPostgreSqlDataCollector",
+            "name": "FlowPostgreSqlDataCollector",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowPostgreSqlDataCollector\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowPostgreSqlDataCollector\u003A\u003Acollect\u0028\u0029",
+            "name": "collect",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_collect"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowPostgreSqlDataCollector\u003A\u003AlateCollect\u0028\u0029",
+            "name": "lateCollect",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_lateCollect"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowPostgreSqlDataCollector\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_reset"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowPostgreSqlDataCollector\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getName"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowPostgreSqlDataCollector\u003A\u003AgetQueries\u0028\u0029",
+            "name": "getQueries",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getQueries"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowPostgreSqlDataCollector\u003A\u003AgetConnections\u0028\u0029",
+            "name": "getConnections",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getConnections"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowPostgreSqlDataCollector\u003A\u003AgetQueryCount\u0028\u0029",
+            "name": "getQueryCount",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getQueryCount"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowPostgreSqlDataCollector\u003A\u003AgetFailedCount\u0028\u0029",
+            "name": "getFailedCount",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getFailedCount"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowPostgreSqlDataCollector\u003A\u003AgetDuplicateCount\u0028\u0029",
+            "name": "getDuplicateCount",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getDuplicateCount"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowPostgreSqlDataCollector\u003A\u003AgetTotalDurationMs\u0028\u0029",
+            "name": "getTotalDurationMs",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getTotalDurationMs"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Repository\\FilesystemMigrationRepository",
             "name": "FilesystemMigrationRepository",
@@ -370,6 +435,11 @@ Search.appendIndex(
             "name": "Messenger",
             "summary": "",
             "url": "namespaces/flow-bridge-symfony-postgresqlbundle-messenger.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler",
+            "name": "Profiler",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-postgresqlbundle-profiler.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Repository",
             "name": "Repository",

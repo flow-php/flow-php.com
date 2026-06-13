@@ -1481,6 +1481,7 @@ schema migrations, catalog-driven schema diffing, and optional telemetry for que
 </ul>
 </li>
 <li><a href="#telemetry">Telemetry</a></li>
+<li><a href="#web-profiler">Web Profiler</a></li>
 <li><a href="#migrations">Migrations</a>
 <ul>
 <li><a href="#dropifexists">drop_if_exists</a></li>
@@ -1671,6 +1672,28 @@ when@test:
         include_parameters: false            # Include query parameters in traces
         max_parameters: 10                   # Max number of parameters to include
         max_parameter_length: 100            # Max length of each parameter value (chars)
+</code></pre>
+<h3><a id="web-profiler" href="#web-profiler" class="mr-2" aria-hidden="true" title="Permalink">#</a>Web Profiler</h3>
+<p>Adds a <strong>Flow PostgreSQL</strong> panel to the Symfony Web Profiler listing the SQL executed during the
+current request — like the Doctrine bundle's Queries panel, but for the Flow PostgreSQL client and
+independent of telemetry. Each connection's client is decorated with a recording wrapper that
+captures statement, bound parameters, duration, returned/affected rows, the calling code location,
+and failures.</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_postgresql:
+  profiler:
+    # enabled: null (default) auto-enables when WebProfilerBundle is registered; true forces it on
+    # (throws if WebProfilerBundle is absent); false forces it off entirely.
+    enabled: ~
+    include_parameters: true # show bound query parameters in the panel
+</code></pre>
+<p>Recording is dev-only and adds nothing in production: when the profiler is disabled — or
+WebProfilerBundle is absent in <code>enabled: ~</code> mode — no connection is decorated. A single connection
+can opt out while the profiler is on:</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_postgresql:
+  connections:
+    default:
+      dsn: '%env(DATABASE_URL)%'
+      profiler: false # do not record queries in selected connection (default: true)
 </code></pre>
 <h3><a id="migrations" href="#migrations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Migrations</h3>
 <p>Migrations are configured at the top level, not per connection. Use <code>--connection</code> to target a specific connection
