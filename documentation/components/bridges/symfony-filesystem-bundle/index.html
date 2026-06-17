@@ -1473,7 +1473,11 @@ console commands for managing files across mounted protocols, and first-class Op
 <nav aria-label="Package links" class="package-nav"><a href="https://packagist.org/packages/flow-php/symfony-filesystem-bundle" target="_blank" rel="noopener">Packagist <span aria-hidden="true">↗</span></a><a href="https://github.com/flow-php/symfony-filesystem-bundle" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a><a href="/documentation/installation/packages/symfony-filesystem-bundle">Installation</a></nav>
 <div class="toc-wrapper" data-controller="toc"><div class="toc-header" data-action="click-&gt;toc#toggle"><span>Table of Contents</span><svg class="toc-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg></div><div class="toc-content"><ul class="table-of-contents"><li><a href="#installation">Installation</a></li>
 <li><a href="#overview">Overview</a></li>
-<li><a href="#quick-start">Quick Start</a></li>
+<li><a href="#quick-start">Quick Start</a>
+<ul>
+<li><a href="#injecting-a-single-filesystem">Injecting a Single Filesystem</a></li>
+</ul>
+</li>
 <li><a href="#configuration-reference">Configuration Reference</a>
 <ul>
 <li><a href="#fstabs">Fstabs</a></li>
@@ -1569,6 +1573,43 @@ final class ReportBuilder
 <p>Most applications need exactly one fstab with multiple filesystems mounted under it. Multi-fstab support
 exists for advanced cases — see <a href="#multi-fstab-support">Multi-Fstab Support</a>.</p>
 </blockquote>
+<h3><a id="injecting-a-single-filesystem" href="#injecting-a-single-filesystem" class="mr-2" aria-hidden="true" title="Permalink">#</a>Injecting a Single Filesystem</h3>
+<p>When a service only needs one mounted filesystem, inject the <code>Flow\Filesystem\Filesystem</code> directly instead
+of the whole table. Every mount is registered as a private service and exposed two ways.</p>
+<p><strong>Named-argument autowiring</strong> — each mount of the default fstab is aliased as <code>Filesystem $&lt;protocol&gt;</code>, and
+every mount (of any fstab) as <code>Filesystem $&lt;fstab&gt;&lt;Protocol&gt;</code>. Protocols containing <code>-</code>, <code>.</code> or <code>+</code> are
+camel-cased (<code>aws-s3</code> → <code>awsS3</code>). This mirrors the <code>FilesystemTable $&lt;name&gt;Fstab</code> convention:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">use Flow\Filesystem\Filesystem;
+
+final class ReportBuilder
+{
+    public function __construct(
+        private readonly Filesystem $warehouse,       // → default fstab, 'warehouse' mount
+        private readonly Filesystem $analyticsFile,   // → 'analytics' fstab, 'file' mount
+    ) {
+    }
+}
+</code></pre>
+<p><strong><code>#[AsFilesystem]</code> attribute</strong> — for explicit selection or when the argument name should differ from the
+protocol. Omitting <code>fstab</code> targets the default fstab:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">use Flow\Bridge\Symfony\FilesystemBundle\Attribute\AsFilesystem;
+use Flow\Filesystem\Filesystem;
+
+final class ReportBuilder
+{
+    public function __construct(
+        #[AsFilesystem('warehouse')]
+        private readonly Filesystem $primary,
+        #[AsFilesystem('cold', fstab: 'archive')]
+        private readonly Filesystem $coldStorage,
+    ) {
+    }
+}
+</code></pre>
+<p>Named-argument aliases work for any autowired service; the attribute requires the consuming service to be
+autoconfigured (the default for everything under your <code>App\</code> namespace). Both resolve through the fstab's
+<code>FilesystemTable::for()</code>, so telemetry decoration is preserved. An unknown protocol or fstab fails at
+container-compile time with the available options listed.</p>
 <h2><a id="configuration-reference" href="#configuration-reference" class="mr-2" aria-hidden="true" title="Permalink">#</a>Configuration Reference</h2>
 <h3><a id="fstabs" href="#fstabs" class="mr-2" aria-hidden="true" title="Permalink">#</a>Fstabs</h3>
 <p>At least one fstab is required. Each fstab declares a set of filesystems. The YAML key under

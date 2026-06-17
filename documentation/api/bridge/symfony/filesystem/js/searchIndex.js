@@ -1,6 +1,26 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\Attribute\\AsFilesystem",
+            "name": "AsFilesystem",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-Attribute-AsFilesystem.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\Attribute\\AsFilesystem\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-Attribute-AsFilesystem.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\Attribute\\AsFilesystem\u003A\u003A\u0024mount",
+            "name": "mount",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-Attribute-AsFilesystem.html#property_mount"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\Attribute\\AsFilesystem\u003A\u003A\u0024fstab",
+            "name": "fstab",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-Attribute-AsFilesystem.html#property_fstab"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\Attribute\\AsFilesystemFactory",
             "name": "AsFilesystemFactory",
             "summary": "",
@@ -141,6 +161,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-DependencyInjection-Compiler-BuildFstabsPass.html#constant_FSTAB_SERVICE_PREFIX"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\DependencyInjection\\Compiler\\BuildFstabsPass\u003A\u003AFS_SERVICE_PREFIX",
+            "name": "FS_SERVICE_PREFIX",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-DependencyInjection-Compiler-BuildFstabsPass.html#constant_FS_SERVICE_PREFIX"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\DependencyInjection\\Compiler\\BuildFstabsPass\u003A\u003ATELEMETRY_CONFIG_SERVICE_PREFIX",
             "name": "TELEMETRY_CONFIG_SERVICE_PREFIX",
             "summary": "",
@@ -185,6 +210,21 @@ Search.appendIndex(
             "name": "LOCATOR_SERVICE_ID",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-DependencyInjection-Compiler-RegisterFstabLocatorPass.html#constant_LOCATOR_SERVICE_ID"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\DependencyInjection\\Compiler\\ResolveFilesystemArgumentsPass",
+            "name": "ResolveFilesystemArgumentsPass",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-DependencyInjection-Compiler-ResolveFilesystemArgumentsPass.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\DependencyInjection\\Compiler\\ResolveFilesystemArgumentsPass\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-DependencyInjection-Compiler-ResolveFilesystemArgumentsPass.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\DependencyInjection\\Compiler\\ResolveFilesystemArgumentsPass\u003A\u003ATAG",
+            "name": "TAG",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-DependencyInjection-Compiler-ResolveFilesystemArgumentsPass.html#constant_TAG"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\Exception\\Exception",
             "name": "Exception",
