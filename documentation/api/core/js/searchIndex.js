@@ -11866,6 +11866,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema.html#method_add"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AaddAfter\u0028\u0029",
+            "name": "addAfter",
+            "summary": "Inserts\u0020definitions\u0020immediately\u0020after\u0020an\u0020existing\u0020column.",
+            "url": "classes/Flow-ETL-Schema.html#method_addAfter"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AaddBefore\u0028\u0029",
+            "name": "addBefore",
+            "summary": "Inserts\u0020definitions\u0020immediately\u0020before\u0020an\u0020existing\u0020column.",
+            "url": "classes/Flow-ETL-Schema.html#method_addBefore"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AaddMetadata\u0028\u0029",
             "name": "addMetadata",
             "summary": "Adds\u0020metadata\u0020to\u0020a\u0020given\u0020definition.",
@@ -11896,6 +11906,11 @@ Search.appendIndex(
             "summary": "Gracefully\u0020remove\u0020entries\u0020from\u0020schema\u0020without\u0020throwing\u0020an\u0020exception\u0020if\u0020entry\u0020does\u0020not\u0020exist.",
             "url": "classes/Flow-ETL-Schema.html#method_gracefulRemove"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AinsertAt\u0028\u0029",
+            "name": "insertAt",
+            "summary": "Inserts\u0020definitions\u0020at\u0020an\u0020explicit\u0020position.\u0020Index\u00200\u0020prepends,\u0020an\u0020index\u0020equal\u0020to\u0020the\nnumber\u0020of\u0020definitions\u0020appends.",
+            "url": "classes/Flow-ETL-Schema.html#method_insertAt"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AisSame\u0028\u0029",
             "name": "isSame",
             "summary": "",
@@ -11916,10 +11931,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema.html#method_merge"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AmoveAfter\u0028\u0029",
+            "name": "moveAfter",
+            "summary": "Moves\u0020an\u0020existing\u0020column\u0020to\u0020immediately\u0020after\u0020another\u0020column,\u0020preserving\u0020its\u0020definition.",
+            "url": "classes/Flow-ETL-Schema.html#method_moveAfter"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AmoveBefore\u0028\u0029",
+            "name": "moveBefore",
+            "summary": "Moves\u0020an\u0020existing\u0020column\u0020to\u0020immediately\u0020before\u0020another\u0020column,\u0020preserving\u0020its\u0020definition.",
+            "url": "classes/Flow-ETL-Schema.html#method_moveBefore"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AmoveTo\u0028\u0029",
+            "name": "moveTo",
+            "summary": "Moves\u0020an\u0020existing\u0020column\u0020to\u0020an\u0020explicit\u0020position,\u0020preserving\u0020its\u0020definition.",
+            "url": "classes/Flow-ETL-Schema.html#method_moveTo"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\u003A\u003Anormalize\u0028\u0029",
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-ETL-Schema.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003Aprepend\u0028\u0029",
+            "name": "prepend",
+            "summary": "Inserts\u0020definitions\u0020at\u0020the\u0020beginning\u0020of\u0020the\u0020schema.",
+            "url": "classes/Flow-ETL-Schema.html#method_prepend"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\u003A\u003Areferences\u0028\u0029",
             "name": "references",
@@ -11935,6 +11970,11 @@ Search.appendIndex(
             "name": "rename",
             "summary": "",
             "url": "classes/Flow-ETL-Schema.html#method_rename"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003Areorder\u0028\u0029",
+            "name": "reorder",
+            "summary": "Reorders\u0020columns\u0020by\u0020name.\u0020Any\u0020columns\u0020not\u0020listed\u0020keep\u0020their\u0020relative\u0020order\u0020and\u0020are\u0020appended.",
+            "url": "classes/Flow-ETL-Schema.html#method_reorder"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\u003A\u003Areplace\u0028\u0029",
             "name": "replace",
