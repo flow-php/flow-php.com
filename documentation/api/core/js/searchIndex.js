@@ -431,6 +431,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_S3_FILESYSTEM"
         },                {
+            "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003ASEAL",
+            "name": "SEAL",
+            "summary": "",
+            "url": "classes/Flow-ETL-Attribute-Module.html#enumcase_SEAL"
+        },                {
             "fqsen": "\\Flow\\ETL\\Attribute\\Module\u003A\u003ASYMFONY_HTTP_FOUNDATION_TELEMETRY_BRIDGE",
             "name": "SYMFONY_HTTP_FOUNDATION_TELEMETRY_BRIDGE",
             "summary": "",
