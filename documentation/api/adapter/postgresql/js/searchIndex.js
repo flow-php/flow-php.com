@@ -126,6 +126,11 @@ Search.appendIndex(
             "summary": "Convert\u0020a\u0020PostgreSQL\u0020table\u0020definition\u0020into\u0020a\u0020Flow\u0020Schema.",
             "url": "namespaces/flow-etl-adapter-postgresql.html#function_pgsql_table_to_flow_schema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\pgsql_schema_sort_by_type\u0028\u0029",
+            "name": "pgsql_schema_sort_by_type",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-postgresql.html#function_pgsql_schema_sort_by_type"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\LoaderOptions\\DeleteOptions",
             "name": "DeleteOptions",
             "summary": "Configuration\u0020options\u0020for\u0020DELETE\u0020operations\u0020in\u0020PostgreSQL\u0020loader.",
@@ -581,6 +586,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-QueryBuilder-UpdateQueryBuilder.html#method_build"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Schema\\SortingStrategy\\TypeStrategy",
+            "name": "TypeStrategy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Schema-SortingStrategy-TypeStrategy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Schema\\SortingStrategy\\TypeStrategy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Schema-SortingStrategy-TypeStrategy.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Schema\\SortingStrategy\\TypeStrategy\u003A\u003Acompare\u0028\u0029",
+            "name": "compare",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Schema-SortingStrategy-TypeStrategy.html#method_compare"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\SchemaConverter",
             "name": "SchemaConverter",
             "summary": "Converts\u0020between\u0020a\u0020Flow\u0020\u007B\u0040see\u0020Schema\u007D\u0020and\u0020a\u0020PostgreSQL\u0020\u007B\u0040see\u0020Table\u007D.",
@@ -725,6 +745,16 @@ Search.appendIndex(
             "name": "QueryBuilder",
             "summary": "",
             "url": "namespaces/flow-etl-adapter-postgresql-querybuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Schema\\SortingStrategy",
+            "name": "SortingStrategy",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-postgresql-schema-sortingstrategy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Schema",
+            "name": "Schema",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-postgresql-schema.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ValueConverter",
             "name": "ValueConverter",

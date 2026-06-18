@@ -3041,6 +3041,26 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_compare_entries_by_type_and_name"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\schema_sort_by_name\u0028\u0029",
+            "name": "schema_sort_by_name",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_schema_sort_by_name"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\schema_sort_by_type\u0028\u0029",
+            "name": "schema_sort_by_type",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_schema_sort_by_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\schema_sort_by_type_and_name\u0028\u0029",
+            "name": "schema_sort_by_type_and_name",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_schema_sort_by_type_and_name"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\schema_sort_by_metadata\u0028\u0029",
+            "name": "schema_sort_by_metadata",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_schema_sort_by_metadata"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\is_type\u0028\u0029",
             "name": "is_type",
             "summary": "",
@@ -11816,6 +11836,101 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-SchemaFormatter.html#method_format"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\AlphabeticalStrategy",
+            "name": "AlphabeticalStrategy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-AlphabeticalStrategy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\AlphabeticalStrategy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-AlphabeticalStrategy.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\AlphabeticalStrategy\u003A\u003Acompare\u0028\u0029",
+            "name": "compare",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-AlphabeticalStrategy.html#method_compare"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\CombinedStrategy",
+            "name": "CombinedStrategy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-CombinedStrategy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\CombinedStrategy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-CombinedStrategy.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\CombinedStrategy\u003A\u003Acompare\u0028\u0029",
+            "name": "compare",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-CombinedStrategy.html#method_compare"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\MetadataStrategy",
+            "name": "MetadataStrategy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-MetadataStrategy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\MetadataStrategy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-MetadataStrategy.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\MetadataStrategy\u003A\u003Acompare\u0028\u0029",
+            "name": "compare",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-MetadataStrategy.html#method_compare"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\TypeStrategy\\TypePriorities",
+            "name": "TypePriorities",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-TypeStrategy-TypePriorities.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\TypeStrategy\\TypePriorities\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-TypeStrategy-TypePriorities.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\TypeStrategy\\TypePriorities\u003A\u003Afor\u0028\u0029",
+            "name": "for",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-TypeStrategy-TypePriorities.html#method_for"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\TypeStrategy\\TypePriorities\u003A\u003APRIORITIES",
+            "name": "PRIORITIES",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-TypeStrategy-TypePriorities.html#constant_PRIORITIES"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\TypeStrategy\\TypePriorities\u003A\u003AUNKNOWN_TYPE_PRIORITY",
+            "name": "UNKNOWN_TYPE_PRIORITY",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-TypeStrategy-TypePriorities.html#constant_UNKNOWN_TYPE_PRIORITY"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\TypeStrategy",
+            "name": "TypeStrategy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-TypeStrategy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\TypeStrategy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-TypeStrategy.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\TypeStrategy\u003A\u003Acompare\u0028\u0029",
+            "name": "compare",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy-TypeStrategy.html#method_compare"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy",
+            "name": "SortingStrategy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\u003A\u003Acompare\u0028\u0029",
+            "name": "compare",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SortingStrategy.html#method_compare"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Validator\\EvolvingValidator",
             "name": "EvolvingValidator",
             "summary": "Rules\u0020of\u0020evolving\u0020schema\u0020matching\u003A\n\u002D\u0020if\u0020schemas\u0020are\u0020the\u0020same,\u0020return\u0020true\n\u002D\u0020if\u0020given\u0020schema\u0020has\u0020less\u0020fields\u0020than\u0020expected\u0020schema,\u0020return\u0020false\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020making\u0020a\u0020nullable\u0020field\u0020non\u002Dnullable,\u0020return\u0020false\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020making\u0020a\u0020non\u002Dnullable\u0020field\u0020nullable,\u0020return\u0020true\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020changing\u0020the\u0020type\u0020of\u0020a\u0020field,\u0020return\u0020false\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020adding\u0020a\u0020field,\u0020return\u0020true",
@@ -11990,6 +12105,11 @@ Search.appendIndex(
             "name": "setMetadata",
             "summary": "Overwrites\u0020metadata\u0020for\u0020a\u0020given\u0020definition.",
             "url": "classes/Flow-ETL-Schema.html#method_setMetadata"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003Asort\u0028\u0029",
+            "name": "sort",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema.html#method_sort"
         },                {
             "fqsen": "\\Flow\\ETL\\SchemaValidator",
             "name": "SchemaValidator",
@@ -13415,6 +13535,16 @@ Search.appendIndex(
             "name": "PHPFormatter",
             "summary": "",
             "url": "namespaces/flow-etl-schema-formatter-phpformatter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy",
+            "name": "SortingStrategy",
+            "summary": "",
+            "url": "namespaces/flow-etl-schema-sortingstrategy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SortingStrategy\\TypeStrategy",
+            "name": "TypeStrategy",
+            "summary": "",
+            "url": "namespaces/flow-etl-schema-sortingstrategy-typestrategy.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Validator",
             "name": "Validator",
