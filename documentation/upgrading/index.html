@@ -1470,6 +1470,7 @@
 <div class="toc-wrapper" data-controller="toc"><div class="toc-header" data-action="click-&gt;toc#toggle"><span>Table of Contents</span><svg class="toc-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg></div><div class="toc-content"><ul class="table-of-contents"><li><a href="#unreleased">[Unreleased]</a>
 <ul>
 <li><a href="#1-removal-of-elasticsearch-adapter">1) Removal of Elasticsearch Adapter</a></li>
+<li><a href="#2-flow-phpsymfony-telemetry-bundle--">2) flow-php/symfony-telemetry-bundle -</a></li>
 </ul>
 </li>
 <li><a href="#upgrading-from-039x-to-040x">Upgrading from 0.39.x to 0.40.x</a>
@@ -1640,11 +1641,14 @@ Please follow the instructions for your specific version to ensure a smooth upgr
 <hr />
 <h2><a id="unreleased" href="#unreleased" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased]</h2>
 <h3><a id="1-removal-of-elasticsearch-adapter" href="#1-removal-of-elasticsearch-adapter" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Removal of Elasticsearch Adapter</h3>
-<p>The Elasticsearch adapter has been removed from Flow PHP and replaced by the <a rel="noopener noreferrer" target="_blank" href="https://php-cmsig.github.io/search/">SEAL</a> adapter (<code>flow-php/etl-adapter-seal</code>), a search engine abstraction layer that supports Elasticsearch, OpenSearch, Meilisearch, Solr, Typesense, Algolia, RediSearch and Loupe.</p>
+<p>The Elasticsearch adapter has been removed from Flow PHP and replaced by the <a rel="noopener noreferrer" target="_blank" href="https://php-cmsig.github.io/search/">SEAL</a>
+adapter (<code>flow-php/etl-adapter-seal</code>), a search engine abstraction layer that supports Elasticsearch, OpenSearch,
+Meilisearch, Solr, Typesense, Algolia, RediSearch and Loupe.</p>
 <p>To migrate, install the SEAL adapter together with the engine adapter for your backend:</p>
 <pre class="language-plain" data-controller="syntax-highlight"><code class="language-plain">composer require flow-php/etl-adapter-seal cmsig/seal-elasticsearch-adapter
 </code></pre>
-<p>Then build a <code>CmsIg\Seal\Engine</code> and pass it to <code>to_seal_upsert()</code> instead of the previous <code>to_es_bulk_index()</code> (or Meilisearch) DSL functions:</p>
+<p>Then build a <code>CmsIg\Seal\Engine</code> and pass it to <code>to_seal_upsert()</code> instead of the previous <code>to_es_bulk_index()</code> (or
+Meilisearch) DSL functions:</p>
 <pre class="language-php" data-controller="syntax-highlight"><code class="language-php">use CmsIg\Seal\Engine;
 use CmsIg\Seal\Adapter\Elasticsearch\ElasticsearchAdapter;
 
@@ -1659,6 +1663,26 @@ data_frame()
     -&gt;read(/* ... */)
     -&gt;write(to_seal_upsert($engine, 'index_name'))
     -&gt;run();
+</code></pre>
+<h3><a id="2-flow-phpsymfony-telemetry-bundle--" href="#2-flow-phpsymfony-telemetry-bundle--" class="mr-2" aria-hidden="true" title="Permalink">#</a>2) <code>flow-php/symfony-telemetry-bundle</code> -</h3>
+<p><code>flow-php/symfony-http-foundation-telemetry-bridge</code> is now an optional dependency</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>installed transitively by the bundle</td>
+<td>install explicitly to enable HTTP trace context propagation</td>
+</tr>
+</tbody>
+</table>
+<p><code>instrumentation.http_kernel.context_propagation</code> is silently disabled when the bridge is absent. To keep extracting
+incoming and injecting outgoing W3C trace headers:</p>
+<pre class="language-plain" data-controller="syntax-highlight"><code class="language-plain">composer require flow-php/symfony-http-foundation-telemetry-bridge
 </code></pre>
 <hr />
 <h2><a id="upgrading-from-039x-to-040x" href="#upgrading-from-039x-to-040x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.39.x to 0.40.x</h2>
