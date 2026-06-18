@@ -551,6 +551,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-PathExclusionRule.html#property_method"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerTracePropagation",
+            "name": "MessengerTracePropagation",
+            "summary": "How\u0020a\u0020consumed\u0020message\u0027s\u0020span\u0020relates\u0020to\u0020the\u0020producing\u0020\u0028publishing\u0029\u0020span\u0020when\ntrace\u0020context\u0020is\u0020propagated\u0020across\u0020the\u0020Messenger\u0020transport.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerTracePropagation.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerTracePropagation\u003A\u003AContinuation",
+            "name": "Continuation",
+            "summary": "The\u0020consumer\u0020span\u0020adopts\u0020the\u0020producer\u0027s\u0020trace\u0020and\u0020becomes\u0020its\u0020child,\u0020so\npublish\u0020\u002D\u003E\u0020queue\u0020\u002D\u003E\u0020consume\u0020is\u0020one\u0020continuous\u0020distributed\u0020trace.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerTracePropagation.html#enumcase_Continuation"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerTracePropagation\u003A\u003ALink",
+            "name": "Link",
+            "summary": "The\u0020consumer\u0020span\u0020stays\u0020in\u0020the\u0020worker\u0027s\u0020own\u0020trace\u0020and\u0020carries\u0020a\u0020span\u0020link\nback\u0020to\u0020the\u0020producer\u0020span.\u0020Producer\u0020and\u0020consumer\u0020get\u0020separate,\u0020clean\u0020traces\nconnected\u0020by\u0020a\u0020link\u0020\u0028recommended\u0020for\u0020decoupled\u0020\/\u0020batch\u0020\/\u0020long\u002Ddelay\u0020queues\u0029.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerTracePropagation.html#enumcase_Link"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\TelemetryStamp",
             "name": "TelemetryStamp",
             "summary": "Messenger\u0020stamp\u0020holding\u0020propagated\u0020telemetry\u0020context.",

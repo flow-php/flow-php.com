@@ -3011,7 +3011,20 @@ instrument.</p>
     messenger:
       enabled: true
       context_propagation: true  # Propagate context across message boundaries
+      propagation_style: link     # How the consumer span relates to the producer span
 </code></pre>
+<p>When <code>context_propagation</code> is enabled, <code>propagation_style</code> controls how a consumed message's span
+relates to the producing (publishing) span:</p>
+<ul>
+<li><code>link</code> (default) — the consumer span stays in the worker's own trace (under the <code>messenger:consume</code>
+console span) and carries a span link back to the producer span. Producer and consumer get separate,
+clean traces connected by a link. Recommended for decoupled, batch, or long-delay queues, where
+continuing the trace would otherwise absorb the entire queue wait into a single span's duration.</li>
+<li><code>continue</code> — the consumer span adopts the producer's trace and becomes its child, so
+publish → queue → consume is one continuous distributed trace. Fine for fast, 1:1 processing.</li>
+</ul>
+<p><code>propagation_style</code> has no effect when <code>context_propagation</code> is <code>false</code> (there is nothing to relate to).
+The producer side is identical in both modes — the telemetry stamp is always written on dispatch.</p>
 <h4><a id="twig" href="#twig" class="mr-2" aria-hidden="true" title="Permalink">#</a>Twig</h4>
 <p>Traces Twig template rendering.</p>
 <pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_telemetry:
@@ -3523,6 +3536,7 @@ flow_telemetry:
     messenger:
       enabled: true
       context_propagation: true
+      propagation_style: link
     dbal:
       enabled: true
       log_sql: true
