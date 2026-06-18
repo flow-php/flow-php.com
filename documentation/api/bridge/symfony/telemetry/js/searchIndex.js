@@ -641,6 +641,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Twig-TracingTwigExtension.html#method_leave"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Twig\\TracingTwigExtension\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Twig-TracingTwigExtension.html#method_reset"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Twig\\TwigSpanCleanupSubscriber",
+            "name": "TwigSpanCleanupSubscriber",
+            "summary": "Completes\u0020Twig\u0020spans\u0020left\u0020open\u0020by\u0020a\u0020render\u0020exception\u0020and\u0020resets\u0020the\u0020extension\u0020state.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Twig-TwigSpanCleanupSubscriber.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Twig\\TwigSpanCleanupSubscriber\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Twig-TwigSpanCleanupSubscriber.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Twig\\TwigSpanCleanupSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
+            "name": "getSubscribedEvents",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Twig-TwigSpanCleanupSubscriber.html#method_getSubscribedEvents"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Twig\\TwigSpanCleanupSubscriber\u003A\u003AonConsoleTerminate\u0028\u0029",
+            "name": "onConsoleTerminate",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Twig-TwigSpanCleanupSubscriber.html#method_onConsoleTerminate"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Twig\\TwigSpanCleanupSubscriber\u003A\u003AonTerminate\u0028\u0029",
+            "name": "onTerminate",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Twig-TwigSpanCleanupSubscriber.html#method_onTerminate"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector",
             "name": "FlowTelemetryDataCollector",
             "summary": "",
