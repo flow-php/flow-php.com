@@ -124,20 +124,16 @@
 
     </aside>
 
-            <p class="phpdocumentor-summary">Telemetry context carrier holding trace information and baggage.</p>
+            <p class="phpdocumentor-summary">Telemetry context carrier holding the active span and baggage.</p>
 
 
-    <section class="phpdocumentor-description"><p>Context is the main carrier for propagating telemetry data across
-process boundaries and through the application. It holds:</p>
-<ul>
-<li>A TraceId that correlates all spans in a trace</li>
-<li>An optional active SpanId for the currently executing span</li>
-<li>Baggage for arbitrary key-value data propagation</li>
-</ul>
+    <section class="phpdocumentor-description"><p>Follows the OpenTelemetry context model: a Context either carries the currently active span (its
+SpanContext) — making the next span its child within the same trace — or carries none, making the next
+span a new trace root. Trace id is always derived from the active span; it is never stored independently.</p>
 <p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$context = Context::create();
-$context = $context-&gt;withActiveSpan(SpanId::generate());
-echo $context-&gt;traceId-&gt;toHex();
+<pre class="prettyprint"><code class="language-php">$context = Context::root();
+$context = $context-&gt;withActiveSpan($span-&gt;context());
+echo $context-&gt;traceId()?-&gt;toHex();
 </code></pre>
 </section>
 
@@ -160,15 +156,15 @@ echo $context-&gt;traceId-&gt;toHex();
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-Telemetry-Context-Context.html#property_baggage">$baggage</a>
+    <a class="" href="classes/Flow-Telemetry-Context-Context.html#property_activeSpan">$activeSpan</a>
     <span>
-                        &nbsp;: <a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a>            </span>
+                        &nbsp;: <a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a>|null            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-Telemetry-Context-Context.html#property_traceId">$traceId</a>
+    <a class="" href="classes/Flow-Telemetry-Context-Context.html#property_baggage">$baggage</a>
     <span>
-                        &nbsp;: <a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a>            </span>
+                        &nbsp;: <a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a>            </span>
 </dt>
 
     </dl>
@@ -186,67 +182,64 @@ echo $context-&gt;traceId-&gt;toHex();
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_activeSpanId">activeSpanId()</a>
+    <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_activeSpan">activeSpan()</a>
     <span>
-                                &nbsp;: null|<a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a>|null    </span>
 </dt>
-<dd>Get the currently active span ID, if any.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_create">create()</a>
+    <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_activeSpanId">activeSpanId()</a>
     <span>
-                                &nbsp;: self    </span>
+                                &nbsp;: <a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a>|null    </span>
 </dt>
-<dd>Create a new Context with an invalid TraceId (all zeros).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_fromArray">fromArray()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
-<dd>Create a Context from a normalized array representation.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_isRootContext">isRootContext()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd>Check if this is a root context (no active span).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{traceId: array{hex: string}, baggage: array{entries: array<string,string>}, activeSpanId: null|array{hex: string}}    </span>
+                                &nbsp;: array{activeSpan: null|array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags: array{byte: int}, traceState: array{entries: array<string,string>}}, baggage: array{entries: array<string,string>}}    </span>
 </dt>
-<dd>Normalize the Context to an array representation for serialization.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_root">root()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_traceId">traceId()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a>|null    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_withActiveSpan">withActiveSpan()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
-<dd>Create a new Context with the specified active span.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_withBaggage">withBaggage()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
-<dd>Create a new Context with the specified baggage.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_withoutActiveSpan">withoutActiveSpan()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
-<dd>Create a new Context with no active span.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Telemetry-Context-Context.html#method_withTraceId">withTraceId()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Create a new Context with the specified TraceId.</dd>
 
     </dl>
 
@@ -268,9 +261,9 @@ echo $context-&gt;traceId-&gt;toHex();
             -public
                                                 -read-only                    "
 >
-    <h4 class="phpdocumentor-element__name" id="property_baggage">
-        $baggage
-        <a href="classes/Flow-Telemetry-Context-Context.html#property_baggage" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_activeSpan">
+        $activeSpan
+        <a href="classes/Flow-Telemetry-Context-Context.html#property_activeSpan" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
@@ -278,7 +271,7 @@ echo $context-&gt;traceId-&gt;toHex();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -286,9 +279,9 @@ echo $context-&gt;traceId-&gt;toHex();
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$baggage</span>
-     = <span class="phpdocumentor-signature__default-value">new Baggage()</span></code>
+            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$activeSpan</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -305,9 +298,9 @@ echo $context-&gt;traceId-&gt;toHex();
             -public
                                                 -read-only                    "
 >
-    <h4 class="phpdocumentor-element__name" id="property_traceId">
-        $traceId
-        <a href="classes/Flow-Telemetry-Context-Context.html#property_traceId" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_baggage">
+        $baggage
+        <a href="classes/Flow-Telemetry-Context-Context.html#property_baggage" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
@@ -315,7 +308,7 @@ echo $context-&gt;traceId-&gt;toHex();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -323,9 +316,9 @@ echo $context-&gt;traceId-&gt;toHex();
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$traceId</span>
-    </code>
+            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$baggage</span>
+     = <span class="phpdocumentor-signature__default-value">new Baggage()</span></code>
 
     
     
@@ -357,14 +350,14 @@ echo $context-&gt;traceId-&gt;toHex();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$traceId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baggage</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$activeSpan</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baggage</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -373,9 +366,9 @@ echo $context-&gt;traceId-&gt;toHex();
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$traceId</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a></span>
-                            </dt>
+                <span class="phpdocumentor-argument-list__argument__name">$activeSpan</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -400,6 +393,44 @@ echo $context-&gt;traceId-&gt;toHex();
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_activeSpan">
+        activeSpan()
+        <a href="classes/Flow-Telemetry-Context-Context.html#method_activeSpan" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">activeSpan</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_activeSpanId">
         activeSpanId()
         <a href="classes/Flow-Telemetry-Context-Context.html#method_activeSpanId" class="headerlink"><i class="fas fa-link"></i></a>
@@ -408,15 +439,14 @@ echo $context-&gt;traceId-&gt;toHex();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get the currently active span ID, if any.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">activeSpanId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">activeSpanId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -429,54 +459,7 @@ echo $context-&gt;traceId-&gt;toHex();
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">null|<a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a></span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>The active span ID, or null if no span is active</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_create">
-        create()
-        <a href="classes/Flow-Telemetry-Context-Context.html#method_create" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">39</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Create a new Context with an invalid TraceId (all zeros).</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">create</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <section class="phpdocumentor-description"><p>Use this when you want to create a context without starting a trace.
-Logs and spans emitted in this context will not have a trace ID until
-a trace is explicitly started.</p>
-</section>
-
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a>|null</span>
             </section>
 
 </article>
@@ -494,15 +477,14 @@ a trace is explicitly started.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create a Context from a normalized array representation.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{traceId: array{hex: string}, baggage: array{entries: array<string,string>}, activeSpanId: null|array{hex: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{activeSpan: null|array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags?: array{byte: int}, traceState?: array{entries: array<string,string>}}, baggage: array{entries: array<string,string>}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -512,12 +494,10 @@ a trace is explicitly started.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$data</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array{traceId: array{hex: string}, baggage: array{entries: array<string,string>}, activeSpanId: null|array{hex: string}}</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array{activeSpan: null|array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags?: array{byte: int}, traceState?: array{entries: array<string,string>}}, baggage: array{entries: array<string,string>}}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Normalized Context data</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -545,12 +525,11 @@ a trace is explicitly started.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Check if this is a root context (no active span).</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isRootContext</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
@@ -558,10 +537,7 @@ a trace is explicitly started.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>A root context has no active span, meaning any new span created
-in this context would be a root span.</p>
-</section>
-
+    
     
     
 
@@ -587,15 +563,14 @@ in this context would be a root span.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Normalize the Context to an array representation for serialization.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{traceId: array{hex: string}, baggage: array{entries: array<string,string>}, activeSpanId: null|array{hex: string}}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{activeSpan: null|array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags: array{byte: int}, traceState: array{entries: array<string,string>}}, baggage: array{entries: array<string,string>}}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -608,7 +583,83 @@ in this context would be a root span.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{traceId: array{hex: string}, baggage: array{entries: array<string,string>}, activeSpanId: null|array{hex: string}}</span>
+        <span class="phpdocumentor-signature__response_type">array{activeSpan: null|array{traceId: array{hex: string}, spanId: array{hex: string}, parentSpanId: null|array{hex: string}, isRemote: bool, traceFlags: array{byte: int}, traceState: array{entries: array<string,string>}}, baggage: array{entries: array<string,string>}}</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_root">
+        root()
+        <a href="classes/Flow-Telemetry-Context-Context.html#method_root" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">root</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_traceId">
+        traceId()
+        <a href="classes/Flow-Telemetry-Context-Context.html#method_traceId" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">traceId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a>|null</span>
             </section>
 
 </article>
@@ -626,15 +677,14 @@ in this context would be a root span.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create a new Context with the specified active span.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withActiveSpan</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spanId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">withActiveSpan</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$span</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -643,13 +693,11 @@ in this context would be a root span.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$spanId</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Context-SpanId.html"><abbr title="\Flow\Telemetry\Context\SpanId">SpanId</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$span</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The span ID to set as active</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -660,10 +708,6 @@ in this context would be a root span.</p>
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">self</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>New Context instance with the active span set</p>
-</section>
-
             </section>
 
 </article>
@@ -681,12 +725,11 @@ in this context would be a root span.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create a new Context with the specified baggage.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">withBaggage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baggage</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
@@ -702,9 +745,7 @@ in this context would be a root span.</p>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The baggage to use</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -715,10 +756,6 @@ in this context would be a root span.</p>
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">self</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>New Context instance with the new baggage</p>
-</section>
-
             </section>
 
 </article>
@@ -736,12 +773,11 @@ in this context would be a root span.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create a new Context with no active span.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">withoutActiveSpan</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
@@ -751,61 +787,6 @@ in this context would be a root span.</p>
     
     
     
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>New Context instance with no active span</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_withTraceId">
-        withTraceId()
-        <a href="classes/Flow-Telemetry-Context-Context.html#method_withTraceId" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php"><a href="files/src-lib-telemetry-src-flow-telemetry-context-context.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Context/Context.php">Context.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">65</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Create a new Context with the specified TraceId.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">withTraceId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$traceId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$traceId</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The trace ID to use</p>
-</section>
-
-            </dd>
-            </dl>
-
     
 
         
@@ -838,8 +819,8 @@ in this context would be a root span.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#property_activeSpan">$activeSpan</a></li>
                                                     <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#property_baggage">$baggage</a></li>
-                                                    <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#property_traceId">$traceId</a></li>
                                             </ul>
                 </li>
             
@@ -847,15 +828,16 @@ in this context would be a root span.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#method_activeSpan">activeSpan()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#method_activeSpanId">activeSpanId()</a></li>
-                                            <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#method_create">create()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#method_isRootContext">isRootContext()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#method_normalize">normalize()</a></li>
+                                            <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#method_root">root()</a></li>
+                                            <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#method_traceId">traceId()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#method_withActiveSpan">withActiveSpan()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#method_withBaggage">withBaggage()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#method_withoutActiveSpan">withoutActiveSpan()</a></li>
-                                            <li class=""><a href="classes/Flow-Telemetry-Context-Context.html#method_withTraceId">withTraceId()</a></li>
                                     </ul>
             </li>
                     </ul>

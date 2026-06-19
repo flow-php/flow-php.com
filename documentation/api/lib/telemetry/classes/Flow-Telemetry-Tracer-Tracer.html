@@ -120,7 +120,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -128,8 +128,8 @@
 
 
     <section class="phpdocumentor-description"><p>Tracer is the primary API for distributed tracing. It creates spans,
-manages parent-child relationships through a span stack, and delegates
-span lifecycle events to a SpanProcessor.</p>
+manages parent-child relationships through the shared Context (the active span lives in the Context and
+the parent is derived from it), and delegates span lifecycle events to a SpanProcessor.</p>
 <p>Example usage:</p>
 <pre class="prettyprint"><code class="language-php">$span = $tracer-&gt;span('process-order');
 try {
@@ -195,7 +195,7 @@ try {
     <span>
                                 &nbsp;: <a href="classes/Flow-Telemetry-Tracer-SpanContext.html"><abbr title="\Flow\Telemetry\Tracer\SpanContext">SpanContext</abbr></a>|null    </span>
 </dt>
-<dd>Get the currently active span context, or null if none.</dd>
+<dd>Get the currently active span context from the shared Context, or null if none.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Tracer-Tracer.html#method_complete">complete()</a>
@@ -295,7 +295,7 @@ try {
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -395,11 +395,11 @@ try {
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get the currently active span context, or null if none.</p>
+        <p class="phpdocumentor-summary">Get the currently active span context from the shared Context, or null if none.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -434,7 +434,7 @@ try {
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -447,8 +447,8 @@ try {
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>This ends the span (if not already ended), removes it from the
-active span stack, and notifies the processor.</p>
+        <section class="phpdocumentor-description"><p>This ends the span (if not already ended), detaches its Context scope
+(restoring the parent context), and notifies the processor.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -482,7 +482,7 @@ active span stack, and notifies the processor.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -521,7 +521,7 @@ active span stack, and notifies the processor.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -560,7 +560,7 @@ active span stack, and notifies the processor.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -599,7 +599,7 @@ active span stack, and notifies the processor.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">152</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -638,7 +638,7 @@ active span stack, and notifies the processor.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -677,7 +677,7 @@ active span stack, and notifies the processor.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
     </aside>
 
@@ -691,7 +691,7 @@ active span stack, and notifies the processor.</p>
         </div>
     
         <section class="phpdocumentor-description"><p>If there's an active span, it becomes the parent of the new span.
-The new span is pushed onto the stack and becomes the active span.</p>
+The new span is attached to the Context and becomes the active span.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -739,7 +739,7 @@ The new span is pushed onto the stack and becomes the active span.</p>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Explicit parent control:</p>
 <ul>
-<li>null (default): automatic detection from stack/context</li>
+<li>null (default): automatic detection from the Context's active span</li>
 <li>SpanContext: use as explicit parent</li>
 <li>false: create root span (no parent)</li>
 </ul>
@@ -772,7 +772,7 @@ The new span is pushed onto the stack and becomes the active span.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">315</span>
+    <span class="phpdocumentor-element-found-in__line">277</span>
 
     </aside>
 
@@ -880,7 +880,7 @@ thrown, it is recorded as an event and the status is set to error.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">341</span>
+    <span class="phpdocumentor-element-found-in__line">303</span>
 
     </aside>
 
@@ -919,7 +919,7 @@ thrown, it is recorded as an event and the status is set to error.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracer.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Tracer.php">Tracer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">351</span>
+    <span class="phpdocumentor-element-found-in__line">313</span>
 
     </aside>
 

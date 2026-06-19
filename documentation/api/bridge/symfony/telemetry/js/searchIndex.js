@@ -576,6 +576,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-PathExclusionRule.html#property_method"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerFlushSubscriber",
+            "name": "MessengerFlushSubscriber",
+            "summary": "Drains\u0020buffered\u0020telemetry\u0020after\u0020each\u0020consumed\u0020message.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerFlushSubscriber.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerFlushSubscriber\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerFlushSubscriber.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerFlushSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
+            "name": "getSubscribedEvents",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerFlushSubscriber.html#method_getSubscribedEvents"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerFlushSubscriber\u003A\u003AonMessageHandled\u0028\u0029",
+            "name": "onMessageHandled",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerFlushSubscriber.html#method_onMessageHandled"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerFlushSubscriber\u003A\u003AonMessageFailed\u0028\u0029",
+            "name": "onMessageFailed",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerFlushSubscriber.html#method_onMessageFailed"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerTracePropagation",
             "name": "MessengerTracePropagation",
             "summary": "How\u0020a\u0020consumed\u0020message\u0027s\u0020span\u0020relates\u0020to\u0020the\u0020producing\u0020\u0028publishing\u0029\u0020span\u0020when\ntrace\u0020context\u0020is\u0020propagated\u0020across\u0020the\u0020Messenger\u0020transport.",

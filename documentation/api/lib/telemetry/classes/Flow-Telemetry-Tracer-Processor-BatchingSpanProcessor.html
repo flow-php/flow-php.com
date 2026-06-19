@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/BatchingSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-batchingspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/BatchingSpanProcessor.php">BatchingSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -134,6 +134,7 @@
     <section class="phpdocumentor-description"><p>Collects spans in memory and exports them in batches when:</p>
 <ul>
 <li>The batch size limit is reached</li>
+<li>The max batch age elapses since the first buffered span (when configured)</li>
 <li>flush() is explicitly called</li>
 <li>the system is shutting down</li>
 </ul>
@@ -227,14 +228,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/BatchingSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-batchingspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/BatchingSpanProcessor.php">BatchingSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Exporter-Exporter.html"><abbr title="\Flow\Telemetry\Exporter\Exporter">Exporter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">512</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorHandler</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorLogHandler">ErrorLogHandler</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Exporter-Exporter.html"><abbr title="\Flow\Telemetry\Exporter\Exporter">Exporter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">512</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorHandler</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorLogHandler">ErrorLogHandler</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">float|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxBatchAgeSeconds</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -263,6 +264,13 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$maxBatchAgeSeconds</span>
+                : <span class="phpdocumentor-argument-list__argument__type">float|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -285,7 +293,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/BatchingSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-batchingspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/BatchingSpanProcessor.php">BatchingSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -327,7 +335,7 @@ if all spans were successfully exported.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/BatchingSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-batchingspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/BatchingSpanProcessor.php">BatchingSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -375,7 +383,7 @@ is fully populated at this point (end time, status, all attributes).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/BatchingSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-batchingspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/BatchingSpanProcessor.php">BatchingSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -423,7 +431,7 @@ should avoid blocking operations in this method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/BatchingSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-batchingspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/BatchingSpanProcessor.php">BatchingSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 

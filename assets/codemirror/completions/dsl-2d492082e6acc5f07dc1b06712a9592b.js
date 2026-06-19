@@ -2830,15 +2830,15 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">context</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">TraceId</span> <span class=\"fn-param\">$traceId</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">Baggage</span> <span class=\"fn-param\">$baggage</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Context</span>
+                    <span class=\"fn-name\">context</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">Baggage</span> <span class=\"fn-param\">$baggage</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">Context</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Create a Context.<br>If no TraceId is provided, generates a new one.<br>If no Baggage is provided, creates an empty one.<br>@param null|TraceId $traceId Optional TraceId to use<br>@param null|Baggage $baggage Optional Baggage to use
+                    Create a root Context (no active span).<br>A span created in this context becomes a new trace root. Attach an active span with<br>Context::withActiveSpan() to make subsequent spans its children.<br>@param null|Baggage $baggage Optional Baggage to use
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\Telemetry\\DSL\\context(" + "$" + "{" + "1:traceId" + "}" + ", " + "$" + "{" + "2:baggage" + "}" + ")"),
+        apply: snippet("\\Flow\\Telemetry\\DSL\\context(" + "$" + "{" + "1:baggage" + "}" + ")"),
         boost: 10
     },                {
         label: "copy",

@@ -138,7 +138,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context",
             "name": "Context",
-            "summary": "Telemetry\u0020context\u0020carrier\u0020holding\u0020trace\u0020information\u0020and\u0020baggage.",
+            "summary": "Telemetry\u0020context\u0020carrier\u0020holding\u0020the\u0020active\u0020span\u0020and\u0020baggage.",
             "url": "classes/Flow-Telemetry-Context-Context.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003A__construct\u0028\u0029",
@@ -146,55 +146,55 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Context-Context.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003Acreate\u0028\u0029",
-            "name": "create",
-            "summary": "Create\u0020a\u0020new\u0020Context\u0020with\u0020an\u0020invalid\u0020TraceId\u0020\u0028all\u0020zeros\u0029.",
-            "url": "classes/Flow-Telemetry-Context-Context.html#method_create"
+            "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003Aroot\u0028\u0029",
+            "name": "root",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-Context.html#method_root"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003AfromArray\u0028\u0029",
             "name": "fromArray",
-            "summary": "Create\u0020a\u0020Context\u0020from\u0020a\u0020normalized\u0020array\u0020representation.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Context-Context.html#method_fromArray"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003AwithTraceId\u0028\u0029",
-            "name": "withTraceId",
-            "summary": "Create\u0020a\u0020new\u0020Context\u0020with\u0020the\u0020specified\u0020TraceId.",
-            "url": "classes/Flow-Telemetry-Context-Context.html#method_withTraceId"
+            "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003A\u0024activeSpan",
+            "name": "activeSpan",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-Context.html#property_activeSpan"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003AactiveSpanId\u0028\u0029",
             "name": "activeSpanId",
-            "summary": "Get\u0020the\u0020currently\u0020active\u0020span\u0020ID,\u0020if\u0020any.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Context-Context.html#method_activeSpanId"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003AtraceId\u0028\u0029",
+            "name": "traceId",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-Context.html#method_traceId"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003AisRootContext\u0028\u0029",
             "name": "isRootContext",
-            "summary": "Check\u0020if\u0020this\u0020is\u0020a\u0020root\u0020context\u0020\u0028no\u0020active\u0020span\u0029.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Context-Context.html#method_isRootContext"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003Anormalize\u0028\u0029",
             "name": "normalize",
-            "summary": "Normalize\u0020the\u0020Context\u0020to\u0020an\u0020array\u0020representation\u0020for\u0020serialization.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Context-Context.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003AwithActiveSpan\u0028\u0029",
             "name": "withActiveSpan",
-            "summary": "Create\u0020a\u0020new\u0020Context\u0020with\u0020the\u0020specified\u0020active\u0020span.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Context-Context.html#method_withActiveSpan"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003AwithBaggage\u0028\u0029",
             "name": "withBaggage",
-            "summary": "Create\u0020a\u0020new\u0020Context\u0020with\u0020the\u0020specified\u0020baggage.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Context-Context.html#method_withBaggage"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003AwithoutActiveSpan\u0028\u0029",
             "name": "withoutActiveSpan",
-            "summary": "Create\u0020a\u0020new\u0020Context\u0020with\u0020no\u0020active\u0020span.",
-            "url": "classes/Flow-Telemetry-Context-Context.html#method_withoutActiveSpan"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003A\u0024traceId",
-            "name": "traceId",
             "summary": "",
-            "url": "classes/Flow-Telemetry-Context-Context.html#property_traceId"
+            "url": "classes/Flow-Telemetry-Context-Context.html#method_withoutActiveSpan"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003A\u0024baggage",
             "name": "baggage",
@@ -563,7 +563,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\context\u0028\u0029",
             "name": "context",
-            "summary": "Create\u0020a\u0020Context.",
+            "summary": "Create\u0020a\u0020root\u0020Context\u0020\u0028no\u0020active\u0020span\u0029.",
             "url": "namespaces/flow-telemetry-dsl.html#function_context"
         },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\memory_context_storage\u0028\u0029",
@@ -5093,7 +5093,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Tracer\u003A\u003AactiveSpan\u0028\u0029",
             "name": "activeSpan",
-            "summary": "Get\u0020the\u0020currently\u0020active\u0020span\u0020context,\u0020or\u0020null\u0020if\u0020none.",
+            "summary": "Get\u0020the\u0020currently\u0020active\u0020span\u0020context\u0020from\u0020the\u0020shared\u0020Context,\u0020or\u0020null\u0020if\u0020none.",
             "url": "classes/Flow-Telemetry-Tracer-Tracer.html#method_activeSpan"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Tracer\u003A\u003Acomplete\u0028\u0029",

@@ -301,32 +301,23 @@ Otherwise, generates a new random SpanId.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">174</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create a Context.</p>
+        <p class="phpdocumentor-summary">Create a root Context (no active span).</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">context</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$traceId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baggage</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-Context.html"><abbr title="\Flow\Telemetry\Context\Context">Context</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">context</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baggage</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Context-Context.html"><abbr title="\Flow\Telemetry\Context\Context">Context</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"><p>If no TraceId is provided, generates a new one.
-If no Baggage is provided, creates an empty one.</p>
+        <section class="phpdocumentor-description"><p>A span created in this context becomes a new trace root. Attach an active span with
+Context::withActiveSpan() to make subsequent spans its children.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$traceId</span>
-                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-Telemetry-Context-TraceId.html"><abbr title="\Flow\Telemetry\Context\TraceId">TraceId</abbr></a></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Optional TraceId to use</p>
-</section>
-
-            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$baggage</span>
                 : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-Telemetry-Context-Baggage.html"><abbr title="\Flow\Telemetry\Context\Baggage">Baggage</abbr></a></span>
@@ -355,7 +346,7 @@ If no Baggage is provided, creates an empty one.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">191</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -400,7 +391,7 @@ A single instance should be shared across all providers within a request lifecyc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">198</span>
 
     </aside>
 
@@ -442,7 +433,7 @@ A single instance should be shared across all providers within a request lifecyc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">215</span>
+    <span class="phpdocumentor-element-found-in__line">211</span>
 
     </aside>
 
@@ -502,7 +493,7 @@ A single instance should be shared across all providers within a request lifecyc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">228</span>
+    <span class="phpdocumentor-element-found-in__line">224</span>
 
     </aside>
 
@@ -562,7 +553,7 @@ A single instance should be shared across all providers within a request lifecyc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">240</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
@@ -613,7 +604,7 @@ A single instance should be shared across all providers within a request lifecyc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">256</span>
+    <span class="phpdocumentor-element-found-in__line">252</span>
 
     </aside>
 
@@ -700,7 +691,7 @@ A single instance should be shared across all providers within a request lifecyc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">277</span>
 
     </aside>
 
@@ -751,7 +742,7 @@ A single instance should be shared across all providers within a request lifecyc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">292</span>
+    <span class="phpdocumentor-element-found-in__line">288</span>
 
     </aside>
 
@@ -793,7 +784,7 @@ A single instance should be shared across all providers within a request lifecyc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">303</span>
+    <span class="phpdocumentor-element-found-in__line">299</span>
 
     </aside>
 
@@ -825,7 +816,7 @@ A single instance should be shared across all providers within a request lifecyc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">314</span>
+    <span class="phpdocumentor-element-found-in__line">310</span>
 
     </aside>
 
@@ -857,7 +848,7 @@ A single instance should be shared across all providers within a request lifecyc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">325</span>
+    <span class="phpdocumentor-element-found-in__line">321</span>
 
     </aside>
 
@@ -889,7 +880,7 @@ A single instance should be shared across all providers within a request lifecyc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">336</span>
+    <span class="phpdocumentor-element-found-in__line">332</span>
 
     </aside>
 
@@ -921,7 +912,7 @@ A single instance should be shared across all providers within a request lifecyc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">348</span>
+    <span class="phpdocumentor-element-found-in__line">344</span>
 
     </aside>
 
@@ -954,7 +945,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">360</span>
+    <span class="phpdocumentor-element-found-in__line">356</span>
 
     </aside>
 
@@ -1005,7 +996,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">374</span>
+    <span class="phpdocumentor-element-found-in__line">370</span>
 
     </aside>
 
@@ -1056,7 +1047,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">388</span>
+    <span class="phpdocumentor-element-found-in__line">384</span>
 
     </aside>
 
@@ -1107,7 +1098,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">406</span>
+    <span class="phpdocumentor-element-found-in__line">402</span>
 
     </aside>
 
@@ -1194,7 +1185,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">427</span>
+    <span class="phpdocumentor-element-found-in__line">423</span>
 
     </aside>
 
@@ -1272,7 +1263,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">448</span>
+    <span class="phpdocumentor-element-found-in__line">444</span>
 
     </aside>
 
@@ -1359,7 +1350,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">471</span>
+    <span class="phpdocumentor-element-found-in__line">467</span>
 
     </aside>
 
@@ -1439,7 +1430,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">507</span>
+    <span class="phpdocumentor-element-found-in__line">503</span>
 
     </aside>
 
@@ -1506,7 +1497,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">524</span>
+    <span class="phpdocumentor-element-found-in__line">520</span>
 
     </aside>
 
@@ -1566,7 +1557,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">539</span>
+    <span class="phpdocumentor-element-found-in__line">535</span>
 
     </aside>
 
@@ -1617,7 +1608,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">554</span>
+    <span class="phpdocumentor-element-found-in__line">550</span>
 
     </aside>
 
@@ -1677,7 +1668,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">569</span>
+    <span class="phpdocumentor-element-found-in__line">565</span>
 
     </aside>
 
@@ -1728,7 +1719,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">584</span>
+    <span class="phpdocumentor-element-found-in__line">580</span>
 
     </aside>
 
@@ -1788,7 +1779,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">599</span>
+    <span class="phpdocumentor-element-found-in__line">595</span>
 
     </aside>
 
@@ -1839,7 +1830,7 @@ Useful for testing and inspection without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">614</span>
+    <span class="phpdocumentor-element-found-in__line">610</span>
 
     </aside>
 
@@ -1891,7 +1882,7 @@ middleware, then forward the survivors to a single sink.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">626</span>
+    <span class="phpdocumentor-element-found-in__line">622</span>
 
     </aside>
 
@@ -1932,7 +1923,7 @@ entry. Attributes set at the call site win over these defaults.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">637</span>
+    <span class="phpdocumentor-element-found-in__line">633</span>
 
     </aside>
 
@@ -1974,7 +1965,7 @@ entry. Attributes set at the call site win over these defaults.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">648</span>
+    <span class="phpdocumentor-element-found-in__line">644</span>
 
     </aside>
 
@@ -2016,7 +2007,7 @@ entry. Attributes set at the call site win over these defaults.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">662</span>
+    <span class="phpdocumentor-element-found-in__line">658</span>
 
     </aside>
 
@@ -2085,7 +2076,7 @@ entry. Attributes set at the call site win over these defaults.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">675</span>
+    <span class="phpdocumentor-element-found-in__line">671</span>
 
     </aside>
 
@@ -2125,7 +2116,7 @@ entry. Attributes set at the call site win over these defaults.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">684</span>
+    <span class="phpdocumentor-element-found-in__line">680</span>
 
     </aside>
 
@@ -2165,7 +2156,7 @@ entry. Attributes set at the call site win over these defaults.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">693</span>
+    <span class="phpdocumentor-element-found-in__line">689</span>
 
     </aside>
 
@@ -2205,7 +2196,7 @@ entry. Attributes set at the call site win over these defaults.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">712</span>
+    <span class="phpdocumentor-element-found-in__line">708</span>
 
     </aside>
 
@@ -2287,7 +2278,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">729</span>
+    <span class="phpdocumentor-element-found-in__line">725</span>
 
     </aside>
 
@@ -2338,7 +2329,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">743</span>
+    <span class="phpdocumentor-element-found-in__line">739</span>
 
     </aside>
 
@@ -2389,7 +2380,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">762</span>
+    <span class="phpdocumentor-element-found-in__line">758</span>
 
     </aside>
 
@@ -2469,7 +2460,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">776</span>
+    <span class="phpdocumentor-element-found-in__line">772</span>
 
     </aside>
 
@@ -2499,7 +2490,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">785</span>
+    <span class="phpdocumentor-element-found-in__line">781</span>
 
     </aside>
 
@@ -2529,7 +2520,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">794</span>
+    <span class="phpdocumentor-element-found-in__line">790</span>
 
     </aside>
 
@@ -2559,7 +2550,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">803</span>
+    <span class="phpdocumentor-element-found-in__line">799</span>
 
     </aside>
 
@@ -2589,7 +2580,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">812</span>
+    <span class="phpdocumentor-element-found-in__line">808</span>
 
     </aside>
 
@@ -2619,7 +2610,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">821</span>
+    <span class="phpdocumentor-element-found-in__line">817</span>
 
     </aside>
 
@@ -2649,7 +2640,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">830</span>
+    <span class="phpdocumentor-element-found-in__line">826</span>
 
     </aside>
 
@@ -2679,7 +2670,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">839</span>
+    <span class="phpdocumentor-element-found-in__line">835</span>
 
     </aside>
 
@@ -2709,7 +2700,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">848</span>
+    <span class="phpdocumentor-element-found-in__line">844</span>
 
     </aside>
 
@@ -2739,7 +2730,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">857</span>
+    <span class="phpdocumentor-element-found-in__line">853</span>
 
     </aside>
 
@@ -2769,7 +2760,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">866</span>
+    <span class="phpdocumentor-element-found-in__line">862</span>
 
     </aside>
 
@@ -2799,7 +2790,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">877</span>
+    <span class="phpdocumentor-element-found-in__line">873</span>
 
     </aside>
 
@@ -2841,7 +2832,7 @@ to 0700 - owner only, since the directory holds <code class="prettyprint">requir
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">889</span>
+    <span class="phpdocumentor-element-found-in__line">885</span>
 
     </aside>
 
@@ -2884,7 +2875,7 @@ back to the root sampler for spans without a parent.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">905</span>
+    <span class="phpdocumentor-element-found-in__line">901</span>
 
     </aside>
 
@@ -2939,7 +2930,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">919</span>
+    <span class="phpdocumentor-element-found-in__line">915</span>
 
     </aside>
 
@@ -2990,7 +2981,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">930</span>
+    <span class="phpdocumentor-element-found-in__line">926</span>
 
     </aside>
 
@@ -3032,7 +3023,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">939</span>
+    <span class="phpdocumentor-element-found-in__line">935</span>
 
     </aside>
 
@@ -3062,7 +3053,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">948</span>
+    <span class="phpdocumentor-element-found-in__line">944</span>
 
     </aside>
 
@@ -3092,7 +3083,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">957</span>
+    <span class="phpdocumentor-element-found-in__line">953</span>
 
     </aside>
 
@@ -3122,7 +3113,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">968</span>
+    <span class="phpdocumentor-element-found-in__line">964</span>
 
     </aside>
 
@@ -3164,7 +3155,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">979</span>
+    <span class="phpdocumentor-element-found-in__line">975</span>
 
     </aside>
 
@@ -3206,7 +3197,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">988</span>
+    <span class="phpdocumentor-element-found-in__line">984</span>
 
     </aside>
 
@@ -3236,7 +3227,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">997</span>
+    <span class="phpdocumentor-element-found-in__line">993</span>
 
     </aside>
 
@@ -3266,7 +3257,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1006</span>
+    <span class="phpdocumentor-element-found-in__line">1002</span>
 
     </aside>
 
@@ -3296,7 +3287,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1015</span>
+    <span class="phpdocumentor-element-found-in__line">1011</span>
 
     </aside>
 
@@ -3326,7 +3317,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1024</span>
+    <span class="phpdocumentor-element-found-in__line">1020</span>
 
     </aside>
 
@@ -3356,7 +3347,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1035</span>
+    <span class="phpdocumentor-element-found-in__line">1031</span>
 
     </aside>
 
@@ -3398,7 +3389,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1047</span>
+    <span class="phpdocumentor-element-found-in__line">1043</span>
 
     </aside>
 
@@ -3449,7 +3440,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1058</span>
+    <span class="phpdocumentor-element-found-in__line">1054</span>
 
     </aside>
 
@@ -3491,7 +3482,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1077</span>
+    <span class="phpdocumentor-element-found-in__line">1073</span>
 
     </aside>
 
@@ -3545,7 +3536,7 @@ defers all other spans to the delegate sampler.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1090</span>
+    <span class="phpdocumentor-element-found-in__line">1086</span>
 
     </aside>
 
@@ -3607,7 +3598,7 @@ path or php:// stream wrapper.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1103</span>
+    <span class="phpdocumentor-element-found-in__line">1099</span>
 
     </aside>
 
@@ -3668,7 +3659,7 @@ path or php:// stream wrapper.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1116</span>
+    <span class="phpdocumentor-element-found-in__line">1112</span>
 
     </aside>
 
@@ -3736,7 +3727,7 @@ path or php:// stream wrapper.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1130</span>
+    <span class="phpdocumentor-element-found-in__line">1126</span>
 
     </aside>
 
@@ -3776,7 +3767,7 @@ path or php:// stream wrapper.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php"><a href="files/src-lib-telemetry-src-flow-telemetry-dsl-functions.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1139</span>
+    <span class="phpdocumentor-element-found-in__line">1135</span>
 
     </aside>
 
