@@ -1495,7 +1495,11 @@ backends.</p>
 <li><a href="#exporters-named-definitions">Exporters (named definitions)</a></li>
 <li><a href="#tracerprovider">TracerProvider</a></li>
 <li><a href="#meterprovider">MeterProvider</a></li>
-<li><a href="#loggerprovider">LoggerProvider</a></li>
+<li><a href="#loggerprovider">LoggerProvider</a>
+<ul>
+<li><a href="#console-output-cli-verbosity">Console output (CLI verbosity)</a></li>
+</ul>
+</li>
 <li><a href="#processor-configuration">Processor Configuration</a>
 <ul>
 <li><a href="#void-default">void (default)</a></li>
@@ -2225,6 +2229,80 @@ like status codes). It reuses the same <code>matcher</code> / <code>exclude</cod
         type: batching
         exporter: otlp
         batch_size: 200
+</code></pre>
+<h4><a id="console-output-cli-verbosity" href="#console-output-cli-verbosity" class="mr-2" aria-hidden="true" title="Permalink">#</a>Console output (CLI verbosity)</h4>
+<p>The Flow equivalent of Symfony's Monolog <code>ConsoleHandler</code>: while a console command runs,
+emitted log records are also printed to that command's output, filtered by the command's
+verbosity (<code>-v</code>/<code>-vv</code>/<code>-vvv</code>). This is <strong>display only</strong> — it does not change what the
+configured processor exports (OTLP, etc.). It is <strong>off by default</strong>; like MonologBundle's
+console handler, enable it explicitly (typically only in <code>dev</code>):</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml"># config/packages/flow_telemetry.yaml
+when@dev:
+  flow_telemetry:
+    logger_provider:
+      console_output:
+        enabled: true
+</code></pre>
+<p>The verbosity → minimum-severity thresholds default to:</p>
+<table>
+<thead>
+<tr>
+<th>Verbosity</th>
+<th>Flag</th>
+<th>Minimum severity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>VERBOSITY_QUIET</code></td>
+<td><code>-q</code></td>
+<td><code>ERROR</code></td>
+</tr>
+<tr>
+<td><code>VERBOSITY_NORMAL</code></td>
+<td>(none)</td>
+<td><code>ERROR</code></td>
+</tr>
+<tr>
+<td><code>VERBOSITY_VERBOSE</code></td>
+<td><code>-v</code></td>
+<td><code>WARN</code></td>
+</tr>
+<tr>
+<td><code>VERBOSITY_VERY_VERBOSE</code></td>
+<td><code>-vv</code></td>
+<td><code>INFO</code></td>
+</tr>
+<tr>
+<td><code>VERBOSITY_DEBUG</code></td>
+<td><code>-vvv</code></td>
+<td><code>DEBUG</code></td>
+</tr>
+</tbody>
+</table>
+<p>Flow has no <code>NOTICE</code> level (the PSR-3 bridge collapses <code>NOTICE</code> into <code>INFO</code>), so there is
+no rung between <code>WARN</code> and <code>INFO</code>. The defaults keep the terminal quiet by default (errors
+only) and reveal exactly one more severity per <code>-v</code> step.</p>
+<p><code>-vvv</code> is the most verbose flag Symfony has and the default map stops at <code>DEBUG</code>, so with
+the defaults <code>TRACE</code> logs are never echoed to the console (they still reach your exporters,
+e.g. OTLP). To see <code>TRACE</code> on the console, remap a flag to it with <code>verbosity_levels</code> —
+keyed by the Symfony verbosity constant name, valued by a Flow severity name
+(<code>TRACE|DEBUG|INFO|WARN|ERROR|FATAL</code>). For example, point <code>-vvv</code> at <code>TRACE</code>:</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_telemetry:
+  logger_provider:
+    console_output:
+      enabled: true
+      verbosity_levels:
+        VERBOSITY_DEBUG: TRACE   # -vvv now shows TRACE and everything above it
+</code></pre>
+<p>You can override any rung the same way — for instance, show <code>INFO</code> and above with no flag at all:</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_telemetry:
+  logger_provider:
+    console_output:
+      enabled: true
+      verbosity_levels:
+        VERBOSITY_NORMAL: INFO   # show INFO and above without any -v flag
+        VERBOSITY_VERBOSE: DEBUG
 </code></pre>
 <h3><a id="processor-configuration" href="#processor-configuration" class="mr-2" aria-hidden="true" title="Permalink">#</a>Processor Configuration</h3>
 <p>Processor types available for <code>tracer_provider</code>, <code>meter_provider</code>, and <code>logger_provider</code>.</p>

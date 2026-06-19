@@ -316,6 +316,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleFlushSubscriber.html#method_onTerminate"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleLogOutputSubscriber",
+            "name": "ConsoleLogOutputSubscriber",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleLogOutputSubscriber.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleLogOutputSubscriber\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleLogOutputSubscriber.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleLogOutputSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
+            "name": "getSubscribedEvents",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleLogOutputSubscriber.html#method_getSubscribedEvents"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleLogOutputSubscriber\u003A\u003AonCommand\u0028\u0029",
+            "name": "onCommand",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleLogOutputSubscriber.html#method_onCommand"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleLogOutputSubscriber\u003A\u003AonTerminate\u0028\u0029",
+            "name": "onTerminate",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleLogOutputSubscriber.html#method_onTerminate"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleSpanSubscriber",
             "name": "ConsoleSpanSubscriber",
             "summary": "",
@@ -686,6 +711,71 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Twig-TwigSpanCleanupSubscriber.html#method_onTerminate"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleOutputLogProcessor",
+            "name": "ConsoleOutputLogProcessor",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleOutputLogProcessor.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleOutputLogProcessor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleOutputLogProcessor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleOutputLogProcessor\u003A\u003AclearOutput\u0028\u0029",
+            "name": "clearOutput",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleOutputLogProcessor.html#method_clearOutput"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleOutputLogProcessor\u003A\u003Aflush\u0028\u0029",
+            "name": "flush",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleOutputLogProcessor.html#method_flush"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleOutputLogProcessor\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleOutputLogProcessor.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleOutputLogProcessor\u003A\u003AsetOutput\u0028\u0029",
+            "name": "setOutput",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleOutputLogProcessor.html#method_setOutput"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleOutputLogProcessor\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleOutputLogProcessor.html#method_shutdown"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleVerbosityLevels",
+            "name": "ConsoleVerbosityLevels",
+            "summary": "Maps\u0020a\u0020console\u0020OutputInterface\u0020verbosity\u0020to\u0020the\u0020minimum\u0020log\u0020\u007B\u0040see\u0020Severity\u007D\u0020displayed.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleVerbosityLevels.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleVerbosityLevels\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleVerbosityLevels.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleVerbosityLevels\u003A\u003Adefault\u0028\u0029",
+            "name": "default",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleVerbosityLevels.html#method_default"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleVerbosityLevels\u003A\u003AfromOverrides\u0028\u0029",
+            "name": "fromOverrides",
+            "summary": "Build\u0020from\u0020the\u0020configured\u0020overrides,\u0020keyed\u0020by\u0020Symfony\u0020verbosity\u0020constant\u0020name\n\u0028e.g.\u0020\u0022VERBOSITY_NORMAL\u0022\u0029\u0020mapped\u0020to\u0020a\u0020Flow\u0020severity\u0020name\u0020\u0028e.g.\u0020\u0022WARN\u0022\u0029.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleVerbosityLevels.html#method_fromOverrides"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleVerbosityLevels\u003A\u003AthresholdFor\u0028\u0029",
+            "name": "thresholdFor",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleVerbosityLevels.html#method_thresholdFor"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleVerbosityLevels\u003A\u003Athresholds\u0028\u0029",
+            "name": "thresholds",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleVerbosityLevels.html#method_thresholds"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector",
             "name": "FlowTelemetryDataCollector",
             "summary": "",
@@ -865,6 +955,11 @@ Search.appendIndex(
             "name": "Twig",
             "summary": "",
             "url": "namespaces/flow-bridge-symfony-telemetrybundle-instrumentation-twig.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger",
+            "name": "Logger",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-telemetrybundle-logger.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler",
             "name": "Profiler",
