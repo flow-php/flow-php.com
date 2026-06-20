@@ -583,6 +583,8 @@
         <h2><a id="unreleased---2026-06-19" href="#unreleased---2026-06-19" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2026-06-19</h2>
 <h3><a id="added" href="#added" class="mr-2" aria-hidden="true" title="Permalink">#</a>Added</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2466">#2466</a> - <strong>flow-php/telemetry - time-based flush for batching log, metric and span processors</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2466">#2466</a> - <strong>flow-php/symfony-telemetry-bundle - per-message telemetry flush on Messenger worker events</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2465">#2465</a> - <strong>flow-php/symfony-telemetry-bundle - console log output aligned with CLI verbosity (-v/-vv/-vvv), off by default.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2465">#2465</a> - <strong>flow-php/symfony-telemetry-bundle - opt-in logger_provider.console_output config with overridable verbosity_levels.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2462">#2462</a> - <strong>flow-php/symfony-telemetry-bundle - messenger propagation_style option (continue/link) with new MessengerTracePropagation enum</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -604,6 +606,9 @@ maps)</strong> - <a rel="noopener noreferrer" target="_blank" href="https://gith
 </ul>
 <h3><a id="changed" href="#changed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2466">#2466</a> - <strong>flow-php/telemetry - span parent is now derived solely from the Context</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2466">#2466</a> - <strong>flow-php/telemetry - trace id is derived from the active span; each root span starts a new trace</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2466">#2466</a> - <strong>flow-php/symfony-telemetry-bundle - each consumed Messenger message is its own trace, linked to the producer</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2464">#2464</a> - <strong>flow-php/symfony-telemetry-bundle - messenger span name now follows OTEL {operation} {message} convention</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2464">#2464</a> - <strong>flow-php/symfony-telemetry-bundle - messaging.operation.name now holds the operation verb, destination is the message class, bus moved to messaging.symfony.bus</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2462">#2462</a> - <strong>flow-php/symfony-telemetry-bundle - consumer span now defaults to a linked trace instead of continuing the producer trace</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -618,6 +623,8 @@ maps)</strong> - <a rel="noopener noreferrer" target="_blank" href="https://gith
 </ul>
 <h3><a id="removed" href="#removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Removed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2466">#2466</a> - <strong>flow-php/telemetry - per-tracer span stack</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2466">#2466</a> - <strong>flow-php/telemetry - Context::withTraceId() and the standalone context trace id</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2408">#2408</a> - <strong>Elasticsearch adapter (flow-php/etl-adapter-elasticsearch) — superseded by the SEAL adapter; use SEAL with the Elasticsearch backend
 (cmsig/seal-elasticsearch-adapter)</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
 </ul>
