@@ -16,6 +16,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Attribute-WithTelemetryChannel.html#property_channel"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ArgumentResolverTelemetryPass",
+            "name": "ArgumentResolverTelemetryPass",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ArgumentResolverTelemetryPass.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ArgumentResolverTelemetryPass\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ArgumentResolverTelemetryPass.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ArgumentValueResolverTelemetryPass",
+            "name": "ArgumentValueResolverTelemetryPass",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ArgumentValueResolverTelemetryPass.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ArgumentValueResolverTelemetryPass\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ArgumentValueResolverTelemetryPass.html#method_process"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\CacheTelemetryPass",
             "name": "CacheTelemetryPass",
             "summary": "",
@@ -40,6 +60,16 @@ Search.appendIndex(
             "name": "TAG",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ChannelLoggerPass.html#constant_TAG"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ControllerResolverTelemetryPass",
+            "name": "ControllerResolverTelemetryPass",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ControllerResolverTelemetryPass.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ControllerResolverTelemetryPass\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ControllerResolverTelemetryPass.html#method_process"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\DBALTelemetryPass",
             "name": "DBALTelemetryPass",
@@ -486,6 +516,66 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-TracableHttpClient.html#method_withOptions"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\ControllerName",
+            "name": "ControllerName",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-ControllerName.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\ControllerName\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-ControllerName.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\ControllerName\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-ControllerName.html#method_resolve"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\ControllerName\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-ControllerName.html#property_name"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\ControllerName\u003A\u003A\u0024namespace",
+            "name": "namespace",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-ControllerName.html#property_namespace"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\ControllerName\u003A\u003A\u0024function",
+            "name": "function",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-ControllerName.html#property_function"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\ControllerSpanSubscriber",
+            "name": "ControllerSpanSubscriber",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-ControllerSpanSubscriber.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\ControllerSpanSubscriber\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-ControllerSpanSubscriber.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\ControllerSpanSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
+            "name": "getSubscribedEvents",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-ControllerSpanSubscriber.html#method_getSubscribedEvents"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\ControllerSpanSubscriber\u003A\u003AonControllerArguments\u0028\u0029",
+            "name": "onControllerArguments",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-ControllerSpanSubscriber.html#method_onControllerArguments"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\ControllerSpanSubscriber\u003A\u003AonComplete\u0028\u0029",
+            "name": "onComplete",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-ControllerSpanSubscriber.html#method_onComplete"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\ControllerSpanSubscriber\u003A\u003AonException\u0028\u0029",
+            "name": "onException",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-ControllerSpanSubscriber.html#method_onException"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\HttpKernelFlushSubscriber",
             "name": "HttpKernelFlushSubscriber",
             "summary": "",
@@ -546,6 +636,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-HttpKernelSpanSubscriber.html#method_onTerminate"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\HttpKernelSpanSubscriber\u003A\u003ASPAN_ATTRIBUTE",
+            "name": "SPAN_ATTRIBUTE",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-HttpKernelSpanSubscriber.html#constant_SPAN_ATTRIBUTE"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\PathExclusionRule",
             "name": "PathExclusionRule",
             "summary": "",
@@ -575,6 +670,51 @@ Search.appendIndex(
             "name": "method",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-PathExclusionRule.html#property_method"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\TracingArgumentResolver",
+            "name": "TracingArgumentResolver",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-TracingArgumentResolver.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\TracingArgumentResolver\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-TracingArgumentResolver.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\TracingArgumentResolver\u003A\u003AgetArguments\u0028\u0029",
+            "name": "getArguments",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-TracingArgumentResolver.html#method_getArguments"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\TracingControllerResolver",
+            "name": "TracingControllerResolver",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-TracingControllerResolver.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\TracingControllerResolver\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-TracingControllerResolver.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\TracingControllerResolver\u003A\u003AgetController\u0028\u0029",
+            "name": "getController",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-TracingControllerResolver.html#method_getController"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\TracingValueResolver",
+            "name": "TracingValueResolver",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-TracingValueResolver.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\TracingValueResolver\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-TracingValueResolver.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\TracingValueResolver\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-TracingValueResolver.html#method_resolve"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\CurlTransportTickSubscriber",
             "name": "CurlTransportTickSubscriber",
