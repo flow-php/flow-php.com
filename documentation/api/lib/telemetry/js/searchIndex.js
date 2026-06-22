@@ -891,6 +891,11 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020ComposerDetector.",
             "url": "namespaces/flow-telemetry-dsl.html#function_composer_detector"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\git_detector\u0028\u0029",
+            "name": "git_detector",
+            "summary": "Create\u0020a\u0020GitDetector.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_git_detector"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\manual_detector\u0028\u0029",
             "name": "manual_detector",
             "summary": "Create\u0020a\u0020ManualDetector.",
@@ -3936,6 +3941,31 @@ Search.appendIndex(
             "summary": "The\u0020version\u0020string\u0020of\u0020the\u0020service\u0020API\u0020or\u0020implementation.",
             "url": "classes/Flow-Telemetry-Resource-Attribute-ServiceAttribute.html#enumcase_VERSION"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\VcsAttribute",
+            "name": "VcsAttribute",
+            "summary": "VCS\u0020\u0028Version\u0020Control\u0020System\u0029\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-VcsAttribute.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\VcsAttribute\u003A\u003AREF_HEAD_NAME",
+            "name": "REF_HEAD_NAME",
+            "summary": "The\u0020name\u0020of\u0020the\u0020reference\u0020that\u0020the\u0020HEAD\u0020points\u0020to.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-VcsAttribute.html#enumcase_REF_HEAD_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\VcsAttribute\u003A\u003AREF_HEAD_REVISION",
+            "name": "REF_HEAD_REVISION",
+            "summary": "The\u0020revision\u0020\u0028commit\u0020SHA\u0029\u0020that\u0020the\u0020HEAD\u0020currently\u0020points\u0020to.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-VcsAttribute.html#enumcase_REF_HEAD_REVISION"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\VcsAttribute\u003A\u003AREF_HEAD_TYPE",
+            "name": "REF_HEAD_TYPE",
+            "summary": "The\u0020type\u0020of\u0020the\u0020reference\u0020that\u0020the\u0020HEAD\u0020points\u0020to.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-VcsAttribute.html#enumcase_REF_HEAD_TYPE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\VcsAttribute\u003A\u003AREPOSITORY_URL",
+            "name": "REPOSITORY_URL",
+            "summary": "The\u0020full\u0020URL\u0020of\u0020the\u0020repository\u0020providing\u0020the\u0020remote.",
+            "url": "classes/Flow-Telemetry-Resource-Attribute-VcsAttribute.html#enumcase_REPOSITORY_URL"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\CachingDetector",
             "name": "CachingDetector",
             "summary": "Decorator\u0020that\u0020caches\u0020resource\u0020detection\u0020results\u0020to\u0020a\u0020file.",
@@ -3986,6 +4016,21 @@ Search.appendIndex(
             "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
             "url": "classes/Flow-Telemetry-Resource-Detector-EnvironmentDetector.html#method_detect"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\GitDetector",
+            "name": "GitDetector",
+            "summary": "Detects\u0020Git\u0020\u0028VCS\u0029\u0020information\u0020by\u0020shelling\u0020out\u0020to\u0020the\u0020\u0060git\u0060\u0020binary.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-GitDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\GitDetector\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Resource-Detector-GitDetector.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\GitDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-GitDetector.html#method_detect"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\HostDetector",
             "name": "HostDetector",
             "summary": "Detects\u0020host\u0020information.",
@@ -4030,6 +4075,16 @@ Search.appendIndex(
             "name": "detect",
             "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
             "url": "classes/Flow-Telemetry-Resource-Detector-ProcessDetector.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\RemoteUrlSanitizer",
+            "name": "RemoteUrlSanitizer",
+            "summary": "Removes\u0020any\u0020embedded\u0020credentials\u0020\u0028user\u003Apassword\u0040\u0029\u0020from\u0020a\u0020remote\u0020URL\u0020so\u0020they\nare\u0020never\u0020reported\u0020as\u0020a\u0020resource\u0020attribute.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-RemoteUrlSanitizer.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\RemoteUrlSanitizer\u003A\u003Asanitize\u0028\u0029",
+            "name": "sanitize",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Resource-Detector-RemoteUrlSanitizer.html#method_sanitize"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\ResourceDetector",
             "name": "ResourceDetector",

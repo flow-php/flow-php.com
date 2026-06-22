@@ -1,7 +1,7 @@
 /**
  * CodeMirror Completer for Flow PHP DSL Functions
  *
- * Total functions: 787
+ * Total functions: 788
  *
  * This completer provides autocompletion for all Flow PHP DSL functions:
  * - Extractors (flow-extractors)
@@ -4918,6 +4918,24 @@ const dslFunctions = [
             return div
         },
         apply: snippet("\\Flow\\Types\\DSL\\get_type(" + "$" + "{" + "1:value" + "}" + ")"),
+        boost: 10
+    },                {
+        label: "git_detector",
+        type: "function",
+        detail: "flow\u002Ddsl\u002Dhelpers",
+        info: () => {
+            const div = document.createElement("div")
+            div.innerHTML = `
+                <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
+                    <span class=\"fn-name\">git_detector</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">string</span> <span class=\"fn-param\">$workingDirectory</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">null</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">string</span> <span class=\"fn-param\">$gitBinary</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">&#039;git&#039;</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">GitDetector</span>
+                </div>
+                                <div style="color: #8b949e; font-size: 13px;">
+                    Create a GitDetector.<br>@param null|string $workingDirectory Directory to run git in (default: current working directory)<br>@param string $gitBinary Path to the git binary (default: \"git\", resolved from $PATH)
+                </div>
+                            `
+            return div
+        },
+        apply: snippet("\\Flow\\Telemetry\\DSL\\git_detector(" + "$" + "{" + "1:workingDirectory" + "}" + ", " + "$" + "{" + "2:gitBinary" + "}" + ")"),
         boost: 10
     },                {
         label: "grant",
