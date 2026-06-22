@@ -4078,7 +4078,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\RemoteUrlSanitizer",
             "name": "RemoteUrlSanitizer",
-            "summary": "Removes\u0020any\u0020embedded\u0020credentials\u0020\u0028user\u003Apassword\u0040\u0029\u0020from\u0020a\u0020remote\u0020URL\u0020so\u0020they\nare\u0020never\u0020reported\u0020as\u0020a\u0020resource\u0020attribute.",
+            "summary": "Reduces\u0020a\u0020remote\u0020URL\u0020to\u0020its\u0020scheme,\u0020host,\u0020optional\u0020port\u0020and\u0020path\u0020so\u0020that\u0020no\nsecrets\u0020are\u0020ever\u0020reported\u0020as\u0020a\u0020resource\u0020attribute.\u0020Embedded\u0020credentials\n\u0028user\u003Apassword\u0040\u0029\u0020are\u0020removed,\u0020and\u0020any\u0020query\u0020string\u0020or\u0020fragment\u0020is\u0020dropped\u0020as\neither\u0020can\u0020carry\u0020an\u0020access\u0020token.",
             "url": "classes/Flow-Telemetry-Resource-Detector-RemoteUrlSanitizer.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\RemoteUrlSanitizer\u003A\u003Asanitize\u0028\u0029",
