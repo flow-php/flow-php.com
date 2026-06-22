@@ -271,6 +271,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Messenger-FlowPostgreSqlTransportFactory.html#method_supports"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector",
+            "name": "FlowMigrationsDataCollector",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003Acollect\u0028\u0029",
+            "name": "collect",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_collect"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_reset"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getName"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003AgetConnections\u0028\u0029",
+            "name": "getConnections",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getConnections"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003AgetExecutedCount\u0028\u0029",
+            "name": "getExecutedCount",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getExecutedCount"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003AgetPendingCount\u0028\u0029",
+            "name": "getPendingCount",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getPendingCount"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003AgetUnavailableCount\u0028\u0029",
+            "name": "getUnavailableCount",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getUnavailableCount"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003AgetTotalCount\u0028\u0029",
+            "name": "getTotalCount",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getTotalCount"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowPostgreSqlDataCollector",
             "name": "FlowPostgreSqlDataCollector",
             "summary": "",

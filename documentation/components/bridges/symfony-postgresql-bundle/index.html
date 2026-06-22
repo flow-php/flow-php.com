@@ -1681,10 +1681,9 @@ captures statement, bound parameters, duration, returned/affected rows, the call
 and failures.</p>
 <pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_postgresql:
   profiler:
-    # enabled: null (default) auto-enables when WebProfilerBundle is registered; true forces it on
-    # (throws if WebProfilerBundle is absent); false forces it off entirely.
     enabled: ~
     include_parameters: true # show bound query parameters in the panel
+    migrations: true         # show the Flow Migrations panel (requires migrations enabled)
 </code></pre>
 <p>Recording is dev-only and adds nothing in production: when the profiler is disabled — or
 WebProfilerBundle is absent in <code>enabled: ~</code> mode — no connection is decorated. A single connection
@@ -1694,6 +1693,14 @@ can opt out while the profiler is on:</p>
     default:
       dsn: '%env(DATABASE_URL)%'
       profiler: false # do not record queries in selected connection (default: true)
+</code></pre>
+<p>When <code>migrations</code> are enabled, a separate <strong>Flow Migrations</strong> panel reports each connection's
+executed, pending and unavailable migrations (with execution time) — like the Doctrine Migrations
+bundle's panel. It queries the database on every profiled request; set <code>profiler.migrations: false</code>
+to disable it while keeping the query panel:</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_postgresql:
+  profiler:
+    migrations: false # do not query/show migration status in the profiler (default: true)
 </code></pre>
 <h3><a id="migrations" href="#migrations" class="mr-2" aria-hidden="true" title="Permalink">#</a>Migrations</h3>
 <p>Migrations are configured at the top level, not per connection. Use <code>--connection</code> to target a specific connection

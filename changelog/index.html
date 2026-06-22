@@ -614,6 +614,8 @@ maps)</strong> - <a rel="noopener noreferrer" target="_blank" href="https://gith
 </ul>
 <h3><a id="changed" href="#changed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2474">#2474</a> - <strong>flow-php/telemetry - GitDetector reads git via a non-blocking, timeout-bounded subprocess.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2474">#2474</a> - <strong>flow-php/phpunit-telemetry-bridge - resource detectors are now wired explicitly through resource_detector().</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2468">#2468</a> - <strong>flow-php/symfony-telemetry-bundle - extract shared ControllerName helper from the request span subscriber</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2467">#2467</a> - <strong>flow-php/telemetry-otlp-bridge - curl per-request timeout_ms default raised 250 to 5000</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2466">#2466</a> - <strong>flow-php/telemetry - span parent is now derived solely from the Context</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -639,6 +641,11 @@ maps)</strong> - <a rel="noopener noreferrer" target="_blank" href="https://gith
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2466">#2466</a> - <strong>flow-php/telemetry - Context::withTraceId() and the standalone context trace id</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2408">#2408</a> - <strong>Elasticsearch adapter (flow-php/etl-adapter-elasticsearch) — superseded by the SEAL adapter; use SEAL with the Elasticsearch backend
 (cmsig/seal-elasticsearch-adapter)</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
+</ul>
+<h3><a id="security" href="#security" class="mr-2" aria-hidden="true" title="Permalink">#</a>Security</h3>
+<ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2474">#2474</a> - <strong>flow-php/telemetry - GitDetector kills hanging git commands and caps output to resist hostile repositories.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2474">#2474</a> - <strong>flow-php/telemetry - remote URL sanitizer now strips query and fragment so embedded tokens are never reported.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 </ul>
 <h2><a id="0400---2026-06-16" href="#0400---2026-06-16" class="mr-2" aria-hidden="true" title="Permalink">#</a>[0.40.0] - 2026-06-16</h2>
 <h3><a id="added-1" href="#added-1" class="mr-2" aria-hidden="true" title="Permalink">#</a>Added</h3>

@@ -451,6 +451,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-MigrationStatus.html#property_executedAt"
         },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\MigrationStatus\u003A\u003A\u0024executionTimeMs",
+            "name": "executionTimeMs",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-MigrationStatus.html#property_executionTimeMs"
+        },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\MigrationStatusList",
             "name": "MigrationStatusList",
             "summary": "",
