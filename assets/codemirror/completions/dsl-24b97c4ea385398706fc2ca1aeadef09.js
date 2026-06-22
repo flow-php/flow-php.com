@@ -4066,15 +4066,15 @@ const dslFunctions = [
             const div = document.createElement("div")
             div.innerHTML = `
                 <div style="font-family: 'Fira Code', 'JetBrains Mono', monospace; margin-bottom: 8px;">
-                    <span class=\"fn-name\">filesystem_telemetry_options</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">bool</span> <span class=\"fn-param\">$traceStreams</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">true</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$collectMetrics</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">true</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">FilesystemTelemetryOptions</span>
+                    <span class=\"fn-name\">filesystem_telemetry_options</span><span class=\"fn-operator\">(</span><span class=\"fn-type\">bool</span> <span class=\"fn-param\">$trace_streams</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">true</span><span class=\"fn-operator\">,</span> <span class=\"fn-type\">bool</span> <span class=\"fn-param\">$collect_metrics</span> <span class=\"fn-operator\">=</span> <span class=\"fn-default\">true</span><span class=\"fn-operator\">)</span> <span class=\"fn-operator\">:</span> <span class=\"fn-return\">FilesystemTelemetryOptions</span>
                 </div>
                                 <div style="color: #8b949e; font-size: 13px;">
-                    Create options for filesystem telemetry.<br>@param bool $traceStreams Create a single span per stream lifecycle (default: ON)<br>@param bool $collectMetrics Collect metrics for bytes/operation counts (default: ON)
+                    Create options for filesystem telemetry.<br>@param bool $trace_streams Create a single span per stream lifecycle (default: ON)<br>@param bool $collect_metrics Collect metrics for bytes/operation counts (default: ON)
                 </div>
                             `
             return div
         },
-        apply: snippet("\\Flow\\Filesystem\\DSL\\filesystem_telemetry_options(" + "$" + "{" + "1:traceStreams" + "}" + ", " + "$" + "{" + "2:collectMetrics" + "}" + ")"),
+        apply: snippet("\\Flow\\Filesystem\\DSL\\filesystem_telemetry_options(" + "$" + "{" + "1:trace_streams" + "}" + ", " + "$" + "{" + "2:collect_metrics" + "}" + ")"),
         boost: 10
     },                {
         label: "file_copy",

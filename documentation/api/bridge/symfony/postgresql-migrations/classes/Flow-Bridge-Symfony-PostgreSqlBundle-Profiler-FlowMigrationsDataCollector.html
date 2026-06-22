@@ -125,7 +125,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowmigrationsdatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php">FlowMigrationsDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -149,11 +149,6 @@
                                     </dd>
                             <dd class="phpdocumentor-tag-list__definition">
                                                                                                             <section class="phpdocumentor-description"><p>ConfigurationData array{tableName: string, tableSchema: string, directory: string, namespace: string, allOrNothing: bool}</p>
-</section>
-
-                                    </dd>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                            <section class="phpdocumentor-description"><p>ConnectionData array{total: int, executed: int, pending: int, unavailable: int, migrations: list&lt;MigrationRow&gt;, configuration: null|ConfigurationData, error: null|string}</p>
 </section>
 
                                     </dd>
@@ -189,15 +184,33 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getConnections">getConnections()</a>
+    <a class="" href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getConfiguration">getConfiguration()</a>
     <span>
-                                &nbsp;: array&lt;string, <abbr title="\Flow\Bridge\Symfony\PostgreSqlBundle\Profiler\ConnectionData">ConnectionData</abbr>&gt;    </span>
+                                &nbsp;: null|<abbr title="\Flow\Bridge\Symfony\PostgreSqlBundle\Profiler\ConfigurationData">ConfigurationData</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getConnection">getConnection()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getError">getError()</a>
+    <span>
+                                &nbsp;: string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getExecutedCount">getExecutedCount()</a>
     <span>
                                 &nbsp;: int    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getMigrations">getMigrations()</a>
+    <span>
+                                &nbsp;: array&lt;int, <abbr title="\Flow\Bridge\Symfony\PostgreSqlBundle\Profiler\MigrationRow">MigrationRow</abbr>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -258,14 +271,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowmigrationsdatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php">FlowMigrationsDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$locator</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connections</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connection</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Migrations\Migrator">Migrator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$migrator</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Migrations\Configuration">Configuration</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$configuration</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -274,15 +287,22 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$locator</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$connection</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$connections</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, string&gt;</span>
+                <span class="phpdocumentor-argument-list__argument__name">$migrator</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\PostgreSql\Migrations\Migrator">Migrator</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$configuration</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\PostgreSql\Migrations\Configuration">Configuration</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -309,7 +329,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowmigrationsdatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php">FlowMigrationsDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -359,22 +379,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getConnections">
-        getConnections()
-        <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getConnections" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getConfiguration">
+        getConfiguration()
+        <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getConfiguration" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowmigrationsdatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php">FlowMigrationsDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getConnections</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, <abbr title="\Flow\Bridge\Symfony\PostgreSqlBundle\Profiler\ConnectionData">ConnectionData</abbr>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getConfiguration</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<abbr title="\Flow\Bridge\Symfony\PostgreSqlBundle\Profiler\ConfigurationData">ConfigurationData</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -387,7 +407,83 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string, <abbr title="\Flow\Bridge\Symfony\PostgreSqlBundle\Profiler\ConnectionData">ConnectionData</abbr>&gt;</span>
+        <span class="phpdocumentor-signature__response_type">null|<abbr title="\Flow\Bridge\Symfony\PostgreSqlBundle\Profiler\ConfigurationData">ConfigurationData</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getConnection">
+        getConnection()
+        <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getConnection" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowmigrationsdatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php">FlowMigrationsDataCollector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">48</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getConnection</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getError">
+        getError()
+        <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getError" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowmigrationsdatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php">FlowMigrationsDataCollector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">72</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getError</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
             </section>
 
 </article>
@@ -405,7 +501,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowmigrationsdatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php">FlowMigrationsDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -435,6 +531,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getMigrations">
+        getMigrations()
+        <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getMigrations" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowmigrationsdatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php">FlowMigrationsDataCollector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getMigrations</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="\Flow\Bridge\Symfony\PostgreSqlBundle\Profiler\MigrationRow">MigrationRow</abbr>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="\Flow\Bridge\Symfony\PostgreSqlBundle\Profiler\MigrationRow">MigrationRow</abbr>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getName">
         getName()
         <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getName" class="headerlink"><i class="fas fa-link"></i></a>
@@ -443,7 +577,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowmigrationsdatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php">FlowMigrationsDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -481,7 +615,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowmigrationsdatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php">FlowMigrationsDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -519,7 +653,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowmigrationsdatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php">FlowMigrationsDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -557,7 +691,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowmigrationsdatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php">FlowMigrationsDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -595,7 +729,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowmigrationsdatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowMigrationsDataCollector.php">FlowMigrationsDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -639,8 +773,11 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_collect">collect()</a></li>
-                                            <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getConnections">getConnections()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getConfiguration">getConfiguration()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getConnection">getConnection()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getError">getError()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getExecutedCount">getExecutedCount()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getMigrations">getMigrations()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getName">getName()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getPendingCount">getPendingCount()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getTotalCount">getTotalCount()</a></li>

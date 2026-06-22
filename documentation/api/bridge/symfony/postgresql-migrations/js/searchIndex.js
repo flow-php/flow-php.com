@@ -296,10 +296,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getName"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003AgetConnections\u0028\u0029",
-            "name": "getConnections",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003AgetConnection\u0028\u0029",
+            "name": "getConnection",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getConnections"
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getConnection"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003AgetMigrations\u0028\u0029",
+            "name": "getMigrations",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getMigrations"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003AgetConfiguration\u0028\u0029",
+            "name": "getConfiguration",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getConfiguration"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003AgetError\u0028\u0029",
+            "name": "getError",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowMigrationsDataCollector.html#method_getError"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\FlowMigrationsDataCollector\u003A\u003AgetExecutedCount\u0028\u0029",
             "name": "getExecutedCount",

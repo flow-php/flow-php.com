@@ -123,25 +123,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/psr3/telemetry/src/Flow/Bridge/Psr3/Telemetry/LogRecordConverter.php"><a href="files/src-bridge-psr3-telemetry-src-flow-bridge-psr3-telemetry-logrecordconverter.html"><abbr title="src/bridge/psr3/telemetry/src/Flow/Bridge/Psr3/Telemetry/LogRecordConverter.php">LogRecordConverter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">Convert a PSR-3 log call (level + message + context) into a Telemetry LogRecord.</p>
 
 
-    <section class="phpdocumentor-description"><p>Behavior:</p>
-<ul>
-<li>Severity mapped via <a href="classes/Flow-Bridge-Psr3-Telemetry-SeverityMapper.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\SeverityMapper">SeverityMapper</abbr></a>.</li>
-<li>Message body has <code class="prettyprint">{placeholder}</code> tokens substituted from context per PSR-3 §1.2.
-Only scalars and Stringable objects participate in interpolation; arrays,
-Throwables, and objects without __toString are left in the template.</li>
-<li>Every context entry is recorded as an attribute under its raw key.</li>
-<li>A <code class="prettyprint">Throwable</code> under the <code class="prettyprint">exception</code> key is routed through
-<abbr title="\Flow\Telemetry\Logger\LogRecord::setException()">LogRecord::setException()</abbr> (populates exception.type/message/stacktrace)
-and NOT also recorded under the <code class="prettyprint">exception</code> attribute.</li>
-</ul>
-</section>
 
 
 
@@ -202,7 +190,7 @@ and NOT also recorded under the <code class="prettyprint">exception</code> attri
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/psr3/telemetry/src/Flow/Bridge/Psr3/Telemetry/LogRecordConverter.php"><a href="files/src-bridge-psr3-telemetry-src-flow-bridge-psr3-telemetry-logrecordconverter.html"><abbr title="src/bridge/psr3/telemetry/src/Flow/Bridge/Psr3/Telemetry/LogRecordConverter.php">LogRecordConverter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -253,7 +241,7 @@ and NOT also recorded under the <code class="prettyprint">exception</code> attri
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/psr3/telemetry/src/Flow/Bridge/Psr3/Telemetry/LogRecordConverter.php"><a href="files/src-bridge-psr3-telemetry-src-flow-bridge-psr3-telemetry-logrecordconverter.html"><abbr title="src/bridge/psr3/telemetry/src/Flow/Bridge/Psr3/Telemetry/LogRecordConverter.php">LogRecordConverter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
