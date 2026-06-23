@@ -491,6 +491,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method_execute"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\ResponseStream",
+            "name": "ResponseStream",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-ResponseStream.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\ResponseStream\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-ResponseStream.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\ResponseStream\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-ResponseStream.html#method_current"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\ResponseStream\u003A\u003Akey\u0028\u0029",
+            "name": "key",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-ResponseStream.html#method_key"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\ResponseStream\u003A\u003Anext\u0028\u0029",
+            "name": "next",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-ResponseStream.html#method_next"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\ResponseStream\u003A\u003Arewind\u0028\u0029",
+            "name": "rewind",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-ResponseStream.html#method_rewind"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\ResponseStream\u003A\u003Avalid\u0028\u0029",
+            "name": "valid",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-ResponseStream.html#method_valid"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\TracableHttpClient",
             "name": "TracableHttpClient",
             "summary": "",
@@ -515,6 +550,56 @@ Search.appendIndex(
             "name": "withOptions",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-TracableHttpClient.html#method_withOptions"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\TraceableResponse",
+            "name": "TraceableResponse",
+            "summary": "Lazy\u0020response\u0020decorator\u0020that\u0020finalizes\u0020a\u0020CLIENT\u0020span\u0020when\u0020the\u0020response\u0020is\u0020actually\u0020consumed.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-TraceableResponse.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\TraceableResponse\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-TraceableResponse.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\TraceableResponse\u003A\u003A__destruct\u0028\u0029",
+            "name": "__destruct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-TraceableResponse.html#method___destruct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\TraceableResponse\u003A\u003Acancel\u0028\u0029",
+            "name": "cancel",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-TraceableResponse.html#method_cancel"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\TraceableResponse\u003A\u003AgetContent\u0028\u0029",
+            "name": "getContent",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-TraceableResponse.html#method_getContent"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\TraceableResponse\u003A\u003AgetHeaders\u0028\u0029",
+            "name": "getHeaders",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-TraceableResponse.html#method_getHeaders"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\TraceableResponse\u003A\u003AgetInfo\u0028\u0029",
+            "name": "getInfo",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-TraceableResponse.html#method_getInfo"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\TraceableResponse\u003A\u003AgetStatusCode\u0028\u0029",
+            "name": "getStatusCode",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-TraceableResponse.html#method_getStatusCode"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\TraceableResponse\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-TraceableResponse.html#method_toArray"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\TraceableResponse\u003A\u003Astream\u0028\u0029",
+            "name": "stream",
+            "summary": "Drives\u0020a\u0020multiplexed\u0020stream\u0020over\u0020wrapped\u0020responses,\u0020finalizing\u0020each\u0020span\u0020when\u0020its\u0020stream\u0020ends.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-TraceableResponse.html#method_stream"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\ControllerName",
             "name": "ControllerName",
