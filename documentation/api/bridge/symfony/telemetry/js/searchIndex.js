@@ -801,25 +801,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-TracingValueResolver.html#method_resolve"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\CurlTransportTickSubscriber",
-            "name": "CurlTransportTickSubscriber",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\AsyncCurlTransportTickSubscriber",
+            "name": "AsyncCurlTransportTickSubscriber",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-CurlTransportTickSubscriber.html"
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-AsyncCurlTransportTickSubscriber.html"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\CurlTransportTickSubscriber\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\AsyncCurlTransportTickSubscriber\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-CurlTransportTickSubscriber.html#method___construct"
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-AsyncCurlTransportTickSubscriber.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\CurlTransportTickSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\AsyncCurlTransportTickSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
             "name": "getSubscribedEvents",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-CurlTransportTickSubscriber.html#method_getSubscribedEvents"
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-AsyncCurlTransportTickSubscriber.html#method_getSubscribedEvents"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\CurlTransportTickSubscriber\u003A\u003AonWorkerRunning\u0028\u0029",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\AsyncCurlTransportTickSubscriber\u003A\u003AonWorkerRunning\u0028\u0029",
             "name": "onWorkerRunning",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-CurlTransportTickSubscriber.html#method_onWorkerRunning"
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-AsyncCurlTransportTickSubscriber.html#method_onWorkerRunning"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerFlushSubscriber",
             "name": "MessengerFlushSubscriber",
