@@ -1507,6 +1507,11 @@ for building the extension from source.</p>
 <p>Build the extension (first build downloads libpg_query automatically):</p>
 <pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">nix-shell --arg with-pg-query-ext false --arg with-c true --run "cd src/extension/pg-query-ext &amp;&amp; make build"
 </code></pre>
+<p>A system <code>libpg_query</code> is only used when its <code>PG_MAJORVERSION</code> matches the pinned <code>LIBPG_QUERY_VERSION</code>
+in <code>config.m4</code>. A mismatched <code>--with-pg-query=DIR</code> is a hard configure error; a mismatched
+auto-discovered library (e.g. a Homebrew keg for a different PostgreSQL major) is skipped in favor of
+downloading the pinned version. This prevents silently baking the wrong PostgreSQL grammar into
+<code>pg_query.so</code> (<a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/issues/2483">#2483</a>).</p>
 <p>Run PHPT tests:</p>
 <pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">nix-shell --arg with-pg-query-ext false --arg with-c true --run "cd src/extension/pg-query-ext &amp;&amp; make test"
 </code></pre>
