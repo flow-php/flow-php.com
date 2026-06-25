@@ -2126,6 +2126,28 @@ sub-blocks: <code>otlp</code>, <code>service</code>, <code>console</code>, <code
 </tr>
 </tbody>
 </table>
+<p>Every exporter also accepts an <code>enabled</code> flag (default <code>true</code>). When it resolves to <code>false</code>, the exporter does not
+ship anything to its backend, but <strong>profiler capture and all other exporters keep working</strong> — so telemetry stays
+visible in the Symfony profiler without being sent to a collector.</p>
+<p>The flag accepts a literal boolean or an environment variable:</p>
+<ul>
+<li>A literal <code>enabled: false</code> is resolved at compile time and replaces the exporter with a no-op (<code>void</code>); the real
+backend (e.g. the OTLP transport) is never built.</li>
+<li>An <code>enabled: '%env(bool:OTEL_ENABLED)%'</code> is resolved per request at runtime: the real exporter is wrapped so the
+env var gates export on or off without rebuilding the container. The backend is still built, so a declared <code>otlp</code>
+exporter requires <code>flow-php/telemetry-otlp-bridge</code> to be installed even while the flag is off.</li>
+</ul>
+<p>The exporter still declares its real sub-block in both cases, so toggling it back on needs no other change.</p>
+<pre class="language-yaml" data-controller="syntax-highlight"><code class="language-yaml">flow_telemetry:
+  exporters:
+    otlp:
+      enabled: '%env(bool:OTEL_ENABLED)%' # off → discard exports; profiler still captures every signal
+      otlp:
+        transport:
+          type: curl
+          endpoint: '%env(OTEL_ENDPOINT)%'
+          encoding: protobuf
+</code></pre>
 <p>Service IDs registered by the bundle (predictable for <code>decorates:</code>):</p>
 <ul>
 <li><code>flow.telemetry.exporter.&lt;name&gt;</code> — e.g. <code>flow.telemetry.exporter.otlp</code></li>

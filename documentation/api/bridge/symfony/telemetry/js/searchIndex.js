@@ -1111,11 +1111,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getSignalCount"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetTotalDurationMs\u0028\u0029",
-            "name": "getTotalDurationMs",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getTotalDurationMs"
-        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetTimelineDurationMs\u0028\u0029",
             "name": "getTimelineDurationMs",
             "summary": "",

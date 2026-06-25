@@ -3131,6 +3131,26 @@ Search.appendIndex(
             "summary": "Shutdown\u0020the\u0020exporter\u0020and\u0020any\u0020owned\u0020transports.",
             "url": "classes/Flow-Telemetry-Provider-Composite-CompositeExporter.html#method_shutdown"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Conditional\\ConditionalExporter",
+            "name": "ConditionalExporter",
+            "summary": "Gates\u0020a\u0020wrapped\u0020exporter\u0020behind\u0020a\u0020runtime\u0020flag.\u0020When\u0020disabled,\u0020batches\u0020are\ndropped\u0020without\u0020reaching\u0020the\u0020wrapped\u0020exporter,\u0020while\u0020callers\u0020still\u0020observe\u0020a\nsuccessful\u0020export.\u0020Enables\u0020toggling\u0020export\u0020on\u0020or\u0020off\u0020via\u0020configuration\n\u0028including\u0020environment\u0020variables\u0029\u0020without\u0020rewiring\u0020the\u0020container.",
+            "url": "classes/Flow-Telemetry-Provider-Conditional-ConditionalExporter.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Conditional\\ConditionalExporter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Conditional-ConditionalExporter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Conditional\\ConditionalExporter\u003A\u003Aexport\u0028\u0029",
+            "name": "export",
+            "summary": "Export\u0020a\u0020signal\u0020batch.",
+            "url": "classes/Flow-Telemetry-Provider-Conditional-ConditionalExporter.html#method_export"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Conditional\\ConditionalExporter\u003A\u003Ashutdown\u0028\u0029",
+            "name": "shutdown",
+            "summary": "Shutdown\u0020the\u0020exporter\u0020and\u0020any\u0020owned\u0020transports.",
+            "url": "classes/Flow-Telemetry-Provider-Conditional-ConditionalExporter.html#method_shutdown"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleExporter",
             "name": "ConsoleExporter",
             "summary": "Unified\u0020console\u0020exporter\u0020for\u0020logs,\u0020metrics,\u0020and\u0020spans.",
@@ -5310,6 +5330,11 @@ Search.appendIndex(
             "name": "Composite",
             "summary": "",
             "url": "namespaces/flow-telemetry-provider-composite.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Conditional",
+            "name": "Conditional",
+            "summary": "",
+            "url": "namespaces/flow-telemetry-provider-conditional.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Console",
             "name": "Console",
