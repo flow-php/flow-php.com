@@ -2021,6 +2021,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_WRITTEN"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Telemetry\\FilesystemTelemetryAttributes\u003A\u003AATTR_ERROR_TYPE",
+            "name": "ATTR_ERROR_TYPE",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_ERROR_TYPE"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\FilesystemTelemetryAttributes\u003A\u003AATTR_FILESYSTEM_OPERATION",
             "name": "ATTR_FILESYSTEM_OPERATION",
             "summary": "",

@@ -131,6 +131,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-Psr18ClientTelemetryPass.html#method_process"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\TraceContextUrlGeneratorPass",
+            "name": "TraceContextUrlGeneratorPass",
+            "summary": "The\u0020trace\u002Dcontext\u0020URL\u0020generator\u0020wraps\u0020the\u0020\u0060router\u0060\u0020service,\u0020which\u0020only\u0020exists\u0020when\u0020a\u0020router\u0020is\nregistered\u0020\u0028e.g.\u0020FrameworkBundle\u0029.\u0020Drop\u0020it\u0020on\u0020router\u002Dless\u0020kernels\u0020so\u0020its\u0020hard\u0020dependency\u0020does\u0020not\nbreak\u0020container\u0020compilation.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-TraceContextUrlGeneratorPass.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\TraceContextUrlGeneratorPass\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-TraceContextUrlGeneratorPass.html#method_process"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Exception\\Exception",
             "name": "Exception",
             "summary": "",
@@ -716,6 +726,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-HttpKernelSpanSubscriber.html#method_onResponse"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\HttpKernelSpanSubscriber\u003A\u003AonFinishRequest\u0028\u0029",
+            "name": "onFinishRequest",
+            "summary": "Sub\u002Drequests\u0020never\u0020reach\u0020kernel.terminate\u0020\u0028it\u0020fires\u0020only\u0020for\u0020the\u0020main\u0020request\u0029,\u0020so\u0020their\u0020span\u0020is\ncompleted\u0020here,\u0020where\u0020kernel.finish_request\u0020fires\u0020once\u0020for\u0020every\u0020request,\u0020main\u0020and\u0020sub\u0020alike.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-HttpKernelSpanSubscriber.html#method_onFinishRequest"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\HttpKernelSpanSubscriber\u003A\u003AonTerminate\u0028\u0029",
             "name": "onTerminate",
             "summary": "",
@@ -755,6 +770,21 @@ Search.appendIndex(
             "name": "method",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-PathExclusionRule.html#property_method"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\RouteNaming",
+            "name": "RouteNaming",
+            "summary": "What\u0020a\u0020routed\u0020request\u0020span\u0020uses\u0020for\u0020its\u0020name\u0020and\u0020the\u0020http.route\u0020attribute.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNaming.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\RouteNaming\u003A\u003APath",
+            "name": "Path",
+            "summary": "The\u0020route\u0020path\u0020template,\u0020e.g.\u0020\/orders\/\u007Bid\u007D\u0020\u2014\u0020the\u0020OpenTelemetry\u0020HTTP\u0020semantic\u002Dconventions\u0020value\nfor\u0020http.route.\u0020Requires\u0020the\u0020router\u0020to\u0020resolve\u0020the\u0020template\u0020from\u0020the\u0020route\u0020name.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNaming.html#enumcase_Path"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\RouteNaming\u003A\u003AName",
+            "name": "Name",
+            "summary": "The\u0020Symfony\u0020route\u0020name,\u0020e.g.\u0020order_show.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNaming.html#enumcase_Name"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\TracingArgumentResolver",
             "name": "TracingArgumentResolver",
@@ -925,6 +955,56 @@ Search.appendIndex(
             "name": "handle",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TracingMiddleware.html#method_handle"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security\\SecuritySpanSubscriber",
+            "name": "SecuritySpanSubscriber",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Security-SecuritySpanSubscriber.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security\\SecuritySpanSubscriber\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Security-SecuritySpanSubscriber.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security\\SecuritySpanSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
+            "name": "getSubscribedEvents",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Security-SecuritySpanSubscriber.html#method_getSubscribedEvents"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security\\SecuritySpanSubscriber\u003A\u003AonController\u0028\u0029",
+            "name": "onController",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Security-SecuritySpanSubscriber.html#method_onController"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security\\SecuritySpanSubscriber\u003A\u003AonLoginSuccess\u0028\u0029",
+            "name": "onLoginSuccess",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Security-SecuritySpanSubscriber.html#method_onLoginSuccess"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security\\UserAttributeResolver",
+            "name": "UserAttributeResolver",
+            "summary": "Resolves\u0020span\u0020attributes\u0020from\u0020an\u0020authenticated\u0020token.\u0020A\u0020null\u0020attribute\u0020name\u0020disables\u0020that\u0020field.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Security-UserAttributeResolver.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security\\UserAttributeResolver\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Security-UserAttributeResolver.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security\\UserAttributeResolver\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Security-UserAttributeResolver.html#method_resolve"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security\\UserSpanAttributeProvider",
+            "name": "UserSpanAttributeProvider",
+            "summary": "Contributes\u0020custom\u0020attributes\u0020derived\u0020from\u0020the\u0020authenticated\u0020token\u0020to\u0020the\u0020active\u0020request\u0020span.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Security-UserSpanAttributeProvider.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security\\UserSpanAttributeProvider\u003A\u003Aattributes\u0028\u0029",
+            "name": "attributes",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Security-UserSpanAttributeProvider.html#method_attributes"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Twig\\TracingTwigExtension",
             "name": "TracingTwigExtension",
@@ -1111,10 +1191,50 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getSignalCount"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetResourceAttributes\u0028\u0029",
+            "name": "getResourceAttributes",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getResourceAttributes"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetScopes\u0028\u0029",
+            "name": "getScopes",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getScopes"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetConfiguredInstruments\u0028\u0029",
+            "name": "getConfiguredInstruments",
+            "summary": "Named\u0020tracers\/meters\/loggers\u0020from\u0020configuration,\u0020shown\u0020regardless\u0020of\u0020whether\u0020they\u0020emitted\u0020a\u0020signal.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getConfiguredInstruments"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\FlowTelemetryDataCollector\u003A\u003AgetTimelineDurationMs\u0028\u0029",
             "name": "getTimelineDurationMs",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getTimelineDurationMs"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Propagation\\TraceContextProvider",
+            "name": "TraceContextProvider",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Propagation-TraceContextProvider.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Propagation\\TraceContextProvider\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Propagation-TraceContextProvider.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Propagation\\TraceContextProvider\u003A\u003AappendToUrl\u0028\u0029",
+            "name": "appendToUrl",
+            "summary": "Append\u0020the\u0020current\u0020trace\u0020context\u0020to\u0020a\u0020URL\u0027s\u0020query\u0020string\u0020\u0028no\u002Dop\u0020when\u0020there\u0020is\u0020no\u0020request\u0020span\u0029.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Propagation-TraceContextProvider.html#method_appendToUrl"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Propagation\\TraceContextProvider\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "The\u0020request\u0020span\u0027s\u0020trace\u0020context\u0020as\u0020propagation\u0020fields\u0020\u0028e.g.\u0020traceparent,\u0020tracestate,\u0020baggage\u0029,\u0020or\nan\u0020empty\u0020array\u0020when\u0020there\u0020is\u0020no\u0020request\u0020span.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Propagation-TraceContextProvider.html#method_current"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Propagation\\TraceContextProvider\u003A\u003Atraceparent\u0028\u0029",
+            "name": "traceparent",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Propagation-TraceContextProvider.html#method_traceparent"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Resource\\Detector\\SymfonyDeploymentDetector",
             "name": "SymfonyDeploymentDetector",
@@ -1130,6 +1250,106 @@ Search.appendIndex(
             "name": "detect",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Resource-Detector-SymfonyDeploymentDetector.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Routing\\TraceContextUrlGenerator",
+            "name": "TraceContextUrlGenerator",
+            "summary": "Wraps\u0020the\u0020router\u0020so\u0020generated\u0020URLs\u0020carry\u0020the\u0020current\u0020trace\u0020context.\u0020This\u0020is\u0020an\u0020opt\u002Din\u0020service\n\u0028inject\u0020it\u0020explicitly\u0029\u003B\u0020it\u0020does\u0020not\u0020replace\u0020the\u0020default\u0020router,\u0020so\u0020ordinary\u0020path\u0028\u0029\/url\u0028\u0029\u0020calls\u0020are\nunaffected.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Routing-TraceContextUrlGenerator.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Routing\\TraceContextUrlGenerator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Routing-TraceContextUrlGenerator.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Routing\\TraceContextUrlGenerator\u003A\u003Agenerate\u0028\u0029",
+            "name": "generate",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Routing-TraceContextUrlGenerator.html#method_generate"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Routing\\TraceContextUrlGenerator\u003A\u003AgetContext\u0028\u0029",
+            "name": "getContext",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Routing-TraceContextUrlGenerator.html#method_getContext"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Routing\\TraceContextUrlGenerator\u003A\u003AsetContext\u0028\u0029",
+            "name": "setContext",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Routing-TraceContextUrlGenerator.html#method_setContext"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Runtime\\EnvironmentWorkerModeDetector",
+            "name": "EnvironmentWorkerModeDetector",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Runtime-EnvironmentWorkerModeDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Runtime\\EnvironmentWorkerModeDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Runtime-EnvironmentWorkerModeDetector.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Runtime\\RuntimeMode",
+            "name": "RuntimeMode",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Runtime-RuntimeMode.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Runtime\\RuntimeMode\u003A\u003AAuto",
+            "name": "Auto",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Runtime-RuntimeMode.html#enumcase_Auto"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Runtime\\RuntimeMode\u003A\u003AClassic",
+            "name": "Classic",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Runtime-RuntimeMode.html#enumcase_Classic"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Runtime\\RuntimeMode\u003A\u003AWorker",
+            "name": "Worker",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Runtime-RuntimeMode.html#enumcase_Worker"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Runtime\\RuntimeModeResolver",
+            "name": "RuntimeModeResolver",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Runtime-RuntimeModeResolver.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Runtime\\RuntimeModeResolver\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Runtime-RuntimeModeResolver.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Runtime\\RuntimeModeResolver\u003A\u003AisWorker\u0028\u0029",
+            "name": "isWorker",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Runtime-RuntimeModeResolver.html#method_isWorker"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Runtime\\WorkerModeDetector",
+            "name": "WorkerModeDetector",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Runtime-WorkerModeDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Runtime\\WorkerModeDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Runtime-WorkerModeDetector.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Twig\\TelemetryPropagationExtension",
+            "name": "TelemetryPropagationExtension",
+            "summary": "Exposes\u0020the\u0020current\u0020trace\u0020context\u0020to\u0020templates\u0020so\u0020it\u0020can\u0020ride\u0020along\u0020to\u0020subsequent\u0020requests\n\u0028AJAX\u0020via\u0020headers,\u0020or\u0020links\u0020\/\u0020multi\u002Dstep\u0020flows\u0020via\u0020the\u0020URL\u0020query\u0020string\u0029.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Twig-TelemetryPropagationExtension.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Twig\\TelemetryPropagationExtension\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Twig-TelemetryPropagationExtension.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Twig\\TelemetryPropagationExtension\u003A\u003AgetFunctions\u0028\u0029",
+            "name": "getFunctions",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Twig-TelemetryPropagationExtension.html#method_getFunctions"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Twig\\TelemetryPropagationExtension\u003A\u003ArenderMeta\u0028\u0029",
+            "name": "renderMeta",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Twig-TelemetryPropagationExtension.html#method_renderMeta"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -1216,6 +1436,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-bridge-symfony-telemetrybundle-instrumentation-messenger.html"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security",
+            "name": "Security",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-telemetrybundle-instrumentation-security.html"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Twig",
             "name": "Twig",
             "summary": "",
@@ -1231,6 +1456,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-bridge-symfony-telemetrybundle-profiler.html"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Propagation",
+            "name": "Propagation",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-telemetrybundle-propagation.html"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Resource\\Detector",
             "name": "Detector",
             "summary": "",
@@ -1240,5 +1470,20 @@ Search.appendIndex(
             "name": "Resource",
             "summary": "",
             "url": "namespaces/flow-bridge-symfony-telemetrybundle-resource.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Routing",
+            "name": "Routing",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-telemetrybundle-routing.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Runtime",
+            "name": "Runtime",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-telemetrybundle-runtime.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Twig",
+            "name": "Twig",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-telemetrybundle-twig.html"
         }            ]
 );

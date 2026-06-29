@@ -256,6 +256,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Context-MemoryContextStorage.html#method_current"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\MemoryContextStorage\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-MemoryContextStorage.html#method_reset"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\ResettableContextStorage",
+            "name": "ResettableContextStorage",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-ResettableContextStorage.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\ResettableContextStorage\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-ResettableContextStorage.html#method_reset"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Scope",
             "name": "Scope",
             "summary": "",

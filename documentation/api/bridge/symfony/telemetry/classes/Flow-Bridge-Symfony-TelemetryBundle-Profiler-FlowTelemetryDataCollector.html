@@ -128,7 +128,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -157,6 +157,16 @@
                                     </dd>
                             <dd class="phpdocumentor-tag-list__definition">
                                                                                                             <section class="phpdocumentor-description"><p>LogRow array{severity: string, severityCode: int, message: string, scope: string, time: string, attributes: \Symfony\Component\VarDumper\Cloner\Data, hasAttributes: bool}</p>
+</section>
+
+                                    </dd>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>ScopeRow array{name: string, version: string, attributes: array&lt;string, mixed&gt;}</p>
+</section>
+
+                                    </dd>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>InstrumentRow array{type: string, name: string, version: string, attributes: array&lt;string, mixed&gt;}</p>
 </section>
 
                                     </dd>
@@ -199,6 +209,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getConfiguredInstruments">getConfiguredInstruments()</a>
+    <span>
+                                &nbsp;: array&lt;int, <abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Profiler\InstrumentRow">InstrumentRow</abbr>&gt;    </span>
+</dt>
+<dd>Named tracers/meters/loggers from configuration, shown regardless of whether they emitted a signal.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getLogCount">getLogCount()</a>
     <span>
                                 &nbsp;: int    </span>
@@ -226,6 +243,18 @@
     <a class="" href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getName">getName()</a>
     <span>
                                 &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getResourceAttributes">getResourceAttributes()</a>
+    <span>
+                                &nbsp;: array&lt;string, mixed&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getScopes">getScopes()</a>
+    <span>
+                                &nbsp;: array&lt;int, <abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Profiler\ScopeRow">ScopeRow</abbr>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -292,14 +321,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Telemetry">Telemetry</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$telemetry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Provider\Memory\MemoryExporter">MemoryExporter</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Telemetry">Telemetry</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$telemetry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Provider\Memory\MemoryExporter">MemoryExporter</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exporter</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, <abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Profiler\InstrumentRow">InstrumentRow</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$configuredInstruments</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -318,6 +347,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$exporter</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Telemetry\Provider\Memory\MemoryExporter">MemoryExporter</abbr></span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$configuredInstruments</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Profiler\InstrumentRow">InstrumentRow</abbr>&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -343,7 +379,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -393,6 +429,45 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getConfiguredInstruments">
+        getConfiguredInstruments()
+        <a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getConfiguredInstruments" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">171</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Named tracers/meters/loggers from configuration, shown regardless of whether they emitted a signal.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getConfiguredInstruments</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Profiler\InstrumentRow">InstrumentRow</abbr>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Profiler\InstrumentRow">InstrumentRow</abbr>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getLogCount">
         getLogCount()
         <a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getLogCount" class="headerlink"><i class="fas fa-link"></i></a>
@@ -401,7 +476,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -439,7 +514,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -477,7 +552,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
@@ -515,7 +590,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -553,7 +628,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -583,6 +658,82 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getResourceAttributes">
+        getResourceAttributes()
+        <a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getResourceAttributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">151</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getResourceAttributes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getScopes">
+        getScopes()
+        <a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getScopes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">160</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getScopes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Profiler\ScopeRow">ScopeRow</abbr>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Profiler\ScopeRow">ScopeRow</abbr>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getSignalCount">
         getSignalCount()
         <a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getSignalCount" class="headerlink"><i class="fas fa-link"></i></a>
@@ -591,7 +742,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -629,7 +780,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -667,7 +818,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -705,7 +856,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -743,7 +894,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -777,7 +928,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-flowtelemetrydatacollector.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/FlowTelemetryDataCollector.php">FlowTelemetryDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -821,11 +972,14 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_collect">collect()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getConfiguredInstruments">getConfiguredInstruments()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getLogCount">getLogCount()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getLogs">getLogs()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getMetricCount">getMetricCount()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getMetrics">getMetrics()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getName">getName()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getResourceAttributes">getResourceAttributes()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getScopes">getScopes()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getSignalCount">getSignalCount()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getSpanCount">getSpanCount()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-FlowTelemetryDataCollector.html#method_getSpans">getSpans()</a></li>
