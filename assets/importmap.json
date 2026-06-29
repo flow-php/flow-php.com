@@ -288,7 +288,7 @@
         "type": "js"
     },
     "@lezer\/php": {
-        "path": "\/assets\/vendor\/@lezer\/php\/php.index-0f89c1a1eb79270076b425273a93b109.js",
+        "path": "\/assets\/vendor\/@lezer\/php\/php.index-523db025ab149a0d2d4fd9c0b90fd09f.js",
         "type": "js"
     },
     "@codemirror\/lang-html": {
@@ -304,7 +304,7 @@
         "type": "js"
     },
     "@codemirror\/lang-css": {
-        "path": "\/assets\/vendor\/@codemirror\/lang-css\/lang-css.index-79c1c442cd9281f09f37ccd37dd1ca3a.js",
+        "path": "\/assets\/vendor\/@codemirror\/lang-css\/lang-css.index-253064bca60d51bd5eb4e27cb5c62a72.js",
         "type": "js"
     },
     "@codemirror\/lang-javascript": {
@@ -328,7 +328,7 @@
         "type": "js"
     },
     "@lezer\/json": {
-        "path": "\/assets\/vendor\/@lezer\/json\/json.index-5f3193a450b6a92b075bc89e048ce9ae.js",
+        "path": "\/assets\/vendor\/@lezer\/json\/json.index-d243d4d7e180c7b0f0d659be6736188e.js",
         "type": "js"
     },
     "@codemirror\/lang-xml": {
