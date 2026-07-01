@@ -135,7 +135,7 @@
 Unlike Gauge which replaces values, Throughput accumulates via add() calls.
 The timer starts from the first add() call for each attribute combination.</p>
 <p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$throughput = $meter-&gt;createThroughput('dataframe_throughput', 'rows', 'Rows processed per second');
+<pre class="prettyprint"><code class="language-php">$throughput = $meter-&gt;createThroughput('flow.etl.rows.throughput', 'rows', 'Rows processed per second');
 $throughput-&gt;add(100, ['source' =&gt; 'csv']); // Process 100 rows
 $throughput-&gt;add(150, ['source' =&gt; 'csv']); // Process 150 more rows
 $metrics = $throughput-&gt;collect(); // Returns rate as value (rows/s)

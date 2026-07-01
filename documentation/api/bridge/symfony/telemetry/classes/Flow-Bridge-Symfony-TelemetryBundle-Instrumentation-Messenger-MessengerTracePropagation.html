@@ -158,8 +158,8 @@ publish -&gt; queue -&gt; consume is one continuous distributed trace.</dd>
     <span>
                 &nbsp;= &#039;link&#039;                    </span>
 </dt>
-<dd>The consumer span stays in the worker&#039;s own trace and carries a span link
-back to the producer span. Producer and consumer get separate, clean traces
+<dd>Each consumed message starts its own trace and carries a span link back to
+the producer span. Producer and consumer get separate, clean traces
 connected by a link (recommended for decoupled / batch / long-delay queues).</dd>
 
     </dl>
@@ -220,8 +220,8 @@ publish -&gt; queue -&gt; consume is one continuous distributed trace.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The consumer span stays in the worker&#039;s own trace and carries a span link
-back to the producer span. Producer and consumer get separate, clean traces
+        <p class="phpdocumentor-summary">Each consumed message starts its own trace and carries a span link back to
+the producer span. Producer and consumer get separate, clean traces
 connected by a link (recommended for decoupled / batch / long-delay queues).</p>
 
     
