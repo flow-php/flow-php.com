@@ -176,6 +176,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Context-Context.html#method_isRootContext"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003AisTracingSuppressed\u0028\u0029",
+            "name": "isTracingSuppressed",
+            "summary": "Whether\u0020tracing\u0020is\u0020suppressed\u0020within\u0020this\u0020context\u003A\u0020spans\u0020are\u0020created\u0020non\u002Drecording\u0020\u0028never\u0020sampled,\nnever\u0020exported\u0029.\u0020Metrics\u0020and\u0020logs\u0020are\u0020unaffected,\u0020matching\u0020OpenTelemetry\u0027s\u0020tracing\u002Dscoped\u0020suppression.",
+            "url": "classes/Flow-Telemetry-Context-Context.html#method_isTracingSuppressed"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003Anormalize\u0028\u0029",
             "name": "normalize",
             "summary": "",
@@ -196,10 +201,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Context-Context.html#method_withoutActiveSpan"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003AwithSuppressedTracing\u0028\u0029",
+            "name": "withSuppressedTracing",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-Context.html#method_withSuppressedTracing"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003AwithoutSuppressedTracing\u0028\u0029",
+            "name": "withoutSuppressedTracing",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-Context.html#method_withoutSuppressedTracing"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003A\u0024baggage",
             "name": "baggage",
             "summary": "",
             "url": "classes/Flow-Telemetry-Context-Context.html#property_baggage"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003A\u0024suppressed",
+            "name": "suppressed",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-Context.html#property_suppressed"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\ContextScope",
             "name": "ContextScope",
@@ -3495,6 +3515,11 @@ Search.appendIndex(
             "name": "MemoryExporter",
             "summary": "Exporter\u0020that\u0020stores\u0020telemetry\u0020batches\u0020in\u0020memory\u0020for\u0020direct\u0020access.",
             "url": "classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryExporter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method___construct"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryExporter\u003A\u003Aexport\u0028\u0029",
             "name": "export",

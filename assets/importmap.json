@@ -72,7 +72,7 @@
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dsl.js": {
-        "path": "\/assets\/codemirror\/completions\/dsl-d7a434561743fa6e8090e5e656dab673.js",
+        "path": "\/assets\/codemirror\/completions\/dsl-26bf4404c0aaf94c4aa3a5bdfff8c4af.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dataframe.js": {
@@ -256,7 +256,7 @@
         "type": "js"
     },
     "@codemirror\/lint": {
-        "path": "\/assets\/vendor\/@codemirror\/lint\/lint.index-31811dcaa244ccfe5962f7e181ecb1da.js",
+        "path": "\/assets\/vendor\/@codemirror\/lint\/lint.index-bb59d824b60c2c95d88adc6ce39385f6.js",
         "type": "js"
     },
     "style-mod": {

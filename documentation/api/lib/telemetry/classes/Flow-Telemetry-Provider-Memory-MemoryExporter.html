@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-provider-memory-memoryexporter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php">MemoryExporter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -161,6 +161,12 @@ to exported data without serialization.</p>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method_export">export()</a>
     <span>
@@ -219,6 +225,54 @@ to exported data without serialization.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-provider-memory-memoryexporter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php">MemoryExporter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">47</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxEntriesPerSignal</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$maxEntriesPerSignal</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>maximum number of entries retained per signal type; once exceeded the
+oldest entries are dropped. Null (default) keeps everything, which is
+unbounded and unsafe in long-running processes that never reset().</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_export">
         export()
         <a href="classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method_export" class="headerlink"><i class="fas fa-link"></i></a>
@@ -227,7 +281,7 @@ to exported data without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-provider-memory-memoryexporter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php">MemoryExporter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -282,7 +336,7 @@ to exported data without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-provider-memory-memoryexporter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php">MemoryExporter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -320,7 +374,7 @@ to exported data without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-provider-memory-memoryexporter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php">MemoryExporter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -358,7 +412,7 @@ to exported data without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-provider-memory-memoryexporter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php">MemoryExporter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -392,7 +446,7 @@ to exported data without serialization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-provider-memory-memoryexporter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php">MemoryExporter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -430,7 +484,7 @@ are routed through the configured error handler instead.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-provider-memory-memoryexporter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Provider/Memory/MemoryExporter.php">MemoryExporter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -476,6 +530,7 @@ are routed through the configured error handler instead.</p>
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method_export">export()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method_logs">logs()</a></li>
                                             <li class=""><a href="classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html#method_metrics">metrics()</a></li>
