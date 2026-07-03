@@ -151,7 +151,7 @@ calls) is rewritten to the PSR-3 logger, preserving the reference's
 invalid-behavior flag. Per channel, both a &quot;LoggerInterface $<channel>Logger&quot; and
 a &quot;Logger $<channel>Logger&quot; autowiring alias are registered so any service can
 request a channel logger by named argument. Each channel is synthesized on demand
-carrying a &quot;log.channel&quot; attribute; where it is placed - the instrumentation scope,
+carrying a &quot;flow.log.channel&quot; attribute; where it is placed - the instrumentation scope,
 every emitted record, or both - is governed by the
 &quot;flow.telemetry.channel_attribute_target&quot; parameter (default &quot;both&quot;). A logger
 already declared under that name (e.g. the always-present &quot;default&quot;) is reused as-is.</p>
@@ -180,6 +180,13 @@ already declared under that name (e.g. the always-present &quot;default&quot;) i
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ChannelLoggerPass.html#constant_ATTR_LOG_CHANNEL">ATTR_LOG_CHANNEL</a>
+    <span>
+        &nbsp;: string&nbsp;= &#039;flow.log.channel&#039;                            </span>
+</dt>
+<dd>log.* is a reserved OTel namespace, so the flow-custom channel key carries the flow prefix.</dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ChannelLoggerPass.html#constant_TAG">TAG</a>
     <span>
@@ -214,6 +221,37 @@ already declared under that name (e.g. the always-present &quot;default&quot;) i
 
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ATTR_LOG_CHANNEL">
+        ATTR_LOG_CHANNEL
+        <a href="classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ChannelLoggerPass.html#constant_ATTR_LOG_CHANNEL" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/ChannelLoggerPass.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-dependencyinjection-compiler-channelloggerpass.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/ChannelLoggerPass.php">ChannelLoggerPass.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">log.* is a reserved OTel namespace, so the flow-custom channel key carries the flow prefix.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">ATTR_LOG_CHANNEL</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.log.channel&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_TAG">
         TAG
         <a href="classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ChannelLoggerPass.html#constant_TAG" class="headerlink"><i class="fas fa-link"></i></a>
@@ -223,7 +261,7 @@ already declared under that name (e.g. the always-present &quot;default&quot;) i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/ChannelLoggerPass.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-dependencyinjection-compiler-channelloggerpass.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/ChannelLoggerPass.php">ChannelLoggerPass.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -267,7 +305,7 @@ already declared under that name (e.g. the always-present &quot;default&quot;) i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/ChannelLoggerPass.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-dependencyinjection-compiler-channelloggerpass.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/ChannelLoggerPass.php">ChannelLoggerPass.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -318,6 +356,7 @@ already declared under that name (e.g. the always-present &quot;default&quot;) i
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ChannelLoggerPass.html#constant_ATTR_LOG_CHANNEL">ATTR_LOG_CHANNEL</a></li>
                                                     <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ChannelLoggerPass.html#constant_TAG">TAG</a></li>
                                             </ul>
                 </li>

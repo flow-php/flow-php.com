@@ -1998,13 +1998,8 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\FilesystemTelemetryAttributes",
             "name": "FilesystemTelemetryAttributes",
-            "summary": "",
+            "summary": "Flow\u002Dspecific\u0020filesystem\u0020attribute\u0020keys.",
             "url": "classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Telemetry\\FilesystemTelemetryAttributes\u003A\u003AATTR_BYTES_READ",
-            "name": "ATTR_BYTES_READ",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_READ"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\FilesystemTelemetryAttributes\u003A\u003AATTR_BYTES_TOTAL_READ",
             "name": "ATTR_BYTES_TOTAL_READ",
@@ -2016,16 +2011,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_TOTAL_WRITTEN"
         },                {
-            "fqsen": "\\Flow\\Filesystem\\Telemetry\\FilesystemTelemetryAttributes\u003A\u003AATTR_BYTES_WRITTEN",
-            "name": "ATTR_BYTES_WRITTEN",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_WRITTEN"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Telemetry\\FilesystemTelemetryAttributes\u003A\u003AATTR_ERROR_TYPE",
-            "name": "ATTR_ERROR_TYPE",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_ERROR_TYPE"
-        },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\FilesystemTelemetryAttributes\u003A\u003AATTR_FILESYSTEM_OPERATION",
             "name": "ATTR_FILESYSTEM_OPERATION",
             "summary": "",
@@ -2035,16 +2020,6 @@ Search.appendIndex(
             "name": "ATTR_FILESYSTEM_PROTOCOL",
             "summary": "",
             "url": "classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_FILESYSTEM_PROTOCOL"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Telemetry\\FilesystemTelemetryAttributes\u003A\u003AATTR_PATH_FROM",
-            "name": "ATTR_PATH_FROM",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_PATH_FROM"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Telemetry\\FilesystemTelemetryAttributes\u003A\u003AATTR_PATH_IS_PATTERN",
-            "name": "ATTR_PATH_IS_PATTERN",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_PATH_IS_PATTERN"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\FilesystemTelemetryAttributes\u003A\u003AATTR_PATH_TO",
             "name": "ATTR_PATH_TO",

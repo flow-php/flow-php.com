@@ -116,10 +116,19 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\TracingConnection">TracingConnection</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingDriver.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\TracingDriver">TracingDriver</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingMiddleware.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\TracingMiddleware">TracingMiddleware</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\TracingStatement">TracingStatement</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-DbAttributes.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\DbAttributes">DbAttributes</abbr></a></dt><dd>Flow-specific Doctrine DBAL attribute keys.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-ParameterFormatter.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\ParameterFormatter">ParameterFormatter</abbr></a></dt><dd>Formats bound statement parameters into `db.query.parameter.&lt;key&gt;` span attributes.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-QueryTracer.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\QueryTracer">QueryTracer</abbr></a></dt><dd>Builds span attributes and records metrics for Doctrine DBAL query operations, shared between
+the connection (exec/query/prepare) and the statement (execute) instrumentation.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-SqlAttributes.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\SqlAttributes">SqlAttributes</abbr></a></dt><dd>Operation type and target collection parsed from a SQL statement.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-SqlAttributesExtractor.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\SqlAttributesExtractor">SqlAttributesExtractor</abbr></a></dt><dd>Extracts the operation type and target table from a SQL statement for span attributes,
+following the OpenTelemetry database span naming convention.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\TracingConnection">TracingConnection</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingDriver.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\TracingDriver">TracingDriver</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingMiddleware.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\TracingMiddleware">TracingMiddleware</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\TracingStatement">TracingStatement</abbr></a></dt>    </dl>
 
 
 
+    <h4 id="toc-enums">
+        Enums
+        <a href="namespaces/flow-bridge-symfony-telemetrybundle-instrumentation-doctrine-dbal.html#toc-enums" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TransactionSpanMode.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\TransactionSpanMode">TransactionSpanMode</abbr></a></dt><dd>Controls how Doctrine DBAL transactions are represented as spans.</dd></dl>
 
 
 
@@ -142,7 +151,8 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="namespaces/flow-bridge-symfony-telemetrybundle-instrumentation-doctrine-dbal.html#toc-classes">Classes</a></li>
-                                                                                                                                                            </ul>
+                                                                                    <li><a href="namespaces/flow-bridge-symfony-telemetrybundle-instrumentation-doctrine-dbal.html#toc-enums">Enums</a></li>
+                                                                                                                    </ul>
             </li>
 
             

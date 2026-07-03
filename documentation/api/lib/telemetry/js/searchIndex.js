@@ -81,6 +81,66 @@ Search.appendIndex(
             "summary": "Create\u0020new\u0020Attributes\u0020with\u0020additional\u0020attribute.",
             "url": "classes/Flow-Telemetry-Attributes.html#method_with"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\CacheAttributes",
+            "name": "CacheAttributes",
+            "summary": "Cache\u0020instrumentation\u0020attribute\u0020keys\u0020and\u0020span\u0020names\u0020shared\u0020by\u0020Flow\u0020cache\u0020instrumentations.",
+            "url": "classes/Flow-Telemetry-CacheAttributes.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\CacheAttributes\u003A\u003ACACHE_KEY",
+            "name": "CACHE_KEY",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-CacheAttributes.html#constant_CACHE_KEY"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\CacheAttributes\u003A\u003ACACHE_KEY_COUNT",
+            "name": "CACHE_KEY_COUNT",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-CacheAttributes.html#constant_CACHE_KEY_COUNT"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\CacheAttributes\u003A\u003ACACHE_OPERATION",
+            "name": "CACHE_OPERATION",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-CacheAttributes.html#constant_CACHE_OPERATION"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\CacheAttributes\u003A\u003ACACHE_POOL",
+            "name": "CACHE_POOL",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-CacheAttributes.html#constant_CACHE_POOL"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\CacheAttributes\u003A\u003ACACHE_PREFIX",
+            "name": "CACHE_PREFIX",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-CacheAttributes.html#constant_CACHE_PREFIX"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\CacheAttributes\u003A\u003ACACHE_TAGS",
+            "name": "CACHE_TAGS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-CacheAttributes.html#constant_CACHE_TAGS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\CacheAttributes\u003A\u003ACACHE_TAG_COUNT",
+            "name": "CACHE_TAG_COUNT",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-CacheAttributes.html#constant_CACHE_TAG_COUNT"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\CacheAttributes\u003A\u003ACACHE_VALUE_TYPE",
+            "name": "CACHE_VALUE_TYPE",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-CacheAttributes.html#constant_CACHE_VALUE_TYPE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\CacheAttributes\u003A\u003ASPAN_CLEAR",
+            "name": "SPAN_CLEAR",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-CacheAttributes.html#constant_SPAN_CLEAR"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\CacheAttributes\u003A\u003ASPAN_DELETE",
+            "name": "SPAN_DELETE",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-CacheAttributes.html#constant_SPAN_DELETE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\CacheAttributes\u003A\u003ASPAN_SET",
+            "name": "SPAN_SET",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-CacheAttributes.html#constant_SPAN_SET"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Baggage",
             "name": "Baggage",
             "summary": "Key\u002Dvalue\u0020store\u0020for\u0020data\u0020propagation\u0020across\u0020process\u0020boundaries.",
@@ -275,21 +335,6 @@ Search.appendIndex(
             "name": "current",
             "summary": "",
             "url": "classes/Flow-Telemetry-Context-MemoryContextStorage.html#method_current"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Context\\MemoryContextStorage\u003A\u003Areset\u0028\u0029",
-            "name": "reset",
-            "summary": "",
-            "url": "classes/Flow-Telemetry-Context-MemoryContextStorage.html#method_reset"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Context\\ResettableContextStorage",
-            "name": "ResettableContextStorage",
-            "summary": "",
-            "url": "classes/Flow-Telemetry-Context-ResettableContextStorage.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Context\\ResettableContextStorage\u003A\u003Areset\u0028\u0029",
-            "name": "reset",
-            "summary": "",
-            "url": "classes/Flow-Telemetry-Context-ResettableContextStorage.html#method_reset"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Scope",
             "name": "Scope",
@@ -2888,7 +2933,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\TimeUnit",
             "name": "TimeUnit",
-            "summary": "",
+            "summary": "Backing\u0020values\u0020are\u0020UCUM\u0020time\u0020unit\u0020codes\u0020\u2014\u0020they\u0020are\u0020appended\u0020to\u0020metric\u0020unit\u0020strings\n\u0028e.g.\u0020Throughput\u0020exports\u0020\u0022\u007Brow\u007D\/s\u0022\u0029\u0020and\u0020must\u0020stay\u0020UCUM\u002Dconformant.",
             "url": "classes/Flow-Telemetry-Meter-TimeUnit.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\TimeUnit\u003A\u003AfromNanoseconds\u0028\u0029",
@@ -4226,6 +4271,211 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Resource.html#property_attributes"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes",
+            "name": "SemConvAttributes",
+            "summary": "Official\u0020OpenTelemetry\u0020semantic\u0020convention\u0020attribute\u0020keys\u0020emitted\u0020by\u0020Flow\u0020instrumentations.",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ACODE_FUNCTION_NAME",
+            "name": "CODE_FUNCTION_NAME",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_CODE_FUNCTION_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ADB_COLLECTION_NAME",
+            "name": "DB_COLLECTION_NAME",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_DB_COLLECTION_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ADB_NAMESPACE",
+            "name": "DB_NAMESPACE",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_DB_NAMESPACE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ADB_OPERATION_NAME",
+            "name": "DB_OPERATION_NAME",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_DB_OPERATION_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ADB_QUERY_PARAMETER_PREFIX",
+            "name": "DB_QUERY_PARAMETER_PREFIX",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_DB_QUERY_PARAMETER_PREFIX"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ADB_QUERY_TEXT",
+            "name": "DB_QUERY_TEXT",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_DB_QUERY_TEXT"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ADB_RESPONSE_RETURNED_ROWS",
+            "name": "DB_RESPONSE_RETURNED_ROWS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_DB_RESPONSE_RETURNED_ROWS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ADB_RESPONSE_STATUS_CODE",
+            "name": "DB_RESPONSE_STATUS_CODE",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_DB_RESPONSE_STATUS_CODE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ADB_SYSTEM_NAME",
+            "name": "DB_SYSTEM_NAME",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_DB_SYSTEM_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AERROR_TYPE",
+            "name": "ERROR_TYPE",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_ERROR_TYPE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AHTTP_REQUEST_METHOD",
+            "name": "HTTP_REQUEST_METHOD",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_HTTP_REQUEST_METHOD"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AHTTP_RESPONSE_STATUS_CODE",
+            "name": "HTTP_RESPONSE_STATUS_CODE",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_HTTP_RESPONSE_STATUS_CODE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AHTTP_ROUTE",
+            "name": "HTTP_ROUTE",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_HTTP_ROUTE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AMESSAGING_CONSUMER_GROUP_NAME",
+            "name": "MESSAGING_CONSUMER_GROUP_NAME",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_MESSAGING_CONSUMER_GROUP_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AMESSAGING_DESTINATION_NAME",
+            "name": "MESSAGING_DESTINATION_NAME",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_MESSAGING_DESTINATION_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AMESSAGING_MESSAGE_ID",
+            "name": "MESSAGING_MESSAGE_ID",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_MESSAGING_MESSAGE_ID"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AMESSAGING_OPERATION_NAME",
+            "name": "MESSAGING_OPERATION_NAME",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_MESSAGING_OPERATION_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AMESSAGING_OPERATION_TYPE",
+            "name": "MESSAGING_OPERATION_TYPE",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_MESSAGING_OPERATION_TYPE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AMESSAGING_SYSTEM",
+            "name": "MESSAGING_SYSTEM",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_MESSAGING_SYSTEM"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003APROCESS_EXIT_CODE",
+            "name": "PROCESS_EXIT_CODE",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_PROCESS_EXIT_CODE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ASERVER_ADDRESS",
+            "name": "SERVER_ADDRESS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_SERVER_ADDRESS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ASERVER_PORT",
+            "name": "SERVER_PORT",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_SERVER_PORT"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ATEST_CASE_NAME",
+            "name": "TEST_CASE_NAME",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_TEST_CASE_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ATEST_CASE_RESULT_STATUS",
+            "name": "TEST_CASE_RESULT_STATUS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_TEST_CASE_RESULT_STATUS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ATEST_SUITE_NAME",
+            "name": "TEST_SUITE_NAME",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_TEST_SUITE_NAME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ATEST_SUITE_RUN_STATUS",
+            "name": "TEST_SUITE_RUN_STATUS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_TEST_SUITE_RUN_STATUS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AURL_FULL",
+            "name": "URL_FULL",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_URL_FULL"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AURL_PATH",
+            "name": "URL_PATH",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_URL_PATH"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AURL_QUERY",
+            "name": "URL_QUERY",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_URL_QUERY"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AURL_SCHEME",
+            "name": "URL_SCHEME",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_URL_SCHEME"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AUSER_AGENT_ORIGINAL",
+            "name": "USER_AGENT_ORIGINAL",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_USER_AGENT_ORIGINAL"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AUSER_EMAIL",
+            "name": "USER_EMAIL",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_USER_EMAIL"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AUSER_ID",
+            "name": "USER_ID",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_USER_ID"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003AUSER_ROLES",
+            "name": "USER_ROLES",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvAttributes.html#constant_USER_ROLES"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvMetrics",
+            "name": "SemConvMetrics",
+            "summary": "Official\u0020OpenTelemetry\u0020semantic\u0020convention\u0020metric\u0020names\u0020emitted\u0020by\u0020Flow\u0020instrumentations.",
+            "url": "classes/Flow-Telemetry-SemConvMetrics.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvMetrics\u003A\u003ADB_CLIENT_OPERATION_DURATION",
+            "name": "DB_CLIENT_OPERATION_DURATION",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvMetrics.html#constant_DB_CLIENT_OPERATION_DURATION"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvMetrics\u003A\u003ADB_CLIENT_RESPONSE_RETURNED_ROWS",
+            "name": "DB_CLIENT_RESPONSE_RETURNED_ROWS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvMetrics.html#constant_DB_CLIENT_RESPONSE_RETURNED_ROWS"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvMetrics\u003A\u003AMESSAGING_CLIENT_CONSUMED_MESSAGES",
+            "name": "MESSAGING_CLIENT_CONSUMED_MESSAGES",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvMetrics.html#constant_MESSAGING_CLIENT_CONSUMED_MESSAGES"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvMetrics\u003A\u003AMESSAGING_CLIENT_SENT_MESSAGES",
+            "name": "MESSAGING_CLIENT_SENT_MESSAGES",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvMetrics.html#constant_MESSAGING_CLIENT_SENT_MESSAGES"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\SemConvMetrics\u003A\u003AMESSAGING_PROCESS_DURATION",
+            "name": "MESSAGING_PROCESS_DURATION",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-SemConvMetrics.html#constant_MESSAGING_PROCESS_DURATION"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Signal\\Signals",
             "name": "Signals",
             "summary": "A\u0020typed\u0020collection\u0020of\u0020telemetry\u0020items\u0020for\u0020one\u0020signal\u0020type.",
@@ -4665,6 +4915,26 @@ Search.appendIndex(
             "name": "traceState",
             "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Sampler-SamplingResult.html#property_traceState"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SuppressingSampler",
+            "name": "SuppressingSampler",
+            "summary": "Enforces\u0020OpenTelemetry\u0020tracing\u0020suppression\u0020as\u0020a\u0020Sampler\u003A\u0020when\u0020the\u0020parent\u0020context\u0020carries\u0020the\nsuppression\u0020bit,\u0020the\u0020span\u0020is\u0020dropped\u0020\u0028non\u002Drecording,\u0020never\u0020exported\u0029\u003B\u0020otherwise\u0020the\u0020decision\u0020is\ndeferred\u0020to\u0020the\u0020wrapped\u0020sampler.",
+            "url": "classes/Flow-Telemetry-Tracer-Sampler-SuppressingSampler.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SuppressingSampler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Tracer-Sampler-SuppressingSampler.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SuppressingSampler\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Get\u0020a\u0020string\u0020representation\u0020of\u0020this\u0020sampler\u0020for\u0020debugging.",
+            "url": "classes/Flow-Telemetry-Tracer-Sampler-SuppressingSampler.html#method___toString"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SuppressingSampler\u003A\u003AshouldSample\u0028\u0029",
+            "name": "shouldSample",
+            "summary": "Determine\u0020if\u0020a\u0020span\u0020should\u0020be\u0020sampled.",
+            "url": "classes/Flow-Telemetry-Tracer-Sampler-SuppressingSampler.html#method_shouldSample"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\TraceIdRatioBasedSampler",
             "name": "TraceIdRatioBasedSampler",

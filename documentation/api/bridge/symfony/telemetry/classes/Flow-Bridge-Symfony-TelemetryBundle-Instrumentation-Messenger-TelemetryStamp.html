@@ -187,6 +187,13 @@ asynchronous message queues.</p>
 <dd>Get a context value by key.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TelemetryStamp.html#method_getContext">getContext()</a>
+    <span>
+                                &nbsp;: array&lt;string, string&gt;    </span>
+</dt>
+<dd>Getter exposing the context to the Symfony Serializer&#039;s ObjectNormalizer.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TelemetryStamp.html#method_with">with()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -306,7 +313,7 @@ asynchronous message queues.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Messenger/TelemetryStamp.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-messenger-telemetrystamp.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Messenger/TelemetryStamp.php">TelemetryStamp.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -349,6 +356,49 @@ asynchronous message queues.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getContext">
+        getContext()
+        <a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TelemetryStamp.html#method_getContext" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Messenger/TelemetryStamp.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-messenger-telemetrystamp.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Messenger/TelemetryStamp.php">TelemetryStamp.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Getter exposing the context to the Symfony Serializer&#039;s ObjectNormalizer.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getContext</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>The messenger transport's default <code class="prettyprint">symfony_serializer</code> normalizes stamps via getter methods;
+without a getter named after the <code class="prettyprint">$context</code> constructor argument the array is dropped, which
+silently strips the propagated traceparent when a message crosses an async transport.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_with">
         with()
         <a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TelemetryStamp.html#method_with" class="headerlink"><i class="fas fa-link"></i></a>
@@ -357,7 +407,7 @@ asynchronous message queues.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Messenger/TelemetryStamp.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-messenger-telemetrystamp.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Messenger/TelemetryStamp.php">TelemetryStamp.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -424,6 +474,7 @@ asynchronous message queues.</p>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TelemetryStamp.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TelemetryStamp.html#method_all">all()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TelemetryStamp.html#method_get">get()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TelemetryStamp.html#method_getContext">getContext()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TelemetryStamp.html#method_with">with()</a></li>
                                     </ul>
             </li>

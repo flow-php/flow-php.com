@@ -137,14 +137,32 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">Flow-specific ETL attribute keys.</p>
 
 
+    <section class="phpdocumentor-description"><p>Per OTel naming guidance all custom keys live under the <code class="prettyprint">flow.etl.</code> prefix; official keys
+(e.g. <code class="prettyprint">error.type</code>) come from <abbr title="\Flow\Telemetry\SemConvAttributes">SemConvAttributes</abbr>.</p>
+</section>
 
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">see</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="https://opentelemetry.io/docs/specs/semconv/general/naming/">https://opentelemetry.io/docs/specs/semconv/general/naming/</a></span>
+                                                                
+                                    </dd>
+                        </dl>
 
     
     
@@ -161,33 +179,89 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_DATAFRAME_ID">ATTR_DATAFRAME_ID</a>
+    <span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.dataframe.id&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_DATAFRAME_NAME">ATTR_DATAFRAME_NAME</a>
     <span>
-        &nbsp;: string&nbsp;= &#039;dataframe.name&#039;                            </span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.dataframe.name&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_JOIN_TYPE">ATTR_JOIN_TYPE</a>
+    <span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.join.type&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_LOADER_CLASS">ATTR_LOADER_CLASS</a>
+    <span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.loader.class&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_LOADER_DESTINATION_URI">ATTR_LOADER_DESTINATION_URI</a>
     <span>
-        &nbsp;: string&nbsp;= &#039;destination.uri&#039;                            </span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.destination.uri&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_LOADING_ROWS">ATTR_LOADING_ROWS</a>
     <span>
-        &nbsp;: string&nbsp;= &#039;loading.rows&#039;                            </span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.loading.rows&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_MEMORY_MAX">ATTR_MEMORY_MAX</a>
+    <span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.memory.max&#039;                            </span>
+</dt>
+<dd>Value expressed in megabytes.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_MEMORY_MIN">ATTR_MEMORY_MIN</a>
+    <span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.memory.min&#039;                            </span>
+</dt>
+<dd>Value expressed in megabytes.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_ROWS_THROUGHPUT">ATTR_ROWS_THROUGHPUT</a>
+    <span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.rows.throughput.per_second&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_ROWS_TOTAL">ATTR_ROWS_TOTAL</a>
+    <span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.rows.total&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_SCALAR_FUNCTION">ATTR_SCALAR_FUNCTION</a>
+    <span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.scalar.function&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_TRANSFORMATION_INPUT_ROWS">ATTR_TRANSFORMATION_INPUT_ROWS</a>
     <span>
-        &nbsp;: string&nbsp;= &#039;transformation.input_rows&#039;                            </span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.transformation.input_rows&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_TRANSFORMATION_OUTPUT_ROWS">ATTR_TRANSFORMATION_OUTPUT_ROWS</a>
     <span>
-        &nbsp;: string&nbsp;= &#039;transformation.output_rows&#039;                            </span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.transformation.output_rows&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_TRANSFORMER_CLASS">ATTR_TRANSFORMER_CLASS</a>
+    <span>
+        &nbsp;: string&nbsp;= &#039;flow.etl.transformer.class&#039;                            </span>
 </dt>
 
     </dl>
@@ -205,6 +279,36 @@
 
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ATTR_DATAFRAME_ID">
+        ATTR_DATAFRAME_ID
+        <a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_DATAFRAME_ID" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">17</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">ATTR_DATAFRAME_ID</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.dataframe.id&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_ATTR_DATAFRAME_NAME">
         ATTR_DATAFRAME_NAME
         <a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_DATAFRAME_NAME" class="headerlink"><i class="fas fa-link"></i></a>
@@ -214,7 +318,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -224,7 +328,67 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ATTR_DATAFRAME_NAME</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;dataframe.name&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.dataframe.name&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ATTR_JOIN_TYPE">
+        ATTR_JOIN_TYPE
+        <a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_JOIN_TYPE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">21</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">ATTR_JOIN_TYPE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.join.type&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ATTR_LOADER_CLASS">
+        ATTR_LOADER_CLASS
+        <a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_LOADER_CLASS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">23</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">ATTR_LOADER_CLASS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.loader.class&#039;</span>
 </code>
 
 
@@ -244,7 +408,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -254,7 +418,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ATTR_LOADER_DESTINATION_URI</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;destination.uri&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.destination.uri&#039;</span>
 </code>
 
 
@@ -274,7 +438,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -284,7 +448,159 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ATTR_LOADING_ROWS</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;loading.rows&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.loading.rows&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ATTR_MEMORY_MAX">
+        ATTR_MEMORY_MAX
+        <a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_MEMORY_MAX" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">32</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Value expressed in megabytes.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">ATTR_MEMORY_MAX</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.memory.max&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ATTR_MEMORY_MIN">
+        ATTR_MEMORY_MIN
+        <a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_MEMORY_MIN" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Value expressed in megabytes.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">ATTR_MEMORY_MIN</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.memory.min&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ATTR_ROWS_THROUGHPUT">
+        ATTR_ROWS_THROUGHPUT
+        <a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_ROWS_THROUGHPUT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">39</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">ATTR_ROWS_THROUGHPUT</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.rows.throughput.per_second&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ATTR_ROWS_TOTAL">
+        ATTR_ROWS_TOTAL
+        <a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_ROWS_TOTAL" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">ATTR_ROWS_TOTAL</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.rows.total&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ATTR_SCALAR_FUNCTION">
+        ATTR_SCALAR_FUNCTION
+        <a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_SCALAR_FUNCTION" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">ATTR_SCALAR_FUNCTION</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.scalar.function&#039;</span>
 </code>
 
 
@@ -304,7 +620,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -314,7 +630,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ATTR_TRANSFORMATION_INPUT_ROWS</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;transformation.input_rows&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.transformation.input_rows&#039;</span>
 </code>
 
 
@@ -334,7 +650,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -344,7 +660,37 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ATTR_TRANSFORMATION_OUTPUT_ROWS</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;transformation.output_rows&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.transformation.output_rows&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ATTR_TRANSFORMER_CLASS">
+        ATTR_TRANSFORMER_CLASS
+        <a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_TRANSFORMER_CLASS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php"><a href="files/src-core-etl-src-flow-etl-config-telemetry-telemetryattributes.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Telemetry/TelemetryAttributes.php">TelemetryAttributes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">ATTR_TRANSFORMER_CLASS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.etl.transformer.class&#039;</span>
 </code>
 
 
@@ -377,11 +723,20 @@
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_DATAFRAME_ID">ATTR_DATAFRAME_ID</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_DATAFRAME_NAME">ATTR_DATAFRAME_NAME</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_JOIN_TYPE">ATTR_JOIN_TYPE</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_LOADER_CLASS">ATTR_LOADER_CLASS</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_LOADER_DESTINATION_URI">ATTR_LOADER_DESTINATION_URI</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_LOADING_ROWS">ATTR_LOADING_ROWS</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_MEMORY_MAX">ATTR_MEMORY_MAX</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_MEMORY_MIN">ATTR_MEMORY_MIN</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_ROWS_THROUGHPUT">ATTR_ROWS_THROUGHPUT</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_ROWS_TOTAL">ATTR_ROWS_TOTAL</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_SCALAR_FUNCTION">ATTR_SCALAR_FUNCTION</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_TRANSFORMATION_INPUT_ROWS">ATTR_TRANSFORMATION_INPUT_ROWS</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_TRANSFORMATION_OUTPUT_ROWS">ATTR_TRANSFORMATION_OUTPUT_ROWS</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_TRANSFORMER_CLASS">ATTR_TRANSFORMER_CLASS</a></li>
                                             </ul>
                 </li>
             

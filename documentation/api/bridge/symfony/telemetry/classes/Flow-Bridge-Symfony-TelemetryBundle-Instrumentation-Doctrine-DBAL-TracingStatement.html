@@ -160,6 +160,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method_bindValue">bindValue()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method_execute">execute()</a>
     <span>
                                 &nbsp;: <abbr title="\Doctrine\DBAL\Driver\Result">Result</abbr>    </span>
@@ -193,14 +199,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Doctrine/DBAL/TracingStatement.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-doctrine-dbal-tracingstatement.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Doctrine/DBAL/TracingStatement.php">TracingStatement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Doctrine\DBAL\Driver\Statement">Statement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$statement</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Telemetry">Telemetry</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$telemetry</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Doctrine\DBAL\Driver\Statement">Statement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$statement</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-QueryTracer.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\QueryTracer">QueryTracer</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$queryTracer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sql</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-SqlAttributes.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\SqlAttributes">SqlAttributes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sqlAttributes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -216,8 +222,22 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$telemetry</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Telemetry\Telemetry">Telemetry</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$queryTracer</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-QueryTracer.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\QueryTracer">QueryTracer</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$sql</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$sqlAttributes</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-SqlAttributes.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Doctrine\DBAL\SqlAttributes">SqlAttributes</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -236,6 +256,75 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_bindValue">
+        bindValue()
+        <a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method_bindValue" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Doctrine/DBAL/TracingStatement.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-doctrine-dbal-tracingstatement.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Doctrine/DBAL/TracingStatement.php">TracingStatement.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">bindValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$param</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Doctrine\DBAL\ParameterType">ParameterType</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$param</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$type</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Doctrine\DBAL\ParameterType">ParameterType</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_bindValue_attributes">
+                Attributes <a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method_bindValue_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Override">Override</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_execute">
         execute()
         <a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method_execute" class="headerlink"><i class="fas fa-link"></i></a>
@@ -244,7 +333,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Doctrine/DBAL/TracingStatement.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-doctrine-dbal-tracingstatement.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Doctrine/DBAL/TracingStatement.php">TracingStatement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -302,6 +391,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method_bindValue">bindValue()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method_execute">execute()</a></li>
                                     </ul>
             </li>

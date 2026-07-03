@@ -72,7 +72,7 @@
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dsl.js": {
-        "path": "\/assets\/codemirror\/completions\/dsl-26bf4404c0aaf94c4aa3a5bdfff8c4af.js",
+        "path": "\/assets\/codemirror\/completions\/dsl-3675cc295673d8bc2db0d7690efc3eb8.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dataframe.js": {
@@ -156,7 +156,7 @@
         "type": "css"
     },
     "htmx.org": {
-        "path": "\/assets\/vendor\/htmx.org\/htmx.org.index-53566a4532aed515ce39aee24ee7c61d.js",
+        "path": "\/assets\/vendor\/htmx.org\/htmx.org.index-30c27e2f1da99996dceb70dd06db87fe.js",
         "type": "js"
     },
     "clipboard": {
@@ -176,7 +176,7 @@
         "type": "css"
     },
     "prismjs\/plugins\/autoloader\/prism-autoloader.js": {
-        "path": "\/assets\/vendor\/prismjs\/plugins\/autoloader\/prism-autoloader-b1e401ad6aa11bcff3b6a7df2c9f1aeb.js",
+        "path": "\/assets\/vendor\/prismjs\/plugins\/autoloader\/prism-autoloader-38a9b68c655ffe286da7cb57673b2286.js",
         "type": "js"
     },
     "prismjs\/components\/prism-bash.min.js": {
@@ -216,11 +216,11 @@
         "type": "js"
     },
     "prismjs\/components\/prism-yaml.min.js": {
-        "path": "\/assets\/vendor\/prismjs\/components\/prism-yaml.min-b6d806676e7f0bd0bd1aed045b430f1c.js",
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-yaml.min-8e645e1cfd62f2be3e0aaee808c9f82e.js",
         "type": "js"
     },
     "@panzoom\/panzoom": {
-        "path": "\/assets\/vendor\/@panzoom\/panzoom\/panzoom.index-3b47481c4864977e868c752ba14776d1.js",
+        "path": "\/assets\/vendor\/@panzoom\/panzoom\/panzoom.index-cd8b90b6b954ea71b2caf099539ab48c.js",
         "type": "js"
     },
     "lz-string": {
@@ -252,11 +252,11 @@
         "type": "js"
     },
     "@codemirror\/autocomplete": {
-        "path": "\/assets\/vendor\/@codemirror\/autocomplete\/autocomplete.index-61538c62243afe5479f741a3793d50f9.js",
+        "path": "\/assets\/vendor\/@codemirror\/autocomplete\/autocomplete.index-bb799fac1bd628dfa039da2ddacebd75.js",
         "type": "js"
     },
     "@codemirror\/lint": {
-        "path": "\/assets\/vendor\/@codemirror\/lint\/lint.index-bb59d824b60c2c95d88adc6ce39385f6.js",
+        "path": "\/assets\/vendor\/@codemirror\/lint\/lint.index-31811dcaa244ccfe5962f7e181ecb1da.js",
         "type": "js"
     },
     "style-mod": {
@@ -292,11 +292,11 @@
         "type": "js"
     },
     "@codemirror\/lang-html": {
-        "path": "\/assets\/vendor\/@codemirror\/lang-html\/lang-html.index-1a24f2db64e26878eb0e59011eb01a86.js",
+        "path": "\/assets\/vendor\/@codemirror\/lang-html\/lang-html.index-abf9d5878eb5851abe6f28a5de40e767.js",
         "type": "js"
     },
     "@lezer\/lr": {
-        "path": "\/assets\/vendor\/@lezer\/lr\/lr.index-2703254a0f8face1efc647caf6872c6d.js",
+        "path": "\/assets\/vendor\/@lezer\/lr\/lr.index-28454e593aa80b99a443ab88e02d94ba.js",
         "type": "js"
     },
     "@lezer\/html": {
@@ -304,7 +304,7 @@
         "type": "js"
     },
     "@codemirror\/lang-css": {
-        "path": "\/assets\/vendor\/@codemirror\/lang-css\/lang-css.index-b946dbbd707cdf2a2db82c863ab2548b.js",
+        "path": "\/assets\/vendor\/@codemirror\/lang-css\/lang-css.index-79c1c442cd9281f09f37ccd37dd1ca3a.js",
         "type": "js"
     },
     "@codemirror\/lang-javascript": {
@@ -332,7 +332,7 @@
         "type": "js"
     },
     "@codemirror\/lang-xml": {
-        "path": "\/assets\/vendor\/@codemirror\/lang-xml\/lang-xml.index-05d3eee5bb8c7406b241145164ea3a4b.js",
+        "path": "\/assets\/vendor\/@codemirror\/lang-xml\/lang-xml.index-d6e874eae9a7400871fa44cd998d7593.js",
         "type": "js"
     },
     "@lezer\/xml": {

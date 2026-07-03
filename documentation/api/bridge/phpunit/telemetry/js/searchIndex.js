@@ -291,6 +291,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-NullErrorHandlerConfig.html"
         },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\PHPUnitTelemetryAttributes",
+            "name": "PHPUnitTelemetryAttributes",
+            "summary": "Flow\u002Dspecific\u0020PHPUnit\u0020attribute\u0020keys.",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-PHPUnitTelemetryAttributes.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\PHPUnitTelemetryAttributes\u003A\u003AATTR_SUITE_IS_ROOT",
+            "name": "ATTR_SUITE_IS_ROOT",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-PHPUnitTelemetryAttributes.html#constant_ATTR_SUITE_IS_ROOT"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\PHPUnitTelemetryAttributes\u003A\u003AATTR_SUITE_TEST_COUNT",
+            "name": "ATTR_SUITE_TEST_COUNT",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-PHPUnitTelemetryAttributes.html#constant_ATTR_SUITE_TEST_COUNT"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\PHPUnitTelemetryAttributes\u003A\u003AATTR_TEST_CLASS",
+            "name": "ATTR_TEST_CLASS",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-PHPUnitTelemetryAttributes.html#constant_ATTR_TEST_CLASS"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\PHPUnitTelemetryAttributes\u003A\u003AATTR_TEST_ID",
+            "name": "ATTR_TEST_ID",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-PHPUnitTelemetryAttributes.html#constant_ATTR_TEST_ID"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\PHPUnitTelemetryAttributes\u003A\u003AATTR_TEST_MEMORY_DELTA",
+            "name": "ATTR_TEST_MEMORY_DELTA",
+            "summary": "Value\u0020expressed\u0020in\u0020bytes.",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-PHPUnitTelemetryAttributes.html#constant_ATTR_TEST_MEMORY_DELTA"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\PHPUnitTelemetryAttributes\u003A\u003AATTR_TEST_MEMORY_PEAK",
+            "name": "ATTR_TEST_MEMORY_PEAK",
+            "summary": "Value\u0020expressed\u0020in\u0020bytes.",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-PHPUnitTelemetryAttributes.html#constant_ATTR_TEST_MEMORY_PEAK"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\PHPUnitTelemetryAttributes\u003A\u003AATTR_TEST_METHOD",
+            "name": "ATTR_TEST_METHOD",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-PHPUnitTelemetryAttributes.html#constant_ATTR_TEST_METHOD"
+        },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SpanStack",
             "name": "SpanStack",
             "summary": "",
@@ -530,6 +570,31 @@ Search.appendIndex(
             "name": "notify",
             "summary": "",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-Subscriber-TestSuiteStartedSubscriber.html#method_notify"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SuiteOutcomeStack",
+            "name": "SuiteOutcomeStack",
+            "summary": "Aggregates\u0020finished\u002Dtest\u0020statuses\u0020per\u0020open\u0020test\u0020suite\u0020so\u0020the\u0020suite\u0020span\u0020can\u0020carry\u0020the\u0020official\n\u0060test.suite.run.status\u0060\u0020attribute.\u0020Suites\u0020nest,\u0020so\u0020every\u0020finished\u0020test\u0020counts\u0020towards\u0020all\ncurrently\u0020open\u0020suites.",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SuiteOutcomeStack.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SuiteOutcomeStack\u003A\u003Apop\u0028\u0029",
+            "name": "pop",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SuiteOutcomeStack.html#method_pop"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SuiteOutcomeStack\u003A\u003Apush\u0028\u0029",
+            "name": "push",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SuiteOutcomeStack.html#method_push"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SuiteOutcomeStack\u003A\u003ArecordStatus\u0028\u0029",
+            "name": "recordStatus",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SuiteOutcomeStack.html#method_recordStatus"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SuiteOutcomeStack\u003A\u003Asize\u0028\u0029",
+            "name": "size",
+            "summary": "",
+            "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SuiteOutcomeStack.html#method_size"
         },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SyslogErrorHandlerConfig",
             "name": "SyslogErrorHandlerConfig",

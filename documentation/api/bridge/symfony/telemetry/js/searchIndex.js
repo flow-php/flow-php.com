@@ -56,6 +56,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ChannelLoggerPass.html#method_process"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ChannelLoggerPass\u003A\u003AATTR_LOG_CHANNEL",
+            "name": "ATTR_LOG_CHANNEL",
+            "summary": "log.\u002A\u0020is\u0020a\u0020reserved\u0020OTel\u0020namespace,\u0020so\u0020the\u0020flow\u002Dcustom\u0020channel\u0020key\u0020carries\u0020the\u0020flow\u0020prefix.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ChannelLoggerPass.html#constant_ATTR_LOG_CHANNEL"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ChannelLoggerPass\u003A\u003ATAG",
             "name": "TAG",
             "summary": "",
@@ -100,6 +105,16 @@ Search.appendIndex(
             "name": "process",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-HttpClientTelemetryPass.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\MessengerTelemetryPass",
+            "name": "MessengerTelemetryPass",
+            "summary": "Injects\u0020the\u0020messenger\u0020TracingMiddleware\u0020into\u0020every\u0020message\u0020bus\u0020as\u0020the\u0020outermost\u0020middleware,\u0020so\u0020consumed\nand\u0020produced\u0020messages\u0020are\u0020traced\u0020without\u0020the\u0020application\u0020having\u0020to\u0020register\u0020it\u0020manually.\u0020Runs\u0020before\nSymfony\u0027s\u0020MessengerPass,\u0020which\u0020turns\u0020each\u0020\u0022\u003CbusId\u003E.middleware\u0022\u0020parameter\u0020into\u0020the\u0020bus\u0027s\u0020middleware\u0020stack.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-MessengerTelemetryPass.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\MessengerTelemetryPass\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-MessengerTelemetryPass.html#method_process"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\OTLPAvailabilityPass",
             "name": "OTLPAvailabilityPass",
@@ -180,6 +195,26 @@ Search.appendIndex(
             "name": "defineLogger",
             "summary": "Register\u0020the\u0020named\u0020logger\u0020and\u0020its\u0020PSR\u002D3\u0020wrapper,\u0020returning\u0020the\u0020PSR\u002D3\u0020service\u0020id.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-FlowTelemetryBundle.html#method_defineLogger"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Cache\\CacheDeferredFlushSubscriber",
+            "name": "CacheDeferredFlushSubscriber",
+            "summary": "Symfony\u0020cache\u0020pools\u0020defer\u0020writes\u0020and\u0020flush\u0020them\u0020from\u0020the\u0020pool\u0027s\u0020own\u0020commit\u0020path\u0020at\u0020object\u0020destruction,\noutside\u0020any\u0020request\/message\u0020span.\u0020On\u0020a\u0020Doctrine\u0020DBAL\u0020pool\u0020each\u0020of\u0020those\u0020writes\u0020therefore\u0020surfaces\u0020as\u0020an\norphan\u0020doctrine.dbal.\u002A\u0020span\u0020\u0028statement.prepare\/execute,\u0020transaction.begin\/commit\u0029,\u0020one\u0020trace\u0020per\u0020query.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Cache-CacheDeferredFlushSubscriber.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Cache\\CacheDeferredFlushSubscriber\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Cache-CacheDeferredFlushSubscriber.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Cache\\CacheDeferredFlushSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
+            "name": "getSubscribedEvents",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Cache-CacheDeferredFlushSubscriber.html#method_getSubscribedEvents"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Cache\\CacheDeferredFlushSubscriber\u003A\u003AonFlush\u0028\u0029",
+            "name": "onFlush",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Cache-CacheDeferredFlushSubscriber.html#method_onFlush"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Cache\\TagAwareTraceableCacheAdapter",
             "name": "TagAwareTraceableCacheAdapter",
@@ -336,6 +371,51 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Cache-TraceableCacheAdapter.html#method_saveDeferred"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\CommandSuppressionSubscriber",
+            "name": "CommandSuppressionSubscriber",
+            "summary": "Suppresses\u0020tracing\u0020for\u0020the\u0020entire\u0020execution\u0020of\u0020the\u0020configured\u0020commands\u0020\u0028long\u002Drunning\u0020worker\u0020commands\u0029,\nso\u0020their\u0020between\u002Dwork\u0020activity\u0020\u0028transport\u0020polls,\u0020idle\u002Dtick\u0020co\u002Dlisteners,\u0020\u2026\u0029\u0020does\u0020not\u0020surface.\u0020A\nsuppression\u0020flag\u0020is\u0020attached\u0020to\u0020the\u0020telemetry\u0020context\u0020when\u0020a\u0020matching\u0020command\u0020starts\u0020and\u0020detached\u0020when\u0020it\nterminates\u003B\u0020the\u0020SuppressingSampler\u0020then\u0020drops\u0020any\u0020span\u0020created\u0020while\u0020it\u0020is\u0020set.\u0020Instrumentation\u0020that\u0020must\nstill\u0020be\u0020traced\u0020lifts\u0020the\u0020suppression\u0020around\u0020its\u0020own\u0020work\u0020\u0028e.g.\u0020the\u0020messenger\u0020middleware\u0020per\u0020message\u0029.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-CommandSuppressionSubscriber.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\CommandSuppressionSubscriber\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-CommandSuppressionSubscriber.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\CommandSuppressionSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
+            "name": "getSubscribedEvents",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-CommandSuppressionSubscriber.html#method_getSubscribedEvents"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\CommandSuppressionSubscriber\u003A\u003AonCommand\u0028\u0029",
+            "name": "onCommand",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-CommandSuppressionSubscriber.html#method_onCommand"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\CommandSuppressionSubscriber\u003A\u003AonTerminate\u0028\u0029",
+            "name": "onTerminate",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-CommandSuppressionSubscriber.html#method_onTerminate"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleAttributes",
+            "name": "ConsoleAttributes",
+            "summary": "Flow\u002Dspecific\u0020console\u0020attribute\u0020keys.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleAttributes.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleAttributes\u003A\u003AATTR_COMMAND_CLASS",
+            "name": "ATTR_COMMAND_CLASS",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleAttributes.html#constant_ATTR_COMMAND_CLASS"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleAttributes\u003A\u003AATTR_COMMAND_NAME",
+            "name": "ATTR_COMMAND_NAME",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleAttributes.html#constant_ATTR_COMMAND_NAME"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleAttributes\u003A\u003AATTR_COMMAND_SIGNAL",
+            "name": "ATTR_COMMAND_SIGNAL",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleAttributes.html#constant_ATTR_COMMAND_SIGNAL"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleFlushSubscriber",
             "name": "ConsoleFlushSubscriber",
             "summary": "",
@@ -416,6 +496,111 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleSpanSubscriber.html#method_onTerminate"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\DbAttributes",
+            "name": "DbAttributes",
+            "summary": "Flow\u002Dspecific\u0020Doctrine\u0020DBAL\u0020attribute\u0020keys.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-DbAttributes.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\DbAttributes\u003A\u003ADB_CONNECTION_NAME",
+            "name": "DB_CONNECTION_NAME",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-DbAttributes.html#constant_DB_CONNECTION_NAME"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\DbAttributes\u003A\u003ADB_TRANSACTION_NESTING_LEVEL",
+            "name": "DB_TRANSACTION_NESTING_LEVEL",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-DbAttributes.html#constant_DB_TRANSACTION_NESTING_LEVEL"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\ParameterFormatter",
+            "name": "ParameterFormatter",
+            "summary": "Formats\u0020bound\u0020statement\u0020parameters\u0020into\u0020\u0060db.query.parameter.\u003Ckey\u003E\u0060\u0020span\u0020attributes.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-ParameterFormatter.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\ParameterFormatter\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-ParameterFormatter.html#method_format"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\QueryTracer",
+            "name": "QueryTracer",
+            "summary": "Builds\u0020span\u0020attributes\u0020and\u0020records\u0020metrics\u0020for\u0020Doctrine\u0020DBAL\u0020query\u0020operations,\u0020shared\u0020between\nthe\u0020connection\u0020\u0028exec\/query\/prepare\u0029\u0020and\u0020the\u0020statement\u0020\u0028execute\u0029\u0020instrumentation.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-QueryTracer.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\QueryTracer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-QueryTracer.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\QueryTracer\u003A\u003Atracer\u0028\u0029",
+            "name": "tracer",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-QueryTracer.html#method_tracer"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\QueryTracer\u003A\u003Aextract\u0028\u0029",
+            "name": "extract",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-QueryTracer.html#method_extract"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\QueryTracer\u003A\u003AspanName\u0028\u0029",
+            "name": "spanName",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-QueryTracer.html#method_spanName"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\QueryTracer\u003A\u003AqueryAttributes\u0028\u0029",
+            "name": "queryAttributes",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-QueryTracer.html#method_queryAttributes"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\QueryTracer\u003A\u003AparameterAttributes\u0028\u0029",
+            "name": "parameterAttributes",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-QueryTracer.html#method_parameterAttributes"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\QueryTracer\u003A\u003ArecordError\u0028\u0029",
+            "name": "recordError",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-QueryTracer.html#method_recordError"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\QueryTracer\u003A\u003ArecordQueryMetrics\u0028\u0029",
+            "name": "recordQueryMetrics",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-QueryTracer.html#method_recordQueryMetrics"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\QueryTracer\u003A\u003ArecordDuration\u0028\u0029",
+            "name": "recordDuration",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-QueryTracer.html#method_recordDuration"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\SqlAttributes",
+            "name": "SqlAttributes",
+            "summary": "Operation\u0020type\u0020and\u0020target\u0020collection\u0020parsed\u0020from\u0020a\u0020SQL\u0020statement.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-SqlAttributes.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\SqlAttributes\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-SqlAttributes.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\SqlAttributes\u003A\u003A\u0024operation",
+            "name": "operation",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-SqlAttributes.html#property_operation"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\SqlAttributes\u003A\u003A\u0024collection",
+            "name": "collection",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-SqlAttributes.html#property_collection"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\SqlAttributesExtractor",
+            "name": "SqlAttributesExtractor",
+            "summary": "Extracts\u0020the\u0020operation\u0020type\u0020and\u0020target\u0020table\u0020from\u0020a\u0020SQL\u0020statement\u0020for\u0020span\u0020attributes,\nfollowing\u0020the\u0020OpenTelemetry\u0020database\u0020span\u0020naming\u0020convention.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-SqlAttributesExtractor.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\SqlAttributesExtractor\u003A\u003Aextract\u0028\u0029",
+            "name": "extract",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-SqlAttributesExtractor.html#method_extract"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection",
             "name": "TracingConnection",
             "summary": "",
@@ -426,6 +611,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection\u003A\u003A__destruct\u0028\u0029",
+            "name": "__destruct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html#method___destruct"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection\u003A\u003AbeginTransaction\u0028\u0029",
             "name": "beginTransaction",
             "summary": "",
@@ -435,6 +625,11 @@ Search.appendIndex(
             "name": "commit",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html#method_commit"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection\u003A\u003ArollBack\u0028\u0029",
+            "name": "rollBack",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html#method_rollBack"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection\u003A\u003Aexec\u0028\u0029",
             "name": "exec",
@@ -450,11 +645,6 @@ Search.appendIndex(
             "name": "query",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html#method_query"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingConnection\u003A\u003ArollBack\u0028\u0029",
-            "name": "rollBack",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingConnection.html#method_rollBack"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingDriver",
             "name": "TracingDriver",
@@ -496,10 +686,45 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingStatement\u003A\u003AbindValue\u0028\u0029",
+            "name": "bindValue",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method_bindValue"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TracingStatement\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TracingStatement.html#method_execute"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TransactionSpanMode",
+            "name": "TransactionSpanMode",
+            "summary": "Controls\u0020how\u0020Doctrine\u0020DBAL\u0020transactions\u0020are\u0020represented\u0020as\u0020spans.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TransactionSpanMode.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TransactionSpanMode\u003A\u003AGROUPED",
+            "name": "GROUPED",
+            "summary": "A\u0020single\u0020long\u002Dlived\u0020span\u0020spanning\u0020the\u0020whole\u0020transaction\u0020\u0028from\u0020BEGIN\u0020until\nCOMMIT\/ROLLBACK\u0029,\u0020with\u0020query\u0020spans\u0020nested\u0020underneath\u0020it.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TransactionSpanMode.html#enumcase_GROUPED"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TransactionSpanMode\u003A\u003APER_OPERATION",
+            "name": "PER_OPERATION",
+            "summary": "A\u0020separate\u0020short\u002Dlived\u0020span\u0020for\u0020each\u0020transaction\u0020operation\u0020\u0028BEGIN,\u0020COMMIT,\nROLLBACK\u0029\u0020that\u0020starts\u0020and\u0020ends\u0020within\u0020that\u0020single\u0020call.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TransactionSpanMode.html#enumcase_PER_OPERATION"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\TransactionSpanMode\u003A\u003AOFF",
+            "name": "OFF",
+            "summary": "No\u0020transaction\u0020spans\u0020are\u0020emitted.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-TransactionSpanMode.html#enumcase_OFF"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\HttpClientAttributes",
+            "name": "HttpClientAttributes",
+            "summary": "Flow\u002Dspecific\u0020HTTP\u0020client\u0020attribute\u0020keys.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-HttpClientAttributes.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\HttpClientAttributes\u003A\u003AATTR_CLIENT_NAME",
+            "name": "ATTR_CLIENT_NAME",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-HttpClientAttributes.html#constant_ATTR_CLIENT_NAME"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\ResponseStream",
             "name": "ResponseStream",
@@ -670,6 +895,21 @@ Search.appendIndex(
             "name": "onException",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-ControllerSpanSubscriber.html#method_onException"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\HttpKernelAttributes",
+            "name": "HttpKernelAttributes",
+            "summary": "Flow\u002Dspecific\u0020HttpKernel\u0020attribute\u0020keys.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-HttpKernelAttributes.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\HttpKernelAttributes\u003A\u003AATTR_CONTROLLER",
+            "name": "ATTR_CONTROLLER",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-HttpKernelAttributes.html#constant_ATTR_CONTROLLER"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\HttpKernelAttributes\u003A\u003AATTR_CONTROLLER_ARGUMENT",
+            "name": "ATTR_CONTROLLER_ARGUMENT",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-HttpKernelAttributes.html#constant_ATTR_CONTROLLER_ARGUMENT"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\HttpKernelFlushSubscriber",
             "name": "HttpKernelFlushSubscriber",
@@ -851,6 +1091,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-AsyncCurlTransportTickSubscriber.html#method_onWorkerRunning"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerAttributes",
+            "name": "MessengerAttributes",
+            "summary": "Flow\u002Dspecific\u0020messenger\u0020attribute\u0020keys.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerAttributes.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerAttributes\u003A\u003AATTR_BUS",
+            "name": "ATTR_BUS",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerAttributes.html#constant_ATTR_BUS"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerAttributes\u003A\u003AATTR_MESSAGE_CLASS",
+            "name": "ATTR_MESSAGE_CLASS",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerAttributes.html#constant_ATTR_MESSAGE_CLASS"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerFlushSubscriber",
             "name": "MessengerFlushSubscriber",
             "summary": "Drains\u0020buffered\u0020telemetry\u0020after\u0020each\u0020consumed\u0020message.",
@@ -876,61 +1131,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerFlushSubscriber.html#method_onMessageFailed"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerHandlerLink",
-            "name": "MessengerHandlerLink",
-            "summary": "Which\u0020links\u0020a\u0020consumed\u0020message\u0027s\u0020\u0022process\u0022\u0020span\u0020carries.",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerHandlerLink.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerHandlerLink\u003A\u003AlinksDispatcher\u0028\u0029",
-            "name": "linksDispatcher",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerHandlerLink.html#method_linksDispatcher"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerHandlerLink\u003A\u003AlinksWorker\u0028\u0029",
-            "name": "linksWorker",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerHandlerLink.html#method_linksWorker"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerHandlerLink\u003A\u003ADispatcher",
-            "name": "Dispatcher",
-            "summary": "Link\u0020only\u0020to\u0020the\u0020producing\u0020\u0028dispatcher\u0029\u0020span\u0020the\u0020message\u0020was\u0020published\u0020from.",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerHandlerLink.html#enumcase_Dispatcher"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerHandlerLink\u003A\u003AWorker",
-            "name": "Worker",
-            "summary": "Link\u0020only\u0020to\u0020the\u0020worker\u0020receive\u002Dcycle\u0020span\u0020the\u0020message\u0020was\u0020claimed\u0020in.",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerHandlerLink.html#enumcase_Worker"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerHandlerLink\u003A\u003ABoth",
-            "name": "Both",
-            "summary": "Link\u0020to\u0020both\u0020the\u0020dispatcher\u0020and\u0020the\u0020worker\u0020receive\u002Dcycle\u0020span.",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerHandlerLink.html#enumcase_Both"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerMetricDurationUnit",
-            "name": "MessengerMetricDurationUnit",
-            "summary": "Unit\u0020for\u0020the\u0020messaging.process.duration\u0020histogram\u0020emitted\u0020for\u0020consumed\u0020messages.",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerMetricDurationUnit.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerMetricDurationUnit\u003A\u003AhistogramBoundaries\u0028\u0029",
-            "name": "histogramBoundaries",
-            "summary": "Explicit\u0020histogram\u0020bucket\u0020boundaries\u0020for\u0020this\u0020unit,\u0020or\u0020null\u0020to\u0020use\u0020the\u0020instrument\u0020default.",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerMetricDurationUnit.html#method_histogramBoundaries"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerMetricDurationUnit\u003A\u003AfromMilliseconds\u0028\u0029",
-            "name": "fromMilliseconds",
-            "summary": "Convert\u0020a\u0020duration\u0020expressed\u0020in\u0020milliseconds\u0020\u0028Span\u003A\u003Aduration\u0028\u0029\u0029\u0020to\u0020this\u0020unit.",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerMetricDurationUnit.html#method_fromMilliseconds"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerMetricDurationUnit\u003A\u003ASeconds",
-            "name": "Seconds",
-            "summary": "Seconds\u0020\u2014\u0020the\u0020unit\u0020and\u0020bucket\u0020boundaries\u0020mandated\u0020by\u0020the\u0020OpenTelemetry\u0020messaging\nsemantic\u0020conventions\u0020\u0028https\u003A\/\/opentelemetry.io\/docs\/specs\/semconv\/messaging\/messaging\u002Dmetrics\/\u0029.",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerMetricDurationUnit.html#enumcase_Seconds"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\MessengerMetricDurationUnit\u003A\u003AMilliseconds",
-            "name": "Milliseconds",
-            "summary": "Milliseconds\u0020\u2014\u0020uses\u0020Flow\u0027s\u0020native\u0020default\u0020histogram\u0020buckets.\u0020Diverges\u0020from\u0020OTEL\u0020semconv\nbut\u0020matches\u0020the\u0020rest\u0020of\u0020Flow\u0027s\u0020duration\u0020histograms.",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-MessengerMetricDurationUnit.html#enumcase_Milliseconds"
-        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\TelemetryStamp",
             "name": "TelemetryStamp",
             "summary": "Messenger\u0020stamp\u0020holding\u0020propagated\u0020telemetry\u0020context.",
@@ -945,6 +1145,11 @@ Search.appendIndex(
             "name": "all",
             "summary": "Get\u0020all\u0020context\u0020entries.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TelemetryStamp.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\TelemetryStamp\u003A\u003AgetContext\u0028\u0029",
+            "name": "getContext",
+            "summary": "Getter\u0020exposing\u0020the\u0020context\u0020to\u0020the\u0020Symfony\u0020Serializer\u0027s\u0020ObjectNormalizer.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TelemetryStamp.html#method_getContext"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\TelemetryStamp\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -995,81 +1200,6 @@ Search.appendIndex(
             "name": "handle",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TracingMiddleware.html#method_handle"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerPollSuppressionSubscriber",
-            "name": "WorkerPollSuppressionSubscriber",
-            "summary": "Suppresses\u0020instrumentation\u0020during\u0020the\u0020worker\u0027s\u0020receive\u0020loop\u0020when\u0020the\u0020worker\u0020cycle\u0020span\u0020is\u0020not\u0020traced,\nso\u0020the\u0020transport\u0027s\u0020poll\/claim\u0020operations\u0020\u0028Doctrine\u0020DBAL,\u0020HTTP\u0020client,\u0020...\u0029\u0020do\u0020not\u0020surface\u0020as\u0020orphan\nroot\u0020spans\u0020once\u0020per\u0020poll.\u0020TracingMiddleware\u0020lifts\u0020the\u0020suppression\u0020around\u0020message\u0020handling\u0020so\u0020handler\nwork\u0020is\u0020still\u0020traced.",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerPollSuppressionSubscriber.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerPollSuppressionSubscriber\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerPollSuppressionSubscriber.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerPollSuppressionSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
-            "name": "getSubscribedEvents",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerPollSuppressionSubscriber.html#method_getSubscribedEvents"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerPollSuppressionSubscriber\u003A\u003AonWorkerStarted\u0028\u0029",
-            "name": "onWorkerStarted",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerPollSuppressionSubscriber.html#method_onWorkerStarted"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerPollSuppressionSubscriber\u003A\u003AonWorkerRunningResume\u0028\u0029",
-            "name": "onWorkerRunningResume",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerPollSuppressionSubscriber.html#method_onWorkerRunningResume"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerPollSuppressionSubscriber\u003A\u003AonWorkerRunningSuppress\u0028\u0029",
-            "name": "onWorkerRunningSuppress",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerPollSuppressionSubscriber.html#method_onWorkerRunningSuppress"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerPollSuppressionSubscriber\u003A\u003AonWorkerStopped\u0028\u0029",
-            "name": "onWorkerStopped",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerPollSuppressionSubscriber.html#method_onWorkerStopped"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerReceiveCycleSubscriber",
-            "name": "WorkerReceiveCycleSubscriber",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerReceiveCycleSubscriber.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerReceiveCycleSubscriber\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerReceiveCycleSubscriber.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerReceiveCycleSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
-            "name": "getSubscribedEvents",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerReceiveCycleSubscriber.html#method_getSubscribedEvents"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerReceiveCycleSubscriber\u003A\u003AonWorkerStarted\u0028\u0029",
-            "name": "onWorkerStarted",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerReceiveCycleSubscriber.html#method_onWorkerStarted"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerReceiveCycleSubscriber\u003A\u003AcompleteCycle\u0028\u0029",
-            "name": "completeCycle",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerReceiveCycleSubscriber.html#method_completeCycle"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerReceiveCycleSubscriber\u003A\u003AopenCycle\u0028\u0029",
-            "name": "openCycle",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerReceiveCycleSubscriber.html#method_openCycle"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerReceiveCycleSubscriber\u003A\u003AonWorkerStopped\u0028\u0029",
-            "name": "onWorkerStopped",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerReceiveCycleSubscriber.html#method_onWorkerStopped"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\WorkerReceiveCycleSubscriber\u003A\u003AonConsoleError\u0028\u0029",
-            "name": "onConsoleError",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-WorkerReceiveCycleSubscriber.html#method_onConsoleError"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security\\SecuritySpanSubscriber",
             "name": "SecuritySpanSubscriber",

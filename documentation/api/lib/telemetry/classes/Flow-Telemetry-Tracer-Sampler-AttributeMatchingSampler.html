@@ -126,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/AttributeMatchingSampler.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-sampler-attributematchingsampler.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/AttributeMatchingSampler.php">AttributeMatchingSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -219,7 +219,7 @@ true, the default) or keeps ONLY matching spans (exclude false).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/AttributeMatchingSampler.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-sampler-attributematchingsampler.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/AttributeMatchingSampler.php">AttributeMatchingSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -270,7 +270,7 @@ true, the default) or keeps ONLY matching spans (exclude false).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/AttributeMatchingSampler.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-sampler-attributematchingsampler.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/AttributeMatchingSampler.php">AttributeMatchingSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -316,7 +316,7 @@ true, the default) or keeps ONLY matching spans (exclude false).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/AttributeMatchingSampler.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-sampler-attributematchingsampler.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/AttributeMatchingSampler.php">AttributeMatchingSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -324,7 +324,7 @@ true, the default) or keeps ONLY matching spans (exclude false).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">shouldSample</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-Span.html"><abbr title="\Flow\Telemetry\Tracer\Span">Span</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$span</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-Sampler-SamplingResult.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\SamplingResult">SamplingResult</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">shouldSample</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Context-Context.html"><abbr title="\Flow\Telemetry\Context\Context">Context</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentContext</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-Span.html"><abbr title="\Flow\Telemetry\Tracer\Span">Span</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$span</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-Sampler-SamplingResult.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\SamplingResult">SamplingResult</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -332,6 +332,15 @@ true, the default) or keeps ONLY matching spans (exclude false).</p>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$parentContext</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Context-Context.html"><abbr title="\Flow\Telemetry\Context\Context">Context</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The parent context of the span to be created</p>
+</section>
+
+            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$span</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Telemetry-Tracer-Span.html"><abbr title="\Flow\Telemetry\Tracer\Span">Span</abbr></a></span>

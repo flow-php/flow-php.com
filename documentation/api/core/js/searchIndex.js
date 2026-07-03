@@ -963,13 +963,28 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes",
             "name": "TelemetryAttributes",
-            "summary": "",
+            "summary": "Flow\u002Dspecific\u0020ETL\u0020attribute\u0020keys.",
             "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_DATAFRAME_ID",
+            "name": "ATTR_DATAFRAME_ID",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_DATAFRAME_ID"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_DATAFRAME_NAME",
             "name": "ATTR_DATAFRAME_NAME",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_DATAFRAME_NAME"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_JOIN_TYPE",
+            "name": "ATTR_JOIN_TYPE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_JOIN_TYPE"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_LOADER_CLASS",
+            "name": "ATTR_LOADER_CLASS",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_LOADER_CLASS"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_LOADER_DESTINATION_URI",
             "name": "ATTR_LOADER_DESTINATION_URI",
@@ -981,6 +996,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_LOADING_ROWS"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_MEMORY_MAX",
+            "name": "ATTR_MEMORY_MAX",
+            "summary": "Value\u0020expressed\u0020in\u0020megabytes.",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_MEMORY_MAX"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_MEMORY_MIN",
+            "name": "ATTR_MEMORY_MIN",
+            "summary": "Value\u0020expressed\u0020in\u0020megabytes.",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_MEMORY_MIN"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_ROWS_THROUGHPUT",
+            "name": "ATTR_ROWS_THROUGHPUT",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_ROWS_THROUGHPUT"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_ROWS_TOTAL",
+            "name": "ATTR_ROWS_TOTAL",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_ROWS_TOTAL"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_SCALAR_FUNCTION",
+            "name": "ATTR_SCALAR_FUNCTION",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_SCALAR_FUNCTION"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_TRANSFORMATION_INPUT_ROWS",
             "name": "ATTR_TRANSFORMATION_INPUT_ROWS",
             "summary": "",
@@ -990,6 +1030,11 @@ Search.appendIndex(
             "name": "ATTR_TRANSFORMATION_OUTPUT_ROWS",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_TRANSFORMATION_OUTPUT_ROWS"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_TRANSFORMER_CLASS",
+            "name": "ATTR_TRANSFORMER_CLASS",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryAttributes.html#constant_ATTR_TRANSFORMER_CLASS"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryConfig",
             "name": "TelemetryConfig",

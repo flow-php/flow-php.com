@@ -120,14 +120,33 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-filesystemtelemetryattributes.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php">FilesystemTelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">Flow-specific filesystem attribute keys.</p>
 
 
+    <section class="phpdocumentor-description"><p>No official filesystem semantic convention exists; per OTel naming guidance all custom keys
+live under the <code class="prettyprint">flow.filesystem.</code> prefix. Official keys (e.g. <code class="prettyprint">error.type</code>) come from
+<abbr title="\Flow\Telemetry\SemConvAttributes">SemConvAttributes</abbr>.</p>
+</section>
 
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">see</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="https://opentelemetry.io/docs/specs/semconv/general/naming/">https://opentelemetry.io/docs/specs/semconv/general/naming/</a></span>
+                                                                
+                                    </dd>
+                        </dl>
 
     
     
@@ -144,75 +163,45 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_READ">ATTR_BYTES_READ</a>
-    <span>
-        &nbsp;: string&nbsp;= &#039;bytes.read&#039;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_TOTAL_READ">ATTR_BYTES_TOTAL_READ</a>
     <span>
-        &nbsp;: string&nbsp;= &#039;bytes.total_read&#039;                            </span>
+        &nbsp;: string&nbsp;= &#039;flow.filesystem.bytes.total_read&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_TOTAL_WRITTEN">ATTR_BYTES_TOTAL_WRITTEN</a>
     <span>
-        &nbsp;: string&nbsp;= &#039;bytes.total_written&#039;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_WRITTEN">ATTR_BYTES_WRITTEN</a>
-    <span>
-        &nbsp;: string&nbsp;= &#039;bytes.written&#039;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_ERROR_TYPE">ATTR_ERROR_TYPE</a>
-    <span>
-        &nbsp;: string&nbsp;= &#039;error.type&#039;                            </span>
+        &nbsp;: string&nbsp;= &#039;flow.filesystem.bytes.total_written&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_FILESYSTEM_OPERATION">ATTR_FILESYSTEM_OPERATION</a>
     <span>
-        &nbsp;: string&nbsp;= &#039;filesystem.operation&#039;                            </span>
+        &nbsp;: string&nbsp;= &#039;flow.filesystem.operation&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_FILESYSTEM_PROTOCOL">ATTR_FILESYSTEM_PROTOCOL</a>
     <span>
-        &nbsp;: string&nbsp;= &#039;filesystem.protocol&#039;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_PATH_FROM">ATTR_PATH_FROM</a>
-    <span>
-        &nbsp;: string&nbsp;= &#039;path.from&#039;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_PATH_IS_PATTERN">ATTR_PATH_IS_PATTERN</a>
-    <span>
-        &nbsp;: string&nbsp;= &#039;path.is_pattern&#039;                            </span>
+        &nbsp;: string&nbsp;= &#039;flow.filesystem.protocol&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_PATH_TO">ATTR_PATH_TO</a>
     <span>
-        &nbsp;: string&nbsp;= &#039;path.to&#039;                            </span>
+        &nbsp;: string&nbsp;= &#039;flow.filesystem.path.to&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_PATH_URI">ATTR_PATH_URI</a>
     <span>
-        &nbsp;: string&nbsp;= &#039;path.uri&#039;                            </span>
+        &nbsp;: string&nbsp;= &#039;flow.filesystem.path.uri&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_STREAM_TYPE">ATTR_STREAM_TYPE</a>
     <span>
-        &nbsp;: string&nbsp;= &#039;stream.type&#039;                            </span>
+        &nbsp;: string&nbsp;= &#039;flow.filesystem.stream.type&#039;                            </span>
 </dt>
 
     </dl>
@@ -230,36 +219,6 @@
 
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_ATTR_BYTES_READ">
-        ATTR_BYTES_READ
-        <a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_READ" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-filesystemtelemetryattributes.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php">FilesystemTelemetryAttributes.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">9</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">ATTR_BYTES_READ</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;bytes.read&#039;</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_ATTR_BYTES_TOTAL_READ">
         ATTR_BYTES_TOTAL_READ
         <a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_TOTAL_READ" class="headerlink"><i class="fas fa-link"></i></a>
@@ -269,7 +228,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-filesystemtelemetryattributes.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php">FilesystemTelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -279,7 +238,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ATTR_BYTES_TOTAL_READ</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;bytes.total_read&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.filesystem.bytes.total_read&#039;</span>
 </code>
 
 
@@ -299,7 +258,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-filesystemtelemetryattributes.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php">FilesystemTelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -309,67 +268,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ATTR_BYTES_TOTAL_WRITTEN</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;bytes.total_written&#039;</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_ATTR_BYTES_WRITTEN">
-        ATTR_BYTES_WRITTEN
-        <a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_WRITTEN" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-filesystemtelemetryattributes.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php">FilesystemTelemetryAttributes.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">15</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">ATTR_BYTES_WRITTEN</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;bytes.written&#039;</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_ATTR_ERROR_TYPE">
-        ATTR_ERROR_TYPE
-        <a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_ERROR_TYPE" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-filesystemtelemetryattributes.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php">FilesystemTelemetryAttributes.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">17</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">ATTR_ERROR_TYPE</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;error.type&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.filesystem.bytes.total_written&#039;</span>
 </code>
 
 
@@ -389,7 +288,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-filesystemtelemetryattributes.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php">FilesystemTelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -399,7 +298,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ATTR_FILESYSTEM_OPERATION</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;filesystem.operation&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.filesystem.operation&#039;</span>
 </code>
 
 
@@ -419,7 +318,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-filesystemtelemetryattributes.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php">FilesystemTelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -429,67 +328,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ATTR_FILESYSTEM_PROTOCOL</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;filesystem.protocol&#039;</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_ATTR_PATH_FROM">
-        ATTR_PATH_FROM
-        <a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_PATH_FROM" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-filesystemtelemetryattributes.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php">FilesystemTelemetryAttributes.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">23</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">ATTR_PATH_FROM</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;path.from&#039;</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_ATTR_PATH_IS_PATTERN">
-        ATTR_PATH_IS_PATTERN
-        <a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_PATH_IS_PATTERN" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-filesystemtelemetryattributes.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php">FilesystemTelemetryAttributes.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">25</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">ATTR_PATH_IS_PATTERN</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;path.is_pattern&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.filesystem.protocol&#039;</span>
 </code>
 
 
@@ -509,7 +348,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-filesystemtelemetryattributes.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php">FilesystemTelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -519,7 +358,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ATTR_PATH_TO</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;path.to&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.filesystem.path.to&#039;</span>
 </code>
 
 
@@ -539,7 +378,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-filesystemtelemetryattributes.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php">FilesystemTelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -549,7 +388,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ATTR_PATH_URI</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;path.uri&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.filesystem.path.uri&#039;</span>
 </code>
 
 
@@ -569,7 +408,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-filesystemtelemetryattributes.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/FilesystemTelemetryAttributes.php">FilesystemTelemetryAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -579,7 +418,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ATTR_STREAM_TYPE</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;stream.type&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;flow.filesystem.stream.type&#039;</span>
 </code>
 
 
@@ -612,15 +451,10 @@
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_READ">ATTR_BYTES_READ</a></li>
                                                     <li class=""><a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_TOTAL_READ">ATTR_BYTES_TOTAL_READ</a></li>
                                                     <li class=""><a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_TOTAL_WRITTEN">ATTR_BYTES_TOTAL_WRITTEN</a></li>
-                                                    <li class=""><a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_BYTES_WRITTEN">ATTR_BYTES_WRITTEN</a></li>
-                                                    <li class=""><a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_ERROR_TYPE">ATTR_ERROR_TYPE</a></li>
                                                     <li class=""><a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_FILESYSTEM_OPERATION">ATTR_FILESYSTEM_OPERATION</a></li>
                                                     <li class=""><a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_FILESYSTEM_PROTOCOL">ATTR_FILESYSTEM_PROTOCOL</a></li>
-                                                    <li class=""><a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_PATH_FROM">ATTR_PATH_FROM</a></li>
-                                                    <li class=""><a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_PATH_IS_PATTERN">ATTR_PATH_IS_PATTERN</a></li>
                                                     <li class=""><a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_PATH_TO">ATTR_PATH_TO</a></li>
                                                     <li class=""><a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_PATH_URI">ATTR_PATH_URI</a></li>
                                                     <li class=""><a href="classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html#constant_ATTR_STREAM_TYPE">ATTR_STREAM_TYPE</a></li>
