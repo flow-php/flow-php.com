@@ -3486,6 +3486,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Exception-SchemaValidationException.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\SchemaValidationException\u003A\u003Acontext\u0028\u0029",
+            "name": "context",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-SchemaValidationException.html#method_context"
+        },                {
             "fqsen": "\\Flow\\ETL\\Exception\\SchemaValidationException\u003A\u003Agiven\u0028\u0029",
             "name": "given",
             "summary": "",
@@ -11981,30 +11986,85 @@ Search.appendIndex(
             "summary": "Rules\u0020of\u0020evolving\u0020schema\u0020matching\u003A\n\u002D\u0020if\u0020schemas\u0020are\u0020the\u0020same,\u0020return\u0020true\n\u002D\u0020if\u0020given\u0020schema\u0020has\u0020less\u0020fields\u0020than\u0020expected\u0020schema,\u0020return\u0020false\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020making\u0020a\u0020nullable\u0020field\u0020non\u002Dnullable,\u0020return\u0020false\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020making\u0020a\u0020non\u002Dnullable\u0020field\u0020nullable,\u0020return\u0020true\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020changing\u0020the\u0020type\u0020of\u0020a\u0020field,\u0020return\u0020false\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020adding\u0020a\u0020field,\u0020return\u0020true",
             "url": "classes/Flow-ETL-Schema-Validator-EvolvingValidator.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\EvolvingValidator\u003A\u003AisValid\u0028\u0029",
-            "name": "isValid",
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\EvolvingValidator\u003A\u003Avalidate\u0028\u0029",
+            "name": "validate",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Validator-EvolvingValidator.html#method_isValid"
+            "url": "classes/Flow-ETL-Schema-Validator-EvolvingValidator.html#method_validate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\MismatchedDefinition",
+            "name": "MismatchedDefinition",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Validator-MismatchedDefinition.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\MismatchedDefinition\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Validator-MismatchedDefinition.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\MismatchedDefinition\u003A\u003Aexpected\u0028\u0029",
+            "name": "expected",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Validator-MismatchedDefinition.html#method_expected"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\MismatchedDefinition\u003A\u003Agiven\u0028\u0029",
+            "name": "given",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Validator-MismatchedDefinition.html#method_given"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Validator\\SelectiveValidator",
             "name": "SelectiveValidator",
             "summary": "Matches\u0020only\u0020entries\u0020defined\u0020in\u0020the\u0020expected\u0020schema\u0020allowing\u0020for\u0020extra\u0020entries\u0020in\u0020given\u0020schema.",
             "url": "classes/Flow-ETL-Schema-Validator-SelectiveValidator.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\SelectiveValidator\u003A\u003AisValid\u0028\u0029",
-            "name": "isValid",
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\SelectiveValidator\u003A\u003Avalidate\u0028\u0029",
+            "name": "validate",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Validator-SelectiveValidator.html#method_isValid"
+            "url": "classes/Flow-ETL-Schema-Validator-SelectiveValidator.html#method_validate"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Validator\\StrictValidator",
             "name": "StrictValidator",
             "summary": "Matches\u0020all\u0020entries\u0020in\u0020the\u0020schema,\u0020if\u0020row\u0020comes\u0020with\u0020any\u0020extra\u0020entry\u0020it\u0020will\u0020fail\u0020validation.",
             "url": "classes/Flow-ETL-Schema-Validator-StrictValidator.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\StrictValidator\u003A\u003AisValid\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\StrictValidator\u003A\u003Avalidate\u0028\u0029",
+            "name": "validate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Validator-StrictValidator.html#method_validate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\ValidationContext",
+            "name": "ValidationContext",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Validator-ValidationContext.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\ValidationContext\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Validator-ValidationContext.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\ValidationContext\u003A\u003AisValid\u0028\u0029",
             "name": "isValid",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Validator-StrictValidator.html#method_isValid"
+            "url": "classes/Flow-ETL-Schema-Validator-ValidationContext.html#method_isValid"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\ValidationContext\u003A\u003AmismatchedDefinitions\u0028\u0029",
+            "name": "mismatchedDefinitions",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Validator-ValidationContext.html#method_mismatchedDefinitions"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\ValidationContext\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Validator-ValidationContext.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\ValidationContext\u003A\u003AmissingDefinitions\u0028\u0029",
+            "name": "missingDefinitions",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Validator-ValidationContext.html#method_missingDefinitions"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Validator\\ValidationContext\u003A\u003AunexpectedDefinitions\u0028\u0029",
+            "name": "unexpectedDefinitions",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Validator-ValidationContext.html#method_unexpectedDefinitions"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema",
             "name": "Schema",
@@ -12161,10 +12221,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-SchemaValidator.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\SchemaValidator\u003A\u003AisValid\u0028\u0029",
-            "name": "isValid",
+            "fqsen": "\\Flow\\ETL\\SchemaValidator\u003A\u003Avalidate\u0028\u0029",
+            "name": "validate",
             "summary": "",
-            "url": "classes/Flow-ETL-SchemaValidator.html#method_isValid"
+            "url": "classes/Flow-ETL-SchemaValidator.html#method_validate"
         },                {
             "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\Bucket",
             "name": "Bucket",
