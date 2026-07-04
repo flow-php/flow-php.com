@@ -185,7 +185,7 @@ returns the same instance.</p>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Register a shutdown function to automatically shutdown telemetry.</dd>
+<dd>Register this instance for automatic shutdown at process end.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Telemetry-Telemetry.html#method_shutdown">shutdown()</a>
@@ -520,7 +520,7 @@ Calling this method with the same parameters returns the same Meter instance.</p
 
     </aside>
 
-        <p class="phpdocumentor-summary">Register a shutdown function to automatically shutdown telemetry.</p>
+        <p class="phpdocumentor-summary">Register this instance for automatic shutdown at process end.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -530,8 +530,8 @@ Calling this method with the same parameters returns the same Meter instance.</p
         </div>
     
         <section class="phpdocumentor-description"><p>This ensures all pending spans, metrics, and logs are exported
-when the PHP script terminates. The shutdown function will call
-shutdown() which flushes and releases all provider resources.</p>
+when the PHP process terminates - including exit() calls, fatal
+errors, and uncaught exceptions.</p>
 </section>
 
     

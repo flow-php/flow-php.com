@@ -128,12 +128,20 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-console-consoleflushsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php">ConsoleFlushSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">Drains buffered telemetry when a console command terminates.</p>
 
+
+    <section class="phpdocumentor-description"><p>Terminate is only a flush point - it never shuts telemetry down, because
+the terminating command is not necessarily the last work of the process:
+it may be a command nested inside another command via Application::run(),
+or a message handler's sub-command inside a long-running messenger worker.
+Transport shutdown happens once, at real process end, through the shutdown
+function registered by Telemetry::registerShutdownFunction().</p>
+</section>
 
 
 
@@ -207,14 +215,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-console-consoleflushsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php">ConsoleFlushSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Telemetry">Telemetry</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$telemetry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Runtime-RuntimeModeResolver.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Runtime\RuntimeModeResolver">RuntimeModeResolver</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$runtimeMode</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">iterable&lt;string|int, <abbr title="\Flow\Bridge\Telemetry\OTLP\Transport\AsyncCurlTransport">AsyncCurlTransport</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$asyncCurlTransports</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Telemetry">Telemetry</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$telemetry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">iterable&lt;string|int, <abbr title="\Flow\Bridge\Telemetry\OTLP\Transport\AsyncCurlTransport">AsyncCurlTransport</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$asyncCurlTransports</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -225,13 +233,6 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$telemetry</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Telemetry\Telemetry">Telemetry</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$runtimeMode</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Runtime-RuntimeModeResolver.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Runtime\RuntimeModeResolver">RuntimeModeResolver</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -265,7 +266,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-console-consoleflushsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php">ConsoleFlushSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -303,7 +304,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-console-consoleflushsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php">ConsoleFlushSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 

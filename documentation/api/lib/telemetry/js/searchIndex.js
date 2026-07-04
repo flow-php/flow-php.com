@@ -4476,6 +4476,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-SemConvMetrics.html#constant_MESSAGING_PROCESS_DURATION"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Shutdown\\ShutdownHandler",
+            "name": "ShutdownHandler",
+            "summary": "Registers\u0020Telemetry\u0020instances\u0020for\u0020shutdown\u0020at\u0020process\u0020end.",
+            "url": "classes/Flow-Telemetry-Shutdown-ShutdownHandler.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Shutdown\\ShutdownHandler\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Shutdown-ShutdownHandler.html#method_register"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Shutdown\\ShutdownHandler\u003A\u003Ainvoke\u0028\u0029",
+            "name": "invoke",
+            "summary": "Shut\u0020down\u0020all\u0020still\u002Dreferenced\u0020Telemetry\u0020instances,\u0020most\u0020recent\u0020first.",
+            "url": "classes/Flow-Telemetry-Shutdown-ShutdownHandler.html#method_invoke"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Signal\\Signals",
             "name": "Signals",
             "summary": "A\u0020typed\u0020collection\u0020of\u0020telemetry\u0020items\u0020for\u0020one\u0020signal\u0020type.",
@@ -4573,7 +4588,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Telemetry\u003A\u003AregisterShutdownFunction\u0028\u0029",
             "name": "registerShutdownFunction",
-            "summary": "Register\u0020a\u0020shutdown\u0020function\u0020to\u0020automatically\u0020shutdown\u0020telemetry.",
+            "summary": "Register\u0020this\u0020instance\u0020for\u0020automatic\u0020shutdown\u0020at\u0020process\u0020end.",
             "url": "classes/Flow-Telemetry-Telemetry.html#method_registerShutdownFunction"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Telemetry\u003A\u003Ashutdown\u0028\u0029",
@@ -5675,6 +5690,11 @@ Search.appendIndex(
             "name": "Resource",
             "summary": "",
             "url": "namespaces/flow-telemetry-resource.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Shutdown",
+            "name": "Shutdown",
+            "summary": "",
+            "url": "namespaces/flow-telemetry-shutdown.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Signal",
             "name": "Signal",
