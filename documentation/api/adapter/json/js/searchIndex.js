@@ -21,6 +21,16 @@ Search.appendIndex(
             "summary": "Used\u0020to\u0020write\u0020to\u0020a\u0020JSON\u0020lines\u0020https\u003A\/\/jsonlines.org\/\u0020formatted\u0020file.",
             "url": "namespaces/flow-etl-adapter-json.html#function_to_json_lines"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\schema_from_json_schema\u0028\u0029",
+            "name": "schema_from_json_schema",
+            "summary": "Convert\u0020a\u0020JSON\u0020Schema\u0020\u0028https\u003A\/\/json\u002Dschema.org\u0029\u0020document\u0020into\u0020a\u0020Flow\u0020Schema.",
+            "url": "namespaces/flow-etl-adapter-json.html#function_schema_from_json_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\schema_to_json_schema\u0028\u0029",
+            "name": "schema_to_json_schema",
+            "summary": "Convert\u0020a\u0020Flow\u0020Schema\u0020into\u0020a\u0020JSON\u0020Schema\u0020\u0028https\u003A\/\/json\u002Dschema.org,\u0020draft\u00202020\u002D12\u0029\u0020document.",
+            "url": "namespaces/flow-etl-adapter-json.html#function_schema_to_json_schema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonLinesLoader",
             "name": "JsonLinesLoader",
             "summary": "",
@@ -166,6 +176,181 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonLinesExtractor.html#method_withSchema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\Exception\\CircularReferenceException",
+            "name": "CircularReferenceException",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-Exception-CircularReferenceException.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\Exception\\CircularReferenceException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-Exception-CircularReferenceException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\Exception\\UnresolvableReferenceException",
+            "name": "UnresolvableReferenceException",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-Exception-UnresolvableReferenceException.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\Exception\\UnresolvableReferenceException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-Exception-UnresolvableReferenceException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\Exception\\UnsupportedKeywordException",
+            "name": "UnsupportedKeywordException",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-Exception-UnsupportedKeywordException.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\Exception\\UnsupportedKeywordException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-Exception-UnsupportedKeywordException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata",
+            "name": "JsonSchemaMetadata",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003Akeyword\u0028\u0029",
+            "name": "keyword",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#method_keyword"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003AANY",
+            "name": "ANY",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_ANY"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003ADEFAULT",
+            "name": "DEFAULT",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_DEFAULT"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003ADESCRIPTION",
+            "name": "DESCRIPTION",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_DESCRIPTION"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003AENUM",
+            "name": "ENUM",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_ENUM"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003AEXAMPLES",
+            "name": "EXAMPLES",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_EXAMPLES"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003AEXCLUSIVE_MAXIMUM",
+            "name": "EXCLUSIVE_MAXIMUM",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_EXCLUSIVE_MAXIMUM"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003AEXCLUSIVE_MINIMUM",
+            "name": "EXCLUSIVE_MINIMUM",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_EXCLUSIVE_MINIMUM"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003AFORMAT",
+            "name": "FORMAT",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_FORMAT"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003AMAXIMUM",
+            "name": "MAXIMUM",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_MAXIMUM"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003AMAX_ITEMS",
+            "name": "MAX_ITEMS",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_MAX_ITEMS"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003AMAX_LENGTH",
+            "name": "MAX_LENGTH",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_MAX_LENGTH"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003AMINIMUM",
+            "name": "MINIMUM",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_MINIMUM"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003AMIN_ITEMS",
+            "name": "MIN_ITEMS",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_MIN_ITEMS"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003AMIN_LENGTH",
+            "name": "MIN_LENGTH",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_MIN_LENGTH"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003APATTERN",
+            "name": "PATTERN",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_PATTERN"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003APREFIX_ITEMS",
+            "name": "PREFIX_ITEMS",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_PREFIX_ITEMS"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\JsonSchemaMetadata\u003A\u003ATITLE",
+            "name": "TITLE",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-JsonSchemaMetadata.html#enumcase_TITLE"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\ReferenceResolver",
+            "name": "ReferenceResolver",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-ReferenceResolver.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\ReferenceResolver\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-ReferenceResolver.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\ReferenceResolver\u003A\u003Aload\u0028\u0029",
+            "name": "load",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-ReferenceResolver.html#method_load"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\ReferenceResolver\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-ReferenceResolver.html#method_resolve"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\ResolvedReference",
+            "name": "ResolvedReference",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-ResolvedReference.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\ResolvedReference\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-ResolvedReference.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\ResolvedReference\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-ResolvedReference.html#property_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\ResolvedReference\u003A\u003A\u0024document",
+            "name": "document",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-ResolvedReference.html#property_document"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\ResolvedReference\u003A\u003A\u0024baseUri",
+            "name": "baseUri",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-ResolvedReference.html#property_baseUri"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\ResolvedReference\u003A\u003A\u0024identity",
+            "name": "identity",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-ResolvedReference.html#property_identity"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\RowsNormalizer\\EntryNormalizer",
             "name": "EntryNormalizer",
             "summary": "",
@@ -196,6 +381,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-JSON-RowsNormalizer.html#method_normalize"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\SchemaConverter",
+            "name": "SchemaConverter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-SchemaConverter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\SchemaConverter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-SchemaConverter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\SchemaConverter\u003A\u003AtoFlow\u0028\u0029",
+            "name": "toFlow",
+            "summary": "Convert\u0020a\u0020JSON\u0020Schema\u0020\u0028https\u003A\/\/json\u002Dschema.org\u0029\u0020document\u0020into\u0020a\u0020Flow\u0020Schema.",
+            "url": "classes/Flow-ETL-Adapter-JSON-SchemaConverter.html#method_toFlow"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\SchemaConverter\u003A\u003AtoJsonSchema\u0028\u0029",
+            "name": "toJsonSchema",
+            "summary": "Convert\u0020a\u0020Flow\u0020Schema\u0020into\u0020a\u0020JSON\u0020Schema\u0020\u0028https\u003A\/\/json\u002Dschema.org,\u0020draft\u00202020\u002D12\u0029\u0020document.",
+            "url": "classes/Flow-ETL-Adapter-JSON-SchemaConverter.html#method_toJsonSchema"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -225,6 +430,16 @@ Search.appendIndex(
             "name": "JSONMachine",
             "summary": "",
             "url": "namespaces/flow-etl-adapter-json-jsonmachine.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-json-jsonschema-exception.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema",
+            "name": "JsonSchema",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-json-jsonschema.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\RowsNormalizer",
             "name": "RowsNormalizer",
