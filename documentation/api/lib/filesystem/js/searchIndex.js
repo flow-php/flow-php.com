@@ -776,6 +776,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-Filter-OnlyFiles.html#method_accept"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Filter\\PlaceholderPartitions",
+            "name": "PlaceholderPartitions",
+            "summary": "Attaches\u0020partitions\u0020extracted\u0020from\u0020partition\u0020placeholders\u0020in\u0020the\u0020pattern\u0020path\u0020to\u0020the\u0020file\u0020status\nbefore\u0020delegating\u0020to\u0020the\u0020decorated\u0020filter.\u0020This\u0020way\u0020filters\u0020like\u0020partition\u0020pruning\u0020can\u0020see\npartitions\u0020that\u0020are\u0020part\u0020of\u0020the\u0020file\u0020name\u0020instead\u0020of\u0020name\u003Dvalue\u0020directories.",
+            "url": "classes/Flow-Filesystem-Path-Filter-PlaceholderPartitions.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Filter\\PlaceholderPartitions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Filter-PlaceholderPartitions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Filter\\PlaceholderPartitions\u003A\u003Aaccept\u0028\u0029",
+            "name": "accept",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Filter-PlaceholderPartitions.html#method_accept"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\Filter",
             "name": "Filter",
             "summary": "",
@@ -926,10 +941,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-UnixPath.html#method_extension"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\UnixPath\u003A\u003AextractPlaceholderPartitions\u0028\u0029",
+            "name": "extractPlaceholderPartitions",
+            "summary": "Extracts\u0020partitions\u0020from\u0020a\u0020concrete\u0020path\u0020by\u0020matching\u0020it\u0020against\u0020partition\u0020placeholders\u0020in\u0020this\u0020path.",
+            "url": "classes/Flow-Filesystem-Path-UnixPath.html#method_extractPlaceholderPartitions"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\UnixPath\u003A\u003Afilename\u0028\u0029",
             "name": "filename",
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-UnixPath.html#method_filename"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\UnixPath\u003A\u003Aglob\u0028\u0029",
+            "name": "glob",
+            "summary": "Path\u0020with\u0020partition\u0020placeholders\u0020replaced\u0020by\u0020glob\u0020wildcards,\u0020suitable\u0020for\u0020glob\u002Dbased\u0020listing.",
+            "url": "classes/Flow-Filesystem-Path-UnixPath.html#method_glob"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\UnixPath\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
@@ -955,6 +980,11 @@ Search.appendIndex(
             "name": "parentDirectory",
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-UnixPath.html#method_parentDirectory"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\UnixPath\u003A\u003ApartitionPlaceholders\u0028\u0029",
+            "name": "partitionPlaceholders",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-UnixPath.html#method_partitionPlaceholders"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\UnixPath\u003A\u003Apartitions\u0028\u0029",
             "name": "partitions",
@@ -1056,10 +1086,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-WindowsPath.html#method_extension"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\WindowsPath\u003A\u003AextractPlaceholderPartitions\u0028\u0029",
+            "name": "extractPlaceholderPartitions",
+            "summary": "Extracts\u0020partitions\u0020from\u0020a\u0020concrete\u0020path\u0020by\u0020matching\u0020it\u0020against\u0020partition\u0020placeholders\u0020in\u0020this\u0020path.",
+            "url": "classes/Flow-Filesystem-Path-WindowsPath.html#method_extractPlaceholderPartitions"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\WindowsPath\u003A\u003Afilename\u0028\u0029",
             "name": "filename",
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-WindowsPath.html#method_filename"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\WindowsPath\u003A\u003Aglob\u0028\u0029",
+            "name": "glob",
+            "summary": "Path\u0020with\u0020partition\u0020placeholders\u0020replaced\u0020by\u0020glob\u0020wildcards,\u0020suitable\u0020for\u0020glob\u002Dbased\u0020listing.",
+            "url": "classes/Flow-Filesystem-Path-WindowsPath.html#method_glob"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\WindowsPath\u003A\u003AisEqual\u0028\u0029",
             "name": "isEqual",
@@ -1085,6 +1125,11 @@ Search.appendIndex(
             "name": "parentDirectory",
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-WindowsPath.html#method_parentDirectory"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\WindowsPath\u003A\u003ApartitionPlaceholders\u0028\u0029",
+            "name": "partitionPlaceholders",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-WindowsPath.html#method_partitionPlaceholders"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\WindowsPath\u003A\u003Apartitions\u0028\u0029",
             "name": "partitions",
@@ -1196,6 +1241,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Path.html#method_extension"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003AextractPlaceholderPartitions\u0028\u0029",
+            "name": "extractPlaceholderPartitions",
+            "summary": "Extracts\u0020partitions\u0020from\u0020a\u0020concrete\u0020path\u0020by\u0020matching\u0020it\u0020against\u0020partition\u0020placeholders\u0020in\u0020this\u0020path.",
+            "url": "classes/Flow-Filesystem-Path.html#method_extractPlaceholderPartitions"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003Afilename\u0028\u0029",
             "name": "filename",
             "summary": "",
@@ -1205,6 +1255,11 @@ Search.appendIndex(
             "name": "getOption",
             "summary": "",
             "url": "classes/Flow-Filesystem-Path.html#method_getOption"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003Aglob\u0028\u0029",
+            "name": "glob",
+            "summary": "Path\u0020with\u0020partition\u0020placeholders\u0020replaced\u0020by\u0020glob\u0020wildcards,\u0020suitable\u0020for\u0020glob\u002Dbased\u0020listing.",
+            "url": "classes/Flow-Filesystem-Path.html#method_glob"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003AhasOption\u0028\u0029",
             "name": "hasOption",
@@ -1240,6 +1295,11 @@ Search.appendIndex(
             "name": "parentDirectory",
             "summary": "",
             "url": "classes/Flow-Filesystem-Path.html#method_parentDirectory"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003ApartitionPlaceholders\u0028\u0029",
+            "name": "partitionPlaceholders",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path.html#method_partitionPlaceholders"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003Apartitions\u0028\u0029",
             "name": "partitions",
@@ -1305,6 +1365,11 @@ Search.appendIndex(
             "name": "uri",
             "summary": "Difference\u0020between\u0020Path\u003A\u003Auri\u0020and\u0020Path\u003A\u003Apath\u0020is\u0020that\u0020Path\u003A\u003Auri\u0020returns\u0020path\u0020with\u0020scheme\u0020and\u0020Path\u003A\u003Apath\u0020returns\u0020path\u0020without\u0020scheme.",
             "url": "classes/Flow-Filesystem-Path.html#method_uri"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003AwithPartitions\u0028\u0029",
+            "name": "withPartitions",
+            "summary": "Attach\u0020explicit\u0020partitions\u0020to\u0020the\u0020path,\u0020merged\u0020with\u0020partitions\u0020parsed\u0020from\u0020the\u0020path\u0020itself.",
+            "url": "classes/Flow-Filesystem-Path.html#method_withPartitions"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Paths",
             "name": "Paths",

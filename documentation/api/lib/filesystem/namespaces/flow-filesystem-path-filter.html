@@ -113,7 +113,9 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Filesystem-Path-Filter-Filters.html"><abbr title="\Flow\Filesystem\Path\Filter\Filters">Filters</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Filesystem-Path-Filter-KeepAll.html"><abbr title="\Flow\Filesystem\Path\Filter\KeepAll">KeepAll</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Filesystem-Path-Filter-OnlyFiles.html"><abbr title="\Flow\Filesystem\Path\Filter\OnlyFiles">OnlyFiles</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Filesystem-Path-Filter-Filters.html"><abbr title="\Flow\Filesystem\Path\Filter\Filters">Filters</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Filesystem-Path-Filter-KeepAll.html"><abbr title="\Flow\Filesystem\Path\Filter\KeepAll">KeepAll</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Filesystem-Path-Filter-OnlyFiles.html"><abbr title="\Flow\Filesystem\Path\Filter\OnlyFiles">OnlyFiles</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Filesystem-Path-Filter-PlaceholderPartitions.html"><abbr title="\Flow\Filesystem\Path\Filter\PlaceholderPartitions">PlaceholderPartitions</abbr></a></dt><dd>Attaches partitions extracted from partition placeholders in the pattern path to the file status
+before delegating to the decorated filter. This way filters like partition pruning can see
+partitions that are part of the file name instead of name=value directories.</dd>    </dl>
 
 
 

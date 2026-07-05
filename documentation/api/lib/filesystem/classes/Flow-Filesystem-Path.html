@@ -190,6 +190,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Path.html#method_extractPlaceholderPartitions">extractPlaceholderPartitions()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-Filesystem-Partitions.html"><abbr title="\Flow\Filesystem\Partitions">Partitions</abbr></a>    </span>
+</dt>
+<dd>Extracts partitions from a concrete path by matching it against partition placeholders in this path.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-Path.html#method_filename">filename()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -206,6 +213,13 @@
     <span>
                                 &nbsp;: string|int|bool|float|<abbr title="\UnitEnum">UnitEnum</abbr>|null    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Path.html#method_glob">glob()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Path with partition placeholders replaced by glob wildcards, suitable for glob-based listing.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-Path.html#method_hasOption">hasOption()</a>
@@ -247,6 +261,12 @@
     <a class="" href="classes/Flow-Filesystem-Path.html#method_parentDirectory">parentDirectory()</a>
     <span>
                                 &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Path.html#method_partitionPlaceholders">partitionPlaceholders()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -336,6 +356,13 @@
 </dt>
 <dd>Difference between Path::uri and Path::path is that Path::uri returns path with scheme and Path::path returns path without scheme.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Path.html#method_withPartitions">withPartitions()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Attach explicit partitions to the path, merged with partitions parsed from the path itself.</dd>
+
     </dl>
 
 
@@ -371,7 +398,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Path-WindowsPath.html"><abbr title="\Flow\Filesystem\Path\WindowsPath">WindowsPath</abbr></a>|<a href="classes/Flow-Filesystem-Path-UnixPath.html"><abbr title="\Flow\Filesystem\Path\UnixPath">UnixPath</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$implementation</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Path-WindowsPath.html"><abbr title="\Flow\Filesystem\Path\WindowsPath">WindowsPath</abbr></a>|<a href="classes/Flow-Filesystem-Path-UnixPath.html"><abbr title="\Flow\Filesystem\Path\UnixPath">UnixPath</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$implementation</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Partitions.html"><abbr title="\Flow\Filesystem\Partitions">Partitions</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partitions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Filesystem-Partitions.html"><abbr title="\Flow\Filesystem\Partitions">Partitions</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -383,6 +410,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$implementation</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Filesystem-Path-WindowsPath.html"><abbr title="\Flow\Filesystem\Path\WindowsPath">WindowsPath</abbr></a>|<a href="classes/Flow-Filesystem-Path-UnixPath.html"><abbr title="\Flow\Filesystem\Path\UnixPath">UnixPath</abbr></a></span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$partitions</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Filesystem-Partitions.html"><abbr title="\Flow\Filesystem\Partitions">Partitions</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Filesystem-Partitions.html"><abbr title="\Flow\Filesystem\Partitions">Partitions</abbr></a>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -408,7 +442,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -463,7 +497,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -501,7 +535,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -549,7 +583,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -587,7 +621,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -635,7 +669,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -665,6 +699,55 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_extractPlaceholderPartitions">
+        extractPlaceholderPartitions()
+        <a href="classes/Flow-Filesystem-Path.html#method_extractPlaceholderPartitions" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">82</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Extracts partitions from a concrete path by matching it against partition placeholders in this path.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">extractPlaceholderPartitions</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">self&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Partitions.html"><abbr title="\Flow\Filesystem\Partitions">Partitions</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">self</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-Partitions.html"><abbr title="\Flow\Filesystem\Partitions">Partitions</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_filename">
         filename()
         <a href="classes/Flow-Filesystem-Path.html#method_filename" class="headerlink"><i class="fas fa-link"></i></a>
@@ -673,7 +756,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -711,7 +794,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -766,7 +849,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -813,6 +896,45 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_glob">
+        glob()
+        <a href="classes/Flow-Filesystem-Path.html#method_glob" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">106</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Path with partition placeholders replaced by glob wildcards, suitable for glob-based listing.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">glob</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_hasOption">
         hasOption()
         <a href="classes/Flow-Filesystem-Path.html#method_hasOption" class="headerlink"><i class="fas fa-link"></i></a>
@@ -821,7 +943,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -869,7 +991,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -917,7 +1039,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -955,7 +1077,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -993,7 +1115,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">135</span>
 
     </aside>
 
@@ -1041,7 +1163,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
@@ -1079,7 +1201,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -1109,6 +1231,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_partitionPlaceholders">
+        partitionPlaceholders()
+        <a href="classes/Flow-Filesystem-Path.html#method_partitionPlaceholders" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">160</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">partitionPlaceholders</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_partitions">
         partitions()
         <a href="classes/Flow-Filesystem-Path.html#method_partitions" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1117,7 +1277,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -1155,7 +1315,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -1193,7 +1353,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">152</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -1232,7 +1392,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 
     </aside>
 
@@ -1270,7 +1430,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -1308,7 +1468,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -1378,7 +1538,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">200</span>
 
     </aside>
 
@@ -1416,7 +1576,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
     </aside>
 
@@ -1464,7 +1624,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">210</span>
 
     </aside>
 
@@ -1519,7 +1679,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -1574,7 +1734,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">193</span>
+    <span class="phpdocumentor-element-found-in__line">226</span>
 
     </aside>
 
@@ -1622,7 +1782,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">200</span>
+    <span class="phpdocumentor-element-found-in__line">233</span>
 
     </aside>
 
@@ -1660,7 +1820,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">205</span>
+    <span class="phpdocumentor-element-found-in__line">238</span>
 
     </aside>
 
@@ -1708,7 +1868,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">213</span>
+    <span class="phpdocumentor-element-found-in__line">246</span>
 
     </aside>
 
@@ -1730,6 +1890,57 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withPartitions">
+        withPartitions()
+        <a href="classes/Flow-Filesystem-Path.html#method_withPartitions" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Path.php"><a href="files/src-lib-filesystem-src-flow-filesystem-path.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Path.php">Path.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">255</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Attach explicit partitions to the path, merged with partitions parsed from the path itself.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withPartitions</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Partitions.html"><abbr title="\Flow\Filesystem\Partitions">Partitions</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partitions</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Used to carry partitions extracted from partition placeholders on concrete, listed paths.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$partitions</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Filesystem-Partitions.html"><abbr title="\Flow\Filesystem\Partitions">Partitions</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
             </section>
 
 </article>
@@ -1762,9 +1973,11 @@
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_context">context()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_endsWith">endsWith()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_extension">extension()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Path.html#method_extractPlaceholderPartitions">extractPlaceholderPartitions()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_filename">filename()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_from">from()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_getOption">getOption()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Path.html#method_glob">glob()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_hasOption">hasOption()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_isEqual">isEqual()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_isLocal">isLocal()</a></li>
@@ -1772,6 +1985,7 @@
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_matches">matches()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_options">options()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_parentDirectory">parentDirectory()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Path.html#method_partitionPlaceholders">partitionPlaceholders()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_partitions">partitions()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_partitionsPaths">partitionsPaths()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_path">path()</a></li>
@@ -1786,6 +2000,7 @@
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_staticPart">staticPart()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_suffix">suffix()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Path.html#method_uri">uri()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Path.html#method_withPartitions">withPartitions()</a></li>
                                     </ul>
             </li>
                     </ul>
