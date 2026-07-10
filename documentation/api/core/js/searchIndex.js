@@ -5106,6 +5106,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-DOMElementAttributeValue.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\DOMElementNamespaceValue",
+            "name": "DOMElementNamespaceValue",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-DOMElementNamespaceValue.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\DOMElementNamespaceValue\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-DOMElementNamespaceValue.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\DOMElementNamespaceValue\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-DOMElementNamespaceValue.html#method_eval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementNextSibling",
             "name": "DOMElementNextSibling",
             "summary": "",
@@ -6490,6 +6505,11 @@ Search.appendIndex(
             "name": "domElementAttributeValue",
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_domElementAttributeValue"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AdomElementNamespace\u0028\u0029",
+            "name": "domElementNamespace",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_domElementNamespace"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AdomElementNextSibling\u0028\u0029",
             "name": "domElementNextSibling",

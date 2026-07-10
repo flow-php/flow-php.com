@@ -72,7 +72,7 @@
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dsl.js": {
-        "path": "\/assets\/codemirror\/completions\/dsl-e045c50a8d82726d32e7a8736370baa4.js",
+        "path": "\/assets\/codemirror\/completions\/dsl-c633fb28ea78c672017828f890a4298b.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dataframe.js": {
@@ -80,7 +80,7 @@
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/scalarfunctionchain.js": {
-        "path": "\/assets\/codemirror\/completions\/scalarfunctionchain-6c073f61e4374617d4bc3be58cbf2e73.js",
+        "path": "\/assets\/codemirror\/completions\/scalarfunctionchain-a76dedf493deb7b5051a2b2b6a42c852.js",
         "type": "js"
     },
     "\/assets\/models\/Violation.js": {
