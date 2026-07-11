@@ -1509,6 +1509,7 @@
 <li><a href="#19-flow-phpetl---cache-stores-only-rows-and-gained-read-cache-indexes-are-stored-as-rows">19) flow-php/etl - Cache stores only Rows and gained read(); cache indexes are stored as Rows</a></li>
 <li><a href="#20-flow-phpetl---cache-and-serialization-use-the-floe-floe-binary-format-datetime-subclasses-rejected">20) flow-php/etl - cache and serialization use the Floe (.floe) binary format; datetime subclasses rejected</a></li>
 <li><a href="#21-flow-phpsymfony-telemetry-bundle---httpkernelspansubscriber-takes-a">21) flow-php/symfony-telemetry-bundle - HttpKernelSpanSubscriber takes a</a></li>
+<li><a href="#22-flow-phpetl---sort-algorithm-is-an-explicit-choice-external-sort-is-the-default">22) flow-php/etl - sort algorithm is an explicit choice; external sort is the default</a></li>
 </ul>
 </li>
 <li><a href="#upgrading-from-040x-to-041x">Upgrading from 0.40.x to 0.41.x</a>
@@ -2482,6 +2483,67 @@ implementation is <code>yield $this-&gt;get($key);</code>.</p>
 </tbody>
 </table>
 <p>Applies only to direct construction; services wired by the bundle need no change.</p>
+<h3><a id="22-flow-phpetl---sort-algorithm-is-an-explicit-choice-external-sort-is-the-default" href="#22-flow-phpetl---sort-algorithm-is-an-explicit-choice-external-sort-is-the-default" class="mr-2" aria-hidden="true" title="Permalink">#</a>22) <code>flow-php/etl</code> - sort algorithm is an explicit choice; external sort is the default</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SortAlgorithms::MEMORY_FALLBACK_EXTERNAL_SORT</code> (default)</td>
+<td>removed; default is <code>SortAlgorithms::EXTERNAL_SORT</code></td>
+</tr>
+<tr>
+<td><code>SortAlgorithms::SQLITE_SORT</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>SortAlgorithms::useMemory()</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>ConfigBuilder::sortMemoryLimit(Unit $unit)</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>SortConfigBuilder::sortMemoryLimit(Unit $unit)</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>SortConfig::$memoryLimit</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>SortConfig::SORT_MAX_MEMORY_ENV</code> / <code>FLOW_SORT_MAX_MEMORY</code> env</td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>new MemorySort(Unit $maximumMemory)</code></td>
+<td><code>new MemorySort()</code></td>
+</tr>
+<tr>
+<td><code>MemorySort</code> throwing <code>Flow\ETL\Exception\OutOfMemoryException</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>new ExternalSort($cache, $bucketsCount)</code></td>
+<td><code>new ExternalSort($cache, $bucketsCount, $bucketSize)</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td><code>ConfigBuilder::externalSortBucketSize(int)</code> (default <code>10000</code>)</td>
+</tr>
+</tbody>
+</table>
+<p>To sort in memory, opt in explicitly:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">$config = config_builder();
+$config-&gt;sort-&gt;algorithm(SortAlgorithms::MEMORY_SORT);
+
+data_frame($config)-&gt;read(...)-&gt;sortBy(ref('id'))-&gt;run();
+</code></pre>
 <hr />
 <h2><a id="upgrading-from-040x-to-041x" href="#upgrading-from-040x-to-041x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.40.x to 0.41.x</h2>
 <h3><a id="1-removal-of-elasticsearch-adapter" href="#1-removal-of-elasticsearch-adapter" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Removal of Elasticsearch Adapter</h3>

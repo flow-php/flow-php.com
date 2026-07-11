@@ -811,6 +811,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Cache-CacheConfig.html#property_externalSortBatchSize"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfig\u003A\u003A\u0024externalSortBucketSize",
+            "name": "externalSortBucketSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Cache-CacheConfig.html#property_externalSortBucketSize"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfig\u003A\u003A\u0024filesystemMount",
             "name": "filesystemMount",
             "summary": "",
@@ -840,6 +845,11 @@ Search.appendIndex(
             "name": "externalSortBatchSize",
             "summary": "Rows\u0020per\u0020Floe\u0020crossing\u0020when\u0020the\u0020external\u0020sort\u0020spills\u0020and\u0020reads\u0020its\u0020buckets.",
             "url": "classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_externalSortBatchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfigBuilder\u003A\u003AexternalSortBucketSize\u0028\u0029",
+            "name": "externalSortBucketSize",
+            "summary": "Rows\u0020buffered\u0020and\u0020sorted\u0020in\u0020memory\u0020before\u0020the\u0020external\u0020sort\u0020spills\u0020them\u0020as\u0020one\u0020bucket.",
+            "url": "classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_externalSortBucketSize"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfigBuilder\u003A\u003AfilesystemMount\u0028\u0029",
             "name": "filesystemMount",
@@ -906,6 +916,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_externalSortBatchSize"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AexternalSortBucketSize\u0028\u0029",
+            "name": "externalSortBucketSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_externalSortBucketSize"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AexternalSortFilesystem\u0028\u0029",
             "name": "externalSortFilesystem",
             "summary": "",
@@ -946,11 +961,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_serializer"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AsortMemoryLimit\u0028\u0029",
-            "name": "sortMemoryLimit",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_sortMemoryLimit"
-        },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Aunmount\u0028\u0029",
             "name": "unmount",
             "summary": "",
@@ -976,20 +986,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Sort-SortConfig.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfig\u003A\u003ASORT_MAX_MEMORY_ENV",
-            "name": "SORT_MAX_MEMORY_ENV",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-SortConfig.html#constant_SORT_MAX_MEMORY_ENV"
-        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfig\u003A\u003A\u0024algorithm",
             "name": "algorithm",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Sort-SortConfig.html#property_algorithm"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfig\u003A\u003A\u0024memoryLimit",
-            "name": "memoryLimit",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-SortConfig.html#property_memoryLimit"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfig\u003A\u003A\u0024filesystemProtocol",
             "name": "filesystemProtocol",
@@ -1015,16 +1015,6 @@ Search.appendIndex(
             "name": "filesystemProtocol",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Sort-SortConfigBuilder.html#method_filesystemProtocol"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfigBuilder\u003A\u003AsortMemoryLimit\u0028\u0029",
-            "name": "sortMemoryLimit",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-SortConfigBuilder.html#method_sortMemoryLimit"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfigBuilder\u003A\u003ADEFAULT_SORT_MEMORY_PERCENTAGE",
-            "name": "DEFAULT_SORT_MEMORY_PERCENTAGE",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-SortConfigBuilder.html#constant_DEFAULT_SORT_MEMORY_PERCENTAGE"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes",
             "name": "TelemetryAttributes",
@@ -3510,11 +3500,6 @@ Search.appendIndex(
             "name": "offset",
             "summary": "",
             "url": "classes/Flow-ETL-Exception-OffsetReachedException.html#property_offset"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Exception\\OutOfMemoryException",
-            "name": "OutOfMemoryException",
-            "summary": "",
-            "url": "classes/Flow-ETL-Exception-OutOfMemoryException.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Exception\\RequiredPHPVersionException",
             "name": "RequiredPHPVersionException",
@@ -12531,6 +12516,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache.html#method_set"
         },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\ComparableBucketRow",
+            "name": "ComparableBucketRow",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort-ComparableBucketRow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\ComparableBucketRow\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort-ComparableBucketRow.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\ComparableBucketRow\u003A\u003A\u0024values",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort-ComparableBucketRow.html#property_values"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\ComparableBucketRow\u003A\u003A\u0024row",
+            "name": "row",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort-ComparableBucketRow.html#property_row"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\ComparableBucketRow\u003A\u003A\u0024bucketId",
+            "name": "bucketId",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort-ComparableBucketRow.html#property_bucketId"
+        },                {
             "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\RowsMinHeap",
             "name": "RowsMinHeap",
             "summary": "",
@@ -12545,11 +12555,6 @@ Search.appendIndex(
             "name": "__debugInfo",
             "summary": "",
             "url": "classes/Flow-ETL-Sort-ExternalSort-RowsMinHeap.html#method___debugInfo"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\RowsMinHeap\u003A\u003Aextract\u0028\u0029",
-            "name": "extract",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-RowsMinHeap.html#method_extract"
         },                {
             "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\RowsMinHeap\u003A\u003Ainsert\u0028\u0029",
             "name": "insert",
@@ -12576,11 +12581,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Sort-MemorySort.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\MemorySort\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-MemorySort.html#method___construct"
-        },                {
             "fqsen": "\\Flow\\ETL\\Sort\\MemorySort\u003A\u003AsortGenerator\u0028\u0029",
             "name": "sortGenerator",
             "summary": "",
@@ -12591,30 +12591,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Sort-SortAlgorithms.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\SortAlgorithms\u003A\u003AuseMemory\u0028\u0029",
-            "name": "useMemory",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-SortAlgorithms.html#method_useMemory"
-        },                {
             "fqsen": "\\Flow\\ETL\\Sort\\SortAlgorithms\u003A\u003AEXTERNAL_SORT",
             "name": "EXTERNAL_SORT",
             "summary": "",
             "url": "classes/Flow-ETL-Sort-SortAlgorithms.html#enumcase_EXTERNAL_SORT"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\SortAlgorithms\u003A\u003AMEMORY_FALLBACK_EXTERNAL_SORT",
-            "name": "MEMORY_FALLBACK_EXTERNAL_SORT",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-SortAlgorithms.html#enumcase_MEMORY_FALLBACK_EXTERNAL_SORT"
-        },                {
             "fqsen": "\\Flow\\ETL\\Sort\\SortAlgorithms\u003A\u003AMEMORY_SORT",
             "name": "MEMORY_SORT",
             "summary": "",
             "url": "classes/Flow-ETL-Sort-SortAlgorithms.html#enumcase_MEMORY_SORT"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\SortAlgorithms\u003A\u003ASQLITE_SORT",
-            "name": "SQLITE_SORT",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-SortAlgorithms.html#enumcase_SQLITE_SORT"
         },                {
             "fqsen": "\\Flow\\ETL\\String\\StringStyles",
             "name": "StringStyles",
@@ -14860,6 +14845,11 @@ Search.appendIndex(
             "name": "SchemaTracker",
             "summary": "Decides\u0020whether\u0020a\u0020row\u0020fits\u0020the\u0020current\u0020section\u0020plan\u0020or\u0020a\u0020new\u0020SCHEMA\u0020frame\u0020must\nbe\u0020emitted.",
             "url": "classes/Flow-Floe-SchemaTracker.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\SchemaTracker\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Floe-SchemaTracker.html#method___construct"
         },                {
             "fqsen": "\\Flow\\Floe\\SchemaTracker\u003A\u003Afits\u0028\u0029",
             "name": "fits",

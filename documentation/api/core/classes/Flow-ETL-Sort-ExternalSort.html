@@ -143,7 +143,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -220,14 +220,14 @@ https://web.archive.org/web/20150202022830/http://faculty.simpson.edu/lydia.sina
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Sort-ExternalSort-BucketsCache.html"><abbr title="\Flow\ETL\Sort\ExternalSort\BucketsCache">BucketsCache</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucketsCache</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucketsCount</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">10</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Sort-ExternalSort-BucketsCache.html"><abbr title="\Flow\ETL\Sort\ExternalSort\BucketsCache">BucketsCache</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucketsCache</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucketsCount</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">10</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucketSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">10000</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -248,7 +248,18 @@ https://web.archive.org/web/20150202022830/http://faculty.simpson.edu/lydia.sina
                  = <span class="phpdocumentor-argument-list__argument__default-value">10</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
-<li>Buckets counts defines how many rows are compared at time. Higher number can reduce IO but increase memory consumption</li>
+<li>how many buckets are merged at once; higher number reduces IO but increases memory consumption</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bucketSize</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int<1, max></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">10000</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><ul>
+<li>rows buffered and sorted in memory before they are spilled as one bucket</li>
 </ul>
 </section>
 
@@ -275,7 +286,7 @@ https://web.archive.org/web/20150202022830/http://faculty.simpson.edu/lydia.sina
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
