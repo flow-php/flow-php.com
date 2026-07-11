@@ -1191,6 +1191,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#method_analyze"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\u003A\u003Acalculator\u0028\u0029",
+            "name": "calculator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config.html#method_calculator"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\u003A\u003Aclock\u0028\u0029",
             "name": "clock",
             "summary": "",
@@ -4075,6 +4080,11 @@ Search.appendIndex(
             "name": "cache",
             "summary": "",
             "url": "classes/Flow-ETL-FlowContext.html#method_cache"
+        },                {
+            "fqsen": "\\Flow\\ETL\\FlowContext\u003A\u003Acalculator\u0028\u0029",
+            "name": "calculator",
+            "summary": "",
+            "url": "classes/Flow-ETL-FlowContext.html#method_calculator"
         },                {
             "fqsen": "\\Flow\\ETL\\FlowContext\u003A\u003AentryFactory\u0028\u0029",
             "name": "entryFactory",
