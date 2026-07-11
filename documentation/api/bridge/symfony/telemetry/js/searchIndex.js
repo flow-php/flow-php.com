@@ -1031,6 +1031,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-PathExclusionRule.html#property_method"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\RouteNamePathMap",
+            "name": "RouteNamePathMap",
+            "summary": "Deployment\u002Dstatic\u0020\u005Broute\u0020name\u0020\u003D\u003E\u0020path\u0020template\u005D\u0020map\u0020so\u0020request\u0020spans\u0020can\u0020carry\u0020the\u0020OTEL\u0020http.route\npath\u0020template\u0020without\u0020touching\u0020the\u0020router\u0020at\u0020runtime\u0020\u2014\u0020Router\u003A\u003AgetRouteCollection\u0028\u0029\u0020bypasses\u0020the\ncompiled\u0020matcher\u0020and\u0020rebuilds\u0020the\u0020full\u0020route\u0020collection,\u0020which\u0020Symfony\u0020explicitly\u0020warns\u0020is\u0020too\u0020slow\nfor\u0020the\u0020request\u0020path.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNamePathMap.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\RouteNamePathMap\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNamePathMap.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\RouteNamePathMap\u003A\u003AisOptional\u0028\u0029",
+            "name": "isOptional",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNamePathMap.html#method_isOptional"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\RouteNamePathMap\u003A\u003ApathFor\u0028\u0029",
+            "name": "pathFor",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNamePathMap.html#method_pathFor"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\RouteNamePathMap\u003A\u003AwarmUp\u0028\u0029",
+            "name": "warmUp",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNamePathMap.html#method_warmUp"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\RouteNaming",
             "name": "RouteNaming",
             "summary": "What\u0020a\u0020routed\u0020request\u0020span\u0020uses\u0020for\u0020its\u0020name\u0020and\u0020the\u0020http.route\u0020attribute.",

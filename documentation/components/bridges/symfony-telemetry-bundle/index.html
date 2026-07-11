@@ -3214,7 +3214,9 @@ for database writes performed after their response.</p>
 controlled by <code>route_naming</code>:</p>
 <ul>
 <li><code>path</code> (default) — the route <strong>path template</strong>, e.g. <code>GET /orders/{id}</code> (low cardinality, semconv value
-for <code>http.route</code>); resolved from the router.</li>
+for <code>http.route</code>); resolved from a <code>[route name =&gt; path]</code> map built once per deployment by an optional
+cache warmer (<code>cache:warmup</code>) and rebuilt lazily when missing, so the router is never queried on the
+request path.</li>
 <li><code>name</code> — the Symfony <strong>route name</strong>, e.g. <code>GET order_show</code>.</li>
 <li>Sub-requests (<code>render(controller(...))</code>) have no route, so they are named after the <strong>controller</strong>
 (<code>GET App\Controller\NavigationController::top</code>); a request that matches no route at all uses the method

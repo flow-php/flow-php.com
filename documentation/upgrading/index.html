@@ -1508,6 +1508,7 @@
 <li><a href="#18-flow-phpfilesystem---partition-name-and-value-forbid--and-">18) flow-php/filesystem - Partition name and value forbid { and }</a></li>
 <li><a href="#19-flow-phpetl---cache-stores-only-rows-and-gained-read-cache-indexes-are-stored-as-rows">19) flow-php/etl - Cache stores only Rows and gained read(); cache indexes are stored as Rows</a></li>
 <li><a href="#20-flow-phpetl---cache-and-serialization-use-the-floe-floe-binary-format-datetime-subclasses-rejected">20) flow-php/etl - cache and serialization use the Floe (.floe) binary format; datetime subclasses rejected</a></li>
+<li><a href="#21-flow-phpsymfony-telemetry-bundle---httpkernelspansubscriber-takes-a">21) flow-php/symfony-telemetry-bundle - HttpKernelSpanSubscriber takes a</a></li>
 </ul>
 </li>
 <li><a href="#upgrading-from-040x-to-041x">Upgrading from 0.40.x to 0.41.x</a>
@@ -2460,6 +2461,27 @@ implementation is <code>yield $this-&gt;get($key);</code>.</p>
 </tbody>
 </table>
 <p>Convert <code>DateTime</code>/<code>DateTimeImmutable</code> subclasses to <code>DateTime</code>/<code>DateTimeImmutable</code> before caching or serializing.</p>
+<h3><a id="21-flow-phpsymfony-telemetry-bundle---httpkernelspansubscriber-takes-a" href="#21-flow-phpsymfony-telemetry-bundle---httpkernelspansubscriber-takes-a" class="mr-2" aria-hidden="true" title="Permalink">#</a>21) <code>flow-php/symfony-telemetry-bundle</code> - <code>HttpKernelSpanSubscriber</code> takes a</h3>
+<p><code>RouteNamePathMap</code> instead of the router</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>new HttpKernelSpanSubscriber(…, router: $router, …)</code></td>
+<td><code>new HttpKernelSpanSubscriber(…, routePaths: $routeNamePathMap, …)</code></td>
+</tr>
+<tr>
+<td><code>?RouterInterface $router = null</code></td>
+<td><code>?RouteNamePathMap $routePaths = null</code></td>
+</tr>
+</tbody>
+</table>
+<p>Applies only to direct construction; services wired by the bundle need no change.</p>
 <hr />
 <h2><a id="upgrading-from-040x-to-041x" href="#upgrading-from-040x-to-041x" class="mr-2" aria-hidden="true" title="Permalink">#</a>Upgrading from 0.40.x to 0.41.x</h2>
 <h3><a id="1-removal-of-elasticsearch-adapter" href="#1-removal-of-elasticsearch-adapter" class="mr-2" aria-hidden="true" title="Permalink">#</a>1) Removal of Elasticsearch Adapter</h3>
