@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>Flow PHP</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+    
+            <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <div class="flow-header-wrapper">
+    <header class="phpdocumentor-header phpdocumentor-section">
+        <h1 class="phpdocumentor-title"><a href="/documentation" class="phpdocumentor-title__link">Flow PHP</a></h1>
+        <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+        <label class="phpdocumentor-header__menu-icon" for="menu-button">
+            <i class="fas fa-bars"></i>
+        </label>
+        <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+        <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+                        <li class="phpdocumentor-topnav__menu-item -menu">
+                <a href="/documentation">
+                    <span>
+                                                                        Back
+                    </span>
+                </a>
+            </li>
+                </ul>
+</nav>
+    </header>
+</div>
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                                <section class="phpdocumentor-sidebar__category -namespaces">
+                <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                            <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/flow.html" class="">Flow</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/flow-arraycomparison.html" class="">ArrayComparison</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-calculator.html" class="">Calculator</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-clock.html" class="">Clock</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-etl.html" class="">ETL</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-floe.html" class="">Floe</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-serializer.html" class="">Serializer</a>
+                
+            </li>
+            </ul>
+
+                                </section>
+                                    
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow.html">Flow</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-floe.html">Floe</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    Format
+
+    
+    
+    
+    </h2>
+
+<div class="phpdocumentor-label-line">
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">18</span>
+
+    </aside>
+
+        
+
+
+
+
+    
+    
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Flow-Floe-Format.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_DATETIME_IMMUTABLE">DATETIME_IMMUTABLE</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x0                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_DATETIME_MUTABLE">DATETIME_MUTABLE</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x1                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_FRAME_FOOTER">FRAME_FOOTER</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x6                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_FRAME_HEADER_LENGTH">FRAME_HEADER_LENGTH</a>
+    <span>
+        &nbsp;: int&nbsp;= 5                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_FRAME_PARTITIONS">FRAME_PARTITIONS</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x3                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_FRAME_ROW">FRAME_ROW</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x2                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_FRAME_SCHEMA">FRAME_SCHEMA</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x1                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_HEADER_LENGTH">HEADER_LENGTH</a>
+    <span>
+        &nbsp;: int&nbsp;= 6                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_KEY_INTEGER">KEY_INTEGER</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x0                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_KEY_STRING">KEY_STRING</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x1                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_MAGIC">MAGIC</a>
+    <span>
+        &nbsp;: string&nbsp;= &#039;FLOE&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_TAG_ARRAY">TAG_ARRAY</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x5                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_TAG_BOOLEAN">TAG_BOOLEAN</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x3                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_TAG_DATETIME">TAG_DATETIME</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x6                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_TAG_FLOAT">TAG_FLOAT</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x2                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_TAG_INTEGER">TAG_INTEGER</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x1                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_TAG_JSON">TAG_JSON</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x8                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_TAG_NULL">TAG_NULL</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x0                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_TAG_STRING">TAG_STRING</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x4                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_TAG_UUID">TAG_UUID</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x7                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_TRAILER_LENGTH">TRAILER_LENGTH</a>
+    <span>
+        &nbsp;: int&nbsp;= 8                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_ABSENT">VALUE_ABSENT</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x3                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_ABSENT_BYTE">VALUE_ABSENT_BYTE</a>
+    <span>
+        &nbsp;: string&nbsp;= &quot;\x03&quot;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_NULL">VALUE_NULL</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x0                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_BYTE">VALUE_NULL_BYTE</a>
+    <span>
+        &nbsp;: string&nbsp;= &quot;\x00&quot;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_FROM_NULL">VALUE_NULL_FROM_NULL</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x2                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_FROM_NULL_BYTE">VALUE_NULL_FROM_NULL_BYTE</a>
+    <span>
+        &nbsp;: string&nbsp;= &quot;\x02&quot;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT">VALUE_PRESENT</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x1                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_BYTE">VALUE_PRESENT_BYTE</a>
+    <span>
+        &nbsp;: string&nbsp;= &quot;\x01&quot;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_VERSION">VERSION</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x1                            </span>
+</dt>
+
+    </dl>
+
+
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Flow-Floe-Format.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Floe-Format.html#method_frame">frame()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Floe-Format.html#method_header">header()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Floe-Format.html#method_parseTrailer">parseTrailer()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Floe-Format.html#method_trailer">trailer()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Floe-Format.html#method_validateCodecId">validateCodecId()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Floe-Format.html#method_validateHeader">validateHeader()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+
+    </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Flow-Floe-Format.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DATETIME_IMMUTABLE">
+        DATETIME_IMMUTABLE
+        <a href="classes/Flow-Floe-Format.html#constant_DATETIME_IMMUTABLE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">54</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">DATETIME_IMMUTABLE</span>
+    = <span class="phpdocumentor-signature__default-value">0x0</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DATETIME_MUTABLE">
+        DATETIME_MUTABLE
+        <a href="classes/Flow-Floe-Format.html#constant_DATETIME_MUTABLE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">DATETIME_MUTABLE</span>
+    = <span class="phpdocumentor-signature__default-value">0x1</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_FRAME_FOOTER">
+        FRAME_FOOTER
+        <a href="classes/Flow-Floe-Format.html#constant_FRAME_FOOTER" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">FRAME_FOOTER</span>
+    = <span class="phpdocumentor-signature__default-value">0x6</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_FRAME_HEADER_LENGTH">
+        FRAME_HEADER_LENGTH
+        <a href="classes/Flow-Floe-Format.html#constant_FRAME_HEADER_LENGTH" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">FRAME_HEADER_LENGTH</span>
+    = <span class="phpdocumentor-signature__default-value">5</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_FRAME_PARTITIONS">
+        FRAME_PARTITIONS
+        <a href="classes/Flow-Floe-Format.html#constant_FRAME_PARTITIONS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">FRAME_PARTITIONS</span>
+    = <span class="phpdocumentor-signature__default-value">0x3</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_FRAME_ROW">
+        FRAME_ROW
+        <a href="classes/Flow-Floe-Format.html#constant_FRAME_ROW" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">32</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">FRAME_ROW</span>
+    = <span class="phpdocumentor-signature__default-value">0x2</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_FRAME_SCHEMA">
+        FRAME_SCHEMA
+        <a href="classes/Flow-Floe-Format.html#constant_FRAME_SCHEMA" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">FRAME_SCHEMA</span>
+    = <span class="phpdocumentor-signature__default-value">0x1</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_HEADER_LENGTH">
+        HEADER_LENGTH
+        <a href="classes/Flow-Floe-Format.html#constant_HEADER_LENGTH" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">24</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">HEADER_LENGTH</span>
+    = <span class="phpdocumentor-signature__default-value">6</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_KEY_INTEGER">
+        KEY_INTEGER
+        <a href="classes/Flow-Floe-Format.html#constant_KEY_INTEGER" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">76</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">KEY_INTEGER</span>
+    = <span class="phpdocumentor-signature__default-value">0x0</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_KEY_STRING">
+        KEY_STRING
+        <a href="classes/Flow-Floe-Format.html#constant_KEY_STRING" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">78</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">KEY_STRING</span>
+    = <span class="phpdocumentor-signature__default-value">0x1</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_MAGIC">
+        MAGIC
+        <a href="classes/Flow-Floe-Format.html#constant_MAGIC" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">20</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">MAGIC</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;FLOE&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TAG_ARRAY">
+        TAG_ARRAY
+        <a href="classes/Flow-Floe-Format.html#constant_TAG_ARRAY" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">TAG_ARRAY</span>
+    = <span class="phpdocumentor-signature__default-value">0x5</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TAG_BOOLEAN">
+        TAG_BOOLEAN
+        <a href="classes/Flow-Floe-Format.html#constant_TAG_BOOLEAN" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">64</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">TAG_BOOLEAN</span>
+    = <span class="phpdocumentor-signature__default-value">0x3</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TAG_DATETIME">
+        TAG_DATETIME
+        <a href="classes/Flow-Floe-Format.html#constant_TAG_DATETIME" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">TAG_DATETIME</span>
+    = <span class="phpdocumentor-signature__default-value">0x6</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TAG_FLOAT">
+        TAG_FLOAT
+        <a href="classes/Flow-Floe-Format.html#constant_TAG_FLOAT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">62</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">TAG_FLOAT</span>
+    = <span class="phpdocumentor-signature__default-value">0x2</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TAG_INTEGER">
+        TAG_INTEGER
+        <a href="classes/Flow-Floe-Format.html#constant_TAG_INTEGER" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">TAG_INTEGER</span>
+    = <span class="phpdocumentor-signature__default-value">0x1</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TAG_JSON">
+        TAG_JSON
+        <a href="classes/Flow-Floe-Format.html#constant_TAG_JSON" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">74</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">TAG_JSON</span>
+    = <span class="phpdocumentor-signature__default-value">0x8</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TAG_NULL">
+        TAG_NULL
+        <a href="classes/Flow-Floe-Format.html#constant_TAG_NULL" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">58</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">TAG_NULL</span>
+    = <span class="phpdocumentor-signature__default-value">0x0</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TAG_STRING">
+        TAG_STRING
+        <a href="classes/Flow-Floe-Format.html#constant_TAG_STRING" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">TAG_STRING</span>
+    = <span class="phpdocumentor-signature__default-value">0x4</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TAG_UUID">
+        TAG_UUID
+        <a href="classes/Flow-Floe-Format.html#constant_TAG_UUID" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">72</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">TAG_UUID</span>
+    = <span class="phpdocumentor-signature__default-value">0x7</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TRAILER_LENGTH">
+        TRAILER_LENGTH
+        <a href="classes/Flow-Floe-Format.html#constant_TRAILER_LENGTH" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">26</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">TRAILER_LENGTH</span>
+    = <span class="phpdocumentor-signature__default-value">8</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_VALUE_ABSENT">
+        VALUE_ABSENT
+        <a href="classes/Flow-Floe-Format.html#constant_VALUE_ABSENT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">VALUE_ABSENT</span>
+    = <span class="phpdocumentor-signature__default-value">0x3</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_VALUE_ABSENT_BYTE">
+        VALUE_ABSENT_BYTE
+        <a href="classes/Flow-Floe-Format.html#constant_VALUE_ABSENT_BYTE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">VALUE_ABSENT_BYTE</span>
+    = <span class="phpdocumentor-signature__default-value">&quot;\x03&quot;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_VALUE_NULL">
+        VALUE_NULL
+        <a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">38</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">VALUE_NULL</span>
+    = <span class="phpdocumentor-signature__default-value">0x0</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_VALUE_NULL_BYTE">
+        VALUE_NULL_BYTE
+        <a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_BYTE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">VALUE_NULL_BYTE</span>
+    = <span class="phpdocumentor-signature__default-value">&quot;\x00&quot;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_VALUE_NULL_FROM_NULL">
+        VALUE_NULL_FROM_NULL
+        <a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_FROM_NULL" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">VALUE_NULL_FROM_NULL</span>
+    = <span class="phpdocumentor-signature__default-value">0x2</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_VALUE_NULL_FROM_NULL_BYTE">
+        VALUE_NULL_FROM_NULL_BYTE
+        <a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_FROM_NULL_BYTE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">VALUE_NULL_FROM_NULL_BYTE</span>
+    = <span class="phpdocumentor-signature__default-value">&quot;\x02&quot;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_VALUE_PRESENT">
+        VALUE_PRESENT
+        <a href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">VALUE_PRESENT</span>
+    = <span class="phpdocumentor-signature__default-value">0x1</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_VALUE_PRESENT_BYTE">
+        VALUE_PRESENT_BYTE
+        <a href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_BYTE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">48</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">VALUE_PRESENT_BYTE</span>
+    = <span class="phpdocumentor-signature__default-value">&quot;\x01&quot;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_VERSION">
+        VERSION
+        <a href="classes/Flow-Floe-Format.html#constant_VERSION" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">22</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">VERSION</span>
+    = <span class="phpdocumentor-signature__default-value">0x1</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+            </section>
+
+        
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Flow-Floe-Format.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_frame">
+        frame()
+        <a href="classes/Flow-Floe-Format.html#method_frame" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">frame</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$type</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$body</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_header">
+        header()
+        <a href="classes/Flow-Floe-Format.html#method_header" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">85</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">header</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flags</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$flags</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_parseTrailer">
+        parseTrailer()
+        <a href="classes/Flow-Floe-Format.html#method_parseTrailer" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">95</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseTrailer</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bytes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bytes</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_parseTrailer_tags">
+        Tags
+        <a href="classes/Flow-Floe-Format.html#method_parseTrailer_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-Floe-Exception-FloeException.html"><abbr title="\Flow\Floe\Exception\FloeException">FloeException</abbr></a></span>
+                                                                                    
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>footer JSON length</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_trailer">
+        trailer()
+        <a href="classes/Flow-Floe-Format.html#method_trailer" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">110</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">trailer</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$footerLength</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$footerLength</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_validateCodecId">
+        validateCodecId()
+        <a href="classes/Flow-Floe-Format.html#method_validateCodecId" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">142</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">validateCodecId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$codecId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$codecId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_validateCodecId_tags">
+        Tags
+        <a href="classes/Flow-Floe-Format.html#method_validateCodecId_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-Floe-Exception-FloeException.html"><abbr title="\Flow\Floe\Exception\FloeException">FloeException</abbr></a></span>
+                                                                                    
+                                    </dd>
+                        </dl>
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_validateHeader">
+        validateHeader()
+        <a href="classes/Flow-Floe-Format.html#method_validateHeader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">120</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">validateHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bytes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bytes</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_validateHeader_tags">
+        Tags
+        <a href="classes/Flow-Floe-Format.html#method_validateHeader_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-Floe-Exception-FloeException.html"><abbr title="\Flow\Floe\Exception\FloeException">FloeException</abbr></a></span>
+                                                                                    
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>header flags byte</p>
+</section>
+
+            </section>
+
+</article>
+            </section>
+
+        
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Flow-Floe-Format.html#toc-constants">Constants</a></li>
+                                                                                <li><a href="classes/Flow-Floe-Format.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_DATETIME_IMMUTABLE">DATETIME_IMMUTABLE</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_DATETIME_MUTABLE">DATETIME_MUTABLE</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_FRAME_FOOTER">FRAME_FOOTER</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_FRAME_HEADER_LENGTH">FRAME_HEADER_LENGTH</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_FRAME_PARTITIONS">FRAME_PARTITIONS</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_FRAME_ROW">FRAME_ROW</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_FRAME_SCHEMA">FRAME_SCHEMA</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_HEADER_LENGTH">HEADER_LENGTH</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_KEY_INTEGER">KEY_INTEGER</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_KEY_STRING">KEY_STRING</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_MAGIC">MAGIC</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_TAG_ARRAY">TAG_ARRAY</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_TAG_BOOLEAN">TAG_BOOLEAN</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_TAG_DATETIME">TAG_DATETIME</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_TAG_FLOAT">TAG_FLOAT</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_TAG_INTEGER">TAG_INTEGER</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_TAG_JSON">TAG_JSON</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_TAG_NULL">TAG_NULL</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_TAG_STRING">TAG_STRING</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_TAG_UUID">TAG_UUID</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_TRAILER_LENGTH">TRAILER_LENGTH</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_ABSENT">VALUE_ABSENT</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_ABSENT_BYTE">VALUE_ABSENT_BYTE</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL">VALUE_NULL</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_BYTE">VALUE_NULL_BYTE</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_FROM_NULL">VALUE_NULL_FROM_NULL</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_FROM_NULL_BYTE">VALUE_NULL_FROM_NULL_BYTE</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT">VALUE_PRESENT</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_BYTE">VALUE_PRESENT_BYTE</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VERSION">VERSION</a></li>
+                                            </ul>
+                </li>
+            
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Flow-Floe-Format.html#method_frame">frame()</a></li>
+                                            <li class=""><a href="classes/Flow-Floe-Format.html#method_header">header()</a></li>
+                                            <li class=""><a href="classes/Flow-Floe-Format.html#method_parseTrailer">parseTrailer()</a></li>
+                                            <li class=""><a href="classes/Flow-Floe-Format.html#method_trailer">trailer()</a></li>
+                                            <li class=""><a href="classes/Flow-Floe-Format.html#method_validateCodecId">validateCodecId()</a></li>
+                                            <li class=""><a href="classes/Flow-Floe-Format.html#method_validateHeader">validateHeader()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="classes/Flow-Floe-Format.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

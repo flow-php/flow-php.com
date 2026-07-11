@@ -89,6 +89,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/flow-floe.html" class="">Floe</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/flow-serializer.html" class="">Serializer</a>
                 
             </li>
@@ -136,7 +140,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php"><a href="files/src-core-etl-src-flow-etl-cache-cacheindex.html"><abbr title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php">CacheIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -188,6 +192,18 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Cache-CacheIndex.html#method_fromRows">fromRows()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Cache-CacheIndex.html#method_toRows">toRows()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Cache-CacheIndex.html#method_values">values()</a>
     <span>
                                 &nbsp;: array&lt;string|int, string&gt;    </span>
@@ -223,7 +239,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php"><a href="files/src-core-etl-src-flow-etl-cache-cacheindex.html"><abbr title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php">CacheIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -265,7 +281,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php"><a href="files/src-core-etl-src-flow-etl-cache-cacheindex.html"><abbr title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php">CacheIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -309,7 +325,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php"><a href="files/src-core-etl-src-flow-etl-cache-cacheindex.html"><abbr title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php">CacheIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -343,6 +359,113 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromRows">
+        fromRows()
+        <a href="classes/Flow-ETL-Cache-CacheIndex.html#method_fromRows" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php"><a href="files/src-core-etl-src-flow-etl-cache-cacheindex.html"><abbr title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php">CacheIndex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">33</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromRows</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$key</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_fromRows_tags">
+        Tags
+        <a href="classes/Flow-ETL-Cache-CacheIndex.html#method_fromRows_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Exception-InvalidArgumentException.html"><abbr title="\Flow\ETL\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></span>
+                                                                                    
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toRows">
+        toRows()
+        <a href="classes/Flow-ETL-Cache-CacheIndex.html#method_toRows" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php"><a href="files/src-core-etl-src-flow-etl-cache-cacheindex.html"><abbr title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php">CacheIndex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">58</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toRows</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_values">
@@ -353,7 +476,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php"><a href="files/src-core-etl-src-flow-etl-cache-cacheindex.html"><abbr title="src/core/etl/src/Flow/ETL/Cache/CacheIndex.php">CacheIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -408,6 +531,8 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Cache-CacheIndex.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Cache-CacheIndex.html#method_add">add()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Cache-CacheIndex.html#method_fromRows">fromRows()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Cache-CacheIndex.html#method_toRows">toRows()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Cache-CacheIndex.html#method_values">values()</a></li>
                                     </ul>
             </li>
