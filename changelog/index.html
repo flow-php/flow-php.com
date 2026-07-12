@@ -176,7 +176,7 @@
         "prismjs/components/prism-markup-templating.min.js": "/assets/vendor/prismjs/components/prism-markup-templating.min-b695403b78eb9f92ebe96b15679f946a.js",
         "prismjs/components/prism-php.min.js": "/assets/vendor/prismjs/components/prism-php.min-5474e247f3f19219db503da1b03e8a66.js",
         "prismjs/components/prism-bash.min.js": "/assets/vendor/prismjs/components/prism-bash.min-225d13be4b2dc8db515d962953335bda.js",
-        "prismjs/components/prism-json.min.js": "/assets/vendor/prismjs/components/prism-json.min-5cabe6f69370d46230def939bbf18ad6.js",
+        "prismjs/components/prism-json.min.js": "/assets/vendor/prismjs/components/prism-json.min-cf8b29c1d22900de623806ef6bb7a475.js",
         "prismjs/components/prism-csv.min.js": "/assets/vendor/prismjs/components/prism-csv.min-8760b5ad94aa7414c993d3fa7681abb9.js",
         "prismjs/components/prism-yaml.min.js": "/assets/vendor/prismjs/components/prism-yaml.min-75dd1a7fc4fcae22fbd4587d78aeefb4.js",
         "codemirror": "/assets/vendor/codemirror/codemirror.index-8b980decd613fa5f035e18571e2fe7fd.js",
@@ -265,7 +265,7 @@
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-markup-templating.min-b695403b78eb9f92ebe96b15679f946a.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-php.min-5474e247f3f19219db503da1b03e8a66.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-bash.min-225d13be4b2dc8db515d962953335bda.js">
-<link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-json.min-5cabe6f69370d46230def939bbf18ad6.js">
+<link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-json.min-cf8b29c1d22900de623806ef6bb7a475.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-csv.min-8760b5ad94aa7414c993d3fa7681abb9.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-yaml.min-75dd1a7fc4fcae22fbd4587d78aeefb4.js">
 <link rel="modulepreload" href="/assets/vendor/codemirror/codemirror.index-8b980decd613fa5f035e18571e2fe7fd.js">
@@ -583,6 +583,10 @@
         <h2><a id="unreleased---2026-07-12" href="#unreleased---2026-07-12" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2026-07-12</h2>
 <h3><a id="added" href="#added" class="mr-2" aria-hidden="true" title="Permalink">#</a>Added</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2532">#2532</a> - <strong>flow-php/etl - EntryInstantiator and Instantiators for constructor-less entry instantiation</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2532">#2532</a> - <strong>flow-php/etl - EntryFactory::instantiate() creating entries from schema definitions without casting</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2532">#2532</a> - <strong>flow-php/etl - Definition::entryClass() on all schema definitions, UnionDefinition resolves it from the left union member</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2532">#2532</a> - <strong>flow-php/etl-adapter-parquet - ValueHydrator restoring Json/Uuid value objects from raw parquet strings</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2473">#2473</a> - <strong>Configurable, memory-efficient GroupBy aggregation: ConfigBuilder::aggregationAlgorithm() and the AggregationAlgorithms enum select between MEMORY_AGGREGATION (default, in-memory hash map) and EXTERNAL_AGGREGATION (sorts by the group-by columns and folds, spilling to disk for bounded memory), with aggregationFilesystem() for the spill protocol.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2473">#2473</a> - <strong>GroupBy streams its result in batches instead of materializing every group into a single Rows.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2530">#2530</a> - <strong>Add GHA to check commit authorship</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/stloyd">@stloyd</a></li>
@@ -616,6 +620,10 @@
 </ul>
 <h3><a id="changed" href="#changed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2532">#2532</a> - <strong>flow-php/etl-adapter-parquet - ParquetExtractor builds entries through EntryFactory::instantiate() instead of array_to_row()</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2532">#2532</a> - <strong>flow-php/etl - Floe HydratorColumn renamed to ColumnBlueprint, SchemaDecoder uses shared Instantiators</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2532">#2532</a> - <strong>flow-php/types - Uuid constructor validates strings directly without Ramsey fallback</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2532">#2532</a> - <strong>flow-php/flow-php-ext - schema decoding updated to relocated core entry instantiation classes</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2528">#2528</a> - <strong>Reduce complexity of XML reading &amp; writing</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/stloyd">@stloyd</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2527">#2527</a> - <strong>Change <code>EntryFactory::createAs()</code> to use <code>match()</code></strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/stloyd">@stloyd</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2526">#2526</a> - <strong>flow-php/etl - sorting algorithm is an explicit choice via sort config, EXTERNAL_SORT is the default</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -673,6 +681,8 @@ instead of inside the per-row loop</strong> - <a rel="noopener noreferrer" targe
 </ul>
 <h3><a id="removed" href="#removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Removed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2532">#2532</a> - <strong>flow-php/etl - runtime value type detection from List/Map/Structure entry constructors</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2532">#2532</a> - <strong>flow-php/types - isValid() short-circuit from ListType/StructureType::cast()</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2526">#2526</a> - <strong>flow-php/etl - SortAlgorithms::MEMORY_FALLBACK_EXTERNAL_SORT and SortAlgorithms::SQLITE_SORT</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2526">#2526</a> - <strong>flow-php/etl - sortMemoryLimit config, FLOW_SORT_MAX_MEMORY env var and OutOfMemoryException</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2503">#2503</a> - <strong>flow-php/symfony-telemetry-bundle - runtime_mode config and the WorkerModeDetector/RuntimeModeResolver runtime classes.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
