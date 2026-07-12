@@ -141,6 +141,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-SchemaConverter.html#method_toParquet"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueHydrator",
+            "name": "ValueHydrator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueHydrator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueHydrator\u003A\u003Ahydrate\u0028\u0029",
+            "name": "hydrate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#method_hydrate"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",

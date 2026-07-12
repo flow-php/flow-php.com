@@ -139,7 +139,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/SchemaDecoder.php"><a href="files/src-core-etl-src-flow-floe-schemadecoder.html"><abbr title="src/core/etl/src/Flow/Floe/SchemaDecoder.php">SchemaDecoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -174,7 +174,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-SchemaDecoder.html#method_decode">decode()</a>
     <span>
-                                &nbsp;: array&lt;int, <a href="classes/Flow-Floe-HydratorColumn.html"><abbr title="\Flow\Floe\HydratorColumn">HydratorColumn</abbr></a>&gt;    </span>
+                                &nbsp;: array&lt;int, <a href="classes/Flow-Floe-ColumnBlueprint.html"><abbr title="\Flow\Floe\ColumnBlueprint">ColumnBlueprint</abbr></a>&gt;    </span>
 </dt>
 
     </dl>
@@ -205,14 +205,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/SchemaDecoder.php"><a href="files/src-core-etl-src-flow-floe-schemadecoder.html"><abbr title="src/core/etl/src/Flow/Floe/SchemaDecoder.php">SchemaDecoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-ValueDecoder.html"><abbr title="\Flow\Floe\ValueDecoder">ValueDecoder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$valueDecoder</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-EntryInstantiator.html"><abbr title="\Flow\Floe\EntryInstantiator">EntryInstantiator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entryInstantiator</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-ValueDecoder.html"><abbr title="\Flow\Floe\ValueDecoder">ValueDecoder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$valueDecoder</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Entry-Instantiators.html"><abbr title="\Flow\ETL\Row\Entry\Instantiators">Instantiators</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$instantiators</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -228,8 +228,8 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entryInstantiator</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Floe-EntryInstantiator.html"><abbr title="\Flow\Floe\EntryInstantiator">EntryInstantiator</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$instantiators</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-Entry-Instantiators.html"><abbr title="\Flow\ETL\Row\Entry\Instantiators">Instantiators</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -256,14 +256,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/SchemaDecoder.php"><a href="files/src-core-etl-src-flow-floe-schemadecoder.html"><abbr title="src/core/etl/src/Flow/Floe/SchemaDecoder.php">SchemaDecoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">decode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schemaJson</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-Floe-HydratorColumn.html"><abbr title="\Flow\Floe\HydratorColumn">HydratorColumn</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">decode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schemaJson</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-Floe-ColumnBlueprint.html"><abbr title="\Flow\Floe\ColumnBlueprint">ColumnBlueprint</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -286,7 +286,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-Floe-HydratorColumn.html"><abbr title="\Flow\Floe\HydratorColumn">HydratorColumn</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-Floe-ColumnBlueprint.html"><abbr title="\Flow\Floe\ColumnBlueprint">ColumnBlueprint</abbr></a>&gt;</span>
             </section>
 
 </article>

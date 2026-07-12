@@ -9161,6 +9161,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-DateTimeEntry.html#method_value"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\EntryInstantiator",
+            "name": "EntryInstantiator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-EntryInstantiator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\EntryInstantiator\u003A\u003AforClass\u0028\u0029",
+            "name": "forClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-EntryInstantiator.html#method_forClass"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\EntryInstantiator\u003A\u003Ainstantiate\u0028\u0029",
+            "name": "instantiate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-EntryInstantiator.html#method_instantiate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\EntryRef",
             "name": "EntryRef",
             "summary": "",
@@ -9405,6 +9420,16 @@ Search.appendIndex(
             "name": "value",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-HTMLEntry.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\Instantiators",
+            "name": "Instantiators",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-Instantiators.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\Instantiators\u003A\u003Afor\u0028\u0029",
+            "name": "for",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-Instantiators.html#method_for"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\IntegerEntry",
             "name": "IntegerEntry",
@@ -10116,6 +10141,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-EntryFactory.html#method_createAs"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\EntryFactory\u003A\u003Ainstantiate\u0028\u0029",
+            "name": "instantiate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-EntryFactory.html#method_instantiate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\EntryReference",
             "name": "EntryReference",
             "summary": "",
@@ -10821,6 +10851,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-BooleanDefinition.html#method_type"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\BooleanDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-BooleanDefinition.html#method_entryClass"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateDefinition",
             "name": "DateDefinition",
             "summary": "",
@@ -10896,6 +10931,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-DateDefinition.html#method_type"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-DateDefinition.html#method_entryClass"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateTimeDefinition",
             "name": "DateTimeDefinition",
             "summary": "",
@@ -10970,6 +11010,11 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-DateTimeDefinition.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateTimeDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-DateTimeDefinition.html#method_entryClass"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\EnumDefinition",
             "name": "EnumDefinition",
@@ -11051,6 +11096,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-EnumDefinition.html#method_type"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\EnumDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-EnumDefinition.html#method_entryClass"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\FloatDefinition",
             "name": "FloatDefinition",
             "summary": "",
@@ -11125,6 +11175,11 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-FloatDefinition.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\FloatDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-FloatDefinition.html#method_entryClass"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLDefinition",
             "name": "HTMLDefinition",
@@ -11201,6 +11256,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-HTMLDefinition.html#method_type"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-HTMLDefinition.html#method_entryClass"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLElementDefinition",
             "name": "HTMLElementDefinition",
             "summary": "",
@@ -11275,6 +11335,11 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-HTMLElementDefinition.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLElementDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-HTMLElementDefinition.html#method_entryClass"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\IntegerDefinition",
             "name": "IntegerDefinition",
@@ -11351,6 +11416,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-IntegerDefinition.html#method_type"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\IntegerDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-IntegerDefinition.html#method_entryClass"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\JsonDefinition",
             "name": "JsonDefinition",
             "summary": "",
@@ -11425,6 +11495,11 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-JsonDefinition.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\JsonDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-JsonDefinition.html#method_entryClass"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ListDefinition",
             "name": "ListDefinition",
@@ -11501,6 +11576,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-ListDefinition.html#method_type"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ListDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-ListDefinition.html#method_entryClass"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\MapDefinition",
             "name": "MapDefinition",
             "summary": "",
@@ -11575,6 +11655,11 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-MapDefinition.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\MapDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-MapDefinition.html#method_entryClass"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StringDefinition",
             "name": "StringDefinition",
@@ -11651,6 +11736,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-StringDefinition.html#method_type"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StringDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-StringDefinition.html#method_entryClass"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StructureDefinition",
             "name": "StructureDefinition",
             "summary": "",
@@ -11725,6 +11815,11 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-StructureDefinition.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StructureDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-StructureDefinition.html#method_entryClass"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TimeDefinition",
             "name": "TimeDefinition",
@@ -11801,6 +11896,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-TimeDefinition.html#method_type"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TimeDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-TimeDefinition.html#method_entryClass"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition",
             "name": "UnionDefinition",
             "summary": "",
@@ -11875,6 +11975,11 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_entryClass"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UuidDefinition",
             "name": "UuidDefinition",
@@ -11951,6 +12056,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-UuidDefinition.html#method_type"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UuidDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-UuidDefinition.html#method_entryClass"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLDefinition",
             "name": "XMLDefinition",
             "summary": "",
@@ -12025,6 +12135,11 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-XMLDefinition.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-XMLDefinition.html#method_entryClass"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLElementDefinition",
             "name": "XMLElementDefinition",
@@ -12101,6 +12216,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-XMLElementDefinition.html#method_type"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLElementDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-XMLElementDefinition.html#method_entryClass"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition",
             "name": "Definition",
             "summary": "",
@@ -12170,6 +12290,11 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition.html#method_entryClass"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Formatter\\JsonSchemaFormatter",
             "name": "JsonSchemaFormatter",
@@ -13746,6 +13871,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-Codec.html#method_id"
         },                {
+            "fqsen": "\\Flow\\Floe\\ColumnBlueprint",
+            "name": "ColumnBlueprint",
+            "summary": "",
+            "url": "classes/Flow-Floe-ColumnBlueprint.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Floe-ColumnBlueprint.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A\u0024nullableDefinition",
+            "name": "nullableDefinition",
+            "summary": "",
+            "url": "classes/Flow-Floe-ColumnBlueprint.html#property_nullableDefinition"
+        },                {
+            "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A\u0024fromNullDefinition",
+            "name": "fromNullDefinition",
+            "summary": "",
+            "url": "classes/Flow-Floe-ColumnBlueprint.html#property_fromNullDefinition"
+        },                {
+            "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-Floe-ColumnBlueprint.html#property_name"
+        },                {
+            "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A\u0024definition",
+            "name": "definition",
+            "summary": "",
+            "url": "classes/Flow-Floe-ColumnBlueprint.html#property_definition"
+        },                {
+            "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A\u0024decoder",
+            "name": "decoder",
+            "summary": "",
+            "url": "classes/Flow-Floe-ColumnBlueprint.html#property_decoder"
+        },                {
+            "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A\u0024instantiator",
+            "name": "instantiator",
+            "summary": "",
+            "url": "classes/Flow-Floe-ColumnBlueprint.html#property_instantiator"
+        },                {
             "fqsen": "\\Flow\\Floe\\Decoding\\BooleanDecoder",
             "name": "BooleanDecoder",
             "summary": "",
@@ -14346,31 +14511,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-Encoding-XmlElementEncoder.html#method_encode"
         },                {
-            "fqsen": "\\Flow\\Floe\\EntryFactory",
-            "name": "EntryFactory",
-            "summary": "",
-            "url": "classes/Flow-Floe-EntryFactory.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\EntryFactory\u003A\u003AforEntryClass\u0028\u0029",
-            "name": "forEntryClass",
-            "summary": "",
-            "url": "classes/Flow-Floe-EntryFactory.html#method_forEntryClass"
-        },                {
-            "fqsen": "\\Flow\\Floe\\EntryFactory\u003A\u003Acreate\u0028\u0029",
-            "name": "create",
-            "summary": "",
-            "url": "classes/Flow-Floe-EntryFactory.html#method_create"
-        },                {
-            "fqsen": "\\Flow\\Floe\\EntryInstantiator",
-            "name": "EntryInstantiator",
-            "summary": "",
-            "url": "classes/Flow-Floe-EntryInstantiator.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\EntryInstantiator\u003A\u003AfactoryFor\u0028\u0029",
-            "name": "factoryFor",
-            "summary": "",
-            "url": "classes/Flow-Floe-EntryInstantiator.html#method_factoryFor"
-        },                {
             "fqsen": "\\Flow\\Floe\\Exception\\FloeException",
             "name": "FloeException",
             "summary": "",
@@ -14910,46 +15050,6 @@ Search.appendIndex(
             "name": "rowCount",
             "summary": "",
             "url": "classes/Flow-Floe-FrameSegment.html#property_rowCount"
-        },                {
-            "fqsen": "\\Flow\\Floe\\HydratorColumn",
-            "name": "HydratorColumn",
-            "summary": "",
-            "url": "classes/Flow-Floe-HydratorColumn.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\HydratorColumn\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-HydratorColumn.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\HydratorColumn\u003A\u003A\u0024name",
-            "name": "name",
-            "summary": "",
-            "url": "classes/Flow-Floe-HydratorColumn.html#property_name"
-        },                {
-            "fqsen": "\\Flow\\Floe\\HydratorColumn\u003A\u003A\u0024definition",
-            "name": "definition",
-            "summary": "",
-            "url": "classes/Flow-Floe-HydratorColumn.html#property_definition"
-        },                {
-            "fqsen": "\\Flow\\Floe\\HydratorColumn\u003A\u003A\u0024nullableDefinition",
-            "name": "nullableDefinition",
-            "summary": "",
-            "url": "classes/Flow-Floe-HydratorColumn.html#property_nullableDefinition"
-        },                {
-            "fqsen": "\\Flow\\Floe\\HydratorColumn\u003A\u003A\u0024fromNullDefinition",
-            "name": "fromNullDefinition",
-            "summary": "",
-            "url": "classes/Flow-Floe-HydratorColumn.html#property_fromNullDefinition"
-        },                {
-            "fqsen": "\\Flow\\Floe\\HydratorColumn\u003A\u003A\u0024decoder",
-            "name": "decoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-HydratorColumn.html#property_decoder"
-        },                {
-            "fqsen": "\\Flow\\Floe\\HydratorColumn\u003A\u003A\u0024entryFactory",
-            "name": "entryFactory",
-            "summary": "",
-            "url": "classes/Flow-Floe-HydratorColumn.html#property_entryFactory"
         },                {
             "fqsen": "\\Flow\\Floe\\PhpRowFrameEncoder",
             "name": "PhpRowFrameEncoder",

@@ -73,27 +73,7 @@
 </h4>
     <ul class="phpdocumentor-list">
                     <li>
-                <a href="namespaces/flow-arraycomparison.html" class="">ArrayComparison</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/flow-calculator.html" class="">Calculator</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/flow-clock.html" class="">Clock</a>
-                
-            </li>
-                    <li>
                 <a href="namespaces/flow-etl.html" class="">ETL</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/flow-floe.html" class="">Floe</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/flow-serializer.html" class="">Serializer</a>
                 
             </li>
             </ul>
@@ -117,12 +97,14 @@
                                 <section>
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow.html">Flow</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-floe.html">Floe</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl.html">ETL</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-adapter.html">Adapter</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-adapter-parquet.html">Parquet</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    EntryInstantiator
+    ValueHydrator
 
     
     
@@ -130,6 +112,8 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
+
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -137,9 +121,9 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/EntryInstantiator.php"><a href="files/src-core-etl-src-flow-floe-entryinstantiator.html"><abbr title="src/core/etl/src/Flow/Floe/EntryInstantiator.php">EntryInstantiator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ValueHydrator.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-valuehydrator.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ValueHydrator.php">ValueHydrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
@@ -161,14 +145,20 @@
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Flow-Floe-EntryInstantiator.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Floe-EntryInstantiator.html#method_factoryFor">factoryFor()</a>
+    <a class="" href="classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#method___construct">__construct()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Floe-EntryFactory.html"><abbr title="\Flow\Floe\EntryFactory">EntryFactory</abbr></a>    </span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#method_hydrate">hydrate()</a>
+    <span>
+                                &nbsp;: mixed    </span>
 </dt>
 
     </dl>
@@ -182,7 +172,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Flow-Floe-EntryInstantiator.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -191,22 +181,56 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_factoryFor">
-        factoryFor()
-        <a href="classes/Flow-Floe-EntryInstantiator.html#method_factoryFor" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/EntryInstantiator.php"><a href="files/src-core-etl-src-flow-floe-entryinstantiator.html"><abbr title="src/core/etl/src/Flow/Floe/EntryInstantiator.php">EntryInstantiator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ValueHydrator.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-valuehydrator.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ValueHydrator.php">ValueHydrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">factoryFor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entryClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Floe-EntryFactory.html"><abbr title="\Flow\Floe\EntryFactory">EntryFactory</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hydrate">
+        hydrate()
+        <a href="classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#method_hydrate" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ValueHydrator.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-valuehydrator.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ValueHydrator.php">ValueHydrator.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hydrate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definition</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -215,8 +239,15 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entryClass</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$definition</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr>&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -227,11 +258,7 @@
 
         
     
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Floe-EntryFactory.html"><abbr title="\Flow\Floe\EntryFactory">EntryFactory</abbr></a></span>
-            </section>
-
+    
 </article>
             </section>
 
@@ -247,7 +274,7 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                <li><a href="classes/Flow-Floe-EntryInstantiator.html#toc-methods">Methods</a></li>
+                                                                                <li><a href="classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
@@ -255,7 +282,8 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Flow-Floe-EntryInstantiator.html#method_factoryFor">factoryFor()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#method_hydrate">hydrate()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -275,7 +303,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/Flow-Floe-EntryInstantiator.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

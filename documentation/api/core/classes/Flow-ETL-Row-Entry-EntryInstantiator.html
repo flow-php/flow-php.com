@@ -117,12 +117,14 @@
                                 <section>
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow.html">Flow</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-floe.html">Floe</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl.html">ETL</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-row.html">Row</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-row-entry.html">Entry</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    EntryFactory
+    EntryInstantiator
 
     
     
@@ -130,6 +132,8 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
+
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -137,9 +141,9 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/EntryFactory.php"><a href="files/src-core-etl-src-flow-floe-entryfactory.html"><abbr title="src/core/etl/src/Flow/Floe/EntryFactory.php">EntryFactory.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EntryInstantiator.php"><a href="files/src-core-etl-src-flow-etl-row-entry-entryinstantiator.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EntryInstantiator.php">EntryInstantiator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
@@ -147,6 +151,21 @@
 
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-ETL-Row-Entry-EntryInstantiator.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">template-covariant</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>of Entry<mixed></p>
+</section>
+
+                                    </dd>
+                        </dl>
 
     
     
@@ -161,20 +180,20 @@
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Flow-Floe-EntryFactory.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Flow-ETL-Row-Entry-EntryInstantiator.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Floe-EntryFactory.html#method_create">create()</a>
+    <a class="" href="classes/Flow-ETL-Row-Entry-EntryInstantiator.html#method_forClass">forClass()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: <abbr title="self<\Flow\ETL\Row\Entry\TEntry>">TEntry></abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Floe-EntryFactory.html#method_forEntryClass">forEntryClass()</a>
+    <a class="" href="classes/Flow-ETL-Row-Entry-EntryInstantiator.html#method_instantiate">instantiate()</a>
     <span>
-                                &nbsp;: self    </span>
+                                &nbsp;: <abbr title="\Flow\ETL\Row\Entry\T">T</abbr>    </span>
 </dt>
 
     </dl>
@@ -188,31 +207,92 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Flow-Floe-EntryFactory.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Flow-ETL-Row-Entry-EntryInstantiator.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_create">
-        create()
-        <a href="classes/Flow-Floe-EntryFactory.html#method_create" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_forClass">
+        forClass()
+        <a href="classes/Flow-ETL-Row-Entry-EntryInstantiator.html#method_forClass" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/EntryFactory.php"><a href="files/src-core-etl-src-flow-floe-entryfactory.html"><abbr title="src/core/etl/src/Flow/Floe/EntryFactory.php">EntryFactory.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EntryInstantiator.php"><a href="files/src-core-etl-src-flow-etl-row-entry-entryinstantiator.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EntryInstantiator.php">EntryInstantiator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definition</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">forClass</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="class-string<\Flow\ETL\Row\Entry\TEntry>">TEntry></abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entryClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="self<\Flow\ETL\Row\Entry\TEntry>">TEntry></abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$entryClass</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="class-string<\Flow\ETL\Row\Entry\TEntry>">TEntry></abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_forClass_tags">
+        Tags
+        <a href="classes/Flow-ETL-Row-Entry-EntryInstantiator.html#method_forClass_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">template</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="self<\Flow\ETL\Row\Entry\TEntry>">TEntry></abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_instantiate">
+        instantiate()
+        <a href="classes/Flow-ETL-Row-Entry-EntryInstantiator.html#method_instantiate" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/Entry/EntryInstantiator.php"><a href="files/src-core-etl-src-flow-etl-row-entry-entryinstantiator.html"><abbr title="src/core/etl/src/Flow/ETL/Row/Entry/EntryInstantiator.php">EntryInstantiator.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">instantiate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definition</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\Entry\T">T</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -249,55 +329,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_forEntryClass">
-        forEntryClass()
-        <a href="classes/Flow-Floe-EntryFactory.html#method_forEntryClass" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/EntryFactory.php"><a href="files/src-core-etl-src-flow-floe-entryfactory.html"><abbr title="src/core/etl/src/Flow/Floe/EntryFactory.php">EntryFactory.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">30</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">forEntryClass</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entryClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entryClass</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\Entry\T">T</abbr></span>
             </section>
 
 </article>
@@ -315,7 +347,7 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                <li><a href="classes/Flow-Floe-EntryFactory.html#toc-methods">Methods</a></li>
+                                                                                <li><a href="classes/Flow-ETL-Row-Entry-EntryInstantiator.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
@@ -323,8 +355,8 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Flow-Floe-EntryFactory.html#method_create">create()</a></li>
-                                            <li class=""><a href="classes/Flow-Floe-EntryFactory.html#method_forEntryClass">forEntryClass()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Row-Entry-EntryInstantiator.html#method_forClass">forClass()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Row-Entry-EntryInstantiator.html#method_instantiate">instantiate()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -344,7 +376,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/Flow-Floe-EntryFactory.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Flow-ETL-Row-Entry-EntryInstantiator.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
