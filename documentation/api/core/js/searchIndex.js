@@ -581,6 +581,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Cache-CacheIndex.html#property_key"
         },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\ApcuCache",
+            "name": "ApcuCache",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-ApcuCache.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\ApcuCache\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-ApcuCache.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\ApcuCache\u003A\u003Aclear\u0028\u0029",
+            "name": "clear",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-ApcuCache.html#method_clear"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\ApcuCache\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-ApcuCache.html#method_delete"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\ApcuCache\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-ApcuCache.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\ApcuCache\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-ApcuCache.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\ApcuCache\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-ApcuCache.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\ApcuCache\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Flow-ETL-Cache-Implementation-ApcuCache.html#method_set"
+        },                {
             "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\FilesystemCache",
             "name": "FilesystemCache",
             "summary": "",
@@ -926,6 +966,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_externalSortFilesystem"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AgroupingBatchSize\u0028\u0029",
+            "name": "groupingBatchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_groupingBatchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AgroupingBucketsCount\u0028\u0029",
+            "name": "groupingBucketsCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_groupingBucketsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AgroupingCache\u0028\u0029",
+            "name": "groupingCache",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_groupingCache"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Aid\u0028\u0029",
             "name": "id",
             "summary": "",
@@ -971,10 +1026,65 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_withTelemetry"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003A\u0024grouping",
+            "name": "grouping",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#property_grouping"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003A\u0024sort",
             "name": "sort",
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#property_sort"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfig",
+            "name": "GroupingConfig",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfig.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfig.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfig\u003A\u003A\u0024cache",
+            "name": "cache",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfig.html#property_cache"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfig\u003A\u003A\u0024bucketsCount",
+            "name": "bucketsCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfig.html#property_bucketsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfig\u003A\u003A\u0024batchSize",
+            "name": "batchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfig.html#property_batchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfigBuilder",
+            "name": "GroupingConfigBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfigBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfigBuilder\u003A\u003AbatchSize\u0028\u0029",
+            "name": "batchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfigBuilder.html#method_batchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfigBuilder\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfigBuilder.html#method_build"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfigBuilder\u003A\u003AbucketsCount\u0028\u0029",
+            "name": "bucketsCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfigBuilder.html#method_bucketsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfigBuilder\u003A\u003Acache\u0028\u0029",
+            "name": "cache",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfigBuilder.html#method_cache"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfig",
             "name": "SortConfig",
@@ -1315,6 +1425,11 @@ Search.appendIndex(
             "name": "telemetry",
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#property_telemetry"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\u003A\u003A\u0024grouping",
+            "name": "grouping",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config.html#property_grouping"
         },                {
             "fqsen": "\\Flow\\ETL\\Constraint\\SortedByConstraint",
             "name": "SortedByConstraint",
@@ -7671,6 +7786,106 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-XPath.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Aggregators",
+            "name": "Aggregators",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-Aggregators.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Aggregators\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-Aggregators.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Aggregators\u003A\u003Aaggregate\u0028\u0029",
+            "name": "aggregate",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-Aggregators.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Aggregators\u003A\u003Acloned\u0028\u0029",
+            "name": "cloned",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-Aggregators.html#method_cloned"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Aggregators\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-Aggregators.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Aggregators\u003A\u003Afirst\u0028\u0029",
+            "name": "first",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-Aggregators.html#method_first"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Aggregators\u003A\u003AgetIterator\u0028\u0029",
+            "name": "getIterator",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-Aggregators.html#method_getIterator"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Bucket",
+            "name": "Bucket",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-Bucket.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Bucket\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-Bucket.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Bucket\u003A\u003A\u0024key",
+            "name": "key",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-Bucket.html#property_key"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Bucket\u003A\u003A\u0024aggregators",
+            "name": "aggregators",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-Bucket.html#property_aggregators"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\BucketAggregation",
+            "name": "BucketAggregation",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-BucketAggregation.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\BucketAggregation\u003A\u003Aaggregate\u0028\u0029",
+            "name": "aggregate",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-BucketAggregation.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\ExternalAggregation",
+            "name": "ExternalAggregation",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-ExternalAggregation.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\ExternalAggregation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-ExternalAggregation.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\ExternalAggregation\u003A\u003Aaggregate\u0028\u0029",
+            "name": "aggregate",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-ExternalAggregation.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\GroupKey",
+            "name": "GroupKey",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-GroupKey.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\GroupKey\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-GroupKey.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\GroupKey\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-GroupKey.html#method___toString"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\GroupKey\u003A\u003AgetIterator\u0028\u0029",
+            "name": "getIterator",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-GroupKey.html#method_getIterator"
+        },                {
             "fqsen": "\\Flow\\ETL\\GroupBy",
             "name": "GroupBy",
             "summary": "",
@@ -7686,20 +7901,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-GroupBy.html#method_aggregate"
         },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003Agroup\u0028\u0029",
-            "name": "group",
+            "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003AaggregatedRow\u0028\u0029",
+            "name": "aggregatedRow",
             "summary": "",
-            "url": "classes/Flow-ETL-GroupBy.html#method_group"
+            "url": "classes/Flow-ETL-GroupBy.html#method_aggregatedRow"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003Aaggregations\u0028\u0029",
+            "name": "aggregations",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy.html#method_aggregations"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003AisPivot\u0028\u0029",
+            "name": "isPivot",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy.html#method_isPivot"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003AkeyValues\u0028\u0029",
+            "name": "keyValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy.html#method_keyValues"
         },                {
             "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003Apivot\u0028\u0029",
             "name": "pivot",
             "summary": "",
             "url": "classes/Flow-ETL-GroupBy.html#method_pivot"
         },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003Aresult\u0028\u0029",
-            "name": "result",
+            "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003ApivotResult\u0028\u0029",
+            "name": "pivotResult",
             "summary": "",
-            "url": "classes/Flow-ETL-GroupBy.html#method_result"
+            "url": "classes/Flow-ETL-GroupBy.html#method_pivotResult"
         },                {
             "fqsen": "\\Flow\\ETL\\Hash\\Algorithm",
             "name": "Algorithm",
@@ -12481,6 +12711,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-FilesystemBucketsCache.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\FilesystemBucketsCache\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-FilesystemBucketsCache.html#method_append"
+        },                {
             "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\FilesystemBucketsCache\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "",
@@ -12500,6 +12735,11 @@ Search.appendIndex(
             "name": "BucketsCache",
             "summary": "",
             "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache.html#method_append"
         },                {
             "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -15081,6 +15321,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-config.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping",
+            "name": "Grouping",
+            "summary": "",
+            "url": "namespaces/flow-etl-config-grouping.html"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Sort",
             "name": "Sort",
             "summary": "",
@@ -15205,6 +15450,11 @@ Search.appendIndex(
             "name": "Trim",
             "summary": "",
             "url": "namespaces/flow-etl-function-trim.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy",
+            "name": "GroupBy",
+            "summary": "",
+            "url": "namespaces/flow-etl-groupby.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Hash",
             "name": "Hash",
