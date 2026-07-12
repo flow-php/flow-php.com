@@ -273,7 +273,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLParserExtractor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "In\u0020order\u0020to\u0020iterate\u0020only\u0020over\u0020\u003Celement\u003E\u0020nodes\u0020use\u0020\u0060\u0024loader\u002D\u003EwithXMLNodePath\u0028\u0027root\/elements\/element\u0027\u0029\u0060.",
+            "summary": "To\u0020iterate\u0020only\u0020over\u0020\u003Celement\u003E\u0020nodes,\u0020use\u0020\u0060\u0024loader\u002D\u003EwithXMLNodePath\u0028\u0027root\/elements\/element\u0027\u0029\u0060.",
             "url": "classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method___construct"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLParserExtractor\u003A\u003AcharacterDataHandler\u0028\u0029",
