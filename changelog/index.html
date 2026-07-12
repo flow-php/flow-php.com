@@ -176,8 +176,8 @@
         "prismjs/components/prism-markup-templating.min.js": "/assets/vendor/prismjs/components/prism-markup-templating.min-b695403b78eb9f92ebe96b15679f946a.js",
         "prismjs/components/prism-php.min.js": "/assets/vendor/prismjs/components/prism-php.min-5474e247f3f19219db503da1b03e8a66.js",
         "prismjs/components/prism-bash.min.js": "/assets/vendor/prismjs/components/prism-bash.min-225d13be4b2dc8db515d962953335bda.js",
-        "prismjs/components/prism-json.min.js": "/assets/vendor/prismjs/components/prism-json.min-cf8b29c1d22900de623806ef6bb7a475.js",
-        "prismjs/components/prism-csv.min.js": "/assets/vendor/prismjs/components/prism-csv.min-8760b5ad94aa7414c993d3fa7681abb9.js",
+        "prismjs/components/prism-json.min.js": "/assets/vendor/prismjs/components/prism-json.min-5cabe6f69370d46230def939bbf18ad6.js",
+        "prismjs/components/prism-csv.min.js": "/assets/vendor/prismjs/components/prism-csv.min-f989d6f69adc8b0a3abb4cc424554e21.js",
         "prismjs/components/prism-yaml.min.js": "/assets/vendor/prismjs/components/prism-yaml.min-75dd1a7fc4fcae22fbd4587d78aeefb4.js",
         "codemirror": "/assets/vendor/codemirror/codemirror.index-8b980decd613fa5f035e18571e2fe7fd.js",
         "@codemirror/state": "/assets/vendor/@codemirror/state/state.index-7c4ee203604e54f792fee3acbcb87c93.js",
@@ -265,8 +265,8 @@
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-markup-templating.min-b695403b78eb9f92ebe96b15679f946a.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-php.min-5474e247f3f19219db503da1b03e8a66.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-bash.min-225d13be4b2dc8db515d962953335bda.js">
-<link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-json.min-cf8b29c1d22900de623806ef6bb7a475.js">
-<link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-csv.min-8760b5ad94aa7414c993d3fa7681abb9.js">
+<link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-json.min-5cabe6f69370d46230def939bbf18ad6.js">
+<link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-csv.min-f989d6f69adc8b0a3abb4cc424554e21.js">
 <link rel="modulepreload" href="/assets/vendor/prismjs/components/prism-yaml.min-75dd1a7fc4fcae22fbd4587d78aeefb4.js">
 <link rel="modulepreload" href="/assets/vendor/codemirror/codemirror.index-8b980decd613fa5f035e18571e2fe7fd.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/state/state.index-7c4ee203604e54f792fee3acbcb87c93.js">
@@ -583,6 +583,7 @@
         <h2><a id="unreleased---2026-07-11" href="#unreleased---2026-07-11" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2026-07-11</h2>
 <h3><a id="added" href="#added" class="mr-2" aria-hidden="true" title="Permalink">#</a>Added</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2526">#2526</a> - <strong>flow-php/etl - externalSortBucketSize config controlling rows per external sort bucket (default 10000)</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2525">#2525</a> - <strong>flow-php/symfony-telemetry-bundle - RouteNamePathMap optional cache warmer building a [route name =&gt; path] map at cache:warmup, rebuilt lazily when missing</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2523">#2523</a> - <strong>flow-php/etl - Floe binary row serialization format with writer, reader, merger, extractor, loader and DSL.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2523">#2523</a> - <strong>flow-php/flow-php-ext - new Rust-based PHP extension for native Floe encoding/decoding.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -612,6 +613,12 @@
 </ul>
 <h3><a id="changed" href="#changed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Changed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2526">#2526</a> - <strong>flow-php/etl - sorting algorithm is an explicit choice via sort config, EXTERNAL_SORT is the default</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2526">#2526</a> - <strong>flow-php/etl - external sort spills fewer, larger buckets and streams the final merge instead of writing it back to cache</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2526">#2526</a> - <strong>flow-php/etl - Rows::sortAscending/sortDescending resolve sort values once per row instead of twice per comparison</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2526">#2526</a> - <strong>flow-php/etl - RowsMinHeap compares sort values extracted once at insert</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2526">#2526</a> - <strong>flow-php/etl - MemorySort buffers rows in a plain array instead of per-batch Rows::merge</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2526">#2526</a> - <strong>flow-php/etl - Floe SchemaTracker caches container type fingerprints per Type instance</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2525">#2525</a> - <strong>flow-php/symfony-telemetry-bundle - HttpKernelSpanSubscriber constructor takes ?RouteNamePathMap instead of ?RouterInterface</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2524">#2524</a> - <strong>Replaced switch statements with match expressions across core ETL, parquet lib and http/parquet/seal adapters (no behavior change, outputs byte-identical)</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/MrHDOLEK">@MrHDOLEK</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2523">#2523</a> - <strong>flow-php/etl - Cache stores only Rows; cache indexes are stored as Rows.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -661,6 +668,8 @@ instead of inside the per-row loop</strong> - <a rel="noopener noreferrer" targe
 </ul>
 <h3><a id="removed" href="#removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Removed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2526">#2526</a> - <strong>flow-php/etl - SortAlgorithms::MEMORY_FALLBACK_EXTERNAL_SORT and SortAlgorithms::SQLITE_SORT</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2526">#2526</a> - <strong>flow-php/etl - sortMemoryLimit config, FLOW_SORT_MAX_MEMORY env var and OutOfMemoryException</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2503">#2503</a> - <strong>flow-php/symfony-telemetry-bundle - runtime_mode config and the WorkerModeDetector/RuntimeModeResolver runtime classes.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2501">#2501</a> - <strong>flow-php/telemetry - Remove ResettableContextStorage and MemoryContextStorage::reset().</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2501">#2501</a> - <strong>flow-php/symfony-telemetry-bundle - Remove messenger link config, worker-cycle span, metrics_duration_unit and dbal.log_sql config.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
