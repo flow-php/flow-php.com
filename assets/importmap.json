@@ -192,7 +192,7 @@
         "type": "js"
     },
     "prismjs\/components\/prism-json.min.js": {
-        "path": "\/assets\/vendor\/prismjs\/components\/prism-json.min-cf8b29c1d22900de623806ef6bb7a475.js",
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-json.min-5cabe6f69370d46230def939bbf18ad6.js",
         "type": "js"
     },
     "flowbite": {
@@ -212,7 +212,7 @@
         "type": "css"
     },
     "prismjs\/components\/prism-csv.min.js": {
-        "path": "\/assets\/vendor\/prismjs\/components\/prism-csv.min-8760b5ad94aa7414c993d3fa7681abb9.js",
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-csv.min-f989d6f69adc8b0a3abb4cc424554e21.js",
         "type": "js"
     },
     "prismjs\/components\/prism-yaml.min.js": {
