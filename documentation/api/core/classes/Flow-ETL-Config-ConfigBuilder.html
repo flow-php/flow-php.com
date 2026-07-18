@@ -140,7 +140,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -175,6 +175,12 @@
     <a class="" href="classes/Flow-ETL-Config-ConfigBuilder.html#property_grouping">$grouping</a>
     <span>
                         &nbsp;: <a href="classes/Flow-ETL-Config-Grouping-GroupingConfigBuilder.html"><abbr title="\Flow\ETL\Config\Grouping\GroupingConfigBuilder">GroupingConfigBuilder</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Config-ConfigBuilder.html#property_join">$join</a>
+    <span>
+                        &nbsp;: <a href="classes/Flow-ETL-Config-Join-JoinConfigBuilder.html"><abbr title="\Flow\ETL\Config\Join\JoinConfigBuilder">JoinConfigBuilder</abbr></a>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
@@ -222,12 +228,6 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Config-ConfigBuilder.html#method_cacheSerializerBatchSize">cacheSerializerBatchSize()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Config-ConfigBuilder.html#method_clock">clock()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -264,6 +264,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Config-ConfigBuilder.html#method_extractorBatchSize">extractorBatchSize()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Number of rows a streaming extractor buffers before hydrating them in one batch.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Config-ConfigBuilder.html#method_groupingBatchSize">groupingBatchSize()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -282,7 +289,31 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Config-ConfigBuilder.html#method_hydrator">hydrator()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Config-ConfigBuilder.html#method_id">id()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Config-ConfigBuilder.html#method_joinBatchSize">joinBatchSize()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Config-ConfigBuilder.html#method_joinBucketsCount">joinBucketsCount()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Config-ConfigBuilder.html#method_joinCache">joinCache()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
@@ -367,7 +398,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -404,7 +435,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -414,6 +445,43 @@ data is extracted.</dd>
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Config-Grouping-GroupingConfigBuilder.html"><abbr title="\Flow\ETL\Config\Grouping\GroupingConfigBuilder">GroupingConfigBuilder</abbr></a></span>
     <span class="phpdocumentor-signature__name">$grouping</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_join">
+        $join
+        <a href="classes/Flow-ETL-Config-ConfigBuilder.html#property_join" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Config-Join-JoinConfigBuilder.html"><abbr title="\Flow\ETL\Config\Join\JoinConfigBuilder">JoinConfigBuilder</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$join</span>
     </code>
 
     
@@ -441,7 +509,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -483,7 +551,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -517,7 +585,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -565,30 +633,20 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">build</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-EntryFactory.html"><abbr title="\Flow\ETL\Row\EntryFactory">EntryFactory</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entryFactory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Row-EntryFactory.html"><abbr title="\Flow\ETL\Row\EntryFactory">EntryFactory</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Config.html"><abbr title="\Flow\ETL\Config">Config</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">build</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Config.html"><abbr title="\Flow\ETL\Config">Config</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entryFactory</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-EntryFactory.html"><abbr title="\Flow\ETL\Row\EntryFactory">EntryFactory</abbr></a></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-ETL-Row-EntryFactory.html"><abbr title="\Flow\ETL\Row\EntryFactory">EntryFactory</abbr></a>()</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
         
@@ -613,7 +671,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -661,7 +719,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -701,54 +759,6 @@ data is extracted.</dd>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_cacheSerializerBatchSize">
-        cacheSerializerBatchSize()
-        <a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_cacheSerializerBatchSize" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">140</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">cacheSerializerBatchSize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$serializerBatchSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$serializerBatchSize</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int<1, max></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_clock">
         clock()
         <a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_clock" class="headerlink"><i class="fas fa-link"></i></a>
@@ -757,7 +767,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -805,7 +815,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">178</span>
 
     </aside>
 
@@ -843,7 +853,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">174</span>
+    <span class="phpdocumentor-element-found-in__line">198</span>
 
     </aside>
 
@@ -891,7 +901,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
     </aside>
 
@@ -939,7 +949,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">208</span>
 
     </aside>
 
@@ -987,7 +997,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">191</span>
+    <span class="phpdocumentor-element-found-in__line">215</span>
 
     </aside>
 
@@ -1027,6 +1037,55 @@ data is extracted.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_extractorBatchSize">
+        extractorBatchSize()
+        <a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_extractorBatchSize" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">171</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Number of rows a streaming extractor buffers before hydrating them in one batch.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">extractorBatchSize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$extractorBatchSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$extractorBatchSize</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int<1, max></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_groupingBatchSize">
         groupingBatchSize()
         <a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_groupingBatchSize" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1035,7 +1094,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">201</span>
+    <span class="phpdocumentor-element-found-in__line">225</span>
 
     </aside>
 
@@ -1083,7 +1142,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">211</span>
+    <span class="phpdocumentor-element-found-in__line">235</span>
 
     </aside>
 
@@ -1131,7 +1190,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">218</span>
+    <span class="phpdocumentor-element-found-in__line">242</span>
 
     </aside>
 
@@ -1171,6 +1230,54 @@ data is extracted.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_hydrator">
+        hydrator()
+        <a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_hydrator" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">252</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hydrator</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Hydrator.html"><abbr title="\Flow\ETL\Row\Hydrator">Hydrator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hydrator</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$hydrator</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-Hydrator.html"><abbr title="\Flow\ETL\Row\Hydrator">Hydrator</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_id">
         id()
         <a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_id" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1179,7 +1286,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">225</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 
     </aside>
 
@@ -1219,6 +1326,150 @@ data is extracted.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_joinBatchSize">
+        joinBatchSize()
+        <a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_joinBatchSize" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">269</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">joinBatchSize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$batchSize</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int<1, max></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_joinBucketsCount">
+        joinBucketsCount()
+        <a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_joinBucketsCount" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">279</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">joinBucketsCount</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucketsCount</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bucketsCount</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int<1, max></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_joinCache">
+        joinCache()
+        <a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_joinCache" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">286</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">joinCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Sort-ExternalSort-BucketsCache.html"><abbr title="\Flow\ETL\Sort\ExternalSort\BucketsCache">BucketsCache</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cache</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$cache</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Sort-ExternalSort-BucketsCache.html"><abbr title="\Flow\ETL\Sort\ExternalSort\BucketsCache">BucketsCache</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_mount">
         mount()
         <a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_mount" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1227,7 +1478,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">293</span>
 
     </aside>
 
@@ -1275,7 +1526,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">239</span>
+    <span class="phpdocumentor-element-found-in__line">300</span>
 
     </aside>
 
@@ -1323,7 +1574,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">307</span>
 
     </aside>
 
@@ -1371,7 +1622,7 @@ data is extracted.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">257</span>
+    <span class="phpdocumentor-element-found-in__line">318</span>
 
     </aside>
 
@@ -1411,7 +1662,7 @@ data is extracted.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">264</span>
+    <span class="phpdocumentor-element-found-in__line">325</span>
 
     </aside>
 
@@ -1449,7 +1700,7 @@ data is extracted.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">330</span>
 
     </aside>
 
@@ -1497,7 +1748,7 @@ data is extracted.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">276</span>
+    <span class="phpdocumentor-element-found-in__line">337</span>
 
     </aside>
 
@@ -1545,7 +1796,7 @@ data is extracted.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-configbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/ConfigBuilder.php">ConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">283</span>
+    <span class="phpdocumentor-element-found-in__line">344</span>
 
     </aside>
 
@@ -1610,6 +1861,7 @@ data is extracted.</p>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#property_cache">$cache</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#property_grouping">$grouping</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#property_join">$join</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#property_sort">$sort</a></li>
                                             </ul>
                 </li>
@@ -1622,17 +1874,21 @@ data is extracted.</p>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_build">build()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_cache">cache()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_cacheFilesystem">cacheFilesystem()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_cacheSerializerBatchSize">cacheSerializerBatchSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_clock">clock()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_dontPutInputIntoRows">dontPutInputIntoRows()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_externalSortBatchSize">externalSortBatchSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_externalSortBucketsCount">externalSortBucketsCount()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_externalSortBucketSize">externalSortBucketSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_externalSortFilesystem">externalSortFilesystem()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_extractorBatchSize">extractorBatchSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_groupingBatchSize">groupingBatchSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_groupingBucketsCount">groupingBucketsCount()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_groupingCache">groupingCache()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_hydrator">hydrator()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_id">id()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_joinBatchSize">joinBatchSize()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_joinBucketsCount">joinBucketsCount()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_joinCache">joinCache()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_mount">mount()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_name">name()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-ConfigBuilder.html#method_optimizer">optimizer()</a></li>

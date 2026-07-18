@@ -141,6 +141,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_withAttributePrefix"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\Loader\\XMLLoader\u003A\u003AwithDateFormat\u0028\u0029",
+            "name": "withDateFormat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_withDateFormat"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\Loader\\XMLLoader\u003A\u003AwithDateTimeFormat\u0028\u0029",
             "name": "withDateTimeFormat",
             "summary": "",
@@ -191,80 +196,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_writeXML"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\\EntryNormalizer\\PHPValueNormalizer",
-            "name": "PHPValueNormalizer",
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLEncoder",
+            "name": "XMLEncoder",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer-EntryNormalizer-PHPValueNormalizer.html"
+            "url": "classes/Flow-ETL-Adapter-XML-XMLEncoder.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\\EntryNormalizer\\PHPValueNormalizer\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLEncoder\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer-EntryNormalizer-PHPValueNormalizer.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-XML-XMLEncoder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\\EntryNormalizer\\PHPValueNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLEncoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer-EntryNormalizer-PHPValueNormalizer.html#method_normalize"
+            "url": "classes/Flow-ETL-Adapter-XML-XMLEncoder.html#method_decode"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\\EntryNormalizer\\PHPValueNormalizer\u003A\u003A\u0024attributePrefix",
-            "name": "attributePrefix",
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer-EntryNormalizer-PHPValueNormalizer.html#property_attributePrefix"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\\EntryNormalizer\\PHPValueNormalizer\u003A\u003A\u0024dateTimeFormat",
-            "name": "dateTimeFormat",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer-EntryNormalizer-PHPValueNormalizer.html#property_dateTimeFormat"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\\EntryNormalizer\\PHPValueNormalizer\u003A\u003A\u0024listElementName",
-            "name": "listElementName",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer-EntryNormalizer-PHPValueNormalizer.html#property_listElementName"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\\EntryNormalizer\\PHPValueNormalizer\u003A\u003A\u0024mapElementName",
-            "name": "mapElementName",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer-EntryNormalizer-PHPValueNormalizer.html#property_mapElementName"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\\EntryNormalizer\\PHPValueNormalizer\u003A\u003A\u0024mapElementKeyName",
-            "name": "mapElementKeyName",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer-EntryNormalizer-PHPValueNormalizer.html#property_mapElementKeyName"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\\EntryNormalizer\\PHPValueNormalizer\u003A\u003A\u0024mapElementValueName",
-            "name": "mapElementValueName",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer-EntryNormalizer-PHPValueNormalizer.html#property_mapElementValueName"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\\EntryNormalizer",
-            "name": "EntryNormalizer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer-EntryNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\\EntryNormalizer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer-EntryNormalizer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\\EntryNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer-EntryNormalizer.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer",
-            "name": "RowsNormalizer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-RowsNormalizer.html#method_normalize"
+            "url": "classes/Flow-ETL-Adapter-XML-XMLEncoder.html#method_encode"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLParserExtractor",
             "name": "XMLParserExtractor",
@@ -390,16 +340,6 @@ Search.appendIndex(
             "name": "Loader",
             "summary": "",
             "url": "namespaces/flow-etl-adapter-xml-loader.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer\\EntryNormalizer",
-            "name": "EntryNormalizer",
-            "summary": "",
-            "url": "namespaces/flow-etl-adapter-xml-rowsnormalizer-entrynormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RowsNormalizer",
-            "name": "RowsNormalizer",
-            "summary": "",
-            "url": "namespaces/flow-etl-adapter-xml-rowsnormalizer.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLWriter",
             "name": "XMLWriter",

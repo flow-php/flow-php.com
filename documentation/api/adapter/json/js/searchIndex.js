@@ -31,6 +31,26 @@ Search.appendIndex(
             "summary": "Convert\u0020a\u0020Flow\u0020Schema\u0020into\u0020a\u0020JSON\u0020Schema\u0020\u0028https\u003A\/\/json\u002Dschema.org,\u0020draft\u00202020\u002D12\u0029\u0020document.",
             "url": "namespaces/flow-etl-adapter-json.html#function_schema_to_json_schema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONEncoder",
+            "name": "JSONEncoder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONEncoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONEncoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONEncoder.html#method_encode"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonLinesLoader",
             "name": "JsonLinesLoader",
             "summary": "",
@@ -55,6 +75,11 @@ Search.appendIndex(
             "name": "load",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-JSON-JsonLinesLoader.html#method_load"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonLinesLoader\u003A\u003AwithDateFormat\u0028\u0029",
+            "name": "withDateFormat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonLinesLoader.html#method_withDateFormat"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonLinesLoader\u003A\u003AwithDateTimeFormat\u0028\u0029",
             "name": "withDateTimeFormat",
@@ -95,6 +120,11 @@ Search.appendIndex(
             "name": "load",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_load"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonLoader\u003A\u003AwithDateFormat\u0028\u0029",
+            "name": "withDateFormat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_withDateFormat"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonLoader\u003A\u003AwithDateTimeFormat\u0028\u0029",
             "name": "withDateTimeFormat",
@@ -351,36 +381,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-JSON-JsonSchema-ResolvedReference.html#property_identity"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\RowsNormalizer\\EntryNormalizer",
-            "name": "EntryNormalizer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-JSON-RowsNormalizer-EntryNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\RowsNormalizer\\EntryNormalizer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-JSON-RowsNormalizer-EntryNormalizer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\RowsNormalizer\\EntryNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-JSON-RowsNormalizer-EntryNormalizer.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\RowsNormalizer",
-            "name": "RowsNormalizer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-JSON-RowsNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\RowsNormalizer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-JSON-RowsNormalizer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\RowsNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-JSON-RowsNormalizer.html#method_normalize"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\SchemaConverter",
             "name": "SchemaConverter",
             "summary": "",
@@ -440,10 +440,5 @@ Search.appendIndex(
             "name": "JsonSchema",
             "summary": "",
             "url": "namespaces/flow-etl-adapter-json-jsonschema.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\RowsNormalizer",
-            "name": "RowsNormalizer",
-            "summary": "",
-            "url": "namespaces/flow-etl-adapter-json-rowsnormalizer.html"
         }            ]
 );

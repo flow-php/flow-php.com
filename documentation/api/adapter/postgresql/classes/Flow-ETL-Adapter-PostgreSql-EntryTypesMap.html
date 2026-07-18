@@ -123,7 +123,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -150,9 +150,9 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#constant_DEFAULT_TYPES">DEFAULT_TYPES</a>
     <span>
-        &nbsp;: array&lt;string|int, mixed&gt;&nbsp;= [\Flow\ETL\Row\Entry\StringEntry::class =&gt; \Flo...                            </span>
+        &nbsp;: array&lt;string|int, mixed&gt;&nbsp;= [\Flow\Types\Type\Native\StringType::class =&gt; \...                            </span>
 </dt>
-<dd>Default mapping of Entry classes to PostgreSQL types.</dd>
+<dd>Default mapping of Flow type classes to PostgreSQL value types.</dd>
 
     </dl>
 
@@ -171,11 +171,11 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_mapEntry">mapEntry()</a>
+    <a class="" href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_map">map()</a>
     <span>
                                 &nbsp;: <abbr title="\Flow\PostgreSql\Client\TypedValue">TypedValue</abbr>|null    </span>
 </dt>
-<dd>Maps an Entry to a TypedValue suitable for PostgreSQL queries.</dd>
+<dd>Maps a column value + Flow type to a TypedValue suitable for PostgreSQL queries.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toColumnType">toColumnType()</a>
@@ -212,18 +212,18 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Default mapping of Entry classes to PostgreSQL types.</p>
+        <p class="phpdocumentor-summary">Default mapping of Flow type classes to PostgreSQL value types.</p>
 
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">DEFAULT_TYPES</span>
-    = <span class="phpdocumentor-signature__default-value">[\Flow\ETL\Row\Entry\StringEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\ETL\Row\Entry\IntegerEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::INT8, \Flow\ETL\Row\Entry\FloatEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::FLOAT8, \Flow\ETL\Row\Entry\BooleanEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::BOOL, \Flow\ETL\Row\Entry\DateEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::DATE, \Flow\ETL\Row\Entry\DateTimeEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TIMESTAMP, \Flow\ETL\Row\Entry\TimeEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TIME, \Flow\ETL\Row\Entry\UuidEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::UUID, \Flow\ETL\Row\Entry\JsonEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB, \Flow\ETL\Row\Entry\XMLEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::XML, \Flow\ETL\Row\Entry\XMLElementEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::XML, \Flow\ETL\Row\Entry\HTMLEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\ETL\Row\Entry\HTMLElementEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\ETL\Row\Entry\EnumEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\ETL\Row\Entry\ListEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB, \Flow\ETL\Row\Entry\MapEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB, \Flow\ETL\Row\Entry\StructureEntry::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB]</span>
+    = <span class="phpdocumentor-signature__default-value">[\Flow\Types\Type\Native\StringType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\Types\Type\Native\IntegerType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::INT8, \Flow\Types\Type\Native\FloatType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::FLOAT8, \Flow\Types\Type\Native\BooleanType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::BOOL, \Flow\Types\Type\Logical\DateType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::DATE, \Flow\Types\Type\Logical\DateTimeType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TIMESTAMP, \Flow\Types\Type\Logical\TimeType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TIME, \Flow\Types\Type\Logical\UuidType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::UUID, \Flow\Types\Type\Logical\JsonType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB, \Flow\Types\Type\Logical\XMLType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::XML, \Flow\Types\Type\Logical\XMLElementType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::XML, \Flow\Types\Type\Logical\HTMLType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\Types\Type\Logical\HTMLElementType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\Types\Type\Native\EnumType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\Types\Type\Logical\ListType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB, \Flow\Types\Type\Logical\MapType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB, \Flow\Types\Type\Logical\StructureType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB]</span>
 </code>
 
 
@@ -257,7 +257,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -300,23 +300,23 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_mapEntry">
-        mapEntry()
-        <a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_mapEntry" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_map">
+        map()
+        <a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_map" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Maps an Entry to a TypedValue suitable for PostgreSQL queries.</p>
+        <p class="phpdocumentor-summary">Maps a column value + Flow type to a TypedValue suitable for PostgreSQL queries.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">mapEntry</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\PostgreSql\Client\TypedValue">TypedValue</abbr>|null</span></code>
+                    <span class="phpdocumentor-signature__name">map</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\PostgreSql\Client\TypedValue">TypedValue</abbr>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -325,8 +325,22 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entry</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr>&lt;string|int, mixed&gt;</span>
+                <span class="phpdocumentor-argument-list__argument__name">$column</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$type</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -334,9 +348,9 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="method_mapEntry_tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_map_tags">
         Tags
-        <a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_mapEntry_tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_map_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -345,7 +359,7 @@
             </dt>
                             <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Adapter-PostgreSql-Exception-TypeMappingException.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Exception\TypeMappingException">TypeMappingException</abbr></a></span>
-                                                                                        <section class="phpdocumentor-description"><p>when entry type is not in the map</p>
+                                                                                        <section class="phpdocumentor-description"><p>when the Flow type is not in the map</p>
 </section>
 
                                     </dd>
@@ -373,7 +387,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -438,7 +452,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -519,7 +533,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_mapEntry">mapEntry()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_map">map()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toColumnType">toColumnType()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toFlowType">toFlowType()</a></li>
                                     </ul>

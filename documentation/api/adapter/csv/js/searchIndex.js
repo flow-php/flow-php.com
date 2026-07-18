@@ -16,6 +16,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVDetector.html#method_detect"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVEncoder",
+            "name": "CSVEncoder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVEncoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVEncoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVEncoder.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVEncoder\u003A\u003AencodeHeader\u0028\u0029",
+            "name": "encodeHeader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVEncoder.html#method_encodeHeader"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor",
             "name": "CSVExtractor",
             "summary": "",
@@ -115,6 +140,11 @@ Search.appendIndex(
             "name": "load",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_load"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLoader\u003A\u003AwithDateFormat\u0028\u0029",
+            "name": "withDateFormat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_withDateFormat"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLoader\u003A\u003AwithDateTimeFormat\u0028\u0029",
             "name": "withDateTimeFormat",
@@ -266,46 +296,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-adapter-csv.html#function_csv_detect_separator"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\RowsNormalizer\\EntryNormalizer",
-            "name": "EntryNormalizer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-CSV-RowsNormalizer-EntryNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\RowsNormalizer\\EntryNormalizer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-CSV-RowsNormalizer-EntryNormalizer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\RowsNormalizer\\EntryNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-CSV-RowsNormalizer-EntryNormalizer.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\RowsNormalizer\\ScalarCast",
-            "name": "ScalarCast",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-CSV-RowsNormalizer-ScalarCast.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\RowsNormalizer\\ScalarCast\u003A\u003AfromMixed\u0028\u0029",
-            "name": "fromMixed",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-CSV-RowsNormalizer-ScalarCast.html#method_fromMixed"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\RowsNormalizer",
-            "name": "RowsNormalizer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-CSV-RowsNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\RowsNormalizer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-CSV-RowsNormalizer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\RowsNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-CSV-RowsNormalizer.html#method_normalize"
-        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -340,10 +330,5 @@ Search.appendIndex(
             "name": "Exception",
             "summary": "",
             "url": "namespaces/flow-etl-adapter-csv-exception.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\RowsNormalizer",
-            "name": "RowsNormalizer",
-            "summary": "",
-            "url": "namespaces/flow-etl-adapter-csv-rowsnormalizer.html"
         }            ]
 );

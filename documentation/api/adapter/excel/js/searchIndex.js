@@ -26,6 +26,31 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-adapter-excel-dsl.html#function_is_valid_excel_sheet_name"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelEncoder",
+            "name": "ExcelEncoder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelEncoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelEncoder\u003A\u003AencodeHeader\u0028\u0029",
+            "name": "encodeHeader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_encodeHeader"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor",
             "name": "ExcelExtractor",
             "summary": "",
@@ -196,26 +221,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-Function-IsValidExcelSheetName.html#method_eval"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\RowsNormalizer\\ExcelRowsNormalizer",
-            "name": "ExcelRowsNormalizer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Excel-RowsNormalizer-ExcelRowsNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\RowsNormalizer\\ExcelRowsNormalizer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Excel-RowsNormalizer-ExcelRowsNormalizer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\RowsNormalizer\\ExcelRowsNormalizer\u003A\u003Aheaders\u0028\u0029",
-            "name": "headers",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Excel-RowsNormalizer-ExcelRowsNormalizer.html#method_headers"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\RowsNormalizer\\ExcelRowsNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Excel-RowsNormalizer-ExcelRowsNormalizer.html#method_normalize"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\SheetNameAssertion",
             "name": "SheetNameAssertion",
             "summary": "",
@@ -320,11 +325,6 @@ Search.appendIndex(
             "name": "Function",
             "summary": "",
             "url": "namespaces/flow-etl-adapter-excel-function.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\RowsNormalizer",
-            "name": "RowsNormalizer",
-            "summary": "",
-            "url": "namespaces/flow-etl-adapter-excel-rowsnormalizer.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet",
             "name": "Sheet",

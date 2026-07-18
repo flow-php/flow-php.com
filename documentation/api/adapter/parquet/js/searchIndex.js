@@ -31,6 +31,26 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-adapter-parquet.html#function_schema_from_parquet"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetEncoder",
+            "name": "ParquetEncoder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetEncoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetEncoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetEncoder.html#method_encode"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor",
             "name": "ParquetExtractor",
             "summary": "",
@@ -111,21 +131,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetLoader.html#method_withSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\RowsNormalizer",
-            "name": "RowsNormalizer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-RowsNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\RowsNormalizer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-RowsNormalizer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\RowsNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-RowsNormalizer.html#method_normalize"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\SchemaConverter",
             "name": "SchemaConverter",
             "summary": "",
@@ -141,20 +146,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-SchemaConverter.html#method_toParquet"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueHydrator",
-            "name": "ValueHydrator",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\SchemaConverter\u003A\u003AparquetToFlowType\u0028\u0029",
+            "name": "parquetToFlowType",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueHydrator\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueHydrator\u003A\u003Ahydrate\u0028\u0029",
-            "name": "hydrate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-ValueHydrator.html#method_hydrate"
+            "url": "classes/Flow-ETL-Adapter-Parquet-SchemaConverter.html#method_parquetToFlowType"
         },                {
             "fqsen": "\\",
             "name": "\\",

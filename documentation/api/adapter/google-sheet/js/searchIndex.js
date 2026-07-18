@@ -36,6 +36,26 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-adapter-googlesheet.html#function_from_google_sheet_columns"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetEncoder",
+            "name": "GoogleSheetEncoder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetEncoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetEncoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetEncoder.html#method_encode"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor",
             "name": "GoogleSheetExtractor",
             "summary": "",

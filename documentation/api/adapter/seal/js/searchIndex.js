@@ -36,36 +36,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Seal-Operation.html#enumcase_UPSERT"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\RowsNormalizer\\EntryNormalizer",
-            "name": "EntryNormalizer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-RowsNormalizer-EntryNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\RowsNormalizer\\EntryNormalizer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-RowsNormalizer-EntryNormalizer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\RowsNormalizer\\EntryNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-RowsNormalizer-EntryNormalizer.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\RowsNormalizer",
-            "name": "RowsNormalizer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-RowsNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\RowsNormalizer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-RowsNormalizer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\RowsNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-RowsNormalizer.html#method_normalize"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SchemaConverter",
             "name": "SchemaConverter",
             "summary": "",
@@ -80,6 +50,26 @@ Search.appendIndex(
             "name": "toSealSchema",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Seal-SchemaConverter.html#method_toSealSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealEncoder",
+            "name": "SealEncoder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Seal-SealEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealEncoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_encode"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader",
             "name": "SealLoader",
@@ -100,6 +90,16 @@ Search.appendIndex(
             "name": "withBulkSize",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Seal-SealLoader.html#method_withBulkSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader\u003A\u003AwithDateFormat\u0028\u0029",
+            "name": "withDateFormat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Seal-SealLoader.html#method_withDateFormat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader\u003A\u003AwithDateTimeFormat\u0028\u0029",
+            "name": "withDateTimeFormat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Seal-SealLoader.html#method_withDateTimeFormat"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader\u003A\u003AwithIdentifierEntry\u0028\u0029",
             "name": "withIdentifierEntry",
@@ -195,10 +195,5 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\RowsNormalizer",
-            "name": "RowsNormalizer",
-            "summary": "",
-            "url": "namespaces/flow-etl-adapter-seal-rowsnormalizer.html"
         }            ]
 );

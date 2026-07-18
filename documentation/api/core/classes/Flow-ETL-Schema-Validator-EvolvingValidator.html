@@ -144,19 +144,26 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Validator/EvolvingValidator.php"><a href="files/src-core-etl-src-flow-etl-schema-validator-evolvingvalidator.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Validator/EvolvingValidator.php">EvolvingValidator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Rules of evolving schema matching:
-- if schemas are the same, return true
-- if given schema has less fields than expected schema, return false
-- if given schema is making a nullable field non-nullable, return false
-- if given schema is making a non-nullable field nullable, return true
-- if given schema is changing the type of a field, return false
-- if given schema is adding a field, return true</p>
+            <p class="phpdocumentor-summary">Compatibility for combining or evolving datasets - the same invariant a merge,
+an append and a per-batch validation all need: combining `expected` and `given`
+must never leave a row holding null in a column that is non-nullable somewhere.</p>
 
 
+    <section class="phpdocumentor-description"><ul>
+<li>a shared column must keep a compatible type and must not widen to nullable
+where the expected side is non-nullable (its rows would then read as null),</li>
+<li>a column in <code class="prettyprint">expected</code> but absent from <code class="prettyprint">given</code> is allowed only when nullable
+(given's rows read it as null),</li>
+<li>a column in <code class="prettyprint">given</code> but absent from <code class="prettyprint">expected</code> is allowed only when nullable
+(expected's rows read it as null).</li>
+</ul>
+<p>A required (non-nullable) column that is dropped, added, or type-changed is
+therefore incompatible.</p>
+</section>
 
 
 
@@ -218,7 +225,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Validator/EvolvingValidator.php"><a href="files/src-core-etl-src-flow-etl-schema-validator-evolvingvalidator.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Validator/EvolvingValidator.php">EvolvingValidator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 

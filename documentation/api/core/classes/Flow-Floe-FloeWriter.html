@@ -139,7 +139,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeWriter.php"><a href="files/src-core-etl-src-flow-floe-floewriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeWriter.php">FloeWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -176,8 +176,6 @@
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Opens an append session on an existing file; a missing or empty file is
-created instead. Torn files (invalid trailer) throw.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-FloeWriter.html#method_close">close()</a>
@@ -190,33 +188,17 @@ created instead. Torn files (invalid trailer) throw.</dd>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Opens a create session, overwriting an existing file.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Floe-FloeWriter.html#method_createOnStream">createOnStream()</a>
+    <a class="" href="classes/Flow-Floe-FloeWriter.html#method_createForStream">createForStream()</a>
     <span>
                                 &nbsp;: void    </span>
-</dt>
-<dd>Opens a create session over an already-open destination stream (e.g. one
-provided by the ETL FilesystemStreams machinery). Produces byte-identical
-output to create(); the only difference is who owns the stream.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Floe-FloeWriter.html#method_growSectionPlan">growSectionPlan()</a>
-    <span>
-                                &nbsp;: <a href="classes/Flow-Floe-EncoderPlan.html"><abbr title="\Flow\Floe\EncoderPlan">EncoderPlan</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-FloeWriter.html#method_write">write()</a>
     <span>
                                 &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Floe-FloeWriter.html#method_writerVersion">writerVersion()</a>
-    <span>
-                                &nbsp;: string    </span>
 </dt>
 
     </dl>
@@ -247,14 +229,14 @@ output to create(); the only difference is who owns the stream.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeWriter.php"><a href="files/src-core-etl-src-flow-floe-floewriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeWriter.php">FloeWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-Codec.html"><abbr title="\Flow\Floe\Codec">Codec</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$codec</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Floe-Codec-NoopCodec.html"><abbr title="\Flow\Floe\Codec\NoopCodec">NoopCodec</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$useExtension</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-Codec.html"><abbr title="\Flow\Floe\Codec">Codec</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$codec</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Floe-Codec-NoopCodec.html"><abbr title="\Flow\Floe\Codec\NoopCodec">NoopCodec</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Row-Hydrator.html"><abbr title="\Flow\ETL\Row\Hydrator">Hydrator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hydrator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bufferSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">65536</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -277,13 +259,20 @@ output to create(); the only difference is who owns the stream.</dd>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$useExtension</span>
-                : <span class="phpdocumentor-argument-list__argument__type">null|bool</span>
+                <span class="phpdocumentor-argument-list__argument__name">$hydrator</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-Row-Hydrator.html"><abbr title="\Flow\ETL\Row\Hydrator">Hydrator</abbr></a></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>null auto-detects flow_php; even when true, a non-Noop codec gets the PHP engine</p>
+                    <section class="phpdocumentor-description"><p>null uses the adaptive hydrator</p>
 </section>
 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bufferSize</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">65536</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
             </dd>
             </dl>
 
@@ -321,13 +310,11 @@ output to create(); the only difference is who owns the stream.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeWriter.php"><a href="files/src-core-etl-src-flow-floe-floewriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeWriter.php">FloeWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Opens an append session on an existing file; a missing or empty file is
-created instead. Torn files (invalid trailer) throw.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">append</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
@@ -390,7 +377,7 @@ created instead. Torn files (invalid trailer) throw.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeWriter.php"><a href="files/src-core-etl-src-flow-floe-floewriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeWriter.php">FloeWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -438,15 +425,14 @@ created instead. Torn files (invalid trailer) throw.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeWriter.php"><a href="files/src-core-etl-src-flow-floe-floewriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeWriter.php">FloeWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Opens a create session, overwriting an existing file.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -467,6 +453,15 @@ created instead. Torn files (invalid trailer) throw.</p>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>stored in the footer</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>fixes the session schema; null derives it from the first batch</p>
 </section>
 
             </dd>
@@ -498,25 +493,22 @@ created instead. Torn files (invalid trailer) throw.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_createOnStream">
-        createOnStream()
-        <a href="classes/Flow-Floe-FloeWriter.html#method_createOnStream" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_createForStream">
+        createForStream()
+        <a href="classes/Flow-Floe-FloeWriter.html#method_createForStream" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeWriter.php"><a href="files/src-core-etl-src-flow-floe-floewriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeWriter.php">FloeWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">237</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Opens a create session over an already-open destination stream (e.g. one
-provided by the ETL FilesystemStreams machinery). Produces byte-identical
-output to create(); the only difference is who owns the stream.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">createOnStream</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">createForStream</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -540,12 +532,21 @@ output to create(); the only difference is who owns the stream.</p>
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>fixes the session schema; null derives it from the first batch</p>
+</section>
+
+            </dd>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="method_createOnStream_tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_createForStream_tags">
         Tags
-        <a href="classes/Flow-Floe-FloeWriter.html#method_createOnStream_tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-Floe-FloeWriter.html#method_createForStream_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -566,61 +567,6 @@ output to create(); the only difference is who owns the stream.</p>
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_growSectionPlan">
-        growSectionPlan()
-        <a href="classes/Flow-Floe-FloeWriter.html#method_growSectionPlan" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeWriter.php"><a href="files/src-core-etl-src-flow-floe-floewriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeWriter.php">FloeWriter.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">275</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">growSectionPlan</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$currentSchemaBody</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Floe-EncoderPlan.html"><abbr title="\Flow\Floe\EncoderPlan">EncoderPlan</abbr></a></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$currentSchemaBody</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$row</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Floe-EncoderPlan.html"><abbr title="\Flow\Floe\EncoderPlan">EncoderPlan</abbr></a></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_write">
@@ -631,7 +577,7 @@ output to create(); the only difference is who owns the stream.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeWriter.php"><a href="files/src-core-etl-src-flow-floe-floewriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeWriter.php">FloeWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -679,44 +625,6 @@ output to create(); the only difference is who owns the stream.</p>
     
     
 </article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_writerVersion">
-        writerVersion()
-        <a href="classes/Flow-Floe-FloeWriter.html#method_writerVersion" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeWriter.php"><a href="files/src-core-etl-src-flow-floe-floewriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeWriter.php">FloeWriter.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">268</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">writerVersion</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
             </section>
 
         
@@ -743,10 +651,8 @@ output to create(); the only difference is who owns the stream.</p>
                                             <li class=""><a href="classes/Flow-Floe-FloeWriter.html#method_append">append()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-FloeWriter.html#method_close">close()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-FloeWriter.html#method_create">create()</a></li>
-                                            <li class=""><a href="classes/Flow-Floe-FloeWriter.html#method_createOnStream">createOnStream()</a></li>
-                                            <li class=""><a href="classes/Flow-Floe-FloeWriter.html#method_growSectionPlan">growSectionPlan()</a></li>
+                                            <li class=""><a href="classes/Flow-Floe-FloeWriter.html#method_createForStream">createForStream()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-FloeWriter.html#method_write">write()</a></li>
-                                            <li class=""><a href="classes/Flow-Floe-FloeWriter.html#method_writerVersion">writerVersion()</a></li>
                                     </ul>
             </li>
                     </ul>

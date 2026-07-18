@@ -611,11 +611,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Cache-Implementation-ApcuCache.html#method_has"
         },                {
-            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\ApcuCache\u003A\u003Aread\u0028\u0029",
-            "name": "read",
-            "summary": "",
-            "url": "classes/Flow-ETL-Cache-Implementation-ApcuCache.html#method_read"
-        },                {
             "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\ApcuCache\u003A\u003Aset\u0028\u0029",
             "name": "set",
             "summary": "",
@@ -650,11 +645,6 @@ Search.appendIndex(
             "name": "has",
             "summary": "",
             "url": "classes/Flow-ETL-Cache-Implementation-FilesystemCache.html#method_has"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\FilesystemCache\u003A\u003Aread\u0028\u0029",
-            "name": "read",
-            "summary": "",
-            "url": "classes/Flow-ETL-Cache-Implementation-FilesystemCache.html#method_read"
         },                {
             "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\FilesystemCache\u003A\u003Aset\u0028\u0029",
             "name": "set",
@@ -691,11 +681,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Cache-Implementation-InMemoryCache.html#method_has"
         },                {
-            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\InMemoryCache\u003A\u003Aread\u0028\u0029",
-            "name": "read",
-            "summary": "",
-            "url": "classes/Flow-ETL-Cache-Implementation-InMemoryCache.html#method_read"
-        },                {
             "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\InMemoryCache\u003A\u003Aset\u0028\u0029",
             "name": "set",
             "summary": "",
@@ -731,11 +716,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Cache-Implementation-PSRSimpleCache.html#method_has"
         },                {
-            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\PSRSimpleCache\u003A\u003Aread\u0028\u0029",
-            "name": "read",
-            "summary": "",
-            "url": "classes/Flow-ETL-Cache-Implementation-PSRSimpleCache.html#method_read"
-        },                {
             "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\PSRSimpleCache\u003A\u003Aset\u0028\u0029",
             "name": "set",
             "summary": "",
@@ -766,11 +746,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Cache-Implementation-TraceableCache.html#method_get"
         },                {
-            "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\TraceableCache\u003A\u003Aread\u0028\u0029",
-            "name": "read",
-            "summary": "",
-            "url": "classes/Flow-ETL-Cache-Implementation-TraceableCache.html#method_read"
-        },                {
             "fqsen": "\\Flow\\ETL\\Cache\\Implementation\\TraceableCache\u003A\u003Ahas\u0028\u0029",
             "name": "has",
             "summary": "",
@@ -800,11 +775,6 @@ Search.appendIndex(
             "name": "get",
             "summary": "",
             "url": "classes/Flow-ETL-Cache.html#method_get"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Cache\u003A\u003Aread\u0028\u0029",
-            "name": "read",
-            "summary": "",
-            "url": "classes/Flow-ETL-Cache.html#method_read"
         },                {
             "fqsen": "\\Flow\\ETL\\Cache\u003A\u003Ahas\u0028\u0029",
             "name": "has",
@@ -896,11 +866,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_filesystemMount"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfigBuilder\u003A\u003AserializerBatchSize\u0028\u0029",
-            "name": "serializerBatchSize",
-            "summary": "Serializer\u0020batch\u0020size\u0020for\u0020the\u0020default\u0020FilesystemCache\u003B\u0020ignored\u0020when\u0020a\u0020custom\u0020Cache\u0020was\ninjected\u0020via\u0020cache\u0028\u0029.",
-            "url": "classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_serializerBatchSize"
-        },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder",
             "name": "ConfigBuilder",
             "summary": "",
@@ -931,15 +896,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_cacheFilesystem"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AcacheSerializerBatchSize\u0028\u0029",
-            "name": "cacheSerializerBatchSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_cacheSerializerBatchSize"
-        },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Aclock\u0028\u0029",
             "name": "clock",
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_clock"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AextractorBatchSize\u0028\u0029",
+            "name": "extractorBatchSize",
+            "summary": "Number\u0020of\u0020rows\u0020a\u0020streaming\u0020extractor\u0020buffers\u0020before\u0020hydrating\u0020them\u0020in\u0020one\u0020batch.",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_extractorBatchSize"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AdontPutInputIntoRows\u0028\u0029",
             "name": "dontPutInputIntoRows",
@@ -981,10 +946,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_groupingCache"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Ahydrator\u0028\u0029",
+            "name": "hydrator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_hydrator"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Aid\u0028\u0029",
             "name": "id",
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_id"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AjoinBatchSize\u0028\u0029",
+            "name": "joinBatchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_joinBatchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AjoinBucketsCount\u0028\u0029",
+            "name": "joinBucketsCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_joinBucketsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AjoinCache\u0028\u0029",
+            "name": "joinCache",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_joinCache"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Amount\u0028\u0029",
             "name": "mount",
@@ -1030,6 +1015,11 @@ Search.appendIndex(
             "name": "grouping",
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#property_grouping"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003A\u0024join",
+            "name": "join",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#property_join"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003A\u0024sort",
             "name": "sort",
@@ -1085,6 +1075,56 @@ Search.appendIndex(
             "name": "cache",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Grouping-GroupingConfigBuilder.html#method_cache"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfig",
+            "name": "JoinConfig",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-JoinConfig.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-JoinConfig.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfig\u003A\u003A\u0024cache",
+            "name": "cache",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-JoinConfig.html#property_cache"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfig\u003A\u003A\u0024bucketsCount",
+            "name": "bucketsCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-JoinConfig.html#property_bucketsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfig\u003A\u003A\u0024batchSize",
+            "name": "batchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-JoinConfig.html#property_batchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfigBuilder",
+            "name": "JoinConfigBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-JoinConfigBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfigBuilder\u003A\u003AbatchSize\u0028\u0029",
+            "name": "batchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-JoinConfigBuilder.html#method_batchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfigBuilder\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-JoinConfigBuilder.html#method_build"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfigBuilder\u003A\u003AbucketsCount\u0028\u0029",
+            "name": "bucketsCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-JoinConfigBuilder.html#method_bucketsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfigBuilder\u003A\u003Acache\u0028\u0029",
+            "name": "cache",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-JoinConfigBuilder.html#method_cache"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfig",
             "name": "SortConfig",
@@ -1366,11 +1406,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#method_clock"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\u003A\u003AentryFactory\u0028\u0029",
-            "name": "entryFactory",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config.html#method_entryFactory"
-        },                {
             "fqsen": "\\Flow\\ETL\\Config\u003A\u003AfilesystemStreams\u0028\u0029",
             "name": "filesystemStreams",
             "summary": "",
@@ -1380,6 +1415,21 @@ Search.appendIndex(
             "name": "fstab",
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#method_fstab"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\u003A\u003AentryFactory\u0028\u0029",
+            "name": "entryFactory",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config.html#method_entryFactory"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\u003A\u003AextractorBatchSize\u0028\u0029",
+            "name": "extractorBatchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config.html#method_extractorBatchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\u003A\u003Ahydrator\u0028\u0029",
+            "name": "hydrator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config.html#method_hydrator"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\u003A\u003Aid\u0028\u0029",
             "name": "id",
@@ -1430,6 +1480,11 @@ Search.appendIndex(
             "name": "grouping",
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#property_grouping"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\u003A\u003A\u0024join",
+            "name": "join",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config.html#property_join"
         },                {
             "fqsen": "\\Flow\\ETL\\Constraint\\SortedByConstraint",
             "name": "SortedByConstraint",
@@ -2483,7 +2538,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\null_entry\u0028\u0029",
             "name": "null_entry",
-            "summary": "This\u0020functions\u0020is\u0020an\u0020alias\u0020for\u0020creating\u0020string\u0020entry\u0020from\u0020null.",
+            "summary": "Creates\u0020an\u0020entry\u0020of\u0020the\u0020null\u0020type.\u0020Used\u0020when\u0020a\u0020column\u0020value\u0020is\u0020null\u0020and\u0020its\u0020final\u0020type\u0020is\u0020not\u0020yet\u0020known.",
             "url": "namespaces/flow-etl-dsl.html#function_null_entry"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\string_entry\u0028\u0029",
@@ -4270,6 +4325,11 @@ Search.appendIndex(
             "name": "functions",
             "summary": "",
             "url": "classes/Flow-ETL-FlowContext.html#method_functions"
+        },                {
+            "fqsen": "\\Flow\\ETL\\FlowContext\u003A\u003Ahydrator\u0028\u0029",
+            "name": "hydrator",
+            "summary": "",
+            "url": "classes/Flow-ETL-FlowContext.html#method_hydrator"
         },                {
             "fqsen": "\\Flow\\ETL\\FlowContext\u003A\u003AsetErrorHandler\u0028\u0029",
             "name": "setErrorHandler",
@@ -7971,6 +8031,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Hash-PlainText.html#method_hash"
         },                {
+            "fqsen": "\\Flow\\ETL\\Join\\BucketedHashJoin",
+            "name": "BucketedHashJoin",
+            "summary": "Hash\u0020join\u0020with\u0020storage\u002Ddriven\u0020execution.\u0020The\u0020right\u0020side\u0020is\u0020always\u0020partitioned\u0020through\nthe\u0020BucketsCache.\u0020With\u0020a\u0020resident\u0020\u0028in\u002Dmemory\u0029\u0020cache\u0020the\u0020left\u0020side\u0020is\u0020streamed\u0020through\na\u0020single\u0020hash\u0020table\u0020\u002D\u0020left\u0020row\u0020order\u0020is\u0020preserved\u0020and\u0020memory\u0020usage\u0020is\u0020bounded\u0020by\u0020the\nright\u0020side.\u0020With\u0020a\u0020non\u002Dresident\u0020\u0028on\u002Ddisk\u0029\u0020cache\u0020both\u0020sides\u0020are\u0020partitioned\u0020by\u0020join\u0020key\nhash\u0020and\u0020joined\u0020one\u0020pair\u0020of\u0020buckets\u0020at\u0020a\u0020time\u0020\u0028grace\u0020hash\u0020join\u0029\u0020\u002D\u0020memory\u0020usage\u0020is\nbounded\u0020by\u0020the\u0020largest\u0020bucket\u0020and\u0020left\u0020row\u0020order\u0020is\u0020not\u0020preserved.",
+            "url": "classes/Flow-ETL-Join-BucketedHashJoin.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\BucketedHashJoin\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-BucketedHashJoin.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\BucketedHashJoin\u003A\u003AjoinGenerator\u0028\u0029",
+            "name": "joinGenerator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-BucketedHashJoin.html#method_joinGenerator"
+        },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\\All",
             "name": "All",
             "summary": "",
@@ -7985,6 +8060,11 @@ Search.appendIndex(
             "name": "compare",
             "summary": "",
             "url": "classes/Flow-ETL-Join-Comparison-All.html#method_compare"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\Comparison\\All\u003A\u003Acomparisons\u0028\u0029",
+            "name": "comparisons",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-Comparison-All.html#method_comparisons"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\\All\u003A\u003Aleft\u0028\u0029",
             "name": "left",
@@ -8010,6 +8090,11 @@ Search.appendIndex(
             "name": "compare",
             "summary": "",
             "url": "classes/Flow-ETL-Join-Comparison-Any.html#method_compare"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\Comparison\\Any\u003A\u003Acomparisons\u0028\u0029",
+            "name": "comparisons",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-Comparison-Any.html#method_comparisons"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\\Any\u003A\u003Aleft\u0028\u0029",
             "name": "left",
@@ -8106,6 +8191,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Join-Expression.html#method_on"
         },                {
+            "fqsen": "\\Flow\\ETL\\Join\\Expression\u003A\u003Acomparison\u0028\u0029",
+            "name": "comparison",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-Expression.html#method_comparison"
+        },                {
             "fqsen": "\\Flow\\ETL\\Join\\Expression\u003A\u003AdropDuplicateLeftEntries\u0028\u0029",
             "name": "dropDuplicateLeftEntries",
             "summary": "",
@@ -8135,6 +8225,176 @@ Search.appendIndex(
             "name": "right",
             "summary": "",
             "url": "classes/Flow-ETL-Join-Expression.html#method_right"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\BucketSpiller",
+            "name": "BucketSpiller",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-BucketSpiller.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\BucketSpiller\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-BucketSpiller.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\BucketSpiller\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-BucketSpiller.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\BucketSpiller\u003A\u003AbucketIds\u0028\u0029",
+            "name": "bucketIds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-BucketSpiller.html#method_bucketIds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\BucketSpiller\u003A\u003Aflush\u0028\u0029",
+            "name": "flush",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-BucketSpiller.html#method_flush"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\EqualityJoinKeys",
+            "name": "EqualityJoinKeys",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-EqualityJoinKeys.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\EqualityJoinKeys\u003A\u003AfromComparison\u0028\u0029",
+            "name": "fromComparison",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-EqualityJoinKeys.html#method_fromComparison"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\EqualityJoinKeys\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-EqualityJoinKeys.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\EqualityJoinKeys\u003A\u003AleftHash\u0028\u0029",
+            "name": "leftHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-EqualityJoinKeys.html#method_leftHash"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\EqualityJoinKeys\u003A\u003ArightHash\u0028\u0029",
+            "name": "rightHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-EqualityJoinKeys.html#method_rightHash"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\HashTable",
+            "name": "HashTable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-HashTable.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\HashTable\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-HashTable.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\HashTable\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-HashTable.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\HashTable\u003A\u003AcandidatesFor\u0028\u0029",
+            "name": "candidatesFor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-HashTable.html#method_candidatesFor"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\HashTable\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-HashTable.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\HashTable\u003A\u003Amatched\u0028\u0029",
+            "name": "matched",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-HashTable.html#method_matched"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\HashTable\u003A\u003AunmatchedRows\u0028\u0029",
+            "name": "unmatchedRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-HashTable.html#method_unmatchedRows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\Joiner",
+            "name": "Joiner",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-Joiner.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\Joiner\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-Joiner.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\Joiner\u003A\u003Ajoin\u0028\u0029",
+            "name": "join",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-Joiner.html#method_join"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\Joiner\u003A\u003Akeys\u0028\u0029",
+            "name": "keys",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-Joiner.html#method_keys"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\JoinKeys",
+            "name": "JoinKeys",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-JoinKeys.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\JoinKeys\u003A\u003AleftHash\u0028\u0029",
+            "name": "leftHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_leftHash"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\JoinKeys\u003A\u003ArightHash\u0028\u0029",
+            "name": "rightHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_rightHash"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\NullRowBuilder",
+            "name": "NullRowBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-NullRowBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\NullRowBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-NullRowBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\NullRowBuilder\u003A\u003Acollect\u0028\u0029",
+            "name": "collect",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-NullRowBuilder.html#method_collect"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\NullRowBuilder\u003A\u003Arow\u0028\u0029",
+            "name": "row",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-NullRowBuilder.html#method_row"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\RowMerger",
+            "name": "RowMerger",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-RowMerger.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\RowMerger\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-RowMerger.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\RowMerger\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-RowMerger.html#method_merge"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\SingleBucketJoinKeys",
+            "name": "SingleBucketJoinKeys",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-SingleBucketJoinKeys.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\SingleBucketJoinKeys\u003A\u003AleftHash\u0028\u0029",
+            "name": "leftHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-SingleBucketJoinKeys.html#method_leftHash"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\SingleBucketJoinKeys\u003A\u003ArightHash\u0028\u0029",
+            "name": "rightHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-SingleBucketJoinKeys.html#method_rightHash"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Join",
             "name": "Join",
@@ -8591,71 +8851,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-Optimizer.html#method_optimize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin\\Bucket",
-            "name": "Bucket",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-HashJoin-Bucket.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin\\Bucket\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-HashJoin-Bucket.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin\\Bucket\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_add"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin\\Bucket\u003A\u003Acount\u0028\u0029",
-            "name": "count",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_count"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin\\Bucket\u003A\u003AfindMatch\u0028\u0029",
-            "name": "findMatch",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_findMatch"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin\\Bucket\u003A\u003Arows\u0028\u0029",
-            "name": "rows",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_rows"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin\\Bucket\u003A\u003AunmatchedRows\u0028\u0029",
-            "name": "unmatchedRows",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-HashJoin-Bucket.html#method_unmatchedRows"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin\\Bucket\u003A\u003A\u0024hash",
-            "name": "hash",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-HashJoin-Bucket.html#property_hash"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin\\HashTable",
-            "name": "HashTable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-HashJoin-HashTable.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin\\HashTable\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-HashJoin-HashTable.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin\\HashTable\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-HashJoin-HashTable.html#method_add"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin\\HashTable\u003A\u003AbucketFor\u0028\u0029",
-            "name": "bucketFor",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-HashJoin-HashTable.html#method_bucketFor"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin\\HashTable\u003A\u003AunmatchedRows\u0028\u0029",
-            "name": "unmatchedRows",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-HashJoin-HashTable.html#method_unmatchedRows"
-        },                {
             "fqsen": "\\Flow\\ETL\\RandomValueGenerator",
             "name": "RandomValueGenerator",
             "summary": "",
@@ -8846,6 +9041,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Retry-RetryStrategy.html#method_shouldRetry"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\AdaptiveRowHydrator",
+            "name": "AdaptiveRowHydrator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-AdaptiveRowHydrator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\AdaptiveRowHydrator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-AdaptiveRowHydrator.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\AdaptiveRowHydrator\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-AdaptiveRowHydrator.html#method_cast"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\AdaptiveRowHydrator\u003A\u003Adehydrate\u0028\u0029",
+            "name": "dehydrate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-AdaptiveRowHydrator.html#method_dehydrate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\AdaptiveRowHydrator\u003A\u003Ahydrate\u0028\u0029",
+            "name": "hydrate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-AdaptiveRowHydrator.html#method_hydrate"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\CartesianProduct",
             "name": "CartesianProduct",
             "summary": "",
@@ -8875,6 +9095,21 @@ Search.appendIndex(
             "name": "equals",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Comparator.html#method_equals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Encoder",
+            "name": "Encoder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Encoder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Encoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Encoder.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Encoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Encoder.html#method_decode"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entries",
             "name": "Entries",
@@ -9656,6 +9891,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-MapEntry.html#method_value"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\NullEntry",
+            "name": "NullEntry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-NullEntry.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\NullEntry\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-NullEntry.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\NullEntry\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-NullEntry.html#method___toString"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\NullEntry\u003A\u003Adefinition\u0028\u0029",
+            "name": "definition",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-NullEntry.html#method_definition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\NullEntry\u003A\u003Ais\u0028\u0029",
+            "name": "is",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-NullEntry.html#method_is"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\NullEntry\u003A\u003AisEqual\u0028\u0029",
+            "name": "isEqual",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-NullEntry.html#method_isEqual"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\NullEntry\u003A\u003Aname\u0028\u0029",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-NullEntry.html#method_name"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\NullEntry\u003A\u003Arename\u0028\u0029",
+            "name": "rename",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-NullEntry.html#method_rename"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\NullEntry\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-NullEntry.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\NullEntry\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-NullEntry.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Entry\\NullEntry\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Entry-NullEntry.html#method_value"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\StringEntry",
             "name": "StringEntry",
             "summary": "",
@@ -9665,11 +9955,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Entry-StringEntry.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Entry\\StringEntry\u003A\u003AfromNull\u0028\u0029",
-            "name": "fromNull",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Entry-StringEntry.html#method_fromNull"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Entry\\StringEntry\u003A\u003Alowercase\u0028\u0029",
             "name": "lowercase",
@@ -10136,15 +10421,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-EntryFactory.html#method_create"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\EntryFactory\u003A\u003AcreateAs\u0028\u0029",
-            "name": "createAs",
+            "fqsen": "\\Flow\\ETL\\Row\\EntryFactory\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
             "summary": "",
-            "url": "classes/Flow-ETL-Row-EntryFactory.html#method_createAs"
+            "url": "classes/Flow-ETL-Row-EntryFactory.html#method_cast"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\EntryFactory\u003A\u003Ainstantiate\u0028\u0029",
-            "name": "instantiate",
+            "fqsen": "\\Flow\\ETL\\Row\\EntryFactory\u003A\u003AfromDefinition\u0028\u0029",
+            "name": "fromDefinition",
             "summary": "",
-            "url": "classes/Flow-ETL-Row-EntryFactory.html#method_instantiate"
+            "url": "classes/Flow-ETL-Row-EntryFactory.html#method_fromDefinition"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\EntryReference",
             "name": "EntryReference",
@@ -10255,6 +10540,101 @@ Search.appendIndex(
             "name": "format",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Formatter-ASCIISchemaFormatter.html#method_format"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Hydrator",
+            "name": "Hydrator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Hydrator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Hydrator\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Hydrator.html#method_cast"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Hydrator\u003A\u003Adehydrate\u0028\u0029",
+            "name": "dehydrate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Hydrator.html#method_dehydrate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Hydrator\u003A\u003Ahydrate\u0028\u0029",
+            "name": "hydrate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Hydrator.html#method_hydrate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\NativeRowHydrator",
+            "name": "NativeRowHydrator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-NativeRowHydrator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\NativeRowHydrator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-NativeRowHydrator.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\NativeRowHydrator\u003A\u003AisSupported\u0028\u0029",
+            "name": "isSupported",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-NativeRowHydrator.html#method_isSupported"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\NativeRowHydrator\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-NativeRowHydrator.html#method_cast"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\NativeRowHydrator\u003A\u003Adehydrate\u0028\u0029",
+            "name": "dehydrate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-NativeRowHydrator.html#method_dehydrate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\NativeRowHydrator\u003A\u003Ahydrate\u0028\u0029",
+            "name": "hydrate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-NativeRowHydrator.html#method_hydrate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\PhpRowHydrator",
+            "name": "PhpRowHydrator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-PhpRowHydrator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\PhpRowHydrator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-PhpRowHydrator.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\PhpRowHydrator\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-PhpRowHydrator.html#method_cast"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\PhpRowHydrator\u003A\u003Adehydrate\u0028\u0029",
+            "name": "dehydrate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-PhpRowHydrator.html#method_dehydrate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\PhpRowHydrator\u003A\u003Ahydrate\u0028\u0029",
+            "name": "hydrate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-PhpRowHydrator.html#method_hydrate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\RawRowValues",
+            "name": "RawRowValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-RawRowValues.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\RawRowValues\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-RawRowValues.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\RawRowValues\u003A\u003A\u0024values",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-RawRowValues.html#property_values"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\RawRowValues\u003A\u003A\u0024metadata",
+            "name": "metadata",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-RawRowValues.html#property_metadata"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Reference",
             "name": "Reference",
@@ -10395,6 +10775,31 @@ Search.appendIndex(
             "name": "DESC",
             "summary": "",
             "url": "classes/Flow-ETL-Row-SortOrder.html#enumcase_DESC"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\TypedRowValues",
+            "name": "TypedRowValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-TypedRowValues.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\TypedRowValues\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-TypedRowValues.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\TypedRowValues\u003A\u003A\u0024values",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-TypedRowValues.html#property_values"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\TypedRowValues\u003A\u003A\u0024types",
+            "name": "types",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-TypedRowValues.html#property_types"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\TypedRowValues\u003A\u003A\u0024metadata",
+            "name": "metadata",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-TypedRowValues.html#property_metadata"
         },                {
             "fqsen": "\\Flow\\ETL\\Row",
             "name": "Row",
@@ -11661,6 +12066,86 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-MapDefinition.html#method_entryClass"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition",
+            "name": "NullDefinition",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003AaddMetadata\u0028\u0029",
+            "name": "addMetadata",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_addMetadata"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003Aentry\u0028\u0029",
+            "name": "entry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_entry"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003AisCompatible\u0028\u0029",
+            "name": "isCompatible",
+            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_isCompatible"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003AisNullable\u0028\u0029",
+            "name": "isNullable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_isNullable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003AisSame\u0028\u0029",
+            "name": "isSame",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_isSame"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003AmakeNullable\u0028\u0029",
+            "name": "makeNullable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_makeNullable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003Amatches\u0028\u0029",
+            "name": "matches",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_matches"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_merge"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003Ametadata\u0028\u0029",
+            "name": "metadata",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_metadata"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003Arename\u0028\u0029",
+            "name": "rename",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_rename"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003AsetMetadata\u0028\u0029",
+            "name": "setMetadata",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_setMetadata"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003AentryClass\u0028\u0029",
+            "name": "entryClass",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_entryClass"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StringDefinition",
             "name": "StringDefinition",
             "summary": "",
@@ -12411,11 +12896,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Metadata.html#method_remove"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Metadata\u003A\u003AFROM_NULL",
-            "name": "FROM_NULL",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Metadata.html#constant_FROM_NULL"
-        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\SchemaFormatter",
             "name": "SchemaFormatter",
             "summary": "",
@@ -12523,7 +13003,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Validator\\EvolvingValidator",
             "name": "EvolvingValidator",
-            "summary": "Rules\u0020of\u0020evolving\u0020schema\u0020matching\u003A\n\u002D\u0020if\u0020schemas\u0020are\u0020the\u0020same,\u0020return\u0020true\n\u002D\u0020if\u0020given\u0020schema\u0020has\u0020less\u0020fields\u0020than\u0020expected\u0020schema,\u0020return\u0020false\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020making\u0020a\u0020nullable\u0020field\u0020non\u002Dnullable,\u0020return\u0020false\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020making\u0020a\u0020non\u002Dnullable\u0020field\u0020nullable,\u0020return\u0020true\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020changing\u0020the\u0020type\u0020of\u0020a\u0020field,\u0020return\u0020false\n\u002D\u0020if\u0020given\u0020schema\u0020is\u0020adding\u0020a\u0020field,\u0020return\u0020true",
+            "summary": "Compatibility\u0020for\u0020combining\u0020or\u0020evolving\u0020datasets\u0020\u002D\u0020the\u0020same\u0020invariant\u0020a\u0020merge,\nan\u0020append\u0020and\u0020a\u0020per\u002Dbatch\u0020validation\u0020all\u0020need\u003A\u0020combining\u0020\u0060expected\u0060\u0020and\u0020\u0060given\u0060\nmust\u0020never\u0020leave\u0020a\u0020row\u0020holding\u0020null\u0020in\u0020a\u0020column\u0020that\u0020is\u0020non\u002Dnullable\u0020somewhere.",
             "url": "classes/Flow-ETL-Schema-Validator-EvolvingValidator.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Validator\\EvolvingValidator\u003A\u003Avalidate\u0028\u0029",
@@ -12856,6 +13336,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-FilesystemBucketsCache.html#method_set"
         },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\InMemoryBucketsCache",
+            "name": "InMemoryBucketsCache",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-InMemoryBucketsCache.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\InMemoryBucketsCache\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-InMemoryBucketsCache.html#method_append"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\InMemoryBucketsCache\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-InMemoryBucketsCache.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\InMemoryBucketsCache\u003A\u003Aremove\u0028\u0029",
+            "name": "remove",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-InMemoryBucketsCache.html#method_remove"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\InMemoryBucketsCache\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-InMemoryBucketsCache.html#method_set"
+        },                {
             "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache",
             "name": "BucketsCache",
             "summary": "",
@@ -12905,6 +13410,11 @@ Search.appendIndex(
             "name": "bucketId",
             "summary": "",
             "url": "classes/Flow-ETL-Sort-ExternalSort-ComparableBucketRow.html#property_bucketId"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\ResidentBucketsCache",
+            "name": "ResidentBucketsCache",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort-ResidentBucketsCache.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\RowsMinHeap",
             "name": "RowsMinHeap",
@@ -13831,6 +14341,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-WithEntry.html#property_function"
         },                {
+            "fqsen": "\\Flow\\Floe\\AdaptiveFloeEncoder",
+            "name": "AdaptiveFloeEncoder",
+            "summary": "",
+            "url": "classes/Flow-Floe-AdaptiveFloeEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\AdaptiveFloeEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Floe-AdaptiveFloeEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Floe\\AdaptiveFloeEncoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-Floe-AdaptiveFloeEncoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\Floe\\AdaptiveFloeEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-Floe-AdaptiveFloeEncoder.html#method_encode"
+        },                {
             "fqsen": "\\Flow\\Floe\\Codec\\NoopCodec",
             "name": "NoopCodec",
             "summary": "",
@@ -13880,16 +14410,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Floe-ColumnBlueprint.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A\u0024nullableDefinition",
-            "name": "nullableDefinition",
-            "summary": "",
-            "url": "classes/Flow-Floe-ColumnBlueprint.html#property_nullableDefinition"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A\u0024fromNullDefinition",
-            "name": "fromNullDefinition",
-            "summary": "",
-            "url": "classes/Flow-Floe-ColumnBlueprint.html#property_fromNullDefinition"
         },                {
             "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A\u0024name",
             "name": "name",
@@ -14206,51 +14726,6 @@ Search.appendIndex(
             "summary": "Merges\u0020several\u0020Floe\u0020files\u0020\u0028same\u0020or\u0020append\u002Dcompatible\u0020evolving\u0020schema\u0029\u0020into\u0020one,\u0020on\u0020the\u0020local\nfilesystem.\u0020Byte\u002Dsplices\u0020frame\u0020regions\u0020by\u0020default\u0020\u0028O\u0028bytes\u0029,\u0020no\u0020re\u002Dencode\u0029\u003B\u0020compact\u0020re\u002Dencodes\nall\u0020rows\u0020into\u0020fewer\u0020sections.\u0020For\u0020non\u002Dlocal\u0020filesystems\u0020use\u0020FloeMerger\u0020directly.",
             "url": "namespaces/flow-floe-dsl.html#function_merge_floe"
         },                {
-            "fqsen": "\\Flow\\Floe\\EncoderColumn",
-            "name": "EncoderColumn",
-            "summary": "",
-            "url": "classes/Flow-Floe-EncoderColumn.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\EncoderColumn\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-EncoderColumn.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\EncoderColumn\u003A\u003A\u0024name",
-            "name": "name",
-            "summary": "",
-            "url": "classes/Flow-Floe-EncoderColumn.html#property_name"
-        },                {
-            "fqsen": "\\Flow\\Floe\\EncoderColumn\u003A\u003A\u0024typeFingerprint",
-            "name": "typeFingerprint",
-            "summary": "",
-            "url": "classes/Flow-Floe-EncoderColumn.html#property_typeFingerprint"
-        },                {
-            "fqsen": "\\Flow\\Floe\\EncoderColumn\u003A\u003A\u0024encoder",
-            "name": "encoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-EncoderColumn.html#property_encoder"
-        },                {
-            "fqsen": "\\Flow\\Floe\\EncoderPlan",
-            "name": "EncoderPlan",
-            "summary": "",
-            "url": "classes/Flow-Floe-EncoderPlan.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\EncoderPlan\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-EncoderPlan.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\EncoderPlan\u003A\u003A\u0024columns",
-            "name": "columns",
-            "summary": "",
-            "url": "classes/Flow-Floe-EncoderPlan.html#property_columns"
-        },                {
-            "fqsen": "\\Flow\\Floe\\EncoderPlan\u003A\u003A\u0024schemaBody",
-            "name": "schemaBody",
-            "summary": "",
-            "url": "classes/Flow-Floe-EncoderPlan.html#property_schemaBody"
-        },                {
             "fqsen": "\\Flow\\Floe\\Encoding\\BooleanEncoder",
             "name": "BooleanEncoder",
             "summary": "",
@@ -14521,21 +14996,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-Exception-IncompatibleSchemaException.html"
         },                {
-            "fqsen": "\\Flow\\Floe\\ExtRowFrameEncoder",
-            "name": "ExtRowFrameEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-ExtRowFrameEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ExtRowFrameEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-ExtRowFrameEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ExtRowFrameEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-ExtRowFrameEncoder.html#method_encode"
-        },                {
             "fqsen": "\\Flow\\Floe\\FloeExtractor",
             "name": "FloeExtractor",
             "summary": "",
@@ -14566,56 +15026,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-FloeExtractor.html#method_withOffset"
         },                {
-            "fqsen": "\\Flow\\Floe\\FloeFile",
-            "name": "FloeFile",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeFile.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeFile\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeFile.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeFile\u003A\u003Afooter\u0028\u0029",
-            "name": "footer",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeFile.html#method_footer"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeFile\u003A\u003Ametadata\u0028\u0029",
-            "name": "metadata",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeFile.html#method_metadata"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeFile\u003A\u003Arecover\u0028\u0029",
-            "name": "recover",
-            "summary": "Salvages\u0020complete\u0020frames\u0020from\u0020the\u0020beginning\u0020of\u0020the\u0020file\u0020sequentially\u0020\u002D\u0020no\nfooter,\u0020no\u0020ranged\u0020reads.\u0020Rows\u0020are\u0020yielded\u0020as\u0020they\u0020were\u0020written\u0020\u0028no\npadding\u0029\u003B\u0020reading\u0020ends\u0020silently\u0020at\u0020the\u0020first\u0020truncated\u0020or\u0020invalid\u0020frame.",
-            "url": "classes/Flow-Floe-FloeFile.html#method_recover"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeFile\u003A\u003Arows\u0028\u0029",
-            "name": "rows",
-            "summary": "Hot\u0020path\u003A\u0020frames\u0020are\u0020walked\u0020in\u002Dbuffer,\u0020unlike\u0020recover\u0028\u0029\u0020which\u0020keeps\u0020the\nreusable\u0020FrameReader.\u0020offset\u0020skips\u0020whole\u0020leading\u0020sections\u0020using\u0020the\u0020footer,\nthen\u0020the\u0020remaining\u0020rows\u0020inside\u0020the\u0020start\u0020section\u003B\u0020limit\u0020stops\u0020the\u0020read\nafter\u0020that\u0020many\u0020rows.",
-            "url": "classes/Flow-Floe-FloeFile.html#method_rows"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeFile\u003A\u003Ahead\u0028\u0029",
-            "name": "head",
-            "summary": "The\u0020first\u0020\u0024count\u0020rows,\u0020without\u0020scanning\u0020the\u0020rest\u0020of\u0020the\u0020file.",
-            "url": "classes/Flow-Floe-FloeFile.html#method_head"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeFile\u003A\u003Atail\u0028\u0029",
-            "name": "tail",
-            "summary": "The\u0020last\u0020\u0024count\u0020rows,\u0020decoding\u0020only\u0020from\u0020the\u0020boundary\u0020section\u0020onward\n\u0028footer\u0020offsets,\u0020no\u0020scan\u0029.\u0020A\u0020file\u0020with\u0020fewer\u0020rows\u0020yields\u0020them\u0020all.",
-            "url": "classes/Flow-Floe-FloeFile.html#method_tail"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeFile\u003A\u003Aschema\u0028\u0029",
-            "name": "schema",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeFile.html#method_schema"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeFile\u003A\u003AtotalRows\u0028\u0029",
-            "name": "totalRows",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeFile.html#method_totalRows"
-        },                {
             "fqsen": "\\Flow\\Floe\\FloeLoader",
             "name": "FloeLoader",
             "summary": "",
@@ -14625,6 +15035,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Floe-FloeLoader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeLoader\u003A\u003AwithSchema\u0028\u0029",
+            "name": "withSchema",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeLoader.html#method_withSchema"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeLoader\u003A\u003Aclosure\u0028\u0029",
             "name": "closure",
@@ -14691,25 +15106,95 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-FloeSerializer.html#method_unserialize"
         },                {
-            "fqsen": "\\Flow\\Floe\\FloeValueSerializer",
-            "name": "FloeValueSerializer",
+            "fqsen": "\\Flow\\Floe\\FloeStreamReader",
+            "name": "FloeStreamReader",
             "summary": "",
-            "url": "classes/Flow-Floe-FloeValueSerializer.html"
+            "url": "classes/Flow-Floe-FloeStreamReader.html"
         },                {
-            "fqsen": "\\Flow\\Floe\\FloeValueSerializer\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Floe-FloeValueSerializer.html#method___construct"
+            "url": "classes/Flow-Floe-FloeStreamReader.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Floe\\FloeValueSerializer\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
+            "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Afooter\u0028\u0029",
+            "name": "footer",
             "summary": "",
-            "url": "classes/Flow-Floe-FloeValueSerializer.html#method_decode"
+            "url": "classes/Flow-Floe-FloeStreamReader.html#method_footer"
         },                {
-            "fqsen": "\\Flow\\Floe\\FloeValueSerializer\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
+            "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Ametadata\u0028\u0029",
+            "name": "metadata",
             "summary": "",
-            "url": "classes/Flow-Floe-FloeValueSerializer.html#method_encode"
+            "url": "classes/Flow-Floe-FloeStreamReader.html#method_metadata"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Arecover\u0028\u0029",
+            "name": "recover",
+            "summary": "Salvages\u0020complete\u0020frames\u0020from\u0020the\u0020beginning\u0020of\u0020the\u0020file\u0020sequentially\u0020\u002D\u0020no\nfooter,\u0020no\u0020ranged\u0020reads.\u0020Rows\u0020are\u0020yielded\u0020as\u0020they\u0020were\u0020written\u0020\u0028no\npadding\u0029\u003B\u0020reading\u0020ends\u0020silently\u0020at\u0020the\u0020first\u0020truncated\u0020or\u0020invalid\u0020frame.",
+            "url": "classes/Flow-Floe-FloeStreamReader.html#method_recover"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Arows\u0028\u0029",
+            "name": "rows",
+            "summary": "Hot\u0020path\u003A\u0020frames\u0020are\u0020walked\u0020in\u002Dbuffer,\u0020unlike\u0020recover\u0028\u0029\u0020which\u0020keeps\u0020the\nreusable\u0020FrameReader.\u0020offset\u0020skips\u0020whole\u0020leading\u0020sections\u0020using\u0020the\u0020footer,\nthen\u0020the\u0020remaining\u0020rows\u0020inside\u0020the\u0020start\u0020section\u003B\u0020limit\u0020stops\u0020the\u0020read\nafter\u0020that\u0020many\u0020rows.",
+            "url": "classes/Flow-Floe-FloeStreamReader.html#method_rows"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Ahead\u0028\u0029",
+            "name": "head",
+            "summary": "The\u0020first\u0020\u0024count\u0020rows,\u0020without\u0020scanning\u0020the\u0020rest\u0020of\u0020the\u0020file.",
+            "url": "classes/Flow-Floe-FloeStreamReader.html#method_head"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Atail\u0028\u0029",
+            "name": "tail",
+            "summary": "The\u0020last\u0020\u0024count\u0020rows,\u0020decoding\u0020only\u0020from\u0020the\u0020boundary\u0020section\u0020onward\n\u0028footer\u0020offsets,\u0020no\u0020scan\u0029.\u0020A\u0020file\u0020with\u0020fewer\u0020rows\u0020yields\u0020them\u0020all.",
+            "url": "classes/Flow-Floe-FloeStreamReader.html#method_tail"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeStreamReader.html#method_schema"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003AtotalRows\u0028\u0029",
+            "name": "totalRows",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeStreamReader.html#method_totalRows"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamWriter",
+            "name": "FloeStreamWriter",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeStreamWriter.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamWriter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeStreamWriter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamWriter\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "Opens\u0020a\u0020create\u0020session\u0020over\u0020a\u0020fresh\u0020destination\u0020stream,\u0020writing\u0020the\u0020header.",
+            "url": "classes/Flow-Floe-FloeStreamWriter.html#method_create"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamWriter\u003A\u003Aresume\u0028\u0029",
+            "name": "resume",
+            "summary": "Seeds\u0020writer\u0020state\u0020from\u0020an\u0020existing\u0020file\u0027s\u0020footer\u0020and\u0020opens\u0020an\u0020append\nsession\u0020over\u0020its\u0020stream.\u0020The\u0020caller\u0020\u0028facade\u0029\u0020owns\u0020the\u0020filesystem\u002Dlevel\nvalidation\u0020\u0028header\/trailer\/torn\/codec\u0020checks\u0029\u0020before\u0020handing\u0020over.\u0020The\nsession\u0020schema\u0020is\u0020forced\u0020to\u0020the\u0020file\u0020union\u0020\u002D\u0020appended\u0020batches\u0020must\u0020fit\u0020it.",
+            "url": "classes/Flow-Floe-FloeStreamWriter.html#method_resume"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamWriter\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeStreamWriter.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamWriter\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeStreamWriter.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamWriter\u003A\u003AwriterVersion\u0028\u0029",
+            "name": "writerVersion",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeStreamWriter.html#method_writerVersion"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamWriter\u003A\u003AunionSchema\u0028\u0029",
+            "name": "unionSchema",
+            "summary": "The\u0020union\u0020schema\u0020of\u0020a\u0020batch,\u0020built\u0020without\u0020touching\u0020the\u0020rows\u0027\u0020lazily\u002Dcached\nschema\u0028\u0029\u0020\u002D\u0020the\u0020writer\u0020must\u0020not\u0020mutate\u0020caller\u0020rows.",
+            "url": "classes/Flow-Floe-FloeStreamWriter.html#method_unionSchema"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeWriter",
             "name": "FloeWriter",
@@ -14723,7 +15208,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Floe\\FloeWriter\u003A\u003Aappend\u0028\u0029",
             "name": "append",
-            "summary": "Opens\u0020an\u0020append\u0020session\u0020on\u0020an\u0020existing\u0020file\u003B\u0020a\u0020missing\u0020or\u0020empty\u0020file\u0020is\ncreated\u0020instead.\u0020Torn\u0020files\u0020\u0028invalid\u0020trailer\u0029\u0020throw.",
+            "summary": "",
             "url": "classes/Flow-Floe-FloeWriter.html#method_append"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeWriter\u003A\u003Aclose\u0028\u0029",
@@ -14733,28 +15218,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Floe\\FloeWriter\u003A\u003Acreate\u0028\u0029",
             "name": "create",
-            "summary": "Opens\u0020a\u0020create\u0020session,\u0020overwriting\u0020an\u0020existing\u0020file.",
+            "summary": "",
             "url": "classes/Flow-Floe-FloeWriter.html#method_create"
         },                {
-            "fqsen": "\\Flow\\Floe\\FloeWriter\u003A\u003AcreateOnStream\u0028\u0029",
-            "name": "createOnStream",
-            "summary": "Opens\u0020a\u0020create\u0020session\u0020over\u0020an\u0020already\u002Dopen\u0020destination\u0020stream\u0020\u0028e.g.\u0020one\nprovided\u0020by\u0020the\u0020ETL\u0020FilesystemStreams\u0020machinery\u0029.\u0020Produces\u0020byte\u002Didentical\noutput\u0020to\u0020create\u0028\u0029\u003B\u0020the\u0020only\u0020difference\u0020is\u0020who\u0020owns\u0020the\u0020stream.",
-            "url": "classes/Flow-Floe-FloeWriter.html#method_createOnStream"
+            "fqsen": "\\Flow\\Floe\\FloeWriter\u003A\u003AcreateForStream\u0028\u0029",
+            "name": "createForStream",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeWriter.html#method_createForStream"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeWriter\u003A\u003Awrite\u0028\u0029",
             "name": "write",
             "summary": "",
             "url": "classes/Flow-Floe-FloeWriter.html#method_write"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeWriter\u003A\u003AwriterVersion\u0028\u0029",
-            "name": "writerVersion",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeWriter.html#method_writerVersion"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeWriter\u003A\u003AgrowSectionPlan\u0028\u0029",
-            "name": "growSectionPlan",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeWriter.html#method_growSectionPlan"
         },                {
             "fqsen": "\\Flow\\Floe\\Footer",
             "name": "Footer",
@@ -14771,15 +15246,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-Footer.html#method_fromJson"
         },                {
-            "fqsen": "\\Flow\\Floe\\Footer\u003A\u003A\u0024fileSchema",
-            "name": "fileSchema",
+            "fqsen": "\\Flow\\Floe\\Footer\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
             "summary": "",
-            "url": "classes/Flow-Floe-Footer.html#property_fileSchema"
+            "url": "classes/Flow-Floe-Footer.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Footer\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-Floe-Footer.html#property_schema"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Footer\u003A\u003AfilePartitions\u0028\u0029",
+            "name": "filePartitions",
+            "summary": "The\u0020single\u0020combination\u0020of\u0020a\u0020single\u002Dcombination\u0020file,\u0020in\u0020the\u0020order\u0020it\u0020was\nwritten\u0020\u0028the\u0020PARTITIONS\u0020frame\u0020\/\u0020table\u0020entry\u0020preserves\u0020it\u0029.\u0020A\u0020zero\u002Dsection\nvalue\u0020keeps\u0020only\u0020its\u0020combination\u0020in\u0020the\u0020table,\u0020so\u0020it\u0020is\u0020recovered\u0020from\u0020the\nlast\u0020non\u002Dempty\u0020table\u0020entry.",
+            "url": "classes/Flow-Floe-Footer.html#method_filePartitions"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Footer\u003A\u003AreconstructRows\u0028\u0029",
+            "name": "reconstructRows",
+            "summary": "Rebuilds\u0020Rows\u0020from\u0020already\u002Ddecoded\u0020\u0028un\u002Dpartitioned\u0029\u0020rows,\u0020reattaching\u0020the\nfile\u0027s\u0020single\u0020partition\u0020combination\u0020in\u0020its\u0020original\u0020order.",
+            "url": "classes/Flow-Floe-Footer.html#method_reconstructRows"
         },                {
             "fqsen": "\\Flow\\Floe\\Footer\u003A\u003AschemaBody\u0028\u0029",
             "name": "schemaBody",
             "summary": "",
             "url": "classes/Flow-Floe-Footer.html#method_schemaBody"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Footer\u003A\u003ApartitionsFor\u0028\u0029",
+            "name": "partitionsFor",
+            "summary": "",
+            "url": "classes/Flow-Floe-Footer.html#method_partitionsFor"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Footer\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Floe-Footer.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Floe\\Footer\u003A\u003AtoJson\u0028\u0029",
             "name": "toJson",
@@ -14795,11 +15295,6 @@ Search.appendIndex(
             "name": "writer",
             "summary": "",
             "url": "classes/Flow-Floe-Footer.html#property_writer"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Footer\u003A\u003A\u0024schemas",
-            "name": "schemas",
-            "summary": "",
-            "url": "classes/Flow-Floe-Footer.html#property_schemas"
         },                {
             "fqsen": "\\Flow\\Floe\\Footer\u003A\u003A\u0024sections",
             "name": "sections",
@@ -14821,6 +15316,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-Footer.html#property_metadata"
         },                {
+            "fqsen": "\\Flow\\Floe\\FooterLocation",
+            "name": "FooterLocation",
+            "summary": "",
+            "url": "classes/Flow-Floe-FooterLocation.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FooterLocation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Floe-FooterLocation.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FooterLocation\u003A\u003A\u0024footer",
+            "name": "footer",
+            "summary": "",
+            "url": "classes/Flow-Floe-FooterLocation.html#property_footer"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FooterLocation\u003A\u003A\u0024footerFrameStart",
+            "name": "footerFrameStart",
+            "summary": "",
+            "url": "classes/Flow-Floe-FooterLocation.html#property_footerFrameStart"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FooterReader",
+            "name": "FooterReader",
+            "summary": "",
+            "url": "classes/Flow-Floe-FooterReader.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FooterReader\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-Floe-FooterReader.html#method_read"
+        },                {
             "fqsen": "\\Flow\\Floe\\Format",
             "name": "Format",
             "summary": "",
@@ -14830,6 +15355,16 @@ Search.appendIndex(
             "name": "frame",
             "summary": "",
             "url": "classes/Flow-Floe-Format.html#method_frame"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AmetadataBytes\u0028\u0029",
+            "name": "metadataBytes",
+            "summary": "",
+            "url": "classes/Flow-Floe-Format.html#method_metadataBytes"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AreadMetadata\u0028\u0029",
+            "name": "readMetadata",
+            "summary": "",
+            "url": "classes/Flow-Floe-Format.html#method_readMetadata"
         },                {
             "fqsen": "\\Flow\\Floe\\Format\u003A\u003Aheader\u0028\u0029",
             "name": "header",
@@ -14911,15 +15446,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-Format.html#constant_VALUE_PRESENT"
         },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_NULL_FROM_NULL",
-            "name": "VALUE_NULL_FROM_NULL",
+            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_NULL_WITH_META",
+            "name": "VALUE_NULL_WITH_META",
             "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_VALUE_NULL_FROM_NULL"
+            "url": "classes/Flow-Floe-Format.html#constant_VALUE_NULL_WITH_META"
         },                {
             "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_ABSENT",
             "name": "VALUE_ABSENT",
             "summary": "",
             "url": "classes/Flow-Floe-Format.html#constant_VALUE_ABSENT"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_PRESENT_WITH_META",
+            "name": "VALUE_PRESENT_WITH_META",
+            "summary": "",
+            "url": "classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_WITH_META"
         },                {
             "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_NULL_BYTE",
             "name": "VALUE_NULL_BYTE",
@@ -14931,15 +15471,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_BYTE"
         },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_NULL_FROM_NULL_BYTE",
-            "name": "VALUE_NULL_FROM_NULL_BYTE",
+            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_NULL_WITH_META_BYTE",
+            "name": "VALUE_NULL_WITH_META_BYTE",
             "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_VALUE_NULL_FROM_NULL_BYTE"
+            "url": "classes/Flow-Floe-Format.html#constant_VALUE_NULL_WITH_META_BYTE"
         },                {
             "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_ABSENT_BYTE",
             "name": "VALUE_ABSENT_BYTE",
             "summary": "",
             "url": "classes/Flow-Floe-Format.html#constant_VALUE_ABSENT_BYTE"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_PRESENT_WITH_META_BYTE",
+            "name": "VALUE_PRESENT_WITH_META_BYTE",
+            "summary": "",
+            "url": "classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_WITH_META_BYTE"
         },                {
             "fqsen": "\\Flow\\Floe\\Format\u003A\u003ADATETIME_IMMUTABLE",
             "name": "DATETIME_IMMUTABLE",
@@ -15016,6 +15561,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-FrameReader.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Floe\\FrameReader\u003A\u003AchunkFiller\u0028\u0029",
+            "name": "chunkFiller",
+            "summary": "",
+            "url": "classes/Flow-Floe-FrameReader.html#method_chunkFiller"
+        },                {
             "fqsen": "\\Flow\\Floe\\FrameReader\u003A\u003Aframes\u0028\u0029",
             "name": "frames",
             "summary": "",
@@ -15026,75 +15576,105 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-FrameReader.html#constant_COMPACT_THRESHOLD"
         },                {
-            "fqsen": "\\Flow\\Floe\\FrameSegment",
-            "name": "FrameSegment",
+            "fqsen": "\\Flow\\Floe\\FrameWriter",
+            "name": "FrameWriter",
             "summary": "",
-            "url": "classes/Flow-Floe-FrameSegment.html"
+            "url": "classes/Flow-Floe-FrameWriter.html"
         },                {
-            "fqsen": "\\Flow\\Floe\\FrameSegment\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Floe-FrameSegment.html#method___construct"
+            "url": "classes/Flow-Floe-FrameWriter.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Floe\\FrameSegment\u003A\u003A\u0024schemaBody",
-            "name": "schemaBody",
+            "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Aheader\u0028\u0029",
+            "name": "header",
             "summary": "",
-            "url": "classes/Flow-Floe-FrameSegment.html#property_schemaBody"
+            "url": "classes/Flow-Floe-FrameWriter.html#method_header"
         },                {
-            "fqsen": "\\Flow\\Floe\\FrameSegment\u003A\u003A\u0024frames",
-            "name": "frames",
+            "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Arow\u0028\u0029",
+            "name": "row",
             "summary": "",
-            "url": "classes/Flow-Floe-FrameSegment.html#property_frames"
+            "url": "classes/Flow-Floe-FrameWriter.html#method_row"
         },                {
-            "fqsen": "\\Flow\\Floe\\FrameSegment\u003A\u003A\u0024rowCount",
-            "name": "rowCount",
+            "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
             "summary": "",
-            "url": "classes/Flow-Floe-FrameSegment.html#property_rowCount"
+            "url": "classes/Flow-Floe-FrameWriter.html#method_schema"
         },                {
-            "fqsen": "\\Flow\\Floe\\PhpRowFrameEncoder",
-            "name": "PhpRowFrameEncoder",
+            "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Apartitions\u0028\u0029",
+            "name": "partitions",
             "summary": "",
-            "url": "classes/Flow-Floe-PhpRowFrameEncoder.html"
+            "url": "classes/Flow-Floe-FrameWriter.html#method_partitions"
         },                {
-            "fqsen": "\\Flow\\Floe\\PhpRowFrameEncoder\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Afooter\u0028\u0029",
+            "name": "footer",
+            "summary": "",
+            "url": "classes/Flow-Floe-FrameWriter.html#method_footer"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Araw\u0028\u0029",
+            "name": "raw",
+            "summary": "Verbatim\u0020byte\u0020passthrough\u0020for\u0020the\u0020mergeSplice\u0020fast\u0020path\u0020\u0028no\u0020re\u002Dencode\u0029.",
+            "url": "classes/Flow-Floe-FrameWriter.html#method_raw"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Aposition\u0028\u0029",
+            "name": "position",
+            "summary": "",
+            "url": "classes/Flow-Floe-FrameWriter.html#method_position"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Aflush\u0028\u0029",
+            "name": "flush",
+            "summary": "",
+            "url": "classes/Flow-Floe-FrameWriter.html#method_flush"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-Floe-FrameWriter.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder",
+            "name": "NativeFloeEncoder",
+            "summary": "",
+            "url": "classes/Flow-Floe-NativeFloeEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Floe-PhpRowFrameEncoder.html#method___construct"
+            "url": "classes/Flow-Floe-NativeFloeEncoder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Floe\\PhpRowFrameEncoder\u003A\u003Aencode\u0028\u0029",
+            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder\u003A\u003AisSupported\u0028\u0029",
+            "name": "isSupported",
+            "summary": "",
+            "url": "classes/Flow-Floe-NativeFloeEncoder.html#method_isSupported"
+        },                {
+            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-Floe-NativeFloeEncoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder\u003A\u003Aencode\u0028\u0029",
             "name": "encode",
             "summary": "",
-            "url": "classes/Flow-Floe-PhpRowFrameEncoder.html#method_encode"
+            "url": "classes/Flow-Floe-NativeFloeEncoder.html#method_encode"
         },                {
-            "fqsen": "\\Flow\\Floe\\RowEncoder",
-            "name": "RowEncoder",
+            "fqsen": "\\Flow\\Floe\\PhpFloeEncoder",
+            "name": "PhpFloeEncoder",
             "summary": "",
-            "url": "classes/Flow-Floe-RowEncoder.html"
+            "url": "classes/Flow-Floe-PhpFloeEncoder.html"
         },                {
-            "fqsen": "\\Flow\\Floe\\RowEncoder\u003A\u003Aencode\u0028\u0029",
+            "fqsen": "\\Flow\\Floe\\PhpFloeEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Floe-PhpFloeEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Floe\\PhpFloeEncoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-Floe-PhpFloeEncoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\Floe\\PhpFloeEncoder\u003A\u003Aencode\u0028\u0029",
             "name": "encode",
             "summary": "",
-            "url": "classes/Flow-Floe-RowEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\RowFrameEncoder",
-            "name": "RowFrameEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-RowFrameEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\RowFrameEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-RowFrameEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\RowHydrator",
-            "name": "RowHydrator",
-            "summary": "",
-            "url": "classes/Flow-Floe-RowHydrator.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\RowHydrator\u003A\u003Ahydrate\u0028\u0029",
-            "name": "hydrate",
-            "summary": "",
-            "url": "classes/Flow-Floe-RowHydrator.html#method_hydrate"
+            "url": "classes/Flow-Floe-PhpFloeEncoder.html#method_encode"
         },                {
             "fqsen": "\\Flow\\Floe\\RowPadding",
             "name": "RowPadding",
@@ -15111,36 +15691,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-RowPadding.html#method_apply"
         },                {
-            "fqsen": "\\Flow\\Floe\\RowsValueMapper",
-            "name": "RowsValueMapper",
-            "summary": "",
-            "url": "classes/Flow-Floe-RowsValueMapper.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\RowsValueMapper\u003A\u003AmetadataFor\u0028\u0029",
-            "name": "metadataFor",
-            "summary": "",
-            "url": "classes/Flow-Floe-RowsValueMapper.html#method_metadataFor"
-        },                {
-            "fqsen": "\\Flow\\Floe\\RowsValueMapper\u003A\u003ApartitionsFrom\u0028\u0029",
-            "name": "partitionsFrom",
-            "summary": "The\u0020value\u0027s\u0020partitions\u0020in\u0020the\u0020caller\u0027s\u0020original\u0020order\u0020\u0028footer\u0020metadata\u0029\u0020when\u0020recorded,\nin\u0020footer\u0020order\u0020otherwise.",
-            "url": "classes/Flow-Floe-RowsValueMapper.html#method_partitionsFrom"
-        },                {
-            "fqsen": "\\Flow\\Floe\\RowsValueMapper\u003A\u003AreconstructFrom\u0028\u0029",
-            "name": "reconstructFrom",
-            "summary": "Rebuilds\u0020the\u0020original\u0020Row\u007CRows\u0020from\u0020already\u002Ddecoded\u0020\u0028un\u002Dpartitioned\u0029\u0020rows\u0020and\u0020the\u0020file\u0020footer\u003A\nreattaches\u0020partitions\u0020in\u0020the\u0020caller\u0027s\u0020original\u0020order\u0020\u0028footer\u0020metadata\u0029\u0020and\u0020unwraps\u0020a\u0020tagged\nsingle\u0020Row.",
-            "url": "classes/Flow-Floe-RowsValueMapper.html#method_reconstructFrom"
-        },                {
-            "fqsen": "\\Flow\\Floe\\RowsValueMapper\u003A\u003Awrap\u0028\u0029",
-            "name": "wrap",
-            "summary": "",
-            "url": "classes/Flow-Floe-RowsValueMapper.html#method_wrap"
-        },                {
-            "fqsen": "\\Flow\\Floe\\RowsValueMapper\u003A\u003AVALUE_TYPE_KEY",
-            "name": "VALUE_TYPE_KEY",
-            "summary": "",
-            "url": "classes/Flow-Floe-RowsValueMapper.html#constant_VALUE_TYPE_KEY"
-        },                {
             "fqsen": "\\Flow\\Floe\\SchemaDecoder",
             "name": "SchemaDecoder",
             "summary": "",
@@ -15156,49 +15706,9 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-SchemaDecoder.html#method_decode"
         },                {
-            "fqsen": "\\Flow\\Floe\\SchemaEncoder",
-            "name": "SchemaEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-SchemaEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\SchemaEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-SchemaEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\SchemaEncoder\u003A\u003AencodeSchema\u0028\u0029",
-            "name": "encodeSchema",
-            "summary": "",
-            "url": "classes/Flow-Floe-SchemaEncoder.html#method_encodeSchema"
-        },                {
-            "fqsen": "\\Flow\\Floe\\SchemaEvolution",
-            "name": "SchemaEvolution",
-            "summary": "Validates\u0020the\u0020schema\u0020of\u0020an\u0020appended\u0020section\u0020against\u0020the\u0020file\u0027s\u0020merged\u0020schema\u003A\nexisting\u0020columns\u0020must\u0020keep\u0020name\u0020and\u0020compatible\u0020type,\u0020new\u0020columns\u0020must\u0020be\nnullable,\u0020omitted\u0020columns\u0020must\u0020be\u0020nullable\u0020in\u0020the\u0020file\u0020schema.",
-            "url": "classes/Flow-Floe-SchemaEvolution.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\SchemaEvolution\u003A\u003Avalidate\u0028\u0029",
-            "name": "validate",
-            "summary": "",
-            "url": "classes/Flow-Floe-SchemaEvolution.html#method_validate"
-        },                {
-            "fqsen": "\\Flow\\Floe\\SchemaTracker",
-            "name": "SchemaTracker",
-            "summary": "Decides\u0020whether\u0020a\u0020row\u0020fits\u0020the\u0020current\u0020section\u0020plan\u0020or\u0020a\u0020new\u0020SCHEMA\u0020frame\u0020must\nbe\u0020emitted.",
-            "url": "classes/Flow-Floe-SchemaTracker.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\SchemaTracker\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-SchemaTracker.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\SchemaTracker\u003A\u003Afits\u0028\u0029",
-            "name": "fits",
-            "summary": "",
-            "url": "classes/Flow-Floe-SchemaTracker.html#method_fits"
-        },                {
             "fqsen": "\\Flow\\Floe\\Section",
             "name": "Section",
-            "summary": "One\u0020schema\u0020section\u0020of\u0020a\u0020Floe\u0020file\u0020\u002D\u0020the\u0020frames\u0020written\u0020between\u0020schema\nchanges\u0020within\u0020a\u0020single\u0020write\u0020session.\u0020Appends\u0020always\u0020start\u0020a\u0020new\u0020section,\neven\u0020when\u0020they\u0020reuse\u0020the\u0020previous\u0020schema.",
+            "summary": "",
             "url": "classes/Flow-Floe-Section.html"
         },                {
             "fqsen": "\\Flow\\Floe\\Section\u003A\u003A__construct\u0028\u0029",
@@ -15221,10 +15731,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-Section.html#property_offset"
         },                {
-            "fqsen": "\\Flow\\Floe\\Section\u003A\u003A\u0024schemaId",
-            "name": "schemaId",
+            "fqsen": "\\Flow\\Floe\\Section\u003A\u003A\u0024partitionsId",
+            "name": "partitionsId",
             "summary": "",
-            "url": "classes/Flow-Floe-Section.html#property_schemaId"
+            "url": "classes/Flow-Floe-Section.html#property_partitionsId"
         },                {
             "fqsen": "\\Flow\\Floe\\Section\u003A\u003A\u0024rowCount",
             "name": "rowCount",
@@ -15270,6 +15780,11 @@ Search.appendIndex(
             "name": "ValueEncoder",
             "summary": "",
             "url": "classes/Flow-Floe-ValueEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\ValueEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Floe-ValueEncoder.html#method___construct"
         },                {
             "fqsen": "\\Flow\\Floe\\ValueEncoder\u003A\u003AencoderFor\u0028\u0029",
             "name": "encoderFor",
@@ -15335,6 +15850,16 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "",
             "url": "classes/Flow-Serializer-CompressingSerializer.html#method_unserialize"
+        },                {
+            "fqsen": "\\Flow\\Serializer\\DSL\\serialize_to_string\u0028\u0029",
+            "name": "serialize_to_string",
+            "summary": "",
+            "url": "namespaces/flow-serializer-dsl.html#function_serialize_to_string"
+        },                {
+            "fqsen": "\\Flow\\Serializer\\DSL\\unserialize_from_string\u0028\u0029",
+            "name": "unserialize_from_string",
+            "summary": "",
+            "url": "namespaces/flow-serializer-dsl.html#function_unserialize_from_string"
         },                {
             "fqsen": "\\Flow\\Serializer\\Exception\\SerializationException",
             "name": "SerializationException",
@@ -15425,6 +15950,11 @@ Search.appendIndex(
             "name": "Grouping",
             "summary": "",
             "url": "namespaces/flow-etl-config-grouping.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join",
+            "name": "Join",
+            "summary": "",
+            "url": "namespaces/flow-etl-config-join.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Sort",
             "name": "Sort",
@@ -15561,15 +16091,20 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-hash.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Join",
+            "name": "Join",
+            "summary": "",
+            "url": "namespaces/flow-etl-join.html"
+        },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison",
             "name": "Comparison",
             "summary": "",
             "url": "namespaces/flow-etl-join-comparison.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Join",
-            "name": "Join",
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin",
+            "name": "HashJoin",
             "summary": "",
-            "url": "namespaces/flow-etl-join.html"
+            "url": "namespaces/flow-etl-join-hashjoin.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Loader",
             "name": "Loader",
@@ -15595,16 +16130,6 @@ Search.appendIndex(
             "name": "Pipeline",
             "summary": "",
             "url": "namespaces/flow-etl-pipeline.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor",
-            "name": "Processor",
-            "summary": "",
-            "url": "namespaces/flow-etl-processor.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\HashJoin",
-            "name": "HashJoin",
-            "summary": "",
-            "url": "namespaces/flow-etl-processor-hashjoin.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory",
             "name": "DelayFactory",
@@ -15741,15 +16266,15 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-transformer-styleconverter.html"
         },                {
-            "fqsen": "\\Flow\\Floe\\Codec",
-            "name": "Codec",
-            "summary": "",
-            "url": "namespaces/flow-floe-codec.html"
-        },                {
             "fqsen": "\\Flow\\Floe",
             "name": "Floe",
             "summary": "",
             "url": "namespaces/flow-floe.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Codec",
+            "name": "Codec",
+            "summary": "",
+            "url": "namespaces/flow-floe-codec.html"
         },                {
             "fqsen": "\\Flow\\Floe\\Decoding",
             "name": "Decoding",
@@ -15775,6 +16300,11 @@ Search.appendIndex(
             "name": "Serializer",
             "summary": "",
             "url": "namespaces/flow-serializer.html"
+        },                {
+            "fqsen": "\\Flow\\Serializer\\DSL",
+            "name": "DSL",
+            "summary": "",
+            "url": "namespaces/flow-serializer-dsl.html"
         },                {
             "fqsen": "\\Flow\\Serializer\\Exception",
             "name": "Exception",

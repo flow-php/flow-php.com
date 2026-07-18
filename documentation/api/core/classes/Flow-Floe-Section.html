@@ -141,14 +141,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Section.php"><a href="files/src-core-etl-src-flow-floe-section.html"><abbr title="src/core/etl/src/Flow/Floe/Section.php">Section.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">One schema section of a Floe file - the frames written between schema
-changes within a single write session. Appends always start a new section,
-even when they reuse the previous schema.</p>
-
+        
 
 
 
@@ -176,13 +173,13 @@ even when they reuse the previous schema.</p>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-Floe-Section.html#property_rowCount">$rowCount</a>
+    <a class="" href="classes/Flow-Floe-Section.html#property_partitionsId">$partitionsId</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-Floe-Section.html#property_schemaId">$schemaId</a>
+    <a class="" href="classes/Flow-Floe-Section.html#property_rowCount">$rowCount</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
@@ -210,7 +207,7 @@ even when they reuse the previous schema.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-Section.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{offset: int, schemaId: int, rowCount: int}    </span>
+                                &nbsp;: array{offset: int, partitionsId: int, rowCount: int}    </span>
 </dt>
 
     </dl>
@@ -243,7 +240,7 @@ even when they reuse the previous schema.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Section.php"><a href="files/src-core-etl-src-flow-floe-section.html"><abbr title="src/core/etl/src/Flow/Floe/Section.php">Section.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -253,6 +250,43 @@ even when they reuse the previous schema.</p>
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$offset</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_partitionsId">
+        $partitionsId
+        <a href="classes/Flow-Floe-Section.html#property_partitionsId" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Section.php"><a href="files/src-core-etl-src-flow-floe-section.html"><abbr title="src/core/etl/src/Flow/Floe/Section.php">Section.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">17</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$partitionsId</span>
     </code>
 
     
@@ -280,7 +314,7 @@ even when they reuse the previous schema.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Section.php"><a href="files/src-core-etl-src-flow-floe-section.html"><abbr title="src/core/etl/src/Flow/Floe/Section.php">Section.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -290,43 +324,6 @@ even when they reuse the previous schema.</p>
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$rowCount</span>
-    </code>
-
-    
-    
-    
-
-        
-        
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_schemaId">
-        $schemaId
-        <a href="classes/Flow-Floe-Section.html#property_schemaId" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Section.php"><a href="files/src-core-etl-src-flow-floe-section.html"><abbr title="src/core/etl/src/Flow/Floe/Section.php">Section.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">22</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">$schemaId</span>
     </code>
 
     
@@ -359,14 +356,14 @@ even when they reuse the previous schema.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Section.php"><a href="files/src-core-etl-src-flow-floe-section.html"><abbr title="src/core/etl/src/Flow/Floe/Section.php">Section.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schemaId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowCount</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partitionsId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowCount</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -382,7 +379,7 @@ even when they reuse the previous schema.</p>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$schemaId</span>
+                <span class="phpdocumentor-argument-list__argument__name">$partitionsId</span>
                 : <span class="phpdocumentor-argument-list__argument__type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -417,7 +414,7 @@ even when they reuse the previous schema.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Section.php"><a href="files/src-core-etl-src-flow-floe-section.html"><abbr title="src/core/etl/src/Flow/Floe/Section.php">Section.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -479,14 +476,14 @@ even when they reuse the previous schema.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Section.php"><a href="files/src-core-etl-src-flow-floe-section.html"><abbr title="src/core/etl/src/Flow/Floe/Section.php">Section.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{offset: int, schemaId: int, rowCount: int}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{offset: int, partitionsId: int, rowCount: int}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -499,7 +496,7 @@ even when they reuse the previous schema.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{offset: int, schemaId: int, rowCount: int}</span>
+        <span class="phpdocumentor-signature__response_type">array{offset: int, partitionsId: int, rowCount: int}</span>
             </section>
 
 </article>
@@ -526,8 +523,8 @@ even when they reuse the previous schema.</p>
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-Floe-Section.html#property_offset">$offset</a></li>
+                                                    <li class=""><a href="classes/Flow-Floe-Section.html#property_partitionsId">$partitionsId</a></li>
                                                     <li class=""><a href="classes/Flow-Floe-Section.html#property_rowCount">$rowCount</a></li>
-                                                    <li class=""><a href="classes/Flow-Floe-Section.html#property_schemaId">$schemaId</a></li>
                                             </ul>
                 </li>
             

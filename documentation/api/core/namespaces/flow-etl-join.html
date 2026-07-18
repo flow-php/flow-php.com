@@ -139,7 +139,12 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Join-Expression.html"><abbr title="\Flow\ETL\Join\Expression">Expression</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Join-BucketedHashJoin.html"><abbr title="\Flow\ETL\Join\BucketedHashJoin">BucketedHashJoin</abbr></a></dt><dd>Hash join with storage-driven execution. The right side is always partitioned through
+the BucketsCache. With a resident (in-memory) cache the left side is streamed through
+a single hash table - left row order is preserved and memory usage is bounded by the
+right side. With a non-resident (on-disk) cache both sides are partitioned by join key
+hash and joined one pair of buckets at a time (grace hash join) - memory usage is
+bounded by the largest bucket and left row order is not preserved.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Join-Expression.html"><abbr title="\Flow\ETL\Join\Expression">Expression</abbr></a></dt>    </dl>
 
     <h4 id="namespaces">
         Namespaces
@@ -148,6 +153,7 @@
     </h4>
     <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/flow-etl-join-comparison.html"><abbr title="\Flow\ETL\Join\Comparison">Comparison</abbr></a></dt>
+                    <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/flow-etl-join-hashjoin.html"><abbr title="\Flow\ETL\Join\HashJoin">HashJoin</abbr></a></dt>
             </dl>
 
 

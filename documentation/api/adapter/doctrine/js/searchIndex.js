@@ -26,6 +26,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalDataFrameFactory.html#method_withSchema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalEncoder",
+            "name": "DbalEncoder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalEncoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalEncoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalEncoder.html#method_encode"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor",
             "name": "DbalKeySetExtractor",
             "summary": "Extractor\u0020implementing\u0020keyset\u0020pagination\u0020for\u0020Doctrine\u0020DBAL\u0020queries.",
@@ -641,16 +656,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-QueryParameter.html#method_type"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\RowsNormalizer",
-            "name": "RowsNormalizer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-RowsNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\RowsNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "Normalize\u0020row\u0020data\u0020to\u0020ensure\u0020XML\u0020entries\u0020are\u0020converted\u0020to\u0020strings.",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-RowsNormalizer.html#method_normalize"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\SchemaConverter",
             "name": "SchemaConverter",
             "summary": "",
@@ -726,10 +731,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-TypesMap.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypesMap\u003A\u003AflowRowTypes\u0028\u0029",
-            "name": "flowRowTypes",
-            "summary": "Build\u0020DBAL\u0020types\u0020array\u0020from\u0020a\u0020row\u0027s\u0020entries.",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-TypesMap.html#method_flowRowTypes"
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypesMap\u003A\u003AflowSchemaTypes\u0028\u0029",
+            "name": "flowSchemaTypes",
+            "summary": "Build\u0020DBAL\u0020types\u0020array\u0020from\u0020a\u0020schema\u0027s\u0020definitions.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TypesMap.html#method_flowSchemaTypes"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypesMap\u003A\u003AtoDbalType\u0028\u0029",
             "name": "toDbalType",

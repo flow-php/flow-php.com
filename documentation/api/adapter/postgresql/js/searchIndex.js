@@ -11,10 +11,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003AmapEntry\u0028\u0029",
-            "name": "mapEntry",
-            "summary": "Maps\u0020an\u0020Entry\u0020to\u0020a\u0020TypedValue\u0020suitable\u0020for\u0020PostgreSQL\u0020queries.",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_mapEntry"
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003Amap\u0028\u0029",
+            "name": "map",
+            "summary": "Maps\u0020a\u0020column\u0020value\u0020\u002B\u0020Flow\u0020type\u0020to\u0020a\u0020TypedValue\u0020suitable\u0020for\u0020PostgreSQL\u0020queries.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_map"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003AtoColumnType\u0028\u0029",
             "name": "toColumnType",
@@ -28,7 +28,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003ADEFAULT_TYPES",
             "name": "DEFAULT_TYPES",
-            "summary": "Default\u0020mapping\u0020of\u0020Entry\u0020classes\u0020to\u0020PostgreSQL\u0020types.",
+            "summary": "Default\u0020mapping\u0020of\u0020Flow\u0020type\u0020classes\u0020to\u0020PostgreSQL\u0020value\u0020types.",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#constant_DEFAULT_TYPES"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Exception\\RuntimeException",
@@ -55,6 +55,11 @@ Search.appendIndex(
             "name": "unsupportedEntryType",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-Exception-TypeMappingException.html#method_unsupportedEntryType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Exception\\TypeMappingException\u003A\u003AunmappedColumn\u0028\u0029",
+            "name": "unmappedColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Exception-TypeMappingException.html#method_unmappedColumn"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Exception\\TypeMappingException\u003A\u003AunsupportedFlowType\u0028\u0029",
             "name": "unsupportedFlowType",
@@ -335,6 +340,21 @@ Search.appendIndex(
             "name": "withSchema",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlCursorExtractor.html#method_withSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlEncoder",
+            "name": "PostgreSqlEncoder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlEncoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlEncoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlEncoder.html#method_encode"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlKeySetExtractor",
             "name": "PostgreSqlKeySetExtractor",

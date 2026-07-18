@@ -141,7 +141,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-cache-cacheconfigbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php">CacheConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -205,14 +205,6 @@
                                 &nbsp;: self    </span>
 </dt>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_serializerBatchSize">serializerBatchSize()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Serializer batch size for the default FilesystemCache; ignored when a custom Cache was
-injected via cache().</dd>
-
     </dl>
 
 
@@ -241,14 +233,14 @@ injected via cache().</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-cache-cacheconfigbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php">CacheConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">build</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\FilesystemTable">FilesystemTable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fstab</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Config-Telemetry-TelemetryConfig.html"><abbr title="\Flow\ETL\Config\Telemetry\TelemetryConfig">TelemetryConfig</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$telemetryConfig</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dataframeName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'flow_dataframe'</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Config-Cache-CacheConfig.html"><abbr title="\Flow\ETL\Config\Cache\CacheConfig">CacheConfig</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">build</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\FilesystemTable">FilesystemTable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fstab</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Serializer\Serializer">Serializer</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$serializer</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Config-Telemetry-TelemetryConfig.html"><abbr title="\Flow\ETL\Config\Telemetry\TelemetryConfig">TelemetryConfig</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$telemetryConfig</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dataframeName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'flow_dataframe'</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Config-Cache-CacheConfig.html"><abbr title="\Flow\ETL\Config\Cache\CacheConfig">CacheConfig</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -259,6 +251,13 @@ injected via cache().</dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$fstab</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\FilesystemTable">FilesystemTable</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$serializer</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Serializer\Serializer">Serializer</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -303,7 +302,7 @@ injected via cache().</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-cache-cacheconfigbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php">CacheConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -351,7 +350,7 @@ injected via cache().</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-cache-cacheconfigbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php">CacheConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -400,7 +399,7 @@ injected via cache().</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-cache-cacheconfigbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php">CacheConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -448,7 +447,7 @@ injected via cache().</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-cache-cacheconfigbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php">CacheConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -497,7 +496,7 @@ injected via cache().</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-cache-cacheconfigbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php">CacheConfigBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -515,56 +514,6 @@ injected via cache().</dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$mount</span>
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_serializerBatchSize">
-        serializerBatchSize()
-        <a href="classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_serializerBatchSize" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-cache-cacheconfigbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Cache/CacheConfigBuilder.php">CacheConfigBuilder.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">141</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Serializer batch size for the default FilesystemCache; ignored when a custom Cache was
-injected via cache().</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">serializerBatchSize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$serializerBatchSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$serializerBatchSize</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int<1, max></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -609,7 +558,6 @@ injected via cache().</p>
                                             <li class=""><a href="classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_externalSortBucketsCount">externalSortBucketsCount()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_externalSortBucketSize">externalSortBucketSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_filesystemMount">filesystemMount()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_serializerBatchSize">serializerBatchSize()</a></li>
                                     </ul>
             </li>
                     </ul>

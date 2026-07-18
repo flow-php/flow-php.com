@@ -60,7 +60,7 @@
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dsl.js": {
-        "path": "\/assets\/codemirror\/completions\/dsl-5b3585d11ec53820376ec333c58244ce.js",
+        "path": "\/assets\/codemirror\/completions\/dsl-358a41106274cb92900ea7f65cf5ab39.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dataframe.js": {
@@ -192,7 +192,7 @@
         "type": "js"
     },
     "prismjs\/components\/prism-json.min.js": {
-        "path": "\/assets\/vendor\/prismjs\/components\/prism-json.min-5cabe6f69370d46230def939bbf18ad6.js",
+        "path": "\/assets\/vendor\/prismjs\/components\/prism-json.min-cf8b29c1d22900de623806ef6bb7a475.js",
         "type": "js"
     },
     "flowbite": {
