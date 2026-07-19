@@ -249,7 +249,7 @@ schema() - the writer must not mutate caller rows.</dd>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-Codec.html"><abbr title="\Flow\Floe\Codec">Codec</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$codec</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Floe-Codec-NoopCodec.html"><abbr title="\Flow\Floe\Codec\NoopCodec">NoopCodec</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Row-Hydrator.html"><abbr title="\Flow\ETL\Row\Hydrator">Hydrator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hydrator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bufferSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">65536</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-Codec.html"><abbr title="\Flow\Floe\Codec">Codec</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$codec</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Floe-Codec-NoopCodec.html"><abbr title="\Flow\Floe\Codec\NoopCodec">NoopCodec</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Row-Hydrator.html"><abbr title="\Flow\ETL\Row\Hydrator">Hydrator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hydrator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bufferSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">65536</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-FloeEngine.html"><abbr title="\Flow\Floe\FloeEngine">FloeEngine</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$engine</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Floe-FloeEngine.html#enumcase_adaptive"><abbr title="\Flow\Floe\FloeEngine::adaptive">FloeEngine::adaptive</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -277,6 +277,13 @@ schema() - the writer must not mutate caller rows.</dd>
                 <span class="phpdocumentor-argument-list__argument__name">$bufferSize</span>
                 : <span class="phpdocumentor-argument-list__argument__type">int</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">65536</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$engine</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Floe-FloeEngine.html"><abbr title="\Flow\Floe\FloeEngine">FloeEngine</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-Floe-FloeEngine.html#enumcase_adaptive"><abbr title="\Flow\Floe\FloeEngine::adaptive">FloeEngine::adaptive</abbr></a></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -316,7 +323,7 @@ schema() - the writer must not mutate caller rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -364,7 +371,7 @@ schema() - the writer must not mutate caller rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -441,7 +448,7 @@ schema() - the writer must not mutate caller rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -526,7 +533,7 @@ session schema is forced to the file union - appended batches must fit it.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">219</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
@@ -576,7 +583,7 @@ schema() - the writer must not mutate caller rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -638,7 +645,7 @@ schema() - the writer must not mutate caller rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">209</span>
 
     </aside>
 

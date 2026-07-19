@@ -846,6 +846,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_cache"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfigBuilder\u003A\u003AcacheDir\u0028\u0029",
+            "name": "cacheDir",
+            "summary": "Sets\u0020the\u0020local\u0020filesystem\u0020cache\u0020directory\u0020explicitly,\u0020overriding\u0020the\u0020FLOW_LOCAL_FILESYSTEM_CACHE_DIR\nenv\u0020var\u0020and\u0020the\u0020system\u0020temp\u0020fallback.",
+            "url": "classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_cacheDir"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfigBuilder\u003A\u003AexternalSortBucketsCount\u0028\u0029",
             "name": "externalSortBucketsCount",
             "summary": "",
@@ -890,6 +895,11 @@ Search.appendIndex(
             "name": "cache",
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#property_cache"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AcacheDir\u0028\u0029",
+            "name": "cacheDir",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_cacheDir"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AcacheFilesystem\u0028\u0029",
             "name": "cacheFilesystem",
@@ -14995,6 +15005,31 @@ Search.appendIndex(
             "name": "IncompatibleSchemaException",
             "summary": "",
             "url": "classes/Flow-Floe-Exception-IncompatibleSchemaException.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeEngine",
+            "name": "FloeEngine",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeEngine.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeEngine\u003A\u003Aencoder\u0028\u0029",
+            "name": "encoder",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeEngine.html#method_encoder"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeEngine\u003A\u003Aadaptive",
+            "name": "adaptive",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeEngine.html#enumcase_adaptive"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeEngine\u003A\u003Anative",
+            "name": "native",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeEngine.html#enumcase_native"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeEngine\u003A\u003Aphp",
+            "name": "php",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeEngine.html#enumcase_php"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeExtractor",
             "name": "FloeExtractor",

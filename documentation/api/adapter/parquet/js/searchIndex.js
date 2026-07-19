@@ -81,6 +81,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_withColumns"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003AwithEngine\u0028\u0029",
+            "name": "withEngine",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_withEngine"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003AwithOffset\u0028\u0029",
             "name": "withOffset",
             "summary": "",
@@ -120,6 +125,11 @@ Search.appendIndex(
             "name": "withCompressions",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetLoader.html#method_withCompressions"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetLoader\u003A\u003AwithEngine\u0028\u0029",
+            "name": "withEngine",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetLoader.html#method_withEngine"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetLoader\u003A\u003AwithOptions\u0028\u0029",
             "name": "withOptions",
