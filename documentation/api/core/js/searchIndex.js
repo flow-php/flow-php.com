@@ -14731,6 +14731,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-floe-dsl.html#function_to_floe"
         },                {
+            "fqsen": "\\Flow\\Floe\\DSL\\floe_options\u0028\u0029",
+            "name": "floe_options",
+            "summary": "",
+            "url": "namespaces/flow-floe-dsl.html#function_floe_options"
+        },                {
             "fqsen": "\\Flow\\Floe\\DSL\\merge_floe\u0028\u0029",
             "name": "merge_floe",
             "summary": "Merges\u0020several\u0020Floe\u0020files\u0020\u0028same\u0020or\u0020append\u002Dcompatible\u0020evolving\u0020schema\u0029\u0020into\u0020one,\u0020on\u0020the\u0020local\nfilesystem.\u0020Byte\u002Dsplices\u0020frame\u0020regions\u0020by\u0020default\u0020\u0028O\u0028bytes\u0029,\u0020no\u0020re\u002Dencode\u0029\u003B\u0020compact\u0020re\u002Dencodes\nall\u0020rows\u0020into\u0020fewer\u0020sections.\u0020For\u0020non\u002Dlocal\u0020filesystems\u0020use\u0020FloeMerger\u0020directly.",
@@ -15203,12 +15208,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Floe\\FloeStreamWriter\u003A\u003Acreate\u0028\u0029",
             "name": "create",
-            "summary": "Opens\u0020a\u0020create\u0020session\u0020over\u0020a\u0020fresh\u0020destination\u0020stream,\u0020writing\u0020the\u0020header.",
+            "summary": "",
             "url": "classes/Flow-Floe-FloeStreamWriter.html#method_create"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeStreamWriter\u003A\u003Aresume\u0028\u0029",
             "name": "resume",
-            "summary": "Seeds\u0020writer\u0020state\u0020from\u0020an\u0020existing\u0020file\u0027s\u0020footer\u0020and\u0020opens\u0020an\u0020append\nsession\u0020over\u0020its\u0020stream.\u0020The\u0020caller\u0020\u0028facade\u0029\u0020owns\u0020the\u0020filesystem\u002Dlevel\nvalidation\u0020\u0028header\/trailer\/torn\/codec\u0020checks\u0029\u0020before\u0020handing\u0020over.\u0020The\nsession\u0020schema\u0020is\u0020forced\u0020to\u0020the\u0020file\u0020union\u0020\u002D\u0020appended\u0020batches\u0020must\u0020fit\u0020it.",
+            "summary": "",
             "url": "classes/Flow-Floe-FloeStreamWriter.html#method_resume"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeStreamWriter\u003A\u003Aclose\u0028\u0029",
@@ -15228,7 +15233,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Floe\\FloeStreamWriter\u003A\u003AunionSchema\u0028\u0029",
             "name": "unionSchema",
-            "summary": "The\u0020union\u0020schema\u0020of\u0020a\u0020batch,\u0020built\u0020without\u0020touching\u0020the\u0020rows\u0027\u0020lazily\u002Dcached\nschema\u0028\u0029\u0020\u002D\u0020the\u0020writer\u0020must\u0020not\u0020mutate\u0020caller\u0020rows.",
+            "summary": "",
             "url": "classes/Flow-Floe-FloeStreamWriter.html#method_unionSchema"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeWriter",
@@ -15690,6 +15695,51 @@ Search.appendIndex(
             "name": "encode",
             "summary": "",
             "url": "classes/Flow-Floe-NativeFloeEncoder.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Options",
+            "name": "Options",
+            "summary": "",
+            "url": "classes/Flow-Floe-Options.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Options\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Floe-Options.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Options\u003A\u003Adefault\u0028\u0029",
+            "name": "default",
+            "summary": "",
+            "url": "classes/Flow-Floe-Options.html#method_default"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Options\u003A\u003AwithBufferSize\u0028\u0029",
+            "name": "withBufferSize",
+            "summary": "",
+            "url": "classes/Flow-Floe-Options.html#method_withBufferSize"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Options\u003A\u003AwithCodec\u0028\u0029",
+            "name": "withCodec",
+            "summary": "",
+            "url": "classes/Flow-Floe-Options.html#method_withCodec"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Options\u003A\u003AwithValidateData\u0028\u0029",
+            "name": "withValidateData",
+            "summary": "",
+            "url": "classes/Flow-Floe-Options.html#method_withValidateData"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Options\u003A\u003A\u0024validateData",
+            "name": "validateData",
+            "summary": "",
+            "url": "classes/Flow-Floe-Options.html#property_validateData"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Options\u003A\u003A\u0024bufferSize",
+            "name": "bufferSize",
+            "summary": "",
+            "url": "classes/Flow-Floe-Options.html#property_bufferSize"
+        },                {
+            "fqsen": "\\Flow\\Floe\\Options\u003A\u003A\u0024codec",
+            "name": "codec",
+            "summary": "",
+            "url": "classes/Flow-Floe-Options.html#property_codec"
         },                {
             "fqsen": "\\Flow\\Floe\\PhpFloeEncoder",
             "name": "PhpFloeEncoder",

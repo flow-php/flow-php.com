@@ -139,7 +139,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -182,25 +182,18 @@
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Opens a create session over a fresh destination stream, writing the header.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-FloeStreamWriter.html#method_resume">resume()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Seeds writer state from an existing file&#039;s footer and opens an append
-session over its stream. The caller (facade) owns the filesystem-level
-validation (header/trailer/torn/codec checks) before handing over. The
-session schema is forced to the file union - appended batches must fit it.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-FloeStreamWriter.html#method_unionSchema">unionSchema()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>    </span>
 </dt>
-<dd>The union schema of a batch, built without touching the rows&#039; lazily-cached
-schema() - the writer must not mutate caller rows.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-FloeStreamWriter.html#method_write">write()</a>
@@ -242,14 +235,14 @@ schema() - the writer must not mutate caller rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-Codec.html"><abbr title="\Flow\Floe\Codec">Codec</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$codec</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Floe-Codec-NoopCodec.html"><abbr title="\Flow\Floe\Codec\NoopCodec">NoopCodec</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Row-Hydrator.html"><abbr title="\Flow\ETL\Row\Hydrator">Hydrator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hydrator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bufferSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">65536</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-FloeEngine.html"><abbr title="\Flow\Floe\FloeEngine">FloeEngine</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$engine</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Floe-FloeEngine.html#enumcase_adaptive"><abbr title="\Flow\Floe\FloeEngine::adaptive">FloeEngine::adaptive</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-Options.html"><abbr title="\Flow\Floe\Options">Options</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Floe-Options.html"><abbr title="\Flow\Floe\Options">Options</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Hydrator.html"><abbr title="\Flow\ETL\Row\Hydrator">Hydrator</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hydrator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-FloeEngine.html"><abbr title="\Flow\Floe\FloeEngine">FloeEngine</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$engine</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Floe-FloeEngine.html#enumcase_adaptive"><abbr title="\Flow\Floe\FloeEngine::adaptive">FloeEngine::adaptive</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -258,25 +251,23 @@ schema() - the writer must not mutate caller rows.</dd>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$codec</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Floe-Codec.html"><abbr title="\Flow\Floe\Codec">Codec</abbr></a></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Floe-Codec-NoopCodec.html"><abbr title="\Flow\Floe\Codec\NoopCodec">NoopCodec</abbr></a>()</span>            </dt>
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$options</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Floe-Options.html"><abbr title="\Flow\Floe\Options">Options</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Floe-Options.html"><abbr title="\Flow\Floe\Options">Options</abbr></a>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$hydrator</span>
-                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-Row-Hydrator.html"><abbr title="\Flow\ETL\Row\Hydrator">Hydrator</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-Hydrator.html"><abbr title="\Flow\ETL\Row\Hydrator">Hydrator</abbr></a>|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>null uses the adaptive hydrator</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$bufferSize</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">65536</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -323,7 +314,7 @@ schema() - the writer must not mutate caller rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -371,15 +362,14 @@ schema() - the writer must not mutate caller rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Opens a create session over a fresh destination stream, writing the header.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -399,18 +389,7 @@ schema() - the writer must not mutate caller rows.</dd>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>stored in the footer</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>|null</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>fixes the session schema; null derives it from the first batch</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -448,15 +427,11 @@ schema() - the writer must not mutate caller rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Seeds writer state from an existing file&#039;s footer and opens an append
-session over its stream. The caller (facade) owns the filesystem-level
-validation (header/trailer/torn/codec checks) before handing over. The
-session schema is forced to the file union - appended batches must fit it.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">resume</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-Footer.html"><abbr title="\Flow\Floe\Footer">Footer</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$footer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fileLength</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
@@ -493,9 +468,7 @@ session schema is forced to the file union - appended batches must fit it.</p>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>merged over the existing footer metadata, new keys win</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -533,13 +506,11 @@ session schema is forced to the file union - appended batches must fit it.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The union schema of a batch, built without touching the rows&#039; lazily-cached
-schema() - the writer must not mutate caller rows.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">unionSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span></code>
@@ -583,7 +554,7 @@ schema() - the writer must not mutate caller rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -645,7 +616,7 @@ schema() - the writer must not mutate caller rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php"><a href="files/src-core-etl-src-flow-floe-floestreamwriter.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamWriter.php">FloeStreamWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">209</span>
+    <span class="phpdocumentor-element-found-in__line">192</span>
 
     </aside>
 
