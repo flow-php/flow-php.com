@@ -122,15 +122,28 @@
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-join-hashjoin.html">HashJoin</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -interface">
+    <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
     JoinKeys
-        </h2>
+
+    
+    
+    
+    </h2>
+
+<div class="phpdocumentor-label-line">
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
+
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Join/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-join-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Join/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
@@ -157,19 +170,24 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_leftHash">leftHash()</a>
+    <a class="" href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_fromComparison">fromComparison()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: null|self    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_rightHash">rightHash()</a>
+    <a class="" href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_leftRefs">leftRefs()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_rightRefs">rightRefs()</a>
+    <span>
+                                &nbsp;: array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -187,24 +205,24 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_leftHash">
-        leftHash()
-        <a href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_leftHash" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_fromComparison">
+        fromComparison()
+        <a href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_fromComparison" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Join/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-join-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Join/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">leftHash</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromComparison</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Join-Comparison.html"><abbr title="\Flow\ETL\Join\Comparison">Comparison</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$comparison</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -213,8 +231,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$row</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$comparison</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Join-Comparison.html"><abbr title="\Flow\ETL\Join\Comparison">Comparison</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -227,7 +245,11 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type">null|self</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>null when no equality can be extracted (pure non-equality join)</p>
+</section>
+
             </section>
 
 </article>
@@ -237,45 +259,73 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_rightHash">
-        rightHash()
-        <a href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_rightHash" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_leftRefs">
+        leftRefs()
+        <a href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_leftRefs" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Join/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-join-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Join/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">rightHash</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">leftRefs</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$row</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
         
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_rightRefs">
+        rightRefs()
+        <a href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_rightRefs" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Join/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-join-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Join/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">rightRefs</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;</span>
             </section>
 
 </article>
@@ -297,14 +347,15 @@
                                     </ul>
             </li>
             
-                            <li class="phpdocumentor-on-this-page-section__title">Methods</li>
-                <li>
-                    <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_leftHash">leftHash()</a></li>
-                                                    <li class=""><a href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_rightHash">rightHash()</a></li>
-                                            </ul>
-                </li>
             
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_fromComparison">fromComparison()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_leftRefs">leftRefs()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_rightRefs">rightRefs()</a></li>
+                                    </ul>
+            </li>
                     </ul>
     </section>
 

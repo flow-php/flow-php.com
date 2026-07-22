@@ -60,11 +60,11 @@
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dsl.js": {
-        "path": "\/assets\/codemirror\/completions\/dsl-c892387ade51087d4885c1ae8b18c741.js",
+        "path": "\/assets\/codemirror\/completions\/dsl-3b03d60443808c046283f712658fbadb.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/dataframe.js": {
-        "path": "\/assets\/codemirror\/completions\/dataframe-52a47f7f071871d08d635c76d889e9e3.js",
+        "path": "\/assets\/codemirror\/completions\/dataframe-ca4c1b1bc415470904df3f9ebf04c7bf.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/scalarfunctionchain.js": {

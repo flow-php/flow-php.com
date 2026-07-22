@@ -546,6 +546,301 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Attribute-Type.html#enumcase_WINDOW_FUNCTION"
         },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Bucket",
+            "name": "Bucket",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Bucket.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Bucket\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Bucket.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Bucket\u003A\u003AtoRow\u0028\u0029",
+            "name": "toRow",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Bucket.html#method_toRow"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Bucket\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Bucket.html#property_id"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Bucket\u003A\u003A\u0024totalRows",
+            "name": "totalRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Bucket.html#property_totalRows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Bucket\u003A\u003A\u0024index",
+            "name": "index",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Bucket.html#property_index"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketingStrategy",
+            "name": "BucketingStrategy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-BucketingStrategy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketingStrategy\u003A\u003Abucketize\u0028\u0029",
+            "name": "bucketize",
+            "summary": "Consumes\u0020the\u0020row\u0020stream,\u0020spills\u0020bucket\u0020data\u0020into\u0020the\u0020storage\u0020and\u0020yields\u0020each\u0020Bucket\nonce\u0020it\u0020is\u0020complete\u0020\u002D\u0020the\u0020strategy\u0020alone\u0020decides\u0020when\u0020and\u0020how\u0020buckets\u0020are\u0020stored.",
+            "url": "classes/Flow-ETL-Bucketing-BucketingStrategy.html#method_bucketize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Buckets",
+            "name": "Buckets",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Buckets.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Buckets\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Buckets.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Buckets\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Buckets.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Buckets\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Buckets.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Buckets\u003A\u003Aclear\u0028\u0029",
+            "name": "clear",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Buckets.html#method_clear"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Buckets\u003A\u003Aremove\u0028\u0029",
+            "name": "remove",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Buckets.html#method_remove"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Buckets\u003A\u003Arows\u0028\u0029",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Buckets.html#method_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Buckets\u003A\u003Astorage\u0028\u0029",
+            "name": "storage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Buckets.html#method_storage"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketShape",
+            "name": "BucketShape",
+            "summary": "Column\u0020names\u0020of\u0020the\u0020bucket\u0020metadata\u0020Row\u0020yielded\u0020by\u0020BucketingProcessor,\u0020one\u0020Row\u0020per\u0020bucket.",
+            "url": "classes/Flow-ETL-Bucketing-BucketShape.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketShape\u003A\u003Aid",
+            "name": "id",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-BucketShape.html#enumcase_id"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketShape\u003A\u003AtotalRows",
+            "name": "totalRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-BucketShape.html#enumcase_totalRows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketsStorage",
+            "name": "BucketsStorage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-BucketsStorage.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketsStorage\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-BucketsStorage.html#method_append"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketsStorage\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Yields\u0020the\u0020bucket\u0020back\u0020in\u0020batches\u0020\u002D\u0020batch\u0020shape\u0020is\u0020storage\u002Ddefined,\u0020consumers\u0020must\u0020not\nassume\u0020any\u0020particular\u0020batch\u0020size.",
+            "url": "classes/Flow-ETL-Bucketing-BucketsStorage.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketsStorage\u003A\u003Aremove\u0028\u0029",
+            "name": "remove",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-BucketsStorage.html#method_remove"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketsStorage\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-BucketsStorage.html#method_set"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\HashBucketing",
+            "name": "HashBucketing",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-HashBucketing.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\HashBucketing\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-HashBucketing.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\HashBucketing\u003A\u003Abucketize\u0028\u0029",
+            "name": "bucketize",
+            "summary": "Consumes\u0020the\u0020row\u0020stream,\u0020spills\u0020bucket\u0020data\u0020into\u0020the\u0020storage\u0020and\u0020yields\u0020each\u0020Bucket\nonce\u0020it\u0020is\u0020complete\u0020\u002D\u0020the\u0020strategy\u0020alone\u0020decides\u0020when\u0020and\u0020how\u0020buckets\u0020are\u0020stored.",
+            "url": "classes/Flow-ETL-Bucketing-HashBucketing.html#method_bucketize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Hasher",
+            "name": "Hasher",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Hasher.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Hasher\u003A\u003Ahash\u0028\u0029",
+            "name": "hash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Hasher.html#method_hash"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\KeyValues",
+            "name": "KeyValues",
+            "summary": "Extracts\u0020bucket\u002Dkey\u0020values\u0020positionally,\u0020in\u0020reference\u0020order\u0020\u002D\u0020position,\u0020not\u0020column\u0020name,\u0020defines\nkey\u0020identity,\u0020so\u0020two\u0020sides\u0020of\u0020a\u0020join\u0020extract\u0020hash\u002Dcompatible\u0020values\u0020from\u0020differently\u0020named\u0020columns.",
+            "url": "classes/Flow-ETL-Bucketing-KeyValues.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\KeyValues\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-KeyValues.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\KeyValues\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-KeyValues.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\KeyValues\u003A\u003AofRow\u0028\u0029",
+            "name": "ofRow",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-KeyValues.html#method_ofRow"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\NativeHasher",
+            "name": "NativeHasher",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-NativeHasher.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\NativeHasher\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-NativeHasher.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\NativeHasher\u003A\u003Ahash\u0028\u0029",
+            "name": "hash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-NativeHasher.html#method_hash"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\ResidentBucketsStorage",
+            "name": "ResidentBucketsStorage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-ResidentBucketsStorage.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\SingleBucketHasher",
+            "name": "SingleBucketHasher",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-SingleBucketHasher.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\SingleBucketHasher\u003A\u003Ahash\u0028\u0029",
+            "name": "hash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-SingleBucketHasher.html#method_hash"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\SortedRunBucketing",
+            "name": "SortedRunBucketing",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-SortedRunBucketing.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\SortedRunBucketing\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-SortedRunBucketing.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\SortedRunBucketing\u003A\u003Abucketize\u0028\u0029",
+            "name": "bucketize",
+            "summary": "Consumes\u0020the\u0020row\u0020stream,\u0020spills\u0020bucket\u0020data\u0020into\u0020the\u0020storage\u0020and\u0020yields\u0020each\u0020Bucket\nonce\u0020it\u0020is\u0020complete\u0020\u002D\u0020the\u0020strategy\u0020alone\u0020decides\u0020when\u0020and\u0020how\u0020buckets\u0020are\u0020stored.",
+            "url": "classes/Flow-ETL-Bucketing-SortedRunBucketing.html#method_bucketize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\FilesystemBuckets",
+            "name": "FilesystemBuckets",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-FilesystemBuckets.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\FilesystemBuckets\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-FilesystemBuckets.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\FilesystemBuckets\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-FilesystemBuckets.html#method_append"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\FilesystemBuckets\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Yields\u0020the\u0020bucket\u0020back\u0020in\u0020batches\u0020\u002D\u0020batch\u0020shape\u0020is\u0020storage\u002Ddefined,\u0020consumers\u0020must\u0020not\nassume\u0020any\u0020particular\u0020batch\u0020size.",
+            "url": "classes/Flow-ETL-Bucketing-Storage-FilesystemBuckets.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\FilesystemBuckets\u003A\u003Aremove\u0028\u0029",
+            "name": "remove",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-FilesystemBuckets.html#method_remove"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\FilesystemBuckets\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-FilesystemBuckets.html#method_set"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\MemoryBuckets",
+            "name": "MemoryBuckets",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-MemoryBuckets.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\MemoryBuckets\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-MemoryBuckets.html#method_append"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\MemoryBuckets\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Yields\u0020the\u0020bucket\u0020back\u0020in\u0020batches\u0020\u002D\u0020batch\u0020shape\u0020is\u0020storage\u002Ddefined,\u0020consumers\u0020must\u0020not\nassume\u0020any\u0020particular\u0020batch\u0020size.",
+            "url": "classes/Flow-ETL-Bucketing-Storage-MemoryBuckets.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\MemoryBuckets\u003A\u003Aremove\u0028\u0029",
+            "name": "remove",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-MemoryBuckets.html#method_remove"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\MemoryBuckets\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-MemoryBuckets.html#method_set"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\PSRCacheBuckets",
+            "name": "PSRCacheBuckets",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-PSRCacheBuckets.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\PSRCacheBuckets\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-PSRCacheBuckets.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\PSRCacheBuckets\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-PSRCacheBuckets.html#method_append"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\PSRCacheBuckets\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Yields\u0020the\u0020bucket\u0020back\u0020in\u0020batches\u0020\u002D\u0020batch\u0020shape\u0020is\u0020storage\u002Ddefined,\u0020consumers\u0020must\u0020not\nassume\u0020any\u0020particular\u0020batch\u0020size.",
+            "url": "classes/Flow-ETL-Bucketing-Storage-PSRCacheBuckets.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\PSRCacheBuckets\u003A\u003Aremove\u0028\u0029",
+            "name": "remove",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-PSRCacheBuckets.html#method_remove"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\PSRCacheBuckets\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-PSRCacheBuckets.html#method_set"
+        },                {
             "fqsen": "\\Flow\\ETL\\Cache\\CacheIndex",
             "name": "CacheIndex",
             "summary": "",
@@ -786,6 +1081,66 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Cache.html#method_set"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Bucketing\\BucketingConfig",
+            "name": "BucketingConfig",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Bucketing-BucketingConfig.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Bucketing\\BucketingConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Bucketing-BucketingConfig.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Bucketing\\BucketingConfig\u003A\u003A\u0024storage",
+            "name": "storage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Bucketing-BucketingConfig.html#property_storage"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Bucketing\\BucketingConfig\u003A\u003A\u0024bucketsCount",
+            "name": "bucketsCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Bucketing-BucketingConfig.html#property_bucketsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Bucketing\\BucketingConfig\u003A\u003A\u0024batchSize",
+            "name": "batchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Bucketing-BucketingConfig.html#property_batchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Bucketing\\BucketingConfigBuilder",
+            "name": "BucketingConfigBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Bucketing-BucketingConfigBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Bucketing\\BucketingConfigBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Bucketing-BucketingConfigBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Bucketing\\BucketingConfigBuilder\u003A\u003AbatchSize\u0028\u0029",
+            "name": "batchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Bucketing-BucketingConfigBuilder.html#method_batchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Bucketing\\BucketingConfigBuilder\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Bucketing-BucketingConfigBuilder.html#method_build"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Bucketing\\BucketingConfigBuilder\u003A\u003AbucketsCount\u0028\u0029",
+            "name": "bucketsCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Bucketing-BucketingConfigBuilder.html#method_bucketsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Bucketing\\BucketingConfigBuilder\u003A\u003AfilesystemProtocol\u0028\u0029",
+            "name": "filesystemProtocol",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Bucketing-BucketingConfigBuilder.html#method_filesystemProtocol"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Bucketing\\BucketingConfigBuilder\u003A\u003Astorage\u0028\u0029",
+            "name": "storage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Bucketing-BucketingConfigBuilder.html#method_storage"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfig",
             "name": "CacheConfig",
             "summary": "",
@@ -811,21 +1166,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Cache-CacheConfig.html#property_localFilesystemCacheDir"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfig\u003A\u003A\u0024externalSortBucketsCount",
-            "name": "externalSortBucketsCount",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Cache-CacheConfig.html#property_externalSortBucketsCount"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfig\u003A\u003A\u0024externalSortBatchSize",
-            "name": "externalSortBatchSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Cache-CacheConfig.html#property_externalSortBatchSize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfig\u003A\u003A\u0024externalSortBucketSize",
-            "name": "externalSortBucketSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Cache-CacheConfig.html#property_externalSortBucketSize"
-        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfig\u003A\u003A\u0024filesystemMount",
             "name": "filesystemMount",
             "summary": "",
@@ -850,21 +1190,6 @@ Search.appendIndex(
             "name": "cacheDir",
             "summary": "Sets\u0020the\u0020local\u0020filesystem\u0020cache\u0020directory\u0020explicitly,\u0020overriding\u0020the\u0020FLOW_LOCAL_FILESYSTEM_CACHE_DIR\nenv\u0020var\u0020and\u0020the\u0020system\u0020temp\u0020fallback.",
             "url": "classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_cacheDir"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfigBuilder\u003A\u003AexternalSortBucketsCount\u0028\u0029",
-            "name": "externalSortBucketsCount",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_externalSortBucketsCount"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfigBuilder\u003A\u003AexternalSortBatchSize\u0028\u0029",
-            "name": "externalSortBatchSize",
-            "summary": "Rows\u0020per\u0020Floe\u0020crossing\u0020when\u0020the\u0020external\u0020sort\u0020spills\u0020and\u0020reads\u0020its\u0020buckets.",
-            "url": "classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_externalSortBatchSize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfigBuilder\u003A\u003AexternalSortBucketSize\u0028\u0029",
-            "name": "externalSortBucketSize",
-            "summary": "Rows\u0020buffered\u0020and\u0020sorted\u0020in\u0020memory\u0020before\u0020the\u0020external\u0020sort\u0020spills\u0020them\u0020as\u0020one\u0020bucket.",
-            "url": "classes/Flow-ETL-Config-Cache-CacheConfigBuilder.html#method_externalSortBucketSize"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Cache\\CacheConfigBuilder\u003A\u003AfilesystemMount\u0028\u0029",
             "name": "filesystemMount",
@@ -921,40 +1246,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_dontPutInputIntoRows"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AexternalSortBucketsCount\u0028\u0029",
-            "name": "externalSortBucketsCount",
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AgroupBy\u0028\u0029",
+            "name": "groupBy",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_externalSortBucketsCount"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AexternalSortBatchSize\u0028\u0029",
-            "name": "externalSortBatchSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_externalSortBatchSize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AexternalSortBucketSize\u0028\u0029",
-            "name": "externalSortBucketSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_externalSortBucketSize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AexternalSortFilesystem\u0028\u0029",
-            "name": "externalSortFilesystem",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_externalSortFilesystem"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AgroupingBatchSize\u0028\u0029",
-            "name": "groupingBatchSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_groupingBatchSize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AgroupingBucketsCount\u0028\u0029",
-            "name": "groupingBucketsCount",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_groupingBucketsCount"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AgroupingCache\u0028\u0029",
-            "name": "groupingCache",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_groupingCache"
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_groupBy"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Ahydrator\u0028\u0029",
             "name": "hydrator",
@@ -966,20 +1261,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_id"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AjoinBatchSize\u0028\u0029",
-            "name": "joinBatchSize",
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Ajoin\u0028\u0029",
+            "name": "join",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_joinBatchSize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AjoinBucketsCount\u0028\u0029",
-            "name": "joinBucketsCount",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_joinBucketsCount"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003AjoinCache\u0028\u0029",
-            "name": "joinCache",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_joinCache"
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_join"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Amount\u0028\u0029",
             "name": "mount",
@@ -1011,6 +1296,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_serializer"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Asort\u0028\u0029",
+            "name": "sort",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_sort"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Aunmount\u0028\u0029",
             "name": "unmount",
             "summary": "",
@@ -1021,160 +1311,210 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_withTelemetry"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003A\u0024grouping",
-            "name": "grouping",
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupByAlgorithmBuilder",
+            "name": "GroupByAlgorithmBuilder",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#property_grouping"
+            "url": "classes/Flow-ETL-Config-Grouping-GroupByAlgorithmBuilder.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003A\u0024join",
-            "name": "join",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#property_join"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003A\u0024sort",
-            "name": "sort",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#property_sort"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfig",
-            "name": "GroupingConfig",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfig.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfig\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfig.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfig\u003A\u003A\u0024cache",
-            "name": "cache",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfig.html#property_cache"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfig\u003A\u003A\u0024bucketsCount",
-            "name": "bucketsCount",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfig.html#property_bucketsCount"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfig\u003A\u003A\u0024batchSize",
-            "name": "batchSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfig.html#property_batchSize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfigBuilder",
-            "name": "GroupingConfigBuilder",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfigBuilder.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfigBuilder\u003A\u003AbatchSize\u0028\u0029",
-            "name": "batchSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfigBuilder.html#method_batchSize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfigBuilder\u003A\u003Abuild\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupByAlgorithmBuilder\u003A\u003Abuild\u0028\u0029",
             "name": "build",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfigBuilder.html#method_build"
+            "url": "classes/Flow-ETL-Config-Grouping-GroupByAlgorithmBuilder.html#method_build"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfigBuilder\u003A\u003AbucketsCount\u0028\u0029",
-            "name": "bucketsCount",
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\HashGroupByBuilder",
+            "name": "HashGroupByBuilder",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfigBuilder.html#method_bucketsCount"
+            "url": "classes/Flow-ETL-Config-Grouping-HashGroupByBuilder.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\GroupingConfigBuilder\u003A\u003Acache\u0028\u0029",
-            "name": "cache",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Grouping-GroupingConfigBuilder.html#method_cache"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfig",
-            "name": "JoinConfig",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Join-JoinConfig.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfig\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\HashGroupByBuilder\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-Join-JoinConfig.html#method___construct"
+            "url": "classes/Flow-ETL-Config-Grouping-HashGroupByBuilder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfig\u003A\u003A\u0024cache",
-            "name": "cache",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Join-JoinConfig.html#property_cache"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfig\u003A\u003A\u0024bucketsCount",
-            "name": "bucketsCount",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Join-JoinConfig.html#property_bucketsCount"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfig\u003A\u003A\u0024batchSize",
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\HashGroupByBuilder\u003A\u003AbatchSize\u0028\u0029",
             "name": "batchSize",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-Join-JoinConfig.html#property_batchSize"
+            "url": "classes/Flow-ETL-Config-Grouping-HashGroupByBuilder.html#method_batchSize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfigBuilder",
-            "name": "JoinConfigBuilder",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Join-JoinConfigBuilder.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfigBuilder\u003A\u003AbatchSize\u0028\u0029",
-            "name": "batchSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Join-JoinConfigBuilder.html#method_batchSize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfigBuilder\u003A\u003Abuild\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\HashGroupByBuilder\u003A\u003Abuild\u0028\u0029",
             "name": "build",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-Join-JoinConfigBuilder.html#method_build"
+            "url": "classes/Flow-ETL-Config-Grouping-HashGroupByBuilder.html#method_build"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfigBuilder\u003A\u003AbucketsCount\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\HashGroupByBuilder\u003A\u003AbucketsCount\u0028\u0029",
             "name": "bucketsCount",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-Join-JoinConfigBuilder.html#method_bucketsCount"
+            "url": "classes/Flow-ETL-Config-Grouping-HashGroupByBuilder.html#method_bucketsCount"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinConfigBuilder\u003A\u003Acache\u0028\u0029",
-            "name": "cache",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Join-JoinConfigBuilder.html#method_cache"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfig",
-            "name": "SortConfig",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-SortConfig.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfig\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-SortConfig.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfig\u003A\u003A\u0024algorithm",
-            "name": "algorithm",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-SortConfig.html#property_algorithm"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfig\u003A\u003A\u0024filesystemProtocol",
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\HashGroupByBuilder\u003A\u003AfilesystemProtocol\u0028\u0029",
             "name": "filesystemProtocol",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-SortConfig.html#property_filesystemProtocol"
+            "url": "classes/Flow-ETL-Config-Grouping-HashGroupByBuilder.html#method_filesystemProtocol"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfigBuilder",
-            "name": "SortConfigBuilder",
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\HashGroupByBuilder\u003A\u003Astorage\u0028\u0029",
+            "name": "storage",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-SortConfigBuilder.html"
+            "url": "classes/Flow-ETL-Config-Grouping-HashGroupByBuilder.html#method_storage"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfigBuilder\u003A\u003Aalgorithm\u0028\u0029",
-            "name": "algorithm",
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\HashGroupByConfig",
+            "name": "HashGroupByConfig",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-SortConfigBuilder.html#method_algorithm"
+            "url": "classes/Flow-ETL-Config-Grouping-HashGroupByConfig.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfigBuilder\u003A\u003Abuild\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\HashGroupByConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Grouping-HashGroupByConfig.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\HashGroupByConfig\u003A\u003A\u0024bucketing",
+            "name": "bucketing",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Grouping-HashGroupByConfig.html#property_bucketing"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinBuilder",
+            "name": "HashJoinBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-HashJoinBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-HashJoinBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinBuilder\u003A\u003AbatchSize\u0028\u0029",
+            "name": "batchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-HashJoinBuilder.html#method_batchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinBuilder\u003A\u003Abuild\u0028\u0029",
             "name": "build",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-SortConfigBuilder.html#method_build"
+            "url": "classes/Flow-ETL-Config-Join-HashJoinBuilder.html#method_build"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortConfigBuilder\u003A\u003AfilesystemProtocol\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinBuilder\u003A\u003AbucketsCount\u0028\u0029",
+            "name": "bucketsCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-HashJoinBuilder.html#method_bucketsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinBuilder\u003A\u003AfilesystemProtocol\u0028\u0029",
             "name": "filesystemProtocol",
             "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-SortConfigBuilder.html#method_filesystemProtocol"
+            "url": "classes/Flow-ETL-Config-Join-HashJoinBuilder.html#method_filesystemProtocol"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinBuilder\u003A\u003Astorage\u0028\u0029",
+            "name": "storage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-HashJoinBuilder.html#method_storage"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinConfig",
+            "name": "HashJoinConfig",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-HashJoinConfig.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-HashJoinConfig.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinConfig\u003A\u003A\u0024bucketing",
+            "name": "bucketing",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-HashJoinConfig.html#property_bucketing"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinAlgorithmBuilder",
+            "name": "JoinAlgorithmBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-JoinAlgorithmBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinAlgorithmBuilder\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-JoinAlgorithmBuilder.html#method_build"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortBuilder",
+            "name": "ExternalSortBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortBuilder\u003A\u003AbatchSize\u0028\u0029",
+            "name": "batchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_batchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortBuilder\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_build"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortBuilder\u003A\u003AbucketsCount\u0028\u0029",
+            "name": "bucketsCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_bucketsCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortBuilder\u003A\u003AfilesystemProtocol\u0028\u0029",
+            "name": "filesystemProtocol",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_filesystemProtocol"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortBuilder\u003A\u003ArunSize\u0028\u0029",
+            "name": "runSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_runSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortBuilder\u003A\u003Astorage\u0028\u0029",
+            "name": "storage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_storage"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortConfig",
+            "name": "ExternalSortConfig",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortConfig.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortConfig.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortConfig\u003A\u003A\u0024bucketing",
+            "name": "bucketing",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortConfig.html#property_bucketing"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortConfig\u003A\u003A\u0024runSize",
+            "name": "runSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortConfig.html#property_runSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\MemorySortBuilder",
+            "name": "MemorySortBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-MemorySortBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\MemorySortBuilder\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-MemorySortBuilder.html#method_build"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\MemorySortConfig",
+            "name": "MemorySortConfig",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-MemorySortConfig.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortAlgorithmBuilder",
+            "name": "SortAlgorithmBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-SortAlgorithmBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\SortAlgorithmBuilder\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-SortAlgorithmBuilder.html#method_build"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes",
             "name": "TelemetryAttributes",
@@ -1455,6 +1795,11 @@ Search.appendIndex(
             "name": "optimizer",
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#method_optimizer"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\u003A\u003ArandomValueGenerator\u0028\u0029",
+            "name": "randomValueGenerator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config.html#method_randomValueGenerator"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\u003A\u003Aserializer\u0028\u0029",
             "name": "serializer",
@@ -1830,11 +2175,6 @@ Search.appendIndex(
             "name": "partitionBy",
             "summary": "",
             "url": "classes/Flow-ETL-DataFrame.html#method_partitionBy"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Apivot\u0028\u0029",
-            "name": "pivot",
-            "summary": "",
-            "url": "classes/Flow-ETL-DataFrame.html#method_pivot"
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AprintRows\u0028\u0029",
             "name": "printRows",
@@ -3226,6 +3566,26 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_config_builder"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\memory_sort\u0028\u0029",
+            "name": "memory_sort",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_memory_sort"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\external_sort\u0028\u0029",
+            "name": "external_sort",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_external_sort"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\hash_join\u0028\u0029",
+            "name": "hash_join",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_hash_join"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\hash_group_by\u0028\u0029",
+            "name": "hash_group_by",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_hash_group_by"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\overwrite\u0028\u0029",
             "name": "overwrite",
             "summary": "Alias\u0020for\u0020save_mode_overwrite\u0028\u0029.",
@@ -4506,6 +4866,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-AggregatingFunction.html#method_aggregate"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\AggregatingFunction\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-AggregatingFunction.html#method_references"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\AggregatingFunction\u003A\u003Aresult\u0028\u0029",
             "name": "result",
             "summary": "",
@@ -4941,6 +5306,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Average.html#method_over"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Average\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Average.html#method_references"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Average\u003A\u003Aresult\u0028\u0029",
             "name": "result",
             "summary": "",
@@ -5136,6 +5506,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Collect.html#method_aggregate"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Collect\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Collect.html#method_references"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Collect\u003A\u003Aresult\u0028\u0029",
             "name": "result",
             "summary": "",
@@ -5155,6 +5530,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-CollectUnique.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\CollectUnique\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-CollectUnique.html#method_references"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CollectUnique\u003A\u003Aresult\u0028\u0029",
             "name": "result",
@@ -5245,6 +5625,11 @@ Search.appendIndex(
             "name": "over",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Count.html#method_over"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Count\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Count.html#method_references"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Count\u003A\u003Aresult\u0028\u0029",
             "name": "result",
@@ -5530,6 +5915,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-First.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\First\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-First.html#method_references"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\First\u003A\u003Aresult\u0028\u0029",
             "name": "result",
@@ -5841,6 +6231,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Last.html#method_aggregate"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Last\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Last.html#method_references"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Last\u003A\u003Aresult\u0028\u0029",
             "name": "result",
             "summary": "",
@@ -5986,6 +6381,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Max.html#method_aggregate"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Max\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Max.html#method_references"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Max\u003A\u003Aresult\u0028\u0029",
             "name": "result",
             "summary": "",
@@ -6005,6 +6405,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Min.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Min\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Min.html#method_references"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Min\u003A\u003Aresult\u0028\u0029",
             "name": "result",
@@ -7326,6 +7731,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-StringAggregate.html#method_aggregate"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringAggregate\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-StringAggregate.html#method_references"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAggregate\u003A\u003Aresult\u0028\u0029",
             "name": "result",
             "summary": "",
@@ -7595,6 +8005,11 @@ Search.appendIndex(
             "name": "over",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Sum.html#method_over"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Sum\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Sum.html#method_references"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sum\u003A\u003Aresult\u0028\u0029",
             "name": "result",
@@ -7891,50 +8306,45 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-GroupBy-Aggregators.html#method_getIterator"
         },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\\Bucket",
-            "name": "Bucket",
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Aggregators\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
             "summary": "",
-            "url": "classes/Flow-ETL-GroupBy-Bucket.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\\Bucket\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-GroupBy-Bucket.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\\Bucket\u003A\u003A\u0024key",
-            "name": "key",
-            "summary": "",
-            "url": "classes/Flow-ETL-GroupBy-Bucket.html#property_key"
-        },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\\Bucket\u003A\u003A\u0024aggregators",
-            "name": "aggregators",
-            "summary": "",
-            "url": "classes/Flow-ETL-GroupBy-Bucket.html#property_aggregators"
+            "url": "classes/Flow-ETL-GroupBy-Aggregators.html#method_references"
         },                {
             "fqsen": "\\Flow\\ETL\\GroupBy\\BucketAggregation",
             "name": "BucketAggregation",
             "summary": "",
             "url": "classes/Flow-ETL-GroupBy-BucketAggregation.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\BucketAggregation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-BucketAggregation.html#method___construct"
+        },                {
             "fqsen": "\\Flow\\ETL\\GroupBy\\BucketAggregation\u003A\u003Aaggregate\u0028\u0029",
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-GroupBy-BucketAggregation.html#method_aggregate"
         },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\\ExternalAggregation",
-            "name": "ExternalAggregation",
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Group",
+            "name": "Group",
             "summary": "",
-            "url": "classes/Flow-ETL-GroupBy-ExternalAggregation.html"
+            "url": "classes/Flow-ETL-GroupBy-Group.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\\ExternalAggregation\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Group\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-GroupBy-ExternalAggregation.html#method___construct"
+            "url": "classes/Flow-ETL-GroupBy-Group.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\\ExternalAggregation\u003A\u003Aaggregate\u0028\u0029",
-            "name": "aggregate",
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Group\u003A\u003A\u0024key",
+            "name": "key",
             "summary": "",
-            "url": "classes/Flow-ETL-GroupBy-ExternalAggregation.html#method_aggregate"
+            "url": "classes/Flow-ETL-GroupBy-Group.html#property_key"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Group\u003A\u003A\u0024aggregators",
+            "name": "aggregators",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-Group.html#property_aggregators"
         },                {
             "fqsen": "\\Flow\\ETL\\GroupBy\\GroupKey",
             "name": "GroupKey",
@@ -8001,6 +8411,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-GroupBy.html#method_pivotResult"
         },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy.html#method_references"
+        },                {
             "fqsen": "\\Flow\\ETL\\Hash\\Algorithm",
             "name": "Algorithm",
             "summary": "",
@@ -8040,21 +8455,6 @@ Search.appendIndex(
             "name": "hash",
             "summary": "",
             "url": "classes/Flow-ETL-Hash-PlainText.html#method_hash"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\BucketedHashJoin",
-            "name": "BucketedHashJoin",
-            "summary": "Hash\u0020join\u0020with\u0020storage\u002Ddriven\u0020execution.\u0020The\u0020right\u0020side\u0020is\u0020always\u0020partitioned\u0020through\nthe\u0020BucketsCache.\u0020With\u0020a\u0020resident\u0020\u0028in\u002Dmemory\u0029\u0020cache\u0020the\u0020left\u0020side\u0020is\u0020streamed\u0020through\na\u0020single\u0020hash\u0020table\u0020\u002D\u0020left\u0020row\u0020order\u0020is\u0020preserved\u0020and\u0020memory\u0020usage\u0020is\u0020bounded\u0020by\u0020the\nright\u0020side.\u0020With\u0020a\u0020non\u002Dresident\u0020\u0028on\u002Ddisk\u0029\u0020cache\u0020both\u0020sides\u0020are\u0020partitioned\u0020by\u0020join\u0020key\nhash\u0020and\u0020joined\u0020one\u0020pair\u0020of\u0020buckets\u0020at\u0020a\u0020time\u0020\u0028grace\u0020hash\u0020join\u0029\u0020\u002D\u0020memory\u0020usage\u0020is\nbounded\u0020by\u0020the\u0020largest\u0020bucket\u0020and\u0020left\u0020row\u0020order\u0020is\u0020not\u0020preserved.",
-            "url": "classes/Flow-ETL-Join-BucketedHashJoin.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\BucketedHashJoin\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-BucketedHashJoin.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\BucketedHashJoin\u003A\u003AjoinGenerator\u0028\u0029",
-            "name": "joinGenerator",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-BucketedHashJoin.html#method_joinGenerator"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\\All",
             "name": "All",
@@ -8236,56 +8636,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Join-Expression.html#method_right"
         },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\BucketSpiller",
-            "name": "BucketSpiller",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-BucketSpiller.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\BucketSpiller\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-BucketSpiller.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\BucketSpiller\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-BucketSpiller.html#method_add"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\BucketSpiller\u003A\u003AbucketIds\u0028\u0029",
-            "name": "bucketIds",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-BucketSpiller.html#method_bucketIds"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\BucketSpiller\u003A\u003Aflush\u0028\u0029",
-            "name": "flush",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-BucketSpiller.html#method_flush"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\EqualityJoinKeys",
-            "name": "EqualityJoinKeys",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-EqualityJoinKeys.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\EqualityJoinKeys\u003A\u003AfromComparison\u0028\u0029",
-            "name": "fromComparison",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-EqualityJoinKeys.html#method_fromComparison"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\EqualityJoinKeys\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-EqualityJoinKeys.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\EqualityJoinKeys\u003A\u003AleftHash\u0028\u0029",
-            "name": "leftHash",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-EqualityJoinKeys.html#method_leftHash"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\EqualityJoinKeys\u003A\u003ArightHash\u0028\u0029",
-            "name": "rightHash",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-EqualityJoinKeys.html#method_rightHash"
-        },                {
             "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\HashTable",
             "name": "HashTable",
             "summary": "",
@@ -8346,15 +8696,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Join-HashJoin-JoinKeys.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\JoinKeys\u003A\u003AleftHash\u0028\u0029",
-            "name": "leftHash",
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\JoinKeys\u003A\u003AfromComparison\u0028\u0029",
+            "name": "fromComparison",
             "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_leftHash"
+            "url": "classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_fromComparison"
         },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\JoinKeys\u003A\u003ArightHash\u0028\u0029",
-            "name": "rightHash",
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\JoinKeys\u003A\u003AleftRefs\u0028\u0029",
+            "name": "leftRefs",
             "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_rightHash"
+            "url": "classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_leftRefs"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\JoinKeys\u003A\u003ArightRefs\u0028\u0029",
+            "name": "rightRefs",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-HashJoin-JoinKeys.html#method_rightRefs"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\NullRowBuilder",
             "name": "NullRowBuilder",
@@ -8390,21 +8745,6 @@ Search.appendIndex(
             "name": "merge",
             "summary": "",
             "url": "classes/Flow-ETL-Join-HashJoin-RowMerger.html#method_merge"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\SingleBucketJoinKeys",
-            "name": "SingleBucketJoinKeys",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-SingleBucketJoinKeys.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\SingleBucketJoinKeys\u003A\u003AleftHash\u0028\u0029",
-            "name": "leftHash",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-SingleBucketJoinKeys.html#method_leftHash"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\SingleBucketJoinKeys\u003A\u003ArightHash\u0028\u0029",
-            "name": "rightHash",
-            "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-SingleBucketJoinKeys.html#method_rightHash"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Join",
             "name": "Join",
@@ -8860,6 +9200,21 @@ Search.appendIndex(
             "name": "optimize",
             "summary": "",
             "url": "classes/Flow-ETL-Pipeline-Optimizer.html#method_optimize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\MergeSortProcessor",
+            "name": "MergeSortProcessor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-MergeSortProcessor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\MergeSortProcessor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-MergeSortProcessor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\MergeSortProcessor\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-MergeSortProcessor.html#method_process"
         },                {
             "fqsen": "\\Flow\\ETL\\RandomValueGenerator",
             "name": "RandomValueGenerator",
@@ -10770,6 +11125,26 @@ Search.appendIndex(
             "name": "without",
             "summary": "",
             "url": "classes/Flow-ETL-Row-References.html#method_without"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\RowsBuffer",
+            "name": "RowsBuffer",
+            "summary": "Accumulates\u0020rows\u0020and\u0020releases\u0020them\u0020as\u0020size\u002Dbounded\u0020Rows\u0020batches.",
+            "url": "classes/Flow-ETL-Row-RowsBuffer.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\RowsBuffer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-RowsBuffer.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\RowsBuffer\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-RowsBuffer.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\RowsBuffer\u003A\u003Aflush\u0028\u0029",
+            "name": "flush",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-RowsBuffer.html#method_flush"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\SortOrder",
             "name": "SortOrder",
@@ -13256,235 +13631,100 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-SchemaValidator.html#method_validate"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\Bucket",
-            "name": "Bucket",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\BucketCursor",
+            "name": "BucketCursor",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-Bucket.html"
+            "url": "classes/Flow-ETL-Sort-Merge-BucketCursor.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\Bucket\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\BucketCursor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-Bucket.html#method___construct"
+            "url": "classes/Flow-ETL-Sort-Merge-BucketCursor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\Bucket\u003A\u003A\u0024id",
-            "name": "id",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\BucketCursor\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-Bucket.html#property_id"
+            "url": "classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_current"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\Bucket\u003A\u003A\u0024rows",
-            "name": "rows",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\BucketCursor\u003A\u003Anext\u0028\u0029",
+            "name": "next",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-Bucket.html#property_rows"
+            "url": "classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_next"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketRow",
-            "name": "BucketRow",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\BucketCursor\u003A\u003Avalid\u0028\u0029",
+            "name": "valid",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketRow.html"
+            "url": "classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_valid"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketRow\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketRow.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketRow\u003A\u003A\u0024row",
-            "name": "row",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketRow.html#property_row"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketRow\u003A\u003A\u0024bucketId",
-            "name": "bucketId",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketRow.html#property_bucketId"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\Buckets",
-            "name": "Buckets",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-Buckets.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\Buckets\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-Buckets.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\Buckets\u003A\u003AbucketIds\u0028\u0029",
-            "name": "bucketIds",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-Buckets.html#method_bucketIds"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\Buckets\u003A\u003Asort\u0028\u0029",
-            "name": "sort",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-Buckets.html#method_sort"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\FilesystemBucketsCache",
-            "name": "FilesystemBucketsCache",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-FilesystemBucketsCache.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\FilesystemBucketsCache\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-FilesystemBucketsCache.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\FilesystemBucketsCache\u003A\u003Aappend\u0028\u0029",
-            "name": "append",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-FilesystemBucketsCache.html#method_append"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\FilesystemBucketsCache\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-FilesystemBucketsCache.html#method_get"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\FilesystemBucketsCache\u003A\u003Aremove\u0028\u0029",
-            "name": "remove",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-FilesystemBucketsCache.html#method_remove"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\FilesystemBucketsCache\u003A\u003Aset\u0028\u0029",
-            "name": "set",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-FilesystemBucketsCache.html#method_set"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\InMemoryBucketsCache",
-            "name": "InMemoryBucketsCache",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-InMemoryBucketsCache.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\InMemoryBucketsCache\u003A\u003Aappend\u0028\u0029",
-            "name": "append",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-InMemoryBucketsCache.html#method_append"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\InMemoryBucketsCache\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-InMemoryBucketsCache.html#method_get"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\InMemoryBucketsCache\u003A\u003Aremove\u0028\u0029",
-            "name": "remove",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-InMemoryBucketsCache.html#method_remove"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\\InMemoryBucketsCache\u003A\u003Aset\u0028\u0029",
-            "name": "set",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache-InMemoryBucketsCache.html#method_set"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache",
-            "name": "BucketsCache",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\u003A\u003Aappend\u0028\u0029",
-            "name": "append",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache.html#method_append"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache.html#method_get"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\u003A\u003Aremove\u0028\u0029",
-            "name": "remove",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache.html#method_remove"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache\u003A\u003Aset\u0028\u0029",
-            "name": "set",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-BucketsCache.html#method_set"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\ComparableBucketRow",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\ComparableBucketRow",
             "name": "ComparableBucketRow",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-ComparableBucketRow.html"
+            "url": "classes/Flow-ETL-Sort-Merge-ComparableBucketRow.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\ComparableBucketRow\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\ComparableBucketRow\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-ComparableBucketRow.html#method___construct"
+            "url": "classes/Flow-ETL-Sort-Merge-ComparableBucketRow.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\ComparableBucketRow\u003A\u003A\u0024values",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\ComparableBucketRow\u003A\u003A\u0024values",
             "name": "values",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-ComparableBucketRow.html#property_values"
+            "url": "classes/Flow-ETL-Sort-Merge-ComparableBucketRow.html#property_values"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\ComparableBucketRow\u003A\u003A\u0024row",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\ComparableBucketRow\u003A\u003A\u0024row",
             "name": "row",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-ComparableBucketRow.html#property_row"
+            "url": "classes/Flow-ETL-Sort-Merge-ComparableBucketRow.html#property_row"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\ComparableBucketRow\u003A\u003A\u0024bucketId",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\ComparableBucketRow\u003A\u003A\u0024bucketId",
             "name": "bucketId",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-ComparableBucketRow.html#property_bucketId"
+            "url": "classes/Flow-ETL-Sort-Merge-ComparableBucketRow.html#property_bucketId"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\ResidentBucketsCache",
-            "name": "ResidentBucketsCache",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\KWayMerge",
+            "name": "KWayMerge",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-ResidentBucketsCache.html"
+            "url": "classes/Flow-ETL-Sort-Merge-KWayMerge.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\RowsMinHeap",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\KWayMerge\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-Merge-KWayMerge.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\KWayMerge\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-Merge-KWayMerge.html#method_merge"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\RowsMinHeap",
             "name": "RowsMinHeap",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-RowsMinHeap.html"
+            "url": "classes/Flow-ETL-Sort-Merge-RowsMinHeap.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\RowsMinHeap\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\RowsMinHeap\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-RowsMinHeap.html#method___construct"
+            "url": "classes/Flow-ETL-Sort-Merge-RowsMinHeap.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\RowsMinHeap\u003A\u003A__debugInfo\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\RowsMinHeap\u003A\u003A__debugInfo\u0028\u0029",
             "name": "__debugInfo",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-RowsMinHeap.html#method___debugInfo"
+            "url": "classes/Flow-ETL-Sort-Merge-RowsMinHeap.html#method___debugInfo"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\RowsMinHeap\u003A\u003Ainsert\u0028\u0029",
-            "name": "insert",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\RowsMinHeap\u003A\u003Apush\u0028\u0029",
+            "name": "push",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort-RowsMinHeap.html#method_insert"
+            "url": "classes/Flow-ETL-Sort-Merge-RowsMinHeap.html#method_push"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort",
-            "name": "ExternalSort",
-            "summary": "External\u0020sorting\u0020is\u0020explained\u0020here\u003A.",
-            "url": "classes/Flow-ETL-Sort-ExternalSort.html"
+            "fqsen": "\\Flow\\ETL\\Sort\\ValuesSorter",
+            "name": "ValuesSorter",
+            "summary": "Sorts\u0020a\u0020column\u0020of\u0020extracted\u0020values\u0020preserving\u0020keys.\u0020Homogeneous\u0020columns\u0020are\u0020detected\u0020once\u0020and\nsorted\u0020by\u0020the\u0020engine\u0020without\u0020any\u0020userland\u0020comparator\u0020\u002D\u0020a\u0020per\u002Dpair\u0020comparison\u0020callback\u0020is\u0020orders\nof\u0020magnitude\u0020slower\u0020than\u0020asort\u0028\u0029\/arsort\u0028\u0029.\u0020Mixed\u0020columns\u0020fall\u0020back\u0020to\u0020the\u0020pairwise\u0020comparator.",
+            "url": "classes/Flow-ETL-Sort-ValuesSorter.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
+            "fqsen": "\\Flow\\ETL\\Sort\\ValuesSorter\u003A\u003Asort\u0028\u0029",
+            "name": "sort",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\u003A\u003AsortGenerator\u0028\u0029",
-            "name": "sortGenerator",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-ExternalSort.html#method_sortGenerator"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\MemorySort",
-            "name": "MemorySort",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-MemorySort.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\MemorySort\u003A\u003AsortGenerator\u0028\u0029",
-            "name": "sortGenerator",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-MemorySort.html#method_sortGenerator"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\SortAlgorithms",
-            "name": "SortAlgorithms",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-SortAlgorithms.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\SortAlgorithms\u003A\u003AEXTERNAL_SORT",
-            "name": "EXTERNAL_SORT",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-SortAlgorithms.html#enumcase_EXTERNAL_SORT"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\SortAlgorithms\u003A\u003AMEMORY_SORT",
-            "name": "MEMORY_SORT",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-SortAlgorithms.html#enumcase_MEMORY_SORT"
+            "url": "classes/Flow-ETL-Sort-ValuesSorter.html#method_sort"
         },                {
             "fqsen": "\\Flow\\ETL\\String\\StringStyles",
             "name": "StringStyles",
@@ -16011,6 +16251,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-attribute.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing",
+            "name": "Bucketing",
+            "summary": "",
+            "url": "namespaces/flow-etl-bucketing.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage",
+            "name": "Storage",
+            "summary": "",
+            "url": "namespaces/flow-etl-bucketing-storage.html"
+        },                {
             "fqsen": "\\Flow\\ETL\\Cache",
             "name": "Cache",
             "summary": "",
@@ -16020,6 +16270,11 @@ Search.appendIndex(
             "name": "Implementation",
             "summary": "",
             "url": "namespaces/flow-etl-cache-implementation.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Bucketing",
+            "name": "Bucketing",
+            "summary": "",
+            "url": "namespaces/flow-etl-config-bucketing.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Cache",
             "name": "Cache",
@@ -16176,15 +16431,15 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-hash.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Join",
-            "name": "Join",
-            "summary": "",
-            "url": "namespaces/flow-etl-join.html"
-        },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison",
             "name": "Comparison",
             "summary": "",
             "url": "namespaces/flow-etl-join-comparison.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join",
+            "name": "Join",
+            "summary": "",
+            "url": "namespaces/flow-etl-join.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\HashJoin",
             "name": "HashJoin",
@@ -16215,6 +16470,11 @@ Search.appendIndex(
             "name": "Pipeline",
             "summary": "",
             "url": "namespaces/flow-etl-pipeline.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor",
+            "name": "Processor",
+            "summary": "",
+            "url": "namespaces/flow-etl-processor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Retry\\DelayFactory",
             "name": "DelayFactory",
@@ -16291,15 +16551,10 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-schema-validator.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort",
-            "name": "ExternalSort",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge",
+            "name": "Merge",
             "summary": "",
-            "url": "namespaces/flow-etl-sort-externalsort.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\\BucketsCache",
-            "name": "BucketsCache",
-            "summary": "",
-            "url": "namespaces/flow-etl-sort-externalsort-bucketscache.html"
+            "url": "namespaces/flow-etl-sort-merge.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Sort",
             "name": "Sort",

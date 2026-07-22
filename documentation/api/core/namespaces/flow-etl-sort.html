@@ -132,7 +132,9 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Sort-ExternalSort.html"><abbr title="\Flow\ETL\Sort\ExternalSort">ExternalSort</abbr></a></dt><dd>External sorting is explained here:.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Sort-MemorySort.html"><abbr title="\Flow\ETL\Sort\MemorySort">MemorySort</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Sort-ValuesSorter.html"><abbr title="\Flow\ETL\Sort\ValuesSorter">ValuesSorter</abbr></a></dt><dd>Sorts a column of extracted values preserving keys. Homogeneous columns are detected once and
+sorted by the engine without any userland comparator - a per-pair comparison callback is orders
+of magnitude slower than asort()/arsort(). Mixed columns fall back to the pairwise comparator.</dd>    </dl>
 
     <h4 id="namespaces">
         Namespaces
@@ -140,17 +142,10 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/flow-etl-sort-externalsort.html"><abbr title="\Flow\ETL\Sort\ExternalSort">ExternalSort</abbr></a></dt>
+                    <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/flow-etl-sort-merge.html"><abbr title="\Flow\ETL\Sort\Merge">Merge</abbr></a></dt>
             </dl>
 
 
-    <h4 id="toc-enums">
-        Enums
-        <a href="namespaces/flow-etl-sort.html#toc-enums" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-ETL-Sort-SortAlgorithms.html"><abbr title="\Flow\ETL\Sort\SortAlgorithms">SortAlgorithms</abbr></a></dt></dl>
 
 
 
@@ -173,8 +168,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="namespaces/flow-etl-sort.html#toc-classes">Classes</a></li>
-                                                                                    <li><a href="namespaces/flow-etl-sort.html#toc-enums">Enums</a></li>
-                                                                                                                    </ul>
+                                                                                                                                                            </ul>
             </li>
 
             
