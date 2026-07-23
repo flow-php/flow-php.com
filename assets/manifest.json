@@ -1,5 +1,5 @@
 {
-    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-38ea8d244f37428123a44641d0f483b7.js",
+    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-0fcc8cdc73c6033938f13baced33b10d.js",
     "@symfony\/stimulus-bundle\/loader.js": "\/assets\/@symfony\/stimulus-bundle\/loader-20ecc10cbbb74d097d458e14577bcd99.js",
     "app.js": "\/assets\/app-396eb1b280b9b32f53a44b8e87aa6133.js",
     "bootstrap.js": "\/assets\/bootstrap-13edb607a8c6b40c285e5deacc875a08.js",
@@ -39,6 +39,9 @@
     "images\/blog\/flow-php-release-0410\/profiler_02.png": "\/assets\/images\/blog\/flow-php-release-0410\/profiler_02-c74b52ccc9421b1ce7390a1ea51ef5ee.png",
     "images\/blog\/flow-php-release-0410\/profiler_migrations.png": "\/assets\/images\/blog\/flow-php-release-0410\/profiler_migrations-33fab8b3ce1dec40bda3a76e3d5e0e0f.png",
     "images\/blog\/flow-php-release-0410\/profiler_queries.png": "\/assets\/images\/blog\/flow-php-release-0410\/profiler_queries-f8edecd37c46301be1910e4d7e967b30.png",
+    "images\/blog\/performance-optimizations\/after.png": "\/assets\/images\/blog\/performance-optimizations\/after-ff63c0aca87f6d34d13ca2d8fc1ae12d.png",
+    "images\/blog\/performance-optimizations\/before.png": "\/assets\/images\/blog\/performance-optimizations\/before-d1eba317776ae1fed361af468b646820.png",
+    "images\/blog\/performance-optimizations\/placeholder.svg": "\/assets\/images\/blog\/performance-optimizations\/placeholder-4b2eb8a559db8a8a34bb8d10d5df26d3.svg",
     "images\/elephant.svg": "\/assets\/images\/elephant-4b2eb8a559db8a8a34bb8d10d5df26d3.svg",
     "images\/favicons\/apple-touch-icon.png": "\/assets\/images\/favicons\/apple-touch-icon-19053a67e0e35244bb706d09ed39a812.png",
     "images\/favicons\/favicon-16x16.png": "\/assets\/images\/favicons\/favicon-16x16-511c15123a517c9ed2fa33779c98b49a.png",
@@ -110,7 +113,7 @@
     "prismjs\/plugins\/autolinker\/autolinker.js": "\/assets\/prismjs\/plugins\/autolinker\/autolinker-e906ddf9b7d89f169c9cf40a53e5605d.js",
     "prismjs\/themes\/prism-flow.css": "\/assets\/prismjs\/themes\/prism-flow-b46b11f7f7a760aeb62b5e588f943d9b.css",
     "services\/snippet-fingerprint.js": "\/assets\/services\/snippet-fingerprint-ecdca9f86dfd0b5152217084cf6bc7b8.js",
-    "styles\/app.css": "\/assets\/styles\/app-c07a4b41c8e9746df31d9f68b68219b8.css",
+    "styles\/app.css": "\/assets\/styles\/app-dec699908dc857cbe0ee61fd549ee698.css",
     "styles\/changelog.css": "\/assets\/styles\/changelog-8733bc2a99e1799ccd2de326f993c62c.css",
     "vendor\/@codemirror\/autocomplete\/autocomplete.index.js": "\/assets\/vendor\/@codemirror\/autocomplete\/autocomplete.index-bb799fac1bd628dfa039da2ddacebd75.js",
     "vendor\/@codemirror\/commands\/commands.index.js": "\/assets\/vendor\/@codemirror\/commands\/commands.index-bb1eaa9328336e3f881856f795534ba5.js",
@@ -173,7 +176,7 @@
     "wasm\/php.js": "\/assets\/wasm\/php-854edac03a51f967b58c16849625fb22.js",
     "wasm\/php.wasm": "\/assets\/wasm\/php-2c153f5537d6d5ef169b6c07f35bd236.wasm",
     "wasm\/phpcsfixer.php.wasm": "\/assets\/wasm\/phpcsfixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm",
-    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-fc01b730c54df2d73fefbbe86f9079ea.phar",
+    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-db2dc7f9941fde80c798817d2c032624.phar",
     "wasm\/tools\/php-cs-fixer.phar": "\/assets\/wasm\/tools\/php-cs-fixer-de55dbd75a08d2eac0f0435d4168e6bc.phar",
     "wasm\/vendor\/autoload.php.wasm": "\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm"
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Flow PHP Blog</title>
+        <link>https://flow-php.com/blog</link>
+        <atom:link href="https://flow-php.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <description>Articles, releases and guides from the Flow PHP data processing framework.</description>
+        <language>en</language>        <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +0000</lastBuildDate>        <item>
+            <title>Performance Optimizations</title>
+            <link>https://flow-php.com/blog/2026-07-23/performance-optimizations</link>
+            <guid isPermaLink="true">https://flow-php.com/blog/2026-07-23/performance-optimizations</guid>
+            <description>Floe is a dedicated binary format, created to speedup serialization and reduce serialized content size of Rows.</description>
+            <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+        </item>        <item>
+            <title>Flow PHP - Release 0.41.0</title>
+            <link>https://flow-php.com/blog/2026-06-29/flow-php-release-0410</link>
+            <guid isPermaLink="true">https://flow-php.com/blog/2026-06-29/flow-php-release-0410</guid>
+            <description>Summary of things changed in Flow PHP 0.41.0 release</description>
+            <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
+        </item>        <item>
+            <title>Flow PHP Release Cycle</title>
+            <link>https://flow-php.com/blog/2025-03-16/flow-php-release-cycle</link>
+            <guid isPermaLink="true">https://flow-php.com/blog/2025-03-16/flow-php-release-cycle</guid>
+            <description>Explanation of the updated Flow PHP release cycle that improves adaptability of new features.</description>
+            <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
+        </item>        <item>
+            <title>Data processing in PHP</title>
+            <link>https://flow-php.com/blog/2025-01-25/data-processing-in-php</link>
+            <guid isPermaLink="true">https://flow-php.com/blog/2025-01-25/data-processing-in-php</guid>
+            <description>Processing datasets is a common problem in almost any software. Learn how to process datasets in PHP just like it&#039;s being done in other programming languages.</description>
+            <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
+        </item>        <item>
+            <title>Scalar Functions</title>
+            <link>https://flow-php.com/blog/2024-08-08/scalar-functions</link>
+            <guid isPermaLink="true">https://flow-php.com/blog/2024-08-08/scalar-functions</guid>
+            <description>Scalar functions are one of the most important building blocks of Flow. Learn how to build and use custom scalar functions in Flow PHP.</description>
+            <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+        </item>        <item>
+            <title>Building Custom Data Extractor - Flow PHP</title>
+            <link>https://flow-php.com/blog/2024-04-04/building-custom-extractor-google-analytics</link>
+            <guid isPermaLink="true">https://flow-php.com/blog/2024-04-04/building-custom-extractor-google-analytics</guid>
+            <description>Learn how to extract data from Google Analytics API using Flow PHP but also how to build a custom data extractor.</description>
+            <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
+        </item>    </channel>
+</rss>
