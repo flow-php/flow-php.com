@@ -137,7 +137,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -145,7 +145,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_dynamic_http_requests</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-DynamicExtractor-NextRequestFactory.html"><abbr title="\Flow\ETL\Adapter\Http\DynamicExtractor\NextRequestFactory">NextRequestFactory</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requestFactory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html"><abbr title="\Flow\ETL\Adapter\Http\PsrHttpClientDynamicExtractor">PsrHttpClientDynamicExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_dynamic_http_requests</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-DynamicExtractor-NextRequestFactory.html"><abbr title="\Flow\ETL\Adapter\Http\DynamicExtractor\NextRequestFactory">NextRequestFactory</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requestFactory</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html"><abbr title="\Flow\ETL\Adapter\Http\PsrHttpClientDynamicExtractor">PsrHttpClientDynamicExtractor</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -161,6 +161,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$requestFactory</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-DynamicExtractor-NextRequestFactory.html"><abbr title="\Flow\ETL\Adapter\Http\DynamicExtractor\NextRequestFactory">NextRequestFactory</abbr></a></span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -183,7 +190,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -191,7 +198,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_static_http_requests</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">iterable&lt;string|int, <abbr title="\Psr\Http\Message\RequestInterface">RequestInterface</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requests</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html"><abbr title="\Flow\ETL\Adapter\Http\PsrHttpClientStaticExtractor">PsrHttpClientStaticExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_static_http_requests</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">iterable&lt;string|int, <abbr title="\Psr\Http\Message\RequestInterface">RequestInterface</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requests</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html"><abbr title="\Flow\ETL\Adapter\Http\PsrHttpClientStaticExtractor">PsrHttpClientStaticExtractor</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -210,6 +217,13 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -217,6 +231,894 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html"><abbr title="\Flow\ETL\Adapter\Http\PsrHttpClientStaticExtractor">PsrHttpClientStaticExtractor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_from_http_paginated">
+        from_http_paginated()
+        <a href="namespaces/flow-etl-adapter-http.html#function_from_http_paginated" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">from_http_paginated</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Http\Message\RequestInterface">RequestInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$paginator</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html"><abbr title="\Flow\ETL\Adapter\Http\PsrHttpClientPaginatedExtractor">PsrHttpClientPaginatedExtractor</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$client</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$request</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Psr\Http\Message\RequestInterface">RequestInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$paginator</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html"><abbr title="\Flow\ETL\Adapter\Http\PsrHttpClientPaginatedExtractor">PsrHttpClientPaginatedExtractor</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_pagination_page_number">
+        http_pagination_page_number()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_pagination_page_number" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">83</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_pagination_page_number</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inject</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_page</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page_size</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$size_option</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inject_on_first_request</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$records_path</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_on_client_error</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_when</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$inject</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$start_page</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">1</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$page_size</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$size_option</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$inject_on_first_request</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$records_path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stop_on_client_error</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stop_when</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_pagination_offset">
+        http_pagination_offset()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_pagination_offset" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">103</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_pagination_offset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset_option</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit_option</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_offset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$total_path</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inject_on_first_request</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_on_client_error</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_when</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$offset_option</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$limit_option</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$start_offset</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$total_path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$inject_on_first_request</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stop_on_client_error</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stop_when</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_pagination_cursor">
+        http_pagination_cursor()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_pagination_cursor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">123</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_pagination_cursor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cursor_path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inject</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_on_client_error</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_when</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$cursor_path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$inject</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stop_on_client_error</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stop_when</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_pagination_next_url">
+        http_pagination_next_url()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_pagination_next_url" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">139</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_pagination_next_url</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_on_client_error</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_when</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stop_on_client_error</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stop_when</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_pagination_link_header">
+        http_pagination_link_header()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_pagination_link_header" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">154</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_pagination_link_header</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rel</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'next'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_on_client_error</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_when</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$rel</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">'next'</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stop_on_client_error</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stop_when</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_pagination_last_record_cursor">
+        http_pagination_last_record_cursor()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_pagination_last_record_cursor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">163</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_pagination_last_record_cursor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$record_path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inject</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_on_client_error</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_when</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$record_path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$inject</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stop_on_client_error</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stop_when</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\Paginator">Paginator</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_request_option_query">
+        http_request_option_query()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_request_option_query" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">179</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_request_option_query</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_request_option_header">
+        http_request_option_header()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_request_option_header" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">185</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_request_option_header</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_request_option_body">
+        http_request_option_body()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_request_option_body" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">191</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_request_option_body</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Http\Message\StreamFactoryInterface">StreamFactoryInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream_factory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stream_factory</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Psr\Http\Message\StreamFactoryInterface">StreamFactoryInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_request_option_uri">
+        http_request_option_uri()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_request_option_uri" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">197</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_request_option_uri</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a></span></code>
+
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\RequestOption">RequestOption</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_stop_when_path_missing">
+        http_stop_when_path_missing()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_path_missing" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">203</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_stop_when_path_missing</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_stop_when_empty_path">
+        http_stop_when_empty_path()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_empty_path" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">209</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_stop_when_empty_path</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_stop_when_flag_false">
+        http_stop_when_flag_false()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_flag_false" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">215</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_stop_when_flag_false</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_stop_when_flag_true">
+        http_stop_when_flag_true()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_flag_true" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">221</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_stop_when_flag_true</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_stop_when_total_reached">
+        http_stop_when_total_reached()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_total_reached" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">227</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_stop_when_total_reached</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$total_path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$total_path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_stop_when_max_pages">
+        http_stop_when_max_pages()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_max_pages" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">233</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_stop_when_max_pages</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pages</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$pages</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_http_stop_when_max_results">
+        http_stop_when_max_results()
+        <a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_max_results" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">239</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">http_stop_when_max_results</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$count</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$count</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\Pagination\StopWhen">StopWhen</abbr></a></span>
             </section>
 
 </article>
@@ -243,7 +1145,25 @@
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_from_dynamic_http_requests">from_dynamic_http_requests()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_from_http_paginated">from_http_paginated()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_from_static_http_requests">from_static_http_requests()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_pagination_cursor">http_pagination_cursor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_pagination_last_record_cursor">http_pagination_last_record_cursor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_pagination_link_header">http_pagination_link_header()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_pagination_next_url">http_pagination_next_url()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_pagination_offset">http_pagination_offset()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_pagination_page_number">http_pagination_page_number()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_request_option_body">http_request_option_body()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_request_option_header">http_request_option_header()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_request_option_query">http_request_option_query()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_request_option_uri">http_request_option_uri()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_empty_path">http_stop_when_empty_path()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_flag_false">http_stop_when_flag_false()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_flag_true">http_stop_when_flag_true()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_max_pages">http_stop_when_max_pages()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_max_results">http_stop_when_max_results()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_path_missing">http_stop_when_path_missing()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-adapter-http.html#function_http_stop_when_total_reached">http_stop_when_total_reached()</a></li>
                                             </ul>
                 </li>
                     </ul>
