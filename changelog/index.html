@@ -582,9 +582,11 @@
         <p class="mt-3 muted">Every release of Flow PHP, in chronological order.</p>
     </section>
     <section id="changelog" class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 mt-8 mb-16">
-        <h2><a id="unreleased---2026-07-22" href="#unreleased---2026-07-22" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2026-07-22</h2>
+        <h2><a id="unreleased---2026-07-23" href="#unreleased---2026-07-23" class="mr-2" aria-hidden="true" title="Permalink">#</a>[Unreleased] - 2026-07-23</h2>
 <h3><a id="added" href="#added" class="mr-2" aria-hidden="true" title="Permalink">#</a>Added</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2544">#2544</a> - <strong>flow-php/etl - &quot;Performance Optimizations&quot; blog post with benchmarks and diagrams</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2544">#2544</a> - <strong>flow-php/etl - blog RSS feed at /rss.xml with autodiscovery and subscribe links</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2543">#2543</a> - <strong>flow-php/etl - Standalone Flow\ETL\Bucketing storage backend with Memory, Filesystem and PSR-16 implementations.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2543">#2543</a> - <strong>flow-php/etl - BucketingProcessor with pluggable strategies (HashBucketing, SortedRunBucketing).</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2543">#2543</a> - <strong>flow-php/etl - Algorithm builder DSL functions: memory_sort(), external_sort(), hash_join(), hash_group_by().</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -707,6 +709,8 @@ instead of inside the per-row loop</strong> - <a rel="noopener noreferrer" targe
 </ul>
 <h3><a id="fixed" href="#fixed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Fixed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2544">#2544</a> - <strong>flow-php/etl - silence false-positive analyzer warnings on batch size guards</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2544">#2544</a> - <strong>flow-php/postgresql - silence false-positive analyzer warning on version comparison</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2543">#2543</a> - <strong>flow-php/etl - DateInterval ordering in sort now works via type-specialized Rows::sortBy.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2525">#2525</a> - <strong>flow-php/symfony-telemetry-bundle - route_naming: path no longer calls Router::getRouteCollection() (full route collection rebuild) on every traced request</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2523">#2523</a> - <strong>flow-php/filesystem - MemoryStream appends at end of stream after ranged reads.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
@@ -725,6 +729,7 @@ instead of inside the per-row loop</strong> - <a rel="noopener noreferrer" targe
 </ul>
 <h3><a id="removed" href="#removed" class="mr-2" aria-hidden="true" title="Permalink">#</a>Removed</h3>
 <ul>
+<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2544">#2544</a> - <strong>flow-php/etl - unused analyzer ignore pragmas in Floe JSON/UUID decoders</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2543">#2543</a> - <strong>flow-php/etl - DataFrame::pivot() - pivot is declared between groupBy() and aggregate().</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2543">#2543</a> - <em><em>flow-php/etl - Root ConfigBuilder externalSort</em>/join</em>/grouping* delegators.** - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
 <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/pull/2543">#2543</a> - <strong>flow-php/etl - Legacy Sort\ExternalSort and BucketsCache family.</strong> - <a rel="noopener noreferrer" target="_blank" href="https://github.com/norberttech">@norberttech</a></li>
