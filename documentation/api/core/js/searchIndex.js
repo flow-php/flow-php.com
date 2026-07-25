@@ -15406,14 +15406,9 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-FloeStreamReader.html#method_metadata"
         },                {
-            "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Arecover\u0028\u0029",
-            "name": "recover",
-            "summary": "Salvages\u0020complete\u0020frames\u0020from\u0020the\u0020beginning\u0020of\u0020the\u0020file\u0020sequentially\u0020\u002D\u0020no\nfooter,\u0020no\u0020ranged\u0020reads.\u0020Rows\u0020are\u0020yielded\u0020as\u0020they\u0020were\u0020written\u0020\u0028no\npadding\u0029\u003B\u0020reading\u0020ends\u0020silently\u0020at\u0020the\u0020first\u0020truncated\u0020or\u0020invalid\u0020frame.",
-            "url": "classes/Flow-Floe-FloeStreamReader.html#method_recover"
-        },                {
             "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Arows\u0028\u0029",
             "name": "rows",
-            "summary": "Hot\u0020path\u003A\u0020frames\u0020are\u0020walked\u0020in\u002Dbuffer,\u0020unlike\u0020recover\u0028\u0029\u0020which\u0020keeps\u0020the\nreusable\u0020FrameReader.\u0020offset\u0020skips\u0020whole\u0020leading\u0020sections\u0020using\u0020the\u0020footer,\nthen\u0020the\u0020remaining\u0020rows\u0020inside\u0020the\u0020start\u0020section\u003B\u0020limit\u0020stops\u0020the\u0020read\nafter\u0020that\u0020many\u0020rows.",
+            "summary": "Hot\u0020path\u003A\u0020frames\u0020are\u0020walked\u0020in\u002Dbuffer.\u0020offset\u0020skips\u0020whole\u0020leading\u0020sections\nusing\u0020the\u0020footer,\u0020then\u0020the\u0020remaining\u0020rows\u0020inside\u0020the\u0020start\u0020section\u003B\u0020limit\nstops\u0020the\u0020read\u0020after\u0020that\u0020many\u0020rows.",
             "url": "classes/Flow-Floe-FloeStreamReader.html#method_rows"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Ahead\u0028\u0029",
@@ -15696,11 +15691,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-Format.html#constant_FRAME_HEADER_LENGTH"
         },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AFRAME_SCHEMA",
-            "name": "FRAME_SCHEMA",
-            "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_FRAME_SCHEMA"
-        },                {
             "fqsen": "\\Flow\\Floe\\Format\u003A\u003AFRAME_ROW",
             "name": "FRAME_ROW",
             "summary": "",
@@ -15875,11 +15865,6 @@ Search.appendIndex(
             "name": "row",
             "summary": "",
             "url": "classes/Flow-Floe-FrameWriter.html#method_row"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Aschema\u0028\u0029",
-            "name": "schema",
-            "summary": "",
-            "url": "classes/Flow-Floe-FrameWriter.html#method_schema"
         },                {
             "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Apartitions\u0028\u0029",
             "name": "partitions",
