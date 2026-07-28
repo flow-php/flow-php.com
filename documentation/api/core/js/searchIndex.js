@@ -1516,6 +1516,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Sort-SortAlgorithmBuilder.html#method_build"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\SpanScope",
+            "name": "SpanScope",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-SpanScope.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\SpanScope\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-SpanScope.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\SpanScope\u003A\u003A\u0024span",
+            "name": "span",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-SpanScope.html#property_span"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\SpanScope\u003A\u003A\u0024scope",
+            "name": "scope",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-SpanScope.html#property_scope"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\SpanStack",
+            "name": "SpanStack",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-SpanStack.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\SpanStack\u003A\u003Adrain\u0028\u0029",
+            "name": "drain",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-SpanStack.html#method_drain"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\SpanStack\u003A\u003Apop\u0028\u0029",
+            "name": "pop",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-SpanStack.html#method_pop"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\SpanStack\u003A\u003Apush\u0028\u0029",
+            "name": "push",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-SpanStack.html#method_push"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryAttributes",
             "name": "TelemetryAttributes",
             "summary": "Flow\u002Dspecific\u0020ETL\u0020attribute\u0020keys.",
@@ -1645,6 +1685,11 @@ Search.appendIndex(
             "name": "dataFrameStarted",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_dataFrameStarted"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003AlimitReached\u0028\u0029",
+            "name": "limitReached",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Telemetry-TelemetryContext.html#method_limitReached"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Telemetry\\TelemetryContext\u003A\u003AloadingCompleted\u0028\u0029",
             "name": "loadingCompleted",
@@ -4311,6 +4356,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-FilesExtractor.html#method_source"
         },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\GeneratorExtractor",
+            "name": "GeneratorExtractor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-GeneratorExtractor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\GeneratorExtractor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-GeneratorExtractor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\GeneratorExtractor\u003A\u003Aextract\u0028\u0029",
+            "name": "extract",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-GeneratorExtractor.html#method_extract"
+        },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\Limitable",
             "name": "Limitable",
             "summary": "",
@@ -4436,6 +4496,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-PipelineExtractor.html#method_extract"
         },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\RowsExtractor",
+            "name": "RowsExtractor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-RowsExtractor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\RowsExtractor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-RowsExtractor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\RowsExtractor\u003A\u003Aextract\u0028\u0029",
+            "name": "extract",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-RowsExtractor.html#method_extract"
+        },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\SequenceExtractor",
             "name": "SequenceExtractor",
             "summary": "",
@@ -4500,6 +4575,31 @@ Search.appendIndex(
             "name": "STOP",
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-Signal.html#enumcase_STOP"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\SwappableRowsExtractor",
+            "name": "SwappableRowsExtractor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-SwappableRowsExtractor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\SwappableRowsExtractor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-SwappableRowsExtractor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\SwappableRowsExtractor\u003A\u003Aextract\u0028\u0029",
+            "name": "extract",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-SwappableRowsExtractor.html#method_extract"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\SwappableRowsExtractor\u003A\u003Astopped\u0028\u0029",
+            "name": "stopped",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-SwappableRowsExtractor.html#method_stopped"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\SwappableRowsExtractor\u003A\u003Aswap\u0028\u0029",
+            "name": "swap",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-SwappableRowsExtractor.html#method_swap"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor",
             "name": "Extractor",
@@ -15395,6 +15495,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Floe-FloeStreamReader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeStreamReader.html#method_close"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Afooter\u0028\u0029",
             "name": "footer",

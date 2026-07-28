@@ -363,7 +363,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SpanStack\u003A\u003Apop\u0028\u0029",
             "name": "pop",
-            "summary": "",
+            "summary": "Detaches\u0020the\u0020entry\u0027s\u0020context\u0020scope\u0020before\u0020returning\u0020it,\u0020so\u0020the\u0020stack\u0020owns\u0020the\u0020LIFO\u0020ordering\u0020that\nScope\u003A\u003Adetach\u0028\u0029\u0020requires.",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SpanStack.html#method_pop"
         },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SpanStack\u003A\u003Apush\u0028\u0029",

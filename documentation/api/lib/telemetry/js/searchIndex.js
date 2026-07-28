@@ -296,11 +296,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Context-ContextScope.html#method_detach"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Context\\ContextScope\u003A\u003ADETACHED",
-            "name": "DETACHED",
-            "summary": "",
-            "url": "classes/Flow-Telemetry-Context-ContextScope.html#constant_DETACHED"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\ContextStorage",
             "name": "ContextStorage",
             "summary": "",
@@ -345,6 +340,21 @@ Search.appendIndex(
             "name": "detach",
             "summary": "",
             "url": "classes/Flow-Telemetry-Context-Scope.html#method_detach"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\Scope\u003A\u003ADETACHED",
+            "name": "DETACHED",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-Scope.html#constant_DETACHED"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\Scope\u003A\u003AINACTIVE",
+            "name": "INACTIVE",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-Scope.html#constant_INACTIVE"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Context\\Scope\u003A\u003AMISMATCH",
+            "name": "MISMATCH",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Context-Scope.html#constant_MISMATCH"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\SpanId",
             "name": "SpanId",
@@ -5006,11 +5016,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020span\u0020context.",
             "url": "classes/Flow-Telemetry-Tracer-Span.html#method_context"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003AcontextScope\u0028\u0029",
-            "name": "contextScope",
-            "summary": "Get\u0020the\u0020context\u0020scope\u0020for\u0020this\u0020span.",
-            "url": "classes/Flow-Telemetry-Tracer-Span.html#method_contextScope"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003AdroppedAttributeCount\u0028\u0029",
             "name": "droppedAttributeCount",
             "summary": "Get\u0020the\u0020count\u0020of\u0020attributes\u0020that\u0020were\u0020dropped\u0020due\u0020to\u0020limits.",
@@ -5050,6 +5055,11 @@ Search.appendIndex(
             "name": "isEnded",
             "summary": "Check\u0020if\u0020the\u0020span\u0020has\u0020ended.",
             "url": "classes/Flow-Telemetry-Tracer-Span.html#method_isEnded"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003AisCompleted\u0028\u0029",
+            "name": "isCompleted",
+            "summary": "Whether\u0020the\u0020span\u0020was\u0020already\u0020handed\u0020to\u0020the\u0020processor.\u0020Distinct\u0020from\u0020isEnded\u0028\u0029\u003A\u0020callers\u0020may\u0020end\u0020a\u0020span\u0020to\nread\u0020its\u0020duration\u0020and\u0020complete\u0020it\u0020later.",
+            "url": "classes/Flow-Telemetry-Tracer-Span.html#method_isCompleted"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003AisRecording\u0028\u0029",
             "name": "isRecording",
@@ -5110,11 +5120,6 @@ Search.appendIndex(
             "name": "setAttributes",
             "summary": "Set\u0020multiple\u0020attributes\u0020at\u0020once.",
             "url": "classes/Flow-Telemetry-Tracer-Span.html#method_setAttributes"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003AsetContextScope\u0028\u0029",
-            "name": "setContextScope",
-            "summary": "Set\u0020the\u0020context\u0020scope\u0020for\u0020this\u0020span.",
-            "url": "classes/Flow-Telemetry-Tracer-Span.html#method_setContextScope"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003AsetStatus\u0028\u0029",
             "name": "setStatus",
@@ -5491,6 +5496,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Tracer.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Tracer\u003A\u003Aactivate\u0028\u0029",
+            "name": "activate",
+            "summary": "Make\u0020a\u0020span\u0020the\u0020active\u0020span\u0020in\u0020the\u0020current\u0020Context.",
+            "url": "classes/Flow-Telemetry-Tracer-Tracer.html#method_activate"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Tracer\u003A\u003AactiveSpan\u0028\u0029",
             "name": "activeSpan",
             "summary": "Get\u0020the\u0020currently\u0020active\u0020span\u0020context\u0020from\u0020the\u0020shared\u0020Context,\u0020or\u0020null\u0020if\u0020none.",
@@ -5528,7 +5538,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Tracer\u003A\u003Aspan\u0028\u0029",
             "name": "span",
-            "summary": "Start\u0020a\u0020new\u0020span.",
+            "summary": "Start\u0020a\u0020new\u0020span,\u0020without\u0020making\u0020it\u0020the\u0020active\u0020span.",
             "url": "classes/Flow-Telemetry-Tracer-Tracer.html#method_span"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Tracer\u003A\u003Atrace\u0028\u0029",

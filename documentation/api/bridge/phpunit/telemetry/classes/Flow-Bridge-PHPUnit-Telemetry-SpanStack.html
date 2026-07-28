@@ -121,7 +121,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php"><a href="files/src-bridge-phpunit-telemetry-src-flow-bridge-phpunit-telemetry-spanstack.html"><abbr title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php">SpanStack.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">11</span>
 
     </aside>
 
@@ -182,6 +182,8 @@
     <span>
                                 &nbsp;: <abbr title="\Flow\Telemetry\Tracer\Span">Span</abbr>|null    </span>
 </dt>
+<dd>Detaches the entry&#039;s context scope before returning it, so the stack owns the LIFO ordering that
+Scope::detach() requires.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Bridge-PHPUnit-Telemetry-SpanStack.html#method_push">push()</a>
@@ -229,7 +231,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php"><a href="files/src-bridge-phpunit-telemetry-src-flow-bridge-phpunit-telemetry-spanstack.html"><abbr title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php">SpanStack.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -263,7 +265,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php"><a href="files/src-bridge-phpunit-telemetry-src-flow-bridge-phpunit-telemetry-spanstack.html"><abbr title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php">SpanStack.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -297,7 +299,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php"><a href="files/src-bridge-phpunit-telemetry-src-flow-bridge-phpunit-telemetry-spanstack.html"><abbr title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php">SpanStack.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -335,7 +337,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php"><a href="files/src-bridge-phpunit-telemetry-src-flow-bridge-phpunit-telemetry-spanstack.html"><abbr title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php">SpanStack.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -383,7 +385,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php"><a href="files/src-bridge-phpunit-telemetry-src-flow-bridge-phpunit-telemetry-spanstack.html"><abbr title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php">SpanStack.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -421,11 +423,13 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php"><a href="files/src-bridge-phpunit-telemetry-src-flow-bridge-phpunit-telemetry-spanstack.html"><abbr title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php">SpanStack.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Detaches the entry&#039;s context scope before returning it, so the stack owns the LIFO ordering that
+Scope::detach() requires.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">pop</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Telemetry\Tracer\Span">Span</abbr>|null</span></code>
@@ -459,14 +463,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php"><a href="files/src-bridge-phpunit-telemetry-src-flow-bridge-phpunit-telemetry-spanstack.html"><abbr title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php">SpanStack.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">push</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Tracer\Span">Span</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$span</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">push</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Tracer\Span">Span</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$span</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Context\Scope">Scope</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scope</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -477,6 +481,13 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$span</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Telemetry\Tracer\Span">Span</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$scope</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Telemetry\Context\Scope">Scope</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -503,7 +514,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php"><a href="files/src-bridge-phpunit-telemetry-src-flow-bridge-phpunit-telemetry-spanstack.html"><abbr title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php">SpanStack.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -547,7 +558,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php"><a href="files/src-bridge-phpunit-telemetry-src-flow-bridge-phpunit-telemetry-spanstack.html"><abbr title="src/bridge/phpunit/telemetry/src/Flow/Bridge/PHPUnit/Telemetry/SpanStack.php">SpanStack.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
