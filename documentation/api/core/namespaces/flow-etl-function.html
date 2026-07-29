@@ -131,7 +131,10 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-AggregatingFunction.html"><abbr title="\Flow\ETL\Function\AggregatingFunction">AggregatingFunction</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-WindowFunction.html"><abbr title="\Flow\ETL\Function\WindowFunction">WindowFunction</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-AggregatingFunction.html"><abbr title="\Flow\ETL\Function\AggregatingFunction">AggregatingFunction</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-FrameAccumulating.html"><abbr title="\Flow\ETL\Function\FrameAccumulating">FrameAccumulating</abbr></a></dt><dd>Opts a WindowFunction into incremental frame evaluation. Carrying it asserts the result depends only
+on the frame contents - never on the current row or its index - which is what lets WindowProcessor
+reuse a value across rows that share frame bounds.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-PartitionRanking.html"><abbr title="\Flow\ETL\Function\PartitionRanking">PartitionRanking</abbr></a></dt><dd>Opts a WindowFunction into whole-partition evaluation. Ranking derives from a row&#039;s position among
+its peers, which apply() cannot answer without rescanning the partition per row.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-WindowFunction.html"><abbr title="\Flow\ETL\Function\WindowFunction">WindowFunction</abbr></a></dt>    </dl>
 
     <h4 id="toc-classes">
         Classes

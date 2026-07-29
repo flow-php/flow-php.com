@@ -129,7 +129,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/WindowFunction.php"><a href="files/src-core-etl-src-flow-etl-function-windowfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/WindowFunction.php">WindowFunction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
@@ -164,7 +164,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-WindowFunction.html#method_over">over()</a>
     <span>
-                                &nbsp;: self    </span>
+                                &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -208,14 +208,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/WindowFunction.php"><a href="files/src-core-etl-src-flow-etl-function-windowfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/WindowFunction.php">WindowFunction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">apply</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partition</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">apply</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Window-WindowContext.html"><abbr title="\Flow\ETL\Window\WindowContext">WindowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$window</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -224,22 +224,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$row</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$partition</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$context</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$window</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Window-WindowContext.html"><abbr title="\Flow\ETL\Window\WindowContext">WindowContext</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -266,14 +252,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/WindowFunction.php"><a href="files/src-core-etl-src-flow-etl-function-windowfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/WindowFunction.php">WindowFunction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">over</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$window</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">over</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$window</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -296,7 +282,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
+        <span class="phpdocumentor-signature__response_type">static</span>
             </section>
 
 </article>
@@ -314,7 +300,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/WindowFunction.php"><a href="files/src-core-etl-src-flow-etl-function-windowfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/WindowFunction.php">WindowFunction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -352,7 +338,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/WindowFunction.php"><a href="files/src-core-etl-src-flow-etl-function-windowfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/WindowFunction.php">WindowFunction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 

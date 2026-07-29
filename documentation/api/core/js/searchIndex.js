@@ -3396,6 +3396,31 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_window"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\unbounded_preceding\u0028\u0029",
+            "name": "unbounded_preceding",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_unbounded_preceding"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\preceding\u0028\u0029",
+            "name": "preceding",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_preceding"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\current_row\u0028\u0029",
+            "name": "current_row",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_current_row"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\following\u0028\u0029",
+            "name": "following",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_following"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\unbounded_following\u0028\u0029",
+            "name": "unbounded_following",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_unbounded_following"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\sum\u0028\u0029",
             "name": "sum",
             "summary": "",
@@ -5396,6 +5421,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Average.html#method_aggregate"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Average\u003A\u003Aaccumulator\u0028\u0029",
+            "name": "accumulator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Average.html#method_accumulator"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Average\u003A\u003Aapply\u0028\u0029",
             "name": "apply",
             "summary": "",
@@ -5716,6 +5746,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Count.html#method_aggregate"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Count\u003A\u003Aaccumulator\u0028\u0029",
+            "name": "accumulator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Count.html#method_accumulator"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Count\u003A\u003Aapply\u0028\u0029",
             "name": "apply",
             "summary": "",
@@ -5775,6 +5810,11 @@ Search.appendIndex(
             "name": "apply",
             "summary": "",
             "url": "classes/Flow-ETL-Function-DenseRank.html#method_apply"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\DenseRank\u003A\u003ArankPartition\u0028\u0029",
+            "name": "rankPartition",
+            "summary": "One\u0020value\u0020per\u0020partition\u0020row,\u0020in\u0020partition\u0020order.\u0020The\u0020partition\u0020is\u0020already\u0020sorted\u0020by\u0020the\u0020window\u0027s\nORDER\u0020BY.",
+            "url": "classes/Flow-ETL-Function-DenseRank.html#method_rankPartition"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DenseRank\u003A\u003Aover\u0028\u0029",
             "name": "over",
@@ -6025,6 +6065,16 @@ Search.appendIndex(
             "name": "result",
             "summary": "",
             "url": "classes/Flow-ETL-Function-First.html#method_result"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\FrameAccumulating",
+            "name": "FrameAccumulating",
+            "summary": "Opts\u0020a\u0020WindowFunction\u0020into\u0020incremental\u0020frame\u0020evaluation.\u0020Carrying\u0020it\u0020asserts\u0020the\u0020result\u0020depends\u0020only\non\u0020the\u0020frame\u0020contents\u0020\u002D\u0020never\u0020on\u0020the\u0020current\u0020row\u0020or\u0020its\u0020index\u0020\u002D\u0020which\u0020is\u0020what\u0020lets\u0020WindowProcessor\nreuse\u0020a\u0020value\u0020across\u0020rows\u0020that\u0020share\u0020frame\u0020bounds.",
+            "url": "classes/Flow-ETL-Function-FrameAccumulating.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\FrameAccumulating\u003A\u003Aaccumulator\u0028\u0029",
+            "name": "accumulator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-FrameAccumulating.html#method_accumulator"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Functions",
             "name": "Functions",
@@ -6761,6 +6811,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Parameter.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\PartitionRanking",
+            "name": "PartitionRanking",
+            "summary": "Opts\u0020a\u0020WindowFunction\u0020into\u0020whole\u002Dpartition\u0020evaluation.\u0020Ranking\u0020derives\u0020from\u0020a\u0020row\u0027s\u0020position\u0020among\nits\u0020peers,\u0020which\u0020apply\u0028\u0029\u0020cannot\u0020answer\u0020without\u0020rescanning\u0020the\u0020partition\u0020per\u0020row.",
+            "url": "classes/Flow-ETL-Function-PartitionRanking.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\PartitionRanking\u003A\u003ArankPartition\u0028\u0029",
+            "name": "rankPartition",
+            "summary": "One\u0020value\u0020per\u0020partition\u0020row,\u0020in\u0020partition\u0020order.\u0020The\u0020partition\u0020is\u0020already\u0020sorted\u0020by\u0020the\u0020window\u0027s\nORDER\u0020BY.",
+            "url": "classes/Flow-ETL-Function-PartitionRanking.html#method_rankPartition"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Plus",
             "name": "Plus",
             "summary": "",
@@ -6835,6 +6895,11 @@ Search.appendIndex(
             "name": "apply",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Rank.html#method_apply"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Rank\u003A\u003ArankPartition\u0028\u0029",
+            "name": "rankPartition",
+            "summary": "One\u0020value\u0020per\u0020partition\u0020row,\u0020in\u0020partition\u0020order.\u0020The\u0020partition\u0020is\u0020already\u0020sorted\u0020by\u0020the\u0020window\u0027s\nORDER\u0020BY.",
+            "url": "classes/Flow-ETL-Function-Rank.html#method_rankPartition"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Rank\u003A\u003Aover\u0028\u0029",
             "name": "over",
@@ -8095,6 +8160,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Sum.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Sum\u003A\u003Aaccumulator\u0028\u0029",
+            "name": "accumulator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Sum.html#method_accumulator"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sum\u003A\u003Aapply\u0028\u0029",
             "name": "apply",
@@ -14641,6 +14711,236 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformer.html#method_transform"
         },                {
+            "fqsen": "\\Flow\\ETL\\Window\\Accumulator\\AverageAccumulator",
+            "name": "AverageAccumulator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-Accumulator-AverageAccumulator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\Accumulator\\AverageAccumulator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-Accumulator-AverageAccumulator.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\Accumulator\\AverageAccumulator\u003A\u003Aaccumulate\u0028\u0029",
+            "name": "accumulate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-Accumulator-AverageAccumulator.html#method_accumulate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\Accumulator\\AverageAccumulator\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "Must\u0020be\u0020idempotent\u0020and\u0020non\u002Ddestructive\u0020\u002D\u0020WindowProcessor\u0020reads\u0020it\u0020after\u0020every\u0020growth\u0020step\u0020of\u0020an\nexpanding\u0020frame.",
+            "url": "classes/Flow-ETL-Window-Accumulator-AverageAccumulator.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\Accumulator\\CountAccumulator",
+            "name": "CountAccumulator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-Accumulator-CountAccumulator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\Accumulator\\CountAccumulator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-Accumulator-CountAccumulator.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\Accumulator\\CountAccumulator\u003A\u003Aaccumulate\u0028\u0029",
+            "name": "accumulate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-Accumulator-CountAccumulator.html#method_accumulate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\Accumulator\\CountAccumulator\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "Must\u0020be\u0020idempotent\u0020and\u0020non\u002Ddestructive\u0020\u002D\u0020WindowProcessor\u0020reads\u0020it\u0020after\u0020every\u0020growth\u0020step\u0020of\u0020an\nexpanding\u0020frame.",
+            "url": "classes/Flow-ETL-Window-Accumulator-CountAccumulator.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\Accumulator\\SumAccumulator",
+            "name": "SumAccumulator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-Accumulator-SumAccumulator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\Accumulator\\SumAccumulator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-Accumulator-SumAccumulator.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\Accumulator\\SumAccumulator\u003A\u003Aaccumulate\u0028\u0029",
+            "name": "accumulate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-Accumulator-SumAccumulator.html#method_accumulate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\Accumulator\\SumAccumulator\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "Must\u0020be\u0020idempotent\u0020and\u0020non\u002Ddestructive\u0020\u002D\u0020WindowProcessor\u0020reads\u0020it\u0020after\u0020every\u0020growth\u0020step\u0020of\u0020an\nexpanding\u0020frame.",
+            "url": "classes/Flow-ETL-Window-Accumulator-SumAccumulator.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameAccumulator",
+            "name": "FrameAccumulator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-FrameAccumulator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameAccumulator\u003A\u003Aaccumulate\u0028\u0029",
+            "name": "accumulate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-FrameAccumulator.html#method_accumulate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameAccumulator\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "Must\u0020be\u0020idempotent\u0020and\u0020non\u002Ddestructive\u0020\u002D\u0020WindowProcessor\u0020reads\u0020it\u0020after\u0020every\u0020growth\u0020step\u0020of\u0020an\nexpanding\u0020frame.",
+            "url": "classes/Flow-ETL-Window-FrameAccumulator.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameBound",
+            "name": "FrameBound",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-FrameBound.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameBound\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-FrameBound.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameBound\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "Resolve\u0020this\u0020bound\u0020to\u0020an\u0020index\u0020in\u0020the\u0020sorted\u0020partition.\u0020Intentionally\u0020not\u0020clamped\u0020\u002D\u0020RowsFrame\nneeds\u0020the\u0020unclamped\u0020value\u0020to\u0020detect\u0020a\u0020frame\u0020lying\u0020entirely\u0020outside\u0020the\u0020partition.",
+            "url": "classes/Flow-ETL-Window-FrameBound.html#method_resolve"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameBound\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-FrameBound.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameBound\u003A\u003A\u0024offset",
+            "name": "offset",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-FrameBound.html#property_offset"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameBoundType",
+            "name": "FrameBoundType",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-FrameBoundType.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameBoundType\u003A\u003ACURRENT_ROW",
+            "name": "CURRENT_ROW",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-FrameBoundType.html#enumcase_CURRENT_ROW"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameBoundType\u003A\u003AFOLLOWING",
+            "name": "FOLLOWING",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-FrameBoundType.html#enumcase_FOLLOWING"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameBoundType\u003A\u003APRECEDING",
+            "name": "PRECEDING",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-FrameBoundType.html#enumcase_PRECEDING"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameBoundType\u003A\u003AUNBOUNDED_FOLLOWING",
+            "name": "UNBOUNDED_FOLLOWING",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-FrameBoundType.html#enumcase_UNBOUNDED_FOLLOWING"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\FrameBoundType\u003A\u003AUNBOUNDED_PRECEDING",
+            "name": "UNBOUNDED_PRECEDING",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-FrameBoundType.html#enumcase_UNBOUNDED_PRECEDING"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\PeerComparator",
+            "name": "PeerComparator",
+            "summary": "Two\u0020rows\u0020are\u0020peers\u0020when\u0020they\u0020carry\u0020equal\u0020values\u0020in\u0020every\u0020ORDER\u0020BY\u0020column.\u0020Compared\u0020with\nEntry\u003A\u003AisEqual\u0028\u0029\u0020rather\u0020than\u0020\u003D\u003D\u003D,\u0020so\u0020two\u0020DateTimeImmutable\u0020instances\u0020of\u0020the\u0020same\u0020instant\u0020are\u0020peers.",
+            "url": "classes/Flow-ETL-Window-PeerComparator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\PeerComparator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-PeerComparator.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\PeerComparator\u003A\u003AarePeers\u0028\u0029",
+            "name": "arePeers",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-PeerComparator.html#method_arePeers"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\PeerFrame",
+            "name": "PeerFrame",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-PeerFrame.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\PeerFrame\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-PeerFrame.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\PeerFrame\u003A\u003Abounds\u0028\u0029",
+            "name": "bounds",
+            "summary": "Inclusive\u0020indexes\u0020into\u0020the\u0020sorted\u0020partition.",
+            "url": "classes/Flow-ETL-Window-PeerFrame.html#method_bounds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\RowsFrame",
+            "name": "RowsFrame",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-RowsFrame.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\RowsFrame\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-RowsFrame.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\RowsFrame\u003A\u003Abounds\u0028\u0029",
+            "name": "bounds",
+            "summary": "Inclusive\u0020indexes\u0020into\u0020the\u0020sorted\u0020partition.",
+            "url": "classes/Flow-ETL-Window-RowsFrame.html#method_bounds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\WholePartitionFrame",
+            "name": "WholePartitionFrame",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-WholePartitionFrame.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\WholePartitionFrame\u003A\u003Abounds\u0028\u0029",
+            "name": "bounds",
+            "summary": "Inclusive\u0020indexes\u0020into\u0020the\u0020sorted\u0020partition.",
+            "url": "classes/Flow-ETL-Window-WholePartitionFrame.html#method_bounds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\WindowContext",
+            "name": "WindowContext",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-WindowContext.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\WindowContext\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-WindowContext.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\WindowContext\u003A\u003AflowContext\u0028\u0029",
+            "name": "flowContext",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-WindowContext.html#method_flowContext"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\WindowContext\u003A\u003Aframe\u0028\u0029",
+            "name": "frame",
+            "summary": "Resolved\u0020lazily\u0020\u002D\u0020ranking\u0020functions\u0020ignore\u0020frames,\u0020so\u0020they\u0020never\u0020pay\u0020for\u0020a\u0020slice\u0020they\u0020discard.",
+            "url": "classes/Flow-ETL-Window-WindowContext.html#method_frame"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\WindowContext\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-WindowContext.html#method_index"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\WindowContext\u003A\u003Apartition\u0028\u0029",
+            "name": "partition",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-WindowContext.html#method_partition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\WindowContext\u003A\u003Arow\u0028\u0029",
+            "name": "row",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-WindowContext.html#method_row"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\WindowFrame",
+            "name": "WindowFrame",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-WindowFrame.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\WindowFrame\u003A\u003Abounds\u0028\u0029",
+            "name": "bounds",
+            "summary": "Inclusive\u0020indexes\u0020into\u0020the\u0020sorted\u0020partition.",
+            "url": "classes/Flow-ETL-Window-WindowFrame.html#method_bounds"
+        },                {
             "fqsen": "\\Flow\\ETL\\Window",
             "name": "Window",
             "summary": "",
@@ -14650,6 +14950,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Window.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\u003A\u003Aframe\u0028\u0029",
+            "name": "frame",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window.html#method_frame"
         },                {
             "fqsen": "\\Flow\\ETL\\Window\u003A\u003Aorder\u0028\u0029",
             "name": "order",
@@ -14670,6 +14975,11 @@ Search.appendIndex(
             "name": "partitions",
             "summary": "",
             "url": "classes/Flow-ETL-Window.html#method_partitions"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\u003A\u003ArowsBetween\u0028\u0029",
+            "name": "rowsBetween",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window.html#method_rowsBetween"
         },                {
             "fqsen": "\\Flow\\ETL\\WithEntry",
             "name": "WithEntry",
@@ -16695,6 +17005,16 @@ Search.appendIndex(
             "name": "StyleConverter",
             "summary": "",
             "url": "namespaces/flow-etl-transformer-styleconverter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\Accumulator",
+            "name": "Accumulator",
+            "summary": "",
+            "url": "namespaces/flow-etl-window-accumulator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window",
+            "name": "Window",
+            "summary": "",
+            "url": "namespaces/flow-etl-window.html"
         },                {
             "fqsen": "\\Flow\\Floe",
             "name": "Floe",

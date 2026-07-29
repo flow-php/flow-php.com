@@ -129,7 +129,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Flow-ETL-Function-WindowFunction.html"><abbr title="\Flow\ETL\Function\WindowFunction">WindowFunction</abbr></a>                    </span>
+                            <a href="classes/Flow-ETL-Function-PartitionRanking.html"><abbr title="\Flow\ETL\Function\PartitionRanking">PartitionRanking</abbr></a>,                             <a href="classes/Flow-ETL-Function-WindowFunction.html"><abbr title="\Flow\ETL\Function\WindowFunction">WindowFunction</abbr></a>                    </span>
     
     </h2>
 
@@ -143,7 +143,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Rank.php"><a href="files/src-core-etl-src-flow-etl-function-rank.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Rank.php">Rank.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -161,7 +161,8 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-WindowFunction.html"><abbr title="\Flow\ETL\Function\WindowFunction">WindowFunction</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-PartitionRanking.html"><abbr title="\Flow\ETL\Function\PartitionRanking">PartitionRanking</abbr></a></dt><dd>Opts a WindowFunction into whole-partition evaluation. Ranking derives from a row&#039;s position among
+its peers, which apply() cannot answer without rescanning the partition per row.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-WindowFunction.html"><abbr title="\Flow\ETL\Function\WindowFunction">WindowFunction</abbr></a></dt>    </dl>
 
 
 
@@ -191,8 +192,16 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Rank.html#method_over">over()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Function-WindowFunction.html"><abbr title="\Flow\ETL\Function\WindowFunction">WindowFunction</abbr></a>    </span>
+                                &nbsp;: static    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-Rank.html#method_rankPartition">rankPartition()</a>
+    <span>
+                                &nbsp;: array&lt;int, int&gt;    </span>
+</dt>
+<dd>One value per partition row, in partition order. The partition is already sorted by the window&#039;s
+ORDER BY.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Rank.html#method_toString">toString()</a>
@@ -234,7 +243,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Rank.php"><a href="files/src-core-etl-src-flow-etl-function-rank.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Rank.php">Rank.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -268,14 +277,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Rank.php"><a href="files/src-core-etl-src-flow-etl-function-rank.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Rank.php">Rank.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">apply</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partition</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">apply</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Window-WindowContext.html"><abbr title="\Flow\ETL\Window\WindowContext">WindowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$window</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -284,22 +293,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$row</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$partition</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$context</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$window</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Window-WindowContext.html"><abbr title="\Flow\ETL\Window\WindowContext">WindowContext</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -326,14 +321,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Rank.php"><a href="files/src-core-etl-src-flow-etl-function-rank.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Rank.php">Rank.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">over</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$window</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-WindowFunction.html"><abbr title="\Flow\ETL\Function\WindowFunction">WindowFunction</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">over</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$window</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -356,7 +351,57 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-WindowFunction.html"><abbr title="\Flow\ETL\Function\WindowFunction">WindowFunction</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_rankPartition">
+        rankPartition()
+        <a href="classes/Flow-ETL-Function-Rank.html#method_rankPartition" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Rank.php"><a href="files/src-core-etl-src-flow-etl-function-rank.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Rank.php">Rank.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">One value per partition row, in partition order. The partition is already sorted by the window&#039;s
+ORDER BY.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">rankPartition</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partition</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, int&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$partition</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, int&gt;</span>
             </section>
 
 </article>
@@ -374,7 +419,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Rank.php"><a href="files/src-core-etl-src-flow-etl-function-rank.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Rank.php">Rank.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -412,7 +457,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Rank.php"><a href="files/src-core-etl-src-flow-etl-function-rank.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Rank.php">Rank.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -461,6 +506,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Function-Rank.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Rank.html#method_apply">apply()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Rank.html#method_over">over()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-Rank.html#method_rankPartition">rankPartition()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Rank.html#method_toString">toString()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Rank.html#method_window">window()</a></li>
                                     </ul>
