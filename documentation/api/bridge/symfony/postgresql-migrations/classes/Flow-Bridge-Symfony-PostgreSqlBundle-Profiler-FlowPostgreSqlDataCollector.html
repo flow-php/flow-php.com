@@ -128,7 +128,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowpostgresqldatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php">FlowPostgreSqlDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -146,7 +146,7 @@
                 <span class="phpdocumentor-tag__name">phpstan-type</span>
             </dt>
                             <dd class="phpdocumentor-tag-list__definition">
-                                                                                                            <section class="phpdocumentor-description"><p>QueryRow array{statement: string, parameters: array&lt;int, mixed&gt;, returnedRows: null|int, durationMs: float, failed: bool, error: null|string, connection: string, caller: null|string, explainable: bool, runCount: int, isDuplicate: bool}</p>
+                                                                                                            <section class="phpdocumentor-description"><p>QueryRow array{statement: string, parameters: array&lt;int, mixed&gt;, returnedRows: null|int, durationMs: float, failed: bool, error: null|string, connection: string, caller: null|string, explainable: bool, runCount: int, isDuplicate: bool, parametersTruncated: bool, statementTruncated: bool}</p>
 </section>
 
                                     </dd>
@@ -225,6 +225,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getRetainedCount">getRetainedCount()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getTotalDurationMs">getTotalDurationMs()</a>
     <span>
                                 &nbsp;: float    </span>
@@ -270,14 +276,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowpostgresqldatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php">FlowPostgreSqlDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Debug\QueryLog">QueryLog</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$queryLog</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$includeParameters</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-QueryRecorder.html"><abbr title="\Flow\Bridge\Symfony\PostgreSqlBundle\Profiler\QueryRecorder">QueryRecorder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$recorder</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -286,15 +292,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$queryLog</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\PostgreSql\Client\Debug\QueryLog">QueryLog</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$includeParameters</span>
-                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                <span class="phpdocumentor-argument-list__argument__name">$recorder</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-QueryRecorder.html"><abbr title="\Flow\Bridge\Symfony\PostgreSqlBundle\Profiler\QueryRecorder">QueryRecorder</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -321,7 +320,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowpostgresqldatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php">FlowPostgreSqlDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -379,7 +378,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowpostgresqldatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php">FlowPostgreSqlDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -417,7 +416,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowpostgresqldatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php">FlowPostgreSqlDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -455,7 +454,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowpostgresqldatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php">FlowPostgreSqlDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -493,7 +492,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowpostgresqldatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php">FlowPostgreSqlDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -531,7 +530,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowpostgresqldatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php">FlowPostgreSqlDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -569,7 +568,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowpostgresqldatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php">FlowPostgreSqlDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -577,6 +576,44 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getQueryCount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRetainedCount">
+        getRetainedCount()
+        <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getRetainedCount" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowpostgresqldatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php">FlowPostgreSqlDataCollector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">108</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getRetainedCount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -607,7 +644,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowpostgresqldatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php">FlowPostgreSqlDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -645,7 +682,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowpostgresqldatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php">FlowPostgreSqlDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -679,7 +716,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-profiler-flowpostgresqldatacollector.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Profiler/FlowPostgreSqlDataCollector.php">FlowPostgreSqlDataCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -729,6 +766,7 @@
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getName">getName()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getQueries">getQueries()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getQueryCount">getQueryCount()</a></li>
+                                            <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getRetainedCount">getRetainedCount()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_getTotalDurationMs">getTotalDurationMs()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_lateCollect">lateCollect()</a></li>
                                             <li class=""><a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-FlowPostgreSqlDataCollector.html#method_reset">reset()</a></li>
