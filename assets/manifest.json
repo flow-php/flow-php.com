@@ -1,5 +1,5 @@
 {
-    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-37a61ccf4a7b7b0e3e9cbbffda270d1f.js",
+    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-8e06833d9a200c3c96605cf3bff1c428.js",
     "@symfony\/stimulus-bundle\/loader.js": "\/assets\/@symfony\/stimulus-bundle\/loader-20ecc10cbbb74d097d458e14577bcd99.js",
     "app.js": "\/assets\/app-396eb1b280b9b32f53a44b8e87aa6133.js",
     "bootstrap.js": "\/assets\/bootstrap-13edb607a8c6b40c285e5deacc875a08.js",
@@ -186,14 +186,20 @@
     "wasm\/bin\/cs-fixer.php.wasm": "\/assets\/wasm\/bin\/cs-fixer.php-ac4974a6fd6684a03a024047ab1f831c.wasm",
     "wasm\/code.php.wasm": "\/assets\/wasm\/code.php-adea9d165ff134819809e92c908e0b90.wasm",
     "wasm\/data\/orders.csv": "\/assets\/wasm\/data\/orders-a23572d02c810fc9b709f09b0b8c92ef.csv",
+    "wasm\/data\/orders.floe": "\/assets\/wasm\/data\/orders-8046046932f7ccaa8bce329e3721da7b.floe",
     "wasm\/data\/orders.json": "\/assets\/wasm\/data\/orders-09429d88a4f65d938de30e5b8d9aa706.json",
     "wasm\/data\/orders.jsonl": "\/assets\/wasm\/data\/orders-3e60eb6ace02a2e0460d359280e24937.jsonl",
     "wasm\/data\/orders.parquet": "\/assets\/wasm\/data\/orders-e8777869fbcc2f3ff6a1471b5978db98.parquet",
+    "wasm\/data\/orders.xlsx": "\/assets\/wasm\/data\/orders-a955187aa6eda56af586870e95c94896.xlsx",
     "wasm\/data\/orders.xml": "\/assets\/wasm\/data\/orders-8ee52a57261a7825213f3d66b9109591.xml",
+    "wasm\/data\/partitioned\/color=blue\/sku=A\/products.csv": "\/assets\/wasm\/data\/partitioned\/color=blue\/sku=A\/products-e669360f3820f87e54b83a43444440d7.csv",
+    "wasm\/data\/partitioned\/color=green\/sku=A\/products.csv": "\/assets\/wasm\/data\/partitioned\/color=green\/sku=A\/products-331da96f090a9df1e1f1d017dd81993d.csv",
+    "wasm\/data\/partitioned\/color=red\/sku=A\/products.csv": "\/assets\/wasm\/data\/partitioned\/color=red\/sku=A\/products-da31c8c50fe9302fa2803d5672fc52d2.csv",
+    "wasm\/data\/partitioned\/color=red\/sku=B\/products.csv": "\/assets\/wasm\/data\/partitioned\/color=red\/sku=B\/products-2ad425f3ab5692b9279fb5b0e3af27d8.csv",
     "wasm\/php.js": "\/assets\/wasm\/php-c435dd5b2bc7c33fccd9ac33a903944b.js",
     "wasm\/php.wasm": "\/assets\/wasm\/php-1ebc9ae0544475929f5ea30d15f71eb9.wasm",
     "wasm\/phpcsfixer.php.wasm": "\/assets\/wasm\/phpcsfixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm",
-    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-0acb89e29563055a4001463f9a7d0cd9.phar",
+    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-e54ab1701bca177067d35eb83da7a7e7.phar",
     "wasm\/tools\/php-cs-fixer.phar": "\/assets\/wasm\/tools\/php-cs-fixer-de55dbd75a08d2eac0f0435d4168e6bc.phar",
     "wasm\/vendor\/autoload.php.wasm": "\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm"
 }
