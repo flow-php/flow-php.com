@@ -296,7 +296,7 @@ completed here, where kernel.finish_request fires once for every request, main a
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Telemetry">Telemetry</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$telemetry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, array{path: string, method?: null|string}&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$excludePaths</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Context\ContextStorage">ContextStorage</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contextStorage</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Propagation\Propagator">Propagator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$propagator</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contextPropagation</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contextPropagationQuery</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNamePathMap.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\HttpKernel\RouteNamePathMap">RouteNamePathMap</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routePaths</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNaming.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\HttpKernel\RouteNaming">RouteNaming</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routeNaming</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNaming.html#enumcase_Path"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\HttpKernel\RouteNaming::Path">RouteNaming::Path</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Telemetry">Telemetry</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$telemetry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, array{path: string, method?: null|string}&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$excludePaths</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Context\ContextStorage">ContextStorage</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contextStorage</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Telemetry\Propagation\Propagator">Propagator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$propagator</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contextPropagation</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contextPropagationQuery</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requireTraceContext</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNamePathMap.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\HttpKernel\RouteNamePathMap">RouteNamePathMap</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routePaths</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNaming.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\HttpKernel\RouteNaming">RouteNaming</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routeNaming</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNaming.html#enumcase_Path"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\HttpKernel\RouteNaming::Path">RouteNaming::Path</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -347,6 +347,13 @@ completed here, where kernel.finish_request fires once for every request, main a
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$requireTraceContext</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$routePaths</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNamePathMap.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\HttpKernel\RouteNamePathMap">RouteNamePathMap</abbr></a>|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
@@ -382,7 +389,7 @@ completed here, where kernel.finish_request fires once for every request, main a
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-httpkernel-httpkernelspansubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php">HttpKernelSpanSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -420,7 +427,7 @@ completed here, where kernel.finish_request fires once for every request, main a
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-httpkernel-httpkernelspansubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php">HttpKernelSpanSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -464,7 +471,7 @@ completed here, where kernel.finish_request fires once for every request, main a
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-httpkernel-httpkernelspansubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php">HttpKernelSpanSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -508,7 +515,7 @@ completed here, where kernel.finish_request fires once for every request, main a
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-httpkernel-httpkernelspansubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php">HttpKernelSpanSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">225</span>
 
     </aside>
 
@@ -554,7 +561,7 @@ completed here, where kernel.finish_request fires once for every request, main a
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-httpkernel-httpkernelspansubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php">HttpKernelSpanSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -598,7 +605,7 @@ completed here, where kernel.finish_request fires once for every request, main a
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-httpkernel-httpkernelspansubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php">HttpKernelSpanSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 
     </aside>
 
@@ -642,7 +649,7 @@ completed here, where kernel.finish_request fires once for every request, main a
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-httpkernel-httpkernelspansubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/HttpKernel/HttpKernelSpanSubscriber.php">HttpKernelSpanSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">224</span>
+    <span class="phpdocumentor-element-found-in__line">237</span>
 
     </aside>
 
