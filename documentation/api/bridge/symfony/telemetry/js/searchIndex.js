@@ -121,6 +121,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-HttpClientTelemetryPass.html#method_process"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\InterfaceAliasRepointer",
+            "name": "InterfaceAliasRepointer",
+            "summary": "Decorating\u0020a\u0020service\u0020silently\u0020retargets\u0020every\u0020interface\u0020alias\u0020pointing\u0020at\u0020it.\u0020When\u0020the\u0020decorator\u0020does\u0020not\nimplement\u0020one\u0020of\u0020those\u0020interfaces,\u0020CheckAliasValidityPass\u0020\u0028framework\u002Dbundle\u0020\u003E\u003D\u00207.3\u0029\u0020fails\u0020the\u0020build\u0020\u002D\u0020e.g.",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-InterfaceAliasRepointer.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\InterfaceAliasRepointer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-InterfaceAliasRepointer.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\InterfaceAliasRepointer\u003A\u003Arepoint\u0028\u0029",
+            "name": "repoint",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-InterfaceAliasRepointer.html#method_repoint"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\MessengerTelemetryPass",
             "name": "MessengerTelemetryPass",
             "summary": "Injects\u0020the\u0020messenger\u0020TracingMiddleware\u0020into\u0020every\u0020message\u0020bus\u0020as\u0020the\u0020outermost\u0020middleware,\u0020so\u0020consumed\nand\u0020produced\u0020messages\u0020are\u0020traced\u0020without\u0020the\u0020application\u0020having\u0020to\u0020register\u0020it\u0020manually.\u0020Runs\u0020before\nSymfony\u0027s\u0020MessengerPass,\u0020which\u0020turns\u0020each\u0020\u0022\u003CbusId\u003E.middleware\u0022\u0020parameter\u0020into\u0020the\u0020bus\u0027s\u0020middleware\u0020stack.",
