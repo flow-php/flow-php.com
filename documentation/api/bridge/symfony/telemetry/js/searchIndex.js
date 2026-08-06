@@ -86,6 +86,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-DBALTelemetryPass.html#method_process"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\DefinitionClassResolver",
+            "name": "DefinitionClassResolver",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-DefinitionClassResolver.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\DefinitionClassResolver\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-DefinitionClassResolver.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\DefinitionClassResolver\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-DefinitionClassResolver.html#method_resolve"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\FrameworkLoggerPass",
             "name": "FrameworkLoggerPass",
             "summary": "",
@@ -145,6 +160,21 @@ Search.appendIndex(
             "name": "process",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-Psr18ClientTelemetryPass.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ServiceIdPatterns",
+            "name": "ServiceIdPatterns",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ServiceIdPatterns.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ServiceIdPatterns\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ServiceIdPatterns.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ServiceIdPatterns\u003A\u003Amatches\u0028\u0029",
+            "name": "matches",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ServiceIdPatterns.html#method_matches"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\TraceContextUrlGeneratorPass",
             "name": "TraceContextUrlGeneratorPass",
