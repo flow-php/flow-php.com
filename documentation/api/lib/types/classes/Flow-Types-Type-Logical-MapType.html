@@ -126,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php"><a href="files/src-lib-types-src-flow-types-type-logical-maptype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php">MapType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -141,11 +141,16 @@
     </h5>
     <dl class="phpdocumentor-tag-list">
                     <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">template</span>
+                <span class="phpdocumentor-tag__name">template-covariant</span>
             </dt>
                             <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
+                                                                                                            <section class="phpdocumentor-description"><p>of array&lt;array-key, mixed&gt;</p>
+</section>
+
                                     </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">implements</span>
+            </dt>
                             <dd class="phpdocumentor-tag-list__definition">
                                                                                                         
                                     </dd>
@@ -184,21 +189,21 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-MapType.html#method_assert">assert()</a>
     <span>
-                                &nbsp;: <abbr title="\Flow\Types\T">T</abbr>    </span>
+                                &nbsp;: <abbr title="\Flow\Types\Type\Logical\T">T</abbr>    </span>
 </dt>
 <dd>Checks that the value is of the type of this object, throwing when it is not.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-MapType.html#method_cast">cast()</a>
     <span>
-                                &nbsp;: <abbr title="\Flow\Types\T">T</abbr>    </span>
+                                &nbsp;: <abbr title="\Flow\Types\Type\Logical\T">T</abbr>    </span>
 </dt>
 <dd>Takes a value and when necessary casts it to the type of this object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-MapType.html#method_fromArray">fromArray()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: <a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;string|int, array&lt;string|int, mixed&gt;&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -211,7 +216,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-MapType.html#method_key">key()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\TKey">TKey</abbr>&gt;    </span>
+                                &nbsp;: <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, &gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -230,7 +235,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-MapType.html#method_value">value()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\TValue">TValue</abbr>&gt;    </span>
+                                &nbsp;: <a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="value-of<\Flow\Types\Type\Logical\T>">T></abbr>&gt;    </span>
 </dt>
 
     </dl>
@@ -261,14 +266,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php"><a href="files/src-lib-types-src-flow-types-type-logical-maptype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php">MapType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\TKey">TKey</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\TValue">TValue</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, &gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="value-of<\Flow\Types\Type\Logical\T>">T></abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -278,14 +283,14 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$key</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\TKey">TKey</abbr>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, &gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$value</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\TValue">TValue</abbr>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="value-of<\Flow\Types\Type\Logical\T>">T></abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -312,7 +317,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php"><a href="files/src-lib-types-src-flow-types-type-logical-maptype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php">MapType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -320,15 +325,12 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">assert</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\T">T</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">assert</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type\Logical\T">T</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Unlike cast(), this method never performs any conversion — the value must already match the type.
-Unlike isValid(), this method returns the value (narrowed to T) instead of a boolean, and always narrows the static type.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -346,7 +348,7 @@ Unlike isValid(), this method returns the value (narrowed to T) instead of a boo
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\T">T</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type\Logical\T">T</abbr></span>
             </section>
 
 </article>
@@ -364,7 +366,7 @@ Unlike isValid(), this method returns the value (narrowed to T) instead of a boo
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php"><a href="files/src-lib-types-src-flow-types-type-logical-maptype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php">MapType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -372,15 +374,12 @@ Unlike isValid(), this method returns the value (narrowed to T) instead of a boo
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">cast</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\T">T</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">cast</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type\Logical\T">T</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>When value is already of the type of this object, it is returned as is.
-When cast method is used, it will additionally narrow the type of the returned value for static analysis tools.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -398,7 +397,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\T">T</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type\Logical\T">T</abbr></span>
             </section>
 
 </article>
@@ -416,14 +415,14 @@ When cast method is used, it will additionally narrow the type of the returned v
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php"><a href="files/src-lib-types-src-flow-types-type-logical-maptype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php">MapType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;string|int, mixed&gt;</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;string|int, array&lt;string|int, mixed&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -460,7 +459,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;string|int, array&lt;string|int, mixed&gt;&gt;</span>
             </section>
 
 </article>
@@ -478,7 +477,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php"><a href="files/src-lib-types-src-flow-types-type-logical-maptype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php">MapType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -531,14 +530,14 @@ want the call to fail loudly on a mismatch.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php"><a href="files/src-lib-types-src-flow-types-type-logical-maptype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php">MapType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">149</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">key</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\TKey">TKey</abbr>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">key</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, &gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -551,7 +550,7 @@ want the call to fail loudly on a mismatch.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\TKey">TKey</abbr>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, &gt;</span>
             </section>
 
 </article>
@@ -569,7 +568,7 @@ want the call to fail loudly on a mismatch.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php"><a href="files/src-lib-types-src-flow-types-type-logical-maptype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php">MapType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -607,7 +606,7 @@ want the call to fail loudly on a mismatch.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php"><a href="files/src-lib-types-src-flow-types-type-logical-maptype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php">MapType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -652,14 +651,14 @@ want the call to fail loudly on a mismatch.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php"><a href="files/src-lib-types-src-flow-types-type-logical-maptype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/MapType.php">MapType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">166</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">value</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\TValue">TValue</abbr>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">value</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="value-of<\Flow\Types\Type\Logical\T>">T></abbr>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -672,7 +671,7 @@ want the call to fail loudly on a mismatch.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\Logical\TValue">TValue</abbr>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type.html"><abbr title="\Flow\Types\Type">Type</abbr></a>&lt;string|int, <abbr title="value-of<\Flow\Types\Type\Logical\T>">T></abbr>&gt;</span>
             </section>
 
 </article>

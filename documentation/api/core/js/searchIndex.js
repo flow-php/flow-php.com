@@ -11976,6 +11976,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-DateTimeDefinition.html#method_entryClass"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ElementCompatibility",
+            "name": "ElementCompatibility",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-ElementCompatibility.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ElementCompatibility\u003A\u003AisCompatible\u0028\u0029",
+            "name": "isCompatible",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-ElementCompatibility.html#method_isCompatible"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\EnumDefinition",
             "name": "EnumDefinition",
             "summary": "",
@@ -12940,6 +12950,31 @@ Search.appendIndex(
             "name": "entryClass",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-TimeDefinition.html#method_entryClass"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeMerge",
+            "name": "TypeMerge",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-TypeMerge.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeMerge\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-TypeMerge.html#method_merge"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeMerge\u003A\u003AmergeLists\u0028\u0029",
+            "name": "mergeLists",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-TypeMerge.html#method_mergeLists"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeMerge\u003A\u003AmergeMaps\u0028\u0029",
+            "name": "mergeMaps",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-TypeMerge.html#method_mergeMaps"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeMerge\u003A\u003AmergeStructures\u0028\u0029",
+            "name": "mergeStructures",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-TypeMerge.html#method_mergeStructures"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition",
             "name": "UnionDefinition",
