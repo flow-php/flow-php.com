@@ -3196,6 +3196,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_coalesce"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\enum_name\u0028\u0029",
+            "name": "enum_name",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_enum_name"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\enum_value\u0028\u0029",
+            "name": "enum_value",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_enum_value"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\count\u0028\u0029",
             "name": "count",
             "summary": "",
@@ -5996,6 +6006,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-EnsureStart.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\EnumName",
+            "name": "EnumName",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-EnumName.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\EnumName\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-EnumName.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\EnumName\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-EnumName.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\EnumValue",
+            "name": "EnumValue",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-EnumValue.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\EnumValue\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-EnumValue.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\EnumValue\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-EnumValue.html#method_eval"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Equals",
             "name": "Equals",
             "summary": "",
@@ -7360,6 +7400,16 @@ Search.appendIndex(
             "name": "ensureStart",
             "summary": "",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_ensureStart"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AenumName\u0028\u0029",
+            "name": "enumName",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_enumName"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AenumValue\u0028\u0029",
+            "name": "enumValue",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_enumValue"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aequals\u0028\u0029",
             "name": "equals",
