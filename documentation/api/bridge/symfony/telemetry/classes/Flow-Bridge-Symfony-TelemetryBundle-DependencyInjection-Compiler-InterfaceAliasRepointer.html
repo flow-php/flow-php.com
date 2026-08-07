@@ -125,19 +125,14 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/InterfaceAliasRepointer.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-dependencyinjection-compiler-interfacealiasrepointer.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/InterfaceAliasRepointer.php">InterfaceAliasRepointer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Decorating a service silently retargets every interface alias pointing at it. When the decorator does not
-implement one of those interfaces, CheckAliasValidityPass (framework-bundle &gt;= 7.3) fails the build - e.g.</p>
+            <p class="phpdocumentor-summary">Decorating a service silently retargets every interface alias pointing at it, and CheckAliasValidityPass
+(framework-bundle &gt;= 7.3) fails the build when the decorator cannot implement one of them.</p>
 
 
-    <section class="phpdocumentor-description"><p>FrameworkBundle aliases NamespacedPoolInterface to cache.app, which our cache decorator cannot satisfy.</p>
-<p>Such an alias is pointed back at the undecorated inner service, so the alias keeps resolving to a class that
-honours its contract. Consumers type-hinting that interface get the untraced pool; every other consumer -
-by service id, or by an interface the decorator does implement - still gets the traced one.</p>
-</section>
 
 
 
@@ -198,7 +193,7 @@ by service id, or by an interface the decorator does implement - still gets the 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/InterfaceAliasRepointer.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-dependencyinjection-compiler-interfacealiasrepointer.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/InterfaceAliasRepointer.php">InterfaceAliasRepointer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -242,14 +237,14 @@ by service id, or by an interface the decorator does implement - still gets the 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/InterfaceAliasRepointer.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-dependencyinjection-compiler-interfacealiasrepointer.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/DependencyInjection/Compiler/InterfaceAliasRepointer.php">InterfaceAliasRepointer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">repoint</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$decoratedServiceId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$decoratorId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">class-string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$decoratorClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">repoint</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$decoratedServiceId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$innerServiceId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">class-string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$decoratorClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -265,7 +260,7 @@ by service id, or by an interface the decorator does implement - still gets the 
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$decoratorId</span>
+                <span class="phpdocumentor-argument-list__argument__name">$innerServiceId</span>
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">

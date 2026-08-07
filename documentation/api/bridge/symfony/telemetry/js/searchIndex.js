@@ -123,7 +123,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\InterfaceAliasRepointer",
             "name": "InterfaceAliasRepointer",
-            "summary": "Decorating\u0020a\u0020service\u0020silently\u0020retargets\u0020every\u0020interface\u0020alias\u0020pointing\u0020at\u0020it.\u0020When\u0020the\u0020decorator\u0020does\u0020not\nimplement\u0020one\u0020of\u0020those\u0020interfaces,\u0020CheckAliasValidityPass\u0020\u0028framework\u002Dbundle\u0020\u003E\u003D\u00207.3\u0029\u0020fails\u0020the\u0020build\u0020\u002D\u0020e.g.",
+            "summary": "Decorating\u0020a\u0020service\u0020silently\u0020retargets\u0020every\u0020interface\u0020alias\u0020pointing\u0020at\u0020it,\u0020and\u0020CheckAliasValidityPass\n\u0028framework\u002Dbundle\u0020\u003E\u003D\u00207.3\u0029\u0020fails\u0020the\u0020build\u0020when\u0020the\u0020decorator\u0020cannot\u0020implement\u0020one\u0020of\u0020them.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-InterfaceAliasRepointer.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\InterfaceAliasRepointer\u003A\u003A__construct\u0028\u0029",
