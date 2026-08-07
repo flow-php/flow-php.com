@@ -181,14 +181,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-PositiveIntegerType.html#method_assert">assert()</a>
     <span>
-                                &nbsp;: <abbr title="\Flow\Types\T">T</abbr>    </span>
+                                &nbsp;: int<0, max>    </span>
 </dt>
 <dd>Checks that the value is of the type of this object, throwing when it is not.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-PositiveIntegerType.html#method_cast">cast()</a>
     <span>
-                                &nbsp;: <abbr title="\Flow\Types\T">T</abbr>    </span>
+                                &nbsp;: int<0, max>    </span>
 </dt>
 <dd>Takes a value and when necessary casts it to the type of this object.</dd>
 
@@ -240,7 +240,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/PositiveIntegerType.php"><a href="files/src-lib-types-src-flow-types-type-logical-positiveintegertype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/PositiveIntegerType.php">PositiveIntegerType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -248,15 +248,12 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">assert</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\T">T</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">assert</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int<0, max></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Unlike cast(), this method never performs any conversion — the value must already match the type.
-Unlike isValid(), this method returns the value (narrowed to T) instead of a boolean, and always narrows the static type.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -274,7 +271,7 @@ Unlike isValid(), this method returns the value (narrowed to T) instead of a boo
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\T">T</abbr></span>
+        <span class="phpdocumentor-signature__response_type">int<0, max></span>
             </section>
 
 </article>
@@ -292,7 +289,7 @@ Unlike isValid(), this method returns the value (narrowed to T) instead of a boo
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/PositiveIntegerType.php"><a href="files/src-lib-types-src-flow-types-type-logical-positiveintegertype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/PositiveIntegerType.php">PositiveIntegerType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -300,15 +297,12 @@ Unlike isValid(), this method returns the value (narrowed to T) instead of a boo
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">cast</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\T">T</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">cast</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int<0, max></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>When value is already of the type of this object, it is returned as is.
-When cast method is used, it will additionally narrow the type of the returned value for static analysis tools.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -326,7 +320,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\T">T</abbr></span>
+        <span class="phpdocumentor-signature__response_type">int<0, max></span>
             </section>
 
 </article>
@@ -344,7 +338,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/PositiveIntegerType.php"><a href="files/src-lib-types-src-flow-types-type-logical-positiveintegertype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/PositiveIntegerType.php">PositiveIntegerType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -358,7 +352,7 @@ When cast method is used, it will additionally narrow the type of the returned v
         </div>
     
         <section class="phpdocumentor-description"><p>When this method returns true, static analysis tools narrow the value's type to T at the call site
-(via @phpstan-assert-if-true). Use this when you want to branch on the result; use assert() when you
+(via @assert-if-true). Use this when you want to branch on the result; use assert() when you
 want the call to fail loudly on a mismatch.</p>
 </section>
 
@@ -397,7 +391,7 @@ want the call to fail loudly on a mismatch.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/PositiveIntegerType.php"><a href="files/src-lib-types-src-flow-types-type-logical-positiveintegertype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/PositiveIntegerType.php">PositiveIntegerType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -435,7 +429,7 @@ want the call to fail loudly on a mismatch.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/PositiveIntegerType.php"><a href="files/src-lib-types-src-flow-types-type-logical-positiveintegertype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/PositiveIntegerType.php">PositiveIntegerType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
