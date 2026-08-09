@@ -11866,6 +11866,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-BooleanDefinition.html#method_entryClass"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\CommonType",
+            "name": "CommonType",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-CommonType.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\CommonType\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-CommonType.html#method_merge"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateDefinition",
             "name": "DateDefinition",
             "summary": "",
@@ -13071,6 +13081,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_matches"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003AmemberFor\u0028\u0029",
+            "name": "memberFor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_memberFor"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003Amerge\u0028\u0029",
             "name": "merge",
             "summary": "",
@@ -13105,6 +13120,31 @@ Search.appendIndex(
             "name": "entryClass",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_entryClass"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionMembers",
+            "name": "UnionMembers",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-UnionMembers.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionMembers\u003A\u003Acontains\u0028\u0029",
+            "name": "contains",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-UnionMembers.html#method_contains"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionMembers\u003A\u003Adefinitions\u0028\u0029",
+            "name": "definitions",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-UnionMembers.html#method_definitions"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionTypeNormalizer",
+            "name": "UnionTypeNormalizer",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-UnionTypeNormalizer.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionTypeNormalizer\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-UnionTypeNormalizer.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UuidDefinition",
             "name": "UuidDefinition",
