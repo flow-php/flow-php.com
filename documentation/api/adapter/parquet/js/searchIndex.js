@@ -161,6 +161,101 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-SchemaConverter.html#method_parquetToFlowType"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\ElementsValueConverter",
+            "name": "ElementsValueConverter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-ElementsValueConverter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\ElementsValueConverter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-ElementsValueConverter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\ElementsValueConverter\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-ElementsValueConverter.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\ElementsValueConverter\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-ElementsValueConverter.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\JsonValueConverter",
+            "name": "JsonValueConverter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-JsonValueConverter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\JsonValueConverter\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-JsonValueConverter.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\JsonValueConverter\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-JsonValueConverter.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\StructValueConverter",
+            "name": "StructValueConverter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-StructValueConverter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\StructValueConverter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-StructValueConverter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\StructValueConverter\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-StructValueConverter.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\StructValueConverter\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-StructValueConverter.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\UuidValueConverter",
+            "name": "UuidValueConverter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-UuidValueConverter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\UuidValueConverter\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-UuidValueConverter.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\UuidValueConverter\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-UuidValueConverter.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\ValueConverter",
+            "name": "ValueConverter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-ValueConverter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\ValueConverter\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-ValueConverter.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\ValueConverter\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-ValueConverter.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\ValueConverters",
+            "name": "ValueConverters",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-ValueConverters.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter\\ValueConverters\u003A\u003Afor\u0028\u0029",
+            "name": "for",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ValueConverter-ValueConverters.html#method_for"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -185,5 +280,10 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter",
+            "name": "ValueConverter",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-parquet-valueconverter.html"
         }            ]
 );

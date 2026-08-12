@@ -166,6 +166,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-types-dsl.html#function_type_non_empty_string"
         },                {
+            "fqsen": "\\Flow\\Types\\DSL\\type_empty_array\u0028\u0029",
+            "name": "type_empty_array",
+            "summary": "",
+            "url": "namespaces/flow-types-dsl.html#function_type_empty_array"
+        },                {
             "fqsen": "\\Flow\\Types\\DSL\\type_enum\u0028\u0029",
             "name": "type_enum",
             "summary": "",
@@ -1265,6 +1270,36 @@ Search.appendIndex(
             "name": "toString",
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type-Native-CallableType.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\EmptyArrayType",
+            "name": "EmptyArrayType",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-EmptyArrayType.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\EmptyArrayType\u003A\u003Aassert\u0028\u0029",
+            "name": "assert",
+            "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
+            "url": "classes/Flow-Types-Type-Native-EmptyArrayType.html#method_assert"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\EmptyArrayType\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
+            "summary": "Takes\u0020a\u0020value\u0020and\u0020when\u0020necessary\u0020casts\u0020it\u0020to\u0020the\u0020type\u0020of\u0020this\u0020object.",
+            "url": "classes/Flow-Types-Type-Native-EmptyArrayType.html#method_cast"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\EmptyArrayType\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
+            "url": "classes/Flow-Types-Type-Native-EmptyArrayType.html#method_isValid"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\EmptyArrayType\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-EmptyArrayType.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\EmptyArrayType\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
+            "url": "classes/Flow-Types-Type-Native-EmptyArrayType.html#method_toString"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\EnumType",
             "name": "EnumType",

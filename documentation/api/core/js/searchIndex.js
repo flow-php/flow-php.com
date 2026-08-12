@@ -13036,6 +13036,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-TypeMerge.html#method_mergeStructures"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeProjection",
+            "name": "TypeProjection",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-TypeProjection.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeProjection\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-TypeProjection.html#method_list"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeProjection\u003A\u003Amap\u0028\u0029",
+            "name": "map",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-TypeProjection.html#method_map"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeProjection\u003A\u003Aproject\u0028\u0029",
+            "name": "project",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-TypeProjection.html#method_project"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeProjection\u003A\u003Astructure\u0028\u0029",
+            "name": "structure",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-TypeProjection.html#method_structure"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeProjection\u003A\u003Aunion\u0028\u0029",
+            "name": "union",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-TypeProjection.html#method_union"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition",
             "name": "UnionDefinition",
             "summary": "",
