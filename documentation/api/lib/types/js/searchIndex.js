@@ -266,6 +266,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Exception-InvalidTypeException.html#method_value"
         },                {
+            "fqsen": "\\Flow\\Types\\Exception\\MissingElementCastingException",
+            "name": "MissingElementCastingException",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-MissingElementCastingException.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\MissingElementCastingException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-MissingElementCastingException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\MissingElementCastingException\u003A\u003A\u0024value",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-MissingElementCastingException.html#property_value"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\MissingElementCastingException\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-MissingElementCastingException.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\MissingElementCastingException\u003A\u003A\u0024element",
+            "name": "element",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-MissingElementCastingException.html#property_element"
+        },                {
             "fqsen": "\\Flow\\Types\\Exception\\RuntimeException",
             "name": "RuntimeException",
             "summary": "",

@@ -8,67 +8,15 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-59cfd8b5fb94985d8fdfa5051981eff4.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/work_shop_confetti_controller.js": {
-        "path": "\/assets\/controllers\/work_shop_confetti_controller-96e71c0375b02555ba4bb64274357f1f.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/work_shop_carousel_controller.js": {
-        "path": "\/assets\/controllers\/work_shop_carousel_controller-0e94f33a8d35b6ed62c3d5e44f087ce6.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_reset_controller.js": {
-        "path": "\/assets\/controllers\/playground_reset_controller-78985d1d372f9be795ba4fd35d78a527.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_tabs_controller.js": {
-        "path": "\/assets\/controllers\/playground_tabs_controller-f99c56fc34f1e2fae627a13aeb15348f.js",
-        "type": "js"
-    },
-    "\/assets\/codemirror\/themes\/theme-flow.js": {
-        "path": "\/assets\/codemirror\/themes\/theme-flow-c283b27bdc168b368c52dcbdba9fc8e0.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_output_controller.js": {
-        "path": "\/assets\/controllers\/playground_output_controller-29f780a95240cba1c0e04b482e68c92f.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/site_search_controller.js": {
-        "path": "\/assets\/controllers\/site_search_controller-029496c3b4940e01daf05c753a5c160d.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/toc_controller.js": {
-        "path": "\/assets\/controllers\/toc_controller-1a77aa51990b50e3d6247942ca0d73fa.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_controller.js": {
-        "path": "\/assets\/controllers\/playground_controller-1f562b582f45127d6acc3ad9d0a6bc1d.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/all_links_external_controller.js": {
-        "path": "\/assets\/controllers\/all_links_external_controller-2814b02105ed2e4f92c5f5747e0e46c8.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/image_swap_controller.js": {
-        "path": "\/assets\/controllers\/image_swap_controller-c22445e2f4c121053a31252d6e4277dd.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_storage_controller.js": {
-        "path": "\/assets\/controllers\/playground_storage_controller-46f3868ddb676ed42885cbff21bb4140.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_workspace_controller.js": {
-        "path": "\/assets\/controllers\/playground_workspace_controller-80a4b67d0d48e0f1724b062960607ab3.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_run_controller.js": {
-        "path": "\/assets\/controllers\/playground_run_controller-857150d05b75474ed9ee02b99a51b30d.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-9802419d56f9cdc3e0adc4ae60e5b1b2.js",
         "type": "js"
     },
     "\/assets\/controllers\/code_editor_controller.js": {
         "path": "\/assets\/controllers\/code_editor_controller-1aec5cafe47b6524909867e285e3c1f6.js",
+        "type": "js"
+    },
+    "\/assets\/codemirror\/themes\/theme-flow.js": {
+        "path": "\/assets\/codemirror\/themes\/theme-flow-c283b27bdc168b368c52dcbdba9fc8e0.js",
         "type": "js"
     },
     "\/assets\/codemirror\/completions\/flow.js": {
@@ -91,8 +39,60 @@
         "path": "\/assets\/models\/Violation-4c9687032725053c94df98f23f106215.js",
         "type": "js"
     },
+    "\/assets\/controllers\/playground_help_controller.js": {
+        "path": "\/assets\/controllers\/playground_help_controller-3df04a84275f015ef7e6f86e3d9e7383.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/work_shop_nav_controller.js": {
+        "path": "\/assets\/controllers\/work_shop_nav_controller-3f834d57f9477c932584372ffd2e0bf0.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/work_shop_order_controller.js": {
+        "path": "\/assets\/controllers\/work_shop_order_controller-1707dacd33656e4593c08be60fbdb4d6.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/turnstile_controller.js": {
+        "path": "\/assets\/controllers\/turnstile_controller-f38af05e660ec65b36a67bc61a91d1c9.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/work_shop_checkout_controller.js": {
+        "path": "\/assets\/controllers\/work_shop_checkout_controller-46124094cc818cf316d5f7ae8db876eb.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_run_controller.js": {
+        "path": "\/assets\/controllers\/playground_run_controller-857150d05b75474ed9ee02b99a51b30d.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/work_shop_carousel_controller.js": {
+        "path": "\/assets\/controllers\/work_shop_carousel_controller-0e94f33a8d35b6ed62c3d5e44f087ce6.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/all_links_external_controller.js": {
+        "path": "\/assets\/controllers\/all_links_external_controller-2814b02105ed2e4f92c5f5747e0e46c8.js",
+        "type": "js"
+    },
     "\/assets\/controllers\/horizontal_scroll_controller.js": {
         "path": "\/assets\/controllers\/horizontal_scroll_controller-85b5b3c13fb04790459b8167be1ca1fd.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_output_controller.js": {
+        "path": "\/assets\/controllers\/playground_output_controller-29f780a95240cba1c0e04b482e68c92f.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/work_shop_confetti_controller.js": {
+        "path": "\/assets\/controllers\/work_shop_confetti_controller-96e71c0375b02555ba4bb64274357f1f.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/theme_switch_controller.js": {
+        "path": "\/assets\/controllers\/theme_switch_controller-2add5c8740f12415f479a153622011bf.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_share_controller.js": {
+        "path": "\/assets\/controllers\/playground_share_controller-c7400138becc4b9dc045a29f264a1ae8.js",
+        "type": "js"
+    },
+    "\/assets\/services\/snippet-fingerprint.js": {
+        "path": "\/assets\/services\/snippet-fingerprint-ecdca9f86dfd0b5152217084cf6bc7b8.js",
         "type": "js"
     },
     "\/assets\/controllers\/mermaid_controller.js": {
@@ -101,6 +101,30 @@
     },
     "\/assets\/services\/mermaid.js": {
         "path": "\/assets\/services\/mermaid-38b784f426081f4dc9ebad01a050dff5.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/image_swap_controller.js": {
+        "path": "\/assets\/controllers\/image_swap_controller-c22445e2f4c121053a31252d6e4277dd.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_controller.js": {
+        "path": "\/assets\/controllers\/playground_controller-1f562b582f45127d6acc3ad9d0a6bc1d.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/clipboard_controller.js": {
+        "path": "\/assets\/controllers\/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/scroll_to_top_controller.js": {
+        "path": "\/assets\/controllers\/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/toc_controller.js": {
+        "path": "\/assets\/controllers\/toc_controller-1a77aa51990b50e3d6247942ca0d73fa.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_workspace_controller.js": {
+        "path": "\/assets\/controllers\/playground_workspace_controller-80a4b67d0d48e0f1724b062960607ab3.js",
         "type": "js"
     },
     "\/assets\/controllers\/syntax_highlight_controller.js": {
@@ -115,56 +139,32 @@
         "path": "\/assets\/prismjs\/plugins\/autolinker\/autolinker-e906ddf9b7d89f169c9cf40a53e5605d.js",
         "type": "js"
     },
-    "\/assets\/controllers\/work_shop_nav_controller.js": {
-        "path": "\/assets\/controllers\/work_shop_nav_controller-3f834d57f9477c932584372ffd2e0bf0.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/work_shop_checkout_controller.js": {
-        "path": "\/assets\/controllers\/work_shop_checkout_controller-46124094cc818cf316d5f7ae8db876eb.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/clipboard_controller.js": {
-        "path": "\/assets\/controllers\/clipboard_controller-ceed62d10bad730ab76b8ccd7b06e781.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_share_controller.js": {
-        "path": "\/assets\/controllers\/playground_share_controller-c7400138becc4b9dc045a29f264a1ae8.js",
-        "type": "js"
-    },
-    "\/assets\/services\/snippet-fingerprint.js": {
-        "path": "\/assets\/services\/snippet-fingerprint-ecdca9f86dfd0b5152217084cf6bc7b8.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/turnstile_controller.js": {
-        "path": "\/assets\/controllers\/turnstile_controller-f38af05e660ec65b36a67bc61a91d1c9.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/scroll_to_top_controller.js": {
-        "path": "\/assets\/controllers\/scroll_to_top_controller-57ff8ad71f188ce68f4722b06aa28385.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/theme_switch_controller.js": {
-        "path": "\/assets\/controllers\/theme_switch_controller-2add5c8740f12415f479a153622011bf.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/work_shop_order_controller.js": {
-        "path": "\/assets\/controllers\/work_shop_order_controller-1707dacd33656e4593c08be60fbdb4d6.js",
-        "type": "js"
-    },
-    "\/assets\/controllers\/playground_format_controller.js": {
-        "path": "\/assets\/controllers\/playground_format_controller-8dfa94c90609232e433cef3b1f0df2c9.js",
-        "type": "js"
-    },
     "\/assets\/controllers\/wasm_controller.js": {
         "path": "\/assets\/controllers\/wasm_controller-dd4663144758ce02ea979f9a636e31bb.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_reset_controller.js": {
+        "path": "\/assets\/controllers\/playground_reset_controller-78985d1d372f9be795ba4fd35d78a527.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_tabs_controller.js": {
+        "path": "\/assets\/controllers\/playground_tabs_controller-f99c56fc34f1e2fae627a13aeb15348f.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/playground_storage_controller.js": {
+        "path": "\/assets\/controllers\/playground_storage_controller-46f3868ddb676ed42885cbff21bb4140.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/site_search_controller.js": {
+        "path": "\/assets\/controllers\/site_search_controller-029496c3b4940e01daf05c753a5c160d.js",
         "type": "js"
     },
     "\/assets\/controllers\/playground_upload_controller.js": {
         "path": "\/assets\/controllers\/playground_upload_controller-4cb4cede53f2a96e04451e9d3d5285bf.js",
         "type": "js"
     },
-    "\/assets\/controllers\/playground_help_controller.js": {
-        "path": "\/assets\/controllers\/playground_help_controller-3df04a84275f015ef7e6f86e3d9e7383.js",
+    "\/assets\/controllers\/playground_format_controller.js": {
+        "path": "\/assets\/controllers\/playground_format_controller-8dfa94c90609232e433cef3b1f0df2c9.js",
         "type": "js"
     },
     "@symfony\/stimulus-bundle": {
