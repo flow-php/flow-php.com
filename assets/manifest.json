@@ -1,5 +1,5 @@
 {
-    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-ad2271f731ac186a72ba55bfb022e503.js",
+    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-1a826f2ff9dabc55913cda2974d506d9.js",
     "@symfony\/stimulus-bundle\/loader.js": "\/assets\/@symfony\/stimulus-bundle\/loader-20ecc10cbbb74d097d458e14577bcd99.js",
     "app.js": "\/assets\/app-396eb1b280b9b32f53a44b8e87aa6133.js",
     "bootstrap.js": "\/assets\/bootstrap-13edb607a8c6b40c285e5deacc875a08.js",
@@ -135,7 +135,7 @@
     "prismjs\/themes\/prism-flow.css": "\/assets\/prismjs\/themes\/prism-flow-b46b11f7f7a760aeb62b5e588f943d9b.css",
     "services\/mermaid.js": "\/assets\/services\/mermaid-38b784f426081f4dc9ebad01a050dff5.js",
     "services\/snippet-fingerprint.js": "\/assets\/services\/snippet-fingerprint-ecdca9f86dfd0b5152217084cf6bc7b8.js",
-    "styles\/app.css": "\/assets\/styles\/app-fe700f69e605925e23e8e1a51b93d040.css",
+    "styles\/app.css": "\/assets\/styles\/app-2aa476ebd7cb8f50955934089186e921.css",
     "styles\/changelog.css": "\/assets\/styles\/changelog-8733bc2a99e1799ccd2de326f993c62c.css",
     "styles\/work-shop-legal.css": "\/assets\/styles\/work-shop-legal-606f9175643164754c88c124b5923591.css",
     "vendor\/@codemirror\/autocomplete\/autocomplete.index.js": "\/assets\/vendor\/@codemirror\/autocomplete\/autocomplete.index-bb799fac1bd628dfa039da2ddacebd75.js",
@@ -206,7 +206,7 @@
     "wasm\/php.js": "\/assets\/wasm\/php-c435dd5b2bc7c33fccd9ac33a903944b.js",
     "wasm\/php.wasm": "\/assets\/wasm\/php-1ebc9ae0544475929f5ea30d15f71eb9.wasm",
     "wasm\/phpcsfixer.php.wasm": "\/assets\/wasm\/phpcsfixer.php-65bf51f1ea90e4896971e11e62efef0b.wasm",
-    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-a13004a343bdcaa73bc7cc98fef13efb.phar",
+    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-469336fe9c88ca5cb812cc6bab347cc1.phar",
     "wasm\/tools\/php-cs-fixer.phar": "\/assets\/wasm\/tools\/php-cs-fixer-de55dbd75a08d2eac0f0435d4168e6bc.phar",
     "wasm\/vendor\/autoload.php.wasm": "\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm"
 }
