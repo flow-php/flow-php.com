@@ -129,7 +129,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Flow-ETL-Loader-Closure.html"><abbr title="\Flow\ETL\Loader\Closure">Closure</abbr></a>,                             <a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>,                             <a href="classes/Flow-ETL-Loader-OverridingLoader.html"><abbr title="\Flow\ETL\Loader\OverridingLoader">OverridingLoader</abbr></a>                    </span>
+                            <a href="classes/Flow-ETL-Loader-Closure.html"><abbr title="\Flow\ETL\Loader\Closure">Closure</abbr></a>,                             <a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>,                             <a href="classes/Flow-ETL-Loader-OverridingLoader.html"><abbr title="\Flow\ETL\Loader\OverridingLoader">OverridingLoader</abbr></a>,                             <abbr title="\Flow\ETL\Loader\ReplayAware">ReplayAware</abbr>                    </span>
     
     </h2>
 
@@ -143,7 +143,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/TransformerLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-transformerloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/TransformerLoader.php">TransformerLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -162,7 +162,7 @@
     </h4>
     <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Loader-Closure.html"><abbr title="\Flow\ETL\Loader\Closure">Closure</abbr></a></dt><dd>Loaders implementing this adapter will be additionally notified
-by the pipeline about the last set of Rows processed by the pipeline.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Loader-OverridingLoader.html"><abbr title="\Flow\ETL\Loader\OverridingLoader">OverridingLoader</abbr></a></dt><dd>Loaders implementing OverridingLoader interface overrides one or more loaders.</dd>    </dl>
+by the pipeline about the last set of Rows processed by the pipeline.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Loader-OverridingLoader.html"><abbr title="\Flow\ETL\Loader\OverridingLoader">OverridingLoader</abbr></a></dt><dd>Loaders implementing OverridingLoader interface overrides one or more loaders.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\ReplayAware">ReplayAware</abbr></dt>    </dl>
 
 
 
@@ -201,6 +201,12 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
                                 &nbsp;: array&lt;string|int, <a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>&gt;    </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Loader-TransformerLoader.html#method_replaySafe">replaySafe()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
     </dl>
 
 
@@ -229,7 +235,7 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/TransformerLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-transformerloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/TransformerLoader.php">TransformerLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -280,7 +286,7 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/TransformerLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-transformerloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/TransformerLoader.php">TransformerLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -324,7 +330,7 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/TransformerLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-transformerloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/TransformerLoader.php">TransformerLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -375,7 +381,7 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/TransformerLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-transformerloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/TransformerLoader.php">TransformerLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -396,6 +402,44 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_replaySafe">
+        replaySafe()
+        <a href="classes/Flow-ETL-Loader-TransformerLoader.html#method_replaySafe" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/TransformerLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-transformerloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/TransformerLoader.php">TransformerLoader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">102</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">replaySafe</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
             </section>
 
 </article>
@@ -425,6 +469,7 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
                                             <li class=""><a href="classes/Flow-ETL-Loader-TransformerLoader.html#method_closure">closure()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Loader-TransformerLoader.html#method_load">load()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Loader-TransformerLoader.html#method_loaders">loaders()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Loader-TransformerLoader.html#method_replaySafe">replaySafe()</a></li>
                                     </ul>
             </li>
                     </ul>

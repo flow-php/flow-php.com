@@ -1801,11 +1801,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#method_clock"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\u003A\u003AfilesystemStreams\u0028\u0029",
-            "name": "filesystemStreams",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config.html#method_filesystemStreams"
-        },                {
             "fqsen": "\\Flow\\ETL\\Config\u003A\u003Afstab\u0028\u0029",
             "name": "fstab",
             "summary": "",
@@ -3866,6 +3861,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_retry_on_exception_types"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\retry_any_throwable_except\u0028\u0029",
+            "name": "retry_any_throwable_except",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_retry_any_throwable_except"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\delay_linear\u0028\u0029",
             "name": "delay_linear",
             "summary": "",
@@ -4610,31 +4610,6 @@ Search.appendIndex(
             "name": "STOP",
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-Signal.html#enumcase_STOP"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SwappableRowsExtractor",
-            "name": "SwappableRowsExtractor",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SwappableRowsExtractor.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SwappableRowsExtractor\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SwappableRowsExtractor.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SwappableRowsExtractor\u003A\u003Aextract\u0028\u0029",
-            "name": "extract",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SwappableRowsExtractor.html#method_extract"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SwappableRowsExtractor\u003A\u003Astopped\u0028\u0029",
-            "name": "stopped",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SwappableRowsExtractor.html#method_stopped"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SwappableRowsExtractor\u003A\u003Aswap\u0028\u0029",
-            "name": "swap",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SwappableRowsExtractor.html#method_swap"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor",
             "name": "Extractor",
@@ -9031,6 +9006,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Loader-BranchingLoader.html#method_loaders"
         },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\BranchingLoader\u003A\u003AreplaySafe\u0028\u0029",
+            "name": "replaySafe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-BranchingLoader.html#method_replaySafe"
+        },                {
             "fqsen": "\\Flow\\ETL\\Loader\\BranchingLoader\u003A\u003AwithTransformation\u0028\u0029",
             "name": "withTransformation",
             "summary": "",
@@ -9106,10 +9086,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Loader-RetryLoader.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\RetryLoader\u003A\u003Aclosure\u0028\u0029",
+            "name": "closure",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-RetryLoader.html#method_closure"
+        },                {
             "fqsen": "\\Flow\\ETL\\Loader\\RetryLoader\u003A\u003Aload\u0028\u0029",
             "name": "load",
             "summary": "",
             "url": "classes/Flow-ETL-Loader-RetryLoader.html#method_load"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\RetryLoader\u003A\u003Aloaders\u0028\u0029",
+            "name": "loaders",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-RetryLoader.html#method_loaders"
         },                {
             "fqsen": "\\Flow\\ETL\\Loader\\SchemaValidationLoader",
             "name": "SchemaValidationLoader",
@@ -9245,6 +9235,11 @@ Search.appendIndex(
             "name": "loaders",
             "summary": "",
             "url": "classes/Flow-ETL-Loader-TransformerLoader.html#method_loaders"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\TransformerLoader\u003A\u003AreplaySafe\u0028\u0029",
+            "name": "replaySafe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-TransformerLoader.html#method_replaySafe"
         },                {
             "fqsen": "\\Flow\\ETL\\Loader",
             "name": "Loader",
@@ -9600,6 +9595,21 @@ Search.appendIndex(
             "name": "shouldRetry",
             "summary": "",
             "url": "classes/Flow-ETL-Retry-RetryStrategy-AnyThrowable.html#method_shouldRetry"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetryStrategy\\AnyThrowableExcept",
+            "name": "AnyThrowableExcept",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetryStrategy-AnyThrowableExcept.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetryStrategy\\AnyThrowableExcept\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetryStrategy-AnyThrowableExcept.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Retry\\RetryStrategy\\AnyThrowableExcept\u003A\u003AshouldRetry\u0028\u0029",
+            "name": "shouldRetry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Retry-RetryStrategy-AnyThrowableExcept.html#method_shouldRetry"
         },                {
             "fqsen": "\\Flow\\ETL\\Retry\\RetryStrategy\\OnExceptionTypes",
             "name": "OnExceptionTypes",

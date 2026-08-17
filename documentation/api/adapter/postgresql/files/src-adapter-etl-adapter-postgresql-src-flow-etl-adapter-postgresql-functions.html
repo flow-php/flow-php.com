@@ -499,19 +499,22 @@ instead of skipping rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Execute multiple loaders within a single PostgreSQL transaction.</p>
+        <p class="phpdocumentor-summary">Execute multiple loaders within PostgreSQL transactions.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
                     <span class="phpdocumentor-signature__name">to_pgsql_transaction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Loader">Loader</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$loaders</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-TransactionalPostgreSqlLoader.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\TransactionalPostgreSqlLoader">TransactionalPostgreSqlLoader</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"><p>Each batch of rows is processed in its own transaction. If any loader
-fails, the entire batch is rolled back.</p>
+        <section class="phpdocumentor-description"><p>Each batch of rows is loaded in its own transaction; rows a wrapped Transformation delivers when
+the loader is closed (blocking operations drain there) are committed in one final transaction.
+If any loader fails, the open transaction is rolled back.
+All wrapped loaders must use the same Client instance as the wrapper - a loader holding its own
+Client escapes the transaction.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -549,7 +552,7 @@ fails, the entire batch is rolled back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -618,7 +621,7 @@ fails, the entire batch is rolled back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -660,7 +663,7 @@ fails, the entire batch is rolled back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">152</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
@@ -702,7 +705,7 @@ fails, the entire batch is rolled back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
     </aside>
 
@@ -774,7 +777,7 @@ fails, the entire batch is rolled back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">178</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 
     </aside>
 
@@ -821,7 +824,7 @@ fails, the entire batch is rolled back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
