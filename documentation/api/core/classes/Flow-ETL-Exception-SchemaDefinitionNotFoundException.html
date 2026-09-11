@@ -143,7 +143,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Exception/SchemaDefinitionNotFoundException.php"><a href="files/src-core-etl-src-flow-etl-exception-schemadefinitionnotfoundexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/SchemaDefinitionNotFoundException.php">SchemaDefinitionNotFoundException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -187,6 +187,20 @@
                                 &nbsp;: string    </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html#method_suggestions">suggestions()</a>
+    <span>
+                                &nbsp;: array&lt;int, string&gt;    </span>
+</dt>
+<dd>The names closest to the one that was not found, ranked by similarity and capped - not the
+full column list.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html#method_withAvailable">withAvailable()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
     </dl>
 
 
@@ -215,14 +229,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Exception/SchemaDefinitionNotFoundException.php"><a href="files/src-core-etl-src-flow-etl-exception-schemadefinitionnotfoundexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/SchemaDefinitionNotFoundException.php">SchemaDefinitionNotFoundException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$suggestions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -234,6 +248,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$entry</span>
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$suggestions</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, string&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -314,7 +335,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Exception/SchemaDefinitionNotFoundException.php"><a href="files/src-core-etl-src-flow-etl-exception-schemadefinitionnotfoundexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/SchemaDefinitionNotFoundException.php">SchemaDefinitionNotFoundException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -335,6 +356,101 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_suggestions">
+        suggestions()
+        <a href="classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html#method_suggestions" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Exception/SchemaDefinitionNotFoundException.php"><a href="files/src-core-etl-src-flow-etl-exception-schemadefinitionnotfoundexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/SchemaDefinitionNotFoundException.php">SchemaDefinitionNotFoundException.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The names closest to the one that was not found, ranked by similarity and capped - not the
+full column list.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">suggestions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withAvailable">
+        withAvailable()
+        <a href="classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html#method_withAvailable" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Exception/SchemaDefinitionNotFoundException.php"><a href="files/src-core-etl-src-flow-etl-exception-schemadefinitionnotfoundexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/SchemaDefinitionNotFoundException.php">SchemaDefinitionNotFoundException.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">withAvailable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$available</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$entry</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$available</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
             </section>
 
 </article>
@@ -363,6 +479,8 @@
                                             <li class=""><a href="classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Exception-InvalidArgumentException.html#method_because">because()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html#method_entry">entry()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html#method_suggestions">suggestions()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html#method_withAvailable">withAvailable()</a></li>
                                     </ul>
             </li>
                     </ul>

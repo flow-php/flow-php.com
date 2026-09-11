@@ -146,11 +146,16 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">The bottom of the type lattice: the column&#039;s type is not known. Absorbed by merge() in both
+directions - null ⊔ T = ?T, T ⊔ null = ?T, null ⊔ null = null. Reaches a materialized Schema
+only when a column is null in every observed row and no type was declared; that is Parquet&#039;s
+UNKNOWN and Iceberg&#039;s unknown. A column that holds strings and sometimes null is
+StringDefinition(nullable: true), never this.</p>
+
 
 
 
@@ -208,12 +213,6 @@
     <a class="" href="classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_entry">entry()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_entryClass">entryClass()</a>
-    <span>
-                                &nbsp;: <abbr title="class-string<\Flow\ETL\Row\Entry\NullEntry>">NullEntry></abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -311,7 +310,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -362,7 +361,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -421,7 +420,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -451,44 +450,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_entryClass">
-        entryClass()
-        <a href="classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_entryClass" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">143</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">entryClass</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="class-string<\Flow\ETL\Row\Entry\NullEntry>">NullEntry></abbr></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="class-string<\Flow\ETL\Row\Entry\NullEntry>">NullEntry></abbr></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_isCompatible">
         isCompatible()
         <a href="classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_isCompatible" class="headerlink"><i class="fas fa-link"></i></a>
@@ -497,7 +458,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -549,7 +510,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -587,7 +548,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -635,7 +596,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -683,14 +644,14 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">matches</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">matches</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -699,8 +660,8 @@ When given type is not nullable and current type is nullable, it is not compatib
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entry</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -731,7 +692,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -779,7 +740,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -817,7 +778,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -855,7 +816,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -903,7 +864,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">135</span>
 
     </aside>
 
@@ -955,7 +916,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-nulldefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/NullDefinition.php">NullDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -1004,7 +965,6 @@ When given type is not nullable and current type is nullable, it is not compatib
                                             <li class=""><a href="classes/Flow-ETL-Schema-Definition-NullDefinition.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_addMetadata">addMetadata()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_entry">entry()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_entryClass">entryClass()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_isCompatible">isCompatible()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_isNullable">isNullable()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_isSame">isSame()</a></li>

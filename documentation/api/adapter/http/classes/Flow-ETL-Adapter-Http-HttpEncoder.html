@@ -124,15 +124,15 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/HttpEncoder.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-httpencoder.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/HttpEncoder.php">HttpEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Decodes an HTTP exchange into raw row values. The response/request body is decoded once, content-type aware,
-into a navigable nested map (JSON via json_decode, XML via {@see XMLConverter}); the extractor&#039;s Hydrator types
-the Row from it and pagination reads the same map.</p>
+            <p class="phpdocumentor-summary">A row carries the body as raw text, so response_body holds one type whatever the content type is.</p>
 
 
+    <section class="phpdocumentor-description"><p>Pagination, which needs to navigate into a structured body, calls structuredBody() instead.</p>
+</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -185,6 +185,12 @@ the Row from it and pagination reads the same map.</p>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-Http-HttpEncoder.html#method_structuredBody">structuredBody()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+
     </dl>
 
 
@@ -213,7 +219,7 @@ the Row from it and pagination reads the same map.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/HttpEncoder.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-httpencoder.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/HttpEncoder.php">HttpEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -275,7 +281,7 @@ the Row from it and pagination reads the same map.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/HttpEncoder.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-httpencoder.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/HttpEncoder.php">HttpEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -293,6 +299,54 @@ the Row from it and pagination reads the same map.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$batch</span>
                 : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <abbr title="\Flow\ETL\Row\TypedRowValues">TypedRowValues</abbr>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_structuredBody">
+        structuredBody()
+        <a href="classes/Flow-ETL-Adapter-Http-HttpEncoder.html#method_structuredBody" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/HttpEncoder.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-httpencoder.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/HttpEncoder.php">HttpEncoder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">structuredBody</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$response</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$response</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -333,6 +387,7 @@ the Row from it and pagination reads the same map.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Http-HttpEncoder.html#method_decode">decode()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Http-HttpEncoder.html#method_encode">encode()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Http-HttpEncoder.html#method_structuredBody">structuredBody()</a></li>
                                     </ul>
             </li>
                     </ul>

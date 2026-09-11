@@ -111,6 +111,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_status"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\AsyncAWSS3Filesystem\u003A\u003Asupports\u0028\u0029",
+            "name": "supports",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_supports"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\AsyncAWSS3Filesystem\u003A\u003AwriteTo\u0028\u0029",
             "name": "writeTo",
             "summary": "",

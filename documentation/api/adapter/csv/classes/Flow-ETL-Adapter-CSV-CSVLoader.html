@@ -110,7 +110,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Flow\ETL\Loader\Closure">Closure</abbr>,                             <abbr title="\Flow\ETL\Loader\FileLoader">FileLoader</abbr>,                             <abbr title="\Flow\ETL\Loader">Loader</abbr>                    </span>
+                            <abbr title="\Flow\ETL\Loader\Closure">Closure</abbr>,                             <abbr title="\Flow\ETL\Loader\Discardable">Discardable</abbr>,                             <abbr title="\Flow\ETL\Loader\FileLoader">FileLoader</abbr>,                             <abbr title="\Flow\ETL\Loader">Loader</abbr>,                             <abbr title="\Flow\ETL\Loader\PartitioningLoader">PartitioningLoader</abbr>                    </span>
     
     </h2>
 
@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -142,7 +142,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\Closure">Closure</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\FileLoader">FileLoader</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader">Loader</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\Closure">Closure</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\Discardable">Discardable</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\FileLoader">FileLoader</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader">Loader</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\PartitioningLoader">PartitioningLoader</abbr></dt>    </dl>
 
 
 
@@ -176,9 +176,27 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_discard">discard()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_load">load()</a>
     <span>
                                 &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_partitionBy">partitionBy()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_saveMode">saveMode()</a>
+    <span>
+                                &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -257,14 +275,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -276,6 +294,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$path</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr></span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$filesystem</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -301,7 +326,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -345,7 +370,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -375,6 +400,50 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_discard">
+        discard()
+        <a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_discard" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">91</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">discard</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$context</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_load">
         load()
         <a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_load" class="headerlink"><i class="fas fa-link"></i></a>
@@ -383,7 +452,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -426,6 +495,102 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_partitionBy">
+        partitionBy()
+        <a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_partitionBy" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">78</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">partitionBy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Loader\Partitioning">Partitioning</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partitioning</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$partitioning</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Loader\Partitioning">Partitioning</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_saveMode">
+        saveMode()
+        <a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_saveMode" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">130</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">saveMode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Filesystem\SaveMode">SaveMode</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$mode</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Filesystem\SaveMode">SaveMode</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_withDateFormat">
         withDateFormat()
         <a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_withDateFormat" class="headerlink"><i class="fas fa-link"></i></a>
@@ -434,7 +599,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -482,7 +647,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -530,7 +695,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -578,7 +743,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
     </aside>
 
@@ -626,7 +791,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -674,7 +839,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
@@ -722,7 +887,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 
     </aside>
 
@@ -770,7 +935,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvloader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLoader.php">CSVLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 
     </aside>
 
@@ -846,7 +1011,10 @@
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_closure">closure()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_destination">destination()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_discard">discard()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_load">load()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_partitionBy">partitionBy()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_saveMode">saveMode()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_withDateFormat">withDateFormat()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_withDateTimeFormat">withDateTimeFormat()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_withEnclosure">withEnclosure()</a></li>

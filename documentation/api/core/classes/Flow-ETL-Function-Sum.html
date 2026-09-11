@@ -131,6 +131,9 @@
             implements
                             <a href="classes/Flow-ETL-Function-AggregatingFunction.html"><abbr title="\Flow\ETL\Function\AggregatingFunction">AggregatingFunction</abbr></a>,                             <a href="classes/Flow-ETL-Function-FrameAccumulating.html"><abbr title="\Flow\ETL\Function\FrameAccumulating">FrameAccumulating</abbr></a>,                             <a href="classes/Flow-ETL-Function-WindowFunction.html"><abbr title="\Flow\ETL\Function\WindowFunction">WindowFunction</abbr></a>                    </span>
     
+            <span class="phpdocumentor-element__extends">
+            uses
+                            <a href="classes/Flow-ETL-Function-ResolvesFromChildren.html"><abbr title="\Flow\ETL\Function\ResolvesFromChildren">ResolvesFromChildren</abbr></a>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -203,10 +206,25 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-Sum.html#method_children">children()</a>
+    <span>
+                                &nbsp;: array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;    </span>
+</dt>
+<dd>Every operand of this node that is an expression, in constructor order.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-Sum.html#method_outputName">outputName()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Decided in the constructor, never mutated.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Sum.html#method_over">over()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
+<dd>Returns a copy bound to $window. Never mutates $this.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Sum.html#method_references">references()</a>
@@ -215,10 +233,18 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Function-Sum.html#method_result">result()</a>
+    <a class="" href="classes/Flow-ETL-Function-ResolvesFromChildren.html#method_resolved">resolved()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: bool    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-Sum.html#method_returns">returns()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>float, not the argument type - RunningSum::add() promotes to float on int overflow, so integer
+would be a declaration the accumulator can violate on ordinary data</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Sum.html#method_toString">toString()</a>
@@ -227,9 +253,21 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-Sum.html#method_value">value()</a>
+    <span>
+                                &nbsp;: null|array&lt;string|int, mixed&gt;|bool|float|int|object|string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Sum.html#method_window">window()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-Sum.html#method_withChildren">withChildren()</a>
+    <span>
+                                &nbsp;: static    </span>
 </dt>
 
     </dl>
@@ -260,14 +298,14 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$window</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -286,6 +324,13 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
                 <span class="phpdocumentor-argument-list__argument__name">$exact</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|bool</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$window</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -311,7 +356,7 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -359,7 +404,7 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -410,7 +455,7 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -446,6 +491,84 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_children">
+        children()
+        <a href="classes/Flow-ETL-Function-Sum.html#method_children" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">47</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Every operand of this node that is an expression, in constructor order.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">children</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_outputName">
+        outputName()
+        <a href="classes/Flow-ETL-Function-Sum.html#method_outputName" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">110</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Decided in the constructor, never mutated.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">outputName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_over">
         over()
         <a href="classes/Flow-ETL-Function-Sum.html#method_over" class="headerlink"><i class="fas fa-link"></i></a>
@@ -454,11 +577,12 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Returns a copy bound to $window. Never mutates $this.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">over</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$window</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
@@ -502,7 +626,7 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -537,45 +661,75 @@ statically enumerated, so spill column pruning must be disabled</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_result">
-        result()
-        <a href="classes/Flow-ETL-Function-Sum.html#method_result" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_resolved">
+        resolved()
+        <a href="classes/Flow-ETL-Function-ResolvesFromChildren.html#method_resolved" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ResolvesFromChildren.php"><a href="files/src-core-etl-src-flow-etl-function-resolvesfromchildren.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ResolvesFromChildren.php">ResolvesFromChildren.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">result</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-EntryFactory.html"><abbr title="\Flow\ETL\Row\EntryFactory">EntryFactory</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entryFactory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">resolved</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entryFactory</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-EntryFactory.html"><abbr title="\Flow\ETL\Row\EntryFactory">EntryFactory</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
         
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_returns">
+        returns()
+        <a href="classes/Flow-ETL-Function-Sum.html#method_returns" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">121</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">float, not the argument type - RunningSum::add() promotes to float on int overflow, so integer
+would be a declaration the accumulator can violate on ordinary data</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">returns</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
             </section>
 
 </article>
@@ -593,7 +747,7 @@ statically enumerated, so spill column pruning must be disabled</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">135</span>
 
     </aside>
 
@@ -623,6 +777,44 @@ statically enumerated, so spill column pruning must be disabled</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_value">
+        value()
+        <a href="classes/Flow-ETL-Function-Sum.html#method_value" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">126</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">value</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|array&lt;string|int, mixed&gt;|bool|float|int|object|string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">null|array&lt;string|int, mixed&gt;|bool|float|int|object|string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_window">
         window()
         <a href="classes/Flow-ETL-Function-Sum.html#method_window" class="headerlink"><i class="fas fa-link"></i></a>
@@ -631,7 +823,7 @@ statically enumerated, so spill column pruning must be disabled</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -652,6 +844,54 @@ statically enumerated, so spill column pruning must be disabled</p>
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withChildren">
+        withChildren()
+        <a href="classes/Flow-ETL-Function-Sum.html#method_withChildren" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withChildren</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$children</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$children</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
             </section>
 
 </article>
@@ -681,11 +921,16 @@ statically enumerated, so spill column pruning must be disabled</p>
                                             <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_accumulator">accumulator()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_aggregate">aggregate()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_apply">apply()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_children">children()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_outputName">outputName()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_over">over()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_references">references()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_result">result()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-ResolvesFromChildren.html#method_resolved">resolved()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_returns">returns()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_toString">toString()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_value">value()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_window">window()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_withChildren">withChildren()</a></li>
                                     </ul>
             </li>
                     </ul>

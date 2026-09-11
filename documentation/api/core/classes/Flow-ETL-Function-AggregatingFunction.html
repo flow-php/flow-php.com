@@ -124,12 +124,15 @@
     <article class="phpdocumentor-element -interface">
         <h2 class="phpdocumentor-content__title">
     AggregatingFunction
+            <span class="phpdocumentor-element__extends">
+            extends
+                            <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>                    </span>
         </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php"><a href="files/src-core-etl-src-flow-etl-function-aggregatingfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php">AggregatingFunction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
@@ -162,15 +165,43 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-FunctionTree.html#method_children">children()</a>
+    <span>
+                                &nbsp;: array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;    </span>
+</dt>
+<dd>Every operand of this node that is an expression, in constructor order.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-AggregatingFunction.html#method_outputName">outputName()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Decided in the constructor, never mutated.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-AggregatingFunction.html#method_references">references()</a>
     <span>
                                 &nbsp;: null|array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Function-AggregatingFunction.html#method_result">result()</a>
+    <a class="" href="classes/Flow-ETL-Function-FunctionTree.html#method_resolved">resolved()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>True when this node and every node in children() can answer returns().</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-AggregatingFunction.html#method_returns">returns()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>An OptionalType return declares the produced column nullable; there is no nullable() peer.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-AggregatingFunction.html#method_value">value()</a>
+    <span>
+                                &nbsp;: null|array&lt;string|int, mixed&gt;|bool|float|int|object|string    </span>
 </dt>
 
     </dl>
@@ -202,7 +233,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php"><a href="files/src-core-etl-src-flow-etl-function-aggregatingfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php">AggregatingFunction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -245,6 +276,86 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_children">
+        children()
+        <a href="classes/Flow-ETL-Function-FunctionTree.html#method_children" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/FunctionTree.php"><a href="files/src-core-etl-src-flow-etl-function-functiontree.html"><abbr title="src/core/etl/src/Flow/ETL/Function/FunctionTree.php">FunctionTree.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">15</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Every operand of this node that is an expression, in constructor order.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">children</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Raw scalars, enums, Types and scope-introducing bodies are fields, not children.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_outputName">
+        outputName()
+        <a href="classes/Flow-ETL-Function-AggregatingFunction.html#method_outputName" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php"><a href="files/src-core-etl-src-flow-etl-function-aggregatingfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php">AggregatingFunction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Decided in the constructor, never mutated.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">outputName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_references">
         references()
         <a href="classes/Flow-ETL-Function-AggregatingFunction.html#method_references" class="headerlink"><i class="fas fa-link"></i></a>
@@ -253,7 +364,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php"><a href="files/src-core-etl-src-flow-etl-function-aggregatingfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php">AggregatingFunction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -288,45 +399,113 @@ statically enumerated (disables spill column pruning)</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_result">
-        result()
-        <a href="classes/Flow-ETL-Function-AggregatingFunction.html#method_result" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_resolved">
+        resolved()
+        <a href="classes/Flow-ETL-Function-FunctionTree.html#method_resolved" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php"><a href="files/src-core-etl-src-flow-etl-function-aggregatingfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php">AggregatingFunction.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/FunctionTree.php"><a href="files/src-core-etl-src-flow-etl-function-functiontree.html"><abbr title="src/core/etl/src/Flow/ETL/Function/FunctionTree.php">FunctionTree.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">True when this node and every node in children() can answer returns().</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">result</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-EntryFactory.html"><abbr title="\Flow\ETL\Row\EntryFactory">EntryFactory</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entryFactory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">resolved</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entryFactory</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-EntryFactory.html"><abbr title="\Flow\ETL\Row\EntryFactory">EntryFactory</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
         
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_returns">
+        returns()
+        <a href="classes/Flow-ETL-Function-AggregatingFunction.html#method_returns" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php"><a href="files/src-core-etl-src-flow-etl-function-aggregatingfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php">AggregatingFunction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">32</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">An OptionalType return declares the produced column nullable; there is no nullable() peer.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">returns</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_value">
+        value()
+        <a href="classes/Flow-ETL-Function-AggregatingFunction.html#method_value" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php"><a href="files/src-core-etl-src-flow-etl-function-aggregatingfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/AggregatingFunction.php">AggregatingFunction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">value</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|array&lt;string|int, mixed&gt;|bool|float|int|object|string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">null|array&lt;string|int, mixed&gt;|bool|float|int|object|string</span>
             </section>
 
 </article>
@@ -352,8 +531,12 @@ statically enumerated (disables spill column pruning)</p>
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-ETL-Function-AggregatingFunction.html#method_aggregate">aggregate()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Function-FunctionTree.html#method_children">children()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Function-AggregatingFunction.html#method_outputName">outputName()</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Function-AggregatingFunction.html#method_references">references()</a></li>
-                                                    <li class=""><a href="classes/Flow-ETL-Function-AggregatingFunction.html#method_result">result()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Function-FunctionTree.html#method_resolved">resolved()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Function-AggregatingFunction.html#method_returns">returns()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Function-AggregatingFunction.html#method_value">value()</a></li>
                                             </ul>
                 </li>
             

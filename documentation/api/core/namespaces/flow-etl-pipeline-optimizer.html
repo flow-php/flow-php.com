@@ -140,7 +140,8 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Pipeline-Optimizer-BatchSizeOptimization.html"><abbr title="\Flow\ETL\Pipeline\Optimizer\BatchSizeOptimization">BatchSizeOptimization</abbr></a></dt><dd>The goal of this optimizer is to detect if there is a loader that supports batching and optimize pipeline to use it.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Pipeline-Optimizer-LimitOptimization.html"><abbr title="\Flow\ETL\Pipeline\Optimizer\LimitOptimization">LimitOptimization</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Pipeline-Optimizer-LimitOptimization.html"><abbr title="\Flow\ETL\Pipeline\Optimizer\LimitOptimization">LimitOptimization</abbr></a></dt><dd>The limit operator stays in the plan, so a step missing from the allow-lists only costs the push; a step
+that changes the row count on them would make the source read too few rows.</dd>    </dl>
 
 
 

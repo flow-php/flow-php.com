@@ -142,11 +142,14 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">Every as*() arm separates the two axes: a genuine NULL flowing through is not an error and
+propagates (or takes the arm&#039;s null-input default), while a non-null value that cannot coerce
+throws - optional() is the door for pipelines that want the old silent tolerance.</p>
+
 
 
 
@@ -189,13 +192,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Parameter.html#method_asBoolean">asBoolean()</a>
     <span>
-                                &nbsp;: bool    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Function-Parameter.html#method_asEntry">asEntry()</a>
-    <span>
-                                &nbsp;: null|<a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: bool|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -219,8 +216,9 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Parameter.html#method_asInt">asInt()</a>
     <span>
-                                &nbsp;: int|null    </span>
+                                &nbsp;: ($default is null ? int|null : int)    </span>
 </dt>
+<dd>$default applies to a NULL input only - a malformed value always throws.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Parameter.html#method_asListOfObjects">asListOfObjects()</a>
@@ -231,8 +229,9 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Parameter.html#method_asNumber">asNumber()</a>
     <span>
-                                &nbsp;: int|float|null    </span>
+                                &nbsp;: ($default is null ? int|float|null : int|float)    </span>
 </dt>
+<dd>$default applies to a NULL input only - a malformed value always throws.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Parameter.html#method_asObject">asObject()</a>
@@ -243,13 +242,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Parameter.html#method_asString">asString()</a>
     <span>
-                                &nbsp;: string|null    </span>
+                                &nbsp;: ($default is null ? string|null : string)    </span>
 </dt>
+<dd>$default applies to a NULL input only - a malformed value always throws.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Function-Parameter.html#method_asType">asType()</a>
+    <a class="" href="classes/Flow-ETL-Function-Parameter.html#method_asValue">asValue()</a>
     <span>
-                                &nbsp;: <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: null|array&lt;string|int, mixed&gt;|bool|float|int|object|string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -286,7 +286,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -330,7 +330,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -405,7 +405,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -460,14 +460,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">asBoolean</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">asBoolean</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -497,55 +497,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_asEntry">
-        asEntry()
-        <a href="classes/Flow-ETL-Function-Parameter.html#method_asEntry" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">83</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">asEntry</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$row</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">null|<a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">bool|null</span>
             </section>
 
 </article>
@@ -563,7 +515,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -638,7 +590,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -693,7 +645,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
     </aside>
 
@@ -768,14 +720,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">189</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">$default applies to a NULL input only - a malformed value always throws.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">asInt</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+                    <span class="phpdocumentor-signature__name">asInt</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">($default is null ? int|null : int)</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -807,27 +760,12 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="method_asInt_tags">
-        Tags
-        <a href="classes/Flow-ETL-Function-Parameter.html#method_asInt_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">phpstan-return</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                            <section class="phpdocumentor-description"><p>($default is null ? int|null : int)</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
         
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int|null</span>
+        <span class="phpdocumentor-signature__response_type">($default is null ? int|null : int)</span>
             </section>
 
 </article>
@@ -845,7 +783,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">211</span>
 
     </aside>
 
@@ -907,14 +845,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">176</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">$default applies to a NULL input only - a malformed value always throws.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">asNumber</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|float|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|float|null</span></code>
+                    <span class="phpdocumentor-signature__name">asNumber</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|float|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">($default is null ? int|float|null : int|float)</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -946,27 +885,12 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="method_asNumber_tags">
-        Tags
-        <a href="classes/Flow-ETL-Function-Parameter.html#method_asNumber_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">phpstan-return</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                            <section class="phpdocumentor-description"><p>($default is null ? int|float|null : int|float)</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
         
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int|float|null</span>
+        <span class="phpdocumentor-signature__response_type">($default is null ? int|float|null : int|float)</span>
             </section>
 
 </article>
@@ -984,7 +908,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">196</span>
+    <span class="phpdocumentor-element-found-in__line">263</span>
 
     </aside>
 
@@ -1039,14 +963,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">285</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">$default applies to a NULL input only - a malformed value always throws.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">asString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+                    <span class="phpdocumentor-signature__name">asString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">($default is null ? string|null : string)</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1078,27 +1003,12 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="method_asString_tags">
-        Tags
-        <a href="classes/Flow-ETL-Function-Parameter.html#method_asString_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">phpstan-return</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                            <section class="phpdocumentor-description"><p>($default is null ? string|null : string)</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
         
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string|null</span>
+        <span class="phpdocumentor-signature__response_type">($default is null ? string|null : string)</span>
             </section>
 
 </article>
@@ -1108,22 +1018,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_asType">
-        asType()
-        <a href="classes/Flow-ETL-Function-Parameter.html#method_asType" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_asValue">
+        asValue()
+        <a href="classes/Flow-ETL-Function-Parameter.html#method_asValue" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">asType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">asValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|array&lt;string|int, mixed&gt;|bool|float|int|object|string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1138,13 +1048,6 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$context</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
             </dl>
 
     
@@ -1153,7 +1056,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">null|array&lt;string|int, mixed&gt;|bool|float|int|object|string</span>
             </section>
 
 </article>
@@ -1171,7 +1074,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Parameter.php"><a href="files/src-core-etl-src-flow-etl-function-parameter.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Parameter.php">Parameter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">305</span>
 
     </aside>
 
@@ -1238,7 +1141,6 @@
                                             <li class=""><a href="classes/Flow-ETL-Function-Parameter.html#method_as">as()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Parameter.html#method_asArray">asArray()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Parameter.html#method_asBoolean">asBoolean()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Function-Parameter.html#method_asEntry">asEntry()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Parameter.html#method_asEnum">asEnum()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Parameter.html#method_asFloat">asFloat()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Parameter.html#method_asInstanceOf">asInstanceOf()</a></li>
@@ -1247,7 +1149,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Function-Parameter.html#method_asNumber">asNumber()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Parameter.html#method_asObject">asObject()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Parameter.html#method_asString">asString()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Function-Parameter.html#method_asType">asType()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-Parameter.html#method_asValue">asValue()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Parameter.html#method_eval">eval()</a></li>
                                     </ul>
             </li>

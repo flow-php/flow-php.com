@@ -143,7 +143,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/Merge/KWayMerge.php"><a href="files/src-core-etl-src-flow-etl-sort-merge-kwaymerge.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/Merge/KWayMerge.php">KWayMerge.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
@@ -209,14 +209,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/Merge/KWayMerge.php"><a href="files/src-core-etl-src-flow-etl-sort-merge-kwaymerge.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/Merge/KWayMerge.php">KWayMerge.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Bucketing-BucketsStorage.html"><abbr title="\Flow\ETL\Bucketing\BucketsStorage">BucketsStorage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$storage</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-References.html"><abbr title="\Flow\ETL\Row\References">References</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refs</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-References.html"><abbr title="\Flow\ETL\Row\References">References</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refs</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -224,13 +224,6 @@
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$storage</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Bucketing-BucketsStorage.html"><abbr title="\Flow\ETL\Bucketing\BucketsStorage">BucketsStorage</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$refs</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-References.html"><abbr title="\Flow\ETL\Row\References">References</abbr></a></span>
@@ -274,7 +267,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">merge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucketIds</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">merge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <abbr title="\Flow\ETL\Bucketing\BucketRun">BucketRun</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$runs</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -283,8 +276,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$bucketIds</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, string&gt;</span>
+                <span class="phpdocumentor-argument-list__argument__name">$runs</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <abbr title="\Flow\ETL\Bucketing\BucketRun">BucketRun</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 

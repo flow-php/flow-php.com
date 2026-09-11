@@ -166,6 +166,14 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method_maxBindParameters">maxBindParameters()</a>
+    <span>
+                                &nbsp;: int<1, max>    </span>
+</dt>
+<dd>The maximum number of bind parameters one statement may carry on this platform. A bulk statement
+binds rows x columns parameters, so it is chunked to intdiv(this, columns) rows.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method_prepareDelete">prepareDelete()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -247,6 +255,46 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_maxBindParameters">
+        maxBindParameters()
+        <a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method_maxBindParameters" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLDialect.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-dialect-postgresqldialect.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLDialect.php">PostgreSQLDialect.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">26</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The maximum number of bind parameters one statement may carry on this platform. A bulk statement
+binds rows x columns parameters, so it is chunked to intdiv(this, columns) rows.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">maxBindParameters</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int<1, max></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int<1, max></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_prepareDelete">
         prepareDelete()
         <a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method_prepareDelete" class="headerlink"><i class="fas fa-link"></i></a>
@@ -255,7 +303,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLDialect.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-dialect-postgresqldialect.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLDialect.php">PostgreSQLDialect.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -310,7 +358,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLDialect.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-dialect-postgresqldialect.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLDialect.php">PostgreSQLDialect.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -372,7 +420,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLDialect.php"><a href="files/src-lib-doctrine-dbal-bulk-src-flow-doctrine-bulk-dialect-postgresqldialect.html"><abbr title="src/lib/doctrine-dbal-bulk/src/Flow/Doctrine/Bulk/Dialect/PostgreSQLDialect.php">PostgreSQLDialect.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
@@ -457,6 +505,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method_maxBindParameters">maxBindParameters()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method_prepareDelete">prepareDelete()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method_prepareInsert">prepareInsert()</a></li>
                                             <li class=""><a href="classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method_prepareUpdate">prepareUpdate()</a></li>

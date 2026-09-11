@@ -119,7 +119,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -136,6 +136,21 @@
 
 
 
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Flow-Filesystem-Partition.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Filesystem-Partition.html#constant_NULL_VALUE">NULL_VALUE</a>
+    <span>
+        &nbsp;: string&nbsp;= &#039;__HIVE_DEFAULT_PARTITION__&#039;                            </span>
+</dt>
+<dd>A null partition value has no directory name of its own, so it borrows Hive&#039;s, which every
+engine that reads a Hive tree already understands.</dd>
+
+    </dl>
 
 
 <h4 id="toc-properties">
@@ -153,7 +168,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Filesystem-Partition.html#property_value">$value</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: string|null            </span>
 </dt>
 
     </dl>
@@ -171,9 +186,27 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Partition.html#method_decode">decode()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Partition.html#method_encode">encode()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-Partition.html#method_fromArray">fromArray()</a>
     <span>
                                 &nbsp;: array&lt;string|int, <a href="classes/Flow-Filesystem-Partition.html"><abbr title="\Flow\Filesystem\Partition">Partition</abbr></a>&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Partition.html#method_fromSegment">fromSegment()</a>
+    <span>
+                                &nbsp;: null|self    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -183,28 +216,69 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Partition.html#method_fromValue">fromValue()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-Partition.html#method_id">id()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Filesystem-Partition.html#method_reference">reference()</a>
+    <a class="" href="classes/Flow-Filesystem-Partition.html#method_segment">segment()</a>
     <span>
-                                &nbsp;: <abbr title="\Flow\ETL\Row\Reference">Reference</abbr>    </span>
+                                &nbsp;: string    </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Filesystem-Partition.html#method_valueFromRow">valueFromRow()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
+<dd>The `name=value` directory segment. Every path built from partitions goes through here, so the
+encoding on write and the decoding on read cannot drift apart.</dd>
 
     </dl>
 
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Flow-Filesystem-Partition.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NULL_VALUE">
+        NULL_VALUE
+        <a href="classes/Flow-Filesystem-Partition.html#constant_NULL_VALUE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A null partition value has no directory name of its own, so it borrows Hive&#039;s, which every
+engine that reads a Hive tree already understands.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">NULL_VALUE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;__HIVE_DEFAULT_PARTITION__&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
@@ -230,7 +304,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -267,7 +341,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -275,7 +349,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">string</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$value</span>
     </code>
 
@@ -309,14 +383,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -333,7 +407,7 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$value</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -352,6 +426,102 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_decode">
+        decode()
+        <a href="classes/Flow-Filesystem-Partition.html#method_decode" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">decode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$segment</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$segment</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_encode">
+        encode()
+        <a href="classes/Flow-Filesystem-Partition.html#method_encode" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">encode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_fromArray">
         fromArray()
         <a href="classes/Flow-Filesystem-Partition.html#method_fromArray" class="headerlink"><i class="fas fa-link"></i></a>
@@ -360,7 +530,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -400,6 +570,58 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_fromSegment">
+        fromSegment()
+        <a href="classes/Flow-Filesystem-Partition.html#method_fromSegment" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromSegment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$segment</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$segment</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">null|self</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>null when the segment is not a <code class="prettyprint">name=value</code> pair at all</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_fromUri">
         fromUri()
         <a href="classes/Flow-Filesystem-Partition.html#method_fromUri" class="headerlink"><i class="fas fa-link"></i></a>
@@ -408,7 +630,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -446,6 +668,68 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromValue">
+        fromValue()
+        <a href="classes/Flow-Filesystem-Partition.html#method_fromValue" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">113</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$type</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_id">
@@ -456,7 +740,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -486,22 +770,24 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_reference">
-        reference()
-        <a href="classes/Flow-Filesystem-Partition.html#method_reference" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_segment">
+        segment()
+        <a href="classes/Flow-Filesystem-Partition.html#method_segment" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The `name=value` directory segment. Every path built from partitions goes through here, so the
+encoding on write and the decoding on read cannot drift apart.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">reference</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">segment</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -514,60 +800,9 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></span>
+        <span class="phpdocumentor-signature__response_type">string</span>
             </section>
 
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_valueFromRow">
-        valueFromRow()
-        <a href="classes/Flow-Filesystem-Partition.html#method_valueFromRow" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Partition.php"><a href="files/src-lib-filesystem-src-flow-filesystem-partition.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Partition.php">Partition.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">97</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">valueFromRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Row">Row</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$ref</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$row</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Row">Row</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-    
 </article>
             </section>
 
@@ -583,10 +818,17 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Flow-Filesystem-Partition.html#toc-constants">Constants</a></li>
                                                             <li><a href="classes/Flow-Filesystem-Partition.html#toc-properties">Properties</a></li>
                                                             <li><a href="classes/Flow-Filesystem-Partition.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-Filesystem-Partition.html#constant_NULL_VALUE">NULL_VALUE</a></li>
+                                            </ul>
+                </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
@@ -600,11 +842,14 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Filesystem-Partition.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Partition.html#method_decode">decode()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Partition.html#method_encode">encode()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Partition.html#method_fromArray">fromArray()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Partition.html#method_fromSegment">fromSegment()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Partition.html#method_fromUri">fromUri()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Partition.html#method_fromValue">fromValue()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Partition.html#method_id">id()</a></li>
-                                            <li class=""><a href="classes/Flow-Filesystem-Partition.html#method_reference">reference()</a></li>
-                                            <li class=""><a href="classes/Flow-Filesystem-Partition.html#method_valueFromRow">valueFromRow()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Partition.html#method_segment">segment()</a></li>
                                     </ul>
             </li>
                     </ul>

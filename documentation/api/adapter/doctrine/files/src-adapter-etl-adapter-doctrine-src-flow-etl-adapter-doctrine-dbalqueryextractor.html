@@ -116,7 +116,9 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-Doctrine-DbalQueryExtractor.html"><abbr title="\Flow\ETL\Adapter\Doctrine\DbalQueryExtractor">DbalQueryExtractor</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-Doctrine-DbalQueryExtractor.html"><abbr title="\Flow\ETL\Adapter\Doctrine\DbalQueryExtractor">DbalQueryExtractor</abbr></a></dt><dd>batchSize() is a yield cap, not a fetch size: fetchAllAssociative() materialises the whole result set per
+parameter set, so lowering it cannot lower peak memory. The paginating extractors default to 1000 because
+their number IS a round trip.</dd>    </dl>
 
 
 

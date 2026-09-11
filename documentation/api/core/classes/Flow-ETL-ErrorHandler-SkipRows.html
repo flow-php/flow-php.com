@@ -143,7 +143,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/ErrorHandler/SkipRows.php"><a href="files/src-core-etl-src-flow-etl-errorhandler-skiprows.html"><abbr title="src/core/etl/src/Flow/ETL/ErrorHandler/SkipRows.php">SkipRows.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">9</span>
 
     </aside>
 
@@ -177,15 +177,21 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_skipRows">skipRows()</a>
+    <a class="" href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_onExtraction">onExtraction()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-ErrorHandler-ExtractionAction.html"><abbr title="\Flow\ETL\ErrorHandler\ExtractionAction">ExtractionAction</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_throw">throw()</a>
+    <a class="" href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_onLoading">onLoading()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-ErrorHandler-LoadingAction.html"><abbr title="\Flow\ETL\ErrorHandler\LoadingAction">LoadingAction</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_onTransformation">onTransformation()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-ErrorHandler-TransformationAction.html"><abbr title="\Flow\ETL\ErrorHandler\TransformationAction">TransformationAction</abbr></a>    </span>
 </dt>
 
     </dl>
@@ -208,22 +214,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_skipRows">
-        skipRows()
-        <a href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_skipRows" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_onExtraction">
+        onExtraction()
+        <a href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_onExtraction" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/ErrorHandler/SkipRows.php"><a href="files/src-core-etl-src-flow-etl-errorhandler-skiprows.html"><abbr title="src/core/etl/src/Flow/ETL/ErrorHandler/SkipRows.php">SkipRows.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">11</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">skipRows</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Throwable">Throwable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$error</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">onExtraction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-ErrorHandler-ExtractionError.html"><abbr title="\Flow\ETL\ErrorHandler\ExtractionError">ExtractionError</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$error</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-ErrorHandler-ExtractionAction.html"><abbr title="\Flow\ETL\ErrorHandler\ExtractionAction">ExtractionAction</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -233,14 +239,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$error</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Throwable">Throwable</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-ErrorHandler-ExtractionError.html"><abbr title="\Flow\ETL\ErrorHandler\ExtractionError">ExtractionError</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -253,7 +252,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-ErrorHandler-ExtractionAction.html"><abbr title="\Flow\ETL\ErrorHandler\ExtractionAction">ExtractionAction</abbr></a></span>
             </section>
 
 </article>
@@ -263,22 +262,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_throw">
-        throw()
-        <a href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_throw" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_onLoading">
+        onLoading()
+        <a href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_onLoading" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/ErrorHandler/SkipRows.php"><a href="files/src-core-etl-src-flow-etl-errorhandler-skiprows.html"><abbr title="src/core/etl/src/Flow/ETL/ErrorHandler/SkipRows.php">SkipRows.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">throw</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Throwable">Throwable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$error</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">onLoading</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-ErrorHandler-LoadingError.html"><abbr title="\Flow\ETL\ErrorHandler\LoadingError">LoadingError</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$error</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-ErrorHandler-LoadingAction.html"><abbr title="\Flow\ETL\ErrorHandler\LoadingAction">LoadingAction</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -288,14 +287,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$error</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Throwable">Throwable</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-ErrorHandler-LoadingError.html"><abbr title="\Flow\ETL\ErrorHandler\LoadingError">LoadingError</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -308,7 +300,55 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-ErrorHandler-LoadingAction.html"><abbr title="\Flow\ETL\ErrorHandler\LoadingAction">LoadingAction</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_onTransformation">
+        onTransformation()
+        <a href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_onTransformation" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/ErrorHandler/SkipRows.php"><a href="files/src-core-etl-src-flow-etl-errorhandler-skiprows.html"><abbr title="src/core/etl/src/Flow/ETL/ErrorHandler/SkipRows.php">SkipRows.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">21</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">onTransformation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-ErrorHandler-TransformationError.html"><abbr title="\Flow\ETL\ErrorHandler\TransformationError">TransformationError</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$error</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-ErrorHandler-TransformationAction.html"><abbr title="\Flow\ETL\ErrorHandler\TransformationAction">TransformationAction</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$error</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-ErrorHandler-TransformationError.html"><abbr title="\Flow\ETL\ErrorHandler\TransformationError">TransformationError</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-ErrorHandler-TransformationAction.html"><abbr title="\Flow\ETL\ErrorHandler\TransformationAction">TransformationAction</abbr></a></span>
             </section>
 
 </article>
@@ -334,8 +374,9 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_skipRows">skipRows()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_throw">throw()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_onExtraction">onExtraction()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_onLoading">onLoading()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-ErrorHandler-SkipRows.html#method_onTransformation">onTransformation()</a></li>
                                     </ul>
             </li>
                     </ul>

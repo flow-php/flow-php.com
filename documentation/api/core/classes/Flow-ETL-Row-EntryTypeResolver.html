@@ -142,11 +142,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/EntryTypeResolver.php"><a href="files/src-core-etl-src-flow-etl-row-entrytyperesolver.html"><abbr title="src/core/etl/src/Flow/ETL/Row/EntryTypeResolver.php">EntryTypeResolver.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Resolves the concrete Type an Entry should be created as, entries cannot carry union types.</p>
+            <p class="phpdocumentor-summary">Resolves the concrete member Type of a union column for a given value.</p>
 
 
 
@@ -169,13 +169,6 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Row-EntryTypeResolver.html#method_fromDefinition">fromDefinition()</a>
-    <span>
-                                &nbsp;: <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>OptionalType cannot wrap a UnionType, nullability of union definitions is handled during union resolution.</dd>
-
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Row-EntryTypeResolver.html#method_fromUnion">fromUnion()</a>
     <span>
@@ -204,55 +197,6 @@ member the value can be cast to, mirroring UnionType::cast().</dd>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_fromDefinition">
-        fromDefinition()
-        <a href="classes/Flow-ETL-Row-EntryTypeResolver.html#method_fromDefinition" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/EntryTypeResolver.php"><a href="files/src-core-etl-src-flow-etl-row-entrytyperesolver.html"><abbr title="src/core/etl/src/Flow/ETL/Row/EntryTypeResolver.php">EntryTypeResolver.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">32</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">OptionalType cannot wrap a UnionType, nullability of union definitions is handled during union resolution.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">fromDefinition</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definition</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$definition</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a>&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_fromUnion">
         fromUnion()
         <a href="classes/Flow-ETL-Row-EntryTypeResolver.html#method_fromUnion" class="headerlink"><i class="fas fa-link"></i></a>
@@ -261,7 +205,7 @@ member the value can be cast to, mirroring UnionType::cast().</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/EntryTypeResolver.php"><a href="files/src-core-etl-src-flow-etl-row-entrytyperesolver.html"><abbr title="src/core/etl/src/Flow/ETL/Row/EntryTypeResolver.php">EntryTypeResolver.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -349,7 +293,6 @@ member the value can be cast to, mirroring UnionType::cast().</p>
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Flow-ETL-Row-EntryTypeResolver.html#method_fromDefinition">fromDefinition()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Row-EntryTypeResolver.html#method_fromUnion">fromUnion()</a></li>
                                     </ul>
             </li>

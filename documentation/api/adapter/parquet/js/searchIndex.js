@@ -61,10 +61,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "name": "isRepeatable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_isRepeatable"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_extract"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003AunionByName\u0028\u0029",
+            "name": "unionByName",
+            "summary": "Reconcile\u0020every\u0020listed\u0020file\u0027s\u0020schema\u0020instead\u0020of\u0020trusting\u0020the\u0020first\u0020one.",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_unionByName"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003Asource\u0028\u0029",
             "name": "source",
@@ -96,6 +111,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_withOptions"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003AwithSchema\u0028\u0029",
+            "name": "withSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_withSchema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetLoader",
             "name": "ParquetLoader",
             "summary": "",
@@ -106,10 +126,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetLoader.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetLoader\u003A\u003ApartitionBy\u0028\u0029",
+            "name": "partitionBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetLoader.html#method_partitionBy"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetLoader\u003A\u003Aclosure\u0028\u0029",
             "name": "closure",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetLoader.html#method_closure"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetLoader\u003A\u003Adiscard\u0028\u0029",
+            "name": "discard",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetLoader.html#method_discard"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetLoader\u003A\u003Adestination\u0028\u0029",
             "name": "destination",
@@ -120,6 +150,11 @@ Search.appendIndex(
             "name": "load",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetLoader.html#method_load"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetLoader\u003A\u003AsaveMode\u0028\u0029",
+            "name": "saveMode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetLoader.html#method_saveMode"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetLoader\u003A\u003AwithCompressions\u0028\u0029",
             "name": "withCompressions",
@@ -140,6 +175,36 @@ Search.appendIndex(
             "name": "withSchema",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetLoader.html#method_withSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetSourceFile",
+            "name": "ParquetSourceFile",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetSourceFile.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetSourceFile\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetSourceFile.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetSourceFile\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetSourceFile.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetSourceFile\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "Pruning\u0020belongs\u0020to\u0020the\u0020describer,\u0020not\u0020the\u0020fold\u003A\u0020it\u0020is\u0020applied\u0020per\u0020file,\u0020before\u0020the\u0020merge.",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetSourceFile.html#method_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetSourceFile\u003A\u003Asource\u0028\u0029",
+            "name": "source",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetSourceFile.html#method_source"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetSourceFile\u003A\u003A\u0024file",
+            "name": "file",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetSourceFile.html#property_file"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\SchemaConverter",
             "name": "SchemaConverter",

@@ -41,15 +41,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "name": "isRepeatable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_isRepeatable"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_extract"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_schema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003Asource\u0028\u0029",
             "name": "source",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_source"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003AwithSchema\u0028\u0029",
+            "name": "withSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_withSchema"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader",
             "name": "TextLoader",
@@ -61,10 +76,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003ApartitionBy\u0028\u0029",
+            "name": "partitionBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_partitionBy"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003Aclosure\u0028\u0029",
             "name": "closure",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_closure"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003Adiscard\u0028\u0029",
+            "name": "discard",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_discard"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003Adestination\u0028\u0029",
             "name": "destination",
@@ -75,6 +100,11 @@ Search.appendIndex(
             "name": "load",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_load"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003AsaveMode\u0028\u0029",
+            "name": "saveMode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_saveMode"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003AwithNewLineSeparator\u0028\u0029",
             "name": "withNewLineSeparator",

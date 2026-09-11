@@ -41,6 +41,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003Achunk\u0028\u0029",
+            "name": "chunk",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_chunk"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkData\u003A\u003Acolumns\u0028\u0029",
             "name": "columns",
             "summary": "",
@@ -116,6 +121,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-BulkData.html#method_types"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkStatement",
+            "name": "BulkStatement",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-BulkStatement.html"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkStatement\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-BulkStatement.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkStatement\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-BulkStatement.html#method_delete"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkStatement\u003A\u003Ainsert\u0028\u0029",
+            "name": "insert",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-BulkStatement.html#method_insert"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\BulkStatement\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-BulkStatement.html#method_update"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Columns",
             "name": "Columns",
             "summary": "",
@@ -130,6 +160,11 @@ Search.appendIndex(
             "name": "all",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Columns.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Columns\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-Columns.html#method_count"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Columns\u003A\u003Ahas\u0028\u0029",
             "name": "has",
@@ -176,6 +211,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-Dialect.html"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\Dialect\u003A\u003AmaxBindParameters\u0028\u0029",
+            "name": "maxBindParameters",
+            "summary": "The\u0020maximum\u0020number\u0020of\u0020bind\u0020parameters\u0020one\u0020statement\u0020may\u0020carry\u0020on\u0020this\u0020platform.\u0020A\u0020bulk\u0020statement\nbinds\u0020rows\u0020x\u0020columns\u0020parameters,\u0020so\u0020it\u0020is\u0020chunked\u0020to\u0020intdiv\u0028this,\u0020columns\u0029\u0020rows.",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-Dialect.html#method_maxBindParameters"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\Dialect\u003A\u003AprepareDelete\u0028\u0029",
             "name": "prepareDelete",
             "summary": "",
@@ -200,6 +240,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLDialect.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLDialect\u003A\u003AmaxBindParameters\u0028\u0029",
+            "name": "maxBindParameters",
+            "summary": "The\u0020maximum\u0020number\u0020of\u0020bind\u0020parameters\u0020one\u0020statement\u0020may\u0020carry\u0020on\u0020this\u0020platform.\u0020A\u0020bulk\u0020statement\nbinds\u0020rows\u0020x\u0020columns\u0020parameters,\u0020so\u0020it\u0020is\u0020chunked\u0020to\u0020intdiv\u0028this,\u0020columns\u0029\u0020rows.",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-MySQLDialect.html#method_maxBindParameters"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\MySQLDialect\u003A\u003AprepareDelete\u0028\u0029",
             "name": "prepareDelete",
@@ -280,6 +325,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLDialect\u003A\u003AmaxBindParameters\u0028\u0029",
+            "name": "maxBindParameters",
+            "summary": "The\u0020maximum\u0020number\u0020of\u0020bind\u0020parameters\u0020one\u0020statement\u0020may\u0020carry\u0020on\u0020this\u0020platform.\u0020A\u0020bulk\u0020statement\nbinds\u0020rows\u0020x\u0020columns\u0020parameters,\u0020so\u0020it\u0020is\u0020chunked\u0020to\u0020intdiv\u0028this,\u0020columns\u0029\u0020rows.",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-PostgreSQLDialect.html#method_maxBindParameters"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\PostgreSQLDialect\u003A\u003AprepareDelete\u0028\u0029",
             "name": "prepareDelete",
@@ -386,6 +436,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteDialect.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteDialect\u003A\u003AmaxBindParameters\u0028\u0029",
+            "name": "maxBindParameters",
+            "summary": "The\u0020maximum\u0020number\u0020of\u0020bind\u0020parameters\u0020one\u0020statement\u0020may\u0020carry\u0020on\u0020this\u0020platform.\u0020A\u0020bulk\u0020statement\nbinds\u0020rows\u0020x\u0020columns\u0020parameters,\u0020so\u0020it\u0020is\u0020chunked\u0020to\u0020intdiv\u0028this,\u0020columns\u0029\u0020rows.",
+            "url": "classes/Flow-Doctrine-Bulk-Dialect-SqliteDialect.html#method_maxBindParameters"
+        },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\Dialect\\SqliteDialect\u003A\u003AprepareDelete\u0028\u0029",
             "name": "prepareDelete",
             "summary": "",
@@ -480,6 +535,16 @@ Search.appendIndex(
             "name": "new",
             "summary": "",
             "url": "classes/Flow-Doctrine-Bulk-InsertOptions.html#method_new"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\LastPreparedStatement",
+            "name": "LastPreparedStatement",
+            "summary": "Consecutive\u0020chunks\u0020of\u0020one\u0020shape\u0020produce\u0020the\u0020same\u0020SQL,\u0020and\u0020preparing\u0020it\u0020again\u0020costs\u0020a\u0020server\u0020round\u0020trip\u0020\u002D\u0020on\npgsql\u0020also\u0020a\u0020parse\u0020of\u0020every\u0020placeholder\u0020\u002D\u0020so\u0020the\u0020last\u0020prepared\u0020statement\u0020is\u0020re\u002Dbound\u0020and\u0020re\u002Dexecuted\u0020instead.",
+            "url": "classes/Flow-Doctrine-Bulk-LastPreparedStatement.html"
+        },                {
+            "fqsen": "\\Flow\\Doctrine\\Bulk\\LastPreparedStatement\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "",
+            "url": "classes/Flow-Doctrine-Bulk-LastPreparedStatement.html#method_execute"
         },                {
             "fqsen": "\\Flow\\Doctrine\\Bulk\\QueryFactory\\DbalQueryFactory",
             "name": "DbalQueryFactory",

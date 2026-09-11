@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/QueryBuilder/InsertQueryBuilder.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-querybuilder-insertquerybuilder.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/QueryBuilder/InsertQueryBuilder.php">InsertQueryBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -159,8 +159,10 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-PostgreSql-QueryBuilder-InsertQueryBuilder.html#method_build">build()</a>
     <span>
-                                &nbsp;: <abbr title="array{\Flow\PostgreSql\QueryBuilder\Sql, list<null|\Flow\PostgreSql\Client\TypedValue>}">TypedValue>}</abbr>    </span>
+                                &nbsp;: <abbr title="array{\Flow\PostgreSql\QueryBuilder\Sql, \Flow\PostgreSql\Client\ConvertedParameters}">ConvertedParameters}</abbr>    </span>
 </dt>
+<dd>Every value already in PostgreSQL&#039;s text form. A column&#039;s converter is resolved once, on its first non-null
+value - so a column of an unmapped type holding only nulls passes.</dd>
 
     </dl>
 
@@ -190,7 +192,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/QueryBuilder/InsertQueryBuilder.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-querybuilder-insertquerybuilder.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/QueryBuilder/InsertQueryBuilder.php">InsertQueryBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -241,14 +243,16 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/QueryBuilder/InsertQueryBuilder.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-querybuilder-insertquerybuilder.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/QueryBuilder/InsertQueryBuilder.php">InsertQueryBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Every value already in PostgreSQL&#039;s text form. A column&#039;s converter is resolved once, on its first non-null
+value - so a column of an unmapped type holding only nulls passes.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">build</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, array&lt;string, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-LoaderOptions-InsertOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\LoaderOptions\InsertOptions">InsertOptions</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="array{\Flow\PostgreSql\QueryBuilder\Sql, list<null|\Flow\PostgreSql\Client\TypedValue>}">TypedValue>}</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">build</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, array&lt;string, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Types\ValueConverters">ValueConverters</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$converters</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-LoaderOptions-InsertOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\LoaderOptions\InsertOptions">InsertOptions</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="array{\Flow\PostgreSql\QueryBuilder\Sql, \Flow\PostgreSql\Client\ConvertedParameters}">ConvertedParameters}</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -273,6 +277,13 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$converters</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\PostgreSql\Client\Types\ValueConverters">ValueConverters</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$options</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-LoaderOptions-InsertOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\LoaderOptions\InsertOptions">InsertOptions</abbr></a>|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
@@ -287,7 +298,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="array{\Flow\PostgreSql\QueryBuilder\Sql, list<null|\Flow\PostgreSql\Client\TypedValue>}">TypedValue>}</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="array{\Flow\PostgreSql\QueryBuilder\Sql, \Flow\PostgreSql\Client\ConvertedParameters}">ConvertedParameters}</abbr></span>
             </section>
 
 </article>

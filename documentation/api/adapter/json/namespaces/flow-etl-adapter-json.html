@@ -113,7 +113,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-JSONEncoder.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONEncoder">JSONEncoder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-JsonLinesLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLinesLoader">JsonLinesLoader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLoader">JsonLoader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-SchemaConverter.html"><abbr title="\Flow\ETL\Adapter\JSON\SchemaConverter">SchemaConverter</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-JsonDocuments.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonDocuments">JsonDocuments</abbr></a></dt><dd>The per-file write counts live here, not on the sink: the separator decision belongs to the run.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-JSONEncoder.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONEncoder">JSONEncoder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-JsonLinesLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLinesLoader">JsonLinesLoader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLoader">JsonLoader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-SchemaConverter.html"><abbr title="\Flow\ETL\Adapter\JSON\SchemaConverter">SchemaConverter</abbr></a></dt>    </dl>
 
     <h4 id="namespaces">
         Namespaces
@@ -149,7 +149,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/functions.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-functions.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -157,7 +157,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_json</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pointer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonExtractor.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonExtractor">JsonExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_json</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pointer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonExtractor.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonExtractor">JsonExtractor</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -195,6 +195,13 @@
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$filesystem</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -214,7 +221,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/functions.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-functions.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -223,7 +230,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_json_lines</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonLinesExtractor.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonLinesExtractor">JsonLinesExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_json_lines</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonLinesExtractor.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonLinesExtractor">JsonLinesExtractor</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -238,6 +245,13 @@
 </ul>
 </section>
 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$filesystem</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
             </dd>
             </dl>
 
@@ -258,7 +272,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/functions.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-functions.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -266,7 +280,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">to_json</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flags</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\JSON\JSON_THROW_ON_ERROR">JSON_THROW_ON_ERROR</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_time_format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\DateTimeInterface::ATOM">DateTimeInterface::ATOM</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$put_rows_in_new_lines</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLoader">JsonLoader</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">to_json</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flags</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\JSON\JSON_THROW_ON_ERROR">JSON_THROW_ON_ERROR</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_time_format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\DateTimeInterface::ATOM">DateTimeInterface::ATOM</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$put_rows_in_new_lines</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLoader">JsonLoader</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -311,6 +325,13 @@
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$filesystem</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -330,7 +351,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/functions.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-functions.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -339,7 +360,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">to_json_lines</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JsonLinesLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLinesLoader">JsonLinesLoader</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">to_json_lines</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JsonLinesLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLinesLoader">JsonLinesLoader</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -348,6 +369,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$path</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$filesystem</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -370,7 +398,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/functions.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-functions.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -379,7 +407,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">schema_from_json_schema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;|<abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$json_schema</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request_factory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Schema">Schema</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">schema_from_json_schema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;|<abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$json_schema</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request_factory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Schema">Schema</abbr></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -417,6 +445,17 @@
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$filesystem</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><ul>
+<li>filesystem used to read local schema references</li>
+</ul>
+</section>
+
+            </dd>
             </dl>
 
     
@@ -436,7 +475,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/functions.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-functions.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 

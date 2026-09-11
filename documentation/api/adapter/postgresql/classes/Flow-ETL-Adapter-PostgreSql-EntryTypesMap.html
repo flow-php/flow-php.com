@@ -123,7 +123,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -191,6 +191,22 @@
 </dt>
 <dd>Maps a PostgreSQL DDL column type back to a canonical Flow type.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toFlowTypeWithTextFloor">toFlowTypeWithTextFloor()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Same mapping, except that a name this map does not recognise takes the text floor instead of
+throwing. Only the result route may use it: there the caster leaves an unrecognised type as
+text, so schema and data agree. The catalog route has no such pairing and must keep refusing.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_valueType">valueType()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\PostgreSql\Client\Types\ValueType">ValueType</abbr>    </span>
+</dt>
+<dd>The PostgreSQL value type a column of this Flow type is written as.</dd>
+
     </dl>
 
 
@@ -212,7 +228,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -223,7 +239,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">DEFAULT_TYPES</span>
-    = <span class="phpdocumentor-signature__default-value">[\Flow\Types\Type\Native\StringType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\Types\Type\Native\IntegerType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::INT8, \Flow\Types\Type\Native\FloatType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::FLOAT8, \Flow\Types\Type\Native\BooleanType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::BOOL, \Flow\Types\Type\Logical\DateType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::DATE, \Flow\Types\Type\Logical\DateTimeType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TIMESTAMP, \Flow\Types\Type\Logical\TimeType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TIME, \Flow\Types\Type\Logical\UuidType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::UUID, \Flow\Types\Type\Logical\JsonType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB, \Flow\Types\Type\Logical\XMLType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::XML, \Flow\Types\Type\Logical\XMLElementType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::XML, \Flow\Types\Type\Logical\HTMLType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\Types\Type\Logical\HTMLElementType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\Types\Type\Native\EnumType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\Types\Type\Logical\ListType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB, \Flow\Types\Type\Logical\MapType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB, \Flow\Types\Type\Logical\StructureType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB]</span>
+    = <span class="phpdocumentor-signature__default-value">[\Flow\Types\Type\Native\StringType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\Types\Type\Native\IntegerType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::INT8, \Flow\Types\Type\Native\FloatType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::FLOAT8, \Flow\Types\Type\Native\BooleanType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::BOOL, \Flow\Types\Type\Logical\DateType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::DATE, \Flow\Types\Type\Logical\DateTimeType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TIMESTAMP, \Flow\Types\Type\Logical\TimeType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TIME, \Flow\Types\Type\Logical\UuidType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::UUID, \Flow\Types\Type\Logical\TimeZoneType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\Types\Type\Logical\JsonType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB, \Flow\Types\Type\Logical\XMLType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::XML, \Flow\Types\Type\Logical\XMLElementType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::XML, \Flow\Types\Type\Logical\HTMLType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\Types\Type\Logical\HTMLElementType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\Types\Type\Native\EnumType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::TEXT, \Flow\Types\Type\Logical\ListType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB, \Flow\Types\Type\Logical\MapType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB, \Flow\Types\Type\Logical\StructureType::class =&gt; \Flow\PostgreSql\Client\Types\ValueType::JSONB]</span>
 </code>
 
 
@@ -257,7 +273,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -308,7 +324,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -387,7 +403,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -452,7 +468,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -503,6 +519,129 @@
             </section>
 
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toFlowTypeWithTextFloor">
+        toFlowTypeWithTextFloor()
+        <a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toFlowTypeWithTextFloor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">173</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Same mapping, except that a name this map does not recognise takes the text floor instead of
+throwing. Only the result route may use it: there the caster leaves an unrecognised type as
+text, so schema and data agree. The catalog route has no such pairing and must keep refusing.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toFlowTypeWithTextFloor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\QueryBuilder\Schema\ColumnType">ColumnType</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$columnType</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\PostgreSql\QueryBuilder\Schema\ColumnType">ColumnType</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_valueType">
+        valueType()
+        <a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_valueType" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-entrytypesmap.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/EntryTypesMap.php">EntryTypesMap.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">123</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The PostgreSQL value type a column of this Flow type is written as.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">valueType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\PostgreSql\Client\Types\ValueType">ValueType</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$column</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$type</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_valueType_tags">
+        Tags
+        <a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_valueType_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Adapter-PostgreSql-Exception-TypeMappingException.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Exception\TypeMappingException">TypeMappingException</abbr></a></span>
+                                                                                        <section class="phpdocumentor-description"><p>when the Flow type is not in the map</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\PostgreSql\Client\Types\ValueType">ValueType</abbr></span>
+            </section>
+
+</article>
             </section>
 
         
@@ -536,6 +675,8 @@
                                             <li class=""><a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_map">map()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toColumnType">toColumnType()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toFlowType">toFlowType()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toFlowTypeWithTextFloor">toFlowTypeWithTextFloor()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_valueType">valueType()</a></li>
                                     </ul>
             </li>
                     </ul>

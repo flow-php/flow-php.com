@@ -160,10 +160,31 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-FunctionTree.html#method_children">children()</a>
+    <span>
+                                &nbsp;: array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;    </span>
+</dt>
+<dd>Every operand of this node that is an expression, in constructor order.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunction-UnpackResults.html#method_eval">eval()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-FunctionTree.html#method_resolved">resolved()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>True when this node and every node in children() can answer returns().</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-ScalarFunction.html#method_returns">returns()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>The type of the column this function produces, before any row is read.</dd>
 
     </dl>
 
@@ -180,6 +201,47 @@
             <a href="classes/Flow-ETL-Function-ScalarFunction-UnpackResults.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_children">
+        children()
+        <a href="classes/Flow-ETL-Function-FunctionTree.html#method_children" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/FunctionTree.php"><a href="files/src-core-etl-src-flow-etl-function-functiontree.html"><abbr title="src/core/etl/src/Flow/ETL/Function/FunctionTree.php">FunctionTree.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">15</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Every operand of this node that is an expression, in constructor order.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">children</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Raw scalars, enums, Types and scope-introducing bodies are fields, not children.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;</span>
+            </section>
+
+</article>
                     <article
         class="phpdocumentor-element
             -method
@@ -235,6 +297,89 @@
             </section>
 
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_resolved">
+        resolved()
+        <a href="classes/Flow-ETL-Function-FunctionTree.html#method_resolved" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/FunctionTree.php"><a href="files/src-core-etl-src-flow-etl-function-functiontree.html"><abbr title="src/core/etl/src/Flow/ETL/Function/FunctionTree.php">FunctionTree.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">20</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">True when this node and every node in children() can answer returns().</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">resolved</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_returns">
+        returns()
+        <a href="classes/Flow-ETL-Function-ScalarFunction.html#method_returns" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunction.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunction.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunction.php">ScalarFunction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">25</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The type of the column this function produces, before any row is read.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">returns</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Column-representable only: MixedType and a multi-member UnionType are refused; NullType is
+permitted. A top-level OptionalType is permitted and is what &quot;this column is nullable&quot;
+means - it is the only legal OptionalType position for a declaration, because OptionalType
+never nests and type_bare() strips exactly one level.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
             </section>
 
         
@@ -256,7 +401,10 @@
                             <li class="phpdocumentor-on-this-page-section__title">Methods</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-ETL-Function-FunctionTree.html#method_children">children()</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Function-ScalarFunction-UnpackResults.html#method_eval">eval()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Function-FunctionTree.html#method_resolved">resolved()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Function-ScalarFunction.html#method_returns">returns()</a></li>
                                             </ul>
                 </li>
             

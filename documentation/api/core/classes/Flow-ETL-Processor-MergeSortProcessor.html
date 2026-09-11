@@ -143,7 +143,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-mergesortprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php">MergeSortProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -183,6 +183,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Processor-MergeSortProcessor.html#method_bind">bind()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Pipeline-BoundStep.html"><abbr title="\Flow\ETL\Pipeline\BoundStep">BoundStep</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Processor-MergeSortProcessor.html#method_process">process()</a>
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>    </span>
@@ -216,14 +222,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-mergesortprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php">MergeSortProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-References.html"><abbr title="\Flow\ETL\Row\References">References</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refs</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$buckets</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-RandomValueGenerator.html"><abbr title="\Flow\ETL\RandomValueGenerator">RandomValueGenerator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$random</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mergeFanIn</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">10</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-References.html"><abbr title="\Flow\ETL\Row\References">References</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refs</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spill</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$merge</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-RandomValueGenerator.html"><abbr title="\Flow\ETL\RandomValueGenerator">RandomValueGenerator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$random</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mergeFanIn</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">10</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -239,7 +245,14 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$buckets</span>
+                <span class="phpdocumentor-argument-list__argument__name">$spill</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$merge</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -280,6 +293,54 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_bind">
+        bind()
+        <a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#method_bind" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-mergesortprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php">MergeSortProcessor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">bind</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Pipeline-BoundStep.html"><abbr title="\Flow\ETL\Pipeline\BoundStep">BoundStep</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$input</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Pipeline-BoundStep.html"><abbr title="\Flow\ETL\Pipeline\BoundStep">BoundStep</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_process">
         process()
         <a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#method_process" class="headerlink"><i class="fas fa-link"></i></a>
@@ -288,7 +349,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-mergesortprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php">MergeSortProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -352,6 +413,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#method_bind">bind()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#method_process">process()</a></li>
                                     </ul>
             </li>

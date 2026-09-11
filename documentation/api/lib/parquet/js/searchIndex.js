@@ -1126,6 +1126,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-parquet.html#function_array_flatten"
         },                {
+            "fqsen": "\\Flow\\Parquet\\empty_generator\u0028\u0029",
+            "name": "empty_generator",
+            "summary": "",
+            "url": "namespaces/flow-parquet.html#function_empty_generator"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Option",
             "name": "Option",
             "summary": "",

@@ -110,11 +110,11 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Flow\ETL\Extractor">Extractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\FileExtractor">FileExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\LimitableExtractor">LimitableExtractor</abbr>                    </span>
+                            <abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor">Extractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\FileExtractor">FileExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\LimitPushDown">LimitPushDown</abbr>,                             <abbr title="\Flow\ETL\Extractor\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr>                    </span>
     
             <span class="phpdocumentor-element__extends">
             uses
-                            <abbr title="\Flow\ETL\Extractor\Limitable">Limitable</abbr>,                             <abbr title="\Flow\ETL\Extractor\PathFiltering">PathFiltering</abbr>                    </span>
+                            <abbr title="\Flow\ETL\Extractor\Batches">Batches</abbr>,                             <abbr title="\Flow\ETL\Extractor\PushesLimit">PushesLimit</abbr>,                             <abbr title="\Flow\ETL\Extractor\FileReading">FileReading</abbr>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -127,7 +127,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlparserextractor.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php">XMLParserExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -145,7 +145,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\FileExtractor">FileExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\LimitableExtractor">LimitableExtractor</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\FileExtractor">FileExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\LimitPushDown">LimitPushDown</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr></dt>    </dl>
 
 
 
@@ -168,33 +168,27 @@
 <dd>To iterate only over &lt;element&gt; nodes, use `$loader-&gt;withXMLNodePath(&#039;root/elements/element&#039;)`.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_characterDataHandler">characterDataHandler()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_endElementHandler">endElementHandler()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_extract">extract()</a>
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;<abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr>|null, void&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_source">source()</a>
+    <a class="" href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_isRepeatable">isRepeatable()</a>
     <span>
-                                &nbsp;: <abbr title="\Flow\Filesystem\Path">Path</abbr>    </span>
+                                &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_startElementHandler">startElementHandler()</a>
+    <a class="" href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_schema">schema()</a>
     <span>
-                                &nbsp;: void    </span>
+                                &nbsp;: <abbr title="\Flow\ETL\Schema">Schema</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_source">source()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\Filesystem\Path">Path</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -206,7 +200,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_withSchema">withSchema()</a>
     <span>
-                                &nbsp;: self    </span>
+                                &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -243,7 +237,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlparserextractor.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php">XMLParserExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -251,7 +245,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -275,105 +269,10 @@ of node names separated with slash.</p>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
-            </dl>
-
-    
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_characterDataHandler">
-        characterDataHandler()
-        <a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_characterDataHandler" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlparserextractor.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php">XMLParserExtractor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">84</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">characterDataHandler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\XMLParser">XMLParser</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parser</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$parser</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\XMLParser">XMLParser</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$data</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_endElementHandler">
-        endElementHandler()
-        <a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_endElementHandler" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlparserextractor.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php">XMLParserExtractor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">91</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">endElementHandler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\XMLParser">XMLParser</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parser</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$parser</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\XMLParser">XMLParser</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$name</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                            </dt>
+                <span class="phpdocumentor-argument-list__argument__name">$filesystem</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -399,7 +298,7 @@ of node names separated with slash.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlparserextractor.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php">XMLParserExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -439,6 +338,82 @@ of node names separated with slash.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_isRepeatable">
+        isRepeatable()
+        <a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_isRepeatable" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlparserextractor.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php">XMLParserExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">87</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isRepeatable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_schema">
+        schema()
+        <a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_schema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlparserextractor.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php">XMLParserExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">162</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">schema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Schema">Schema</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Schema">Schema</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_source">
         source()
         <a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_source" class="headerlink"><i class="fas fa-link"></i></a>
@@ -447,7 +422,7 @@ of node names separated with slash.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlparserextractor.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php">XMLParserExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
     </aside>
 
@@ -477,64 +452,6 @@ of node names separated with slash.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_startElementHandler">
-        startElementHandler()
-        <a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_startElementHandler" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlparserextractor.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php">XMLParserExtractor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">231</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">startElementHandler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\XMLParser">XMLParser</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parser</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attrs</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$parser</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\XMLParser">XMLParser</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$name</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$attrs</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, string&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_withBufferSize">
         withBufferSize()
         <a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_withBufferSize" class="headerlink"><i class="fas fa-link"></i></a>
@@ -543,7 +460,7 @@ of node names separated with slash.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlparserextractor.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php">XMLParserExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">275</span>
+    <span class="phpdocumentor-element-found-in__line">175</span>
 
     </aside>
 
@@ -593,14 +510,14 @@ of node names separated with slash.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlparserextractor.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php">XMLParserExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">withSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -623,7 +540,7 @@ of node names separated with slash.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
+        <span class="phpdocumentor-signature__response_type">static</span>
             </section>
 
 </article>
@@ -641,7 +558,7 @@ of node names separated with slash.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlparserextractor.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLParserExtractor.php">XMLParserExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">289</span>
+    <span class="phpdocumentor-element-found-in__line">189</span>
 
     </aside>
 
@@ -698,11 +615,10 @@ of node names separated with slash.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_characterDataHandler">characterDataHandler()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_endElementHandler">endElementHandler()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_extract">extract()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_isRepeatable">isRepeatable()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_schema">schema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_source">source()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_startElementHandler">startElementHandler()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_withBufferSize">withBufferSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_withSchema">withSchema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_withXMLNodePath">withXMLNodePath()</a></li>

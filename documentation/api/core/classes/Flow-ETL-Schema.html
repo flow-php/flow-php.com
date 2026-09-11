@@ -144,7 +144,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -235,13 +235,6 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Schema.html#method_fromPipeline">fromPipeline()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Detecting schema from the pipeline has several disadvantages.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Schema.html#method_get">get()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a>&lt;string|int, mixed&gt;    </span>
@@ -267,6 +260,8 @@ number of definitions appends.</dd>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
+<dd>Column order is part of a Schema&#039;s identity - two schemas holding the same columns in a
+different order describe two different row shapes, and a row is stored in Schema order.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Schema.html#method_keep">keep()</a>
@@ -280,6 +275,15 @@ number of definitions appends.</dd>
                                 &nbsp;: self    </span>
 </dt>
 <dd>Makes all schema definitions nullable.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Schema.html#method_matchOrderTo">matchOrderTo()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Columns present in both schemas are emitted in $authority&#039;s order; columns only in $this are
+appended unchanged. Nothing is added, dropped or widened, and no type is rewritten - a column
+whose type orders its own elements differently is a different type, not a reorderable one.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Schema.html#method_merge">merge()</a>
@@ -393,7 +397,7 @@ number of definitions appends.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -437,7 +441,7 @@ number of definitions appends.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -485,7 +489,7 @@ number of definitions appends.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -555,7 +559,7 @@ number of definitions appends.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -625,7 +629,7 @@ number of definitions appends.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">165</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -702,7 +706,7 @@ number of definitions appends.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -740,7 +744,7 @@ number of definitions appends.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">178</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -778,7 +782,7 @@ number of definitions appends.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">186</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -826,7 +830,7 @@ number of definitions appends.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -864,78 +868,6 @@ number of definitions appends.</dd>
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_fromPipeline">
-        fromPipeline()
-        <a href="classes/Flow-ETL-Schema.html#method_fromPipeline" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">80</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Detecting schema from the pipeline has several disadvantages.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromPipeline</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Pipeline">Pipeline</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pipeline</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxRows</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <section class="phpdocumentor-description"><p>First of all, it's expensive, it needs to iterate through the pipeline until it detects
-types of all columns.
-In some cases, when a given column is null in the first 1k rows it will anyway return incorrect
-schema since row 1001 might have an actual value.
-When dealing with schemaless file formats like CSV or JSON even when first 1k rows will
-carry value of one type, there is zero guarantee that following rows will do the same.</p>
-<p>Whenever it's possible, it's recommended to define schema upfront and pass it to the extractor.
-This way, whatever process would need to use this method, will do just one iteration.</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$pipeline</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Pipeline">Pipeline</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$context</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$maxRows</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">1000</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_get">
@@ -946,7 +878,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
@@ -1008,7 +940,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">216</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -1057,7 +989,7 @@ This way, whatever process would need to use this method, will do just one itera
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">241</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
@@ -1128,11 +1060,13 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">258</span>
+    <span class="phpdocumentor-element-found-in__line">241</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Column order is part of a Schema&#039;s identity - two schemas holding the same columns in a
+different order describe two different row shapes, and a row is stored in Schema order.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isSame</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">self&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
@@ -1176,7 +1110,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">280</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 
     </aside>
 
@@ -1224,7 +1158,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">304</span>
+    <span class="phpdocumentor-element-found-in__line">286</span>
 
     </aside>
 
@@ -1255,6 +1189,57 @@ number of definitions appends.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_matchOrderTo">
+        matchOrderTo()
+        <a href="classes/Flow-ETL-Schema.html#method_matchOrderTo" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">123</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Columns present in both schemas are emitted in $authority&#039;s order; columns only in $this are
+appended unchanged. Nothing is added, dropped or widened, and no type is rewritten - a column
+whose type orders its own elements differently is a different type, not a reorderable one.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">matchOrderTo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">self&nbsp;</span><span class="phpdocumentor-signature__argument__name">$authority</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$authority</span>
+                : <span class="phpdocumentor-argument-list__argument__type">self</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_merge">
         merge()
         <a href="classes/Flow-ETL-Schema.html#method_merge" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1263,7 +1248,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">319</span>
+    <span class="phpdocumentor-element-found-in__line">301</span>
 
     </aside>
 
@@ -1311,7 +1296,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">360</span>
+    <span class="phpdocumentor-element-found-in__line">342</span>
 
     </aside>
 
@@ -1385,7 +1370,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">373</span>
+    <span class="phpdocumentor-element-found-in__line">355</span>
 
     </aside>
 
@@ -1459,7 +1444,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">387</span>
+    <span class="phpdocumentor-element-found-in__line">369</span>
 
     </aside>
 
@@ -1535,7 +1520,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">410</span>
+    <span class="phpdocumentor-element-found-in__line">392</span>
 
     </aside>
 
@@ -1573,7 +1558,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">428</span>
+    <span class="phpdocumentor-element-found-in__line">410</span>
 
     </aside>
 
@@ -1622,7 +1607,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">433</span>
+    <span class="phpdocumentor-element-found-in__line">415</span>
 
     </aside>
 
@@ -1660,7 +1645,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">447</span>
+    <span class="phpdocumentor-element-found-in__line">429</span>
 
     </aside>
 
@@ -1708,7 +1693,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">471</span>
+    <span class="phpdocumentor-element-found-in__line">456</span>
 
     </aside>
 
@@ -1763,7 +1748,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">498</span>
+    <span class="phpdocumentor-element-found-in__line">483</span>
 
     </aside>
 
@@ -1830,7 +1815,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">529</span>
+    <span class="phpdocumentor-element-found-in__line">515</span>
 
     </aside>
 
@@ -1885,7 +1870,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">555</span>
+    <span class="phpdocumentor-element-found-in__line">541</span>
 
     </aside>
 
@@ -1955,7 +1940,7 @@ number of definitions appends.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema.php"><a href="files/src-core-etl-src-flow-etl-schema.html"><abbr title="src/core/etl/src/Flow/ETL/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">563</span>
+    <span class="phpdocumentor-element-found-in__line">549</span>
 
     </aside>
 
@@ -2020,13 +2005,13 @@ number of definitions appends.</p>
                                             <li class=""><a href="classes/Flow-ETL-Schema.html#method_definitions">definitions()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema.html#method_findDefinition">findDefinition()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema.html#method_fromArray">fromArray()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Schema.html#method_fromPipeline">fromPipeline()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema.html#method_get">get()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema.html#method_gracefulRemove">gracefulRemove()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema.html#method_insertAt">insertAt()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema.html#method_isSame">isSame()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema.html#method_keep">keep()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema.html#method_makeNullable">makeNullable()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Schema.html#method_matchOrderTo">matchOrderTo()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema.html#method_merge">merge()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema.html#method_moveAfter">moveAfter()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Schema.html#method_moveBefore">moveBefore()</a></li>

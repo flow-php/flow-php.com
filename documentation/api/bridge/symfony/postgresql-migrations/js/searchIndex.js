@@ -436,6 +436,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-ProfilerClient.html#method_cursor"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\ProfilerClient\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Profiler-ProfilerClient.html#method_describe"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Profiler\\ProfilerClient\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
             "summary": "",

@@ -139,7 +139,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -147,6 +147,31 @@
 
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-ETL-DataFrame.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>Aggregations      = list&lt;AggregatingFunction&gt;</p>
+</section>
+
+                                    </dd>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>GroupByReferences = list&lt;string|Reference&gt;</p>
+</section>
+
+                                    </dd>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>SortReferences    = list&lt;string|Reference&gt;</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
     
     
@@ -173,12 +198,6 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-DataFrame.html#method_aggregate">aggregate()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-DataFrame.html#method_autoCast">autoCast()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
@@ -255,14 +274,6 @@ into previously defined cache.</dd>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-DataFrame.html#method_dropPartitions">dropPartitions()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Drop all partitions from Rows, additionally when $dropPartitionColumns is set to true, partition columns are
-also removed.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-DataFrame.html#method_duplicateRow">duplicateRow()</a>
@@ -346,6 +357,7 @@ also removed.</dd>
     <span>
                                 &nbsp;: self    </span>
 </dt>
+<dd>Joins in memory per batch; it is not governed by the join algorithm and takes no algorithm override.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-DataFrame.html#method_limit">limit()</a>
@@ -360,23 +372,10 @@ also removed.</dd>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-DataFrame.html#method_map">map()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-DataFrame.html#method_match">match()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-DataFrame.html#method_mode">mode()</a>
-    <span>
-                                &nbsp;: $this    </span>
-</dt>
-<dd>This method is used to set the behavior of the DataFrame.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-DataFrame.html#method_offset">offset()</a>
@@ -387,12 +386,6 @@ also removed.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-DataFrame.html#method_onError">onError()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-DataFrame.html#method_partitionBy">partitionBy()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
@@ -422,7 +415,7 @@ also removed.</dd>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-DataFrame.html#method_reorderEntries">reorderEntries()</a>
+    <a class="" href="classes/Flow-ETL-DataFrame.html#method_repartition">repartition()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
@@ -438,13 +431,6 @@ also removed.</dd>
     <span>
                                 &nbsp;: <abbr title="($analyze is \Flow\ETL\Analyze|true ? \Flow\ETL\Dataset\Report : null)">Report : null)</abbr>    </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-DataFrame.html#method_saveMode">saveMode()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Alias for DataFrame::mode.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-DataFrame.html#method_schema">schema()</a>
@@ -537,7 +523,7 @@ rows. Until will send a STOP signal to the Extractor when the condition is not m
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -588,14 +574,14 @@ rows. Until will send a STOP signal to the Extractor when the condition is not m
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">aggregate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-AggregatingFunction.html"><abbr title="\Flow\ETL\Function\AggregatingFunction">AggregatingFunction</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$aggregations</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">aggregate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Aggregations">Aggregations</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$aggregations</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Config-Grouping-GroupByAlgorithmBuilder.html"><abbr title="\Flow\ETL\Config\Grouping\GroupByAlgorithmBuilder">GroupByAlgorithmBuilder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$algorithm</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -605,10 +591,20 @@ rows. Until will send a STOP signal to the Extractor when the condition is not m
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$aggregations</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Function-AggregatingFunction.html"><abbr title="\Flow\ETL\Function\AggregatingFunction">AggregatingFunction</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Aggregations">Aggregations</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$algorithm</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-Config-Grouping-GroupByAlgorithmBuilder.html"><abbr title="\Flow\ETL\Config\Grouping\GroupByAlgorithmBuilder">GroupByAlgorithmBuilder</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>null defers to configuration; a builder pins the
+algorithm for this operation and skips any automatic choice</p>
+</section>
+
             </dd>
             </dl>
 
@@ -641,44 +637,6 @@ rows. Until will send a STOP signal to the Extractor when the condition is not m
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_autoCast">
-        autoCast()
-        <a href="classes/Flow-ETL-DataFrame.html#method_autoCast" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">101</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">autoCast</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_batchBy">
         batchBy()
         <a href="classes/Flow-ETL-DataFrame.html#method_batchBy" class="headerlink"><i class="fas fa-link"></i></a>
@@ -687,7 +645,7 @@ rows. Until will send a STOP signal to the Extractor when the condition is not m
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -776,7 +734,7 @@ when there are at least minSize rows in the batch.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -844,7 +802,7 @@ size.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">174</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -853,7 +811,7 @@ into previously defined cache.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">cache</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cacheBatchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">cache</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cacheBatchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Cache.html"><abbr title="\Flow\ETL\Cache">Cache</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cache</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -880,6 +838,15 @@ When not set, the batch size is taken from the last DataFrame::batchSize() call.
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$cache</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-Cache.html"><abbr title="\Flow\ETL\Cache">Cache</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>reads of this cache must pass the same instance to from_cache()</p>
+</section>
+
             </dd>
             </dl>
 
@@ -927,7 +894,7 @@ When not set, the batch size is taken from the last DataFrame::batchSize() call.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">195</span>
+    <span class="phpdocumentor-element-found-in__line">192</span>
 
     </aside>
 
@@ -981,7 +948,7 @@ When not set, the batch size is taken from the last DataFrame::batchSize() call.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">214</span>
+    <span class="phpdocumentor-element-found-in__line">211</span>
 
     </aside>
 
@@ -1049,7 +1016,7 @@ When not set, the batch size is taken from the last DataFrame::batchSize() call.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">227</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -1104,7 +1071,7 @@ When not set, the batch size is taken from the last DataFrame::batchSize() call.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">240</span>
+    <span class="phpdocumentor-element-found-in__line">231</span>
 
     </aside>
 
@@ -1157,7 +1124,7 @@ When not set, the batch size is taken from the last DataFrame::batchSize() call.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">261</span>
+    <span class="phpdocumentor-element-found-in__line">252</span>
 
     </aside>
 
@@ -1225,7 +1192,7 @@ When not set, the batch size is taken from the last DataFrame::batchSize() call.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">278</span>
+    <span class="phpdocumentor-element-found-in__line">269</span>
 
     </aside>
 
@@ -1312,7 +1279,7 @@ characters</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">306</span>
+    <span class="phpdocumentor-element-found-in__line">298</span>
 
     </aside>
 
@@ -1374,7 +1341,7 @@ characters</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">320</span>
+    <span class="phpdocumentor-element-found-in__line">312</span>
 
     </aside>
 
@@ -1427,69 +1394,6 @@ characters</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_dropPartitions">
-        dropPartitions()
-        <a href="classes/Flow-ETL-DataFrame.html#method_dropPartitions" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">333</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Drop all partitions from Rows, additionally when $dropPartitionColumns is set to true, partition columns are
-also removed.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">dropPartitions</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dropPartitionColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$dropPartitionColumns</span>
-                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="method_dropPartitions_tags">
-        Tags
-        <a href="classes/Flow-ETL-DataFrame.html#method_dropPartitions_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">lazy</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
-                                    </dd>
-                        </dl>
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_duplicateRow">
         duplicateRow()
         <a href="classes/Flow-ETL-DataFrame.html#method_duplicateRow" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1498,7 +1402,7 @@ also removed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">340</span>
+    <span class="phpdocumentor-element-found-in__line">319</span>
 
     </aside>
 
@@ -1553,7 +1457,7 @@ also removed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">360</span>
+    <span class="phpdocumentor-element-found-in__line">339</span>
 
     </aside>
 
@@ -1628,7 +1532,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">385</span>
+    <span class="phpdocumentor-element-found-in__line">370</span>
 
     </aside>
 
@@ -1689,7 +1593,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">397</span>
+    <span class="phpdocumentor-element-found-in__line">390</span>
 
     </aside>
 
@@ -1757,7 +1661,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">425</span>
+    <span class="phpdocumentor-element-found-in__line">418</span>
 
     </aside>
 
@@ -1818,7 +1722,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">439</span>
+    <span class="phpdocumentor-element-found-in__line">432</span>
 
     </aside>
 
@@ -1875,7 +1779,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">451</span>
+    <span class="phpdocumentor-element-found-in__line">444</span>
 
     </aside>
 
@@ -1927,7 +1831,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">472</span>
+    <span class="phpdocumentor-element-found-in__line">465</span>
 
     </aside>
 
@@ -1979,7 +1883,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">493</span>
+    <span class="phpdocumentor-element-found-in__line">486</span>
 
     </aside>
 
@@ -2031,7 +1935,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">516</span>
+    <span class="phpdocumentor-element-found-in__line">509</span>
 
     </aside>
 
@@ -2083,14 +1987,14 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">535</span>
+    <span class="phpdocumentor-element-found-in__line">532</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">groupBy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$entries</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-DataFrame-GroupedDataFrame.html"><abbr title="\Flow\ETL\DataFrame\GroupedDataFrame">GroupedDataFrame</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">groupBy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\GroupByReferences">GroupByReferences</abbr>|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entries</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Config-Grouping-GroupByAlgorithmBuilder.html"><abbr title="\Flow\ETL\Config\Grouping\GroupByAlgorithmBuilder">GroupByAlgorithmBuilder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$algorithm</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-DataFrame-GroupedDataFrame.html"><abbr title="\Flow\ETL\DataFrame\GroupedDataFrame">GroupedDataFrame</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2100,10 +2004,22 @@ DataFrame::getEachAsArray() : \Generator</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$entries</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\GroupByReferences">GroupByReferences</abbr>|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>a single column is grouped by on its own</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$algorithm</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-Config-Grouping-GroupByAlgorithmBuilder.html"><abbr title="\Flow\ETL\Config\Grouping\GroupByAlgorithmBuilder">GroupByAlgorithmBuilder</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>null defers to configuration; a builder pins the
+algorithm for this operation and skips any automatic choice</p>
+</section>
+
             </dd>
             </dl>
 
@@ -2144,14 +2060,14 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">543</span>
+    <span class="phpdocumentor-element-found-in__line">547</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">join</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">self&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dataFrame</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Join-Expression.html"><abbr title="\Flow\ETL\Join\Expression">Expression</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$on</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|<a href="classes/Flow-ETL-Join-Join.html"><abbr title="\Flow\ETL\Join\Join">Join</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Join-Join.html#enumcase_left"><abbr title="\Flow\ETL\Join\Join::left">Join::left</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">join</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">self&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dataFrame</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Join-Expression.html"><abbr title="\Flow\ETL\Join\Expression">Expression</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$on</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|<a href="classes/Flow-ETL-Join-Join.html"><abbr title="\Flow\ETL\Join\Join">Join</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Join-Join.html#enumcase_left"><abbr title="\Flow\ETL\Join\Join::left">Join::left</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Config-Join-JoinAlgorithmBuilder.html"><abbr title="\Flow\ETL\Config\Join\JoinAlgorithmBuilder">JoinAlgorithmBuilder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$algorithm</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2179,6 +2095,16 @@ DataFrame::getEachAsArray() : \Generator</p>
                  = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-ETL-Join-Join.html#enumcase_left"><abbr title="\Flow\ETL\Join\Join::left">Join::left</abbr></a></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$algorithm</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-Config-Join-JoinAlgorithmBuilder.html"><abbr title="\Flow\ETL\Config\Join\JoinAlgorithmBuilder">JoinAlgorithmBuilder</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>null defers to configuration; a builder pins the algorithm
+for this operation and skips any automatic choice</p>
+</section>
+
             </dd>
             </dl>
 
@@ -2219,11 +2145,12 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">561</span>
+    <span class="phpdocumentor-element-found-in__line">571</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Joins in memory per batch; it is not governed by the join algorithm and takes no algorithm override.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">joinEach</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-DataFrameFactory.html"><abbr title="\Flow\ETL\DataFrameFactory">DataFrameFactory</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$factory</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Join-Expression.html"><abbr title="\Flow\ETL\Join\Expression">Expression</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$on</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|<a href="classes/Flow-ETL-Join-Join.html"><abbr title="\Flow\ETL\Join\Join">Join</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Join-Join.html#enumcase_left"><abbr title="\Flow\ETL\Join\Join::left">Join::left</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
@@ -2270,14 +2197,6 @@ DataFrame::getEachAsArray() : \Generator</p>
                             <dd class="phpdocumentor-tag-list__definition">
                                                                                                         
                                     </dd>
-                                <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">psalm-param</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                            <section class="phpdocumentor-description"><p>string|Join $type</p>
-</section>
-
-                                    </dd>
                         </dl>
 
         
@@ -2302,7 +2221,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">584</span>
+    <span class="phpdocumentor-element-found-in__line">594</span>
 
     </aside>
 
@@ -2370,7 +2289,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">598</span>
+    <span class="phpdocumentor-element-found-in__line">608</span>
 
     </aside>
 
@@ -2423,67 +2342,6 @@ DataFrame::getEachAsArray() : \Generator</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_map">
-        map()
-        <a href="classes/Flow-ETL-DataFrame.html#method_map" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">610</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">map</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">callable(<a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a> $row): <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$callback</span>
-                : <span class="phpdocumentor-argument-list__argument__type">callable(<a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a> $row): <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="method_map_tags">
-        Tags
-        <a href="classes/Flow-ETL-DataFrame.html#method_map_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">lazy</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
-                                    </dd>
-                        </dl>
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_match">
         match()
         <a href="classes/Flow-ETL-DataFrame.html#method_match" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2492,7 +2350,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">622</span>
+    <span class="phpdocumentor-element-found-in__line">620</span>
 
     </aside>
 
@@ -2556,74 +2414,6 @@ DataFrame::getEachAsArray() : \Generator</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_mode">
-        mode()
-        <a href="classes/Flow-ETL-DataFrame.html#method_mode" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">640</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">This method is used to set the behavior of the DataFrame.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">mode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Filesystem-SaveMode.html"><abbr title="\Flow\ETL\Filesystem\SaveMode">SaveMode</abbr></a>|<a href="classes/Flow-ETL-Function-ExecutionMode.html"><abbr title="\Flow\ETL\Function\ExecutionMode">ExecutionMode</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <section class="phpdocumentor-description"><p>Available modes:</p>
-<ul>
-<li>SaveMode defines how Flow should behave when writing to a file/files that already exists.</li>
-<li>ExecutionMode - defines how functions should behave when they encounter unexpected data (e.g., type mismatches, missing values).</li>
-</ul>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$mode</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Filesystem-SaveMode.html"><abbr title="\Flow\ETL\Filesystem\SaveMode">SaveMode</abbr></a>|<a href="classes/Flow-ETL-Function-ExecutionMode.html"><abbr title="\Flow\ETL\Function\ExecutionMode">ExecutionMode</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="method_mode_tags">
-        Tags
-        <a href="classes/Flow-ETL-DataFrame.html#method_mode_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">lazy</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
-                                    </dd>
-                        </dl>
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">$this</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_offset">
         offset()
         <a href="classes/Flow-ETL-DataFrame.html#method_offset" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2632,7 +2422,7 @@ DataFrame::getEachAsArray() : \Generator</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">665</span>
+    <span class="phpdocumentor-element-found-in__line">641</span>
 
     </aside>
 
@@ -2706,7 +2496,7 @@ as the data source still needs to be read and processed up to the offset point.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">679</span>
+    <span class="phpdocumentor-element-found-in__line">655</span>
 
     </aside>
 
@@ -2759,74 +2549,6 @@ as the data source still needs to be read and processed up to the offset point.<
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_partitionBy">
-        partitionBy()
-        <a href="classes/Flow-ETL-DataFrame.html#method_partitionBy" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">689</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">partitionBy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$entries</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entry</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entries</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="method_partitionBy_tags">
-        Tags
-        <a href="classes/Flow-ETL-DataFrame.html#method_partitionBy_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">lazy</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
-                                    </dd>
-                        </dl>
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_printRows">
         printRows()
         <a href="classes/Flow-ETL-DataFrame.html#method_printRows" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2835,7 +2557,7 @@ as the data source still needs to be read and processed up to the offset point.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">701</span>
+    <span class="phpdocumentor-element-found-in__line">681</span>
 
     </aside>
 
@@ -2906,14 +2628,14 @@ as the data source still needs to be read and processed up to the offset point.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">718</span>
+    <span class="phpdocumentor-element-found-in__line">701</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">printSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">20</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-SchemaFormatter.html"><abbr title="\Flow\ETL\Schema\SchemaFormatter">SchemaFormatter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formatter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Row-Formatter-ASCIISchemaFormatter.html"><abbr title="\Flow\ETL\Row\Formatter\ASCIISchemaFormatter">ASCIISchemaFormatter</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">printSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-SchemaFormatter.html"><abbr title="\Flow\ETL\Schema\SchemaFormatter">SchemaFormatter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formatter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Row-Formatter-ASCIISchemaFormatter.html"><abbr title="\Flow\ETL\Row\Formatter\ASCIISchemaFormatter">ASCIISchemaFormatter</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2921,13 +2643,6 @@ as the data source still needs to be read and processed up to the offset point.<
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">20</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$formatter</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema-SchemaFormatter.html"><abbr title="\Flow\ETL\Schema\SchemaFormatter">SchemaFormatter</abbr></a></span>
@@ -2945,10 +2660,17 @@ as the data source still needs to be read and processed up to the offset point.<
     </h5>
     <dl class="phpdocumentor-tag-list">
                     <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">trigger</span>
+                <span class="phpdocumentor-tag__name">lazy</span>
             </dt>
                             <dd class="phpdocumentor-tag-list__definition">
                                                                                                         
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Exception-SchemaNotDerivableException.html"><abbr title="\Flow\ETL\Exception\SchemaNotDerivableException">SchemaNotDerivableException</abbr></a></span>
+                                                                                    
                                     </dd>
                         </dl>
 
@@ -2970,7 +2692,7 @@ as the data source still needs to be read and processed up to the offset point.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">731</span>
+    <span class="phpdocumentor-element-found-in__line">719</span>
 
     </aside>
 
@@ -3038,7 +2760,7 @@ as the data source still needs to be read and processed up to the offset point.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">738</span>
+    <span class="phpdocumentor-element-found-in__line">726</span>
 
     </aside>
 
@@ -3078,22 +2800,22 @@ as the data source still needs to be read and processed up to the offset point.<
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_reorderEntries">
-        reorderEntries()
-        <a href="classes/Flow-ETL-DataFrame.html#method_reorderEntries" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_repartition">
+        repartition()
+        <a href="classes/Flow-ETL-DataFrame.html#method_repartition" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">745</span>
+    <span class="phpdocumentor-element-found-in__line">667</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">reorderEntries</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Transformer-OrderEntries-Comparator.html"><abbr title="\Flow\ETL\Transformer\OrderEntries\Comparator">Comparator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$comparator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Transformer-OrderEntries-TypeComparator.html"><abbr title="\Flow\ETL\Transformer\OrderEntries\TypeComparator">TypeComparator</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">repartition</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$entries</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3102,15 +2824,38 @@ as the data source still needs to be read and processed up to the offset point.<
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$comparator</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Transformer-OrderEntries-Comparator.html"><abbr title="\Flow\ETL\Transformer\OrderEntries\Comparator">Comparator</abbr></a></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-ETL-Transformer-OrderEntries-TypeComparator.html"><abbr title="\Flow\ETL\Transformer\OrderEntries\TypeComparator">TypeComparator</abbr></a>()</span>            </dt>
+                <span class="phpdocumentor-argument-list__argument__name">$entry</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$entries</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a></span>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="method_repartition_tags">
+        Tags
+        <a href="classes/Flow-ETL-DataFrame.html#method_repartition_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">lazy</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>Shuffles the stream so every row sharing the given columns arrives in one batch. It does not
+write directories - that is declared on the loader, <code class="prettyprint">to_csv(...)-&gt;partitionBy('region')</code>.</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         
     
@@ -3134,7 +2879,7 @@ as the data source still needs to be read and processed up to the offset point.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">756</span>
+    <span class="phpdocumentor-element-found-in__line">737</span>
 
     </aside>
 
@@ -3197,7 +2942,7 @@ as the data source still needs to be read and processed up to the offset point.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">774</span>
+    <span class="phpdocumentor-element-found-in__line">755</span>
 
     </aside>
 
@@ -3267,68 +3012,6 @@ as the data source still needs to be read and processed up to the offset point.<
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_saveMode">
-        saveMode()
-        <a href="classes/Flow-ETL-DataFrame.html#method_saveMode" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">806</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Alias for DataFrame::mode.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">saveMode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Filesystem-SaveMode.html"><abbr title="\Flow\ETL\Filesystem\SaveMode">SaveMode</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$mode</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Filesystem-SaveMode.html"><abbr title="\Flow\ETL\Filesystem\SaveMode">SaveMode</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="method_saveMode_tags">
-        Tags
-        <a href="classes/Flow-ETL-DataFrame.html#method_saveMode_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">lazy</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
-                                    </dd>
-                        </dl>
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_schema">
         schema()
         <a href="classes/Flow-ETL-DataFrame.html#method_schema" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3337,7 +3020,7 @@ as the data source still needs to be read and processed up to the offset point.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">816</span>
+    <span class="phpdocumentor-element-found-in__line">787</span>
 
     </aside>
 
@@ -3359,10 +3042,17 @@ as the data source still needs to be read and processed up to the offset point.<
     </h5>
     <dl class="phpdocumentor-tag-list">
                     <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">trigger</span>
+                <span class="phpdocumentor-tag__name">lazy</span>
             </dt>
                             <dd class="phpdocumentor-tag-list__definition">
                                                                                                         
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Exception-SchemaNotDerivableException.html"><abbr title="\Flow\ETL\Exception\SchemaNotDerivableException">SchemaNotDerivableException</abbr></a></span>
+                                                                                    
                                     </dd>
                         </dl>
 
@@ -3388,7 +3078,7 @@ as the data source still needs to be read and processed up to the offset point.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">838</span>
+    <span class="phpdocumentor-element-found-in__line">796</span>
 
     </aside>
 
@@ -3451,14 +3141,14 @@ as the data source still needs to be read and processed up to the offset point.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">848</span>
+    <span class="phpdocumentor-element-found-in__line">810</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sortBy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$entries</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">sortBy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>|<abbr title="\Flow\ETL\SortReferences">SortReferences</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entries</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Config-Sort-SortAlgorithmBuilder.html"><abbr title="\Flow\ETL\Config\Sort\SortAlgorithmBuilder">SortAlgorithmBuilder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$algorithm</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3468,10 +3158,22 @@ as the data source still needs to be read and processed up to the offset point.<
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$entries</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>|<abbr title="\Flow\ETL\SortReferences">SortReferences</abbr>|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>a single column is sorted by on its own</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$algorithm</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-Config-Sort-SortAlgorithmBuilder.html"><abbr title="\Flow\ETL\Config\Sort\SortAlgorithmBuilder">SortAlgorithmBuilder</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>null defers to configuration; a builder pins the algorithm
+for this operation and skips any automatic choice</p>
+</section>
+
             </dd>
             </dl>
 
@@ -3512,7 +3214,7 @@ as the data source still needs to be read and processed up to the offset point.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">862</span>
+    <span class="phpdocumentor-element-found-in__line">826</span>
 
     </aside>
 
@@ -3574,7 +3276,7 @@ as the data source still needs to be read and processed up to the offset point.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">873</span>
+    <span class="phpdocumentor-element-found-in__line">837</span>
 
     </aside>
 
@@ -3637,7 +3339,7 @@ rows. Until will send a STOP signal to the Extractor when the condition is not m
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">887</span>
+    <span class="phpdocumentor-element-found-in__line">851</span>
 
     </aside>
 
@@ -3693,7 +3395,7 @@ from here no rows are passed forward.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">897</span>
+    <span class="phpdocumentor-element-found-in__line">861</span>
 
     </aside>
 
@@ -3754,7 +3456,7 @@ from here no rows are passed forward.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">925</span>
+    <span class="phpdocumentor-element-found-in__line">889</span>
 
     </aside>
 
@@ -3815,7 +3517,7 @@ from here no rows are passed forward.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">943</span>
+    <span class="phpdocumentor-element-found-in__line">907</span>
 
     </aside>
 
@@ -3883,7 +3585,7 @@ from here no rows are passed forward.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DataFrame.php"><a href="files/src-core-etl-src-flow-etl-dataframe.html"><abbr title="src/core/etl/src/Flow/ETL/DataFrame.php">DataFrame.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">964</span>
+    <span class="phpdocumentor-element-found-in__line">930</span>
 
     </aside>
 
@@ -3956,7 +3658,6 @@ from here no rows are passed forward.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_aggregate">aggregate()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_autoCast">autoCast()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_batchBy">batchBy()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_batchSize">batchSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_cache">cache()</a></li>
@@ -3968,7 +3669,6 @@ from here no rows are passed forward.</p>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_display">display()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_drop">drop()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_dropDuplicates">dropDuplicates()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_dropPartitions">dropPartitions()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_duplicateRow">duplicateRow()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_fetch">fetch()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_filter">filter()</a></li>
@@ -3984,20 +3684,16 @@ from here no rows are passed forward.</p>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_joinEach">joinEach()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_limit">limit()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_load">load()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_map">map()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_match">match()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_mode">mode()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_offset">offset()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_onError">onError()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_partitionBy">partitionBy()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_printRows">printRows()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_printSchema">printSchema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_rename">rename()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_renameEach">renameEach()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_reorderEntries">reorderEntries()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_repartition">repartition()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_rows">rows()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_run">run()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_saveMode">saveMode()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_schema">schema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_select">select()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-DataFrame.html#method_sortBy">sortBy()</a></li>

@@ -110,8 +110,11 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Flow\ETL\Extractor">Extractor</abbr>                    </span>
+                            <abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor">Extractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\LimitPushDown">LimitPushDown</abbr>,                             <abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr>                    </span>
     
+            <span class="phpdocumentor-element__extends">
+            uses
+                            <abbr title="\Flow\ETL\Extractor\Batches">Batches</abbr>,                             <abbr title="\Flow\ETL\Extractor\PushesLimit">PushesLimit</abbr>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -124,7 +127,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dbalkeysetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php">DbalKeySetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -148,7 +151,7 @@ ordering to ensure correct pagination.</p>
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\LimitPushDown">LimitPushDown</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr></dt>    </dl>
 
 
 
@@ -176,6 +179,18 @@ ordering to ensure correct pagination.</p>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_isRepeatable">isRepeatable()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_schema">schema()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\ETL\Schema">Schema</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withKeyAliasSuffix">withKeyAliasSuffix()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -187,13 +202,6 @@ ordering to ensure correct pagination.</p>
                                 &nbsp;: $this    </span>
 </dt>
 <dd>Sets the maximum number of rows to fetch.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withPageSize">withPageSize()</a>
-    <span>
-                                &nbsp;: $this    </span>
-</dt>
-<dd>Sets the number of rows per page.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withSchema">withSchema()</a>
@@ -230,7 +238,7 @@ ordering to ensure correct pagination.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dbalkeysetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php">DbalKeySetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -288,7 +296,7 @@ ordering to ensure correct pagination.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dbalkeysetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php">DbalKeySetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -328,6 +336,82 @@ ordering to ensure correct pagination.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_isRepeatable">
+        isRepeatable()
+        <a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_isRepeatable" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dbalkeysetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php">DbalKeySetExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">74</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isRepeatable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_schema">
+        schema()
+        <a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_schema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dbalkeysetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php">DbalKeySetExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">192</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">schema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Schema">Schema</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Schema">Schema</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_withKeyAliasSuffix">
         withKeyAliasSuffix()
         <a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withKeyAliasSuffix" class="headerlink"><i class="fas fa-link"></i></a>
@@ -336,7 +420,7 @@ ordering to ensure correct pagination.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dbalkeysetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php">DbalKeySetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">204</span>
 
     </aside>
 
@@ -384,7 +468,7 @@ ordering to ensure correct pagination.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dbalkeysetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php">DbalKeySetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
@@ -443,73 +527,6 @@ ordering to ensure correct pagination.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_withPageSize">
-        withPageSize()
-        <a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withPageSize" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dbalkeysetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php">DbalKeySetExtractor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">205</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Sets the number of rows per page.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withPageSize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$pageSize</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>the page size (must be &gt; 0)</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="method_withPageSize_tags">
-        Tags
-        <a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withPageSize_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">throws</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Flow\ETL\Exception\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                                                        <section class="phpdocumentor-description"><p>if page size is &lt;= 0</p>
-</section>
-
-                                    </dd>
-                        </dl>
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">$this</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_withSchema">
         withSchema()
         <a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withSchema" class="headerlink"><i class="fas fa-link"></i></a>
@@ -518,7 +535,7 @@ ordering to ensure correct pagination.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dbalkeysetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalKeySetExtractor.php">DbalKeySetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">238</span>
 
     </aside>
 
@@ -579,9 +596,10 @@ ordering to ensure correct pagination.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_extract">extract()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_isRepeatable">isRepeatable()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_schema">schema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withKeyAliasSuffix">withKeyAliasSuffix()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withMaximum">withMaximum()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withPageSize">withPageSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withSchema">withSchema()</a></li>
                                     </ul>
             </li>

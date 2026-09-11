@@ -16,6 +16,11 @@ Search.appendIndex(
             "summary": "Maps\u0020a\u0020column\u0020value\u0020\u002B\u0020Flow\u0020type\u0020to\u0020a\u0020TypedValue\u0020suitable\u0020for\u0020PostgreSQL\u0020queries.",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_map"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003AvalueType\u0028\u0029",
+            "name": "valueType",
+            "summary": "The\u0020PostgreSQL\u0020value\u0020type\u0020a\u0020column\u0020of\u0020this\u0020Flow\u0020type\u0020is\u0020written\u0020as.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_valueType"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003AtoColumnType\u0028\u0029",
             "name": "toColumnType",
             "summary": "Maps\u0020a\u0020Flow\u0020type\u0020to\u0020a\u0020PostgreSQL\u0020DDL\u0020column\u0020type.",
@@ -25,6 +30,11 @@ Search.appendIndex(
             "name": "toFlowType",
             "summary": "Maps\u0020a\u0020PostgreSQL\u0020DDL\u0020column\u0020type\u0020back\u0020to\u0020a\u0020canonical\u0020Flow\u0020type.",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toFlowType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003AtoFlowTypeWithTextFloor\u0028\u0029",
+            "name": "toFlowTypeWithTextFloor",
+            "summary": "Same\u0020mapping,\u0020except\u0020that\u0020a\u0020name\u0020this\u0020map\u0020does\u0020not\u0020recognise\u0020takes\u0020the\u0020text\u0020floor\u0020instead\u0020of\nthrowing.\u0020Only\u0020the\u0020result\u0020route\u0020may\u0020use\u0020it\u003A\u0020there\u0020the\u0020caster\u0020leaves\u0020an\u0020unrecognised\u0020type\u0020as\ntext,\u0020so\u0020schema\u0020and\u0020data\u0020agree.\u0020The\u0020catalog\u0020route\u0020has\u0020no\u0020such\u0020pairing\u0020and\u0020must\u0020keep\u0020refusing.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toFlowTypeWithTextFloor"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003ADEFAULT_TYPES",
             "name": "DEFAULT_TYPES",
@@ -41,20 +51,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-Exception-TypeMappingException.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Exception\\TypeMappingException\u003A\u003AambiguousEntryType\u0028\u0029",
-            "name": "ambiguousEntryType",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-Exception-TypeMappingException.html#method_ambiguousEntryType"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Exception\\TypeMappingException\u003A\u003AunsupportedColumnType\u0028\u0029",
             "name": "unsupportedColumnType",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-Exception-TypeMappingException.html#method_unsupportedColumnType"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Exception\\TypeMappingException\u003A\u003AunsupportedEntryType\u0028\u0029",
-            "name": "unsupportedEntryType",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-Exception-TypeMappingException.html#method_unsupportedEntryType"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Exception\\TypeMappingException\u003A\u003AunmappedColumn\u0028\u0029",
             "name": "unmappedColumn",
@@ -321,15 +321,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlCursorExtractor.html#method_extract"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlCursorExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "name": "isRepeatable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlCursorExtractor.html#method_isRepeatable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlCursorExtractor\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlCursorExtractor.html#method_schema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlCursorExtractor\u003A\u003AwithCursorName\u0028\u0029",
             "name": "withCursorName",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlCursorExtractor.html#method_withCursorName"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlCursorExtractor\u003A\u003AwithFetchSize\u0028\u0029",
-            "name": "withFetchSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlCursorExtractor.html#method_withFetchSize"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlCursorExtractor\u003A\u003AwithMaximum\u0028\u0029",
             "name": "withMaximum",
@@ -371,15 +376,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlKeySetExtractor.html#method_extract"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlKeySetExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "name": "isRepeatable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlKeySetExtractor.html#method_isRepeatable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlKeySetExtractor\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlKeySetExtractor.html#method_schema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlKeySetExtractor\u003A\u003AwithMaximum\u0028\u0029",
             "name": "withMaximum",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlKeySetExtractor.html#method_withMaximum"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlKeySetExtractor\u003A\u003AwithPageSize\u0028\u0029",
-            "name": "withPageSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlKeySetExtractor.html#method_withPageSize"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlKeySetExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
@@ -401,15 +411,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLimitOffsetExtractor.html#method_extract"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlLimitOffsetExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "name": "isRepeatable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLimitOffsetExtractor.html#method_isRepeatable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlLimitOffsetExtractor\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLimitOffsetExtractor.html#method_schema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlLimitOffsetExtractor\u003A\u003AwithMaximum\u0028\u0029",
             "name": "withMaximum",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLimitOffsetExtractor.html#method_withMaximum"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlLimitOffsetExtractor\u003A\u003AwithPageSize\u0028\u0029",
-            "name": "withPageSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLimitOffsetExtractor.html#method_withPageSize"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlLimitOffsetExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
@@ -588,7 +603,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\QueryBuilder\\InsertQueryBuilder\u003A\u003Abuild\u0028\u0029",
             "name": "build",
-            "summary": "",
+            "summary": "Every\u0020value\u0020already\u0020in\u0020PostgreSQL\u0027s\u0020text\u0020form.\u0020A\u0020column\u0027s\u0020converter\u0020is\u0020resolved\u0020once,\u0020on\u0020its\u0020first\u0020non\u002Dnull\nvalue\u0020\u002D\u0020so\u0020a\u0020column\u0020of\u0020an\u0020unmapped\u0020type\u0020holding\u0020only\u0020nulls\u0020passes.",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-QueryBuilder-InsertQueryBuilder.html#method_build"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\QueryBuilder\\UpdateQueryBuilder",
@@ -605,6 +620,21 @@ Search.appendIndex(
             "name": "build",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-QueryBuilder-UpdateQueryBuilder.html#method_build"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ResultSchema",
+            "name": "ResultSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ResultSchema.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ResultSchema\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ResultSchema.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ResultSchema\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ResultSchema.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Schema\\SortingStrategy\\TypeStrategy",
             "name": "TypeStrategy",

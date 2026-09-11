@@ -110,8 +110,11 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Flow\ETL\Extractor">Extractor</abbr>                    </span>
+                            <abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor">Extractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\LimitPushDown">LimitPushDown</abbr>,                             <abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr>                    </span>
     
+            <span class="phpdocumentor-element__extends">
+            uses
+                            <abbr title="\Flow\ETL\Extractor\Batches">Batches</abbr>,                             <abbr title="\Flow\ETL\Extractor\PushesLimit">PushesLimit</abbr>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -124,7 +127,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballimitoffsetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php">DbalLimitOffsetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -142,7 +145,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\LimitPushDown">LimitPushDown</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr></dt>    </dl>
 
 
 
@@ -170,6 +173,18 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_isRepeatable">isRepeatable()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_schema">schema()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\ETL\Schema">Schema</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_table">table()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -188,15 +203,9 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_withPageSize">withPageSize()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_withSchema">withSchema()</a>
     <span>
-                                &nbsp;: self    </span>
+                                &nbsp;: static    </span>
 </dt>
 
     </dl>
@@ -227,7 +236,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballimitoffsetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php">DbalLimitOffsetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -278,7 +287,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballimitoffsetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php">DbalLimitOffsetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -316,6 +325,82 @@
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isRepeatable">
+        isRepeatable()
+        <a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_isRepeatable" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballimitoffsetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php">DbalLimitOffsetExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isRepeatable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_schema">
+        schema()
+        <a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_schema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballimitoffsetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php">DbalLimitOffsetExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">165</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">schema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Schema">Schema</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Schema">Schema</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_table">
@@ -326,7 +411,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballimitoffsetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php">DbalLimitOffsetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -388,7 +473,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballimitoffsetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php">DbalLimitOffsetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -436,7 +521,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballimitoffsetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php">DbalLimitOffsetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -476,54 +561,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_withPageSize">
-        withPageSize()
-        <a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_withPageSize" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballimitoffsetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php">DbalLimitOffsetExtractor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">154</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withPageSize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$pageSize</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_withSchema">
         withSchema()
         <a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_withSchema" class="headerlink"><i class="fas fa-link"></i></a>
@@ -532,14 +569,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php"><a href="files/src-adapter-etl-adapter-doctrine-src-flow-etl-adapter-doctrine-dballimitoffsetextractor.html"><abbr title="src/adapter/etl-adapter-doctrine/src/Flow/ETL/Adapter/Doctrine/DbalLimitOffsetExtractor.php">DbalLimitOffsetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">165</span>
+    <span class="phpdocumentor-element-found-in__line">198</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">withSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -562,7 +599,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
+        <span class="phpdocumentor-signature__response_type">static</span>
             </section>
 
 </article>
@@ -590,10 +627,11 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_extract">extract()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_isRepeatable">isRepeatable()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_schema">schema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_table">table()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_withMaximum">withMaximum()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_withOffset">withOffset()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_withPageSize">withPageSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_withSchema">withSchema()</a></li>
                                     </ul>
             </li>

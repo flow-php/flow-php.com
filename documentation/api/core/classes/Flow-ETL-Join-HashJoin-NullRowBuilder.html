@@ -132,6 +132,8 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
+
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -141,7 +143,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Join/HashJoin/NullRowBuilder.php"><a href="files/src-core-etl-src-flow-etl-join-hashjoin-nullrowbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Join/HashJoin/NullRowBuilder.php">NullRowBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
@@ -171,12 +173,6 @@
     <a class="" href="classes/Flow-ETL-Join-HashJoin-NullRowBuilder.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Join-HashJoin-NullRowBuilder.html#method_collect">collect()</a>
-    <span>
-                                &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -213,14 +209,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Join/HashJoin/NullRowBuilder.php"><a href="files/src-core-etl-src-flow-etl-join-hashjoin-nullrowbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Join/HashJoin/NullRowBuilder.php">NullRowBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-EntryFactory.html"><abbr title="\Flow\ETL\Row\EntryFactory">EntryFactory</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entryFactory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -229,52 +225,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entryFactory</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-EntryFactory.html"><abbr title="\Flow\ETL\Row\EntryFactory">EntryFactory</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_collect">
-        collect()
-        <a href="classes/Flow-ETL-Join-HashJoin-NullRowBuilder.html#method_collect" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Join/HashJoin/NullRowBuilder.php"><a href="files/src-core-etl-src-flow-etl-join-hashjoin-nullrowbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Join/HashJoin/NullRowBuilder.php">NullRowBuilder.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">25</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">collect</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$row</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -301,7 +253,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Join/HashJoin/NullRowBuilder.php"><a href="files/src-core-etl-src-flow-etl-join-hashjoin-nullrowbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Join/HashJoin/NullRowBuilder.php">NullRowBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -348,7 +300,6 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Join-HashJoin-NullRowBuilder.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Join-HashJoin-NullRowBuilder.html#method_collect">collect()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Join-HashJoin-NullRowBuilder.html#method_row">row()</a></li>
                                     </ul>
             </li>

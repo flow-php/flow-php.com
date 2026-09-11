@@ -139,7 +139,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy.php"><a href="files/src-core-etl-src-flow-etl-groupby.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy.php">GroupBy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -190,6 +190,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-GroupBy.html#method_isGlobal">isGlobal()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-GroupBy.html#method_isPivot">isPivot()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -202,15 +208,25 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-GroupBy.html#method_outputSchema">outputSchema()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>    </span>
+</dt>
+<dd>The aggregate operator&#039;s declared output schema, computed once per run. Group-key definitions
+come from the input schema unchanged: a key is null only when the input column was already
+nullable. A key the batch schema does not declare refuses at bind - inventing a column would
+put a value in row storage that no schema-driven reader can see.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-GroupBy.html#method_pivot">pivot()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-GroupBy.html#method_pivotResult">pivotResult()</a>
+    <a class="" href="classes/Flow-ETL-GroupBy.html#method_pivotedBy">pivotedBy()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-GroupBy-Pivot.html"><abbr title="\Flow\ETL\GroupBy\Pivot">Pivot</abbr></a>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -247,7 +263,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy.php"><a href="files/src-core-etl-src-flow-etl-groupby.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy.php">GroupBy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -291,7 +307,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy.php"><a href="files/src-core-etl-src-flow-etl-groupby.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy.php">GroupBy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -335,14 +351,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy.php"><a href="files/src-core-etl-src-flow-etl-groupby.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy.php">GroupBy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">aggregatedRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-GroupBy-GroupKey.html"><abbr title="\Flow\ETL\GroupBy\GroupKey">GroupKey</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-GroupBy-Aggregators.html"><abbr title="\Flow\ETL\GroupBy\Aggregators">Aggregators</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$aggregators</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-EntryFactory.html"><abbr title="\Flow\ETL\Row\EntryFactory">EntryFactory</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entryFactory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">aggregatedRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-GroupBy-GroupKey.html"><abbr title="\Flow\ETL\GroupBy\GroupKey">GroupKey</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-GroupBy-Aggregators.html"><abbr title="\Flow\ETL\GroupBy\Aggregators">Aggregators</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$aggregators</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$output</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -365,8 +381,8 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entryFactory</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-EntryFactory.html"><abbr title="\Flow\ETL\Row\EntryFactory">EntryFactory</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$output</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -397,7 +413,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy.php"><a href="files/src-core-etl-src-flow-etl-groupby.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy.php">GroupBy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -427,6 +443,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_isGlobal">
+        isGlobal()
+        <a href="classes/Flow-ETL-GroupBy.html#method_isGlobal" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy.php"><a href="files/src-core-etl-src-flow-etl-groupby.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy.php">GroupBy.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isGlobal</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_isPivot">
         isPivot()
         <a href="classes/Flow-ETL-GroupBy.html#method_isPivot" class="headerlink"><i class="fas fa-link"></i></a>
@@ -435,7 +489,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy.php"><a href="files/src-core-etl-src-flow-etl-groupby.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy.php">GroupBy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -473,14 +527,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy.php"><a href="files/src-core-etl-src-flow-etl-groupby.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy.php">GroupBy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">keyValues</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-GroupBy-GroupKey.html"><abbr title="\Flow\ETL\GroupBy\GroupKey">GroupKey</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">keyValues</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-GroupBy-GroupKey.html"><abbr title="\Flow\ETL\GroupBy\GroupKey">GroupKey</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -491,6 +545,13 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$row</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$input</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -513,6 +574,65 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_outputSchema">
+        outputSchema()
+        <a href="classes/Flow-ETL-GroupBy.html#method_outputSchema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy.php"><a href="files/src-core-etl-src-flow-etl-groupby.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy.php">GroupBy.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">91</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The aggregate operator&#039;s declared output schema, computed once per run. Group-key definitions
+come from the input schema unchanged: a key is null only when the input column was already
+nullable. A key the batch schema does not declare refuses at bind - inventing a column would
+put a value in row storage that no schema-driven reader can see.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">outputSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-GroupBy-Aggregators.html"><abbr title="\Flow\ETL\GroupBy\Aggregators">Aggregators</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bound</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$input</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bound</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-GroupBy-Aggregators.html"><abbr title="\Flow\ETL\GroupBy\Aggregators">Aggregators</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_pivot">
         pivot()
         <a href="classes/Flow-ETL-GroupBy.html#method_pivot" class="headerlink"><i class="fas fa-link"></i></a>
@@ -521,14 +641,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy.php"><a href="files/src-core-etl-src-flow-etl-groupby.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy.php">GroupBy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">pivot</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">pivot</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-GroupBy-DeclaredPivotValues.html"><abbr title="\Flow\ETL\GroupBy\DeclaredPivotValues">DeclaredPivotValues</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -539,6 +659,13 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$ref</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$values</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-GroupBy-DeclaredPivotValues.html"><abbr title="\Flow\ETL\GroupBy\DeclaredPivotValues">DeclaredPivotValues</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -557,59 +684,35 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_pivotResult">
-        pivotResult()
-        <a href="classes/Flow-ETL-GroupBy.html#method_pivotResult" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_pivotedBy">
+        pivotedBy()
+        <a href="classes/Flow-ETL-GroupBy.html#method_pivotedBy" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy.php"><a href="files/src-core-etl-src-flow-etl-groupby.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy.php">GroupBy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">pivotResult</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">pivotedBy</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-GroupBy-Pivot.html"><abbr title="\Flow\ETL\GroupBy\Pivot">Pivot</abbr></a>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$context</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$batchSize</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int<1, max></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">1000</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
         
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-GroupBy-Pivot.html"><abbr title="\Flow\ETL\GroupBy\Pivot">Pivot</abbr></a>|null</span>
             </section>
 
 </article>
@@ -627,7 +730,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy.php"><a href="files/src-core-etl-src-flow-etl-groupby.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy.php">GroupBy.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">205</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -677,10 +780,12 @@
                                             <li class=""><a href="classes/Flow-ETL-GroupBy.html#method_aggregate">aggregate()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-GroupBy.html#method_aggregatedRow">aggregatedRow()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-GroupBy.html#method_aggregations">aggregations()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-GroupBy.html#method_isGlobal">isGlobal()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-GroupBy.html#method_isPivot">isPivot()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-GroupBy.html#method_keyValues">keyValues()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-GroupBy.html#method_outputSchema">outputSchema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-GroupBy.html#method_pivot">pivot()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-GroupBy.html#method_pivotResult">pivotResult()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-GroupBy.html#method_pivotedBy">pivotedBy()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-GroupBy.html#method_references">references()</a></li>
                                     </ul>
             </li>

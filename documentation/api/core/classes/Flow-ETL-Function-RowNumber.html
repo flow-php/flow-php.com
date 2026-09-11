@@ -131,6 +131,9 @@
             implements
                             <a href="classes/Flow-ETL-Function-WindowFunction.html"><abbr title="\Flow\ETL\Function\WindowFunction">WindowFunction</abbr></a>                    </span>
     
+            <span class="phpdocumentor-element__extends">
+            uses
+                            <a href="classes/Flow-ETL-Function-ResolvesFromChildren.html"><abbr title="\Flow\ETL\Function\ResolvesFromChildren">ResolvesFromChildren</abbr></a>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -143,7 +146,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/RowNumber.php"><a href="files/src-core-etl-src-flow-etl-function-rownumber.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RowNumber.php">RowNumber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -189,10 +192,31 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-RowNumber.html#method_children">children()</a>
+    <span>
+                                &nbsp;: array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;    </span>
+</dt>
+<dd>Every operand of this node that is an expression, in constructor order.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-RowNumber.html#method_over">over()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
+<dd>Returns a copy bound to $window. Never mutates $this.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-ResolvesFromChildren.html#method_resolved">resolved()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-RowNumber.html#method_returns">returns()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>NOT NULL - every row of a partition has a row number</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-RowNumber.html#method_toString">toString()</a>
@@ -204,6 +228,12 @@
     <a class="" href="classes/Flow-ETL-Function-RowNumber.html#method_window">window()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-RowNumber.html#method_withChildren">withChildren()</a>
+    <span>
+                                &nbsp;: static    </span>
 </dt>
 
     </dl>
@@ -234,20 +264,30 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/RowNumber.php"><a href="files/src-core-etl-src-flow-etl-function-rownumber.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RowNumber.php">RowNumber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$window</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$window</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         
@@ -268,7 +308,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/RowNumber.php"><a href="files/src-core-etl-src-flow-etl-function-rownumber.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RowNumber.php">RowNumber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -304,6 +344,45 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_children">
+        children()
+        <a href="classes/Flow-ETL-Function-RowNumber.html#method_children" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/RowNumber.php"><a href="files/src-core-etl-src-flow-etl-function-rownumber.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RowNumber.php">RowNumber.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Every operand of this node that is an expression, in constructor order.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">children</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_over">
         over()
         <a href="classes/Flow-ETL-Function-RowNumber.html#method_over" class="headerlink"><i class="fas fa-link"></i></a>
@@ -312,11 +391,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/RowNumber.php"><a href="files/src-core-etl-src-flow-etl-function-rownumber.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RowNumber.php">RowNumber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Returns a copy bound to $window. Never mutates $this.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">over</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$window</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
@@ -352,6 +432,83 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_resolved">
+        resolved()
+        <a href="classes/Flow-ETL-Function-ResolvesFromChildren.html#method_resolved" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ResolvesFromChildren.php"><a href="files/src-core-etl-src-flow-etl-function-resolvesfromchildren.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ResolvesFromChildren.php">ResolvesFromChildren.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">12</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">resolved</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_returns">
+        returns()
+        <a href="classes/Flow-ETL-Function-RowNumber.html#method_returns" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/RowNumber.php"><a href="files/src-core-etl-src-flow-etl-function-rownumber.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RowNumber.php">RowNumber.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">53</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">NOT NULL - every row of a partition has a row number</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">returns</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_toString">
         toString()
         <a href="classes/Flow-ETL-Function-RowNumber.html#method_toString" class="headerlink"><i class="fas fa-link"></i></a>
@@ -360,7 +517,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/RowNumber.php"><a href="files/src-core-etl-src-flow-etl-function-rownumber.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RowNumber.php">RowNumber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -398,7 +555,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/RowNumber.php"><a href="files/src-core-etl-src-flow-etl-function-rownumber.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RowNumber.php">RowNumber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -419,6 +576,54 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withChildren">
+        withChildren()
+        <a href="classes/Flow-ETL-Function-RowNumber.html#method_withChildren" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/RowNumber.php"><a href="files/src-core-etl-src-flow-etl-function-rownumber.html"><abbr title="src/core/etl/src/Flow/ETL/Function/RowNumber.php">RowNumber.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">38</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withChildren</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$children</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$children</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
             </section>
 
 </article>
@@ -446,9 +651,13 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Function-RowNumber.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-RowNumber.html#method_apply">apply()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-RowNumber.html#method_children">children()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-RowNumber.html#method_over">over()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-ResolvesFromChildren.html#method_resolved">resolved()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-RowNumber.html#method_returns">returns()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-RowNumber.html#method_toString">toString()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-RowNumber.html#method_window">window()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-RowNumber.html#method_withChildren">withChildren()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -51,10 +51,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "name": "isRepeatable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_isRepeatable"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_extract"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_schema"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003AwithKeyAliasSuffix\u0028\u0029",
             "name": "withKeyAliasSuffix",
@@ -65,11 +75,6 @@ Search.appendIndex(
             "name": "withMaximum",
             "summary": "Sets\u0020the\u0020maximum\u0020number\u0020of\u0020rows\u0020to\u0020fetch.",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withMaximum"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003AwithPageSize\u0028\u0029",
-            "name": "withPageSize",
-            "summary": "Sets\u0020the\u0020number\u0020of\u0020rows\u0020per\u0020page.",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_withPageSize"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
@@ -91,10 +96,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_table"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLimitOffsetExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "name": "isRepeatable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_isRepeatable"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLimitOffsetExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_extract"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLimitOffsetExtractor\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_schema"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLimitOffsetExtractor\u003A\u003AwithMaximum\u0028\u0029",
             "name": "withMaximum",
@@ -105,11 +120,6 @@ Search.appendIndex(
             "name": "withOffset",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_withOffset"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLimitOffsetExtractor\u003A\u003AwithPageSize\u0028\u0029",
-            "name": "withPageSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_withPageSize"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLimitOffsetExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
@@ -293,13 +303,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalQueryExtractor",
             "name": "DbalQueryExtractor",
-            "summary": "",
+            "summary": "batchSize\u0028\u0029\u0020is\u0020a\u0020yield\u0020cap,\u0020not\u0020a\u0020fetch\u0020size\u003A\u0020fetchAllAssociative\u0028\u0029\u0020materialises\u0020the\u0020whole\u0020result\u0020set\u0020per\nparameter\u0020set,\u0020so\u0020lowering\u0020it\u0020cannot\u0020lower\u0020peak\u0020memory.\u0020The\u0020paginating\u0020extractors\u0020default\u0020to\u00201000\u0020because\ntheir\u0020number\u0020IS\u0020a\u0020round\u0020trip.",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalQueryExtractor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalQueryExtractor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalQueryExtractor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalQueryExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "name": "isRepeatable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalQueryExtractor.html#method_isRepeatable"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalQueryExtractor\u003A\u003Asingle\u0028\u0029",
             "name": "single",
@@ -310,6 +325,11 @@ Search.appendIndex(
             "name": "extract",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalQueryExtractor.html#method_extract"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalQueryExtractor\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalQueryExtractor.html#method_schema"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalQueryExtractor\u003A\u003AwithParameters\u0028\u0029",
             "name": "withParameters",
@@ -325,6 +345,26 @@ Search.appendIndex(
             "name": "withTypes",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalQueryExtractor.html#method_withTypes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalResultSchema",
+            "name": "DbalResultSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalResultSchema.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalResultSchema\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "The\u0020one\u0020schema\u0020a\u0020read\u0020has\u003A\u0020extract\u0028\u0029\u0020asks\u0020for\u0020it\u0020before\u0020the\u0020first\u0020row\u0020and\u0020never\u0020falls\u0020back\u0020to\nper\u002Dbatch\u0020typing,\u0020so\u0020a\u0020query\u0020that\u0020cannot\u0020be\u0020described\u0020does\u0020not\u0020run.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalResultSchema.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DescribeQuery",
+            "name": "DescribeQuery",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DescribeQuery.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DescribeQuery\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DescribeQuery.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\dbal_dataframe_factory\u0028\u0029",
             "name": "dbal_dataframe_factory",
@@ -455,6 +495,66 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-LiteralParameter.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\MysqliPlaceholders",
+            "name": "MysqliPlaceholders",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-MysqliPlaceholders.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\MysqliPlaceholders\u003A\u003Aplaceholder\u0028\u0029",
+            "name": "placeholder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-MysqliPlaceholders.html#method_placeholder"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\MysqliPlaceholders\u003A\u003AusesBackslashEscapes\u0028\u0029",
+            "name": "usesBackslashEscapes",
+            "summary": "Whether\u0020the\u0020driver\u0020reads\u0020a\u0020backslash\u0020inside\u0020a\u0020string\u0020literal\u0020as\u0020an\u0020escape,\u0020which\u0020decides\u0020how\nDBAL\u0027s\u0020parser\u0020tokenises\u0020string\u0020literals.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-MysqliPlaceholders.html#method_usesBackslashEscapes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\MysqliResultColumns",
+            "name": "MysqliResultColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-MysqliResultColumns.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\MysqliResultColumns\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-MysqliResultColumns.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\MysqliTypesMap",
+            "name": "MysqliTypesMap",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-MysqliTypesMap.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\MysqliTypesMap\u003A\u003AtoFlowType\u0028\u0029",
+            "name": "toFlowType",
+            "summary": "mysqli_result\u003A\u003Afetch_fields\u0028\u0029\u0020reports\u0020an\u0020integer\u0020type\u0020constant\u0020per\u0020column.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-MysqliTypesMap.html#method_toFlowType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\NativePlaceholders",
+            "name": "NativePlaceholders",
+            "summary": "Rewrites\u0020DBAL\u0027s\u0020\u003Aname\u0020\/\u0020\u003F\u0020placeholders\u0020into\u0020a\u0020driver\u002Dnative\u0020dialect,\u0020using\u0020DBAL\u0027s\u0020own\u0020SQL\u0020parser.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-NativePlaceholders.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\NativePlaceholders\u003A\u003AtoMysqli\u0028\u0029",
+            "name": "toMysqli",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-NativePlaceholders.html#method_toMysqli"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\NativePlaceholders\u003A\u003AtoPostgreSql\u0028\u0029",
+            "name": "toPostgreSql",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-NativePlaceholders.html#method_toPostgreSql"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\NativeTypes",
+            "name": "NativeTypes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-NativeTypes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\NativeTypes\u003A\u003AtoFlowType\u0028\u0029",
+            "name": "toFlowType",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-NativeTypes.html#method_toFlowType"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Order",
             "name": "Order",
@@ -636,6 +736,66 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-ParametersSet.html#method_all"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PdoSqliteColumnNames",
+            "name": "PdoSqliteColumnNames",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PdoSqliteColumnNames.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PdoSqliteColumnNames\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PdoSqliteColumnNames.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PgSqlResultColumns",
+            "name": "PgSqlResultColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PgSqlResultColumns.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PgSqlResultColumns\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PgSqlResultColumns.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PgSqlTypesMap",
+            "name": "PgSqlTypesMap",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PgSqlTypesMap.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PgSqlTypesMap\u003A\u003AtoFlowType\u0028\u0029",
+            "name": "toFlowType",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PgSqlTypesMap.html#method_toFlowType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PlaceholderDialect",
+            "name": "PlaceholderDialect",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PlaceholderDialect.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PlaceholderDialect\u003A\u003Aplaceholder\u0028\u0029",
+            "name": "placeholder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PlaceholderDialect.html#method_placeholder"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PlaceholderDialect\u003A\u003AusesBackslashEscapes\u0028\u0029",
+            "name": "usesBackslashEscapes",
+            "summary": "Whether\u0020the\u0020driver\u0020reads\u0020a\u0020backslash\u0020inside\u0020a\u0020string\u0020literal\u0020as\u0020an\u0020escape,\u0020which\u0020decides\u0020how\nDBAL\u0027s\u0020parser\u0020tokenises\u0020string\u0020literals.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PlaceholderDialect.html#method_usesBackslashEscapes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PostgreSqlPlaceholders",
+            "name": "PostgreSqlPlaceholders",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PostgreSqlPlaceholders.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PostgreSqlPlaceholders\u003A\u003Aplaceholder\u0028\u0029",
+            "name": "placeholder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PostgreSqlPlaceholders.html#method_placeholder"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PostgreSqlPlaceholders\u003A\u003AusesBackslashEscapes\u0028\u0029",
+            "name": "usesBackslashEscapes",
+            "summary": "Whether\u0020the\u0020driver\u0020reads\u0020a\u0020backslash\u0020inside\u0020a\u0020string\u0020literal\u0020as\u0020an\u0020escape,\u0020which\u0020decides\u0020how\nDBAL\u0027s\u0020parser\u0020tokenises\u0020string\u0020literals.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PostgreSqlPlaceholders.html#method_usesBackslashEscapes"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\QueryParameter",
             "name": "QueryParameter",
             "summary": "",
@@ -656,6 +816,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-QueryParameter.html#method_type"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\ResultColumn",
+            "name": "ResultColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-ResultColumn.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\ResultColumn\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-ResultColumn.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\ResultColumn\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-ResultColumn.html#property_name"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\ResultColumn\u003A\u003A\u0024native",
+            "name": "native",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-ResultColumn.html#property_native"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\RewrittenSql",
+            "name": "RewrittenSql",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-RewrittenSql.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\RewrittenSql\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-RewrittenSql.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\RewrittenSql\u003A\u003A\u0024sql",
+            "name": "sql",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-RewrittenSql.html#property_sql"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\RewrittenSql\u003A\u003A\u0024parameters",
+            "name": "parameters",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-RewrittenSql.html#property_parameters"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\SchemaConverter",
             "name": "SchemaConverter",
             "summary": "",
@@ -675,6 +875,36 @@ Search.appendIndex(
             "name": "toFlowSchema",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-SchemaConverter.html#method_toFlowSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Sqlite3ColumnNames",
+            "name": "Sqlite3ColumnNames",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Sqlite3ColumnNames.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Sqlite3ColumnNames\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Sqlite3ColumnNames.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\SqliteResultSchema",
+            "name": "SqliteResultSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-SqliteResultSchema.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\SqliteResultSchema\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-SqliteResultSchema.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\SqliteTypes",
+            "name": "SqliteTypes",
+            "summary": "SQLite\u0020has\u0020no\u0020per\u002Dcolumn\u0020type\u003A\u0020SQLite3Result\u003A\u003AcolumnType\u0028\u0029\u0020describes\u0020the\u0020value,\u0020not\u0020the\u0020column,\nand\u0020sqlite3_column_decltype\u0028\u0029\u0020is\u0020not\u0020bound\u0020in\u0020PHP.\u0020An\u0020all\u002Dstring\u0020schema\u0020is\u0020a\u0020true\u0020statement\u0020about\nit\u0020rather\u0020than\u0020a\u0020floor,\u0020and\u0020the\u0020read\u0020casts\u0020values\u0020to\u0020match.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-SqliteTypes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\SqliteTypes\u003A\u003AtoFlowType\u0028\u0029",
+            "name": "toFlowType",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-SqliteTypes.html#method_toFlowType"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Table",
             "name": "Table",
@@ -730,6 +960,16 @@ Search.appendIndex(
             "name": "withIsolationLevel",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-TransactionalDbalLoader.html#method_withIsolationLevel"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypedColumns",
+            "name": "TypedColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TypedColumns.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypedColumns\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "Every\u0020column\u0020is\u0020nullable\u003A\u0020result\u0020metadata\u0020cannot\u0020prove\u0020NOT\u0020NULL,\u0020and\u0020an\u0020outer\u0020join\u0020or\u0020an\nexpression\u0020can\u0020always\u0020produce\u0020null.\u0020Duplicate\u0020output\u0020names\u0020collapse\u0020last\u002Dwins,\u0020matching\u0020what\nfetchAssociative\u0028\u0029\u0020does\u0020to\u0020the\u0020row\u0020itself.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-TypedColumns.html#method_schema"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypesMap",
             "name": "TypesMap",

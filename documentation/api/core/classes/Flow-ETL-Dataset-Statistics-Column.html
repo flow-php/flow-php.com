@@ -141,7 +141,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-column.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php">Column.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -174,7 +174,7 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Dataset-Statistics-Column.html#method_calculate">calculate()</a>
+    <a class="" href="classes/Flow-ETL-Dataset-Statistics-Column.html#method_add">add()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -267,14 +267,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-column.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php">Column.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definition</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -283,8 +283,15 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entry</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;</span>
+                <span class="phpdocumentor-argument-list__argument__name">$definition</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a>&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -317,22 +324,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_calculate">
-        calculate()
-        <a href="classes/Flow-ETL-Dataset-Statistics-Column.html#method_calculate" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_add">
+        add()
+        <a href="classes/Flow-ETL-Dataset-Statistics-Column.html#method_add" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-column.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php">Column.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">calculate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definition</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -341,8 +348,15 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entry</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-Entry.html"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr></a>&lt;string|int, mixed&gt;</span>
+                <span class="phpdocumentor-argument-list__argument__name">$definition</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a>&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -369,7 +383,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-column.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php">Column.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
@@ -407,7 +421,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-column.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php">Column.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -445,7 +459,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-column.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php">Column.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -483,7 +497,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-column.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php">Column.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
@@ -521,7 +535,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-column.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php">Column.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -559,7 +573,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-column.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php">Column.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">159</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -597,7 +611,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-column.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php">Column.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -635,7 +649,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-column.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php">Column.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -673,7 +687,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-column.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php">Column.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">174</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 
     </aside>
 
@@ -711,7 +725,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php"><a href="files/src-core-etl-src-flow-etl-dataset-statistics-column.html"><abbr title="src/core/etl/src/Flow/ETL/Dataset/Statistics/Column.php">Column.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -758,7 +772,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Dataset-Statistics-Column.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Dataset-Statistics-Column.html#method_calculate">calculate()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Dataset-Statistics-Column.html#method_add">add()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Dataset-Statistics-Column.html#method_distinctCount">distinctCount()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Dataset-Statistics-Column.html#method_max">max()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Dataset-Statistics-Column.html#method_maxElementsCount">maxElementsCount()</a></li>

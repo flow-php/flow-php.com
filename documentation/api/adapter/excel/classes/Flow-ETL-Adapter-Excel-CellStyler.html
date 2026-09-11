@@ -172,7 +172,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/CellStyler.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-cellstyler.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/CellStyler.php">CellStyler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -180,7 +180,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">style</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowNumber</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnIndex</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\OpenSpout\Common\Entity\Style\Style">Style</abbr>|null</span></code>
+                    <span class="phpdocumentor-signature__name">style</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definition</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowNumber</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnIndex</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\OpenSpout\Common\Entity\Style\Style">Style</abbr>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -189,11 +189,20 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entry</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Row\Entry">Entry</abbr>&lt;string|int, mixed&gt;</span>
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>the entry being written</p>
+                    <section class="phpdocumentor-description"><p>the value being written</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$definition</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr>&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>the column the value belongs to</p>
 </section>
 
             </dd>

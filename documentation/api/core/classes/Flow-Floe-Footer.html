@@ -141,7 +141,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -170,12 +170,6 @@
     <a class="" href="classes/Flow-Floe-Footer.html#property_metadata">$metadata</a>
     <span>
                         &nbsp;: <a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-Floe-Footer.html#property_partitions">$partitions</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
@@ -223,16 +217,6 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Floe-Footer.html#method_filePartitions">filePartitions()</a>
-    <span>
-                                &nbsp;: array&lt;int, <abbr title="\Flow\Filesystem\Partition">Partition</abbr>&gt;    </span>
-</dt>
-<dd>The single combination of a single-combination file, in the order it was
-written (the PARTITIONS frame / table entry preserves it). A zero-section
-value keeps only its combination in the table, so it is recovered from the
-last non-empty table entry.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-Footer.html#method_fromArray">fromArray()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -247,22 +231,8 @@ last non-empty table entry.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-Footer.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{version: int, writer: string, schema: array<int,array<string,mixed>>, sections: array<int,array{offset: int, partitionsId: int, rowCount: int}>, partitions: array<int,array<string,string>>, totalRows: int, metadata: array<string,mixed>}    </span>
+                                &nbsp;: array{version: int, writer: string, schema: array<int,array<string,mixed>>, sections: array<int,array{offset: int, rowCount: int}>, totalRows: int, metadata: array<string,mixed>}    </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Floe-Footer.html#method_partitionsFor">partitionsFor()</a>
-    <span>
-                                &nbsp;: array&lt;string, string&gt;    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Floe-Footer.html#method_reconstructRows">reconstructRows()</a>
-    <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>    </span>
-</dt>
-<dd>Rebuilds Rows from already-decoded (un-partitioned) rows, reattaching the
-file&#039;s single partition combination in its original order.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-Footer.html#method_schema">schema()</a>
@@ -312,7 +282,7 @@ file&#039;s single partition combination in its original order.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -322,43 +292,6 @@ file&#039;s single partition combination in its original order.</dd>
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a></span>
     <span class="phpdocumentor-signature__name">$metadata</span>
-    </code>
-
-    
-    
-    
-
-        
-        
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_partitions">
-        $partitions
-        <a href="classes/Flow-Floe-Footer.html#property_partitions" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">42</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$partitions</span>
     </code>
 
     
@@ -386,7 +319,7 @@ file&#039;s single partition combination in its original order.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -423,7 +356,7 @@ file&#039;s single partition combination in its original order.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -460,7 +393,7 @@ file&#039;s single partition combination in its original order.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -497,7 +430,7 @@ file&#039;s single partition combination in its original order.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -534,7 +467,7 @@ file&#039;s single partition combination in its original order.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -576,14 +509,14 @@ file&#039;s single partition combination in its original order.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$writer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, array&lt;string, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-Floe-Section.html"><abbr title="\Flow\Floe\Section">Section</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sections</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, array&lt;string, string&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partitions</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$totalRows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$writer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, array&lt;string, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-Floe-Section.html"><abbr title="\Flow\Floe\Section">Section</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sections</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$totalRows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -622,15 +555,6 @@ file&#039;s single partition combination in its original order.</dd>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$partitions</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, array&lt;string, string&gt;&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>deduped PARTITIONS frame combinations, index = partitionsId</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$totalRows</span>
                 : <span class="phpdocumentor-argument-list__argument__type">int</span>
                             </dt>
@@ -656,62 +580,6 @@ file&#039;s single partition combination in its original order.</dd>
         class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_filePartitions">
-        filePartitions()
-        <a href="classes/Flow-Floe-Footer.html#method_filePartitions" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">135</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The single combination of a single-combination file, in the order it was
-written (the PARTITIONS frame / table entry preserves it). A zero-section
-value keeps only its combination in the table, so it is recovered from the
-last non-empty table entry.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">filePartitions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="\Flow\Filesystem\Partition">Partition</abbr>&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="method_filePartitions_tags">
-        Tags
-        <a href="classes/Flow-Floe-Footer.html#method_filePartitions_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">throws</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-Floe-Exception-FloeException.html"><abbr title="\Flow\Floe\Exception\FloeException">FloeException</abbr></a></span>
-                                                                                    
-                                    </dd>
-                        </dl>
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="\Flow\Filesystem\Partition">Partition</abbr>&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_fromArray">
@@ -722,7 +590,7 @@ last non-empty table entry.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -784,7 +652,7 @@ last non-empty table entry.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -846,14 +714,14 @@ last non-empty table entry.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">203</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{version: int, writer: string, schema: array<int,array<string,mixed>>, sections: array<int,array{offset: int, partitionsId: int, rowCount: int}>, partitions: array<int,array<string,string>>, totalRows: int, metadata: array<string,mixed>}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{version: int, writer: string, schema: array<int,array<string,mixed>>, sections: array<int,array{offset: int, rowCount: int}>, totalRows: int, metadata: array<string,mixed>}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -866,133 +734,7 @@ last non-empty table entry.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{version: int, writer: string, schema: array<int,array<string,mixed>>, sections: array<int,array{offset: int, partitionsId: int, rowCount: int}>, partitions: array<int,array<string,string>>, totalRows: int, metadata: array<string,mixed>}</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_partitionsFor">
-        partitionsFor()
-        <a href="classes/Flow-Floe-Footer.html#method_partitionsFor" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">183</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">partitionsFor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partitionsId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$partitionsId</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="method_partitionsFor_tags">
-        Tags
-        <a href="classes/Flow-Floe-Footer.html#method_partitionsFor_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">throws</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-Floe-Exception-FloeException.html"><abbr title="\Flow\Floe\Exception\FloeException">FloeException</abbr></a></span>
-                                                                                    
-                                    </dd>
-                        </dl>
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_reconstructRows">
-        reconstructRows()
-        <a href="classes/Flow-Floe-Footer.html#method_reconstructRows" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">166</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Rebuilds Rows from already-decoded (un-partitioned) rows, reattaching the
-file&#039;s single partition combination in its original order.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">reconstructRows</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="method_reconstructRows_tags">
-        Tags
-        <a href="classes/Flow-Floe-Footer.html#method_reconstructRows_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">throws</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-Floe-Exception-FloeException.html"><abbr title="\Flow\Floe\Exception\FloeException">FloeException</abbr></a></span>
-                                                                                    
-                                    </dd>
-                        </dl>
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type">array{version: int, writer: string, schema: array<int,array<string,mixed>>, sections: array<int,array{offset: int, rowCount: int}>, totalRows: int, metadata: array<string,mixed>}</span>
             </section>
 
 </article>
@@ -1010,7 +752,7 @@ file&#039;s single partition combination in its original order.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -1048,7 +790,7 @@ file&#039;s single partition combination in its original order.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">173</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -1086,7 +828,7 @@ file&#039;s single partition combination in its original order.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Footer.php"><a href="files/src-core-etl-src-flow-floe-footer.html"><abbr title="src/core/etl/src/Flow/Floe/Footer.php">Footer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">225</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -1147,7 +889,6 @@ file&#039;s single partition combination in its original order.</p>
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-Floe-Footer.html#property_metadata">$metadata</a></li>
-                                                    <li class=""><a href="classes/Flow-Floe-Footer.html#property_partitions">$partitions</a></li>
                                                     <li class=""><a href="classes/Flow-Floe-Footer.html#property_schema">$schema</a></li>
                                                     <li class=""><a href="classes/Flow-Floe-Footer.html#property_sections">$sections</a></li>
                                                     <li class=""><a href="classes/Flow-Floe-Footer.html#property_totalRows">$totalRows</a></li>
@@ -1160,12 +901,9 @@ file&#039;s single partition combination in its original order.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Floe-Footer.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-Floe-Footer.html#method_filePartitions">filePartitions()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-Footer.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-Footer.html#method_fromJson">fromJson()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-Footer.html#method_normalize">normalize()</a></li>
-                                            <li class=""><a href="classes/Flow-Floe-Footer.html#method_partitionsFor">partitionsFor()</a></li>
-                                            <li class=""><a href="classes/Flow-Floe-Footer.html#method_reconstructRows">reconstructRows()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-Footer.html#method_schema">schema()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-Footer.html#method_schemaBody">schemaBody()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-Footer.html#method_toJson">toJson()</a></li>

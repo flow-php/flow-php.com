@@ -144,7 +144,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-sort-externalsortbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php">ExternalSortBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
@@ -202,10 +202,11 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_filesystemProtocol">filesystemProtocol()</a>
+    <a class="" href="classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_mergeStorage">mergeStorage()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
+<dd>Storage for merged runs only. Defaults to the spill storage, so storage() keeps covering both phases.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_runSize">runSize()</a>
@@ -247,7 +248,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-sort-externalsortbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php">ExternalSortBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -281,7 +282,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-sort-externalsortbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php">ExternalSortBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -329,7 +330,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-sort-externalsortbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php">ExternalSortBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -377,14 +378,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-sort-externalsortbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php">ExternalSortBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">build</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\FilesystemTable">FilesystemTable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystemTable</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$localFilesystemCacheDir</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Config-Sort-ExternalSortConfig.html"><abbr title="\Flow\ETL\Config\Sort\ExternalSortConfig">ExternalSortConfig</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">build</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spillRoot</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Config-Sort-ExternalSortConfig.html"><abbr title="\Flow\ETL\Config\Sort\ExternalSortConfig">ExternalSortConfig</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -393,14 +394,7 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$filesystemTable</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\FilesystemTable">FilesystemTable</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$localFilesystemCacheDir</span>
+                <span class="phpdocumentor-argument-list__argument__name">$spillRoot</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -424,22 +418,23 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_filesystemProtocol">
-        filesystemProtocol()
-        <a href="classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_filesystemProtocol" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_mergeStorage">
+        mergeStorage()
+        <a href="classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_mergeStorage" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-sort-externalsortbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php">ExternalSortBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Storage for merged runs only. Defaults to the spill storage, so storage() keeps covering both phases.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">filesystemProtocol</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$protocol</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">mergeStorage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Bucketing-BucketsStorage.html"><abbr title="\Flow\ETL\Bucketing\BucketsStorage">BucketsStorage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$storage</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -448,8 +443,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$protocol</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$storage</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Bucketing-BucketsStorage.html"><abbr title="\Flow\ETL\Bucketing\BucketsStorage">BucketsStorage</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -480,7 +475,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-sort-externalsortbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php">ExternalSortBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -528,7 +523,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php"><a href="files/src-core-etl-src-flow-etl-config-sort-externalsortbuilder.html"><abbr title="src/core/etl/src/Flow/ETL/Config/Sort/ExternalSortBuilder.php">ExternalSortBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -588,7 +583,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_batchSize">batchSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_bucketsCount">bucketsCount()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_build">build()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_filesystemProtocol">filesystemProtocol()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_mergeStorage">mergeStorage()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_runSize">runSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_storage">storage()</a></li>
                                     </ul>

@@ -129,13 +129,11 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-OverridingExtractor.html"><abbr title="\Flow\ETL\Extractor\OverridingExtractor">OverridingExtractor</abbr></a>                    </span>
+                            <a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-OverridingExtractor.html"><abbr title="\Flow\ETL\Extractor\OverridingExtractor">OverridingExtractor</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-RewindableExtractor.html"><abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr></a>                    </span>
     
     </h2>
 
 <div class="phpdocumentor-label-line">
-    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
-
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -145,7 +143,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-collectingextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php">CollectingExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
@@ -163,7 +161,8 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Extractor-OverridingExtractor.html"><abbr title="\Flow\ETL\Extractor\OverridingExtractor">OverridingExtractor</abbr></a></dt><dd>Extractors implementing OverridingExtractor interface overrides one or more extractors.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Extractor-OverridingExtractor.html"><abbr title="\Flow\ETL\Extractor\OverridingExtractor">OverridingExtractor</abbr></a></dt><dd>Extractors implementing OverridingExtractor interface overrides one or more extractors.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Extractor-RewindableExtractor.html"><abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr></a></dt><dd>A rewindable extractor can be read more than once and yield the same rows each time, so a build-time
+pass may scan it before extraction without consuming it.</dd>    </dl>
 
 
 
@@ -187,14 +186,40 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method_extract">extract()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;    </span>
 </dt>
+<dd>Yields rows in batches. When the source is a BatchableExtractor a batch holds between 0 and that
+extractor&#039;s own batchSize() rows; the size is chosen by the extractor and MAY vary between
+batches. Consumers must not assume a minimum size, a constant size, or a non-empty batch.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method_extractors">extractors()</a>
     <span>
                                 &nbsp;: array&lt;string|int, <a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a>&gt;    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method_isRepeatable">isRepeatable()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method_schema">schema()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>    </span>
+</dt>
+<dd>Answers before extract() runs, so every batch it yields carries this shape. Takes no
+FlowContext: a source that needs the pipeline&#039;s context to describe itself has not moved
+the answer to bind time.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method_withSchema">withSchema()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd>Declares the shape every yielded batch must carry. A source that describes itself uses this
+instead of its own description, and values are cast to fit.</dd>
 
     </dl>
 
@@ -224,7 +249,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-collectingextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php">CollectingExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -268,19 +293,25 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-collectingextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php">CollectingExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Yields rows in batches. When the source is a BatchableExtractor a batch holds between 0 and that
+extractor&#039;s own batchSize() rows; the size is chosen by the extractor and MAY vary between
+batches. Consumers must not assume a minimum size, a constant size, or a non-empty batch.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">extract</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">extract</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>yield from is forbidden here: it routes send() into the delegate, so Signal::STOP is never
+observed by this generator.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -298,7 +329,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;</span>
             </section>
 
 </article>
@@ -316,7 +347,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-collectingextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php">CollectingExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -337,6 +368,135 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isRepeatable">
+        isRepeatable()
+        <a href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method_isRepeatable" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-collectingextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php">CollectingExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">38</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isRepeatable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_schema">
+        schema()
+        <a href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method_schema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-collectingextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php">CollectingExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">48</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Answers before extract() runs, so every batch it yields carries this shape. Takes no
+FlowContext: a source that needs the pipeline&#039;s context to describe itself has not moved
+the answer to bind time.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">schema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withSchema">
+        withSchema()
+        <a href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method_withSchema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-collectingextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/CollectingExtractor.php">CollectingExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Declares the shape every yielded batch must carry. A source that describes itself uses this
+instead of its own description, and values are cast to fit.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
             </section>
 
 </article>
@@ -365,6 +525,9 @@
                                             <li class=""><a href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method_extract">extract()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method_extractors">extractors()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method_isRepeatable">isRepeatable()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method_schema">schema()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Extractor-CollectingExtractor.html#method_withSchema">withSchema()</a></li>
                                     </ul>
             </li>
                     </ul>

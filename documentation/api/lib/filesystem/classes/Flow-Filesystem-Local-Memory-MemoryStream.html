@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memorystream.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php">MemoryStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -223,6 +223,10 @@
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, string&gt;    </span>
 </dt>
+<dd>Yields the stream&#039;s lines with the separator stripped: a 0-byte stream yields nothing, a separator that ends the
+stream opens no further line, and every other empty line is yielded as &#039;&#039;. The separator is matched byte for
+byte; no &quot;\r&quot; is stripped. &quot;x\ny\n&quot; -&gt; [&quot;x&quot;,&quot;y&quot;], &quot;x\n\ny&quot; -&gt; [&quot;x&quot;,&quot;&quot;,&quot;y&quot;], &quot;x\n\n&quot; -&gt; [&quot;x&quot;,&quot;&quot;],
+&quot;x\r\ny&quot; -&gt; [&quot;x\r&quot;,&quot;y&quot;], &quot;&quot; -&gt; [].</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method_size">size()</a>
@@ -258,7 +262,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memorystream.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php">MemoryStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -309,7 +313,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memorystream.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php">MemoryStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -343,7 +347,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memorystream.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php">MemoryStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -391,7 +395,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memorystream.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php">MemoryStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -426,7 +430,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memorystream.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php">MemoryStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -464,7 +468,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memorystream.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php">MemoryStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -512,7 +516,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memorystream.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php">MemoryStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -550,7 +554,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memorystream.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php">MemoryStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -600,7 +604,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memorystream.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php">MemoryStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -638,7 +642,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memorystream.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php">MemoryStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -697,11 +701,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memorystream.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php">MemoryStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Yields the stream&#039;s lines with the separator stripped: a 0-byte stream yields nothing, a separator that ends the
+stream opens no further line, and every other empty line is yielded as &#039;&#039;. The separator is matched byte for
+byte; no &quot;\r&quot; is stripped. &quot;x\ny\n&quot; -&gt; [&quot;x&quot;,&quot;y&quot;], &quot;x\n\ny&quot; -&gt; [&quot;x&quot;,&quot;&quot;,&quot;y&quot;], &quot;x\n\n&quot; -&gt; [&quot;x&quot;,&quot;&quot;],
+&quot;x\r\ny&quot; -&gt; [&quot;x\r&quot;,&quot;y&quot;], &quot;&quot; -&gt; [].</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">readLines</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$separator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">"\n"</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$length</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, string&gt;</span></code>
@@ -717,7 +725,7 @@
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">"\n"</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The line separator, content will be read until the first occurrence of the separator</p>
+                    <section class="phpdocumentor-description"><p>multi-byte included</p>
 </section>
 
             </dd>
@@ -726,9 +734,7 @@
                 : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Number of bytes to read in one step. If the end of the stream or separator is reached before the specified number of bytes are read, the remaining bytes are returned.
-Otherwise we are reading until the separator is found or end of file is reached. When working with remote streams it might be a good idea to set length to few mb in orders to reduce number of network requests.
-When no value is provided, filesystems will use a default value, for example NativeLocalFilesystem is going to use 8192 length.</p>
+                    <section class="phpdocumentor-description"><p>bytes read per step - a read-chunk hint, never a cap on line length; null lets the implementation choose</p>
 </section>
 
             </dd>
@@ -758,7 +764,7 @@ When no value is provided, filesystems will use a default value, for example Nat
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-memory-memorystream.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/Memory/MemoryStream.php">MemoryStream.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 

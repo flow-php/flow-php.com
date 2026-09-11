@@ -129,7 +129,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Flow-ETL-Loader-Closure.html"><abbr title="\Flow\ETL\Loader\Closure">Closure</abbr></a>,                             <a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>,                             <a href="classes/Flow-ETL-Loader-OverridingLoader.html"><abbr title="\Flow\ETL\Loader\OverridingLoader">OverridingLoader</abbr></a>,                             <abbr title="\Flow\ETL\Loader\ReplayAware">ReplayAware</abbr>                    </span>
+                            <a href="classes/Flow-ETL-Loader-Closure.html"><abbr title="\Flow\ETL\Loader\Closure">Closure</abbr></a>,                             <a href="classes/Flow-ETL-Loader-Discardable.html"><abbr title="\Flow\ETL\Loader\Discardable">Discardable</abbr></a>,                             <a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>,                             <a href="classes/Flow-ETL-Loader-OverridingLoader.html"><abbr title="\Flow\ETL\Loader\OverridingLoader">OverridingLoader</abbr></a>,                             <abbr title="\Flow\ETL\Loader\ReplayAware">ReplayAware</abbr>                    </span>
     
     </h2>
 
@@ -143,7 +143,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-branchingloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php">BranchingLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -162,7 +162,8 @@
     </h4>
     <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Loader-Closure.html"><abbr title="\Flow\ETL\Loader\Closure">Closure</abbr></a></dt><dd>Loaders implementing this adapter will be additionally notified
-by the pipeline about the last set of Rows processed by the pipeline.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Loader-OverridingLoader.html"><abbr title="\Flow\ETL\Loader\OverridingLoader">OverridingLoader</abbr></a></dt><dd>Loaders implementing OverridingLoader interface overrides one or more loaders.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\ReplayAware">ReplayAware</abbr></dt>    </dl>
+by the pipeline about the last set of Rows processed by the pipeline.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Loader-Discardable.html"><abbr title="\Flow\ETL\Loader\Discardable">Discardable</abbr></a></dt><dd>Loaders implementing this adapter will be notified by the pipeline when a run ends without reaching its last set of
+Rows - it threw, or the caller walked away from the generator.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Loader-OverridingLoader.html"><abbr title="\Flow\ETL\Loader\OverridingLoader">OverridingLoader</abbr></a></dt><dd>Loaders implementing OverridingLoader interface overrides one or more loaders.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\ReplayAware">ReplayAware</abbr></dt>    </dl>
 
 
 
@@ -185,6 +186,12 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Loader-BranchingLoader.html#method_closure">closure()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Loader-BranchingLoader.html#method_discard">discard()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -241,7 +248,7 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-branchingloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php">BranchingLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -299,7 +306,7 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-branchingloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php">BranchingLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -307,6 +314,50 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">closure</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$context</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_discard">
+        discard()
+        <a href="classes/Flow-ETL-Loader-BranchingLoader.html#method_discard" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-branchingloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php">BranchingLoader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">discard</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -343,7 +394,7 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-branchingloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php">BranchingLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -394,7 +445,7 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-branchingloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php">BranchingLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -432,7 +483,7 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-branchingloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php">BranchingLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -470,7 +521,7 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php"><a href="files/src-core-etl-src-flow-etl-loader-branchingloader.html"><abbr title="src/core/etl/src/Flow/ETL/Loader/BranchingLoader.php">BranchingLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -528,6 +579,7 @@ by the pipeline about the last set of Rows processed by the pipeline.</dd>      
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Loader-BranchingLoader.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Loader-BranchingLoader.html#method_closure">closure()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Loader-BranchingLoader.html#method_discard">discard()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Loader-BranchingLoader.html#method_load">load()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Loader-BranchingLoader.html#method_loaders">loaders()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Loader-BranchingLoader.html#method_replaySafe">replaySafe()</a></li>

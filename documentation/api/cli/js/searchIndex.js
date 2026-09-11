@@ -186,6 +186,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Command-Traits-ParquetOptions.html"
         },                {
+            "fqsen": "\\Flow\\CLI\\Command\\Traits\\SchemaInferenceOptions",
+            "name": "SchemaInferenceOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Command-Traits-SchemaInferenceOptions.html"
+        },                {
             "fqsen": "\\Flow\\CLI\\Command\\Traits\\StatisticsOptions",
             "name": "StatisticsOptions",
             "summary": "",

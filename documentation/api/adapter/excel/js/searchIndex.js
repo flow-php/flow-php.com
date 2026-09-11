@@ -11,6 +11,21 @@ Search.appendIndex(
             "summary": "Return\u0020a\u0020Style\u0020for\u0020the\u0020given\u0020cell,\u0020or\u0020null\u0020for\u0020default\u0020styling.",
             "url": "classes/Flow-ETL-Adapter-Excel-CellStyler.html#method_style"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\CellTypeNarrower",
+            "name": "CellTypeNarrower",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-CellTypeNarrower.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\CellTypeNarrower\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-CellTypeNarrower.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\CellTypeNarrower\u003A\u003Anarrow\u0028\u0029",
+            "name": "narrow",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-CellTypeNarrower.html#method_narrow"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\DSL\\from_excel\u0028\u0029",
             "name": "from_excel",
             "summary": "",
@@ -51,6 +66,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_encodeHeader"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelEncoder\u003A\u003Aheaders\u0028\u0029",
+            "name": "headers",
+            "summary": "The\u0020names\u0020decode\u0028\u0029\u0020resolved\u0020from\u0020the\u0020first\u0020row\u0020it\u0020saw\u003B\u0020null\u0020before\u0020the\u0020first\u0020decode\u0028\u0029.",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_headers"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor",
             "name": "ExcelExtractor",
             "summary": "",
@@ -61,10 +81,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003A__destruct\u0028\u0029",
+            "name": "__destruct",
+            "summary": "An\u0020inference\u0020no\u0020extract\u0028\u0029\u0020followed\u0020still\u0020holds\u0020its\u0020sample\u0027s\u0020open\u0020readers,\u0020and\u0020OpenSpout\u0027s\u0020file\u002Dbased\nshared\u002Dstrings\u0020cache\u0020leaves\u0020its\u0020temp\u0020folder\u0020behind\u0020until\u0020a\u0020reader\u0020closes.",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method___destruct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "name": "isRepeatable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_isRepeatable"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_extract"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003AinferSchema\u0028\u0029",
+            "name": "inferSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_inferSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_schema"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003Asource\u0028\u0029",
             "name": "source",
@@ -101,6 +141,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_withSheetName"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelFormatDetector",
+            "name": "ExcelFormatDetector",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelFormatDetector.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelFormatDetector\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelFormatDetector.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelFormatDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelFormatDetector.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelHeader",
+            "name": "ExcelHeader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelHeader.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelHeader\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u0024source\u0020is\u0020a\u0020plain\u0020label,\u0020never\u0020a\u0020Path\u0020or\u0020a\u0020SourceFile.\u0020It\u0020is\u0020null\u0020exactly\u0020when\u0020\u0024names\u0020is\u0020empty\u0020\u002D\u0020no\u0020listed\nworkbook\u0020resolved\u0020a\u0020header.",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelHeader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelHeader\u003A\u003A\u0024names",
+            "name": "names",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelHeader.html#property_names"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelHeader\u003A\u003A\u0024source",
+            "name": "source",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelHeader.html#property_source"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelLoader",
             "name": "ExcelLoader",
             "summary": "",
@@ -111,10 +186,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelLoader.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelLoader\u003A\u003ApartitionBy\u0028\u0029",
+            "name": "partitionBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelLoader.html#method_partitionBy"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelLoader\u003A\u003Aclosure\u0028\u0029",
             "name": "closure",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelLoader.html#method_closure"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelLoader\u003A\u003Adiscard\u0028\u0029",
+            "name": "discard",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelLoader.html#method_discard"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelLoader\u003A\u003Adestination\u0028\u0029",
             "name": "destination",
@@ -125,6 +210,11 @@ Search.appendIndex(
             "name": "load",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelLoader.html#method_load"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelLoader\u003A\u003AsaveMode\u0028\u0029",
+            "name": "saveMode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelLoader.html#method_saveMode"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelLoader\u003A\u003AwithCellStyler\u0028\u0029",
             "name": "withCellStyler",
@@ -191,6 +281,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelReader.html#enumcase_XLSX"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelReadOptions",
+            "name": "ExcelReadOptions",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelReadOptions.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelReadOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelReadOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelReadOptions\u003A\u003AwithConvertEmptyToNull\u0028\u0029",
+            "name": "withConvertEmptyToNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelReadOptions.html#method_withConvertEmptyToNull"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelReadOptions\u003A\u003AwithFormat\u0028\u0029",
+            "name": "withFormat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelReadOptions.html#method_withFormat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelReadOptions\u003A\u003A\u0024withHeader",
+            "name": "withHeader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelReadOptions.html#property_withHeader"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelReadOptions\u003A\u003AwithOffset\u0028\u0029",
+            "name": "withOffset",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelReadOptions.html#method_withOffset"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelReadOptions\u003A\u003AwithSheetName\u0028\u0029",
+            "name": "withSheetName",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelReadOptions.html#method_withSheetName"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelReadOptions\u003A\u003A\u0024convertEmptyToNull",
+            "name": "convertEmptyToNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelReadOptions.html#property_convertEmptyToNull"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelReadOptions\u003A\u003A\u0024offset",
+            "name": "offset",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelReadOptions.html#property_offset"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelReadOptions\u003A\u003A\u0024sheetName",
+            "name": "sheetName",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelReadOptions.html#property_sheetName"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelReadOptions\u003A\u003A\u0024format",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelReadOptions.html#property_format"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelWriter",
             "name": "ExcelWriter",
             "summary": "",
@@ -216,10 +361,65 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-Function-IsValidExcelSheetName.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Function\\IsValidExcelSheetName\u003A\u003Achildren\u0028\u0029",
+            "name": "children",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-Function-IsValidExcelSheetName.html#method_children"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Function\\IsValidExcelSheetName\u003A\u003AwithChildren\u0028\u0029",
+            "name": "withChildren",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-Function-IsValidExcelSheetName.html#method_withChildren"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Function\\IsValidExcelSheetName\u003A\u003Areturns\u0028\u0029",
+            "name": "returns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-Function-IsValidExcelSheetName.html#method_returns"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Function\\IsValidExcelSheetName\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-Function-IsValidExcelSheetName.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\OpenSheet",
+            "name": "OpenSheet",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-Sheet-OpenSheet.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\OpenSheet\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-Sheet-OpenSheet.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\OpenSheet\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-Sheet-OpenSheet.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\OpenSheet\u003A\u003A\u0024cells",
+            "name": "cells",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-Sheet-OpenSheet.html#property_cells"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\OpenSheet\u003A\u003A\u0024encoder",
+            "name": "encoder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-Sheet-OpenSheet.html#property_encoder"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\SheetCells",
+            "name": "SheetCells",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-Sheet-SheetCells.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\SheetCells\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-Sheet-SheetCells.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\SheetCells\u003A\u003Arows\u0028\u0029",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-Sheet-SheetCells.html#method_rows"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\SheetNameAssertion",
             "name": "SheetNameAssertion",
@@ -256,6 +456,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-Sheet-SheetsManager.html#method_get"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\XlsxSheetRows",
+            "name": "XlsxSheetRows",
+            "summary": "One\u0020XLSX\u0020sheet\u0027s\u0020rows,\u0020every\u0020cell\u0020formatted\u0020by\u0020OpenSpout\u0027s\u0020own\u0020CellValueFormatter\u0020\u002D\u0020only\u0020the\u0020walk\u0020over\u0020the\u0020sheet\nXML\u0020is\u0020Flow\u0027s.\u0020OpenSpout\u0027s\u0020RowIterator\u0020sends\u0020each\u0020XML\u0020node\u0020through\u0020a\u0020reflection\u0020callback\u0020and\u0020toggles\u0020libxml\u0027s\nerror\u0020mode\u0020around\u0020every\u0020read,\u0020which\u0020costs\u0020more\u0020than\u0020formatting\u0020the\u0020cells.",
+            "url": "classes/Flow-ETL-Adapter-Excel-Sheet-XlsxSheetRows.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\XlsxSheetRows\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-Sheet-XlsxSheetRows.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\XlsxSheetRows\u003A\u003Avalues\u0028\u0029",
+            "name": "values",
+            "summary": "Each\u0020non\u002Dempty\u0020row\u0027s\u0020cell\u0020values\u0020by\u0020column\u0020index,\u0020as\u0020OpenSpout\u0027s\u0020RowIterator\u0020yields\u0020them\u0020with\u0020the\u0020default\noptions\u0020Flow\u0020opens\u0020every\u0020workbook\u0020with\u003A\u0020a\u0020row\u0020is\u0020padded\u0020to\u0020its\u0020spans,\u0020else\u0020to\u0020the\u0020sheet\u0027s\u0020dimension,\u0020and\u0020a\nsheet\u0020that\u0020declares\u0020no\u0020dimension\u0020gets\u0020the\u0020gaps\u0020below\u0020its\u0020cell\u0020count\u0020filled.",
+            "url": "classes/Flow-ETL-Adapter-Excel-Sheet-XlsxSheetRows.html#method_values"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookManager",
             "name": "WorkbookManager",
             "summary": "",
@@ -290,6 +505,86 @@ Search.appendIndex(
             "name": "writeRow",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-WorkbookManager.html#method_writeRow"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookReader",
+            "name": "WorkbookReader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookReader.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookReader\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookReader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookReader\u003A\u003Aopen\u0028\u0029",
+            "name": "open",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookReader.html#method_open"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookReader\u003A\u003Asheet\u0028\u0029",
+            "name": "sheet",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookReader.html#method_sheet"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSampler",
+            "name": "WorkbookSampler",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSampler.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSampler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSampler.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSampler\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSampler.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSampler\u003A\u003Aheader\u0028\u0029",
+            "name": "header",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSampler.html#method_header"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSampler\u003A\u003Asamples\u0028\u0029",
+            "name": "samples",
+            "summary": "A\u0020bounded\u0020sample\u0020keeps\u0020what\u0020it\u0020parsed\u0020for\u0020take\u0028\u0029\u003B\u0020an\u0020unbounded\u0020one\u0020parses\u0020every\u0020row,\u0020so\u0020it\u0020streams\u0020and\u0020closes\nas\u0020it\u0020goes.\u0020Either\u0020way\u0020SchemaInferrer\u0020stops\u0020advancing\u0020a\u0020sheet\u0020once\u0020its\u0020budget\u0020is\u0020spent.",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSampler.html#method_samples"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSampler\u003A\u003Atake\u0028\u0029",
+            "name": "take",
+            "summary": "The\u0020sheet\u0020this\u0020sampler\u0020read\u0020\u0024file\u0020through,\u0020handed\u0020over\u0020to\u0020the\u0020caller\u0020to\u0020read\u0020on\u0020and\u0020close\u003B\u0020null\u0020when\u0020the\nsample\u0020never\u0020reached\u0020the\u0020file.",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSampler.html#method_take"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSheet",
+            "name": "WorkbookSheet",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSheet.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSheet\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSheet.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSheet\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSheet.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSheet\u003A\u003Acolumns\u0028\u0029",
+            "name": "columns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSheet.html#method_columns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSheet\u003A\u003Asample\u0028\u0029",
+            "name": "sample",
+            "summary": "rows\u0028\u0029\u0020for\u0020a\u0020bounded\u0020schema\u0020sample\u003A\u0020every\u0020row\u0020it\u0020hands\u0020out\u0020stays\u0020buffered\u0020and\u0020the\u0020sheet\u0020stays\u0020open,\u0020so\u0020the\nrows\u0028\u0029\u0020that\u0020follows\u0020replays\u0020the\u0020sample\u0020and\u0020parses\u0020on\u0020from\u0020where\u0020the\u0020sample\u0020stopped,\u0020instead\u0020of\u0020parsing\u0020the\nsample\u0020a\u0020second\u0020time.\u0020Closing\u0020the\u0020sheet\u0020stays\u0020with\u0020its\u0020owner.",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSheet.html#method_sample"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSheet\u003A\u003Arows\u0028\u0029",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSheet.html#method_rows"
         },                {
             "fqsen": "\\",
             "name": "\\",

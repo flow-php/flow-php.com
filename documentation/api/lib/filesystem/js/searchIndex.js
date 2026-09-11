@@ -121,6 +121,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Exception-RuntimeException.html"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\FileListing",
+            "name": "FileListing",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-FileListing.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\FileListing\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-FileListing.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\FileListing\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "\u0024filter\u0020has\u0020no\u0020default\u0020on\u0020purpose\u0020\u002D\u0020Filesystem\u003A\u003Alist\u0028\u0029\u0020defaults\u0020it\u0020to\u0020KeepAll\u0020while\nNativeLocalFilesystem\u003A\u003Alist\u0028\u0029\u0020defaults\u0020it\u0020to\u0020OnlyFiles,\u0020so\u0020a\u0020default\u0020here\u0020would\u0020silently\u0020pick\u0020one.",
+            "url": "classes/Flow-Filesystem-FileListing.html#method_list"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\FileStatus",
             "name": "FileStatus",
             "summary": "",
@@ -200,6 +215,11 @@ Search.appendIndex(
             "name": "status",
             "summary": "",
             "url": "classes/Flow-Filesystem-Filesystem.html#method_status"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Filesystem\u003A\u003Asupports\u0028\u0029",
+            "name": "supports",
+            "summary": "True\u0020when\u0020this\u0020filesystem\u0020serves\u0020the\u0020given\u0020path\u0027s\u0020protocol.",
+            "url": "classes/Flow-Filesystem-Filesystem.html#method_supports"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Filesystem\u003A\u003AwriteTo\u0028\u0029",
             "name": "writeTo",
@@ -343,7 +363,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003AreadLines\u0028\u0029",
             "name": "readLines",
-            "summary": "",
+            "summary": "Yields\u0020the\u0020stream\u0027s\u0020lines\u0020with\u0020the\u0020separator\u0020stripped\u003A\u0020a\u00200\u002Dbyte\u0020stream\u0020yields\u0020nothing,\u0020a\u0020separator\u0020that\u0020ends\u0020the\nstream\u0020opens\u0020no\u0020further\u0020line,\u0020and\u0020every\u0020other\u0020empty\u0020line\u0020is\u0020yielded\u0020as\u0020\u0027\u0027.\u0020The\u0020separator\u0020is\u0020matched\u0020byte\u0020for\nbyte\u003B\u0020no\u0020\u0022\\r\u0022\u0020is\u0020stripped.\u0020\u0022x\\ny\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022\u005D,\n\u0022x\\r\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\\r\u0022,\u0022y\u0022\u005D,\u0020\u0022\u0022\u0020\u002D\u003E\u0020\u005B\u005D.",
             "url": "classes/Flow-Filesystem-Local-Memory-MemoryStream.html#method_readLines"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream\u003A\u003Asize\u0028\u0029",
@@ -401,6 +421,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_status"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003Asupports\u0028\u0029",
+            "name": "supports",
+            "summary": "True\u0020when\u0020this\u0020filesystem\u0020serves\u0020the\u0020given\u0020path\u0027s\u0020protocol.",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_supports"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003AwriteTo\u0028\u0029",
             "name": "writeTo",
             "summary": "Open\u0020destination\u0020stream\u0020for\u0020writing,\u0020if\u0020file\u0020already\u0020exists\u0020it\u0020will\u0020be\u0020overwritten.",
@@ -455,6 +480,11 @@ Search.appendIndex(
             "name": "status",
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_status"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003Asupports\u0028\u0029",
+            "name": "supports",
+            "summary": "True\u0020when\u0020this\u0020filesystem\u0020serves\u0020the\u0020given\u0020path\u0027s\u0020protocol.",
+            "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_supports"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003AwriteTo\u0028\u0029",
             "name": "writeTo",
@@ -545,6 +575,11 @@ Search.appendIndex(
             "name": "status",
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_status"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\StdOutFilesystem\u003A\u003Asupports\u0028\u0029",
+            "name": "supports",
+            "summary": "True\u0020when\u0020this\u0020filesystem\u0020serves\u0020the\u0020given\u0020path\u0027s\u0020protocol.",
+            "url": "classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_supports"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\StdOutFilesystem\u003A\u003AwriteTo\u0028\u0029",
             "name": "writeTo",
@@ -641,30 +676,50 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Partition.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Partition.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Partition.html#method_encode"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003AfromArray\u0028\u0029",
             "name": "fromArray",
             "summary": "",
             "url": "classes/Flow-Filesystem-Partition.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003AfromSegment\u0028\u0029",
+            "name": "fromSegment",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Partition.html#method_fromSegment"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003AfromUri\u0028\u0029",
             "name": "fromUri",
             "summary": "",
             "url": "classes/Flow-Filesystem-Partition.html#method_fromUri"
         },                {
-            "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003AvalueFromRow\u0028\u0029",
-            "name": "valueFromRow",
+            "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003AfromValue\u0028\u0029",
+            "name": "fromValue",
             "summary": "",
-            "url": "classes/Flow-Filesystem-Partition.html#method_valueFromRow"
+            "url": "classes/Flow-Filesystem-Partition.html#method_fromValue"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003Aid\u0028\u0029",
             "name": "id",
             "summary": "",
             "url": "classes/Flow-Filesystem-Partition.html#method_id"
         },                {
-            "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003Areference\u0028\u0029",
-            "name": "reference",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Partition.html#method_reference"
+            "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003Asegment\u0028\u0029",
+            "name": "segment",
+            "summary": "The\u0020\u0060name\u003Dvalue\u0060\u0020directory\u0020segment.\u0020Every\u0020path\u0020built\u0020from\u0020partitions\u0020goes\u0020through\u0020here,\u0020so\u0020the\nencoding\u0020on\u0020write\u0020and\u0020the\u0020decoding\u0020on\u0020read\u0020cannot\u0020drift\u0020apart.",
+            "url": "classes/Flow-Filesystem-Partition.html#method_segment"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003ANULL_VALUE",
+            "name": "NULL_VALUE",
+            "summary": "A\u0020null\u0020partition\u0020value\u0020has\u0020no\u0020directory\u0020name\u0020of\u0020its\u0020own,\u0020so\u0020it\u0020borrows\u0020Hive\u0027s,\u0020which\u0020every\nengine\u0020that\u0020reads\u0020a\u0020Hive\u0020tree\u0020already\u0020understands.",
+            "url": "classes/Flow-Filesystem-Partition.html#constant_NULL_VALUE"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003A\u0024name",
             "name": "name",
@@ -705,11 +760,6 @@ Search.appendIndex(
             "name": "has",
             "summary": "",
             "url": "classes/Flow-Filesystem-Partitions.html#method_has"
-        },                {
-            "fqsen": "\\Flow\\Filesystem\\Partitions\u003A\u003Aid\u0028\u0029",
-            "name": "id",
-            "summary": "",
-            "url": "classes/Flow-Filesystem-Partitions.html#method_id"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Partitions\u003A\u003AoffsetExists\u0028\u0029",
             "name": "offsetExists",
@@ -1448,7 +1498,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\SourceStream\u003A\u003AreadLines\u0028\u0029",
             "name": "readLines",
-            "summary": "",
+            "summary": "Yields\u0020the\u0020stream\u0027s\u0020lines\u0020with\u0020the\u0020separator\u0020stripped\u003A\u0020a\u00200\u002Dbyte\u0020stream\u0020yields\u0020nothing,\u0020a\u0020separator\u0020that\u0020ends\u0020the\nstream\u0020opens\u0020no\u0020further\u0020line,\u0020and\u0020every\u0020other\u0020empty\u0020line\u0020is\u0020yielded\u0020as\u0020\u0027\u0027.\u0020The\u0020separator\u0020is\u0020matched\u0020byte\u0020for\nbyte\u003B\u0020no\u0020\u0022\\r\u0022\u0020is\u0020stripped.\u0020\u0022x\\ny\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022\u005D,\n\u0022x\\r\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\\r\u0022,\u0022y\u0022\u005D,\u0020\u0022\u0022\u0020\u002D\u003E\u0020\u005B\u005D.",
             "url": "classes/Flow-Filesystem-SourceStream.html#method_readLines"
         },                {
             "fqsen": "\\Flow\\Filesystem\\SourceStream\u003A\u003Asize\u0028\u0029",
@@ -1668,7 +1718,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\MemorySourceStream\u003A\u003AreadLines\u0028\u0029",
             "name": "readLines",
-            "summary": "",
+            "summary": "Yields\u0020the\u0020stream\u0027s\u0020lines\u0020with\u0020the\u0020separator\u0020stripped\u003A\u0020a\u00200\u002Dbyte\u0020stream\u0020yields\u0020nothing,\u0020a\u0020separator\u0020that\u0020ends\u0020the\nstream\u0020opens\u0020no\u0020further\u0020line,\u0020and\u0020every\u0020other\u0020empty\u0020line\u0020is\u0020yielded\u0020as\u0020\u0027\u0027.\u0020The\u0020separator\u0020is\u0020matched\u0020byte\u0020for\nbyte\u003B\u0020no\u0020\u0022\\r\u0022\u0020is\u0020stripped.\u0020\u0022x\\ny\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022\u005D,\n\u0022x\\r\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\\r\u0022,\u0022y\u0022\u005D,\u0020\u0022\u0022\u0020\u002D\u003E\u0020\u005B\u005D.",
             "url": "classes/Flow-Filesystem-Stream-MemorySourceStream.html#method_readLines"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\MemorySourceStream\u003A\u003Asize\u0028\u0029",
@@ -1813,7 +1863,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\NativeLocalSourceStream\u003A\u003AreadLines\u0028\u0029",
             "name": "readLines",
-            "summary": "",
+            "summary": "Yields\u0020the\u0020stream\u0027s\u0020lines\u0020with\u0020the\u0020separator\u0020stripped\u003A\u0020a\u00200\u002Dbyte\u0020stream\u0020yields\u0020nothing,\u0020a\u0020separator\u0020that\u0020ends\u0020the\nstream\u0020opens\u0020no\u0020further\u0020line,\u0020and\u0020every\u0020other\u0020empty\u0020line\u0020is\u0020yielded\u0020as\u0020\u0027\u0027.\u0020The\u0020separator\u0020is\u0020matched\u0020byte\u0020for\nbyte\u003B\u0020no\u0020\u0022\\r\u0022\u0020is\u0020stripped.\u0020\u0022x\\ny\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022\u005D,\n\u0022x\\r\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\\r\u0022,\u0022y\u0022\u005D,\u0020\u0022\u0022\u0020\u002D\u003E\u0020\u005B\u005D.",
             "url": "classes/Flow-Filesystem-Stream-NativeLocalSourceStream.html#method_readLines"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\NativeLocalSourceStream\u003A\u003Asize\u0028\u0029",
@@ -1835,6 +1885,86 @@ Search.appendIndex(
             "name": "resource",
             "summary": "",
             "url": "classes/Flow-Filesystem-Stream-ResourceContext.html#method_resource"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper",
+            "name": "SourceStreamWrapper",
+            "summary": "Serves\u0020a\u0020SourceStream,\u0020read\u002Donly\u0020and\u0020forward\u002Donly,\u0020to\u0020a\u0020native\u0020reader\u0020that\u0020opens\u0020nothing\u0020but\u0020a\u0020URI,\u0020like\nXMLReader\u003A\u003Aopen\u0028\u0029.",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#method_register"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003Auri\u0028\u0029",
+            "name": "uri",
+            "summary": "The\u0020URI\u0020opens\u0020\u0024source\u0020once.\u0020The\u0020source\u0020stays\u0020the\u0020caller\u0027s\u0020to\u0020close.",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#method_uri"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003Astream_close\u0028\u0029",
+            "name": "stream_close",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#method_stream_close"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003Astream_eof\u0028\u0029",
+            "name": "stream_eof",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#method_stream_eof"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003Astream_flush\u0028\u0029",
+            "name": "stream_flush",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#method_stream_flush"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003Astream_lock\u0028\u0029",
+            "name": "stream_lock",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#method_stream_lock"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003Astream_open\u0028\u0029",
+            "name": "stream_open",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#method_stream_open"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003Astream_read\u0028\u0029",
+            "name": "stream_read",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#method_stream_read"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003Astream_seek\u0028\u0029",
+            "name": "stream_seek",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#method_stream_seek"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003Astream_stat\u0028\u0029",
+            "name": "stream_stat",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#method_stream_stat"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003Astream_tell\u0028\u0029",
+            "name": "stream_tell",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#method_stream_tell"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003Astream_write\u0028\u0029",
+            "name": "stream_write",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#method_stream_write"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003Aurl_stat\u0028\u0029",
+            "name": "url_stat",
+            "summary": "A\u0020URI\u0020not\u0020opened\u0020yet\u0020exists\u003B\u0020libxml\u0020stats\u0020it\u0020before\u0020it\u0020opens\u0020it.",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#method_url_stat"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003APROTOCOL",
+            "name": "PROTOCOL",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#constant_PROTOCOL"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\SourceStreamWrapper\u003A\u003A\u0024context",
+            "name": "context",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-SourceStreamWrapper.html#property_context"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\StreamWrapper",
             "name": "StreamWrapper",
@@ -1988,7 +2118,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\StringSourceStream\u003A\u003AreadLines\u0028\u0029",
             "name": "readLines",
-            "summary": "",
+            "summary": "Yields\u0020the\u0020stream\u0027s\u0020lines\u0020with\u0020the\u0020separator\u0020stripped\u003A\u0020a\u00200\u002Dbyte\u0020stream\u0020yields\u0020nothing,\u0020a\u0020separator\u0020that\u0020ends\u0020the\nstream\u0020opens\u0020no\u0020further\u0020line,\u0020and\u0020every\u0020other\u0020empty\u0020line\u0020is\u0020yielded\u0020as\u0020\u0027\u0027.\u0020The\u0020separator\u0020is\u0020matched\u0020byte\u0020for\nbyte\u003B\u0020no\u0020\u0022\\r\u0022\u0020is\u0020stripped.\u0020\u0022x\\ny\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022\u005D,\n\u0022x\\r\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\\r\u0022,\u0022y\u0022\u005D,\u0020\u0022\u0022\u0020\u002D\u003E\u0020\u005B\u005D.",
             "url": "classes/Flow-Filesystem-Stream-StringSourceStream.html#method_readLines"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\StringSourceStream\u003A\u003Asize\u0028\u0029",
@@ -2048,7 +2178,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\VoidStream\u003A\u003AreadLines\u0028\u0029",
             "name": "readLines",
-            "summary": "",
+            "summary": "Yields\u0020the\u0020stream\u0027s\u0020lines\u0020with\u0020the\u0020separator\u0020stripped\u003A\u0020a\u00200\u002Dbyte\u0020stream\u0020yields\u0020nothing,\u0020a\u0020separator\u0020that\u0020ends\u0020the\nstream\u0020opens\u0020no\u0020further\u0020line,\u0020and\u0020every\u0020other\u0020empty\u0020line\u0020is\u0020yielded\u0020as\u0020\u0027\u0027.\u0020The\u0020separator\u0020is\u0020matched\u0020byte\u0020for\nbyte\u003B\u0020no\u0020\u0022\\r\u0022\u0020is\u0020stripped.\u0020\u0022x\\ny\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022\u005D,\n\u0022x\\r\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\\r\u0022,\u0022y\u0022\u005D,\u0020\u0022\u0022\u0020\u002D\u003E\u0020\u005B\u005D.",
             "url": "classes/Flow-Filesystem-Stream-VoidStream.html#method_readLines"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\VoidStream\u003A\u003Asize\u0028\u0029",
@@ -2321,6 +2451,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_status"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem\u003A\u003Asupports\u0028\u0029",
+            "name": "supports",
+            "summary": "True\u0020when\u0020this\u0020filesystem\u0020serves\u0020the\u0020given\u0020path\u0027s\u0020protocol.",
+            "url": "classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_supports"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem\u003A\u003AwriteTo\u0028\u0029",
             "name": "writeTo",
             "summary": "Open\u0020destination\u0020stream\u0020for\u0020writing,\u0020if\u0020file\u0020already\u0020exists\u0020it\u0020will\u0020be\u0020overwritten.",
@@ -2368,7 +2503,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableSourceStream\u003A\u003AreadLines\u0028\u0029",
             "name": "readLines",
-            "summary": "",
+            "summary": "Yields\u0020the\u0020stream\u0027s\u0020lines\u0020with\u0020the\u0020separator\u0020stripped\u003A\u0020a\u00200\u002Dbyte\u0020stream\u0020yields\u0020nothing,\u0020a\u0020separator\u0020that\u0020ends\u0020the\nstream\u0020opens\u0020no\u0020further\u0020line,\u0020and\u0020every\u0020other\u0020empty\u0020line\u0020is\u0020yielded\u0020as\u0020\u0027\u0027.\u0020The\u0020separator\u0020is\u0020matched\u0020byte\u0020for\nbyte\u003B\u0020no\u0020\u0022\\r\u0022\u0020is\u0020stripped.\u0020\u0022x\\ny\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022\u005D,\n\u0022x\\r\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\\r\u0022,\u0022y\u0022\u005D,\u0020\u0022\u0022\u0020\u002D\u003E\u0020\u005B\u005D.",
             "url": "classes/Flow-Filesystem-Telemetry-TraceableSourceStream.html#method_readLines"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableSourceStream\u003A\u003Asize\u0028\u0029",

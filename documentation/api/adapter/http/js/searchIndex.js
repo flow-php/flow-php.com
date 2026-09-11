@@ -128,7 +128,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpEncoder",
             "name": "HttpEncoder",
-            "summary": "Decodes\u0020an\u0020HTTP\u0020exchange\u0020into\u0020raw\u0020row\u0020values.\u0020The\u0020response\/request\u0020body\u0020is\u0020decoded\u0020once,\u0020content\u002Dtype\u0020aware,\ninto\u0020a\u0020navigable\u0020nested\u0020map\u0020\u0028JSON\u0020via\u0020json_decode,\u0020XML\u0020via\u0020\u007B\u0040see\u0020XMLConverter\u007D\u0029\u003B\u0020the\u0020extractor\u0027s\u0020Hydrator\u0020types\nthe\u0020Row\u0020from\u0020it\u0020and\u0020pagination\u0020reads\u0020the\u0020same\u0020map.",
+            "summary": "A\u0020row\u0020carries\u0020the\u0020body\u0020as\u0020raw\u0020text,\u0020so\u0020response_body\u0020holds\u0020one\u0020type\u0020whatever\u0020the\u0020content\u0020type\u0020is.",
             "url": "classes/Flow-ETL-Adapter-Http-HttpEncoder.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpEncoder\u003A\u003Adecode\u0028\u0029",
@@ -140,6 +140,11 @@ Search.appendIndex(
             "name": "encode",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Http-HttpEncoder.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpEncoder\u003A\u003AstructuredBody\u0028\u0029",
+            "name": "structuredBody",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-HttpEncoder.html#method_structuredBody"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpExchange",
             "name": "HttpExchange",
@@ -681,6 +686,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html#method_extract"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientDynamicExtractor\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html#method_schema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientDynamicExtractor\u003A\u003AwithPostRequest\u0028\u0029",
             "name": "withPostRequest",
             "summary": "",
@@ -711,6 +721,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html#method_extract"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientPaginatedExtractor\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html#method_schema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientPaginatedExtractor\u003A\u003AwithPostRequest\u0028\u0029",
             "name": "withPostRequest",
             "summary": "",
@@ -740,6 +755,11 @@ Search.appendIndex(
             "name": "extract",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html#method_extract"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientStaticExtractor\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html#method_schema"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientStaticExtractor\u003A\u003AwithPostRequest\u0028\u0029",
             "name": "withPostRequest",

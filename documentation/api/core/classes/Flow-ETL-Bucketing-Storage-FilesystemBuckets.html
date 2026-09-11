@@ -144,7 +144,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/Storage/FilesystemBuckets.php"><a href="files/src-core-etl-src-flow-etl-bucketing-storage-filesystembuckets.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/Storage/FilesystemBuckets.php">FilesystemBuckets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -188,6 +188,10 @@
     <span>
                                 &nbsp;: void    </span>
 </dt>
+<dd>SCHEMA EVOLUTION: the bucket&#039;s schema is fixed by the first batch, so a later batch carrying
+a column the first one lacked is rejected. Reachable from group-by and join whenever rows
+with different column sets hash into one bucket. Proper evolution - adding an optional
+column, relaxing not-null - would remove this limitation.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Bucketing-Storage-FilesystemBuckets.html#method_get">get()</a>
@@ -237,7 +241,7 @@ assume any particular batch size.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/Storage/FilesystemBuckets.php"><a href="files/src-core-etl-src-flow-etl-bucketing-storage-filesystembuckets.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/Storage/FilesystemBuckets.php">FilesystemBuckets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -295,11 +299,15 @@ assume any particular batch size.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/Storage/FilesystemBuckets.php"><a href="files/src-core-etl-src-flow-etl-bucketing-storage-filesystembuckets.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/Storage/FilesystemBuckets.php">FilesystemBuckets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">SCHEMA EVOLUTION: the bucket&#039;s schema is fixed by the first batch, so a later batch carrying
+a column the first one lacked is rejected. Reachable from group-by and join whenever rows
+with different column sets hash into one bucket. Proper evolution - adding an optional
+column, relaxing not-null - would remove this limitation.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">append</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucketId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
@@ -346,7 +354,7 @@ assume any particular batch size.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/Storage/FilesystemBuckets.php"><a href="files/src-core-etl-src-flow-etl-bucketing-storage-filesystembuckets.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/Storage/FilesystemBuckets.php">FilesystemBuckets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -396,7 +404,7 @@ assume any particular batch size.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/Storage/FilesystemBuckets.php"><a href="files/src-core-etl-src-flow-etl-bucketing-storage-filesystembuckets.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/Storage/FilesystemBuckets.php">FilesystemBuckets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -440,7 +448,7 @@ assume any particular batch size.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/Storage/FilesystemBuckets.php"><a href="files/src-core-etl-src-flow-etl-bucketing-storage-filesystembuckets.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/Storage/FilesystemBuckets.php">FilesystemBuckets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 

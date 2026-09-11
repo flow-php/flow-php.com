@@ -16,6 +16,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVDetector.html#method_detect"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVDialect",
+            "name": "CSVDialect",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVDialect.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVDialect\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVDialect.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVDialect\u003A\u003A\u0024separator",
+            "name": "separator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVDialect.html#property_separator"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVDialect\u003A\u003A\u0024enclosure",
+            "name": "enclosure",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVDialect.html#property_enclosure"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVDialect\u003A\u003A\u0024escape",
+            "name": "escape",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVDialect.html#property_escape"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVEncoder",
             "name": "CSVEncoder",
             "summary": "",
@@ -41,6 +66,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVEncoder.html#method_encodeHeader"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVEncoder\u003A\u003Aheaders\u0028\u0029",
+            "name": "headers",
+            "summary": "Null\u0020before\u0020the\u0020first\u0020decoded\u0020line\u003A\u0020a\u00200\u002Dbyte\u0020source\u0020resolves\u0020no\u0020header,\u0020which\u0020is\u0020not\u0020the\u0020same\u0020as\u0020a\nheader\u0020of\u0020zero\u0020columns.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVEncoder.html#method_headers"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor",
             "name": "CSVExtractor",
             "summary": "",
@@ -51,10 +81,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "name": "isRepeatable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method_isRepeatable"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method_extract"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor\u003A\u003AinferSchema\u0028\u0029",
+            "name": "inferSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method_inferSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method_schema"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor\u003A\u003Asource\u0028\u0029",
             "name": "source",
@@ -101,6 +146,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method_withSeparator"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVFileReader",
+            "name": "CSVFileReader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVFileReader.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVFileReader\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVFileReader\u003A\u003Abatches\u0028\u0029",
+            "name": "batches",
+            "summary": "Abandoning\u0020the\u0020generator\u0020closes\u0020the\u0020source.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_batches"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVFileReader\u003A\u003Acolumns\u0028\u0029",
+            "name": "columns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_columns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVFileReader\u003A\u003Aheader\u0028\u0029",
+            "name": "header",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_header"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVFileReader\u003A\u003Asample\u0028\u0029",
+            "name": "sample",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_sample"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVFileReader\u003A\u003Asamples\u0028\u0029",
+            "name": "samples",
+            "summary": "\u0024rowBudget\u0020is\u0020deliberately\u0020unused\u003A\u0020sample\u0028\u0029\u0020is\u0020lazy\u0020and\u0020SchemaInferrer\u0020stops\u0020advancing\u0020it.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_samples"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVHeader",
+            "name": "CSVHeader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVHeader.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVHeader\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u0024source\u0020is\u0020a\u0020plain\u0020label,\u0020never\u0020a\u0020Path\u0020or\u0020a\u0020SourceFile,\u0020so\u0020a\u0020sampler\u0020with\u0020no\u0020file\u0020can\u0020supply\u0020its\u0020own.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVHeader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVHeader\u003A\u003A\u0024names",
+            "name": "names",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVHeader.html#property_names"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVHeader\u003A\u003A\u0024source",
+            "name": "source",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVHeader.html#property_source"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLineReader",
             "name": "CSVLineReader",
             "summary": "",
@@ -126,10 +226,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLoader\u003A\u003ApartitionBy\u0028\u0029",
+            "name": "partitionBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_partitionBy"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLoader\u003A\u003Aclosure\u0028\u0029",
             "name": "closure",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_closure"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLoader\u003A\u003Adiscard\u0028\u0029",
+            "name": "discard",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_discard"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLoader\u003A\u003Adestination\u0028\u0029",
             "name": "destination",
@@ -140,6 +250,11 @@ Search.appendIndex(
             "name": "load",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_load"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLoader\u003A\u003AsaveMode\u0028\u0029",
+            "name": "saveMode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_saveMode"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLoader\u003A\u003AwithDateFormat\u0028\u0029",
             "name": "withDateFormat",
@@ -181,6 +296,126 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVLoader.html#method_write"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVOpenSource",
+            "name": "CSVOpenSource",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVOpenSource\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVOpenSource\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVOpenSource\u003A\u003Acolumns\u0028\u0029",
+            "name": "columns",
+            "summary": "This\u0020instance\u0020is\u0020consumed\u0020afterwards.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_columns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVOpenSource\u003A\u003Arecords\u0028\u0029",
+            "name": "records",
+            "summary": "CSVLineReader\u003A\u003AreadLines\u0028\u0029\u0020already\u0020joins\u0020a\u0020quoted\u0020multi\u002Dline\u0020record,\u0020so\u0020never\u0020re\u002Dsplit\u0020or\u0020re\u002Djoin\u0020here.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_records"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVOpenSource\u003A\u003A\u0024stream",
+            "name": "stream",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_stream"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVOpenSource\u003A\u003A\u0024dialect",
+            "name": "dialect",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_dialect"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVOpenSource\u003A\u003A\u0024encoder",
+            "name": "encoder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_encoder"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVOpenSource\u003A\u003A\u0024lineReader",
+            "name": "lineReader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_lineReader"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions",
+            "name": "CSVReadOptions",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003AwithCharactersReadInLine\u0028\u0029",
+            "name": "withCharactersReadInLine",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#method_withCharactersReadInLine"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003AwithEmptyToNull\u0028\u0029",
+            "name": "withEmptyToNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#method_withEmptyToNull"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003AwithEnclosure\u0028\u0029",
+            "name": "withEnclosure",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#method_withEnclosure"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003AwithEscape\u0028\u0029",
+            "name": "withEscape",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#method_withEscape"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003A\u0024withHeader",
+            "name": "withHeader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#property_withHeader"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003AwithRemoveBOM\u0028\u0029",
+            "name": "withRemoveBOM",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#method_withRemoveBOM"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003AwithSeparator\u0028\u0029",
+            "name": "withSeparator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#method_withSeparator"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003A\u0024emptyToNull",
+            "name": "emptyToNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#property_emptyToNull"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003A\u0024removeBOM",
+            "name": "removeBOM",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#property_removeBOM"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003A\u0024separator",
+            "name": "separator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#property_separator"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003A\u0024enclosure",
+            "name": "enclosure",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#property_enclosure"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003A\u0024escape",
+            "name": "escape",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#property_escape"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVReadOptions\u003A\u003A\u0024charactersReadInLine",
+            "name": "charactersReadInLine",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVReadOptions.html#property_charactersReadInLine"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVRowNormalizer",
             "name": "CSVRowNormalizer",
             "summary": "",
@@ -195,6 +430,21 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "Normalize\u0020CSV\u0020row\u0020data\u0020to\u0020match\u0020the\u0020expected\u0020number\u0020of\u0020headers.",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVRowNormalizer.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSourceOpener",
+            "name": "CSVSourceOpener",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSourceOpener.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSourceOpener\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSourceOpener.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSourceOpener\u003A\u003Aopen\u0028\u0029",
+            "name": "open",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSourceOpener.html#method_open"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\Detector\\Option",
             "name": "Option",

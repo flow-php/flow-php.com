@@ -6,6 +6,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-types-dsl.html#function_type_structure"
         },                {
+            "fqsen": "\\Flow\\Types\\DSL\\structure_element\u0028\u0029",
+            "name": "structure_element",
+            "summary": "",
+            "url": "namespaces/flow-types-dsl.html#function_structure_element"
+        },                {
             "fqsen": "\\Flow\\Types\\DSL\\type_union\u0028\u0029",
             "name": "type_union",
             "summary": "",
@@ -35,6 +40,11 @@ Search.appendIndex(
             "name": "type_is_nullable",
             "summary": "",
             "url": "namespaces/flow-types-dsl.html#function_type_is_nullable"
+        },                {
+            "fqsen": "\\Flow\\Types\\DSL\\type_bare\u0028\u0029",
+            "name": "type_bare",
+            "summary": "Strip\u0020exactly\u0020one\u0020level\u0020of\u0020nullability,\u0020whichever\u0020of\u0020the\u0020two\u0020spellings\u0020carries\u0020it\n\u0028OptionalType,\u0020or\u0020a\u0020UnionType\u0020containing\u0020NullType\u0029.\u0020Total\u003A\u0020a\u0020NOT\u0020NULL\u0020type\u0020is\u0020returned\u0020unchanged.",
+            "url": "namespaces/flow-types-dsl.html#function_type_bare"
         },                {
             "fqsen": "\\Flow\\Types\\DSL\\type_equals\u0028\u0029",
             "name": "type_equals",
@@ -236,6 +246,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Exception-CastingException.html#property_type"
         },                {
+            "fqsen": "\\Flow\\Types\\Exception\\CastingException\u003A\u003A\u0024reason",
+            "name": "reason",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-CastingException.html#property_reason"
+        },                {
             "fqsen": "\\Flow\\Types\\Exception\\Exception",
             "name": "Exception",
             "summary": "",
@@ -260,6 +275,11 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-Types-Exception-InvalidTypeException.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\Types\\Exception\\InvalidTypeException\u003A\u003AnoCommonType\u0028\u0029",
+            "name": "noCommonType",
+            "summary": "",
+            "url": "classes/Flow-Types-Exception-InvalidTypeException.html#method_noCommonType"
         },                {
             "fqsen": "\\Flow\\Types\\Exception\\InvalidTypeException\u003A\u003Avalue\u0028\u0029",
             "name": "value",
@@ -336,20 +356,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-ArrayContentDetector.html#method_valueType"
         },                {
-            "fqsen": "\\Flow\\Types\\Type\\AutoCaster",
-            "name": "AutoCaster",
+            "fqsen": "\\Flow\\Types\\Type\\ArrayKey",
+            "name": "ArrayKey",
             "summary": "",
-            "url": "classes/Flow-Types-Type-AutoCaster.html"
+            "url": "classes/Flow-Types-Type-ArrayKey.html"
         },                {
-            "fqsen": "\\Flow\\Types\\Type\\AutoCaster\u003A\u003Acast\u0028\u0029",
-            "name": "cast",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-AutoCaster.html#method_cast"
+            "fqsen": "\\Flow\\Types\\Type\\ArrayKey\u003A\u003Acoerce\u0028\u0029",
+            "name": "coerce",
+            "summary": "PHP\u0027s\u0020canonical\u0020array\u002Dkey\u0020coercion\u003A\u0020a\u0020string\u0020whose\u0020integer\u0020round\u0020trip\u0020is\u0020byte\u002Dexact\u0020becomes\nan\u0020int\u0020\u0028\u00270\u0027\u0020\u002D\u003E\u00200\u0029,\u0020everything\u0020else\u0020stays\u0020as\u002Dis\u0020\u0028\u002701\u0027,\u0020\u00271.5\u0027,\u0020\u0027\u002D0\u0027\u0020stay\u0020strings\u0029\u0020\u002D\u0020the\u0020same\nrule\u0020the\u0020Rust\u0020extension\u0020applies\u0020in\u0020array_key_index\u0028\u0029.",
+            "url": "classes/Flow-Types-Type-ArrayKey.html#method_coerce"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Comparator",
             "name": "Comparator",
             "summary": "",
             "url": "classes/Flow-Types-Type-Comparator.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Comparator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Comparator.html#method___construct"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Comparator\u003A\u003Acomparable\u0028\u0029",
             "name": "comparable",
@@ -425,6 +450,16 @@ Search.appendIndex(
             "name": "SPACE_SHIP",
             "summary": "",
             "url": "classes/Flow-Types-Type-Comparison-Operator.html#enumcase_SPACE_SHIP"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\ContainerUnification",
+            "name": "ContainerUnification",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-ContainerUnification.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\ContainerUnification\u003A\u003Aunify\u0028\u0029",
+            "name": "unify",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-ContainerUnification.html#method_unify"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\ClassStringType",
             "name": "ClassStringType",
@@ -645,6 +680,11 @@ Search.appendIndex(
             "name": "InstanceOfTypeNarrower",
             "summary": "",
             "url": "classes/Flow-Types-Type-Logical-InstanceOfTypeNarrower.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\InstanceOfTypeNarrower\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-InstanceOfTypeNarrower.html#method___construct"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\InstanceOfTypeNarrower\u003A\u003Anarrow\u0028\u0029",
             "name": "narrow",
@@ -888,7 +928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\OptionalType\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Nullability\u0020is\u0020idempotent,\u0020so\u0020wrapping\u0020an\u0020already\u002Doptional\u0020type\u0020collapses\u0020to\u0020one\u0020level\ninstead\u0020of\u0020throwing\u0020\u002D\u0020callers\u0020forcing\u0020nullability\u0020never\u0020need\u0020a\u0020guard.",
             "url": "classes/Flow-Types-Type-Logical-OptionalType.html#method___construct"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\OptionalType\u003A\u003AfromArray\u0028\u0029",
@@ -991,6 +1031,31 @@ Search.appendIndex(
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type-Logical-ScalarType.html#method_toString"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureElement",
+            "name": "StructureElement",
+            "summary": "TOptional\u0020mirrors\u0020the\u0020runtime\u0020flag\u0020into\u0020the\u0020type\u0020so\u0020analyzers\u0020can\u0020mark\u0020the\u0020shape\u0020key\u0020optional\nwithout\u0020reading\u0020the\u0020call\u0020expression.",
+            "url": "classes/Flow-Types-Type-Logical-StructureElement.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureElement\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-StructureElement.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureElement\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-StructureElement.html#property_name"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureElement\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-StructureElement.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureElement\u003A\u003A\u0024optional",
+            "name": "optional",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-StructureElement.html#property_optional"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType",
             "name": "StructureType",
             "summary": "",
@@ -1000,6 +1065,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Types-Type-Logical-StructureType.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003AfromElements\u0028\u0029",
+            "name": "fromElements",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-StructureType.html#method_fromElements"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003AfromArray\u0028\u0029",
             "name": "fromArray",
@@ -1021,6 +1091,11 @@ Search.appendIndex(
             "summary": "Takes\u0020a\u0020value\u0020and\u0020when\u0020necessary\u0020casts\u0020it\u0020to\u0020the\u0020type\u0020of\u0020this\u0020object.",
             "url": "classes/Flow-Types-Type-Logical-StructureType.html#method_cast"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003Aelement\u0028\u0029",
+            "name": "element",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-StructureType.html#method_element"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003Aelements\u0028\u0029",
             "name": "elements",
             "summary": "",
@@ -1035,11 +1110,6 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-Types-Type-Logical-StructureType.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003AoptionalElements\u0028\u0029",
-            "name": "optionalElements",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Logical-StructureType.html#method_optionalElements"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003AtoString\u0028\u0029",
             "name": "toString",
@@ -1601,10 +1671,50 @@ Search.appendIndex(
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type-Native-ResourceType.html#method_toString"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTemporalParts",
+            "name": "StringTemporalParts",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-String-StringTemporalParts.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTemporalParts\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-String-StringTemporalParts.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTemporalParts\u003A\u003Afrom\u0028\u0029",
+            "name": "from",
+            "summary": "One\u0020date_parse\u0028\u0029\u0020for\u0020both\u0020temporal\u0020rungs\u003B\u0020running\u0020it\u0020per\u0020rung\u0020cost\u0020\u007E90\u0025\u0020of\u0020narrow\u0028\u0029\u0020on\u0020non\u002Dtemporal\u0020cells.",
+            "url": "classes/Flow-Types-Type-Native-String-StringTemporalParts.html#method_from"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTemporalParts\u003A\u003AhasExplicitDay\u0028\u0029",
+            "name": "hasExplicitDay",
+            "summary": "date_parse\u0028\u0029\u0020defaults\u0020a\u0020missing\u0020day\u0020to\u00201,\u0020so\u0020\u00272024\u002D01\u0027\u0020is\u0020indistinguishable\u0020from\u0020\u00272024\u002D01\u002D01\u0027\u0020by\u0020its\u0020parts\nalone\u0020and\u0020a\u0020month\u002Dprecision\u0020column\u0020would\u0020be\u0020typed\u0020date\u0020with\u0020a\u0020fabricated\u0020day.\u0020The\u0020day\u0020has\u0020to\u0020be\u0020read\u0020back\nout\u0020of\u0020the\u0020input\u003A\u0020three\u0020numeric\u0020groups,\u0020or\u0020two\u0020plus\u0020a\u0020spelled\u002Dout\u0020month\u0020\u0028\u002702\u002DJun\u002D2022\u0027\u0029.",
+            "url": "classes/Flow-Types-Type-Native-String-StringTemporalParts.html#method_hasExplicitDay"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTemporalParts\u003A\u003AisDate\u0028\u0029",
+            "name": "isDate",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-String-StringTemporalParts.html#method_isDate"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTemporalParts\u003A\u003AisDateTime\u0028\u0029",
+            "name": "isDateTime",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-String-StringTemporalParts.html#method_isDateTime"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeNarrower",
             "name": "StringTypeNarrower",
             "summary": "",
             "url": "classes/Flow-Types-Type-Native-String-StringTypeNarrower.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeNarrower\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-String-StringTypeNarrower.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeNarrower\u003A\u003AemitsType\u0028\u0029",
+            "name": "emitsType",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-String-StringTypeNarrower.html#method_emitsType"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTypeNarrower\u003A\u003Anarrow\u0028\u0029",
             "name": "narrow",
@@ -1681,6 +1791,11 @@ Search.appendIndex(
             "summary": "Checks\u0020if\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020returning\u0020a\u0020boolean\u0020instead\u0020of\u0020throwing.",
             "url": "classes/Flow-Types-Type-Native-UnionType.html#method_isValid"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\UnionType\u003A\u003AmemberFor\u0028\u0029",
+            "name": "memberFor",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-UnionType.html#method_memberFor"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\UnionType\u003A\u003Anormalize\u0028\u0029",
             "name": "normalize",
             "summary": "",
@@ -1696,15 +1811,80 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-Native-UnionType.html#method_types"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Nullability",
+            "name": "Nullability",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Nullability.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Nullability\u003A\u003Ais\u0028\u0029",
+            "name": "is",
+            "summary": "Nullability\u0020has\u0020two\u0020spellings\u003A\u0020OptionalType,\u0020and\u0020a\u0020UnionType\u0020containing\u0020NullType.",
+            "url": "classes/Flow-Types-Type-Nullability.html#method_is"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Nullability\u003A\u003Abare\u0028\u0029",
+            "name": "bare",
+            "summary": "Strips\u0020exactly\u0020one\u0020level\u0020of\u0020nullability.\u0020Total\u0020\u002D\u0020never\u0020throws,\u0020never\u0020null.",
+            "url": "classes/Flow-Types-Type-Nullability.html#method_bare"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Nullability\u003A\u003Aany\u0028\u0029",
+            "name": "any",
+            "summary": "\u0024result,\u0020made\u0020nullable\u0020iff\u0020ANY\u0020operand\u0020carries\u0020a\u0020null.",
+            "url": "classes/Flow-Types-Type-Nullability.html#method_any"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Nullability\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "\u0024result,\u0020made\u0020nullable\u0020iff\u0020EVERY\u0020operand\u0020carries\u0020a\u0020null\u0020AND\u0020there\u0020is\u0020at\u0020least\u0020one.",
+            "url": "classes/Flow-Types-Type-Nullability.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\ScalarUnification",
+            "name": "ScalarUnification",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-ScalarUnification.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\ScalarUnification\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-ScalarUnification.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\ScalarUnification\u003A\u003Aunify\u0028\u0029",
+            "name": "unify",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-ScalarUnification.html#method_unify"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\StructureComparison",
+            "name": "StructureComparison",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-StructureComparison.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\StructureComparison\u003A\u003Aidentical\u0028\u0029",
+            "name": "identical",
+            "summary": "Identity\u0020\u002D\u0020positional,\u0020and\u0020the\u0020optional\u0020flag\u0020is\u0020part\u0020of\u0020it.",
+            "url": "classes/Flow-Types-Type-StructureComparison.html#method_identical"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\TypeDetector",
             "name": "TypeDetector",
             "summary": "",
             "url": "classes/Flow-Types-Type-TypeDetector.html"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypeDetector\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-TypeDetector.html#method___construct"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\TypeDetector\u003A\u003AdetectType\u0028\u0029",
             "name": "detectType",
             "summary": "",
             "url": "classes/Flow-Types-Type-TypeDetector.html#method_detectType"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypedValueFormatter",
+            "name": "TypedValueFormatter",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-TypedValueFormatter.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypedValueFormatter\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-TypedValueFormatter.html#method_format"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\TypeFactory",
             "name": "TypeFactory",
@@ -1795,6 +1975,116 @@ Search.appendIndex(
             "name": "without",
             "summary": "",
             "url": "classes/Flow-Types-Type-Types.html#method_without"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypeUnifier",
+            "name": "TypeUnifier",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-TypeUnifier.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypeUnifier\u003A\u003Aunify\u0028\u0029",
+            "name": "unify",
+            "summary": "Pairwise.\u0020Called\u0020by\u0020ContainerUnification\u0020at\u0020depth\u0020\u003E\u003D\u00201,\u0020where\u0020nullability\u0020composes\u0020by\u0020OR.",
+            "url": "classes/Flow-Types-Type-TypeUnifier.html#method_unify"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypeUnifier\u003A\u003AunifyAll\u0028\u0029",
+            "name": "unifyAll",
+            "summary": "N\u002Dary,\u0020and\u0020the\u0020root\u0020entry\u0020point\u0020every\u0020caller\u0020uses.\u0020Strips\u0020every\u0020root\u0027s\u0020nullability,\nfolds\u0020the\u0020bases\u0020under\u0020this\u0020policy,\u0020then\u0020re\u002Dwraps\u0020by\u0020\u0024rule\u0020read\u0020from\u0020the\u0020original\u0020operands.",
+            "url": "classes/Flow-Types-Type-TypeUnifier.html#method_unifyAll"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypeWidener",
+            "name": "TypeWidener",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-TypeWidener.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypeWidener\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-TypeWidener.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypeWidener\u003A\u003Awiden\u0028\u0029",
+            "name": "widen",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-TypeWidener.html#method_widen"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypeWidener\u003A\u003Anullable\u0028\u0029",
+            "name": "nullable",
+            "summary": "\u0060mixed\u0060\u0020has\u0020no\u0020optional\u0020form\u0020\u002D\u0020it\u0020already\u0020admits\u0020null\u0020\u002D\u0020so\u0020wrapping\u0020it\u0020would\u0020throw\u0020from\u0020a\nmethod\u0020that\u0020must\u0020always\u0020answer.",
+            "url": "classes/Flow-Types-Type-TypeWidener.html#method_nullable"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypeWidener\u003A\u003AwidenLists\u0028\u0029",
+            "name": "widenLists",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-TypeWidener.html#method_widenLists"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypeWidener\u003A\u003AwidenMaps\u0028\u0029",
+            "name": "widenMaps",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-TypeWidener.html#method_widenMaps"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\TypeWidener\u003A\u003AwidenStructures\u0028\u0029",
+            "name": "widenStructures",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-TypeWidener.html#method_widenStructures"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Unifier\\NullabilityRule",
+            "name": "NullabilityRule",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Unifier-NullabilityRule.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Unifier\\NullabilityRule\u003A\u003Aapply\u0028\u0029",
+            "name": "apply",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Unifier-NullabilityRule.html#method_apply"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Unifier\\NullabilityRule\u003A\u003AANY",
+            "name": "ANY",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Unifier-NullabilityRule.html#enumcase_ANY"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Unifier\\NullabilityRule\u003A\u003AALL",
+            "name": "ALL",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Unifier-NullabilityRule.html#enumcase_ALL"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Unifier\\PromotingUnifier",
+            "name": "PromotingUnifier",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Unifier-PromotingUnifier.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Unifier\\PromotingUnifier\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Unifier-PromotingUnifier.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Unifier\\PromotingUnifier\u003A\u003Aunify\u0028\u0029",
+            "name": "unify",
+            "summary": "Pairwise.\u0020Called\u0020by\u0020ContainerUnification\u0020at\u0020depth\u0020\u003E\u003D\u00201,\u0020where\u0020nullability\u0020composes\u0020by\u0020OR.",
+            "url": "classes/Flow-Types-Type-Unifier-PromotingUnifier.html#method_unify"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Unifier\\PromotingUnifier\u003A\u003AunifyAll\u0028\u0029",
+            "name": "unifyAll",
+            "summary": "N\u002Dary,\u0020and\u0020the\u0020root\u0020entry\u0020point\u0020every\u0020caller\u0020uses.\u0020Strips\u0020every\u0020root\u0027s\u0020nullability,\nfolds\u0020the\u0020bases\u0020under\u0020this\u0020policy,\u0020then\u0020re\u002Dwraps\u0020by\u0020\u0024rule\u0020read\u0020from\u0020the\u0020original\u0020operands.",
+            "url": "classes/Flow-Types-Type-Unifier-PromotingUnifier.html#method_unifyAll"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Unifier\\StrictUnifier",
+            "name": "StrictUnifier",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Unifier-StrictUnifier.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Unifier\\StrictUnifier\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Unifier-StrictUnifier.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Unifier\\StrictUnifier\u003A\u003Aunify\u0028\u0029",
+            "name": "unify",
+            "summary": "Pairwise.\u0020Called\u0020by\u0020ContainerUnification\u0020at\u0020depth\u0020\u003E\u003D\u00201,\u0020where\u0020nullability\u0020composes\u0020by\u0020OR.",
+            "url": "classes/Flow-Types-Type-Unifier-StrictUnifier.html#method_unify"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Unifier\\StrictUnifier\u003A\u003AunifyAll\u0028\u0029",
+            "name": "unifyAll",
+            "summary": "N\u002Dary,\u0020and\u0020the\u0020root\u0020entry\u0020point\u0020every\u0020caller\u0020uses.\u0020Strips\u0020every\u0020root\u0027s\u0020nullability,\nfolds\u0020the\u0020bases\u0020under\u0020this\u0020policy,\u0020then\u0020re\u002Dwraps\u0020by\u0020\u0024rule\u0020read\u0020from\u0020the\u0020original\u0020operands.",
+            "url": "classes/Flow-Types-Type-Unifier-StrictUnifier.html#method_unifyAll"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\ValueComparator",
             "name": "ValueComparator",
@@ -1980,6 +2270,11 @@ Search.appendIndex(
             "name": "String",
             "summary": "",
             "url": "namespaces/flow-types-type-native-string.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Unifier",
+            "name": "Unifier",
+            "summary": "",
+            "url": "namespaces/flow-types-type-unifier.html"
         },                {
             "fqsen": "\\Flow\\Types",
             "name": "Types",

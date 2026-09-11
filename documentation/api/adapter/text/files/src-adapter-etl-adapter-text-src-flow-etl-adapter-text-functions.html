@@ -137,7 +137,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-text/src/Flow/ETL/Adapter/Text/functions.php"><a href="files/src-adapter-etl-adapter-text-src-flow-etl-adapter-text-functions.html"><abbr title="src/adapter/etl-adapter-text/src/Flow/ETL/Adapter/Text/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -145,7 +145,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_text</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Text-TextExtractor.html"><abbr title="\Flow\ETL\Adapter\Text\TextExtractor">TextExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_text</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Text-TextExtractor.html"><abbr title="\Flow\ETL\Adapter\Text\TextExtractor">TextExtractor</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -154,6 +154,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$path</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$filesystem</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -176,7 +183,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-text/src/Flow/ETL/Adapter/Text/functions.php"><a href="files/src-adapter-etl-adapter-text-src-flow-etl-adapter-text-functions.html"><abbr title="src/adapter/etl-adapter-text/src/Flow/ETL/Adapter/Text/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -184,7 +191,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">to_text</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$new_line_separator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\Text\PHP_EOL">PHP_EOL</abbr></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Loader">Loader</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">to_text</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$new_line_separator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\Flow\ETL\Adapter\Text\PHP_EOL">PHP_EOL</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Text-TextLoader.html"><abbr title="\Flow\ETL\Adapter\Text\TextLoader">TextLoader</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -207,13 +214,20 @@
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$filesystem</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Loader">Loader</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Text-TextLoader.html"><abbr title="\Flow\ETL\Adapter\Text\TextLoader">TextLoader</abbr></a></span>
             </section>
 
 </article>

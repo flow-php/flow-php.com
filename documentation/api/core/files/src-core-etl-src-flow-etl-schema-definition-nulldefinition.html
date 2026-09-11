@@ -136,7 +136,11 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Schema-Definition-NullDefinition.html"><abbr title="\Flow\ETL\Schema\Definition\NullDefinition">NullDefinition</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Schema-Definition-NullDefinition.html"><abbr title="\Flow\ETL\Schema\Definition\NullDefinition">NullDefinition</abbr></a></dt><dd>The bottom of the type lattice: the column&#039;s type is not known. Absorbed by merge() in both
+directions - null ⊔ T = ?T, T ⊔ null = ?T, null ⊔ null = null. Reaches a materialized Schema
+only when a column is null in every observed row and no type was declared; that is Parquet&#039;s
+UNKNOWN and Iceberg&#039;s unknown. A column that holds strings and sometimes null is
+StringDefinition(nullable: true), never this.</dd>    </dl>
 
 
 

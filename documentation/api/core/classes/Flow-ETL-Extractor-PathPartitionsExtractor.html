@@ -129,11 +129,11 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-FileExtractor.html"><abbr title="\Flow\ETL\Extractor\FileExtractor">FileExtractor</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-LimitableExtractor.html"><abbr title="\Flow\ETL\Extractor\LimitableExtractor">LimitableExtractor</abbr></a>                    </span>
+                            <a href="classes/Flow-ETL-Extractor-BatchableExtractor.html"><abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr></a>,                             <a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-FileExtractor.html"><abbr title="\Flow\ETL\Extractor\FileExtractor">FileExtractor</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-LimitPushDown.html"><abbr title="\Flow\ETL\Extractor\LimitPushDown">LimitPushDown</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-RewindableExtractor.html"><abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr></a>                    </span>
     
             <span class="phpdocumentor-element__extends">
             uses
-                            <a href="classes/Flow-ETL-Extractor-Limitable.html"><abbr title="\Flow\ETL\Extractor\Limitable">Limitable</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-PathFiltering.html"><abbr title="\Flow\ETL\Extractor\PathFiltering">PathFiltering</abbr></a>                    </span>
+                            <a href="classes/Flow-ETL-Extractor-Batches.html"><abbr title="\Flow\ETL\Extractor\Batches">Batches</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-PathFiltering.html"><abbr title="\Flow\ETL\Extractor\PathFiltering">PathFiltering</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-PushesLimit.html"><abbr title="\Flow\ETL\Extractor\PushesLimit">PushesLimit</abbr></a>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -146,7 +146,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-pathpartitionsextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php">PathPartitionsExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -164,7 +164,11 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Extractor-FileExtractor.html"><abbr title="\Flow\ETL\Extractor\FileExtractor">FileExtractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Extractor-LimitableExtractor.html"><abbr title="\Flow\ETL\Extractor\LimitableExtractor">LimitableExtractor</abbr></a></dt><dd>Limitable extractor is one that can be limited to extract only given number of rows.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Extractor-BatchableExtractor.html"><abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr></a></dt><dd>A source that decides how many rows it puts in one Rows. withBatchSize() bounds what the source
+BUILDS; batches() re-slices what a source already emitted and cannot lower its peak.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Extractor-FileExtractor.html"><abbr title="\Flow\ETL\Extractor\FileExtractor">FileExtractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Extractor-LimitPushDown.html"><abbr title="\Flow\ETL\Extractor\LimitPushDown">LimitPushDown</abbr></a></dt><dd>A source that can read fewer rows when the plan has a LIMIT above it. This is an optimization
+hint, never a guarantee: the limit operator stays in the plan and enforces the exact count, so an
+implementation that yields more rows than asked - or ignores the hint - is still correct.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Extractor-RewindableExtractor.html"><abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr></a></dt><dd>A rewindable extractor can be read more than once and yield the same rows each time, so a build-time
+pass may scan it before extraction without consuming it.</dd>    </dl>
 
 
 
@@ -186,9 +190,9 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Extractor-Limitable.html#method_changeLimit">changeLimit()</a>
+    <a class="" href="classes/Flow-ETL-Extractor-Batches.html#method_batchSize">batchSize()</a>
     <span>
-                                &nbsp;: void    </span>
+                                &nbsp;: int<1, max>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -196,6 +200,9 @@
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;    </span>
 </dt>
+<dd>Yields rows in batches. When the source is a BatchableExtractor a batch holds between 0 and that
+extractor&#039;s own batchSize() rows; the size is chosen by the extractor and MAY vary between
+batches. Consumers must not assume a minimum size, a constant size, or a non-empty batch.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Extractor-PathFiltering.html#method_filter">filter()</a>
@@ -204,34 +211,37 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Extractor-Limitable.html#method_incrementReturnedRows">incrementReturnedRows()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Extractor-Limitable.html#method_isLimited">isLimited()</a>
+    <a class="" href="classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_isRepeatable">isRepeatable()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Extractor-Limitable.html#method_limit">limit()</a>
+    <a class="" href="classes/Flow-ETL-Extractor-PathFiltering.html#method_partitionNames">partitionNames()</a>
+    <span>
+                                &nbsp;: array&lt;string, bool&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Extractor-PushesLimit.html#method_pushedLimit">pushedLimit()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Extractor-Limitable.html#method_reachedLimit">reachedLimit()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Extractor-Limitable.html#method_resetLimit">resetLimit()</a>
+    <a class="" href="classes/Flow-ETL-Extractor-PushesLimit.html#method_pushLimit">pushLimit()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_schema">schema()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>    </span>
+</dt>
+<dd>Answers before extract() runs, so every batch it yields carries this shape. Takes no
+FlowContext: a source that needs the pipeline&#039;s context to describe itself has not moved
+the answer to bind time.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_source">source()</a>
@@ -240,10 +250,24 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Extractor-Batches.html#method_withBatchSize">withBatchSize()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Extractor-PathFiltering.html#method_withPathFilter">withPathFilter()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_withSchema">withSchema()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd>Declares the shape every yielded batch must carry. A source that describes itself uses this
+instead of its own description, and values are cast to fit.</dd>
 
     </dl>
 
@@ -273,14 +297,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-pathpartitionsextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php">PathPartitionsExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -292,6 +316,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$path</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr></span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$filesystem</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -309,43 +340,37 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_changeLimit">
-        changeLimit()
-        <a href="classes/Flow-ETL-Extractor-Limitable.html#method_changeLimit" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_batchSize">
+        batchSize()
+        <a href="classes/Flow-ETL-Extractor-Batches.html#method_batchSize" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/Limitable.php"><a href="files/src-core-etl-src-flow-etl-extractor-limitable.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/Limitable.php">Limitable.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/Batches.php"><a href="files/src-core-etl-src-flow-etl-extractor-batches.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/Batches.php">Batches.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">changeLimit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">batchSize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int<1, max></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
         
     
-    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int<1, max></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -361,11 +386,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-pathpartitionsextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php">PathPartitionsExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Yields rows in batches. When the source is a BatchableExtractor a batch holds between 0 and that
+extractor&#039;s own batchSize() rows; the size is chosen by the extractor and MAY vary between
+batches. Consumers must not assume a minimum size, a constant size, or a non-empty batch.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">extract</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;</span></code>
@@ -409,7 +437,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PathFiltering.php"><a href="files/src-core-etl-src-flow-etl-extractor-pathfiltering.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PathFiltering.php">PathFiltering.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -439,56 +467,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_incrementReturnedRows">
-        incrementReturnedRows()
-        <a href="classes/Flow-ETL-Extractor-Limitable.html#method_incrementReturnedRows" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_isRepeatable">
+        isRepeatable()
+        <a href="classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_isRepeatable" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/Limitable.php"><a href="files/src-core-etl-src-flow-etl-extractor-limitable.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/Limitable.php">Limitable.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-pathpartitionsextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php">PathPartitionsExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">incrementReturnedRows</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_isLimited">
-        isLimited()
-        <a href="classes/Flow-ETL-Extractor-Limitable.html#method_isLimited" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/Limitable.php"><a href="files/src-core-etl-src-flow-etl-extractor-limitable.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/Limitable.php">Limitable.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">29</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isLimited</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">isRepeatable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -511,22 +505,77 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_limit">
-        limit()
-        <a href="classes/Flow-ETL-Extractor-Limitable.html#method_limit" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_partitionNames">
+        partitionNames()
+        <a href="classes/Flow-ETL-Extractor-PathFiltering.html#method_partitionNames" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/Limitable.php"><a href="files/src-core-etl-src-flow-etl-extractor-limitable.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/Limitable.php">Limitable.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PathFiltering.php"><a href="files/src-core-etl-src-flow-etl-extractor-pathfiltering.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PathFiltering.php">PathFiltering.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">limit</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+                    <span class="phpdocumentor-signature__name">partitionNames</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Extractor-PartitionColumns.html"><abbr title="\Flow\ETL\Extractor\PartitionColumns">PartitionColumns</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partitionColumns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, bool&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$partitionColumns</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Extractor-PartitionColumns.html"><abbr title="\Flow\ETL\Extractor\PartitionColumns">PartitionColumns</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, bool&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_pushedLimit">
+        pushedLimit()
+        <a href="classes/Flow-ETL-Extractor-PushesLimit.html#method_pushedLimit" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PushesLimit.php"><a href="files/src-core-etl-src-flow-etl-extractor-pusheslimit.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PushesLimit.php">PushesLimit.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">24</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">pushedLimit</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -549,22 +598,69 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_reachedLimit">
-        reachedLimit()
-        <a href="classes/Flow-ETL-Extractor-Limitable.html#method_reachedLimit" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_pushLimit">
+        pushLimit()
+        <a href="classes/Flow-ETL-Extractor-PushesLimit.html#method_pushLimit" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/Limitable.php"><a href="files/src-core-etl-src-flow-etl-extractor-limitable.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/Limitable.php">Limitable.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PushesLimit.php"><a href="files/src-core-etl-src-flow-etl-extractor-pusheslimit.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PushesLimit.php">PushesLimit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">reachedLimit</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">pushLimit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_schema">
+        schema()
+        <a href="classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_schema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-pathpartitionsextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php">PathPartitionsExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">116</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Answers before extract() runs, so every batch it yields carries this shape. Takes no
+FlowContext: a source that needs the pipeline&#039;s context to describe itself has not moved
+the answer to bind time.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">schema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -577,43 +673,9 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
             </section>
 
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_resetLimit">
-        resetLimit()
-        <a href="classes/Flow-ETL-Extractor-Limitable.html#method_resetLimit" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/Limitable.php"><a href="files/src-core-etl-src-flow-etl-extractor-limitable.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/Limitable.php">Limitable.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">48</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">resetLimit</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-    
 </article>
                     <article
         class="phpdocumentor-element
@@ -629,7 +691,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-pathpartitionsextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php">PathPartitionsExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -659,6 +721,54 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_withBatchSize">
+        withBatchSize()
+        <a href="classes/Flow-ETL-Extractor-Batches.html#method_withBatchSize" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/Batches.php"><a href="files/src-core-etl-src-flow-etl-extractor-batches.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/Batches.php">Batches.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withBatchSize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$batchSize</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_withPathFilter">
         withPathFilter()
         <a href="classes/Flow-ETL-Extractor-PathFiltering.html#method_withPathFilter" class="headerlink"><i class="fas fa-link"></i></a>
@@ -667,7 +777,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PathFiltering.php"><a href="files/src-core-etl-src-flow-etl-extractor-pathfiltering.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PathFiltering.php">PathFiltering.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -685,6 +795,56 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$filter</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withSchema">
+        withSchema()
+        <a href="classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_withSchema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-pathpartitionsextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PathPartitionsExtractor.php">PathPartitionsExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">125</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Declares the shape every yielded batch must carry. A source that describes itself uses this
+instead of its own description, and values are cast to fit.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -724,16 +884,18 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Extractor-Limitable.html#method_changeLimit">changeLimit()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Extractor-Batches.html#method_batchSize">batchSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_extract">extract()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Extractor-PathFiltering.html#method_filter">filter()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Extractor-Limitable.html#method_incrementReturnedRows">incrementReturnedRows()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Extractor-Limitable.html#method_isLimited">isLimited()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Extractor-Limitable.html#method_limit">limit()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Extractor-Limitable.html#method_reachedLimit">reachedLimit()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Extractor-Limitable.html#method_resetLimit">resetLimit()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_isRepeatable">isRepeatable()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Extractor-PathFiltering.html#method_partitionNames">partitionNames()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Extractor-PushesLimit.html#method_pushedLimit">pushedLimit()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Extractor-PushesLimit.html#method_pushLimit">pushLimit()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_schema">schema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_source">source()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Extractor-Batches.html#method_withBatchSize">withBatchSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Extractor-PathFiltering.html#method_withPathFilter">withPathFilter()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_withSchema">withSchema()</a></li>
                                     </ul>
             </li>
                     </ul>
