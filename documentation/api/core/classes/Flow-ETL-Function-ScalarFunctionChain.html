@@ -3087,7 +3087,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">341</span>
+    <span class="phpdocumentor-element-found-in__line">345</span>
 
     </aside>
 
@@ -3100,7 +3100,11 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Array keys are ignored, only values are used to create new rows.</p>
+        <section class="phpdocumentor-description"><p>Array keys are ignored, only values are used to create new rows.
+Nested in another function (structure(), concat(), ...) it still gives one row per element. Several
+expands in one expression are zipped to the longest list; a shorter one gives null, so its element
+type becomes nullable. It is refused inside another array_expand() and in filter(), until(),
+duplicateRow(), aggregate(), over() and onEach().</p>
 <p>Before:
 +--+-------------------+
 |id|              array|
@@ -3152,7 +3156,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">346</span>
+    <span class="phpdocumentor-element-found-in__line">350</span>
 
     </aside>
 
@@ -3200,7 +3204,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">351</span>
+    <span class="phpdocumentor-element-found-in__line">355</span>
 
     </aside>
 
@@ -3248,7 +3252,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">356</span>
+    <span class="phpdocumentor-element-found-in__line">360</span>
 
     </aside>
 
@@ -3296,7 +3300,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">361</span>
+    <span class="phpdocumentor-element-found-in__line">365</span>
 
     </aside>
 
@@ -3344,7 +3348,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">366</span>
+    <span class="phpdocumentor-element-found-in__line">370</span>
 
     </aside>
 
@@ -3392,7 +3396,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">374</span>
+    <span class="phpdocumentor-element-found-in__line">378</span>
 
     </aside>
 
@@ -3455,7 +3459,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">385</span>
+    <span class="phpdocumentor-element-found-in__line">389</span>
 
     </aside>
 
@@ -3518,7 +3522,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">393</span>
+    <span class="phpdocumentor-element-found-in__line">397</span>
 
     </aside>
 
@@ -3556,7 +3560,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">398</span>
+    <span class="phpdocumentor-element-found-in__line">402</span>
 
     </aside>
 
@@ -3594,7 +3598,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">403</span>
+    <span class="phpdocumentor-element-found-in__line">407</span>
 
     </aside>
 
@@ -3632,7 +3636,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">411</span>
+    <span class="phpdocumentor-element-found-in__line">415</span>
 
     </aside>
 
@@ -3680,7 +3684,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">416</span>
+    <span class="phpdocumentor-element-found-in__line">420</span>
 
     </aside>
 
@@ -3718,7 +3722,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">421</span>
+    <span class="phpdocumentor-element-found-in__line">425</span>
 
     </aside>
 
@@ -3756,7 +3760,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">426</span>
+    <span class="phpdocumentor-element-found-in__line">430</span>
 
     </aside>
 
@@ -3794,7 +3798,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">431</span>
+    <span class="phpdocumentor-element-found-in__line">435</span>
 
     </aside>
 
@@ -3832,7 +3836,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">436</span>
+    <span class="phpdocumentor-element-found-in__line">440</span>
 
     </aside>
 
@@ -3870,7 +3874,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">441</span>
+    <span class="phpdocumentor-element-found-in__line">445</span>
 
     </aside>
 
@@ -3908,7 +3912,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">449</span>
+    <span class="phpdocumentor-element-found-in__line">453</span>
 
     </aside>
 
@@ -3956,7 +3960,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">461</span>
+    <span class="phpdocumentor-element-found-in__line">465</span>
 
     </aside>
 
@@ -3995,7 +3999,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">466</span>
+    <span class="phpdocumentor-element-found-in__line">470</span>
 
     </aside>
 
@@ -4043,7 +4047,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">471</span>
+    <span class="phpdocumentor-element-found-in__line">475</span>
 
     </aside>
 
@@ -4091,7 +4095,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">476</span>
+    <span class="phpdocumentor-element-found-in__line">480</span>
 
     </aside>
 
@@ -4139,7 +4143,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">481</span>
+    <span class="phpdocumentor-element-found-in__line">485</span>
 
     </aside>
 
@@ -4187,7 +4191,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">486</span>
+    <span class="phpdocumentor-element-found-in__line">490</span>
 
     </aside>
 
@@ -4235,7 +4239,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">491</span>
+    <span class="phpdocumentor-element-found-in__line">495</span>
 
     </aside>
 
@@ -4273,7 +4277,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">496</span>
+    <span class="phpdocumentor-element-found-in__line">500</span>
 
     </aside>
 
@@ -4321,7 +4325,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">501</span>
+    <span class="phpdocumentor-element-found-in__line">505</span>
 
     </aside>
 
@@ -4369,7 +4373,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">506</span>
+    <span class="phpdocumentor-element-found-in__line">510</span>
 
     </aside>
 
@@ -4417,7 +4421,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">511</span>
+    <span class="phpdocumentor-element-found-in__line">515</span>
 
     </aside>
 
@@ -4465,7 +4469,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">516</span>
+    <span class="phpdocumentor-element-found-in__line">520</span>
 
     </aside>
 
@@ -4513,7 +4517,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">521</span>
+    <span class="phpdocumentor-element-found-in__line">525</span>
 
     </aside>
 
@@ -4561,7 +4565,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">526</span>
+    <span class="phpdocumentor-element-found-in__line">530</span>
 
     </aside>
 
@@ -4623,7 +4627,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">540</span>
+    <span class="phpdocumentor-element-found-in__line">544</span>
 
     </aside>
 
@@ -4682,7 +4686,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">545</span>
+    <span class="phpdocumentor-element-found-in__line">549</span>
 
     </aside>
 
@@ -4730,7 +4734,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">550</span>
+    <span class="phpdocumentor-element-found-in__line">554</span>
 
     </aside>
 
@@ -4778,7 +4782,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">555</span>
+    <span class="phpdocumentor-element-found-in__line">559</span>
 
     </aside>
 
@@ -4826,7 +4830,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">560</span>
+    <span class="phpdocumentor-element-found-in__line">564</span>
 
     </aside>
 
@@ -4874,7 +4878,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">565</span>
+    <span class="phpdocumentor-element-found-in__line">569</span>
 
     </aside>
 
@@ -4922,7 +4926,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">570</span>
+    <span class="phpdocumentor-element-found-in__line">574</span>
 
     </aside>
 
@@ -4984,7 +4988,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">575</span>
+    <span class="phpdocumentor-element-found-in__line">579</span>
 
     </aside>
 
@@ -5046,7 +5050,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">580</span>
+    <span class="phpdocumentor-element-found-in__line">584</span>
 
     </aside>
 
@@ -5108,7 +5112,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">588</span>
+    <span class="phpdocumentor-element-found-in__line">592</span>
 
     </aside>
 
@@ -5170,7 +5174,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">596</span>
+    <span class="phpdocumentor-element-found-in__line">600</span>
 
     </aside>
 
@@ -5232,7 +5236,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">604</span>
+    <span class="phpdocumentor-element-found-in__line">608</span>
 
     </aside>
 
@@ -5318,7 +5322,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">609</span>
+    <span class="phpdocumentor-element-found-in__line">613</span>
 
     </aside>
 
@@ -5356,7 +5360,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">614</span>
+    <span class="phpdocumentor-element-found-in__line">618</span>
 
     </aside>
 
@@ -5411,7 +5415,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">619</span>
+    <span class="phpdocumentor-element-found-in__line">623</span>
 
     </aside>
 
@@ -5459,7 +5463,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">624</span>
+    <span class="phpdocumentor-element-found-in__line">628</span>
 
     </aside>
 
@@ -5514,7 +5518,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">631</span>
+    <span class="phpdocumentor-element-found-in__line">635</span>
 
     </aside>
 
@@ -5552,7 +5556,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">639</span>
+    <span class="phpdocumentor-element-found-in__line">643</span>
 
     </aside>
 
@@ -5614,7 +5618,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">647</span>
+    <span class="phpdocumentor-element-found-in__line">651</span>
 
     </aside>
 
@@ -5669,7 +5673,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">652</span>
+    <span class="phpdocumentor-element-found-in__line">656</span>
 
     </aside>
 
@@ -5717,7 +5721,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">657</span>
+    <span class="phpdocumentor-element-found-in__line">661</span>
 
     </aside>
 
@@ -5765,7 +5769,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">665</span>
+    <span class="phpdocumentor-element-found-in__line">669</span>
 
     </aside>
 
@@ -5821,7 +5825,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">673</span>
+    <span class="phpdocumentor-element-found-in__line">677</span>
 
     </aside>
 
@@ -5877,7 +5881,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">683</span>
+    <span class="phpdocumentor-element-found-in__line">687</span>
 
     </aside>
 
@@ -5933,7 +5937,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">693</span>
+    <span class="phpdocumentor-element-found-in__line">697</span>
 
     </aside>
 
@@ -5989,7 +5993,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">703</span>
+    <span class="phpdocumentor-element-found-in__line">707</span>
 
     </aside>
 
@@ -6037,7 +6041,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">708</span>
+    <span class="phpdocumentor-element-found-in__line">712</span>
 
     </aside>
 
@@ -6085,7 +6089,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">716</span>
+    <span class="phpdocumentor-element-found-in__line">720</span>
 
     </aside>
 
@@ -6124,7 +6128,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">721</span>
+    <span class="phpdocumentor-element-found-in__line">725</span>
 
     </aside>
 
@@ -6172,7 +6176,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">726</span>
+    <span class="phpdocumentor-element-found-in__line">730</span>
 
     </aside>
 
@@ -6220,7 +6224,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">731</span>
+    <span class="phpdocumentor-element-found-in__line">735</span>
 
     </aside>
 
@@ -6268,7 +6272,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">740</span>
+    <span class="phpdocumentor-element-found-in__line">744</span>
 
     </aside>
 
@@ -6319,7 +6323,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">748</span>
+    <span class="phpdocumentor-element-found-in__line">752</span>
 
     </aside>
 
@@ -6368,7 +6372,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">753</span>
+    <span class="phpdocumentor-element-found-in__line">757</span>
 
     </aside>
 
@@ -6406,7 +6410,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">758</span>
+    <span class="phpdocumentor-element-found-in__line">762</span>
 
     </aside>
 
@@ -6468,7 +6472,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">763</span>
+    <span class="phpdocumentor-element-found-in__line">767</span>
 
     </aside>
 
@@ -6523,7 +6527,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">768</span>
+    <span class="phpdocumentor-element-found-in__line">772</span>
 
     </aside>
 
@@ -6578,7 +6582,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">773</span>
+    <span class="phpdocumentor-element-found-in__line">777</span>
 
     </aside>
 
@@ -6633,7 +6637,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">782</span>
+    <span class="phpdocumentor-element-found-in__line">786</span>
 
     </aside>
 
@@ -6688,7 +6692,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">790</span>
+    <span class="phpdocumentor-element-found-in__line">794</span>
 
     </aside>
 
@@ -6747,7 +6751,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">801</span>
+    <span class="phpdocumentor-element-found-in__line">805</span>
 
     </aside>
 
@@ -6806,7 +6810,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">808</span>
+    <span class="phpdocumentor-element-found-in__line">812</span>
 
     </aside>
 
@@ -6861,7 +6865,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">813</span>
+    <span class="phpdocumentor-element-found-in__line">817</span>
 
     </aside>
 
@@ -6916,7 +6920,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">818</span>
+    <span class="phpdocumentor-element-found-in__line">822</span>
 
     </aside>
 
@@ -6954,7 +6958,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">842</span>
+    <span class="phpdocumentor-element-found-in__line">846</span>
 
     </aside>
 
@@ -7018,7 +7022,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">847</span>
+    <span class="phpdocumentor-element-found-in__line">851</span>
 
     </aside>
 
@@ -7056,7 +7060,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">852</span>
+    <span class="phpdocumentor-element-found-in__line">856</span>
 
     </aside>
 
@@ -7118,7 +7122,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php"><a href="files/src-core-etl-src-flow-etl-function-scalarfunctionchain.html"><abbr title="src/core/etl/src/Flow/ETL/Function/ScalarFunctionChain.php">ScalarFunctionChain.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">860</span>
+    <span class="phpdocumentor-element-found-in__line">864</span>
 
     </aside>
 
