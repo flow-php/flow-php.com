@@ -2686,15 +2686,30 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_when"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\structure_get\u0028\u0029",
+            "name": "structure_get",
+            "summary": "Alias\u0020for\u0020\u0060array_get\u0060.",
+            "url": "namespaces/flow-etl-dsl.html#function_structure_get"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\array_get\u0028\u0029",
             "name": "array_get",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_array_get"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\structure_get_collection\u0028\u0029",
+            "name": "structure_get_collection",
+            "summary": "Alias\u0020for\u0020\u0060array_get_collection\u0060.",
+            "url": "namespaces/flow-etl-dsl.html#function_structure_get_collection"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\array_get_collection\u0028\u0029",
             "name": "array_get_collection",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_array_get_collection"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\structure_get_collection_first\u0028\u0029",
+            "name": "structure_get_collection_first",
+            "summary": "Alias\u0020for\u0020\u0060array_get_collection_first\u0060.",
+            "url": "namespaces/flow-etl-dsl.html#function_structure_get_collection_first"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\array_get_collection_first\u0028\u0029",
             "name": "array_get_collection_first",

@@ -66,6 +66,121 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ArrayDot-Exception-InvalidPathException.html"
         },                {
+            "fqsen": "\\Flow\\ArrayDot\\Path",
+            "name": "Path",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Path.html"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Path\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Path.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Path\u003A\u003AfromString\u0028\u0029",
+            "name": "fromString",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Path.html#method_fromString"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Path\u003A\u003AselectsSingleValue\u0028\u0029",
+            "name": "selectsSingleValue",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Path.html#method_selectsSingleValue"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Path\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Path.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Path\u003A\u003AESCAPABLE",
+            "name": "ESCAPABLE",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Path.html#constant_ESCAPABLE"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Path\u003A\u003A\u0024steps",
+            "name": "steps",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Path.html#property_steps"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Key",
+            "name": "Key",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Key.html"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Key\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Key.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Key\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Key.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Key\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Key.html#property_name"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Key\u003A\u003A\u0024nullsafe",
+            "name": "nullsafe",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Key.html#property_nullsafe"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Multimatch",
+            "name": "Multimatch",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Multimatch.html"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Multimatch\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Multimatch.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Multimatch\u003A\u003AbyResultKey\u0028\u0029",
+            "name": "byResultKey",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Multimatch.html#method_byResultKey"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Multimatch\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Multimatch.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Multimatch\u003A\u003A\u0024paths",
+            "name": "paths",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Multimatch.html#property_paths"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Wildcard",
+            "name": "Wildcard",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Wildcard.html"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Wildcard\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Wildcard.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Wildcard\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Wildcard.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\\Wildcard\u003A\u003A\u0024nullsafe",
+            "name": "nullsafe",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step-Wildcard.html#property_nullsafe"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step",
+            "name": "Step",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step.html"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-ArrayDot-Step.html#method_toString"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -85,5 +200,10 @@ Search.appendIndex(
             "name": "Exception",
             "summary": "",
             "url": "namespaces/flow-arraydot-exception.html"
+        },                {
+            "fqsen": "\\Flow\\ArrayDot\\Step",
+            "name": "Step",
+            "summary": "",
+            "url": "namespaces/flow-arraydot-step.html"
         }            ]
 );
