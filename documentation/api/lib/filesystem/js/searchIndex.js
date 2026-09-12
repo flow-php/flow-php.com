@@ -261,6 +261,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-FilesystemTable.html#method_withTelemetry"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\GlobWalker",
+            "name": "GlobWalker",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-GlobWalker.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\GlobWalker\u003A\u003Awalk\u0028\u0029",
+            "name": "walk",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-GlobWalker.html#method_walk"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory",
             "name": "Memory",
             "summary": "",
@@ -433,7 +443,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem",
             "name": "NativeLocalFilesystem",
-            "summary": "This\u0020implementation\u0020is\u0020based\u0020on\u0020the\u0020native\u0020PHP\u0020filesystem\u0020functions\u0020documented\u0020here\u003A\u0020https\u003A\/\/www.php.net\/manual\/en\/book.filesystem.php\nAdditionally,\u0020in\u0020order\u0020to\u0020support\u0020glob\u0020pattern\u0020\u0060\\\/\u002A\u002A\\\/\u0060\u0020for\u0020matching\u0020zero\u0020or\u0020more\u0020directories\u0020it\u0027s\u0020using\u0020webmozart\/glob\u0020library.",
+            "summary": "",
             "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003A__construct\u0028\u0029",
@@ -850,6 +860,21 @@ Search.appendIndex(
             "name": "accept",
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-Filter.html#method_accept"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\GlobPattern",
+            "name": "GlobPattern",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-GlobPattern.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\GlobPattern\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-GlobPattern.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\GlobPattern\u003A\u003Amatches\u0028\u0029",
+            "name": "matches",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-GlobPattern.html#method_matches"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\Option\\ContentType",
             "name": "ContentType",
@@ -2536,15 +2561,15 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-filesystem-exception.html"
         },                {
-            "fqsen": "\\Flow\\Filesystem\\Local\\Memory",
-            "name": "Memory",
-            "summary": "",
-            "url": "namespaces/flow-filesystem-local-memory.html"
-        },                {
             "fqsen": "\\Flow\\Filesystem\\Local",
             "name": "Local",
             "summary": "",
             "url": "namespaces/flow-filesystem-local.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory",
+            "name": "Memory",
+            "summary": "",
+            "url": "namespaces/flow-filesystem-local-memory.html"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\StdOut",
             "name": "StdOut",

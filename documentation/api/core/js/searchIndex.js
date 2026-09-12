@@ -11933,7 +11933,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Loader\\Discardable",
             "name": "Discardable",
-            "summary": "Loaders\u0020implementing\u0020this\u0020adapter\u0020will\u0020be\u0020notified\u0020by\u0020the\u0020pipeline\u0020when\u0020a\u0020run\u0020ends\u0020without\u0020reaching\u0020its\u0020last\u0020set\u0020of\nRows\u0020\u002D\u0020it\u0020threw,\u0020or\u0020the\u0020caller\u0020walked\u0020away\u0020from\u0020the\u0020generator.",
+            "summary": "Loaders\u0020implementing\u0020this\u0020adapter\u0020will\u0020be\u0020notified\u0020by\u0020the\u0020pipeline\u0020when\u0020a\u0020run\u0020ends\u0020without\u0020reaching\u0020its\u0020last\u0020set\u0020of\nRows\u0020\u002D\u0020it\u0020threw,\u0020or\u0020the\u0020caller\u0020walked\u0020away\u0020from\u0020the\u0020generator\u0020\u002D\u0020and\u0020when\u0020their\u0020own\u0020closure\u0028\u0029\u0020threw.",
             "url": "classes/Flow-ETL-Loader-Discardable.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Loader\\Discardable\u003A\u003Adiscard\u0028\u0029",

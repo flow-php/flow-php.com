@@ -911,11 +911,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003AcloseWrite\u0028\u0029",
-            "name": "closeWrite",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_closeWrite"
-        },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003AopenForWrite\u0028\u0029",
             "name": "openForWrite",
             "summary": "",
@@ -925,16 +920,6 @@ Search.appendIndex(
             "name": "readValues",
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_readValues"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003AwriteBatch\u0028\u0029",
-            "name": "writeBatch",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_writeBatch"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003AwriteRow\u0028\u0029",
-            "name": "writeRow",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_writeRow"
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003AwriteRows\u0028\u0029",
             "name": "writeRows",
@@ -1011,11 +996,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method_mapCompression"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine\u003A\u003AcloseWrite\u0028\u0029",
-            "name": "closeWrite",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method_closeWrite"
-        },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine\u003A\u003AopenForWrite\u0028\u0029",
             "name": "openForWrite",
             "summary": "",
@@ -1026,20 +1006,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method_readValues"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine\u003A\u003AwriteBatch\u0028\u0029",
-            "name": "writeBatch",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method_writeBatch"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine\u003A\u003AwriteRow\u0028\u0029",
-            "name": "writeRow",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method_writeRow"
-        },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetEngine\u003A\u003AwriteRows\u0028\u0029",
             "name": "writeRows",
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-ArrowParquetEngine.html#method_writeRows"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetFileWriter",
+            "name": "ArrowParquetFileWriter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetFileWriter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetFileWriter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetFileWriter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetFileWriter\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "Writes\u0020what\u0020is\u0020buffered\u0020and\u0020the\u0020footer,\u0020then\u0020closes\u0020the\u0020stream\u0020it\u0020was\u0020opened\u0020on.\u0020The\u0020writer\u0020is\u0020closed\nafterwards\u0020even\u0020when\u0020this\u0020throws\u003B\u0020any\u0020later\u0020call\u0020throws\u0020RuntimeException\u0028\u0027Writer\u0020is\u0020not\u0020open\u0027\u0029.",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetFileWriter.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetFileWriter\u003A\u003AwriteBatch\u0028\u0029",
+            "name": "writeBatch",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetFileWriter.html#method_writeBatch"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\ArrowParquetFileWriter\u003A\u003AwriteRow\u0028\u0029",
+            "name": "writeRow",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-ArrowParquetFileWriter.html#method_writeRow"
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine",
             "name": "PhpParquetEngine",
@@ -1051,11 +1046,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003AcloseWrite\u0028\u0029",
-            "name": "closeWrite",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method_closeWrite"
-        },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003AopenForWrite\u0028\u0029",
             "name": "openForWrite",
             "summary": "",
@@ -1066,20 +1056,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method_readValues"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003AwriteBatch\u0028\u0029",
-            "name": "writeBatch",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method_writeBatch"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003AwriteRow\u0028\u0029",
-            "name": "writeRow",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method_writeRow"
-        },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003AwriteRows\u0028\u0029",
             "name": "writeRows",
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method_writeRows"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileWriter",
+            "name": "PhpParquetFileWriter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFileWriter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileWriter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFileWriter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileWriter\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "Writes\u0020what\u0020is\u0020buffered\u0020and\u0020the\u0020footer,\u0020then\u0020closes\u0020the\u0020stream\u0020it\u0020was\u0020opened\u0020on.\u0020The\u0020writer\u0020is\u0020closed\nafterwards\u0020even\u0020when\u0020this\u0020throws\u003B\u0020any\u0020later\u0020call\u0020throws\u0020RuntimeException\u0028\u0027Writer\u0020is\u0020not\u0020open\u0027\u0029.",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFileWriter.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileWriter\u003A\u003AwriteBatch\u0028\u0029",
+            "name": "writeBatch",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFileWriter.html#method_writeBatch"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileWriter\u003A\u003AwriteRow\u0028\u0029",
+            "name": "writeRow",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFileWriter.html#method_writeRow"
         },                {
             "fqsen": "\\Flow\\Parquet\\Exception\\DataConversionException",
             "name": "DataConversionException",
@@ -1291,11 +1296,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetEngine.html"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003AcloseWrite\u0028\u0029",
-            "name": "closeWrite",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetEngine.html#method_closeWrite"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003AopenForWrite\u0028\u0029",
             "name": "openForWrite",
             "summary": "",
@@ -1305,16 +1305,6 @@ Search.appendIndex(
             "name": "readValues",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetEngine.html#method_readValues"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003AwriteBatch\u0028\u0029",
-            "name": "writeBatch",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetEngine.html#method_writeBatch"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003AwriteRow\u0028\u0029",
-            "name": "writeRow",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetEngine.html#method_writeRow"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003AwriteRows\u0028\u0029",
             "name": "writeRows",
@@ -3660,6 +3650,26 @@ Search.appendIndex(
             "name": "PARQUET_MAGIC_NUMBER",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile.html#constant_PARQUET_MAGIC_NUMBER"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFileWriter",
+            "name": "ParquetFileWriter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFileWriter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFileWriter\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "Writes\u0020what\u0020is\u0020buffered\u0020and\u0020the\u0020footer,\u0020then\u0020closes\u0020the\u0020stream\u0020it\u0020was\u0020opened\u0020on.\u0020The\u0020writer\u0020is\u0020closed\nafterwards\u0020even\u0020when\u0020this\u0020throws\u003B\u0020any\u0020later\u0020call\u0020throws\u0020RuntimeException\u0028\u0027Writer\u0020is\u0020not\u0020open\u0027\u0029.",
+            "url": "classes/Flow-Parquet-ParquetFileWriter.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFileWriter\u003A\u003AwriteBatch\u0028\u0029",
+            "name": "writeBatch",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFileWriter.html#method_writeBatch"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFileWriter\u003A\u003AwriteRow\u0028\u0029",
+            "name": "writeRow",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFileWriter.html#method_writeRow"
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\ColumnChunkReader",
             "name": "ColumnChunkReader",
