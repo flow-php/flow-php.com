@@ -256,6 +256,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-Options.html#method_tmpDir"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\Options\u003A\u003AwithBlockFactory\u0028\u0029",
+            "name": "withBlockFactory",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-Options.html#method_withBlockFactory"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\Options\u003A\u003AwithBlockSize\u0028\u0029",
             "name": "withBlockSize",
             "summary": "",
