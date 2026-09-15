@@ -4026,6 +4026,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Exception-SchemaNotDerivableException.html#method_function"
         },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\SchemaNotDerivableException\u003A\u003AprobeRefused\u0028\u0029",
+            "name": "probeRefused",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-SchemaNotDerivableException.html#method_probeRefused"
+        },                {
             "fqsen": "\\Flow\\ETL\\Exception\\SchemaNotDerivableException\u003A\u003AnonRewindable\u0028\u0029",
             "name": "nonRewindable",
             "summary": "",

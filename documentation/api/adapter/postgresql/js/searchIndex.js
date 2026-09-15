@@ -621,6 +621,51 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-QueryBuilder-UpdateQueryBuilder.html#method_build"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ReadQuery",
+            "name": "ReadQuery",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ReadQuery.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ReadQuery\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ReadQuery.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ReadQuery\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ReadQuery.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ReadQuery\u003A\u003AdeclareCursor\u0028\u0029",
+            "name": "declareCursor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ReadQuery.html#method_declareCursor"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ReadQuery\u003A\u003AisOrdered\u0028\u0029",
+            "name": "isOrdered",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ReadQuery.html#method_isOrdered"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ReadQuery\u003A\u003AkeySetFirstPage\u0028\u0029",
+            "name": "keySetFirstPage",
+            "summary": "The\u0020first\u0020page\u003A\u0020LIMIT\u0020\u0024first,\u0020no\u0020key\u0020condition.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ReadQuery.html#method_keySetFirstPage"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ReadQuery\u003A\u003AkeySetNextPage\u0028\u0029",
+            "name": "keySetNextPage",
+            "summary": "Every\u0020later\u0020page\u003A\u0020LIMIT\u0020\u0024first,\u0020and\u0020the\u0020last\u0020row\u0027s\u0020key\u0020values\u0020from\u0020\u0024first\u0020\u002B\u00201\u0020on.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ReadQuery.html#method_keySetNextPage"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ReadQuery\u003A\u003Apage\u0028\u0029",
+            "name": "page",
+            "summary": "LIMIT\u0020\u0024first\u0020OFFSET\u0020\u0024first\u0020\u002B\u00201.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ReadQuery.html#method_page"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ReadQuery\u003A\u003Asql\u0028\u0029",
+            "name": "sql",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ReadQuery.html#method_sql"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ResultSchema",
             "name": "ResultSchema",
             "summary": "",

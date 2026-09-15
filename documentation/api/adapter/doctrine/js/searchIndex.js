@@ -796,6 +796,21 @@ Search.appendIndex(
             "summary": "Whether\u0020the\u0020driver\u0020reads\u0020a\u0020backslash\u0020inside\u0020a\u0020string\u0020literal\u0020as\u0020an\u0020escape,\u0020which\u0020decides\u0020how\nDBAL\u0027s\u0020parser\u0020tokenises\u0020string\u0020literals.",
             "url": "classes/Flow-ETL-Adapter-Doctrine-PostgreSqlPlaceholders.html#method_usesBackslashEscapes"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\ProbeRefusal",
+            "name": "ProbeRefusal",
+            "summary": "DBAL\u0027s\u0020exception\u0020converters\u0020key\u0020on\u0020the\u0020SQLSTATE\u0020\u0028PostgreSQL\u0029,\u0020the\u0020code\u0020\u0028MySQL\u0029\u0020and\u0020the\u0020message\u0020\u0028SQLite\u0029,\u0020so\u0020a\nrefusal\u0020carries\u0020all\u0020three\u0020for\u0020DbalResultSchema\u0020to\u0020convert\u0020into\u0020what\u0020the\u0020read\u0020itself\u0020would\u0020throw.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-ProbeRefusal.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\ProbeRefusal\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-ProbeRefusal.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\ProbeRefusal\u003A\u003AgetSQLState\u0028\u0029",
+            "name": "getSQLState",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-ProbeRefusal.html#method_getSQLState"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\QueryParameter",
             "name": "QueryParameter",
             "summary": "",
