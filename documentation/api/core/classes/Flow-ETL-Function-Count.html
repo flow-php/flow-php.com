@@ -268,6 +268,8 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
     <span>
                                 &nbsp;: static    </span>
 </dt>
+<dd>A copy of this node with $children in place of children(): same count, same order, same
+per-element narrowing. Never mutates $this.</dd>
 
     </dl>
 
@@ -851,7 +853,9 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">A copy of this node with $children in place of children(): same count, same order, same
+per-element narrowing. Never mutates $this.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">withChildren</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$children</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>

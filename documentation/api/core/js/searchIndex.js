@@ -5368,7 +5368,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\All\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-All.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\All\u003A\u003Areturns\u0028\u0029",
@@ -5418,7 +5418,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Any\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Any.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Any\u003A\u003Areturns\u0028\u0029",
@@ -5458,7 +5458,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Append\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Append.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Append\u003A\u003Areturns\u0028\u0029",
@@ -5508,7 +5508,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayExpand\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayExpand.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayExpand\u003A\u003Areturns\u0028\u0029",
@@ -5538,7 +5538,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayFilter\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayFilter.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayFilter\u003A\u003Areturns\u0028\u0029",
@@ -5568,7 +5568,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayGet\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayGet.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayGet\u003A\u003Areturns\u0028\u0029",
@@ -5598,7 +5598,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayGetCollection\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayGetCollection.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayGetCollection\u003A\u003Areturns\u0028\u0029",
@@ -5633,7 +5633,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeep\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayKeep.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeep\u003A\u003Areturns\u0028\u0029",
@@ -5663,7 +5663,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeyRename\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayKeyRename.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeyRename\u003A\u003Areturns\u0028\u0029",
@@ -5693,7 +5693,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeys\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayKeys.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeys\u003A\u003Areturns\u0028\u0029",
@@ -5723,7 +5723,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeysStyleConvert\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayKeysStyleConvert.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeysStyleConvert\u003A\u003Areturns\u0028\u0029",
@@ -5753,7 +5753,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayMerge\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayMerge.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayMerge\u003A\u003Areturns\u0028\u0029",
@@ -5783,7 +5783,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayMergeCollection\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayMergeCollection.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayMergeCollection\u003A\u003Areturns\u0028\u0029",
@@ -5813,7 +5813,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayPathExists\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayPathExists.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayPathExists\u003A\u003Areturns\u0028\u0029",
@@ -5843,7 +5843,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayReverse\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayReverse.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayReverse\u003A\u003Areturns\u0028\u0029",
@@ -5928,7 +5928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArraySort\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArraySort.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArraySort\u003A\u003Areturns\u0028\u0029",
@@ -5968,7 +5968,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayUnpack\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayUnpack.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayValues",
@@ -5988,7 +5988,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayValues\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ArrayValues.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayValues\u003A\u003Areturns\u0028\u0029",
@@ -6018,7 +6018,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Ascii\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Ascii.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Ascii\u003A\u003Areturns\u0028\u0029",
@@ -6048,7 +6048,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Average\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Average.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Average\u003A\u003Aaggregate\u0028\u0029",
@@ -6153,7 +6153,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Between\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Between.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Between\u003A\u003Areturns\u0028\u0029",
@@ -6183,7 +6183,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\BinaryLength\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-BinaryLength.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\BinaryLength\u003A\u003Areturns\u0028\u0029",
@@ -6243,7 +6243,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Capitalize\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Capitalize.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Capitalize\u003A\u003Areturns\u0028\u0029",
@@ -6273,7 +6273,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Cast\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Cast.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Cast\u003A\u003Areturns\u0028\u0029",
@@ -6303,7 +6303,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Chunk\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Chunk.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Chunk\u003A\u003Areturns\u0028\u0029",
@@ -6333,7 +6333,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Coalesce\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Coalesce.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Coalesce\u003A\u003Areturns\u0028\u0029",
@@ -6363,7 +6363,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CodePointLength\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-CodePointLength.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CodePointLength\u003A\u003Areturns\u0028\u0029",
@@ -6393,7 +6393,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CollapseWhitespace\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-CollapseWhitespace.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CollapseWhitespace\u003A\u003Areturns\u0028\u0029",
@@ -6423,7 +6423,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Collect\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Collect.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Collect\u003A\u003Aaggregate\u0028\u0029",
@@ -6468,7 +6468,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CollectUnique\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-CollectUnique.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CollectUnique\u003A\u003Aaggregate\u0028\u0029",
@@ -6513,7 +6513,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Combine\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Combine.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Combine\u003A\u003Areturns\u0028\u0029",
@@ -6543,7 +6543,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Concat\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Concat.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Concat\u003A\u003Areturns\u0028\u0029",
@@ -6573,7 +6573,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ConcatWithSeparator\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ConcatWithSeparator.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ConcatWithSeparator\u003A\u003Areturns\u0028\u0029",
@@ -6603,7 +6603,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Contains\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Contains.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Contains\u003A\u003Areturns\u0028\u0029",
@@ -6633,7 +6633,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Count\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Count.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Count\u003A\u003Aaggregate\u0028\u0029",
@@ -6703,7 +6703,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DateTimeFormat\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-DateTimeFormat.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DateTimeFormat\u003A\u003Areturns\u0028\u0029",
@@ -6733,7 +6733,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DenseRank\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-DenseRank.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DenseRank\u003A\u003Aapply\u0028\u0029",
@@ -6783,7 +6783,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Divide\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Divide.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Divide\u003A\u003Areturns\u0028\u0029",
@@ -6813,7 +6813,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementAttributesCount\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-DOMElementAttributesCount.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementAttributesCount\u003A\u003Areturns\u0028\u0029",
@@ -6843,7 +6843,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementAttributeValue\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-DOMElementAttributeValue.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementAttributeValue\u003A\u003Areturns\u0028\u0029",
@@ -6873,7 +6873,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementNamespaceValue\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-DOMElementNamespaceValue.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementNamespaceValue\u003A\u003Areturns\u0028\u0029",
@@ -6903,7 +6903,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementNextSibling\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-DOMElementNextSibling.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementNextSibling\u003A\u003Areturns\u0028\u0029",
@@ -6933,7 +6933,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementParent\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-DOMElementParent.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementParent\u003A\u003Areturns\u0028\u0029",
@@ -6963,7 +6963,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementPreviousSibling\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-DOMElementPreviousSibling.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementPreviousSibling\u003A\u003Areturns\u0028\u0029",
@@ -6993,7 +6993,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementValue\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-DOMElementValue.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementValue\u003A\u003Areturns\u0028\u0029",
@@ -7023,7 +7023,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EndsWith\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-EndsWith.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EndsWith\u003A\u003Areturns\u0028\u0029",
@@ -7053,7 +7053,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnsureEnd\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-EnsureEnd.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnsureEnd\u003A\u003Areturns\u0028\u0029",
@@ -7083,7 +7083,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnsureStart\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-EnsureStart.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnsureStart\u003A\u003Areturns\u0028\u0029",
@@ -7113,7 +7113,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnumName\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-EnumName.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnumName\u003A\u003Areturns\u0028\u0029",
@@ -7143,7 +7143,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnumValue\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-EnumValue.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnumValue\u003A\u003Areturns\u0028\u0029",
@@ -7173,7 +7173,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Equals\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Equals.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Equals\u003A\u003Areturns\u0028\u0029",
@@ -7203,7 +7203,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Exists\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Exists.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Exists\u003A\u003Areturns\u0028\u0029",
@@ -7253,7 +7253,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\First\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-First.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\First\u003A\u003Aaggregate\u0028\u0029",
@@ -7306,6 +7306,11 @@ Search.appendIndex(
             "summary": "True\u0020when\u0020this\u0020node\u0020and\u0020every\u0020node\u0020in\u0020children\u0028\u0029\u0020can\u0020answer\u0020returns\u0028\u0029.",
             "url": "classes/Flow-ETL-Function-FunctionTree.html#method_resolved"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\FunctionTree\u003A\u003AwithChildren\u0028\u0029",
+            "name": "withChildren",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
+            "url": "classes/Flow-ETL-Function-FunctionTree.html#method_withChildren"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\GreaterThan",
             "name": "GreaterThan",
             "summary": "",
@@ -7323,7 +7328,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\GreaterThan\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-GreaterThan.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\GreaterThan\u003A\u003Areturns\u0028\u0029",
@@ -7353,7 +7358,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\GreaterThanEqual\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-GreaterThanEqual.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\GreaterThanEqual\u003A\u003Areturns\u0028\u0029",
@@ -7383,7 +7388,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Greatest\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Greatest.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Greatest\u003A\u003Areturns\u0028\u0029",
@@ -7413,7 +7418,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Hash\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Hash.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Hash\u003A\u003Areturns\u0028\u0029",
@@ -7443,7 +7448,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelector\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-HTMLQuerySelector.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelector\u003A\u003Areturns\u0028\u0029",
@@ -7473,7 +7478,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelectorAll\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-HTMLQuerySelectorAll.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelectorAll\u003A\u003Areturns\u0028\u0029",
@@ -7503,7 +7508,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IndexOf\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-IndexOf.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IndexOf\u003A\u003Areturns\u0028\u0029",
@@ -7533,7 +7538,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IndexOfLast\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-IndexOfLast.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IndexOfLast\u003A\u003Areturns\u0028\u0029",
@@ -7563,7 +7568,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsEmpty\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-IsEmpty.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsEmpty\u003A\u003Areturns\u0028\u0029",
@@ -7593,7 +7598,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsIn\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-IsIn.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsIn\u003A\u003Areturns\u0028\u0029",
@@ -7623,7 +7628,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNotNull\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-IsNotNull.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNotNull\u003A\u003Areturns\u0028\u0029",
@@ -7653,7 +7658,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNotNumeric\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-IsNotNumeric.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNotNumeric\u003A\u003Areturns\u0028\u0029",
@@ -7683,7 +7688,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNull\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-IsNull.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNull\u003A\u003Areturns\u0028\u0029",
@@ -7713,7 +7718,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNumeric\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-IsNumeric.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNumeric\u003A\u003Areturns\u0028\u0029",
@@ -7743,7 +7748,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsType\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-IsType.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsType\u003A\u003Areturns\u0028\u0029",
@@ -7773,7 +7778,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsUtf8\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-IsUtf8.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsUtf8\u003A\u003Areturns\u0028\u0029",
@@ -7803,7 +7808,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\JsonDecode\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-JsonDecode.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\JsonDecode\u003A\u003Areturns\u0028\u0029",
@@ -7833,7 +7838,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\JsonEncode\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-JsonEncode.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\JsonEncode\u003A\u003Areturns\u0028\u0029",
@@ -7863,7 +7868,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Last\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Last.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Last\u003A\u003Aaggregate\u0028\u0029",
@@ -7908,7 +7913,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Least\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Least.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Least\u003A\u003Areturns\u0028\u0029",
@@ -7938,7 +7943,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\LessThan\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-LessThan.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\LessThan\u003A\u003Areturns\u0028\u0029",
@@ -7968,7 +7973,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\LessThanEqual\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-LessThanEqual.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\LessThanEqual\u003A\u003Areturns\u0028\u0029",
@@ -8013,7 +8018,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ListSelect\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ListSelect.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ListSelect\u003A\u003Areturns\u0028\u0029",
@@ -8043,7 +8048,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Literal\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Literal.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Literal\u003A\u003Areturns\u0028\u0029",
@@ -8073,7 +8078,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCondition\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-MatchCases-MatchCondition.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCondition\u003A\u003Areturns\u0028\u0029",
@@ -8108,7 +8113,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\MatchCases\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-MatchCases.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\MatchCases\u003A\u003Areturns\u0028\u0029",
@@ -8138,7 +8143,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Max\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Max.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Max\u003A\u003Aaggregate\u0028\u0029",
@@ -8183,7 +8188,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Min\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Min.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Min\u003A\u003Aaggregate\u0028\u0029",
@@ -8228,7 +8233,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Minus\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Minus.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Minus\u003A\u003Areturns\u0028\u0029",
@@ -8258,7 +8263,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Mod\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Mod.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Mod\u003A\u003Areturns\u0028\u0029",
@@ -8288,7 +8293,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ModifyDateTime\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ModifyDateTime.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ModifyDateTime\u003A\u003Areturns\u0028\u0029",
@@ -8318,7 +8323,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Multiply\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Multiply.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Multiply\u003A\u003Areturns\u0028\u0029",
@@ -8348,7 +8353,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Not\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Not.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Not\u003A\u003Areturns\u0028\u0029",
@@ -8378,7 +8383,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\NotEquals\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-NotEquals.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\NotEquals\u003A\u003Areturns\u0028\u0029",
@@ -8408,7 +8413,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\NotSame\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-NotSame.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\NotSame\u003A\u003Areturns\u0028\u0029",
@@ -8438,7 +8443,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Now\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Now.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Now\u003A\u003Areturns\u0028\u0029",
@@ -8468,7 +8473,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\NumberFormat\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-NumberFormat.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\NumberFormat\u003A\u003Areturns\u0028\u0029",
@@ -8498,7 +8503,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\OnEach\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-OnEach.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\OnEach\u003A\u003Areturns\u0028\u0029",
@@ -8538,7 +8543,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Optional\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Optional.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Optional\u003A\u003Areturns\u0028\u0029",
@@ -8653,7 +8658,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Plus\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Plus.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Plus\u003A\u003Areturns\u0028\u0029",
@@ -8683,7 +8688,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Power\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Power.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Power\u003A\u003Areturns\u0028\u0029",
@@ -8713,7 +8718,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Prepend\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Prepend.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Prepend\u003A\u003Areturns\u0028\u0029",
@@ -8743,7 +8748,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RandomString\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-RandomString.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RandomString\u003A\u003Areturns\u0028\u0029",
@@ -8773,7 +8778,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Rank\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Rank.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Rank\u003A\u003Aapply\u0028\u0029",
@@ -8838,7 +8843,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Regex\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Regex.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Regex\u003A\u003Areturns\u0028\u0029",
@@ -8868,7 +8873,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexAll\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-RegexAll.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexAll\u003A\u003Areturns\u0028\u0029",
@@ -8898,7 +8903,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexMatch\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-RegexMatch.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexMatch\u003A\u003Areturns\u0028\u0029",
@@ -8928,7 +8933,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexMatchAll\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-RegexMatchAll.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexMatchAll\u003A\u003Areturns\u0028\u0029",
@@ -8958,7 +8963,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexReplace\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-RegexReplace.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexReplace\u003A\u003Areturns\u0028\u0029",
@@ -8988,7 +8993,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Repeat\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Repeat.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Repeat\u003A\u003Areturns\u0028\u0029",
@@ -9028,7 +9033,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Reverse\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Reverse.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Reverse\u003A\u003Areturns\u0028\u0029",
@@ -9058,7 +9063,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Round\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Round.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Round\u003A\u003Areturns\u0028\u0029",
@@ -9093,7 +9098,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RowNumber\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-RowNumber.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RowNumber\u003A\u003Aover\u0028\u0029",
@@ -9133,7 +9138,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Same\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Same.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Same\u003A\u003Areturns\u0028\u0029",
@@ -9163,7 +9168,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sanitize\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Sanitize.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sanitize\u003A\u003Areturns\u0028\u0029",
@@ -9863,7 +9868,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Size\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Size.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Size\u003A\u003Areturns\u0028\u0029",
@@ -9893,7 +9898,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Slug\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Slug.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Slug\u003A\u003Areturns\u0028\u0029",
@@ -9923,7 +9928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Split\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Split.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Split\u003A\u003Areturns\u0028\u0029",
@@ -9953,7 +9958,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sprintf\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Sprintf.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sprintf\u003A\u003Areturns\u0028\u0029",
@@ -9983,7 +9988,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StartsWith\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StartsWith.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StartsWith\u003A\u003Areturns\u0028\u0029",
@@ -10013,7 +10018,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAfter\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringAfter.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAfter\u003A\u003Areturns\u0028\u0029",
@@ -10043,7 +10048,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAfterLast\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringAfterLast.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAfterLast\u003A\u003Areturns\u0028\u0029",
@@ -10073,7 +10078,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAggregate\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringAggregate.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAggregate\u003A\u003Aaggregate\u0028\u0029",
@@ -10118,7 +10123,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringBefore\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringBefore.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringBefore\u003A\u003Areturns\u0028\u0029",
@@ -10148,7 +10153,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringBeforeLast\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringBeforeLast.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringBeforeLast\u003A\u003Areturns\u0028\u0029",
@@ -10178,7 +10183,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringContainsAny\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringContainsAny.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringContainsAny\u003A\u003Areturns\u0028\u0029",
@@ -10208,7 +10213,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringEqualsTo\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringEqualsTo.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringEqualsTo\u003A\u003Areturns\u0028\u0029",
@@ -10238,7 +10243,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringFold\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringFold.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringFold\u003A\u003Areturns\u0028\u0029",
@@ -10268,7 +10273,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringMatch\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringMatch.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringMatch\u003A\u003Areturns\u0028\u0029",
@@ -10298,7 +10303,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringMatchAll\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringMatchAll.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringMatchAll\u003A\u003Areturns\u0028\u0029",
@@ -10328,7 +10333,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringNormalize\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringNormalize.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringNormalize\u003A\u003Areturns\u0028\u0029",
@@ -10358,7 +10363,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringStyle\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringStyle.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringStyle\u003A\u003Areturns\u0028\u0029",
@@ -10388,7 +10393,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringTitle\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringTitle.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringTitle\u003A\u003Areturns\u0028\u0029",
@@ -10418,7 +10423,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringWidth\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StringWidth.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringWidth\u003A\u003Areturns\u0028\u0029",
@@ -10448,7 +10453,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StrPad\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StrPad.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StrPad\u003A\u003Areturns\u0028\u0029",
@@ -10478,7 +10483,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StrReplace\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StrReplace.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StrReplace\u003A\u003Areturns\u0028\u0029",
@@ -10508,7 +10513,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Structure\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Structure.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Structure\u003A\u003Areturns\u0028\u0029",
@@ -10553,7 +10558,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StructureSelect\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-StructureSelect.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StructureSelect\u003A\u003Areturns\u0028\u0029",
@@ -10608,7 +10613,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sum\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Sum.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sum\u003A\u003Aaggregate\u0028\u0029",
@@ -10678,7 +10683,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToDate\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ToDate.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToDate\u003A\u003Areturns\u0028\u0029",
@@ -10708,7 +10713,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToDateTime\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ToDateTime.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToDateTime\u003A\u003Areturns\u0028\u0029",
@@ -10738,7 +10743,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToLower\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ToLower.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToLower\u003A\u003Areturns\u0028\u0029",
@@ -10768,7 +10773,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToTimeZone\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ToTimeZone.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToTimeZone\u003A\u003Areturns\u0028\u0029",
@@ -10798,7 +10803,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToUpper\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-ToUpper.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToUpper\u003A\u003Areturns\u0028\u0029",
@@ -10848,7 +10853,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Trim\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Trim.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Trim\u003A\u003Areturns\u0028\u0029",
@@ -10878,7 +10883,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Truncate\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Truncate.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Truncate\u003A\u003Areturns\u0028\u0029",
@@ -10908,7 +10913,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Ulid\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Ulid.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Ulid\u003A\u003Areturns\u0028\u0029",
@@ -10938,7 +10943,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\UnicodeLength\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-UnicodeLength.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\UnicodeLength\u003A\u003Areturns\u0028\u0029",
@@ -10963,7 +10968,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Uuid\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Uuid.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Uuid\u003A\u003Areturns\u0028\u0029",
@@ -11003,7 +11008,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\When\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-When.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\When\u003A\u003Areturns\u0028\u0029",
@@ -11063,7 +11068,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Wordwrap\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Wordwrap.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Wordwrap\u003A\u003Areturns\u0028\u0029",
@@ -11093,7 +11098,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\XPath\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-XPath.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\XPath\u003A\u003Areturns\u0028\u0029",
@@ -13003,7 +13008,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\ResolvedReference\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Row-ResolvedReference.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\ResolvedReference\u003A\u003Adesc\u0028\u0029",
@@ -13188,7 +13193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\UnresolvedReference\u003A\u003AwithChildren\u0028\u0029",
             "name": "withChildren",
-            "summary": "",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Row-UnresolvedReference.html#method_withChildren"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\UnresolvedReference\u003A\u003Areturns\u0028\u0029",
