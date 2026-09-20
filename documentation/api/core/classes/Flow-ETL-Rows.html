@@ -228,6 +228,16 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Rows.html#method_conformed">conformed()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>The constructor&#039;s shape check without its value check. Columns take the Schema&#039;s order, a declared-nullable
+absence is padded, and a missing NOT NULL column, an unknown column or a null under NOT NULL is refused - but a
+non-null value is not validated against its type, because the caller produced it by casting to, or decoding
+from, that type. A value is validated once, where it enters the engine.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Rows.html#method_count">count()</a>
     <span>
                                 &nbsp;: int    </span>
@@ -434,6 +444,16 @@ not a projection - that goes through matchTo().</dd>
     <span>
                                 &nbsp;: array&lt;int, array&lt;string|int, mixed&gt;&gt;    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Rows.html#method_trusted">trusted()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Skips the shape check the constructor performs. The caller vouches that every row already
+satisfies $schema and stores its columns in the Schema&#039;s order - which holds when the same
+operation produced the schema and the rows, or when the rows are a subset or a permutation of
+a batch that already passed.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Rows.html#method_unique">unique()</a>
@@ -747,6 +767,81 @@ not a projection - that goes through matchTo().</dd>
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_conformed">
+        conformed()
+        <a href="classes/Flow-ETL-Rows.html#method_conformed" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Rows.php"><a href="files/src-core-etl-src-flow-etl-rows.html"><abbr title="src/core/etl/src/Flow/ETL/Rows.php">Rows.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">105</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The constructor&#039;s shape check without its value check. Columns take the Schema&#039;s order, a declared-nullable
+absence is padded, and a missing NOT NULL column, an unknown column or a null under NOT NULL is refused - but a
+non-null value is not validated against its type, because the caller produced it by casting to, or decoding
+from, that type. A value is validated once, where it enters the engine.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">conformed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Engine paths only.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_conformed_tags">
+        Tags
+        <a href="classes/Flow-ETL-Rows.html#method_conformed_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Exception-SchemaMismatchException.html"><abbr title="\Flow\ETL\Exception\SchemaMismatchException">SchemaMismatchException</abbr></a></span>
+                                                                                    
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
             </section>
 
 </article>
@@ -2574,6 +2669,69 @@ not a projection - that goes through matchTo().</p>
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_trusted">
+        trusted()
+        <a href="classes/Flow-ETL-Rows.html#method_trusted" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Rows.php"><a href="files/src-core-etl-src-flow-etl-rows.html"><abbr title="src/core/etl/src/Flow/ETL/Rows.php">Rows.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">85</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Skips the shape check the constructor performs. The caller vouches that every row already
+satisfies $schema and stores its columns in the Schema&#039;s order - which holds when the same
+operation produced the schema and the rows, or when the rows are a subset or a permutation of
+a batch that already passed.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">trusted</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Engine paths only.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>re-indexed here - first(), last(), chunks() and offsetGet() read by position</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_unique">
@@ -2646,6 +2804,7 @@ not a projection - that goes through matchTo().</p>
                                             <li class=""><a href="classes/Flow-ETL-Rows.html#method_add">add()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Rows.html#method_all">all()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Rows.html#method_chunks">chunks()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Rows.html#method_conformed">conformed()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Rows.html#method_count">count()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Rows.html#method_diffLeft">diffLeft()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Rows.html#method_diffRight">diffRight()</a></li>
@@ -2680,6 +2839,7 @@ not a projection - that goes through matchTo().</p>
                                             <li class=""><a href="classes/Flow-ETL-Rows.html#method_take">take()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Rows.html#method_takeRight">takeRight()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Rows.html#method_toArray">toArray()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Rows.html#method_trusted">trusted()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Rows.html#method_unique">unique()</a></li>
                                     </ul>
             </li>

@@ -246,6 +246,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonExtractor.html#method_schema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonExtractor\u003A\u003ApartitionSchema\u0028\u0029",
+            "name": "partitionSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonExtractor.html#method_partitionSchema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonExtractor\u003A\u003Asource\u0028\u0029",
             "name": "source",
             "summary": "",
@@ -345,6 +350,11 @@ Search.appendIndex(
             "name": "schema",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonLinesExtractor.html#method_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonLinesExtractor\u003A\u003ApartitionSchema\u0028\u0029",
+            "name": "partitionSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonLinesExtractor.html#method_partitionSchema"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonLinesExtractor\u003A\u003Asource\u0028\u0029",
             "name": "source",

@@ -356,6 +356,41 @@ Search.appendIndex(
             "summary": "The\u0020one\u0020schema\u0020a\u0020read\u0020has\u003A\u0020extract\u0028\u0029\u0020asks\u0020for\u0020it\u0020before\u0020the\u0020first\u0020row\u0020and\u0020never\u0020falls\u0020back\u0020to\nper\u002Dbatch\u0020typing,\u0020so\u0020a\u0020query\u0020that\u0020cannot\u0020be\u0020described\u0020does\u0020not\u0020run.",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalResultSchema.html#method_of"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalTransaction",
+            "name": "DbalTransaction",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalTransaction.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalTransaction\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalTransaction.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalTransaction\u003A\u003AfromConnection\u0028\u0029",
+            "name": "fromConnection",
+            "summary": "Since\u0020Connection\u003A\u003AgetParams\u0028\u0029\u0020is\u0020marked\u0020as\u0020an\u0020internal\u0020method,\u0020please\u0020use\u0020this\u0020constructor\u0020with\u0020caution.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalTransaction.html#method_fromConnection"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalTransaction\u003A\u003AwithIsolationLevel\u0028\u0029",
+            "name": "withIsolationLevel",
+            "summary": "The\u0020previous\u0020level\u0020is\u0020restored\u0020when\u0020the\u0020transaction\u0020ends,\u0020so\u0020the\u0020user\u0027s\u0020Connection\u0020is\u0020never\u0020left\u0020changed.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalTransaction.html#method_withIsolationLevel"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalTransaction\u003A\u003Abegin\u0028\u0029",
+            "name": "begin",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalTransaction.html#method_begin"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalTransaction\u003A\u003Acommit\u0028\u0029",
+            "name": "commit",
+            "summary": "A\u0020failed\u0020commit\u0020keeps\u0020the\u0020changed\u0020level\u003A\u0020the\u0020transaction\u0020is\u0020still\u0020open,\u0020so\u0020the\u0020rollback\u0028\u0029\u0020that\u0020follows\u0020restores\u0020it.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalTransaction.html#method_commit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalTransaction\u003A\u003Arollback\u0028\u0029",
+            "name": "rollback",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalTransaction.html#method_rollback"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DescribeQuery",
             "name": "DescribeQuery",
             "summary": "",
@@ -453,7 +488,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\to_dbal_transaction\u0028\u0029",
             "name": "to_dbal_transaction",
-            "summary": "Execute\u0020multiple\u0020loaders\u0020within\u0020database\u0020transactions.",
+            "summary": "Write\u0020every\u0020sink\u0020within\u0020database\u0020transactions.",
             "url": "namespaces/flow-etl-adapter-doctrine.html#function_to_dbal_transaction"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\pagination_key_asc\u0028\u0029",
@@ -470,6 +505,21 @@ Search.appendIndex(
             "name": "pagination_key_set",
             "summary": "",
             "url": "namespaces/flow-etl-adapter-doctrine.html#function_pagination_key_set"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\IsolationLevelRestore",
+            "name": "IsolationLevelRestore",
+            "summary": "The\u0020isolation\u0020level\u0020a\u0020DbalTransaction\u0020changed,\u0020and\u0020how\u0020to\u0020put\u0020it\u0020back.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-IsolationLevelRestore.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\IsolationLevelRestore\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-IsolationLevelRestore.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\IsolationLevelRestore\u003A\u003Arestore\u0028\u0029",
+            "name": "restore",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-IsolationLevelRestore.html#method_restore"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\LiteralParameter",
             "name": "LiteralParameter",
@@ -781,6 +831,36 @@ Search.appendIndex(
             "summary": "Whether\u0020the\u0020driver\u0020reads\u0020a\u0020backslash\u0020inside\u0020a\u0020string\u0020literal\u0020as\u0020an\u0020escape,\u0020which\u0020decides\u0020how\nDBAL\u0027s\u0020parser\u0020tokenises\u0020string\u0020literals.",
             "url": "classes/Flow-ETL-Adapter-Doctrine-PlaceholderDialect.html#method_usesBackslashEscapes"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PlaceholderRewriter",
+            "name": "PlaceholderRewriter",
+            "summary": "Implements\u0020a\u0020DBAL\u002Dinternal\u0020Visitor\u003B\u0020use\u0020NativePlaceholders\u0020instead.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PlaceholderRewriter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PlaceholderRewriter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PlaceholderRewriter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PlaceholderRewriter\u003A\u003AacceptNamedParameter\u0028\u0029",
+            "name": "acceptNamedParameter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PlaceholderRewriter.html#method_acceptNamedParameter"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PlaceholderRewriter\u003A\u003AacceptOther\u0028\u0029",
+            "name": "acceptOther",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PlaceholderRewriter.html#method_acceptOther"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PlaceholderRewriter\u003A\u003AacceptPositionalParameter\u0028\u0029",
+            "name": "acceptPositionalParameter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PlaceholderRewriter.html#method_acceptPositionalParameter"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PlaceholderRewriter\u003A\u003Arewrite\u0028\u0029",
+            "name": "rewrite",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-PlaceholderRewriter.html#method_rewrite"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\PostgreSqlPlaceholders",
             "name": "PostgreSqlPlaceholders",
             "summary": "",
@@ -940,41 +1020,6 @@ Search.appendIndex(
             "name": "columns",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-Table.html#property_columns"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TransactionalDbalLoader",
-            "name": "TransactionalDbalLoader",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-TransactionalDbalLoader.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TransactionalDbalLoader\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-TransactionalDbalLoader.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TransactionalDbalLoader\u003A\u003AfromConnection\u0028\u0029",
-            "name": "fromConnection",
-            "summary": "Since\u0020Connection\u003A\u003AgetParams\u0028\u0029\u0020is\u0020marked\u0020as\u0020an\u0020internal\u0020method,\u0020please\nuse\u0020this\u0020constructor\u0020with\u0020caution.",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-TransactionalDbalLoader.html#method_fromConnection"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TransactionalDbalLoader\u003A\u003Aclosure\u0028\u0029",
-            "name": "closure",
-            "summary": "Rows\u0020a\u0020wrapped\u0020Transformation\u0020buffered\u0020\u0028blocking\u0020operations\u0020\u002D\u0020sortBy,\u0020aggregate,\u0020groupBy\u002D\u003Eaggregate,\npivot,\u0020window\u0020functions,\u0020collect,\u0020join\u0029\u0020are\u0020delivered\u0020during\u0020the\u0020forwarded\u0020closure\u0028\u0029\u0020drain,\u0020so\u0020delivery\nhere\u0020must\u0020be\u0020transactional\u0020too\u003A\u0020one\u0020transaction\u0020over\u0020everything\u0020the\u0020drain\u0020flushes,\u0020rolled\u0020back\u0020when\u0020it\u0020fails.",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-TransactionalDbalLoader.html#method_closure"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TransactionalDbalLoader\u003A\u003Aload\u0028\u0029",
-            "name": "load",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-TransactionalDbalLoader.html#method_load"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TransactionalDbalLoader\u003A\u003Aloaders\u0028\u0029",
-            "name": "loaders",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-TransactionalDbalLoader.html#method_loaders"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TransactionalDbalLoader\u003A\u003AwithIsolationLevel\u0028\u0029",
-            "name": "withIsolationLevel",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-TransactionalDbalLoader.html#method_withIsolationLevel"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\TypedColumns",
             "name": "TypedColumns",

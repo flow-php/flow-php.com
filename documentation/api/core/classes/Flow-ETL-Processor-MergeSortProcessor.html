@@ -129,7 +129,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Flow\ETL\Processor">Processor</abbr>                    </span>
+                            <a href="classes/Flow-ETL-Processor.html"><abbr title="\Flow\ETL\Processor">Processor</abbr></a>                    </span>
     
     </h2>
 
@@ -161,7 +161,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Processor">Processor</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Processor.html"><abbr title="\Flow\ETL\Processor">Processor</abbr></a></dt><dd>Processor handles cross-batch operations that need to see multiple/all batches.</dd>    </dl>
 
 
 
@@ -169,6 +169,43 @@
 
 
 
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_batchSize">$batchSize</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_merge">$merge</a>
+    <span>
+                        &nbsp;: <a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_mergeFanIn">$mergeFanIn</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_refs">$refs</a>
+    <span>
+                        &nbsp;: <a href="classes/Flow-ETL-Row-References.html"><abbr title="\Flow\ETL\Row\References">References</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_spill">$spill</a>
+    <span>
+                        &nbsp;: <a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a>            </span>
+</dt>
+
+    </dl>
 
 <h4 id="toc-methods">
     Methods
@@ -185,14 +222,15 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Processor-MergeSortProcessor.html#method_bind">bind()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Pipeline-BoundStep.html"><abbr title="\Flow\ETL\Pipeline\BoundStep">BoundStep</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-BoundStep.html"><abbr title="\Flow\ETL\BoundStep">BoundStep</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Processor-MergeSortProcessor.html#method_process">process()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;    </span>
 </dt>
+<dd>Process a stream of Rows and return a new stream.</dd>
 
     </dl>
 
@@ -201,6 +239,198 @@
         
 
         
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_batchSize">
+        $batchSize
+        <a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_batchSize" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-mergesortprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php">MergeSortProcessor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$batchSize</span>
+     = <span class="phpdocumentor-signature__default-value">1000</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_merge">
+        $merge
+        <a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_merge" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-mergesortprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php">MergeSortProcessor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$merge</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_mergeFanIn">
+        $mergeFanIn
+        <a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_mergeFanIn" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-mergesortprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php">MergeSortProcessor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$mergeFanIn</span>
+     = <span class="phpdocumentor-signature__default-value">10</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_refs">
+        $refs
+        <a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_refs" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-mergesortprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php">MergeSortProcessor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">32</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Row-References.html"><abbr title="\Flow\ETL\Row\References">References</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$refs</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_spill">
+        $spill
+        <a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_spill" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-mergesortprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/MergeSortProcessor.php">MergeSortProcessor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">33</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$spill</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
@@ -308,7 +538,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">bind</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Pipeline-BoundStep.html"><abbr title="\Flow\ETL\Pipeline\BoundStep">BoundStep</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">bind</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-BoundStep.html"><abbr title="\Flow\ETL\BoundStep">BoundStep</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -331,7 +561,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Pipeline-BoundStep.html"><abbr title="\Flow\ETL\Pipeline\BoundStep">BoundStep</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-BoundStep.html"><abbr title="\Flow\ETL\BoundStep">BoundStep</abbr></a></span>
             </section>
 
 </article>
@@ -353,10 +583,11 @@
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Process a stream of Rows and return a new stream.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">process</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">process</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -386,7 +617,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span>
             </section>
 
 </article>
@@ -404,10 +635,21 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                <li><a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#toc-methods">Methods</a></li>
+                                                            <li><a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_batchSize">$batchSize</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_merge">$merge</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_mergeFanIn">$mergeFanIn</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_refs">$refs</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Processor-MergeSortProcessor.html#property_spill">$spill</a></li>
+                                            </ul>
+                </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>

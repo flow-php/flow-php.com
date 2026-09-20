@@ -281,6 +281,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_schema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLParserExtractor\u003A\u003ApartitionSchema\u0028\u0029",
+            "name": "partitionSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_partitionSchema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLParserExtractor\u003A\u003Asource\u0028\u0029",
             "name": "source",
             "summary": "",
@@ -325,6 +330,11 @@ Search.appendIndex(
             "name": "schema",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html#method_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003ApartitionSchema\u0028\u0029",
+            "name": "partitionSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html#method_partitionSchema"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003Asource\u0028\u0029",
             "name": "source",

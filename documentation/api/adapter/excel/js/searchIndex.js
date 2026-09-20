@@ -106,6 +106,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_schema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003ApartitionSchema\u0028\u0029",
+            "name": "partitionSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_partitionSchema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003Asource\u0028\u0029",
             "name": "source",
             "summary": "",

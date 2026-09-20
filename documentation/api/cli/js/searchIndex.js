@@ -451,6 +451,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Formatter-ValueFormatter.html#method_format"
         },                {
+            "fqsen": "\\Flow\\CLI\\Loader\\ProgressBarLoader",
+            "name": "ProgressBarLoader",
+            "summary": "",
+            "url": "classes/Flow-CLI-Loader-ProgressBarLoader.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Loader\\ProgressBarLoader\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-CLI-Loader-ProgressBarLoader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Loader\\ProgressBarLoader\u003A\u003Aload\u0028\u0029",
+            "name": "load",
+            "summary": "",
+            "url": "classes/Flow-CLI-Loader-ProgressBarLoader.html#method_load"
+        },                {
             "fqsen": "\\Flow\\CLI\\Options\\ConfigOption",
             "name": "ConfigOption",
             "summary": "",
@@ -685,6 +700,11 @@ Search.appendIndex(
             "name": "Formatter",
             "summary": "",
             "url": "namespaces/flow-cli-formatter.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Loader",
+            "name": "Loader",
+            "summary": "",
+            "url": "namespaces/flow-cli-loader.html"
         },                {
             "fqsen": "\\Flow\\CLI\\Options",
             "name": "Options",

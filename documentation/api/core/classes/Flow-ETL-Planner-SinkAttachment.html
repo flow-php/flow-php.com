@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>Flow PHP</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+    
+            <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <div class="flow-header-wrapper">
+    <header class="phpdocumentor-header phpdocumentor-section">
+        <h1 class="phpdocumentor-title"><a href="/documentation" class="phpdocumentor-title__link">Flow PHP</a></h1>
+        <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+        <label class="phpdocumentor-header__menu-icon" for="menu-button">
+            <i class="fas fa-bars"></i>
+        </label>
+        <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+        <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+                        <li class="phpdocumentor-topnav__menu-item -menu">
+                <a href="/documentation">
+                    <span>
+                                                                        Back
+                    </span>
+                </a>
+            </li>
+                </ul>
+</nav>
+    </header>
+</div>
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                                <section class="phpdocumentor-sidebar__category -namespaces">
+                <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                            <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/flow.html" class="">Flow</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/flow-arraycomparison.html" class="">ArrayComparison</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-calculator.html" class="">Calculator</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-clock.html" class="">Clock</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-etl.html" class="">ETL</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-floe.html" class="">Floe</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/flow-serializer.html" class="">Serializer</a>
+                
+            </li>
+            </ul>
+
+                                </section>
+                                    
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow.html">Flow</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl.html">ETL</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-planner.html">Planner</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    SinkAttachment
+
+    
+    
+    
+    </h2>
+
+<div class="phpdocumentor-label-line">
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php"><a href="files/src-core-etl-src-flow-etl-planner-sinkattachment.html"><abbr title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php">SinkAttachment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">33</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">Attaches a plan&#039;s sink roots to the spine: the step each spine node gains for them. attach() is the entry;
+the other methods are the walk it runs. SinkFeedFactory builds the pipelines the walk hands rows to.</p>
+
+
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-ETL-Planner-SinkAttachment.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>Leaf = array{write: Write, loader: Loader, path: list&lt;Node&gt;, transaction: null|Transaction}</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+    
+    
+
+
+
+
+
+
+
+
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Flow-ETL-Planner-SinkAttachment.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planner-SinkAttachment.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planner-SinkAttachment.html#method_attach">attach()</a>
+    <span>
+                                &nbsp;: <abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>, array&lt;int, <a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>&gt;&gt;    </span>
+</dt>
+<dd>Every sink root attached at the spine node its chain meets, as the Loader steps that node&#039;s segment gains.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planner-SinkAttachment.html#method_chain">chain()</a>
+    <span>
+                                &nbsp;: array&lt;int, <a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>&gt;    </span>
+</dt>
+<dd>$write first, then every node below it, stopping BEFORE the first node on the spine - so a bare Write sitting
+directly on a spine node is exactly [$write], and the node it attaches to is never part of its chain.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planner-SinkAttachment.html#method_consumer">consumer()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planner-SinkAttachment.html#method_consumers">consumers()</a>
+    <span>
+                                &nbsp;: array&lt;int, <a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>&gt;    </span>
+</dt>
+<dd>A node several sinks share feeds them ONCE - it is the point their rows fan out - and a transaction attaches
+where its children part, so a node they all share runs before it opens.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planner-SinkAttachment.html#method_next">next()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+
+    </dl>
+
+
+
+        
+
+        
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Flow-ETL-Planner-SinkAttachment.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Flow-ETL-Planner-SinkAttachment.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php"><a href="files/src-core-etl-src-flow-etl-planner-sinkattachment.html"><abbr title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php">SinkAttachment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">39</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planner-PlannedNodes.html"><abbr title="\Flow\ETL\Planner\PlannedNodes">PlannedNodes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$planned</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$planned</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planner-PlannedNodes.html"><abbr title="\Flow\ETL\Planner\PlannedNodes">PlannedNodes</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$context</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_attach">
+        attach()
+        <a href="classes/Flow-ETL-Planner-SinkAttachment.html#method_attach" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php"><a href="files/src-core-etl-src-flow-etl-planner-sinkattachment.html"><abbr title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php">SinkAttachment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Every sink root attached at the spine node its chain meets, as the Loader steps that node&#039;s segment gains.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">attach</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Plan-Sinks.html"><abbr title="\Flow\ETL\Plan\Sinks">Sinks</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sinks</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>, <a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$onSpine</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>, array&lt;int, <a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>&gt;&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Side pipelines take the ids first; next() is where the spine's own cuts continue.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$sinks</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Plan-Sinks.html"><abbr title="\Flow\ETL\Plan\Sinks">Sinks</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$onSpine</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>, <a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_attach_tags">
+        Tags
+        <a href="classes/Flow-ETL-Planner-SinkAttachment.html#method_attach_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Exception-InvalidLogicException.html"><abbr title="\Flow\ETL\Exception\InvalidLogicException">InvalidLogicException</abbr></a></span>
+                                                                                        <section class="phpdocumentor-description"><p>when a sink shares no node with the spine, a Write does not translate to a Loader,
+or the sinks of one transaction attach to different nodes</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>, array&lt;int, <a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>&gt;&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_chain">
+        chain()
+        <a href="classes/Flow-ETL-Planner-SinkAttachment.html#method_chain" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php"><a href="files/src-core-etl-src-flow-etl-planner-sinkattachment.html"><abbr title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php">SinkAttachment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">120</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">$write first, then every node below it, stopping BEFORE the first node on the spine - so a bare Write sitting
+directly on a spine node is exactly [$write], and the node it attaches to is never part of its chain.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">chain</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Plan-Node-Write.html"><abbr title="\Flow\ETL\Plan\Node\Write">Write</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$write</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>, <a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$onSpine</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$write</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Plan-Node-Write.html"><abbr title="\Flow\ETL\Plan\Node\Write">Write</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$onSpine</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>, <a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_chain_tags">
+        Tags
+        <a href="classes/Flow-ETL-Planner-SinkAttachment.html#method_chain_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Exception-InvalidLogicException.html"><abbr title="\Flow\ETL\Exception\InvalidLogicException">InvalidLogicException</abbr></a></span>
+                                                                                        <section class="phpdocumentor-description"><p>when the chain ends without reaching the spine</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_consumer">
+        consumer()
+        <a href="classes/Flow-ETL-Planner-SinkAttachment.html#method_consumer" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php"><a href="files/src-core-etl-src-flow-etl-planner-sinkattachment.html"><abbr title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php">SinkAttachment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">252</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">consumer</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <abbr title="\Flow\ETL\Planner\Leaf">Leaf</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$group</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$host</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-ErrorHandler.html"><abbr title="\Flow\ETL\ErrorHandler">ErrorHandler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$group</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <abbr title="\Flow\ETL\Planner\Leaf">Leaf</abbr>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>sinks whose nodes above $host start with the same node</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$host</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$handler</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-ErrorHandler.html"><abbr title="\Flow\ETL\ErrorHandler">ErrorHandler</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_consumers">
+        consumers()
+        <a href="classes/Flow-ETL-Planner-SinkAttachment.html#method_consumers" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php"><a href="files/src-core-etl-src-flow-etl-planner-sinkattachment.html"><abbr title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php">SinkAttachment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">145</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A node several sinks share feeds them ONCE - it is the point their rows fan out - and a transaction attaches
+where its children part, so a node they all share runs before it opens.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">consumers</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <abbr title="\Flow\ETL\Planner\Leaf">Leaf</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$leaves</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$host</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-ErrorHandler.html"><abbr title="\Flow\ETL\ErrorHandler">ErrorHandler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$leaves</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <abbr title="\Flow\ETL\Planner\Leaf">Leaf</abbr>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>the sinks hanging off $host, each with the nodes between $host and its Write</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$host</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$handler</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-ErrorHandler.html"><abbr title="\Flow\ETL\ErrorHandler">ErrorHandler</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_consumers_tags">
+        Tags
+        <a href="classes/Flow-ETL-Planner-SinkAttachment.html#method_consumers_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Exception-InvalidLogicException.html"><abbr title="\Flow\ETL\Exception\InvalidLogicException">InvalidLogicException</abbr></a></span>
+                                                                                        <section class="phpdocumentor-description"><p>when a sink outside a transaction shares a node with one of its children</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Loader.html"><abbr title="\Flow\ETL\Loader">Loader</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_next">
+        next()
+        <a href="classes/Flow-ETL-Planner-SinkAttachment.html#method_next" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php"><a href="files/src-core-etl-src-flow-etl-planner-sinkattachment.html"><abbr title="src/core/etl/src/Flow/ETL/Planner/SinkAttachment.php">SinkAttachment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">105</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">next</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+            </section>
+
+        
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                <li><a href="classes/Flow-ETL-Planner-SinkAttachment.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Flow-ETL-Planner-SinkAttachment.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planner-SinkAttachment.html#method_attach">attach()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planner-SinkAttachment.html#method_chain">chain()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planner-SinkAttachment.html#method_consumer">consumer()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planner-SinkAttachment.html#method_consumers">consumers()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planner-SinkAttachment.html#method_next">next()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="classes/Flow-ETL-Planner-SinkAttachment.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

@@ -81,6 +81,11 @@ Search.appendIndex(
             "summary": "Reconcile\u0020every\u0020listed\u0020file\u0027s\u0020schema\u0020instead\u0020of\u0020trusting\u0020the\u0020first\u0020one.",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_unionByName"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003ApartitionSchema\u0028\u0029",
+            "name": "partitionSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_partitionSchema"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003Asource\u0028\u0029",
             "name": "source",
             "summary": "",

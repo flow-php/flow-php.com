@@ -124,16 +124,21 @@
     <article class="phpdocumentor-element -interface">
         <h2 class="phpdocumentor-content__title">
     FileExtractor
+            <span class="phpdocumentor-element__extends">
+            extends
+                            <a href="classes/Flow-ETL-Extractor.html"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></a>                    </span>
         </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-fileextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php">FileExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">A source that lists files under a path. Its schema is a property of the source - derived from the full
+listing - and a pruned read does not change it.</p>
+
 
 
 
@@ -156,10 +161,31 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Extractor-FileExtractor.html#method_filter">filter()</a>
+    <a class="" href="classes/Flow-ETL-Extractor-FileExtractor.html#method_extract">extract()</a>
     <span>
-                                &nbsp;: <abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr>    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;    </span>
 </dt>
+<dd>Yields rows in batches. When the source is a BatchableExtractor a batch holds between 0 and that
+extractor&#039;s own batchSize() rows; the size is chosen by the extractor and MAY vary between
+batches. Consumers must not assume a minimum size, a constant size, or a non-empty batch.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Extractor-FileExtractor.html#method_partitionSchema">partitionSchema()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>    </span>
+</dt>
+<dd>The partition block of this source&#039;s schema and nothing else - typed exactly as the read emits it,
+empty when the source declares no partition columns. The planner asks it to decide whether a predicate
+can be evaluated from the path alone.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Extractor.html#method_schema">schema()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>    </span>
+</dt>
+<dd>Answers before extract() runs, so every batch it yields carries this shape. Takes no
+FlowContext: a source that needs the pipeline&#039;s context to describe itself has not moved
+the answer to bind time.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Extractor-FileExtractor.html#method_source">source()</a>
@@ -168,10 +194,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Extractor-FileExtractor.html#method_withPathFilter">withPathFilter()</a>
+    <a class="" href="classes/Flow-ETL-Extractor.html#method_withSchema">withSchema()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
+<dd>Declares the shape every yielded batch must carry. A source that describes itself uses this
+instead of its own description, and values are cast to fit.</dd>
 
     </dl>
 
@@ -194,22 +222,95 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_filter">
-        filter()
-        <a href="classes/Flow-ETL-Extractor-FileExtractor.html#method_filter" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_extract">
+        extract()
+        <a href="classes/Flow-ETL-Extractor-FileExtractor.html#method_extract" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-fileextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php">FileExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Yields rows in batches. When the source is a BatchableExtractor a batch holds between 0 and that
+extractor&#039;s own batchSize() rows; the size is chosen by the extractor and MAY vary between
+batches. Consumers must not assume a minimum size, a constant size, or a non-empty batch.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">filter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">extract</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pathFilter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Path\Filter\OnlyFiles">OnlyFiles</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$context</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|int<1, max></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>see Extractor::extract()</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$pathFilter</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Path\Filter\OnlyFiles">OnlyFiles</abbr>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>what this read lists. The Filter step stays in the plan, so a source that lists
+more, or ignores it, is still correct.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_partitionSchema">
+        partitionSchema()
+        <a href="classes/Flow-ETL-Extractor-FileExtractor.html#method_partitionSchema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-fileextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php">FileExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">38</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The partition block of this source&#039;s schema and nothing else - typed exactly as the read emits it,
+empty when the source declares no partition columns. The planner asks it to decide whether a predicate
+can be evaluated from the path alone.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">partitionSchema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -222,7 +323,67 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_schema">
+        schema()
+        <a href="classes/Flow-ETL-Extractor.html#method_schema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor.php"><a href="files/src-core-etl-src-flow-etl-extractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor.php">Extractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">39</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Answers before extract() runs, so every batch it yields carries this shape. Takes no
+FlowContext: a source that needs the pipeline&#039;s context to describe itself has not moved
+the answer to bind time.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">schema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Called once per RUN - every run plans afresh - so it MUST be idempotent and cheap on repeat: memoise
+what it sniffs, as CSVExtractor and ArrayExtractor do.</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_schema_tags">
+        Tags
+        <a href="classes/Flow-ETL-Extractor.html#method_schema_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Exception-SchemaNotDerivableException.html"><abbr title="\Flow\ETL\Exception\SchemaNotDerivableException">SchemaNotDerivableException</abbr></a></span>
+                                                                                        <section class="phpdocumentor-description"><p>when the source cannot describe what it will produce</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
             </section>
 
 </article>
@@ -240,7 +401,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-fileextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php">FileExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -270,22 +431,24 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_withPathFilter">
-        withPathFilter()
-        <a href="classes/Flow-ETL-Extractor-FileExtractor.html#method_withPathFilter" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_withSchema">
+        withSchema()
+        <a href="classes/Flow-ETL-Extractor.html#method_withSchema" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-fileextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/FileExtractor.php">FileExtractor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor.php"><a href="files/src-core-etl-src-flow-etl-extractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor.php">Extractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Declares the shape every yielded batch must carry. A source that describes itself uses this
+instead of its own description, and values are cast to fit.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withPathFilter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+                    <span class="phpdocumentor-signature__name">withSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -294,8 +457,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$filter</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -333,9 +496,11 @@
                             <li class="phpdocumentor-on-this-page-section__title">Methods</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Flow-ETL-Extractor-FileExtractor.html#method_filter">filter()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Extractor-FileExtractor.html#method_extract">extract()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Extractor-FileExtractor.html#method_partitionSchema">partitionSchema()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Extractor.html#method_schema">schema()</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Extractor-FileExtractor.html#method_source">source()</a></li>
-                                                    <li class=""><a href="classes/Flow-ETL-Extractor-FileExtractor.html#method_withPathFilter">withPathFilter()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Extractor.html#method_withSchema">withSchema()</a></li>
                                             </ul>
                 </li>
             

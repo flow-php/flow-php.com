@@ -371,6 +371,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-Uuid.html#method_deterministic">deterministic()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>True when this node and every node in children() produce the same value for the same input row.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_divide">divide()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Function-Divide.html"><abbr title="\Flow\ETL\Function\Divide">Divide</abbr></a>    </span>
@@ -2503,6 +2510,48 @@ per-element narrowing. Never mutates $this.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_deterministic">
+        deterministic()
+        <a href="classes/Flow-ETL-Function-Uuid.html#method_deterministic" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Uuid.php"><a href="files/src-core-etl-src-flow-etl-function-uuid.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Uuid.php">Uuid.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">True when this node and every node in children() produce the same value for the same input row.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">deterministic</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>False for a generator (now(), uuid, a random string): a caller that evaluates the tree once per FILE
+or per partition instead of once per row must refuse a non-deterministic one.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_divide">
         divide()
         <a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_divide" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3127,7 +3176,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Uuid.php"><a href="files/src-core-etl-src-flow-etl-function-uuid.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Uuid.php">Uuid.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -5417,7 +5466,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Uuid.php"><a href="files/src-core-etl-src-flow-etl-function-uuid.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Uuid.php">Uuid.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -7194,7 +7243,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Uuid.php"><a href="files/src-core-etl-src-flow-etl-function-uuid.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Uuid.php">Uuid.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -7232,7 +7281,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Uuid.php"><a href="files/src-core-etl-src-flow-etl-function-uuid.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Uuid.php">Uuid.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -7280,7 +7329,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Uuid.php"><a href="files/src-core-etl-src-flow-etl-function-uuid.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Uuid.php">Uuid.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -7479,6 +7528,7 @@ per-element narrowing. Never mutates $this.</p>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_contains">contains()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_dateFormat">dateFormat()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_dateTimeFormat">dateTimeFormat()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-Uuid.html#method_deterministic">deterministic()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_divide">divide()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_domElementAttributesCount">domElementAttributesCount()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_domElementAttributeValue">domElementAttributeValue()</a></li>

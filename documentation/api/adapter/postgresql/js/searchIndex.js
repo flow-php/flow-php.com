@@ -103,7 +103,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\to_pgsql_transaction\u0028\u0029",
             "name": "to_pgsql_transaction",
-            "summary": "Execute\u0020multiple\u0020loaders\u0020within\u0020PostgreSQL\u0020transactions.",
+            "summary": "Write\u0020every\u0020sink\u0020within\u0020PostgreSQL\u0020transactions.",
             "url": "namespaces/flow-etl-adapter-postgresql.html#function_to_pgsql_transaction"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\pgsql_insert_options\u0028\u0029",
@@ -576,6 +576,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlMetadata.html#enumcase_TYPE"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlTransaction",
+            "name": "PostgreSqlTransaction",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlTransaction.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlTransaction\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlTransaction.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlTransaction\u003A\u003AwithIsolationLevel\u0028\u0029",
+            "name": "withIsolationLevel",
+            "summary": "SET\u0020TRANSACTION\u0020applies\u0020to\u0020the\u0020open\u0020transaction\u0020only,\u0020so\u0020there\u0020is\u0020nothing\u0020to\u0020restore.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlTransaction.html#method_withIsolationLevel"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlTransaction\u003A\u003Abegin\u0028\u0029",
+            "name": "begin",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlTransaction.html#method_begin"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlTransaction\u003A\u003Acommit\u0028\u0029",
+            "name": "commit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlTransaction.html#method_commit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlTransaction\u003A\u003Arollback\u0028\u0029",
+            "name": "rollback",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlTransaction.html#method_rollback"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\QueryBuilder\\DeleteQueryBuilder",
             "name": "DeleteQueryBuilder",
             "summary": "",
@@ -715,36 +745,6 @@ Search.appendIndex(
             "name": "toPostgreSqlTable",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-SchemaConverter.html#method_toPostgreSqlTable"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TransactionalPostgreSqlLoader",
-            "name": "TransactionalPostgreSqlLoader",
-            "summary": "Execute\u0020multiple\u0020loaders\u0020within\u0020PostgreSQL\u0020transactions.",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-TransactionalPostgreSqlLoader.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TransactionalPostgreSqlLoader\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-TransactionalPostgreSqlLoader.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TransactionalPostgreSqlLoader\u003A\u003Aclosure\u0028\u0029",
-            "name": "closure",
-            "summary": "Rows\u0020a\u0020wrapped\u0020Transformation\u0020buffered\u0020\u0028blocking\u0020operations\u0020\u002D\u0020sortBy,\u0020aggregate,\u0020groupBy\u002D\u003Eaggregate,\npivot,\u0020window\u0020functions,\u0020collect,\u0020join\u0029\u0020are\u0020delivered\u0020during\u0020the\u0020forwarded\u0020closure\u0028\u0029\u0020drain,\u0020so\u0020delivery\nhere\u0020must\u0020be\u0020transactional\u0020too\u003A\u0020one\u0020transaction\u0020over\u0020everything\u0020the\u0020drain\u0020flushes,\u0020rolled\u0020back\u0020when\u0020it\u0020fails.",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-TransactionalPostgreSqlLoader.html#method_closure"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TransactionalPostgreSqlLoader\u003A\u003Aload\u0028\u0029",
-            "name": "load",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-TransactionalPostgreSqlLoader.html#method_load"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TransactionalPostgreSqlLoader\u003A\u003Aloaders\u0028\u0029",
-            "name": "loaders",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-TransactionalPostgreSqlLoader.html#method_loaders"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TransactionalPostgreSqlLoader\u003A\u003AwithIsolationLevel\u0028\u0029",
-            "name": "withIsolationLevel",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-TransactionalPostgreSqlLoader.html#method_withIsolationLevel"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ValueConverter\\EnumConverter",
             "name": "EnumConverter",
