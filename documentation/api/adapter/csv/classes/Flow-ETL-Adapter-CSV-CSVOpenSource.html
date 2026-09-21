@@ -102,28 +102,15 @@
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/flow-etl-adapter-csv.html">CSV</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -class">
+    <article class="phpdocumentor-element -interface">
         <h2 class="phpdocumentor-content__title">
     CSVOpenSource
-
-    
-    
-    
-    </h2>
-
-<div class="phpdocumentor-label-line">
-    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
-
-
-    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
-
-
-</div>
+        </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php">CSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
@@ -142,37 +129,6 @@
 
 
 
-<h4 id="toc-properties">
-    Properties
-    <a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
-
-</h4>
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_dialect">$dialect</a>
-    <span>
-                        &nbsp;: <a href="classes/Flow-ETL-Adapter-CSV-CSVDialect.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVDialect">CSVDialect</abbr></a>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_encoder">$encoder</a>
-    <span>
-                        &nbsp;: <a href="classes/Flow-ETL-Adapter-CSV-CSVEncoder.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVEncoder">CSVEncoder</abbr></a>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_lineReader">$lineReader</a>
-    <span>
-                        &nbsp;: <a href="classes/Flow-ETL-Adapter-CSV-CSVLineReader.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVLineReader">CSVLineReader</abbr></a>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_stream">$stream</a>
-    <span>
-                        &nbsp;: <abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr>            </span>
-</dt>
-
-    </dl>
 
 <h4 id="toc-methods">
     Methods
@@ -180,12 +136,6 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method___construct">__construct()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_close">close()</a>
     <span>
@@ -204,170 +154,23 @@
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;    </span>
 </dt>
-<dd>CSVLineReader::readLines() already joins a quoted multi-line record, so never re-split or re-join here.</dd>
+<dd>This instance is consumed afterwards.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_sniff">sniff()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\ETL\Schema\Inference\ColumnTypes">ColumnTypes</abbr>    </span>
+</dt>
+<dd>SchemaInferrer::sniff() over records(). This instance is consumed afterwards.</dd>
 
     </dl>
 
 
 
-        
 
         
-    <section class="phpdocumentor-properties">
-        <h3 class="phpdocumentor-elements__header" id="properties">
-            Properties
-            <a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_dialect">
-        $dialect
-        <a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_dialect" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php">CSVOpenSource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">15</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Adapter-CSV-CSVDialect.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVDialect">CSVDialect</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$dialect</span>
-    </code>
-
-    
-    
-    
 
         
-        
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_encoder">
-        $encoder
-        <a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_encoder" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php">CSVOpenSource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">16</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Adapter-CSV-CSVEncoder.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVEncoder">CSVEncoder</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$encoder</span>
-    </code>
-
-    
-    
-    
-
-        
-        
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_lineReader">
-        $lineReader
-        <a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_lineReader" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php">CSVOpenSource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">17</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Adapter-CSV-CSVLineReader.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVLineReader">CSVLineReader</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$lineReader</span>
-    </code>
-
-    
-    
-    
-
-        
-        
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_stream">
-        $stream
-        <a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_stream" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php">CSVOpenSource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">14</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr></span>
-    <span class="phpdocumentor-signature__name">$stream</span>
-    </code>
-
-    
-    
-    
-
-        
-        
-
-</article>
-            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
@@ -375,71 +178,6 @@
             <a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php">CSVOpenSource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">13</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-CSV-CSVDialect.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVDialect">CSVDialect</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dialect</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-CSV-CSVEncoder.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVEncoder">CSVEncoder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$encoder</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-CSV-CSVLineReader.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVLineReader">CSVLineReader</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lineReader</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$stream</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$dialect</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-CSV-CSVDialect.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVDialect">CSVDialect</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$encoder</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-CSV-CSVEncoder.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVEncoder">CSVEncoder</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$lineReader</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-CSV-CSVLineReader.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVLineReader">CSVLineReader</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-    
-</article>
                     <article
         class="phpdocumentor-element
             -method
@@ -454,7 +192,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php">CSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
@@ -488,7 +226,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php">CSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -527,11 +265,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php">CSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">CSVLineReader::readLines() already joins a quoted multi-line record, so never re-split or re-join here.</p>
+        <p class="phpdocumentor-summary">This instance is consumed afterwards.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -540,9 +278,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>This instance is consumed afterwards.</p>
-</section>
-
+    
     
     
 
@@ -551,6 +287,76 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_sniff">
+        sniff()
+        <a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_sniff" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVOpenSource.php">CSVOpenSource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">SchemaInferrer::sniff() over records(). This instance is consumed afterwards.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">sniff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$names</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int<0, max>|-1&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowBudget</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema\Inference\SchemaInference">SchemaInference</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inference</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Types\Type\TypeNarrower">TypeNarrower</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$typer</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Schema\Inference\ColumnTypes">ColumnTypes</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$names</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, string&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$rowBudget</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int<0, max>|-1</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$inference</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Schema\Inference\SchemaInference">SchemaInference</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$typer</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Types\Type\TypeNarrower">TypeNarrower</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Schema\Inference\ColumnTypes">ColumnTypes</abbr></span>
             </section>
 
 </article>
@@ -568,30 +374,20 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                            <li><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#toc-methods">Methods</a></li>
+                                                                                <li><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
-                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                            <li class="phpdocumentor-on-this-page-section__title">Methods</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_dialect">$dialect</a></li>
-                                                    <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_encoder">$encoder</a></li>
-                                                    <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_lineReader">$lineReader</a></li>
-                                                    <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#property_stream">$stream</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_close">close()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_columns">columns()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_records">records()</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_sniff">sniff()</a></li>
                                             </ul>
                 </li>
             
-                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
-            <li>
-                <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_close">close()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_columns">columns()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_records">records()</a></li>
-                                    </ul>
-            </li>
                     </ul>
     </section>
 

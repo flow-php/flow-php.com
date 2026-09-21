@@ -18531,6 +18531,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Inference-ColumnTypes.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Inference\\ColumnTypes\u003A\u003AfromColumnTypes\u0028\u0029",
+            "name": "fromColumnTypes",
+            "summary": "A\u0020fold\u0020computed\u0020elsewhere\u0020\u0028a\u0020native\u0020reader,\u0020a\u0020subprocess\u0029\u0020\u002D\u0020equal\u0020to\u0020the\u0020observe\u0028\u0029\u0020fold\u0020over\u0020the\u0020same\u0020rows.",
+            "url": "classes/Flow-ETL-Schema-Inference-ColumnTypes.html#method_fromColumnTypes"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Inference\\ColumnTypes\u003A\u003Amerge\u0028\u0029",
             "name": "merge",
             "summary": "Merge\u0020left\u002Dto\u002Dright\u0020in\u0020listing\u0020order\u003A\u0020name\u0020order\u0020follows\u0020first\u002Dseen,\u0020so\u0020a\u0020different\u0020bracketing\u0020of\u0020the\u0020name\nsequence\u0020changes\u0020the\u0020definition\u0020order\u0020\u0028never\u0020the\u0020types\u0029.",
@@ -18675,6 +18680,16 @@ Search.appendIndex(
             "name": "samples",
             "summary": "One\u0020inner\u0020iterable\u0020per\u0020sampling\u0020unit\u0020\u0028a\u0020file,\u0020a\u0020byte\u002Drange\u0020chunk,\u0020a\u0020sheet\u0020range\u0029,\u0020in\u0020listing\u0020order.",
             "url": "classes/Flow-ETL-Schema-Inference-SchemaSampler.html#method_samples"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Inference\\SniffsColumnTypes",
+            "name": "SniffsColumnTypes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Inference-SniffsColumnTypes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Inference\\SniffsColumnTypes\u003A\u003AsniffColumnTypes\u0028\u0029",
+            "name": "sniffColumnTypes",
+            "summary": "Must\u0020equal\u0020SchemaInferrer\u003A\u003Asniff\u0028\u0024names,\u0020\u003Cthis\u0020unit\u0027s\u0020rows\u003E,\u0020\u0024rowBudget\u0029.",
+            "url": "classes/Flow-ETL-Schema-Inference-SniffsColumnTypes.html#method_sniffColumnTypes"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Inference\\TypeFloor",
             "name": "TypeFloor",

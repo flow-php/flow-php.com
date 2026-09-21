@@ -185,17 +185,11 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_sample">sample()</a>
-    <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_samples">samples()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;&gt;    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <a href="classes/Flow-ETL-Adapter-CSV-CSVFileSample.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVFileSample">CSVFileSample</abbr></a>&gt;    </span>
 </dt>
-<dd>$rowBudget is deliberately unused: sample() is lazy and SchemaInferrer stops advancing it.</dd>
+<dd>$rowBudget is unused: SchemaInferrer hands each unit its remaining budget through sniffColumnTypes().</dd>
 
     </dl>
 
@@ -412,54 +406,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_sample">
-        sample()
-        <a href="classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_sample" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVFileReader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvfilereader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVFileReader.php">CSVFileReader.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">84</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sample</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Extractor\SourceFile">SourceFile</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$source</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Extractor\SourceFile">SourceFile</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_samples">
         samples()
         <a href="classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_samples" class="headerlink"><i class="fas fa-link"></i></a>
@@ -468,15 +414,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVFileReader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvfilereader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVFileReader.php">CSVFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">$rowBudget is deliberately unused: sample() is lazy and SchemaInferrer stops advancing it.</p>
+        <p class="phpdocumentor-summary">$rowBudget is unused: SchemaInferrer hands each unit its remaining budget through sniffColumnTypes().</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">samples</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowBudget</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">samples</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowBudget</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <a href="classes/Flow-ETL-Adapter-CSV-CSVFileSample.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVFileSample">CSVFileSample</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -499,7 +445,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <a href="classes/Flow-ETL-Adapter-CSV-CSVFileSample.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVFileSample">CSVFileSample</abbr></a>&gt;</span>
             </section>
 
 </article>
@@ -529,7 +475,6 @@
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_batches">batches()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_columns">columns()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_header">header()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_sample">sample()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVFileReader.html#method_samples">samples()</a></li>
                                     </ul>
             </li>

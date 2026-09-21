@@ -192,7 +192,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Inference/SchemaSampler.php"><a href="files/src-core-etl-src-flow-etl-schema-inference-schemasampler.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Inference/SchemaSampler.php">SchemaSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -205,9 +205,8 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>The outer iterable is exactly what SchemaInferrer::infer() consumes; a future parallel driver fans
-SchemaInferrer::sniff() over the inner iterables and merges the ColumnTypes partials.
-The unit itself is never named as a type - the implementer decides what one inner iterable is.</p>
+        <section class="phpdocumentor-description"><p>The outer iterable is exactly what SchemaInferrer::infer() consumes; a unit that implements
+SniffsColumnTypes folds itself into its partial instead of being iterated row by row.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
