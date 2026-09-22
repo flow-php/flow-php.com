@@ -256,6 +256,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonExtractor.html#method_source"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "A\u0020document\u0020has\u0020no\u0020bytes\u002Dper\u002Drow\u0020unit,\u0020so\u0020rows\u0020are\u0020known\u0020only\u0020when\u0020the\u0020sample\u0020schema\u0020inference\u0020already\u0020read\nevery\u0020element\u0020of\u0020every\u0020file.",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonExtractor\u003A\u003AwithPointer\u0028\u0029",
             "name": "withPointer",
             "summary": "",
@@ -305,6 +310,26 @@ Search.appendIndex(
             "name": "samples",
             "summary": "\u0024rowBudget\u0020is\u0020deliberately\u0020unused\u003A\u0020sample\u0028\u0029\u0020is\u0020lazy\u0020and\u0020SchemaInferrer\u0020stops\u0020advancing\u0020it.",
             "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonFileReader.html#method_samples"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonFileSample",
+            "name": "JsonFileSample",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonFileSample.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonFileSample\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonFileSample.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonFileSample\u003A\u003AgetIterator\u0028\u0029",
+            "name": "getIterator",
+            "summary": "Records\u0020what\u0020it\u0020read\u0020when\u0020the\u0020consumer\u0020stops\u0020or\u0020the\u0020file\u0020ends,\u0020whichever\u0020comes\u0020first.",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonFileSample.html#method_getIterator"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonFileSample\u003A\u003Asampled\u0028\u0029",
+            "name": "sampled",
+            "summary": "Null\u0020until\u0020the\u0020sample\u0020was\u0020iterated.",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonFileSample.html#method_sampled"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonFormat",
             "name": "JsonFormat",
@@ -361,6 +386,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonLinesExtractor.html#method_source"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonLinesExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "Rows\u0020come\u0020from\u0020the\u0020sample\u0020schema\u0020inference\u0020already\u0020read\u003B\u0020without\u0020one\u0020they\u0020are\u0020unknown,\u0020a\u0020sample\u0020is\u0020never\u0020read\njust\u0020for\u0020them.",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonLinesExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonLinesExtractor\u003A\u003AwithPointer\u0028\u0029",
             "name": "withPointer",
             "summary": "",
@@ -370,6 +400,106 @@ Search.appendIndex(
             "name": "withSchema",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonLinesExtractor.html#method_withSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonReadBytes",
+            "name": "JsonReadBytes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonReadBytes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonReadBytes\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonReadBytes.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonReadBytes\u003A\u003Atotal\u0028\u0029",
+            "name": "total",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonReadBytes.html#method_total"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSampledFiles",
+            "name": "JsonSampledFiles",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSampledFiles.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSampledFiles\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSampledFiles.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSampledFiles\u003A\u003AexactRows\u0028\u0029",
+            "name": "exactRows",
+            "summary": "Exact\u0020when\u0020the\u0020samples\u0020read\u0020every\u0020row\u0020of\u0020every\u0020listed\u0020file.",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSampledFiles.html#method_exactRows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSampledFiles\u003A\u003AestimatedRows\u0028\u0029",
+            "name": "estimatedRows",
+            "summary": "Listed\u0020bytes\u0020over\u0020the\u0020mean\u0020bytes\u0020of\u0020the\u0020sampled\u0020rows\u003B\u0020exact\u0020when\u0020the\u0020samples\u0020read\u0020every\u0020row\u0020of\u0020every\u0020listed\u0020file.",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSampledFiles.html#method_estimatedRows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSampledFiles\u003A\u003A\u0024files",
+            "name": "files",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSampledFiles.html#property_files"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSampledFiles\u003A\u003A\u0024rows",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSampledFiles.html#property_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSampledFiles\u003A\u003A\u0024bytes",
+            "name": "bytes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSampledFiles.html#property_bytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSampledFiles\u003A\u003A\u0024whole",
+            "name": "whole",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSampledFiles.html#property_whole"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSampledRows",
+            "name": "JsonSampledRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSampledRows.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSampledRows\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSampledRows.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSampledRows\u003A\u003A\u0024bytes",
+            "name": "bytes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSampledRows.html#property_bytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSampledRows\u003A\u003A\u0024rows",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSampledRows.html#property_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSampledRows\u003A\u003A\u0024wholeFile",
+            "name": "wholeFile",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSampledRows.html#property_wholeFile"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSamples",
+            "name": "JsonSamples",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSamples.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSamples\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSamples.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSamples\u003A\u003AgetIterator\u0028\u0029",
+            "name": "getIterator",
+            "summary": "Keeps\u0020only\u0020the\u0020samples\u0020the\u0020consumer\u0020pulled\u003A\u0020a\u0020listing\u0020the\u0020inference\u0020stopped\u0020short\u0020of\u0020costs\u0020nothing.",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSamples.html#method_getIterator"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JSONMachine\\JsonSamples\u003A\u003AsampledFiles\u0028\u0029",
+            "name": "sampledFiles",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonSamples.html#method_sampledFiles"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\JsonSchema\\Exception\\CircularReferenceException",
             "name": "CircularReferenceException",

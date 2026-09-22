@@ -115,8 +115,6 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
-    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
-
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -186,6 +184,13 @@
 <dd>The source is opened on the first advance; abandoning the generator closes it.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVFileSample.html#method_sampled">sampled()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Adapter-CSV-CSVSampledRows.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVSampledRows">CSVSampledRows</abbr></a>|null    </span>
+</dt>
+<dd>What the last sniffColumnTypes() read; null until one ran.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVFileSample.html#method_sniffColumnTypes">sniffColumnTypes()</a>
     <span>
                                 &nbsp;: <abbr title="\Flow\ETL\Schema\Inference\ColumnTypes">ColumnTypes</abbr>    </span>
@@ -219,7 +224,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVFileSample.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvfilesample.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVFileSample.php">CSVFileSample.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -270,7 +275,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVFileSample.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvfilesample.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVFileSample.php">CSVFileSample.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -301,6 +306,45 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_sampled">
+        sampled()
+        <a href="classes/Flow-ETL-Adapter-CSV-CSVFileSample.html#method_sampled" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVFileSample.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvfilesample.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVFileSample.php">CSVFileSample.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">71</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">What the last sniffColumnTypes() read; null until one ran.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">sampled</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-CSV-CSVSampledRows.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVSampledRows">CSVSampledRows</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-CSV-CSVSampledRows.html"><abbr title="\Flow\ETL\Adapter\CSV\CSVSampledRows">CSVSampledRows</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_sniffColumnTypes">
         sniffColumnTypes()
         <a href="classes/Flow-ETL-Adapter-CSV-CSVFileSample.html#method_sniffColumnTypes" class="headerlink"><i class="fas fa-link"></i></a>
@@ -309,7 +353,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVFileSample.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvfilesample.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVFileSample.php">CSVFileSample.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -388,6 +432,7 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVFileSample.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVFileSample.html#method_getIterator">getIterator()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVFileSample.html#method_sampled">sampled()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVFileSample.html#method_sniffColumnTypes">sniffColumnTypes()</a></li>
                                     </ul>
             </li>

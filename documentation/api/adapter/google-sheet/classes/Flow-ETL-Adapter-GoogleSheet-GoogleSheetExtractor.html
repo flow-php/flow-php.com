@@ -127,7 +127,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetextractor.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php">GoogleSheetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -206,6 +206,15 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_statistics">statistics()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\ETL\Extractor\Statistics">Statistics</abbr>    </span>
+</dt>
+<dd>The grid&#039;s allocated rows bound the populated ones; they come from the sample schema inference already
+fetched, and without one nothing is declared - no request is made just for them. The Sheets API reports no
+byte size.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withDropExtraColumns">withDropExtraColumns()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -269,7 +278,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetextractor.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php">GoogleSheetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -327,7 +336,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetextractor.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php">GoogleSheetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -382,7 +391,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetextractor.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php">GoogleSheetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -430,7 +439,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetextractor.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php">GoogleSheetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -468,7 +477,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetextractor.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php">GoogleSheetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -498,6 +507,47 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_statistics">
+        statistics()
+        <a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_statistics" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetextractor.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php">GoogleSheetExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">212</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The grid&#039;s allocated rows bound the populated ones; they come from the sample schema inference already
+fetched, and without one nothing is declared - no request is made just for them. The Sheets API reports no
+byte size.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">statistics</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Extractor\Statistics">Statistics</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Extractor\Statistics">Statistics</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_withDropExtraColumns">
         withDropExtraColumns()
         <a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withDropExtraColumns" class="headerlink"><i class="fas fa-link"></i></a>
@@ -506,7 +556,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetextractor.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php">GoogleSheetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">186</span>
+    <span class="phpdocumentor-element-found-in__line">221</span>
 
     </aside>
 
@@ -554,7 +604,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetextractor.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php">GoogleSheetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">231</span>
 
     </aside>
 
@@ -602,7 +652,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetextractor.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php">GoogleSheetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">241</span>
 
     </aside>
 
@@ -650,7 +700,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetextractor.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php">GoogleSheetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">213</span>
+    <span class="phpdocumentor-element-found-in__line">254</span>
 
     </aside>
 
@@ -698,7 +748,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetextractor.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php">GoogleSheetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">221</span>
+    <span class="phpdocumentor-element-found-in__line">264</span>
 
     </aside>
 
@@ -746,7 +796,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetextractor.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetExtractor.php">GoogleSheetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">275</span>
 
     </aside>
 
@@ -807,6 +857,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_inferSchema">inferSchema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_isRepeatable">isRepeatable()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_schema">schema()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_statistics">statistics()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withDropExtraColumns">withDropExtraColumns()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withEmptyToNull">withEmptyToNull()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withHeader">withHeader()</a></li>

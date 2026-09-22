@@ -706,6 +706,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html#method_withSchema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientDynamicExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientPaginatedExtractor",
             "name": "PsrHttpClientPaginatedExtractor",
             "summary": "",
@@ -741,6 +746,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html#method_withSchema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientPaginatedExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientStaticExtractor",
             "name": "PsrHttpClientStaticExtractor",
             "summary": "",
@@ -775,6 +785,11 @@ Search.appendIndex(
             "name": "withSchema",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html#method_withSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientStaticExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html#method_statistics"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ResponseType",
             "name": "ResponseType",

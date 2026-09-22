@@ -76,6 +76,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_schema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003AunionByName\u0028\u0029",
             "name": "unionByName",
             "summary": "Reconcile\u0020every\u0020listed\u0020file\u0027s\u0020schema\u0020instead\u0020of\u0020trusting\u0020the\u0020first\u0020one.",
@@ -205,6 +210,11 @@ Search.appendIndex(
             "name": "source",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetSourceFile.html#method_source"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetSourceFile\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "Uncompressed\u0020row\u002Dgroup\u0020bytes,\u0020as\u0020the\u0020format\u0020reports\u0020them.",
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetSourceFile.html#method_statistics"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetSourceFile\u003A\u003A\u0024file",
             "name": "file",

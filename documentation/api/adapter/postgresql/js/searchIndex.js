@@ -66,6 +66,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-Exception-TypeMappingException.html#method_unsupportedFlowType"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ExplainedRows",
+            "name": "ExplainedRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ExplainedRows.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ExplainedRows\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "The\u0020planner\u0027s\u0020row\u0020estimate\u0020for\u0020\u0024query,\u0020capped\u0020by\u0020the\u0020read\u0027s\u0020maximum.\u0020EXPLAIN\u0020without\u0020ANALYZE,\u0020so\u0020the\u0020query\nnever\u0020runs.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ExplainedRows.html#method_of"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\from_pgsql_cursor\u0028\u0029",
             "name": "from_pgsql_cursor",
             "summary": "Create\u0020a\u0020PostgreSQL\u0020cursor\u0020extractor\u0020using\u0020server\u002Dside\u0020cursors\u0020for\u0020memory\u002Defficient\u0020extraction.",
@@ -331,6 +341,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlCursorExtractor.html#method_schema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlCursorExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlCursorExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlCursorExtractor\u003A\u003AwithCursorName\u0028\u0029",
             "name": "withCursorName",
             "summary": "",
@@ -386,6 +401,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlKeySetExtractor.html#method_schema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlKeySetExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlKeySetExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlKeySetExtractor\u003A\u003AwithMaximum\u0028\u0029",
             "name": "withMaximum",
             "summary": "",
@@ -420,6 +440,11 @@ Search.appendIndex(
             "name": "schema",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLimitOffsetExtractor.html#method_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlLimitOffsetExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLimitOffsetExtractor.html#method_statistics"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlLimitOffsetExtractor\u003A\u003AwithMaximum\u0028\u0029",
             "name": "withMaximum",

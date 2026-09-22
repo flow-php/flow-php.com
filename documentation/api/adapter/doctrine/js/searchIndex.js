@@ -66,6 +66,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_schema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003AwithKeyAliasSuffix\u0028\u0029",
             "name": "withKeyAliasSuffix",
             "summary": "",
@@ -110,6 +115,11 @@ Search.appendIndex(
             "name": "schema",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLimitOffsetExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "The\u0020plan\u0020already\u0020applies\u0020the\u0020query\u0020builder\u0027s\u0020own\u0020limit\u0020and\u0020offset\u003B\u0020withOffset\u0028\u0029\u0020replaces\u0020that\u0020offset.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalLimitOffsetExtractor.html#method_statistics"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalLimitOffsetExtractor\u003A\u003AwithMaximum\u0028\u0029",
             "name": "withMaximum",
@@ -331,6 +341,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalQueryExtractor.html#method_schema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalQueryExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "One\u0020plan\u0020per\u0020parameter\u0020set,\u0020summed\u003B\u0020past\u0020EXPLAINED_PARAMETER_SETS\u0020the\u0020explained\u0020sets\u0020are\u0020scaled\u0020to\u0020all\u0020of\u0020them,\nso\u0020planning\u0020never\u0020pays\u0020a\u0020round\u0020trip\u0020per\u0020set.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalQueryExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalQueryExtractor\u003A\u003AwithParameters\u0028\u0029",
             "name": "withParameters",
             "summary": "",
@@ -400,6 +415,36 @@ Search.appendIndex(
             "name": "of",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DescribeQuery.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Explain\\ExplainedRows",
+            "name": "ExplainedRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Explain-ExplainedRows.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Explain\\ExplainedRows\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "The\u0020planner\u0027s\u0020row\u0020estimate\u0020for\u0020\u0024sql,\u0020with\u0020the\u0020read\u0027s\u0020own\u0020offset\u0020and\u0020maximum\u0020applied.\u0020SQLite\u0020plans\u0020carry\u0020no\nestimate\u003B\u0020MariaDB,\u0020SQL\u0020Server,\u0020Oracle\u0020and\u0020DB2\u0020have\u0020no\u0020tested\u0020reader\u0020yet\u0020\u002D\u0020all\u0020of\u0020them\u0020declare\u0020only\u0020the\u0020maximum.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Explain-ExplainedRows.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Explain\\MySqlExplainedRows",
+            "name": "MySqlExplainedRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Explain-MySqlExplainedRows.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Explain\\MySqlExplainedRows\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "The\u0020root\u0020line\u0020of\u0020EXPLAIN\u0020FORMAT\u003DTREE,\u0020e.g.\u0020\u0022\u002D\u003E\u0020Filter\u003A\u0020\u0028t.g\u0020\u003E\u00201\u0029\u0020\u0020\u0028cost\u003D0.75\u0020rows\u003D2\u0029\u0022.\u0020A\u0020root\u0020without\u0020an\nestimate\u0020\u0028a\u0020GROUP\u0020BY\u0020read\u0020back\u0020from\u0020\u0022\u003Ctemporary\u003E\u0022\u0029\u0020is\u0020unknown\u003A\u0020a\u0020child\u0027s\u0020estimate\u0020counts\u0020other\u0020rows.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Explain-MySqlExplainedRows.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Explain\\PostgreSqlExplainedRows",
+            "name": "PostgreSqlExplainedRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Explain-PostgreSqlExplainedRows.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Explain\\PostgreSqlExplainedRows\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "The\u0020root\u0020plan\u0020node\u0027s\u0020\u0022Plan\u0020Rows\u0022\u003B\u0020EXPLAIN\u0020without\u0020ANALYZE,\u0020so\u0020the\u0020query\u0020never\u0020runs.",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Explain-PostgreSqlExplainedRows.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\dbal_dataframe_factory\u0028\u0029",
             "name": "dbal_dataframe_factory",
@@ -1090,6 +1135,11 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Explain",
+            "name": "Explain",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-doctrine-explain.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination",
             "name": "Pagination",

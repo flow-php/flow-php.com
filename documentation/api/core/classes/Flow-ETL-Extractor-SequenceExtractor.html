@@ -224,6 +224,15 @@ FlowContext: a source that needs the pipeline&#039;s context to describe itself 
 the answer to bind time.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Extractor-SequenceExtractor.html#method_statistics">statistics()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Extractor-Statistics.html"><abbr title="\Flow\ETL\Extractor\Statistics">Statistics</abbr></a>    </span>
+</dt>
+<dd>What the source knows about the data before a single row is read: how many rows, how many bytes. A source
+that knows nothing returns `new Statistics()`. Describes the source with NO pushdown applied - a limit or a
+partition filter the plan pushed is the plan&#039;s to account for.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Extractor-Batches.html#method_withBatchSize">withBatchSize()</a>
     <span>
                                 &nbsp;: static    </span>
@@ -265,7 +274,7 @@ instead of its own description, and values are cast to fit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-sequenceextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php">SequenceExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -354,7 +363,7 @@ instead of its own description, and values are cast to fit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-sequenceextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php">SequenceExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -416,7 +425,7 @@ is still correct.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-sequenceextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php">SequenceExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -464,7 +473,7 @@ is still correct.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-sequenceextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php">SequenceExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -502,7 +511,7 @@ is still correct.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-sequenceextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php">SequenceExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -529,6 +538,54 @@ what it sniffs, as CSVExtractor and ArrayExtractor do.</p>
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_statistics">
+        statistics()
+        <a href="classes/Flow-ETL-Extractor-SequenceExtractor.html#method_statistics" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-sequenceextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php">SequenceExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">113</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">What the source knows about the data before a single row is read: how many rows, how many bytes. A source
+that knows nothing returns `new Statistics()`. Describes the source with NO pushdown applied - a limit or a
+partition filter the plan pushed is the plan&#039;s to account for.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">statistics</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Extractor-Statistics.html"><abbr title="\Flow\ETL\Extractor\Statistics">Statistics</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Called AT MOST ONCE per run, and only when something needs the answer - so it must be lazy, never computed in
+the constructor - and it MUST be idempotent and cheap on repeat: memoise what it reads, the way schema() does.</p>
+<p>A file source may only spend what the run already spends: it may complete a listing it must produce anyway and
+read metadata from the files schema() already opens, and it may extrapolate from those. It must not open an
+extra file or make an extra remote call. A database source may ask the planner for an estimate (EXPLAIN without
+ANALYZE), never run the query.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Extractor-Statistics.html"><abbr title="\Flow\ETL\Extractor\Statistics">Statistics</abbr></a></span>
             </section>
 
 </article>
@@ -594,7 +651,7 @@ what it sniffs, as CSVExtractor and ArrayExtractor do.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php"><a href="files/src-core-etl-src-flow-etl-extractor-sequenceextractor.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/SequenceExtractor.php">SequenceExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -658,6 +715,7 @@ instead of its own description, and values are cast to fit.</p>
                                             <li class=""><a href="classes/Flow-ETL-Extractor-SequenceExtractor.html#method_inferSchema">inferSchema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Extractor-SequenceExtractor.html#method_isRepeatable">isRepeatable()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Extractor-SequenceExtractor.html#method_schema">schema()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Extractor-SequenceExtractor.html#method_statistics">statistics()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Extractor-Batches.html#method_withBatchSize">withBatchSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Extractor-SequenceExtractor.html#method_withSchema">withSchema()</a></li>
                                     </ul>

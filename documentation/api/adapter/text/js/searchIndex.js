@@ -66,6 +66,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_source"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
             "summary": "",

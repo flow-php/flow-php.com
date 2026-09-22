@@ -116,6 +116,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_source"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "The\u0020size\u0020is\u0020the\u0020listed,\u0020compressed\u0020byte\u0020count.\u0020Rows\u0020are\u0020known\u0020only\u0020when\u0020the\u0020sample\u0020schema\u0020inference\u0020already\nread\u0020every\u0020row\u0020of\u0020every\u0020file\u003A\u0020OpenSpout\u0020discards\u0020the\u0020row\u0020bound\u0020of\u0020a\u0020sheet\u0027s\u0020\u003Cdimension\u003E.",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor\u003A\u003AwithConvertEmptyToNull\u0028\u0029",
             "name": "withConvertEmptyToNull",
             "summary": "",
@@ -556,6 +561,11 @@ Search.appendIndex(
             "summary": "A\u0020bounded\u0020sample\u0020keeps\u0020what\u0020it\u0020parsed\u0020for\u0020take\u0028\u0029\u003B\u0020an\u0020unbounded\u0020one\u0020parses\u0020every\u0020row,\u0020so\u0020it\u0020streams\u0020and\u0020closes\nas\u0020it\u0020goes.\u0020Either\u0020way\u0020SchemaInferrer\u0020stops\u0020advancing\u0020a\u0020sheet\u0020once\u0020its\u0020budget\u0020is\u0020spent.",
             "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSampler.html#method_samples"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSampler\u003A\u003AsampledRows\u0028\u0029",
+            "name": "sampledRows",
+            "summary": "Exact\u0020when\u0020the\u0020samples\u0020read\u0020every\u0020row\u0020of\u0020every\u0020file,\u0020unknown\u0020otherwise.",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSampler.html#method_sampledRows"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSampler\u003A\u003Atake\u0028\u0029",
             "name": "take",
             "summary": "The\u0020sheet\u0020this\u0020sampler\u0020read\u0020\u0024file\u0020through,\u0020handed\u0020over\u0020to\u0020the\u0020caller\u0020to\u0020read\u0020on\u0020and\u0020close\u003B\u0020null\u0020when\u0020the\nsample\u0020never\u0020reached\u0020the\u0020file.",
@@ -590,6 +600,31 @@ Search.appendIndex(
             "name": "rows",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSheet.html#method_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSheetSample",
+            "name": "WorkbookSheetSample",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSheetSample.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSheetSample\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSheetSample.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSheetSample\u003A\u003AgetIterator\u0028\u0029",
+            "name": "getIterator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSheetSample.html#method_getIterator"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSheetSample\u003A\u003Arows\u0028\u0029",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSheetSample.html#method_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\WorkbookSheetSample\u003A\u003AwholeSheet\u0028\u0029",
+            "name": "wholeSheet",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-WorkbookSheetSample.html#method_wholeSheet"
         },                {
             "fqsen": "\\",
             "name": "\\",

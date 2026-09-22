@@ -131,6 +131,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method_source"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "Rows\u0020come\u0020from\u0020the\u0020sample\u0020schema\u0020inference\u0020already\u0020read\u003B\u0020without\u0020one\u0020they\u0020are\u0020unknown,\u0020a\u0020sniff\u0020is\u0020never\u0020run\njust\u0020for\u0020them.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor\u003A\u003AwithBOMRemoval\u0028\u0029",
             "name": "withBOMRemoval",
             "summary": "",
@@ -221,6 +226,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVFileSample.html#method_sniffColumnTypes"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVFileSample\u003A\u003Asampled\u0028\u0029",
+            "name": "sampled",
+            "summary": "What\u0020the\u0020last\u0020sniffColumnTypes\u0028\u0029\u0020read\u003B\u0020null\u0020until\u0020one\u0020ran.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVFileSample.html#method_sampled"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVHeader",
             "name": "CSVHeader",
             "summary": "",
@@ -250,6 +260,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVLineReader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLineReader\u003A\u003AlastRecordBytes\u0028\u0029",
+            "name": "lastRecordBytes",
+            "summary": "The\u0020bytes\u0020the\u0020record\u0020readLines\u0028\u0029\u0020yielded\u0020last\u0020took\u0020in\u0020the\u0020stream,\u0020line\u0020endings\u0020and\u0020BOM\u0020included.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVLineReader.html#method_lastRecordBytes"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVLineReader\u003A\u003AreadLines\u0028\u0029",
             "name": "readLines",
@@ -345,6 +360,16 @@ Search.appendIndex(
             "name": "close",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVOpenSource\u003A\u003AproducedBytes\u0028\u0029",
+            "name": "producedBytes",
+            "summary": "The\u0020bytes,\u0020as\u0020read,\u0020of\u0020the\u0020rows\u0020producedRows\u0028\u0029\u0020counts\u003A\u0020line\u0020endings\u0020included,\u0020the\u0020header\u0020record\u0020excluded.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_producedBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVOpenSource\u003A\u003AproducedRows\u0028\u0029",
+            "name": "producedRows",
+            "summary": "Rows\u0020read\u0020from\u0020the\u0020source\u0020so\u0020far\u0020by\u0020records\u0028\u0029\u0020or\u0020sniff\u0028\u0029\u0020\u002D\u0020it\u0020may\u0020be\u0020more\u0020than\u0020a\u0020consumer\u0020took.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVOpenSource.html#method_producedRows"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVOpenSource\u003A\u003Acolumns\u0028\u0029",
             "name": "columns",
@@ -465,6 +490,86 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "Normalize\u0020CSV\u0020row\u0020data\u0020to\u0020match\u0020the\u0020expected\u0020number\u0020of\u0020headers.",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVRowNormalizer.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSampledFiles",
+            "name": "CSVSampledFiles",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSampledFiles.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSampledFiles\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSampledFiles.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSampledFiles\u003A\u003AestimatedRows\u0028\u0029",
+            "name": "estimatedRows",
+            "summary": "Listed\u0020bytes\u0020over\u0020the\u0020mean\u0020bytes\u0020of\u0020the\u0020sampled\u0020rows\u003B\u0020exact\u0020when\u0020the\u0020samples\u0020read\u0020every\u0020row\u0020of\u0020every\u0020listed\u0020file.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSampledFiles.html#method_estimatedRows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSampledFiles\u003A\u003A\u0024files",
+            "name": "files",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSampledFiles.html#property_files"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSampledFiles\u003A\u003A\u0024rows",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSampledFiles.html#property_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSampledFiles\u003A\u003A\u0024bytes",
+            "name": "bytes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSampledFiles.html#property_bytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSampledFiles\u003A\u003A\u0024whole",
+            "name": "whole",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSampledFiles.html#property_whole"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSampledRows",
+            "name": "CSVSampledRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSampledRows.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSampledRows\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSampledRows.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSampledRows\u003A\u003A\u0024bytes",
+            "name": "bytes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSampledRows.html#property_bytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSampledRows\u003A\u003A\u0024rows",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSampledRows.html#property_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSampledRows\u003A\u003A\u0024wholeFile",
+            "name": "wholeFile",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSampledRows.html#property_wholeFile"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSamples",
+            "name": "CSVSamples",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSamples.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSamples\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSamples.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSamples\u003A\u003AgetIterator\u0028\u0029",
+            "name": "getIterator",
+            "summary": "Keeps\u0020only\u0020the\u0020samples\u0020the\u0020consumer\u0020pulled\u003A\u0020a\u0020listing\u0020the\u0020inference\u0020stopped\u0020short\u0020of\u0020costs\u0020nothing.",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSamples.html#method_getIterator"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSamples\u003A\u003AsampledFiles\u0028\u0029",
+            "name": "sampledFiles",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVSamples.html#method_sampledFiles"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVSourceOpener",
             "name": "CSVSourceOpener",
@@ -606,6 +711,16 @@ Search.appendIndex(
             "summary": "This\u0020instance\u0020is\u0020consumed\u0020afterwards.",
             "url": "classes/Flow-ETL-Adapter-CSV-NativeCSVOpenSource.html#method_columns"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\NativeCSVOpenSource\u003A\u003AproducedBytes\u0028\u0029",
+            "name": "producedBytes",
+            "summary": "The\u0020bytes,\u0020as\u0020read,\u0020of\u0020the\u0020rows\u0020producedRows\u0028\u0029\u0020counts\u003A\u0020line\u0020endings\u0020included,\u0020the\u0020header\u0020record\u0020excluded.",
+            "url": "classes/Flow-ETL-Adapter-CSV-NativeCSVOpenSource.html#method_producedBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\NativeCSVOpenSource\u003A\u003AproducedRows\u0028\u0029",
+            "name": "producedRows",
+            "summary": "Rows\u0020read\u0020from\u0020the\u0020source\u0020so\u0020far\u0020by\u0020records\u0028\u0029\u0020or\u0020sniff\u0028\u0029\u0020\u002D\u0020it\u0020may\u0020be\u0020more\u0020than\u0020a\u0020consumer\u0020took.",
+            "url": "classes/Flow-ETL-Adapter-CSV-NativeCSVOpenSource.html#method_producedRows"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\NativeCSVOpenSource\u003A\u003Arecords\u0028\u0029",
             "name": "records",
             "summary": "This\u0020instance\u0020is\u0020consumed\u0020afterwards.",
@@ -645,6 +760,16 @@ Search.appendIndex(
             "name": "records",
             "summary": "CSVLineReader\u003A\u003AreadLines\u0028\u0029\u0020already\u0020joins\u0020a\u0020quoted\u0020multi\u002Dline\u0020record,\u0020so\u0020never\u0020re\u002Dsplit\u0020or\u0020re\u002Djoin\u0020here.",
             "url": "classes/Flow-ETL-Adapter-CSV-PhpCSVOpenSource.html#method_records"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\PhpCSVOpenSource\u003A\u003AproducedBytes\u0028\u0029",
+            "name": "producedBytes",
+            "summary": "The\u0020bytes,\u0020as\u0020read,\u0020of\u0020the\u0020rows\u0020producedRows\u0028\u0029\u0020counts\u003A\u0020line\u0020endings\u0020included,\u0020the\u0020header\u0020record\u0020excluded.",
+            "url": "classes/Flow-ETL-Adapter-CSV-PhpCSVOpenSource.html#method_producedBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\PhpCSVOpenSource\u003A\u003AproducedRows\u0028\u0029",
+            "name": "producedRows",
+            "summary": "Rows\u0020read\u0020from\u0020the\u0020source\u0020so\u0020far\u0020by\u0020records\u0028\u0029\u0020or\u0020sniff\u0028\u0029\u0020\u002D\u0020it\u0020may\u0020be\u0020more\u0020than\u0020a\u0020consumer\u0020took.",
+            "url": "classes/Flow-ETL-Adapter-CSV-PhpCSVOpenSource.html#method_producedRows"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\PhpCSVOpenSource\u003A\u003Asniff\u0028\u0029",
             "name": "sniff",

@@ -291,6 +291,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_source"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLParserExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLParserExtractor\u003A\u003AwithBufferSize\u0028\u0029",
             "name": "withBufferSize",
             "summary": "",
@@ -340,6 +345,11 @@ Search.appendIndex(
             "name": "source",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html#method_source"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html#method_statistics"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",

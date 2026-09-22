@@ -91,6 +91,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_schema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "The\u0020grid\u0027s\u0020allocated\u0020rows\u0020bound\u0020the\u0020populated\u0020ones\u003B\u0020they\u0020come\u0020from\u0020the\u0020sample\u0020schema\u0020inference\u0020already\nfetched,\u0020and\u0020without\u0020one\u0020nothing\u0020is\u0020declared\u0020\u002D\u0020no\u0020request\u0020is\u0020made\u0020just\u0020for\u0020them.\u0020The\u0020Sheets\u0020API\u0020reports\u0020no\nbyte\u0020size.",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003AwithDropExtraColumns\u0028\u0029",
             "name": "withDropExtraColumns",
             "summary": "",
@@ -226,6 +231,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSample.html#property_wholeSheet"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSample\u003A\u003A\u0024gridRowCount",
+            "name": "gridRowCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSample.html#property_gridRowCount"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSampler",
             "name": "GoogleSheetSampler",
             "summary": "",
@@ -240,6 +250,11 @@ Search.appendIndex(
             "name": "batches",
             "summary": "The\u0020rows\u0020the\u0020sample\u0020already\u0020holds,\u0020batched,\u0020when\u0020its\u0020range\u0020covered\u0020the\u0020whole\u0020grid\u0020\u002D\u0020so\u0020a\u0020read\u0020does\u0020not\u0020fetch\nthe\u0020same\u0020rows\u0020a\u0020second\u0020time.\u0020Null\u0020when\u0020it\u0020did\u0020not,\u0020and\u0020the\u0020caller\u0020must\u0020read\u0020the\u0020sheet\u0020itself.",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSampler.html#method_batches"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSampler\u003A\u003AgridRowCount\u0028\u0029",
+            "name": "gridRowCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSampler.html#method_gridRowCount"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSampler\u003A\u003Aheader\u0028\u0029",
             "name": "header",

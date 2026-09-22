@@ -112,8 +112,6 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
-    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
-
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -123,7 +121,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLineReader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvlinereader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLineReader.php">CSVLineReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -154,6 +152,13 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVLineReader.html#method_lastRecordBytes">lastRecordBytes()</a>
+    <span>
+                                &nbsp;: int<0, max>    </span>
+</dt>
+<dd>The bytes the record readLines() yielded last took in the stream, line endings and BOM included.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-CSV-CSVLineReader.html#method_readLines">readLines()</a>
@@ -189,7 +194,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLineReader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvlinereader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLineReader.php">CSVLineReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -253,6 +258,48 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_lastRecordBytes">
+        lastRecordBytes()
+        <a href="classes/Flow-ETL-Adapter-CSV-CSVLineReader.html#method_lastRecordBytes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLineReader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvlinereader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLineReader.php">CSVLineReader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The bytes the record readLines() yielded last took in the stream, line endings and BOM included.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">lastRecordBytes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int<0, max></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>SourceStream::readLines() cannot tell whether the last line ended with &quot;\n&quot;, so a last record without one is
+counted one byte too long.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int<0, max></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_readLines">
         readLines()
         <a href="classes/Flow-ETL-Adapter-CSV-CSVLineReader.html#method_readLines" class="headerlink"><i class="fas fa-link"></i></a>
@@ -261,7 +308,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLineReader.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-csvlinereader.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/CSVLineReader.php">CSVLineReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -318,6 +365,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVLineReader.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVLineReader.html#method_lastRecordBytes">lastRecordBytes()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-CSVLineReader.html#method_readLines">readLines()</a></li>
                                     </ul>
             </li>
