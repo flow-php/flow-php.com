@@ -5096,6 +5096,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-FileConstants.html#method_fill"
         },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\FileConstants\u003A\u003AfillRows\u0028\u0029",
+            "name": "fillRows",
+            "summary": "fill\u0028\u0029\u0020over\u0020a\u0020batch\u0020the\u0020reader\u0020already\u0020matched\u0020to\u0020the\u0020file\u0027s\u0020body\u0020schema,\u0020adopting\u0020\u0024declared\u0020\u002D\u0020the\u0020schema\nFileColumns\u003A\u003Adeclare\u0028\u0029\u0020built\u0020over\u0020that\u0020body\u0020schema.\u0020A\u0020batch\u0020with\u0020nothing\u0020to\u0020add\u0020is\u0020returned\u0020as\u0020it\u0020is.",
+            "url": "classes/Flow-ETL-Extractor-FileConstants.html#method_fillRows"
+        },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\FileExtractor",
             "name": "FileExtractor",
             "summary": "A\u0020source\u0020that\u0020lists\u0020files\u0020under\u0020a\u0020path.\u0020Its\u0020schema\u0020is\u0020a\u0020property\u0020of\u0020the\u0020source\u0020\u002D\u0020derived\u0020from\u0020the\u0020full\nlisting\u0020\u002D\u0020and\u0020a\u0020pruned\u0020read\u0020does\u0020not\u0020change\u0020it.",
@@ -5348,17 +5353,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\PartitionColumns\u003A\u003Anames\u0028\u0029",
             "name": "names",
-            "summary": "One\u0020read\u0020yields\u0020one\u0020Schema,\u0020so\u0020a\u0020partition\u0020column\u0020that\u0020only\u0020some\u0020paths\u0020under\u0020the\u0020listing\u0020carry\nstill\u0020has\u0020to\u0020be\u0020declared\u0020for\u0020all\u0020of\u0020them\u0020\u002D\u0020and\u0020it\u0020is\u0020nullable\u0020when\u0020some\u0020path\u0020lacks\u0020it,\u0020or\u0020when\nsome\u0020path\u0020carries\u0020the\u0020Hive\u0020null\u0020sentinel,\u0020which\u0020is\u0020a\u0020value\u0020the\u0020column\u0020has\u0020to\u0020be\u0020able\u0020to\u0020hold.",
+            "summary": "",
             "url": "classes/Flow-ETL-Extractor-PartitionColumns.html#method_names"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\PartitionColumns\u003A\u003Adeclare\u0028\u0029",
             "name": "declare",
-            "summary": "A\u0020partition\u0020column\u0020keeps\u0020the\u0020type\u0020its\u0020declared\u0020definition\u0020gives\u0020it,\u0020but\u0020never\u0020its\u0020body\nposition\u003A\u0020it\u0020is\u0020removed\u0020from\u0020wherever\u0020the\u0020file\u0020put\u0020it\u0020and\u0020re\u002Dappended\u0020in\u0020the\u0020partition\u0020block,\nso\u0020a\u0020declared\u0020read\u0020and\u0020an\u0020undeclared\u0020one\u0020emit\u0020the\u0020same\u0020column\u0020order.",
+            "summary": "",
             "url": "classes/Flow-ETL-Extractor-PartitionColumns.html#method_declare"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\PartitionColumns\u003A\u003Aapply\u0028\u0029",
             "name": "apply",
-            "summary": "Inference\u0020sees\u0020one\u0020stream\u0020at\u0020a\u0020time,\u0020so\u0020it\u0020types\u0020a\u0020partition\u0020column\u0020from\u0020that\u0020stream\u0020alone\u0020\u002D\n\u0060string\u0060\u0020where\u0020the\u0020path\u0020carries\u0020it,\u0020\u0060\u003Fnull\u0060\u0020where\u0020it\u0020does\u0020not,\u0020and\u0020the\u0020two\u0020batches\u0020then\u0020refuse\nto\u0020merge.\u0020The\u0020path\u0020knows\u0020better\u0020than\u0020the\u0020values\u0020do,\u0020so\u0020here\u0020the\u0020partition\u0020definition\u0020wins.",
+            "summary": "",
             "url": "classes/Flow-ETL-Extractor-PartitionColumns.html#method_apply"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\PartitionColumns\u003A\u003Afill\u0028\u0029",
@@ -13173,7 +13178,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Optimizer\\Rule\\CountFromStatistics\u003A\u003Aapply\u0028\u0029",
             "name": "apply",
-            "summary": "A\u0020count\u0020straight\u0020over\u0020a\u0020source\u0020that\u0020knows\u0020its\u0020rows\u0020exactly\u0020reads\u0020a\u0020row\u0020holding\u0020that\u0020number\u0020instead.\u0020Any\u0020node\nin\u0020between\u0020runs\u0020code\u0020that\u0020may\u0020fail\u0020or\u0020skip\u0020a\u0020batch,\u0020and\u0020a\u0020pushed\u0020limit\u0020or\u0020partition\u0020filter\u0020changes\u0020the\u0020rows\nthe\u0020statistics\u0020describe,\u0020so\u0020those\u0020plans\u0020are\u0020counted\u0020by\u0020running\u0020them.",
+            "summary": "Rewrite\u0020the\u0020plan,\u0020or\u0020return\u0020it\u0020unchanged.\u0020A\u0020rule\u0020never\u0020mutates\u0020the\u0020plan\u0020it\u0020is\u0020given.",
             "url": "classes/Flow-ETL-Optimizer-Rule-CountFromStatistics.html#method_apply"
         },                {
             "fqsen": "\\Flow\\ETL\\Optimizer\\Rule\\PushFilterIntoSource",
@@ -16395,6 +16400,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Row-AdaptiveRowHydrator.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\AdaptiveRowHydrator\u003A\u003AisNative\u0028\u0029",
+            "name": "isNative",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-AdaptiveRowHydrator.html#method_isNative"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\AdaptiveRowHydrator\u003A\u003Adehydrate\u0028\u0029",
             "name": "dehydrate",
@@ -20936,26 +20946,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-WithEntry.html#property_function"
         },                {
-            "fqsen": "\\Flow\\Floe\\AdaptiveFloeEncoder",
-            "name": "AdaptiveFloeEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-AdaptiveFloeEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\AdaptiveFloeEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-AdaptiveFloeEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\AdaptiveFloeEncoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-AdaptiveFloeEncoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\AdaptiveFloeEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-AdaptiveFloeEncoder.html#method_encode"
-        },                {
             "fqsen": "\\Flow\\Floe\\Codec\\NoopCodec",
             "name": "NoopCodec",
             "summary": "",
@@ -21561,6 +21551,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-Exception-IncompatibleSchemaException.html"
         },                {
+            "fqsen": "\\Flow\\Floe\\FloeEncoder",
+            "name": "FloeEncoder",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeEncoder\u003A\u003AdecodeRows\u0028\u0029",
+            "name": "decodeRows",
+            "summary": "\u0060\u0024hydrator\u002D\u003Ehydrate\u0028\u0024this\u002D\u003Edecode\u0028\u0024bodies\u0029,\u0020\u0024schema\u0029\u0060,\u0020in\u0020one\u0020native\u0020pass\u0020where\u0020the\u0020hydrator\u0020is\u0020native\u0020too.",
+            "url": "classes/Flow-Floe-FloeEncoder.html#method_decodeRows"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeEncoder\u003A\u003AencodeFrames\u0028\u0029",
+            "name": "encodeFrames",
+            "summary": "\u0060Format\u003A\u003ArowFrames\u0028\u0024this\u002D\u003Eencode\u0028\u0024hydrator\u002D\u003Edehydrate\u0028\u0024rows\u0029\u0029\u0029\u0060,\u0020in\u0020one\u0020native\u0020pass\u0020where\u0020the\u0020hydrator\u0020is\u0020native\ntoo\u0020\u002D\u0020complete\u0020ROW\u0020frames\u0020for\u0020a\u0020writer\u0020whose\u0020codec\u0020leaves\u0020bodies\u0020as\u0020they\u0020are.",
+            "url": "classes/Flow-Floe-FloeEncoder.html#method_encodeFrames"
+        },                {
             "fqsen": "\\Flow\\Floe\\FloeEngine",
             "name": "FloeEngine",
             "summary": "",
@@ -22001,6 +22006,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-Format.html#method_frame"
         },                {
+            "fqsen": "\\Flow\\Floe\\Format\u003A\u003ArowFrames\u0028\u0029",
+            "name": "rowFrames",
+            "summary": "",
+            "url": "classes/Flow-Floe-Format.html#method_rowFrames"
+        },                {
             "fqsen": "\\Flow\\Floe\\Format\u003A\u003AmetadataBytes\u0028\u0029",
             "name": "metadataBytes",
             "summary": "",
@@ -22173,7 +22183,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Araw\u0028\u0029",
             "name": "raw",
-            "summary": "Verbatim\u0020byte\u0020passthrough\u0020for\u0020the\u0020mergeSplice\u0020fast\u0020path\u0020\u0028no\u0020re\u002Dencode\u0029.",
+            "summary": "Complete\u0020frames\u0020the\u0020caller\u0020already\u0020built,\u0020appended\u0020as\u0020they\u0020are.",
             "url": "classes/Flow-Floe-FrameWriter.html#method_raw"
         },                {
             "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Aposition\u0028\u0029",
@@ -22210,6 +22220,16 @@ Search.appendIndex(
             "name": "decode",
             "summary": "",
             "url": "classes/Flow-Floe-NativeFloeEncoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder\u003A\u003AdecodeRows\u0028\u0029",
+            "name": "decodeRows",
+            "summary": "\u0060\u0024hydrator\u002D\u003Ehydrate\u0028\u0024this\u002D\u003Edecode\u0028\u0024bodies\u0029,\u0020\u0024schema\u0029\u0060,\u0020in\u0020one\u0020native\u0020pass\u0020where\u0020the\u0020hydrator\u0020is\u0020native\u0020too.",
+            "url": "classes/Flow-Floe-NativeFloeEncoder.html#method_decodeRows"
+        },                {
+            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder\u003A\u003AencodeFrames\u0028\u0029",
+            "name": "encodeFrames",
+            "summary": "\u0060Format\u003A\u003ArowFrames\u0028\u0024this\u002D\u003Eencode\u0028\u0024hydrator\u002D\u003Edehydrate\u0028\u0024rows\u0029\u0029\u0029\u0060,\u0020in\u0020one\u0020native\u0020pass\u0020where\u0020the\u0020hydrator\u0020is\u0020native\ntoo\u0020\u002D\u0020complete\u0020ROW\u0020frames\u0020for\u0020a\u0020writer\u0020whose\u0020codec\u0020leaves\u0020bodies\u0020as\u0020they\u0020are.",
+            "url": "classes/Flow-Floe-NativeFloeEncoder.html#method_encodeFrames"
         },                {
             "fqsen": "\\Flow\\Floe\\NativeFloeEncoder\u003A\u003Aencode\u0028\u0029",
             "name": "encode",
@@ -22265,6 +22285,16 @@ Search.appendIndex(
             "name": "decode",
             "summary": "",
             "url": "classes/Flow-Floe-PhpFloeEncoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\Floe\\PhpFloeEncoder\u003A\u003AdecodeRows\u0028\u0029",
+            "name": "decodeRows",
+            "summary": "\u0060\u0024hydrator\u002D\u003Ehydrate\u0028\u0024this\u002D\u003Edecode\u0028\u0024bodies\u0029,\u0020\u0024schema\u0029\u0060,\u0020in\u0020one\u0020native\u0020pass\u0020where\u0020the\u0020hydrator\u0020is\u0020native\u0020too.",
+            "url": "classes/Flow-Floe-PhpFloeEncoder.html#method_decodeRows"
+        },                {
+            "fqsen": "\\Flow\\Floe\\PhpFloeEncoder\u003A\u003AencodeFrames\u0028\u0029",
+            "name": "encodeFrames",
+            "summary": "\u0060Format\u003A\u003ArowFrames\u0028\u0024this\u002D\u003Eencode\u0028\u0024hydrator\u002D\u003Edehydrate\u0028\u0024rows\u0029\u0029\u0029\u0060,\u0020in\u0020one\u0020native\u0020pass\u0020where\u0020the\u0020hydrator\u0020is\u0020native\ntoo\u0020\u002D\u0020complete\u0020ROW\u0020frames\u0020for\u0020a\u0020writer\u0020whose\u0020codec\u0020leaves\u0020bodies\u0020as\u0020they\u0020are.",
+            "url": "classes/Flow-Floe-PhpFloeEncoder.html#method_encodeFrames"
         },                {
             "fqsen": "\\Flow\\Floe\\PhpFloeEncoder\u003A\u003Aencode\u0028\u0029",
             "name": "encode",
@@ -22916,15 +22946,15 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-window.html"
         },                {
-            "fqsen": "\\Flow\\Floe",
-            "name": "Floe",
-            "summary": "",
-            "url": "namespaces/flow-floe.html"
-        },                {
             "fqsen": "\\Flow\\Floe\\Codec",
             "name": "Codec",
             "summary": "",
             "url": "namespaces/flow-floe-codec.html"
+        },                {
+            "fqsen": "\\Flow\\Floe",
+            "name": "Floe",
+            "summary": "",
+            "url": "namespaces/flow-floe.html"
         },                {
             "fqsen": "\\Flow\\Floe\\Decoding",
             "name": "Decoding",

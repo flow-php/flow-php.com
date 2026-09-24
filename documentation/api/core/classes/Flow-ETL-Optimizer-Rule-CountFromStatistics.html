@@ -184,9 +184,7 @@
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Plan-LogicalPlan.html"><abbr title="\Flow\ETL\Plan\LogicalPlan">LogicalPlan</abbr></a>    </span>
 </dt>
-<dd>A count straight over a source that knows its rows exactly reads a row holding that number instead. Any node
-in between runs code that may fail or skip a batch, and a pushed limit or partition filter changes the rows
-the statistics describe, so those plans are counted by running them.</dd>
+<dd>Rewrite the plan, or return it unchanged. A rule never mutates the plan it is given.</dd>
 
     </dl>
 
@@ -216,13 +214,11 @@ the statistics describe, so those plans are counted by running them.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Optimizer/Rule/CountFromStatistics.php"><a href="files/src-core-etl-src-flow-etl-optimizer-rule-countfromstatistics.html"><abbr title="src/core/etl/src/Flow/ETL/Optimizer/Rule/CountFromStatistics.php">CountFromStatistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">A count straight over a source that knows its rows exactly reads a row holding that number instead. Any node
-in between runs code that may fail or skip a batch, and a pushed limit or partition filter changes the rows
-the statistics describe, so those plans are counted by running them.</p>
+        <p class="phpdocumentor-summary">Rewrite the plan, or return it unchanged. A rule never mutates the plan it is given.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -231,7 +227,10 @@ the statistics describe, so those plans are counted by running them.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>A rule that rewrites nodes goes through LogicalPlan::transformUp(): its one memo rewrites a node every
+consumer shares exactly once, so the Result and the sinks keep sharing it.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">

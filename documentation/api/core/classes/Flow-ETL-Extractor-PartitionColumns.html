@@ -179,18 +179,12 @@
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>    </span>
 </dt>
-<dd>Inference sees one stream at a time, so it types a partition column from that stream alone -
-`string` where the path carries it, `?null` where it does not, and the two batches then refuse
-to merge. The path knows better than the values do, so here the partition definition wins.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Extractor-PartitionColumns.html#method_declare">declare()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>    </span>
 </dt>
-<dd>A partition column keeps the type its declared definition gives it, but never its body
-position: it is removed from wherever the file put it and re-appended in the partition block,
-so a declared read and an undeclared one emit the same column order.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Extractor-PartitionColumns.html#method_fill">fill()</a>
@@ -203,9 +197,6 @@ so a declared read and an undeclared one emit the same column order.</dd>
     <span>
                                 &nbsp;: array&lt;string, bool&gt;    </span>
 </dt>
-<dd>One read yields one Schema, so a partition column that only some paths under the listing carry
-still has to be declared for all of them - and it is nullable when some path lacks it, or when
-some path carries the Hive null sentinel, which is a value the column has to be able to hold.</dd>
 
     </dl>
 
@@ -279,14 +270,11 @@ some path carries the Hive null sentinel, which is a value the column has to be 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PartitionColumns.php"><a href="files/src-core-etl-src-flow-etl-extractor-partitioncolumns.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PartitionColumns.php">PartitionColumns.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Inference sees one stream at a time, so it types a partition column from that stream alone -
-`string` where the path carries it, `?null` where it does not, and the two batches then refuse
-to merge. The path knows better than the values do, so here the partition definition wins.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">apply</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, bool&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$names</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Extractor-PartitionTypes.html"><abbr title="\Flow\ETL\Extractor\PartitionTypes">PartitionTypes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$types</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Extractor-PartitionTypes.html"><abbr title="\Flow\ETL\Extractor\PartitionTypes">PartitionTypes</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span></code>
@@ -344,14 +332,11 @@ to merge. The path knows better than the values do, so here the partition defini
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PartitionColumns.php"><a href="files/src-core-etl-src-flow-etl-extractor-partitioncolumns.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PartitionColumns.php">PartitionColumns.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">A partition column keeps the type its declared definition gives it, but never its body
-position: it is removed from wherever the file put it and re-appended in the partition block,
-so a declared read and an undeclared one emit the same column order.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">declare</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, bool&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$names</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Extractor-PartitionTypes.html"><abbr title="\Flow\ETL\Extractor\PartitionTypes">PartitionTypes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$types</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Extractor-PartitionTypes.html"><abbr title="\Flow\ETL\Extractor\PartitionTypes">PartitionTypes</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span></code>
@@ -409,7 +394,7 @@ so a declared read and an undeclared one emit the same column order.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PartitionColumns.php"><a href="files/src-core-etl-src-flow-etl-extractor-partitioncolumns.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PartitionColumns.php">PartitionColumns.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -473,14 +458,11 @@ so a declared read and an undeclared one emit the same column order.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/PartitionColumns.php"><a href="files/src-core-etl-src-flow-etl-extractor-partitioncolumns.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/PartitionColumns.php">PartitionColumns.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">One read yields one Schema, so a partition column that only some paths under the listing carry
-still has to be declared for all of them - and it is nullable when some path lacks it, or when
-some path carries the Hive null sentinel, which is a value the column has to be able to hold.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">names</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, bool&gt;</span></code>
@@ -488,10 +470,7 @@ some path carries the Hive null sentinel, which is a value the column has to be 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Partition values live in the path, so both the union and its nullability are known without
-opening a single file.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
