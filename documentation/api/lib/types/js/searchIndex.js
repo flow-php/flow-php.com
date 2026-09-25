@@ -536,6 +536,11 @@ Search.appendIndex(
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type-Logical-DateTimeType.html#method_toString"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\DateTimeType\u003A\u003AISO_DATE_TIME",
+            "name": "ISO_DATE_TIME",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-DateTimeType.html#constant_ISO_DATE_TIME"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\DateType",
             "name": "DateType",
             "summary": "",
@@ -565,6 +570,11 @@ Search.appendIndex(
             "name": "toString",
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type-Logical-DateType.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\DateType\u003A\u003AISO_DATE",
+            "name": "ISO_DATE",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-DateType.html#constant_ISO_DATE"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\HTMLElementType",
             "name": "HTMLElementType",
@@ -1683,12 +1693,22 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTemporalParts\u003A\u003Afrom\u0028\u0029",
             "name": "from",
-            "summary": "One\u0020date_parse\u0028\u0029\u0020for\u0020both\u0020temporal\u0020rungs\u003B\u0020running\u0020it\u0020per\u0020rung\u0020cost\u0020\u007E90\u0025\u0020of\u0020narrow\u0028\u0029\u0020on\u0020non\u002Dtemporal\u0020cells.",
+            "summary": "",
             "url": "classes/Flow-Types-Type-Native-String-StringTemporalParts.html#method_from"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTemporalParts\u003A\u003AisoDateTime\u0028\u0029",
+            "name": "isoDateTime",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-String-StringTemporalParts.html#method_isoDateTime"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTemporalParts\u003A\u003AisoDate\u0028\u0029",
+            "name": "isoDate",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Native-String-StringTemporalParts.html#method_isoDate"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTemporalParts\u003A\u003AhasExplicitDay\u0028\u0029",
             "name": "hasExplicitDay",
-            "summary": "date_parse\u0028\u0029\u0020defaults\u0020a\u0020missing\u0020day\u0020to\u00201,\u0020so\u0020\u00272024\u002D01\u0027\u0020is\u0020indistinguishable\u0020from\u0020\u00272024\u002D01\u002D01\u0027\u0020by\u0020its\u0020parts\nalone\u0020and\u0020a\u0020month\u002Dprecision\u0020column\u0020would\u0020be\u0020typed\u0020date\u0020with\u0020a\u0020fabricated\u0020day.\u0020The\u0020day\u0020has\u0020to\u0020be\u0020read\u0020back\nout\u0020of\u0020the\u0020input\u003A\u0020three\u0020numeric\u0020groups,\u0020or\u0020two\u0020plus\u0020a\u0020spelled\u002Dout\u0020month\u0020\u0028\u002702\u002DJun\u002D2022\u0027\u0029.",
+            "summary": "",
             "url": "classes/Flow-Types-Type-Native-String-StringTemporalParts.html#method_hasExplicitDay"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Native\\String\\StringTemporalParts\u003A\u003AisDate\u0028\u0029",
