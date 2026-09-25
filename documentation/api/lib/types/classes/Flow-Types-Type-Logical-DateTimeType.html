@@ -126,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php"><a href="files/src-lib-types-src-flow-types-type-logical-datetimetype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php">DateTimeType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -192,6 +192,12 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Types-Type-Logical-DateTimeType.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_assert">assert()</a>
     <span>
                                 &nbsp;: <abbr title="\Flow\Types\T">T</abbr>    </span>
@@ -206,6 +212,12 @@
 <dd>Takes a value and when necessary casts it to the type of this object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_fromArray">fromArray()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_isValid">isValid()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -215,7 +227,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array&lt;string, mixed&gt;    </span>
+                                &nbsp;: array{type: "datetime", zone: string}    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -224,6 +236,18 @@
                                 &nbsp;: string    </span>
 </dt>
 <dd>Returns a string representation of the type.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_zone">zone()</a>
+    <span>
+                                &nbsp;: <abbr title="\DateTimeZone">DateTimeZone</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_zoneName">zoneName()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
 
     </dl>
 
@@ -246,7 +270,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php"><a href="files/src-lib-types-src-flow-types-type-logical-datetimetype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php">DateTimeType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -282,6 +306,50 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php"><a href="files/src-lib-types-src-flow-types-type-logical-datetimetype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php">DateTimeType.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">86</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><abbr title="\DateTimeZone">DateTimeZone</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$zone</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'UTC'</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$zone</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\DateTimeZone">DateTimeZone</abbr>|string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">'UTC'</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_assert">
         assert()
         <a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_assert" class="headerlink"><i class="fas fa-link"></i></a>
@@ -290,7 +358,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php"><a href="files/src-lib-types-src-flow-types-type-logical-datetimetype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php">DateTimeType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -342,7 +410,7 @@ Unlike isValid(), this method returns the value (narrowed to T) instead of a boo
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php"><a href="files/src-lib-types-src-flow-types-type-logical-datetimetype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php">DateTimeType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -384,6 +452,54 @@ When cast method is used, it will additionally narrow the type of the returned v
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromArray">
+        fromArray()
+        <a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_fromArray" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php"><a href="files/src-lib-types-src-flow-types-type-logical-datetimetype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php">DateTimeType.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">127</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$data</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_isValid">
@@ -394,7 +510,7 @@ When cast method is used, it will additionally narrow the type of the returned v
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php"><a href="files/src-lib-types-src-flow-types-type-logical-datetimetype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php">DateTimeType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -447,14 +563,14 @@ want the call to fail loudly on a mismatch.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php"><a href="files/src-lib-types-src-flow-types-type-logical-datetimetype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php">DateTimeType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">226</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{type: "datetime", zone: string}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -467,7 +583,7 @@ want the call to fail loudly on a mismatch.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array{type: "datetime", zone: string}</span>
             </section>
 
 </article>
@@ -485,7 +601,7 @@ want the call to fail loudly on a mismatch.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php"><a href="files/src-lib-types-src-flow-types-type-logical-datetimetype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php">DateTimeType.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">234</span>
 
     </aside>
 
@@ -505,6 +621,82 @@ want the call to fail loudly on a mismatch.</p>
 </ul>
 </section>
 
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_zone">
+        zone()
+        <a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_zone" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php"><a href="files/src-lib-types-src-flow-types-type-logical-datetimetype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php">DateTimeType.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">239</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">zone</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeZone">DateTimeZone</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeZone">DateTimeZone</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_zoneName">
+        zoneName()
+        <a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_zoneName" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php"><a href="files/src-lib-types-src-flow-types-type-logical-datetimetype.html"><abbr title="src/lib/types/src/Flow/Types/Type/Logical/DateTimeType.php">DateTimeType.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">244</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">zoneName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
     
     
 
@@ -545,11 +737,15 @@ want the call to fail loudly on a mismatch.</p>
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_assert">assert()</a></li>
                                             <li class=""><a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_cast">cast()</a></li>
+                                            <li class=""><a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_isValid">isValid()</a></li>
                                             <li class=""><a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_normalize">normalize()</a></li>
                                             <li class=""><a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_toString">toString()</a></li>
+                                            <li class=""><a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_zone">zone()</a></li>
+                                            <li class=""><a href="classes/Flow-Types-Type-Logical-DateTimeType.html#method_zoneName">zoneName()</a></li>
                                     </ul>
             </li>
                     </ul>

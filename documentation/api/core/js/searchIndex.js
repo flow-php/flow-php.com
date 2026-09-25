@@ -8851,6 +8851,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Literal.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Literal\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Literal.html#method_value"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCondition",
             "name": "MatchCondition",
             "summary": "",
@@ -18756,6 +18761,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-XMLElementDefinition.html#method_type"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ZoneAlignment",
+            "name": "ZoneAlignment",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-ZoneAlignment.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ZoneAlignment\u003A\u003Aalign\u0028\u0029",
+            "name": "align",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-ZoneAlignment.html#method_align"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ZoneAlignment\u003A\u003AcarriesDateTime\u0028\u0029",
+            "name": "carriesDateTime",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-ZoneAlignment.html#method_carriesDateTime"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ZoneAlignment\u003A\u003Acolumns\u0028\u0029",
+            "name": "columns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-ZoneAlignment.html#method_columns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ZoneAlignment\u003A\u003AinZone\u0028\u0029",
+            "name": "inZone",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-ZoneAlignment.html#method_inZone"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition",
             "name": "Definition",
             "summary": "",
@@ -19485,6 +19515,11 @@ Search.appendIndex(
             "name": "sort",
             "summary": "",
             "url": "classes/Flow-ETL-Schema.html#method_sort"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AzonedDefinitions\u0028\u0029",
+            "name": "zonedDefinitions",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema.html#method_zonedDefinitions"
         },                {
             "fqsen": "\\Flow\\ETL\\SchemaValidator",
             "name": "SchemaValidator",

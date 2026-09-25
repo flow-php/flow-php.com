@@ -274,7 +274,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Schema-Definition-DateTimeDefinition.html#method_type">type()</a>
     <span>
-                                &nbsp;: <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, <abbr title="\Flow\ETL\Schema\T">T</abbr>&gt;    </span>
+                                &nbsp;: <abbr title="\Flow\Types\Type\Logical\DateTimeType">DateTimeType</abbr>&lt;string|int, <abbr title="\DateTimeInterface">DateTimeInterface</abbr>&gt;    </span>
 </dt>
 
     </dl>
@@ -305,14 +305,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nullable</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Types\Type\Logical\DateTimeType">DateTimeType</abbr>&lt;string|int, <abbr title="\DateTimeInterface">DateTimeInterface</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Types\Type\Logical\DateTimeType">DateTimeType</abbr>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nullable</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -324,6 +324,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$ref</span>
                 : <span class="phpdocumentor-argument-list__argument__type">string|<a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a></span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$type</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Types\Type\Logical\DateTimeType">DateTimeType</abbr>&lt;string|int, <abbr title="\DateTimeInterface">DateTimeInterface</abbr>&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Types\Type\Logical\DateTimeType">DateTimeType</abbr>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -363,7 +370,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -422,7 +429,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -460,7 +467,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -512,7 +519,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -550,7 +557,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -598,7 +605,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -646,7 +653,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -694,7 +701,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -742,7 +749,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">133</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -780,7 +787,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -818,7 +825,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -866,7 +873,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -918,14 +925,14 @@ When given type is not nullable and current type is nullable, it is not compatib
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php"><a href="files/src-core-etl-src-flow-etl-schema-definition-datetimedefinition.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Definition/DateTimeDefinition.php">DateTimeDefinition.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">type</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, <abbr title="\Flow\ETL\Schema\T">T</abbr>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">type</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type\Logical\DateTimeType">DateTimeType</abbr>&lt;string|int, <abbr title="\DateTimeInterface">DateTimeInterface</abbr>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -938,7 +945,7 @@ When given type is not nullable and current type is nullable, it is not compatib
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, <abbr title="\Flow\ETL\Schema\T">T</abbr>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type\Logical\DateTimeType">DateTimeType</abbr>&lt;string|int, <abbr title="\DateTimeInterface">DateTimeInterface</abbr>&gt;</span>
             </section>
 
 </article>

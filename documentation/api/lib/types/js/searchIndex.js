@@ -511,6 +511,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-Logical-DateTimeType.html"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\DateTimeType\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-DateTimeType.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\DateTimeType\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-DateTimeType.html#method_fromArray"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\DateTimeType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
             "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
@@ -535,6 +545,16 @@ Search.appendIndex(
             "name": "toString",
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020type.",
             "url": "classes/Flow-Types-Type-Logical-DateTimeType.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\DateTimeType\u003A\u003Azone\u0028\u0029",
+            "name": "zone",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-DateTimeType.html#method_zone"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\Logical\\DateTimeType\u003A\u003AzoneName\u0028\u0029",
+            "name": "zoneName",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-Logical-DateTimeType.html#method_zoneName"
         },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\DateTimeType\u003A\u003AISO_DATE_TIME",
             "name": "ISO_DATE_TIME",
