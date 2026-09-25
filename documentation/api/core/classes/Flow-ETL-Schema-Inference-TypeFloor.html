@@ -143,7 +143,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Inference/TypeFloor.php"><a href="files/src-core-etl-src-flow-etl-schema-inference-typefloor.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Inference/TypeFloor.php">TypeFloor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -180,7 +180,6 @@
     <span>
                                 &nbsp;: <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>project() only rewrites arrays to json, so the container arms below must recurse again to reach the leaves.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Schema-Inference-TypeFloor.html#method_optional">optional()</a>
@@ -222,14 +221,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Inference/TypeFloor.php"><a href="files/src-core-etl-src-flow-etl-schema-inference-typefloor.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Inference/TypeFloor.php">TypeFloor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Inference-InferredTypes.html"><abbr title="\Flow\ETL\Schema\Inference\InferredTypes">InferredTypes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$types</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Definition-TypeProjection.html"><abbr title="\Flow\ETL\Schema\Definition\TypeProjection">TypeProjection</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$projection</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Schema-Definition-TypeProjection.html"><abbr title="\Flow\ETL\Schema\Definition\TypeProjection">TypeProjection</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Inference-InferredTypes.html"><abbr title="\Flow\ETL\Schema\Inference\InferredTypes">InferredTypes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$types</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -241,13 +240,6 @@
                 <span class="phpdocumentor-argument-list__argument__name">$types</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema-Inference-InferredTypes.html"><abbr title="\Flow\ETL\Schema\Inference\InferredTypes">InferredTypes</abbr></a></span>
                             </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$projection</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema-Definition-TypeProjection.html"><abbr title="\Flow\ETL\Schema\Definition\TypeProjection">TypeProjection</abbr></a></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-ETL-Schema-Definition-TypeProjection.html"><abbr title="\Flow\ETL\Schema\Definition\TypeProjection">TypeProjection</abbr></a>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -273,12 +265,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Inference/TypeFloor.php"><a href="files/src-core-etl-src-flow-etl-schema-inference-typefloor.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Inference/TypeFloor.php">TypeFloor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">project() only rewrites arrays to json, so the container arms below must recurse again to reach the leaves.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">floor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span></code>
@@ -322,7 +313,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Inference/TypeFloor.php"><a href="files/src-core-etl-src-flow-etl-schema-inference-typefloor.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Inference/TypeFloor.php">TypeFloor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -370,7 +361,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Schema/Inference/TypeFloor.php"><a href="files/src-core-etl-src-flow-etl-schema-inference-typefloor.html"><abbr title="src/core/etl/src/Flow/ETL/Schema/Inference/TypeFloor.php">TypeFloor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 

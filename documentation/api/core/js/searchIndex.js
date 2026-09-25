@@ -3401,11 +3401,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_structure_schema"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\union_schema\u0028\u0029",
-            "name": "union_schema",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_union_schema"
-        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\uuid_schema\u0028\u0029",
             "name": "uuid_schema",
             "summary": "",
@@ -4260,6 +4255,11 @@ Search.appendIndex(
             "name": "UnsupportedUnionTypeException",
             "summary": "",
             "url": "classes/Flow-ETL-Exception-UnsupportedUnionTypeException.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\UnsupportedUnionTypeException\u003A\u003AforElement\u0028\u0029",
+            "name": "forElement",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-UnsupportedUnionTypeException.html#method_forElement"
         },                {
             "fqsen": "\\Flow\\ETL\\Exception\\UnsupportedUnionTypeException\u003A\u003AforColumn\u0028\u0029",
             "name": "forColumn",
@@ -16461,16 +16461,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Encoder.html#method_decode"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\EntryTypeResolver",
-            "name": "EntryTypeResolver",
-            "summary": "Resolves\u0020the\u0020concrete\u0020member\u0020Type\u0020of\u0020a\u0020union\u0020column\u0020for\u0020a\u0020given\u0020value.",
-            "url": "classes/Flow-ETL-Row-EntryTypeResolver.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\EntryTypeResolver\u003A\u003AfromUnion\u0028\u0029",
-            "name": "fromUnion",
-            "summary": "A\u0020union\u0020is\u0020resolved\u0020to\u0020the\u0020first\u0020member\u0020accepting\u0020the\u0020value,\u0020falling\u0020back\u0020to\u0020the\u0020first\nmember\u0020the\u0020value\u0020can\u0020be\u0020cast\u0020to,\u0020mirroring\u0020UnionType\u003A\u003Acast\u0028\u0029.",
-            "url": "classes/Flow-ETL-Row-EntryTypeResolver.html#method_fromUnion"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Formatter\\ASCIISchemaFormatter",
             "name": "ASCIISchemaFormatter",
             "summary": "",
@@ -18506,6 +18496,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-TypeProjection.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeProjection\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Definition-TypeProjection.html#method___construct"
+        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeProjection\u003A\u003Alist\u0028\u0029",
             "name": "list",
             "summary": "",
@@ -18525,116 +18520,6 @@ Search.appendIndex(
             "name": "structure",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-TypeProjection.html#method_structure"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TypeProjection\u003A\u003Aunion\u0028\u0029",
-            "name": "union",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-TypeProjection.html#method_union"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition",
-            "name": "UnionDefinition",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003AaddMetadata\u0028\u0029",
-            "name": "addMetadata",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_addMetadata"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_entry"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003AisCompatible\u0028\u0029",
-            "name": "isCompatible",
-            "summary": "Checks\u0020if\u0020another\u0020type\u0020is\u0020compatible\u0020with\u0020this\u0020type.\u0020Nullability\u0020is\u0020validated\u0020from\u0020a\u0020schema\u0020evolution\u0020perspective.",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_isCompatible"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003AisNullable\u0028\u0029",
-            "name": "isNullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_isNullable"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003AisSame\u0028\u0029",
-            "name": "isSame",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_isSame"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003AmakeNullable\u0028\u0029",
-            "name": "makeNullable",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_makeNullable"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003Amatches\u0028\u0029",
-            "name": "matches",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_matches"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003AmemberFor\u0028\u0029",
-            "name": "memberFor",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_memberFor"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003Amerge\u0028\u0029",
-            "name": "merge",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_merge"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003Ametadata\u0028\u0029",
-            "name": "metadata",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_metadata"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_normalize"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003Arename\u0028\u0029",
-            "name": "rename",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_rename"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003AsetMetadata\u0028\u0029",
-            "name": "setMetadata",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_setMetadata"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionDefinition\u003A\u003Atype\u0028\u0029",
-            "name": "type",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionDefinition.html#method_type"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionMembers",
-            "name": "UnionMembers",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionMembers.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionMembers\u003A\u003Acontains\u0028\u0029",
-            "name": "contains",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionMembers.html#method_contains"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionMembers\u003A\u003Adefinitions\u0028\u0029",
-            "name": "definitions",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionMembers.html#method_definitions"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionTypeNormalizer",
-            "name": "UnionTypeNormalizer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionTypeNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UnionTypeNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UnionTypeNormalizer.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UuidDefinition",
             "name": "UuidDefinition",
@@ -19173,7 +19058,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Inference\\TypeFloor\u003A\u003Afloor\u0028\u0029",
             "name": "floor",
-            "summary": "project\u0028\u0029\u0020only\u0020rewrites\u0020arrays\u0020to\u0020json,\u0020so\u0020the\u0020container\u0020arms\u0020below\u0020must\u0020recurse\u0020again\u0020to\u0020reach\u0020the\u0020leaves.",
+            "summary": "",
             "url": "classes/Flow-ETL-Schema-Inference-TypeFloor.html#method_floor"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Inference\\TypeFloor\u003A\u003Aoptional\u0028\u0029",
