@@ -116,9 +116,19 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-parquet-binary.html#function_decode_f64"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\decimal_unscaled\u0028\u0029",
+            "name": "decimal_unscaled",
+            "summary": "Rounds\u0020the\u0020shortest\u0020round\u002Dtrip\u0020representation\u0020of\u0020the\u0020float\u0020half\u0020away\u0020from\u0020zero\u0020\u002D\u0020the\u0020same\u0020digits\u0020arrow\u002Dext\u0020writes.",
+            "url": "namespaces/flow-parquet-binary.html#function_decimal_unscaled"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Binary\\decimal_from_unscaled\u0028\u0029",
+            "name": "decimal_from_unscaled",
+            "summary": "",
+            "url": "namespaces/flow-parquet-binary.html#function_decimal_from_unscaled"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Binary\\encode_decimal\u0028\u0029",
             "name": "encode_decimal",
-            "summary": "",
+            "summary": "Decimals\u0020are\u0020big\u002Dendian\u0020two\u0027s\u0020complement.\u0020A\u0020null\u0020byte\u0020length\u0020encodes\u0020the\u0020minimal\u0020number\u0020of\u0020bytes\u0020\u0028BYTE_ARRAY\u0029.",
             "url": "namespaces/flow-parquet-binary.html#function_encode_decimal"
         },                {
             "fqsen": "\\Flow\\Parquet\\Binary\\decode_decimal\u0028\u0029",
@@ -1136,6 +1146,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-parquet.html#function_empty_generator"
         },                {
+            "fqsen": "\\Flow\\Parquet\\floor_div\u0028\u0029",
+            "name": "floor_div",
+            "summary": "",
+            "url": "namespaces/flow-parquet.html#function_floor_div"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Option",
             "name": "Option",
             "summary": "",
@@ -1210,11 +1225,6 @@ Search.appendIndex(
             "name": "PAGE_SIZE_CHECK_INTERVAL",
             "summary": "ColumnChunksBuilder\u0020is\u0020going\u0020to\u0020use\u0020this\u0020value\u0020to\u0020determine\u0020how\u0020often\u0020it\u0020should\u0020check\u0020if\u0020ColumnChunk\u0020Page\u0020size\u0020is\u0020not\u0020exceeded.",
             "url": "classes/Flow-Parquet-Option.html#enumcase_PAGE_SIZE_CHECK_INTERVAL"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Option\u003A\u003AROUND_NANOSECONDS",
-            "name": "ROUND_NANOSECONDS",
-            "summary": "Since\u0020PHP\u0020does\u0020not\u0020support\u0020nanoseconds\u0020precision\u0020for\u0020DateTime\u0020objects,\u0020when\u0020this\u0020options\u0020is\u0020set\u0020to\u0020true,\nreader\u0020will\u0020round\u0020nanoseconds\u0020to\u0020microseconds.",
-            "url": "classes/Flow-Parquet-Option.html#enumcase_ROUND_NANOSECONDS"
         },                {
             "fqsen": "\\Flow\\Parquet\\Option\u003A\u003AROW_GROUP_SIZE_BYTES",
             "name": "ROW_GROUP_SIZE_BYTES",
@@ -1376,60 +1386,70 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Codec.html#method_decompress"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\DecimalConverter",
+            "name": "DecimalConverter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-DecimalConverter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\DecimalConverter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-DecimalConverter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\DecimalConverter\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-DecimalConverter.html#method_forColumn"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\DecimalConverter\u003A\u003AfromParquetType\u0028\u0029",
+            "name": "fromParquetType",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-DecimalConverter.html#method_fromParquetType"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\DecimalConverter\u003A\u003AtoParquetType\u0028\u0029",
+            "name": "toParquetType",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-DecimalConverter.html#method_toParquetType"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int32DateConverter",
             "name": "Int32DateConverter",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int32DateConverter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int32DateConverter\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int32DateConverter.html#method_forColumn"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int32DateConverter\u003A\u003AfromParquetType\u0028\u0029",
             "name": "fromParquetType",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int32DateConverter.html#method_fromParquetType"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int32DateConverter\u003A\u003AisFor\u0028\u0029",
-            "name": "isFor",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int32DateConverter.html#method_isFor"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int32DateConverter\u003A\u003AtoParquetType\u0028\u0029",
             "name": "toParquetType",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int32DateConverter.html#method_toParquetType"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int32DateTimeConverter",
-            "name": "Int32DateTimeConverter",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int32DateTimeConverter.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int32DateTimeConverter\u003A\u003AfromParquetType\u0028\u0029",
-            "name": "fromParquetType",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int32DateTimeConverter.html#method_fromParquetType"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int32DateTimeConverter\u003A\u003AisFor\u0028\u0029",
-            "name": "isFor",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int32DateTimeConverter.html#method_isFor"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int32DateTimeConverter\u003A\u003AtoParquetType\u0028\u0029",
-            "name": "toParquetType",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int32DateTimeConverter.html#method_toParquetType"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int64DateTimeConverter",
             "name": "Int64DateTimeConverter",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int64DateTimeConverter.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int64DateTimeConverter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int64DateTimeConverter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int64DateTimeConverter\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int64DateTimeConverter.html#method_forColumn"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int64DateTimeConverter\u003A\u003AfromParquetType\u0028\u0029",
             "name": "fromParquetType",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int64DateTimeConverter.html#method_fromParquetType"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int64DateTimeConverter\u003A\u003AisFor\u0028\u0029",
-            "name": "isFor",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int64DateTimeConverter.html#method_isFor"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int64DateTimeConverter\u003A\u003AtoParquetType\u0028\u0029",
             "name": "toParquetType",
@@ -1441,15 +1461,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int96DateTimeConverter.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int96DateTimeConverter\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int96DateTimeConverter.html#method_forColumn"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int96DateTimeConverter\u003A\u003AfromParquetType\u0028\u0029",
             "name": "fromParquetType",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int96DateTimeConverter.html#method_fromParquetType"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int96DateTimeConverter\u003A\u003AisFor\u0028\u0029",
-            "name": "isFor",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int96DateTimeConverter.html#method_isFor"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int96DateTimeConverter\u003A\u003AtoParquetType\u0028\u0029",
             "name": "toParquetType",
@@ -1461,15 +1481,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-JsonConverter.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\JsonConverter\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-JsonConverter.html#method_forColumn"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\JsonConverter\u003A\u003AfromParquetType\u0028\u0029",
             "name": "fromParquetType",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-JsonConverter.html#method_fromParquetType"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\JsonConverter\u003A\u003AisFor\u0028\u0029",
-            "name": "isFor",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-JsonConverter.html#method_isFor"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\JsonConverter\u003A\u003AtoParquetType\u0028\u0029",
             "name": "toParquetType",
@@ -1481,15 +1501,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\TimeConverter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\TimeConverter\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_forColumn"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\TimeConverter\u003A\u003AfromParquetType\u0028\u0029",
             "name": "fromParquetType",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_fromParquetType"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\TimeConverter\u003A\u003AisFor\u0028\u0029",
-            "name": "isFor",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_isFor"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\TimeConverter\u003A\u003AtoParquetType\u0028\u0029",
             "name": "toParquetType",
@@ -1501,15 +1526,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UuidConverter.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UuidConverter\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UuidConverter.html#method_forColumn"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UuidConverter\u003A\u003AfromParquetType\u0028\u0029",
             "name": "fromParquetType",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UuidConverter.html#method_fromParquetType"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UuidConverter\u003A\u003AisFor\u0028\u0029",
-            "name": "isFor",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UuidConverter.html#method_isFor"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UuidConverter\u003A\u003AtoParquetType\u0028\u0029",
             "name": "toParquetType",
@@ -1521,15 +1546,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter.html#method_forColumn"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\u003A\u003AfromParquetType\u0028\u0029",
             "name": "fromParquetType",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter.html#method_fromParquetType"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\u003A\u003AisFor\u0028\u0029",
-            "name": "isFor",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter.html#method_isFor"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\u003A\u003AtoParquetType\u0028\u0029",
             "name": "toParquetType",
@@ -2791,6 +2816,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Schema-LogicalType-Time.html#method_nanos"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\LogicalType\\Time\u003A\u003Aunit\u0028\u0029",
+            "name": "unit",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Schema-LogicalType-Time.html#method_unit"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\LogicalType\\Timestamp",
             "name": "Timestamp",
             "summary": "",
@@ -2826,6 +2856,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Schema-LogicalType-Timestamp.html#method_nanos"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\LogicalType\\Timestamp\u003A\u003Aunit\u0028\u0029",
+            "name": "unit",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Schema-LogicalType-Timestamp.html#method_unit"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\LogicalType",
             "name": "LogicalType",
             "summary": "",
@@ -2855,6 +2890,11 @@ Search.appendIndex(
             "name": "enum",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Schema-LogicalType.html#method_enum"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\LogicalType\u003A\u003AfromConvertedType\u0028\u0029",
+            "name": "fromConvertedType",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Schema-LogicalType.html#method_fromConvertedType"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\LogicalType\u003A\u003AfromThrift\u0028\u0029",
             "name": "fromThrift",
@@ -3491,10 +3531,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Schema-TimeUnit.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\TimeUnit\u003A\u003AfromThrift\u0028\u0029",
+            "name": "fromThrift",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Schema-TimeUnit.html#method_fromThrift"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\TimeUnit\u003A\u003AMILLISECONDS",
+            "name": "MILLISECONDS",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Schema-TimeUnit.html#enumcase_MILLISECONDS"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\TimeUnit\u003A\u003AMICROSECONDS",
             "name": "MICROSECONDS",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Schema-TimeUnit.html#enumcase_MICROSECONDS"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\TimeUnit\u003A\u003ANANOSECONDS",
+            "name": "NANOSECONDS",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Schema-TimeUnit.html#enumcase_NANOSECONDS"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema",
             "name": "Schema",

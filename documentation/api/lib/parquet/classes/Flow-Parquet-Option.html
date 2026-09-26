@@ -236,14 +236,6 @@ before sending them to the extension&#039;s writeBatch() in a single call.</dd>
 <dd>ColumnChunksBuilder is going to use this value to determine how often it should check if ColumnChunk Page size is not exceeded.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
-    <a class="" href="classes/Flow-Parquet-Option.html#enumcase_ROUND_NANOSECONDS">ROUND_NANOSECONDS</a>
-    <span>
-                                    </span>
-</dt>
-<dd>Since PHP does not support nanoseconds precision for DateTime objects, when this options is set to true,
-reader will round nanoseconds to microseconds.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Parquet-Option.html#enumcase_ROW_GROUP_SIZE_BYTES">ROW_GROUP_SIZE_BYTES</a>
     <span>
                                     </span>
@@ -746,36 +738,6 @@ If the value is set to 100, ColumnChunksBuilder is going to check the size only 
             -enum-case
         "
 >
-    <h4 class="phpdocumentor-element__name" id="enumcase_ROUND_NANOSECONDS">
-        ROUND_NANOSECONDS
-        <a href="classes/Flow-Parquet-Option.html#enumcase_ROUND_NANOSECONDS" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">159</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Since PHP does not support nanoseconds precision for DateTime objects, when this options is set to true,
-reader will round nanoseconds to microseconds.</p>
-
-    
-        <section class="phpdocumentor-description"><p>Default value is false</p>
-</section>
-
-    
-    
-
-        
-    </article>
-                    <article
-        class="
-            phpdocumentor-element
-            -enum-case
-        "
->
     <h4 class="phpdocumentor-element__name" id="enumcase_ROW_GROUP_SIZE_BYTES">
         ROW_GROUP_SIZE_BYTES
         <a href="classes/Flow-Parquet-Option.html#enumcase_ROW_GROUP_SIZE_BYTES" class="headerlink"><i class="fas fa-link"></i></a>
@@ -784,7 +746,7 @@ reader will round nanoseconds to microseconds.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -816,7 +778,7 @@ https://parquet.apache.org/docs/file-format/configurations/#row-group-size</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -847,7 +809,7 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -876,7 +838,7 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">195</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -910,7 +872,7 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">203</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -961,7 +923,6 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_PAGE_MAXIMUM_ROWS_COUNT">PAGE_MAXIMUM_ROWS_COUNT</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_PAGE_SIZE_BYTES">PAGE_SIZE_BYTES</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_PAGE_SIZE_CHECK_INTERVAL">PAGE_SIZE_CHECK_INTERVAL</a></li>
-                                                    <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_ROUND_NANOSECONDS">ROUND_NANOSECONDS</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_ROW_GROUP_SIZE_BYTES">ROW_GROUP_SIZE_BYTES</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_ROW_GROUP_SIZE_CHECK_INTERVAL">ROW_GROUP_SIZE_CHECK_INTERVAL</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_VALIDATE_DATA">VALIDATE_DATA</a></li>

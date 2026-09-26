@@ -116,6 +116,8 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
+
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -125,7 +127,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/Converter/TimeConverter.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-data-converter-timeconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/Converter/TimeConverter.php">TimeConverter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -159,15 +161,21 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_fromParquetType">fromParquetType()</a>
+    <a class="" href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method___construct">__construct()</a>
     <span>
-                                &nbsp;: <abbr title="\DateInterval">DateInterval</abbr>    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_isFor">isFor()</a>
+    <a class="" href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_forColumn">forColumn()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: self|null    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_fromParquetType">fromParquetType()</a>
+    <span>
+                                &nbsp;: <abbr title="\DateInterval">DateInterval</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -196,6 +204,105 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/Converter/TimeConverter.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-data-converter-timeconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/Converter/TimeConverter.php">TimeConverter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">24</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-TimeUnit.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\TimeUnit">TimeUnit</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unit</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$unit</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-TimeUnit.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\TimeUnit">TimeUnit</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_forColumn">
+        forColumn()
+        <a href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_forColumn" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/Converter/TimeConverter.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-data-converter-timeconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/Converter/TimeConverter.php">TimeConverter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">forColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$column</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$options</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_fromParquetType">
         fromParquetType()
         <a href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_fromParquetType" class="headerlink"><i class="fas fa-link"></i></a>
@@ -204,7 +311,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/Converter/TimeConverter.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-data-converter-timeconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/Converter/TimeConverter.php">TimeConverter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -244,61 +351,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_isFor">
-        isFor()
-        <a href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_isFor" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/Converter/TimeConverter.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-data-converter-timeconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/Converter/TimeConverter.php">TimeConverter.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">32</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isFor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$column</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$options</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_toParquetType">
         toParquetType()
         <a href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_toParquetType" class="headerlink"><i class="fas fa-link"></i></a>
@@ -307,7 +359,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/Converter/TimeConverter.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile-data-converter-timeconverter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile/Data/Converter/TimeConverter.php">TimeConverter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -363,8 +415,9 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_forColumn">forColumn()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_fromParquetType">fromParquetType()</a></li>
-                                            <li class=""><a href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_isFor">isFor()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_toParquetType">toParquetType()</a></li>
                                     </ul>
             </li>
