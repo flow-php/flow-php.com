@@ -1106,11 +1106,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-Logical-StructureType.html#method_fromArray"
         },                {
-            "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003AallowsExtra\u0028\u0029",
-            "name": "allowsExtra",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Logical-StructureType.html#method_allowsExtra"
-        },                {
             "fqsen": "\\Flow\\Types\\Type\\Logical\\StructureType\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
             "summary": "Checks\u0020that\u0020the\u0020value\u0020is\u0020of\u0020the\u0020type\u0020of\u0020this\u0020object,\u0020throwing\u0020when\u0020it\u0020is\u0020not.",
