@@ -136,7 +136,8 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Processor-RepartitionProcessor.html"><abbr title="\Flow\ETL\Processor\RepartitionProcessor">RepartitionProcessor</abbr></a></dt><dd>Regroups buckets spilled by BucketingProcessor so every row sharing a key arrives in one batch.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Processor-RepartitionProcessor.html"><abbr title="\Flow\ETL\Processor\RepartitionProcessor">RepartitionProcessor</abbr></a></dt><dd>One batch per key. While the process stays under the memory limit the input is held and grouped in one pass; past
+it, the input is partitioned into buckets and each bucket grouped on its own.</dd>    </dl>
 
 
 

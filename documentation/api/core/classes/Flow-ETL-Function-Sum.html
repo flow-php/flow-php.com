@@ -146,7 +146,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -219,6 +219,13 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-Sum.html#method_merge">merge()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Folds $other&#039;s partial state into this one; $other aggregated rows that come after this one&#039;s.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Sum.html#method_outputName">outputName()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -235,7 +242,7 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-Sum.html#method_references">references()</a>
     <span>
-                                &nbsp;: null|array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;    </span>
+                                &nbsp;: array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -249,7 +256,7 @@ reuse a value across rows that share frame bounds.</dd>            <dt class="ph
     <span>
                                 &nbsp;: <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>float, not the argument type - RunningSum::add() promotes to float on int overflow, so integer
+<dd>float, not the argument type - RunningSum promotes to float on int overflow, so integer
 would be a declaration the accumulator can violate on ordinary data</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -306,14 +313,14 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$window</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Window.html"><abbr title="\Flow\ETL\Window">Window</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$window</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -330,7 +337,7 @@ per-element narrowing. Never mutates $this.</dd>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$exact</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|bool</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -364,7 +371,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -412,14 +419,14 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">aggregate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">aggregate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$indices</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -428,11 +435,20 @@ per-element narrowing. Never mutates $this.</dd>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$row</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$indices</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>the rows of $rows that belong to this aggregate, ascending</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$context</span>
@@ -463,7 +479,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -507,7 +523,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -576,6 +592,58 @@ per-element narrowing. Never mutates $this.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_merge">
+        merge()
+        <a href="classes/Flow-ETL-Function-Sum.html#method_merge" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Folds $other&#039;s partial state into this one; $other aggregated rows that come after this one&#039;s.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">merge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-AggregatingFunction.html"><abbr title="\Flow\ETL\Function\AggregatingFunction">AggregatingFunction</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$other</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$other</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Function-AggregatingFunction.html"><abbr title="\Flow\ETL\Function\AggregatingFunction">AggregatingFunction</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$context</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_outputName">
         outputName()
         <a href="classes/Flow-ETL-Function-Sum.html#method_outputName" class="headerlink"><i class="fas fa-link"></i></a>
@@ -584,7 +652,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -623,7 +691,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -672,14 +740,14 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">references</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">references</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -692,12 +760,7 @@ per-element narrowing. Never mutates $this.</dd>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">null|array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>null when $exact is a ScalarFunction - its entries cannot be
-statically enumerated, so spill column pruning must be disabled</p>
-</section>
-
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;</span>
             </section>
 
 </article>
@@ -753,11 +816,11 @@ statically enumerated, so spill column pruning must be disabled</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">float, not the argument type - RunningSum::add() promotes to float on int overflow, so integer
+        <p class="phpdocumentor-summary">float, not the argument type - RunningSum promotes to float on int overflow, so integer
 would be a declaration the accumulator can violate on ordinary data</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -793,7 +856,7 @@ would be a declaration the accumulator can violate on ordinary data</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -831,7 +894,7 @@ would be a declaration the accumulator can violate on ordinary data</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -869,7 +932,7 @@ would be a declaration the accumulator can violate on ordinary data</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -907,7 +970,7 @@ would be a declaration the accumulator can violate on ordinary data</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/Sum.php"><a href="files/src-core-etl-src-flow-etl-function-sum.html"><abbr title="src/core/etl/src/Flow/ETL/Function/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -971,6 +1034,7 @@ per-element narrowing. Never mutates $this.</p>
                                             <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_apply">apply()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_children">children()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ResolvesFromChildren.html#method_deterministic">deterministic()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_merge">merge()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_outputName">outputName()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_over">over()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-Sum.html#method_references">references()</a></li>

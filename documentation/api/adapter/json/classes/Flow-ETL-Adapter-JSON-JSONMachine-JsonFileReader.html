@@ -127,7 +127,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonfilereader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php">JsonFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -170,7 +170,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonFileReader.html#method_batches">batches()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, array&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;&gt;    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, array&lt;int, array&lt;string|int, mixed&gt;&gt;&gt;    </span>
 </dt>
 <dd>Abandoning the generator closes the source.</dd>
 
@@ -198,7 +198,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonFileReader.html#method_sample">sample()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;    </span>
 </dt>
 <dd>The pointer wrap and the empty-record skip live here and nowhere else, so the sample and the read see the
 same rows.</dd>
@@ -238,14 +238,14 @@ same rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonfilereader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php">JsonFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonFormat.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonFormat">JsonFormat</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pointer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pointerToEntryName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, <abbr title="\Flow\ETL\Extractor\SourceFile">SourceFile</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sources</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonFormat.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonFormat">JsonFormat</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pointer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pointerToEntryName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, <abbr title="\Flow\ETL\Extractor\File\SourceFile">SourceFile</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sources</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -283,7 +283,7 @@ same rows.</dd>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$sources</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <abbr title="\Flow\ETL\Extractor\SourceFile">SourceFile</abbr>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <abbr title="\Flow\ETL\Extractor\File\SourceFile">SourceFile</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>the extractor's materialised listing, already filtered, so filesToSniff
@@ -314,7 +314,7 @@ it, which a Generator could not serve twice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonfilereader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php">JsonFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -322,7 +322,7 @@ it, which a Generator could not serve twice</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">batches</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Extractor\SourceFile">SourceFile</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">batches</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Extractor\File\SourceFile">SourceFile</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;int, array&lt;string|int, mixed&gt;&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -332,7 +332,7 @@ it, which a Generator could not serve twice</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$source</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Extractor\SourceFile">SourceFile</abbr></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Extractor\File\SourceFile">SourceFile</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -352,7 +352,7 @@ it, which a Generator could not serve twice</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;int, array&lt;string|int, mixed&gt;&gt;&gt;</span>
             </section>
 
 </article>
@@ -370,7 +370,7 @@ it, which a Generator could not serve twice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonfilereader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php">JsonFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -426,7 +426,7 @@ it, which a Generator could not serve twice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonfilereader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php">JsonFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -439,8 +439,8 @@ it, which a Generator could not serve twice</p>
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>A member is <code class="prettyprint">mixed</code>, not an array: a document whose elements are scalars decodes to scalars, which reach
-count() in sample() and raise a TypeError - bug b79.</p>
+        <section class="phpdocumentor-description"><p>A member is <code class="prettyprint">mixed</code>, not an array: a document whose elements are scalars decodes to scalars, which sample()
+refuses.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -478,7 +478,7 @@ count() in sample() and raise a TypeError - bug b79.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonfilereader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php">JsonFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
@@ -534,7 +534,7 @@ count() in sample() and raise a TypeError - bug b79.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonfilereader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php">JsonFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">164</span>
 
     </aside>
 
@@ -543,7 +543,7 @@ same rows.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sample</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Extractor\SourceFile">SourceFile</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonReadBytes.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonReadBytes">JsonReadBytes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$read</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonReadBytes.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonReadBytes">JsonReadBytes</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">sample</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Extractor\File\SourceFile">SourceFile</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonReadBytes.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonReadBytes">JsonReadBytes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$read</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonReadBytes.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonReadBytes">JsonReadBytes</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -553,7 +553,7 @@ same rows.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$source</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Extractor\SourceFile">SourceFile</abbr></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Extractor\File\SourceFile">SourceFile</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -573,7 +573,7 @@ same rows.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;</span>
             </section>
 
 </article>
@@ -591,7 +591,7 @@ same rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonfilereader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonFileReader.php">JsonFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">195</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
     </aside>
 

@@ -51,10 +51,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelEncoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_decode"
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelEncoder\u003A\u003Acolumn\u0028\u0029",
+            "name": "column",
+            "summary": "A\u0020column\u0027s\u0020cells\u0020read\u0020once\u0020from\u0020its\u0020physicals\u003A\u0020scalars\u0020as\u0020they\u0020are,\u0020a\u0020datetime\u0020or\u0020date\u0020as\u0020a\u0020DateTimeInterface\n\u0028the\u0020reader\u0020types\u0020a\u0020cell\u0020from\u0020its\u0020style,\u0020a\u0020formatted\u0020string\u0020is\u0020any\u0020other\u0020text\u0029,\u0020a\u0020time\u0020in\u0020the\u0020time\u0020format,\na\u0020backed\u0020enum\u0020as\u0020its\u0020backing\u0020value,\u0020every\u0020other\u0020type\u0020as\u0020TextValues\u0020renders\u0020it.",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_column"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelEncoder\u003A\u003Aencode\u0028\u0029",
             "name": "encode",
@@ -65,11 +65,6 @@ Search.appendIndex(
             "name": "encodeHeader",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_encodeHeader"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelEncoder\u003A\u003Aheaders\u0028\u0029",
-            "name": "headers",
-            "summary": "The\u0020names\u0020decode\u0028\u0029\u0020resolved\u0020from\u0020the\u0020first\u0020row\u0020it\u0020saw\u003B\u0020null\u0020before\u0020the\u0020first\u0020decode\u0028\u0029.",
-            "url": "classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_headers"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelExtractor",
             "name": "ExcelExtractor",
@@ -150,6 +145,26 @@ Search.appendIndex(
             "name": "withSheetName",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_withSheetName"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelFileBatches",
+            "name": "ExcelFileBatches",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelFileBatches.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelFileBatches\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelFileBatches.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelFileBatches\u003A\u003Abatches\u0028\u0029",
+            "name": "batches",
+            "summary": "The\u0020columns\u0020of\u0020every\u0020sheet\u0020must\u0020be\u0020the\u0020ones\u0020the\u0020inferred\u0020schema\u0020was\u0020derived\u0020from\u0020\u002D\u0020checked\u0020before\u0020the\u0020sheet\u0027s\nfirst\u0020batch\u0020is\u0020built.",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelFileBatches.html#method_batches"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelFileBatches\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "Closes\u0020the\u0020sample\u0020sheets\u0020this\u0020read\u0020did\u0020not\u0020take.",
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelFileBatches.html#method_close"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelFormatDetector",
             "name": "ExcelFormatDetector",
@@ -411,10 +426,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-Sheet-OpenSheet.html#property_cells"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\OpenSheet\u003A\u003A\u0024encoder",
-            "name": "encoder",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\OpenSheet\u003A\u003A\u0024decoder",
+            "name": "decoder",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Excel-Sheet-OpenSheet.html#property_encoder"
+            "url": "classes/Flow-ETL-Adapter-Excel-Sheet-OpenSheet.html#property_decoder"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\Sheet\\SheetCells",
             "name": "SheetCells",

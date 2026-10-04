@@ -366,10 +366,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlEncoder.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlEncoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlEncoder.html#method_decode"
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlEncoder\u003A\u003Acolumn\u0028\u0029",
+            "name": "column",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlEncoder.html#method_column"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlEncoder\u003A\u003Acolumns\u0028\u0029",
+            "name": "columns",
+            "summary": "Every\u0020column\u0027s\u0020values,\u0020in\u0020schema\u0020order,\u0020as\u0020\u0060column\u0028\u0029\u0060\u0020gives\u0020them.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlEncoder.html#method_columns"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\PostgreSqlEncoder\u003A\u003Aencode\u0028\u0029",
             "name": "encode",
@@ -658,7 +668,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\QueryBuilder\\InsertQueryBuilder\u003A\u003Abuild\u0028\u0029",
             "name": "build",
-            "summary": "Every\u0020value\u0020already\u0020in\u0020PostgreSQL\u0027s\u0020text\u0020form.\u0020A\u0020column\u0027s\u0020converter\u0020is\u0020resolved\u0020once,\u0020on\u0020its\u0020first\u0020non\u002Dnull\nvalue\u0020\u002D\u0020so\u0020a\u0020column\u0020of\u0020an\u0020unmapped\u0020type\u0020holding\u0020only\u0020nulls\u0020passes.",
+            "summary": "Every\u0020value\u0020already\u0020in\u0020PostgreSQL\u0027s\u0020text\u0020form.\u0020A\u0020column\u0027s\u0020converter\u0020is\u0020resolved\u0020once,\u0020on\u0020its\u0020first\u0020non\u002Dnull\nvalue\u0020\u002D\u0020so\u0020a\u0020column\u0020of\u0020an\u0020unmapped\u0020type\u0020holding\u0020only\u0020nulls\u0020passes.\u0020Parameters\u0020are\u0020bound\u0020row\u0020by\u0020row,\u0020read\nstraight\u0020from\u0020the\u0020columns.",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-QueryBuilder-InsertQueryBuilder.html#method_build"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\QueryBuilder\\UpdateQueryBuilder",

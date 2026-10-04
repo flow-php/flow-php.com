@@ -139,7 +139,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -163,6 +163,12 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Floe-Format.html#constant_FRAME_BATCH">FRAME_BATCH</a>
+    <span>
+        &nbsp;: int&nbsp;= 0x5                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-Floe-Format.html#constant_FRAME_FOOTER">FRAME_FOOTER</a>
     <span>
         &nbsp;: int&nbsp;= 0x6                            </span>
@@ -172,12 +178,6 @@
     <a class="" href="classes/Flow-Floe-Format.html#constant_FRAME_HEADER_LENGTH">FRAME_HEADER_LENGTH</a>
     <span>
         &nbsp;: int&nbsp;= 5                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Floe-Format.html#constant_FRAME_ROW">FRAME_ROW</a>
-    <span>
-        &nbsp;: int&nbsp;= 0x2                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
@@ -196,66 +196,6 @@
     <a class="" href="classes/Flow-Floe-Format.html#constant_TRAILER_LENGTH">TRAILER_LENGTH</a>
     <span>
         &nbsp;: int&nbsp;= 8                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_ABSENT">VALUE_ABSENT</a>
-    <span>
-        &nbsp;: int&nbsp;= 0x3                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_ABSENT_BYTE">VALUE_ABSENT_BYTE</a>
-    <span>
-        &nbsp;: string&nbsp;= &quot;\x03&quot;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_NULL">VALUE_NULL</a>
-    <span>
-        &nbsp;: int&nbsp;= 0x0                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_BYTE">VALUE_NULL_BYTE</a>
-    <span>
-        &nbsp;: string&nbsp;= &quot;\x00&quot;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_WITH_META">VALUE_NULL_WITH_META</a>
-    <span>
-        &nbsp;: int&nbsp;= 0x2                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_WITH_META_BYTE">VALUE_NULL_WITH_META_BYTE</a>
-    <span>
-        &nbsp;: string&nbsp;= &quot;\x02&quot;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT">VALUE_PRESENT</a>
-    <span>
-        &nbsp;: int&nbsp;= 0x1                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_BYTE">VALUE_PRESENT_BYTE</a>
-    <span>
-        &nbsp;: string&nbsp;= &quot;\x01&quot;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_WITH_META">VALUE_PRESENT_WITH_META</a>
-    <span>
-        &nbsp;: int&nbsp;= 0x4                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_WITH_META_BYTE">VALUE_PRESENT_WITH_META_BYTE</a>
-    <span>
-        &nbsp;: string&nbsp;= &quot;\x04&quot;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
@@ -287,27 +227,9 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Floe-Format.html#method_metadataBytes">metadataBytes()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-Format.html#method_parseTrailer">parseTrailer()</a>
     <span>
                                 &nbsp;: int    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Floe-Format.html#method_readMetadata">readMetadata()</a>
-    <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Floe-Format.html#method_rowFrames">rowFrames()</a>
-    <span>
-                                &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -340,6 +262,36 @@
 
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_FRAME_BATCH">
+        FRAME_BATCH
+        <a href="classes/Flow-Floe-Format.html#constant_FRAME_BATCH" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">FRAME_BATCH</span>
+    = <span class="phpdocumentor-signature__default-value">0x5</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_FRAME_FOOTER">
         FRAME_FOOTER
         <a href="classes/Flow-Floe-Format.html#constant_FRAME_FOOTER" class="headerlink"><i class="fas fa-link"></i></a>
@@ -349,7 +301,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -379,7 +331,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -400,36 +352,6 @@
         
     </article>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_FRAME_ROW">
-        FRAME_ROW
-        <a href="classes/Flow-Floe-Format.html#constant_FRAME_ROW" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">36</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">FRAME_ROW</span>
-    = <span class="phpdocumentor-signature__default-value">0x2</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_HEADER_LENGTH">
         HEADER_LENGTH
         <a href="classes/Flow-Floe-Format.html#constant_HEADER_LENGTH" class="headerlink"><i class="fas fa-link"></i></a>
@@ -439,7 +361,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -469,7 +391,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -499,7 +421,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -520,306 +442,6 @@
         
     </article>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_VALUE_ABSENT">
-        VALUE_ABSENT
-        <a href="classes/Flow-Floe-Format.html#constant_VALUE_ABSENT" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">46</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">VALUE_ABSENT</span>
-    = <span class="phpdocumentor-signature__default-value">0x3</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_VALUE_ABSENT_BYTE">
-        VALUE_ABSENT_BYTE
-        <a href="classes/Flow-Floe-Format.html#constant_VALUE_ABSENT_BYTE" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">56</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">VALUE_ABSENT_BYTE</span>
-    = <span class="phpdocumentor-signature__default-value">&quot;\x03&quot;</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_VALUE_NULL">
-        VALUE_NULL
-        <a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">VALUE_NULL</span>
-    = <span class="phpdocumentor-signature__default-value">0x0</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_VALUE_NULL_BYTE">
-        VALUE_NULL_BYTE
-        <a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_BYTE" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">50</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">VALUE_NULL_BYTE</span>
-    = <span class="phpdocumentor-signature__default-value">&quot;\x00&quot;</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_VALUE_NULL_WITH_META">
-        VALUE_NULL_WITH_META
-        <a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_WITH_META" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">44</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">VALUE_NULL_WITH_META</span>
-    = <span class="phpdocumentor-signature__default-value">0x2</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_VALUE_NULL_WITH_META_BYTE">
-        VALUE_NULL_WITH_META_BYTE
-        <a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_WITH_META_BYTE" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">54</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">VALUE_NULL_WITH_META_BYTE</span>
-    = <span class="phpdocumentor-signature__default-value">&quot;\x02&quot;</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_VALUE_PRESENT">
-        VALUE_PRESENT
-        <a href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">42</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">VALUE_PRESENT</span>
-    = <span class="phpdocumentor-signature__default-value">0x1</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_VALUE_PRESENT_BYTE">
-        VALUE_PRESENT_BYTE
-        <a href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_BYTE" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">52</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">VALUE_PRESENT_BYTE</span>
-    = <span class="phpdocumentor-signature__default-value">&quot;\x01&quot;</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_VALUE_PRESENT_WITH_META">
-        VALUE_PRESENT_WITH_META
-        <a href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_WITH_META" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">48</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">VALUE_PRESENT_WITH_META</span>
-    = <span class="phpdocumentor-signature__default-value">0x4</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_VALUE_PRESENT_WITH_META_BYTE">
-        VALUE_PRESENT_WITH_META_BYTE
-        <a href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_WITH_META_BYTE" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">58</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">VALUE_PRESENT_WITH_META_BYTE</span>
-    = <span class="phpdocumentor-signature__default-value">&quot;\x04&quot;</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_VERSION">
         VERSION
         <a href="classes/Flow-Floe-Format.html#constant_VERSION" class="headerlink"><i class="fas fa-link"></i></a>
@@ -829,7 +451,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -873,7 +495,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -928,7 +550,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -968,68 +590,6 @@
             -public
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_metadataBytes">
-        metadataBytes()
-        <a href="classes/Flow-Floe-Format.html#method_metadataBytes" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">82</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">metadataBytes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$metadata</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="method_metadataBytes_tags">
-        Tags
-        <a href="classes/Flow-Floe-Format.html#method_metadataBytes_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">throws</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-Floe-Exception-FloeException.html"><abbr title="\Flow\Floe\Exception\FloeException">FloeException</abbr></a></span>
-                                                                                    
-                                    </dd>
-                        </dl>
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
     <h4 class="phpdocumentor-element__name" id="method_parseTrailer">
         parseTrailer()
         <a href="classes/Flow-Floe-Format.html#method_parseTrailer" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1038,7 +598,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -1096,123 +656,6 @@
             -public
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_readMetadata">
-        readMetadata()
-        <a href="classes/Flow-Floe-Format.html#method_readMetadata" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">96</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">readMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$position</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$body</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$position</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="method_readMetadata_tags">
-        Tags
-        <a href="classes/Flow-Floe-Format.html#method_readMetadata_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">throws</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-Floe-Exception-FloeException.html"><abbr title="\Flow\Floe\Exception\FloeException">FloeException</abbr></a></span>
-                                                                                    
-                                    </dd>
-                        </dl>
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Schema-Metadata.html"><abbr title="\Flow\ETL\Schema\Metadata">Metadata</abbr></a></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_rowFrames">
-        rowFrames()
-        <a href="classes/Flow-Floe-Format.html#method_rowFrames" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">68</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">rowFrames</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bodies</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$bodies</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, string&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
     <h4 class="phpdocumentor-element__name" id="method_trailer">
         trailer()
         <a href="classes/Flow-Floe-Format.html#method_trailer" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1221,7 +664,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -1269,7 +712,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -1327,7 +770,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/Format.php"><a href="files/src-core-etl-src-flow-floe-format.html"><abbr title="src/core/etl/src/Flow/Floe/Format.php">Format.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -1400,22 +843,12 @@
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_FRAME_BATCH">FRAME_BATCH</a></li>
                                                     <li class=""><a href="classes/Flow-Floe-Format.html#constant_FRAME_FOOTER">FRAME_FOOTER</a></li>
                                                     <li class=""><a href="classes/Flow-Floe-Format.html#constant_FRAME_HEADER_LENGTH">FRAME_HEADER_LENGTH</a></li>
-                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_FRAME_ROW">FRAME_ROW</a></li>
                                                     <li class=""><a href="classes/Flow-Floe-Format.html#constant_HEADER_LENGTH">HEADER_LENGTH</a></li>
                                                     <li class=""><a href="classes/Flow-Floe-Format.html#constant_MAGIC">MAGIC</a></li>
                                                     <li class=""><a href="classes/Flow-Floe-Format.html#constant_TRAILER_LENGTH">TRAILER_LENGTH</a></li>
-                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_ABSENT">VALUE_ABSENT</a></li>
-                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_ABSENT_BYTE">VALUE_ABSENT_BYTE</a></li>
-                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL">VALUE_NULL</a></li>
-                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_BYTE">VALUE_NULL_BYTE</a></li>
-                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_WITH_META">VALUE_NULL_WITH_META</a></li>
-                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_NULL_WITH_META_BYTE">VALUE_NULL_WITH_META_BYTE</a></li>
-                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT">VALUE_PRESENT</a></li>
-                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_BYTE">VALUE_PRESENT_BYTE</a></li>
-                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_WITH_META">VALUE_PRESENT_WITH_META</a></li>
-                                                    <li class=""><a href="classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_WITH_META_BYTE">VALUE_PRESENT_WITH_META_BYTE</a></li>
                                                     <li class=""><a href="classes/Flow-Floe-Format.html#constant_VERSION">VERSION</a></li>
                                             </ul>
                 </li>
@@ -1426,10 +859,7 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Floe-Format.html#method_frame">frame()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-Format.html#method_header">header()</a></li>
-                                            <li class=""><a href="classes/Flow-Floe-Format.html#method_metadataBytes">metadataBytes()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-Format.html#method_parseTrailer">parseTrailer()</a></li>
-                                            <li class=""><a href="classes/Flow-Floe-Format.html#method_readMetadata">readMetadata()</a></li>
-                                            <li class=""><a href="classes/Flow-Floe-Format.html#method_rowFrames">rowFrames()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-Format.html#method_trailer">trailer()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-Format.html#method_validateCodecId">validateCodecId()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-Format.html#method_validateHeader">validateHeader()</a></li>

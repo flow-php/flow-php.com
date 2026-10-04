@@ -139,7 +139,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -210,7 +210,8 @@
 </dt>
 <dd>Hot path: frames are walked in-buffer. offset skips whole leading sections
 using the footer, then the remaining rows inside the start section; limit
-stops the read after that many rows.</dd>
+stops the read after that many rows. Batches are frame-sized: batchSize is
+an upper bound, a batch never spans two BATCH frames.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-FloeStreamReader.html#method_schema">schema()</a>
@@ -260,14 +261,14 @@ stops the read after that many rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-Codec.html"><abbr title="\Flow\Floe\Codec">Codec</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$codec</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$chunkSize</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Row-Hydrator.html"><abbr title="\Flow\ETL\Row\Hydrator">Hydrator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hydrator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-FloeEngine.html"><abbr title="\Flow\Floe\FloeEngine">FloeEngine</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$engine</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Floe-FloeEngine.html#enumcase_adaptive"><abbr title="\Flow\Floe\FloeEngine::adaptive">FloeEngine::adaptive</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Floe-Codec.html"><abbr title="\Flow\Floe\Codec">Codec</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$codec</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$chunkSize</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Column-Backend.html"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -297,18 +298,9 @@ stops the read after that many rows.</dd>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$hydrator</span>
-                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-Row-Hydrator.html"><abbr title="\Flow\ETL\Row\Hydrator">Hydrator</abbr></a></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>null uses the adaptive hydrator</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$engine</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Floe-FloeEngine.html"><abbr title="\Flow\Floe\FloeEngine">FloeEngine</abbr></a></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-Floe-FloeEngine.html#enumcase_adaptive"><abbr title="\Flow\Floe\FloeEngine::adaptive">FloeEngine::adaptive</abbr></a></span>            </dt>
+                <span class="phpdocumentor-argument-list__argument__name">$backend</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Column-Backend.html"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr></a></span>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -348,7 +340,7 @@ stops the read after that many rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">289</span>
+    <span class="phpdocumentor-element-found-in__line">277</span>
 
     </aside>
 
@@ -401,7 +393,7 @@ stops the read after that many rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -435,7 +427,7 @@ stops the read after that many rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -487,7 +479,7 @@ stops the read after that many rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -557,7 +549,7 @@ stops the read after that many rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -609,13 +601,14 @@ stops the read after that many rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Hot path: frames are walked in-buffer. offset skips whole leading sections
 using the footer, then the remaining rows inside the start section; limit
-stops the read after that many rows.</p>
+stops the read after that many rows. Batches are frame-sized: batchSize is
+an upper bound, a batch never spans two BATCH frames.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -692,7 +685,7 @@ stops the read after that many rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">279</span>
+    <span class="phpdocumentor-element-found-in__line">267</span>
 
     </aside>
 
@@ -744,7 +737,7 @@ stops the read after that many rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
@@ -815,7 +808,7 @@ stops the read after that many rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">297</span>
+    <span class="phpdocumentor-element-found-in__line">285</span>
 
     </aside>
 

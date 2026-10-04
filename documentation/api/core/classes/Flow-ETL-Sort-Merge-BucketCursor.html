@@ -141,7 +141,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php"><a href="files/src-core-etl-src-flow-etl-sort-merge-bucketcursor.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php">BucketCursor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -174,15 +174,27 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_current">current()</a>
+    <a class="" href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_advance">advance()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>    </span>
+                                &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_next">next()</a>
+    <a class="" href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_batch">batch()</a>
     <span>
-                                &nbsp;: void    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_index">index()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_keys">keys()</a>
+    <span>
+                                &nbsp;: array&lt;int, <a href="classes/Flow-ETL-Sort-SortKey.html"><abbr title="\Flow\ETL\Sort\SortKey">SortKey</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -225,14 +237,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php"><a href="files/src-core-etl-src-flow-etl-sort-merge-bucketcursor.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php">BucketCursor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batches</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batches</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Sort-RowOrder.html"><abbr title="\Flow\ETL\Sort\RowOrder">RowOrder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Column-Backend.html"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -243,6 +255,20 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$batches</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$order</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Sort-RowOrder.html"><abbr title="\Flow\ETL\Sort\RowOrder">RowOrder</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$backend</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Column-Backend.html"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -261,22 +287,66 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_current">
-        current()
-        <a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_current" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_advance">
+        advance()
+        <a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_advance" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php"><a href="files/src-core-etl-src-flow-etl-sort-merge-bucketcursor.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php">BucketCursor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">current</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">advance</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$index</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$index</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_batch">
+        batch()
+        <a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_batch" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php"><a href="files/src-core-etl-src-flow-etl-sort-merge-bucketcursor.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php">BucketCursor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">batch</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -289,7 +359,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
             </section>
 
 </article>
@@ -299,22 +369,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_next">
-        next()
-        <a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_next" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_index">
+        index()
+        <a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_index" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php"><a href="files/src-core-etl-src-flow-etl-sort-merge-bucketcursor.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php">BucketCursor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">next</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">index</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -325,7 +395,49 @@
 
         
     
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_keys">
+        keys()
+        <a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_keys" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php"><a href="files/src-core-etl-src-flow-etl-sort-merge-bucketcursor.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php">BucketCursor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+
+    </aside>
+
     
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">keys</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Sort-SortKey.html"><abbr title="\Flow\ETL\Sort\SortKey">SortKey</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Sort-SortKey.html"><abbr title="\Flow\ETL\Sort\SortKey">SortKey</abbr></a>&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -341,7 +453,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php"><a href="files/src-core-etl-src-flow-etl-sort-merge-bucketcursor.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php">BucketCursor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -379,7 +491,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php"><a href="files/src-core-etl-src-flow-etl-sort-merge-bucketcursor.html"><abbr title="src/core/etl/src/Flow/ETL/Sort/Merge/BucketCursor.php">BucketCursor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -426,8 +538,10 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_current">current()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_next">next()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_advance">advance()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_batch">batch()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_index">index()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_keys">keys()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_schema">schema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_valid">valid()</a></li>
                                     </ul>

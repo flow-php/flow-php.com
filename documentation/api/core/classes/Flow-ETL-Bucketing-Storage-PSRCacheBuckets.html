@@ -146,7 +146,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/Storage/PSRCacheBuckets.php"><a href="files/src-core-etl-src-flow-etl-bucketing-storage-psrcachebuckets.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/Storage/PSRCacheBuckets.php">PSRCacheBuckets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -239,14 +239,14 @@ assume any particular batch size.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/Storage/PSRCacheBuckets.php"><a href="files/src-core-etl-src-flow-etl-bucketing-storage-psrcachebuckets.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/Storage/PSRCacheBuckets.php">PSRCacheBuckets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cache</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'flow:buckets'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\DateInterval">DateInterval</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ttl</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Serializer-Serializer.html"><abbr title="\Flow\Serializer\Serializer">Serializer</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$serializer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Floe-FloeSerializer.html"><abbr title="\Flow\Floe\FloeSerializer">FloeSerializer</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cache</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Serializer-Serializer.html"><abbr title="\Flow\Serializer\Serializer">Serializer</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$serializer</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'flow:buckets'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\DateInterval">DateInterval</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ttl</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -262,6 +262,13 @@ assume any particular batch size.</dd>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$serializer</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Serializer-Serializer.html"><abbr title="\Flow\Serializer\Serializer">Serializer</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$prefix</span>
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">'flow:buckets'</span>            </dt>
@@ -272,13 +279,6 @@ assume any particular batch size.</dd>
                 <span class="phpdocumentor-argument-list__argument__name">$ttl</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\DateInterval">DateInterval</abbr>|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$serializer</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Serializer-Serializer.html"><abbr title="\Flow\Serializer\Serializer">Serializer</abbr></a></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Floe-FloeSerializer.html"><abbr title="\Flow\Floe\FloeSerializer">FloeSerializer</abbr></a>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -304,7 +304,7 @@ assume any particular batch size.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/Storage/PSRCacheBuckets.php"><a href="files/src-core-etl-src-flow-etl-bucketing-storage-psrcachebuckets.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/Storage/PSRCacheBuckets.php">PSRCacheBuckets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -355,7 +355,7 @@ assume any particular batch size.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/Storage/PSRCacheBuckets.php"><a href="files/src-core-etl-src-flow-etl-bucketing-storage-psrcachebuckets.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/Storage/PSRCacheBuckets.php">PSRCacheBuckets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -405,7 +405,7 @@ assume any particular batch size.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/Storage/PSRCacheBuckets.php"><a href="files/src-core-etl-src-flow-etl-bucketing-storage-psrcachebuckets.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/Storage/PSRCacheBuckets.php">PSRCacheBuckets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -449,7 +449,7 @@ assume any particular batch size.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/Storage/PSRCacheBuckets.php"><a href="files/src-core-etl-src-flow-etl-bucketing-storage-psrcachebuckets.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/Storage/PSRCacheBuckets.php">PSRCacheBuckets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 

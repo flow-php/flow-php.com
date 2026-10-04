@@ -146,7 +146,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/OnEach.php"><a href="files/src-core-etl-src-flow-etl-function-oneach.html"><abbr title="src/core/etl/src/Flow/ETL/Function/OnEach.php">OnEach.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -296,6 +296,13 @@
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Function-BinaryLength.html"><abbr title="\Flow\ETL\Function\BinaryLength">BinaryLength</abbr></a>    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-OnEach.html#method_bound">bound()</a>
+    <span>
+                                &nbsp;: <abbr title="array{\Flow\ETL\Schema, \Flow\ETL\Function\ScalarFunction, \Flow\Types\Type<mixed>}">Type<mixed>}</abbr>    </span>
+</dt>
+<dd>The element schema, the body resolved against it and the result type - derived once per node, not per batch.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_call">call()</a>
@@ -464,8 +471,9 @@ indexes a different input - the outer resolver must not touch it.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-OnEach.html#method_eval">eval()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Column-Column.html"><abbr title="\Flow\ETL\Column\Column">Column</abbr></a>    </span>
 </dt>
+<dd>One column of $rows-&gt;count() values, of returns()&#039;s type (nullable), same row order.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_exists">exists()</a>
@@ -949,6 +957,13 @@ indexes a different input - the outer resolver must not touch it.</dd>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-OnEach.html#method_typeOver">typeOver()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>The produced type for an operand of $arrayType - one read of the operand&#039;s returns() serves eval() and bind.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_unicodeLength">unicodeLength()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Function-UnicodeLength.html"><abbr title="\Flow\ETL\Function\UnicodeLength">UnicodeLength</abbr></a>    </span>
@@ -1015,7 +1030,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/OnEach.php"><a href="files/src-core-etl-src-flow-etl-function-oneach.html"><abbr title="src/core/etl/src/Flow/ETL/Function/OnEach.php">OnEach.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -1950,6 +1965,45 @@ per-element narrowing. Never mutates $this.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_bound">
+        bound()
+        <a href="classes/Flow-ETL-Function-OnEach.html#method_bound" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/OnEach.php"><a href="files/src-core-etl-src-flow-etl-function-oneach.html"><abbr title="src/core/etl/src/Flow/ETL/Function/OnEach.php">OnEach.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">78</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The element schema, the body resolved against it and the result type - derived once per node, not per batch.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">bound</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="array{\Flow\ETL\Schema, \Flow\ETL\Function\ScalarFunction, \Flow\Types\Type<mixed>}">Type<mixed>}</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="array{\Flow\ETL\Schema, \Flow\ETL\Function\ScalarFunction, \Flow\Types\Type<mixed>}">Type<mixed>}</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_call">
         call()
         <a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_call" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2113,7 +2167,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/OnEach.php"><a href="files/src-core-etl-src-flow-etl-function-oneach.html"><abbr title="src/core/etl/src/Flow/ETL/Function/OnEach.php">OnEach.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -3188,14 +3242,15 @@ indexes a different input - the outer resolver must not touch it.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/OnEach.php"><a href="files/src-core-etl-src-flow-etl-function-oneach.html"><abbr title="src/core/etl/src/Flow/ETL/Function/OnEach.php">OnEach.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">One column of $rows-&gt;count() values, of returns()&#039;s type (nullable), same row order.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">eval</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">eval</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Column-Column.html"><abbr title="\Flow\ETL\Column\Column">Column</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3204,8 +3259,8 @@ indexes a different input - the outer resolver must not touch it.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$row</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -3223,7 +3278,11 @@ indexes a different input - the outer resolver must not touch it.</p>
 
         
     
-    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Column-Column.html"><abbr title="\Flow\ETL\Column\Column">Column</abbr></a></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4474,7 +4533,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">minus</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Minus.html"><abbr title="\Flow\ETL\Function\Minus">Minus</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">minus</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Minus.html"><abbr title="\Flow\ETL\Function\Minus">Minus</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -4486,6 +4545,13 @@ duplicateRow(), aggregate(), over() and onEach().</p>
                 <span class="phpdocumentor-argument-list__argument__name">$ref</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exact</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -4618,7 +4684,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">multiply</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Multiply.html"><abbr title="\Flow\ETL\Function\Multiply">Multiply</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">multiply</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Multiply.html"><abbr title="\Flow\ETL\Function\Multiply">Multiply</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -4630,6 +4696,13 @@ duplicateRow(), aggregate(), over() and onEach().</p>
                 <span class="phpdocumentor-argument-list__argument__name">$value</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exact</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -4979,7 +5052,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">plus</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Plus.html"><abbr title="\Flow\ETL\Function\Plus">Plus</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">plus</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Plus.html"><abbr title="\Flow\ETL\Function\Plus">Plus</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -4991,6 +5064,13 @@ duplicateRow(), aggregate(), over() and onEach().</p>
                 <span class="phpdocumentor-argument-list__argument__name">$ref</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exact</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -5027,7 +5107,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">power</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Power.html"><abbr title="\Flow\ETL\Function\Power">Power</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">power</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Power.html"><abbr title="\Flow\ETL\Function\Power">Power</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -5039,6 +5119,13 @@ duplicateRow(), aggregate(), over() and onEach().</p>
                 <span class="phpdocumentor-argument-list__argument__name">$value</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exact</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -5474,7 +5561,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/OnEach.php"><a href="files/src-core-etl-src-flow-etl-function-oneach.html"><abbr title="src/core/etl/src/Flow/ETL/Function/OnEach.php">OnEach.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -7103,6 +7190,55 @@ duplicateRow(), aggregate(), over() and onEach().</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_typeOver">
+        typeOver()
+        <a href="classes/Flow-ETL-Function-OnEach.html#method_typeOver" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/OnEach.php"><a href="files/src-core-etl-src-flow-etl-function-oneach.html"><abbr title="src/core/etl/src/Flow/ETL/Function/OnEach.php">OnEach.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">109</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The produced type for an operand of $arrayType - one read of the operand&#039;s returns() serves eval() and bind.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">typeOver</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arrayType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$arrayType</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_unicodeLength">
         unicodeLength()
         <a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_unicodeLength" class="headerlink"><i class="fas fa-link"></i></a>
@@ -7251,7 +7387,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/OnEach.php"><a href="files/src-core-etl-src-flow-etl-function-oneach.html"><abbr title="src/core/etl/src/Flow/ETL/Function/OnEach.php">OnEach.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -7438,6 +7574,7 @@ per-element narrowing. Never mutates $this.</p>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_ascii">ascii()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_between">between()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_binaryLength">binaryLength()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-OnEach.html#method_bound">bound()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_call">call()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_capitalize">capitalize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_cast">cast()</a></li>
@@ -7544,6 +7681,7 @@ per-element narrowing. Never mutates $this.</p>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_toDateTime">toDateTime()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_trim">trim()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_truncate">truncate()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-OnEach.html#method_typeOver">typeOver()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_unicodeLength">unicodeLength()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_unpack">unpack()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_upper">upper()</a></li>

@@ -108,13 +108,12 @@
 
     
     
-            <span class="phpdocumentor-element__implements">
-            implements
-                            <abbr title="\Flow\ETL\Row\Encoder">Encoder</abbr>                    </span>
     
     </h2>
 
 <div class="phpdocumentor-label-line">
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
+
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -124,7 +123,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelEncoder.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelencoder.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelEncoder.php">ExcelEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -132,30 +131,10 @@
 
 
 
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">implements</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
-                                    </dd>
-                        </dl>
 
     
     
 
-    <h4 id="toc-interfaces">
-        Interfaces
-        <a href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Row\Encoder">Encoder</abbr></dt>    </dl>
 
 
 
@@ -177,15 +156,18 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_decode">decode()</a>
+    <a class="" href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_column">column()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;int, null|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string&gt;    </span>
 </dt>
+<dd>A column&#039;s cells read once from its physicals: scalars as they are, a datetime or date as a DateTimeInterface
+(the reader types a cell from its style, a formatted string is any other text), a time in the time format,
+a backed enum as its backing value, every other type as TextValues renders it.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_encode">encode()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;int, array&lt;int, null|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string&gt;&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -193,13 +175,6 @@
     <span>
                                 &nbsp;: array&lt;int, string&gt;    </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_headers">headers()</a>
-    <span>
-                                &nbsp;: null|array&lt;int, string&gt;    </span>
-</dt>
-<dd>The names decode() resolved from the first row it saw; null before the first decode().</dd>
 
     </dl>
 
@@ -229,14 +204,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelEncoder.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelencoder.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelEncoder.php">ExcelEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withHeader</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$convertEmptyToNull</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timeFormat</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'%H:%I:%S'</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timeFormat</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'%H:%I:%S'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Column\TextValues">TextValues</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\ETL\Column\TextValues">TextValues</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -245,23 +220,16 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$withHeader</span>
-                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$convertEmptyToNull</span>
-                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$timeFormat</span>
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">'%H:%I:%S'</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$text</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Column\TextValues">TextValues</abbr></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\ETL\Column\TextValues">TextValues</abbr>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -279,22 +247,25 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_decode">
-        decode()
-        <a href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_decode" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_column">
+        column()
+        <a href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_column" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelEncoder.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelencoder.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelEncoder.php">ExcelEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">A column&#039;s cells read once from its physicals: scalars as they are, a datetime or date as a DateTimeInterface
+(the reader types a cell from its style, a formatted string is any other text), a time in the time format,
+a backed enum as its backing value, every other type as TextValues renders it.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">decode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batch</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">column</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Column\Column">Column</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, null|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -303,8 +274,15 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$batch</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                <span class="phpdocumentor-argument-list__argument__name">$type</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$column</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Column\Column">Column</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -317,7 +295,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, null|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string&gt;</span>
             </section>
 
 </article>
@@ -335,14 +313,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelEncoder.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelencoder.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelEncoder.php">ExcelEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">encode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batch</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">encode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Rows">Rows</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, array&lt;int, null|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -351,8 +329,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$batch</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Rows">Rows</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -365,7 +343,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, array&lt;int, null|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string&gt;&gt;</span>
             </section>
 
 </article>
@@ -383,7 +361,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelEncoder.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelencoder.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelEncoder.php">ExcelEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -417,45 +395,6 @@
             </section>
 
 </article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_headers">
-        headers()
-        <a href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_headers" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelEncoder.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelencoder.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelEncoder.php">ExcelEncoder.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">122</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The names decode() resolved from the first row it saw; null before the first decode().</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">headers</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|array&lt;int, string&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">null|array&lt;int, string&gt;</span>
-            </section>
-
-</article>
             </section>
 
         
@@ -479,10 +418,9 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_decode">decode()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_column">column()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_encode">encode()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_encodeHeader">encodeHeader()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelEncoder.html#method_headers">headers()</a></li>
                                     </ul>
             </li>
                     </ul>

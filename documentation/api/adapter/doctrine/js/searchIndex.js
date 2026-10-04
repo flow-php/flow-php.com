@@ -31,15 +31,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalEncoder.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalEncoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalEncoder.html#method_decode"
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalEncoder.html#method___construct"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalEncoder\u003A\u003Aencode\u0028\u0029",
             "name": "encode",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalEncoder.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalEncoder\u003A\u003Acolumn\u0028\u0029",
+            "name": "column",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-DbalEncoder.html#method_column"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor",
             "name": "DbalKeySetExtractor",

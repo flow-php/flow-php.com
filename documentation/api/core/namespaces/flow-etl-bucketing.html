@@ -131,7 +131,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Bucketing-BucketingStrategy.html"><abbr title="\Flow\ETL\Bucketing\BucketingStrategy">BucketingStrategy</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Bucketing-BucketsStorage.html"><abbr title="\Flow\ETL\Bucketing\BucketsStorage">BucketsStorage</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Bucketing-Hasher.html"><abbr title="\Flow\ETL\Bucketing\Hasher">Hasher</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Bucketing-ResidentBucketsStorage.html"><abbr title="\Flow\ETL\Bucketing\ResidentBucketsStorage">ResidentBucketsStorage</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Bucketing-BucketsStorage.html"><abbr title="\Flow\ETL\Bucketing\BucketsStorage">BucketsStorage</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Bucketing-Hasher.html"><abbr title="\Flow\ETL\Bucketing\Hasher">Hasher</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Bucketing-ResidentBucketsStorage.html"><abbr title="\Flow\ETL\Bucketing\ResidentBucketsStorage">ResidentBucketsStorage</abbr></a></dt>    </dl>
 
     <h4 id="toc-classes">
         Classes
@@ -143,7 +143,7 @@
 through its own storage. A mismatched pair is constructible; the invariant is upheld at the mint sites in
 MergeSortProcessor, the only class where both storages are in scope.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-HashBucketing.html"><abbr title="\Flow\ETL\Bucketing\HashBucketing">HashBucketing</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-KeyGrouping.html"><abbr title="\Flow\ETL\Bucketing\KeyGrouping">KeyGrouping</abbr></a></dt><dd>Collects rows sharing a key into one batch, so a downstream operator sees each key exactly once
 and contiguously. The normalized hash is the key: no tuple, and `1`, `1.0` and `&quot;1&quot;` land together.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-KeyValues.html"><abbr title="\Flow\ETL\Bucketing\KeyValues">KeyValues</abbr></a></dt><dd>Extracts bucket-key values positionally, in reference order - position, not column name, defines
-key identity, so two sides of a join extract hash-compatible values from differently named columns.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-NativeHasher.html"><abbr title="\Flow\ETL\Bucketing\NativeHasher">NativeHasher</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-SingleBucketHasher.html"><abbr title="\Flow\ETL\Bucketing\SingleBucketHasher">SingleBucketHasher</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-SortedRunBucketing.html"><abbr title="\Flow\ETL\Bucketing\SortedRunBucketing">SortedRunBucketing</abbr></a></dt>    </dl>
+key identity, so two sides of a join extract hash-compatible values from differently named columns.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-NativeHasher.html"><abbr title="\Flow\ETL\Bucketing\NativeHasher">NativeHasher</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-SingleBucketHasher.html"><abbr title="\Flow\ETL\Bucketing\SingleBucketHasher">SingleBucketHasher</abbr></a></dt>    </dl>
 
     <h4 id="namespaces">
         Namespaces
@@ -155,13 +155,6 @@ key identity, so two sides of a join extract hash-compatible values from differe
             </dl>
 
 
-    <h4 id="toc-enums">
-        Enums
-        <a href="namespaces/flow-etl-bucketing.html#toc-enums" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-ETL-Bucketing-BucketShape.html"><abbr title="\Flow\ETL\Bucketing\BucketShape">BucketShape</abbr></a></dt><dd>Column names of the bucket metadata Row yielded by BucketingProcessor, one Row per bucket.</dd></dl>
 
 
 
@@ -185,8 +178,7 @@ key identity, so two sides of a join extract hash-compatible values from differe
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="namespaces/flow-etl-bucketing.html#toc-classes">Classes</a></li>
                                                                 <li><a href="namespaces/flow-etl-bucketing.html#toc-interfaces">Interfaces</a></li>
-                                                                <li><a href="namespaces/flow-etl-bucketing.html#toc-enums">Enums</a></li>
-                                                                                                                    </ul>
+                                                                                                                                        </ul>
             </li>
 
             

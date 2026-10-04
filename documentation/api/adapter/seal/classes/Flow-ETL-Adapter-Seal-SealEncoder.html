@@ -108,9 +108,6 @@
 
     
     
-            <span class="phpdocumentor-element__implements">
-            implements
-                            <abbr title="\Flow\ETL\Row\Encoder">Encoder</abbr>                    </span>
     
     </h2>
 
@@ -124,7 +121,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-seal/src/Flow/ETL/Adapter/Seal/SealEncoder.php"><a href="files/src-adapter-etl-adapter-seal-src-flow-etl-adapter-seal-sealencoder.html"><abbr title="src/adapter/etl-adapter-seal/src/Flow/ETL/Adapter/Seal/SealEncoder.php">SealEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -132,30 +129,10 @@
 
 
 
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/Flow-ETL-Adapter-Seal-SealEncoder.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">implements</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
-                                    </dd>
-                        </dl>
 
     
     
 
-    <h4 id="toc-interfaces">
-        Interfaces
-        <a href="classes/Flow-ETL-Adapter-Seal-SealEncoder.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Row\Encoder">Encoder</abbr></dt>    </dl>
 
 
 
@@ -177,15 +154,17 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_decode">decode()</a>
+    <a class="" href="classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_column">column()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;int, mixed&gt;    </span>
 </dt>
+<dd>A column&#039;s document fields: datetime / date text from the physicals, json and containers as normalized arrays,
+physicals where the physical is the value (scalars, a time&#039;s microseconds, null), TextValues for every other type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_encode">encode()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;int, array&lt;string, mixed&gt;&gt;    </span>
 </dt>
 
     </dl>
@@ -216,7 +195,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-seal/src/Flow/ETL/Adapter/Seal/SealEncoder.php"><a href="files/src-adapter-etl-adapter-seal-src-flow-etl-adapter-seal-sealencoder.html"><abbr title="src/adapter/etl-adapter-seal/src/Flow/ETL/Adapter/Seal/SealEncoder.php">SealEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -259,22 +238,24 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_decode">
-        decode()
-        <a href="classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_decode" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_column">
+        column()
+        <a href="classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_column" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-seal/src/Flow/ETL/Adapter/Seal/SealEncoder.php"><a href="files/src-adapter-etl-adapter-seal-src-flow-etl-adapter-seal-sealencoder.html"><abbr title="src/adapter/etl-adapter-seal/src/Flow/ETL/Adapter/Seal/SealEncoder.php">SealEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">A column&#039;s document fields: datetime / date text from the physicals, json and containers as normalized arrays,
+physicals where the physical is the value (scalars, a time&#039;s microseconds, null), TextValues for every other type.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">decode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batch</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">column</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Column\Column">Column</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -283,8 +264,15 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$batch</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                <span class="phpdocumentor-argument-list__argument__name">$type</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$column</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Column\Column">Column</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -297,7 +285,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, mixed&gt;</span>
             </section>
 
 </article>
@@ -315,14 +303,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-seal/src/Flow/ETL/Adapter/Seal/SealEncoder.php"><a href="files/src-adapter-etl-adapter-seal-src-flow-etl-adapter-seal-sealencoder.html"><abbr title="src/adapter/etl-adapter-seal/src/Flow/ETL/Adapter/Seal/SealEncoder.php">SealEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">encode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batch</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">encode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Rows">Rows</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, array&lt;string, mixed&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -331,8 +319,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$batch</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Rows">Rows</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -345,7 +333,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, array&lt;string, mixed&gt;&gt;</span>
             </section>
 
 </article>
@@ -372,7 +360,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_decode">decode()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_column">column()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_encode">encode()</a></li>
                                     </ul>
             </li>

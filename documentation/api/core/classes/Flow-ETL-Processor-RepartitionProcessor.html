@@ -145,11 +145,12 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-repartitionprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php">RepartitionProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Regroups buckets spilled by BucketingProcessor so every row sharing a key arrives in one batch.</p>
+            <p class="phpdocumentor-summary">One batch per key. While the process stays under the memory limit the input is held and grouped in one pass; past
+it, the input is partitioned into buckets and each bucket grouped on its own.</p>
 
 
 
@@ -179,6 +180,12 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Processor-RepartitionProcessor.html#property_bucketing">$bucketing</a>
+    <span>
+                        &nbsp;: <a href="classes/Flow-ETL-Bucketing-HashBucketing.html"><abbr title="\Flow\ETL\Bucketing\HashBucketing">HashBucketing</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-ETL-Processor-RepartitionProcessor.html#property_buckets">$buckets</a>
     <span>
                         &nbsp;: <a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a>            </span>
@@ -194,6 +201,12 @@
     <a class="" href="classes/Flow-ETL-Processor-RepartitionProcessor.html#property_hasher">$hasher</a>
     <span>
                         &nbsp;: <a href="classes/Flow-ETL-Bucketing-Hasher.html"><abbr title="\Flow\ETL\Bucketing\Hasher">Hasher</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Processor-RepartitionProcessor.html#property_memoryLimit">$memoryLimit</a>
+    <span>
+                        &nbsp;: <a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a>            </span>
 </dt>
 
     </dl>
@@ -215,6 +228,13 @@
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-BoundStep.html"><abbr title="\Flow\ETL\BoundStep">BoundStep</abbr></a>    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Processor-RepartitionProcessor.html#method_concatenated">concatenated()</a>
+    <span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;    </span>
+</dt>
+<dd>The held batches as one, so each key is gathered once rather than once per batch.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Processor-RepartitionProcessor.html#method_process">process()</a>
@@ -243,6 +263,43 @@
             -public
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_bucketing">
+        $bucketing
+        <a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#property_bucketing" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-repartitionprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php">RepartitionProcessor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Bucketing-HashBucketing.html"><abbr title="\Flow\ETL\Bucketing\HashBucketing">HashBucketing</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$bucketing</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_buckets">
         $buckets
         <a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#property_buckets" class="headerlink"><i class="fas fa-link"></i></a>
@@ -253,7 +310,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-repartitionprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php">RepartitionProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -290,7 +347,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-repartitionprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php">RepartitionProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -327,7 +384,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-repartitionprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php">RepartitionProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -338,6 +395,43 @@
             <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Bucketing-Hasher.html"><abbr title="\Flow\ETL\Bucketing\Hasher">Hasher</abbr></a></span>
     <span class="phpdocumentor-signature__name">$hasher</span>
      = <span class="phpdocumentor-signature__default-value">new NativeHasher()</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_memoryLimit">
+        $memoryLimit
+        <a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#property_memoryLimit" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-repartitionprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php">RepartitionProcessor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$memoryLimit</span>
+    </code>
 
     
     
@@ -369,14 +463,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-repartitionprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php">RepartitionProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-References.html"><abbr title="\Flow\ETL\Row\References">References</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$by</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$buckets</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Bucketing-Hasher.html"><abbr title="\Flow\ETL\Bucketing\Hasher">Hasher</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hasher</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Bucketing-NativeHasher.html"><abbr title="\Flow\ETL\Bucketing\NativeHasher">NativeHasher</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-References.html"><abbr title="\Flow\ETL\Row\References">References</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$by</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Bucketing-HashBucketing.html"><abbr title="\Flow\ETL\Bucketing\HashBucketing">HashBucketing</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucketing</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$buckets</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$memoryLimit</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Bucketing-Hasher.html"><abbr title="\Flow\ETL\Bucketing\Hasher">Hasher</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hasher</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Bucketing-NativeHasher.html"><abbr title="\Flow\ETL\Bucketing\NativeHasher">NativeHasher</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -392,8 +486,22 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bucketing</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Bucketing-HashBucketing.html"><abbr title="\Flow\ETL\Bucketing\HashBucketing">HashBucketing</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$buckets</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Bucketing\Buckets">Buckets</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$memoryLimit</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Dataset-Memory-Unit.html"><abbr title="\Flow\ETL\Dataset\Memory\Unit">Unit</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -427,7 +535,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-repartitionprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php">RepartitionProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -467,6 +575,62 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_concatenated">
+        concatenated()
+        <a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#method_concatenated" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-repartitionprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php">RepartitionProcessor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">88</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The held batches as one, so each key is gathered once rather than once per batch.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">concatenated</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batches</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Column-Backend.html"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$batches</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$backend</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Column-Backend.html"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_process">
         process()
         <a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#method_process" class="headerlink"><i class="fas fa-link"></i></a>
@@ -475,7 +639,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-repartitionprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/RepartitionProcessor.php">RepartitionProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -539,9 +703,11 @@
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#property_bucketing">$bucketing</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#property_buckets">$buckets</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#property_by">$by</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#property_hasher">$hasher</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#property_memoryLimit">$memoryLimit</a></li>
                                             </ul>
                 </li>
             
@@ -550,6 +716,7 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#method_bind">bind()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#method_concatenated">concatenated()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Processor-RepartitionProcessor.html#method_process">process()</a></li>
                                     </ul>
             </li>

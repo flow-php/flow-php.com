@@ -145,7 +145,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php"><a href="files/src-core-etl-src-flow-etl-groupby-aggregators.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php">Aggregators.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -228,6 +228,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-GroupBy-Aggregators.html#method_merge">merge()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Folds $other&#039;s partial states into these, pairwise; $other aggregated rows that come after these.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-GroupBy-Aggregators.html#method_references">references()</a>
     <span>
                                 &nbsp;: null|array&lt;int, <a href="classes/Flow-ETL-Row-Reference.html"><abbr title="\Flow\ETL\Row\Reference">Reference</abbr></a>&gt;    </span>
@@ -269,7 +276,7 @@ accumulated state is discarded.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php"><a href="files/src-core-etl-src-flow-etl-groupby-aggregators.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php">Aggregators.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -313,14 +320,14 @@ accumulated state is discarded.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php"><a href="files/src-core-etl-src-flow-etl-groupby-aggregators.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php">Aggregators.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">aggregate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">aggregate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$indices</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -329,8 +336,15 @@ accumulated state is discarded.</dd>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$row</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$indices</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, int&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -364,7 +378,7 @@ accumulated state is discarded.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php"><a href="files/src-core-etl-src-flow-etl-groupby-aggregators.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php">Aggregators.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -402,7 +416,7 @@ accumulated state is discarded.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php"><a href="files/src-core-etl-src-flow-etl-groupby-aggregators.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php">Aggregators.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -440,7 +454,7 @@ accumulated state is discarded.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php"><a href="files/src-core-etl-src-flow-etl-groupby-aggregators.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php">Aggregators.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -478,7 +492,7 @@ accumulated state is discarded.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php"><a href="files/src-core-etl-src-flow-etl-groupby-aggregators.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php">Aggregators.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -508,6 +522,58 @@ accumulated state is discarded.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_merge">
+        merge()
+        <a href="classes/Flow-ETL-GroupBy-Aggregators.html#method_merge" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php"><a href="files/src-core-etl-src-flow-etl-groupby-aggregators.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php">Aggregators.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Folds $other&#039;s partial states into these, pairwise; $other aggregated rows that come after these.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">merge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">self&nbsp;</span><span class="phpdocumentor-signature__argument__name">$other</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$other</span>
+                : <span class="phpdocumentor-argument-list__argument__type">self</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$context</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_references">
         references()
         <a href="classes/Flow-ETL-GroupBy-Aggregators.html#method_references" class="headerlink"><i class="fas fa-link"></i></a>
@@ -516,7 +582,7 @@ accumulated state is discarded.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php"><a href="files/src-core-etl-src-flow-etl-groupby-aggregators.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php">Aggregators.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -559,7 +625,7 @@ aggregator cannot enumerate them (disables spill column pruning)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php"><a href="files/src-core-etl-src-flow-etl-groupby-aggregators.html"><abbr title="src/core/etl/src/Flow/ETL/GroupBy/Aggregators.php">Aggregators.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -623,6 +689,7 @@ accumulated state is discarded.</p>
                                             <li class=""><a href="classes/Flow-ETL-GroupBy-Aggregators.html#method_count">count()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-GroupBy-Aggregators.html#method_first">first()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-GroupBy-Aggregators.html#method_getIterator">getIterator()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-GroupBy-Aggregators.html#method_merge">merge()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-GroupBy-Aggregators.html#method_references">references()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-GroupBy-Aggregators.html#method_resolved">resolved()</a></li>
                                     </ul>

@@ -21,11 +21,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Text-TextEncoder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextEncoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextEncoder.html#method_decode"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextEncoder\u003A\u003Aencode\u0028\u0029",
             "name": "encode",
             "summary": "",
@@ -76,6 +71,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_withSchema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextFileBatches",
+            "name": "TextFileBatches",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextFileBatches.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextFileBatches\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextFileBatches.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextFileBatches\u003A\u003Abatches\u0028\u0029",
+            "name": "batches",
+            "summary": "The\u0020lines\u0020into\u0020the\u0020\u0022text\u0022\u0020column\u003B\u0020any\u0020other\u0020column\u0020\u0024body\u0020declares\u0020is\u0020padded\u0020as\u0020matchTo\u0028\u0029\u0020pads\u0020it.",
+            "url": "classes/Flow-ETL-Adapter-Text-TextFileBatches.html#method_batches"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextFileBatches\u003A\u003Abatch\u0028\u0029",
+            "name": "batch",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextFileBatches.html#method_batch"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader",
             "name": "TextLoader",
             "summary": "",
@@ -111,6 +126,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_load"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003Aopen\u0028\u0029",
+            "name": "open",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_open"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003AsaveMode\u0028\u0029",
             "name": "saveMode",
             "summary": "",
@@ -120,6 +140,26 @@ Search.appendIndex(
             "name": "withNewLineSeparator",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_withNewLineSeparator"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextOpenSink",
+            "name": "TextOpenSink",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextOpenSink.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextOpenSink\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextOpenSink.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextOpenSink\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "The\u0020stream\u0020belongs\u0020to\u0020the\u0020FilesSink\u0020that\u0020opened\u0020it.",
+            "url": "classes/Flow-ETL-Adapter-Text-TextOpenSink.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextOpenSink\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-TextOpenSink.html#method_write"
         },                {
             "fqsen": "\\",
             "name": "\\",

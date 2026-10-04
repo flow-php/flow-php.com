@@ -132,9 +132,13 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Sort-SortSteps.html"><abbr title="\Flow\ETL\Sort\SortSteps">SortSteps</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Sort-ValuesSorter.html"><abbr title="\Flow\ETL\Sort\ValuesSorter">ValuesSorter</abbr></a></dt><dd>Sorts a column of extracted values preserving keys. Homogeneous columns are detected once and
-sorted by the engine without any userland comparator - a per-pair comparison callback is orders
-of magnitude slower than asort()/arsort(). Mixed columns fall back to the pairwise comparator.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Sort-ExternalSort.html"><abbr title="\Flow\ETL\Sort\ExternalSort">ExternalSort</abbr></a></dt><dd>Sorts in memory while the process stays under the memory limit; past it, sorted runs are spilled and
+block-merged. With a limit, only the first $limit rows are produced - every run and every merge stops there.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Sort-RowOrder.html"><abbr title="\Flow\ETL\Sort\RowOrder">RowOrder</abbr></a></dt><dd>The one row order of sortBy, the external merge and every check of sortedness: nulls are the smallest value
+(first ascending, last descending) unless a reference places them at the other end, NaN the largest and equal to
+itself, -0.0 equals 0.0, strings compare by bytes,
+numbers, datetimes, dates and times by value, false before true. Descending is the exact reverse of ascending; rows
+equal on every key keep their input order.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Sort-SortKey.html"><abbr title="\Flow\ETL\Sort\SortKey">SortKey</abbr></a></dt><dd>One reference&#039;s sort key over a batch: a rank per row (0 null, 1 value, 2 NaN) and the value it orders by within
+rank 1, compared with $flag (SORT_NUMERIC, SORT_STRING or SORT_REGULAR).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Sort-SortSteps.html"><abbr title="\Flow\ETL\Sort\SortSteps">SortSteps</abbr></a></dt>    </dl>
 
     <h4 id="namespaces">
         Namespaces

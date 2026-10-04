@@ -111,7 +111,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Flow\ETL\Loader\Closure">Closure</abbr>,                             <abbr title="\Flow\ETL\Loader\Discardable">Discardable</abbr>,                             <abbr title="\Flow\ETL\Loader\FileLoader">FileLoader</abbr>,                             <abbr title="\Flow\ETL\Loader">Loader</abbr>,                             <abbr title="\Flow\ETL\Loader\PartitioningLoader">PartitioningLoader</abbr>                    </span>
+                            <abbr title="\Flow\ETL\Loader\Closure">Closure</abbr>,                             <abbr title="\Flow\ETL\Loader\Discardable">Discardable</abbr>,                             <abbr title="\Flow\ETL\Loader\File\FileLoader">FileLoader</abbr>,                             <abbr title="\Flow\ETL\Loader\File\FileSinks">FileSinks</abbr>,                             <abbr title="\Flow\ETL\Loader">Loader</abbr>,                             <abbr title="\Flow\ETL\Loader\PartitioningLoader">PartitioningLoader</abbr>                    </span>
     
     </h2>
 
@@ -125,7 +125,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -143,7 +143,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\Closure">Closure</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\Discardable">Discardable</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\FileLoader">FileLoader</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader">Loader</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\PartitioningLoader">PartitioningLoader</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\Closure">Closure</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\Discardable">Discardable</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\File\FileLoader">FileLoader</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\File\FileSinks">FileSinks</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader">Loader</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\PartitioningLoader">PartitioningLoader</abbr></dt>    </dl>
 
 
 
@@ -186,6 +186,12 @@
     <a class="" href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_load">load()</a>
     <span>
                                 &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_open">open()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\ETL\Loader\File\FileSink">FileSink</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -260,12 +266,6 @@
                                 &nbsp;: self    </span>
 </dt>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_write">write()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
     </dl>
 
 
@@ -294,7 +294,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -352,7 +352,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -396,7 +396,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -434,7 +434,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -478,7 +478,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -521,6 +521,61 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_open">
+        open()
+        <a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_open" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">131</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">open</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Loader\File\FileSink">FileSink</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stream</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$backend</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Loader\File\FileSink">FileSink</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_partitionBy">
         partitionBy()
         <a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_partitionBy" class="headerlink"><i class="fas fa-link"></i></a>
@@ -529,7 +584,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -577,7 +632,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
@@ -625,7 +680,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -673,7 +728,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -721,7 +776,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">168</span>
 
     </aside>
 
@@ -769,7 +824,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">175</span>
 
     </aside>
 
@@ -817,7 +872,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">176</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
@@ -865,7 +920,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">189</span>
 
     </aside>
 
@@ -913,7 +968,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">190</span>
+    <span class="phpdocumentor-element-found-in__line">196</span>
 
     </aside>
 
@@ -961,7 +1016,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">203</span>
 
     </aside>
 
@@ -1009,7 +1064,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">204</span>
+    <span class="phpdocumentor-element-found-in__line">210</span>
 
     </aside>
 
@@ -1057,7 +1112,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">214</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
@@ -1091,64 +1146,6 @@
             </section>
 
 </article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_write">
-        write()
-        <a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_write" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-loader-xmlloader.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/Loader/XMLLoader.php">XMLLoader.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">224</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">write</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Rows">Rows</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nextRows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <abbr title="\Flow\Filesystem\Partition">Partition</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partitions</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$nextRows</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Rows">Rows</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$partitions</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <abbr title="\Flow\Filesystem\Partition">Partition</abbr>&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$context</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-    
-</article>
             </section>
 
         
@@ -1176,6 +1173,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_destination">destination()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_discard">discard()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_load">load()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_open">open()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_partitionBy">partitionBy()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_saveMode">saveMode()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_withAttributePrefix">withAttributePrefix()</a></li>
@@ -1188,7 +1186,6 @@
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_withRootElementName">withRootElementName()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_withRowElementName">withRowElementName()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_withXMLAttributes">withXMLAttributes()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_write">write()</a></li>
                                     </ul>
             </li>
                     </ul>

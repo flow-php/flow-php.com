@@ -371,11 +371,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-Comparator.html"
         },                {
-            "fqsen": "\\Flow\\Types\\Type\\Comparator\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Types-Type-Comparator.html#method___construct"
-        },                {
             "fqsen": "\\Flow\\Types\\Type\\Comparator\u003A\u003Acomparable\u0028\u0029",
             "name": "comparable",
             "summary": "",
@@ -1846,6 +1841,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Types-Type-Native-UnionType.html#method_types"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\NonFiniteFloat",
+            "name": "NonFiniteFloat",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-NonFiniteFloat.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\NonFiniteFloat\u003A\u003AfromText\u0028\u0029",
+            "name": "fromText",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-NonFiniteFloat.html#method_fromText"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\NonFiniteFloat\u003A\u003Ais\u0028\u0029",
+            "name": "is",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-NonFiniteFloat.html#method_is"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\NonFiniteFloat\u003A\u003Atext\u0028\u0029",
+            "name": "text",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-NonFiniteFloat.html#method_text"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\Nullability",
             "name": "Nullability",
             "summary": "",
@@ -2235,6 +2250,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Types-Value-Uuid.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Types\\Value\\Uuid\u003A\u003AfromBytes\u0028\u0029",
+            "name": "fromBytes",
+            "summary": "",
+            "url": "classes/Flow-Types-Value-Uuid.html#method_fromBytes"
         },                {
             "fqsen": "\\Flow\\Types\\Value\\Uuid\u003A\u003AfromString\u0028\u0029",
             "name": "fromString",

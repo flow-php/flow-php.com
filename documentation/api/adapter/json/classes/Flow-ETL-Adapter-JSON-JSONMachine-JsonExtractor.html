@@ -111,11 +111,11 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor">Extractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\FileExtractor">FileExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\InfersSchema">InfersSchema</abbr>,                             <abbr title="\Flow\ETL\Extractor\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr>                    </span>
+                            <abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor">Extractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\File\FileExtractor">FileExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\InfersSchema">InfersSchema</abbr>,                             <abbr title="\Flow\ETL\Extractor\File\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr>                    </span>
     
             <span class="phpdocumentor-element__extends">
             uses
-                            <abbr title="\Flow\ETL\Extractor\Batches">Batches</abbr>,                             <abbr title="\Flow\ETL\Extractor\FileReading">FileReading</abbr>                    </span>
+                            <abbr title="\Flow\ETL\Extractor\Batches">Batches</abbr>,                             <abbr title="\Flow\ETL\Extractor\File\FileReading">FileReading</abbr>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -128,7 +128,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -146,7 +146,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\FileExtractor">FileExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\InfersSchema">InfersSchema</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\File\FileExtractor">FileExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\InfersSchema">InfersSchema</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\File\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr></dt>    </dl>
 
 
 
@@ -208,8 +208,9 @@
     <span>
                                 &nbsp;: <abbr title="\Flow\ETL\Extractor\Statistics">Statistics</abbr>    </span>
 </dt>
-<dd>A document has no bytes-per-row unit, so rows are known only when the sample schema inference already read
-every element of every file.</dd>
+<dd>Rows come from what the sample schema inference already read; without one they are unknown, a sample is never
+read just for them. A document has no bytes-per-row unit, so its rows are known only when that sample read every
+element of every file; JSON lines estimate them from the sampled bytes per row.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonExtractor.html#method_withPointer">withPointer()</a>
@@ -251,14 +252,14 @@ every element of every file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonFormat.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonFormat">JsonFormat</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonFormat.html#enumcase_Document"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonFormat::Document">JsonFormat::Document</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -277,6 +278,13 @@ every element of every file.</dd>
                 <span class="phpdocumentor-argument-list__argument__name">$filesystem</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$format</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonFormat.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonFormat">JsonFormat</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonFormat.html#enumcase_Document"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonFormat::Document">JsonFormat::Document</abbr></a></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -302,7 +310,7 @@ every element of every file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -364,7 +372,7 @@ every element of every file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">152</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -412,7 +420,7 @@ every element of every file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -450,7 +458,7 @@ every element of every file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -488,7 +496,7 @@ every element of every file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
@@ -526,7 +534,7 @@ every element of every file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">199</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -564,12 +572,13 @@ every element of every file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">180</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">A document has no bytes-per-row unit, so rows are known only when the sample schema inference already read
-every element of every file.</p>
+        <p class="phpdocumentor-summary">Rows come from what the sample schema inference already read; without one they are unknown, a sample is never
+read just for them. A document has no bytes-per-row unit, so its rows are known only when that sample read every
+element of every file; JSON lines estimate them from the sampled bytes per row.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -604,7 +613,7 @@ every element of every file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">228</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
     </aside>
 
@@ -663,7 +672,7 @@ every element of every file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonmachine-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JSONMachine/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">239</span>
+    <span class="phpdocumentor-element-found-in__line">216</span>
 
     </aside>
 

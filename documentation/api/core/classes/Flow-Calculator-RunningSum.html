@@ -130,8 +130,6 @@
     </h2>
 
 <div class="phpdocumentor-label-line">
-    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Read only</span><span>Yes</span></div>
-
 
     <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
 
@@ -141,11 +139,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">IEEE addition with Neumaier compensation: the rounding error of every float addition is carried and added back once,
+so a long run of floats does not drift. An exact addition is decimal (Calculator) over the compensated total.</p>
+
 
 
 
@@ -175,6 +175,18 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Calculator-RunningSum.html#method_add">add()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Calculator-RunningSum.html#method_merge">merge()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Calculator-RunningSum.html#method_value">value()</a>
     <span>
                                 &nbsp;: float|int    </span>
 </dt>
@@ -207,7 +219,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -251,14 +263,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">float|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sum</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">float|int|numeric-string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float|int</span></code>
+                    <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">float|int|numeric-string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -266,13 +278,6 @@
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$sum</span>
-                : <span class="phpdocumentor-argument-list__argument__type">float|int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$value</span>
                 : <span class="phpdocumentor-argument-list__argument__type">float|int|numeric-string</span>
@@ -289,6 +294,91 @@
             </dd>
             </dl>
 
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_merge">
+        merge()
+        <a href="classes/Flow-Calculator-RunningSum.html#method_merge" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">58</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">merge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">self&nbsp;</span><span class="phpdocumentor-signature__argument__name">$other</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$other</span>
+                : <span class="phpdocumentor-argument-list__argument__type">self</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exact</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_value">
+        value()
+        <a href="classes/Flow-Calculator-RunningSum.html#method_value" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">value</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float|int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
     
 
         
@@ -323,6 +413,8 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Calculator-RunningSum.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Calculator-RunningSum.html#method_add">add()</a></li>
+                                            <li class=""><a href="classes/Flow-Calculator-RunningSum.html#method_merge">merge()</a></li>
+                                            <li class=""><a href="classes/Flow-Calculator-RunningSum.html#method_value">value()</a></li>
                                     </ul>
             </li>
                     </ul>

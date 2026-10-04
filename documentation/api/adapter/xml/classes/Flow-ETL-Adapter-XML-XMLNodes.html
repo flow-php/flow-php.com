@@ -123,11 +123,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLNodes.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlnodes.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLNodes.php">XMLNodes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">libxml builds each node&#039;s DOM in C, so no element, attribute or text of the document passes through PHP.</p>
+            <p class="phpdocumentor-summary">libxml builds each node in C, so no element, attribute or text of the document passes through PHP.</p>
 
 
 
@@ -157,11 +157,18 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-XML-XMLNodes.html#method_of">of()</a>
+    <a class="" href="classes/Flow-ETL-Adapter-XML-XMLNodes.html#method_documents">documents()</a>
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\DOMDocument">DOMDocument</abbr>&gt;    </span>
 </dt>
-<dd>Each element on the path as a document of its own, declaring every namespace it uses.</dd>
+<dd>Each element on the path as a UTF-8 document of its own, declaring every namespace it uses.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-XML-XMLNodes.html#method_texts">texts()</a>
+    <span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, string&gt;    </span>
+</dt>
+<dd>Each element on the path as its outer XML: the text of the document documents() yields for it.</dd>
 
     </dl>
 
@@ -191,7 +198,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLNodes.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlnodes.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLNodes.php">XMLNodes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -229,23 +236,23 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_of">
-        of()
-        <a href="classes/Flow-ETL-Adapter-XML-XMLNodes.html#method_of" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_documents">
+        documents()
+        <a href="classes/Flow-ETL-Adapter-XML-XMLNodes.html#method_documents" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLNodes.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlnodes.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLNodes.php">XMLNodes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Each element on the path as a document of its own, declaring every namespace it uses.</p>
+        <p class="phpdocumentor-summary">Each element on the path as a UTF-8 document of its own, declaring every namespace it uses.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">of</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bufferSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\DOMDocument">DOMDocument</abbr>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">documents</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bufferSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\DOMDocument">DOMDocument</abbr>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -281,6 +288,64 @@
             </section>
 
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_texts">
+        texts()
+        <a href="classes/Flow-ETL-Adapter-XML-XMLNodes.html#method_texts" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLNodes.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-xmlnodes.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/XMLNodes.php">XMLNodes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Each element on the path as its outer XML: the text of the document documents() yields for it.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">texts</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bufferSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stream</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bufferSize</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int<1, max></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>bytes read from the stream at a time</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, string&gt;</span>
+            </section>
+
+</article>
             </section>
 
         
@@ -304,7 +369,8 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLNodes.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLNodes.html#method_of">of()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLNodes.html#method_documents">documents()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-XML-XMLNodes.html#method_texts">texts()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -146,7 +146,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -493,8 +493,9 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Row-UnresolvedReference.html#method_eval">eval()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Column-Column.html"><abbr title="\Flow\ETL\Column\Column">Column</abbr></a>    </span>
 </dt>
+<dd>One column of $rows-&gt;count() values, of returns()&#039;s type (nullable), same row order.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_exists">exists()</a>
@@ -726,6 +727,12 @@
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_notSame">notSame()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Function-NotSame.html"><abbr title="\Flow\ETL\Function\NotSame">NotSame</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Row-UnresolvedReference.html#method_nulls">nulls()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Row-NullsOrder.html"><abbr title="\Flow\ETL\Row\NullsOrder">NullsOrder</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -1107,14 +1114,14 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$alias</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-SortOrder.html"><abbr title="\Flow\ETL\Row\SortOrder">SortOrder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sort</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Row-SortOrder.html#enumcase_ASC"><abbr title="\Flow\ETL\Row\SortOrder::ASC">SortOrder::ASC</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$alias</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-SortOrder.html"><abbr title="\Flow\ETL\Row\SortOrder">SortOrder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sort</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Row-SortOrder.html#enumcase_ASC"><abbr title="\Flow\ETL\Row\SortOrder::ASC">SortOrder::ASC</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-NullsOrder.html"><abbr title="\Flow\ETL\Row\NullsOrder">NullsOrder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nulls</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Row-NullsOrder.html#enumcase_FIRST"><abbr title="\Flow\ETL\Row\NullsOrder::FIRST">NullsOrder::FIRST</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1143,6 +1150,13 @@ per-element narrowing. Never mutates $this.</dd>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$nulls</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-NullsOrder.html"><abbr title="\Flow\ETL\Row\NullsOrder">NullsOrder</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-ETL-Row-NullsOrder.html#enumcase_FIRST"><abbr title="\Flow\ETL\Row\NullsOrder::FIRST">NullsOrder::FIRST</abbr></a></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -1165,7 +1179,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -1943,7 +1957,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -1991,20 +2005,30 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">asc</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">asc</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-NullsOrder.html"><abbr title="\Flow\ETL\Row\NullsOrder">NullsOrder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nulls</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Row-NullsOrder.html#enumcase_FIRST"><abbr title="\Flow\ETL\Row\NullsOrder::FIRST">NullsOrder::FIRST</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$nulls</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-NullsOrder.html"><abbr title="\Flow\ETL\Row\NullsOrder">NullsOrder</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-ETL-Row-NullsOrder.html#enumcase_FIRST"><abbr title="\Flow\ETL\Row\NullsOrder::FIRST">NullsOrder::FIRST</abbr></a></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         
@@ -2067,7 +2091,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -2360,7 +2384,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -2818,20 +2842,30 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">desc</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">desc</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-NullsOrder.html"><abbr title="\Flow\ETL\Row\NullsOrder">NullsOrder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nulls</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Row-NullsOrder.html#enumcase_LAST"><abbr title="\Flow\ETL\Row\NullsOrder::LAST">NullsOrder::LAST</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$nulls</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row-NullsOrder.html"><abbr title="\Flow\ETL\Row\NullsOrder">NullsOrder</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-ETL-Row-NullsOrder.html#enumcase_LAST"><abbr title="\Flow\ETL\Row\NullsOrder::LAST">NullsOrder::LAST</abbr></a></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         
@@ -3472,14 +3506,15 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">One column of $rows-&gt;count() values, of returns()&#039;s type (nullable), same row order.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">eval</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">eval</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Column-Column.html"><abbr title="\Flow\ETL\Column\Column">Column</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3488,8 +3523,8 @@ per-element narrowing. Never mutates $this.</dd>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$row</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -3507,7 +3542,11 @@ per-element narrowing. Never mutates $this.</dd>
 
         
     
-    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Column-Column.html"><abbr title="\Flow\ETL\Column\Column">Column</abbr></a></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3726,7 +3765,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -4034,7 +4073,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -4082,7 +4121,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -4799,7 +4838,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -4930,7 +4969,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">minus</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Minus.html"><abbr title="\Flow\ETL\Function\Minus">Minus</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">minus</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Minus.html"><abbr title="\Flow\ETL\Function\Minus">Minus</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -4942,6 +4981,13 @@ duplicateRow(), aggregate(), over() and onEach().</p>
                 <span class="phpdocumentor-argument-list__argument__name">$ref</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exact</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -5074,7 +5120,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">multiply</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Multiply.html"><abbr title="\Flow\ETL\Function\Multiply">Multiply</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">multiply</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Multiply.html"><abbr title="\Flow\ETL\Function\Multiply">Multiply</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -5086,6 +5132,13 @@ duplicateRow(), aggregate(), over() and onEach().</p>
                 <span class="phpdocumentor-argument-list__argument__name">$value</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exact</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -5115,7 +5168,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -5232,6 +5285,44 @@ duplicateRow(), aggregate(), over() and onEach().</p>
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-NotSame.html"><abbr title="\Flow\ETL\Function\NotSame">NotSame</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_nulls">
+        nulls()
+        <a href="classes/Flow-ETL-Row-UnresolvedReference.html#method_nulls" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">144</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">nulls</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row-NullsOrder.html"><abbr title="\Flow\ETL\Row\NullsOrder">NullsOrder</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Row-NullsOrder.html"><abbr title="\Flow\ETL\Row\NullsOrder">NullsOrder</abbr></a></span>
             </section>
 
 </article>
@@ -5473,7 +5564,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">plus</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Plus.html"><abbr title="\Flow\ETL\Function\Plus">Plus</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">plus</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ref</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Plus.html"><abbr title="\Flow\ETL\Function\Plus">Plus</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -5485,6 +5576,13 @@ duplicateRow(), aggregate(), over() and onEach().</p>
                 <span class="phpdocumentor-argument-list__argument__name">$ref</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int|float</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exact</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -5521,7 +5619,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">power</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Power.html"><abbr title="\Flow\ETL\Function\Power">Power</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">power</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Function-Power.html"><abbr title="\Flow\ETL\Function\Power">Power</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -5533,6 +5631,13 @@ duplicateRow(), aggregate(), over() and onEach().</p>
                 <span class="phpdocumentor-argument-list__argument__name">$value</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>|int</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exact</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -5968,7 +6073,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -6020,7 +6125,7 @@ that owns those fields - the resolver never learns the leaf&#039;s internal shap
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -6059,7 +6164,7 @@ that owns those fields - the resolver never learns the leaf&#039;s internal shap
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -6394,7 +6499,7 @@ that owns those fields - the resolver never learns the leaf&#039;s internal shap
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">149</span>
 
     </aside>
 
@@ -7506,7 +7611,7 @@ that owns those fields - the resolver never learns the leaf&#039;s internal shap
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -7544,7 +7649,7 @@ that owns those fields - the resolver never learns the leaf&#039;s internal shap
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -7950,7 +8055,7 @@ that owns those fields - the resolver never learns the leaf&#039;s internal shap
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php"><a href="files/src-core-etl-src-flow-etl-row-unresolvedreference.html"><abbr title="src/core/etl/src/Flow/ETL/Row/UnresolvedReference.php">UnresolvedReference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -8208,6 +8313,7 @@ per-element narrowing. Never mutates $this.</p>
                                             <li class=""><a href="classes/Flow-ETL-Row-UnresolvedReference.html#method_name">name()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_notEquals">notEquals()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_notSame">notSame()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Row-UnresolvedReference.html#method_nulls">nulls()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_numberFormat">numberFormat()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_onEach">onEach()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_or">or()</a></li>

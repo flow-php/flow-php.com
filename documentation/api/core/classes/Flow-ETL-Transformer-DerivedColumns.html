@@ -142,7 +142,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Transformer/DerivedColumns.php"><a href="files/src-core-etl-src-flow-etl-transformer-derivedcolumns.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/DerivedColumns.php">DerivedColumns.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -181,10 +181,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Transformer-DerivedColumns.html#method_value">value()</a>
+    <a class="" href="classes/Flow-ETL-Transformer-DerivedColumns.html#method_stored">stored()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Column-Column.html"><abbr title="\Flow\ETL\Column\Column">Column</abbr></a>    </span>
 </dt>
+<dd>The function&#039;s column as the stored derived column: NOT NULL enforced here (intermediates are nullable), the
+same type adopted into the configured backend, any other type rebuilt through it.</dd>
 
     </dl>
 
@@ -214,7 +216,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Transformer/DerivedColumns.php"><a href="files/src-core-etl-src-flow-etl-transformer-derivedcolumns.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/DerivedColumns.php">DerivedColumns.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -269,14 +271,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Transformer/DerivedColumns.php"><a href="files/src-core-etl-src-flow-etl-transformer-derivedcolumns.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/DerivedColumns.php">DerivedColumns.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">rows</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$declared</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$output</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">rows</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$declared</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$output</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Column-Column.html"><abbr title="\Flow\ETL\Column\Column">Column</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$derived</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Column-Backend.html"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -284,6 +286,13 @@
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$input</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$declared</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a></span>
@@ -299,13 +308,25 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;</span>
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>each carrying a derived column checked by value()</p>
-</section>
-
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$derived</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Column-Column.html"><abbr title="\Flow\ETL\Column\Column">Column</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$backend</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Column-Backend.html"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
             </dd>
             </dl>
 
@@ -325,22 +346,24 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_value">
-        value()
-        <a href="classes/Flow-ETL-Transformer-DerivedColumns.html#method_value" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_stored">
+        stored()
+        <a href="classes/Flow-ETL-Transformer-DerivedColumns.html#method_stored" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Transformer/DerivedColumns.php"><a href="files/src-core-etl-src-flow-etl-transformer-derivedcolumns.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/DerivedColumns.php">DerivedColumns.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The function&#039;s column as the stored derived column: NOT NULL enforced here (intermediates are nullable), the
+same type adopted into the configured backend, any other type rebuilt through it.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">value</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$derived</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowIndex</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">stored</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema-Definition.html"><abbr title="\Flow\ETL\Schema\Definition">Definition</abbr></a>&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$derived</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Column-Column.html"><abbr title="\Flow\ETL\Column\Column">Column</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Column-Backend.html"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Column-Column.html"><abbr title="\Flow\ETL\Column\Column">Column</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -356,15 +379,15 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$value</span>
-                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                <span class="phpdocumentor-argument-list__argument__name">$column</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Column-Column.html"><abbr title="\Flow\ETL\Column\Column">Column</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$rowIndex</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                <span class="phpdocumentor-argument-list__argument__name">$backend</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Column-Backend.html"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -372,9 +395,9 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="method_value_tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_stored_tags">
         Tags
-        <a href="classes/Flow-ETL-Transformer-DerivedColumns.html#method_value_tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-ETL-Transformer-DerivedColumns.html#method_stored_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -389,7 +412,11 @@
 
         
     
-    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Column-Column.html"><abbr title="\Flow\ETL\Column\Column">Column</abbr></a></span>
+            </section>
+
 </article>
             </section>
 
@@ -415,7 +442,7 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Transformer-DerivedColumns.html#method_declare">declare()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Transformer-DerivedColumns.html#method_rows">rows()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Transformer-DerivedColumns.html#method_value">value()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Transformer-DerivedColumns.html#method_stored">stored()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -151,6 +151,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_load"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\Loader\\XMLLoader\u003A\u003Aopen\u0028\u0029",
+            "name": "open",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_open"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\Loader\\XMLLoader\u003A\u003AsaveMode\u0028\u0029",
             "name": "saveMode",
             "summary": "",
@@ -206,11 +211,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_withXMLAttributes"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\Loader\\XMLLoader\u003A\u003Awrite\u0028\u0029",
-            "name": "write",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html#method_write"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\RootlessDocument",
             "name": "RootlessDocument",
             "summary": "",
@@ -231,19 +231,79 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-XMLEncoder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLEncoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-XMLEncoder.html#method_decode"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLEncoder\u003A\u003Aencode\u0028\u0029",
             "name": "encode",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-XMLEncoder.html#method_encode"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLFileBatches",
+            "name": "XMLFileBatches",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLFileBatches.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLFileBatches\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLFileBatches.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLFileBatches\u003A\u003Abatches\u0028\u0029",
+            "name": "batches",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLFileBatches.html#method_batches"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodeBatches",
+            "name": "XMLNodeBatches",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLNodeBatches.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodeBatches\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLNodeBatches.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodeBatches\u003A\u003Adocuments\u0028\u0029",
+            "name": "documents",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLNodeBatches.html#method_documents"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodeBatches\u003A\u003Aphysicals\u0028\u0029",
+            "name": "physicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLNodeBatches.html#method_physicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodeBatches\u003A\u003Astrings\u0028\u0029",
+            "name": "strings",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLNodeBatches.html#method_strings"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodeBatches\u003A\u003Abatch\u0028\u0029",
+            "name": "batch",
+            "summary": "The\u0020node\u0020column\u0020built\u0020from\u0020\u0024nodes\u003B\u0020every\u0020other\u0020column\u0020\u0024body\u0020declares\u0020is\u0020padded\u0020as\u0020matchTo\u0028\u0029\u0020pads\u0020it.",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLNodeBatches.html#method_batch"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodeCursor",
+            "name": "XMLNodeCursor",
+            "summary": "The\u0020walk\u0020to\u0020every\u0020element\u0020on\u0020a\u0020path\u003A\u0020the\u0020reader\u0020stops\u0020on\u0020each\u0020with\u0020libxml\u0027s\u0020internal\u0020errors\u0020on,\u0020so\u0020whatever\u0020reads\u0020the\nnode\u0020there\u0020reports\u0020into\u0020failure\u0028\u0029,\u0020and\u0020moves\u0020past\u0020the\u0020node\u0027s\u0020subtree\u0020when\u0020resumed.",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLNodeCursor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodeCursor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLNodeCursor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodeCursor\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLNodeCursor.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodeCursor\u003A\u003Afailure\u0028\u0029",
+            "name": "failure",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLNodeCursor.html#method_failure"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodes",
             "name": "XMLNodes",
-            "summary": "libxml\u0020builds\u0020each\u0020node\u0027s\u0020DOM\u0020in\u0020C,\u0020so\u0020no\u0020element,\u0020attribute\u0020or\u0020text\u0020of\u0020the\u0020document\u0020passes\u0020through\u0020PHP.",
+            "summary": "libxml\u0020builds\u0020each\u0020node\u0020in\u0020C,\u0020so\u0020no\u0020element,\u0020attribute\u0020or\u0020text\u0020of\u0020the\u0020document\u0020passes\u0020through\u0020PHP.",
             "url": "classes/Flow-ETL-Adapter-XML-XMLNodes.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodes\u003A\u003A__construct\u0028\u0029",
@@ -251,10 +311,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-XMLNodes.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodes\u003A\u003Aof\u0028\u0029",
-            "name": "of",
-            "summary": "Each\u0020element\u0020on\u0020the\u0020path\u0020as\u0020a\u0020document\u0020of\u0020its\u0020own,\u0020declaring\u0020every\u0020namespace\u0020it\u0020uses.",
-            "url": "classes/Flow-ETL-Adapter-XML-XMLNodes.html#method_of"
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodes\u003A\u003Adocuments\u0028\u0029",
+            "name": "documents",
+            "summary": "Each\u0020element\u0020on\u0020the\u0020path\u0020as\u0020a\u0020UTF\u002D8\u0020document\u0020of\u0020its\u0020own,\u0020declaring\u0020every\u0020namespace\u0020it\u0020uses.",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLNodes.html#method_documents"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLNodes\u003A\u003Atexts\u0028\u0029",
+            "name": "texts",
+            "summary": "Each\u0020element\u0020on\u0020the\u0020path\u0020as\u0020its\u0020outer\u0020XML\u003A\u0020the\u0020text\u0020of\u0020the\u0020document\u0020documents\u0028\u0029\u0020yields\u0020for\u0020it.",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLNodes.html#method_texts"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLOpenSink",
+            "name": "XMLOpenSink",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLOpenSink.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLOpenSink\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLOpenSink.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLOpenSink\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "Closes\u0020the\u0020root\u0020element\u0020the\u0020first\u0020write\u0020opened\u003B\u0020a\u0020sink\u0020that\u0020wrote\u0020nothing\u0020appends\u0020nothing.",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLOpenSink.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLOpenSink\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLOpenSink.html#method_write"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLParserExtractor",
             "name": "XMLParserExtractor",
@@ -311,55 +396,45 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html#method_withXMLNodePath"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor",
-            "name": "XMLReaderExtractor",
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLValueNodes",
+            "name": "XMLValueNodes",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html"
+            "url": "classes/Flow-ETL-Adapter-XML-XMLValueNodes.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLValueNodes\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "In\u0020order\u0020to\u0020iterate\u0020only\u0020over\u0020\u003Celement\u003E\u0020nodes\u0020us\u0020root\/elements\/element.",
-            "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003AisRepeatable\u0028\u0029",
-            "name": "isRepeatable",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html#method_isRepeatable"
+            "url": "classes/Flow-ETL-Adapter-XML-XMLValueNodes.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003Aextract\u0028\u0029",
-            "name": "extract",
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLValueNodes\u003A\u003Aof\u0028\u0029",
+            "name": "of",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html#method_extract"
+            "url": "classes/Flow-ETL-Adapter-XML-XMLValueNodes.html#method_of"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003Aschema\u0028\u0029",
-            "name": "schema",
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLValueNodes\u003A\u003Amember\u0028\u0029",
+            "name": "member",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html#method_schema"
+            "url": "classes/Flow-ETL-Adapter-XML-XMLValueNodes.html#method_member"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003ApartitionSchema\u0028\u0029",
-            "name": "partitionSchema",
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLValueNodes\u003A\u003ArefuseOptionalElements\u0028\u0029",
+            "name": "refuseOptionalElements",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html#method_partitionSchema"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003Asource\u0028\u0029",
-            "name": "source",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html#method_source"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003Astatistics\u0028\u0029",
-            "name": "statistics",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html#method_statistics"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLReaderExtractor\u003A\u003AwithSchema\u0028\u0029",
-            "name": "withSchema",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-XML-XMLReaderExtractor.html#method_withSchema"
+            "url": "classes/Flow-ETL-Adapter-XML-XMLValueNodes.html#method_refuseOptionalElements"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLWriter\\DOMDocumentWriter",
             "name": "DOMDocumentWriter",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-XMLWriter-DOMDocumentWriter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLWriter\\DOMDocumentWriter\u003A\u003Aattributes\u0028\u0029",
+            "name": "attributes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLWriter-DOMDocumentWriter.html#method_attributes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLWriter\\DOMDocumentWriter\u003A\u003Aelements\u0028\u0029",
+            "name": "elements",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLWriter-DOMDocumentWriter.html#method_elements"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLWriter\\DOMDocumentWriter\u003A\u003Awrite\u0028\u0029",
             "name": "write",
@@ -371,6 +446,16 @@ Search.appendIndex(
             "summary": "DOMDocumentWriter\u0027s\u0020output\u0020on\u0020libxml\u00202.14\u0020and\u0020later,\u0020byte\u0020for\u0020byte,\u0020without\u0020building\u0020a\u0020DOM\u0020for\u0020every\u0020row\u003A\u0020libxml\u0027s\nescaping,\u0020a\u0020control\u0020character\u0020written\u0020as\u0020U\u002BFFFD,\u0020a\u0020value\u0020cut\u0020at\u0020its\u0020first\u0020NUL,\u0020and\u0020a\u0020name\u0020DOM\u0020refuses\u0020refused\u0020with\nDOM\u0027s\u0020exception.",
             "url": "classes/Flow-ETL-Adapter-XML-XMLWriter-StringXMLWriter.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLWriter\\StringXMLWriter\u003A\u003Aattributes\u0028\u0029",
+            "name": "attributes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLWriter-StringXMLWriter.html#method_attributes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLWriter\\StringXMLWriter\u003A\u003Aelements\u0028\u0029",
+            "name": "elements",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLWriter-StringXMLWriter.html#method_elements"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLWriter\\StringXMLWriter\u003A\u003Awrite\u0028\u0029",
             "name": "write",
             "summary": "",
@@ -380,6 +465,16 @@ Search.appendIndex(
             "name": "XMLWriter",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-XML-XMLWriter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLWriter\u003A\u003Aattributes\u0028\u0029",
+            "name": "attributes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLWriter.html#method_attributes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLWriter\u003A\u003Aelements\u0028\u0029",
+            "name": "elements",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-XML-XMLWriter.html#method_elements"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\XML\\XMLWriter\u003A\u003Awrite\u0028\u0029",
             "name": "write",

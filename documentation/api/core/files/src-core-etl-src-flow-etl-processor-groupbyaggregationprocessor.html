@@ -136,7 +136,9 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Processor-GroupByAggregationProcessor.html"><abbr title="\Flow\ETL\Processor\GroupByAggregationProcessor">GroupByAggregationProcessor</abbr></a></dt><dd>Aggregates buckets spilled by BucketingProcessor, one bucket per incoming metadata Row.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Processor-GroupByAggregationProcessor.html"><abbr title="\Flow\ETL\Processor\GroupByAggregationProcessor">GroupByAggregationProcessor</abbr></a></dt><dd>Aggregates in one pass while the process stays under the memory limit. Past it, the rest of the stream is partitioned
+into buckets and each bucket aggregated on its own; the groups aggregated before the limit are merged into the bucket
+their key hashes to.</dd>    </dl>
 
 
 

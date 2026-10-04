@@ -132,7 +132,10 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Config-ConfigBuilder.html"><abbr title="\Flow\ETL\Config\ConfigBuilder">ConfigBuilder</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Config-ConfigBuilder.html"><abbr title="\Flow\ETL\Config\ConfigBuilder">ConfigBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Config-MemoryLimit.html"><abbr title="\Flow\ETL\Config\MemoryLimit">MemoryLimit</abbr></a></dt><dd>The process memory a spilling algorithm (sort, TopN, join build) lets the whole process reach before it spills - the
+limit is compared with the process&#039;s usage, never with the algorithm&#039;s own buffer, so a sort and a join in one
+pipeline together stay under it. FLOW_MAX_MEMORY when set, otherwise 70% of PHP&#039;s memory_limit, and 1 GiB when PHP&#039;s
+memory_limit is -1 - an unlimited algorithm would grow until the OS kills PHP.</dd>    </dl>
 
     <h4 id="namespaces">
         Namespaces

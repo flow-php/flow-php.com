@@ -133,7 +133,10 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-Storage-FilesystemBuckets.html"><abbr title="\Flow\ETL\Bucketing\Storage\FilesystemBuckets">FilesystemBuckets</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-Storage-MemoryBuckets.html"><abbr title="\Flow\ETL\Bucketing\Storage\MemoryBuckets">MemoryBuckets</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-Storage-PSRCacheBuckets.html"><abbr title="\Flow\ETL\Bucketing\Storage\PSRCacheBuckets">PSRCacheBuckets</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-Storage-FilesystemBuckets.html"><abbr title="\Flow\ETL\Bucketing\Storage\FilesystemBuckets">FilesystemBuckets</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-Storage-MemoryBuckets.html"><abbr title="\Flow\ETL\Bucketing\Storage\MemoryBuckets">MemoryBuckets</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-Storage-PSRCacheBuckets.html"><abbr title="\Flow\ETL\Bucketing\Storage\PSRCacheBuckets">PSRCacheBuckets</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Bucketing-Storage-SpillingBuckets.html"><abbr title="\Flow\ETL\Bucketing\Storage\SpillingBuckets">SpillingBuckets</abbr></a></dt><dd>Keeps buckets in memory while the process stays under the memory limit. The first time it passes the limit every
+bucket moves its full batches to $disk; from then on a bucket writes to $disk each time it holds a full batch, so
+every frame on $disk holds exactly $batchSize rows and memory stays bounded by one batch per bucket. The rest of a
+bucket stays buffered and is read after its frames.</dd>    </dl>
 
 
 

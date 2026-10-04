@@ -159,13 +159,6 @@ before sending them to the extension&#039;s writeBatch() in a single call.</dd>
 <dd>Compression level for Brotli codec. This option is going to be passed to gzcompress function when Compression is set to Brotli.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
-    <a class="" href="classes/Flow-Parquet-Option.html#enumcase_BYTE_ARRAY_TO_STRING">BYTE_ARRAY_TO_STRING</a>
-    <span>
-                                    </span>
-</dt>
-<dd>Some parquet writers might not properly use LogicalTyp for storing Strings or JSON&#039;s.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_COMPRESSIONS">COLUMNS_COMPRESSIONS</a>
     <span>
                                     </span>
@@ -383,36 +376,6 @@ before sending them to the extension&#039;s writeBatch() in a single call.</p>
             -enum-case
         "
 >
-    <h4 class="phpdocumentor-element__name" id="enumcase_BYTE_ARRAY_TO_STRING">
-        BYTE_ARRAY_TO_STRING
-        <a href="classes/Flow-Parquet-Option.html#enumcase_BYTE_ARRAY_TO_STRING" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">44</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Some parquet writers might not properly use LogicalTyp for storing Strings or JSON&#039;s.</p>
-
-    
-        <section class="phpdocumentor-description"><p>This option would tell the reader to treat all BYTE_ARRAY's as UTF-8 strings.</p>
-<p>Default value is true;</p>
-</section>
-
-    
-    
-
-        
-    </article>
-                    <article
-        class="
-            phpdocumentor-element
-            -enum-case
-        "
->
     <h4 class="phpdocumentor-element__name" id="enumcase_COLUMNS_COMPRESSIONS">
         COLUMNS_COMPRESSIONS
         <a href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_COMPRESSIONS" class="headerlink"><i class="fas fa-link"></i></a>
@@ -421,7 +384,7 @@ before sending them to the extension&#039;s writeBatch() in a single call.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -459,7 +422,7 @@ before sending them to the extension&#039;s writeBatch() in a single call.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -497,7 +460,7 @@ before sending them to the extension&#039;s writeBatch() in a single call.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -529,7 +492,7 @@ when dictionary size gets above DICTIONARY_PAGE_SIZE.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -558,7 +521,7 @@ when dictionary size gets above DICTIONARY_PAGE_SIZE.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -588,7 +551,7 @@ when dictionary size gets above DICTIONARY_PAGE_SIZE.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -623,7 +586,7 @@ return array of bytes (12) that represents INT96.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -653,7 +616,7 @@ return array of bytes (12) that represents INT96.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -683,7 +646,7 @@ return array of bytes (12) that represents INT96.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -715,7 +678,7 @@ This should be considered as a threshold rather than a strict value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -746,7 +709,7 @@ If the value is set to 100, ColumnChunksBuilder is going to check the size only 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -778,7 +741,7 @@ https://parquet.apache.org/docs/file-format/configurations/#row-group-size</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -809,7 +772,7 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -838,7 +801,7 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 
     </aside>
 
@@ -872,7 +835,7 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">195</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -912,7 +875,6 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_ARROW_BATCH_SIZE">ARROW_BATCH_SIZE</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_ARROW_WRITE_BATCH_SIZE">ARROW_WRITE_BATCH_SIZE</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_BROTLI_COMPRESSION_LEVEL">BROTLI_COMPRESSION_LEVEL</a></li>
-                                                    <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_BYTE_ARRAY_TO_STRING">BYTE_ARRAY_TO_STRING</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_COMPRESSIONS">COLUMNS_COMPRESSIONS</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_ENCODINGS">COLUMNS_ENCODINGS</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_PAGE_MIN_CARDINALITY_RATION">DICTIONARY_PAGE_MIN_CARDINALITY_RATION</a></li>

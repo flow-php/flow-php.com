@@ -61,15 +61,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealEncoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_decode"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealEncoder\u003A\u003Aencode\u0028\u0029",
             "name": "encode",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealEncoder\u003A\u003Acolumn\u0028\u0029",
+            "name": "column",
+            "summary": "A\u0020column\u0027s\u0020document\u0020fields\u003A\u0020datetime\u0020\/\u0020date\u0020text\u0020from\u0020the\u0020physicals,\u0020json\u0020and\u0020containers\u0020as\u0020normalized\u0020arrays,\nphysicals\u0020where\u0020the\u0020physical\u0020is\u0020the\u0020value\u0020\u0028scalars,\u0020a\u0020time\u0027s\u0020microseconds,\u0020null\u0029,\u0020TextValues\u0020for\u0020every\u0020other\u0020type.",
+            "url": "classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_column"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader",
             "name": "SealLoader",

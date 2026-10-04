@@ -110,7 +110,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Flow\ETL\Loader\Closure">Closure</abbr>,                             <abbr title="\Flow\ETL\Loader\Discardable">Discardable</abbr>,                             <abbr title="\Flow\ETL\Loader\FileLoader">FileLoader</abbr>,                             <abbr title="\Flow\ETL\Loader">Loader</abbr>,                             <abbr title="\Flow\ETL\Loader\PartitioningLoader">PartitioningLoader</abbr>                    </span>
+                            <abbr title="\Flow\ETL\Loader\Closure">Closure</abbr>,                             <abbr title="\Flow\ETL\Loader\Discardable">Discardable</abbr>,                             <abbr title="\Flow\ETL\Loader\File\FileLoader">FileLoader</abbr>,                             <abbr title="\Flow\ETL\Loader\File\FileSinks">FileSinks</abbr>,                             <abbr title="\Flow\ETL\Loader">Loader</abbr>,                             <abbr title="\Flow\ETL\Loader\PartitioningLoader">PartitioningLoader</abbr>                    </span>
     
     </h2>
 
@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -142,7 +142,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\Closure">Closure</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\Discardable">Discardable</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\FileLoader">FileLoader</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader">Loader</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\PartitioningLoader">PartitioningLoader</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\Closure">Closure</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\Discardable">Discardable</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\File\FileLoader">FileLoader</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\File\FileSinks">FileSinks</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader">Loader</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Loader\PartitioningLoader">PartitioningLoader</abbr></dt>    </dl>
 
 
 
@@ -188,6 +188,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_open">open()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\ETL\Loader\File\FileSink">FileSink</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_partitionBy">partitionBy()</a>
     <span>
                                 &nbsp;: static    </span>
@@ -223,12 +229,6 @@
                                 &nbsp;: self    </span>
 </dt>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_write">write()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
     </dl>
 
 
@@ -257,14 +257,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-JSON-JsonFraming.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonFraming">JsonFraming</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$framing</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Adapter-JSON-JsonFraming.html#enumcase_Array"><abbr title="\Flow\ETL\Adapter\JSON\JsonFraming::Array">JsonFraming::Array</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -283,6 +283,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$filesystem</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$framing</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-JSON-JsonFraming.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonFraming">JsonFraming</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-ETL-Adapter-JSON-JsonFraming.html#enumcase_Array"><abbr title="\Flow\ETL\Adapter\JSON\JsonFraming::Array">JsonFraming::Array</abbr></a></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -308,7 +315,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -352,7 +359,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -390,7 +397,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -434,7 +441,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -477,6 +484,61 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_open">
+        open()
+        <a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_open" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">106</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">open</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Loader\File\FileSink">FileSink</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stream</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$backend</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Column\Backend">Backend</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Loader\File\FileSink">FileSink</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_partitionBy">
         partitionBy()
         <a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_partitionBy" class="headerlink"><i class="fas fa-link"></i></a>
@@ -485,7 +547,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -533,7 +595,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -581,7 +643,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -629,7 +691,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -677,7 +739,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -725,7 +787,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -750,6 +812,20 @@
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="method_withRowsInNewLines_tags">
+        Tags
+        <a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_withRowsInNewLines_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Flow\ETL\Exception\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                                                    
+                                    </dd>
+                        </dl>
 
         
     
@@ -758,64 +834,6 @@
         <span class="phpdocumentor-signature__response_type">self</span>
             </section>
 
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_write">
-        write()
-        <a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_write" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-jsonloader.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/JsonLoader.php">JsonLoader.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">155</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">write</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Rows">Rows</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nextRows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <abbr title="\Flow\Filesystem\Partition">Partition</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partitions</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$nextRows</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Rows">Rows</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$partitions</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <abbr title="\Flow\Filesystem\Partition">Partition</abbr>&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$context</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-    
 </article>
             </section>
 
@@ -844,13 +862,13 @@
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_destination">destination()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_discard">discard()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_load">load()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_open">open()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_partitionBy">partitionBy()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_saveMode">saveMode()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_withDateFormat">withDateFormat()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_withDateTimeFormat">withDateTimeFormat()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_withFlags">withFlags()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_withRowsInNewLines">withRowsInNewLines()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html#method_write">write()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -121,7 +121,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/WorkbookSheet.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-workbooksheet.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/WorkbookSheet.php">WorkbookSheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">11</span>
 
     </aside>
 
@@ -168,13 +168,13 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Excel-WorkbookSheet.html#method_rows">rows()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Excel-WorkbookSheet.html#method_sample">sample()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;    </span>
 </dt>
 <dd>rows() for a bounded schema sample: every row it hands out stays buffered and the sheet stays open, so the
 rows() that follows replays the sample and parses on from where the sample stopped, instead of parsing the
@@ -208,7 +208,7 @@ sample a second time. Closing the sheet stays with its owner.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/WorkbookSheet.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-workbooksheet.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/WorkbookSheet.php">WorkbookSheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -259,7 +259,7 @@ sample a second time. Closing the sheet stays with its owner.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/WorkbookSheet.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-workbooksheet.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/WorkbookSheet.php">WorkbookSheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -293,7 +293,7 @@ sample a second time. Closing the sheet stays with its owner.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/WorkbookSheet.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-workbooksheet.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/WorkbookSheet.php">WorkbookSheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -331,14 +331,14 @@ sample a second time. Closing the sheet stays with its owner.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/WorkbookSheet.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-workbooksheet.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/WorkbookSheet.php">WorkbookSheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">rows</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">rows</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -351,7 +351,7 @@ sample a second time. Closing the sheet stays with its owner.</dd>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;</span>
             </section>
 
 </article>
@@ -369,7 +369,7 @@ sample a second time. Closing the sheet stays with its owner.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/WorkbookSheet.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-workbooksheet.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/WorkbookSheet.php">WorkbookSheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -379,7 +379,7 @@ sample a second time. Closing the sheet stays with its owner.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sample</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">sample</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -392,7 +392,7 @@ sample a second time. Closing the sheet stays with its owner.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;</span>
             </section>
 
 </article>

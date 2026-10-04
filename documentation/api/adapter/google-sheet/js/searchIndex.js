@@ -36,31 +36,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-adapter-googlesheet.html#function_from_google_sheet_columns"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetEncoder",
-            "name": "GoogleSheetEncoder",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetEncoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetEncoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetEncoder\u003A\u003Aheaders\u0028\u0029",
-            "name": "headers",
-            "summary": "The\u0020header\u0020the\u0020first\u0020decoded\u0020row\u0020consumed,\u0020or\u0020the\u0020generated\u0020\u0060e00\u0060...\u0020names\u0020under\u0020withHeader\u0028false\u0029\u003B\n\u005B\u005D\u0020before\u0020any\u0020row.",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetEncoder.html#method_headers"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor",
             "name": "GoogleSheetExtractor",
             "summary": "",
@@ -161,10 +136,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions\u003A\u003Aencoder\u0028\u0029",
-            "name": "encoder",
-            "summary": "A\u0020fresh\u0020encoder\u0020per\u0020pass\u0020\u002D\u0020the\u0020sample\u0020and\u0020the\u0020read\u0020each\u0020consume\u0020their\u0020own\u0020header\u0020row.",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html#method_encoder"
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions\u003A\u003Adecoder\u0028\u0029",
+            "name": "decoder",
+            "summary": "A\u0020fresh\u0020decoder\u0020per\u0020pass\u0020\u002D\u0020the\u0020sample\u0020and\u0020the\u0020read\u0020each\u0020consume\u0020their\u0020own\u0020header\u0020row.",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html#method_decoder"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions\u003A\u003Atyper\u0028\u0029",
             "name": "typer",

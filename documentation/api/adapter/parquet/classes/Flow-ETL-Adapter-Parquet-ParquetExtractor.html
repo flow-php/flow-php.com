@@ -110,11 +110,11 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor">Extractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\FileExtractor">FileExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr>                    </span>
+                            <abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor">Extractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\File\FileExtractor">FileExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\File\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr>,                             <abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr>                    </span>
     
             <span class="phpdocumentor-element__extends">
             uses
-                            <abbr title="\Flow\ETL\Extractor\Batches">Batches</abbr>,                             <abbr title="\Flow\ETL\Extractor\FileReading">FileReading</abbr>                    </span>
+                            <abbr title="\Flow\ETL\Extractor\Batches">Batches</abbr>,                             <abbr title="\Flow\ETL\Extractor\File\FileReading">FileReading</abbr>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -127,7 +127,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -145,7 +145,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\FileExtractor">FileExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\BatchableExtractor">BatchableExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor">Extractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\File\FileExtractor">FileExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\File\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\Extractor\RewindableExtractor">RewindableExtractor</abbr></dt>    </dl>
 
 
 
@@ -162,6 +162,12 @@
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method___destruct">__destruct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -273,7 +279,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -316,6 +322,40 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method___destruct">
+        __destruct()
+        <a href="classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method___destruct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">101</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__destruct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_extract">
         extract()
         <a href="classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_extract" class="headerlink"><i class="fas fa-link"></i></a>
@@ -324,7 +364,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -386,7 +426,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -424,7 +464,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -462,7 +502,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">214</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -500,7 +540,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">243</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
@@ -538,7 +578,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">221</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -576,7 +616,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -625,7 +665,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">248</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 
     </aside>
 
@@ -673,7 +713,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">260</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 
     </aside>
 
@@ -721,7 +761,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">203</span>
 
     </aside>
 
@@ -769,7 +809,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">278</span>
+    <span class="phpdocumentor-element-found-in__line">214</span>
 
     </aside>
 
@@ -817,7 +857,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">290</span>
+    <span class="phpdocumentor-element-found-in__line">226</span>
 
     </aside>
 
@@ -865,7 +905,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetextractor.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetExtractor.php">ParquetExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">332</span>
+    <span class="phpdocumentor-element-found-in__line">321</span>
 
     </aside>
 
@@ -922,6 +962,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method___destruct">__destruct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_extract">extract()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_isRepeatable">isRepeatable()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_partitionSchema">partitionSchema()</a></li>

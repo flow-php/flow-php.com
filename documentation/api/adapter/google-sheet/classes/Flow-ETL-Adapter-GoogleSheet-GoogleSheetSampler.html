@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetsampler.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php">GoogleSheetSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
@@ -166,7 +166,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSampler.html#method_batches">batches()</a>
     <span>
-                                &nbsp;: null|<abbr title="\Generator">Generator</abbr>&lt;int, array&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;&gt;    </span>
+                                &nbsp;: null|<abbr title="\Generator">Generator</abbr>&lt;int, array&lt;int, array&lt;string|int, mixed&gt;&gt;&gt;    </span>
 </dt>
 <dd>The rows the sample already holds, batched, when its range covered the whole grid - so a read does not fetch
 the same rows a second time. Null when it did not, and the caller must read the sheet itself.</dd>
@@ -192,7 +192,7 @@ the same rows a second time. Null when it did not, and the caller must read the 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSampler.html#method_samples">samples()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;&gt;    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;&gt;    </span>
 </dt>
 <dd>$rowBudget is deliberately unused: the budget sized the single range when this sampler was constructed,
 and sample() is memoised, so advancing further cannot fetch more.</dd>
@@ -225,7 +225,7 @@ and sample() is memoised, so advancing further cannot fetch more.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetsampler.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php">GoogleSheetSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -276,7 +276,7 @@ and sample() is memoised, so advancing further cannot fetch more.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetsampler.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php">GoogleSheetSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -285,7 +285,7 @@ the same rows a second time. Null when it did not, and the caller must read the 
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">batches</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<abbr title="\Generator">Generator</abbr>&lt;int, array&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">batches</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<abbr title="\Generator">Generator</abbr>&lt;int, array&lt;int, array&lt;string|int, mixed&gt;&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -308,7 +308,7 @@ the same rows a second time. Null when it did not, and the caller must read the 
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">null|<abbr title="\Generator">Generator</abbr>&lt;int, array&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;&gt;</span>
+        <span class="phpdocumentor-signature__response_type">null|<abbr title="\Generator">Generator</abbr>&lt;int, array&lt;int, array&lt;string|int, mixed&gt;&gt;&gt;</span>
             </section>
 
 </article>
@@ -326,7 +326,7 @@ the same rows a second time. Null when it did not, and the caller must read the 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetsampler.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php">GoogleSheetSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -364,7 +364,7 @@ the same rows a second time. Null when it did not, and the caller must read the 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetsampler.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php">GoogleSheetSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -402,7 +402,7 @@ the same rows a second time. Null when it did not, and the caller must read the 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetsampler.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php">GoogleSheetSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -440,7 +440,7 @@ the same rows a second time. Null when it did not, and the caller must read the 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-googlesheetsampler.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/GoogleSheetSampler.php">GoogleSheetSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -449,7 +449,7 @@ and sample() is memoised, so advancing further cannot fetch more.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">samples</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowBudget</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">samples</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowBudget</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -472,7 +472,7 @@ and sample() is memoised, so advancing further cannot fetch more.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Row\RawRowValues">RawRowValues</abbr>&gt;&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;&gt;</span>
             </section>
 
 </article>

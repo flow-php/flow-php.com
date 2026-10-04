@@ -178,7 +178,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Calculator\\RunningSum",
             "name": "RunningSum",
-            "summary": "",
+            "summary": "IEEE\u0020addition\u0020with\u0020Neumaier\u0020compensation\u003A\u0020the\u0020rounding\u0020error\u0020of\u0020every\u0020float\u0020addition\u0020is\u0020carried\u0020and\u0020added\u0020back\u0020once,\nso\u0020a\u0020long\u0020run\u0020of\u0020floats\u0020does\u0020not\u0020drift.\u0020An\u0020exact\u0020addition\u0020is\u0020decimal\u0020\u0028Calculator\u0029\u0020over\u0020the\u0020compensated\u0020total.",
             "url": "classes/Flow-Calculator-RunningSum.html"
         },                {
             "fqsen": "\\Flow\\Calculator\\RunningSum\u003A\u003A__construct\u0028\u0029",
@@ -190,6 +190,16 @@ Search.appendIndex(
             "name": "add",
             "summary": "",
             "url": "classes/Flow-Calculator-RunningSum.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\RunningSum\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "",
+            "url": "classes/Flow-Calculator-RunningSum.html#method_merge"
+        },                {
+            "fqsen": "\\Flow\\Calculator\\RunningSum\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Flow-Calculator-RunningSum.html#method_value"
         },                {
             "fqsen": "\\Flow\\Clock\\FakeClock",
             "name": "FakeClock",
@@ -311,16 +321,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Bucketing-Bucket.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Bucketing\\Bucket\u003A\u003Aschema\u0028\u0029",
-            "name": "schema",
-            "summary": "",
-            "url": "classes/Flow-ETL-Bucketing-Bucket.html#method_schema"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Bucketing\\Bucket\u003A\u003AtoRow\u0028\u0029",
-            "name": "toRow",
-            "summary": "",
-            "url": "classes/Flow-ETL-Bucketing-Bucket.html#method_toRow"
-        },                {
             "fqsen": "\\Flow\\ETL\\Bucketing\\Bucket\u003A\u003A\u0024id",
             "name": "id",
             "summary": "",
@@ -335,16 +335,6 @@ Search.appendIndex(
             "name": "index",
             "summary": "",
             "url": "classes/Flow-ETL-Bucketing-Bucket.html#property_index"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketingStrategy",
-            "name": "BucketingStrategy",
-            "summary": "",
-            "url": "classes/Flow-ETL-Bucketing-BucketingStrategy.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketingStrategy\u003A\u003Abucketize\u0028\u0029",
-            "name": "bucketize",
-            "summary": "Consumes\u0020the\u0020row\u0020stream,\u0020spills\u0020bucket\u0020data\u0020into\u0020the\u0020storage\u0020and\u0020yields\u0020each\u0020Bucket\nonce\u0020it\u0020is\u0020complete\u0020\u002D\u0020the\u0020strategy\u0020alone\u0020decides\u0020when\u0020and\u0020how\u0020buckets\u0020are\u0020stored.",
-            "url": "classes/Flow-ETL-Bucketing-BucketingStrategy.html#method_bucketize"
         },                {
             "fqsen": "\\Flow\\ETL\\Bucketing\\BucketRun",
             "name": "BucketRun",
@@ -416,21 +406,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Bucketing-Buckets.html#method_storage"
         },                {
-            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketShape",
-            "name": "BucketShape",
-            "summary": "Column\u0020names\u0020of\u0020the\u0020bucket\u0020metadata\u0020Row\u0020yielded\u0020by\u0020BucketingProcessor,\u0020one\u0020Row\u0020per\u0020bucket.",
-            "url": "classes/Flow-ETL-Bucketing-BucketShape.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketShape\u003A\u003Aid",
-            "name": "id",
-            "summary": "",
-            "url": "classes/Flow-ETL-Bucketing-BucketShape.html#enumcase_id"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Bucketing\\BucketShape\u003A\u003AtotalRows",
-            "name": "totalRows",
-            "summary": "",
-            "url": "classes/Flow-ETL-Bucketing-BucketShape.html#enumcase_totalRows"
-        },                {
             "fqsen": "\\Flow\\ETL\\Bucketing\\BucketsStorage",
             "name": "BucketsStorage",
             "summary": "",
@@ -466,9 +441,19 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Bucketing-HashBucketing.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\HashBucketing\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-HashBucketing.html#method_index"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\HashBucketing\u003A\u003AindexOf\u0028\u0029",
+            "name": "indexOf",
+            "summary": "The\u0020bucket\u0020a\u0020row\u0020with\u0020these\u0020key\u0020values\u0020lands\u0020in.",
+            "url": "classes/Flow-ETL-Bucketing-HashBucketing.html#method_indexOf"
+        },                {
             "fqsen": "\\Flow\\ETL\\Bucketing\\HashBucketing\u003A\u003Abucketize\u0028\u0029",
             "name": "bucketize",
-            "summary": "Consumes\u0020the\u0020row\u0020stream,\u0020spills\u0020bucket\u0020data\u0020into\u0020the\u0020storage\u0020and\u0020yields\u0020each\u0020Bucket\nonce\u0020it\u0020is\u0020complete\u0020\u002D\u0020the\u0020strategy\u0020alone\u0020decides\u0020when\u0020and\u0020how\u0020buckets\u0020are\u0020stored.",
+            "summary": "",
             "url": "classes/Flow-ETL-Bucketing-HashBucketing.html#method_bucketize"
         },                {
             "fqsen": "\\Flow\\ETL\\Bucketing\\Hasher",
@@ -511,11 +496,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Bucketing-KeyValues.html#method_of"
         },                {
-            "fqsen": "\\Flow\\ETL\\Bucketing\\KeyValues\u003A\u003AofRow\u0028\u0029",
-            "name": "ofRow",
-            "summary": "",
-            "url": "classes/Flow-ETL-Bucketing-KeyValues.html#method_ofRow"
-        },                {
             "fqsen": "\\Flow\\ETL\\Bucketing\\NativeHasher",
             "name": "NativeHasher",
             "summary": "",
@@ -545,21 +525,6 @@ Search.appendIndex(
             "name": "hash",
             "summary": "",
             "url": "classes/Flow-ETL-Bucketing-SingleBucketHasher.html#method_hash"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Bucketing\\SortedRunBucketing",
-            "name": "SortedRunBucketing",
-            "summary": "",
-            "url": "classes/Flow-ETL-Bucketing-SortedRunBucketing.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Bucketing\\SortedRunBucketing\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Bucketing-SortedRunBucketing.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Bucketing\\SortedRunBucketing\u003A\u003Abucketize\u0028\u0029",
-            "name": "bucketize",
-            "summary": "Consumes\u0020the\u0020row\u0020stream,\u0020spills\u0020bucket\u0020data\u0020into\u0020the\u0020storage\u0020and\u0020yields\u0020each\u0020Bucket\nonce\u0020it\u0020is\u0020complete\u0020\u002D\u0020the\u0020strategy\u0020alone\u0020decides\u0020when\u0020and\u0020how\u0020buckets\u0020are\u0020stored.",
-            "url": "classes/Flow-ETL-Bucketing-SortedRunBucketing.html#method_bucketize"
         },                {
             "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\FilesystemBuckets",
             "name": "FilesystemBuckets",
@@ -645,6 +610,56 @@ Search.appendIndex(
             "name": "set",
             "summary": "",
             "url": "classes/Flow-ETL-Bucketing-Storage-PSRCacheBuckets.html#method_set"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\SpillingBuckets",
+            "name": "SpillingBuckets",
+            "summary": "Keeps\u0020buckets\u0020in\u0020memory\u0020while\u0020the\u0020process\u0020stays\u0020under\u0020the\u0020memory\u0020limit.\u0020The\u0020first\u0020time\u0020it\u0020passes\u0020the\u0020limit\u0020every\nbucket\u0020moves\u0020its\u0020full\u0020batches\u0020to\u0020\u0024disk\u003B\u0020from\u0020then\u0020on\u0020a\u0020bucket\u0020writes\u0020to\u0020\u0024disk\u0020each\u0020time\u0020it\u0020holds\u0020a\u0020full\u0020batch,\u0020so\nevery\u0020frame\u0020on\u0020\u0024disk\u0020holds\u0020exactly\u0020\u0024batchSize\u0020rows\u0020and\u0020memory\u0020stays\u0020bounded\u0020by\u0020one\u0020batch\u0020per\u0020bucket.\u0020The\u0020rest\u0020of\u0020a\nbucket\u0020stays\u0020buffered\u0020and\u0020is\u0020read\u0020after\u0020its\u0020frames.",
+            "url": "classes/Flow-ETL-Bucketing-Storage-SpillingBuckets.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\SpillingBuckets\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-SpillingBuckets.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\SpillingBuckets\u003A\u003Aaround\u0028\u0029",
+            "name": "around",
+            "summary": "\u0024bucketing\u0027s\u0020storage\u0020behind\u0020the\u0020memory\u0020limit\u0020\u002D\u0020a\u0020resident\u0020storage\u0020already\u0020holds\u0020everything\u0020in\u0020memory.",
+            "url": "classes/Flow-ETL-Bucketing-Storage-SpillingBuckets.html#method_around"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\SpillingBuckets\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-SpillingBuckets.html#method_append"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\SpillingBuckets\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Yields\u0020the\u0020bucket\u0020back\u0020in\u0020batches\u0020\u002D\u0020batch\u0020shape\u0020is\u0020storage\u002Ddefined,\u0020consumers\u0020must\u0020not\nassume\u0020any\u0020particular\u0020batch\u0020size.",
+            "url": "classes/Flow-ETL-Bucketing-Storage-SpillingBuckets.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\SpillingBuckets\u003A\u003Aremove\u0028\u0029",
+            "name": "remove",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-SpillingBuckets.html#method_remove"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\SpillingBuckets\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-SpillingBuckets.html#method_set"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\SpillingBuckets\u003A\u003AwriteFullBatches\u0028\u0029",
+            "name": "writeFullBatches",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-SpillingBuckets.html#method_writeFullBatches"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\SpillingBuckets\u003A\u003A\u0024disk",
+            "name": "disk",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-SpillingBuckets.html#property_disk"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Bucketing\\Storage\\SpillingBuckets\u003A\u003A\u0024memoryLimit",
+            "name": "memoryLimit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Bucketing-Storage-SpillingBuckets.html#property_memoryLimit"
         },                {
             "fqsen": "\\Flow\\ETL\\Cache\\CacheIndex",
             "name": "CacheIndex",
@@ -986,6 +1001,1916 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Cardinality.html#property_relativeError"
         },                {
+            "fqsen": "\\Flow\\ETL\\Column\\AdaptiveBackend",
+            "name": "AdaptiveBackend",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-AdaptiveBackend.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\AdaptiveBackend\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-AdaptiveBackend.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\AdaptiveBackend\u003A\u003Abuilder\u0028\u0029",
+            "name": "builder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-AdaptiveBackend.html#method_builder"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\AdaptiveBackend\u003A\u003Aconstant\u0028\u0029",
+            "name": "constant",
+            "summary": "\u0024value\u0020is\u0020logical\u0020or\u0020raw\u0020and\u0020is\u0020cast\u0020once\u0020through\u0020the\u0020Definition\u0020exactly\u0020like\u0020ColumnBuilder\u003A\u003Aappend\u0028\u0029.",
+            "url": "classes/Flow-ETL-Column-AdaptiveBackend.html#method_constant"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\AdaptiveBackend\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "Child\u0020node\u0020lengths\u0020and\u0020null\u0020counts\u0020are\u0020derived\u0020from\u0020the\u0020buffers,\u0020so\u0020only\u0020the\u0020top\u0020node\u0020travels.",
+            "url": "classes/Flow-ETL-Column-AdaptiveBackend.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\AdaptiveBackend\u003A\u003Aadopt\u0028\u0029",
+            "name": "adopt",
+            "summary": "The\u0020same\u0020values\u0020in\u0020this\u0020backend\u0027s\u0020storage\u003A\u0020\u0024column\u0020itself\u0020when\u0020this\u0020backend\u0020owns\u0020it,\u0020otherwise\u0020one\u0020copy\u0020through\nbuilder\u0028\u0024definition\u0029\u002D\u003EappendTake\u0028\u0029.\u0020For\u0020producers\u0020that\u0020build\u0020columns\u0020outside\u0020the\u0020configured\u0020backend.",
+            "url": "classes/Flow-ETL-Column-AdaptiveBackend.html#method_adopt"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\AdaptiveBackend\u003A\u003AallocatedBytes\u0028\u0029",
+            "name": "allocatedBytes",
+            "summary": "Bytes\u0020this\u0020backend\u0020holds\u0020outside\u0020PHP\u0027s\u0020memory\u0020manager\u0020\u0028invisible\u0020to\u0020memory_get_usage\u0028\u0029\u0020and\u0020memory_limit\u0029.",
+            "url": "classes/Flow-ETL-Column-AdaptiveBackend.html#method_allocatedBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Backend",
+            "name": "Backend",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Backend.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Backend\u003A\u003Abuilder\u0028\u0029",
+            "name": "builder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Backend.html#method_builder"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Backend\u003A\u003Aconstant\u0028\u0029",
+            "name": "constant",
+            "summary": "\u0024value\u0020is\u0020logical\u0020or\u0020raw\u0020and\u0020is\u0020cast\u0020once\u0020through\u0020the\u0020Definition\u0020exactly\u0020like\u0020ColumnBuilder\u003A\u003Aappend\u0028\u0029.",
+            "url": "classes/Flow-ETL-Column-Backend.html#method_constant"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Backend\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "Child\u0020node\u0020lengths\u0020and\u0020null\u0020counts\u0020are\u0020derived\u0020from\u0020the\u0020buffers,\u0020so\u0020only\u0020the\u0020top\u0020node\u0020travels.",
+            "url": "classes/Flow-ETL-Column-Backend.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Backend\u003A\u003Aadopt\u0028\u0029",
+            "name": "adopt",
+            "summary": "The\u0020same\u0020values\u0020in\u0020this\u0020backend\u0027s\u0020storage\u003A\u0020\u0024column\u0020itself\u0020when\u0020this\u0020backend\u0020owns\u0020it,\u0020otherwise\u0020one\u0020copy\u0020through\nbuilder\u0028\u0024definition\u0029\u002D\u003EappendTake\u0028\u0029.\u0020For\u0020producers\u0020that\u0020build\u0020columns\u0020outside\u0020the\u0020configured\u0020backend.",
+            "url": "classes/Flow-ETL-Column-Backend.html#method_adopt"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Backend\u003A\u003AallocatedBytes\u0028\u0029",
+            "name": "allocatedBytes",
+            "summary": "Bytes\u0020this\u0020backend\u0020holds\u0020outside\u0020PHP\u0027s\u0020memory\u0020manager\u0020\u0028invisible\u0020to\u0020memory_get_usage\u0028\u0029\u0020and\u0020memory_limit\u0029.",
+            "url": "classes/Flow-ETL-Column-Backend.html#method_allocatedBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column",
+            "name": "Column",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Column.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "The\u0020logical\u0020type\u003B\u0020a\u0020child\u0020column\u0020has\u0020a\u0020Type,\u0020never\u0020a\u0020Definition.",
+            "url": "classes/Flow-ETL-Column-Column.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Column.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Column.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column\u003A\u003AnullCount\u0028\u0029",
+            "name": "nullCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Column.html#method_nullCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column\u003A\u003Aat\u0028\u0029",
+            "name": "at",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "url": "classes/Flow-ETL-Column-Column.html#method_at"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column\u003A\u003Aphysicals\u0028\u0029",
+            "name": "physicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Column.html#method_physicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "LOGICAL\u0020cell\u0020\u002D\u0020PHP\u003A\u0020Physical\u003A\u003AfromPhysical\u0028at\u0028\u0024i\u0029\u0029\u003B\u0020native\u003A\u0020built\u0020in\u0020Rust.",
+            "url": "classes/Flow-ETL-Column-Column.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column\u003A\u003Avalues\u0028\u0029",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Column.html#method_values"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column\u003A\u003Aslice\u0028\u0029",
+            "name": "slice",
+            "summary": "\u0060self\u0060,\u0020never\u0020\u0060static\u0060\u003A\u0020the\u0020extension\u0020declares\u0020these\u0020too\u0020and\u0020ext\u002Dphp\u002Drs\u0020has\u0020no\u0020\u0060static\u0060\u0020return\u0020binding.",
+            "url": "classes/Flow-ETL-Column-Column.html#method_slice"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column\u003A\u003Atake\u0028\u0029",
+            "name": "take",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Column.html#method_take"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column\u003A\u003AwithType\u0028\u0029",
+            "name": "withType",
+            "summary": "The\u0020one\u0020type\u002Dchanging\u0020operation\u003A\u0020same\u0020buffers,\u0020a\u0020new\u0020Type\u0020of\u0020the\u0020same\u0020column\u0020kind,\u0020checked\u0020recursively.",
+            "url": "classes/Flow-ETL-Column-Column.html#method_withType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column\u003A\u003Aconcat\u0028\u0029",
+            "name": "concat",
+            "summary": "Same\u002Dclass\u0020lane\u003B\u0020a\u0020mixed\u002Dclass\u0020concat\u0020never\u0020reaches\u0020here\u0020\u002D\u0020Rows\u003A\u003Aconcat\u0020routes\u0020it\u0020through\u0020PhpBackend.",
+            "url": "classes/Flow-ETL-Column-Column.html#method_concat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Column\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Column.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ColumnBuilder",
+            "name": "ColumnBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ColumnBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ColumnBuilder\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "A\u0020logical\u0020or\u0020raw\u0020value\u003A\u0020Type\u003A\u003Acast,\u0020then\u0020its\u0020physical\u0020form\u003B\u0020null\u0020is\u0020validity\u00200,\u0020or\nColumnMismatchException\u003A\u003AvalueDoesNotMatch\u0028\u0029\u0020on\u0020a\u0020NOT\u0020NULL\u0020definition.",
+            "url": "classes/Flow-ETL-Column-ColumnBuilder.html#method_append"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ColumnBuilder\u003A\u003AappendMany\u0028\u0029",
+            "name": "appendMany",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ColumnBuilder.html#method_appendMany"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ColumnBuilder\u003A\u003AappendPhysicals\u0028\u0029",
+            "name": "appendPhysicals",
+            "summary": "Physical\u0020values\u0020exactly\u0020as\u0020Column\u003A\u003Aphysicals\u0028\u0029\u0020returns\u0020them\u0020\u002D\u0020no\u0020cast,\u0020no\u0020conversion.",
+            "url": "classes/Flow-ETL-Column-ColumnBuilder.html#method_appendPhysicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ColumnBuilder\u003A\u003AappendFrom\u0028\u0029",
+            "name": "appendFrom",
+            "summary": "Copies\u0020one\u0020physical\u0020cell,\u0020no\u0020materialisation.",
+            "url": "classes/Flow-ETL-Column-ColumnBuilder.html#method_appendFrom"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ColumnBuilder\u003A\u003AappendTake\u0028\u0029",
+            "name": "appendTake",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ColumnBuilder.html#method_appendTake"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ColumnBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ColumnBuilder.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ColumnBuilder\u003A\u003Afinish\u0028\u0029",
+            "name": "finish",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ColumnBuilder.html#method_finish"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ComparableValues",
+            "name": "ComparableValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ComparableValues.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ComparableValues\u003A\u003AequalByPhysical\u0028\u0029",
+            "name": "equalByPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ComparableValues.html#method_equalByPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ComparableValues\u003A\u003Aequality\u0028\u0029",
+            "name": "equality",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ComparableValues.html#method_equality"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ComparableValues\u003A\u003Aequalities\u0028\u0029",
+            "name": "equalities",
+            "summary": "Element\u0020physicals\u0020carry\u0020their\u0020owner\u0020document,\u0020so\u0020elements,\u0020and\u0020lists\u0020of\u0020them,\u0020compare\u0020by\u0020their\u0020own\u0020markup.",
+            "url": "classes/Flow-ETL-Column-ComparableValues.html#method_equalities"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ComparableValues\u003A\u003Ainstants\u0028\u0029",
+            "name": "instants",
+            "summary": "A\u0020date\u0027s\u0020physical\u0020days\u0020on\u0020a\u0020datetime\u0027s\u0020microsecond\u0020scale,\u0020so\u0020a\u0020date\u0020and\u0020a\u0020datetime\u0020at\u0020the\u0020same\u0020instant\u0020compare\nand\u0020hash\u0020equal.",
+            "url": "classes/Flow-ETL-Column-ComparableValues.html#method_instants"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ComparableValues\u003A\u003AorderedByPhysical\u0028\u0029",
+            "name": "orderedByPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ComparableValues.html#method_orderedByPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ComparableValues\u003A\u003Aordering\u0028\u0029",
+            "name": "ordering",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ComparableValues.html#method_ordering"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\DateFormatPattern",
+            "name": "DateFormatPattern",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-DateFormatPattern.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\DateFormatPattern\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-DateFormatPattern.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\DateFormatPattern\u003A\u003Aletters\u0028\u0029",
+            "name": "letters",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-DateFormatPattern.html#method_letters"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\DateFormatPattern\u003A\u003Asegments\u0028\u0029",
+            "name": "segments",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-DateFormatPattern.html#method_segments"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\DateFormatPattern\u003A\u003A\u0024format",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-DateFormatPattern.html#property_format"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Elements",
+            "name": "Elements",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Elements.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Elements\u003A\u003Aflatten\u0028\u0029",
+            "name": "flatten",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Elements.html#method_flatten"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Elements\u003A\u003Ashape\u0028\u0029",
+            "name": "shape",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Elements.html#method_shape"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Elements\u003A\u003Afield\u0028\u0029",
+            "name": "field",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Elements.html#method_field"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Elements\u003A\u003AwithField\u0028\u0029",
+            "name": "withField",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Elements.html#method_withField"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\BooleanLayout",
+            "name": "BooleanLayout",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-BooleanLayout.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\BooleanLayout\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-BooleanLayout.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\BooleanLayout\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-BooleanLayout.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\BufferLayout",
+            "name": "BufferLayout",
+            "summary": "The\u0020one\u0020layout\u0020of\u0020Column\u003A\u003Aencode\u0028\u0029\u003A\u0020the\u0020pre\u002Dorder\u0020nodes\u0020and\u0020buffers\u0020a\u0020column\u0020type\u0020spans.",
+            "url": "classes/Flow-ETL-Column-Layout-BufferLayout.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\BufferLayout\u003A\u003AnodeCount\u0028\u0029",
+            "name": "nodeCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-BufferLayout.html#method_nodeCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\BufferLayout\u003A\u003AbufferCount\u0028\u0029",
+            "name": "bufferCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-BufferLayout.html#method_bufferCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\BufferLayout\u003A\u003Anodes\u0028\u0029",
+            "name": "nodes",
+            "summary": "Pre\u002Dorder\u0020\u007Blength,\u0020nullCount\u007D\u0020of\u0020one\u0020column\u0027s\u0020tree\u003A\u0020the\u0020first\u0020node\u0020as\u0020given,\u0020every\u0020child\u0020derived\u0020from\u0020the\nbuffers\u0020\u002D\u0020a\u0020null\u0020kind\u0020is\u0020\u007Blength,\u0020length\u007D,\u0020list\u0020and\u0020map\u0020children\u0020span\u0020the\u0020last\u0020offset,\u0020a\u0020map\u0020entries\u0020node\nholds\u0020no\u0020nulls\u0020and\u0020structure\u0020children\u0020span\u0020their\u0020parent.",
+            "url": "classes/Flow-ETL-Column-Layout-BufferLayout.html#method_nodes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Buffers",
+            "name": "Buffers",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Buffers.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Buffers\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Buffers.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Buffers\u003A\u003Anext\u0028\u0029",
+            "name": "next",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Buffers.html#method_next"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Buffers\u003A\u003Aremaining\u0028\u0029",
+            "name": "remaining",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Buffers.html#method_remaining"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\FixedBinary16Layout",
+            "name": "FixedBinary16Layout",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-FixedBinary16Layout.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\FixedBinary16Layout\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-FixedBinary16Layout.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\FixedBinary16Layout\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-FixedBinary16Layout.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Float64Layout",
+            "name": "Float64Layout",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Float64Layout.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Float64Layout\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Float64Layout.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Float64Layout\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Float64Layout.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Int32Layout",
+            "name": "Int32Layout",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Int32Layout.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Int32Layout\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Int32Layout.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Int32Layout\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Int32Layout.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Int64Layout",
+            "name": "Int64Layout",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Int64Layout.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Int64Layout\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Int64Layout.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Int64Layout\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Int64Layout.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Layout",
+            "name": "Layout",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Layout.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Layout\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Layout.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Layout\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Layout.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\LayoutFor",
+            "name": "LayoutFor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-LayoutFor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\LayoutFor\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-LayoutFor.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\NullCount",
+            "name": "NullCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-NullCount.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\NullCount\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-NullCount.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Offsets",
+            "name": "Offsets",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Offsets.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Offsets\u003A\u003Apack\u0028\u0029",
+            "name": "pack",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Offsets.html#method_pack"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Offsets\u003A\u003Aunpack\u0028\u0029",
+            "name": "unpack",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Offsets.html#method_unpack"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Utf8Layout",
+            "name": "Utf8Layout",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Utf8Layout.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Utf8Layout\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Utf8Layout.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Utf8Layout\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Utf8Layout.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Utf8Layout\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Utf8Layout.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Validity",
+            "name": "Validity",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Validity.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Validity\u003A\u003AfromValues\u0028\u0029",
+            "name": "fromValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Validity.html#method_fromValues"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Validity\u003A\u003AfromNulls\u0028\u0029",
+            "name": "fromNulls",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Validity.html#method_fromNulls"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Validity\u003A\u003Avalid\u0028\u0029",
+            "name": "valid",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Validity.html#method_valid"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Validity\u003A\u003AnullCount\u0028\u0029",
+            "name": "nullCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Validity.html#method_nullCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout\\Validity\u003A\u003Anulls\u0028\u0029",
+            "name": "nulls",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Layout-Validity.html#method_nulls"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\CastingColumnBuilder",
+            "name": "CastingColumnBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-CastingColumnBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\CastingColumnBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-CastingColumnBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\CastingColumnBuilder\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "A\u0020logical\u0020or\u0020raw\u0020value\u003A\u0020Type\u003A\u003Acast,\u0020then\u0020its\u0020physical\u0020form\u003B\u0020null\u0020is\u0020validity\u00200,\u0020or\nColumnMismatchException\u003A\u003AvalueDoesNotMatch\u0028\u0029\u0020on\u0020a\u0020NOT\u0020NULL\u0020definition.",
+            "url": "classes/Flow-ETL-Column-Php-CastingColumnBuilder.html#method_append"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\CastingColumnBuilder\u003A\u003AappendFrom\u0028\u0029",
+            "name": "appendFrom",
+            "summary": "Copies\u0020one\u0020physical\u0020cell,\u0020no\u0020materialisation.",
+            "url": "classes/Flow-ETL-Column-Php-CastingColumnBuilder.html#method_appendFrom"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\CastingColumnBuilder\u003A\u003AappendMany\u0028\u0029",
+            "name": "appendMany",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-CastingColumnBuilder.html#method_appendMany"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\CastingColumnBuilder\u003A\u003AappendPhysicals\u0028\u0029",
+            "name": "appendPhysicals",
+            "summary": "Physical\u0020values\u0020exactly\u0020as\u0020Column\u003A\u003Aphysicals\u0028\u0029\u0020returns\u0020them\u0020\u002D\u0020no\u0020cast,\u0020no\u0020conversion.",
+            "url": "classes/Flow-ETL-Column-Php-CastingColumnBuilder.html#method_appendPhysicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\CastingColumnBuilder\u003A\u003AappendTake\u0028\u0029",
+            "name": "appendTake",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-CastingColumnBuilder.html#method_appendTake"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\CastingColumnBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-CastingColumnBuilder.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\CastingColumnBuilder\u003A\u003Afinish\u0028\u0029",
+            "name": "finish",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-CastingColumnBuilder.html#method_finish"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ColumnDecoder",
+            "name": "ColumnDecoder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ColumnDecoder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ColumnDecoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ColumnDecoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ColumnDecoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "Nested\u0020nulls\u0020follow\u0020Arrow\u003A\u0020a\u0020list\u0020element\u0020or\u0020map\u0020value\u0020holds\u0020nulls\u0020only\u0020when\u0020optional\u0020or\u0020of\u0020the\u0020null\u0020kind,\u0020a\u0020map\nkey\u0020never,\u0020a\u0020structure\u0020child\u0020always\u0020may\u0020\u0028its\u0020parent\u0027s\u0020nulls\u0020mask\u0020it\u0029.",
+            "url": "classes/Flow-ETL-Column-Php-ColumnDecoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn",
+            "name": "ConstantColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003Aat\u0028\u0029",
+            "name": "at",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method_at"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003Aconcat\u0028\u0029",
+            "name": "concat",
+            "summary": "Same\u002Dclass\u0020lane\u003B\u0020a\u0020mixed\u002Dclass\u0020concat\u0020never\u0020reaches\u0020here\u0020\u002D\u0020Rows\u003A\u003Aconcat\u0020routes\u0020it\u0020through\u0020PhpBackend.",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method_concat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003A\u0024count",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#property_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003Aexpand\u0028\u0029",
+            "name": "expand",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method_expand"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003AisNullKind\u0028\u0029",
+            "name": "isNullKind",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method_isNullKind"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003AnullCount\u0028\u0029",
+            "name": "nullCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method_nullCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003Aphysicals\u0028\u0029",
+            "name": "physicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method_physicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003Aslice\u0028\u0029",
+            "name": "slice",
+            "summary": "\u0060self\u0060,\u0020never\u0020\u0060static\u0060\u003A\u0020the\u0020extension\u0020declares\u0020these\u0020too\u0020and\u0020ext\u002Dphp\u002Drs\u0020has\u0020no\u0020\u0060static\u0060\u0020return\u0020binding.",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method_slice"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003Atake\u0028\u0029",
+            "name": "take",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method_take"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "LOGICAL\u0020cell\u0020\u002D\u0020PHP\u003A\u0020Physical\u003A\u003AfromPhysical\u0028at\u0028\u0024i\u0029\u0029\u003B\u0020native\u003A\u0020built\u0020in\u0020Rust.",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003Avalues\u0028\u0029",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method_values"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003AwithType\u0028\u0029",
+            "name": "withType",
+            "summary": "The\u0020one\u0020type\u002Dchanging\u0020operation\u003A\u0020same\u0020buffers,\u0020a\u0020new\u0020Type\u0020of\u0020the\u0020same\u0020column\u0020kind,\u0020checked\u0020recursively.",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#method_withType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003A\u0024physical",
+            "name": "physical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#property_physical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ConstantColumn\u003A\u003A\u0024physicalValue",
+            "name": "physicalValue",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ConstantColumn.html#property_physicalValue"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn",
+            "name": "ListColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003Aat\u0028\u0029",
+            "name": "at",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#method_at"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003Aconcat\u0028\u0029",
+            "name": "concat",
+            "summary": "Same\u002Dclass\u0020lane\u003B\u0020a\u0020mixed\u002Dclass\u0020concat\u0020never\u0020reaches\u0020here\u0020\u002D\u0020Rows\u003A\u003Aconcat\u0020routes\u0020it\u0020through\u0020PhpBackend.",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#method_concat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003AnullCount\u0028\u0029",
+            "name": "nullCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#method_nullCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003Aphysicals\u0028\u0029",
+            "name": "physicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#method_physicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003Aslice\u0028\u0029",
+            "name": "slice",
+            "summary": "\u0060self\u0060,\u0020never\u0020\u0060static\u0060\u003A\u0020the\u0020extension\u0020declares\u0020these\u0020too\u0020and\u0020ext\u002Dphp\u002Drs\u0020has\u0020no\u0020\u0060static\u0060\u0020return\u0020binding.",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#method_slice"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003Atake\u0028\u0029",
+            "name": "take",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#method_take"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "LOGICAL\u0020cell\u0020\u002D\u0020PHP\u003A\u0020Physical\u003A\u003AfromPhysical\u0028at\u0028\u0024i\u0029\u0029\u003B\u0020native\u003A\u0020built\u0020in\u0020Rust.",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003Avalues\u0028\u0029",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#method_values"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003AwithType\u0028\u0029",
+            "name": "withType",
+            "summary": "The\u0020one\u0020type\u002Dchanging\u0020operation\u003A\u0020same\u0020buffers,\u0020a\u0020new\u0020Type\u0020of\u0020the\u0020same\u0020column\u0020kind,\u0020checked\u0020recursively.",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#method_withType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003A\u0024offsets",
+            "name": "offsets",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#property_offsets"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003A\u0024element",
+            "name": "element",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#property_element"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumn\u003A\u003A\u0024nulls",
+            "name": "nulls",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumn.html#property_nulls"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumnBuilder",
+            "name": "ListColumnBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumnBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumnBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumnBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumnBuilder\u003A\u003AappendPhysical\u0028\u0029",
+            "name": "appendPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumnBuilder.html#method_appendPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumnBuilder\u003A\u003AappendPhysicals\u0028\u0029",
+            "name": "appendPhysicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumnBuilder.html#method_appendPhysicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumnBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumnBuilder.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ListColumnBuilder\u003A\u003Afinish\u0028\u0029",
+            "name": "finish",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ListColumnBuilder.html#method_finish"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn",
+            "name": "MapColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003Aat\u0028\u0029",
+            "name": "at",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#method_at"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003Aconcat\u0028\u0029",
+            "name": "concat",
+            "summary": "Same\u002Dclass\u0020lane\u003B\u0020a\u0020mixed\u002Dclass\u0020concat\u0020never\u0020reaches\u0020here\u0020\u002D\u0020Rows\u003A\u003Aconcat\u0020routes\u0020it\u0020through\u0020PhpBackend.",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#method_concat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003AnullCount\u0028\u0029",
+            "name": "nullCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#method_nullCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003Aphysicals\u0028\u0029",
+            "name": "physicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#method_physicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003Aslice\u0028\u0029",
+            "name": "slice",
+            "summary": "\u0060self\u0060,\u0020never\u0020\u0060static\u0060\u003A\u0020the\u0020extension\u0020declares\u0020these\u0020too\u0020and\u0020ext\u002Dphp\u002Drs\u0020has\u0020no\u0020\u0060static\u0060\u0020return\u0020binding.",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#method_slice"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003Atake\u0028\u0029",
+            "name": "take",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#method_take"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "LOGICAL\u0020cell\u0020\u002D\u0020PHP\u003A\u0020Physical\u003A\u003AfromPhysical\u0028at\u0028\u0024i\u0029\u0029\u003B\u0020native\u003A\u0020built\u0020in\u0020Rust.",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003A\u0024values",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#property_values"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003AwithType\u0028\u0029",
+            "name": "withType",
+            "summary": "The\u0020one\u0020type\u002Dchanging\u0020operation\u003A\u0020same\u0020buffers,\u0020a\u0020new\u0020Type\u0020of\u0020the\u0020same\u0020column\u0020kind,\u0020checked\u0020recursively.",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#method_withType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003A\u0024offsets",
+            "name": "offsets",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#property_offsets"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003A\u0024keys",
+            "name": "keys",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#property_keys"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumn\u003A\u003A\u0024nulls",
+            "name": "nulls",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumn.html#property_nulls"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumnBuilder",
+            "name": "MapColumnBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumnBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumnBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumnBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumnBuilder\u003A\u003AappendPhysical\u0028\u0029",
+            "name": "appendPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumnBuilder.html#method_appendPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumnBuilder\u003A\u003AappendPhysicals\u0028\u0029",
+            "name": "appendPhysicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumnBuilder.html#method_appendPhysicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumnBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumnBuilder.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\MapColumnBuilder\u003A\u003Afinish\u0028\u0029",
+            "name": "finish",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-MapColumnBuilder.html#method_finish"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\NullColumnBuilder",
+            "name": "NullColumnBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-NullColumnBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\NullColumnBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-NullColumnBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\NullColumnBuilder\u003A\u003AappendPhysical\u0028\u0029",
+            "name": "appendPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-NullColumnBuilder.html#method_appendPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\NullColumnBuilder\u003A\u003AappendPhysicals\u0028\u0029",
+            "name": "appendPhysicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-NullColumnBuilder.html#method_appendPhysicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\NullColumnBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-NullColumnBuilder.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\NullColumnBuilder\u003A\u003Afinish\u0028\u0029",
+            "name": "finish",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-NullColumnBuilder.html#method_finish"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\PhpColumnBuilder",
+            "name": "PhpColumnBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-PhpColumnBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\PhpColumnBuilder\u003A\u003AappendPhysical\u0028\u0029",
+            "name": "appendPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-PhpColumnBuilder.html#method_appendPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\PhpColumnBuilder\u003A\u003AappendPhysicals\u0028\u0029",
+            "name": "appendPhysicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-PhpColumnBuilder.html#method_appendPhysicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\PhpColumnBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-PhpColumnBuilder.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\PhpColumnBuilder\u003A\u003Afinish\u0028\u0029",
+            "name": "finish",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-PhpColumnBuilder.html#method_finish"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn",
+            "name": "ScalarColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003Aat\u0028\u0029",
+            "name": "at",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#method_at"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003Aconcat\u0028\u0029",
+            "name": "concat",
+            "summary": "Same\u002Dclass\u0020lane\u003B\u0020a\u0020mixed\u002Dclass\u0020concat\u0020never\u0020reaches\u0020here\u0020\u002D\u0020Rows\u003A\u003Aconcat\u0020routes\u0020it\u0020through\u0020PhpBackend.",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#method_concat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003A\u0024nullCount",
+            "name": "nullCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#property_nullCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003Aphysicals\u0028\u0029",
+            "name": "physicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#method_physicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003Aslice\u0028\u0029",
+            "name": "slice",
+            "summary": "\u0060self\u0060,\u0020never\u0020\u0060static\u0060\u003A\u0020the\u0020extension\u0020declares\u0020these\u0020too\u0020and\u0020ext\u002Dphp\u002Drs\u0020has\u0020no\u0020\u0060static\u0060\u0020return\u0020binding.",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#method_slice"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003Atake\u0028\u0029",
+            "name": "take",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#method_take"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "LOGICAL\u0020cell\u0020\u002D\u0020PHP\u003A\u0020Physical\u003A\u003AfromPhysical\u0028at\u0028\u0024i\u0029\u0029\u003B\u0020native\u003A\u0020built\u0020in\u0020Rust.",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003A\u0024values",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#property_values"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003AwithType\u0028\u0029",
+            "name": "withType",
+            "summary": "The\u0020one\u0020type\u002Dchanging\u0020operation\u003A\u0020same\u0020buffers,\u0020a\u0020new\u0020Type\u0020of\u0020the\u0020same\u0020column\u0020kind,\u0020checked\u0020recursively.",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#method_withType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumn\u003A\u003A\u0024physical",
+            "name": "physical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumn.html#property_physical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumnBuilder",
+            "name": "ScalarColumnBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumnBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumnBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumnBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumnBuilder\u003A\u003AappendPhysical\u0028\u0029",
+            "name": "appendPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumnBuilder.html#method_appendPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumnBuilder\u003A\u003AappendPhysicals\u0028\u0029",
+            "name": "appendPhysicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumnBuilder.html#method_appendPhysicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumnBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumnBuilder.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\ScalarColumnBuilder\u003A\u003Afinish\u0028\u0029",
+            "name": "finish",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-ScalarColumnBuilder.html#method_finish"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn",
+            "name": "StructColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003Aat\u0028\u0029",
+            "name": "at",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method_at"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003Aconcat\u0028\u0029",
+            "name": "concat",
+            "summary": "Same\u002Dclass\u0020lane\u003B\u0020a\u0020mixed\u002Dclass\u0020concat\u0020never\u0020reaches\u0020here\u0020\u002D\u0020Rows\u003A\u003Aconcat\u0020routes\u0020it\u0020through\u0020PhpBackend.",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method_concat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003AnullCount\u0028\u0029",
+            "name": "nullCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method_nullCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003Aphysicals\u0028\u0029",
+            "name": "physicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method_physicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003Aslice\u0028\u0029",
+            "name": "slice",
+            "summary": "\u0060self\u0060,\u0020never\u0020\u0060static\u0060\u003A\u0020the\u0020extension\u0020declares\u0020these\u0020too\u0020and\u0020ext\u002Dphp\u002Drs\u0020has\u0020no\u0020\u0060static\u0060\u0020return\u0020binding.",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method_slice"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003Astructure\u0028\u0029",
+            "name": "structure",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method_structure"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003Atake\u0028\u0029",
+            "name": "take",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method_take"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "LOGICAL\u0020cell\u0020\u002D\u0020PHP\u003A\u0020Physical\u003A\u003AfromPhysical\u0028at\u0028\u0024i\u0029\u0029\u003B\u0020native\u003A\u0020built\u0020in\u0020Rust.",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003Avalues\u0028\u0029",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method_values"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003AwithType\u0028\u0029",
+            "name": "withType",
+            "summary": "The\u0020one\u0020type\u002Dchanging\u0020operation\u003A\u0020same\u0020buffers,\u0020a\u0020new\u0020Type\u0020of\u0020the\u0020same\u0020column\u0020kind,\u0020checked\u0020recursively.",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#method_withType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003A\u0024children",
+            "name": "children",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#property_children"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumn\u003A\u003A\u0024nulls",
+            "name": "nulls",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumn.html#property_nulls"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumnBuilder",
+            "name": "StructColumnBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumnBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumnBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumnBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumnBuilder\u003A\u003AappendPhysical\u0028\u0029",
+            "name": "appendPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumnBuilder.html#method_appendPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumnBuilder\u003A\u003AappendPhysicals\u0028\u0029",
+            "name": "appendPhysicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumnBuilder.html#method_appendPhysicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumnBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumnBuilder.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php\\StructColumnBuilder\u003A\u003Afinish\u0028\u0029",
+            "name": "finish",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Php-StructColumnBuilder.html#method_finish"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\PhpBackend",
+            "name": "PhpBackend",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-PhpBackend.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\PhpBackend\u003A\u003Abuilder\u0028\u0029",
+            "name": "builder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-PhpBackend.html#method_builder"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\PhpBackend\u003A\u003Aconstant\u0028\u0029",
+            "name": "constant",
+            "summary": "\u0024value\u0020is\u0020logical\u0020or\u0020raw\u0020and\u0020is\u0020cast\u0020once\u0020through\u0020the\u0020Definition\u0020exactly\u0020like\u0020ColumnBuilder\u003A\u003Aappend\u0028\u0029.",
+            "url": "classes/Flow-ETL-Column-PhpBackend.html#method_constant"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\PhpBackend\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "Child\u0020node\u0020lengths\u0020and\u0020null\u0020counts\u0020are\u0020derived\u0020from\u0020the\u0020buffers,\u0020so\u0020only\u0020the\u0020top\u0020node\u0020travels.",
+            "url": "classes/Flow-ETL-Column-PhpBackend.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\PhpBackend\u003A\u003Aadopt\u0028\u0029",
+            "name": "adopt",
+            "summary": "The\u0020same\u0020values\u0020in\u0020this\u0020backend\u0027s\u0020storage\u003A\u0020\u0024column\u0020itself\u0020when\u0020this\u0020backend\u0020owns\u0020it,\u0020otherwise\u0020one\u0020copy\u0020through\nbuilder\u0028\u0024definition\u0029\u002D\u003EappendTake\u0028\u0029.\u0020For\u0020producers\u0020that\u0020build\u0020columns\u0020outside\u0020the\u0020configured\u0020backend.",
+            "url": "classes/Flow-ETL-Column-PhpBackend.html#method_adopt"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\PhpBackend\u003A\u003AallocatedBytes\u0028\u0029",
+            "name": "allocatedBytes",
+            "summary": "Bytes\u0020this\u0020backend\u0020holds\u0020outside\u0020PHP\u0027s\u0020memory\u0020manager\u0020\u0028invisible\u0020to\u0020memory_get_usage\u0028\u0029\u0020and\u0020memory_limit\u0029.",
+            "url": "classes/Flow-ETL-Column-PhpBackend.html#method_allocatedBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\DatePhysical",
+            "name": "DatePhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-DatePhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\DatePhysical\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-DatePhysical.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\DatePhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-DatePhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\DatePhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-DatePhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\DatePhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-DatePhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\DateTimePhysical",
+            "name": "DateTimePhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-DateTimePhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\DateTimePhysical\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-DateTimePhysical.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\DateTimePhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-DateTimePhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\DateTimePhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-DateTimePhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\DateTimePhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-DateTimePhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\DaysFromCivil",
+            "name": "DaysFromCivil",
+            "summary": "Howard\u0020Hinnant\u0027s\u0020days_from_civil\u003A\u00200\u0020is\u00201970\u002D01\u002D01,\u0020negative\u0020before.",
+            "url": "classes/Flow-ETL-Column-Physical-DaysFromCivil.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\DaysFromCivil\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-DaysFromCivil.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\ElementPosition",
+            "name": "ElementPosition",
+            "summary": "Element\u0020physicals\u0020are\u0020\u0022\\x01\u003Cchild\u0020index\u0020path\u003E\\0\u003Cmarkup\u0020length\u003E\\0\u003Celement\u0020markup\u003E\u003Cowner\u0020document\u0020markup\u003E\u0022,\u0020the\u0020path\ncounting\u0020element\u0020children\u0020from\u0020the\u0020document\u0020element.\u0020Earlier\u0020builds\u0020wrote\u0020\u0022\\0\u003Cpath\u003E\\0\u003Cowner\u0020document\u0020markup\u003E\u0022,\u0020and\nbefore\u0020that\u0020bare\u0020element\u0020markup.",
+            "url": "classes/Flow-ETL-Column-Physical-ElementPosition.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\ElementPosition\u003A\u003Apath\u0028\u0029",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-ElementPosition.html#method_path"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\ElementPosition\u003A\u003Aphysical\u0028\u0029",
+            "name": "physical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-ElementPosition.html#method_physical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\ElementPosition\u003A\u003ApathOf\u0028\u0029",
+            "name": "pathOf",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-ElementPosition.html#method_pathOf"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\ElementPosition\u003A\u003AmarkupOf\u0028\u0029",
+            "name": "markupOf",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-ElementPosition.html#method_markupOf"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\ElementPosition\u003A\u003AdocumentOf\u0028\u0029",
+            "name": "documentOf",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-ElementPosition.html#method_documentOf"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\ElementPosition\u003A\u003Aelement\u0028\u0029",
+            "name": "element",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-ElementPosition.html#method_element"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\EnumPhysical",
+            "name": "EnumPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-EnumPhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\EnumPhysical\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-EnumPhysical.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\EnumPhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-EnumPhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\EnumPhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-EnumPhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\EnumPhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-EnumPhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\HtmlDocumentPhysical",
+            "name": "HtmlDocumentPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-HtmlDocumentPhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\HtmlDocumentPhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-HtmlDocumentPhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\HtmlDocumentPhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-HtmlDocumentPhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\HtmlDocumentPhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-HtmlDocumentPhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\HtmlElementPhysical",
+            "name": "HtmlElementPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-HtmlElementPhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\HtmlElementPhysical\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-HtmlElementPhysical.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\HtmlElementPhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-HtmlElementPhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\HtmlElementPhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-HtmlElementPhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\HtmlElementPhysical\u003A\u003Amarkup\u0028\u0029",
+            "name": "markup",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-HtmlElementPhysical.html#method_markup"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\HtmlElementPhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-HtmlElementPhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\IdentityPhysical",
+            "name": "IdentityPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-IdentityPhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\IdentityPhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-IdentityPhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\IdentityPhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-IdentityPhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\IdentityPhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-IdentityPhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\JsonFactory",
+            "name": "JsonFactory",
+            "summary": "Builds\u0020a\u0020Json\u0020from\u0020text\u0020the\u0020column\u0020already\u0020validated\u0020\u002D\u0020skips\u0020json_validate\u0028\u0029.",
+            "url": "classes/Flow-ETL-Column-Physical-JsonFactory.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\JsonFactory\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-JsonFactory.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\JsonFactory\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-JsonFactory.html#method_create"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\JsonPhysical",
+            "name": "JsonPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-JsonPhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\JsonPhysical\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-JsonPhysical.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\JsonPhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-JsonPhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\JsonPhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-JsonPhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\JsonPhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-JsonPhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\ListPhysical",
+            "name": "ListPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-ListPhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\ListPhysical\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-ListPhysical.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\ListPhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-ListPhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\ListPhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-ListPhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\ListPhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-ListPhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\MapPhysical",
+            "name": "MapPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-MapPhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\MapPhysical\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-MapPhysical.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\MapPhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-MapPhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\MapPhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-MapPhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\MapPhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-MapPhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\NullPhysical",
+            "name": "NullPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-NullPhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\NullPhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-NullPhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\NullPhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-NullPhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\NullPhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-NullPhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\Physical",
+            "name": "Physical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-Physical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\Physical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-Physical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\Physical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-Physical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\Physical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-Physical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\PhysicalBuilderFor",
+            "name": "PhysicalBuilderFor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-PhysicalBuilderFor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\PhysicalBuilderFor\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-PhysicalBuilderFor.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\PhysicalFor",
+            "name": "PhysicalFor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-PhysicalFor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\PhysicalFor\u003A\u003Adefinition\u0028\u0029",
+            "name": "definition",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-PhysicalFor.html#method_definition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\PhysicalFor\u003A\u003Asupports\u0028\u0029",
+            "name": "supports",
+            "summary": "A\u0020column\u0020of\u0020\u0024type\u0020exists\u003A\u0020definition_from_type\u0028\u0029\u0020accepts\u0020it\u0020and\u0020definition\u0028\u0029\u0020gives\u0020it\u0020a\u0020Physical.",
+            "url": "classes/Flow-ETL-Column-Physical-PhysicalFor.html#method_supports"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\PhysicalFor\u003A\u003AsupportsChild\u0028\u0029",
+            "name": "supportsChild",
+            "summary": "A\u0020child\u0020\u0028list\u0020element,\u0020map\u0020value,\u0020structure\u0020element\u0029\u0020of\u0020\u0024type\u0020exists\u0020once\u0020TypeProjection\u0020stored\u0020it\u0020as\u0020json\n\u0028an\u0020array\u0029\u0020or\u0020as\u0020optional\u0020\u0028a\u0020nullable\u0020union\u0029\u003A\u0020type\u0028\u0029\u0020gives\u0020it\u0020a\u0020Physical.",
+            "url": "classes/Flow-ETL-Column-Physical-PhysicalFor.html#method_supportsChild"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\PhysicalFor\u003A\u003AsupportsElements\u0028\u0029",
+            "name": "supportsElements",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-PhysicalFor.html#method_supportsElements"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\PhysicalFor\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-PhysicalFor.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\PhysicalFor\u003A\u003Aelements\u0028\u0029",
+            "name": "elements",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-PhysicalFor.html#method_elements"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\PhysicalKind",
+            "name": "PhysicalKind",
+            "summary": "The\u0020PHP\u0020kind\u0020a\u0020physical\u0020value\u0020of\u0020a\u0020type\u0020has\u0020\u002D\u0020the\u0020kinds\u0020flow_php\u0027s\u0020builders\u0020store,\u0020so\u0020both\u0020backends\u0020refuse\u0020the\nsame\u0020physicals.",
+            "url": "classes/Flow-ETL-Column-Physical-PhysicalKind.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\PhysicalKind\u003A\u003Aaccepts\u0028\u0029",
+            "name": "accepts",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-PhysicalKind.html#method_accepts"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\PhysicalKind\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-PhysicalKind.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\PhysicalKind\u003A\u003Aelements\u0028\u0029",
+            "name": "elements",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-PhysicalKind.html#method_elements"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\StructPhysical",
+            "name": "StructPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-StructPhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\StructPhysical\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-StructPhysical.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\StructPhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-StructPhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\StructPhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-StructPhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\StructPhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-StructPhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\TimePhysical",
+            "name": "TimePhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-TimePhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\TimePhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-TimePhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\TimePhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-TimePhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\TimePhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-TimePhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\TimeZonePhysical",
+            "name": "TimeZonePhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-TimeZonePhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\TimeZonePhysical\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-TimeZonePhysical.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\TimeZonePhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-TimeZonePhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\TimeZonePhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-TimeZonePhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\TimeZonePhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-TimeZonePhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\TimeZones",
+            "name": "TimeZones",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-TimeZones.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\TimeZones\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-TimeZones.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\UuidPhysical",
+            "name": "UuidPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-UuidPhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\UuidPhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-UuidPhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\UuidPhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-UuidPhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\UuidPhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-UuidPhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlCharacterReferences",
+            "name": "XmlCharacterReferences",
+            "summary": "libxml2\u0020before\u00202.13\u0020serializes\u0020non\u002DASCII\u0020attribute\u0020characters\u0020as\u0020character\u0020references\u0020\u0028\u0060\u0026\u0023x17C\u003B\u0060\u0029,\u0020later\u0020versions\nwrite\u0020them\u0020as\u0020UTF\u002D8.\u0020Decoding\u0020the\u0020references\u0020of\u0020non\u002DASCII\u0020characters\u0020outside\u0020CDATA\u0020sections\u0020and\u0020comments\u0020gives\u0020the\nsame\u0020markup\u0020on\u0020every\u0020libxml2\u003B\u0020references\u0020below\u0020U\u002B0080\u0020stay,\u0020they\u0020may\u0020escape\u0020markup.",
+            "url": "classes/Flow-ETL-Column-Physical-XmlCharacterReferences.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlCharacterReferences\u003A\u003Adecoded\u0028\u0029",
+            "name": "decoded",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-XmlCharacterReferences.html#method_decoded"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlDocumentPhysical",
+            "name": "XmlDocumentPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-XmlDocumentPhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlDocumentPhysical\u003A\u003Aphysical\u0028\u0029",
+            "name": "physical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-XmlDocumentPhysical.html#method_physical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlDocumentPhysical\u003A\u003Atext\u0028\u0029",
+            "name": "text",
+            "summary": "The\u0020outer\u0020XML\u0020of\u0020bytes\u0020physical\u0028\u0029\u0020produced,\u0020null\u0020for\u0020any\u0020other\u0020bytes\u003A\u0020an\u0020older\u0020declaration,\u0020or\u0020a\u0020comment,\u0020PI,\nDOCTYPE\u0020or\u0020declaration\u0020beside\u0020the\u0020root.",
+            "url": "classes/Flow-ETL-Column-Physical-XmlDocumentPhysical.html#method_text"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlDocumentPhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-XmlDocumentPhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlDocumentPhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-XmlDocumentPhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlDocumentPhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-XmlDocumentPhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlDocumentPhysical\u003A\u003ADECLARATION",
+            "name": "DECLARATION",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-XmlDocumentPhysical.html#constant_DECLARATION"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlElementPhysical",
+            "name": "XmlElementPhysical",
+            "summary": "A\u0020\\Dom\\Element\u0020\u0028PHP\u00208.4\u0029\u0020is\u0020stored\u0020by\u0020its\u0020markup\u0020too\u0020and\u0020reads\u0020back\u0020as\u0020the\u0020DOMElement\u0020XMLElementType\u003A\u003Acast\u0028\u0029\u0020builds\nfrom\u0020a\u0020string.",
+            "url": "classes/Flow-ETL-Column-Physical-XmlElementPhysical.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlElementPhysical\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-XmlElementPhysical.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlElementPhysical\u003A\u003AtoPhysical\u0028\u0029",
+            "name": "toPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-XmlElementPhysical.html#method_toPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlElementPhysical\u003A\u003AfromPhysical\u0028\u0029",
+            "name": "fromPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-XmlElementPhysical.html#method_fromPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlElementPhysical\u003A\u003Amarkup\u0028\u0029",
+            "name": "markup",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-XmlElementPhysical.html#method_markup"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlElementPhysical\u003A\u003Acanonical\u0028\u0029",
+            "name": "canonical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-XmlElementPhysical.html#method_canonical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical\\XmlElementPhysical\u003A\u003AfromPhysicalAll\u0028\u0029",
+            "name": "fromPhysicalAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Physical-XmlElementPhysical.html#method_fromPhysicalAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Retype",
+            "name": "Retype",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Retype.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Retype\u003A\u003Aassert\u0028\u0029",
+            "name": "assert",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-Retype.html#method_assert"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Retype\u003A\u003Aproves\u0028\u0029",
+            "name": "proves",
+            "summary": "Whether\u0020withType\u0028\u0024to\u0029\u0020on\u0020a\u0020column\u0020of\u0020\u0024from\u0020can\u0020only\u0020fail\u0020on\u0020top\u002Dlevel\u0020nulls\u003A\u0020the\u0020same\u0020kind\u0020at\u0020every\u0020level,\u0020and\u0020no\nnested\u0020level\u0020goes\u0020from\u0020optional\u0020to\u0020required\u0020\u0028list\u0020element,\u0020map\u0020key\u0020\/\u0020value,\u0020structure\u0020element\u0020by\u0020name\u0020\u002D\noptional\u0020flag\u0020and\u0020type\u0029.",
+            "url": "classes/Flow-ETL-Column-Retype.html#method_proves"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Retype\u003A\u003AprovesNested\u0028\u0029",
+            "name": "provesNested",
+            "summary": "proves\u0028\u0029\u0020one\u0020level\u0020down,\u0020where\u0020a\u0020null\u0020cannot\u0020be\u0020counted\u003A\u0020optional\u0020to\u0020required\u0020is\u0020never\u0020proven.",
+            "url": "classes/Flow-ETL-Column-Retype.html#method_provesNested"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Retype\u003A\u003AsameKind\u0028\u0029",
+            "name": "sameKind",
+            "summary": "The\u0020column\u0020kind\u0020rule\u003A\u0020the\u0020same\u0020type\u0020class,\u0020an\u0020enum\u0020of\u0020the\u0020same\u0020class,\u0020a\u0020structure\u0020of\u0020the\u0020same\u0020element\u0020names.",
+            "url": "classes/Flow-ETL-Column-Retype.html#method_sameKind"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\RoundTripPrecision",
+            "name": "RoundTripPrecision",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-RoundTripPrecision.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\RoundTripPrecision\u003A\u003Aforce\u0028\u0029",
+            "name": "force",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-RoundTripPrecision.html#method_force"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\RoundTripPrecision\u003A\u003Arestore\u0028\u0029",
+            "name": "restore",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-RoundTripPrecision.html#method_restore"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\TextValues",
+            "name": "TextValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-TextValues.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\TextValues\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-TextValues.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\TextValues\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-TextValues.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\TextValues\u003A\u003AkeepsPhysical\u0028\u0029",
+            "name": "keepsPhysical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-TextValues.html#method_keepsPhysical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\TextValues\u003A\u003Abindable\u0028\u0029",
+            "name": "bindable",
+            "summary": "The\u0020values\u0020a\u0020database\u0020driver\u0020binds\u0020for\u0020a\u0020column\u003A\u0020markup\u0020\u0028xml,\u0020xml_element,\u0020html,\u0020html_element\u0029\u0020as\u0020the\u0020text\u0020its\nphysicals\u0020render,\u0020every\u0020other\u0020type\u0020as\u0020its\u0020logical\u0020values\u0020\u002D\u0020the\u0020driver\u0027s\u0020types\u0020convert\u0020those\u0020themselves.",
+            "url": "classes/Flow-ETL-Column-TextValues.html#method_bindable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\TextValues\u003A\u003Atexts\u0028\u0029",
+            "name": "texts",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-TextValues.html#method_texts"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\TextValues\u003A\u003AdateTimes\u0028\u0029",
+            "name": "dateTimes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-TextValues.html#method_dateTimes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\TextValues\u003A\u003Auuids\u0028\u0029",
+            "name": "uuids",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-TextValues.html#method_uuids"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\TextValues\u003A\u003Afloats\u0028\u0029",
+            "name": "floats",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-TextValues.html#method_floats"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn",
+            "name": "ValueColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003Aat\u0028\u0029",
+            "name": "at",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method_at"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003Aconcat\u0028\u0029",
+            "name": "concat",
+            "summary": "Same\u002Dclass\u0020lane\u003B\u0020a\u0020mixed\u002Dclass\u0020concat\u0020never\u0020reaches\u0020here\u0020\u002D\u0020Rows\u003A\u003Aconcat\u0020routes\u0020it\u0020through\u0020PhpBackend.",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method_concat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003AnullCount\u0028\u0029",
+            "name": "nullCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method_nullCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003Aphysicals\u0028\u0029",
+            "name": "physicals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method_physicals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003Aslice\u0028\u0029",
+            "name": "slice",
+            "summary": "\u0060self\u0060,\u0020never\u0020\u0060static\u0060\u003A\u0020the\u0020extension\u0020declares\u0020these\u0020too\u0020and\u0020ext\u002Dphp\u002Drs\u0020has\u0020no\u0020\u0060static\u0060\u0020return\u0020binding.",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method_slice"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003Atake\u0028\u0029",
+            "name": "take",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method_take"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "The\u0020logical\u0020type\u003B\u0020a\u0020child\u0020column\u0020has\u0020a\u0020Type,\u0020never\u0020a\u0020Definition.",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "LOGICAL\u0020cell\u0020\u002D\u0020PHP\u003A\u0020Physical\u003A\u003AfromPhysical\u0028at\u0028\u0024i\u0029\u0029\u003B\u0020native\u003A\u0020built\u0020in\u0020Rust.",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003Avalues\u0028\u0029",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method_values"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\ValueColumn\u003A\u003AwithType\u0028\u0029",
+            "name": "withType",
+            "summary": "The\u0020one\u0020type\u002Dchanging\u0020operation\u003A\u0020same\u0020buffers,\u0020a\u0020new\u0020Type\u0020of\u0020the\u0020same\u0020column\u0020kind,\u0020checked\u0020recursively.",
+            "url": "classes/Flow-ETL-Column-ValueColumn.html#method_withType"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Bucketing\\BucketingConfig",
             "name": "BucketingConfig",
             "summary": "",
@@ -1101,6 +3026,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_analyze"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Abackend\u0028\u0029",
+            "name": "backend",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_backend"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Abuild\u0028\u0029",
             "name": "build",
             "summary": "",
@@ -1125,11 +3055,6 @@ Search.appendIndex(
             "name": "groupBy",
             "summary": "",
             "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_groupBy"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Ahydrator\u0028\u0029",
-            "name": "hydrator",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-ConfigBuilder.html#method_hydrator"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\ConfigBuilder\u003A\u003Aid\u0028\u0029",
             "name": "id",
@@ -1216,6 +3141,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Grouping-HashGroupByBuilder.html#method_bucketsCount"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\HashGroupByBuilder\u003A\u003AmemoryLimit\u0028\u0029",
+            "name": "memoryLimit",
+            "summary": "The\u0020process\u0020memory\u0020past\u0020which\u0020buckets\u0020move\u0020to\u0020the\u0020storage\u003B\u0020defaults\u0020to\u0020MemoryLimit\u003A\u003Adefault\u0028\u0029.",
+            "url": "classes/Flow-ETL-Config-Grouping-HashGroupByBuilder.html#method_memoryLimit"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Grouping\\HashGroupByBuilder\u003A\u003Astorage\u0028\u0029",
             "name": "storage",
             "summary": "",
@@ -1235,6 +3165,11 @@ Search.appendIndex(
             "name": "bucketing",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Grouping-HashGroupByConfig.html#property_bucketing"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Grouping\\HashGroupByConfig\u003A\u003A\u0024memoryLimit",
+            "name": "memoryLimit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Grouping-HashGroupByConfig.html#property_memoryLimit"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinBuilder",
             "name": "HashJoinBuilder",
@@ -1261,6 +3196,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Join-HashJoinBuilder.html#method_bucketsCount"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinBuilder\u003A\u003AmemoryLimit\u0028\u0029",
+            "name": "memoryLimit",
+            "summary": "The\u0020process\u0020memory\u0020past\u0020which\u0020the\u0020build\u0020side\u0020and\u0020the\u0020buckets\u0020move\u0020to\u0020the\u0020storage\u003B\u0020defaults\u0020to\nMemoryLimit\u003A\u003Adefault\u0028\u0029.",
+            "url": "classes/Flow-ETL-Config-Join-HashJoinBuilder.html#method_memoryLimit"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinBuilder\u003A\u003Astorage\u0028\u0029",
             "name": "storage",
             "summary": "",
@@ -1281,6 +3221,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Join-HashJoinConfig.html#property_bucketing"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Join\\HashJoinConfig\u003A\u003A\u0024memoryLimit",
+            "name": "memoryLimit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Join-HashJoinConfig.html#property_memoryLimit"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Join\\JoinAlgorithmBuilder",
             "name": "JoinAlgorithmBuilder",
             "summary": "",
@@ -1290,6 +3235,31 @@ Search.appendIndex(
             "name": "build",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Join-JoinAlgorithmBuilder.html#method_build"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\MemoryLimit",
+            "name": "MemoryLimit",
+            "summary": "The\u0020process\u0020memory\u0020a\u0020spilling\u0020algorithm\u0020\u0028sort,\u0020TopN,\u0020join\u0020build\u0029\u0020lets\u0020the\u0020whole\u0020process\u0020reach\u0020before\u0020it\u0020spills\u0020\u002D\u0020the\nlimit\u0020is\u0020compared\u0020with\u0020the\u0020process\u0027s\u0020usage,\u0020never\u0020with\u0020the\u0020algorithm\u0027s\u0020own\u0020buffer,\u0020so\u0020a\u0020sort\u0020and\u0020a\u0020join\u0020in\u0020one\npipeline\u0020together\u0020stay\u0020under\u0020it.\u0020FLOW_MAX_MEMORY\u0020when\u0020set,\u0020otherwise\u002070\u0025\u0020of\u0020PHP\u0027s\u0020memory_limit,\u0020and\u00201\u0020GiB\u0020when\u0020PHP\u0027s\nmemory_limit\u0020is\u0020\u002D1\u0020\u002D\u0020an\u0020unlimited\u0020algorithm\u0020would\u0020grow\u0020until\u0020the\u0020OS\u0020kills\u0020PHP.",
+            "url": "classes/Flow-ETL-Config-MemoryLimit.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\MemoryLimit\u003A\u003Adefault\u0028\u0029",
+            "name": "default",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-MemoryLimit.html#method_default"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\MemoryLimit\u003A\u003APERCENTAGE_OF_MEMORY_LIMIT",
+            "name": "PERCENTAGE_OF_MEMORY_LIMIT",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-MemoryLimit.html#constant_PERCENTAGE_OF_MEMORY_LIMIT"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\MemoryLimit\u003A\u003AENV",
+            "name": "ENV",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-MemoryLimit.html#constant_ENV"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\MemoryLimit\u003A\u003AWITHOUT_MEMORY_LIMIT_GB",
+            "name": "WITHOUT_MEMORY_LIMIT_GB",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-MemoryLimit.html#constant_WITHOUT_MEMORY_LIMIT_GB"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Repartition\\HashRepartitionBuilder",
             "name": "HashRepartitionBuilder",
@@ -1316,6 +3286,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Repartition-HashRepartitionBuilder.html#method_bucketsCount"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Repartition\\HashRepartitionBuilder\u003A\u003AmemoryLimit\u0028\u0029",
+            "name": "memoryLimit",
+            "summary": "The\u0020process\u0020memory\u0020past\u0020which\u0020buckets\u0020move\u0020to\u0020the\u0020storage\u003B\u0020defaults\u0020to\u0020MemoryLimit\u003A\u003Adefault\u0028\u0029.",
+            "url": "classes/Flow-ETL-Config-Repartition-HashRepartitionBuilder.html#method_memoryLimit"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Repartition\\HashRepartitionBuilder\u003A\u003Astorage\u0028\u0029",
             "name": "storage",
             "summary": "",
@@ -1335,6 +3310,11 @@ Search.appendIndex(
             "name": "bucketing",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Repartition-HashRepartitionConfig.html#property_bucketing"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Repartition\\HashRepartitionConfig\u003A\u003A\u0024memoryLimit",
+            "name": "memoryLimit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Repartition-HashRepartitionConfig.html#property_memoryLimit"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Repartition\\RepartitionAlgorithmBuilder",
             "name": "RepartitionAlgorithmBuilder",
@@ -1376,10 +3356,10 @@ Search.appendIndex(
             "summary": "Storage\u0020for\u0020merged\u0020runs\u0020only.\u0020Defaults\u0020to\u0020the\u0020spill\u0020storage,\u0020so\u0020storage\u0028\u0029\u0020keeps\u0020covering\u0020both\u0020phases.",
             "url": "classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_mergeStorage"
         },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortBuilder\u003A\u003ArunSize\u0028\u0029",
-            "name": "runSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_runSize"
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortBuilder\u003A\u003AmemoryLimit\u0028\u0029",
+            "name": "memoryLimit",
+            "summary": "The\u0020process\u0020memory\u0020past\u0020which\u0020the\u0020sort\u0020spills\u0020sorted\u0020runs\u003B\u0020defaults\u0020to\u0020MemoryLimit\u003A\u003Adefault\u0028\u0029.",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortBuilder.html#method_memoryLimit"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortBuilder\u003A\u003Astorage\u0028\u0029",
             "name": "storage",
@@ -1401,15 +3381,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config-Sort-ExternalSortConfig.html#property_bucketing"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortConfig\u003A\u003A\u0024memoryLimit",
+            "name": "memoryLimit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config-Sort-ExternalSortConfig.html#property_memoryLimit"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortConfig\u003A\u003A\u0024merge",
             "name": "merge",
             "summary": "",
             "url": "classes/Flow-ETL-Config-Sort-ExternalSortConfig.html#property_merge"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\\Sort\\ExternalSortConfig\u003A\u003A\u0024runSize",
-            "name": "runSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config-Sort-ExternalSortConfig.html#property_runSize"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\\Sort\\MemorySortBuilder",
             "name": "MemorySortBuilder",
@@ -1706,6 +3686,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#method_analyze"
         },                {
+            "fqsen": "\\Flow\\ETL\\Config\u003A\u003Abackend\u0028\u0029",
+            "name": "backend",
+            "summary": "",
+            "url": "classes/Flow-ETL-Config.html#method_backend"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\u003A\u003Acalculator\u0028\u0029",
             "name": "calculator",
             "summary": "",
@@ -1720,11 +3705,6 @@ Search.appendIndex(
             "name": "executor",
             "summary": "",
             "url": "classes/Flow-ETL-Config.html#method_executor"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Config\u003A\u003Ahydrator\u0028\u0029",
-            "name": "hydrator",
-            "summary": "",
-            "url": "classes/Flow-ETL-Config.html#method_hydrator"
         },                {
             "fqsen": "\\Flow\\ETL\\Config\u003A\u003Aid\u0028\u0029",
             "name": "id",
@@ -1801,10 +3781,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Constraint-SortedByConstraint.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Constraint\\SortedByConstraint\u003A\u003AisSatisfiedBy\u0028\u0029",
-            "name": "isSatisfiedBy",
-            "summary": "",
-            "url": "classes/Flow-ETL-Constraint-SortedByConstraint.html#method_isSatisfiedBy"
+            "fqsen": "\\Flow\\ETL\\Constraint\\SortedByConstraint\u003A\u003AfirstViolation\u0028\u0029",
+            "name": "firstViolation",
+            "summary": "Index\u0020of\u0020the\u0020first\u0020row\u0020that\u0020violates\u003B\u0020state\u0020advances\u0020over\u0020the\u0020rows\u0020before\u0020it.",
+            "url": "classes/Flow-ETL-Constraint-SortedByConstraint.html#method_firstViolation"
         },                {
             "fqsen": "\\Flow\\ETL\\Constraint\\SortedByConstraint\u003A\u003AtoString\u0028\u0029",
             "name": "toString",
@@ -1881,10 +3861,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Constraint-UniqueConstraint.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\u003A\u003AisSatisfiedBy\u0028\u0029",
-            "name": "isSatisfiedBy",
-            "summary": "",
-            "url": "classes/Flow-ETL-Constraint-UniqueConstraint.html#method_isSatisfiedBy"
+            "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\u003A\u003AfirstViolation\u0028\u0029",
+            "name": "firstViolation",
+            "summary": "Index\u0020of\u0020the\u0020first\u0020row\u0020that\u0020violates\u003B\u0020state\u0020advances\u0020over\u0020the\u0020rows\u0020before\u0020it.",
+            "url": "classes/Flow-ETL-Constraint-UniqueConstraint.html#method_firstViolation"
         },                {
             "fqsen": "\\Flow\\ETL\\Constraint\\UniqueConstraint\u003A\u003AtoString\u0028\u0029",
             "name": "toString",
@@ -1906,10 +3886,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Constraint.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Constraint\u003A\u003AisSatisfiedBy\u0028\u0029",
-            "name": "isSatisfiedBy",
-            "summary": "",
-            "url": "classes/Flow-ETL-Constraint.html#method_isSatisfiedBy"
+            "fqsen": "\\Flow\\ETL\\Constraint\u003A\u003AfirstViolation\u0028\u0029",
+            "name": "firstViolation",
+            "summary": "Index\u0020of\u0020the\u0020first\u0020row\u0020that\u0020violates\u003B\u0020state\u0020advances\u0020over\u0020the\u0020rows\u0020before\u0020it.",
+            "url": "classes/Flow-ETL-Constraint.html#method_firstViolation"
         },                {
             "fqsen": "\\Flow\\ETL\\Constraint\u003A\u003AtoString\u0028\u0029",
             "name": "toString",
@@ -2045,11 +4025,6 @@ Search.appendIndex(
             "name": "getAsArray",
             "summary": "Yields\u0020each\u0020row\u0020as\u0020an\u0020array.",
             "url": "classes/Flow-ETL-DataFrame.html#method_getAsArray"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AgetEach\u0028\u0029",
-            "name": "getEach",
-            "summary": "Yield\u0020each\u0020row\u0020as\u0020an\u0020instance\u0020of\u0020Row.",
-            "url": "classes/Flow-ETL-DataFrame.html#method_getEach"
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AgetEachAsArray\u0028\u0029",
             "name": "getEachAsArray",
@@ -2196,6 +4171,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-DataFrameFactory.html#method_from"
         },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\BoundedRead",
+            "name": "BoundedRead",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-BoundedRead.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\BoundedRead\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-BoundedRead.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\BoundedRead\u003A\u003AfollowedBy\u0028\u0029",
+            "name": "followedBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-BoundedRead.html#method_followedBy"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\BoundedRead\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "Reads\u0020\u0024rows\u0020while\u0020the\u0020process\u0020stays\u0020under\u0020the\u0020limit\u003B\u0020\u0024rows\u0020is\u0020left\u0020at\u0020the\u0020first\u0020batch\u0020not\u0020read.",
+            "url": "classes/Flow-ETL-Dataset-Memory-BoundedRead.html#method_read"
+        },                {
             "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Configuration",
             "name": "Configuration",
             "summary": "",
@@ -2270,6 +4265,31 @@ Search.appendIndex(
             "name": "minDiff",
             "summary": "",
             "url": "classes/Flow-ETL-Dataset-Memory-Consumption.html#method_minDiff"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\MemoryBudget",
+            "name": "MemoryBudget",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-MemoryBudget.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\MemoryBudget\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-MemoryBudget.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\MemoryBudget\u003A\u003Aexceeded\u0028\u0029",
+            "name": "exceeded",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-MemoryBudget.html#method_exceeded"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\MemoryBudget\u003A\u003Areleased\u0028\u0029",
+            "name": "released",
+            "summary": "After\u0020a\u0020spill\u0020freed\u0020its\u0020buffer\u003A\u0020hands\u0020the\u0020memory\u0020PHP\u0020keeps\u0020cached\u0020back\u0020to\u0020the\u0020OS.",
+            "url": "classes/Flow-ETL-Dataset-Memory-MemoryBudget.html#method_released"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\MemoryBudget\u003A\u003A\u0024limit",
+            "name": "limit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Dataset-Memory-MemoryBudget.html#property_limit"
         },                {
             "fqsen": "\\Flow\\ETL\\Dataset\\Memory\\Unit",
             "name": "Unit",
@@ -2776,11 +4796,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_rename_map"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\row\u0028\u0029",
-            "name": "row",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_row"
-        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\rows\u0028\u0029",
             "name": "rows",
             "summary": "",
@@ -3140,11 +5155,6 @@ Search.appendIndex(
             "name": "number_format",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_number_format"
-        },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\array_to_row\u0028\u0029",
-            "name": "array_to_row",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_array_to_row"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\array_to_rows\u0028\u0029",
             "name": "array_to_rows",
@@ -3861,6 +5871,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Exception-ColumnMismatchException.html#method_unexpectedColumn"
         },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\ColumnMismatchException\u003A\u003Aretype\u0028\u0029",
+            "name": "retype",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-ColumnMismatchException.html#method_retype"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\ColumnMismatchException\u003A\u003AunsupportedType\u0028\u0029",
+            "name": "unsupportedType",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-ColumnMismatchException.html#method_unsupportedType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\ColumnMismatchException\u003A\u003AuntypedColumn\u0028\u0029",
+            "name": "untypedColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-ColumnMismatchException.html#method_untypedColumn"
+        },                {
             "fqsen": "\\Flow\\ETL\\Exception\\ColumnMismatchException\u003A\u003AvalueDoesNotMatch\u0028\u0029",
             "name": "valueDoesNotMatch",
             "summary": "",
@@ -3900,6 +5925,26 @@ Search.appendIndex(
             "name": "DuplicatedEntriesException",
             "summary": "",
             "url": "classes/Flow-ETL-Exception-DuplicatedEntriesException.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\EvaluationException",
+            "name": "EvaluationException",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-EvaluationException.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\EvaluationException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-EvaluationException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\EvaluationException\u003A\u003Aat\u0028\u0029",
+            "name": "at",
+            "summary": "\u0024cause\u0020at\u0020\u0024rowIndex\u0020of\u0020the\u0020caller\u0027s\u0020batch\u003B\u0020an\u0020EvaluationException\u0020cause\u0020is\u0020re\u002Dindexed,\u0020never\u0020nested.",
+            "url": "classes/Flow-ETL-Exception-EvaluationException.html#method_at"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\EvaluationException\u003A\u003A\u0024rowIndex",
+            "name": "rowIndex",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-EvaluationException.html#property_rowIndex"
         },                {
             "fqsen": "\\Flow\\ETL\\Exception\\Exception",
             "name": "Exception",
@@ -4080,6 +6125,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Exception-MissingExtensionException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\OffsetOverflow",
+            "name": "OffsetOverflow",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-OffsetOverflow.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Exception\\OffsetReachedException",
             "name": "OffsetReachedException",
@@ -4265,6 +6315,21 @@ Search.appendIndex(
             "name": "forColumn",
             "summary": "",
             "url": "classes/Flow-ETL-Exception-UnsupportedUnionTypeException.html#method_forColumn"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Executor\\AdoptedBatches",
+            "name": "AdoptedBatches",
+            "summary": "",
+            "url": "classes/Flow-ETL-Executor-AdoptedBatches.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Executor\\AdoptedBatches\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Executor-AdoptedBatches.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Executor\\AdoptedBatches\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "Every\u0020batch\u0020of\u0020\u0024batches\u0020in\u0020the\u0020backend\u0027s\u0020storage,\u0020a\u0020stop\u0020forwarded\u0020to\u0020\u0024batches.",
+            "url": "classes/Flow-ETL-Executor-AdoptedBatches.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\Executor\\Described",
             "name": "Described",
@@ -4751,6 +6816,11 @@ Search.appendIndex(
             "summary": "Yields\u0020rows\u0020in\u0020batches.\u0020When\u0020the\u0020source\u0020is\u0020a\u0020BatchableExtractor\u0020a\u0020batch\u0020holds\u0020between\u00200\u0020and\u0020that\nextractor\u0027s\u0020own\u0020batchSize\u0028\u0029\u0020rows\u003B\u0020the\u0020size\u0020is\u0020chosen\u0020by\u0020the\u0020extractor\u0020and\u0020MAY\u0020vary\u0020between\nbatches.\u0020Consumers\u0020must\u0020not\u0020assume\u0020a\u0020minimum\u0020size,\u0020a\u0020constant\u0020size,\u0020or\u0020a\u0020non\u002Dempty\u0020batch.",
             "url": "classes/Flow-ETL-Extractor-BatchByExtractor.html#method_extract"
         },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\BatchByExtractor\u003A\u003Adeclared\u0028\u0029",
+            "name": "declared",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-BatchByExtractor.html#method_declared"
+        },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\BatchByExtractor\u003A\u003Aextractors\u0028\u0029",
             "name": "extractors",
             "summary": "",
@@ -4986,21 +7056,6 @@ Search.appendIndex(
             "summary": "What\u0020the\u0020source\u0020knows\u0020about\u0020the\u0020data\u0020before\u0020a\u0020single\u0020row\u0020is\u0020read\u003A\u0020how\u0020many\u0020rows,\u0020how\u0020many\u0020bytes.\u0020A\u0020source\nthat\u0020knows\u0020nothing\u0020returns\u0020\u0060new\u0020Statistics\u0028\u0029\u0060.\u0020Describes\u0020the\u0020source\u0020with\u0020NO\u0020pushdown\u0020applied\u0020\u002D\u0020a\u0020limit\u0020or\u0020a\npartition\u0020filter\u0020the\u0020plan\u0020pushed\u0020is\u0020the\u0020plan\u0027s\u0020to\u0020account\u0020for.",
             "url": "classes/Flow-ETL-Extractor-DataFrameExtractor.html#method_statistics"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\DeclaresPartitionTypes",
-            "name": "DeclaresPartitionTypes",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-DeclaresPartitionTypes.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\DeclaresPartitionTypes\u003A\u003AdeclaredPartitionTypes\u0028\u0029",
-            "name": "declaredPartitionTypes",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-DeclaresPartitionTypes.html#method_declaredPartitionTypes"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\DeclaresPartitionTypes\u003A\u003ApartitionTypes\u0028\u0029",
-            "name": "partitionTypes",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-DeclaresPartitionTypes.html#method_partitionTypes"
-        },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\FeedExtractor",
             "name": "FeedExtractor",
             "summary": "Feeds\u0020a\u0020pipeline\u0020from\u0020outside,\u0020one\u0020batch\u0020per\u0020feed\u0028\u0029\u0020call.\u0020When\u0020starved\u0020it\u0020suspends\u0020the\u0020enclosing\nFiber\u0020instead\u0020of\u0020ending\u0020the\u0020stream\u003B\u0020finish\u0028\u0029\u0020ends\u0020it.\u0020The\u0020trailing\u0020empty\u0020Rows\u0020after\u0020each\u0020batch\u0020keeps\nthe\u0020source\u0020one\u0020yield\u0020ahead\u0020of\u0020Segment\u0027s\u0020current\u0028\u0029\/next\u0028\u0029\u0020protocol,\u0020so\u0020a\u0020fed\u0020batch\u0020is\u0020processed\u0020in\u0020the\nsame\u0020resume\u0020that\u0020fed\u0020it\u0020and\u0020a\u0020late\u0020Signal\u003A\u003ASTOP\u0020still\u0020lands\u0020on\u0020a\u0020live\u0020yield.",
@@ -5041,90 +7096,365 @@ Search.appendIndex(
             "summary": "What\u0020the\u0020source\u0020knows\u0020about\u0020the\u0020data\u0020before\u0020a\u0020single\u0020row\u0020is\u0020read\u003A\u0020how\u0020many\u0020rows,\u0020how\u0020many\u0020bytes.\u0020A\u0020source\nthat\u0020knows\u0020nothing\u0020returns\u0020\u0060new\u0020Statistics\u0028\u0029\u0060.\u0020Describes\u0020the\u0020source\u0020with\u0020NO\u0020pushdown\u0020applied\u0020\u002D\u0020a\u0020limit\u0020or\u0020a\npartition\u0020filter\u0020the\u0020plan\u0020pushed\u0020is\u0020the\u0020plan\u0027s\u0020to\u0020account\u0020for.",
             "url": "classes/Flow-ETL-Extractor-FeedExtractor.html#method_statistics"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileColumns",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\DeclaresPartitionTypes",
+            "name": "DeclaresPartitionTypes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-DeclaresPartitionTypes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\DeclaresPartitionTypes\u003A\u003AdeclaredPartitionTypes\u0028\u0029",
+            "name": "declaredPartitionTypes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-DeclaresPartitionTypes.html#method_declaredPartitionTypes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\DeclaresPartitionTypes\u003A\u003ApartitionTypes\u0028\u0029",
+            "name": "partitionTypes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-DeclaresPartitionTypes.html#method_partitionTypes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\DerivedSchema",
+            "name": "DerivedSchema",
+            "summary": "The\u0020schema\u0020a\u0020self\u002Ddescribing\u0020format\u0020derived\u0020from\u0020its\u0020first\u0020file,\u0020which\u0020every\u0020file\u0020it\u0020reads\u0020must\u0020match.",
+            "url": "classes/Flow-ETL-Extractor-File-DerivedSchema.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\DerivedSchema\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-DerivedSchema.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\DerivedSchema\u003A\u003ArefuseDivergence\u0028\u0029",
+            "name": "refuseDivergence",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-DerivedSchema.html#method_refuseDivergence"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileBatches",
+            "name": "FileBatches",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileBatches.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileBatches\u003A\u003Abatches\u0028\u0029",
+            "name": "batches",
+            "summary": "Batches\u0020of\u0020one\u0020file\u0020under\u0020\u0024body\u0020\u0028file\u0020constants\u0020excluded\u0029,\u0020every\u0020column\u0020built\u0020by\u0020\u0024backend.",
+            "url": "classes/Flow-ETL-Extractor-File-FileBatches.html#method_batches"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileColumns",
             "name": "FileColumns",
             "summary": "Both\u0020read\u0020paths\u0020take\u0020the\u0020tail\u0020from\u0020one\u0020instance\u0020of\u0020this,\u0020in\u0020one\u0020order,\u0020so\u0020they\u0020cannot\u0020disagree.",
-            "url": "classes/Flow-ETL-Extractor-FileColumns.html"
+            "url": "classes/Flow-ETL-Extractor-File-FileColumns.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileColumns\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileColumns\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FileColumns.html#method___construct"
+            "url": "classes/Flow-ETL-Extractor-File-FileColumns.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileColumns\u003A\u003Aapply\u0028\u0029",
-            "name": "apply",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FileColumns.html#method_apply"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileColumns\u003A\u003Adeclare\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileColumns\u003A\u003Adeclare\u0028\u0029",
             "name": "declare",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FileColumns.html#method_declare"
+            "url": "classes/Flow-ETL-Extractor-File-FileColumns.html#method_declare"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileColumns\u003A\u003Apartitions\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileColumns\u003A\u003Apartitions\u0028\u0029",
             "name": "partitions",
             "summary": "\u0024declared\u0020carries\u0020a\u0020withSchema\u0028\u0029d\u0020partition\u0020column\u0027s\u0020type\u003B\u0020keep\u0028\u0029\u0020drops\u0020the\u0020body\u0020columns\u0020it\u0020brings.",
-            "url": "classes/Flow-ETL-Extractor-FileColumns.html#method_partitions"
+            "url": "classes/Flow-ETL-Extractor-File-FileColumns.html#method_partitions"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileColumns\u003A\u003AforFile\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileColumns\u003A\u003AforFile\u0028\u0029",
             "name": "forFile",
             "summary": "Takes\u0020the\u0020schema\u0020declare\u0028\u0029\u0020already\u0020produced,\u0020so\u0020the\u0020values\u0020and\u0020the\u0020schema\u0020they\u0020are\u0020written\u0020under\ncan\u0020never\u0020come\u0020from\u0020two\u0020different\u0020declarations.",
-            "url": "classes/Flow-ETL-Extractor-FileColumns.html#method_forFile"
+            "url": "classes/Flow-ETL-Extractor-File-FileColumns.html#method_forFile"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileColumns\u003A\u003Atail\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileColumns\u003A\u003Atail\u0028\u0029",
             "name": "tail",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FileColumns.html#method_tail"
+            "url": "classes/Flow-ETL-Extractor-File-FileColumns.html#method_tail"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileColumns\u003A\u003AwithoutTail\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileColumns\u003A\u003AwithoutTail\u0028\u0029",
             "name": "withoutTail",
             "summary": "So\u0020a\u0020source\u0020carrying\u0020a\u0020partition\u002Dnamed\u0020column\u0020in\u0020its\u0020body\u0020does\u0020not\u0020get\u0020it\u0020typed\u0020from\u0020the\u0020data.",
-            "url": "classes/Flow-ETL-Extractor-FileColumns.html#method_withoutTail"
+            "url": "classes/Flow-ETL-Extractor-File-FileColumns.html#method_withoutTail"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileConstants",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileConstants",
             "name": "FileConstants",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FileConstants.html"
+            "url": "classes/Flow-ETL-Extractor-File-FileConstants.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileConstants\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileConstants\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FileConstants.html#method___construct"
+            "url": "classes/Flow-ETL-Extractor-File-FileConstants.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileConstants\u003A\u003Afill\u0028\u0029",
-            "name": "fill",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FileConstants.html#method_fill"
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileConstants\u003A\u003Avalues\u0028\u0029",
+            "name": "values",
+            "summary": "The\u0020file\u0027s\u0020value\u0020of\u0020every\u0020column\u0020this\u0020file\u0020adds\u0020\u002D\u0020\u0060_input_file_uri\u0060\u0020when\u0020metadata\u0020columns\u0020are\u0020on,\u0020then\u0020each\npartition\u0020column\u0020\u0028null\u0020when\u0020the\u0020path\u0020does\u0020not\u0020carry\u0020it\u0029.",
+            "url": "classes/Flow-ETL-Extractor-File-FileConstants.html#method_values"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileConstants\u003A\u003AfillRows\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileConstants\u003A\u003AfillRows\u0028\u0029",
             "name": "fillRows",
-            "summary": "fill\u0028\u0029\u0020over\u0020a\u0020batch\u0020the\u0020reader\u0020already\u0020matched\u0020to\u0020the\u0020file\u0027s\u0020body\u0020schema,\u0020adopting\u0020\u0024declared\u0020\u002D\u0020the\u0020schema\nFileColumns\u003A\u003Adeclare\u0028\u0029\u0020built\u0020over\u0020that\u0020body\u0020schema.\u0020A\u0020batch\u0020with\u0020nothing\u0020to\u0020add\u0020is\u0020returned\u0020as\u0020it\u0020is.",
-            "url": "classes/Flow-ETL-Extractor-FileConstants.html#method_fillRows"
+            "summary": "values\u0028\u0029\u0020over\u0020a\u0020batch\u0020the\u0020reader\u0020already\u0020matched\u0020to\u0020the\u0020file\u0027s\u0020body\u0020schema,\u0020adopting\u0020\u0024declared\u0020\u002D\u0020the\u0020schema\nFileColumns\u003A\u003Adeclare\u0028\u0029\u0020built\u0020over\u0020that\u0020body\u0020schema.\u0020A\u0020batch\u0020with\u0020nothing\u0020to\u0020add\u0020is\u0020returned\u0020as\u0020it\u0020is.",
+            "url": "classes/Flow-ETL-Extractor-File-FileConstants.html#method_fillRows"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileExtractor",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileExtractor",
             "name": "FileExtractor",
             "summary": "A\u0020source\u0020that\u0020lists\u0020files\u0020under\u0020a\u0020path.\u0020Its\u0020schema\u0020is\u0020a\u0020property\u0020of\u0020the\u0020source\u0020\u002D\u0020derived\u0020from\u0020the\u0020full\nlisting\u0020\u002D\u0020and\u0020a\u0020pruned\u0020read\u0020does\u0020not\u0020change\u0020it.",
-            "url": "classes/Flow-ETL-Extractor-FileExtractor.html"
+            "url": "classes/Flow-ETL-Extractor-File-FileExtractor.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileExtractor\u003A\u003Aextract\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "Yields\u0020rows\u0020in\u0020batches.\u0020When\u0020the\u0020source\u0020is\u0020a\u0020BatchableExtractor\u0020a\u0020batch\u0020holds\u0020between\u00200\u0020and\u0020that\nextractor\u0027s\u0020own\u0020batchSize\u0028\u0029\u0020rows\u003B\u0020the\u0020size\u0020is\u0020chosen\u0020by\u0020the\u0020extractor\u0020and\u0020MAY\u0020vary\u0020between\nbatches.\u0020Consumers\u0020must\u0020not\u0020assume\u0020a\u0020minimum\u0020size,\u0020a\u0020constant\u0020size,\u0020or\u0020a\u0020non\u002Dempty\u0020batch.",
-            "url": "classes/Flow-ETL-Extractor-FileExtractor.html#method_extract"
+            "url": "classes/Flow-ETL-Extractor-File-FileExtractor.html#method_extract"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileExtractor\u003A\u003Asource\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileExtractor\u003A\u003Asource\u0028\u0029",
             "name": "source",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FileExtractor.html#method_source"
+            "url": "classes/Flow-ETL-Extractor-File-FileExtractor.html#method_source"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileExtractor\u003A\u003ApartitionSchema\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileExtractor\u003A\u003ApartitionSchema\u0028\u0029",
             "name": "partitionSchema",
             "summary": "The\u0020partition\u0020block\u0020of\u0020this\u0020source\u0027s\u0020schema\u0020and\u0020nothing\u0020else\u0020\u002D\u0020typed\u0020exactly\u0020as\u0020the\u0020read\u0020emits\u0020it,\nempty\u0020when\u0020the\u0020source\u0020declares\u0020no\u0020partition\u0020columns.\u0020The\u0020planner\u0020asks\u0020it\u0020to\u0020decide\u0020whether\u0020a\u0020predicate\ncan\u0020be\u0020evaluated\u0020from\u0020the\u0020path\u0020alone.",
-            "url": "classes/Flow-ETL-Extractor-FileExtractor.html#method_partitionSchema"
+            "url": "classes/Flow-ETL-Extractor-File-FileExtractor.html#method_partitionSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FileReading",
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileReading",
             "name": "FileReading",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FileReading.html"
+            "url": "classes/Flow-ETL-Extractor-File-FileReading.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileReadLoop",
+            "name": "FileReadLoop",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileReadLoop.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileReadLoop\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileReadLoop.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileReadLoop\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileReadLoop.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FooterStatistics",
+            "name": "FooterStatistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FooterStatistics.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FooterStatistics\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FooterStatistics.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FooterStatistics\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "Exact\u0020when\u0020every\u0020listed\u0020file\u0027s\u0020footer\u0020was\u0020read\u003B\u0020otherwise\u0020the\u0020read\u0020footers\u0020are\u0020scaled\u0020to\u0020the\u0020listing\n\u0028DuckDB\u0027s\u0020rule,\u0020parquet_extension.cpp\u003A866\u002D877\u0029.\u0020The\u0020offset\u0020is\u0020taken\u0020off\u0020the\u0020rows,\u0020never\u0020below\u0020zero.",
+            "url": "classes/Flow-ETL-Extractor-File-FooterStatistics.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FooterStatistics\u003A\u003A\u0024files",
+            "name": "files",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FooterStatistics.html#property_files"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FooterStatistics\u003A\u003A\u0024statistics",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FooterStatistics.html#property_statistics"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\InferredColumns",
+            "name": "InferredColumns",
+            "summary": "The\u0020columns\u0020an\u0020inferred\u0020schema\u0020was\u0020derived\u0020from,\u0020which\u0020every\u0020file\u0020a\u0020grid\u0020format\u0020reads\u0020must\u0020carry.",
+            "url": "classes/Flow-ETL-Extractor-File-InferredColumns.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\InferredColumns\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-InferredColumns.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\InferredColumns\u003A\u003ArefuseDivergence\u0028\u0029",
+            "name": "refuseDivergence",
+            "summary": "Refuses\u0020a\u0020file\u0020whose\u0020own\u0020columns\u0020\u0028header\u0029\u0020are\u0020not\u0020the\u0020inferred\u0020ones\u003B\u0020a\u0020file\u0020with\u0020no\u0020columns\u0020passes.",
+            "url": "classes/Flow-ETL-Extractor-File-InferredColumns.html#method_refuseDivergence"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ListedFiles",
+            "name": "ListedFiles",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-ListedFiles.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ListedFiles\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-ListedFiles.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ListedFiles\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "One\u0020pass,\u0020nothing\u0020kept\u0020but\u0020the\u0020two\u0020totals.\u0020NativeLocalFilesystem\u003A\u003AstatFor\u0028\u0029\u0020is\u0020\u0060filesize\u0028\u0024p\u0029\u0020\u003F\u003A\u0020null\u0060,\u0020so\u0020it\nreports\u0020a\u0020zero\u002Dbyte\u0020file\u0020as\u0020null.",
+            "url": "classes/Flow-ETL-Extractor-File-ListedFiles.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ListedFiles\u003A\u003A\u0024count",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-ListedFiles.html#property_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ListedFiles\u003A\u003A\u0024bytes",
+            "name": "bytes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-ListedFiles.html#property_bytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ListingPartitions",
+            "name": "ListingPartitions",
+            "summary": "FileReading\u0020for\u0020a\u0020source\u0020whose\u0020rows\u0020describe\u0020the\u0020files\u0020themselves\u003A\u0020the\u0020same\u0020partition\u0020columns,\u0020no\u0020metadata\ncolumns\u0020and\u0020no\u0020declared\u0020partition\u0020types\u0020\u002D\u0020each\u0020row\u0020already\u0020is\u0020the\u0020file\u0027s\u0020metadata.",
+            "url": "classes/Flow-ETL-Extractor-File-ListingPartitions.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\MetadataColumns",
+            "name": "MetadataColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-MetadataColumns.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\MetadataColumns\u003A\u003AwithMetadataColumns\u0028\u0029",
+            "name": "withMetadataColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-MetadataColumns.html#method_withMetadataColumns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\MetadataColumnsExtractor",
+            "name": "MetadataColumnsExtractor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-MetadataColumnsExtractor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\MetadataColumnsExtractor\u003A\u003AwithMetadataColumns\u0028\u0029",
+            "name": "withMetadataColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-MetadataColumnsExtractor.html#method_withMetadataColumns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\OffsetSkippingFileBatches",
+            "name": "OffsetSkippingFileBatches",
+            "summary": "Skips\u0020the\u0020window\u0027s\u0020offset\u0020itself\u0020\u002D\u0020a\u0020whole\u0020file\u0020the\u0020offset\u0020covers\u0020yields\u0020nothing\u0020\u002D\u0020so\u0020the\u0020first\u0020row\u0020it\u0020yields\u0020is\nthe\u0020first\u0020one\u0020past\u0020the\u0020offset.",
+            "url": "classes/Flow-ETL-Extractor-File-OffsetSkippingFileBatches.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\PartitionColumns",
+            "name": "PartitionColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-PartitionColumns.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\PartitionColumns\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-PartitionColumns.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\PartitionColumns\u003A\u003Anames\u0028\u0029",
+            "name": "names",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-PartitionColumns.html#method_names"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\PartitionColumns\u003A\u003Adeclare\u0028\u0029",
+            "name": "declare",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-PartitionColumns.html#method_declare"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\PartitionTypes",
+            "name": "PartitionTypes",
+            "summary": "Types\u0020for\u0020partition\u0020columns\u0020discovered\u0020from\u0020a\u0020path.",
+            "url": "classes/Flow-ETL-Extractor-File-PartitionTypes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\PartitionTypes\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-PartitionTypes.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\PartitionTypes\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-PartitionTypes.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\PartitionTypes\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-PartitionTypes.html#method_has"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\PartitionTypes\u003A\u003AassertEveryNameIsAPartition\u0028\u0029",
+            "name": "assertEveryNameIsAPartition",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-PartitionTypes.html#method_assertEveryNameIsAPartition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\PathFiltering",
+            "name": "PathFiltering",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-PathFiltering.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\PathFiltering\u003A\u003ApartitionNames\u0028\u0029",
+            "name": "partitionNames",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-PathFiltering.html#method_partitionNames"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ReadWindow",
+            "name": "ReadWindow",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-ReadWindow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ReadWindow\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-ReadWindow.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ReadWindow\u003A\u003A\u0024offset",
+            "name": "offset",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-ReadWindow.html#property_offset"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ReadWindow\u003A\u003A\u0024limit",
+            "name": "limit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-ReadWindow.html#property_limit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\SelfDescribingFile",
+            "name": "SelfDescribingFile",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-SelfDescribingFile.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\SelfDescribingFile\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-SelfDescribingFile.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\SelfDescribingFile\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-SelfDescribingFile.html#method_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\SelfDescribingFile\u003A\u003Asource\u0028\u0029",
+            "name": "source",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-SelfDescribingFile.html#method_source"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\SelfDescribingFile\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "What\u0020this\u0020one\u0020file\u0027s\u0020own\u0020metadata\u0020declares,\u0020read\u0020from\u0020what\u0020schema\u0028\u0029\u0020already\u0020opened.",
+            "url": "classes/Flow-ETL-Extractor-File-SelfDescribingFile.html#method_statistics"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\SourceFile",
+            "name": "SourceFile",
+            "summary": "The\u0020partition\u0020values\u0020come\u0020from\u0020the\u0020path,\u0020so\u0020a\u0020read\u0020knows\u0020them\u0020without\u0020opening\u0020the\u0020file.",
+            "url": "classes/Flow-ETL-Extractor-File-SourceFile.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\SourceFile\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-SourceFile.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\SourceFile\u003A\u003Auri\u0028\u0029",
+            "name": "uri",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-SourceFile.html#method_uri"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\SourceFile\u003A\u003A\u0024partitionValues",
+            "name": "partitionValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-SourceFile.html#property_partitionValues"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\SourceFile\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-SourceFile.html#property_path"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\SourceFile\u003A\u003A\u0024size",
+            "name": "size",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-SourceFile.html#property_size"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\FilesExtractor",
             "name": "FilesExtractor",
@@ -5171,45 +7501,35 @@ Search.appendIndex(
             "summary": "Declares\u0020the\u0020shape\u0020every\u0020yielded\u0020batch\u0020must\u0020carry.\u0020A\u0020source\u0020that\u0020describes\u0020itself\u0020uses\u0020this\ninstead\u0020of\u0020its\u0020own\u0020description,\u0020and\u0020values\u0020are\u0020cast\u0020to\u0020fit.",
             "url": "classes/Flow-ETL-Extractor-FilesExtractor.html#method_withSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FooterStatistics",
-            "name": "FooterStatistics",
+            "fqsen": "\\Flow\\ETL\\Extractor\\Grid\\HeaderNames",
+            "name": "HeaderNames",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FooterStatistics.html"
+            "url": "classes/Flow-ETL-Extractor-Grid-HeaderNames.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FooterStatistics\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\Grid\\HeaderNames\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "Column\u0020names\u0020from\u0020header\u0020cells\u003A\u0020a\u0020scalar\u0020cell\u0020as\u0020its\u0020trimmed\u0020text,\u0020any\u0020other\u0020or\u0020blank\u0020cell\u0020as\u0020\u0060e\u0060\u0020\u002B\u0020its\u0020position.",
+            "url": "classes/Flow-ETL-Extractor-Grid-HeaderNames.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Grid\\RecordDecoder",
+            "name": "RecordDecoder",
+            "summary": "Decodes\u0020the\u0020records\u0020of\u0020one\u0020file\u0020or\u0020stream\u003A\u0020the\u0020header\u0020it\u0020resolves\u0020from\u0020the\u0020first\u0020record\u0020is\u0020that\u0020source\u0027s.",
+            "url": "classes/Flow-ETL-Extractor-Grid-RecordDecoder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Grid\\RecordDecoder\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FooterStatistics.html#method___construct"
+            "url": "classes/Flow-ETL-Extractor-Grid-RecordDecoder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FooterStatistics\u003A\u003Aof\u0028\u0029",
-            "name": "of",
-            "summary": "Exact\u0020when\u0020every\u0020listed\u0020file\u0027s\u0020footer\u0020was\u0020read\u003B\u0020otherwise\u0020the\u0020read\u0020footers\u0020are\u0020scaled\u0020to\u0020the\u0020listing\n\u0028DuckDB\u0027s\u0020rule,\u0020parquet_extension.cpp\u003A866\u002D877\u0029.\u0020The\u0020offset\u0020is\u0020taken\u0020off\u0020the\u0020rows,\u0020never\u0020below\u0020zero.",
-            "url": "classes/Flow-ETL-Extractor-FooterStatistics.html#method_of"
+            "fqsen": "\\Flow\\ETL\\Extractor\\Grid\\RecordDecoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "Records\u0020before\u0020the\u0020header\u0020is\u0020resolved\u0020that\u0020hold\u0020no\u0020cell\u0020are\u0020skipped.\u0020A\u0020cell\u0020a\u0020record\u0020lacks\u0020is\u0020null\u003B\u0020a\u0020present\n\u0027\u0027\u0020cell\u0020is\u0020null\u0020under\u0020emptyToNull.",
+            "url": "classes/Flow-ETL-Extractor-Grid-RecordDecoder.html#method_decode"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FooterStatistics\u003A\u003A\u0024files",
-            "name": "files",
+            "fqsen": "\\Flow\\ETL\\Extractor\\Grid\\RecordDecoder\u003A\u003Aheaders\u0028\u0029",
+            "name": "headers",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FooterStatistics.html#property_files"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FooterStatistics\u003A\u003A\u0024statistics",
-            "name": "statistics",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-FooterStatistics.html#property_statistics"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\InferredRows",
-            "name": "InferredRows",
-            "summary": "The\u0020gate\u0020places\u0020a\u0020refused\u0020row\u0020in\u0020its\u0020batch\u003B\u0020only\u0020the\u0020source\u0020knows\u0020where\u0020that\u0020batch\u0020started,\u0020so\u0020a\u0020row\u0020past\u0020a\nbounded\u0020sample\u0020is\u0020reported\u0020here\u0020at\u0020its\u0020position\u0020in\u0020the\u0020whole\u0020source,\u0020with\u0020the\u0020way\u0020out.",
-            "url": "classes/Flow-ETL-Extractor-InferredRows.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\InferredRows\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-InferredRows.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\InferredRows\u003A\u003Aof\u0028\u0029",
-            "name": "of",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-InferredRows.html#method_of"
+            "url": "classes/Flow-ETL-Extractor-Grid-RecordDecoder.html#method_headers"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\InfersSchema",
             "name": "InfersSchema",
@@ -5221,55 +7541,110 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-InfersSchema.html#method_inferSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\InMemoryRows",
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\InferredRows",
+            "name": "InferredRows",
+            "summary": "The\u0020gate\u0020places\u0020a\u0020refused\u0020row\u0020in\u0020its\u0020batch\u003B\u0020only\u0020the\u0020source\u0020knows\u0020where\u0020that\u0020batch\u0020started,\u0020so\u0020a\u0020row\u0020past\u0020a\nbounded\u0020sample\u0020is\u0020reported\u0020here\u0020at\u0020its\u0020position\u0020in\u0020the\u0020whole\u0020source,\u0020with\u0020the\u0020way\u0020out.",
+            "url": "classes/Flow-ETL-Extractor-Memory-InferredRows.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\InferredRows\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-Memory-InferredRows.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\InferredRows\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-Memory-InferredRows.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\InMemoryRows",
             "name": "InMemoryRows",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-InMemoryRows.html"
+            "url": "classes/Flow-ETL-Extractor-Memory-InMemoryRows.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\InMemoryRows\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\InMemoryRows\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-InMemoryRows.html#method___construct"
+            "url": "classes/Flow-ETL-Extractor-Memory-InMemoryRows.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\InMemoryRows\u003A\u003Asamples\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\InMemoryRows\u003A\u003Asamples\u0028\u0029",
             "name": "samples",
             "summary": "One\u0020inner\u0020iterable,\u0020because\u0020the\u0020sampled\u0020unit\u0020is\u0020one\u0020SOURCE\u0020\u002D\u0020the\u0020same\u0020choice\u0020a\u0020CSV\u0020reader\u0020makes\nwhen\u0020it\u0020yields\u0020one\u0020iterable\u0020per\u0020listed\u0020file\u0020rather\u0020than\u0020per\u0020byte\u0020range.",
-            "url": "classes/Flow-ETL-Extractor-InMemoryRows.html#method_samples"
+            "url": "classes/Flow-ETL-Extractor-Memory-InMemoryRows.html#method_samples"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\InMemoryRows\u003A\u003Avalues\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\InMemoryRows\u003A\u003Avalues\u0028\u0029",
             "name": "values",
-            "summary": "The\u0020same\u0020ColumnName\u0020normalisation\u0020array_to_rows\u0028\u0029\u0020applies,\u0020so\u0020the\u0020fold\u0027s\u0020names\u0020are\u0020the\nhydrator\u0027s\u0020names.",
-            "url": "classes/Flow-ETL-Extractor-InMemoryRows.html#method_values"
+            "summary": "The\u0020same\u0020ColumnName\u0020normalisation\u0020array_to_rows\u0028\u0029\u0020applies,\u0020so\u0020the\u0020fold\u0027s\u0020names\u0020are\u0020the\nbatch\u0020builder\u0027s\u0020names.",
+            "url": "classes/Flow-ETL-Extractor-Memory-InMemoryRows.html#method_values"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\ListedFiles",
-            "name": "ListedFiles",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-ListedFiles.html"
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpilledRows",
+            "name": "SpilledRows",
+            "summary": "A\u0020source\u0020that\u0020can\u0020be\u0020read\u0020only\u0020once,\u0020made\u0020replayable\u003A\u0020every\u0020row\u0020is\u0020written\u0020to\u0020a\u0020temporary\nschema\u002Dless\u0020spill\u0020file\u0020as\u0020it\u0020streams\u0020past,\u0020and\u0020the\u0020replay\u0020reads\u0020the\u0020file\u0020back.\u0020The\u0020source\u0020is\nadvanced\u0020exactly\u0020once,\u0020ever\u003B\u0020the\u0020spill\u0020it\u0020produced\u0020can\u0020be\u0020replayed\u0020as\u0020often\u0020as\u0020the\u0020caller\u0020likes,\nand\u0020lives\u0020until\u0020this\u0020object\u0020is\u0020collected.",
+            "url": "classes/Flow-ETL-Extractor-Memory-SpilledRows.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\ListedFiles\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpilledRows\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-ListedFiles.html#method___construct"
+            "url": "classes/Flow-ETL-Extractor-Memory-SpilledRows.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\ListedFiles\u003A\u003Aof\u0028\u0029",
-            "name": "of",
-            "summary": "One\u0020pass,\u0020nothing\u0020kept\u0020but\u0020the\u0020two\u0020totals.\u0020NativeLocalFilesystem\u003A\u003AstatFor\u0028\u0029\u0020is\u0020\u0060filesize\u0028\u0024p\u0029\u0020\u003F\u003A\u0020null\u0060,\u0020so\u0020it\nreports\u0020a\u0020zero\u002Dbyte\u0020file\u0020as\u0020null.",
-            "url": "classes/Flow-ETL-Extractor-ListedFiles.html#method_of"
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpilledRows\u003A\u003A__destruct\u0028\u0029",
+            "name": "__destruct",
+            "summary": "The\u0020only\u0020place\u0020the\u0020spill\u0020is\u0020removed\u003A\u0020it\u0020outlives\u0020every\u0020replay,\u0020so\u0020a\u0020generator\u0020source\u0020supports\nrepeated\u0020terminal\u0020operations\u0020the\u0020way\u0020an\u0020array\u0020one\u0020does.",
+            "url": "classes/Flow-ETL-Extractor-Memory-SpilledRows.html#method___destruct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\ListedFiles\u003A\u003A\u0024count",
-            "name": "count",
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpilledRows\u003A\u003Apath\u0028\u0029",
+            "name": "path",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-ListedFiles.html#property_count"
+            "url": "classes/Flow-ETL-Extractor-Memory-SpilledRows.html#method_path"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\ListedFiles\u003A\u003A\u0024bytes",
-            "name": "bytes",
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpilledRows\u003A\u003Arows\u0028\u0029",
+            "name": "rows",
+            "summary": "Rows\u0020in\u0020the\u0020shape\u0020the\u0020source\u0020produced\u0020them,\u0020int\u0020keys\u0020still\u0020int\u0020\u002D\u0020naming\u0020belongs\u0020to\u0020array_to_rows\u0028\u0029.",
+            "url": "classes/Flow-ETL-Extractor-Memory-SpilledRows.html#method_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpilledRows\u003A\u003Asamples\u0028\u0029",
+            "name": "samples",
+            "summary": "\u0024rowBudget\u0020is\u0020IGNORED\u003A\u0020every\u0020row\u0020is\u0020written\u0020regardless,\u0020which\u0020is\u0020what\u0020makes\u0020a\u0020partially\u0020written\nspill\u0020unreachable\u0020by\u0020construction\u0020rather\u0020than\u0020merely\u0020unlikely.",
+            "url": "classes/Flow-ETL-Extractor-Memory-SpilledRows.html#method_samples"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpilledRows\u003A\u003Astate\u0028\u0029",
+            "name": "state",
             "summary": "",
-            "url": "classes/Flow-ETL-Extractor-ListedFiles.html#property_bytes"
+            "url": "classes/Flow-ETL-Extractor-Memory-SpilledRows.html#method_state"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\ListingPartitions",
-            "name": "ListingPartitions",
-            "summary": "FileReading\u0020for\u0020a\u0020source\u0020whose\u0020rows\u0020describe\u0020the\u0020files\u0020themselves\u003A\u0020the\u0020same\u0020partition\u0020columns,\u0020no\u0020metadata\ncolumns\u0020and\u0020no\u0020declared\u0020partition\u0020types\u0020\u002D\u0020each\u0020row\u0020already\u0020is\u0020the\u0020file\u0027s\u0020metadata.",
-            "url": "classes/Flow-ETL-Extractor-ListingPartitions.html"
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpillState",
+            "name": "SpillState",
+            "summary": "The\u0020lifecycle\u0020of\u0020one\u0020SpilledRows.\u0020Split\u0020into\u0020states\u0020rather\u0020than\u0020carried\u0020as\u0020booleans\u0020because\u0020the\nreachable\u002Dbut\u002Dunnamed\u0020fourth\u0020state\u0020\u002D\u0020\u0022spilled\u0020K\u0020of\u0020N\u0020rows,\u0020then\u0020the\u0020source\u0020threw\u0022\u0020\u002D\u0020is\u0020where\u0020a\u0020bool\npair\u0020silently\u0020re\u002Dstreams\u0020a\u0020half\u002Dconsumed\u0020source\u0020and\u0020loses\u0020rows.",
+            "url": "classes/Flow-ETL-Extractor-Memory-SpillState.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpillState\u003A\u003AAbandoned",
+            "name": "Abandoned",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-Memory-SpillState.html#enumcase_Abandoned"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpillState\u003A\u003ADeleted",
+            "name": "Deleted",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-Memory-SpillState.html#enumcase_Deleted"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpillState\u003A\u003AFresh",
+            "name": "Fresh",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-Memory-SpillState.html#enumcase_Fresh"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpillState\u003A\u003AReplaying",
+            "name": "Replaying",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-Memory-SpillState.html#enumcase_Replaying"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpillState\u003A\u003ASpilled",
+            "name": "Spilled",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-Memory-SpillState.html#enumcase_Spilled"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory\\SpillState\u003A\u003ASpilling",
+            "name": "Spilling",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-Memory-SpillState.html#enumcase_Spilling"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\MemoryExtractor",
             "name": "MemoryExtractor",
@@ -5311,26 +7686,6 @@ Search.appendIndex(
             "summary": "Declares\u0020nothing\u003A\u0020ArrayMemory\u003A\u003Asave\u0028\u0029\u0020is\u0020array_merge,\u0020so\u0020the\u0020row\u0020count\u0020can\u0020grow\u0020mid\u002Drun.",
             "url": "classes/Flow-ETL-Extractor-MemoryExtractor.html#method_statistics"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\MetadataColumns",
-            "name": "MetadataColumns",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-MetadataColumns.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\MetadataColumns\u003A\u003AwithMetadataColumns\u0028\u0029",
-            "name": "withMetadataColumns",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-MetadataColumns.html#method_withMetadataColumns"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\MetadataColumnsExtractor",
-            "name": "MetadataColumnsExtractor",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-MetadataColumnsExtractor.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\MetadataColumnsExtractor\u003A\u003AwithMetadataColumns\u0028\u0029",
-            "name": "withMetadataColumns",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-MetadataColumnsExtractor.html#method_withMetadataColumns"
-        },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\OverridingExtractor",
             "name": "OverridingExtractor",
             "summary": "A\u0020wrapper\u0020exposes\u0020the\u0020extractors\u0020it\u0020reads\u0020so\u0020Repeatability\u0020can\u0020answer\u0020for\u0020it.\u0020The\u0020planner\u0020does\u0020not\ndescend\u0020through\u0020a\u0020wrapper\u003A\u0020a\u0020wrapped\u0020source\u0020receives\u0020no\u0020pushed\u0020limit\u0020and\u0020no\u0020path\u0020filter.",
@@ -5340,71 +7695,6 @@ Search.appendIndex(
             "name": "extractors",
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-OverridingExtractor.html#method_extractors"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PartitionColumns",
-            "name": "PartitionColumns",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-PartitionColumns.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PartitionColumns\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-PartitionColumns.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PartitionColumns\u003A\u003Anames\u0028\u0029",
-            "name": "names",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-PartitionColumns.html#method_names"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PartitionColumns\u003A\u003Adeclare\u0028\u0029",
-            "name": "declare",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-PartitionColumns.html#method_declare"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PartitionColumns\u003A\u003Aapply\u0028\u0029",
-            "name": "apply",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-PartitionColumns.html#method_apply"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PartitionColumns\u003A\u003Afill\u0028\u0029",
-            "name": "fill",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-PartitionColumns.html#method_fill"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PartitionTypes",
-            "name": "PartitionTypes",
-            "summary": "Types\u0020for\u0020partition\u0020columns\u0020discovered\u0020from\u0020a\u0020path.",
-            "url": "classes/Flow-ETL-Extractor-PartitionTypes.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PartitionTypes\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-PartitionTypes.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PartitionTypes\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-PartitionTypes.html#method_get"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PartitionTypes\u003A\u003Ahas\u0028\u0029",
-            "name": "has",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-PartitionTypes.html#method_has"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PartitionTypes\u003A\u003AassertEveryNameIsAPartition\u0028\u0029",
-            "name": "assertEveryNameIsAPartition",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-PartitionTypes.html#method_assertEveryNameIsAPartition"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PathFiltering",
-            "name": "PathFiltering",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-PathFiltering.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PathFiltering\u003A\u003ApartitionNames\u0028\u0029",
-            "name": "partitionNames",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-PathFiltering.html#method_partitionNames"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\PathPartitionsExtractor",
             "name": "PathPartitionsExtractor",
@@ -5511,31 +7801,6 @@ Search.appendIndex(
             "summary": "Declares\u0020the\u0020shape\u0020every\u0020yielded\u0020batch\u0020must\u0020carry.\u0020A\u0020source\u0020that\u0020describes\u0020itself\u0020uses\u0020this\ninstead\u0020of\u0020its\u0020own\u0020description,\u0020and\u0020values\u0020are\u0020cast\u0020to\u0020fit.",
             "url": "classes/Flow-ETL-Extractor-RowsExtractor.html#method_withSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SelfDescribingFile",
-            "name": "SelfDescribingFile",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SelfDescribingFile.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SelfDescribingFile\u003A\u003Aclose\u0028\u0029",
-            "name": "close",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SelfDescribingFile.html#method_close"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SelfDescribingFile\u003A\u003Aschema\u0028\u0029",
-            "name": "schema",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SelfDescribingFile.html#method_schema"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SelfDescribingFile\u003A\u003Asource\u0028\u0029",
-            "name": "source",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SelfDescribingFile.html#method_source"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SelfDescribingFile\u003A\u003Astatistics\u0028\u0029",
-            "name": "statistics",
-            "summary": "What\u0020this\u0020one\u0020file\u0027s\u0020own\u0020metadata\u0020declares,\u0020read\u0020from\u0020what\u0020schema\u0028\u0029\u0020already\u0020opened.",
-            "url": "classes/Flow-ETL-Extractor-SelfDescribingFile.html#method_statistics"
-        },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\SequenceExtractor",
             "name": "SequenceExtractor",
             "summary": "",
@@ -5641,106 +7906,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-Signal.html#enumcase_STOP"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SourceFile",
-            "name": "SourceFile",
-            "summary": "The\u0020partition\u0020values\u0020come\u0020from\u0020the\u0020path,\u0020so\u0020a\u0020read\u0020knows\u0020them\u0020without\u0020opening\u0020the\u0020file.",
-            "url": "classes/Flow-ETL-Extractor-SourceFile.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SourceFile\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SourceFile.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SourceFile\u003A\u003Auri\u0028\u0029",
-            "name": "uri",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SourceFile.html#method_uri"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SourceFile\u003A\u003A\u0024partitionValues",
-            "name": "partitionValues",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SourceFile.html#property_partitionValues"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SourceFile\u003A\u003A\u0024path",
-            "name": "path",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SourceFile.html#property_path"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SourceFile\u003A\u003A\u0024size",
-            "name": "size",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SourceFile.html#property_size"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpilledRows",
-            "name": "SpilledRows",
-            "summary": "A\u0020source\u0020that\u0020can\u0020be\u0020read\u0020only\u0020once,\u0020made\u0020replayable\u003A\u0020every\u0020row\u0020is\u0020written\u0020to\u0020a\u0020temporary\nschema\u002Dless\u0020spill\u0020file\u0020as\u0020it\u0020streams\u0020past,\u0020and\u0020the\u0020replay\u0020reads\u0020the\u0020file\u0020back.\u0020The\u0020source\u0020is\nadvanced\u0020exactly\u0020once,\u0020ever\u003B\u0020the\u0020spill\u0020it\u0020produced\u0020can\u0020be\u0020replayed\u0020as\u0020often\u0020as\u0020the\u0020caller\u0020likes,\nand\u0020lives\u0020until\u0020this\u0020object\u0020is\u0020collected.",
-            "url": "classes/Flow-ETL-Extractor-SpilledRows.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpilledRows\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SpilledRows.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpilledRows\u003A\u003A__destruct\u0028\u0029",
-            "name": "__destruct",
-            "summary": "The\u0020only\u0020place\u0020the\u0020spill\u0020is\u0020removed\u003A\u0020it\u0020outlives\u0020every\u0020replay,\u0020so\u0020a\u0020generator\u0020source\u0020supports\nrepeated\u0020terminal\u0020operations\u0020the\u0020way\u0020an\u0020array\u0020one\u0020does.",
-            "url": "classes/Flow-ETL-Extractor-SpilledRows.html#method___destruct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpilledRows\u003A\u003Apath\u0028\u0029",
-            "name": "path",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SpilledRows.html#method_path"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpilledRows\u003A\u003Arows\u0028\u0029",
-            "name": "rows",
-            "summary": "Rows\u0020in\u0020the\u0020shape\u0020the\u0020source\u0020produced\u0020them,\u0020int\u0020keys\u0020still\u0020int\u0020\u002D\u0020naming\u0020belongs\u0020to\u0020array_to_rows\u0028\u0029.",
-            "url": "classes/Flow-ETL-Extractor-SpilledRows.html#method_rows"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpilledRows\u003A\u003Asamples\u0028\u0029",
-            "name": "samples",
-            "summary": "\u0024rowBudget\u0020is\u0020IGNORED\u003A\u0020every\u0020row\u0020is\u0020written\u0020regardless,\u0020which\u0020is\u0020what\u0020makes\u0020a\u0020partially\u0020written\nspill\u0020unreachable\u0020by\u0020construction\u0020rather\u0020than\u0020merely\u0020unlikely.",
-            "url": "classes/Flow-ETL-Extractor-SpilledRows.html#method_samples"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpilledRows\u003A\u003Astate\u0028\u0029",
-            "name": "state",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SpilledRows.html#method_state"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpillState",
-            "name": "SpillState",
-            "summary": "The\u0020lifecycle\u0020of\u0020one\u0020SpilledRows.\u0020Split\u0020into\u0020states\u0020rather\u0020than\u0020carried\u0020as\u0020booleans\u0020because\u0020the\nreachable\u002Dbut\u002Dunnamed\u0020fourth\u0020state\u0020\u002D\u0020\u0022spilled\u0020K\u0020of\u0020N\u0020rows,\u0020then\u0020the\u0020source\u0020threw\u0022\u0020\u002D\u0020is\u0020where\u0020a\u0020bool\npair\u0020silently\u0020re\u002Dstreams\u0020a\u0020half\u002Dconsumed\u0020source\u0020and\u0020loses\u0020rows.",
-            "url": "classes/Flow-ETL-Extractor-SpillState.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpillState\u003A\u003AAbandoned",
-            "name": "Abandoned",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SpillState.html#enumcase_Abandoned"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpillState\u003A\u003ADeleted",
-            "name": "Deleted",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SpillState.html#enumcase_Deleted"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpillState\u003A\u003AFresh",
-            "name": "Fresh",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SpillState.html#enumcase_Fresh"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpillState\u003A\u003AReplaying",
-            "name": "Replaying",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SpillState.html#enumcase_Replaying"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpillState\u003A\u003ASpilled",
-            "name": "Spilled",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SpillState.html#enumcase_Spilled"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\SpillState\u003A\u003ASpilling",
-            "name": "Spilling",
-            "summary": "",
-            "url": "classes/Flow-ETL-Extractor-SpillState.html#enumcase_Spilling"
-        },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\Statistics",
             "name": "Statistics",
             "summary": "",
@@ -5790,46 +7955,6 @@ Search.appendIndex(
             "name": "withSchema",
             "summary": "Declares\u0020the\u0020shape\u0020every\u0020yielded\u0020batch\u0020must\u0020carry.\u0020A\u0020source\u0020that\u0020describes\u0020itself\u0020uses\u0020this\ninstead\u0020of\u0020its\u0020own\u0020description,\u0020and\u0020values\u0020are\u0020cast\u0020to\u0020fit.",
             "url": "classes/Flow-ETL-Extractor.html#method_withSchema"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Filesystem\\FilesSink",
-            "name": "FilesSink",
-            "summary": "",
-            "url": "classes/Flow-ETL-Filesystem-FilesSink.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Filesystem\\FilesSink\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Filesystem-FilesSink.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Filesystem\\FilesSink\u003A\u003Aabandon\u0028\u0029",
-            "name": "abandon",
-            "summary": "",
-            "url": "classes/Flow-ETL-Filesystem-FilesSink.html#method_abandon"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Filesystem\\FilesSink\u003A\u003Apublish\u0028\u0029",
-            "name": "publish",
-            "summary": "",
-            "url": "classes/Flow-ETL-Filesystem-FilesSink.html#method_publish"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Filesystem\\FilesSink\u003A\u003Atouched\u0028\u0029",
-            "name": "touched",
-            "summary": "",
-            "url": "classes/Flow-ETL-Filesystem-FilesSink.html#method_touched"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Filesystem\\FilesSink\u003A\u003AopenStreams\u0028\u0029",
-            "name": "openStreams",
-            "summary": "",
-            "url": "classes/Flow-ETL-Filesystem-FilesSink.html#method_openStreams"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Filesystem\\FilesSink\u003A\u003AwriteTo\u0028\u0029",
-            "name": "writeTo",
-            "summary": "",
-            "url": "classes/Flow-ETL-Filesystem-FilesSink.html#method_writeTo"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Filesystem\\FilesSink\u003A\u003AFLOW_TMP_FILE_PREFIX",
-            "name": "FLOW_TMP_FILE_PREFIX",
-            "summary": "",
-            "url": "classes/Flow-ETL-Filesystem-FilesSink.html#constant_FLOW_TMP_FILE_PREFIX"
         },                {
             "fqsen": "\\Flow\\ETL\\Filesystem\\SaveMode",
             "name": "SaveMode",
@@ -5931,10 +8056,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-FlowContext.html#method_errorHandler"
         },                {
-            "fqsen": "\\Flow\\ETL\\FlowContext\u003A\u003Ahydrator\u0028\u0029",
-            "name": "hydrator",
+            "fqsen": "\\Flow\\ETL\\FlowContext\u003A\u003Abackend\u0028\u0029",
+            "name": "backend",
             "summary": "",
-            "url": "classes/Flow-ETL-FlowContext.html#method_hydrator"
+            "url": "classes/Flow-ETL-FlowContext.html#method_backend"
         },                {
             "fqsen": "\\Flow\\ETL\\FlowContext\u003A\u003AsetErrorHandler\u0028\u0029",
             "name": "setErrorHandler",
@@ -5955,6 +8080,46 @@ Search.appendIndex(
             "name": "config",
             "summary": "",
             "url": "classes/Flow-ETL-FlowContext.html#property_config"
+        },                {
+            "fqsen": "\\Flow\\ETL\\FlowPhpExtension",
+            "name": "FlowPhpExtension",
+            "summary": "",
+            "url": "classes/Flow-ETL-FlowPhpExtension.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\FlowPhpExtension\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-FlowPhpExtension.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\FlowPhpExtension\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "",
+            "url": "classes/Flow-ETL-FlowPhpExtension.html#method_detect"
+        },                {
+            "fqsen": "\\Flow\\ETL\\FlowPhpExtension\u003A\u003Aavailable\u0028\u0029",
+            "name": "available",
+            "summary": "",
+            "url": "classes/Flow-ETL-FlowPhpExtension.html#method_available"
+        },                {
+            "fqsen": "\\Flow\\ETL\\FlowPhpExtension\u003A\u003AABI",
+            "name": "ABI",
+            "summary": "The\u0020contract\u0020version\u0020this\u0020package\u0020expects\u0020from\u0020flow_php,\u0020equal\u0020to\u0020the\u0020extension\u0027s\u0020FLOW_PHP_ABI.\u0020Both\u0020sides\u0020change\ntogether\u0020whenever\u0020a\u0020class\u0020or\u0020interface\u0020the\u0020extension\u0020registers\u0020changes.",
+            "url": "classes/Flow-ETL-FlowPhpExtension.html#constant_ABI"
+        },                {
+            "fqsen": "\\Flow\\ETL\\FlowPhpExtension\u003A\u003A\u0024loaded",
+            "name": "loaded",
+            "summary": "",
+            "url": "classes/Flow-ETL-FlowPhpExtension.html#property_loaded"
+        },                {
+            "fqsen": "\\Flow\\ETL\\FlowPhpExtension\u003A\u003A\u0024abi",
+            "name": "abi",
+            "summary": "",
+            "url": "classes/Flow-ETL-FlowPhpExtension.html#property_abi"
+        },                {
+            "fqsen": "\\Flow\\ETL\\FlowPhpExtension\u003A\u003A\u0024version",
+            "name": "version",
+            "summary": "",
+            "url": "classes/Flow-ETL-FlowPhpExtension.html#property_version"
         },                {
             "fqsen": "\\Flow\\ETL\\Formatter\\ASCII\\ASCIIBody",
             "name": "ASCIIBody",
@@ -6046,10 +8211,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Formatter-ASCII-Body.html#method_maximumLength"
         },                {
-            "fqsen": "\\Flow\\ETL\\Formatter\\ASCII\\Body\u003A\u003Arows\u0028\u0029",
-            "name": "rows",
+            "fqsen": "\\Flow\\ETL\\Formatter\\ASCII\\Body\u003A\u003Acount\u0028\u0029",
+            "name": "count",
             "summary": "",
-            "url": "classes/Flow-ETL-Formatter-ASCII-Body.html#method_rows"
+            "url": "classes/Flow-ETL-Formatter-ASCII-Body.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Formatter\\ASCII\\Body\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Flow-ETL-Formatter-ASCII-Body.html#method_value"
         },                {
             "fqsen": "\\Flow\\ETL\\Formatter\\ASCII\\Headers",
             "name": "Headers",
@@ -6100,6 +8270,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-AggregatingFunction.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\AggregatingFunction\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Folds\u0020\u0024other\u0027s\u0020partial\u0020state\u0020into\u0020this\u0020one\u003B\u0020\u0024other\u0020aggregated\u0020rows\u0020that\u0020come\u0020after\u0020this\u0020one\u0027s.",
+            "url": "classes/Flow-ETL-Function-AggregatingFunction.html#method_merge"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\AggregatingFunction\u003A\u003AoutputName\u0028\u0029",
             "name": "outputName",
@@ -6158,7 +8333,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\All\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-All.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\All\u003A\u003Aor\u0028\u0029",
@@ -6208,7 +8383,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Any\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Any.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Any\u003A\u003Aor\u0028\u0029",
@@ -6248,7 +8423,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Append\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Append.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayExpand\\ArrayExpand",
@@ -6298,7 +8473,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayExpand\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayExpand.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayFilter",
@@ -6328,7 +8503,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayFilter\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayFilter.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayGet",
@@ -6358,7 +8533,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayGet\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayGet.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayGetCollection",
@@ -6393,7 +8568,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayGetCollection\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayGetCollection.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeep",
@@ -6423,7 +8598,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeep\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayKeep.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeyRename",
@@ -6453,7 +8628,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeyRename\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayKeyRename.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeys",
@@ -6483,7 +8658,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeys\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayKeys.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeysStyleConvert",
@@ -6511,9 +8686,14 @@ Search.appendIndex(
             "summary": "The\u0020type\u0020of\u0020the\u0020column\u0020this\u0020function\u0020produces,\u0020before\u0020any\u0020row\u0020is\u0020read.",
             "url": "classes/Flow-ETL-Function-ArrayKeysStyleConvert.html#method_returns"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ArrayKeysStyleConvert\u003A\u003Aconverted\u0028\u0029",
+            "name": "converted",
+            "summary": "\u0024type\u0020with\u0020every\u0020structure\u0020field\u0020renamed\u0020the\u0020way\u0020eval\u0028\u0029\u0020renames\u0020keys\u0020\u002D\u0020at\u0020every\u0020depth,\u0020as\u0020ArrayKeyConverter\nrecurses\u0020into\u0020nested\u0020arrays.",
+            "url": "classes/Flow-ETL-Function-ArrayKeysStyleConvert.html#method_converted"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayKeysStyleConvert\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayKeysStyleConvert.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayMerge",
@@ -6543,7 +8723,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayMerge\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayMerge.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayMergeCollection",
@@ -6573,7 +8753,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayMergeCollection\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayMergeCollection.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayPathExists",
@@ -6603,7 +8783,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayPathExists\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayPathExists.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayReverse",
@@ -6633,7 +8813,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayReverse\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayReverse.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArraySort\\Sort",
@@ -6718,7 +8898,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArraySort\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArraySort.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayUnpack",
@@ -6738,7 +8918,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayUnpack\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayUnpack.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayUnpack\u003A\u003Areturns\u0028\u0029",
@@ -6778,7 +8958,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ArrayValues\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ArrayValues.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Ascii",
@@ -6808,7 +8988,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Ascii\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Ascii.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Average",
@@ -6835,6 +9015,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Average.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Average\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Folds\u0020\u0024other\u0027s\u0020partial\u0020state\u0020into\u0020this\u0020one\u003B\u0020\u0024other\u0020aggregated\u0020rows\u0020that\u0020come\u0020after\u0020this\u0020one\u0027s.",
+            "url": "classes/Flow-ETL-Function-Average.html#method_merge"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Average\u003A\u003Aaccumulator\u0028\u0029",
             "name": "accumulator",
@@ -6943,7 +9128,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Between\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Between.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\BinaryLength",
@@ -6973,7 +9158,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\BinaryLength\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-BinaryLength.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CallUserFunc",
@@ -7008,7 +9193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CallUserFunc\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-CallUserFunc.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Capitalize",
@@ -7038,7 +9223,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Capitalize\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Capitalize.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Cast",
@@ -7068,7 +9253,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Cast\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Cast.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Chunk",
@@ -7098,7 +9283,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Chunk\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Chunk.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Coalesce",
@@ -7128,7 +9313,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Coalesce\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Coalesce.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CodePointLength",
@@ -7158,7 +9343,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CodePointLength\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-CodePointLength.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CollapseWhitespace",
@@ -7188,7 +9373,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CollapseWhitespace\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-CollapseWhitespace.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Collect",
@@ -7215,6 +9400,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Collect.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Collect\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Folds\u0020\u0024other\u0027s\u0020partial\u0020state\u0020into\u0020this\u0020one\u003B\u0020\u0024other\u0020aggregated\u0020rows\u0020that\u0020come\u0020after\u0020this\u0020one\u0027s.",
+            "url": "classes/Flow-ETL-Function-Collect.html#method_merge"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Collect\u003A\u003AoutputName\u0028\u0029",
             "name": "outputName",
@@ -7260,6 +9450,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-CollectUnique.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\CollectUnique\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Folds\u0020\u0024other\u0027s\u0020partial\u0020state\u0020into\u0020this\u0020one\u003B\u0020\u0024other\u0020aggregated\u0020rows\u0020that\u0020come\u0020after\u0020this\u0020one\u0027s.",
+            "url": "classes/Flow-ETL-Function-CollectUnique.html#method_merge"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\CollectUnique\u003A\u003AoutputName\u0028\u0029",
             "name": "outputName",
@@ -7308,7 +9503,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Combine\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Combine.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Concat",
@@ -7338,7 +9533,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Concat\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Concat.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ConcatWithSeparator",
@@ -7368,7 +9563,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ConcatWithSeparator\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ConcatWithSeparator.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Contains",
@@ -7398,7 +9593,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Contains\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Contains.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Count",
@@ -7425,6 +9620,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Count.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Count\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Folds\u0020\u0024other\u0027s\u0020partial\u0020state\u0020into\u0020this\u0020one\u003B\u0020\u0024other\u0020aggregated\u0020rows\u0020that\u0020come\u0020after\u0020this\u0020one\u0027s.",
+            "url": "classes/Flow-ETL-Function-Count.html#method_merge"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Count\u003A\u003Aaccumulator\u0028\u0029",
             "name": "accumulator",
@@ -7498,7 +9698,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DateTimeFormat\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-DateTimeFormat.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DenseRank",
@@ -7578,7 +9778,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Divide\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Divide.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementAttributesCount",
@@ -7608,7 +9808,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementAttributesCount\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-DOMElementAttributesCount.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementAttributeValue",
@@ -7638,7 +9838,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementAttributeValue\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-DOMElementAttributeValue.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementNamespaceValue",
@@ -7668,8 +9868,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementNamespaceValue\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-DOMElementNamespaceValue.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\DOMElementNamespaceValue\u003A\u003AnamespaceValue\u0028\u0029",
+            "name": "namespaceValue",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-DOMElementNamespaceValue.html#method_namespaceValue"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementNextSibling",
             "name": "DOMElementNextSibling",
@@ -7698,7 +9903,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementNextSibling\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-DOMElementNextSibling.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementParent",
@@ -7728,7 +9933,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementParent\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-DOMElementParent.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementPreviousSibling",
@@ -7758,7 +9963,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementPreviousSibling\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-DOMElementPreviousSibling.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementValue",
@@ -7788,7 +9993,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\DOMElementValue\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-DOMElementValue.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EndsWith",
@@ -7818,7 +10023,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EndsWith\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-EndsWith.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnsureEnd",
@@ -7848,7 +10053,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnsureEnd\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-EnsureEnd.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnsureStart",
@@ -7878,7 +10083,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnsureStart\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-EnsureStart.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnumName",
@@ -7908,7 +10113,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnumName\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-EnumName.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnumValue",
@@ -7938,7 +10143,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\EnumValue\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-EnumValue.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Equals",
@@ -7968,8 +10173,88 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Equals\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Equals.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\ResultColumn",
+            "name": "ResultColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-ResultColumn.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\ResultColumn\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-ResultColumn.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\ResultColumn\u003A\u003Alists\u0028\u0029",
+            "name": "lists",
+            "summary": "The\u0020\u0060list\u003Creturns\u0028\u0029\u003E\u0060\u0020column\u0020of\u0020an\u0020ExpandResults\u0020function\u003A\u0020one\u0020list\u0020per\u0020row.",
+            "url": "classes/Flow-ETL-Function-Evaluation-ResultColumn.html#method_lists"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\ResultColumn\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-ResultColumn.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\ResultColumn\u003A\u003AholdsLosslessly\u0028\u0029",
+            "name": "holdsLosslessly",
+            "summary": "An\u0020intermediate\u0020keeps\u0020its\u0020values\u0020in\u0020a\u0020typed\u0020column\u0020only\u0020when\u0020that\u0020column\u0020holds\u0020them\u0020losslessly\u003A\u0020a\u0020type\u0020with\u0020a\ncolumn\u0020kind,\u0020no\u0020xml\/xml_element\/html\/html_element\u0020\u0028a\u0020column\u0020keeps\u0020markup,\u0020not\u0020the\u0020live\u0020node\u0029\u0020and\u0020no\u0020untyped\narray\u003Cmixed\u003E\u0020\u0028a\u0020column\u0020keeps\u0020it\u0020as\u0020json\u0029\u0020at\u0020any\u0020depth.",
+            "url": "classes/Flow-ETL-Function-Evaluation-ResultColumn.html#method_holdsLosslessly"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\ResultColumn\u003A\u003AkeepsValues\u0028\u0029",
+            "name": "keepsValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-ResultColumn.html#method_keepsValues"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\ResultColumn\u003A\u003Atyped\u0028\u0029",
+            "name": "typed",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-ResultColumn.html#method_typed"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\ReturnTypes",
+            "name": "ReturnTypes",
+            "summary": "A\u0020function\u0020tree\u0020is\u0020immutable,\u0020so\u0020each\u0020node\u0027s\u0020returns\u0028\u0029\u0020is\u0020derived\u0020once\u0020and\u0020kept\u0020for\u0020as\u0020long\u0020as\u0020the\u0020node\u0020lives\u0020\u002D\nnot\u0020once\u0020per\u0020evaluated\u0020batch.",
+            "url": "classes/Flow-ETL-Function-Evaluation-ReturnTypes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\ReturnTypes\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-ReturnTypes.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\Selection",
+            "name": "Selection",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-Selection.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\Selection\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-Selection.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\Selection\u003A\u003Aevaluate\u0028\u0029",
+            "name": "evaluate",
+            "summary": "\u0024function\u0020over\u0020the\u0020selected\u0020rows\u0020only\u003B\u0020an\u0020error\u0020names\u0020the\u0020row\u0020of\u0020\u0024rows\u0020it\u0020failed\u0020on.",
+            "url": "classes/Flow-ETL-Function-Evaluation-Selection.html#method_evaluate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\TolerantEvaluation",
+            "name": "TolerantEvaluation",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-TolerantEvaluation.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\TolerantEvaluation\u003A\u003Aevaluate\u0028\u0029",
+            "name": "evaluate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-TolerantEvaluation.html#method_evaluate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\TolerantEvaluation\u003A\u003ArowByRow\u0028\u0029",
+            "name": "rowByRow",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-TolerantEvaluation.html#method_rowByRow"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\TolerantEvaluation\u003A\u003ARETRIES",
+            "name": "RETRIES",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-TolerantEvaluation.html#constant_RETRIES"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Exists",
             "name": "Exists",
@@ -7998,7 +10283,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Exists\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Exists.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ExpandingFunctions",
@@ -8045,6 +10330,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-First.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\First\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Folds\u0020\u0024other\u0027s\u0020partial\u0020state\u0020into\u0020this\u0020one\u003B\u0020\u0024other\u0020aggregated\u0020rows\u0020that\u0020come\u0020after\u0020this\u0020one\u0027s.",
+            "url": "classes/Flow-ETL-Function-First.html#method_merge"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\First\u003A\u003AoutputName\u0028\u0029",
             "name": "outputName",
@@ -8128,7 +10418,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\GreaterThan\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-GreaterThan.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\GreaterThanEqual",
@@ -8158,7 +10448,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\GreaterThanEqual\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-GreaterThanEqual.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Greatest",
@@ -8188,7 +10478,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Greatest\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Greatest.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Hash",
@@ -8218,7 +10508,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Hash\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Hash.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelector",
@@ -8248,7 +10538,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelector\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-HTMLQuerySelector.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelectorAll",
@@ -8278,7 +10568,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\HTMLQuerySelectorAll\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-HTMLQuerySelectorAll.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IndexOf",
@@ -8308,7 +10598,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IndexOf\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-IndexOf.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IndexOfLast",
@@ -8338,7 +10628,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IndexOfLast\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-IndexOfLast.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsEmpty",
@@ -8368,7 +10658,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsEmpty\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-IsEmpty.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsIn",
@@ -8398,7 +10688,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsIn\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-IsIn.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNotNull",
@@ -8428,7 +10718,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNotNull\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-IsNotNull.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNotNumeric",
@@ -8458,7 +10748,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNotNumeric\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-IsNotNumeric.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNull",
@@ -8488,7 +10778,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNull\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-IsNull.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNumeric",
@@ -8518,7 +10808,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsNumeric\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-IsNumeric.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsType",
@@ -8548,7 +10838,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsType\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-IsType.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsUtf8",
@@ -8578,7 +10868,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsUtf8\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-IsUtf8.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\JsonDecode",
@@ -8608,7 +10898,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\JsonDecode\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-JsonDecode.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\JsonEncode",
@@ -8638,7 +10928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\JsonEncode\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-JsonEncode.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Last",
@@ -8665,6 +10955,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Last.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Last\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Folds\u0020\u0024other\u0027s\u0020partial\u0020state\u0020into\u0020this\u0020one\u003B\u0020\u0024other\u0020aggregated\u0020rows\u0020that\u0020come\u0020after\u0020this\u0020one\u0027s.",
+            "url": "classes/Flow-ETL-Function-Last.html#method_merge"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Last\u003A\u003AoutputName\u0028\u0029",
             "name": "outputName",
@@ -8713,7 +11008,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Least\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Least.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\LessThan",
@@ -8743,7 +11038,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\LessThan\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-LessThan.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\LessThanEqual",
@@ -8773,7 +11068,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\LessThanEqual\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-LessThanEqual.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ListFunctions",
@@ -8818,7 +11113,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ListSelect\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ListSelect.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Literal",
@@ -8848,7 +11143,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Literal\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Literal.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Literal\u003A\u003Avalue\u0028\u0029",
@@ -8883,7 +11178,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCondition\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-MatchCases-MatchCondition.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\MatchCases\\MatchCondition\u003A\u003Avalid\u0028\u0029",
@@ -8918,7 +11213,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\MatchCases\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-MatchCases.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Max",
@@ -8945,6 +11240,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Max.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Max\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Folds\u0020\u0024other\u0027s\u0020partial\u0020state\u0020into\u0020this\u0020one\u003B\u0020\u0024other\u0020aggregated\u0020rows\u0020that\u0020come\u0020after\u0020this\u0020one\u0027s.",
+            "url": "classes/Flow-ETL-Function-Max.html#method_merge"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Max\u003A\u003AoutputName\u0028\u0029",
             "name": "outputName",
@@ -8990,6 +11290,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Min.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Min\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Folds\u0020\u0024other\u0027s\u0020partial\u0020state\u0020into\u0020this\u0020one\u003B\u0020\u0024other\u0020aggregated\u0020rows\u0020that\u0020come\u0020after\u0020this\u0020one\u0027s.",
+            "url": "classes/Flow-ETL-Function-Min.html#method_merge"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Min\u003A\u003AoutputName\u0028\u0029",
             "name": "outputName",
@@ -9038,7 +11343,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Minus\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Minus.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Mod",
@@ -9068,7 +11373,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Mod\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Mod.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ModifyDateTime",
@@ -9098,7 +11403,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ModifyDateTime\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ModifyDateTime.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Multiply",
@@ -9128,7 +11433,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Multiply\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Multiply.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Not",
@@ -9158,7 +11463,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Not\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Not.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\NotEquals",
@@ -9188,7 +11493,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\NotEquals\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-NotEquals.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\NotSame",
@@ -9218,7 +11523,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\NotSame\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-NotSame.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Now",
@@ -9253,7 +11558,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Now\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Now.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\NumberFormat",
@@ -9283,7 +11588,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\NumberFormat\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-NumberFormat.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\OnEach",
@@ -9306,14 +11611,24 @@ Search.appendIndex(
             "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-OnEach.html#method_withChildren"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\OnEach\u003A\u003Abound\u0028\u0029",
+            "name": "bound",
+            "summary": "The\u0020element\u0020schema,\u0020the\u0020body\u0020resolved\u0020against\u0020it\u0020and\u0020the\u0020result\u0020type\u0020\u002D\u0020derived\u0020once\u0020per\u0020node,\u0020not\u0020per\u0020batch.",
+            "url": "classes/Flow-ETL-Function-OnEach.html#method_bound"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\OnEach\u003A\u003Areturns\u0028\u0029",
             "name": "returns",
             "summary": "The\u0020type\u0020of\u0020the\u0020column\u0020this\u0020function\u0020produces,\u0020before\u0020any\u0020row\u0020is\u0020read.",
             "url": "classes/Flow-ETL-Function-OnEach.html#method_returns"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\OnEach\u003A\u003AtypeOver\u0028\u0029",
+            "name": "typeOver",
+            "summary": "The\u0020produced\u0020type\u0020for\u0020an\u0020operand\u0020of\u0020\u0024arrayType\u0020\u002D\u0020one\u0020read\u0020of\u0020the\u0020operand\u0027s\u0020returns\u0028\u0029\u0020serves\u0020eval\u0028\u0029\u0020and\u0020bind.",
+            "url": "classes/Flow-ETL-Function-OnEach.html#method_typeOver"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\OnEach\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-OnEach.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\OnEachElementSchema",
@@ -9353,12 +11668,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Optional\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Optional.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Parameter",
             "name": "Parameter",
-            "summary": "Every\u0020as\u002A\u0028\u0029\u0020arm\u0020separates\u0020the\u0020two\u0020axes\u003A\u0020a\u0020genuine\u0020NULL\u0020flowing\u0020through\u0020is\u0020not\u0020an\u0020error\u0020and\npropagates\u0020\u0028or\u0020takes\u0020the\u0020arm\u0027s\u0020null\u002Dinput\u0020default\u0029,\u0020while\u0020a\u0020non\u002Dnull\u0020value\u0020that\u0020cannot\u0020coerce\nthrows\u0020\u002D\u0020optional\u0028\u0029\u0020is\u0020the\u0020door\u0020for\u0020pipelines\u0020that\u0020want\u0020the\u0020old\u0020silent\u0020tolerance.",
+            "summary": "Every\u0020as\u002A\u0028\u0029\u0020reader\u0020separates\u0020the\u0020two\u0020axes\u003A\u0020a\u0020genuine\u0020NULL\u0020flowing\u0020through\u0020is\u0020not\u0020an\u0020error\u0020and\npropagates\u0020\u0028or\u0020takes\u0020the\u0020reader\u0027s\u0020null\u002Dinput\u0020default\u0029,\u0020while\u0020a\u0020non\u002Dnull\u0020value\u0020that\u0020cannot\u0020coerce\nthrows,\u0020naming\u0020its\u0020row\u0020\u002D\u0020optional\u0028\u0029\u0020is\u0020the\u0020door\u0020for\u0020pipelines\u0020that\u0020want\u0020the\u0020old\u0020silent\u0020tolerance.",
             "url": "classes/Flow-ETL-Function-Parameter.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003A__construct\u0028\u0029",
@@ -9366,70 +11681,70 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Parameter.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003Aas\u0028\u0029",
-            "name": "as",
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasArrays\u0028\u0029",
+            "name": "asArrays",
             "summary": "",
-            "url": "classes/Flow-ETL-Function-Parameter.html#method_as"
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_asArrays"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasArray\u0028\u0029",
-            "name": "asArray",
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AarraysOf\u0028\u0029",
+            "name": "arraysOf",
             "summary": "",
-            "url": "classes/Flow-ETL-Function-Parameter.html#method_asArray"
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_arraysOf"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasBoolean\u0028\u0029",
-            "name": "asBoolean",
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasBooleans\u0028\u0029",
+            "name": "asBooleans",
             "summary": "",
-            "url": "classes/Flow-ETL-Function-Parameter.html#method_asBoolean"
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_asBooleans"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasValue\u0028\u0029",
-            "name": "asValue",
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasEnums\u0028\u0029",
+            "name": "asEnums",
             "summary": "",
-            "url": "classes/Flow-ETL-Function-Parameter.html#method_asValue"
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_asEnums"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasEnum\u0028\u0029",
-            "name": "asEnum",
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasInstancesOf\u0028\u0029",
+            "name": "asInstancesOf",
             "summary": "",
-            "url": "classes/Flow-ETL-Function-Parameter.html#method_asEnum"
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_asInstancesOf"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasFloat\u0028\u0029",
-            "name": "asFloat",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-Parameter.html#method_asFloat"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasInstanceOf\u0028\u0029",
-            "name": "asInstanceOf",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-Parameter.html#method_asInstanceOf"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasInt\u0028\u0029",
-            "name": "asInt",
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasInts\u0028\u0029",
+            "name": "asInts",
             "summary": "\u0024default\u0020applies\u0020to\u0020a\u0020NULL\u0020input\u0020only\u0020\u002D\u0020a\u0020malformed\u0020value\u0020always\u0020throws.",
-            "url": "classes/Flow-ETL-Function-Parameter.html#method_asInt"
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_asInts"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasListOfObjects\u0028\u0029",
-            "name": "asListOfObjects",
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasListsOfObjects\u0028\u0029",
+            "name": "asListsOfObjects",
             "summary": "",
-            "url": "classes/Flow-ETL-Function-Parameter.html#method_asListOfObjects"
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_asListsOfObjects"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasNumber\u0028\u0029",
-            "name": "asNumber",
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasNumbers\u0028\u0029",
+            "name": "asNumbers",
             "summary": "\u0024default\u0020applies\u0020to\u0020a\u0020NULL\u0020input\u0020only\u0020\u002D\u0020a\u0020malformed\u0020value\u0020always\u0020throws.",
-            "url": "classes/Flow-ETL-Function-Parameter.html#method_asNumber"
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_asNumbers"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasObject\u0028\u0029",
-            "name": "asObject",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-Parameter.html#method_asObject"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasString\u0028\u0029",
-            "name": "asString",
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasStrings\u0028\u0029",
+            "name": "asStrings",
             "summary": "\u0024default\u0020applies\u0020to\u0020a\u0020NULL\u0020input\u0020only\u0020\u002D\u0020a\u0020malformed\u0020value\u0020always\u0020throws.",
-            "url": "classes/Flow-ETL-Function-Parameter.html#method_asString"
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_asStrings"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003Aeval\u0028\u0029",
-            "name": "eval",
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003AasTypes\u0028\u0029",
+            "name": "asTypes",
             "summary": "",
-            "url": "classes/Flow-ETL-Function-Parameter.html#method_eval"
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_asTypes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003Achecked\u0028\u0029",
+            "name": "checked",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_checked"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003Acolumn\u0028\u0029",
+            "name": "column",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_column"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Parameter\u003A\u003Avalues\u0028\u0029",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Parameter.html#method_values"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\PartitionRanking",
             "name": "PartitionRanking",
@@ -9468,7 +11783,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Plus\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Plus.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Power",
@@ -9498,7 +11813,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Power\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Power.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Prepend",
@@ -9528,7 +11843,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Prepend\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Prepend.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RandomString",
@@ -9563,7 +11878,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RandomString\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-RandomString.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Rank",
@@ -9683,7 +11998,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Regex\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Regex.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexAll",
@@ -9713,7 +12028,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexAll\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-RegexAll.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexMatch",
@@ -9743,7 +12058,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexMatch\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-RegexMatch.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexMatchAll",
@@ -9773,7 +12088,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexMatchAll\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-RegexMatchAll.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexReplace",
@@ -9803,7 +12118,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RegexReplace\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-RegexReplace.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Repeat",
@@ -9833,7 +12148,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Repeat\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Repeat.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ResolvesFromChildren",
@@ -9878,7 +12193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Reverse\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Reverse.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Round",
@@ -9908,7 +12223,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Round\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Round.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\RowNumber",
@@ -9983,7 +12298,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Same\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Same.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sanitize",
@@ -10013,28 +12328,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sanitize\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Sanitize.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\\ExpandResults",
             "name": "ExpandResults",
-            "summary": "",
+            "summary": "eval\u0020returns\u0020a\u0020\u0060list\u003Creturns\u0028\u0029\u003E\u0060\u0020column\u003B\u0020the\u0020step\u0020explodes\u0020it.",
             "url": "classes/Flow-ETL-Function-ScalarFunction-ExpandResults.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\\ExpandResults\u003A\u003Aeval\u0028\u0029",
-            "name": "eval",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-ScalarFunction-ExpandResults.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\\UnpackResults",
             "name": "UnpackResults",
-            "summary": "",
+            "summary": "eval\u0020returns\u0020the\u0020\u0060StructureType\u0060\u0020column\u0020\u0060returns\u0028\u0029\u0060\u0020declares.",
             "url": "classes/Flow-ETL-Function-ScalarFunction-UnpackResults.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\\UnpackResults\u003A\u003Aeval\u0028\u0029",
-            "name": "eval",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-ScalarFunction-UnpackResults.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction",
             "name": "ScalarFunction",
@@ -10043,7 +12348,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ScalarFunction.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunction\u003A\u003Areturns\u0028\u0029",
@@ -10713,7 +13018,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Size\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Size.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Slug",
@@ -10743,7 +13048,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Slug\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Slug.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Split",
@@ -10773,7 +13078,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Split\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Split.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sprintf",
@@ -10803,7 +13108,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sprintf\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Sprintf.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StartsWith",
@@ -10833,7 +13138,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StartsWith\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StartsWith.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAfter",
@@ -10863,7 +13168,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAfter\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StringAfter.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAfterLast",
@@ -10893,7 +13198,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAfterLast\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StringAfterLast.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAggregate",
@@ -10920,6 +13225,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/Flow-ETL-Function-StringAggregate.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\StringAggregate\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Folds\u0020\u0024other\u0027s\u0020partial\u0020state\u0020into\u0020this\u0020one\u003B\u0020\u0024other\u0020aggregated\u0020rows\u0020that\u0020come\u0020after\u0020this\u0020one\u0027s.",
+            "url": "classes/Flow-ETL-Function-StringAggregate.html#method_merge"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringAggregate\u003A\u003AoutputName\u0028\u0029",
             "name": "outputName",
@@ -10968,7 +13278,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringBefore\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StringBefore.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringBeforeLast",
@@ -10998,7 +13308,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringBeforeLast\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StringBeforeLast.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringContainsAny",
@@ -11028,7 +13338,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringContainsAny\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StringContainsAny.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringEqualsTo",
@@ -11058,7 +13368,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringEqualsTo\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StringEqualsTo.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringFold",
@@ -11088,7 +13398,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringFold\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StringFold.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringMatch",
@@ -11118,7 +13428,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringMatch\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StringMatch.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringMatchAll",
@@ -11148,7 +13458,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringMatchAll\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StringMatchAll.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringNormalize",
@@ -11178,7 +13488,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringNormalize\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StringNormalize.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringStyle",
@@ -11208,7 +13518,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringStyle\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StringStyle.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringTitle",
@@ -11238,7 +13548,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringTitle\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StringTitle.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringWidth",
@@ -11268,7 +13578,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StringWidth\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StringWidth.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StrPad",
@@ -11298,7 +13608,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StrPad\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StrPad.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StrReplace",
@@ -11328,7 +13638,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StrReplace\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StrReplace.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Structure",
@@ -11358,7 +13668,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Structure\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Structure.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StructureFunctions",
@@ -11403,7 +13713,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StructureSelect\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-StructureSelect.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\StructureValues",
@@ -11456,6 +13766,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Sum.html#method_aggregate"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Sum\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Folds\u0020\u0024other\u0027s\u0020partial\u0020state\u0020into\u0020this\u0020one\u003B\u0020\u0024other\u0020aggregated\u0020rows\u0020that\u0020come\u0020after\u0020this\u0020one\u0027s.",
+            "url": "classes/Flow-ETL-Function-Sum.html#method_merge"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sum\u003A\u003Aaccumulator\u0028\u0029",
             "name": "accumulator",
             "summary": "",
@@ -11483,7 +13798,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sum\u003A\u003Areturns\u0028\u0029",
             "name": "returns",
-            "summary": "float,\u0020not\u0020the\u0020argument\u0020type\u0020\u002D\u0020RunningSum\u003A\u003Aadd\u0028\u0029\u0020promotes\u0020to\u0020float\u0020on\u0020int\u0020overflow,\u0020so\u0020integer\nwould\u0020be\u0020a\u0020declaration\u0020the\u0020accumulator\u0020can\u0020violate\u0020on\u0020ordinary\u0020data",
+            "summary": "float,\u0020not\u0020the\u0020argument\u0020type\u0020\u002D\u0020RunningSum\u0020promotes\u0020to\u0020float\u0020on\u0020int\u0020overflow,\u0020so\u0020integer\nwould\u0020be\u0020a\u0020declaration\u0020the\u0020accumulator\u0020can\u0020violate\u0020on\u0020ordinary\u0020data",
             "url": "classes/Flow-ETL-Function-Sum.html#method_returns"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Sum\u003A\u003Avalue\u0028\u0029",
@@ -11528,7 +13843,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToDate\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ToDate.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToDateTime\\PatternCoverage",
@@ -11583,7 +13898,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToDateTime\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ToDateTime.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToLower",
@@ -11613,7 +13928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToLower\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ToLower.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToTimeZone",
@@ -11643,7 +13958,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToTimeZone\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ToTimeZone.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToUpper",
@@ -11673,7 +13988,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToUpper\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ToUpper.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Trim\\Type",
@@ -11723,7 +14038,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Trim\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Trim.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Truncate",
@@ -11753,7 +14068,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Truncate\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Truncate.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Ulid",
@@ -11788,7 +14103,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Ulid\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Ulid.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\UnicodeLength",
@@ -11818,7 +14133,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\UnicodeLength\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-UnicodeLength.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Uuid",
@@ -11858,7 +14173,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Uuid\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Uuid.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\When",
@@ -11888,7 +14203,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\When\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-When.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\WindowFunction",
@@ -11948,7 +14263,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Wordwrap\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Wordwrap.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\XPath",
@@ -11978,7 +14293,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\XPath\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-XPath.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\GroupBy\\AggregatedGroups",
@@ -11991,15 +14306,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-GroupBy-AggregatedGroups.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\AggregatedGroups\u003A\u003Agroups\u0028\u0029",
+            "name": "groups",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-AggregatedGroups.html#method_groups"
+        },                {
             "fqsen": "\\Flow\\ETL\\GroupBy\\AggregatedGroups\u003A\u003Aaccumulate\u0028\u0029",
             "name": "accumulate",
             "summary": "",
             "url": "classes/Flow-ETL-GroupBy-AggregatedGroups.html#method_accumulate"
         },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\AggregatedGroups\u003A\u003AabsorbEarlier\u0028\u0029",
+            "name": "absorbEarlier",
+            "summary": "\u0024group\u0020aggregated\u0020rows\u0020that\u0020come\u0020before\u0020every\u0020row\u0020this\u0020instance\u0020aggregated\u0020under\u0020the\u0020same\u0020key.",
+            "url": "classes/Flow-ETL-GroupBy-AggregatedGroups.html#method_absorbEarlier"
+        },                {
             "fqsen": "\\Flow\\ETL\\GroupBy\\AggregatedGroups\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "",
             "url": "classes/Flow-ETL-GroupBy-AggregatedGroups.html#method_flush"
+        },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\AggregatedGroups\u003A\u003Arows\u0028\u0029",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-GroupBy-AggregatedGroups.html#method_rows"
         },                {
             "fqsen": "\\Flow\\ETL\\GroupBy\\Aggregators",
             "name": "Aggregators",
@@ -12026,6 +14356,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-GroupBy-Aggregators.html#method_count"
         },                {
+            "fqsen": "\\Flow\\ETL\\GroupBy\\Aggregators\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Folds\u0020\u0024other\u0027s\u0020partial\u0020states\u0020into\u0020these,\u0020pairwise\u003B\u0020\u0024other\u0020aggregated\u0020rows\u0020that\u0020come\u0020after\u0020these.",
+            "url": "classes/Flow-ETL-GroupBy-Aggregators.html#method_merge"
+        },                {
             "fqsen": "\\Flow\\ETL\\GroupBy\\Aggregators\u003A\u003Afirst\u0028\u0029",
             "name": "first",
             "summary": "",
@@ -12045,26 +14380,6 @@ Search.appendIndex(
             "name": "references",
             "summary": "",
             "url": "classes/Flow-ETL-GroupBy-Aggregators.html#method_references"
-        },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\\BucketAggregation",
-            "name": "BucketAggregation",
-            "summary": "",
-            "url": "classes/Flow-ETL-GroupBy-BucketAggregation.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\\BucketAggregation\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-GroupBy-BucketAggregation.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\\BucketAggregation\u003A\u003Aaggregate\u0028\u0029",
-            "name": "aggregate",
-            "summary": "Reached\u0020only\u0020when\u0020the\u0020plan\u0020could\u0020not\u0020bind,\u0020so\u0020the\u0020shape\u0020comes\u0020from\u0020the\u0020first\u0020batch\u0020that\u0020carries\u0020rows.",
-            "url": "classes/Flow-ETL-GroupBy-BucketAggregation.html#method_aggregate"
-        },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\\BucketAggregation\u003A\u003AaggregateBound\u0028\u0029",
-            "name": "aggregateBound",
-            "summary": "",
-            "url": "classes/Flow-ETL-GroupBy-BucketAggregation.html#method_aggregateBound"
         },                {
             "fqsen": "\\Flow\\ETL\\GroupBy\\DeclaredPivotValues",
             "name": "DeclaredPivotValues",
@@ -12301,10 +14616,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-GroupBy.html#method_aggregate"
         },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003AaggregatedRow\u0028\u0029",
-            "name": "aggregatedRow",
+            "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003AaggregatedValues\u0028\u0029",
+            "name": "aggregatedValues",
             "summary": "",
-            "url": "classes/Flow-ETL-GroupBy.html#method_aggregatedRow"
+            "url": "classes/Flow-ETL-GroupBy.html#method_aggregatedValues"
         },                {
             "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003Arefs\u0028\u0029",
             "name": "refs",
@@ -12331,10 +14646,10 @@ Search.appendIndex(
             "summary": "The\u0020aggregate\u0020operator\u0027s\u0020declared\u0020output\u0020schema,\u0020computed\u0020once\u0020per\u0020run.\u0020Group\u002Dkey\u0020definitions\ncome\u0020from\u0020the\u0020input\u0020schema\u0020unchanged\u003A\u0020a\u0020key\u0020is\u0020null\u0020only\u0020when\u0020the\u0020input\u0020column\u0020was\u0020already\nnullable.\u0020A\u0020key\u0020the\u0020batch\u0020schema\u0020does\u0020not\u0020declare\u0020refuses\u0020at\u0020bind\u0020\u002D\u0020inventing\u0020a\u0020column\u0020would\nput\u0020a\u0020value\u0020in\u0020row\u0020storage\u0020that\u0020no\u0020schema\u002Ddriven\u0020reader\u0020can\u0020see.",
             "url": "classes/Flow-ETL-GroupBy.html#method_outputSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003AkeyValues\u0028\u0029",
-            "name": "keyValues",
+            "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003Akeys\u0028\u0029",
+            "name": "keys",
             "summary": "",
-            "url": "classes/Flow-ETL-GroupBy.html#method_keyValues"
+            "url": "classes/Flow-ETL-GroupBy.html#method_keys"
         },                {
             "fqsen": "\\Flow\\ETL\\GroupBy\u003A\u003Apivot\u0028\u0029",
             "name": "pivot",
@@ -12403,7 +14718,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\\All\u003A\u003Acompare\u0028\u0029",
             "name": "compare",
-            "summary": "",
+            "summary": "\u0024left\u0020and\u0020\u0024right\u0020hold\u0020the\u0020same\u0020number\u0020of\u0020rows\u003B\u0020pair\u0020i\u0020is\u0020\u0028left\u0020row\u0020i,\u0020right\u0020row\u0020i\u0029.",
             "url": "classes/Flow-ETL-Join-Comparison-All.html#method_compare"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\\All\u003A\u003Acomparisons\u0028\u0029",
@@ -12433,7 +14748,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\\Any\u003A\u003Acompare\u0028\u0029",
             "name": "compare",
-            "summary": "",
+            "summary": "\u0024left\u0020and\u0020\u0024right\u0020hold\u0020the\u0020same\u0020number\u0020of\u0020rows\u003B\u0020pair\u0020i\u0020is\u0020\u0028left\u0020row\u0020i,\u0020right\u0020row\u0020i\u0029.",
             "url": "classes/Flow-ETL-Join-Comparison-Any.html#method_compare"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\\Any\u003A\u003Acomparisons\u0028\u0029",
@@ -12463,7 +14778,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\\Equal\u003A\u003Acompare\u0028\u0029",
             "name": "compare",
-            "summary": "",
+            "summary": "\u0024left\u0020and\u0020\u0024right\u0020hold\u0020the\u0020same\u0020number\u0020of\u0020rows\u003B\u0020pair\u0020i\u0020is\u0020\u0028left\u0020row\u0020i,\u0020right\u0020row\u0020i\u0029.",
             "url": "classes/Flow-ETL-Join-Comparison-Equal.html#method_compare"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\\Equal\u003A\u003Aleft\u0028\u0029",
@@ -12488,7 +14803,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\\Identical\u003A\u003Acompare\u0028\u0029",
             "name": "compare",
-            "summary": "",
+            "summary": "\u0024left\u0020and\u0020\u0024right\u0020hold\u0020the\u0020same\u0020number\u0020of\u0020rows\u003B\u0020pair\u0020i\u0020is\u0020\u0028left\u0020row\u0020i,\u0020right\u0020row\u0020i\u0029.",
             "url": "classes/Flow-ETL-Join-Comparison-Identical.html#method_compare"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\\Identical\u003A\u003Aleft\u0028\u0029",
@@ -12508,7 +14823,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\u003A\u003Acompare\u0028\u0029",
             "name": "compare",
-            "summary": "",
+            "summary": "\u0024left\u0020and\u0020\u0024right\u0020hold\u0020the\u0020same\u0020number\u0020of\u0020rows\u003B\u0020pair\u0020i\u0020is\u0020\u0028left\u0020row\u0020i,\u0020right\u0020row\u0020i\u0029.",
             "url": "classes/Flow-ETL-Join-Comparison.html#method_compare"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Comparison\u003A\u003Aleft\u0028\u0029",
@@ -12591,10 +14906,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Join-HashJoin-HashTable.html#method_matched"
         },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\HashTable\u003A\u003AunmatchedRows\u0028\u0029",
-            "name": "unmatchedRows",
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\HashTable\u003A\u003Aunmatched\u0028\u0029",
+            "name": "unmatched",
             "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-HashTable.html#method_unmatchedRows"
+            "url": "classes/Flow-ETL-Join-HashJoin-HashTable.html#method_unmatched"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\Joiner",
             "name": "Joiner",
@@ -12676,10 +14991,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Join-HashJoin-NullRowBuilder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\NullRowBuilder\u003A\u003Arow\u0028\u0029",
-            "name": "row",
+            "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\NullRowBuilder\u003A\u003Arows\u0028\u0029",
+            "name": "rows",
             "summary": "",
-            "url": "classes/Flow-ETL-Join-HashJoin-NullRowBuilder.html#method_row"
+            "url": "classes/Flow-ETL-Join-HashJoin-NullRowBuilder.html#method_rows"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\RowMerger",
             "name": "RowMerger",
@@ -12693,7 +15008,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\HashJoin\\RowMerger\u003A\u003Amerge\u0028\u0029",
             "name": "merge",
-            "summary": "",
+            "summary": "Pair\u002Daligned\u003A\u0020row\u0020i\u0020of\u0020the\u0020result\u0020is\u0020left\u0020row\u0020i\u0020merged\u0020with\u0020right\u0020row\u0020i.",
             "url": "classes/Flow-ETL-Join-HashJoin-RowMerger.html#method_merge"
         },                {
             "fqsen": "\\Flow\\ETL\\Join\\Join",
@@ -12771,6 +15086,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Join-JoinSteps.html#method_of"
         },                {
+            "fqsen": "\\Flow\\ETL\\Join\\RowsJoin",
+            "name": "RowsJoin",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-RowsJoin.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\RowsJoin\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-RowsJoin.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\RowsJoin\u003A\u003Across\u0028\u0029",
+            "name": "cross",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-RowsJoin.html#method_cross"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\RowsJoin\u003A\u003Ainner\u0028\u0029",
+            "name": "inner",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-RowsJoin.html#method_inner"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\RowsJoin\u003A\u003Aleft\u0028\u0029",
+            "name": "left",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-RowsJoin.html#method_left"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\RowsJoin\u003A\u003AleftAnti\u0028\u0029",
+            "name": "leftAnti",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-RowsJoin.html#method_leftAnti"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\RowsJoin\u003A\u003Aright\u0028\u0029",
+            "name": "right",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-RowsJoin.html#method_right"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Join\\RowsJoin\u003A\u003Ajoin\u0028\u0029",
+            "name": "join",
+            "summary": "",
+            "url": "classes/Flow-ETL-Join-RowsJoin.html#method_join"
+        },                {
             "fqsen": "\\Flow\\ETL\\Loader\\ArrayLoader",
             "name": "ArrayLoader",
             "summary": "",
@@ -12806,20 +15161,120 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Loader-Discardable.html#method_discard"
         },                {
-            "fqsen": "\\Flow\\ETL\\Loader\\FileLoader",
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FileLoader",
             "name": "FileLoader",
             "summary": "",
-            "url": "classes/Flow-ETL-Loader-FileLoader.html"
+            "url": "classes/Flow-ETL-Loader-File-FileLoader.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Loader\\FileLoader\u003A\u003Adestination\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FileLoader\u003A\u003Adestination\u0028\u0029",
             "name": "destination",
             "summary": "",
-            "url": "classes/Flow-ETL-Loader-FileLoader.html#method_destination"
+            "url": "classes/Flow-ETL-Loader-File-FileLoader.html#method_destination"
         },                {
-            "fqsen": "\\Flow\\ETL\\Loader\\FileLoader\u003A\u003AsaveMode\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FileLoader\u003A\u003AsaveMode\u0028\u0029",
             "name": "saveMode",
             "summary": "",
-            "url": "classes/Flow-ETL-Loader-FileLoader.html#method_saveMode"
+            "url": "classes/Flow-ETL-Loader-File-FileLoader.html#method_saveMode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FileSink",
+            "name": "FileSink",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-FileSink.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FileSink\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-FileSink.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FileSink\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-FileSink.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FileSinks",
+            "name": "FileSinks",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-FileSinks.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FileSinks\u003A\u003Aopen\u0028\u0029",
+            "name": "open",
+            "summary": "Opens\u0020the\u0020sink\u0020of\u0020a\u0020stream\u0020the\u0020write\u0020has\u0020not\u0020written\u0020to\u0020yet.",
+            "url": "classes/Flow-ETL-Loader-File-FileSinks.html#method_open"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FilesSink",
+            "name": "FilesSink",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-FilesSink.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FilesSink\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-FilesSink.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FilesSink\u003A\u003Aabandon\u0028\u0029",
+            "name": "abandon",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-FilesSink.html#method_abandon"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FilesSink\u003A\u003Apublish\u0028\u0029",
+            "name": "publish",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-FilesSink.html#method_publish"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FilesSink\u003A\u003AwriteTo\u0028\u0029",
+            "name": "writeTo",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-FilesSink.html#method_writeTo"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FilesSink\u003A\u003AFLOW_TMP_FILE_PREFIX",
+            "name": "FLOW_TMP_FILE_PREFIX",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-FilesSink.html#constant_FLOW_TMP_FILE_PREFIX"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FileWriteFrame",
+            "name": "FileWriteFrame",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-FileWriteFrame.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FileWriteFrame\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-FileWriteFrame.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FileWriteFrame\u003A\u003Aclosure\u0028\u0029",
+            "name": "closure",
+            "summary": "Closes\u0020every\u0020sink\u0020\u002D\u0020the\u0020first\u0020close\u0020failure\u0020rethrown\u0020once\u0020all\u0020were\u0020closed\u0020\u002D\u0020then\u0020publishes\u0020the\u0020files.",
+            "url": "classes/Flow-ETL-Loader-File-FileWriteFrame.html#method_closure"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FileWriteFrame\u003A\u003Adiscard\u0028\u0029",
+            "name": "discard",
+            "summary": "Closes\u0020every\u0020sink,\u0020then\u0020abandons\u0020the\u0020files\u0020whatever\u0020a\u0020close\u0020threw.",
+            "url": "classes/Flow-ETL-Loader-File-FileWriteFrame.html#method_discard"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\FileWriteFrame\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-FileWriteFrame.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\PartitionRouter",
+            "name": "PartitionRouter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-PartitionRouter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\PartitionRouter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-PartitionRouter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\PartitionRouter\u003A\u003AdroppedNames\u0028\u0029",
+            "name": "droppedNames",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-PartitionRouter.html#method_droppedNames"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File\\PartitionRouter\u003A\u003Aroute\u0028\u0029",
+            "name": "route",
+            "summary": "",
+            "url": "classes/Flow-ETL-Loader-File-PartitionRouter.html#method_route"
         },                {
             "fqsen": "\\Flow\\ETL\\Loader\\MemoryLoader",
             "name": "MemoryLoader",
@@ -12865,26 +15320,6 @@ Search.appendIndex(
             "name": "partitionBy",
             "summary": "",
             "url": "classes/Flow-ETL-Loader-PartitioningLoader.html#method_partitionBy"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Loader\\PartitionRouter",
-            "name": "PartitionRouter",
-            "summary": "",
-            "url": "classes/Flow-ETL-Loader-PartitionRouter.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Loader\\PartitionRouter\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Loader-PartitionRouter.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Loader\\PartitionRouter\u003A\u003AdroppedNames\u0028\u0029",
-            "name": "droppedNames",
-            "summary": "",
-            "url": "classes/Flow-ETL-Loader-PartitionRouter.html#method_droppedNames"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Loader\\PartitionRouter\u003A\u003Aroute\u0028\u0029",
-            "name": "route",
-            "summary": "",
-            "url": "classes/Flow-ETL-Loader-PartitionRouter.html#method_route"
         },                {
             "fqsen": "\\Flow\\ETL\\Loader\\RowPartitions",
             "name": "RowPartitions",
@@ -13220,11 +15655,6 @@ Search.appendIndex(
             "name": "TopNRewrite",
             "summary": "Replaces\u0020a\u0020Limit\u0020directly\u0020over\u0020a\u0020Sort\u0020with\u0020a\u0020TopN\u003B\u0020see\u0020CombineSortAndLimit.",
             "url": "classes/Flow-ETL-Optimizer-TopNRewrite.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Optimizer\\TopNRewrite\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Optimizer-TopNRewrite.html#method___construct"
         },                {
             "fqsen": "\\Flow\\ETL\\Optimizer\\TopNRewrite\u003A\u003Aof\u0028\u0029",
             "name": "of",
@@ -13655,6 +16085,16 @@ Search.appendIndex(
             "name": "columns",
             "summary": "",
             "url": "classes/Flow-ETL-Plan-Explain-StepDetails.html#method_columns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\StepDetails\u003A\u003Astorage\u0028\u0029",
+            "name": "storage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Explain-StepDetails.html#method_storage"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\StepDetails\u003A\u003AstorageName\u0028\u0029",
+            "name": "storageName",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Explain-StepDetails.html#method_storageName"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Explain\\StepDetails\u003A\u003Asort\u0028\u0029",
             "name": "sort",
@@ -15081,6 +17521,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Plan-Node-TopN.html#property_limit"
         },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\TopN\u003A\u003A\u0024algorithm",
+            "name": "algorithm",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Node-TopN.html#property_algorithm"
+        },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Transaction",
             "name": "Transaction",
             "summary": "A\u0020ROOT\u0020grouping\u0020sink\u0020roots\u0020that\u0020commit\u0020together\u003B\u0020never\u0020on\u0020a\u0020spine.",
@@ -15881,36 +18326,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Processor-BatchingProcessor.html#property_size"
         },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\BucketingProcessor",
-            "name": "BucketingProcessor",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-BucketingProcessor.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\BucketingProcessor\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-BucketingProcessor.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\BucketingProcessor\u003A\u003Aprocess\u0028\u0029",
-            "name": "process",
-            "summary": "Process\u0020a\u0020stream\u0020of\u0020Rows\u0020and\u0020return\u0020a\u0020new\u0020stream.",
-            "url": "classes/Flow-ETL-Processor-BucketingProcessor.html#method_process"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\BucketingProcessor\u003A\u003Abind\u0028\u0029",
-            "name": "bind",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-BucketingProcessor.html#method_bind"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\BucketingProcessor\u003A\u003A\u0024strategy",
-            "name": "strategy",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-BucketingProcessor.html#property_strategy"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\BucketingProcessor\u003A\u003A\u0024buckets",
-            "name": "buckets",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-BucketingProcessor.html#property_buckets"
-        },                {
             "fqsen": "\\Flow\\ETL\\Processor\\CachingProcessor",
             "name": "CachingProcessor",
             "summary": "Caches\u0020pipeline\u0020output\u0020for\u0020reuse.",
@@ -16018,7 +18433,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Processor\\GroupByAggregationProcessor",
             "name": "GroupByAggregationProcessor",
-            "summary": "Aggregates\u0020buckets\u0020spilled\u0020by\u0020BucketingProcessor,\u0020one\u0020bucket\u0020per\u0020incoming\u0020metadata\u0020Row.",
+            "summary": "Aggregates\u0020in\u0020one\u0020pass\u0020while\u0020the\u0020process\u0020stays\u0020under\u0020the\u0020memory\u0020limit.\u0020Past\u0020it,\u0020the\u0020rest\u0020of\u0020the\u0020stream\u0020is\u0020partitioned\ninto\u0020buckets\u0020and\u0020each\u0020bucket\u0020aggregated\u0020on\u0020its\u0020own\u003B\u0020the\u0020groups\u0020aggregated\u0020before\u0020the\u0020limit\u0020are\u0020merged\u0020into\u0020the\u0020bucket\ntheir\u0020key\u0020hashes\u0020to.",
             "url": "classes/Flow-ETL-Processor-GroupByAggregationProcessor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Processor\\GroupByAggregationProcessor\u003A\u003A__construct\u0028\u0029",
@@ -16036,15 +18451,30 @@ Search.appendIndex(
             "summary": "Process\u0020a\u0020stream\u0020of\u0020Rows\u0020and\u0020return\u0020a\u0020new\u0020stream.",
             "url": "classes/Flow-ETL-Processor-GroupByAggregationProcessor.html#method_process"
         },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\GroupByAggregationProcessor\u003A\u003Aspilled\u0028\u0029",
+            "name": "spilled",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-GroupByAggregationProcessor.html#method_spilled"
+        },                {
             "fqsen": "\\Flow\\ETL\\Processor\\GroupByAggregationProcessor\u003A\u003A\u0024groupBy",
             "name": "groupBy",
             "summary": "",
             "url": "classes/Flow-ETL-Processor-GroupByAggregationProcessor.html#property_groupBy"
         },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\GroupByAggregationProcessor\u003A\u003A\u0024bucketing",
+            "name": "bucketing",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-GroupByAggregationProcessor.html#property_bucketing"
+        },                {
             "fqsen": "\\Flow\\ETL\\Processor\\GroupByAggregationProcessor\u003A\u003A\u0024buckets",
             "name": "buckets",
             "summary": "",
             "url": "classes/Flow-ETL-Processor-GroupByAggregationProcessor.html#property_buckets"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\GroupByAggregationProcessor\u003A\u003A\u0024memoryLimit",
+            "name": "memoryLimit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-GroupByAggregationProcessor.html#property_memoryLimit"
         },                {
             "fqsen": "\\Flow\\ETL\\Processor\\GroupByAggregationProcessor\u003A\u003A\u0024batchSize",
             "name": "batchSize",
@@ -16095,6 +18525,11 @@ Search.appendIndex(
             "name": "rightBuckets",
             "summary": "",
             "url": "classes/Flow-ETL-Processor-HashJoinProcessor.html#property_rightBuckets"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\HashJoinProcessor\u003A\u003A\u0024memoryLimit",
+            "name": "memoryLimit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-HashJoinProcessor.html#property_memoryLimit"
         },                {
             "fqsen": "\\Flow\\ETL\\Processor\\HashJoinProcessor\u003A\u003A\u0024bucketsCount",
             "name": "bucketsCount",
@@ -16151,30 +18586,10 @@ Search.appendIndex(
             "summary": "Process\u0020a\u0020stream\u0020of\u0020Rows\u0020and\u0020return\u0020a\u0020new\u0020stream.",
             "url": "classes/Flow-ETL-Processor-MergeSortProcessor.html#method_process"
         },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\MergeSortProcessor\u003A\u003A\u0024refs",
-            "name": "refs",
+            "fqsen": "\\Flow\\ETL\\Processor\\MergeSortProcessor\u003A\u003A\u0024sort",
+            "name": "sort",
             "summary": "",
-            "url": "classes/Flow-ETL-Processor-MergeSortProcessor.html#property_refs"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\MergeSortProcessor\u003A\u003A\u0024spill",
-            "name": "spill",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-MergeSortProcessor.html#property_spill"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\MergeSortProcessor\u003A\u003A\u0024merge",
-            "name": "merge",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-MergeSortProcessor.html#property_merge"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\MergeSortProcessor\u003A\u003A\u0024mergeFanIn",
-            "name": "mergeFanIn",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-MergeSortProcessor.html#property_mergeFanIn"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\MergeSortProcessor\u003A\u003A\u0024batchSize",
-            "name": "batchSize",
-            "summary": "",
-            "url": "classes/Flow-ETL-Processor-MergeSortProcessor.html#property_batchSize"
+            "url": "classes/Flow-ETL-Processor-MergeSortProcessor.html#property_sort"
         },                {
             "fqsen": "\\Flow\\ETL\\Processor\\OffsetProcessor",
             "name": "OffsetProcessor",
@@ -16233,7 +18648,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Processor\\RepartitionProcessor",
             "name": "RepartitionProcessor",
-            "summary": "Regroups\u0020buckets\u0020spilled\u0020by\u0020BucketingProcessor\u0020so\u0020every\u0020row\u0020sharing\u0020a\u0020key\u0020arrives\u0020in\u0020one\u0020batch.",
+            "summary": "One\u0020batch\u0020per\u0020key.\u0020While\u0020the\u0020process\u0020stays\u0020under\u0020the\u0020memory\u0020limit\u0020the\u0020input\u0020is\u0020held\u0020and\u0020grouped\u0020in\u0020one\u0020pass\u003B\u0020past\nit,\u0020the\u0020input\u0020is\u0020partitioned\u0020into\u0020buckets\u0020and\u0020each\u0020bucket\u0020grouped\u0020on\u0020its\u0020own.",
             "url": "classes/Flow-ETL-Processor-RepartitionProcessor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Processor\\RepartitionProcessor\u003A\u003A__construct\u0028\u0029",
@@ -16251,15 +18666,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Processor-RepartitionProcessor.html#method_bind"
         },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\RepartitionProcessor\u003A\u003Aconcatenated\u0028\u0029",
+            "name": "concatenated",
+            "summary": "The\u0020held\u0020batches\u0020as\u0020one,\u0020so\u0020each\u0020key\u0020is\u0020gathered\u0020once\u0020rather\u0020than\u0020once\u0020per\u0020batch.",
+            "url": "classes/Flow-ETL-Processor-RepartitionProcessor.html#method_concatenated"
+        },                {
             "fqsen": "\\Flow\\ETL\\Processor\\RepartitionProcessor\u003A\u003A\u0024by",
             "name": "by",
             "summary": "",
             "url": "classes/Flow-ETL-Processor-RepartitionProcessor.html#property_by"
         },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\RepartitionProcessor\u003A\u003A\u0024bucketing",
+            "name": "bucketing",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-RepartitionProcessor.html#property_bucketing"
+        },                {
             "fqsen": "\\Flow\\ETL\\Processor\\RepartitionProcessor\u003A\u003A\u0024buckets",
             "name": "buckets",
             "summary": "",
             "url": "classes/Flow-ETL-Processor-RepartitionProcessor.html#property_buckets"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\RepartitionProcessor\u003A\u003A\u0024memoryLimit",
+            "name": "memoryLimit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-RepartitionProcessor.html#property_memoryLimit"
         },                {
             "fqsen": "\\Flow\\ETL\\Processor\\RepartitionProcessor\u003A\u003A\u0024hasher",
             "name": "hasher",
@@ -16286,6 +18716,11 @@ Search.appendIndex(
             "summary": "Process\u0020a\u0020stream\u0020of\u0020Rows\u0020and\u0020return\u0020a\u0020new\u0020stream.",
             "url": "classes/Flow-ETL-Processor-TopNProcessor.html#method_process"
         },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\TopNProcessor\u003A\u003AfollowedBy\u0028\u0029",
+            "name": "followedBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-TopNProcessor.html#method_followedBy"
+        },                {
             "fqsen": "\\Flow\\ETL\\Processor\\TopNProcessor\u003A\u003Atop\u0028\u0029",
             "name": "top",
             "summary": "",
@@ -16300,6 +18735,11 @@ Search.appendIndex(
             "name": "limit",
             "summary": "",
             "url": "classes/Flow-ETL-Processor-TopNProcessor.html#property_limit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\TopNProcessor\u003A\u003A\u0024fallback",
+            "name": "fallback",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-TopNProcessor.html#property_fallback"
         },                {
             "fqsen": "\\Flow\\ETL\\Processor\\VoidProcessor",
             "name": "VoidProcessor",
@@ -16396,31 +18836,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Repartition-RepartitionSteps.html#method_of"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\AdaptiveRowHydrator",
-            "name": "AdaptiveRowHydrator",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-AdaptiveRowHydrator.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\AdaptiveRowHydrator\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-AdaptiveRowHydrator.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\AdaptiveRowHydrator\u003A\u003AisNative\u0028\u0029",
-            "name": "isNative",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-AdaptiveRowHydrator.html#method_isNative"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\AdaptiveRowHydrator\u003A\u003Adehydrate\u0028\u0029",
-            "name": "dehydrate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-AdaptiveRowHydrator.html#method_dehydrate"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\AdaptiveRowHydrator\u003A\u003Ahydrate\u0028\u0029",
-            "name": "hydrate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-AdaptiveRowHydrator.html#method_hydrate"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\ColumnName",
             "name": "ColumnName",
             "summary": "",
@@ -16430,41 +18845,6 @@ Search.appendIndex(
             "name": "of",
             "summary": "An\u0020int\u002Dkeyed\u0020row\u0020is\u0020a\u0020positional\u0020record,\u0020not\u0020a\u0020named\u0020one,\u0020so\u0020position\u0020N\u0020becomes\u0020\u0022eNN\u0022.\u0020A\u0020plain\n\u0028string\u0029\u0020cast\u0020cannot\u0020express\u0020this\u003A\u0020PHP\u0020coerces\u0020a\u0020numeric\u0020string\u0020array\u0020key\u0020straight\u0020back\u0020to\u0020int.",
             "url": "classes/Flow-ETL-Row-ColumnName.html#method_of"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Comparator\\NativeComparator",
-            "name": "NativeComparator",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Comparator-NativeComparator.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Comparator\\NativeComparator\u003A\u003Aequals\u0028\u0029",
-            "name": "equals",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Comparator-NativeComparator.html#method_equals"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Comparator",
-            "name": "Comparator",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Comparator.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Comparator\u003A\u003Aequals\u0028\u0029",
-            "name": "equals",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Comparator.html#method_equals"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Encoder",
-            "name": "Encoder",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Encoder.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Encoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Encoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Encoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Encoder.html#method_decode"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Formatter\\ASCIISchemaFormatter",
             "name": "ASCIISchemaFormatter",
@@ -16481,105 +18861,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-Formatter-ASCIISchemaFormatter.html#method_format"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\HydratedBatch",
-            "name": "HydratedBatch",
-            "summary": "Builds\u0020a\u0020batch\u0020against\u0020a\u0020declared\u0020Schema.\u0020Metadata\u0020belongs\u0020to\u0020the\u0020column,\u0020so\u0020it\u0020is\u0020folded\u0020into\u0020the\nschema\u0020once\u0020\u002D\u0020a\u0020per\u002Drow\u0020divergent\u0020Metadata\u0020is\u0020no\u0020longer\u0020representable.",
-            "url": "classes/Flow-ETL-Row-HydratedBatch.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\HydratedBatch\u003A\u003Aof\u0028\u0029",
-            "name": "of",
+            "fqsen": "\\Flow\\ETL\\Row\\NullsOrder",
+            "name": "NullsOrder",
             "summary": "",
-            "url": "classes/Flow-ETL-Row-HydratedBatch.html#method_of"
+            "url": "classes/Flow-ETL-Row-NullsOrder.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Hydrator",
-            "name": "Hydrator",
+            "fqsen": "\\Flow\\ETL\\Row\\NullsOrder\u003A\u003AdefaultFor\u0028\u0029",
+            "name": "defaultFor",
+            "summary": "Nulls\u0020are\u0020the\u0020smallest\u0020value\u003A\u0020first\u0020ascending,\u0020last\u0020descending.",
+            "url": "classes/Flow-ETL-Row-NullsOrder.html#method_defaultFor"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\NullsOrder\u003A\u003AFIRST",
+            "name": "FIRST",
             "summary": "",
-            "url": "classes/Flow-ETL-Row-Hydrator.html"
+            "url": "classes/Flow-ETL-Row-NullsOrder.html#enumcase_FIRST"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Hydrator\u003A\u003Adehydrate\u0028\u0029",
-            "name": "dehydrate",
+            "fqsen": "\\Flow\\ETL\\Row\\NullsOrder\u003A\u003ALAST",
+            "name": "LAST",
             "summary": "",
-            "url": "classes/Flow-ETL-Row-Hydrator.html#method_dehydrate"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Hydrator\u003A\u003Ahydrate\u0028\u0029",
-            "name": "hydrate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-Hydrator.html#method_hydrate"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\InferredBatch",
-            "name": "InferredBatch",
-            "summary": "Values\u0020carry\u0020no\u0020declared\u0020type,\u0020so\u0020the\u0020batch\u0020schema\u0020is\u0020folded\u0020from\u0020the\u0020values\u0020themselves.",
-            "url": "classes/Flow-ETL-Row-InferredBatch.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\InferredBatch\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-InferredBatch.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\InferredBatch\u003A\u003Aof\u0028\u0029",
-            "name": "of",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-InferredBatch.html#method_of"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\NativeRowHydrator",
-            "name": "NativeRowHydrator",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-NativeRowHydrator.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\NativeRowHydrator\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-NativeRowHydrator.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\NativeRowHydrator\u003A\u003AisSupported\u0028\u0029",
-            "name": "isSupported",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-NativeRowHydrator.html#method_isSupported"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\NativeRowHydrator\u003A\u003Adehydrate\u0028\u0029",
-            "name": "dehydrate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-NativeRowHydrator.html#method_dehydrate"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\NativeRowHydrator\u003A\u003Ahydrate\u0028\u0029",
-            "name": "hydrate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-NativeRowHydrator.html#method_hydrate"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\PhpRowHydrator",
-            "name": "PhpRowHydrator",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-PhpRowHydrator.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\PhpRowHydrator\u003A\u003Adehydrate\u0028\u0029",
-            "name": "dehydrate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-PhpRowHydrator.html#method_dehydrate"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\PhpRowHydrator\u003A\u003Ahydrate\u0028\u0029",
-            "name": "hydrate",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-PhpRowHydrator.html#method_hydrate"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\RawRowValues",
-            "name": "RawRowValues",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-RawRowValues.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\RawRowValues\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-RawRowValues.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\RawRowValues\u003A\u003A\u0024values",
-            "name": "values",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-RawRowValues.html#property_values"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\RawRowValues\u003A\u003A\u0024metadata",
-            "name": "metadata",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-RawRowValues.html#property_metadata"
+            "url": "classes/Flow-ETL-Row-NullsOrder.html#enumcase_LAST"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Reference",
             "name": "Reference",
@@ -16615,6 +18915,11 @@ Search.appendIndex(
             "name": "name",
             "summary": "",
             "url": "classes/Flow-ETL-Row-Reference.html#method_name"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Row\\Reference\u003A\u003Anulls\u0028\u0029",
+            "name": "nulls",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-Reference.html#method_nulls"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\Reference\u003A\u003Asort\u0028\u0029",
             "name": "sort",
@@ -16753,7 +19058,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\ResolvedReference\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Row-ResolvedReference.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\ResolvedReference\u003A\u003AhasAlias\u0028\u0029",
@@ -16781,6 +19086,11 @@ Search.appendIndex(
             "summary": "The\u0020type\u0020of\u0020the\u0020column\u0020this\u0020function\u0020produces,\u0020before\u0020any\u0020row\u0020is\u0020read.",
             "url": "classes/Flow-ETL-Row-ResolvedReference.html#method_returns"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\ResolvedReference\u003A\u003Anulls\u0028\u0029",
+            "name": "nulls",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-ResolvedReference.html#method_nulls"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\ResolvedReference\u003A\u003Asort\u0028\u0029",
             "name": "sort",
             "summary": "",
@@ -16796,41 +19106,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-ResolvedReference.html#method_to"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\RowRenaming",
-            "name": "RowRenaming",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-RowRenaming.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\RowRenaming\u003A\u003Aof\u0028\u0029",
-            "name": "of",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-RowRenaming.html#method_of"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\RowRenaming\u003A\u003Aapply\u0028\u0029",
-            "name": "apply",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-RowRenaming.html#method_apply"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\RowsBuffer",
-            "name": "RowsBuffer",
-            "summary": "Accumulates\u0020rows\u0020and\u0020releases\u0020them\u0020as\u0020size\u002Dbounded\u0020Rows\u0020batches.",
-            "url": "classes/Flow-ETL-Row-RowsBuffer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\RowsBuffer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-RowsBuffer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\RowsBuffer\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-RowsBuffer.html#method_add"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\RowsBuffer\u003A\u003Aflush\u0028\u0029",
-            "name": "flush",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-RowsBuffer.html#method_flush"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\SortOrder",
             "name": "SortOrder",
             "summary": "",
@@ -16845,31 +19120,6 @@ Search.appendIndex(
             "name": "DESC",
             "summary": "",
             "url": "classes/Flow-ETL-Row-SortOrder.html#enumcase_DESC"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\TypedRowValues",
-            "name": "TypedRowValues",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-TypedRowValues.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\TypedRowValues\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-TypedRowValues.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\TypedRowValues\u003A\u003A\u0024values",
-            "name": "values",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-TypedRowValues.html#property_values"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\TypedRowValues\u003A\u003A\u0024types",
-            "name": "types",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-TypedRowValues.html#property_types"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\\TypedRowValues\u003A\u003A\u0024metadata",
-            "name": "metadata",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row-TypedRowValues.html#property_metadata"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\TypedValueComparator",
             "name": "TypedValueComparator",
@@ -16943,7 +19193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\UnresolvedReference\u003A\u003Aeval\u0028\u0029",
             "name": "eval",
-            "summary": "",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Row-UnresolvedReference.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Row\\UnresolvedReference\u003A\u003AhasAlias\u0028\u0029",
@@ -16971,6 +19221,11 @@ Search.appendIndex(
             "summary": "Kept\u0020on\u0020the\u0020leaf\u0020rather\u0020than\u0020inlined\u0020in\u0020the\u0020resolver\u0020so\u0020\u0024alias\/\u0024sort\u0020copying\u0020stays\u0020in\u0020the\u0020class\nthat\u0020owns\u0020those\u0020fields\u0020\u002D\u0020the\u0020resolver\u0020never\u0020learns\u0020the\u0020leaf\u0027s\u0020internal\u0020shape.",
             "url": "classes/Flow-ETL-Row-UnresolvedReference.html#method_resolve"
         },                {
+            "fqsen": "\\Flow\\ETL\\Row\\UnresolvedReference\u003A\u003Anulls\u0028\u0029",
+            "name": "nulls",
+            "summary": "",
+            "url": "classes/Flow-ETL-Row-UnresolvedReference.html#method_nulls"
+        },                {
             "fqsen": "\\Flow\\ETL\\Row\\UnresolvedReference\u003A\u003Asort\u0028\u0029",
             "name": "sort",
             "summary": "",
@@ -16986,80 +19241,110 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Row-UnresolvedReference.html#method_to"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row",
-            "name": "Row",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row.html"
+            "fqsen": "\\Flow\\ETL\\Rows\\ColumnRetyping",
+            "name": "ColumnRetyping",
+            "summary": "One\u0020column\u0020brought\u0020under\u0020another\u0020definition\u0020of\u0020the\u0020same\u0020name\u003A\u0020Rows\u003A\u003AmatchTo\u0028\u0029\u0020validates\u0020the\u0020values\u0020the\u0020types\u0020cannot\nprove,\u0020a\u0020declared\u0020schema\u0020over\u0020another\u0020frame\u0027s\u0020batch\u0020casts\u0020them.",
+            "url": "classes/Flow-ETL-Rows-ColumnRetyping.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Rows\\ColumnRetyping\u003A\u003Aabsent\u0028\u0029",
+            "name": "absent",
+            "summary": "The\u0020column\u0020a\u0020batch\u0020of\u0020\u0024count\u0020rows\u0020lacks\u003A\u0020nulls,\u0020or\u0020refused\u0020under\u0020NOT\u0020NULL\u0020when\u0020there\u0020is\u0020a\u0020row\u0020to\u0020refuse.",
+            "url": "classes/Flow-ETL-Rows-ColumnRetyping.html#method_absent"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\\ColumnRetyping\u003A\u003Acast\u0028\u0029",
+            "name": "cast",
+            "summary": "\u0024column\u0020under\u0020\u0024definition\u0020for\u0020a\u0020declared\u0020schema\u0020over\u0020another\u0020frame\u0027s\u0020batch\u003A\u0020restamped\u0020when\u0020the\u0020types\u0020prove\u0020the\nchange,\u0020otherwise\u0020cast\u0020value\u0020by\u0020value\u0020into\u0020\u0024backend\u0020\u002D\u0020a\u0020value\u0020the\u0020definition\u0020does\u0020not\u0020take\u0020is\u0020cast,\u0020not\u0020refused.",
+            "url": "classes/Flow-ETL-Rows-ColumnRetyping.html#method_cast"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\\ColumnRetyping\u003A\u003AnotNull\u0028\u0029",
+            "name": "notNull",
+            "summary": "Refuses\u0020the\u0020first\u0020null\u0020of\u0020\u0024column\u0020when\u0020\u0024definition\u0020is\u0020NOT\u0020NULL.",
+            "url": "classes/Flow-ETL-Rows-ColumnRetyping.html#method_notNull"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\\ColumnRetyping\u003A\u003Arebuilt\u0028\u0029",
+            "name": "rebuilt",
+            "summary": "\u0024column\u0027s\u0020values\u0020built\u0020anew\u0020under\u0020\u0024definition\u0020in\u0020\u0024backend.",
+            "url": "classes/Flow-ETL-Rows-ColumnRetyping.html#method_rebuilt"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\\ColumnRetyping\u003A\u003Arestamped\u0028\u0029",
+            "name": "restamped",
+            "summary": "\u0024column\u0020as\u0020it\u0020is\u0020when\u0020\u0024own\u0020is\u0020\u0024definition,\u0020restamped\u0020when\u0020the\u0020types\u0020prove\u0020the\u0020change\u0020and\u0020no\u0020null\u0020breaks\u0020a\u0020NOT\u0020NULL\ndefinition,\u0020null\u0020otherwise\u0020\u002D\u0020the\u0020caller\u0020then\u0020casts\u0020or\u0020validates\u0020it.",
+            "url": "classes/Flow-ETL-Rows-ColumnRetyping.html#method_restamped"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\\ColumnRetyping\u003A\u003Avalidate\u0028\u0029",
+            "name": "validate",
+            "summary": "Rows\u003A\u003AmatchTo\u0028\u0029\u0027s\u0020check\u0020of\u0020the\u0020columns\u0020restamped\u0028\u0029\u0020could\u0020not\u0020prove\u003A\u0020every\u0020value\u0020must\u0020already\u0020be\u0020one\u0020its\ndefinition\u0020takes\u0020\u002D\u0020nothing\u0020is\u0020cast.\u0020One\u0020row\u002Dmajor\u0020scan,\u0020so\u0020the\u0020refusal\u0020names\u0020the\u0020lowest\u0020bad\u0020row\u0020and,\u0020within\u0020it,\nthe\u0020first\u0020column\u0020in\u0020the\u0020given\u0020order.\u0020Contrast\u0020cast\u0028\u0029,\u0020which\u0020converts\u0020such\u0020values\u0020instead.",
+            "url": "classes/Flow-ETL-Rows-ColumnRetyping.html#method_validate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\\RowHashes",
+            "name": "RowHashes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Rows-RowHashes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\\RowHashes\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "One\u0020hash\u0020per\u0020row\u0020over\u0020its\u0020values\u0020in\u0020sorted\u0020column\u0020order\u0020\u002D\u0020name\u0020followed\u0020by\u0020the\u0020value\u0027s\u0020equality\u0020form\n\u0028ComparableValues\u0029\u0020where\u0020the\u0020column\u0020has\u0020one,\u0020its\u0020formatted\u0020value\u0020otherwise.",
+            "url": "classes/Flow-ETL-Rows-RowHashes.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\\RowsBuilder",
+            "name": "RowsBuilder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Rows-RowsBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\\RowsBuilder\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Row.html#method___construct"
+            "url": "classes/Flow-ETL-Rows-RowsBuilder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\u003A\u003AmatchTo\u0028\u0029",
-            "name": "matchTo",
-            "summary": "Rewrites\u0020the\u0020storage\u0020to\u0020satisfy\u0020\u0024schema\u003A\u0020columns\u0020take\u0020the\u0020Schema\u0027s\u0020order\u0020and\u0020a\u0020declared\nnullable\u0020column\u0020the\u0020row\u0020omits\u0020is\u0020padded\u0020with\u0020null.\u0020The\u0020row\u0020does\u0020not\u0020know\u0020its\u0020position\u0020in\u0020a\nbatch\u0020\u002D\u0020Rows\u0020places\u0020the\u0020violation\u0020with\u0020SchemaMismatchException.",
-            "url": "classes/Flow-ETL-Row.html#method_matchTo"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\u003A\u003AconformTo\u0028\u0029",
-            "name": "conformTo",
-            "summary": "matchTo\u0028\u0029\u0020without\u0020its\u0020value\u0020check\u003A\u0020the\u0020order,\u0020padding,\u0020missing,\u0020unknown\u0020and\u0020null\u0020rules\u0020all\u0020hold,\u0020but\u0020a\u0020non\u002Dnull\nvalue\u0020is\u0020not\u0020validated\u0020against\u0020its\u0020type\u0020\u002D\u0020the\u0020caller\u0020produced\u0020it\u0020by\u0020casting\u0020to,\u0020or\u0020decoding\u0020from,\u0020that\u0020type.",
-            "url": "classes/Flow-ETL-Row.html#method_conformTo"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\u003A\u003Aproject\u0028\u0029",
-            "name": "project",
-            "summary": "Drops\u0020the\u0020columns\u0020\u0024schema\u0020does\u0020not\u0020declare\u0020and\u0020carries\u0020its\u0020order\u0020into\u0020the\u0020row.\u0020Unlike\nmatchTo\u0028\u0029\u0020it\u0020validates\u0020nothing\u0020\u002D\u0020the\u0020caller\u0020is\u0020changing\u0020the\u0020shape,\u0020not\u0020checking\u0020it.",
-            "url": "classes/Flow-ETL-Row.html#method_project"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Row\u003A\u003Aget\u0028\u0029",
-            "name": "get",
+            "fqsen": "\\Flow\\ETL\\Rows\\RowsBuilder\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
             "summary": "",
-            "url": "classes/Flow-ETL-Row.html#method_get"
+            "url": "classes/Flow-ETL-Rows-RowsBuilder.html#method_append"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\u003A\u003Ahas\u0028\u0029",
-            "name": "has",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row.html#method_has"
+            "fqsen": "\\Flow\\ETL\\Rows\\RowsBuilder\u003A\u003AappendFrom\u0028\u0029",
+            "name": "appendFrom",
+            "summary": "A\u0020column\u0020sharing\u0020its\u0020definition\u0020with\u0020the\u0020target\u0020is\u0020copied\u0020physically\u003B\u0020any\u0020other\u0020is\u0020refused\u0020unless\u0020its\u0020value\nmatches\u0020the\u0020target\u0020definition\u0020as\u0020it\u0020is\u0020\u002D\u0020views\u0020are\u0020never\u0020cast.",
+            "url": "classes/Flow-ETL-Rows-RowsBuilder.html#method_appendFrom"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\u003A\u003Ahash\u0028\u0029",
-            "name": "hash",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row.html#method_hash"
+            "fqsen": "\\Flow\\ETL\\Rows\\RowsBuilder\u003A\u003AappendProjected\u0028\u0029",
+            "name": "appendProjected",
+            "summary": "Records\u0020projected\u0020onto\u0020the\u0020schema\u003A\u0020a\u0020key\u0020it\u0020does\u0020not\u0020declare\u0020is\u0020dropped,\u0020an\u0020int\u0020key\u0020is\u0020kept\u0020under\u0020its\u0020positional\nname\u0020\u0028ColumnName\u0029\u0020when\u0020the\u0020schema\u0020declares\u0020that\u0020name.",
+            "url": "classes/Flow-ETL-Rows-RowsBuilder.html#method_appendProjected"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\u003A\u003Anames\u0028\u0029",
-            "name": "names",
-            "summary": "",
-            "url": "classes/Flow-ETL-Row.html#method_names"
+            "fqsen": "\\Flow\\ETL\\Rows\\RowsBuilder\u003A\u003AappendRecords\u0028\u0029",
+            "name": "appendRecords",
+            "summary": "One\u0020record\u0020or\u0020a\u0020list\u0020of\u0020them.\u0020A\u0020key\u0020the\u0020schema\u0020does\u0020not\u0020declare\u0020is\u0020refused\u0020at\u0020its\u0020row\u003B\u0020a\u0020numeric\u002Dstring\u0020key\nPHP\u0020turned\u0020into\u0020an\u0020int\u0020keeps\u0020its\u0020declared\u0020name,\u0020any\u0020other\u0020int\u0020key\u0020is\u0020named\u0020by\u0020its\u0020position\u0020\u0028ColumnName\u0029.",
+            "url": "classes/Flow-ETL-Rows-RowsBuilder.html#method_appendRecords"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
+            "fqsen": "\\Flow\\ETL\\Rows\\RowsBuilder\u003A\u003AappendRows\u0028\u0029",
+            "name": "appendRows",
             "summary": "",
-            "url": "classes/Flow-ETL-Row.html#method_toArray"
+            "url": "classes/Flow-ETL-Rows-RowsBuilder.html#method_appendRows"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\u003A\u003Avalues\u0028\u0029",
-            "name": "values",
+            "fqsen": "\\Flow\\ETL\\Rows\\RowsBuilder\u003A\u003AappendTake\u0028\u0029",
+            "name": "appendTake",
             "summary": "",
-            "url": "classes/Flow-ETL-Row.html#method_values"
+            "url": "classes/Flow-ETL-Rows-RowsBuilder.html#method_appendTake"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\\RowsBuilder\u003A\u003Acolumn\u0028\u0029",
+            "name": "column",
+            "summary": "",
+            "url": "classes/Flow-ETL-Rows-RowsBuilder.html#method_column"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\\RowsBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Rows-RowsBuilder.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\\RowsBuilder\u003A\u003Afinish\u0028\u0029",
+            "name": "finish",
+            "summary": "",
+            "url": "classes/Flow-ETL-Rows-RowsBuilder.html#method_finish"
         },                {
             "fqsen": "\\Flow\\ETL\\Rows",
             "name": "Rows",
             "summary": "",
             "url": "classes/Flow-ETL-Rows.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Atrusted\u0028\u0029",
-            "name": "trusted",
-            "summary": "Skips\u0020the\u0020shape\u0020check\u0020the\u0020constructor\u0020performs.\u0020The\u0020caller\u0020vouches\u0020that\u0020every\u0020row\u0020already\nsatisfies\u0020\u0024schema\u0020and\u0020stores\u0020its\u0020columns\u0020in\u0020the\u0020Schema\u0027s\u0020order\u0020\u002D\u0020which\u0020holds\u0020when\u0020the\u0020same\noperation\u0020produced\u0020the\u0020schema\u0020and\u0020the\u0020rows,\u0020or\u0020when\u0020the\u0020rows\u0020are\u0020a\u0020subset\u0020or\u0020a\u0020permutation\u0020of\na\u0020batch\u0020that\u0020already\u0020passed.",
-            "url": "classes/Flow-ETL-Rows.html#method_trusted"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Aconformed\u0028\u0029",
-            "name": "conformed",
-            "summary": "The\u0020constructor\u0027s\u0020shape\u0020check\u0020without\u0020its\u0020value\u0020check.\u0020Columns\u0020take\u0020the\u0020Schema\u0027s\u0020order,\u0020a\u0020declared\u002Dnullable\nabsence\u0020is\u0020padded,\u0020and\u0020a\u0020missing\u0020NOT\u0020NULL\u0020column,\u0020an\u0020unknown\u0020column\u0020or\u0020a\u0020null\u0020under\u0020NOT\u0020NULL\u0020is\u0020refused\u0020\u002D\u0020but\u0020a\nnon\u002Dnull\u0020value\u0020is\u0020not\u0020validated\u0020against\u0020its\u0020type,\u0020because\u0020the\u0020caller\u0020produced\u0020it\u0020by\u0020casting\u0020to,\u0020or\u0020decoding\nfrom,\u0020that\u0020type.\u0020A\u0020value\u0020is\u0020validated\u0020once,\u0020where\u0020it\u0020enters\u0020the\u0020engine.",
-            "url": "classes/Flow-ETL-Rows.html#method_conformed"
         },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003A__serialize\u0028\u0029",
             "name": "__serialize",
@@ -17068,43 +19353,53 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003A__unserialize\u0028\u0029",
             "name": "__unserialize",
-            "summary": "",
+            "summary": "A\u0020serialized\u0020batch\u0020carries\u0020no\u0020context,\u0020so\u0020it\u0020decodes\u0020in\u0020the\u0020default\u0020backend.",
             "url": "classes/Flow-ETL-Rows.html#method___unserialize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Aempty\u0028\u0029",
+            "name": "empty",
             "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_add"
+            "url": "classes/Flow-ETL-Rows.html#method_empty"
         },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Aall\u0028\u0029",
-            "name": "all",
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AfromColumns\u0028\u0029",
+            "name": "fromColumns",
             "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_all"
+            "url": "classes/Flow-ETL-Rows.html#method_fromColumns"
         },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Achunks\u0028\u0029",
             "name": "chunks",
             "summary": "",
             "url": "classes/Flow-ETL-Rows.html#method_chunks"
         },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AmatchTo\u0028\u0029",
-            "name": "matchTo",
-            "summary": "Re\u002Dchecks\u0020the\u0020batch\u0020against\u0020a\u0020different\u0020Schema\u0020and\u0020adopts\u0020it\u0020\u002D\u0020the\u0020door\u0020the\u0020constructor\u0020opens,\nfor\u0020rows\u0020already\u0020gathered\u0020into\u0020a\u0020batch.",
-            "url": "classes/Flow-ETL-Rows.html#method_matchTo"
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Acolumn\u0028\u0029",
+            "name": "column",
+            "summary": "",
+            "url": "classes/Flow-ETL-Rows.html#method_column"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Acolumns\u0028\u0029",
+            "name": "columns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Rows.html#method_columns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AencodeFrame\u0028\u0029",
+            "name": "encodeFrame",
+            "summary": "",
+            "url": "classes/Flow-ETL-Rows.html#method_encodeFrame"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AadoptedBy\u0028\u0029",
+            "name": "adoptedBy",
+            "summary": "The\u0020same\u0020batch\u0020with\u0020every\u0020column\u0020in\u0020\u0024backend\u0027s\u0020storage\u0020\u002D\u0020itself\u0020when\u0020\u0024backend\u0020already\u0020owns\u0020every\u0020column.",
+            "url": "classes/Flow-ETL-Rows.html#method_adoptedBy"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Aconcat\u0028\u0029",
+            "name": "concat",
+            "summary": "Every\u0020input\u0020carries\u0020this\u0020schema\u003B\u0020zero\u002Drow\u0020inputs\u0020add\u0020no\u0020rows.\u0020The\u0020result\u0027s\u0020columns\u0020are\u0020\u0024backend\u0027s.",
+            "url": "classes/Flow-ETL-Rows.html#method_concat"
         },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Acount\u0028\u0029",
             "name": "count",
             "summary": "",
             "url": "classes/Flow-ETL-Rows.html#method_count"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AdiffLeft\u0028\u0029",
-            "name": "diffLeft",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_diffLeft"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AdiffRight\u0028\u0029",
-            "name": "diffRight",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_diffRight"
         },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Adrop\u0028\u0029",
             "name": "drop",
@@ -17116,90 +19411,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Rows.html#method_dropRight"
         },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Aempty\u0028\u0029",
-            "name": "empty",
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Agather\u0028\u0029",
+            "name": "gather",
             "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_empty"
+            "url": "classes/Flow-ETL-Rows.html#method_gather"
         },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Afirst\u0028\u0029",
-            "name": "first",
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AisEmpty\u0028\u0029",
+            "name": "isEmpty",
             "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_first"
+            "url": "classes/Flow-ETL-Rows.html#method_isEmpty"
         },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AgetIterator\u0028\u0029",
-            "name": "getIterator",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_getIterator"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Ahash\u0028\u0029",
-            "name": "hash",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_hash"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Ahead\u0028\u0029",
-            "name": "head",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_head"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AjoinCross\u0028\u0029",
-            "name": "joinCross",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_joinCross"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AjoinInner\u0028\u0029",
-            "name": "joinInner",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_joinInner"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AjoinLeft\u0028\u0029",
-            "name": "joinLeft",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_joinLeft"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AjoinLeftAnti\u0028\u0029",
-            "name": "joinLeftAnti",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_joinLeftAnti"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AjoinRight\u0028\u0029",
-            "name": "joinRight",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_joinRight"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Alast\u0028\u0029",
-            "name": "last",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_last"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Amerge\u0028\u0029",
-            "name": "merge",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_merge"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AoffsetExists\u0028\u0029",
-            "name": "offsetExists",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_offsetExists"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AoffsetGet\u0028\u0029",
-            "name": "offsetGet",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_offsetGet"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AoffsetSet\u0028\u0029",
-            "name": "offsetSet",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_offsetSet"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AoffsetUnset\u0028\u0029",
-            "name": "offsetUnset",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_offsetUnset"
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AmatchTo\u0028\u0029",
+            "name": "matchTo",
+            "summary": "Adopts\u0020\u0024schema.\u0020A\u0020changed\u0020column\u0020whose\u0020type\u0020change\u0020the\u0020types\u0020prove\u0020is\u0020restamped\u003B\u0020any\u0020other\u0020change\u0020is\u0020checked\nvalue\u0020by\u0020value\u0020and\u0020rebuilt\u0020in\u0020\u0024backend.",
+            "url": "classes/Flow-ETL-Rows.html#method_matchTo"
         },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Aproject\u0028\u0029",
             "name": "project",
-            "summary": "Drops\u0020the\u0020columns\u0020\u0024schema\u0020does\u0020not\u0020declare\u0020and\u0020adopts\u0020it.\u0020Widening\u0020or\u0020retyping\u0020the\u0020batch\u0020is\nnot\u0020a\u0020projection\u0020\u002D\u0020that\u0020goes\u0020through\u0020matchTo\u0028\u0029.",
+            "summary": "Drops\u0020the\u0020columns\u0020\u0024schema\u0020does\u0020not\u0020declare\u0020and\u0020adopts\u0020it,\u0020converting\u0020a\u0020kept\u0020column\u0020whose\u0020definition\u0020\u0024schema\nchanges\u0020\u0028in\u0020\u0024backend\u0029.\u0020Contrast\u0020select\u0028\u0029,\u0020which\u0020keeps\u0020the\u0020named\u0020columns\u0020as\u0020they\u0020are.\u0020Widening\u0020the\u0020batch\u0020with\ncolumns\u0020it\u0020lacks\u0020is\u0020not\u0020a\u0020projection\u0020\u002D\u0020that\u0020goes\u0020through\u0020matchTo\u0028\u0029.",
             "url": "classes/Flow-ETL-Rows.html#method_project"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Aselect\u0028\u0029",
+            "name": "select",
+            "summary": "The\u0020named\u0020columns\u0020as\u0020they\u0020are,\u0020in\u0020schema\u0020order\u0020\u002D\u0020every\u0020column\u0020kept\u0020unconverted,\u0020in\u0020whatever\u0020backend\u0020built\u0020it.",
+            "url": "classes/Flow-ETL-Rows.html#method_select"
         },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AreduceToArray\u0028\u0029",
             "name": "reduceToArray",
@@ -17211,55 +19446,45 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Rows.html#method_remove"
         },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Areverse\u0028\u0029",
-            "name": "reverse",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_reverse"
-        },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
             "summary": "",
             "url": "classes/Flow-ETL-Rows.html#method_schema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AsortAscending\u0028\u0029",
-            "name": "sortAscending",
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Aslice\u0028\u0029",
+            "name": "slice",
             "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_sortAscending"
+            "url": "classes/Flow-ETL-Rows.html#method_slice"
         },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AsortBy\u0028\u0029",
             "name": "sortBy",
             "summary": "",
             "url": "classes/Flow-ETL-Rows.html#method_sortBy"
         },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AsortDescending\u0028\u0029",
-            "name": "sortDescending",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_sortDescending"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Atail\u0028\u0029",
-            "name": "tail",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_tail"
-        },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Atake\u0028\u0029",
             "name": "take",
             "summary": "",
             "url": "classes/Flow-ETL-Rows.html#method_take"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AtakeRight\u0028\u0029",
-            "name": "takeRight",
-            "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_takeRight"
         },                {
             "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
             "summary": "",
             "url": "classes/Flow-ETL-Rows.html#method_toArray"
         },                {
-            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Aunique\u0028\u0029",
-            "name": "unique",
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003Avalues\u0028\u0029",
+            "name": "values",
             "summary": "",
-            "url": "classes/Flow-ETL-Rows.html#method_unique"
+            "url": "classes/Flow-ETL-Rows.html#method_values"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AwithColumns\u0028\u0029",
+            "name": "withColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Rows.html#method_withColumns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows\u003A\u003AwithSchema\u0028\u0029",
+            "name": "withSchema",
+            "summary": "Positional\u0020restamp\u003A\u0020the\u0020n\u002Dth\u0020definition\u0020of\u0020\u0024schema\u0020retypes\u0020the\u0020n\u002Dth\u0020column\u0020\u0028Column\u003A\u003AwithType\u0029.",
+            "url": "classes/Flow-ETL-Rows.html#method_withSchema"
         },                {
             "fqsen": "\\Flow\\ETL\\RowsFactory",
             "name": "RowsFactory",
@@ -18761,31 +20986,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-XMLElementDefinition.html#method_type"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ZoneAlignment",
-            "name": "ZoneAlignment",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-ZoneAlignment.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ZoneAlignment\u003A\u003Aalign\u0028\u0029",
-            "name": "align",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-ZoneAlignment.html#method_align"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ZoneAlignment\u003A\u003AcarriesDateTime\u0028\u0029",
-            "name": "carriesDateTime",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-ZoneAlignment.html#method_carriesDateTime"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ZoneAlignment\u003A\u003Acolumns\u0028\u0029",
-            "name": "columns",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-ZoneAlignment.html#method_columns"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ZoneAlignment\u003A\u003AinZone\u0028\u0029",
-            "name": "inZone",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-ZoneAlignment.html#method_inZone"
-        },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition",
             "name": "Definition",
             "summary": "",
@@ -18855,6 +21055,16 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Formatter\\InlineSchemaFormatter",
+            "name": "InlineSchemaFormatter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Formatter-InlineSchemaFormatter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\Formatter\\InlineSchemaFormatter\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-Formatter-InlineSchemaFormatter.html#method_format"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Formatter\\JsonSchemaFormatter",
             "name": "JsonSchemaFormatter",
@@ -18928,7 +21138,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Inference\\ColumnTypes\u003A\u003Aobserve\u0028\u0029",
             "name": "observe",
-            "summary": "RawRowValues\u003A\u003A\u0024metadata\u0020is\u0020not\u0020read\u003A\u0020the\u0020fold\u0020types\u0020columns,\u0020metadata\u0020is\u0020folded\u0020by\u0020the\u0020hydrator\u0020per\u0020batch.",
+            "summary": "",
             "url": "classes/Flow-ETL-Schema-Inference-ColumnTypes.html#method_observe"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Inference\\ColumnTypes\u003A\u003Arows\u0028\u0029",
@@ -19165,6 +21375,21 @@ Search.appendIndex(
             "name": "remove",
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Metadata.html#method_remove"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SameSchemas",
+            "name": "SameSchemas",
+            "summary": "Pairs\u0020of\u0020schemas\u0020already\u0020proved\u0020the\u0020same.\u0020A\u0020schema\u0020never\u0020changes\u0020after\u0020construction,\u0020so\u0020a\u0020proof\u0020holds\u0020for\u0020as\u0020long\nas\u0020both\u0020live\u0020\u002D\u0020batches\u0020of\u0020one\u0020stream\u0020compare\u0020their\u0020equal\u002Dbut\u002Ddistinct\u0020schemas\u0020once,\u0020not\u0020once\u0020per\u0020batch.",
+            "url": "classes/Flow-ETL-Schema-SameSchemas.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SameSchemas\u003A\u003Aproved\u0028\u0029",
+            "name": "proved",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SameSchemas.html#method_proved"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Schema\\SameSchemas\u003A\u003Aremember\u0028\u0029",
+            "name": "remember",
+            "summary": "",
+            "url": "classes/Flow-ETL-Schema-SameSchemas.html#method_remember"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\SchemaFormatter",
             "name": "SchemaFormatter",
@@ -19516,11 +21741,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema.html#method_sort"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AzonedDefinitions\u0028\u0029",
-            "name": "zonedDefinitions",
-            "summary": "",
-            "url": "classes/Flow-ETL-Schema.html#method_zonedDefinitions"
-        },                {
             "fqsen": "\\Flow\\ETL\\SchemaValidator",
             "name": "SchemaValidator",
             "summary": "",
@@ -19530,26 +21750,6 @@ Search.appendIndex(
             "name": "validate",
             "summary": "",
             "url": "classes/Flow-ETL-SchemaValidator.html#method_validate"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Serializer\\DomValueCodec",
-            "name": "DomValueCodec",
-            "summary": "Executed\u0020on\u0020PHP\u00208.4.22\u003A\u0020serialize\u0028\u0029\u0020throws\u0020for\u0020DOMDocument,\u0020DOMElement,\u0020Dom\\HTMLDocument\u0020and\nDom\\HTMLElement\u0020alike,\u0020so\u0020every\u0020DOM\u002Dbacked\u0020column\u0020travels\u0020as\u0020gzcompressed,\u0020base64\u0020encoded\u0020markup.",
-            "url": "classes/Flow-ETL-Serializer-DomValueCodec.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Serializer\\DomValueCodec\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Serializer-DomValueCodec.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Serializer\\DomValueCodec\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Serializer-DomValueCodec.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Serializer\\DomValueCodec\u003A\u003Ahandles\u0028\u0029",
-            "name": "handles",
-            "summary": "",
-            "url": "classes/Flow-ETL-Serializer-DomValueCodec.html#method_handles"
         },                {
             "fqsen": "\\Flow\\ETL\\Sink\\Branched",
             "name": "Branched",
@@ -19621,6 +21821,66 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Sink.html#method_write"
         },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort",
+            "name": "ExternalSort",
+            "summary": "Sorts\u0020in\u0020memory\u0020while\u0020the\u0020process\u0020stays\u0020under\u0020the\u0020memory\u0020limit\u003B\u0020past\u0020it,\u0020sorted\u0020runs\u0020are\u0020spilled\u0020and\nblock\u002Dmerged.\u0020With\u0020a\u0020limit,\u0020only\u0020the\u0020first\u0020\u0024limit\u0020rows\u0020are\u0020produced\u0020\u002D\u0020every\u0020run\u0020and\u0020every\u0020merge\u0020stops\u0020there.",
+            "url": "classes/Flow-ETL-Sort-ExternalSort.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\u003A\u003Asort\u0028\u0029",
+            "name": "sort",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort.html#method_sort"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\u003A\u003AfirstRows\u0028\u0029",
+            "name": "firstRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort.html#method_firstRows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\u003A\u003Areduce\u0028\u0029",
+            "name": "reduce",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort.html#method_reduce"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\u003A\u003Asorted\u0028\u0029",
+            "name": "sorted",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort.html#method_sorted"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\u003A\u003A\u0024spill",
+            "name": "spill",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort.html#property_spill"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\u003A\u003A\u0024refs",
+            "name": "refs",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort.html#property_refs"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\u003A\u003A\u0024merge",
+            "name": "merge",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort.html#property_merge"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\u003A\u003A\u0024memoryLimit",
+            "name": "memoryLimit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort.html#property_memoryLimit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\u003A\u003A\u0024mergeFanIn",
+            "name": "mergeFanIn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort.html#property_mergeFanIn"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\ExternalSort\u003A\u003A\u0024batchSize",
+            "name": "batchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-ExternalSort.html#property_batchSize"
+        },                {
             "fqsen": "\\Flow\\ETL\\Sort\\Merge\\BucketCursor",
             "name": "BucketCursor",
             "summary": "",
@@ -19631,15 +21891,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Sort-Merge-BucketCursor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\BucketCursor\u003A\u003Acurrent\u0028\u0029",
-            "name": "current",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\BucketCursor\u003A\u003Aadvance\u0028\u0029",
+            "name": "advance",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_current"
+            "url": "classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_advance"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\BucketCursor\u003A\u003Anext\u0028\u0029",
-            "name": "next",
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\BucketCursor\u003A\u003Abatch\u0028\u0029",
+            "name": "batch",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_next"
+            "url": "classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_batch"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\BucketCursor\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_index"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\BucketCursor\u003A\u003Akeys\u0028\u0029",
+            "name": "keys",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_keys"
         },                {
             "fqsen": "\\Flow\\ETL\\Sort\\Merge\\BucketCursor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
@@ -19650,31 +21920,6 @@ Search.appendIndex(
             "name": "valid",
             "summary": "",
             "url": "classes/Flow-ETL-Sort-Merge-BucketCursor.html#method_valid"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\ComparableBucketRow",
-            "name": "ComparableBucketRow",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-Merge-ComparableBucketRow.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\ComparableBucketRow\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-Merge-ComparableBucketRow.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\ComparableBucketRow\u003A\u003A\u0024values",
-            "name": "values",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-Merge-ComparableBucketRow.html#property_values"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\ComparableBucketRow\u003A\u003A\u0024row",
-            "name": "row",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-Merge-ComparableBucketRow.html#property_row"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\ComparableBucketRow\u003A\u003A\u0024bucketId",
-            "name": "bucketId",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-Merge-ComparableBucketRow.html#property_bucketId"
         },                {
             "fqsen": "\\Flow\\ETL\\Sort\\Merge\\KWayMerge",
             "name": "KWayMerge",
@@ -19688,28 +21933,73 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Sort\\Merge\\KWayMerge\u003A\u003Amerge\u0028\u0029",
             "name": "merge",
-            "summary": "",
+            "summary": "Merges\u0020block\u0020by\u0020block\u003A\u0020every\u0020loaded\u0020row\u0020that\u0020sorts\u0020at\u0020or\u0020before\u0020the\u0020smallest\u0020last\u0020loaded\u0020row\u0020\u0028the\u0020frontier\u0029\u0020is\nfinal,\u0020because\u0020a\u0020run\u0027s\u0020unloaded\u0020rows\u0020sort\u0020after\u0020its\u0020loaded\u0020ones.\u0020Ties\u0020sort\u0020by\u0020run,\u0020then\u0020by\u0020position,\u0020so\u0020equal\nrows\u0020keep\u0020their\u0020input\u0020order.",
             "url": "classes/Flow-ETL-Sort-Merge-KWayMerge.html#method_merge"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\RowsMinHeap",
-            "name": "RowsMinHeap",
-            "summary": "",
-            "url": "classes/Flow-ETL-Sort-Merge-RowsMinHeap.html"
+            "fqsen": "\\Flow\\ETL\\Sort\\RowOrder",
+            "name": "RowOrder",
+            "summary": "The\u0020one\u0020row\u0020order\u0020of\u0020sortBy,\u0020the\u0020external\u0020merge\u0020and\u0020every\u0020check\u0020of\u0020sortedness\u003A\u0020nulls\u0020are\u0020the\u0020smallest\u0020value\n\u0028first\u0020ascending,\u0020last\u0020descending\u0029\u0020unless\u0020a\u0020reference\u0020places\u0020them\u0020at\u0020the\u0020other\u0020end,\u0020NaN\u0020the\u0020largest\u0020and\u0020equal\u0020to\nitself,\u0020\u002D0.0\u0020equals\u00200.0,\u0020strings\u0020compare\u0020by\u0020bytes,\nnumbers,\u0020datetimes,\u0020dates\u0020and\u0020times\u0020by\u0020value,\u0020false\u0020before\u0020true.\u0020Descending\u0020is\u0020the\u0020exact\u0020reverse\u0020of\u0020ascending\u003B\u0020rows\nequal\u0020on\u0020every\u0020key\u0020keep\u0020their\u0020input\u0020order.",
+            "url": "classes/Flow-ETL-Sort-RowOrder.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\RowsMinHeap\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Sort\\RowOrder\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-Merge-RowsMinHeap.html#method___construct"
+            "url": "classes/Flow-ETL-Sort-RowOrder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\RowsMinHeap\u003A\u003A__debugInfo\u0028\u0029",
-            "name": "__debugInfo",
+            "fqsen": "\\Flow\\ETL\\Sort\\RowOrder\u003A\u003Acompare\u0028\u0029",
+            "name": "compare",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-Merge-RowsMinHeap.html#method___debugInfo"
+            "url": "classes/Flow-ETL-Sort-RowOrder.html#method_compare"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\Merge\\RowsMinHeap\u003A\u003Apush\u0028\u0029",
-            "name": "push",
+            "fqsen": "\\Flow\\ETL\\Sort\\RowOrder\u003A\u003AfirstAfter\u0028\u0029",
+            "name": "firstAfter",
+            "summary": "The\u0020first\u0020row\u0020in\u0020\u005B\u0024from,\u0020\u0024count\u0029\u0020of\u0020a\u0020batch\u0020sorted\u0020in\u0020this\u0020order\u0020that\u0020sorts\u0020after\u0020row\u0020\u0024boundIndex\u0020of\u0020\u0024bound\u0020\u002D\nor\u0020at\u0020or\u0020after\u0020it\u0020when\u0020rows\u0020equal\u0020to\u0020the\u0020bound\u0020are\u0020excluded.",
+            "url": "classes/Flow-ETL-Sort-RowOrder.html#method_firstAfter"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\RowOrder\u003A\u003Akeys\u0028\u0029",
+            "name": "keys",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-Merge-RowsMinHeap.html#method_push"
+            "url": "classes/Flow-ETL-Sort-RowOrder.html#method_keys"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\RowOrder\u003A\u003Aflag\u0028\u0029",
+            "name": "flag",
+            "summary": "The\u0020sort\u0028\u0029\u0020flag\u0020of\u0020this\u0020order\u0020for\u0020non\u002Dnull\u0020values\u0020of\u0020\u0024type\u003A\u0020strings\u0020by\u0020bytes,\u0020numbers,\u0020datetimes,\u0020dates,\u0020times\nand\u0020bools\u0020by\u0020their\u0020physical\u0020form.",
+            "url": "classes/Flow-ETL-Sort-RowOrder.html#method_flag"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\RowOrder\u003A\u003Apermutation\u0028\u0029",
+            "name": "permutation",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-RowOrder.html#method_permutation"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\SortKey",
+            "name": "SortKey",
+            "summary": "One\u0020reference\u0027s\u0020sort\u0020key\u0020over\u0020a\u0020batch\u003A\u0020a\u0020rank\u0020per\u0020row\u0020\u00280\u0020null,\u00201\u0020value,\u00202\u0020NaN\u0029\u0020and\u0020the\u0020value\u0020it\u0020orders\u0020by\u0020within\nrank\u00201,\u0020compared\u0020with\u0020\u0024flag\u0020\u0028SORT_NUMERIC,\u0020SORT_STRING\u0020or\u0020SORT_REGULAR\u0029.",
+            "url": "classes/Flow-ETL-Sort-SortKey.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\SortKey\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-SortKey.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\SortKey\u003A\u003A\u0024ranks",
+            "name": "ranks",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-SortKey.html#property_ranks"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\SortKey\u003A\u003A\u0024values",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-SortKey.html#property_values"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\SortKey\u003A\u003A\u0024flag",
+            "name": "flag",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-SortKey.html#property_flag"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\SortKey\u003A\u003A\u0024descending",
+            "name": "descending",
+            "summary": "",
+            "url": "classes/Flow-ETL-Sort-SortKey.html#property_descending"
         },                {
             "fqsen": "\\Flow\\ETL\\Sort\\SortSteps",
             "name": "SortSteps",
@@ -19721,15 +22011,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Sort-SortSteps.html#method_of"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ValuesSorter",
-            "name": "ValuesSorter",
-            "summary": "Sorts\u0020a\u0020column\u0020of\u0020extracted\u0020values\u0020preserving\u0020keys.\u0020Homogeneous\u0020columns\u0020are\u0020detected\u0020once\u0020and\nsorted\u0020by\u0020the\u0020engine\u0020without\u0020any\u0020userland\u0020comparator\u0020\u002D\u0020a\u0020per\u002Dpair\u0020comparison\u0020callback\u0020is\u0020orders\nof\u0020magnitude\u0020slower\u0020than\u0020asort\u0028\u0029\/arsort\u0028\u0029.\u0020Mixed\u0020columns\u0020fall\u0020back\u0020to\u0020the\u0020pairwise\u0020comparator.",
-            "url": "classes/Flow-ETL-Sort-ValuesSorter.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\ValuesSorter\u003A\u003Asort\u0028\u0029",
-            "name": "sort",
+            "fqsen": "\\Flow\\ETL\\Sort\\SortSteps\u003A\u003Aexternal\u0028\u0029",
+            "name": "external",
             "summary": "",
-            "url": "classes/Flow-ETL-Sort-ValuesSorter.html#method_sort"
+            "url": "classes/Flow-ETL-Sort-SortSteps.html#method_external"
         },                {
             "fqsen": "\\Flow\\ETL\\String\\StringStyles",
             "name": "StringStyles",
@@ -20056,10 +22341,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-DerivedColumns.html#method_declare"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\DerivedColumns\u003A\u003Avalue\u0028\u0029",
-            "name": "value",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-DerivedColumns.html#method_value"
+            "fqsen": "\\Flow\\ETL\\Transformer\\DerivedColumns\u003A\u003Astored\u0028\u0029",
+            "name": "stored",
+            "summary": "The\u0020function\u0027s\u0020column\u0020as\u0020the\u0020stored\u0020derived\u0020column\u003A\u0020NOT\u0020NULL\u0020enforced\u0020here\u0020\u0028intermediates\u0020are\u0020nullable\u0029,\u0020the\nsame\u0020type\u0020adopted\u0020into\u0020the\u0020configured\u0020backend,\u0020any\u0020other\u0020type\u0020rebuilt\u0020through\u0020it.",
+            "url": "classes/Flow-ETL-Transformer-DerivedColumns.html#method_stored"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\DerivedColumns\u003A\u003Arows\u0028\u0029",
             "name": "rows",
@@ -20433,7 +22718,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\SerializedPayloadDecoder",
             "name": "SerializedPayloadDecoder",
-            "summary": "A\u0020payload\u0020that\u0020does\u0020not\u0020decode\u0020still\u0020has\u0020to\u0020produce\u0020the\u0020declared\u0020shape,\u0020so\u0020every\u0020branch\u0020that\u0020gives\nup\u0020answers\u0020with\u0020the\u0020declared\u0020columns\u0020as\u0020nulls\u0020\u002D\u0020the\u0020rule\u0020from_json\u0020follows.",
+            "summary": "",
             "url": "classes/Flow-ETL-Transformer-SerializedPayloadDecoder.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\SerializedPayloadDecoder\u003A\u003Aof\u0028\u0029",
@@ -20716,10 +23001,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Window-PeerComparator.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Window\\PeerComparator\u003A\u003AarePeers\u0028\u0029",
-            "name": "arePeers",
+            "fqsen": "\\Flow\\ETL\\Window\\PeerComparator\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "NaN\u0020is\u0020equal\u0020to\u0020itself\u0020here\u003A\u0020the\u0020sort\u0020order\u0020puts\u0020it\u0020after\u0020every\u0020value.",
+            "url": "classes/Flow-ETL-Window-PeerComparator.html#method_equal"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\PeerComparator\u003A\u003ApeersOfPrevious\u0028\u0029",
+            "name": "peersOfPrevious",
             "summary": "",
-            "url": "classes/Flow-ETL-Window-PeerComparator.html#method_arePeers"
+            "url": "classes/Flow-ETL-Window-PeerComparator.html#method_peersOfPrevious"
         },                {
             "fqsen": "\\Flow\\ETL\\Window\\PeerFrame",
             "name": "PeerFrame",
@@ -20735,6 +23025,11 @@ Search.appendIndex(
             "name": "bounds",
             "summary": "Inclusive\u0020indexes\u0020into\u0020the\u0020sorted\u0020partition.",
             "url": "classes/Flow-ETL-Window-PeerFrame.html#method_bounds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Window\\PeerFrame\u003A\u003Aends\u0028\u0029",
+            "name": "ends",
+            "summary": "",
+            "url": "classes/Flow-ETL-Window-PeerFrame.html#method_ends"
         },                {
             "fqsen": "\\Flow\\ETL\\Window\\RowsFrame",
             "name": "RowsFrame",
@@ -20790,11 +23085,6 @@ Search.appendIndex(
             "name": "partition",
             "summary": "",
             "url": "classes/Flow-ETL-Window-WindowContext.html#method_partition"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Window\\WindowContext\u003A\u003Arow\u0028\u0029",
-            "name": "row",
-            "summary": "",
-            "url": "classes/Flow-ETL-Window-WindowContext.html#method_row"
         },                {
             "fqsen": "\\Flow\\ETL\\Window\\WindowFrame",
             "name": "WindowFrame",
@@ -20888,7 +23178,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Floe\\Codec",
             "name": "Codec",
-            "summary": "Compression\u0020codec\u0020contract\u0020for\u0020ROW\u0020frame\u0020bodies.\u0020Only\u0020the\u0020no\u002Dop\u0020codec\u0020\u0028id\u00200x00\u0029\nis\u0020supported\u003B\u0020the\u0020codec\u0020id\u0020is\u0020stamped\u0020into\u0020the\u0020header\u0020flags\u0020byte.",
+            "summary": "Compression\u0020codec\u0020contract,\u0020applied\u0020per\u0020buffer\u0020of\u0020a\u0020BATCH\u0020frame\u0020\u0028behind\u0020an\u0020i64\u0020uncompressed\u002Dlength\u0020prefix,\u0020\u002D1\u0020\u003D\nstored\u0020raw\u0029.\u0020Only\u0020the\u0020no\u002Dop\u0020codec\u0020\u0028id\u00200x00\u0029\u0020is\u0020supported\u003B\u0020the\u0020codec\u0020id\u0020is\u0020stamped\u0020into\u0020the\u0020header\u0020flags\u0020byte.",
             "url": "classes/Flow-Floe-Codec.html"
         },                {
             "fqsen": "\\Flow\\Floe\\Codec\u003A\u003Adecode\u0028\u0029",
@@ -20905,296 +23195,6 @@ Search.appendIndex(
             "name": "id",
             "summary": "",
             "url": "classes/Flow-Floe-Codec.html#method_id"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ColumnBlueprint",
-            "name": "ColumnBlueprint",
-            "summary": "",
-            "url": "classes/Flow-Floe-ColumnBlueprint.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-ColumnBlueprint.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A\u0024name",
-            "name": "name",
-            "summary": "",
-            "url": "classes/Flow-Floe-ColumnBlueprint.html#property_name"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A\u0024definition",
-            "name": "definition",
-            "summary": "",
-            "url": "classes/Flow-Floe-ColumnBlueprint.html#property_definition"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ColumnBlueprint\u003A\u003A\u0024decoder",
-            "name": "decoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-ColumnBlueprint.html#property_decoder"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\BooleanDecoder",
-            "name": "BooleanDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-BooleanDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\BooleanDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-BooleanDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\DateTimeDecoder",
-            "name": "DateTimeDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-DateTimeDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\DateTimeDecoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-DateTimeDecoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\DateTimeDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-DateTimeDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\EnumDecoder",
-            "name": "EnumDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-EnumDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\EnumDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-EnumDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\Float64Decoder",
-            "name": "Float64Decoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-Float64Decoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\Float64Decoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-Float64Decoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\HtmlDocumentDecoder",
-            "name": "HtmlDocumentDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-HtmlDocumentDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\HtmlDocumentDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-HtmlDocumentDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\HtmlElementDecoder",
-            "name": "HtmlElementDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-HtmlElementDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\HtmlElementDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-HtmlElementDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\Int64Decoder",
-            "name": "Int64Decoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-Int64Decoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\Int64Decoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-Int64Decoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\IntervalDecoder",
-            "name": "IntervalDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-IntervalDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\IntervalDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-IntervalDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\JsonDecoder",
-            "name": "JsonDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-JsonDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\JsonDecoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-JsonDecoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\JsonDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-JsonDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\ListDecoder",
-            "name": "ListDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-ListDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\ListDecoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-ListDecoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\ListDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-ListDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\MapDecoder",
-            "name": "MapDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-MapDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\MapDecoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-MapDecoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\MapDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-MapDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\NullDecoder",
-            "name": "NullDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-NullDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\NullDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-NullDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\OptionalDecoder",
-            "name": "OptionalDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-OptionalDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\OptionalDecoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-OptionalDecoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\OptionalDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-OptionalDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\PackedListDecoder",
-            "name": "PackedListDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-PackedListDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\PackedListDecoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-PackedListDecoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\PackedListDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-PackedListDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\StringDecoder",
-            "name": "StringDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-StringDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\StringDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-StringDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\StructureDecoder",
-            "name": "StructureDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-StructureDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\StructureDecoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-StructureDecoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\StructureDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-StructureDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\TimeZoneDecoder",
-            "name": "TimeZoneDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-TimeZoneDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\TimeZoneDecoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-TimeZoneDecoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\TimeZoneDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-TimeZoneDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\TimeZones",
-            "name": "TimeZones",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-TimeZones.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\TimeZones\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-TimeZones.html#method_get"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\UuidDecoder",
-            "name": "UuidDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-UuidDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\UuidDecoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-UuidDecoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\UuidDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-UuidDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\ValueDecoder",
-            "name": "ValueDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-ValueDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\ValueDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-ValueDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\XmlDocumentDecoder",
-            "name": "XmlDocumentDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-XmlDocumentDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\XmlDocumentDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-XmlDocumentDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\XmlElementDecoder",
-            "name": "XmlElementDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-XmlElementDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Decoding\\XmlElementDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Decoding-XmlElementDecoder.html#method_decode"
         },                {
             "fqsen": "\\Flow\\Floe\\DSL\\from_floe\u0028\u0029",
             "name": "from_floe",
@@ -21216,300 +23216,20 @@ Search.appendIndex(
             "summary": "Merges\u0020several\u0020Floe\u0020files\u0020\u0028same\u0020or\u0020append\u002Dcompatible\u0020evolving\u0020schema\u0029\u0020into\u0020one.\u0020Byte\u002Dsplices\u0020frame\nregions\u0020by\u0020default\u0020\u0028O\u0028bytes\u0029,\u0020no\u0020re\u002Dencode\u0029\u003B\u0020compact\u0020re\u002Dencodes\u0020all\u0020rows\u0020into\u0020fewer\u0020sections.",
             "url": "namespaces/flow-floe-dsl.html#function_merge_floe"
         },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\BooleanEncoder",
-            "name": "BooleanEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-BooleanEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\BooleanEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-BooleanEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\DateTimeEncoder",
-            "name": "DateTimeEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-DateTimeEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\DateTimeEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-DateTimeEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\EnumEncoder",
-            "name": "EnumEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-EnumEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\EnumEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-EnumEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\Float64Encoder",
-            "name": "Float64Encoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-Float64Encoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\Float64Encoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-Float64Encoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\HtmlDocumentEncoder",
-            "name": "HtmlDocumentEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-HtmlDocumentEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\HtmlDocumentEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-HtmlDocumentEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\HtmlElementEncoder",
-            "name": "HtmlElementEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-HtmlElementEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\HtmlElementEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-HtmlElementEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\Int64Encoder",
-            "name": "Int64Encoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-Int64Encoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\Int64Encoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-Int64Encoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\IntervalEncoder",
-            "name": "IntervalEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-IntervalEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\IntervalEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-IntervalEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\JsonEncoder",
-            "name": "JsonEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-JsonEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\JsonEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-JsonEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\ListEncoder",
-            "name": "ListEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-ListEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\ListEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-ListEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\ListEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-ListEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\MapEncoder",
-            "name": "MapEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-MapEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\MapEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-MapEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\MapEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-MapEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\NullEncoder",
-            "name": "NullEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-NullEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\NullEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-NullEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\OptionalEncoder",
-            "name": "OptionalEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-OptionalEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\OptionalEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-OptionalEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\OptionalEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-OptionalEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\PackedListEncoder",
-            "name": "PackedListEncoder",
-            "summary": "Fixed\u002Dwidth\u0020element\u0020lists\u0020\u0028int64\u0020\u0027P\u0027,\u0020float64\u0020\u0027e\u0027\u0029\u0020packed\u0020in\u0020one\u0020call\u0020instead\nof\u0020per\u0020element.",
-            "url": "classes/Flow-Floe-Encoding-PackedListEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\PackedListEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-PackedListEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\PackedListEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-PackedListEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\StringEncoder",
-            "name": "StringEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-StringEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\StringEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-StringEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\StringKeyEncoder",
-            "name": "StringKeyEncoder",
-            "summary": "String\u0020map\u0020keys\u0020\u002D\u0020unlike\u0020StringEncoder\u0020it\u0020casts\u0020first,\u0020because\u0020PHP\u0020turns\nnumeric\u002Dstring\u0020array\u0020keys\u0020into\u0020integers.",
-            "url": "classes/Flow-Floe-Encoding-StringKeyEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\StringKeyEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-StringKeyEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\StructureEncoder",
-            "name": "StructureEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-StructureEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\StructureEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-StructureEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\StructureEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-StructureEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\TimeZoneEncoder",
-            "name": "TimeZoneEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-TimeZoneEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\TimeZoneEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-TimeZoneEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\UuidEncoder",
-            "name": "UuidEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-UuidEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\UuidEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-UuidEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\ValueEncoder",
-            "name": "ValueEncoder",
-            "summary": "Turns\u0020one\u0020PHP\u0020value\u0020into\u0020its\u0020Floe\u0020binary\u0020representation.\u0020Implementations\u0020are\nbuilt\u0020per\u0020column\u0020type\u0020by\u0020the\u0020\u007B\u0040see\u0020\\Flow\\Floe\\ValueEncoder\u007D\u0020factory.",
-            "url": "classes/Flow-Floe-Encoding-ValueEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\ValueEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-ValueEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\XmlDocumentEncoder",
-            "name": "XmlDocumentEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-XmlDocumentEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\XmlDocumentEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-XmlDocumentEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\XmlElementEncoder",
-            "name": "XmlElementEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-XmlElementEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding\\XmlElementEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-Encoding-XmlElementEncoder.html#method_encode"
-        },                {
             "fqsen": "\\Flow\\Floe\\Exception\\FloeException",
             "name": "FloeException",
             "summary": "",
             "url": "classes/Flow-Floe-Exception-FloeException.html"
         },                {
+            "fqsen": "\\Flow\\Floe\\Exception\\FrameTooLarge",
+            "name": "FrameTooLarge",
+            "summary": "",
+            "url": "classes/Flow-Floe-Exception-FrameTooLarge.html"
+        },                {
             "fqsen": "\\Flow\\Floe\\Exception\\IncompatibleSchemaException",
             "name": "IncompatibleSchemaException",
             "summary": "",
             "url": "classes/Flow-Floe-Exception-IncompatibleSchemaException.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeEncoder",
-            "name": "FloeEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeEncoder\u003A\u003AdecodeRows\u0028\u0029",
-            "name": "decodeRows",
-            "summary": "\u0060\u0024hydrator\u002D\u003Ehydrate\u0028\u0024this\u002D\u003Edecode\u0028\u0024bodies\u0029,\u0020\u0024schema\u0029\u0060,\u0020in\u0020one\u0020native\u0020pass\u0020where\u0020the\u0020hydrator\u0020is\u0020native\u0020too.",
-            "url": "classes/Flow-Floe-FloeEncoder.html#method_decodeRows"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeEncoder\u003A\u003AencodeFrames\u0028\u0029",
-            "name": "encodeFrames",
-            "summary": "\u0060Format\u003A\u003ArowFrames\u0028\u0024this\u002D\u003Eencode\u0028\u0024hydrator\u002D\u003Edehydrate\u0028\u0024rows\u0029\u0029\u0029\u0060,\u0020in\u0020one\u0020native\u0020pass\u0020where\u0020the\u0020hydrator\u0020is\u0020native\ntoo\u0020\u002D\u0020complete\u0020ROW\u0020frames\u0020for\u0020a\u0020writer\u0020whose\u0020codec\u0020leaves\u0020bodies\u0020as\u0020they\u0020are.",
-            "url": "classes/Flow-Floe-FloeEncoder.html#method_encodeFrames"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeEngine",
-            "name": "FloeEngine",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeEngine.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeEngine\u003A\u003Aencoder\u0028\u0029",
-            "name": "encoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeEngine.html#method_encoder"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeEngine\u003A\u003Aadaptive",
-            "name": "adaptive",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeEngine.html#enumcase_adaptive"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeEngine\u003A\u003Anative",
-            "name": "native",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeEngine.html#enumcase_native"
-        },                {
-            "fqsen": "\\Flow\\Floe\\FloeEngine\u003A\u003Aphp",
-            "name": "php",
-            "summary": "",
-            "url": "classes/Flow-Floe-FloeEngine.html#enumcase_php"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeExtractor",
             "name": "FloeExtractor",
@@ -21565,6 +23285,61 @@ Search.appendIndex(
             "name": "withSchema",
             "summary": "Declares\u0020the\u0020shape\u0020every\u0020yielded\u0020batch\u0020must\u0020carry.\u0020A\u0020source\u0020that\u0020describes\u0020itself\u0020uses\u0020this\ninstead\u0020of\u0020its\u0020own\u0020description,\u0020and\u0020values\u0020are\u0020cast\u0020to\u0020fit.",
             "url": "classes/Flow-Floe-FloeExtractor.html#method_withSchema"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeFileBatches",
+            "name": "FloeFileBatches",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeFileBatches.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeFileBatches\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeFileBatches.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeFileBatches\u003A\u003Abatches\u0028\u0029",
+            "name": "batches",
+            "summary": "Skips\u0020the\u0020whole\u0020file\u0020when\u0020the\u0020window\u0027s\u0020offset\u0020covers\u0020it\u003B\u0020otherwise\u0020reads\u0020from\u0020the\u0020offset.",
+            "url": "classes/Flow-Floe-FloeFileBatches.html#method_batches"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeFileSink",
+            "name": "FloeFileSink",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeFileSink.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeFileSink\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeFileSink.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeFileSink\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeFileSink.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeFileSink\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeFileSink.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeFileSinks",
+            "name": "FloeFileSinks",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeFileSinks.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeFileSinks\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Floe-FloeFileSinks.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeFileSinks\u003A\u003Aopen\u0028\u0029",
+            "name": "open",
+            "summary": "Opens\u0020the\u0020sink\u0020of\u0020a\u0020stream\u0020the\u0020write\u0020has\u0020not\u0020written\u0020to\u0020yet.",
+            "url": "classes/Flow-Floe-FloeFileSinks.html#method_open"
+        },                {
+            "fqsen": "\\Flow\\Floe\\FloeFileSinks\u003A\u003Awriter\u0028\u0029",
+            "name": "writer",
+            "summary": "The\u0020writer\u0020of\u0020one\u0020stream\u0020under\u0020the\u0020run\u0027s\u0020schema\u0020\u002D\u0020the\u0020declared\u0020one,\u0020or\u0020the\u0020first\u0020written\u0020batch\u0027s.",
+            "url": "classes/Flow-Floe-FloeFileSinks.html#method_writer"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeLoader",
             "name": "FloeLoader",
@@ -21723,7 +23498,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Arows\u0028\u0029",
             "name": "rows",
-            "summary": "Hot\u0020path\u003A\u0020frames\u0020are\u0020walked\u0020in\u002Dbuffer.\u0020offset\u0020skips\u0020whole\u0020leading\u0020sections\nusing\u0020the\u0020footer,\u0020then\u0020the\u0020remaining\u0020rows\u0020inside\u0020the\u0020start\u0020section\u003B\u0020limit\nstops\u0020the\u0020read\u0020after\u0020that\u0020many\u0020rows.",
+            "summary": "Hot\u0020path\u003A\u0020frames\u0020are\u0020walked\u0020in\u002Dbuffer.\u0020offset\u0020skips\u0020whole\u0020leading\u0020sections\nusing\u0020the\u0020footer,\u0020then\u0020the\u0020remaining\u0020rows\u0020inside\u0020the\u0020start\u0020section\u003B\u0020limit\nstops\u0020the\u0020read\u0020after\u0020that\u0020many\u0020rows.\u0020Batches\u0020are\u0020frame\u002Dsized\u003A\u0020batchSize\u0020is\nan\u0020upper\u0020bound,\u0020a\u0020batch\u0020never\u0020spans\u0020two\u0020BATCH\u0020frames.",
             "url": "classes/Flow-Floe-FloeStreamReader.html#method_rows"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeStreamReader\u003A\u003Ahead\u0028\u0029",
@@ -21926,21 +23701,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-Format.html#method_frame"
         },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003ArowFrames\u0028\u0029",
-            "name": "rowFrames",
-            "summary": "",
-            "url": "classes/Flow-Floe-Format.html#method_rowFrames"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AmetadataBytes\u0028\u0029",
-            "name": "metadataBytes",
-            "summary": "",
-            "url": "classes/Flow-Floe-Format.html#method_metadataBytes"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AreadMetadata\u0028\u0029",
-            "name": "readMetadata",
-            "summary": "",
-            "url": "classes/Flow-Floe-Format.html#method_readMetadata"
-        },                {
             "fqsen": "\\Flow\\Floe\\Format\u003A\u003Aheader\u0028\u0029",
             "name": "header",
             "summary": "",
@@ -21991,65 +23751,45 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-Format.html#constant_FRAME_HEADER_LENGTH"
         },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AFRAME_ROW",
-            "name": "FRAME_ROW",
+            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AFRAME_BATCH",
+            "name": "FRAME_BATCH",
             "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_FRAME_ROW"
+            "url": "classes/Flow-Floe-Format.html#constant_FRAME_BATCH"
         },                {
             "fqsen": "\\Flow\\Floe\\Format\u003A\u003AFRAME_FOOTER",
             "name": "FRAME_FOOTER",
             "summary": "",
             "url": "classes/Flow-Floe-Format.html#constant_FRAME_FOOTER"
         },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_NULL",
-            "name": "VALUE_NULL",
+            "fqsen": "\\Flow\\Floe\\FrameDecoder",
+            "name": "FrameDecoder",
             "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_VALUE_NULL"
+            "url": "classes/Flow-Floe-FrameDecoder.html"
         },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_PRESENT",
-            "name": "VALUE_PRESENT",
+            "fqsen": "\\Flow\\Floe\\FrameDecoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_VALUE_PRESENT"
+            "url": "classes/Flow-Floe-FrameDecoder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_NULL_WITH_META",
-            "name": "VALUE_NULL_WITH_META",
+            "fqsen": "\\Flow\\Floe\\FrameDecoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
             "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_VALUE_NULL_WITH_META"
+            "url": "classes/Flow-Floe-FrameDecoder.html#method_decode"
         },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_ABSENT",
-            "name": "VALUE_ABSENT",
+            "fqsen": "\\Flow\\Floe\\FrameEncoder",
+            "name": "FrameEncoder",
             "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_VALUE_ABSENT"
+            "url": "classes/Flow-Floe-FrameEncoder.html"
         },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_PRESENT_WITH_META",
-            "name": "VALUE_PRESENT_WITH_META",
+            "fqsen": "\\Flow\\Floe\\FrameEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_WITH_META"
+            "url": "classes/Flow-Floe-FrameEncoder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_NULL_BYTE",
-            "name": "VALUE_NULL_BYTE",
+            "fqsen": "\\Flow\\Floe\\FrameEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
             "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_VALUE_NULL_BYTE"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_PRESENT_BYTE",
-            "name": "VALUE_PRESENT_BYTE",
-            "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_BYTE"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_NULL_WITH_META_BYTE",
-            "name": "VALUE_NULL_WITH_META_BYTE",
-            "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_VALUE_NULL_WITH_META_BYTE"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_ABSENT_BYTE",
-            "name": "VALUE_ABSENT_BYTE",
-            "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_VALUE_ABSENT_BYTE"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Format\u003A\u003AVALUE_PRESENT_WITH_META_BYTE",
-            "name": "VALUE_PRESENT_WITH_META_BYTE",
-            "summary": "",
-            "url": "classes/Flow-Floe-Format.html#constant_VALUE_PRESENT_WITH_META_BYTE"
+            "url": "classes/Flow-Floe-FrameEncoder.html#method_encode"
         },                {
             "fqsen": "\\Flow\\Floe\\FrameReader",
             "name": "FrameReader",
@@ -22091,10 +23831,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-FrameWriter.html#method_header"
         },                {
-            "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Arow\u0028\u0029",
-            "name": "row",
+            "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Aframe\u0028\u0029",
+            "name": "frame",
             "summary": "",
-            "url": "classes/Flow-Floe-FrameWriter.html#method_row"
+            "url": "classes/Flow-Floe-FrameWriter.html#method_frame"
         },                {
             "fqsen": "\\Flow\\Floe\\FrameWriter\u003A\u003Afooter\u0028\u0029",
             "name": "footer",
@@ -22120,41 +23860,6 @@ Search.appendIndex(
             "name": "close",
             "summary": "",
             "url": "classes/Flow-Floe-FrameWriter.html#method_close"
-        },                {
-            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder",
-            "name": "NativeFloeEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-NativeFloeEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-NativeFloeEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder\u003A\u003AisSupported\u0028\u0029",
-            "name": "isSupported",
-            "summary": "",
-            "url": "classes/Flow-Floe-NativeFloeEncoder.html#method_isSupported"
-        },                {
-            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-NativeFloeEncoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder\u003A\u003AdecodeRows\u0028\u0029",
-            "name": "decodeRows",
-            "summary": "\u0060\u0024hydrator\u002D\u003Ehydrate\u0028\u0024this\u002D\u003Edecode\u0028\u0024bodies\u0029,\u0020\u0024schema\u0029\u0060,\u0020in\u0020one\u0020native\u0020pass\u0020where\u0020the\u0020hydrator\u0020is\u0020native\u0020too.",
-            "url": "classes/Flow-Floe-NativeFloeEncoder.html#method_decodeRows"
-        },                {
-            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder\u003A\u003AencodeFrames\u0028\u0029",
-            "name": "encodeFrames",
-            "summary": "\u0060Format\u003A\u003ArowFrames\u0028\u0024this\u002D\u003Eencode\u0028\u0024hydrator\u002D\u003Edehydrate\u0028\u0024rows\u0029\u0029\u0029\u0060,\u0020in\u0020one\u0020native\u0020pass\u0020where\u0020the\u0020hydrator\u0020is\u0020native\ntoo\u0020\u002D\u0020complete\u0020ROW\u0020frames\u0020for\u0020a\u0020writer\u0020whose\u0020codec\u0020leaves\u0020bodies\u0020as\u0020they\u0020are.",
-            "url": "classes/Flow-Floe-NativeFloeEncoder.html#method_encodeFrames"
-        },                {
-            "fqsen": "\\Flow\\Floe\\NativeFloeEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-NativeFloeEncoder.html#method_encode"
         },                {
             "fqsen": "\\Flow\\Floe\\Options",
             "name": "Options",
@@ -22190,51 +23895,6 @@ Search.appendIndex(
             "name": "codec",
             "summary": "",
             "url": "classes/Flow-Floe-Options.html#property_codec"
-        },                {
-            "fqsen": "\\Flow\\Floe\\PhpFloeEncoder",
-            "name": "PhpFloeEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-PhpFloeEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\PhpFloeEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-PhpFloeEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\PhpFloeEncoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-PhpFloeEncoder.html#method_decode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\PhpFloeEncoder\u003A\u003AdecodeRows\u0028\u0029",
-            "name": "decodeRows",
-            "summary": "\u0060\u0024hydrator\u002D\u003Ehydrate\u0028\u0024this\u002D\u003Edecode\u0028\u0024bodies\u0029,\u0020\u0024schema\u0029\u0060,\u0020in\u0020one\u0020native\u0020pass\u0020where\u0020the\u0020hydrator\u0020is\u0020native\u0020too.",
-            "url": "classes/Flow-Floe-PhpFloeEncoder.html#method_decodeRows"
-        },                {
-            "fqsen": "\\Flow\\Floe\\PhpFloeEncoder\u003A\u003AencodeFrames\u0028\u0029",
-            "name": "encodeFrames",
-            "summary": "\u0060Format\u003A\u003ArowFrames\u0028\u0024this\u002D\u003Eencode\u0028\u0024hydrator\u002D\u003Edehydrate\u0028\u0024rows\u0029\u0029\u0029\u0060,\u0020in\u0020one\u0020native\u0020pass\u0020where\u0020the\u0020hydrator\u0020is\u0020native\ntoo\u0020\u002D\u0020complete\u0020ROW\u0020frames\u0020for\u0020a\u0020writer\u0020whose\u0020codec\u0020leaves\u0020bodies\u0020as\u0020they\u0020are.",
-            "url": "classes/Flow-Floe-PhpFloeEncoder.html#method_encodeFrames"
-        },                {
-            "fqsen": "\\Flow\\Floe\\PhpFloeEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-Floe-PhpFloeEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\Floe\\SchemaDecoder",
-            "name": "SchemaDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-SchemaDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\SchemaDecoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-SchemaDecoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\SchemaDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "",
-            "url": "classes/Flow-Floe-SchemaDecoder.html#method_decode"
         },                {
             "fqsen": "\\Flow\\Floe\\Section",
             "name": "Section",
@@ -22295,76 +23955,6 @@ Search.appendIndex(
             "name": "byteSize",
             "summary": "",
             "url": "classes/Flow-Floe-Statistics.html#property_byteSize"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueDecoder",
-            "name": "ValueDecoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueDecoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueDecoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueDecoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueDecoder\u003A\u003AdecoderFor\u0028\u0029",
-            "name": "decoderFor",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueDecoder.html#method_decoderFor"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueDecoder\u003A\u003AhtmlDocumentFromString\u0028\u0029",
-            "name": "htmlDocumentFromString",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueDecoder.html#method_htmlDocumentFromString"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueDecoder\u003A\u003AhtmlElementFromString\u0028\u0029",
-            "name": "htmlElementFromString",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueDecoder.html#method_htmlElementFromString"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueDecoder\u003A\u003AxmlDocumentFromString\u0028\u0029",
-            "name": "xmlDocumentFromString",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueDecoder.html#method_xmlDocumentFromString"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueDecoder\u003A\u003AxmlElementFromString\u0028\u0029",
-            "name": "xmlElementFromString",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueDecoder.html#method_xmlElementFromString"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueEncoder",
-            "name": "ValueEncoder",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueEncoder\u003A\u003AencoderFor\u0028\u0029",
-            "name": "encoderFor",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueEncoder.html#method_encoderFor"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueEncoder\u003A\u003AlengthPrefixed\u0028\u0029",
-            "name": "lengthPrefixed",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueEncoder.html#method_lengthPrefixed"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueEncoder\u003A\u003AhtmlElementToString\u0028\u0029",
-            "name": "htmlElementToString",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueEncoder.html#method_htmlElementToString"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueEncoder\u003A\u003AxmlDocumentToString\u0028\u0029",
-            "name": "xmlDocumentToString",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueEncoder.html#method_xmlDocumentToString"
-        },                {
-            "fqsen": "\\Flow\\Floe\\ValueEncoder\u003A\u003AxmlElementToString\u0028\u0029",
-            "name": "xmlElementToString",
-            "summary": "",
-            "url": "classes/Flow-Floe-ValueEncoder.html#method_xmlElementToString"
         },                {
             "fqsen": "\\Flow\\Serializer\\Base64Serializer",
             "name": "Base64Serializer",
@@ -22511,6 +24101,26 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-cache-implementation.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Column",
+            "name": "Column",
+            "summary": "",
+            "url": "namespaces/flow-etl-column.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Layout",
+            "name": "Layout",
+            "summary": "",
+            "url": "namespaces/flow-etl-column-layout.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Php",
+            "name": "Php",
+            "summary": "",
+            "url": "namespaces/flow-etl-column-php.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Column\\Physical",
+            "name": "Physical",
+            "summary": "",
+            "url": "namespaces/flow-etl-column-physical.html"
+        },                {
             "fqsen": "\\Flow\\ETL\\Config\\Bucketing",
             "name": "Bucketing",
             "summary": "",
@@ -22606,6 +24216,21 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-extractor.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File",
+            "name": "File",
+            "summary": "",
+            "url": "namespaces/flow-etl-extractor-file.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Grid",
+            "name": "Grid",
+            "summary": "",
+            "url": "namespaces/flow-etl-extractor-grid.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\Memory",
+            "name": "Memory",
+            "summary": "",
+            "url": "namespaces/flow-etl-extractor-memory.html"
+        },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\SequenceGenerator",
             "name": "SequenceGenerator",
             "summary": "",
@@ -22645,6 +24270,11 @@ Search.appendIndex(
             "name": "Between",
             "summary": "",
             "url": "namespaces/flow-etl-function-between.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation",
+            "name": "Evaluation",
+            "summary": "",
+            "url": "namespaces/flow-etl-function-evaluation.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\MatchCases",
             "name": "MatchCases",
@@ -22701,6 +24331,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-loader.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Loader\\File",
+            "name": "File",
+            "summary": "",
+            "url": "namespaces/flow-etl-loader-file.html"
+        },                {
             "fqsen": "\\Flow\\ETL\\Loader\\StreamLoader",
             "name": "StreamLoader",
             "summary": "",
@@ -22756,15 +24391,15 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-row.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Row\\Comparator",
-            "name": "Comparator",
-            "summary": "",
-            "url": "namespaces/flow-etl-row-comparator.html"
-        },                {
             "fqsen": "\\Flow\\ETL\\Row\\Formatter",
             "name": "Formatter",
             "summary": "",
             "url": "namespaces/flow-etl-row-formatter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Rows",
+            "name": "Rows",
+            "summary": "",
+            "url": "namespaces/flow-etl-rows.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition",
             "name": "Definition",
@@ -22806,25 +24441,20 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-schema-validator.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Serializer",
-            "name": "Serializer",
-            "summary": "",
-            "url": "namespaces/flow-etl-serializer.html"
-        },                {
             "fqsen": "\\Flow\\ETL\\Sink",
             "name": "Sink",
             "summary": "",
             "url": "namespaces/flow-etl-sink.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Sort\\Merge",
-            "name": "Merge",
-            "summary": "",
-            "url": "namespaces/flow-etl-sort-merge.html"
-        },                {
             "fqsen": "\\Flow\\ETL\\Sort",
             "name": "Sort",
             "summary": "",
             "url": "namespaces/flow-etl-sort.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Sort\\Merge",
+            "name": "Merge",
+            "summary": "",
+            "url": "namespaces/flow-etl-sort-merge.html"
         },                {
             "fqsen": "\\Flow\\ETL\\String",
             "name": "String",
@@ -22876,20 +24506,10 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-floe.html"
         },                {
-            "fqsen": "\\Flow\\Floe\\Decoding",
-            "name": "Decoding",
-            "summary": "",
-            "url": "namespaces/flow-floe-decoding.html"
-        },                {
             "fqsen": "\\Flow\\Floe\\DSL",
             "name": "DSL",
             "summary": "",
             "url": "namespaces/flow-floe-dsl.html"
-        },                {
-            "fqsen": "\\Flow\\Floe\\Encoding",
-            "name": "Encoding",
-            "summary": "",
-            "url": "namespaces/flow-floe-encoding.html"
         },                {
             "fqsen": "\\Flow\\Floe\\Exception",
             "name": "Exception",

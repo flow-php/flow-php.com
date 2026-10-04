@@ -126,25 +126,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Http-DynamicExtractor-NextRequestFactory.html#method_create"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpEncoder",
-            "name": "HttpEncoder",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpDecoder",
+            "name": "HttpDecoder",
             "summary": "A\u0020row\u0020carries\u0020the\u0020body\u0020as\u0020raw\u0020text,\u0020so\u0020response_body\u0020holds\u0020one\u0020type\u0020whatever\u0020the\u0020content\u0020type\u0020is.",
-            "url": "classes/Flow-ETL-Adapter-Http-HttpEncoder.html"
+            "url": "classes/Flow-ETL-Adapter-Http-HttpDecoder.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpEncoder\u003A\u003Adecode\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpDecoder\u003A\u003Adecode\u0028\u0029",
             "name": "decode",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-HttpEncoder.html#method_decode"
+            "url": "classes/Flow-ETL-Adapter-Http-HttpDecoder.html#method_decode"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-HttpEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpEncoder\u003A\u003AstructuredBody\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpDecoder\u003A\u003AstructuredBody\u0028\u0029",
             "name": "structuredBody",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-HttpEncoder.html#method_structuredBody"
+            "url": "classes/Flow-ETL-Adapter-Http-HttpDecoder.html#method_structuredBody"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpExchange",
             "name": "HttpExchange",

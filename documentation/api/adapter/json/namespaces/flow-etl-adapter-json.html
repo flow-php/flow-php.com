@@ -106,6 +106,13 @@
 
         
 
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="namespaces/flow-etl-adapter-json.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Adapter-JSON-JsonEncoder.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonEncoder">JsonEncoder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Adapter-JSON-JsonOpenSource.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonOpenSource">JsonOpenSource</abbr></a></dt>    </dl>
 
     <h4 id="toc-classes">
         Classes
@@ -113,7 +120,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-JsonDocuments.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonDocuments">JsonDocuments</abbr></a></dt><dd>The per-file write counts live here, not on the sink: the separator decision belongs to the run.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-JSONEncoder.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONEncoder">JSONEncoder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-JsonLinesLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLinesLoader">JsonLinesLoader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLoader">JsonLoader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-SchemaConverter.html"><abbr title="\Flow\ETL\Adapter\JSON\SchemaConverter">SchemaConverter</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-AdaptiveJsonEncoder.html"><abbr title="\Flow\ETL\Adapter\JSON\AdaptiveJsonEncoder">AdaptiveJsonEncoder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-AdaptiveJsonOpenSource.html"><abbr title="\Flow\ETL\Adapter\JSON\AdaptiveJsonOpenSource">AdaptiveJsonOpenSource</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLoader">JsonLoader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-JsonOpenSink.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonOpenSink">JsonOpenSink</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-PhpJsonEncoder.html"><abbr title="\Flow\ETL\Adapter\JSON\PhpJsonEncoder">PhpJsonEncoder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-PhpJsonOpenSource.html"><abbr title="\Flow\ETL\Adapter\JSON\PhpJsonOpenSource">PhpJsonOpenSource</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-SchemaConverter.html"><abbr title="\Flow\ETL\Adapter\JSON\SchemaConverter">SchemaConverter</abbr></a></dt>    </dl>
 
     <h4 id="namespaces">
         Namespaces
@@ -126,6 +133,13 @@
             </dl>
 
 
+    <h4 id="toc-enums">
+        Enums
+        <a href="namespaces/flow-etl-adapter-json.html#toc-enums" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-ETL-Adapter-JSON-JsonFraming.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonFraming">JsonFraming</abbr></a></dt></dl>
 
 
 
@@ -230,7 +244,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_json_lines</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonLinesExtractor.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonLinesExtractor">JsonLinesExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_json_lines</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonExtractor.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonExtractor">JsonExtractor</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -259,7 +273,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonLinesExtractor.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonLinesExtractor">JsonLinesExtractor</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JSONMachine-JsonExtractor.html"><abbr title="\Flow\ETL\Adapter\JSON\JSONMachine\JsonExtractor">JsonExtractor</abbr></a></span>
             </section>
 
 </article>
@@ -360,7 +374,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">to_json_lines</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JsonLinesLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLinesLoader">JsonLinesLoader</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">to_json_lines</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLoader">JsonLoader</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -385,7 +399,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JsonLinesLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLinesLoader">JsonLinesLoader</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-JSON-JsonLoader.html"><abbr title="\Flow\ETL\Adapter\JSON\JsonLoader">JsonLoader</abbr></a></span>
             </section>
 
 </article>
@@ -521,7 +535,9 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="namespaces/flow-etl-adapter-json.html#toc-classes">Classes</a></li>
-                                                                                                        <li><a href="namespaces/flow-etl-adapter-json.html#toc-functions">Functions</a></li>
+                                                                <li><a href="namespaces/flow-etl-adapter-json.html#toc-interfaces">Interfaces</a></li>
+                                                                <li><a href="namespaces/flow-etl-adapter-json.html#toc-enums">Enums</a></li>
+                                                                <li><a href="namespaces/flow-etl-adapter-json.html#toc-functions">Functions</a></li>
                                                                                                 </ul>
             </li>
 

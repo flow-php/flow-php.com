@@ -181,6 +181,12 @@ with equal keys may come in another order than an external sort leaves them.</p>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Processor-TopNProcessor.html#property_fallback">$fallback</a>
+    <span>
+                        &nbsp;: <a href="classes/Flow-ETL-Sort-ExternalSort.html"><abbr title="\Flow\ETL\Sort\ExternalSort">ExternalSort</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-ETL-Processor-TopNProcessor.html#property_limit">$limit</a>
     <span>
                         &nbsp;: int            </span>
@@ -213,6 +219,12 @@ with equal keys may come in another order than an external sort leaves them.</p>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Processor-TopNProcessor.html#method_followedBy">followedBy()</a>
+    <span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Processor-TopNProcessor.html#method_process">process()</a>
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;    </span>
@@ -222,7 +234,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Processor-TopNProcessor.html#method_top">top()</a>
     <span>
-                                &nbsp;: array&lt;string|int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>    </span>
 </dt>
 
     </dl>
@@ -238,6 +250,43 @@ with equal keys may come in another order than an external sort leaves them.</p>
             <a href="classes/Flow-ETL-Processor-TopNProcessor.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_fallback">
+        $fallback
+        <a href="classes/Flow-ETL-Processor-TopNProcessor.html#property_fallback" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">33</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Sort-ExternalSort.html"><abbr title="\Flow\ETL\Sort\ExternalSort">ExternalSort</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$fallback</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
                     <article
         class="
             phpdocumentor-element
@@ -341,7 +390,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-References.html"><abbr title="\Flow\ETL\Row\References">References</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refs</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$declared</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-References.html"><abbr title="\Flow\ETL\Row\References">References</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refs</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Sort-ExternalSort.html"><abbr title="\Flow\ETL\Sort\ExternalSort">ExternalSort</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fallback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$declared</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -360,6 +409,13 @@ with equal keys may come in another order than an external sort leaves them.</p>
                 <span class="phpdocumentor-argument-list__argument__name">$limit</span>
                 : <span class="phpdocumentor-argument-list__argument__type">int</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$fallback</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Sort-ExternalSort.html"><abbr title="\Flow\ETL\Sort\ExternalSort">ExternalSort</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -406,7 +462,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -446,6 +502,61 @@ with equal keys may come in another order than an external sort leaves them.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_followedBy">
+        followedBy()
+        <a href="classes/Flow-ETL-Processor-TopNProcessor.html#method_followedBy" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">94</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">followedBy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kept</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rest</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$kept</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$rest</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_process">
         process()
         <a href="classes/Flow-ETL-Processor-TopNProcessor.html#method_process" class="headerlink"><i class="fas fa-link"></i></a>
@@ -454,7 +565,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -510,14 +621,14 @@ with equal keys may come in another order than an external sort leaves them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">top</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">top</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -527,14 +638,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$rows</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>|null</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -547,7 +651,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-ETL-Row.html"><abbr title="\Flow\ETL\Row">Row</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a></span>
             </section>
 
 </article>
@@ -573,6 +677,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-ETL-Processor-TopNProcessor.html#property_fallback">$fallback</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Processor-TopNProcessor.html#property_limit">$limit</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Processor-TopNProcessor.html#property_refs">$refs</a></li>
                                             </ul>
@@ -583,6 +688,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Processor-TopNProcessor.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Processor-TopNProcessor.html#method_bind">bind()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Processor-TopNProcessor.html#method_followedBy">followedBy()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Processor-TopNProcessor.html#method_process">process()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Processor-TopNProcessor.html#method_top">top()</a></li>
                                     </ul>

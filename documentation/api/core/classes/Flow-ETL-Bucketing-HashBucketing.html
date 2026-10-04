@@ -127,9 +127,6 @@
 
     
     
-            <span class="phpdocumentor-element__implements">
-            implements
-                            <a href="classes/Flow-ETL-Bucketing-BucketingStrategy.html"><abbr title="\Flow\ETL\Bucketing\BucketingStrategy">BucketingStrategy</abbr></a>                    </span>
     
     </h2>
 
@@ -143,7 +140,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/HashBucketing.php"><a href="files/src-core-etl-src-flow-etl-bucketing-hashbucketing.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/HashBucketing.php">HashBucketing.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -155,13 +152,6 @@
     
     
 
-    <h4 id="toc-interfaces">
-        Interfaces
-        <a href="classes/Flow-ETL-Bucketing-HashBucketing.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Bucketing-BucketingStrategy.html"><abbr title="\Flow\ETL\Bucketing\BucketingStrategy">BucketingStrategy</abbr></a></dt>    </dl>
 
 
 
@@ -187,8 +177,19 @@
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Bucketing-Bucket.html"><abbr title="\Flow\ETL\Bucketing\Bucket">Bucket</abbr></a>&gt;    </span>
 </dt>
-<dd>Consumes the row stream, spills bucket data into the storage and yields each Bucket
-once it is complete - the strategy alone decides when and how buckets are stored.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Bucketing-HashBucketing.html#method_index">index()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Bucketing-HashBucketing.html#method_indexOf">indexOf()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>The bucket a row with these key values lands in.</dd>
 
     </dl>
 
@@ -218,7 +219,7 @@ once it is complete - the strategy alone decides when and how buckets are stored
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/HashBucketing.php"><a href="files/src-core-etl-src-flow-etl-bucketing-hashbucketing.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/HashBucketing.php">HashBucketing.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -290,13 +291,11 @@ once it is complete - the strategy alone decides when and how buckets are stored
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/HashBucketing.php"><a href="files/src-core-etl-src-flow-etl-bucketing-hashbucketing.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/HashBucketing.php">HashBucketing.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Consumes the row stream, spills bucket data into the storage and yields each Bucket
-once it is complete - the strategy alone decides when and how buckets are stored.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">bucketize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Rows.html"><abbr title="\Flow\ETL\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Bucketing-BucketsStorage.html"><abbr title="\Flow\ETL\Bucketing\BucketsStorage">BucketsStorage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$storage</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Bucketing-Bucket.html"><abbr title="\Flow\ETL\Bucketing\Bucket">Bucket</abbr></a>&gt;</span></code>
@@ -333,6 +332,105 @@ once it is complete - the strategy alone decides when and how buckets are stored
             </section>
 
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_index">
+        index()
+        <a href="classes/Flow-ETL-Bucketing-HashBucketing.html#method_index" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/HashBucketing.php"><a href="files/src-core-etl-src-flow-etl-bucketing-hashbucketing.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/HashBucketing.php">HashBucketing.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">index</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hash</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$hash</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_indexOf">
+        indexOf()
+        <a href="classes/Flow-ETL-Bucketing-HashBucketing.html#method_indexOf" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Bucketing/HashBucketing.php"><a href="files/src-core-etl-src-flow-etl-bucketing-hashbucketing.html"><abbr title="src/core/etl/src/Flow/ETL/Bucketing/HashBucketing.php">HashBucketing.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The bucket a row with these key values lands in.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">indexOf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$values</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>in the order of the bucketing references</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
             </section>
 
         
@@ -357,6 +455,8 @@ once it is complete - the strategy alone decides when and how buckets are stored
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Bucketing-HashBucketing.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Bucketing-HashBucketing.html#method_bucketize">bucketize()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Bucketing-HashBucketing.html#method_index">index()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Bucketing-HashBucketing.html#method_indexOf">indexOf()</a></li>
                                     </ul>
             </li>
                     </ul>
