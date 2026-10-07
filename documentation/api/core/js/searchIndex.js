@@ -2776,21 +2776,6 @@ Search.appendIndex(
             "summary": "The\u0020column\u0020kind\u0020rule\u003A\u0020the\u0020same\u0020type\u0020class,\u0020an\u0020enum\u0020of\u0020the\u0020same\u0020class,\u0020a\u0020structure\u0020of\u0020the\u0020same\u0020element\u0020names.",
             "url": "classes/Flow-ETL-Column-Retype.html#method_sameKind"
         },                {
-            "fqsen": "\\Flow\\ETL\\Column\\RoundTripPrecision",
-            "name": "RoundTripPrecision",
-            "summary": "",
-            "url": "classes/Flow-ETL-Column-RoundTripPrecision.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Column\\RoundTripPrecision\u003A\u003Aforce\u0028\u0029",
-            "name": "force",
-            "summary": "",
-            "url": "classes/Flow-ETL-Column-RoundTripPrecision.html#method_force"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Column\\RoundTripPrecision\u003A\u003Arestore\u0028\u0029",
-            "name": "restore",
-            "summary": "",
-            "url": "classes/Flow-ETL-Column-RoundTripPrecision.html#method_restore"
-        },                {
             "fqsen": "\\Flow\\ETL\\Column\\TextValues",
             "name": "TextValues",
             "summary": "",
@@ -7153,7 +7138,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileColumns\u003A\u003Apartitions\u0028\u0029",
             "name": "partitions",
-            "summary": "\u0024declared\u0020carries\u0020a\u0020withSchema\u0028\u0029d\u0020partition\u0020column\u0027s\u0020type\u003B\u0020keep\u0028\u0029\u0020drops\u0020the\u0020body\u0020columns\u0020it\u0020brings.",
+            "summary": "\u0024declared\u0020carries\u0020the\u0020type\u0020the\u0020read\u0020gives\u0020a\u0020partition\u0020column\u0020\u002D\u0020a\u0020withSchema\u0028\u0029d\u0020or\u0020a\u0020file\u0020footer\u0020type\u003B\nkeep\u0028\u0029\u0020drops\u0020the\u0020body\u0020columns\u0020it\u0020brings.",
             "url": "classes/Flow-ETL-Extractor-File-FileColumns.html#method_partitions"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileColumns\u003A\u003AforFile\u0028\u0029",
@@ -9111,6 +9096,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Between.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Between\u003A\u003Aoperands\u0028\u0029",
+            "name": "operands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Between.html#method_operands"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Between\u003A\u003Achildren\u0028\u0029",
             "name": "children",
             "summary": "Every\u0020operand\u0020of\u0020this\u0020node\u0020that\u0020is\u0020an\u0020expression,\u0020in\u0020constructor\u0020order.",
@@ -9120,6 +9110,11 @@ Search.appendIndex(
             "name": "withChildren",
             "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Between.html#method_withChildren"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Between\u003A\u003AwithOperands\u0028\u0029",
+            "name": "withOperands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Between.html#method_withOperands"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Between\u003A\u003Areturns\u0028\u0029",
             "name": "returns",
@@ -9505,6 +9500,21 @@ Search.appendIndex(
             "name": "eval",
             "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Combine.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ComparisonFunction",
+            "name": "ComparisonFunction",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ComparisonFunction.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ComparisonFunction\u003A\u003Aoperands\u0028\u0029",
+            "name": "operands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ComparisonFunction.html#method_operands"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ComparisonFunction\u003A\u003AwithOperands\u0028\u0029",
+            "name": "withOperands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ComparisonFunction.html#method_withOperands"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Concat",
             "name": "Concat",
@@ -10156,6 +10166,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Equals.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Equals\u003A\u003Aoperands\u0028\u0029",
+            "name": "operands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Equals.html#method_operands"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Equals\u003A\u003Achildren\u0028\u0029",
             "name": "children",
             "summary": "Every\u0020operand\u0020of\u0020this\u0020node\u0020that\u0020is\u0020an\u0020expression,\u0020in\u0020constructor\u0020order.",
@@ -10165,6 +10180,11 @@ Search.appendIndex(
             "name": "withChildren",
             "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-Equals.html#method_withChildren"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Equals\u003A\u003AwithOperands\u0028\u0029",
+            "name": "withOperands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Equals.html#method_withOperands"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Equals\u003A\u003Areturns\u0028\u0029",
             "name": "returns",
@@ -10401,6 +10421,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-GreaterThan.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\GreaterThan\u003A\u003Aoperands\u0028\u0029",
+            "name": "operands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-GreaterThan.html#method_operands"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\GreaterThan\u003A\u003Achildren\u0028\u0029",
             "name": "children",
             "summary": "Every\u0020operand\u0020of\u0020this\u0020node\u0020that\u0020is\u0020an\u0020expression,\u0020in\u0020constructor\u0020order.",
@@ -10410,6 +10435,11 @@ Search.appendIndex(
             "name": "withChildren",
             "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-GreaterThan.html#method_withChildren"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\GreaterThan\u003A\u003AwithOperands\u0028\u0029",
+            "name": "withOperands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-GreaterThan.html#method_withOperands"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\GreaterThan\u003A\u003Areturns\u0028\u0029",
             "name": "returns",
@@ -10431,6 +10461,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-GreaterThanEqual.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\GreaterThanEqual\u003A\u003Aoperands\u0028\u0029",
+            "name": "operands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-GreaterThanEqual.html#method_operands"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\GreaterThanEqual\u003A\u003Achildren\u0028\u0029",
             "name": "children",
             "summary": "Every\u0020operand\u0020of\u0020this\u0020node\u0020that\u0020is\u0020an\u0020expression,\u0020in\u0020constructor\u0020order.",
@@ -10440,6 +10475,11 @@ Search.appendIndex(
             "name": "withChildren",
             "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-GreaterThanEqual.html#method_withChildren"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\GreaterThanEqual\u003A\u003AwithOperands\u0028\u0029",
+            "name": "withOperands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-GreaterThanEqual.html#method_withOperands"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\GreaterThanEqual\u003A\u003Areturns\u0028\u0029",
             "name": "returns",
@@ -10671,6 +10711,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-IsIn.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\IsIn\u003A\u003Aoperands\u0028\u0029",
+            "name": "operands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-IsIn.html#method_operands"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsIn\u003A\u003Achildren\u0028\u0029",
             "name": "children",
             "summary": "Every\u0020operand\u0020of\u0020this\u0020node\u0020that\u0020is\u0020an\u0020expression,\u0020in\u0020constructor\u0020order.",
@@ -10680,6 +10725,11 @@ Search.appendIndex(
             "name": "withChildren",
             "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-IsIn.html#method_withChildren"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\IsIn\u003A\u003AwithOperands\u0028\u0029",
+            "name": "withOperands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-IsIn.html#method_withOperands"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\IsIn\u003A\u003Areturns\u0028\u0029",
             "name": "returns",
@@ -11021,6 +11071,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-LessThan.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\LessThan\u003A\u003Aoperands\u0028\u0029",
+            "name": "operands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-LessThan.html#method_operands"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\LessThan\u003A\u003Achildren\u0028\u0029",
             "name": "children",
             "summary": "Every\u0020operand\u0020of\u0020this\u0020node\u0020that\u0020is\u0020an\u0020expression,\u0020in\u0020constructor\u0020order.",
@@ -11030,6 +11085,11 @@ Search.appendIndex(
             "name": "withChildren",
             "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-LessThan.html#method_withChildren"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\LessThan\u003A\u003AwithOperands\u0028\u0029",
+            "name": "withOperands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-LessThan.html#method_withOperands"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\LessThan\u003A\u003Areturns\u0028\u0029",
             "name": "returns",
@@ -11051,6 +11111,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-LessThanEqual.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\LessThanEqual\u003A\u003Aoperands\u0028\u0029",
+            "name": "operands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-LessThanEqual.html#method_operands"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\LessThanEqual\u003A\u003Achildren\u0028\u0029",
             "name": "children",
             "summary": "Every\u0020operand\u0020of\u0020this\u0020node\u0020that\u0020is\u0020an\u0020expression,\u0020in\u0020constructor\u0020order.",
@@ -11060,6 +11125,11 @@ Search.appendIndex(
             "name": "withChildren",
             "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-LessThanEqual.html#method_withChildren"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\LessThanEqual\u003A\u003AwithOperands\u0028\u0029",
+            "name": "withOperands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-LessThanEqual.html#method_withOperands"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\LessThanEqual\u003A\u003Areturns\u0028\u0029",
             "name": "returns",
@@ -11476,6 +11546,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-NotEquals.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\NotEquals\u003A\u003Aoperands\u0028\u0029",
+            "name": "operands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-NotEquals.html#method_operands"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\NotEquals\u003A\u003Achildren\u0028\u0029",
             "name": "children",
             "summary": "Every\u0020operand\u0020of\u0020this\u0020node\u0020that\u0020is\u0020an\u0020expression,\u0020in\u0020constructor\u0020order.",
@@ -11485,6 +11560,11 @@ Search.appendIndex(
             "name": "withChildren",
             "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
             "url": "classes/Flow-ETL-Function-NotEquals.html#method_withChildren"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\NotEquals\u003A\u003AwithOperands\u0028\u0029",
+            "name": "withOperands",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-NotEquals.html#method_withOperands"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\NotEquals\u003A\u003Areturns\u0028\u0029",
             "name": "returns",
@@ -13815,6 +13895,16 @@ Search.appendIndex(
             "name": "window",
             "summary": "",
             "url": "classes/Flow-ETL-Function-Sum.html#method_window"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\TemporalStringCoercion",
+            "name": "TemporalStringCoercion",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-TemporalStringCoercion.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\TemporalStringCoercion\u003A\u003Acoerce\u0028\u0029",
+            "name": "coerce",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-TemporalStringCoercion.html#method_coerce"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ToDate",
             "name": "ToDate",

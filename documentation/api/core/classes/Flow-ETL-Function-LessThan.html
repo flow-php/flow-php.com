@@ -129,7 +129,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>                    </span>
+                            <a href="classes/Flow-ETL-Function-ComparisonFunction.html"><abbr title="\Flow\ETL\Function\ComparisonFunction">ComparisonFunction</abbr></a>                    </span>
     
             <span class="phpdocumentor-element__extends">
             uses
@@ -164,7 +164,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Function-ComparisonFunction.html"><abbr title="\Flow\ETL\Function\ComparisonFunction">ComparisonFunction</abbr></a></dt>    </dl>
 
 
 
@@ -683,6 +683,12 @@
 <dd>Execute a scalar function on each element of an array/list/map/structure entry.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-LessThan.html#method_operands">operands()</a>
+    <span>
+                                &nbsp;: array&lt;int, <a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_or">or()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Function-Any.html"><abbr title="\Flow\ETL\Function\Any">Any</abbr></a>    </span>
@@ -974,6 +980,12 @@
 </dt>
 <dd>A copy of this node with $children in place of children(): same count, same order, same
 per-element narrowing. Never mutates $this.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Function-LessThan.html#method_withOperands">withOperands()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_wordwrap">wordwrap()</a>
@@ -2099,7 +2111,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/LessThan.php"><a href="files/src-core-etl-src-flow-etl-function-lessthan.html"><abbr title="src/core/etl/src/Flow/ETL/Function/LessThan.php">LessThan.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -3173,7 +3185,7 @@ per-element narrowing. Never mutates $this.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/LessThan.php"><a href="files/src-core-etl-src-flow-etl-function-lessthan.html"><abbr title="src/core/etl/src/Flow/ETL/Function/LessThan.php">LessThan.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -4872,6 +4884,44 @@ duplicateRow(), aggregate(), over() and onEach().</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_operands">
+        operands()
+        <a href="classes/Flow-ETL-Function-LessThan.html#method_operands" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/LessThan.php"><a href="files/src-core-etl-src-flow-etl-function-lessthan.html"><abbr title="src/core/etl/src/Flow/ETL/Function/LessThan.php">LessThan.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">operands</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_or">
         or()
         <a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_or" class="headerlink"><i class="fas fa-link"></i></a>
@@ -5492,7 +5542,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/LessThan.php"><a href="files/src-core-etl-src-flow-etl-function-lessthan.html"><abbr title="src/core/etl/src/Flow/ETL/Function/LessThan.php">LessThan.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -7269,7 +7319,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/LessThan.php"><a href="files/src-core-etl-src-flow-etl-function-lessthan.html"><abbr title="src/core/etl/src/Flow/ETL/Function/LessThan.php">LessThan.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -7289,6 +7339,54 @@ per-element narrowing. Never mutates $this.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$children</span>
                 : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <a href="classes/Flow-ETL-Function-FunctionTree.html"><abbr title="\Flow\ETL\Function\FunctionTree">FunctionTree</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withOperands">
+        withOperands()
+        <a href="classes/Flow-ETL-Function-LessThan.html#method_withOperands" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Function/LessThan.php"><a href="files/src-core-etl-src-flow-etl-function-lessthan.html"><abbr title="src/core/etl/src/Flow/ETL/Function/LessThan.php">LessThan.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withOperands</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$operands</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$operands</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -7519,6 +7617,7 @@ per-element narrowing. Never mutates $this.</p>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_notSame">notSame()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_numberFormat">numberFormat()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_onEach">onEach()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-LessThan.html#method_operands">operands()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_or">or()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_orNot">orNot()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_plus">plus()</a></li>
@@ -7566,6 +7665,7 @@ per-element narrowing. Never mutates $this.</p>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_unpack">unpack()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_upper">upper()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-LessThan.html#method_withChildren">withChildren()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Function-LessThan.html#method_withOperands">withOperands()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_wordwrap">wordwrap()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_xpath">xpath()</a></li>
                                     </ul>

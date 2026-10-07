@@ -1886,6 +1886,21 @@ Search.appendIndex(
             "summary": "\u0024result,\u0020made\u0020nullable\u0020iff\u0020EVERY\u0020operand\u0020carries\u0020a\u0020null\u0020AND\u0020there\u0020is\u0020at\u0020least\u0020one.",
             "url": "classes/Flow-Types-Type-Nullability.html#method_all"
         },                {
+            "fqsen": "\\Flow\\Types\\Type\\RoundTripPrecision",
+            "name": "RoundTripPrecision",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-RoundTripPrecision.html"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\RoundTripPrecision\u003A\u003Aforce\u0028\u0029",
+            "name": "force",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-RoundTripPrecision.html#method_force"
+        },                {
+            "fqsen": "\\Flow\\Types\\Type\\RoundTripPrecision\u003A\u003Arestore\u0028\u0029",
+            "name": "restore",
+            "summary": "",
+            "url": "classes/Flow-Types-Type-RoundTripPrecision.html#method_restore"
+        },                {
             "fqsen": "\\Flow\\Types\\Type\\ScalarUnification",
             "name": "ScalarUnification",
             "summary": "",
