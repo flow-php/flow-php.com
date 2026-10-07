@@ -261,6 +261,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-Key.html#method_desc"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\Key\u003A\u003Aname\u0028\u0029",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-Key.html#method_name"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\Key\u003A\u003AtoKeysetColumn\u0028\u0029",
             "name": "toKeysetColumn",
             "summary": "",
@@ -295,6 +300,61 @@ Search.appendIndex(
             "name": "keys",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeySet.html#property_keys"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\KeySetPage",
+            "name": "KeySetPage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeySetPage.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\KeySetPage\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeySetPage.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\KeySetPage\u003A\u003AisLast\u0028\u0029",
+            "name": "isLast",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeySetPage.html#method_isLast"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\KeySetPage\u003A\u003A\u0024rows",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeySetPage.html#property_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\KeySetPage\u003A\u003A\u0024cursor",
+            "name": "cursor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeySetPage.html#property_cursor"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\KeySetPage\u003A\u003A\u0024lookahead",
+            "name": "lookahead",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeySetPage.html#property_lookahead"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\KeyValues",
+            "name": "KeyValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeyValues.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\KeyValues\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeyValues.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\KeyValues\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeyValues.html#method_describe"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\KeyValues\u003A\u003Aequals\u0028\u0029",
+            "name": "equals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeyValues.html#method_equals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\KeyValues\u003A\u003A\u0024values",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeyValues.html#property_values"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Pagination\\Order",
             "name": "Order",
@@ -720,6 +780,11 @@ Search.appendIndex(
             "name": "keySetNextPage",
             "summary": "Every\u0020later\u0020page\u003A\u0020LIMIT\u0020\u0024first,\u0020and\u0020the\u0020last\u0020row\u0027s\u0020key\u0020values\u0020from\u0020\u0024first\u0020\u002B\u00201\u0020on.",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-ReadQuery.html#method_keySetNextPage"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ReadQuery\u003A\u003AkeySetNullCheck\u0028\u0029",
+            "name": "keySetNullCheck",
+            "summary": "SELECT\u00201\u0020FROM\u0020\u0028\u003Cquery\u003E\u0029\u0020_flow_keyset_nulls\u0020WHERE\u0020k1\u0020IS\u0020NULL\u0020\u005BOR\u0020k2\u0020IS\u0020NULL\u0020\u2026\u005D\u0020LIMIT\u00201,\u0020bound\u0020to\u0020the\u0020caller\u0027s\nparameters\u0020only.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-ReadQuery.html#method_keySetNullCheck"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ReadQuery\u003A\u003Apage\u0028\u0029",
             "name": "page",

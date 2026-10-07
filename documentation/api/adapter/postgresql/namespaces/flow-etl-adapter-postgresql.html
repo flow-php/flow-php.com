@@ -319,7 +319,7 @@ instead of skipping rows.</p>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\PostgreSql\QueryBuilder\Sql">Sql</abbr>|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>SQL query to execute (must have ORDER BY matching keyset columns)</p>
+                    <section class="phpdocumentor-description"><p>SQL query to execute (ORDER BY optional; when present it must equal the keys; no LIMIT/OFFSET; keys indexed, non-null, unique)</p>
 </section>
 
             </dd>

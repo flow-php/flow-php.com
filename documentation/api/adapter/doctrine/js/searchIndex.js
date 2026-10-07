@@ -48,7 +48,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor",
             "name": "DbalKeySetExtractor",
-            "summary": "Extractor\u0020implementing\u0020keyset\u0020pagination\u0020for\u0020Doctrine\u0020DBAL\u0020queries.",
+            "summary": "Keyset\u0020pagination\u0020over\u0020a\u0020Doctrine\u0020DBAL\u0020query\u003B\u0020the\u0020keys\u0020must\u0020be\u0020indexed,\u0020non\u002Dnull\u0020and\u0020unique\u0020together,\u0020and\u0020the\u0020query\nmust\u0020carry\u0020no\u0020ORDER\u0020BY,\u0020setMaxResults\u0028\u0029\u0020or\u0020setFirstResult\u0028\u0029.",
             "url": "classes/Flow-ETL-Adapter-Doctrine-DbalKeySetExtractor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\DbalKeySetExtractor\u003A\u003A__construct\u0028\u0029",
@@ -765,6 +765,61 @@ Search.appendIndex(
             "name": "keys",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeySet.html#property_keys"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeySetPage",
+            "name": "KeySetPage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeySetPage.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeySetPage\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeySetPage.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeySetPage\u003A\u003AisLast\u0028\u0029",
+            "name": "isLast",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeySetPage.html#method_isLast"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeySetPage\u003A\u003A\u0024rows",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeySetPage.html#property_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeySetPage\u003A\u003A\u0024cursor",
+            "name": "cursor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeySetPage.html#property_cursor"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeySetPage\u003A\u003A\u0024lookahead",
+            "name": "lookahead",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeySetPage.html#property_lookahead"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeyValues",
+            "name": "KeyValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeyValues.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeyValues\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeyValues.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeyValues\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeyValues.html#method_describe"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeyValues\u003A\u003Aequals\u0028\u0029",
+            "name": "equals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeyValues.html#method_equals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\KeyValues\u003A\u003A\u0024values",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-Pagination-KeyValues.html#property_values"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\Pagination\\Order",
             "name": "Order",
