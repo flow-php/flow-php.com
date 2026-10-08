@@ -15676,6 +15676,16 @@ Search.appendIndex(
             "summary": "The\u0020limit\u0020ONE\u0020root\u0020lets\u0020through\u0020to\u0020\u0024leaf.\u0020Limits\u0020fold\u0020with\u0020min\u0028\u0029\u003B\u0020a\u0020node\u0020that\u0020is\u0020not\u0020preserving\u0020or\u0020not\ntransparent\u0020DISCARDS\u0020what\u0020was\u0020collected\u0020above\u0020it\u0020and\u0020the\u0020walk\u0020continues,\u0020so\nread\u002D\u003Elimit\u00285\u0029\u002D\u003Esort\u0028\u0029\u002D\u003Elimit\u00283\u0029\u0020still\u0020yields\u00205.\u0020An\u0020Offset\u0020grows\u0020the\u0020limit\u0020by\u0020the\u0020rows\u0020it\u0020skips,\u0020so\nread\u002D\u003Eoffset\u0028100\u0029\u002D\u003Elimit\u002810\u0029\u0020yields\u0020110.",
             "url": "classes/Flow-ETL-Optimizer-LimitWalk.html#method_of"
         },                {
+            "fqsen": "\\Flow\\ETL\\Optimizer\\ProjectionWalk",
+            "name": "ProjectionWalk",
+            "summary": "",
+            "url": "classes/Flow-ETL-Optimizer-ProjectionWalk.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Optimizer\\ProjectionWalk\u003A\u003Abelow\u0028\u0029",
+            "name": "below",
+            "summary": "What\u0020the\u0020node\u0027s\u0020row\u0020input\u0020must\u0020hold\u0020so\u0020that\u0020\u0024above\u0020holds\u0020what\u0020its\u0020consumers\u0020read.",
+            "url": "classes/Flow-ETL-Optimizer-ProjectionWalk.html#method_below"
+        },                {
             "fqsen": "\\Flow\\ETL\\Optimizer\\Rule\\CombineLimits",
             "name": "CombineLimits",
             "summary": "Limit\u0028Limit\u0028x,\u0020m\u0029,\u0020n\u0029\u0020\u002D\u003E\u0020Limit\u0028x,\u0020min\u0028n,\u0020m\u0029\u0029.",
@@ -15730,6 +15740,16 @@ Search.appendIndex(
             "name": "apply",
             "summary": "One\u0020walk\u0020per\u0020consumer,\u0020pushed\u0020only\u0020when\u0020EVERY\u0020walk\u0020reaches\u0020the\u0020source\u003A\u0020a\u0020limit\u0020collected\u0020from\u0020one\u0020consumer\nmust\u0020not\u0020narrow\u0020what\u0020another\u0020consumer\u0020of\u0020the\u0020same\u0020source\u0020reads,\u0020so\u0020the\u0020widest\u0020one\u0020is\u0020pushed.",
             "url": "classes/Flow-ETL-Optimizer-Rule-PushLimitIntoSource.html#method_apply"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Optimizer\\Rule\\PushProjectionIntoExpand",
+            "name": "PushProjectionIntoExpand",
+            "summary": "Columns\u0020no\u0020consumer\u0020reads\u0020are\u0020not\u0020copied\u0020into\u0020the\u0020rows\u0020an\u0020expand\u0020emits\u0020\u0028Spark\u003A\u0020ColumnPruning\u0020setting\nGenerate.unrequiredChildIndex\u0029.",
+            "url": "classes/Flow-ETL-Optimizer-Rule-PushProjectionIntoExpand.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Optimizer\\Rule\\PushProjectionIntoExpand\u003A\u003Aapply\u0028\u0029",
+            "name": "apply",
+            "summary": "Rewrite\u0020the\u0020plan,\u0020or\u0020return\u0020it\u0020unchanged.\u0020A\u0020rule\u0020never\u0020mutates\u0020the\u0020plan\u0020it\u0020is\u0020given.",
+            "url": "classes/Flow-ETL-Optimizer-Rule-PushProjectionIntoExpand.html#method_apply"
         },                {
             "fqsen": "\\Flow\\ETL\\Optimizer\\Rule",
             "name": "Rule",
@@ -15915,6 +15935,11 @@ Search.appendIndex(
             "name": "columns",
             "summary": "",
             "url": "classes/Flow-ETL-Plan-Explain-Details.html#method_columns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Details\u003A\u003AexpandColumn\u0028\u0029",
+            "name": "expandColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Explain-Details.html#method_expandColumn"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Details\u003A\u003Aaggregate\u0028\u0029",
             "name": "aggregate",
@@ -16910,6 +16935,71 @@ Search.appendIndex(
             "name": "entries",
             "summary": "",
             "url": "classes/Flow-ETL-Plan-Node-DuplicateRow.html#property_entries"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn",
+            "name": "ExpandColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003Achildren\u0028\u0029",
+            "name": "children",
+            "summary": "Inputs,\u0020in\u0020the\u0020order\u0020they\u0020are\u0020planned.\u0020children\u0028\u0029\u005B0\u005D\u0020is\u0020the\u0020node\u0027s\u0020ROW\u0020INPUT\u0020\u002D\u0020the\u0020chain\u0020a\u0020rule\u0020walks\u0020down\u0020and\nthe\u0020chain\u0020PipelineSplit\u0020turns\u0020into\u0020segments.\u0020A\u0020join\u0027s\u0020second\u0020child\u0020is\u0020the\u0020joined\u0020frame\u0027s\u0020whole\u0020plan\u003A\u0020its\nResult\u0020or\u0020Outputs\u0020root,\u0020read\u0020without\u0020taking\u0020its\u0020rows\u0020as\u0020input\u0020and\u0020never\u0020rewritten\u0020by\u0020this\u0020plan\u0027s\u0020rewrites.",
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#method_children"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003AwithChildren\u0028\u0029",
+            "name": "withChildren",
+            "summary": "The\u0020same\u0020node\u0020over\u0020new\u0020children.\u0020Returns\u0020\u0024this\u0020when\u0020the\u0020children\u0020are\u0020the\u0020ones\u0020it\u0020already\u0020holds,\u0020so\nan\u0020untouched\u0020subtree\u0020keeps\u0020its\u0020identity\u0020and\u0020its\u0020planned\u0020steps\u0020\u0028PlannedNodes\u0020remembers\u0020them\u0020by\u0020identity\u0029.",
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#method_withChildren"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003AwithCarries\u0028\u0029",
+            "name": "withCarries",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#method_withCarries"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003ArowCount\u0028\u0029",
+            "name": "rowCount",
+            "summary": "What\u0020this\u0020node\u0020does\u0020to\u0020the\u0020row\u0020count.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\u0020never\u0020from\u0020a\u0020class\u0020list.",
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#method_rowCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003Atransparency\u0028\u0029",
+            "name": "transparency",
+            "summary": "Whether\u0020the\u0020node\u0027s\u0020output\u0020is\u0020a\u0020function\u0020of\u0020the\u0020rows\u0020it\u0020is\u0020handed,\u0020one\u0020at\u0020a\u0020time,\u0020with\u0020no\u0020effect\noutside\u0020the\u0020stream.",
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#method_transparency"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003Amaterialization\u0028\u0029",
+            "name": "materialization",
+            "summary": "Whether\u0020the\u0020node\u0027s\u0020steps\u0020must\u0020drain\u0020their\u0020input\u0020before\u0020they\u0020can\u0020emit.\u0020This\u0020is\u0020the\u0020pipeline\u0020cut\npoint\u0020and\u0020it\u0020is\u0020NOT\u0020derivable\u0020from\u0020the\u0020other\u0020two\u003A\u0020Sort\u0020is\u0020preserving\u002Bopaque\u002Bblocking,\u0020Write\u0020is\npreserving\u002Bopaque\u002Bstreaming,\u0020Collect\u0020is\u0020preserving\u002Btransparent\u002Bblocking.",
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#method_materialization"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003Aredefines\u0028\u0029",
+            "name": "redefines",
+            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#method_redefines"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003Aname\u0028\u0029",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#method_name"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003A\u0024carries",
+            "name": "carries",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#property_carries"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003A\u0024entry",
+            "name": "entry",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#property_entry"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003A\u0024function",
+            "name": "function",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#property_function"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Filter",
             "name": "Filter",
@@ -18041,6 +18131,56 @@ Search.appendIndex(
             "summary": "The\u0020replacement\u0020for\u0020this\u0020node,\u0020or\u0020the\u0020node\u0020itself\u0020when\u0020nothing\u0020changes.",
             "url": "classes/Flow-ETL-Plan-ReplaceLeaf.html#method_of"
         },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\RequiredColumns",
+            "name": "RequiredColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-RequiredColumns.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\RequiredColumns\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-RequiredColumns.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\RequiredColumns\u003A\u003A\u0024allBut",
+            "name": "allBut",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-RequiredColumns.html#property_allBut"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\RequiredColumns\u003A\u003Aonly\u0028\u0029",
+            "name": "only",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-RequiredColumns.html#method_only"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\RequiredColumns\u003A\u003AisAll\u0028\u0029",
+            "name": "isAll",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-RequiredColumns.html#method_isAll"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\RequiredColumns\u003A\u003Arequires\u0028\u0029",
+            "name": "requires",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-RequiredColumns.html#method_requires"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\RequiredColumns\u003A\u003Aunion\u0028\u0029",
+            "name": "union",
+            "summary": "What\u0020either\u0020of\u0020two\u0020consumers\u0020reads.",
+            "url": "classes/Flow-ETL-Plan-RequiredColumns.html#method_union"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\RequiredColumns\u003A\u003Awith\u0028\u0029",
+            "name": "with",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-RequiredColumns.html#method_with"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\RequiredColumns\u003A\u003Awithout\u0028\u0029",
+            "name": "without",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-RequiredColumns.html#method_without"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\RequiredColumns\u003A\u003A\u0024names",
+            "name": "names",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-RequiredColumns.html#property_names"
+        },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Rewrite",
             "name": "Rewrite",
             "summary": "",
@@ -18416,6 +18556,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Processor-BatchingProcessor.html#property_size"
         },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\BoundExpansion",
+            "name": "BoundExpansion",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-BoundExpansion.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\BoundExpansion\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-BoundExpansion.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\BoundExpansion\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-BoundExpansion.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\BoundExpansion\u003A\u003Achunks\u0028\u0029",
+            "name": "chunks",
+            "summary": "Output\u0020batches\u0020of\u0020at\u0020most\u0020\u0024batchSize\u0020rows,\u0020built\u0020one\u0020at\u0020a\u0020time.",
+            "url": "classes/Flow-ETL-Processor-BoundExpansion.html#method_chunks"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\BoundExpansion\u003A\u003A\u0024expansion",
+            "name": "expansion",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-BoundExpansion.html#property_expansion"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\BoundExpansion\u003A\u003A\u0024inner",
+            "name": "inner",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-BoundExpansion.html#property_inner"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\BoundExpansion\u003A\u003A\u0024output",
+            "name": "output",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-BoundExpansion.html#property_output"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\BoundExpansion\u003A\u003A\u0024gathered",
+            "name": "gathered",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-BoundExpansion.html#property_gathered"
+        },                {
             "fqsen": "\\Flow\\ETL\\Processor\\CachingProcessor",
             "name": "CachingProcessor",
             "summary": "Caches\u0020pipeline\u0020output\u0020for\u0020reuse.",
@@ -18520,6 +18700,31 @@ Search.appendIndex(
             "name": "schema",
             "summary": "",
             "url": "classes/Flow-ETL-Processor-CountingProcessor.html#method_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\ExpandingProcessor",
+            "name": "ExpandingProcessor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-ExpandingProcessor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\ExpandingProcessor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-ExpandingProcessor.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\ExpandingProcessor\u003A\u003Abind\u0028\u0029",
+            "name": "bind",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-ExpandingProcessor.html#method_bind"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\ExpandingProcessor\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "Process\u0020a\u0020stream\u0020of\u0020Rows\u0020and\u0020return\u0020a\u0020new\u0020stream.",
+            "url": "classes/Flow-ETL-Processor-ExpandingProcessor.html#method_process"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Processor\\ExpandingProcessor\u003A\u003A\u0024function",
+            "name": "function",
+            "summary": "",
+            "url": "classes/Flow-ETL-Processor-ExpandingProcessor.html#property_function"
         },                {
             "fqsen": "\\Flow\\ETL\\Processor\\GroupByAggregationProcessor",
             "name": "GroupByAggregationProcessor",
@@ -22521,6 +22726,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-DuplicateRowTransformer.html#method_transform"
         },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Expansion",
+            "name": "Expansion",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-Expansion.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Expansion\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "Null\u0020only\u0020when\u0020the\u0020tree\u0020holds\u0020no\u0020expand.\u0020A\u0020root\u0020expand\u0020is\u0020rewritten\u0020too\u003A\u0020its\u0020root\u0020becomes\u0020the\u0020synthesized\nreference,\u0020so\u0020a\u0020root,\u0020a\u0020nested\u0020and\u0020an\u0020unpacked\u0020expand\u0020are\u0020one\u0020shape.",
+            "url": "classes/Flow-ETL-Transformer-Expansion.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Expansion\u003A\u003Aelements\u0028\u0029",
+            "name": "elements",
+            "summary": "\u0024gathered\u0020\u002D\u0020the\u0020rows\u0020of\u0020output\u0020positions\u0020\u005B\u0024offset,\u0020\u0024offset\u0020\u002B\u0020count\u0029\u0020\u002D\u0020with\u0020the\u0020synthesized\u0020columns\u0020appended.",
+            "url": "classes/Flow-ETL-Transformer-Expansion.html#method_elements"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Expansion\u003A\u003Apositions\u0028\u0029",
+            "name": "positions",
+            "summary": "The\u0020expand\u0020operands\u0020evaluated\u0020once\u003A\u0020for\u0020every\u0020output\u0020position\u0020the\u0020row\u0020it\u0020comes\u0020from,\u0020and\u0020one\u0020cell\u0020per\nsynthesized\u0020column\u0020\u002D\u0020zipped\u0020to\u0020the\u0020longest\u0020list,\u0020the\u0020shorter\u0020ones\u0020padded\u0020with\u0020null.",
+            "url": "classes/Flow-ETL-Transformer-Expansion.html#method_positions"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Expansion\u003A\u003Areturns\u0028\u0029",
+            "name": "returns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-Expansion.html#method_returns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Expansion\u003A\u003Aroot\u0028\u0029",
+            "name": "root",
+            "summary": "The\u0020tree\u0020with\u0020every\u0020expand\u0020replaced\u0020by\u0020the\u0020synthesized\u0020column\u0020it\u0020reads\u0020its\u0020element\u0020from.",
+            "url": "classes/Flow-ETL-Transformer-Expansion.html#method_root"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\Expansion\u003A\u003Asynthesized\u0028\u0029",
+            "name": "synthesized",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-Expansion.html#method_synthesized"
+        },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\JoinEachRowsTransformer",
             "name": "JoinEachRowsTransformer",
             "summary": "",
@@ -22580,46 +22820,6 @@ Search.appendIndex(
             "name": "limit",
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-LimitTransformer.html#property_limit"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\NestedExpandTransformer",
-            "name": "NestedExpandTransformer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-NestedExpandTransformer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\NestedExpandTransformer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-NestedExpandTransformer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\NestedExpandTransformer\u003A\u003Abind\u0028\u0029",
-            "name": "bind",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-NestedExpandTransformer.html#method_bind"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\NestedExpandTransformer\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-NestedExpandTransformer.html#method_transform"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\NestedExpansion",
-            "name": "NestedExpansion",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-NestedExpansion.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\NestedExpansion\u003A\u003Aof\u0028\u0029",
-            "name": "of",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-NestedExpansion.html#method_of"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\NestedExpansion\u003A\u003Areturns\u0028\u0029",
-            "name": "returns",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-NestedExpansion.html#method_returns"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\NestedExpansion\u003A\u003Aeval\u0028\u0029",
-            "name": "eval",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-NestedExpansion.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\PruneEntriesTransformer",
             "name": "PruneEntriesTransformer",
@@ -22855,6 +23055,11 @@ Search.appendIndex(
             "name": "UnpackedColumns",
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-UnpackedColumns.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\UnpackedColumns\u003A\u003Adeclared\u0028\u0029",
+            "name": "declared",
+            "summary": "The\u0020columns\u0020unpack\u0020declares,\u0020read\u0020off\u0020returns\u0028\u0029\u0020\u002D\u0020the\u0020contract\u0020every\u0020ScalarFunction\u0020has.",
+            "url": "classes/Flow-ETL-Transformer-UnpackedColumns.html#method_declared"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\UnpackedColumns\u003A\u003Aof\u0028\u0029",
             "name": "of",
@@ -24015,6 +24220,21 @@ Search.appendIndex(
             "name": "rowCount",
             "summary": "",
             "url": "classes/Flow-Floe-Section.html#property_rowCount"
+        },                {
+            "fqsen": "\\Flow\\Floe\\SplittingFrameEncoder",
+            "name": "SplittingFrameEncoder",
+            "summary": "",
+            "url": "classes/Flow-Floe-SplittingFrameEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\Floe\\SplittingFrameEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Floe-SplittingFrameEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Floe\\SplittingFrameEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "One\u0020frame\u0020when\u0020the\u0020batch\u0020fits\u003B\u0020otherwise\u0020halved\u0020until\u0020every\u0020part\u0020does.",
+            "url": "classes/Flow-Floe-SplittingFrameEncoder.html#method_encode"
         },                {
             "fqsen": "\\Flow\\Floe\\Statistics",
             "name": "Statistics",
