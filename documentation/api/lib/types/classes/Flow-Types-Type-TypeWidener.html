@@ -171,13 +171,13 @@ method that must always answer.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-TypeWidener.html#method_widenLists">widenLists()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, array&lt;int, mixed&gt;&gt;    </span>
+                                &nbsp;: <a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Types-Type-TypeWidener.html#method_widenMaps">widenMaps()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;string|int, array&lt;string|int, mixed&gt;&gt;    </span>
+                                &nbsp;: <a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -370,7 +370,7 @@ method that must always answer.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">widenLists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, array&lt;int, <abbr title="\Flow\Types\Type\TLeft">TLeft</abbr>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$left</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, array&lt;int, <abbr title="\Flow\Types\Type\TRight">TRight</abbr>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$right</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, array&lt;int, mixed&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">widenLists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\TLeft">TLeft</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$left</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\TRight">TRight</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$right</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -380,14 +380,14 @@ method that must always answer.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$left</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, array&lt;int, <abbr title="\Flow\Types\Type\TLeft">TLeft</abbr>&gt;&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\TLeft">TLeft</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$right</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, array&lt;int, <abbr title="\Flow\Types\Type\TRight">TRight</abbr>&gt;&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, <abbr title="\Flow\Types\Type\TRight">TRight</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -416,7 +416,7 @@ method that must always answer.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, array&lt;int, mixed&gt;&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-ListType.html"><abbr title="\Flow\Types\Type\Logical\ListType">ListType</abbr></a>&lt;string|int, mixed&gt;</span>
             </section>
 
 </article>
@@ -441,7 +441,7 @@ method that must always answer.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">widenMaps</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$left</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$right</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;string|int, array&lt;string|int, mixed&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">widenMaps</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;<abbr title="\Flow\Types\Type\TLeftKey">TLeftKey</abbr>, <abbr title="\Flow\Types\Type\TLeftValue">TLeftValue</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$left</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;<abbr title="\Flow\Types\Type\TRightKey">TRightKey</abbr>, <abbr title="\Flow\Types\Type\TRightValue">TRightValue</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$right</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;string|int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -451,14 +451,14 @@ method that must always answer.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$left</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;<abbr title="\Flow\Types\Type\TLeftKey">TLeftKey</abbr>, <abbr title="\Flow\Types\Type\TLeftValue">TLeftValue</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$right</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;<abbr title="\Flow\Types\Type\TRightKey">TRightKey</abbr>, <abbr title="\Flow\Types\Type\TRightValue">TRightValue</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -493,7 +493,7 @@ method that must always answer.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;string|int, array&lt;string|int, mixed&gt;&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Types-Type-Logical-MapType.html"><abbr title="\Flow\Types\Type\Logical\MapType">MapType</abbr></a>&lt;string|int, mixed&gt;</span>
             </section>
 
 </article>
