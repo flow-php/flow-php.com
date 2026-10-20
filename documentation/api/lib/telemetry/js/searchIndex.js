@@ -141,6 +141,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-CacheAttributes.html#constant_SPAN_SET"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\ClientUrlAttributes",
+            "name": "ClientUrlAttributes",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ClientUrlAttributes.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ClientUrlAttributes\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ClientUrlAttributes.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\ClientUrlAttributes\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-ClientUrlAttributes.html#method_of"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Baggage",
             "name": "Baggage",
             "summary": "Key\u002Dvalue\u0020store\u0020for\u0020data\u0020propagation\u0020across\u0020process\u0020boundaries.",
@@ -1030,6 +1045,11 @@ Search.appendIndex(
             "name": "null_error_handler",
             "summary": "Discard\u0020every\u0020error.\u0020Use\u0020only\u0020in\u0020tests\u0020or\u0020for\u0020explicit\u0020silence.",
             "url": "namespaces/flow-telemetry-dsl.html#function_null_error_handler"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\DSL\\url_sanitizer\u0028\u0029",
+            "name": "url_sanitizer",
+            "summary": "Create\u0020a\u0020UrlSanitizer.\u0020The\u0020given\u0020list\u0020replaces\u0020the\u0020OpenTelemetry\u0020semantic\u002Dconvention\u0020default\u0020list.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_url_sanitizer"
         },                {
             "fqsen": "\\Flow\\Telemetry\\EnforcedAttributes",
             "name": "EnforcedAttributes",
@@ -4281,6 +4301,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Resource.html#property_attributes"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Sanitizer\\StackTrace",
+            "name": "StackTrace",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Sanitizer-StackTrace.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Sanitizer\\StackTrace\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Sanitizer-StackTrace.html#method_format"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Sanitizer\\UrlSanitizer",
+            "name": "UrlSanitizer",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Sanitizer-UrlSanitizer.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Sanitizer\\UrlSanitizer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Sanitizer-UrlSanitizer.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Sanitizer\\UrlSanitizer\u003A\u003Amessage\u0028\u0029",
+            "name": "message",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Sanitizer-UrlSanitizer.html#method_message"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Sanitizer\\UrlSanitizer\u003A\u003Aquery\u0028\u0029",
+            "name": "query",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Sanitizer-UrlSanitizer.html#method_query"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Sanitizer\\UrlSanitizer\u003A\u003Aurl\u0028\u0029",
+            "name": "url",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Sanitizer-UrlSanitizer.html#method_url"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Sanitizer\\UrlSanitizer\u003A\u003ADEFAULT_SENSITIVE_QUERY_PARAMETERS",
+            "name": "DEFAULT_SENSITIVE_QUERY_PARAMETERS",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Sanitizer-UrlSanitizer.html#constant_DEFAULT_SENSITIVE_QUERY_PARAMETERS"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\SemConvAttributes",
             "name": "SemConvAttributes",
             "summary": "Official\u0020OpenTelemetry\u0020semantic\u0020convention\u0020attribute\u0020keys\u0020emitted\u0020by\u0020Flow\u0020instrumentations.",
@@ -5700,6 +5760,11 @@ Search.appendIndex(
             "name": "Resource",
             "summary": "",
             "url": "namespaces/flow-telemetry-resource.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Sanitizer",
+            "name": "Sanitizer",
+            "summary": "",
+            "url": "namespaces/flow-telemetry-sanitizer.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Shutdown",
             "name": "Shutdown",
