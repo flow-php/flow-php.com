@@ -145,7 +145,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -228,8 +228,9 @@ the conjuncts, so a source that reads or lists more is still correct. extract() 
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Schema.html"><abbr title="\Flow\ETL\Schema">Schema</abbr></a>    </span>
 </dt>
-<dd>Footer-only source schema (two ranged reads per file, no row scan). One file unless
-unionByName() asks for the fold, and memoised, so repeated calls cost nothing.</dd>
+<dd>Answers before extract() runs, so every batch it yields carries this shape. Takes no
+FlowContext: a source that needs the pipeline&#039;s context to describe itself has not moved
+the answer to bind time.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-FloeExtractor.html#method_source">source()</a>
@@ -301,7 +302,7 @@ instead of its own description, and values are cast to fit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -459,7 +460,7 @@ instead of its own description, and values are cast to fit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -497,7 +498,7 @@ instead of its own description, and values are cast to fit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">149</span>
 
     </aside>
 
@@ -538,7 +539,7 @@ can be evaluated from the path alone.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -596,12 +597,13 @@ the conjuncts, so a source that reads or lists more is still correct. extract() 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Footer-only source schema (two ranged reads per file, no row scan). One file unless
-unionByName() asks for the fold, and memoised, so repeated calls cost nothing.</p>
+        <p class="phpdocumentor-summary">Answers before extract() runs, so every batch it yields carries this shape. Takes no
+FlowContext: a source that needs the pipeline&#039;s context to describe itself has not moved
+the answer to bind time.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -610,7 +612,10 @@ unionByName() asks for the fold, and memoised, so repeated calls cost nothing.</
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Called once per RUN - every run plans afresh - so it MUST be idempotent and cheap on repeat: memoise
+what it sniffs, as CSVExtractor and ArrayExtractor do.</p>
+</section>
+
     
     
 
@@ -636,7 +641,7 @@ unionByName() asks for the fold, and memoised, so repeated calls cost nothing.</
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -674,7 +679,7 @@ unionByName() asks for the fold, and memoised, so repeated calls cost nothing.</
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -722,7 +727,7 @@ ANALYZE), never run the query.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -819,7 +824,7 @@ ANALYZE), never run the query.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -867,7 +872,7 @@ ANALYZE), never run the query.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 

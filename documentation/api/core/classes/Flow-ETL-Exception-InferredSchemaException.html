@@ -188,6 +188,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Exception-InferredSchemaException.html#method_nothingToInferFrom">nothingToInferFrom()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Exception-InferredSchemaException.html#method_pastTheSample">pastTheSample()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -414,6 +420,65 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_nothingToInferFrom">
+        nothingToInferFrom()
+        <a href="classes/Flow-ETL-Exception-InferredSchemaException.html#method_nothingToInferFrom" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Exception/InferredSchemaException.php"><a href="files/src-core-etl-src-flow-etl-exception-inferredschemaexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/InferredSchemaException.php">InferredSchemaException.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">nothingToInferFrom</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$reason</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$source</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>the DSL call that built the source, e.g. 'from_parquet()'</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$reason</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>why nothing was there, e.g. 'no row carries a column'</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_pastTheSample">
         pastTheSample()
         <a href="classes/Flow-ETL-Exception-InferredSchemaException.html#method_pastTheSample" class="headerlink"><i class="fas fa-link"></i></a>
@@ -422,7 +487,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Exception/InferredSchemaException.php"><a href="files/src-core-etl-src-flow-etl-exception-inferredschemaexception.html"><abbr title="src/core/etl/src/Flow/ETL/Exception/InferredSchemaException.php">InferredSchemaException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -506,6 +571,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Exception-InvalidArgumentException.html#method_because">because()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Exception-InferredSchemaException.html#method_columnsDiverge">columnsDiverge()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Exception-InferredSchemaException.html#method_filesDiverge">filesDiverge()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Exception-InferredSchemaException.html#method_nothingToInferFrom">nothingToInferFrom()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Exception-InferredSchemaException.html#method_pastTheSample">pastTheSample()</a></li>
                                     </ul>
             </li>

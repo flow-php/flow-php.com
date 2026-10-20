@@ -5951,6 +5951,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Exception-InferredSchemaException.html#method_filesDiverge"
         },                {
+            "fqsen": "\\Flow\\ETL\\Exception\\InferredSchemaException\u003A\u003AnothingToInferFrom\u0028\u0029",
+            "name": "nothingToInferFrom",
+            "summary": "",
+            "url": "classes/Flow-ETL-Exception-InferredSchemaException.html#method_nothingToInferFrom"
+        },                {
             "fqsen": "\\Flow\\ETL\\Exception\\InferredSchemaException\u003A\u003ApastTheSample\u0028\u0029",
             "name": "pastTheSample",
             "summary": "",
@@ -23793,7 +23798,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Floe\\FloeExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
-            "summary": "Footer\u002Donly\u0020source\u0020schema\u0020\u0028two\u0020ranged\u0020reads\u0020per\u0020file,\u0020no\u0020row\u0020scan\u0029.\u0020One\u0020file\u0020unless\nunionByName\u0028\u0029\u0020asks\u0020for\u0020the\u0020fold,\u0020and\u0020memoised,\u0020so\u0020repeated\u0020calls\u0020cost\u0020nothing.",
+            "summary": "Answers\u0020before\u0020extract\u0028\u0029\u0020runs,\u0020so\u0020every\u0020batch\u0020it\u0020yields\u0020carries\u0020this\u0020shape.\u0020Takes\u0020no\nFlowContext\u003A\u0020a\u0020source\u0020that\u0020needs\u0020the\u0020pipeline\u0027s\u0020context\u0020to\u0020describe\u0020itself\u0020has\u0020not\u0020moved\nthe\u0020answer\u0020to\u0020bind\u0020time.",
             "url": "classes/Flow-Floe-FloeExtractor.html#method_schema"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeExtractor\u003A\u003Astatistics\u0028\u0029",
