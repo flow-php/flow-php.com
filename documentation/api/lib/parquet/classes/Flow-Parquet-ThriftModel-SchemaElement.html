@@ -118,11 +118,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Represents a element inside a schema definition.</p>
+            <p class="phpdocumentor-summary">Represents an element inside a schema definition.</p>
 
 
     <section class="phpdocumentor-description"><ul>
@@ -159,17 +159,17 @@ the nodes are listed in depth first traversal order.</li>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_converted_type">$converted_type</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
 <dd>DEPRECATED: When the schema is the result of a conversion from another model.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_field_id">$field_id</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
 <dd>When the original schema supports field ids, this will save the
-original field id in the parquet schema.</dd>
+original field id in the parquet schema</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_isValidate">$isValidate</a>
@@ -180,21 +180,21 @@ original field id in the parquet schema.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_logicalType">$logicalType</a>
     <span>
-                        &nbsp;: <a href="classes/Flow-Parquet-ThriftModel-LogicalType.html"><abbr title="\Flow\Parquet\ThriftModel\LogicalType">LogicalType</abbr></a>            </span>
+                        &nbsp;: null|<a href="classes/Flow-Parquet-ThriftModel-LogicalType.html"><abbr title="\Flow\Parquet\ThriftModel\LogicalType">LogicalType</abbr></a>            </span>
 </dt>
-<dd>The logical type of this SchemaElement.</dd>
+<dd>The logical type of this SchemaElement</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_name">$name</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd>Name of the field in the schema.</dd>
+<dd>Name of the field in the schema</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_num_children">$num_children</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
 <dd>Nested fields.  Since thrift does not support nested fields,
 the nesting is flattened to a single list by a depth-first traversal.</dd>
@@ -202,34 +202,34 @@ the nesting is flattened to a single list by a depth-first traversal.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_precision">$precision</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_repetition_type">$repetition_type</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
 <dd>repetition of the field. The root of the schema does not have a repetition_type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_scale">$scale</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
 <dd>DEPRECATED: Used when this column contains decimal data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_type">$type</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
-<dd>Data type for this field. Not set if the current element is a non-leaf node.</dd>
+<dd>Data type for this field. Not set if the current element is a non-leaf node</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_type_length">$type_length</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
 <dd>If type is FIXED_LEN_BYTE_ARRAY, this is the byte length of the values.</dd>
 
@@ -295,7 +295,7 @@ the nesting is flattened to a single list by a depth-first traversal.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -305,7 +305,7 @@ the nesting is flattened to a single list by a depth-first traversal.</dd>
         <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$_TSPEC</span>
-     = <span class="phpdocumentor-signature__default-value">[1 =&gt; [&#039;var&#039; =&gt; &#039;type&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\Type&#039;], 2 =&gt; [&#039;var&#039; =&gt; &#039;type_length&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 3 =&gt; [&#039;var&#039; =&gt; &#039;repetition_type&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\FieldRepetitionType&#039;], 4 =&gt; [&#039;var&#039; =&gt; &#039;name&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING], 5 =&gt; [&#039;var&#039; =&gt; &#039;num_children&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 6 =&gt; [&#039;var&#039; =&gt; &#039;converted_type&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\ConvertedType&#039;], 7 =&gt; [&#039;var&#039; =&gt; &#039;scale&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 8 =&gt; [&#039;var&#039; =&gt; &#039;precision&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 9 =&gt; [&#039;var&#039; =&gt; &#039;field_id&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 10 =&gt; [&#039;var&#039; =&gt; &#039;logicalType&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\LogicalType&#039;]]</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(1 =&gt; array(&#039;var&#039; =&gt; &#039;type&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\Type&#039;), 2 =&gt; array(&#039;var&#039; =&gt; &#039;type_length&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 3 =&gt; array(&#039;var&#039; =&gt; &#039;repetition_type&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\FieldRepetitionType&#039;), 4 =&gt; array(&#039;var&#039; =&gt; &#039;name&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING), 5 =&gt; array(&#039;var&#039; =&gt; &#039;num_children&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 6 =&gt; array(&#039;var&#039; =&gt; &#039;converted_type&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\ConvertedType&#039;), 7 =&gt; array(&#039;var&#039; =&gt; &#039;scale&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 8 =&gt; array(&#039;var&#039; =&gt; &#039;precision&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 9 =&gt; array(&#039;var&#039; =&gt; &#039;field_id&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 10 =&gt; array(&#039;var&#039; =&gt; &#039;logicalType&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\LogicalType&#039;))</span></code>
 
     
     
@@ -332,7 +332,7 @@ the nesting is flattened to a single list by a depth-first traversal.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -341,9 +341,9 @@ the nesting is flattened to a single list by a depth-first traversal.</dd>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$converted_type</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>Used to record the original type to help with cross conversion.</p>
 <p>This is superseded by logicalType.</p>
@@ -373,19 +373,19 @@ the nesting is flattened to a single list by a depth-first traversal.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">When the original schema supports field ids, this will save the
-original field id in the parquet schema.</p>
+original field id in the parquet schema</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$field_id</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -412,7 +412,7 @@ original field id in the parquet schema.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -449,18 +449,18 @@ original field id in the parquet schema.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">160</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The logical type of this SchemaElement.</p>
+        <p class="phpdocumentor-summary">The logical type of this SchemaElement</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Parquet-ThriftModel-LogicalType.html"><abbr title="\Flow\Parquet\ThriftModel\LogicalType">LogicalType</abbr></a></span>
+            <span class="phpdocumentor-signature__type">null|<a href="classes/Flow-Parquet-ThriftModel-LogicalType.html"><abbr title="\Flow\Parquet\ThriftModel\LogicalType">LogicalType</abbr></a></span>
     <span class="phpdocumentor-signature__name">$logicalType</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>LogicalType replaces ConvertedType, but ConvertedType is still required
 for some logical types to ensure forward-compatibility in format v1.</p>
@@ -490,18 +490,18 @@ for some logical types to ensure forward-compatibility in format v1.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Name of the field in the schema.</p>
+        <p class="phpdocumentor-summary">Name of the field in the schema</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$name</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -528,7 +528,7 @@ for some logical types to ensure forward-compatibility in format v1.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -538,12 +538,12 @@ the nesting is flattened to a single list by a depth-first traversal.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$num_children</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>The children count is used to construct the nested relationship.
-This field is not set when the element is a primitive type.</p>
+This field is not set when the element is a primitive type</p>
 </section>
 
     
@@ -570,7 +570,7 @@ This field is not set when the element is a primitive type.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -578,9 +578,9 @@ This field is not set when the element is a primitive type.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$precision</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -607,7 +607,7 @@ This field is not set when the element is a primitive type.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -616,11 +616,11 @@ This field is not set when the element is a primitive type.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$repetition_type</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-        <section class="phpdocumentor-description"><p>All other nodes must have one.</p>
+        <section class="phpdocumentor-description"><p>All other nodes must have one</p>
 </section>
 
     
@@ -647,7 +647,7 @@ This field is not set when the element is a primitive type.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -656,9 +656,9 @@ This field is not set when the element is a primitive type.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$scale</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>See the DECIMAL converted type for more details.</p>
 <p>This is superseded by using the DecimalType annotation in logicalType.</p>
@@ -688,18 +688,18 @@ This field is not set when the element is a primitive type.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Data type for this field. Not set if the current element is a non-leaf node.</p>
+        <p class="phpdocumentor-summary">Data type for this field. Not set if the current element is a non-leaf node</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$type</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -726,7 +726,7 @@ This field is not set when the element is a primitive type.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -735,9 +735,9 @@ This field is not set when the element is a primitive type.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$type_length</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>Otherwise, if specified, this is the maximum bit length to store any of the values.
 (e.g. a low cardinality INT col could have this set to 3).  Note that this is
@@ -773,7 +773,7 @@ in the schema, and therefore fixed for the entire file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -817,7 +817,7 @@ in the schema, and therefore fixed for the entire file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">214</span>
+    <span class="phpdocumentor-element-found-in__line">198</span>
 
     </aside>
 
@@ -851,7 +851,7 @@ in the schema, and therefore fixed for the entire file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">219</span>
+    <span class="phpdocumentor-element-found-in__line">204</span>
 
     </aside>
 
@@ -895,7 +895,7 @@ in the schema, and therefore fixed for the entire file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-schemaelement.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/SchemaElement.php">SchemaElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">329</span>
+    <span class="phpdocumentor-element-found-in__line">298</span>
 
     </aside>
 

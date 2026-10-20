@@ -106,10 +106,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_isRepeatable"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003Aextract\u0028\u0029",
-            "name": "extract",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003Ascan\u0028\u0029",
+            "name": "scan",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_extract"
+            "url": "classes/Flow-ETL-Adapter-Parquet-ParquetExtractor.html#method_scan"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
@@ -178,7 +178,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetFileBatches\u003A\u003Abatches\u0028\u0029",
             "name": "batches",
-            "summary": "Skips\u0020the\u0020whole\u0020file\u0020when\u0020the\u0020window\u0027s\u0020offset\u0020covers\u0020it\u003B\u0020otherwise\u0020reads\u0020from\u0020the\u0020offset.\u0020A\u0020file\u0020of\u0020a\u0020narrower\nschema\u0020is\u0020matched\u0020to\u0020\u0024body.",
+            "summary": "Skips\u0020the\u0020whole\u0020file\u0020when\u0020the\u0020window\u0027s\u0020offset\u0020covers\u0020it\u003B\u0020otherwise\u0020reads\u0020from\u0020the\u0020offset.\u0020A\u0020file\u0020of\u0020a\u0020narrower\nschema\u0020is\u0020matched\u0020to\u0020\u0024body.\u0020What\u0020the\u0020conjuncts\u0020a\u0020file\u0020answers\u0020exactly\u0020prove\u0020cannot\u0020match\u0020is\u0020skipped\u003B\u0020FileReadLoop\ndrops\u0020the\u0020rest\u0020that\u0020does\u0020not\u0020match\u0020them.",
             "url": "classes/Flow-ETL-Adapter-Parquet-ParquetFileBatches.html#method_batches"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ParquetFileBatches\u003A\u003Aclose\u0028\u0029",
@@ -471,6 +471,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-PhpParquetOpenSource.html#method_close"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\Pushdown\\FilterTranslator",
+            "name": "FilterTranslator",
+            "summary": "A\u0020conjunct\u0020is\u0020pushed\u0020only\u0020when\u0020the\u0020parquet\u0020filter\u0020keeps\u0020every\u0020row\u0020the\u0020Flow\u0020predicate\u0020keeps\u003B\u0020anything\u0020it\u0020cannot\nprove\u0020that\u0020for\u0020is\u0020left\u0020to\u0020FileReadLoop.",
+            "url": "classes/Flow-ETL-Adapter-Parquet-Pushdown-FilterTranslator.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\Pushdown\\FilterTranslator\u003A\u003Atranslate\u0028\u0029",
+            "name": "translate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-Pushdown-FilterTranslator.html#method_translate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\Pushdown\\TranslatedConjunct",
+            "name": "TranslatedConjunct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-Pushdown-TranslatedConjunct.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\Pushdown\\TranslatedConjunct\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-Pushdown-TranslatedConjunct.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\Pushdown\\TranslatedConjunct\u003A\u003AreadsAs\u0028\u0029",
+            "name": "readsAs",
+            "summary": "True\u0020when\u0020the\u0020file\u0020stores\u0020every\u0020column\u0020the\u0020predicate\u0020reads\u0020as\u0020\u0024body\u0020types\u0020it,\u0020or\u0020not\u0020at\u0020all.\u0020A\u0020column\u0020the\u0020file\nstores\u0020as\u0020another\u0020type\u0020is\u0020cast\u0020to\u0020the\u0020body\u0027s,\u0020so\u0020its\u0020statistics\u0020are\u0020of\u0020the\u0020other\u0020type.",
+            "url": "classes/Flow-ETL-Adapter-Parquet-Pushdown-TranslatedConjunct.html#method_readsAs"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\Pushdown\\TranslatedConjunct\u003A\u003A\u0024filter",
+            "name": "filter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-Pushdown-TranslatedConjunct.html#property_filter"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\Pushdown\\TranslatedConjunct\u003A\u003A\u0024columns",
+            "name": "columns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Parquet-Pushdown-TranslatedConjunct.html#property_columns"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\SchemaConverter",
             "name": "SchemaConverter",
             "summary": "",
@@ -585,6 +620,11 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\Pushdown",
+            "name": "Pushdown",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-parquet-pushdown.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\ValueConverter",
             "name": "ValueConverter",

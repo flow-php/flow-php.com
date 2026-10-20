@@ -123,7 +123,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-phpparquetfilereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php">PhpParquetFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -170,37 +170,17 @@
 <dd>Closes the stream it was opened on; any later call throws RuntimeException(&#039;Reader is not open&#039;).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_metadata">metadata()</a>
+    <a class="" href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_footer">footer()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Parquet-ParquetFile-Metadata.html"><abbr title="\Flow\Parquet\ParquetFile\Metadata">Metadata</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Flow-Parquet-Engine-PhpParquetFooter.html"><abbr title="\Flow\Parquet\Engine\PhpParquetFooter">PhpParquetFooter</abbr></a>    </span>
 </dt>
-<dd>The whole footer as Metadata, built on the first call.</dd>
+<dd>The file&#039;s footer, read on the first call; it stays readable after close().</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_readColumns">readColumns()</a>
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;&gt;    </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_rowsNumber">rowsNumber()</a>
-    <span>
-                                &nbsp;: int    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_schema">schema()</a>
-    <span>
-                                &nbsp;: <a href="classes/Flow-Parquet-ParquetFile-Schema.html"><abbr title="\Flow\Parquet\ParquetFile\Schema">Schema</abbr></a>    </span>
-</dt>
-<dd>The file schema, without building the row-group metadata.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_totalByteSize">totalByteSize()</a>
-    <span>
-                                &nbsp;: int    </span>
-</dt>
-<dd>Σ row group total_byte_size (uncompressed), without building the row-group metadata.</dd>
 
     </dl>
 
@@ -230,7 +210,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-phpparquetfilereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php">PhpParquetFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -288,7 +268,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-phpparquetfilereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php">PhpParquetFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -315,23 +295,23 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_metadata">
-        metadata()
-        <a href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_metadata" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_footer">
+        footer()
+        <a href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_footer" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-phpparquetfilereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php">PhpParquetFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The whole footer as Metadata, built on the first call.</p>
+        <p class="phpdocumentor-summary">The file&#039;s footer, read on the first call; it stays readable after close().</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">metadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-ParquetFile-Metadata.html"><abbr title="\Flow\Parquet\ParquetFile\Metadata">Metadata</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">footer</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Engine-PhpParquetFooter.html"><abbr title="\Flow\Parquet\Engine\PhpParquetFooter">PhpParquetFooter</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -344,7 +324,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-ParquetFile-Metadata.html"><abbr title="\Flow\Parquet\ParquetFile\Metadata">Metadata</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Engine-PhpParquetFooter.html"><abbr title="\Flow\Parquet\Engine\PhpParquetFooter">PhpParquetFooter</abbr></a></span>
             </section>
 
 </article>
@@ -362,14 +342,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-phpparquetfilereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php">PhpParquetFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">readColumns</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">readColumns</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Reader-ReadPlan.html"><abbr title="\Flow\Parquet\Reader\ReadPlan">ReadPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plan</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -386,21 +366,16 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$batchSize</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int<1, max></span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>refused below 1, as the arrow engine refuses it</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$offset</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
+                <span class="phpdocumentor-argument-list__argument__name">$plan</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Reader-ReadPlan.html"><abbr title="\Flow\Parquet\Reader\ReadPlan">ReadPlan</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -414,122 +389,6 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_rowsNumber">
-        rowsNumber()
-        <a href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_rowsNumber" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-phpparquetfilereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php">PhpParquetFileReader.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">177</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">rowsNumber</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_schema">
-        schema()
-        <a href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_schema" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-phpparquetfilereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php">PhpParquetFileReader.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">182</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The file schema, without building the row-group metadata.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">schema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-ParquetFile-Schema.html"><abbr title="\Flow\Parquet\ParquetFile\Schema">Schema</abbr></a></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-ParquetFile-Schema.html"><abbr title="\Flow\Parquet\ParquetFile\Schema">Schema</abbr></a></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_totalByteSize">
-        totalByteSize()
-        <a href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_totalByteSize" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-phpparquetfilereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/PhpParquetFileReader.php">PhpParquetFileReader.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">187</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Σ row group total_byte_size (uncompressed), without building the row-group metadata.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">totalByteSize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int</span>
             </section>
 
 </article>
@@ -557,11 +416,8 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_close">close()</a></li>
-                                            <li class=""><a href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_metadata">metadata()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_footer">footer()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_readColumns">readColumns()</a></li>
-                                            <li class=""><a href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_rowsNumber">rowsNumber()</a></li>
-                                            <li class=""><a href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_schema">schema()</a></li>
-                                            <li class=""><a href="classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_totalByteSize">totalByteSize()</a></li>
                                     </ul>
             </li>
                     </ul>

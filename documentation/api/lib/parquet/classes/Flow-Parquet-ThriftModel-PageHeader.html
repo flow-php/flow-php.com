@@ -118,7 +118,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -154,37 +154,37 @@
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Compressed (and potentially encrypted) page size in bytes, not including this header *.</dd>
+<dd>Compressed (and potentially encrypted) page size in bytes, not including this header *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-PageHeader.html#property_crc">$crc</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
-<dd>The 32-bit CRC checksum for the page, to be be calculated as follows:</dd>
+<dd>The 32-bit CRC checksum for the page, to be calculated as follows:</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-PageHeader.html#property_data_page_header">$data_page_header</a>
     <span>
-                        &nbsp;: <a href="classes/Flow-Parquet-ThriftModel-DataPageHeader.html"><abbr title="\Flow\Parquet\ThriftModel\DataPageHeader">DataPageHeader</abbr></a>            </span>
+                        &nbsp;: null|<a href="classes/Flow-Parquet-ThriftModel-DataPageHeader.html"><abbr title="\Flow\Parquet\ThriftModel\DataPageHeader">DataPageHeader</abbr></a>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-PageHeader.html#property_data_page_header_v2">$data_page_header_v2</a>
     <span>
-                        &nbsp;: <a href="classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html"><abbr title="\Flow\Parquet\ThriftModel\DataPageHeaderV2">DataPageHeaderV2</abbr></a>            </span>
+                        &nbsp;: null|<a href="classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html"><abbr title="\Flow\Parquet\ThriftModel\DataPageHeaderV2">DataPageHeaderV2</abbr></a>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-PageHeader.html#property_dictionary_page_header">$dictionary_page_header</a>
     <span>
-                        &nbsp;: <a href="classes/Flow-Parquet-ThriftModel-DictionaryPageHeader.html"><abbr title="\Flow\Parquet\ThriftModel\DictionaryPageHeader">DictionaryPageHeader</abbr></a>            </span>
+                        &nbsp;: null|<a href="classes/Flow-Parquet-ThriftModel-DictionaryPageHeader.html"><abbr title="\Flow\Parquet\ThriftModel\DictionaryPageHeader">DictionaryPageHeader</abbr></a>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-PageHeader.html#property_index_page_header">$index_page_header</a>
     <span>
-                        &nbsp;: <a href="classes/Flow-Parquet-ThriftModel-IndexPageHeader.html"><abbr title="\Flow\Parquet\ThriftModel\IndexPageHeader">IndexPageHeader</abbr></a>            </span>
+                        &nbsp;: null|<a href="classes/Flow-Parquet-ThriftModel-IndexPageHeader.html"><abbr title="\Flow\Parquet\ThriftModel\IndexPageHeader">IndexPageHeader</abbr></a>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
@@ -198,14 +198,14 @@
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>the type of the page: indicates which of the *_header fields is set *.</dd>
+<dd>the type of the page: indicates which of the *_header fields is set *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-PageHeader.html#property_uncompressed_page_size">$uncompressed_page_size</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Uncompressed page size in bytes (not including this header) *.</dd>
+<dd>Uncompressed page size in bytes (not including this header) *</dd>
 
     </dl>
 
@@ -269,7 +269,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -279,7 +279,7 @@
         <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$_TSPEC</span>
-     = <span class="phpdocumentor-signature__default-value">[1 =&gt; [&#039;var&#039; =&gt; &#039;type&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\PageType&#039;], 2 =&gt; [&#039;var&#039; =&gt; &#039;uncompressed_page_size&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 3 =&gt; [&#039;var&#039; =&gt; &#039;compressed_page_size&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 4 =&gt; [&#039;var&#039; =&gt; &#039;crc&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 5 =&gt; [&#039;var&#039; =&gt; &#039;data_page_header&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\DataPageHeader&#039;], 6 =&gt; [&#039;var&#039; =&gt; &#039;index_page_header&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\IndexPageHeader&#039;], 7 =&gt; [&#039;var&#039; =&gt; &#039;dictionary_page_header&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\DictionaryPageHeader&#039;], 8 =&gt; [&#039;var&#039; =&gt; &#039;data_page_header_v2&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\DataPageHeaderV2&#039;]]</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(1 =&gt; array(&#039;var&#039; =&gt; &#039;type&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\PageType&#039;), 2 =&gt; array(&#039;var&#039; =&gt; &#039;uncompressed_page_size&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 3 =&gt; array(&#039;var&#039; =&gt; &#039;compressed_page_size&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 4 =&gt; array(&#039;var&#039; =&gt; &#039;crc&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 5 =&gt; array(&#039;var&#039; =&gt; &#039;data_page_header&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\DataPageHeader&#039;), 6 =&gt; array(&#039;var&#039; =&gt; &#039;index_page_header&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\IndexPageHeader&#039;), 7 =&gt; array(&#039;var&#039; =&gt; &#039;dictionary_page_header&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\DictionaryPageHeader&#039;), 8 =&gt; array(&#039;var&#039; =&gt; &#039;data_page_header_v2&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\DataPageHeaderV2&#039;))</span></code>
 
     
     
@@ -306,18 +306,18 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Compressed (and potentially encrypted) page size in bytes, not including this header *.</p>
+        <p class="phpdocumentor-summary">Compressed (and potentially encrypted) page size in bytes, not including this header *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$compressed_page_size</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -344,22 +344,22 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The 32-bit CRC checksum for the page, to be be calculated as follows:</p>
+        <p class="phpdocumentor-summary">The 32-bit CRC checksum for the page, to be calculated as follows:</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$crc</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><ul>
 <li>The standard CRC32 algorithm is used (with polynomial 0x04C11DB7,
-the same as in e.g. GZip).</li>
+the same as in e.g. GZIP).</li>
 <li>All page types can have a CRC (v1 and v2 data pages, dictionary pages,
 etc.).</li>
 <li>The CRC is computed on the serialization binary representation of the page
@@ -398,7 +398,7 @@ pages need to be read.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -406,9 +406,9 @@ pages need to be read.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Parquet-ThriftModel-DataPageHeader.html"><abbr title="\Flow\Parquet\ThriftModel\DataPageHeader">DataPageHeader</abbr></a></span>
+            <span class="phpdocumentor-signature__type">null|<a href="classes/Flow-Parquet-ThriftModel-DataPageHeader.html"><abbr title="\Flow\Parquet\ThriftModel\DataPageHeader">DataPageHeader</abbr></a></span>
     <span class="phpdocumentor-signature__name">$data_page_header</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -435,7 +435,7 @@ pages need to be read.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -443,9 +443,9 @@ pages need to be read.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html"><abbr title="\Flow\Parquet\ThriftModel\DataPageHeaderV2">DataPageHeaderV2</abbr></a></span>
+            <span class="phpdocumentor-signature__type">null|<a href="classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html"><abbr title="\Flow\Parquet\ThriftModel\DataPageHeaderV2">DataPageHeaderV2</abbr></a></span>
     <span class="phpdocumentor-signature__name">$data_page_header_v2</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -472,7 +472,7 @@ pages need to be read.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -480,9 +480,9 @@ pages need to be read.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Parquet-ThriftModel-DictionaryPageHeader.html"><abbr title="\Flow\Parquet\ThriftModel\DictionaryPageHeader">DictionaryPageHeader</abbr></a></span>
+            <span class="phpdocumentor-signature__type">null|<a href="classes/Flow-Parquet-ThriftModel-DictionaryPageHeader.html"><abbr title="\Flow\Parquet\ThriftModel\DictionaryPageHeader">DictionaryPageHeader</abbr></a></span>
     <span class="phpdocumentor-signature__name">$dictionary_page_header</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -509,7 +509,7 @@ pages need to be read.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -517,9 +517,9 @@ pages need to be read.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Parquet-ThriftModel-IndexPageHeader.html"><abbr title="\Flow\Parquet\ThriftModel\IndexPageHeader">IndexPageHeader</abbr></a></span>
+            <span class="phpdocumentor-signature__type">null|<a href="classes/Flow-Parquet-ThriftModel-IndexPageHeader.html"><abbr title="\Flow\Parquet\ThriftModel\IndexPageHeader">IndexPageHeader</abbr></a></span>
     <span class="phpdocumentor-signature__name">$index_page_header</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -546,7 +546,7 @@ pages need to be read.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -583,18 +583,18 @@ pages need to be read.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">the type of the page: indicates which of the *_header fields is set *.</p>
+        <p class="phpdocumentor-summary">the type of the page: indicates which of the *_header fields is set *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$type</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -621,18 +621,18 @@ pages need to be read.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Uncompressed page size in bytes (not including this header) *.</p>
+        <p class="phpdocumentor-summary">Uncompressed page size in bytes (not including this header) *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$uncompressed_page_size</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -664,7 +664,7 @@ pages need to be read.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -708,7 +708,7 @@ pages need to be read.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -742,7 +742,7 @@ pages need to be read.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">174</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -786,7 +786,7 @@ pages need to be read.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pageheader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageHeader.php">PageHeader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">271</span>
+    <span class="phpdocumentor-element-found-in__line">246</span>
 
     </aside>
 

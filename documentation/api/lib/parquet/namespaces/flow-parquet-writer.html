@@ -119,7 +119,9 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilderFactory.html"><abbr title="\Flow\Parquet\Writer\ColumnChunkBuilderFactory">ColumnChunkBuilderFactory</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilders.html"><abbr title="\Flow\Parquet\Writer\ColumnChunkBuilders">ColumnChunkBuilders</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-ColumnChunkContainer.html"><abbr title="\Flow\Parquet\Writer\ColumnChunkContainer">ColumnChunkContainer</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-ColumnLists.html"><abbr title="\Flow\Parquet\Writer\ColumnLists">ColumnLists</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-PageContainer.html"><abbr title="\Flow\Parquet\Writer\PageContainer">PageContainer</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-PageContainers.html"><abbr title="\Flow\Parquet\Writer\PageContainers">PageContainers</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-RowGroupBuilder.html"><abbr title="\Flow\Parquet\Writer\RowGroupBuilder">RowGroupBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html"><abbr title="\Flow\Parquet\Writer\StatisticsCounter">StatisticsCounter</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilderFactory.html"><abbr title="\Flow\Parquet\Writer\ColumnChunkBuilderFactory">ColumnChunkBuilderFactory</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-ColumnChunkBuilders.html"><abbr title="\Flow\Parquet\Writer\ColumnChunkBuilders">ColumnChunkBuilders</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-ColumnChunkContainer.html"><abbr title="\Flow\Parquet\Writer\ColumnChunkContainer">ColumnChunkContainer</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-ColumnLists.html"><abbr title="\Flow\Parquet\Writer\ColumnLists">ColumnLists</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-PageContainer.html"><abbr title="\Flow\Parquet\Writer\PageContainer">PageContainer</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-PageContainers.html"><abbr title="\Flow\Parquet\Writer\PageContainers">PageContainers</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-PageIndexBuilder.html"><abbr title="\Flow\Parquet\Writer\PageIndexBuilder">PageIndexBuilder</abbr></a></dt><dd>One column chunk&#039;s page index, page by page, as arrow-rs builds it: a column index only at StatisticsLevel::PAGE and
+only while every page that holds a value has bounds, an offset index always.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-RowGroupBuilder.html"><abbr title="\Flow\Parquet\Writer\RowGroupBuilder">RowGroupBuilder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html"><abbr title="\Flow\Parquet\Writer\StatisticsCounter">StatisticsCounter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-StatisticsOptions.html"><abbr title="\Flow\Parquet\Writer\StatisticsOptions">StatisticsOptions</abbr></a></dt><dd>The statistics a writer computes, read from Options once for every column chunk builder.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Writer-StatisticsTruncation.html"><abbr title="\Flow\Parquet\Writer\StatisticsTruncation">StatisticsTruncation</abbr></a></dt><dd>arrow-rs 60 column/writer/mod.rs truncate_min_value / truncate_max_value. A truncated bound is not exact; a bound
+that cannot be truncated (or whose increment fails) is returned as given.</dd>    </dl>
 
     <h4 id="namespaces">
         Namespaces
@@ -133,6 +135,14 @@
             </dl>
 
 
+    <h4 id="toc-enums">
+        Enums
+        <a href="namespaces/flow-parquet-writer.html#toc-enums" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-Parquet-Writer-StatisticsLevel.html"><abbr title="\Flow\Parquet\Writer\StatisticsLevel">StatisticsLevel</abbr></a></dt><dd>Which statistics a writer computes, as arrow-rs EnabledStatistics: none, column chunk statistics, or column chunk
+statistics plus a column index entry per page.</dd></dl>
 
 
 
@@ -156,7 +166,8 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="namespaces/flow-parquet-writer.html#toc-classes">Classes</a></li>
                                                                 <li><a href="namespaces/flow-parquet-writer.html#toc-interfaces">Interfaces</a></li>
-                                                                                                                                        </ul>
+                                                                <li><a href="namespaces/flow-parquet-writer.html#toc-enums">Enums</a></li>
+                                                                                                                    </ul>
             </li>
 
             

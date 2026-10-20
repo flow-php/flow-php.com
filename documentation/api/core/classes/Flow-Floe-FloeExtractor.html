@@ -132,7 +132,7 @@
     
             <span class="phpdocumentor-element__extends">
             uses
-                            <a href="classes/Flow-ETL-Extractor-Batches.html"><abbr title="\Flow\ETL\Extractor\Batches">Batches</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-File-FileReading.html"><abbr title="\Flow\ETL\Extractor\File\FileReading">FileReading</abbr></a>                    </span>
+                            <a href="classes/Flow-ETL-Extractor-Batches.html"><abbr title="\Flow\ETL\Extractor\Batches">Batches</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-File-FileReading.html"><abbr title="\Flow\ETL\Extractor\File\FileReading">FileReading</abbr></a>,                             <a href="classes/Flow-ETL-Extractor-File-Scanning.html"><abbr title="\Flow\ETL\Extractor\File\Scanning">Scanning</abbr></a>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -194,13 +194,10 @@ pass may scan it before extraction without consuming it.</dd>    </dl>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Floe-FloeExtractor.html#method_extract">extract()</a>
+    <a class="" href="classes/Flow-ETL-Extractor-File-Scanning.html#method_extract">extract()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>, void&gt;    </span>
 </dt>
-<dd>Yields rows in batches. When the source is a BatchableExtractor a batch holds between 0 and that
-extractor&#039;s own batchSize() rows; the size is chosen by the extractor and MAY vary between
-batches. Consumers must not assume a minimum size, a constant size, or a non-empty batch.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-FloeExtractor.html#method_isRepeatable">isRepeatable()</a>
@@ -216,6 +213,15 @@ batches. Consumers must not assume a minimum size, a constant size, or a non-emp
 <dd>The partition block of this source&#039;s schema and nothing else - typed exactly as the read emits it,
 empty when the source declares no partition columns. The planner asks it to decide whether a predicate
 can be evaluated from the path alone.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Floe-FloeExtractor.html#method_scan">scan()</a>
+    <span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;    </span>
+</dt>
+<dd>Reads what the plan pushed into this read and returns only rows matching every one of $scan-&gt;conjuncts. The
+limit and the path filter are hints: the plan still enforces the limit, and every path filter is also one of
+the conjuncts, so a source that reads or lists more is still correct. extract() is scan() with only a limit.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Floe-FloeExtractor.html#method_schema">schema()</a>
@@ -295,7 +301,7 @@ instead of its own description, and values are cast to fit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -392,23 +398,20 @@ instead of its own description, and values are cast to fit.</dd>
 >
     <h4 class="phpdocumentor-element__name" id="method_extract">
         extract()
-        <a href="classes/Flow-Floe-FloeExtractor.html#method_extract" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Flow-ETL-Extractor-File-Scanning.html#method_extract" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/File/Scanning.php"><a href="files/src-core-etl-src-flow-etl-extractor-file-scanning.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/File/Scanning.php">Scanning.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Yields rows in batches. When the source is a BatchableExtractor a batch holds between 0 and that
-extractor&#039;s own batchSize() rows; the size is chosen by the extractor and MAY vary between
-batches. Consumers must not assume a minimum size, a constant size, or a non-empty batch.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">extract</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pathFilter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Path\Filter\OnlyFiles">OnlyFiles</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">extract</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>, void&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -428,17 +431,6 @@ batches. Consumers must not assume a minimum size, a constant size, or a non-emp
                 : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>rows in total the plan needs from this read. A hint: the Limit step above the
-source enforces the exact count, so a source that reads more, or ignores it,
-is still correct.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$pathFilter</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Path\Filter\OnlyFiles">OnlyFiles</abbr>()</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
             </dl>
@@ -449,7 +441,7 @@ is still correct.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>, void&gt;</span>
             </section>
 
 </article>
@@ -467,7 +459,7 @@ is still correct.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -505,7 +497,7 @@ is still correct.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -538,6 +530,64 @@ can be evaluated from the path alone.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_scan">
+        scan()
+        <a href="classes/Flow-Floe-FloeExtractor.html#method_scan" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">82</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Reads what the plan pushed into this read and returns only rows matching every one of $scan-&gt;conjuncts. The
+limit and the path filter are hints: the plan still enforces the limit, and every path filter is also one of
+the conjuncts, so a source that reads or lists more is still correct. extract() is scan() with only a limit.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">scan</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Extractor-File-FileScan.html"><abbr title="\Flow\ETL\Extractor\File\FileScan">FileScan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scan</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$context</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-FlowContext.html"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$scan</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Extractor-File-FileScan.html"><abbr title="\Flow\ETL\Extractor\File\FileScan">FileScan</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;<a href="classes/Flow-ETL-Extractor-Signal.html"><abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr></a>|null, void&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_schema">
         schema()
         <a href="classes/Flow-Floe-FloeExtractor.html#method_schema" class="headerlink"><i class="fas fa-link"></i></a>
@@ -546,7 +596,7 @@ can be evaluated from the path alone.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -586,7 +636,7 @@ unionByName() asks for the fold, and memoised, so repeated calls cost nothing.</
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -624,7 +674,7 @@ unionByName() asks for the fold, and memoised, so repeated calls cost nothing.</
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -672,7 +722,7 @@ ANALYZE), never run the query.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -769,7 +819,7 @@ ANALYZE), never run the query.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -817,7 +867,7 @@ ANALYZE), never run the query.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/Floe/FloeExtractor.php"><a href="files/src-core-etl-src-flow-floe-floeextractor.html"><abbr title="src/core/etl/src/Flow/Floe/FloeExtractor.php">FloeExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -877,9 +927,10 @@ instead of its own description, and values are cast to fit.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Floe-FloeExtractor.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Extractor-Batches.html#method_batchSize">batchSize()</a></li>
-                                            <li class=""><a href="classes/Flow-Floe-FloeExtractor.html#method_extract">extract()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Extractor-File-Scanning.html#method_extract">extract()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-FloeExtractor.html#method_isRepeatable">isRepeatable()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-FloeExtractor.html#method_partitionSchema">partitionSchema()</a></li>
+                                            <li class=""><a href="classes/Flow-Floe-FloeExtractor.html#method_scan">scan()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-FloeExtractor.html#method_schema">schema()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-FloeExtractor.html#method_source">source()</a></li>
                                             <li class=""><a href="classes/Flow-Floe-FloeExtractor.html#method_statistics">statistics()</a></li>

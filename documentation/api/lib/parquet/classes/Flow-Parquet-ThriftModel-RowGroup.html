@@ -118,7 +118,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php">RowGroup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -159,10 +159,10 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-RowGroup.html#property_file_offset">$file_offset</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
 <dd>Byte offset from beginning of file to first page (data or dictionary)
-in this row group *.</dd>
+in this row group *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-RowGroup.html#property_isValidate">$isValidate</a>
@@ -175,19 +175,19 @@ in this row group *.</dd>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Number of rows in this row group *.</dd>
+<dd>Number of rows in this row group *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-RowGroup.html#property_ordinal">$ordinal</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
-<dd>Row group ordinal in the file *.</dd>
+<dd>Row group ordinal in the file *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-RowGroup.html#property_sorting_columns">$sorting_columns</a>
     <span>
-                        &nbsp;: array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-SortingColumn.html"><abbr title="\Flow\Parquet\ThriftModel\SortingColumn">SortingColumn</abbr></a>&gt;            </span>
+                        &nbsp;: null|array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-SortingColumn.html"><abbr title="\Flow\Parquet\ThriftModel\SortingColumn">SortingColumn</abbr></a>&gt;            </span>
 </dt>
 <dd>If set, specifies a sort ordering of the rows in this RowGroup.</dd>
 
@@ -196,15 +196,15 @@ in this row group *.</dd>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Total byte size of all the uncompressed column data in this row group *.</dd>
+<dd>Total byte size of all the uncompressed column data in this row group *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-RowGroup.html#property_total_compressed_size">$total_compressed_size</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
 <dd>Total byte size of all compressed (and potentially encrypted) column data
-in this row group *.</dd>
+in this row group *</dd>
 
     </dl>
 
@@ -268,7 +268,7 @@ in this row group *.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php">RowGroup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -278,7 +278,7 @@ in this row group *.</dd>
         <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$_TSPEC</span>
-     = <span class="phpdocumentor-signature__default-value">[1 =&gt; [&#039;var&#039; =&gt; &#039;columns&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\ColumnChunk&#039;]], 2 =&gt; [&#039;var&#039; =&gt; &#039;total_byte_size&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 3 =&gt; [&#039;var&#039; =&gt; &#039;num_rows&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 4 =&gt; [&#039;var&#039; =&gt; &#039;sorting_columns&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\SortingColumn&#039;]], 5 =&gt; [&#039;var&#039; =&gt; &#039;file_offset&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 6 =&gt; [&#039;var&#039; =&gt; &#039;total_compressed_size&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 7 =&gt; [&#039;var&#039; =&gt; &#039;ordinal&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I16]]</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(1 =&gt; array(&#039;var&#039; =&gt; &#039;columns&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\ColumnChunk&#039;)), 2 =&gt; array(&#039;var&#039; =&gt; &#039;total_byte_size&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 3 =&gt; array(&#039;var&#039; =&gt; &#039;num_rows&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 4 =&gt; array(&#039;var&#039; =&gt; &#039;sorting_columns&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\SortingColumn&#039;)), 5 =&gt; array(&#039;var&#039; =&gt; &#039;file_offset&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 6 =&gt; array(&#039;var&#039; =&gt; &#039;total_compressed_size&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 7 =&gt; array(&#039;var&#039; =&gt; &#039;ordinal&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I16))</span></code>
 
     
     
@@ -305,7 +305,7 @@ in this row group *.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php">RowGroup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -316,7 +316,7 @@ in this row group *.</dd>
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-ColumnChunk.html"><abbr title="\Flow\Parquet\ThriftModel\ColumnChunk">ColumnChunk</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$columns</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>This list must have the same order as the SchemaElement list in FileMetaData.</p>
 </section>
@@ -345,19 +345,19 @@ in this row group *.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php">RowGroup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Byte offset from beginning of file to first page (data or dictionary)
-in this row group *.</p>
+in this row group *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$file_offset</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -384,7 +384,7 @@ in this row group *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php">RowGroup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -425,14 +425,14 @@ in this row group *.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Number of rows in this row group *.</p>
+        <p class="phpdocumentor-summary">Number of rows in this row group *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$num_rows</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -459,18 +459,18 @@ in this row group *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php">RowGroup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Row group ordinal in the file *.</p>
+        <p class="phpdocumentor-summary">Row group ordinal in the file *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$ordinal</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -497,7 +497,7 @@ in this row group *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php">RowGroup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -506,9 +506,9 @@ in this row group *.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-SortingColumn.html"><abbr title="\Flow\Parquet\ThriftModel\SortingColumn">SortingColumn</abbr></a>&gt;</span>
+            <span class="phpdocumentor-signature__type">null|array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-SortingColumn.html"><abbr title="\Flow\Parquet\ThriftModel\SortingColumn">SortingColumn</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$sorting_columns</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>The sorting columns can be a subset of all the columns.</p>
 </section>
@@ -537,18 +537,18 @@ in this row group *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php">RowGroup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Total byte size of all the uncompressed column data in this row group *.</p>
+        <p class="phpdocumentor-summary">Total byte size of all the uncompressed column data in this row group *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$total_byte_size</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -575,19 +575,19 @@ in this row group *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php">RowGroup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Total byte size of all compressed (and potentially encrypted) column data
-in this row group *.</p>
+in this row group *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$total_compressed_size</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -619,7 +619,7 @@ in this row group *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php">RowGroup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -663,7 +663,7 @@ in this row group *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php">RowGroup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -697,7 +697,7 @@ in this row group *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php">RowGroup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -741,7 +741,7 @@ in this row group *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-rowgroup.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/RowGroup.php">RowGroup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">267</span>
+    <span class="phpdocumentor-element-found-in__line">244</span>
 
     </aside>
 

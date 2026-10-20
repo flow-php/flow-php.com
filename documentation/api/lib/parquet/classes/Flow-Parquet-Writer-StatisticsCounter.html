@@ -120,7 +120,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -153,12 +153,6 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_add">add()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_addBatch">addBatch()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -173,7 +167,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_max">max()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: bool|float|int|string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -185,7 +179,13 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_min">min()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: bool|float|int|string|null    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_nanCount">nanCount()</a>
+    <span>
+                                &nbsp;: int|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -205,6 +205,13 @@
     <span>
                                 &nbsp;: void    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_toPageStatistics">toPageStatistics()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-Parquet-ParquetFile-Statistics.html"><abbr title="\Flow\Parquet\ParquetFile\Statistics">Statistics</abbr></a>    </span>
+</dt>
+<dd>Data page statistics: a float page always carries a nan_count, 0 for an all-null page (arrow-rs get_nan_count).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_toStatistics">toStatistics()</a>
@@ -246,14 +253,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Writer-StatisticsTruncation.html"><abbr title="\Flow\Parquet\Writer\StatisticsTruncation">StatisticsTruncation</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$truncation</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -268,46 +275,9 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
-            </dl>
-
-    
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_add">
-        add()
-        <a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_add" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">49</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">null|array&lt;string|int, null|bool|float|int|object|string&gt;|bool|float|int|object|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$value</span>
-                : <span class="phpdocumentor-argument-list__argument__type">null|array&lt;string|int, null|bool|float|int|object|string&gt;|bool|float|int|object|string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$truncation</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Writer-StatisticsTruncation.html"><abbr title="\Flow\Parquet\Writer\StatisticsTruncation">StatisticsTruncation</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -334,7 +304,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -378,7 +348,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -422,14 +392,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">max</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">max</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|float|int|string|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -440,7 +410,11 @@
 
         
     
-    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool|float|int|string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -456,7 +430,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -504,14 +478,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">min</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">min</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|float|int|string|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -522,7 +496,49 @@
 
         
     
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool|float|int|string|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_nanCount">
+        nanCount()
+        <a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_nanCount" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">138</span>
+
+    </aside>
+
     
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">nanCount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -538,7 +554,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -576,7 +592,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">159</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
@@ -614,7 +630,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -640,6 +656,45 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_toPageStatistics">
+        toPageStatistics()
+        <a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_toPageStatistics" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">165</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Data page statistics: a float page always carries a nan_count, 0 for an all-null page (arrow-rs get_nan_count).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toPageStatistics</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-ParquetFile-Statistics.html"><abbr title="\Flow\Parquet\ParquetFile\Statistics">Statistics</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-ParquetFile-Statistics.html"><abbr title="\Flow\Parquet\ParquetFile\Statistics">Statistics</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_toStatistics">
         toStatistics()
         <a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_toStatistics" class="headerlink"><i class="fas fa-link"></i></a>
@@ -648,7 +703,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -686,7 +741,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-statisticscounter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/StatisticsCounter.php">StatisticsCounter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">214</span>
+    <span class="phpdocumentor-element-found-in__line">209</span>
 
     </aside>
 
@@ -733,15 +788,16 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_add">add()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_addBatch">addBatch()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_addNulls">addNulls()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_max">max()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_merge">merge()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_min">min()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_nanCount">nanCount()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_notNullCount">notNullCount()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_nullCount">nullCount()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_reset">reset()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_toPageStatistics">toPageStatistics()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_toStatistics">toStatistics()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-StatisticsCounter.html#method_valuesCount">valuesCount()</a></li>
                                     </ul>

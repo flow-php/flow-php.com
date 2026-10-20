@@ -296,6 +296,116 @@ Search.appendIndex(
             "summary": "Write\u0020values\u0020using\u0020variable\u002Dlength\u0020encoding\u0020\u0028VarInt\/ULEB128\u0029.",
             "url": "classes/Flow-Parquet-BinaryWriter.html#method_writeVarInts"
         },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\BloomFilterOptions",
+            "name": "BloomFilterOptions",
+            "summary": "",
+            "url": "classes/Flow-Parquet-BloomFilter-BloomFilterOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\BloomFilterOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-BloomFilter-BloomFilterOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\BloomFilterOptions\u003A\u003AforColumns\u0028\u0029",
+            "name": "forColumns",
+            "summary": "Option\u003A\u003ACOLUMNS_BLOOM_FILTERS,\u0020refused\u0020when\u0020a\u0020value\u0020is\u0020not\u0020a\u0020BloomFilterOptions.",
+            "url": "classes/Flow-Parquet-BloomFilter-BloomFilterOptions.html#method_forColumns"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\BloomFilterOptions\u003A\u003ADEFAULT_NDV",
+            "name": "DEFAULT_NDV",
+            "summary": "arrow\u002Drs\u0020DEFAULT_MAX_ROW_GROUP_ROW_COUNT,\u0020its\u0020default\u0020ndv.",
+            "url": "classes/Flow-Parquet-BloomFilter-BloomFilterOptions.html#constant_DEFAULT_NDV"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\BloomFilterOptions\u003A\u003A\u0024fpp",
+            "name": "fpp",
+            "summary": "",
+            "url": "classes/Flow-Parquet-BloomFilter-BloomFilterOptions.html#property_fpp"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\BloomFilterOptions\u003A\u003A\u0024ndv",
+            "name": "ndv",
+            "summary": "",
+            "url": "classes/Flow-Parquet-BloomFilter-BloomFilterOptions.html#property_ndv"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\BloomFilterReader",
+            "name": "BloomFilterReader",
+            "summary": "",
+            "url": "classes/Flow-Parquet-BloomFilter-BloomFilterReader.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\BloomFilterReader\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-BloomFilter-BloomFilterReader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\BloomFilterReader\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "Null\u0020when\u0020the\u0020chunk\u0020has\u0020no\u0020bloom\u0020filter,\u0020records\u0020an\u0020offset\u0020no\u0020filter\u0020can\u0020be\u0020read\u0020from,\u0020or\u0020holds\u0020one\u0020that\u0020is\u0020not\u0020a\nsplit\u0020block,\u0020xxh64,\u0020uncompressed\u0020filter.",
+            "url": "classes/Flow-Parquet-BloomFilter-BloomFilterReader.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\BloomHash",
+            "name": "BloomHash",
+            "summary": "",
+            "url": "classes/Flow-Parquet-BloomFilter-BloomHash.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\BloomHash\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-BloomFilter-BloomHash.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\BloomHash\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "xxh64\u0020\u0028seed\u00200\u0029\u0020of\u0020the\u0020PLAIN\u0020encoding,\u0020without\u0020BYTE_ARRAY\u0027s\u0020length\u0020prefix\u003B\u0020the\u0020u64\u0020as\u0020a\u0020signed\u0020PHP\u0020int.",
+            "url": "classes/Flow-Parquet-BloomFilter-BloomHash.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\Sbbf",
+            "name": "Sbbf",
+            "summary": "A\u0020split\u0020block\u0020bloom\u0020filter\u003A\u0020blocks\u0020of\u0020eight\u0020little\u002Dendian\u0020u32\u0020words,\u0020one\u0020bit\u0020set\u0020per\u0020word\u0020for\u0020each\u0020value.",
+            "url": "classes/Flow-Parquet-BloomFilter-Sbbf.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\Sbbf\u003A\u003AfromBytes\u0028\u0029",
+            "name": "fromBytes",
+            "summary": "",
+            "url": "classes/Flow-Parquet-BloomFilter-Sbbf.html#method_fromBytes"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\Sbbf\u003A\u003Abits\u0028\u0029",
+            "name": "bits",
+            "summary": "The\u0020eight\u0020bits\u0020a\u0020hash\u0020sets\u0020in\u0020a\u0020bitset\u0020of\u0020\u0024blocks\u0020blocks,\u0020numbered\u0020from\u0020the\u0020first\u0020byte\u0027s\u0020lowest\u0020bit.\u0020\u0024hash\u0020is\u0020the\nxxh64\u0020u64\u0020as\u0020a\u0020signed\u0020PHP\u0020int,\u0020so\u0020every\u0020shift\u0020is\u0020masked\u0020and\u0020the\u002032\u002Dbit\u0020multiply\u0020is\u0020split\u0020in\u002016\u002Dbit\u0020halves.",
+            "url": "classes/Flow-Parquet-BloomFilter-Sbbf.html#method_bits"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\Sbbf\u003A\u003Aserialized\u0028\u0029",
+            "name": "serialized",
+            "summary": "As\u0020a\u0020file\u0020holds\u0020it,\u0020the\u0020form\u0020BloomFilterReader\u0020reads\u003A\u0020the\u0020thrift\u0020header,\u0020then\u0020the\u0020bitset.",
+            "url": "classes/Flow-Parquet-BloomFilter-Sbbf.html#method_serialized"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\Sbbf\u003A\u003Acheck\u0028\u0029",
+            "name": "check",
+            "summary": "False\u0020only\u0020when\u0020the\u0020value\u0020was\u0020never\u0020inserted.",
+            "url": "classes/Flow-Parquet-BloomFilter-Sbbf.html#method_check"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\Sbbf\u003A\u003ABLOCK_BYTES",
+            "name": "BLOCK_BYTES",
+            "summary": "",
+            "url": "classes/Flow-Parquet-BloomFilter-Sbbf.html#constant_BLOCK_BYTES"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\SbbfBuilder",
+            "name": "SbbfBuilder",
+            "summary": "Sized\u0020and\u0020folded\u0020like\u0020arrow\u002Drs\u002060\u003A\u0020optimal_num_of_bytes,\u0020then\u0020fold_to_target_fpp.",
+            "url": "classes/Flow-Parquet-BloomFilter-SbbfBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\SbbfBuilder\u003A\u003Afor\u0028\u0029",
+            "name": "for",
+            "summary": "",
+            "url": "classes/Flow-Parquet-BloomFilter-SbbfBuilder.html#method_for"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\SbbfBuilder\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "",
+            "url": "classes/Flow-Parquet-BloomFilter-SbbfBuilder.html#method_build"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter\\SbbfBuilder\u003A\u003Ainsert\u0028\u0029",
+            "name": "insert",
+            "summary": "",
+            "url": "classes/Flow-Parquet-BloomFilter-SbbfBuilder.html#method_insert"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Consts",
             "name": "Consts",
             "summary": "",
@@ -435,6 +545,126 @@ Search.appendIndex(
             "name": "firstValue",
             "summary": "",
             "url": "classes/Flow-Parquet-Data-DeltaHeader.html#property_firstValue"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalCodec",
+            "name": "PhysicalCodec",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalCodec.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalCodec\u003A\u003AdecodeStatistic\u0028\u0029",
+            "name": "decodeStatistic",
+            "summary": "Null\u0020for\u0020bytes\u0020whose\u0020width\u0020does\u0020not\u0020fit\u0020the\u0020physical\u0020type\u003A\u0020older\u0020flow\u0020writers\u0020doubled\u0020INT64\u0020bounds.",
+            "url": "classes/Flow-Parquet-Data-PhysicalCodec.html#method_decodeStatistic"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalCodec\u003A\u003AencodeStatistic\u0028\u0029",
+            "name": "encodeStatistic",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalCodec.html#method_encodeStatistic"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder",
+            "name": "PhysicalOrder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#method_forColumn"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003Acompare\u0028\u0029",
+            "name": "compare",
+            "summary": "Orders\u0020two\u0020physical\u0020values\u0020as\u0020parquet\u0020statistics\u0020do\u003A\u0020bytes\u0020unsigned,\u0020DECIMAL\u0020signed\u0020two\u0027s\u0020complement,\u0020UINT\nunsigned,\u0020floats\u0020by\u0020IEEE\u0020754\u0020total\u0020order\u0020\u0028\u002D0.0\u0020\u003C\u0020\u002B0.0,\u0020NaN\u0020greatest\u0029,\u0020false\u0020\u003C\u0020true.",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#method_compare"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003AcompareKeys\u0028\u0029",
+            "name": "compareKeys",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#method_compareKeys"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003AisFloatingPoint\u0028\u0029",
+            "name": "isFloatingPoint",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#method_isFloatingPoint"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003AisSigned\u0028\u0029",
+            "name": "isSigned",
+            "summary": "Whether\u0020the\u0020deprecated\u0020statistics\u0020min\/max\u0020may\u0020hold\u0020the\u0020column\u0027s\u0020bounds\u0020\u0028arrow\u002Drs\u0020SortOrder\u003A\u003ASIGNED\u0029.",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#method_isSigned"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003AisNan\u0028\u0029",
+            "name": "isNan",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#method_isNan"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003AisUnordered\u0028\u0029",
+            "name": "isUnordered",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#method_isUnordered"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003AisZero\u0028\u0029",
+            "name": "isZero",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#method_isZero"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003Akey\u0028\u0029",
+            "name": "key",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#method_key"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003Azero\u0028\u0029",
+            "name": "zero",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#method_zero"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003ABoolean",
+            "name": "Boolean",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#enumcase_Boolean"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003ABytes",
+            "name": "Bytes",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#enumcase_Bytes"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003ADecimal",
+            "name": "Decimal",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#enumcase_Decimal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003ADouble",
+            "name": "Double",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#enumcase_Double"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003AFloat",
+            "name": "Float",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#enumcase_Float"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003AFloat16",
+            "name": "Float16",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#enumcase_Float16"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003ASigned",
+            "name": "Signed",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#enumcase_Signed"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003AUnordered",
+            "name": "Unordered",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#enumcase_Unordered"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003AUnsigned32",
+            "name": "Unsigned32",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#enumcase_Unsigned32"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\PhysicalOrder\u003A\u003AUnsigned64",
+            "name": "Unsigned64",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-PhysicalOrder.html#enumcase_Unsigned64"
         },                {
             "fqsen": "\\Flow\\Parquet\\Data\\PlainValuesPacker",
             "name": "PlainValuesPacker",
@@ -706,6 +936,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-ColumnData-ReadFlatColumnValues.html#method_repetitionLevels"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\ReadFlatColumnValues\u003A\u003Aselect\u0028\u0029",
+            "name": "select",
+            "summary": "The\u0020rows\u0020\u0024rows\u0020selects,\u0020its\u0020row\u00200\u0020being\u0020this\u0020page\u0027s\u0020first\u0020row\u003B\u0020a\u0020row\u0020starts\u0020at\u0020each\u0020repetition\u0020level\u00200.",
+            "url": "classes/Flow-Parquet-Dremel-ColumnData-ReadFlatColumnValues.html#method_select"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\ReadFlatColumnValues\u003A\u003ArowsCount\u0028\u0029",
             "name": "rowsCount",
             "summary": "",
@@ -901,20 +1136,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-RowGroupContainer.html#property_rowGroup"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\Statistics\\Comparator",
-            "name": "Comparator",
+            "fqsen": "\\Flow\\Parquet\\Dremel\\RowGroupContainer\u003A\u003A\u0024columnIndexes",
+            "name": "columnIndexes",
             "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-Statistics-Comparator.html"
+            "url": "classes/Flow-Parquet-Dremel-RowGroupContainer.html#property_columnIndexes"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\Statistics\\Comparator\u003A\u003AisGreaterThan\u0028\u0029",
-            "name": "isGreaterThan",
+            "fqsen": "\\Flow\\Parquet\\Dremel\\RowGroupContainer\u003A\u003A\u0024offsetIndexes",
+            "name": "offsetIndexes",
             "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-Statistics-Comparator.html#method_isGreaterThan"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\Statistics\\Comparator\u003A\u003AisLessThan\u0028\u0029",
-            "name": "isLessThan",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-Statistics-Comparator.html#method_isLessThan"
+            "url": "classes/Flow-Parquet-Dremel-RowGroupContainer.html#property_offsetIndexes"
         },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\Validator\\ColumnDataValidator",
             "name": "ColumnDataValidator",
@@ -945,6 +1175,16 @@ Search.appendIndex(
             "name": "validate",
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-Validator.html#method_validate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\DSL\\parquet_column\u0028\u0029",
+            "name": "parquet_column",
+            "summary": "",
+            "url": "namespaces/flow-parquet-dsl.html#function_parquet_column"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\DSL\\parquet_query\u0028\u0029",
+            "name": "parquet_query",
+            "summary": "",
+            "url": "namespaces/flow-parquet-dsl.html#function_parquet_query"
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine",
             "name": "AdaptiveParquetEngine",
@@ -986,6 +1226,76 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-Arrow-OptionsConverter.html#method_toExtension"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\ReadPlanConverter",
+            "name": "ReadPlanConverter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-ReadPlanConverter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\ReadPlanConverter\u003A\u003AtoExtension\u0028\u0029",
+            "name": "toExtension",
+            "summary": "Called\u0020by\u0020name\u0020from\u0020arrow\u002Dext\u0020RustBatchReader\u003A\u003A__construct\u0028\u0029\u0020and\u0020RustColumnsReader\u003A\u003A__construct\u0028\u0029,\u0020pinned\u0020by\nphpt\u0020055.",
+            "url": "classes/Flow-Parquet-Engine-Arrow-ReadPlanConverter.html#method_toExtension"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\ReadPlanConverter\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-ReadPlanConverter.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\ReadPlanConverter\u003A\u003Aany\u0028\u0029",
+            "name": "any",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-ReadPlanConverter.html#method_any"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\ReadPlanConverter\u003A\u003Acomparison\u0028\u0029",
+            "name": "comparison",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-ReadPlanConverter.html#method_comparison"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\ReadPlanConverter\u003A\u003Ain\u0028\u0029",
+            "name": "in",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-ReadPlanConverter.html#method_in"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\ReadPlanConverter\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-ReadPlanConverter.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\ReadPlanConverter\u003A\u003Anot\u0028\u0029",
+            "name": "not",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-ReadPlanConverter.html#method_not"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\ReadPlanConverter\u003A\u003AstartsWith\u0028\u0029",
+            "name": "startsWith",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-ReadPlanConverter.html#method_startsWith"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\RustRowGroupChunks",
+            "name": "RustRowGroupChunks",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\RustRowGroupChunks\u003A\u003AfromThrift\u0028\u0029",
+            "name": "fromThrift",
+            "summary": "Called\u0020by\u0020name\u0020from\u0020arrow\u002Dext\u0020RustParquetFooter\u003A\u003ArowGroupChunks\u0028\u0029,\u0020pinned\u0020by\u0020phpt\u0020056.",
+            "url": "classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_fromThrift"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\RustRowGroupChunks\u003A\u003Achunk\u0028\u0029",
+            "name": "chunk",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_chunk"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\RustRowGroupChunks\u003A\u003AcolumnOrder\u0028\u0029",
+            "name": "columnOrder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_columnOrder"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\RustRowGroupChunks\u003A\u003ArowCounts\u0028\u0029",
+            "name": "rowCounts",
+            "summary": "Every\u0020row\u0020group\u0027s\u0020row\u0020count,\u0020in\u0020file\u0020order.",
+            "url": "classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_rowCounts"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\SchemaConverter",
             "name": "SchemaConverter",
             "summary": "",
@@ -1018,7 +1328,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\ArrowExtension\u003A\u003AABI",
             "name": "ABI",
-            "summary": "The\u0020contract\u0020version\u0020this\u0020package\u0020expects\u0020from\u0020arrow\u002Dext,\u0020equal\u0020to\u0020the\u0020extension\u0027s\u0020FLOW_ARROW_ABI.\u0020Both\u0020sides\nchange\u0020together\u0020whenever\u0020a\u0020class\u0020or\u0020interface\u0020the\u0020extension\u0020registers\u0020changes.",
+            "summary": "The\u0020contract\u0020version\u0020this\u0020package\u0020expects\u0020from\u0020arrow\u002Dext,\u0020equal\u0020to\u0020the\u0020extension\u0027s\u0020FLOW_ARROW_ABI.\u0020Both\u0020sides\nchange\u0020together\u0020whenever\u0020a\u0020registered\u0020class\u0020or\u0020interface,\u0020or\u0020the\u0020schema,\u0020options\u0020or\u0020values\u0020crossing\u0020them,\u0020change.",
             "url": "classes/Flow-Parquet-Engine-ArrowExtension.html#constant_ABI"
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\ArrowExtension\u003A\u003A\u0024loaded",
@@ -1076,30 +1386,15 @@ Search.appendIndex(
             "summary": "Closes\u0020the\u0020stream\u0020it\u0020was\u0020opened\u0020on\u003B\u0020any\u0020later\u0020call\u0020throws\u0020RuntimeException\u0028\u0027Reader\u0020is\u0020not\u0020open\u0027\u0029.",
             "url": "classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_close"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileReader\u003A\u003Ametadata\u0028\u0029",
-            "name": "metadata",
-            "summary": "The\u0020whole\u0020footer\u0020as\u0020Metadata,\u0020built\u0020on\u0020the\u0020first\u0020call.",
-            "url": "classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_metadata"
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileReader\u003A\u003Afooter\u0028\u0029",
+            "name": "footer",
+            "summary": "The\u0020file\u0027s\u0020footer,\u0020read\u0020on\u0020the\u0020first\u0020call\u003B\u0020it\u0020stays\u0020readable\u0020after\u0020close\u0028\u0029.",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_footer"
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileReader\u003A\u003AreadColumns\u0028\u0029",
             "name": "readColumns",
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_readColumns"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileReader\u003A\u003ArowsNumber\u0028\u0029",
-            "name": "rowsNumber",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_rowsNumber"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileReader\u003A\u003Aschema\u0028\u0029",
-            "name": "schema",
-            "summary": "The\u0020file\u0020schema,\u0020without\u0020building\u0020the\u0020row\u002Dgroup\u0020metadata.",
-            "url": "classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_schema"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileReader\u003A\u003AtotalByteSize\u0028\u0029",
-            "name": "totalByteSize",
-            "summary": "\u03A3\u0020row\u0020group\u0020total_byte_size\u0020\u0028uncompressed\u0029,\u0020without\u0020building\u0020the\u0020row\u002Dgroup\u0020metadata.",
-            "url": "classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_totalByteSize"
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileWriter",
             "name": "PhpParquetFileWriter",
@@ -1131,6 +1426,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-PhpParquetFileWriter.html#method_writeRow"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFooter",
+            "name": "PhpParquetFooter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFooter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFooter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFooter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFooter\u003A\u003Ametadata\u0028\u0029",
+            "name": "metadata",
+            "summary": "The\u0020whole\u0020footer\u0020as\u0020Metadata,\u0020built\u0020on\u0020the\u0020first\u0020call.",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFooter.html#method_metadata"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFooter\u003A\u003ArowGroupChunks\u0028\u0029",
+            "name": "rowGroupChunks",
+            "summary": "The\u0020footer\u0020narrowed\u0020to\u0020the\u0020given\u0020leaves,\u0020without\u0020building\u0020the\u0020row\u002Dgroup\u0020metadata\u0020of\u0020other\u0020columns.",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFooter.html#method_rowGroupChunks"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFooter\u003A\u003ArowsNumber\u0028\u0029",
+            "name": "rowsNumber",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFooter.html#method_rowsNumber"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFooter\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "The\u0020file\u0020schema,\u0020without\u0020building\u0020the\u0020row\u002Dgroup\u0020metadata.",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFooter.html#method_schema"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFooter\u003A\u003AtotalByteSize\u0028\u0029",
+            "name": "totalByteSize",
+            "summary": "\u03A3\u0020row\u0020group\u0020total_byte_size\u0020\u0028uncompressed\u0029,\u0020without\u0020building\u0020the\u0020row\u002Dgroup\u0020metadata.",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFooter.html#method_totalByteSize"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Exception\\DataConversionException",
             "name": "DataConversionException",
             "summary": "",
@@ -1155,6 +1485,1271 @@ Search.appendIndex(
             "name": "ValidationException",
             "summary": "",
             "url": "classes/Flow-Parquet-Exception-ValidationException.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\All",
+            "name": "All",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-All.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\All\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-All.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\All\u003A\u003Aaccept\u0028\u0029",
+            "name": "accept",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-All.html#method_accept"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\All\u003A\u003Aand\u0028\u0029",
+            "name": "and",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-All.html#method_and"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\All\u003A\u003Anegate\u0028\u0029",
+            "name": "negate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-All.html#method_negate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\All\u003A\u003Aor\u0028\u0029",
+            "name": "or",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-All.html#method_or"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\All\u003A\u003A\u0024filters",
+            "name": "filters",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-All.html#property_filters"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Any",
+            "name": "Any",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Any.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Any\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Any.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Any\u003A\u003Aaccept\u0028\u0029",
+            "name": "accept",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Any.html#method_accept"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Any\u003A\u003Aand\u0028\u0029",
+            "name": "and",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Any.html#method_and"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Any\u003A\u003Anegate\u0028\u0029",
+            "name": "negate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Any.html#method_negate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Any\u003A\u003Aor\u0028\u0029",
+            "name": "or",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Any.html#method_or"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Any\u003A\u003A\u0024filters",
+            "name": "filters",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Any.html#property_filters"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\AbsentLeaf",
+            "name": "AbsentLeaf",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\BoundFilter",
+            "name": "BoundFilter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-BoundFilter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\BoundFilter\u003A\u003Abind\u0028\u0029",
+            "name": "bind",
+            "summary": "Never\u0020throws\u0020for\u0020a\u0020reason\u0020that\u0020depends\u0020on\u0020the\u0020file\u003A\u0020a\u0020leaf\u0020the\u0020file\u0020cannot\u0020answer\u0020is\u0020absent\u0020or\u0020refused.",
+            "url": "classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_bind"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\BoundFilter\u003A\u003Acolumns\u0028\u0029",
+            "name": "columns",
+            "summary": "The\u0020columns\u0020of\u0020the\u0020leaves\u0020answered\u0020exactly,\u0020each\u0020once.",
+            "url": "classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_columns"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\BoundFilter\u003A\u003Afilter\u0028\u0029",
+            "name": "filter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_filter"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\BoundFilter\u003A\u003AanswersEveryConjunct\u0028\u0029",
+            "name": "answersEveryConjunct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_answersEveryConjunct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\BoundFilter\u003A\u003Aleaf\u0028\u0029",
+            "name": "leaf",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_leaf"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\BoundFilter\u003A\u003Aleaves\u0028\u0029",
+            "name": "leaves",
+            "summary": "The\u0020filter\u0027s\u0020leaves,\u0020depth\u0020first.",
+            "url": "classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_leaves"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\BoundFilter\u003A\u003Aresidual\u0028\u0029",
+            "name": "residual",
+            "summary": "The\u0020root\u0020conjuncts\u0020rowFilter\u0028\u0029\u0020leaves\u0020out,\u0020which\u0020the\u0020caller\u0020evaluates\u003B\u0020null\u0020when\u0020there\u0020is\u0020none.",
+            "url": "classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_residual"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\BoundFilter\u003A\u003ArowFilter\u0028\u0029",
+            "name": "rowFilter",
+            "summary": "The\u0020root\u0020conjuncts\u0020rows\u0020are\u0020evaluated\u0020on,\u0020with\u0020their\u0020leaves\u0027\u0020resolutions\u003B\u0020null\u0020when\u0020none\u0020is.",
+            "url": "classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_rowFilter"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\BoundFilter\u003A\u003ArowLeaf\u0028\u0029",
+            "name": "rowLeaf",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_rowLeaf"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\EqualRange",
+            "name": "EqualRange",
+            "summary": "The\u0020lowest\u0020and\u0020highest\u0020physical\u0020value\u0020whose\u0020decoded\u0020value\u0020equals\u0020a\u0020literal,\u0020low\u0020above\u0020high\u0020when\u0020none\u0020does.",
+            "url": "classes/Flow-Parquet-Filter-Binding-EqualRange.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\EqualRange\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-EqualRange.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\EqualRange\u003A\u003Agrid\u0028\u0029",
+            "name": "grid",
+            "summary": "Physical\u0020value\u0020p\u0020decodes\u0020to\u0020p\u0020\u002A\u0020\u0024step\u003A\u0020the\u0020value\u0020is\u0020hit\u0020only\u0020on\u0020the\u0020grid.",
+            "url": "classes/Flow-Parquet-Filter-Binding-EqualRange.html#method_grid"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\EqualRange\u003A\u003Aintegers\u0028\u0029",
+            "name": "integers",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-EqualRange.html#method_integers"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\EqualRange\u003A\u003Apoint\u0028\u0029",
+            "name": "point",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-EqualRange.html#method_point"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\EqualRange\u003A\u003A\u0024low",
+            "name": "low",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-EqualRange.html#property_low"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\EqualRange\u003A\u003A\u0024high",
+            "name": "high",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-EqualRange.html#property_high"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LeafResolver",
+            "name": "LeafResolver",
+            "summary": "A\u0020filter\u0020leaf\u0020against\u0020a\u0020file\u0020schema\u003A\u0020pruning\u0020and\u0020evaluation\u0020read\u0020the\u0020same\u0020column,\u0020domain,\u0020literals\u0020and\u0020physical\nvalues.",
+            "url": "classes/Flow-Parquet-Filter-Binding-LeafResolver.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LeafResolver\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-LeafResolver.html#method_resolve"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain",
+            "name": "LiteralDomain",
+            "summary": "The\u0020literals\u0020a\u0020column\u0027s\u0020decoded\u0020values\u0020compare\u0020with\u003B\u0020binding\u0020and\u0020evaluation\u0020both\u0020ask\u0020it.",
+            "url": "classes/Flow-Parquet-Filter-Binding-LiteralDomain.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "The\u0020domain\u0020of\u0020the\u0020column\u0027s\u0020decoded\u0020values\u0020and\u0020their\u0020pre\u002Dimage\u003A\u0020null\u0020when\u0020no\u0020literal\u0020compares\u0020with\u0020them\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-LiteralDomain.html#method_forColumn"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain\u003A\u003Aholds\u0028\u0029",
+            "name": "holds",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-LiteralDomain.html#method_holds"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain\u003A\u003Akey\u0028\u0029",
+            "name": "key",
+            "summary": "Values\u0020equal\u0020in\u0020the\u0020domain\u0027s\u0020order\u0020share\u0020a\u0020key\u0020\u0028int\u00201\u0020and\u0020float\u00201.0\u0020alike\u0029,\u0020so\u0020IN\u0020looks\u0020a\u0020value\u0020up\u0020instead\u0020of\nordering\u0020it\u0020against\u0020each\u0020literal.\u0020Null\u0020orders\u0020it\u0020instead\u003A\u0020NaN,\u0020a\u0020number\u0020beyond\u0020\u00B12\u005E53\u0020\u0028where\u0020int\u0020and\u0020float\nequality\u0020stops\u0020being\u0020transitive\u0029,\u0020a\u0020boolean,\u0020a\u0020float\u0020against\u0020UINT_64.",
+            "url": "classes/Flow-Parquet-Filter-Binding-LiteralDomain.html#method_key"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain\u003A\u003Anormalise\u0028\u0029",
+            "name": "normalise",
+            "summary": "The\u0020literal\u0020as\u0020the\u0020domain\u0027s\u0020values\u0020spell\u0020it\u003A\u0020a\u0020uuid\u0020in\u0020lowercase,\u0020the\u0020form\u0020it\u0020decodes\u0020to.",
+            "url": "classes/Flow-Parquet-Filter-Binding-LiteralDomain.html#method_normalise"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain\u003A\u003AholdsPrefix\u0028\u0029",
+            "name": "holdsPrefix",
+            "summary": "Whether\u0020a\u0020StartsWith\u0020prefix\u0020compares\u0020with\u0020the\u0020decoded\u0020values.",
+            "url": "classes/Flow-Parquet-Filter-Binding-LiteralDomain.html#method_holdsPrefix"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain\u003A\u003ABoolean",
+            "name": "Boolean",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-LiteralDomain.html#enumcase_Boolean"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain\u003A\u003ABytes",
+            "name": "Bytes",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-LiteralDomain.html#enumcase_Bytes"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain\u003A\u003ADateTime",
+            "name": "DateTime",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-LiteralDomain.html#enumcase_DateTime"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain\u003A\u003ANone",
+            "name": "None",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-LiteralDomain.html#enumcase_None"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain\u003A\u003ANumber",
+            "name": "Number",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-LiteralDomain.html#enumcase_Number"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain\u003A\u003AUnsignedInteger64",
+            "name": "UnsignedInteger64",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-LiteralDomain.html#enumcase_UnsignedInteger64"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain\u003A\u003AUuid",
+            "name": "Uuid",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-LiteralDomain.html#enumcase_Uuid"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\OutOfDomain",
+            "name": "OutOfDomain",
+            "summary": "An\u0020edge\u0020below\u0020or\u0020above\u0020every\u0020physical\u0020value\u0020of\u0020the\u0020column.",
+            "url": "classes/Flow-Parquet-Filter-Binding-OutOfDomain.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\OutOfDomain\u003A\u003AAbove",
+            "name": "Above",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-OutOfDomain.html#enumcase_Above"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\OutOfDomain\u003A\u003ABelow",
+            "name": "Below",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-OutOfDomain.html#enumcase_Below"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalInterval",
+            "name": "PhysicalInterval",
+            "summary": "A\u0020null\u0020bound\u0020is\u0020unbounded.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalInterval.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalInterval\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalInterval.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalInterval\u003A\u003Aunbounded\u0028\u0029",
+            "name": "unbounded",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalInterval.html#method_unbounded"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalInterval\u003A\u003A\u0024lower",
+            "name": "lower",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalInterval.html#property_lower"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalInterval\u003A\u003A\u0024lowerInclusive",
+            "name": "lowerInclusive",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalInterval.html#property_lowerInclusive"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalInterval\u003A\u003A\u0024upper",
+            "name": "upper",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalInterval.html#property_upper"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalInterval\u003A\u003A\u0024upperInclusive",
+            "name": "upperInclusive",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalInterval.html#property_upperInclusive"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalIntervals",
+            "name": "PhysicalIntervals",
+            "summary": "The\u0020physical\u0020values\u0020whose\u0020decoded\u0020value\u0020satisfies\u0020a\u0020leaf,\u0020as\u0020a\u0020union\u0020of\u0020intervals.\u0020Floats\u0020compare\u0020as\u0020IEEE\u0020754\u0020does\noutside\u0020NaN\u003A\u0020\u002D0.0\u0020equals\u0020\u002B0.0.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalIntervals.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalIntervals\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalIntervals.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalIntervals\u003A\u003ApreImage\u0028\u0029",
+            "name": "preImage",
+            "summary": "Null\u0020when\u0020the\u0020column\u0027s\u0020decoded\u0020values\u0020cannot\u0020be\u0020compared\u0020with\u0020the\u0020literal\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalIntervals.html#method_preImage"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalIntervals\u003A\u003ApreImageOfSet\u0028\u0029",
+            "name": "preImageOfSet",
+            "summary": "Sorted\u0020by\u0020lower\u0020bound,\u0020each\u0020once\u003A\u0020the\u0020pre\u002Dimages\u0020of\u0020distinct\u0020values\u0020are\u0020disjoint,\u0020of\u0020equal\u0020values\u0020the\u0020same.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalIntervals.html#method_preImageOfSet"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalIntervals\u003A\u003Acontains\u0028\u0029",
+            "name": "contains",
+            "summary": "NaN\u0020lies\u0020in\u0020no\u0020interval.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalIntervals.html#method_contains"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalIntervals\u003A\u003Acovers\u0028\u0029",
+            "name": "covers",
+            "summary": "\u005B\u0024min,\u0020\u0024max\u005D\u0020lies\u0020inside\u0020one\u0020interval.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalIntervals.html#method_covers"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalIntervals\u003A\u003Adisjoint\u0028\u0029",
+            "name": "disjoint",
+            "summary": "No\u0020interval\u0020meets\u0020\u005B\u0024min,\u0020\u0024max\u005D\u003A\u0020the\u0020intervals\u0020are\u0020disjoint\u0020and\u0020sorted,\u0020so\u0020only\u0020those\u0020starting\u0020at\u0020or\u0020below\u0020\u0024max\ncan,\u0020the\u0020last\u0020of\u0020them\u0020first.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalIntervals.html#method_disjoint"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalIntervals\u003A\u003AisEmpty\u0028\u0029",
+            "name": "isEmpty",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalIntervals.html#method_isEmpty"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalIntervals\u003A\u003A\u0024order",
+            "name": "order",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalIntervals.html#property_order"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalIntervals\u003A\u003A\u0024intervals",
+            "name": "intervals",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PhysicalIntervals.html#property_intervals"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\BooleanPreImage",
+            "name": "BooleanPreImage",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-BooleanPreImage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\BooleanPreImage\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "Null\u0020when\u0020the\u0020column\u0027s\u0020decoded\u0020values\u0020cannot\u0020be\u0020compared\u0020with\u0020the\u0020literal\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-BooleanPreImage.html#method_equal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\BytesPreImage",
+            "name": "BytesPreImage",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-BytesPreImage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\BytesPreImage\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "Null\u0020when\u0020the\u0020column\u0027s\u0020decoded\u0020values\u0020cannot\u0020be\u0020compared\u0020with\u0020the\u0020literal\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-BytesPreImage.html#method_equal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\BytesPreImage\u003A\u003AstartsWith\u0028\u0029",
+            "name": "startsWith",
+            "summary": "The\u0020values\u0020from\u0020the\u0020prefix\u0020up\u0020to\u0020its\u0020increment\u003A\u0020a\u0020prefix\u0020of\u0020only\u00200xFF\u0020bytes\u0020has\u0020no\u0020upper\u0020bound.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-BytesPreImage.html#method_startsWith"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\DatePreImage",
+            "name": "DatePreImage",
+            "summary": "A\u0020day\u0020decodes\u0020to\u0020its\u0020UTC\u0020midnight\u003A\u0020an\u0020instant\u0020off\u0020midnight\u0020equals\u0020no\u0020day.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-DatePreImage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\DatePreImage\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "Null\u0020when\u0020the\u0020column\u0027s\u0020decoded\u0020values\u0020cannot\u0020be\u0020compared\u0020with\u0020the\u0020literal\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-DatePreImage.html#method_equal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\DecimalPreImage",
+            "name": "DecimalPreImage",
+            "summary": "A\u0020DECIMAL\u0020decodes\u0020to\u0020a\u0020float,\u0020exactly\u0020invertible\u0020up\u0020to\u0020precision\u002015\u0020only.\u0020A\u0020byte\u0020decimal\u0027s\u0020edges\u0020are\u00208\u0020big\u002Dendian\nbytes\u003A\u0020the\u0020Decimal\u0020order\u0020sign\u002Dextends\u0020any\u0020width.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-DecimalPreImage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\DecimalPreImage\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-DecimalPreImage.html#method_forColumn"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\DecimalPreImage\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "Null\u0020when\u0020the\u0020column\u0027s\u0020decoded\u0020values\u0020cannot\u0020be\u0020compared\u0020with\u0020the\u0020literal\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-DecimalPreImage.html#method_equal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\DoublePreImage",
+            "name": "DoublePreImage",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-DoublePreImage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\DoublePreImage\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "The\u0020literal\u0020as\u0020the\u0020double\u0020it\u0020compares\u0020with,\u0020\u002D0.0\u0020as\u0020\u002B0.0\u003B\u0020null\u0020for\u0020a\u0020kind\u0020that\u0020is\u0020no\u0020number\u0020or\u0020an\u0020int\u0020a\u0020double\ncannot\u0020hold\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-DoublePreImage.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\DoublePreImage\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "Null\u0020when\u0020the\u0020column\u0027s\u0020decoded\u0020values\u0020cannot\u0020be\u0020compared\u0020with\u0020the\u0020literal\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-DoublePreImage.html#method_equal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\Float32PreImage",
+            "name": "Float32PreImage",
+            "summary": "A\u0020FLOAT\u0020decodes\u0020to\u0020the\u0020exact\u0020double\u0020of\u0020its\u002032\u0020bits\u003A\u0020a\u0020literal\u0020between\u0020two\u0020of\u0020them\u0020equals\u0020neither,\u0020and\u0020one\u0020beyond\u0020the\nlargest\u0020float32\u0020lies\u0020between\u0020it\u0020and\u0020the\u0020infinity.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-Float32PreImage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\Float32PreImage\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "Null\u0020when\u0020the\u0020column\u0027s\u0020decoded\u0020values\u0020cannot\u0020be\u0020compared\u0020with\u0020the\u0020literal\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-Float32PreImage.html#method_equal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\IntegerPreImage",
+            "name": "IntegerPreImage",
+            "summary": "A\u0020float\u0020literal\u0020compares\u0020exactly\u0020up\u0020to\u00202\u005E53\u003A\u0020a\u0020fraction\u0020lies\u0020between\u0020two\u0020integers\u0020and\u0020equals\u0020neither.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-IntegerPreImage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\IntegerPreImage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-IntegerPreImage.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\IntegerPreImage\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-IntegerPreImage.html#method_forColumn"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\IntegerPreImage\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "Null\u0020when\u0020the\u0020column\u0027s\u0020decoded\u0020values\u0020cannot\u0020be\u0020compared\u0020with\u0020the\u0020literal\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-IntegerPreImage.html#method_equal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\TimestampPreImage",
+            "name": "TimestampPreImage",
+            "summary": "Millis\u0020hit\u0020a\u0020micros\u0020literal\u0020only\u0020on\u0020the\u0020milli\u0020grid\u003B\u0020nanos\u0020decode\u0020floored\u0020to\u0020micros.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-TimestampPreImage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\TimestampPreImage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-TimestampPreImage.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\TimestampPreImage\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-TimestampPreImage.html#method_forColumn"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\TimestampPreImage\u003A\u003Amicros\u0028\u0029",
+            "name": "micros",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-TimestampPreImage.html#method_micros"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\TimestampPreImage\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "Null\u0020when\u0020the\u0020column\u0027s\u0020decoded\u0020values\u0020cannot\u0020be\u0020compared\u0020with\u0020the\u0020literal\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-TimestampPreImage.html#method_equal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\UnsignedInt64PreImage",
+            "name": "UnsignedInt64PreImage",
+            "summary": "UINT_64\u0020decodes\u0020to\u0020a\u0020digit\u0020string\u003B\u0020its\u0020physical\u0020value\u0020is\u0020the\u0020INT64\u0020bit\u0020pattern,\u0020ordered\u0020unsigned.\u0020A\u0020float\u0020compares\nnumerically,\u0020a\u0020fraction\u0020lying\u0020between\u0020two\u0020integers.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-UnsignedInt64PreImage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\UnsignedInt64PreImage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-UnsignedInt64PreImage.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\UnsignedInt64PreImage\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "Null\u0020when\u0020the\u0020column\u0027s\u0020decoded\u0020values\u0020cannot\u0020be\u0020compared\u0020with\u0020the\u0020literal\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-UnsignedInt64PreImage.html#method_equal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\UuidPreImage",
+            "name": "UuidPreImage",
+            "summary": "Only\u0020the\u0020canonical\u0020lowercase\u0020form\u003A\u0020the\u0020column\u0020decodes\u0020to\u0020it,\u0020so\u0020another\u0020spelling\u0020never\u0020equals\u0020a\u0020value.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-UuidPreImage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\UuidPreImage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-UuidPreImage.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\UuidPreImage\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "Null\u0020when\u0020the\u0020column\u0027s\u0020decoded\u0020values\u0020cannot\u0020be\u0020compared\u0020with\u0020the\u0020literal\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage-UuidPreImage.html#method_equal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage",
+            "name": "PreImage",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "Null\u0020when\u0020the\u0020column\u0027s\u0020decoded\u0020values\u0020cannot\u0020be\u0020compared\u0020with\u0020the\u0020literal\u0020exactly.",
+            "url": "classes/Flow-Parquet-Filter-Binding-PreImage.html#method_equal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\RefusedLeaf",
+            "name": "RefusedLeaf",
+            "summary": "A\u0020leaf\u0020no\u0020row\u0020answers\u003A\u0020pruning\u0020reads\u0020it\u0020as\u0020Maybe,\u0020evaluation\u0020refuses\u0020it\u0020with\u0020\u0024reason.",
+            "url": "classes/Flow-Parquet-Filter-Binding-RefusedLeaf.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\RefusedLeaf\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-RefusedLeaf.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\RefusedLeaf\u003A\u003A\u0024reason",
+            "name": "reason",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-RefusedLeaf.html#property_reason"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf",
+            "name": "ResolvedLeaf",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A\u0024column",
+            "name": "column",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#property_column"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A\u0024domain",
+            "name": "domain",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#property_domain"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A\u0024root",
+            "name": "root",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#property_root"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A\u0024fields",
+            "name": "fields",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#property_fields"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A\u0024literals",
+            "name": "literals",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#property_literals"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A\u0024intervals",
+            "name": "intervals",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#property_intervals"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef",
+            "name": "ColumnRef",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef\u003A\u003Aequals\u0028\u0029",
+            "name": "equals",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html#method_equals"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef\u003A\u003AgreaterThan\u0028\u0029",
+            "name": "greaterThan",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html#method_greaterThan"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef\u003A\u003AgreaterThanOrEqual\u0028\u0029",
+            "name": "greaterThanOrEqual",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html#method_greaterThanOrEqual"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef\u003A\u003Ain\u0028\u0029",
+            "name": "in",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html#method_in"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef\u003A\u003AisNotNull\u0028\u0029",
+            "name": "isNotNull",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html#method_isNotNull"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef\u003A\u003AlessThan\u0028\u0029",
+            "name": "lessThan",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html#method_lessThan"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef\u003A\u003AlessThanOrEqual\u0028\u0029",
+            "name": "lessThanOrEqual",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html#method_lessThanOrEqual"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef\u003A\u003AnotEquals\u0028\u0029",
+            "name": "notEquals",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html#method_notEquals"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef\u003A\u003AnotIn\u0028\u0029",
+            "name": "notIn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html#method_notIn"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef\u003A\u003AstartsWith\u0028\u0029",
+            "name": "startsWith",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html#method_startsWith"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-ColumnRef.html#property_path"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Comparison",
+            "name": "Comparison",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Comparison.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Comparison\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Comparison.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Comparison\u003A\u003Aaccept\u0028\u0029",
+            "name": "accept",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Comparison.html#method_accept"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Comparison\u003A\u003Aand\u0028\u0029",
+            "name": "and",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Comparison.html#method_and"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Comparison\u003A\u003Anegate\u0028\u0029",
+            "name": "negate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Comparison.html#method_negate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Comparison\u003A\u003Aor\u0028\u0029",
+            "name": "or",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Comparison.html#method_or"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Comparison\u003A\u003A\u0024value",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Comparison.html#property_value"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Comparison\u003A\u003A\u0024column",
+            "name": "column",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Comparison.html#property_column"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Comparison\u003A\u003A\u0024operator",
+            "name": "operator",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Comparison.html#property_operator"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BatchTruth",
+            "name": "BatchTruth",
+            "summary": "One\u0020batch\u0027s\u0020truth\u0020per\u0020row\u0020for\u0020each\u0020node\u0020of\u0020a\u0020filter\u003B\u0020a\u0020leaf\u0020without\u0020a\u0020resolution\u0020is\u0020an\u0020absent\u0020column,\u0020null.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BatchTruth.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BatchTruth\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BatchTruth.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BatchTruth\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BatchTruth.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BatchTruth\u003A\u003Aany\u0028\u0029",
+            "name": "any",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BatchTruth.html#method_any"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BatchTruth\u003A\u003Acomparison\u0028\u0029",
+            "name": "comparison",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BatchTruth.html#method_comparison"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BatchTruth\u003A\u003Ain\u0028\u0029",
+            "name": "in",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BatchTruth.html#method_in"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BatchTruth\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BatchTruth.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BatchTruth\u003A\u003Anot\u0028\u0029",
+            "name": "not",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BatchTruth.html#method_not"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BatchTruth\u003A\u003AstartsWith\u0028\u0029",
+            "name": "startsWith",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BatchTruth.html#method_startsWith"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BloomEvaluator",
+            "name": "BloomEvaluator",
+            "summary": "A\u0020bloom\u0020filter\u0020proves\u0020only\u0020absence\u003A\u0020a\u0020positive\u0020Equal\u0020or\u0020In\u0020leaf\u0020whose\u0020literals\u0020are\u0020all\u0020absent\u0020is\u0020Never,\u0020every\u0020other\nleaf\u0020is\u0020Maybe.\u0020A\u0020row\u0020group\u0027s\u0020filter\u0020is\u0020read\u0020only\u0020for\u0020such\u0020a\u0020leaf.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BloomEvaluator.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BloomEvaluator\u003A\u003Aevaluate\u0028\u0029",
+            "name": "evaluate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BloomEvaluator.html#method_evaluate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BloomEvaluator\u003A\u003Acomparison\u0028\u0029",
+            "name": "comparison",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BloomEvaluator.html#method_comparison"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BloomEvaluator\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BloomEvaluator.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BloomEvaluator\u003A\u003Aany\u0028\u0029",
+            "name": "any",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BloomEvaluator.html#method_any"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BloomEvaluator\u003A\u003Ain\u0028\u0029",
+            "name": "in",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BloomEvaluator.html#method_in"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BloomEvaluator\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BloomEvaluator.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BloomEvaluator\u003A\u003Anot\u0028\u0029",
+            "name": "not",
+            "summary": "Under\u0020a\u0020negation\u0020every\u0020leaf\u0020is\u0020Maybe\u003A\u0020a\u0020bloom\u0020filter\u0020proves\u0020only\u0020absence.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BloomEvaluator.html#method_not"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BloomEvaluator\u003A\u003AstartsWith\u0028\u0029",
+            "name": "startsWith",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-BloomEvaluator.html#method_startsWith"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\FilterEvaluator",
+            "name": "FilterEvaluator",
+            "summary": "Column\u002Dwise,\u0020so\u0020a\u0020batch\u0020is\u0020filtered\u0020without\u0020building\u0020rows.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-FilterEvaluator.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\FilterEvaluator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Refuses\u0020at\u0020once\u0020what\u0020no\u0020row\u0020could\u0020answer,\u0020instead\u0020of\u0020matching\u0020nothing\u0020silently.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-FilterEvaluator.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\FilterEvaluator\u003A\u003Amask\u0028\u0029",
+            "name": "mask",
+            "summary": "The\u0020indexes\u0020of\u0020the\u0020rows\u0020the\u0020filter\u0020is\u0020true\u0020for.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-FilterEvaluator.html#method_mask"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\FilterEvaluator\u003A\u003Aroots\u0028\u0029",
+            "name": "roots",
+            "summary": "The\u0020root\u0020columns\u0020a\u0020batch\u0020must\u0020hold.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-FilterEvaluator.html#method_roots"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\PageZoneMaps",
+            "name": "PageZoneMaps",
+            "summary": "One\u0020row\u0020group\u0027s\u0020page\u0020statistics,\u0020each\u0020page\u0020decoded\u0020once.\u0020at\u0028\u0029\u0020views\u0020the\u0020pages\u0020holding\u0020one\u0020row,\u0020so\u0020columns\u0020whose\u0020pages\nbreak\u0020at\u0020other\u0020rows\u0020are\u0020evaluated\u0020together\u0020over\u0020the\u0020rows\u0020their\u0020pages\u0020share.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-PageZoneMaps.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\PageZoneMaps\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-PageZoneMaps.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\PageZoneMaps\u003A\u003Aat\u0028\u0029",
+            "name": "at",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-PageZoneMaps.html#method_at"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\PageZoneMaps\u003A\u003Azone\u0028\u0029",
+            "name": "zone",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-PageZoneMaps.html#method_zone"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\PageZoneMapsAtRow",
+            "name": "PageZoneMapsAtRow",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-PageZoneMapsAtRow.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\PageZoneMapsAtRow\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-PageZoneMapsAtRow.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\PageZoneMapsAtRow\u003A\u003Azone\u0028\u0029",
+            "name": "zone",
+            "summary": "Null\u0020when\u0020the\u0020unit\u0020has\u0020no\u0020usable\u0020statistics\u0020for\u0020the\u0020column.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-PageZoneMapsAtRow.html#method_zone"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowEvaluator",
+            "name": "RowEvaluator",
+            "summary": "The\u0020rows\u0020a\u0020filter\u0020is\u0020TRUE\u0020for,\u0020on\u0020undecoded\u0020physical\u0020values\u003A\u0020floats\u0020compare\u0020as\u0020IEEE\u0020754\u0020\u0028NaN\u0020is\u0020false,\u0020\u002D0.0\u0020equals\n\u002B0.0\u0029,\u0020every\u0020other\u0020type\u0020in\u0020its\u0020physical\u0020order.\u0020Not\u0020is\u0020pushed\u0020down\u0020to\u0020the\u0020leaves\u0020as\u0020a\u0020polarity,\u0020so\u0020a\u0020NULL\u0020is\u0020TRUE\u0020in\nneither.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-RowEvaluator.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowEvaluator\u003A\u003Aevaluate\u0028\u0029",
+            "name": "evaluate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-RowEvaluator.html#method_evaluate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowEvaluator\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-RowEvaluator.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowEvaluator\u003A\u003Aany\u0028\u0029",
+            "name": "any",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-RowEvaluator.html#method_any"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowEvaluator\u003A\u003Acomparison\u0028\u0029",
+            "name": "comparison",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-RowEvaluator.html#method_comparison"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowEvaluator\u003A\u003Ain\u0028\u0029",
+            "name": "in",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-RowEvaluator.html#method_in"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowEvaluator\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-RowEvaluator.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowEvaluator\u003A\u003Anot\u0028\u0029",
+            "name": "not",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-RowEvaluator.html#method_not"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowEvaluator\u003A\u003AstartsWith\u0028\u0029",
+            "name": "startsWith",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-RowEvaluator.html#method_startsWith"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowGroupZoneMaps",
+            "name": "RowGroupZoneMaps",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-RowGroupZoneMaps.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowGroupZoneMaps\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-RowGroupZoneMaps.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowGroupZoneMaps\u003A\u003Azone\u0028\u0029",
+            "name": "zone",
+            "summary": "Null\u0020when\u0020the\u0020unit\u0020has\u0020no\u0020usable\u0020statistics\u0020for\u0020the\u0020column.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-RowGroupZoneMaps.html#method_zone"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\StatisticsEvaluator",
+            "name": "StatisticsEvaluator",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-StatisticsEvaluator.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\StatisticsEvaluator\u003A\u003Aevaluate\u0028\u0029",
+            "name": "evaluate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-StatisticsEvaluator.html#method_evaluate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\StatisticsEvaluator\u003A\u003Acomparison\u0028\u0029",
+            "name": "comparison",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-StatisticsEvaluator.html#method_comparison"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\StatisticsEvaluator\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-StatisticsEvaluator.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\StatisticsEvaluator\u003A\u003Aany\u0028\u0029",
+            "name": "any",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-StatisticsEvaluator.html#method_any"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\StatisticsEvaluator\u003A\u003Ain\u0028\u0029",
+            "name": "in",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-StatisticsEvaluator.html#method_in"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\StatisticsEvaluator\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-StatisticsEvaluator.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\StatisticsEvaluator\u003A\u003Anot\u0028\u0029",
+            "name": "not",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-StatisticsEvaluator.html#method_not"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\StatisticsEvaluator\u003A\u003AstartsWith\u0028\u0029",
+            "name": "startsWith",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-StatisticsEvaluator.html#method_startsWith"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMap",
+            "name": "ZoneMap",
+            "summary": "\u0024min\u0020and\u0020\u0024max\u0020are\u0020decoded\u0020physical\u0020values\u0020the\u0020column\u0020order\u0020trusts,\u0020null\u0020when\u0020there\u0020is\u0020none.\u0020\u0024allNaN\u003A\u0020every\u0020value\nthat\u0020is\u0020not\u0020null\u0020is\u0020NaN.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMap.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMap\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMap.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMap\u003A\u003AfromStatistics\u0028\u0029",
+            "name": "fromStatistics",
+            "summary": "Under\u0020IEEE_754_TOTAL_ORDER\u0020a\u0020writer\u0020stores\u0020a\u0020NaN\u0020bound\u0020only\u0020when\u0020every\u0020value\u0020that\u0020is\u0020not\u0020null\u0020is\u0020NaN.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMap.html#method_fromStatistics"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMap\u003A\u003A\u0024min",
+            "name": "min",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMap.html#property_min"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMap\u003A\u003A\u0024max",
+            "name": "max",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMap.html#property_max"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMap\u003A\u003A\u0024minExact",
+            "name": "minExact",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMap.html#property_minExact"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMap\u003A\u003A\u0024maxExact",
+            "name": "maxExact",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMap.html#property_maxExact"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMap\u003A\u003A\u0024nullCount",
+            "name": "nullCount",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMap.html#property_nullCount"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMap\u003A\u003A\u0024nanCount",
+            "name": "nanCount",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMap.html#property_nanCount"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMap\u003A\u003A\u0024rowCount",
+            "name": "rowCount",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMap.html#property_rowCount"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMap\u003A\u003A\u0024allNaN",
+            "name": "allNaN",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMap.html#property_allNaN"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMaps",
+            "name": "ZoneMaps",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMaps.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMaps\u003A\u003Azone\u0028\u0029",
+            "name": "zone",
+            "summary": "Null\u0020when\u0020the\u0020unit\u0020has\u0020no\u0020usable\u0020statistics\u0020for\u0020the\u0020column.",
+            "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMaps.html#method_zone"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Filter",
+            "name": "Filter",
+            "summary": "The\u0020implementations\u0020are\u0020closed\u003A\u0020All,\u0020Any,\u0020Comparison,\u0020In,\u0020IsNull,\u0020Not\u0020and\u0020StartsWith\u003B\u0020every\u0020walker\u0020refuses\u0020another.",
+            "url": "classes/Flow-Parquet-Filter-Filter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Filter\u003A\u003Aaccept\u0028\u0029",
+            "name": "accept",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Filter.html#method_accept"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Filter\u003A\u003Aand\u0028\u0029",
+            "name": "and",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Filter.html#method_and"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Filter\u003A\u003Anegate\u0028\u0029",
+            "name": "negate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Filter.html#method_negate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Filter\u003A\u003Aor\u0028\u0029",
+            "name": "or",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Filter.html#method_or"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\FilterVisitor",
+            "name": "FilterVisitor",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-FilterVisitor.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\FilterVisitor\u003A\u003Acomparison\u0028\u0029",
+            "name": "comparison",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-FilterVisitor.html#method_comparison"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\FilterVisitor\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-FilterVisitor.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\FilterVisitor\u003A\u003Aany\u0028\u0029",
+            "name": "any",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-FilterVisitor.html#method_any"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\FilterVisitor\u003A\u003Ain\u0028\u0029",
+            "name": "in",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-FilterVisitor.html#method_in"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\FilterVisitor\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-FilterVisitor.html#method_isNull"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\FilterVisitor\u003A\u003Anot\u0028\u0029",
+            "name": "not",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-FilterVisitor.html#method_not"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\FilterVisitor\u003A\u003AstartsWith\u0028\u0029",
+            "name": "startsWith",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-FilterVisitor.html#method_startsWith"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\In",
+            "name": "In",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-In.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\In\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-In.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\In\u003A\u003Aaccept\u0028\u0029",
+            "name": "accept",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-In.html#method_accept"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\In\u003A\u003Aand\u0028\u0029",
+            "name": "and",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-In.html#method_and"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\In\u003A\u003Anegate\u0028\u0029",
+            "name": "negate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-In.html#method_negate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\In\u003A\u003Aor\u0028\u0029",
+            "name": "or",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-In.html#method_or"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\In\u003A\u003A\u0024values",
+            "name": "values",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-In.html#property_values"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\In\u003A\u003A\u0024column",
+            "name": "column",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-In.html#property_column"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\IsNull",
+            "name": "IsNull",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-IsNull.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\IsNull\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-IsNull.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\IsNull\u003A\u003Aaccept\u0028\u0029",
+            "name": "accept",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-IsNull.html#method_accept"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\IsNull\u003A\u003Aand\u0028\u0029",
+            "name": "and",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-IsNull.html#method_and"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\IsNull\u003A\u003Anegate\u0028\u0029",
+            "name": "negate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-IsNull.html#method_negate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\IsNull\u003A\u003Aor\u0028\u0029",
+            "name": "or",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-IsNull.html#method_or"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\IsNull\u003A\u003A\u0024column",
+            "name": "column",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-IsNull.html#property_column"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Literal",
+            "name": "Literal",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Literal.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Literal\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Literal.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Not",
+            "name": "Not",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Not.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Not\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Not.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Not\u003A\u003Aaccept\u0028\u0029",
+            "name": "accept",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Not.html#method_accept"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Not\u003A\u003Aand\u0028\u0029",
+            "name": "and",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Not.html#method_and"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Not\u003A\u003Anegate\u0028\u0029",
+            "name": "negate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Not.html#method_negate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Not\u003A\u003Aor\u0028\u0029",
+            "name": "or",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Not.html#method_or"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Not\u003A\u003A\u0024filter",
+            "name": "filter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Not.html#property_filter"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Operator",
+            "name": "Operator",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Operator.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Operator\u003A\u003AEqual",
+            "name": "Equal",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Operator.html#enumcase_Equal"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Operator\u003A\u003AGreaterThan",
+            "name": "GreaterThan",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Operator.html#enumcase_GreaterThan"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Operator\u003A\u003AGreaterThanOrEqual",
+            "name": "GreaterThanOrEqual",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Operator.html#enumcase_GreaterThanOrEqual"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Operator\u003A\u003ALessThan",
+            "name": "LessThan",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Operator.html#enumcase_LessThan"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Operator\u003A\u003ALessThanOrEqual",
+            "name": "LessThanOrEqual",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Operator.html#enumcase_LessThanOrEqual"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\StartsWith",
+            "name": "StartsWith",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-StartsWith.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\StartsWith\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-StartsWith.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\StartsWith\u003A\u003Aaccept\u0028\u0029",
+            "name": "accept",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-StartsWith.html#method_accept"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\StartsWith\u003A\u003Aand\u0028\u0029",
+            "name": "and",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-StartsWith.html#method_and"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\StartsWith\u003A\u003Anegate\u0028\u0029",
+            "name": "negate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-StartsWith.html#method_negate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\StartsWith\u003A\u003Aor\u0028\u0029",
+            "name": "or",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-StartsWith.html#method_or"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\StartsWith\u003A\u003A\u0024column",
+            "name": "column",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-StartsWith.html#property_column"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\StartsWith\u003A\u003A\u0024prefix",
+            "name": "prefix",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-StartsWith.html#property_prefix"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Truth",
+            "name": "Truth",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Truth.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Truth\u003A\u003Aevery\u0028\u0029",
+            "name": "every",
+            "summary": "AND\u003A\u0020Never\u0020as\u0020soon\u0020as\u0020one\u0020is\u0020Never,\u0020Always\u0020only\u0020when\u0020all\u0020are.",
+            "url": "classes/Flow-Parquet-Filter-Truth.html#method_every"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Truth\u003A\u003Asome\u0028\u0029",
+            "name": "some",
+            "summary": "OR\u003A\u0020Always\u0020as\u0020soon\u0020as\u0020one\u0020is\u0020Always,\u0020Never\u0020only\u0020when\u0020all\u0020are.",
+            "url": "classes/Flow-Parquet-Filter-Truth.html#method_some"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Truth\u003A\u003AAlways",
+            "name": "Always",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Truth.html#enumcase_Always"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Truth\u003A\u003AMaybe",
+            "name": "Maybe",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Truth.html#enumcase_Maybe"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Truth\u003A\u003ANever",
+            "name": "Never",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Truth.html#enumcase_Never"
         },                {
             "fqsen": "\\Flow\\Parquet\\array_merge_recursive\u0028\u0029",
             "name": "array_merge_recursive",
@@ -1191,11 +2786,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Option.html"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Option\u003A\u003AARROW_BATCH_SIZE",
-            "name": "ARROW_BATCH_SIZE",
-            "summary": "When\u0020using\u0020the\u0020Arrow\u0020engine,\u0020controls\u0020how\u0020many\u0020rows\u0020are\u0020returned\u0020per\u0020internal\u0020read\u0020call.",
-            "url": "classes/Flow-Parquet-Option.html#enumcase_ARROW_BATCH_SIZE"
-        },                {
             "fqsen": "\\Flow\\Parquet\\Option\u003A\u003AARROW_WRITE_BATCH_SIZE",
             "name": "ARROW_WRITE_BATCH_SIZE",
             "summary": "When\u0020using\u0020the\u0020Arrow\u0020engine,\u0020controls\u0020how\u0020many\u0020rows\u0020are\u0020buffered\u0020in\u0020PHP\nbefore\u0020sending\u0020them\u0020to\u0020the\u0020extension\u0027s\u0020writeBatch\u0028\u0029\u0020in\u0020a\u0020single\u0020call.",
@@ -1211,15 +2801,20 @@ Search.appendIndex(
             "summary": "Per\u002Dcolumn\u0020compression\u0020configuration\u0020using\u0020flat\u0020path\u0020notation.",
             "url": "classes/Flow-Parquet-Option.html#enumcase_COLUMNS_COMPRESSIONS"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Option\u003A\u003ACOLUMNS_BLOOM_FILTERS",
+            "name": "COLUMNS_BLOOM_FILTERS",
+            "summary": "Per\u002Dcolumn\u0020bloom\u0020filter\u0020configuration\u0020using\u0020flat\u0020path\u0020notation.",
+            "url": "classes/Flow-Parquet-Option.html#enumcase_COLUMNS_BLOOM_FILTERS"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Option\u003A\u003ACOLUMNS_ENCODINGS",
             "name": "COLUMNS_ENCODINGS",
             "summary": "Per\u002Dcolumn\u0020encoding\u0020configuration\u0020using\u0020flat\u0020path\u0020notation.",
             "url": "classes/Flow-Parquet-Option.html#enumcase_COLUMNS_ENCODINGS"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Option\u003A\u003ADICTIONARY_PAGE_MIN_CARDINALITY_RATION",
-            "name": "DICTIONARY_PAGE_MIN_CARDINALITY_RATION",
-            "summary": "Whenever\u0020cardinality\u0020ratio\u0020of\u0020the\u0020dictionary\u0020goes\u0020below\u0020this\u0020value,\u0020PagesBuilders\u0020is\u0020going\u0020to\u0020fallback\u0020to\u0020PLAIN\u0020encoding.",
-            "url": "classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_PAGE_MIN_CARDINALITY_RATION"
+            "fqsen": "\\Flow\\Parquet\\Option\u003A\u003ACOLUMN_INDEX_TRUNCATE_LENGTH",
+            "name": "COLUMN_INDEX_TRUNCATE_LENGTH",
+            "summary": "Column\u0020index\u0020bounds\u0020of\u0020BYTE_ARRAY\u0020and\u0020FIXED_LEN_BYTE_ARRAY\u0020columns\u0020are\u0020truncated\u0020to\u0020this\u0020many\u0020bytes,\u0020as\nSTATISTICS_TRUNCATE_LENGTH\u0020truncates\u0020column\u0020chunk\u0020statistics\u0020\u0028arrow\u002Drs\u0020set_column_index_truncate_length\u0029.",
+            "url": "classes/Flow-Parquet-Option.html#enumcase_COLUMN_INDEX_TRUNCATE_LENGTH"
         },                {
             "fqsen": "\\Flow\\Parquet\\Option\u003A\u003ADICTIONARY_PAGE_SIZE",
             "name": "DICTIONARY_PAGE_SIZE",
@@ -1241,9 +2836,14 @@ Search.appendIndex(
             "summary": "Compression\u0020level\u0020for\u0020LZ4\u0020codec.\u0020This\u0020option\u0020is\u0020going\u0020to\u0020be\u0020passed\u0020to\u0020lz4_compress\u0020function\u0020when\u0020Compression\u0020is\u0020set\u0020to\u0020LZ4.",
             "url": "classes/Flow-Parquet-Option.html#enumcase_LZ4_COMPRESSION_LEVEL"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Option\u003A\u003APAGE_HEADER_STATISTICS",
+            "name": "PAGE_HEADER_STATISTICS",
+            "summary": "Data\u0020page\u0020headers\u0020carry\u0020the\u0020page\u0027s\u0020statistics\u0020when\u0020the\u0020statistics\u0020level\u0020is\u0020PAGE,\u0020as\u0020arrow\u002Drs\nset_write_page_header_statistics.\u0020Readers\u0020prune\u0020pages\u0020through\u0020the\u0020column\u0020index\u0020instead.",
+            "url": "classes/Flow-Parquet-Option.html#enumcase_PAGE_HEADER_STATISTICS"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Option\u003A\u003APAGE_MAXIMUM_ROWS_COUNT",
             "name": "PAGE_MAXIMUM_ROWS_COUNT",
-            "summary": "PageBuilder\u0020is\u0020going\u0020to\u0020use\u0020this\u0020value\u0020to\u0020determine\u0020how\u0020many\u0020rows\u0020should\u0020be\u0020stored\u0020in\u0020one\u0020page.",
+            "summary": "The\u0020rows\u0020a\u0020data\u0020page\u0020holds\u0020at\u0020most,\u0020beside\u0020PAGE_SIZE_BYTES\u0020\u0028arrow\u002Drs\u0020data_page_row_count_limit\u0029.\u0020The\u0020PHP\u0020writer\nchecks\u0020it\u0020every\u0020PAGE_SIZE_CHECK_INTERVAL\u0020rows,\u0020the\u0020arrow\u0020writer\u0020every\u0020write\u0020batch.\u0020Smaller\u0020pages\u0020let\u0020the\u0020page\nindex\u0020skip\u0020more\u0020of\u0020a\u0020filtered\u0020read,\u0020at\u0020the\u0020cost\u0020of\u0020more\u0020page\u0020headers.",
             "url": "classes/Flow-Parquet-Option.html#enumcase_PAGE_MAXIMUM_ROWS_COUNT"
         },                {
             "fqsen": "\\Flow\\Parquet\\Option\u003A\u003APAGE_SIZE_BYTES",
@@ -1265,6 +2865,16 @@ Search.appendIndex(
             "name": "ROW_GROUP_SIZE_CHECK_INTERVAL",
             "summary": "RowGroupBuilder\u0020is\u0020going\u0020to\u0020use\u0020this\u0020value\u0020to\u0020determine\u0020how\u0020often\u0020it\u0020should\u0020check\u0020if\u0020RowGroup\u0020size\u0020is\u0020not\u0020exceeded.",
             "url": "classes/Flow-Parquet-Option.html#enumcase_ROW_GROUP_SIZE_CHECK_INTERVAL"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Option\u003A\u003ASTATISTICS_LEVEL",
+            "name": "STATISTICS_LEVEL",
+            "summary": "A\u0020Writer\\StatisticsLevel\u003A\u0020NONE\u0020writes\u0020no\u0020statistics,\u0020CHUNK\u0020writes\u0020column\u0020chunk\u0020statistics,\u0020PAGE\u0020also\u0020writes\u0020a\ncolumn\u0020index\u0020\u0028per\u0020page\u0020min,\u0020max,\u0020null\u0020and\u0020NaN\u0020counts\u0029.\u0020The\u0020offset\u0020index\u0020is\u0020written\u0020at\u0020every\u0020level.",
+            "url": "classes/Flow-Parquet-Option.html#enumcase_STATISTICS_LEVEL"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Option\u003A\u003ASTATISTICS_TRUNCATE_LENGTH",
+            "name": "STATISTICS_TRUNCATE_LENGTH",
+            "summary": "Column\u0020chunk\u0020and\u0020page\u0020statistics\u0020of\u0020BYTE_ARRAY\u0020and\u0020FIXED_LEN_BYTE_ARRAY\u0020columns\u0020are\u0020truncated\u0020to\u0020this\u0020many\u0020bytes,\nas\u0020arrow\u002Drs\u0020does\u003A\u0020the\u0020min\u0020is\u0020cut,\u0020the\u0020max\u0020is\u0020cut\u0020and\u0020incremented,\u0020and\u0020a\u0020truncated\u0020bound\u0020is\u0020marked\u0020inexact.",
+            "url": "classes/Flow-Parquet-Option.html#enumcase_STATISTICS_TRUNCATE_LENGTH"
         },                {
             "fqsen": "\\Flow\\Parquet\\Option\u003A\u003AVALIDATE_DATA",
             "name": "VALIDATE_DATA",
@@ -1311,6 +2921,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Options.html#method_getBool"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Options\u003A\u003AgetEnum\u0028\u0029",
+            "name": "getEnum",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Options.html#method_getEnum"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Options\u003A\u003AgetInt\u0028\u0029",
             "name": "getInt",
             "summary": "",
@@ -1350,6 +2965,66 @@ Search.appendIndex(
             "name": "writeRows",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetEngine.html#method_writeRows"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\ColumnOrder",
+            "name": "ColumnOrder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-ColumnOrder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\ColumnOrder\u003A\u003AforWriting\u0028\u0029",
+            "name": "forWriting",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-ColumnOrder.html#method_forWriting"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\ColumnOrder\u003A\u003AfromThrift\u0028\u0029",
+            "name": "fromThrift",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-ColumnOrder.html#method_fromThrift"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\ColumnOrder\u003A\u003AisTrusted\u0028\u0029",
+            "name": "isTrusted",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-ColumnOrder.html#method_isTrusted"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\ColumnOrder\u003A\u003AtoThrift\u0028\u0029",
+            "name": "toThrift",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-ColumnOrder.html#method_toThrift"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\ColumnOrder\u003A\u003AtrustedMax\u0028\u0029",
+            "name": "trustedMax",
+            "summary": "The\u0020statistics\u0020max\u0020a\u0020reader\u0020may\u0020use,\u0020null\u0020when\u0020it\u0020may\u0020not.\u0020Under\u0020TYPE_DEFINED_ORDER\u0020a\u0020floating\u0020point\u0020max\u0020of\u0020NaN\nis\u0020ignored\u0020and\u0020a\u0020\u002D0.0\u0020max\u0020may\u0020hide\u0020\u002B0.0\u0020values\u0020\u0028parquet.thrift\u0020ColumnOrder\u0029.",
+            "url": "classes/Flow-Parquet-ParquetFile-ColumnOrder.html#method_trustedMax"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\ColumnOrder\u003A\u003AtrustedMin\u0028\u0029",
+            "name": "trustedMin",
+            "summary": "The\u0020statistics\u0020min\u0020a\u0020reader\u0020may\u0020use,\u0020null\u0020when\u0020it\u0020may\u0020not.\u0020Under\u0020TYPE_DEFINED_ORDER\u0020a\u0020floating\u0020point\u0020min\u0020of\u0020NaN\nis\u0020ignored\u0020and\u0020a\u0020\u002B0.0\u0020min\u0020may\u0020hide\u0020\u002D0.0\u0020values\u0020\u0028parquet.thrift\u0020ColumnOrder\u0029.",
+            "url": "classes/Flow-Parquet-ParquetFile-ColumnOrder.html#method_trustedMin"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\ColumnOrder\u003A\u003AAbsent",
+            "name": "Absent",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-ColumnOrder.html#enumcase_Absent"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\ColumnOrder\u003A\u003AIeee754TotalOrder",
+            "name": "Ieee754TotalOrder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-ColumnOrder.html#enumcase_Ieee754TotalOrder"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\ColumnOrder\u003A\u003AInt96Timestamp",
+            "name": "Int96Timestamp",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-ColumnOrder.html#enumcase_Int96Timestamp"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\ColumnOrder\u003A\u003ATypeDefined",
+            "name": "TypeDefined",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-ColumnOrder.html#enumcase_TypeDefined"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\ColumnOrder\u003A\u003AUnknown",
+            "name": "Unknown",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-ColumnOrder.html#enumcase_Unknown"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Compressions",
             "name": "Compressions",
@@ -1551,30 +3226,55 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-TimeConverter.html#method_toParquetType"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedIntegerConverter",
-            "name": "UnsignedIntegerConverter",
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedInt32Converter",
+            "name": "UnsignedInt32Converter",
             "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedIntegerConverter.html"
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedInt32Converter.html"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedIntegerConverter\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedIntegerConverter.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedIntegerConverter\u003A\u003AforColumn\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedInt32Converter\u003A\u003AforColumn\u0028\u0029",
             "name": "forColumn",
             "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedIntegerConverter.html#method_forColumn"
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedInt32Converter.html#method_forColumn"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedIntegerConverter\u003A\u003AfromParquetType\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedInt32Converter\u003A\u003AfromParquetType\u0028\u0029",
             "name": "fromParquetType",
             "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedIntegerConverter.html#method_fromParquetType"
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedInt32Converter.html#method_fromParquetType"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedIntegerConverter\u003A\u003AtoParquetType\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedInt32Converter\u003A\u003AtoParquetType\u0028\u0029",
             "name": "toParquetType",
             "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedIntegerConverter.html#method_toParquetType"
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedInt32Converter.html#method_toParquetType"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedInt64Converter",
+            "name": "UnsignedInt64Converter",
+            "summary": "UINT_64\u003A\u0020the\u0020physical\u0020value\u0020is\u0020the\u0020INT64\u0020bit\u0020pattern,\u0020the\u0020logical\u0020value\u0020its\u0020canonical\u0020decimal\u0020digit\u0020string.",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedInt64Converter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedInt64Converter\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedInt64Converter.html#method_forColumn"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedInt64Converter\u003A\u003AfromParquetType\u0028\u0029",
+            "name": "fromParquetType",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedInt64Converter.html#method_fromParquetType"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedInt64Converter\u003A\u003Aaccepts\u0028\u0029",
+            "name": "accepts",
+            "summary": "An\u0020int\u0020\u003E\u003D\u00200,\u0020or\u0020a\u0020canonical\u0020digit\u0020string\u0020\u0028no\u0020sign,\u0020no\u0020leading\u0020zero\u0029\u0020up\u0020to\u002018446744073709551615.",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedInt64Converter.html#method_accepts"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedInt64Converter\u003A\u003AtoParquetType\u0028\u0029",
+            "name": "toParquetType",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedInt64Converter.html#method_toParquetType"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UnsignedInt64Converter\u003A\u003AMAX",
+            "name": "MAX",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-UnsignedInt64Converter.html#constant_MAX"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\UuidConverter",
             "name": "UuidConverter",
@@ -1706,6 +3406,106 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Encodings.html#enumcase_RLE_DICTIONARY"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Footer",
+            "name": "Footer",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Footer.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Footer\u003A\u003Ametadata\u0028\u0029",
+            "name": "metadata",
+            "summary": "The\u0020whole\u0020footer\u0020as\u0020Metadata,\u0020built\u0020on\u0020the\u0020first\u0020call.",
+            "url": "classes/Flow-Parquet-ParquetFile-Footer.html#method_metadata"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Footer\u003A\u003ArowGroupChunks\u0028\u0029",
+            "name": "rowGroupChunks",
+            "summary": "The\u0020footer\u0020narrowed\u0020to\u0020the\u0020given\u0020leaves,\u0020without\u0020building\u0020the\u0020row\u002Dgroup\u0020metadata\u0020of\u0020other\u0020columns.",
+            "url": "classes/Flow-Parquet-ParquetFile-Footer.html#method_rowGroupChunks"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Footer\u003A\u003ArowsNumber\u0028\u0029",
+            "name": "rowsNumber",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Footer.html#method_rowsNumber"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Footer\u003A\u003Aschema\u0028\u0029",
+            "name": "schema",
+            "summary": "The\u0020file\u0020schema,\u0020without\u0020building\u0020the\u0020row\u002Dgroup\u0020metadata.",
+            "url": "classes/Flow-Parquet-ParquetFile-Footer.html#method_schema"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Footer\u003A\u003AtotalByteSize\u0028\u0029",
+            "name": "totalByteSize",
+            "summary": "\u03A3\u0020row\u0020group\u0020total_byte_size\u0020\u0028uncompressed\u0029,\u0020without\u0020building\u0020the\u0020row\u002Dgroup\u0020metadata.",
+            "url": "classes/Flow-Parquet-ParquetFile-Footer.html#method_totalByteSize"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\Indexes",
+            "name": "Indexes",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-Indexes.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\Indexes\u003A\u003AbloomFilter\u0028\u0029",
+            "name": "bloomFilter",
+            "summary": "Null\u0020when\u0020the\u0020chunk\u0020has\u0020no\u0020bloom\u0020filter,\u0020or\u0020one\u0020of\u0020an\u0020algorithm,\u0020hash\u0020or\u0020compression\u0020this\u0020reader\u0020does\u0020not\u0020support.",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-Indexes.html#method_bloomFilter"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\Indexes\u003A\u003AcolumnIndex\u0028\u0029",
+            "name": "columnIndex",
+            "summary": "Null\u0020when\u0020the\u0020chunk\u0020has\u0020no\u0020column\u0020index,\u0020or\u0020one\u0020that\u0020fails\u0020to\u0020decode.",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-Indexes.html#method_columnIndex"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\Indexes\u003A\u003AoffsetIndex\u0028\u0029",
+            "name": "offsetIndex",
+            "summary": "Null\u0020when\u0020the\u0020chunk\u0020has\u0020no\u0020offset\u0020index,\u0020or\u0020one\u0020that\u0020fails\u0020to\u0020decode\u0020or\u0020does\u0020not\u0020fit\u0020the\u0020chunk\u0020and\u0020its\u0020row\u0020group.",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-Indexes.html#method_offsetIndex"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\IndexLocation",
+            "name": "IndexLocation",
+            "summary": "Where\u0020a\u0020column\u0020chunk\u0027s\u0020column\u0020index\u0020or\u0020offset\u0020index\u0020is\u0020written.",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-IndexLocation.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\IndexLocation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-IndexLocation.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\IndexLocation\u003A\u003AfromThrift\u0028\u0029",
+            "name": "fromThrift",
+            "summary": "Null\u0020when\u0020the\u0020chunk\u0020has\u0020no\u0020such\u0020index,\u0020or\u0020a\u0020location\u0020no\u0020index\u0020can\u0020be\u0020read\u0020from.",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-IndexLocation.html#method_fromThrift"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\IndexLocation\u003A\u003A\u0024length",
+            "name": "length",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-IndexLocation.html#property_length"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\IndexLocation\u003A\u003A\u0024offset",
+            "name": "offset",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-IndexLocation.html#property_offset"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\StreamIndexes",
+            "name": "StreamIndexes",
+            "summary": "Reads\u0020an\u0020index\u0020only\u0020when\u0020it\u0020is\u0020asked\u0020for,\u0020once.\u0020The\u0020footer\u0020is\u0020asked\u0020for\u0020each\u0020column\u0027s\u0020chunks\u0020on\u0020its\u0020own\u003A\u0020the\u0020arrow\nengine\u0027s\u0020RowGroupChunks\u0020hold\u0020only\u0020the\u0020columns\u0020they\u0020were\u0020built\u0020for.",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-StreamIndexes.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\StreamIndexes\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-StreamIndexes.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\StreamIndexes\u003A\u003AbloomFilter\u0028\u0029",
+            "name": "bloomFilter",
+            "summary": "Null\u0020when\u0020the\u0020chunk\u0020has\u0020no\u0020bloom\u0020filter,\u0020or\u0020one\u0020of\u0020an\u0020algorithm,\u0020hash\u0020or\u0020compression\u0020this\u0020reader\u0020does\u0020not\u0020support.",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-StreamIndexes.html#method_bloomFilter"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\StreamIndexes\u003A\u003AcolumnIndex\u0028\u0029",
+            "name": "columnIndex",
+            "summary": "Null\u0020when\u0020the\u0020chunk\u0020has\u0020no\u0020column\u0020index,\u0020or\u0020one\u0020that\u0020fails\u0020to\u0020decode.",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-StreamIndexes.html#method_columnIndex"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\StreamIndexes\u003A\u003AoffsetIndex\u0028\u0029",
+            "name": "offsetIndex",
+            "summary": "Null\u0020when\u0020the\u0020chunk\u0020has\u0020no\u0020offset\u0020index,\u0020or\u0020one\u0020that\u0020fails\u0020to\u0020decode\u0020or\u0020does\u0020not\u0020fit\u0020the\u0020chunk\u0020and\u0020its\u0020row\u0020group.",
+            "url": "classes/Flow-Parquet-ParquetFile-Index-StreamIndexes.html#method_offsetIndex"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Metadata",
             "name": "Metadata",
             "summary": "",
@@ -1725,6 +3525,11 @@ Search.appendIndex(
             "name": "columnChunks",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Metadata.html#method_columnChunks"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Metadata\u003A\u003AcolumnOrder\u0028\u0029",
+            "name": "columnOrder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Metadata.html#method_columnOrder"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Metadata\u003A\u003AcreatedBy\u0028\u0029",
             "name": "createdBy",
@@ -1755,6 +3560,31 @@ Search.appendIndex(
             "name": "version",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Metadata.html#method_version"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\MetadataRowGroupChunks",
+            "name": "MetadataRowGroupChunks",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-MetadataRowGroupChunks.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\MetadataRowGroupChunks\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-MetadataRowGroupChunks.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\MetadataRowGroupChunks\u003A\u003Achunk\u0028\u0029",
+            "name": "chunk",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-MetadataRowGroupChunks.html#method_chunk"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\MetadataRowGroupChunks\u003A\u003AcolumnOrder\u0028\u0029",
+            "name": "columnOrder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-MetadataRowGroupChunks.html#method_columnOrder"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\MetadataRowGroupChunks\u003A\u003ArowCounts\u0028\u0029",
+            "name": "rowCounts",
+            "summary": "Every\u0020row\u0020group\u0027s\u0020row\u0020count,\u0020in\u0020file\u0020order.",
+            "url": "classes/Flow-Parquet-ParquetFile-MetadataRowGroupChunks.html#method_rowCounts"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnData",
             "name": "ColumnData",
@@ -1886,6 +3716,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Page-Header-DataPageHeader.html#method_repetitionLevelEncoding"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\Header\\DataPageHeader\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Page-Header-DataPageHeader.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\Header\\DataPageHeader\u003A\u003AtoThrift\u0028\u0029",
             "name": "toThrift",
             "summary": "",
@@ -2016,6 +3851,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Page-PageHeader.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\PageHeader\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "The\u0020header\u0020at\u0020the\u0020stream\u0027s\u0020position,\u0020which\u0020is\u0020left\u0020after\u0020it\u003B\u0020null,\u0020the\u0020position\u0020kept,\u0020when\u0020none\u0020is\u0020there.",
+            "url": "classes/Flow-Parquet-ParquetFile-Page-PageHeader.html#method_read"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\PageHeader\u003A\u003AfromThrift\u0028\u0029",
             "name": "fromThrift",
             "summary": "",
@@ -2071,6 +3911,186 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Page-PageHeader.html#method_uncompressedPageSize"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\BoundaryOrder",
+            "name": "BoundaryOrder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-BoundaryOrder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\BoundaryOrder\u003A\u003AASCENDING",
+            "name": "ASCENDING",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-BoundaryOrder.html#enumcase_ASCENDING"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\BoundaryOrder\u003A\u003ADESCENDING",
+            "name": "DESCENDING",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-BoundaryOrder.html#enumcase_DESCENDING"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\BoundaryOrder\u003A\u003AUNORDERED",
+            "name": "UNORDERED",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-BoundaryOrder.html#enumcase_UNORDERED"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\ColumnIndex",
+            "name": "ColumnIndex",
+            "summary": "Entry\u0020i\u0020describes\u0020page\u0020i\u0020of\u0020the\u0020chunk\u0027s\u0020offset\u0020index\u003B\u0020minValues\/maxValues\u0020are\u0020the\u0020statistic\u0020bytes,\u0020empty\u0020for\u0020a\nnull\u0020page.",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-ColumnIndex.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\ColumnIndex\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-ColumnIndex.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\ColumnIndex\u003A\u003AfromThrift\u0028\u0029",
+            "name": "fromThrift",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-ColumnIndex.html#method_fromThrift"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\ColumnIndex\u003A\u003Apages\u0028\u0029",
+            "name": "pages",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-ColumnIndex.html#method_pages"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\ColumnIndex\u003A\u003AtoThrift\u0028\u0029",
+            "name": "toThrift",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-ColumnIndex.html#method_toThrift"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\ColumnIndex\u003A\u003A\u0024nullPages",
+            "name": "nullPages",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-ColumnIndex.html#property_nullPages"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\ColumnIndex\u003A\u003A\u0024minValues",
+            "name": "minValues",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-ColumnIndex.html#property_minValues"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\ColumnIndex\u003A\u003A\u0024maxValues",
+            "name": "maxValues",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-ColumnIndex.html#property_maxValues"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\ColumnIndex\u003A\u003A\u0024boundaryOrder",
+            "name": "boundaryOrder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-ColumnIndex.html#property_boundaryOrder"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\ColumnIndex\u003A\u003A\u0024nullCounts",
+            "name": "nullCounts",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-ColumnIndex.html#property_nullCounts"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\ColumnIndex\u003A\u003A\u0024nanCounts",
+            "name": "nanCounts",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-ColumnIndex.html#property_nanCounts"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\OffsetIndex",
+            "name": "OffsetIndex",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-OffsetIndex.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\OffsetIndex\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-OffsetIndex.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\OffsetIndex\u003A\u003AfromThrift\u0028\u0029",
+            "name": "fromThrift",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-OffsetIndex.html#method_fromThrift"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\OffsetIndex\u003A\u003Afits\u0028\u0029",
+            "name": "fits",
+            "summary": "Whether\u0020the\u0020pages\u0020lie\u0020inside\u0020the\u0020chunk,\u0020each\u0020after\u0020the\u0020previous\u0020and\u0020a\u0020byte\u0020at\u0020least,\u0020and\u0020split\u0020a\u0020row\u0020group\u0020of\n\u0024rows\u0020rows\u003A\u0020the\u0020first\u0020starts\u0020at\u0020row\u00200,\u0020each\u0020later\u0020one\u0020after\u0020the\u0020previous,\u0020all\u0020before\u0020the\u0020group\u0027s\u0020end.",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-OffsetIndex.html#method_fits"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\OffsetIndex\u003A\u003ApageOf\u0028\u0029",
+            "name": "pageOf",
+            "summary": "The\u0020page\u0020holding\u0020row\u0020\u0024row\u0020of\u0020the\u0020row\u0020group.",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-OffsetIndex.html#method_pageOf"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\OffsetIndex\u003A\u003ApageRows\u0028\u0029",
+            "name": "pageRows",
+            "summary": "Rows\u0020of\u0020page\u0020\u0024page,\u0020the\u0020last\u0020page\u0020ending\u0020at\u0020the\u0020row\u0020group\u0027s\u0020\u0024rowGroupRows.",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-OffsetIndex.html#method_pageRows"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\OffsetIndex\u003A\u003AtoThrift\u0028\u0029",
+            "name": "toThrift",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-OffsetIndex.html#method_toThrift"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\OffsetIndex\u003A\u003A\u0024pages",
+            "name": "pages",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-OffsetIndex.html#property_pages"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\PageIndex",
+            "name": "PageIndex",
+            "summary": "A\u0020column\u0020chunk\u0027s\u0020column\u0020index\u0020and\u0020offset\u0020index\u0020that\u0020agree\u0020with\u0020each\u0020other\u0020and\u0020with\u0020the\u0020row\u0020group.",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-PageIndex.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\PageIndex\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "Null\u0020without\u0020both\u0020indexes\u0020or\u0020when\u0020they\u0020disagree\u0020on\u0020the\u0020pages.",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-PageIndex.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\PageIndex\u003A\u003ApageOf\u0028\u0029",
+            "name": "pageOf",
+            "summary": "The\u0020page\u0020holding\u0020row\u0020\u0024row\u0020of\u0020the\u0020row\u0020group.",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-PageIndex.html#method_pageOf"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\PageIndex\u003A\u003ApageRows\u0028\u0029",
+            "name": "pageRows",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-PageIndex.html#method_pageRows"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\PageIndex\u003A\u003A\u0024columnIndex",
+            "name": "columnIndex",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-PageIndex.html#property_columnIndex"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\PageIndex\u003A\u003A\u0024offsetIndex",
+            "name": "offsetIndex",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-PageIndex.html#property_offsetIndex"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\PageLocation",
+            "name": "PageLocation",
+            "summary": "\u0024offset\u0020and\u0020\u0024compressedPageSize\u0020include\u0020the\u0020page\u0020header\u003B\u0020\u0024firstRowIndex\u0020is\u0020relative\u0020to\u0020the\u0020row\u0020group.",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-PageLocation.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\PageLocation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-PageLocation.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\PageLocation\u003A\u003AfromThrift\u0028\u0029",
+            "name": "fromThrift",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-PageLocation.html#method_fromThrift"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\PageLocation\u003A\u003AtoThrift\u0028\u0029",
+            "name": "toThrift",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-PageLocation.html#method_toThrift"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\PageLocation\u003A\u003A\u0024offset",
+            "name": "offset",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-PageLocation.html#property_offset"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\PageLocation\u003A\u003A\u0024compressedPageSize",
+            "name": "compressedPageSize",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-PageLocation.html#property_compressedPageSize"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex\\PageLocation\u003A\u003A\u0024firstRowIndex",
+            "name": "firstRowIndex",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-PageIndex-PageLocation.html#property_firstRowIndex"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\ColumnChunk",
             "name": "ColumnChunk",
             "summary": "",
@@ -2086,10 +4106,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html#method_fromThrift"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\ColumnChunk\u003A\u003AbloomFilterLength\u0028\u0029",
+            "name": "bloomFilterLength",
+            "summary": "Null\u0020when\u0020the\u0020writer\u0020did\u0020not\u0020record\u0020it\u003A\u0020the\u0020header\u0020is\u0020then\u0020read\u0020before\u0020the\u0020bitset.",
+            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html#method_bloomFilterLength"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\ColumnChunk\u003A\u003AbloomFilterOffset\u0028\u0029",
+            "name": "bloomFilterOffset",
+            "summary": "Null\u0020when\u0020the\u0020chunk\u0020has\u0020no\u0020bloom\u0020filter.",
+            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html#method_bloomFilterOffset"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\ColumnChunk\u003A\u003Acodec\u0028\u0029",
             "name": "codec",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html#method_codec"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\ColumnChunk\u003A\u003AcolumnIndex\u0028\u0029",
+            "name": "columnIndex",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html#method_columnIndex"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\ColumnChunk\u003A\u003AdataPageOffset\u0028\u0029",
             "name": "dataPageOffset",
@@ -2115,6 +4150,11 @@ Search.appendIndex(
             "name": "flatPath",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html#method_flatPath"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\ColumnChunk\u003A\u003AoffsetIndex\u0028\u0029",
+            "name": "offsetIndex",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html#method_offsetIndex"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\ColumnChunk\u003A\u003ApageOffset\u0028\u0029",
             "name": "pageOffset",
@@ -2145,6 +4185,11 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html#method_type"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\ColumnChunk\u003A\u003AwithLocations\u0028\u0029",
+            "name": "withLocations",
+            "summary": "This\u0020chunk\u0020with\u0020its\u0020page\u0020index\u0020and\u0020its\u0020bloom\u0020filter\u0020\u0028header\u0020and\u0020bitset\u0029\u0020written\u0020at\u0020the\u0020given\u0020locations\u003B\u0020a\nlocation\u0020left\u0020out\u0020is\u0020kept.",
+            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html#method_withLocations"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\ColumnChunk\u003A\u003AvaluesCount\u0028\u0029",
             "name": "valuesCount",
@@ -2191,6 +4236,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_distinctCount"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003AisMaxValueExact\u0028\u0029",
+            "name": "isMaxValueExact",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_isMaxValueExact"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003AisMinValueExact\u0028\u0029",
+            "name": "isMinValueExact",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_isMinValueExact"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003Amax\u0028\u0029",
             "name": "max",
             "summary": "",
@@ -2210,6 +4265,11 @@ Search.appendIndex(
             "name": "minValue",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_minValue"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003AnanCount\u0028\u0029",
+            "name": "nanCount",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_nanCount"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003AnullCount\u0028\u0029",
             "name": "nullCount",
@@ -2265,6 +4325,26 @@ Search.appendIndex(
             "name": "toThrift",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-RowGroup.html#method_toThrift"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroupChunks",
+            "name": "RowGroupChunks",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-RowGroupChunks.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroupChunks\u003A\u003Achunk\u0028\u0029",
+            "name": "chunk",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-RowGroupChunks.html#method_chunk"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroupChunks\u003A\u003AcolumnOrder\u0028\u0029",
+            "name": "columnOrder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-RowGroupChunks.html#method_columnOrder"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroupChunks\u003A\u003ArowCounts\u0028\u0029",
+            "name": "rowCounts",
+            "summary": "Every\u0020row\u0020group\u0027s\u0020row\u0020count,\u0020in\u0020file\u0020order.",
+            "url": "classes/Flow-Parquet-ParquetFile-RowGroupChunks.html#method_rowCounts"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroups",
             "name": "RowGroups",
@@ -2861,6 +4941,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Schema-LogicalType-Integer.html#method_bitWidth"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\LogicalType\\Integer\u003A\u003Ais\u0028\u0029",
+            "name": "is",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Schema-LogicalType-Integer.html#method_is"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\LogicalType\\Integer\u003A\u003AisSigned\u0028\u0029",
             "name": "isSigned",
             "summary": "",
@@ -2980,6 +5065,11 @@ Search.appendIndex(
             "name": "enum",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Schema-LogicalType.html#method_enum"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\LogicalType\u003A\u003AconvertedType\u0028\u0029",
+            "name": "convertedType",
+            "summary": "The\u0020converted\u0020type\u0020a\u0020writer\u0020annotates\u0020this\u0020logical\u0020type\u0020with\u0020for\u0020older\u0020readers\u0020\u0028arrow\u002Drs\u002060\n\u0060ConvertedType\u003A\u003Afrom\u0028Option\u003CLogicalType\u003E\u0029\u0060\u0029\u003B\u0020null\u0020where\u0020none\u0020exists.",
+            "url": "classes/Flow-Parquet-ParquetFile-Schema-LogicalType.html#method_convertedType"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Schema\\LogicalType\u003A\u003AfromConvertedType\u0028\u0029",
             "name": "fromConvertedType",
@@ -3761,6 +5851,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Statistics.html#property_isMinValueExact"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Statistics\u003A\u003A\u0024nanCount",
+            "name": "nanCount",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Statistics.html#property_nanCount"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile",
             "name": "ParquetFile",
             "summary": "",
@@ -3781,10 +5876,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile.html#method_close"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\u003A\u003Aindexes\u0028\u0029",
+            "name": "indexes",
+            "summary": "The\u0020page\u0020indexes,\u0020read\u0020from\u0020the\u0020file\u0020on\u0020first\u0020access.",
+            "url": "classes/Flow-Parquet-ParquetFile.html#method_indexes"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\u003A\u003Ametadata\u0028\u0029",
             "name": "metadata",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile.html#method_metadata"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\u003A\u003Aoptions\u0028\u0029",
+            "name": "options",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile.html#method_options"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\u003A\u003ApageHeaders\u0028\u0029",
             "name": "pageHeaders",
@@ -3803,12 +5908,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\u003A\u003Acolumns\u0028\u0029",
             "name": "columns",
-            "summary": "",
+            "summary": "The\u0020reader\u0020keeps\u0020the\u0020rows\u0020of\u0020the\u0020filter\u0027s\u0020bound\u0020conjuncts,\u0020the\u0020rest\u0020are\u0020evaluated\u0020here\u003B\u0020offset\u0020and\u0020limit\u0020count\u0020the\nrows\u0020returned.",
             "url": "classes/Flow-Parquet-ParquetFile.html#method_columns"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\u003A\u003Avalues\u0028\u0029",
             "name": "values",
-            "summary": "",
+            "summary": "The\u0020query\u0027s\u0020rows\u0020one\u0020by\u0020one,\u0020keyed\u0020by\u0020column.",
             "url": "classes/Flow-Parquet-ParquetFile.html#method_values"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\u003A\u003APARQUET_MAGIC_NUMBER",
@@ -3826,30 +5931,15 @@ Search.appendIndex(
             "summary": "Closes\u0020the\u0020stream\u0020it\u0020was\u0020opened\u0020on\u003B\u0020any\u0020later\u0020call\u0020throws\u0020RuntimeException\u0028\u0027Reader\u0020is\u0020not\u0020open\u0027\u0029.",
             "url": "classes/Flow-Parquet-ParquetFileReader.html#method_close"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFileReader\u003A\u003Ametadata\u0028\u0029",
-            "name": "metadata",
-            "summary": "The\u0020whole\u0020footer\u0020as\u0020Metadata,\u0020built\u0020on\u0020the\u0020first\u0020call.",
-            "url": "classes/Flow-Parquet-ParquetFileReader.html#method_metadata"
+            "fqsen": "\\Flow\\Parquet\\ParquetFileReader\u003A\u003Afooter\u0028\u0029",
+            "name": "footer",
+            "summary": "The\u0020file\u0027s\u0020footer,\u0020read\u0020on\u0020the\u0020first\u0020call\u003B\u0020it\u0020stays\u0020readable\u0020after\u0020close\u0028\u0029.",
+            "url": "classes/Flow-Parquet-ParquetFileReader.html#method_footer"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFileReader\u003A\u003AreadColumns\u0028\u0029",
             "name": "readColumns",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFileReader.html#method_readColumns"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFileReader\u003A\u003ArowsNumber\u0028\u0029",
-            "name": "rowsNumber",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFileReader.html#method_rowsNumber"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFileReader\u003A\u003Aschema\u0028\u0029",
-            "name": "schema",
-            "summary": "The\u0020file\u0020schema,\u0020without\u0020building\u0020the\u0020row\u002Dgroup\u0020metadata.",
-            "url": "classes/Flow-Parquet-ParquetFileReader.html#method_schema"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFileReader\u003A\u003AtotalByteSize\u0028\u0029",
-            "name": "totalByteSize",
-            "summary": "\u03A3\u0020row\u0020group\u0020total_byte_size\u0020\u0028uncompressed\u0029,\u0020without\u0020building\u0020the\u0020row\u002Dgroup\u0020metadata.",
-            "url": "classes/Flow-Parquet-ParquetFileReader.html#method_totalByteSize"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFileWriter",
             "name": "ParquetFileWriter",
@@ -3876,6 +5966,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFileWriter.html#method_writeRow"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Query",
+            "name": "Query",
+            "summary": "The\u0020rows\u0020a\u0020read\u0020returns\u003A\u0020the\u0020selected\u0020columns\u0020\u0028all\u0020root\u0020columns\u0020when\u0020none\u0029\u0020of\u0020the\u0020rows\u0020matching\u0020the\u0020filter,\u0020the\noffset\u0020and\u0020the\u0020limit\u0020counted\u0020over\u0020the\u0020matching\u0020rows.",
+            "url": "classes/Flow-Parquet-Query.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Query\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Query.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Query\u003A\u003A\u0024limit",
+            "name": "limit",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Query.html#property_limit"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Query\u003A\u003A\u0024offset",
+            "name": "offset",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Query.html#property_offset"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Query\u003A\u003Aselect\u0028\u0029",
+            "name": "select",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Query.html#method_select"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Query\u003A\u003Awhere\u0028\u0029",
+            "name": "where",
+            "summary": "A\u0020second\u0020filter\u0020narrows\u0020the\u0020first\u003A\u0020both\u0020must\u0020match.",
+            "url": "classes/Flow-Parquet-Query.html#method_where"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Query\u003A\u003A\u0024columns",
+            "name": "columns",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Query.html#property_columns"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Query\u003A\u003A\u0024filter",
+            "name": "filter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Query.html#property_filter"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\ColumnChunkReader",
             "name": "ColumnChunkReader",
             "summary": "",
@@ -3888,7 +6018,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\ColumnChunkReader\u003A\u003Aread\u0028\u0029",
             "name": "read",
-            "summary": "",
+            "summary": "The\u0020chunk\u0027s\u0020data\u0020pages\u0020keyed\u0020by\u0020the\u0020row\u0020of\u0020the\u0020row\u0020group\u0020each\u0020starts\u0020at\u003A\u0020the\u0020\u0024pages\u0020of\u0020\u0024offsetIndex,\u0020one\nSourceStream\u003A\u003Aread\u0020per\u0020run\u0020of\u0020adjacent\u0020pages,\u0020or\u0020every\u0020page\u0020without\u0020an\u0020offset\u0020index.\u0020The\u0020dictionary\u0020is\u0020read\u0020from\nthe\u0020chunk\u0027s\u0020start\u0020up\u0020to\u0020the\u0020first\u0020indexed\u0020page,\u0020wherever\u0020\u0060dictionary_page_offset\u0060\u0020points\u0020\u0028PARQUET\u002D816\u0029,\u0020unless\n\u0024dictionary\u0020is\u0020given.\u0020Returns\u0020the\u0020dictionary\u0020the\u0020pages\u0020were\u0020decoded\u0020with.",
             "url": "classes/Flow-Parquet-Reader-ColumnChunkReader.html#method_read"
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\ColumnChunkViewer",
@@ -3933,7 +6063,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\ColumnReader",
             "name": "ColumnReader",
-            "summary": "One\u0020column\u0027s\u0020values\u0020across\u0020the\u0020row\u0020groups\u0020of\u0020a\u0020file,\u0020from\u0020\u0024offset\u0020for\u0020at\u0020most\u0020\u0024limit\u0020rows.",
+            "summary": "One\u0020column\u0027s\u0020values\u0020in\u0020a\u0020row\u0020group,\u0020the\u0020selected\u0020rows\u0020only.",
             "url": "classes/Flow-Parquet-Reader-ColumnReader.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\ColumnReader\u003A\u003A__construct\u0028\u0029",
@@ -3941,10 +6071,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Reader-ColumnReader.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Reader\\ColumnReader\u003A\u003Aread\u0028\u0029",
-            "name": "read",
+            "fqsen": "\\Flow\\Parquet\\Reader\\ColumnReader\u003A\u003AreadRowGroup\u0028\u0029",
+            "name": "readRowGroup",
+            "summary": "The\u0020column\u0027s\u0020values\u0020at\u0020the\u0020rows\u0020\u0024selection\u0020selects,\u0020row\u00200\u0020being\u0020the\u0020group\u0027s\u0020first\u0020row.",
+            "url": "classes/Flow-Parquet-Reader-ColumnReader.html#method_readRowGroup"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ColumnReader\u003A\u003AreadPhysical\u0028\u0029",
+            "name": "readPhysical",
+            "summary": "The\u0020leaf\u0027s\u0020undecoded\u0020physical\u0020values\u0020at\u0020the\u0020rows\u0020\u0024selection\u0020selects,\u0020null\u0020where\u0020the\u0020leaf\u0020or\u0020an\u0020ancestor\u0020is\u0020null,\nand\u0020the\u0020whole\u0020decoded\u0020pages\u0020it\u0020read,\u0020keyed\u0020by\u0020the\u0020row\u0020of\u0020the\u0020group\u0020each\u0020starts\u0020at,\u0020with\u0020their\u0020dictionary,\u0020for\nreadRowGroup\u0028\u0029\u0020to\u0020serve\u0020without\u0020reading\u0020them\u0020again.",
+            "url": "classes/Flow-Parquet-Reader-ColumnReader.html#method_readPhysical"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\FilteredBatches",
+            "name": "FilteredBatches",
+            "summary": "The\u0020matching\u0020rows\u0020of\u0020a\u0020read\u0027s\u0020batches\u0020\u0028every\u0020row\u0020without\u0020an\u0020evaluator\u0029,\u0020offset\u0020and\u0020limit\u0020counted\u0020over\u0020them,\nrechunked\u0020to\u0020the\u0020batch\u0020size\u003B\u0020it\u0020stops\u0020pulling\u0020batches\u0020at\u0020the\u0020limit.",
+            "url": "classes/Flow-Parquet-Reader-FilteredBatches.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\FilteredBatches\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Parquet-Reader-ColumnReader.html#method_read"
+            "url": "classes/Flow-Parquet-Reader-FilteredBatches.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\FilteredBatches\u003A\u003Acolumns\u0028\u0029",
+            "name": "columns",
+            "summary": "The\u0020columns\u0020each\u0020batch\u0020must\u0020hold\u003A\u0020the\u0020returned\u0020ones\u0020and\u0020the\u0020filter\u0027s\u0020root\u0020columns.",
+            "url": "classes/Flow-Parquet-Reader-FilteredBatches.html#method_columns"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\FilteredBatches\u003A\u003Afilter\u0028\u0029",
+            "name": "filter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-FilteredBatches.html#method_filter"
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\PageReader",
             "name": "PageReader",
@@ -3965,6 +6120,286 @@ Search.appendIndex(
             "name": "readDictionary",
             "summary": "",
             "url": "classes/Flow-Parquet-Reader-PageReader.html#method_readDictionary"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\PageRun",
+            "name": "PageRun",
+            "summary": "Adjacent\u0020pages\u0020of\u0020a\u0020column\u0020chunk\u0020read\u0020in\u0020one\u0020SourceStream\u003A\u003Aread\u003A\u0020the\u0020file\u0020bytes\u0020\u005Bstart,\u0020end\u0029.",
+            "url": "classes/Flow-Parquet-Reader-PageRun.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\PageRun\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-PageRun.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\PageRun\u003A\u003AextendedTo\u0028\u0029",
+            "name": "extendedTo",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-PageRun.html#method_extendedTo"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\PageRun\u003A\u003A\u0024length",
+            "name": "length",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-PageRun.html#property_length"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\PageRun\u003A\u003A\u0024start",
+            "name": "start",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-PageRun.html#property_start"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\PageRun\u003A\u003A\u0024end",
+            "name": "end",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-PageRun.html#property_end"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\BloomFilterPruner",
+            "name": "BloomFilterPruner",
+            "summary": "Drops\u0020the\u0020row\u0020groups\u0020whose\u0020bloom\u0020filters\u0020prove\u0020no\u0020row\u0020matches.\u0020It\u0020proves\u0020no\u0020match,\u0020so\u0020matched\u0020is\u0020unchanged\u003B\u0020a\u0020group\nthat\u0020selects\u0020no\u0020row,\u0020or\u0020whose\u0020selected\u0020rows\u0020are\u0020all\u0020matched\u0020already,\u0020reads\u0020no\u0020filter.",
+            "url": "classes/Flow-Parquet-Reader-Pruning-BloomFilterPruner.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\BloomFilterPruner\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-Pruning-BloomFilterPruner.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\BloomFilterPruner\u003A\u003Aprune\u0028\u0029",
+            "name": "prune",
+            "summary": "Selects\u0020a\u0020subset\u0020of\u0020\u0024rows\u002D\u003Eselected,\u0020evaluating\u0020only\u0020the\u0020units\u0020that\u0020still\u0020select\u0020a\u0020row\u003B\u0020matched\u0020is\u0020the\u0020selected\nrows\u0020of\u0020\u0024rows\u002D\u003Ematched\u0020and\u0020of\u0020the\u0020units\u0020it\u0020proves\u0020to\u0020match.",
+            "url": "classes/Flow-Parquet-Reader-Pruning-BloomFilterPruner.html#method_prune"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\PageIndexPruner",
+            "name": "PageIndexPruner",
+            "summary": "A\u0020row\u0020group\u0020is\u0020cut\u0020at\u0020the\u0020page\u0020boundaries\u0020of\u0020every\u0020filtered\u0020column\u003B\u0020each\u0020part\u0020is\u0020evaluated\u0020with,\u0020per\u0020column,\u0020the\npage\u0020holding\u0020it.\u0020A\u0020group\u0020where\u0020a\u0020filtered\u0020column\u0020has\u0020no\u0020usable\u0020page\u0020index\u0020is\u0020kept\u0020whole\u003B\u0020a\u0020group\u0020whose\u0020selected\u0020rows\nare\u0020all\u0020matched\u0020already\u0020reads\u0020no\u0020index.",
+            "url": "classes/Flow-Parquet-Reader-Pruning-PageIndexPruner.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\PageIndexPruner\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-Pruning-PageIndexPruner.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\PageIndexPruner\u003A\u003Aprune\u0028\u0029",
+            "name": "prune",
+            "summary": "Selects\u0020a\u0020subset\u0020of\u0020\u0024rows\u002D\u003Eselected,\u0020evaluating\u0020only\u0020the\u0020units\u0020that\u0020still\u0020select\u0020a\u0020row\u003B\u0020matched\u0020is\u0020the\u0020selected\nrows\u0020of\u0020\u0024rows\u002D\u003Ematched\u0020and\u0020of\u0020the\u0020units\u0020it\u0020proves\u0020to\u0020match.",
+            "url": "classes/Flow-Parquet-Reader-Pruning-PageIndexPruner.html#method_prune"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\PrunedRows",
+            "name": "PrunedRows",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-Pruning-PrunedRows.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\PrunedRows\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-Pruning-PrunedRows.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\PrunedRows\u003A\u003A\u0024selected",
+            "name": "selected",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-Pruning-PrunedRows.html#property_selected"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\PrunedRows\u003A\u003A\u0024matched",
+            "name": "matched",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-Pruning-PrunedRows.html#property_matched"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\Pruner",
+            "name": "Pruner",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-Pruning-Pruner.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\Pruner\u003A\u003Aprune\u0028\u0029",
+            "name": "prune",
+            "summary": "Selects\u0020a\u0020subset\u0020of\u0020\u0024rows\u002D\u003Eselected,\u0020evaluating\u0020only\u0020the\u0020units\u0020that\u0020still\u0020select\u0020a\u0020row\u003B\u0020matched\u0020is\u0020the\u0020selected\nrows\u0020of\u0020\u0024rows\u002D\u003Ematched\u0020and\u0020of\u0020the\u0020units\u0020it\u0020proves\u0020to\u0020match.",
+            "url": "classes/Flow-Parquet-Reader-Pruning-Pruner.html#method_prune"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\RowGroupStatisticsPruner",
+            "name": "RowGroupStatisticsPruner",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-Pruning-RowGroupStatisticsPruner.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\RowGroupStatisticsPruner\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-Pruning-RowGroupStatisticsPruner.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\RowGroupStatisticsPruner\u003A\u003Aprune\u0028\u0029",
+            "name": "prune",
+            "summary": "Selects\u0020a\u0020subset\u0020of\u0020\u0024rows\u002D\u003Eselected,\u0020evaluating\u0020only\u0020the\u0020units\u0020that\u0020still\u0020select\u0020a\u0020row\u003B\u0020matched\u0020is\u0020the\u0020selected\nrows\u0020of\u0020\u0024rows\u002D\u003Ematched\u0020and\u0020of\u0020the\u0020units\u0020it\u0020proves\u0020to\u0020match.",
+            "url": "classes/Flow-Parquet-Reader-Pruning-RowGroupStatisticsPruner.html#method_prune"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlan",
+            "name": "ReadPlan",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-ReadPlan.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlan\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-ReadPlan.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlan\u003A\u003Awindow\u0028\u0029",
+            "name": "window",
+            "summary": "Every\u0020row\u0020of\u0020the\u0020window,\u0020each\u0020a\u0020match.",
+            "url": "classes/Flow-Parquet-Reader-ReadPlan.html#method_window"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlan\u003A\u003A\u0024selection",
+            "name": "selection",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-ReadPlan.html#property_selection"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlan\u003A\u003A\u0024matched",
+            "name": "matched",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-ReadPlan.html#property_matched"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlan\u003A\u003A\u0024indexes",
+            "name": "indexes",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-ReadPlan.html#property_indexes"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlan\u003A\u003A\u0024rowFilter",
+            "name": "rowFilter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-ReadPlan.html#property_rowFilter"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlan\u003A\u003A\u0024limit",
+            "name": "limit",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-ReadPlan.html#property_limit"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlanner",
+            "name": "ReadPlanner",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-ReadPlanner.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlanner\u003A\u003Aplan\u0028\u0029",
+            "name": "plan",
+            "summary": "The\u0020rows\u0020to\u0020read\u003A\u0020the\u0020file\u0027s\u0020rows\u0020from\u0020\u0024rawOffset\u0020on,\u0020minus\u0020the\u0020row\u0020groups\u0020and\u0020pages\u0020whose\u0020statistics\u0020or\u0020bloom\nfilters\u0020prove\u0020no\u0020row\u0020matches\u0020\u0024filter.\u0020The\u0020conjuncts\u0020of\u0020\u0024filter\u0020the\u0020file\u0020answers\u0020exactly\u0020are\u0020evaluated\u0020on\u0020rows\n\u0028ReadPlan\u003A\u003A\u0024rowFilter\u0029\u003B\u0020the\u0020caller\u0020evaluates\u0020the\u0020rest.",
+            "url": "classes/Flow-Parquet-Reader-ReadPlanner.html#method_plan"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection",
+            "name": "RowSelection",
+            "summary": "File\u002Dabsolute\u0020rows\u003A\u0020the\u0020selectors\u0020cover\u0020every\u0020row\u0020of\u0020the\u0020file,\u0020in\u0020order,\u0020adjacent\u0020selectors\u0020merged.",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_all"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003Anone\u0028\u0029",
+            "name": "none",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_none"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003Awindow\u0028\u0029",
+            "name": "window",
+            "summary": "The\u0020rows\u0020from\u0020\u0024offset\u0020on,\u0020\u0024limit\u0020of\u0020them\u0020at\u0020most.",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_window"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003Acontains\u0028\u0029",
+            "name": "contains",
+            "summary": "Whether\u0020every\u0020row\u0020the\u0020other\u0020selection\u0020selects\u0020is\u0020selected\u0020here.",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_contains"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003Adifference\u0028\u0029",
+            "name": "difference",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_difference"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003Ahead\u0028\u0029",
+            "name": "head",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_head"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003Aintersection\u0028\u0029",
+            "name": "intersection",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_intersection"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003Amasked\u0028\u0029",
+            "name": "masked",
+            "summary": "The\u0020selected\u0020rows\u0020whose\u0020entry\u0020is\u0020true,\u0020one\u0020entry\u0020per\u0020selected\u0020row\u0020in\u0020order.",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_masked"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003Aunion\u0028\u0029",
+            "name": "union",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_union"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003ArowCount\u0028\u0029",
+            "name": "rowCount",
+            "summary": "Rows\u0020selected.",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_rowCount"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003Aselectors\u0028\u0029",
+            "name": "selectors",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_selectors"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003Aslice\u0028\u0029",
+            "name": "slice",
+            "summary": "\u0024rows\u0020rows\u0020from\u0020row\u0020\u0024offset\u0020on,\u0020row\u00200\u0020being\u0020row\u0020\u0024offset.",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_slice"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003Asplit\u0028\u0029",
+            "name": "split",
+            "summary": "One\u0020selection\u0020per\u0020consecutive\u0020part\u0020of\u0020the\u0020given\u0020row\u0020counts,\u0020row\u00200\u0020of\u0020each\u0020being\u0020the\u0020part\u0027s\u0020first\u0020row.",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_split"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003AselectsAny\u0028\u0029",
+            "name": "selectsAny",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_selectsAny"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection\u003A\u003AtotalRows\u0028\u0029",
+            "name": "totalRows",
+            "summary": "Rows\u0020covered,\u0020selected\u0020or\u0020skipped.",
+            "url": "classes/Flow-Parquet-Reader-RowSelection.html#method_totalRows"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelector",
+            "name": "RowSelector",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-RowSelector.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelector\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-RowSelector.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelector\u003A\u003A\u0024rowCount",
+            "name": "rowCount",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-RowSelector.html#property_rowCount"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\RowSelector\u003A\u003A\u0024skip",
+            "name": "skip",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-RowSelector.html#property_skip"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\SelectedPages",
+            "name": "SelectedPages",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-SelectedPages.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\SelectedPages\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-SelectedPages.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\SelectedPages\u003A\u003Atrimmed\u0028\u0029",
+            "name": "trimmed",
+            "summary": "The\u0020leaf\u0027s\u0020pages\u0020trimmed\u0020to\u0020the\u0020selected\u0020rows,\u0020so\u0020every\u0020leaf\u0020of\u0020every\u0020column\u0020yields\u0020the\u0020same\u0020rows.",
+            "url": "classes/Flow-Parquet-Reader-SelectedPages.html#method_trimmed"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\SelectedPages\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "The\u0020leaf\u0027s\u0020whole\u0020pages\u0020holding\u0020a\u0020selected\u0020row,\u0020keyed\u0020by\u0020the\u0020row\u0020of\u0020the\u0020group\u0020each\u0020starts\u0020at,\u0020each\u0020with\u0020the\u0020rows\nof\u0020it\u0020\u0024selection\u0020selects.\u0020A\u0020page\u0020in\u0020\u0024decoded\u0020is\u0020served\u0020from\u0020it\u003B\u0020the\u0020others\u0020are\u0020read,\u0020through\u0020the\u0020offset\u0020index\nwhen\u0020the\u0020selection\u0020skips\u0020rows\u0020or\u0020decoded\u0020pages\u0020spare\u0020reads.\u0020Returns\u0020the\u0020pages\u0027\u0020dictionary.",
+            "url": "classes/Flow-Parquet-Reader-SelectedPages.html#method_read"
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader",
             "name": "Reader",
@@ -4571,29 +7006,29 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-AesGcmCtrV1.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmCtrV1\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-AesGcmCtrV1.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmCtrV1\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-AesGcmCtrV1.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmCtrV1\u003A\u003A\u0024aad_file_unique",
-            "name": "aad_file_unique",
-            "summary": "Unique\u0020file\u0020identifier\u0020part\u0020of\u0020AAD\u0020suffix\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-AesGcmCtrV1.html#property_aad_file_unique"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmCtrV1\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-AesGcmCtrV1.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmCtrV1\u003A\u003A\u0024aad_prefix",
             "name": "aad_prefix",
-            "summary": "AAD\u0020prefix\u0020\u002A.",
+            "summary": "AAD\u0020prefix\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-AesGcmCtrV1.html#property_aad_prefix"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmCtrV1\u003A\u003A\u0024aad_file_unique",
+            "name": "aad_file_unique",
+            "summary": "Unique\u0020file\u0020identifier\u0020part\u0020of\u0020AAD\u0020suffix\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-AesGcmCtrV1.html#property_aad_file_unique"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmCtrV1\u003A\u003A\u0024supply_aad_prefix",
             "name": "supply_aad_prefix",
-            "summary": "In\u0020files\u0020encrypted\u0020with\u0020AAD\u0020prefix\u0020without\u0020storing\u0020it,\nreaders\u0020must\u0020supply\u0020the\u0020prefix\u0020\u002A.",
+            "summary": "In\u0020files\u0020encrypted\u0020with\u0020AAD\u0020prefix\u0020without\u0020storing\u0020it,\nreaders\u0020must\u0020supply\u0020the\u0020prefix\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-AesGcmCtrV1.html#property_supply_aad_prefix"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmV1",
@@ -4621,34 +7056,34 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-AesGcmV1.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmV1\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-AesGcmV1.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmV1\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-AesGcmV1.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmV1\u003A\u003A\u0024aad_file_unique",
-            "name": "aad_file_unique",
-            "summary": "Unique\u0020file\u0020identifier\u0020part\u0020of\u0020AAD\u0020suffix\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-AesGcmV1.html#property_aad_file_unique"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmV1\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-AesGcmV1.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmV1\u003A\u003A\u0024aad_prefix",
             "name": "aad_prefix",
-            "summary": "AAD\u0020prefix\u0020\u002A.",
+            "summary": "AAD\u0020prefix\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-AesGcmV1.html#property_aad_prefix"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmV1\u003A\u003A\u0024aad_file_unique",
+            "name": "aad_file_unique",
+            "summary": "Unique\u0020file\u0020identifier\u0020part\u0020of\u0020AAD\u0020suffix\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-AesGcmV1.html#property_aad_file_unique"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\AesGcmV1\u003A\u003A\u0024supply_aad_prefix",
             "name": "supply_aad_prefix",
-            "summary": "In\u0020files\u0020encrypted\u0020with\u0020AAD\u0020prefix\u0020without\u0020storing\u0020it,\nreaders\u0020must\u0020supply\u0020the\u0020prefix\u0020\u002A.",
+            "summary": "In\u0020files\u0020encrypted\u0020with\u0020AAD\u0020prefix\u0020without\u0020storing\u0020it,\nreaders\u0020must\u0020supply\u0020the\u0020prefix\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-AesGcmV1.html#property_supply_aad_prefix"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterAlgorithm",
             "name": "BloomFilterAlgorithm",
-            "summary": "The\u0020algorithm\u0020used\u0020in\u0020Bloom\u0020filter.\u0020\u002A.",
+            "summary": "The\u0020algorithm\u0020used\u0020in\u0020Bloom\u0020filter.\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-BloomFilterAlgorithm.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterAlgorithm\u003A\u003A__construct\u0028\u0029",
@@ -4671,19 +7106,19 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-BloomFilterAlgorithm.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterAlgorithm\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterAlgorithm.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterAlgorithm\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-BloomFilterAlgorithm.html#property_isValidate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterAlgorithm\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterAlgorithm.html#property__TSPEC"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterAlgorithm\u003A\u003A\u0024BLOCK",
             "name": "BLOCK",
-            "summary": "Block\u002Dbased\u0020Bloom\u0020filter.\u0020\u002A.",
+            "summary": "Block\u002Dbased\u0020Bloom\u0020filter.\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-BloomFilterAlgorithm.html#property_BLOCK"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterCompression",
@@ -4711,15 +7146,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-BloomFilterCompression.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterCompression\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterCompression.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterCompression\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-BloomFilterCompression.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterCompression\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterCompression.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterCompression\u003A\u003A\u0024UNCOMPRESSED",
             "name": "UNCOMPRESSED",
@@ -4751,19 +7186,19 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHash.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHash\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHash.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHash\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHash.html#property_isValidate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHash\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHash.html#property__TSPEC"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHash\u003A\u003A\u0024XXHASH",
             "name": "XXHASH",
-            "summary": "xxHash\u0020Strategy.\u0020\u002A.",
+            "summary": "xxHash\u0020Strategy.\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHash.html#property_XXHASH"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHeader",
@@ -4791,40 +7226,45 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHeader.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHeader\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHeader.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHeader\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHeader.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHeader\u003A\u003A\u0024algorithm",
-            "name": "algorithm",
-            "summary": "The\u0020algorithm\u0020for\u0020setting\u0020bits.\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHeader.html#property_algorithm"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHeader\u003A\u003A\u0024compression",
-            "name": "compression",
-            "summary": "The\u0020compression\u0020used\u0020in\u0020the\u0020Bloom\u0020filter\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHeader.html#property_compression"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHeader\u003A\u003A\u0024hash",
-            "name": "hash",
-            "summary": "The\u0020hash\u0020function\u0020used\u0020for\u0020Bloom\u0020filter.\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHeader.html#property_hash"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHeader\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHeader.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHeader\u003A\u003A\u0024numBytes",
             "name": "numBytes",
-            "summary": "The\u0020size\u0020of\u0020bitset\u0020in\u0020bytes\u0020\u002A.",
+            "summary": "The\u0020size\u0020of\u0020bitset\u0020in\u0020bytes\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHeader.html#property_numBytes"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHeader\u003A\u003A\u0024algorithm",
+            "name": "algorithm",
+            "summary": "The\u0020algorithm\u0020for\u0020setting\u0020bits.\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHeader.html#property_algorithm"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHeader\u003A\u003A\u0024hash",
+            "name": "hash",
+            "summary": "The\u0020hash\u0020function\u0020used\u0020for\u0020Bloom\u0020filter.\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHeader.html#property_hash"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BloomFilterHeader\u003A\u003A\u0024compression",
+            "name": "compression",
+            "summary": "The\u0020compression\u0020used\u0020in\u0020the\u0020Bloom\u0020filter\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-BloomFilterHeader.html#property_compression"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundaryOrder",
             "name": "BoundaryOrder",
             "summary": "Enum\u0020to\u0020annotate\u0020whether\u0020lists\u0020of\u0020min\/max\u0020elements\u0020inside\u0020ColumnIndex\nare\u0020ordered\u0020and\u0020if\u0020so,\u0020in\u0020which\u0020direction.",
             "url": "classes/Flow-Parquet-ThriftModel-BoundaryOrder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundaryOrder\u003A\u003AUNORDERED",
+            "name": "UNORDERED",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundaryOrder.html#constant_UNORDERED"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundaryOrder\u003A\u003AASCENDING",
             "name": "ASCENDING",
@@ -4836,19 +7276,89 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-BoundaryOrder.html#constant_DESCENDING"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundaryOrder\u003A\u003AUNORDERED",
-            "name": "UNORDERED",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-BoundaryOrder.html#constant_UNORDERED"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundaryOrder\u003A\u003A\u0024__names",
             "name": "__names",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-BoundaryOrder.html#property___names"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox",
+            "name": "BoundingBox",
+            "summary": "Bounding\u0020box\u0020for\u0020GEOMETRY\u0020or\u0020GEOGRAPHY\u0020type\u0020in\u0020the\u0020representation\u0020of\u0020min\/max\nvalue\u0020pair\u0020of\u0020coordinates\u0020from\u0020each\u0020axis.",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#method_getName"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003A\u0024isValidate",
+            "name": "isValidate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#property__TSPEC"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003A\u0024xmin",
+            "name": "xmin",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#property_xmin"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003A\u0024xmax",
+            "name": "xmax",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#property_xmax"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003A\u0024ymin",
+            "name": "ymin",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#property_ymin"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003A\u0024ymax",
+            "name": "ymax",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#property_ymax"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003A\u0024zmin",
+            "name": "zmin",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#property_zmin"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003A\u0024zmax",
+            "name": "zmax",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#property_zmax"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003A\u0024mmin",
+            "name": "mmin",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#property_mmin"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BoundingBox\u003A\u003A\u0024mmax",
+            "name": "mmax",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BoundingBox.html#property_mmax"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BsonType",
             "name": "BsonType",
-            "summary": "Embedded\u0020BSON\u0020logical\u0020type\u0020annotation.",
+            "summary": "Embedded\u0020BSON\u0020logical\u0020type\u0020annotation",
             "url": "classes/Flow-Parquet-ThriftModel-BsonType.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BsonType\u003A\u003A__construct\u0028\u0029",
@@ -4871,15 +7381,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-BsonType.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BsonType\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-BsonType.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\BsonType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-BsonType.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\BsonType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-BsonType.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk",
             "name": "ColumnChunk",
@@ -4906,60 +7416,60 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024column_index_length",
-            "name": "column_index_length",
-            "summary": "Size\u0020of\u0020ColumnChunk\u0027s\u0020ColumnIndex,\u0020in\u0020bytes\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_column_index_length"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024column_index_offset",
-            "name": "column_index_offset",
-            "summary": "File\u0020offset\u0020of\u0020ColumnChunk\u0027s\u0020ColumnIndex\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_column_index_offset"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024crypto_metadata",
-            "name": "crypto_metadata",
-            "summary": "Crypto\u0020metadata\u0020of\u0020encrypted\u0020columns\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_crypto_metadata"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024encrypted_column_metadata",
-            "name": "encrypted_column_metadata",
-            "summary": "Encrypted\u0020column\u0020metadata\u0020for\u0020this\u0020chunk\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_encrypted_column_metadata"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024file_offset",
-            "name": "file_offset",
-            "summary": "Deprecated\u003A\u0020Byte\u0020offset\u0020in\u0020file_path\u0020to\u0020the\u0020ColumnMetaData.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_file_offset"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024file_path",
             "name": "file_path",
             "summary": "File\u0020where\u0020column\u0020data\u0020is\u0020stored.\u0020\u0020If\u0020not\u0020set,\u0020assumed\u0020to\u0020be\u0020same\u0020file\u0020as\nmetadata.\u0020\u0020This\u0020path\u0020is\u0020relative\u0020to\u0020the\u0020current\u0020file.",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_file_path"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024file_offset",
+            "name": "file_offset",
+            "summary": "DEPRECATED\u003A\u0020Byte\u0020offset\u0020in\u0020file_path\u0020to\u0020the\u0020ColumnMetaData",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_file_offset"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024meta_data",
             "name": "meta_data",
             "summary": "Column\u0020metadata\u0020for\u0020this\u0020chunk.\u0020Some\u0020writers\u0020may\u0020also\u0020replicate\u0020this\u0020at\u0020the\nlocation\u0020pointed\u0020to\u0020by\u0020file_path\/file_offset.",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_meta_data"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024offset_index_length",
-            "name": "offset_index_length",
-            "summary": "Size\u0020of\u0020ColumnChunk\u0027s\u0020OffsetIndex,\u0020in\u0020bytes\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_offset_index_length"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024offset_index_offset",
             "name": "offset_index_offset",
-            "summary": "File\u0020offset\u0020of\u0020ColumnChunk\u0027s\u0020OffsetIndex\u0020\u002A.",
+            "summary": "File\u0020offset\u0020of\u0020ColumnChunk\u0027s\u0020OffsetIndex\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_offset_index_offset"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024offset_index_length",
+            "name": "offset_index_length",
+            "summary": "Size\u0020of\u0020ColumnChunk\u0027s\u0020OffsetIndex,\u0020in\u0020bytes\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_offset_index_length"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024column_index_offset",
+            "name": "column_index_offset",
+            "summary": "File\u0020offset\u0020of\u0020ColumnChunk\u0027s\u0020ColumnIndex\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_column_index_offset"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024column_index_length",
+            "name": "column_index_length",
+            "summary": "Size\u0020of\u0020ColumnChunk\u0027s\u0020ColumnIndex,\u0020in\u0020bytes\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_column_index_length"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024crypto_metadata",
+            "name": "crypto_metadata",
+            "summary": "Crypto\u0020metadata\u0020of\u0020encrypted\u0020columns\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_crypto_metadata"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnChunk\u003A\u003A\u0024encrypted_column_metadata",
+            "name": "encrypted_column_metadata",
+            "summary": "Encrypted\u0020column\u0020metadata\u0020for\u0020this\u0020chunk\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnChunk.html#property_encrypted_column_metadata"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnCryptoMetaData",
             "name": "ColumnCryptoMetaData",
@@ -4986,25 +7496,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnCryptoMetaData.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnCryptoMetaData\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnCryptoMetaData.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnCryptoMetaData\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnCryptoMetaData.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnCryptoMetaData\u003A\u003A\u0024ENCRYPTION_WITH_COLUMN_KEY",
-            "name": "ENCRYPTION_WITH_COLUMN_KEY",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnCryptoMetaData\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnCryptoMetaData.html#property_ENCRYPTION_WITH_COLUMN_KEY"
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnCryptoMetaData.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnCryptoMetaData\u003A\u003A\u0024ENCRYPTION_WITH_FOOTER_KEY",
             "name": "ENCRYPTION_WITH_FOOTER_KEY",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnCryptoMetaData.html#property_ENCRYPTION_WITH_FOOTER_KEY"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnCryptoMetaData\u003A\u003A\u0024ENCRYPTION_WITH_COLUMN_KEY",
+            "name": "ENCRYPTION_WITH_COLUMN_KEY",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnCryptoMetaData.html#property_ENCRYPTION_WITH_COLUMN_KEY"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex",
             "name": "ColumnIndex",
@@ -5031,54 +7541,59 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024boundary_order",
-            "name": "boundary_order",
-            "summary": "Stores\u0020whether\u0020both\u0020min_values\u0020and\u0020max_values\u0020are\u0020ordered\u0020and\u0020if\u0020so,\u0020in\nwhich\u0020direction.\u0020This\u0020allows\u0020readers\u0020to\u0020perform\u0020binary\u0020searches\u0020in\u0020both\nlists.\u0020Readers\u0020cannot\u0020assume\u0020that\u0020max_values\u005Bi\u005D\u0020\u003C\u003D\u0020min_values\u005Bi\u002B1\u005D,\u0020even\nif\u0020the\u0020lists\u0020are\u0020ordered.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_boundary_order"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024definition_level_histograms",
-            "name": "definition_level_histograms",
-            "summary": "Same\u0020as\u0020repetition_level_histograms\u0020except\u0020for\u0020definitions\u0020levels.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_definition_level_histograms"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024max_values",
-            "name": "max_values",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_max_values"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024min_values",
-            "name": "min_values",
-            "summary": "Two\u0020lists\u0020containing\u0020lower\u0020and\u0020upper\u0020bounds\u0020for\u0020the\u0020values\u0020of\u0020each\u0020page\ndetermined\u0020by\u0020the\u0020ColumnOrder\u0020of\u0020the\u0020column.\u0020These\u0020may\u0020be\u0020the\u0020actual\nminimum\u0020and\u0020maximum\u0020values\u0020found\u0020on\u0020a\u0020page,\u0020but\u0020can\u0020also\u0020be\u0020\u0028more\u0020compact\u0029\nvalues\u0020that\u0020do\u0020not\u0020exist\u0020on\u0020a\u0020page.\u0020For\u0020example,\u0020instead\u0020of\u0020storing\u0020\u0022\u0022Blart\nVersenwald\u0020III\u0022,\u0020a\u0020writer\u0020may\u0020set\u0020min_values\u005Bi\u005D\u003D\u0022B\u0022,\u0020max_values\u005Bi\u005D\u003D\u0022C\u0022.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_min_values"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024null_counts",
-            "name": "null_counts",
-            "summary": "A\u0020list\u0020containing\u0020the\u0020number\u0020of\u0020null\u0020values\u0020for\u0020each\u0020page.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_null_counts"
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024null_pages",
             "name": "null_pages",
             "summary": "A\u0020list\u0020of\u0020Boolean\u0020values\u0020to\u0020determine\u0020the\u0020validity\u0020of\u0020the\u0020corresponding\nmin\u0020and\u0020max\u0020values.\u0020If\u0020true,\u0020a\u0020page\u0020contains\u0020only\u0020null\u0020values,\u0020and\u0020writers\nhave\u0020to\u0020set\u0020the\u0020corresponding\u0020entries\u0020in\u0020min_values\u0020and\u0020max_values\u0020to\nbyte\u005B0\u005D,\u0020so\u0020that\u0020all\u0020lists\u0020have\u0020the\u0020same\u0020length.\u0020If\u0020false,\u0020the\ncorresponding\u0020entries\u0020in\u0020min_values\u0020and\u0020max_values\u0020must\u0020be\u0020valid.",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_null_pages"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024min_values",
+            "name": "min_values",
+            "summary": "Two\u0020lists\u0020containing\u0020lower\u0020and\u0020upper\u0020bounds\u0020for\u0020the\u0020values\u0020of\u0020each\u0020page\ndetermined\u0020by\u0020the\u0020ColumnOrder\u0020of\u0020the\u0020column.\u0020These\u0020may\u0020be\u0020the\u0020actual\nminimum\u0020and\u0020maximum\u0020values\u0020found\u0020on\u0020a\u0020page,\u0020but\u0020can\u0020also\u0020be\u0020\u0028more\u0020compact\u0029\nvalues\u0020that\u0020do\u0020not\u0020exist\u0020on\u0020a\u0020page.\u0020For\u0020example,\u0020instead\u0020of\u0020storing\u0020\u0022Blart\nVersenwald\u0020III\u0022,\u0020a\u0020writer\u0020may\u0020set\u0020min_values\u005Bi\u005D\u003D\u0022B\u0022,\u0020max_values\u005Bi\u005D\u003D\u0022C\u0022.",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_min_values"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024max_values",
+            "name": "max_values",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_max_values"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024boundary_order",
+            "name": "boundary_order",
+            "summary": "Stores\u0020whether\u0020both\u0020min_values\u0020and\u0020max_values\u0020are\u0020ordered\u0020and\u0020if\u0020so,\u0020in\nwhich\u0020direction.\u0020This\u0020allows\u0020readers\u0020to\u0020perform\u0020binary\u0020searches\u0020in\u0020both\nlists.\u0020Readers\u0020cannot\u0020assume\u0020that\u0020max_values\u005Bi\u005D\u0020\u003C\u003D\u0020min_values\u005Bi\u002B1\u005D,\u0020even\nif\u0020the\u0020lists\u0020are\u0020ordered.",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_boundary_order"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024null_counts",
+            "name": "null_counts",
+            "summary": "A\u0020list\u0020containing\u0020the\u0020number\u0020of\u0020null\u0020values\u0020for\u0020each\u0020page",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_null_counts"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024repetition_level_histograms",
             "name": "repetition_level_histograms",
             "summary": "Contains\u0020repetition\u0020level\u0020histograms\u0020for\u0020each\u0020page\nconcatenated\u0020together.\u0020\u0020The\u0020repetition_level_histogram\u0020field\u0020on\nSizeStatistics\u0020contains\u0020more\u0020details.",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_repetition_level_histograms"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024definition_level_histograms",
+            "name": "definition_level_histograms",
+            "summary": "Same\u0020as\u0020repetition_level_histograms\u0020except\u0020for\u0020definitions\u0020levels.",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_definition_level_histograms"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnIndex\u003A\u003A\u0024nan_counts",
+            "name": "nan_counts",
+            "summary": "A\u0020list\u0020containing\u0020the\u0020number\u0020of\u0020NaN\u0020values\u0020for\u0020each\u0020page.\u0020Only\u0020present\nfor\u0020columns\u0020of\u0020physical\u0020type\u0020FLOAT\u0020or\u0020DOUBLE,\u0020or\u0020logical\u0020type\u0020FLOAT16.",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_nan_counts"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData",
             "name": "ColumnMetaData",
-            "summary": "Description\u0020for\u0020column\u0020metadata.",
+            "summary": "Description\u0020for\u0020column\u0020metadata",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A__construct\u0028\u0029",
@@ -5101,95 +7616,100 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024bloom_filter_length",
-            "name": "bloom_filter_length",
-            "summary": "Size\u0020of\u0020Bloom\u0020filter\u0020data\u0020including\u0020the\u0020serialized\u0020header,\u0020in\u0020bytes.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_bloom_filter_length"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property__TSPEC"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024bloom_filter_offset",
-            "name": "bloom_filter_offset",
-            "summary": "Byte\u0020offset\u0020from\u0020beginning\u0020of\u0020file\u0020to\u0020Bloom\u0020filter\u0020data.\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_bloom_filter_offset"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "Type\u0020of\u0020this\u0020column\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024encodings",
+            "name": "encodings",
+            "summary": "Set\u0020of\u0020all\u0020encodings\u0020used\u0020for\u0020this\u0020column.\u0020The\u0020purpose\u0020is\u0020to\u0020validate\nwhether\u0020we\u0020can\u0020decode\u0020those\u0020pages.\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_encodings"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024path_in_schema",
+            "name": "path_in_schema",
+            "summary": "Path\u0020in\u0020schema\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_path_in_schema"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024codec",
             "name": "codec",
-            "summary": "Compression\u0020codec\u0020\u002A.",
+            "summary": "Compression\u0020codec\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_codec"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024num_values",
+            "name": "num_values",
+            "summary": "Number\u0020of\u0020values\u0020in\u0020this\u0020column\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_num_values"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024total_uncompressed_size",
+            "name": "total_uncompressed_size",
+            "summary": "total\u0020byte\u0020size\u0020of\u0020all\u0020uncompressed\u0020pages\u0020in\u0020this\u0020column\u0020chunk\u0020\u0028including\u0020the\u0020headers\u0029\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_total_uncompressed_size"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024total_compressed_size",
+            "name": "total_compressed_size",
+            "summary": "total\u0020byte\u0020size\u0020of\u0020all\u0020compressed,\u0020and\u0020potentially\u0020encrypted,\u0020pages\nin\u0020this\u0020column\u0020chunk\u0020\u0028including\u0020the\u0020headers\u0029\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_total_compressed_size"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024key_value_metadata",
+            "name": "key_value_metadata",
+            "summary": "Optional\u0020key\/value\u0020metadata\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_key_value_metadata"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024data_page_offset",
             "name": "data_page_offset",
-            "summary": "Byte\u0020offset\u0020from\u0020beginning\u0020of\u0020file\u0020to\u0020first\u0020data\u0020page\u0020\u002A.",
+            "summary": "Byte\u0020offset\u0020from\u0020beginning\u0020of\u0020file\u0020to\u0020first\u0020data\u0020page\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_data_page_offset"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024index_page_offset",
+            "name": "index_page_offset",
+            "summary": "Byte\u0020offset\u0020from\u0020beginning\u0020of\u0020file\u0020to\u0020root\u0020index\u0020page\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_index_page_offset"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024dictionary_page_offset",
             "name": "dictionary_page_offset",
-            "summary": "Byte\u0020offset\u0020from\u0020the\u0020beginning\u0020of\u0020file\u0020to\u0020first\u0020\u0028only\u0029\u0020dictionary\u0020page\u0020\u002A.",
+            "summary": "Byte\u0020offset\u0020from\u0020the\u0020beginning\u0020of\u0020file\u0020to\u0020first\u0020\u0028only\u0029\u0020dictionary\u0020page\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_dictionary_page_offset"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024statistics",
+            "name": "statistics",
+            "summary": "optional\u0020statistics\u0020for\u0020this\u0020column\u0020chunk",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_statistics"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024encoding_stats",
             "name": "encoding_stats",
             "summary": "Set\u0020of\u0020all\u0020encodings\u0020used\u0020for\u0020pages\u0020in\u0020this\u0020column\u0020chunk.",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_encoding_stats"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024encodings",
-            "name": "encodings",
-            "summary": "Set\u0020of\u0020all\u0020encodings\u0020used\u0020for\u0020this\u0020column.\u0020The\u0020purpose\u0020is\u0020to\u0020validate\nwhether\u0020we\u0020can\u0020decode\u0020those\u0020pages.\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_encodings"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024bloom_filter_offset",
+            "name": "bloom_filter_offset",
+            "summary": "Byte\u0020offset\u0020from\u0020beginning\u0020of\u0020file\u0020to\u0020Bloom\u0020filter\u0020data.\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_bloom_filter_offset"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024index_page_offset",
-            "name": "index_page_offset",
-            "summary": "Byte\u0020offset\u0020from\u0020beginning\u0020of\u0020file\u0020to\u0020root\u0020index\u0020page\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_index_page_offset"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024key_value_metadata",
-            "name": "key_value_metadata",
-            "summary": "Optional\u0020key\/value\u0020metadata\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_key_value_metadata"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024num_values",
-            "name": "num_values",
-            "summary": "Number\u0020of\u0020values\u0020in\u0020this\u0020column\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_num_values"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024path_in_schema",
-            "name": "path_in_schema",
-            "summary": "Path\u0020in\u0020schema\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_path_in_schema"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024bloom_filter_length",
+            "name": "bloom_filter_length",
+            "summary": "Size\u0020of\u0020Bloom\u0020filter\u0020data\u0020including\u0020the\u0020serialized\u0020header,\u0020in\u0020bytes.",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_bloom_filter_length"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024size_statistics",
             "name": "size_statistics",
             "summary": "Optional\u0020statistics\u0020to\u0020help\u0020estimate\u0020total\u0020memory\u0020when\u0020converted\u0020to\u0020in\u002Dmemory\nrepresentations.\u0020The\u0020histograms\u0020contained\u0020in\u0020these\u0020statistics\u0020can\nalso\u0020be\u0020useful\u0020in\u0020some\u0020cases\u0020for\u0020more\u0020fine\u002Dgrained\u0020nullability\/list\u0020length\nfilter\u0020pushdown.",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_size_statistics"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024statistics",
-            "name": "statistics",
-            "summary": "optional\u0020statistics\u0020for\u0020this\u0020column\u0020chunk.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_statistics"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024total_compressed_size",
-            "name": "total_compressed_size",
-            "summary": "total\u0020byte\u0020size\u0020of\u0020all\u0020compressed,\u0020and\u0020potentially\u0020encrypted,\u0020pages\nin\u0020this\u0020column\u0020chunk\u0020\u0028including\u0020the\u0020headers\u0029\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_total_compressed_size"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024total_uncompressed_size",
-            "name": "total_uncompressed_size",
-            "summary": "total\u0020byte\u0020size\u0020of\u0020all\u0020uncompressed\u0020pages\u0020in\u0020this\u0020column\u0020chunk\u0020\u0028including\u0020the\u0020headers\u0029\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_total_uncompressed_size"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024type",
-            "name": "type",
-            "summary": "Type\u0020of\u0020this\u0020column\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_type"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnMetaData\u003A\u003A\u0024geospatial_statistics",
+            "name": "geospatial_statistics",
+            "summary": "Optional\u0020statistics\u0020specific\u0020for\u0020Geometry\u0020and\u0020Geography\u0020logical\u0020types",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_geospatial_statistics"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnOrder",
             "name": "ColumnOrder",
@@ -5216,65 +7736,75 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnOrder.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnOrder\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnOrder\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_isValidate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnOrder\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property__TSPEC"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnOrder\u003A\u003A\u0024TYPE_ORDER",
             "name": "TYPE_ORDER",
-            "summary": "The\u0020sort\u0020orders\u0020for\u0020logical\u0020types\u0020are\u003A\n\u0020\u0020UTF8\u0020\u002D\u0020unsigned\u0020byte\u002Dwise\u0020comparison\n\u0020\u0020INT8\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020INT16\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020INT32\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020INT64\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020UINT8\u0020\u002D\u0020unsigned\u0020comparison\n\u0020\u0020UINT16\u0020\u002D\u0020unsigned\u0020comparison\n\u0020\u0020UINT32\u0020\u002D\u0020unsigned\u0020comparison\n\u0020\u0020UINT64\u0020\u002D\u0020unsigned\u0020comparison\n\u0020\u0020DECIMAL\u0020\u002D\u0020signed\u0020comparison\u0020of\u0020the\u0020represented\u0020value\n\u0020\u0020DATE\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020TIME_MILLIS\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020TIME_MICROS\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020TIMESTAMP_MILLIS\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020TIMESTAMP_MICROS\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020INTERVAL\u0020\u002D\u0020undefined\n\u0020\u0020JSON\u0020\u002D\u0020unsigned\u0020byte\u002Dwise\u0020comparison\n\u0020\u0020BSON\u0020\u002D\u0020unsigned\u0020byte\u002Dwise\u0020comparison\n\u0020\u0020ENUM\u0020\u002D\u0020unsigned\u0020byte\u002Dwise\u0020comparison\n\u0020\u0020LIST\u0020\u002D\u0020undefined\n\u0020\u0020MAP\u0020\u002D\u0020undefined",
+            "summary": "The\u0020sort\u0020orders\u0020for\u0020logical\u0020types\u0020are\u003A\n\u0020\u0020UTF8\u0020\u002D\u0020unsigned\u0020byte\u002Dwise\u0020comparison\n\u0020\u0020INT8\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020INT16\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020INT32\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020INT64\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020UINT8\u0020\u002D\u0020unsigned\u0020comparison\n\u0020\u0020UINT16\u0020\u002D\u0020unsigned\u0020comparison\n\u0020\u0020UINT32\u0020\u002D\u0020unsigned\u0020comparison\n\u0020\u0020UINT64\u0020\u002D\u0020unsigned\u0020comparison\n\u0020\u0020DECIMAL\u0020\u002D\u0020signed\u0020comparison\u0020of\u0020the\u0020represented\u0020value\n\u0020\u0020DATE\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020FLOAT16\u0020\u002D\u0020signed\u0020comparison\u0020of\u0020the\u0020represented\u0020value\u0020\u0028\u002A\u0029\n\u0020\u0020TIME_MILLIS\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020TIME_MICROS\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020TIMESTAMP_MILLIS\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020TIMESTAMP_MICROS\u0020\u002D\u0020signed\u0020comparison\n\u0020\u0020INTERVAL\u0020\u002D\u0020undefined\n\u0020\u0020JSON\u0020\u002D\u0020unsigned\u0020byte\u002Dwise\u0020comparison\n\u0020\u0020BSON\u0020\u002D\u0020unsigned\u0020byte\u002Dwise\u0020comparison\n\u0020\u0020ENUM\u0020\u002D\u0020unsigned\u0020byte\u002Dwise\u0020comparison\n\u0020\u0020LIST\u0020\u002D\u0020undefined\n\u0020\u0020MAP\u0020\u002D\u0020undefined\n\u0020\u0020VARIANT\u0020\u002D\u0020undefined\n\u0020\u0020GEOMETRY\u0020\u002D\u0020undefined\n\u0020\u0020GEOGRAPHY\u0020\u002D\u0020undefined\n\u0020\u0020FILE\u0020\u002D\u0020undefined",
             "url": "classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_TYPE_ORDER"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnOrder\u003A\u003A\u0024IEEE_754_TOTAL_ORDER",
+            "name": "IEEE_754_TOTAL_ORDER",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_IEEE_754_TOTAL_ORDER"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ColumnOrder\u003A\u003A\u0024INT96_TIMESTAMP_ORDER",
+            "name": "INT96_TIMESTAMP_ORDER",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_INT96_TIMESTAMP_ORDER"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec",
             "name": "CompressionCodec",
             "summary": "Supported\u0020compression\u0020algorithms.",
             "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003ABROTLI",
-            "name": "BROTLI",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003AUNCOMPRESSED",
+            "name": "UNCOMPRESSED",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_BROTLI"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003AGZIP",
-            "name": "GZIP",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_GZIP"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003ALZ4",
-            "name": "LZ4",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_LZ4"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003ALZ4_RAW",
-            "name": "LZ4_RAW",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_LZ4_RAW"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003ALZO",
-            "name": "LZO",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_LZO"
+            "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_UNCOMPRESSED"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003ASNAPPY",
             "name": "SNAPPY",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_SNAPPY"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003AUNCOMPRESSED",
-            "name": "UNCOMPRESSED",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003AGZIP",
+            "name": "GZIP",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_UNCOMPRESSED"
+            "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_GZIP"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003ALZO",
+            "name": "LZO",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_LZO"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003ABROTLI",
+            "name": "BROTLI",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_BROTLI"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003ALZ4",
+            "name": "LZ4",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_LZ4"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003AZSTD",
             "name": "ZSTD",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_ZSTD"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003ALZ4_RAW",
+            "name": "LZ4_RAW",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-CompressionCodec.html#constant_LZ4_RAW"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\CompressionCodec\u003A\u003A\u0024__names",
             "name": "__names",
@@ -5283,93 +7813,68 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType",
             "name": "ConvertedType",
-            "summary": "DEPRECATED\u003A\u0020Common\u0020types\u0020used\u0020by\u0020frameworks\u0028e.g.\u0020hive,\u0020pig\u0029\u0020using\u0020parquet.",
+            "summary": "DEPRECATED\u003A\u0020Common\u0020types\u0020used\u0020by\u0020frameworks\u0020\u0028e.g.\u0020Hive,\u0020Pig\u0029\u0020using\u0020parquet.",
             "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003ABSON",
-            "name": "BSON",
-            "summary": "An\u0020embedded\u0020BSON\u0020document.",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_BSON"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AUTF8",
+            "name": "UTF8",
+            "summary": "a\u0020BYTE_ARRAY\u0020actually\u0020contains\u0020UTF8\u0020encoded\u0020chars",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_UTF8"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003ADATE",
-            "name": "DATE",
-            "summary": "A\u0020Date.",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_DATE"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AMAP",
+            "name": "MAP",
+            "summary": "a\u0020map\u0020is\u0020converted\u0020as\u0020an\u0020optional\u0020field\u0020containing\u0020a\u0020repeated\u0020key\/value\u0020pair",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_MAP"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AMAP_KEY_VALUE",
+            "name": "MAP_KEY_VALUE",
+            "summary": "a\u0020key\/value\u0020pair\u0020is\u0020converted\u0020into\u0020a\u0020group\u0020of\u0020two\u0020fields",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_MAP_KEY_VALUE"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003ALIST",
+            "name": "LIST",
+            "summary": "a\u0020list\u0020is\u0020converted\u0020into\u0020an\u0020optional\u0020field\u0020containing\u0020a\u0020repeated\u0020field\u0020for\u0020its\nvalues",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_LIST"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AENUM",
+            "name": "ENUM",
+            "summary": "an\u0020enum\u0020is\u0020converted\u0020into\u0020a\u0020BYTE_ARRAY\u0020field",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_ENUM"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003ADECIMAL",
             "name": "DECIMAL",
             "summary": "A\u0020decimal\u0020value.",
             "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_DECIMAL"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AENUM",
-            "name": "ENUM",
-            "summary": "an\u0020enum\u0020is\u0020converted\u0020into\u0020a\u0020BYTE_ARRAY\u0020field.",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_ENUM"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003ADATE",
+            "name": "DATE",
+            "summary": "A\u0020Date",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_DATE"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AINT_16",
-            "name": "INT_16",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_INT_16"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AINT_32",
-            "name": "INT_32",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_INT_32"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AINT_64",
-            "name": "INT_64",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_INT_64"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AINT_8",
-            "name": "INT_8",
-            "summary": "A\u0020signed\u0020integer\u0020value.",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_INT_8"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AINTERVAL",
-            "name": "INTERVAL",
-            "summary": "An\u0020interval\u0020of\u0020time.",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_INTERVAL"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AJSON",
-            "name": "JSON",
-            "summary": "An\u0020embedded\u0020JSON\u0020document.",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_JSON"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003ALIST",
-            "name": "LIST",
-            "summary": "a\u0020list\u0020is\u0020converted\u0020into\u0020an\u0020optional\u0020field\u0020containing\u0020a\u0020repeated\u0020field\u0020for\u0020its\nvalues.",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_LIST"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AMAP",
-            "name": "MAP",
-            "summary": "a\u0020map\u0020is\u0020converted\u0020as\u0020an\u0020optional\u0020field\u0020containing\u0020a\u0020repeated\u0020key\/value\u0020pair.",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_MAP"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AMAP_KEY_VALUE",
-            "name": "MAP_KEY_VALUE",
-            "summary": "a\u0020key\/value\u0020pair\u0020is\u0020converted\u0020into\u0020a\u0020group\u0020of\u0020two\u0020fields.",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_MAP_KEY_VALUE"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003ATIME_MILLIS",
+            "name": "TIME_MILLIS",
+            "summary": "A\u0020time",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_TIME_MILLIS"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003ATIME_MICROS",
             "name": "TIME_MICROS",
             "summary": "A\u0020time.",
             "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_TIME_MICROS"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003ATIME_MILLIS",
-            "name": "TIME_MILLIS",
-            "summary": "A\u0020time.",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_TIME_MILLIS"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003ATIMESTAMP_MILLIS",
+            "name": "TIMESTAMP_MILLIS",
+            "summary": "A\u0020date\/time\u0020combination",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_TIMESTAMP_MILLIS"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003ATIMESTAMP_MICROS",
             "name": "TIMESTAMP_MICROS",
-            "summary": "A\u0020date\/time\u0020combination.",
+            "summary": "A\u0020date\/time\u0020combination",
             "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_TIMESTAMP_MICROS"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003ATIMESTAMP_MILLIS",
-            "name": "TIMESTAMP_MILLIS",
-            "summary": "A\u0020date\/time\u0020combination.",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_TIMESTAMP_MILLIS"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AUINT_8",
+            "name": "UINT_8",
+            "summary": "An\u0020unsigned\u0020integer\u0020value.",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_UINT_8"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AUINT_16",
             "name": "UINT_16",
@@ -5386,15 +7891,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_UINT_64"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AUINT_8",
-            "name": "UINT_8",
-            "summary": "An\u0020unsigned\u0020integer\u0020value.",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_UINT_8"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AINT_8",
+            "name": "INT_8",
+            "summary": "A\u0020signed\u0020integer\u0020value.",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_INT_8"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AUTF8",
-            "name": "UTF8",
-            "summary": "a\u0020BYTE_ARRAY\u0020actually\u0020contains\u0020UTF8\u0020encoded\u0020chars.",
-            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_UTF8"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AINT_16",
+            "name": "INT_16",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_INT_16"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AINT_32",
+            "name": "INT_32",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_INT_32"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AINT_64",
+            "name": "INT_64",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_INT_64"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AJSON",
+            "name": "JSON",
+            "summary": "An\u0020embedded\u0020JSON\u0020document",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_JSON"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003ABSON",
+            "name": "BSON",
+            "summary": "An\u0020embedded\u0020BSON\u0020document",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_BSON"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003AINTERVAL",
+            "name": "INTERVAL",
+            "summary": "An\u0020interval\u0020of\u0020time",
+            "url": "classes/Flow-Parquet-ThriftModel-ConvertedType.html#constant_INTERVAL"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ConvertedType\u003A\u003A\u0024__names",
             "name": "__names",
@@ -5403,7 +7933,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeader",
             "name": "DataPageHeader",
-            "summary": "Data\u0020page\u0020header.",
+            "summary": "Data\u0020page\u0020header",
             "url": "classes/Flow-Parquet-ThriftModel-DataPageHeader.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeader\u003A\u003A__construct\u0028\u0029",
@@ -5426,44 +7956,44 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-DataPageHeader.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeader\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeader.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeader\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-DataPageHeader.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeader\u003A\u003A\u0024definition_level_encoding",
-            "name": "definition_level_encoding",
-            "summary": "Encoding\u0020used\u0020for\u0020definition\u0020levels\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeader.html#property_definition_level_encoding"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeader\u003A\u003A\u0024encoding",
-            "name": "encoding",
-            "summary": "Encoding\u0020used\u0020for\u0020this\u0020data\u0020page\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeader.html#property_encoding"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeader\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeader.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeader\u003A\u003A\u0024num_values",
             "name": "num_values",
             "summary": "Number\u0020of\u0020values,\u0020including\u0020NULLs,\u0020in\u0020this\u0020data\u0020page.",
             "url": "classes/Flow-Parquet-ThriftModel-DataPageHeader.html#property_num_values"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeader\u003A\u003A\u0024encoding",
+            "name": "encoding",
+            "summary": "Encoding\u0020used\u0020for\u0020this\u0020data\u0020page\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeader.html#property_encoding"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeader\u003A\u003A\u0024definition_level_encoding",
+            "name": "definition_level_encoding",
+            "summary": "Encoding\u0020used\u0020for\u0020definition\u0020levels\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeader.html#property_definition_level_encoding"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeader\u003A\u003A\u0024repetition_level_encoding",
             "name": "repetition_level_encoding",
-            "summary": "Encoding\u0020used\u0020for\u0020repetition\u0020levels\u0020\u002A.",
+            "summary": "Encoding\u0020used\u0020for\u0020repetition\u0020levels\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-DataPageHeader.html#property_repetition_level_encoding"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeader\u003A\u003A\u0024statistics",
             "name": "statistics",
-            "summary": "Optional\u0020statistics\u0020for\u0020the\u0020data\u0020in\u0020this\u0020page\u0020\u002A.",
+            "summary": "Optional\u0020statistics\u0020for\u0020the\u0020data\u0020in\u0020this\u0020page\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-DataPageHeader.html#property_statistics"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2",
             "name": "DataPageHeaderV2",
-            "summary": "New\u0020page\u0020format\u0020allowing\u0020reading\u0020levels\u0020without\u0020decompressing\u0020the\u0020data\nRepetition\u0020and\u0020definition\u0020levels\u0020are\u0020uncompressed\nThe\u0020remaining\u0020section\u0020containing\u0020the\u0020data\u0020is\u0020compressed\u0020if\u0020is_compressed\u0020is\u0020true.",
+            "summary": "Alternate\u0020page\u0020format\u0020allowing\u0020reading\u0020levels\u0020without\u0020decompressing\u0020the\u0020data\nRepetition\u0020and\u0020definition\u0020levels\u0020are\u0020uncompressed\nThe\u0020remaining\u0020section\u0020containing\u0020the\u0020data\u0020is\u0020compressed\u0020if\u0020is_compressed\u0020is\u0020true",
             "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A__construct\u0028\u0029",
@@ -5486,30 +8016,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024definition_levels_byte_length",
-            "name": "definition_levels_byte_length",
-            "summary": "Length\u0020of\u0020the\u0020definition\u0020levels.",
-            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_definition_levels_byte_length"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property__TSPEC"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024encoding",
-            "name": "encoding",
-            "summary": "Encoding\u0020used\u0020for\u0020data\u0020in\u0020this\u0020page\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_encoding"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024is_compressed",
-            "name": "is_compressed",
-            "summary": "Whether\u0020the\u0020values\u0020are\u0020compressed.",
-            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_is_compressed"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024num_values",
+            "name": "num_values",
+            "summary": "Number\u0020of\u0020values,\u0020including\u0020NULLs,\u0020in\u0020this\u0020data\u0020page.\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_num_values"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024num_nulls",
             "name": "num_nulls",
@@ -5521,19 +8041,29 @@ Search.appendIndex(
             "summary": "Number\u0020of\u0020rows\u0020in\u0020this\u0020data\u0020page.\u0020Every\u0020page\u0020must\u0020begin\u0020at\u0020a\nrow\u0020boundary\u0020\u0028repetition_level\u0020\u003D\u00200\u0029\u003A\u0020rows\u0020must\u0020\u002A\u002Anot\u002A\u002A\u0020be\nsplit\u0020across\u0020page\u0020boundaries\u0020when\u0020using\u0020V2\u0020data\u0020pages.",
             "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_num_rows"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024num_values",
-            "name": "num_values",
-            "summary": "Number\u0020of\u0020values,\u0020including\u0020NULLs,\u0020in\u0020this\u0020data\u0020page.\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_num_values"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024encoding",
+            "name": "encoding",
+            "summary": "Encoding\u0020used\u0020for\u0020data\u0020in\u0020this\u0020page\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_encoding"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024definition_levels_byte_length",
+            "name": "definition_levels_byte_length",
+            "summary": "Length\u0020of\u0020the\u0020definition\u0020levels",
+            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_definition_levels_byte_length"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024repetition_levels_byte_length",
             "name": "repetition_levels_byte_length",
-            "summary": "Length\u0020of\u0020the\u0020repetition\u0020levels.",
+            "summary": "Length\u0020of\u0020the\u0020repetition\u0020levels",
             "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_repetition_levels_byte_length"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024is_compressed",
+            "name": "is_compressed",
+            "summary": "Whether\u0020the\u0020values\u0020are\u0020compressed.",
+            "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_is_compressed"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DataPageHeaderV2\u003A\u003A\u0024statistics",
             "name": "statistics",
-            "summary": "Optional\u0020statistics\u0020for\u0020the\u0020data\u0020in\u0020this\u0020page\u0020\u002A.",
+            "summary": "Optional\u0020statistics\u0020for\u0020the\u0020data\u0020in\u0020this\u0020page\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_statistics"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DateType",
@@ -5561,19 +8091,19 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-DateType.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DateType\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-DateType.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DateType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-DateType.html#property_isValidate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DateType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-DateType.html#property__TSPEC"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DecimalType",
             "name": "DecimalType",
-            "summary": "Decimal\u0020logical\u0020type\u0020annotation.",
+            "summary": "Decimal\u0020logical\u0020type\u0020annotation",
             "url": "classes/Flow-Parquet-ThriftModel-DecimalType.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DecimalType\u003A\u003A__construct\u0028\u0029",
@@ -5596,25 +8126,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-DecimalType.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DecimalType\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-DecimalType.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DecimalType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-DecimalType.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DecimalType\u003A\u003A\u0024precision",
-            "name": "precision",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DecimalType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-DecimalType.html#property_precision"
+            "url": "classes/Flow-Parquet-ThriftModel-DecimalType.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DecimalType\u003A\u003A\u0024scale",
             "name": "scale",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-DecimalType.html#property_scale"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DecimalType\u003A\u003A\u0024precision",
+            "name": "precision",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-DecimalType.html#property_precision"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DictionaryPageHeader",
             "name": "DictionaryPageHeader",
@@ -5641,60 +8171,70 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-DictionaryPageHeader.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DictionaryPageHeader\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-DictionaryPageHeader.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DictionaryPageHeader\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-DictionaryPageHeader.html#property_isValidate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DictionaryPageHeader\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-DictionaryPageHeader.html#property__TSPEC"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DictionaryPageHeader\u003A\u003A\u0024num_values",
+            "name": "num_values",
+            "summary": "Number\u0020of\u0020values\u0020in\u0020the\u0020dictionary\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-DictionaryPageHeader.html#property_num_values"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DictionaryPageHeader\u003A\u003A\u0024encoding",
             "name": "encoding",
-            "summary": "Encoding\u0020using\u0020this\u0020dictionary\u0020page\u0020\u002A.",
+            "summary": "Encoding\u0020using\u0020this\u0020dictionary\u0020page\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-DictionaryPageHeader.html#property_encoding"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\DictionaryPageHeader\u003A\u003A\u0024is_sorted",
             "name": "is_sorted",
-            "summary": "If\u0020true,\u0020the\u0020entries\u0020in\u0020the\u0020dictionary\u0020are\u0020sorted\u0020in\u0020ascending\u0020order\u0020\u002A.",
+            "summary": "If\u0020true,\u0020the\u0020entries\u0020in\u0020the\u0020dictionary\u0020are\u0020sorted\u0020in\u0020ascending\u0020order\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-DictionaryPageHeader.html#property_is_sorted"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\DictionaryPageHeader\u003A\u003A\u0024num_values",
-            "name": "num_values",
-            "summary": "Number\u0020of\u0020values\u0020in\u0020the\u0020dictionary\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-DictionaryPageHeader.html#property_num_values"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EdgeInterpolationAlgorithm",
+            "name": "EdgeInterpolationAlgorithm",
+            "summary": "Edge\u0020interpolation\u0020algorithm\u0020for\u0020Geography\u0020logical\u0020type",
+            "url": "classes/Flow-Parquet-ThriftModel-EdgeInterpolationAlgorithm.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EdgeInterpolationAlgorithm\u003A\u003ASPHERICAL",
+            "name": "SPHERICAL",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-EdgeInterpolationAlgorithm.html#constant_SPHERICAL"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EdgeInterpolationAlgorithm\u003A\u003AVINCENTY",
+            "name": "VINCENTY",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-EdgeInterpolationAlgorithm.html#constant_VINCENTY"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EdgeInterpolationAlgorithm\u003A\u003ATHOMAS",
+            "name": "THOMAS",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-EdgeInterpolationAlgorithm.html#constant_THOMAS"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EdgeInterpolationAlgorithm\u003A\u003AANDOYER",
+            "name": "ANDOYER",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-EdgeInterpolationAlgorithm.html#constant_ANDOYER"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EdgeInterpolationAlgorithm\u003A\u003AKARNEY",
+            "name": "KARNEY",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-EdgeInterpolationAlgorithm.html#constant_KARNEY"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EdgeInterpolationAlgorithm\u003A\u003A\u0024__names",
+            "name": "__names",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-EdgeInterpolationAlgorithm.html#property___names"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding",
             "name": "Encoding",
             "summary": "Encodings\u0020supported\u0020by\u0020Parquet.\u0020\u0020Not\u0020all\u0020encodings\u0020are\u0020valid\u0020for\u0020all\u0020types.\u0020\u0020These\nenums\u0020are\u0020also\u0020used\u0020to\u0020specify\u0020the\u0020encoding\u0020of\u0020definition\u0020and\u0020repetition\u0020levels.",
             "url": "classes/Flow-Parquet-ThriftModel-Encoding.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003ABIT_PACKED",
-            "name": "BIT_PACKED",
-            "summary": "Bit\u0020packed\u0020encoding.\u0020\u0020This\u0020can\u0020only\u0020be\u0020used\u0020if\u0020the\u0020data\u0020has\u0020a\u0020known\u0020max\nwidth.\u0020\u0020Usable\u0020for\u0020definition\/repetition\u0020levels\u0020encoding.",
-            "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_BIT_PACKED"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003ABYTE_STREAM_SPLIT",
-            "name": "BYTE_STREAM_SPLIT",
-            "summary": "Encoding\u0020for\u0020fixed\u002Dwidth\u0020data\u0020\u0028FLOAT,\u0020DOUBLE,\u0020INT32,\u0020INT64,\u0020FIXED_LEN_BYTE_ARRAY\u0029.",
-            "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_BYTE_STREAM_SPLIT"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003ADELTA_BINARY_PACKED",
-            "name": "DELTA_BINARY_PACKED",
-            "summary": "Delta\u0020encoding\u0020for\u0020integers.\u0020This\u0020can\u0020be\u0020used\u0020for\u0020int\u0020columns\u0020and\u0020works\u0020best\non\u0020sorted\u0020data.",
-            "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_DELTA_BINARY_PACKED"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003ADELTA_BYTE_ARRAY",
-            "name": "DELTA_BYTE_ARRAY",
-            "summary": "Incremental\u002Dencoded\u0020byte\u0020array.\u0020Prefix\u0020lengths\u0020are\u0020encoded\u0020using\u0020DELTA_BINARY_PACKED.",
-            "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_DELTA_BYTE_ARRAY"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003ADELTA_LENGTH_BYTE_ARRAY",
-            "name": "DELTA_LENGTH_BYTE_ARRAY",
-            "summary": "Encoding\u0020for\u0020byte\u0020arrays\u0020to\u0020separate\u0020the\u0020length\u0020values\u0020and\u0020the\u0020data.\u0020The\u0020lengths\nare\u0020encoded\u0020using\u0020DELTA_BINARY_PACKED.",
-            "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_DELTA_LENGTH_BYTE_ARRAY"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003APLAIN",
             "name": "PLAIN",
@@ -5703,18 +8243,48 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003APLAIN_DICTIONARY",
             "name": "PLAIN_DICTIONARY",
-            "summary": "Deprecated\u003A\u0020Dictionary\u0020encoding.\u0020The\u0020values\u0020in\u0020the\u0020dictionary\u0020are\u0020encoded\u0020in\u0020the\nplain\u0020type.",
+            "summary": "DEPRECATED\u003A\u0020Dictionary\u0020encoding.\u0020The\u0020values\u0020in\u0020the\u0020dictionary\u0020are\u0020encoded\u0020in\u0020the\nplain\u0020type.",
             "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_PLAIN_DICTIONARY"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003ARLE",
             "name": "RLE",
-            "summary": "Group\u0020packed\u0020run\u0020length\u0020encoding.\u0020Usable\u0020for\u0020definition\/repetition\u0020levels\nencoding\u0020and\u0020Booleans\u0020\u0028on\u0020one\u0020bit\u003A\u00200\u0020is\u0020false\u003B\u00201\u0020is\u0020true.\u0029.",
+            "summary": "Group\u0020packed\u0020run\u0020length\u0020encoding.\u0020Usable\u0020for\u0020definition\/repetition\u0020levels\nencoding\u0020and\u0020Booleans\u0020\u0028on\u0020one\u0020bit\u003A\u00200\u0020is\u0020false\u003B\u00201\u0020is\u0020true.\u0029",
             "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_RLE"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003ABIT_PACKED",
+            "name": "BIT_PACKED",
+            "summary": "DEPRECATED\u003A\u0020Bit\u0020packed\u0020encoding.\u0020\u0020This\u0020can\u0020only\u0020be\u0020used\u0020if\u0020the\u0020data\u0020has\u0020a\u0020known\u0020max\nwidth.\u0020\u0020Usable\u0020for\u0020definition\/repetition\u0020levels\u0020encoding.",
+            "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_BIT_PACKED"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003ADELTA_BINARY_PACKED",
+            "name": "DELTA_BINARY_PACKED",
+            "summary": "Delta\u0020encoding\u0020for\u0020integers.\u0020This\u0020can\u0020be\u0020used\u0020for\u0020int\u0020columns\u0020and\u0020works\u0020best\non\u0020sorted\u0020data",
+            "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_DELTA_BINARY_PACKED"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003ADELTA_LENGTH_BYTE_ARRAY",
+            "name": "DELTA_LENGTH_BYTE_ARRAY",
+            "summary": "Encoding\u0020for\u0020byte\u0020arrays\u0020to\u0020separate\u0020the\u0020length\u0020values\u0020and\u0020the\u0020data.\u0020The\u0020lengths\nare\u0020encoded\u0020using\u0020DELTA_BINARY_PACKED",
+            "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_DELTA_LENGTH_BYTE_ARRAY"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003ADELTA_BYTE_ARRAY",
+            "name": "DELTA_BYTE_ARRAY",
+            "summary": "Incremental\u002Dencoded\u0020byte\u0020array.\u0020Prefix\u0020lengths\u0020are\u0020encoded\u0020using\u0020DELTA_BINARY_PACKED.",
+            "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_DELTA_BYTE_ARRAY"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003ARLE_DICTIONARY",
             "name": "RLE_DICTIONARY",
-            "summary": "Dictionary\u0020encoding\u003A\u0020the\u0020ids\u0020are\u0020encoded\u0020using\u0020the\u0020RLE\u0020encoding.",
+            "summary": "Dictionary\u0020encoding\u003A\u0020the\u0020ids\u0020are\u0020encoded\u0020using\u0020the\u0020RLE\u0020encoding",
             "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_RLE_DICTIONARY"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003ABYTE_STREAM_SPLIT",
+            "name": "BYTE_STREAM_SPLIT",
+            "summary": "Encoding\u0020for\u0020fixed\u002Dwidth\u0020data\u0020\u0028FLOAT,\u0020DOUBLE,\u0020INT32,\u0020INT64,\u0020FIXED_LEN_BYTE_ARRAY\u0029.",
+            "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_BYTE_STREAM_SPLIT"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003AALP",
+            "name": "ALP",
+            "summary": "Adaptive\u0020Lossless\u0020floating\u002DPoint\u0020\u0028ALP\u0029\u0020encoding\u0020for\u0020FLOAT\u0020and\u0020DOUBLE.",
+            "url": "classes/Flow-Parquet-ThriftModel-Encoding.html#constant_ALP"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Encoding\u003A\u003A\u0024__names",
             "name": "__names",
@@ -5746,25 +8316,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-EncryptionAlgorithm.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionAlgorithm\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-EncryptionAlgorithm.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionAlgorithm\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-EncryptionAlgorithm.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionAlgorithm\u003A\u003A\u0024AES_GCM_CTR_V1",
-            "name": "AES_GCM_CTR_V1",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionAlgorithm\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-EncryptionAlgorithm.html#property_AES_GCM_CTR_V1"
+            "url": "classes/Flow-Parquet-ThriftModel-EncryptionAlgorithm.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionAlgorithm\u003A\u003A\u0024AES_GCM_V1",
             "name": "AES_GCM_V1",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-EncryptionAlgorithm.html#property_AES_GCM_V1"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionAlgorithm\u003A\u003A\u0024AES_GCM_CTR_V1",
+            "name": "AES_GCM_CTR_V1",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-EncryptionAlgorithm.html#property_AES_GCM_CTR_V1"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionWithColumnKey",
             "name": "EncryptionWithColumnKey",
@@ -5791,25 +8361,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-EncryptionWithColumnKey.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionWithColumnKey\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-EncryptionWithColumnKey.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionWithColumnKey\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-EncryptionWithColumnKey.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionWithColumnKey\u003A\u003A\u0024key_metadata",
-            "name": "key_metadata",
-            "summary": "Retrieval\u0020metadata\u0020of\u0020column\u0020encryption\u0020key\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-EncryptionWithColumnKey.html#property_key_metadata"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionWithColumnKey\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-EncryptionWithColumnKey.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionWithColumnKey\u003A\u003A\u0024path_in_schema",
             "name": "path_in_schema",
-            "summary": "Column\u0020path\u0020in\u0020schema\u0020\u002A.",
+            "summary": "Column\u0020path\u0020in\u0020schema\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-EncryptionWithColumnKey.html#property_path_in_schema"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionWithColumnKey\u003A\u003A\u0024key_metadata",
+            "name": "key_metadata",
+            "summary": "Retrieval\u0020metadata\u0020of\u0020column\u0020encryption\u0020key\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-EncryptionWithColumnKey.html#property_key_metadata"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionWithFooterKey",
             "name": "EncryptionWithFooterKey",
@@ -5836,15 +8406,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-EncryptionWithFooterKey.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionWithFooterKey\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-EncryptionWithFooterKey.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionWithFooterKey\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-EncryptionWithFooterKey.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EncryptionWithFooterKey\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-EncryptionWithFooterKey.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\EnumType",
             "name": "EnumType",
@@ -5871,20 +8441,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-EnumType.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EnumType\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-EnumType.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\EnumType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-EnumType.html#property_isValidate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\EnumType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-EnumType.html#property__TSPEC"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FieldRepetitionType",
             "name": "FieldRepetitionType",
-            "summary": "Representation\u0020of\u0020Schemas.",
+            "summary": "Representation\u0020of\u0020Schemas",
             "url": "classes/Flow-Parquet-ThriftModel-FieldRepetitionType.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FieldRepetitionType\u003A\u003AREQUIRED",
+            "name": "REQUIRED",
+            "summary": "This\u0020field\u0020is\u0020required\u0020\u0028can\u0020not\u0020be\u0020null\u0029\u0020and\u0020each\u0020row\u0020has\u0020exactly\u00201\u0020value.",
+            "url": "classes/Flow-Parquet-ThriftModel-FieldRepetitionType.html#constant_REQUIRED"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FieldRepetitionType\u003A\u003AOPTIONAL",
             "name": "OPTIONAL",
@@ -5893,13 +8468,8 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FieldRepetitionType\u003A\u003AREPEATED",
             "name": "REPEATED",
-            "summary": "The\u0020field\u0020is\u0020repeated\u0020and\u0020can\u0020contain\u00200\u0020or\u0020more\u0020values.",
+            "summary": "The\u0020field\u0020is\u0020repeated\u0020and\u0020can\u0020contain\u00200\u0020or\u0020more\u0020values",
             "url": "classes/Flow-Parquet-ThriftModel-FieldRepetitionType.html#constant_REPEATED"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FieldRepetitionType\u003A\u003AREQUIRED",
-            "name": "REQUIRED",
-            "summary": "This\u0020field\u0020is\u0020required\u0020\u0028can\u0020not\u0020be\u0020null\u0029\u0020and\u0020each\u0020row\u0020has\u0020exactly\u00201\u0020value.",
-            "url": "classes/Flow-Parquet-ThriftModel-FieldRepetitionType.html#constant_REQUIRED"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FieldRepetitionType\u003A\u003A\u0024__names",
             "name": "__names",
@@ -5908,7 +8478,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileCryptoMetaData",
             "name": "FileCryptoMetaData",
-            "summary": "Crypto\u0020metadata\u0020for\u0020files\u0020with\u0020encrypted\u0020footer\u0020\u002A.",
+            "summary": "Crypto\u0020metadata\u0020for\u0020files\u0020with\u0020encrypted\u0020footer\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-FileCryptoMetaData.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileCryptoMetaData\u003A\u003A__construct\u0028\u0029",
@@ -5931,15 +8501,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-FileCryptoMetaData.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileCryptoMetaData\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-FileCryptoMetaData.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileCryptoMetaData\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-FileCryptoMetaData.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileCryptoMetaData\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-FileCryptoMetaData.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileCryptoMetaData\u003A\u003A\u0024encryption_algorithm",
             "name": "encryption_algorithm",
@@ -5948,12 +8518,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileCryptoMetaData\u003A\u003A\u0024key_metadata",
             "name": "key_metadata",
-            "summary": "Retrieval\u0020metadata\u0020of\u0020key\u0020used\u0020for\u0020encryption\u0020of\u0020footer,\nand\u0020\u0028possibly\u0029\u0020columns\u0020\u002A.",
+            "summary": "Retrieval\u0020metadata\u0020of\u0020key\u0020used\u0020for\u0020encryption\u0020of\u0020footer,\nand\u0020\u0028possibly\u0029\u0020columns\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-FileCryptoMetaData.html#property_key_metadata"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData",
             "name": "FileMetaData",
-            "summary": "Description\u0020for\u0020file\u0020metadata.",
+            "summary": "Description\u0020for\u0020file\u0020metadata",
             "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A__construct\u0028\u0029",
@@ -5976,25 +8546,50 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024column_orders",
-            "name": "column_orders",
-            "summary": "Sort\u0020order\u0020used\u0020for\u0020the\u0020min_value\u0020and\u0020max_value\u0020fields\u0020in\u0020the\u0020Statistics\nobjects\u0020and\u0020the\u0020min_values\u0020and\u0020max_values\u0020fields\u0020in\u0020the\u0020ColumnIndex\nobjects\u0020of\u0020each\u0020column\u0020in\u0020this\u0020file.\u0020Sort\u0020orders\u0020are\u0020listed\u0020in\u0020the\u0020order\nmatching\u0020the\u0020columns\u0020in\u0020the\u0020schema.\u0020The\u0020indexes\u0020are\u0020not\u0020necessary\u0020the\u0020same\nthough,\u0020because\u0020only\u0020leaf\u0020nodes\u0020of\u0020the\u0020schema\u0020are\u0020represented\u0020in\u0020the\u0020list\nof\u0020sort\u0020orders.",
-            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_column_orders"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property__TSPEC"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024version",
+            "name": "version",
+            "summary": "Version\u0020of\u0020this\u0020file",
+            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_version"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "Parquet\u0020schema\u0020for\u0020this\u0020file.\u0020\u0020This\u0020schema\u0020contains\u0020metadata\u0020for\u0020all\u0020the\u0020columns.",
+            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_schema"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024num_rows",
+            "name": "num_rows",
+            "summary": "Number\u0020of\u0020rows\u0020in\u0020this\u0020file\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_num_rows"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024row_groups",
+            "name": "row_groups",
+            "summary": "Row\u0020groups\u0020in\u0020this\u0020file\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_row_groups"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024key_value_metadata",
+            "name": "key_value_metadata",
+            "summary": "Optional\u0020key\/value\u0020metadata\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_key_value_metadata"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024created_by",
             "name": "created_by",
             "summary": "String\u0020for\u0020application\u0020that\u0020wrote\u0020this\u0020file.\u0020\u0020This\u0020should\u0020be\u0020in\u0020the\u0020format\n\u003CApplication\u003E\u0020version\u0020\u003CApp\u0020Version\u003E\u0020\u0028build\u0020\u003CApp\u0020Build\u0020Hash\u003E\u0029.",
             "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_created_by"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024column_orders",
+            "name": "column_orders",
+            "summary": "Sort\u0020order\u0020used\u0020for\u0020the\u0020min_value\u0020and\u0020max_value\u0020fields\u0020in\u0020the\u0020Statistics\nobjects\u0020and\u0020the\u0020min_values\u0020and\u0020max_values\u0020fields\u0020in\u0020the\u0020ColumnIndex\nobjects\u0020of\u0020each\u0020column\u0020in\u0020this\u0020file.\u0020Sort\u0020orders\u0020are\u0020listed\u0020in\u0020the\u0020order\nmatching\u0020the\u0020columns\u0020in\u0020the\u0020schema.\u0020The\u0020indexes\u0020are\u0020not\u0020necessarily\u0020the\u0020same\nthough,\u0020because\u0020only\u0020leaf\u0020nodes\u0020of\u0020the\u0020schema\u0020are\u0020represented\u0020in\u0020the\u0020list\nof\u0020sort\u0020orders.",
+            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_column_orders"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024encryption_algorithm",
             "name": "encryption_algorithm",
@@ -6006,30 +8601,40 @@ Search.appendIndex(
             "summary": "Retrieval\u0020metadata\u0020of\u0020key\u0020used\u0020for\u0020signing\u0020the\u0020footer.",
             "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_footer_signing_key_metadata"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024key_value_metadata",
-            "name": "key_value_metadata",
-            "summary": "Optional\u0020key\/value\u0020metadata\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_key_value_metadata"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileType",
+            "name": "FileType",
+            "summary": "File\u0020logical\u0020type\u0020annotation",
+            "url": "classes/Flow-Parquet-ThriftModel-FileType.html"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024num_rows",
-            "name": "num_rows",
-            "summary": "Number\u0020of\u0020rows\u0020in\u0020this\u0020file\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_num_rows"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileType\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-FileType.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024row_groups",
-            "name": "row_groups",
-            "summary": "Row\u0020groups\u0020in\u0020this\u0020file\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_row_groups"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileType\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-FileType.html#method_getName"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024schema",
-            "name": "schema",
-            "summary": "Parquet\u0020schema\u0020for\u0020this\u0020file.\u0020\u0020This\u0020schema\u0020contains\u0020metadata\u0020for\u0020all\u0020the\u0020columns.",
-            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_schema"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileType\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-FileType.html#method_read"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileMetaData\u003A\u003A\u0024version",
-            "name": "version",
-            "summary": "Version\u0020of\u0020this\u0020file\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_version"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileType\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-FileType.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileType\u003A\u003A\u0024isValidate",
+            "name": "isValidate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-FileType.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\FileType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-FileType.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Float16Type",
             "name": "Float16Type",
@@ -6056,15 +8661,180 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-Float16Type.html#method_write"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Float16Type\u003A\u003A\u0024isValidate",
+            "name": "isValidate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Float16Type.html#property_isValidate"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Float16Type\u003A\u003A\u0024_TSPEC",
             "name": "_TSPEC",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-Float16Type.html#property__TSPEC"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Float16Type\u003A\u003A\u0024isValidate",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeographyType",
+            "name": "GeographyType",
+            "summary": "Embedded\u0020Geography\u0020logical\u0020type\u0020annotation",
+            "url": "classes/Flow-Parquet-ThriftModel-GeographyType.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeographyType\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeographyType.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeographyType\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeographyType.html#method_getName"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeographyType\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeographyType.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeographyType\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeographyType.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeographyType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-Float16Type.html#property_isValidate"
+            "url": "classes/Flow-Parquet-ThriftModel-GeographyType.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeographyType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeographyType.html#property__TSPEC"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeographyType\u003A\u003A\u0024crs",
+            "name": "crs",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeographyType.html#property_crs"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeographyType\u003A\u003A\u0024algorithm",
+            "name": "algorithm",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeographyType.html#property_algorithm"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeometryType",
+            "name": "GeometryType",
+            "summary": "Embedded\u0020Geometry\u0020logical\u0020type\u0020annotation",
+            "url": "classes/Flow-Parquet-ThriftModel-GeometryType.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeometryType\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeometryType.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeometryType\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeometryType.html#method_getName"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeometryType\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeometryType.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeometryType\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeometryType.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeometryType\u003A\u003A\u0024isValidate",
+            "name": "isValidate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeometryType.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeometryType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeometryType.html#property__TSPEC"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeometryType\u003A\u003A\u0024crs",
+            "name": "crs",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeometryType.html#property_crs"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeospatialStatistics",
+            "name": "GeospatialStatistics",
+            "summary": "Statistics\u0020specific\u0020to\u0020Geometry\u0020and\u0020Geography\u0020logical\u0020types",
+            "url": "classes/Flow-Parquet-ThriftModel-GeospatialStatistics.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeospatialStatistics\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeospatialStatistics.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeospatialStatistics\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeospatialStatistics.html#method_getName"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeospatialStatistics\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeospatialStatistics.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeospatialStatistics\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeospatialStatistics.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeospatialStatistics\u003A\u003A\u0024isValidate",
+            "name": "isValidate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeospatialStatistics.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeospatialStatistics\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-GeospatialStatistics.html#property__TSPEC"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeospatialStatistics\u003A\u003A\u0024bbox",
+            "name": "bbox",
+            "summary": "A\u0020bounding\u0020box\u0020of\u0020geospatial\u0020instances",
+            "url": "classes/Flow-Parquet-ThriftModel-GeospatialStatistics.html#property_bbox"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\GeospatialStatistics\u003A\u003A\u0024geospatial_types",
+            "name": "geospatial_types",
+            "summary": "Geospatial\u0020type\u0020codes\u0020of\u0020all\u0020instances,\u0020or\u0020an\u0020empty\u0020list\u0020if\u0020not\u0020known",
+            "url": "classes/Flow-Parquet-ThriftModel-GeospatialStatistics.html#property_geospatial_types"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\IEEE754TotalOrder",
+            "name": "IEEE754TotalOrder",
+            "summary": "Empty\u0020struct\u0020to\u0020signal\u0020IEEE\u0020754\u0020total\u0020order\u0020for\u0020floating\u0020point\u0020types",
+            "url": "classes/Flow-Parquet-ThriftModel-IEEE754TotalOrder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\IEEE754TotalOrder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-IEEE754TotalOrder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\IEEE754TotalOrder\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-IEEE754TotalOrder.html#method_getName"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\IEEE754TotalOrder\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-IEEE754TotalOrder.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\IEEE754TotalOrder\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-IEEE754TotalOrder.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\IEEE754TotalOrder\u003A\u003A\u0024isValidate",
+            "name": "isValidate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-IEEE754TotalOrder.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\IEEE754TotalOrder\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-IEEE754TotalOrder.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\IndexPageHeader",
             "name": "IndexPageHeader",
@@ -6091,19 +8861,54 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-IndexPageHeader.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\IndexPageHeader\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-IndexPageHeader.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\IndexPageHeader\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-IndexPageHeader.html#property_isValidate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\IndexPageHeader\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-IndexPageHeader.html#property__TSPEC"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Int96TimestampOrder",
+            "name": "Int96TimestampOrder",
+            "summary": "Empty\u0020struct\u0020to\u0020signal\u0020chronological\u0020ordering\u0020of\u0020physical\u0020type\u0020INT96",
+            "url": "classes/Flow-Parquet-ThriftModel-Int96TimestampOrder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Int96TimestampOrder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Int96TimestampOrder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Int96TimestampOrder\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Int96TimestampOrder.html#method_getName"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Int96TimestampOrder\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Int96TimestampOrder.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Int96TimestampOrder\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Int96TimestampOrder.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Int96TimestampOrder\u003A\u003A\u0024isValidate",
+            "name": "isValidate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Int96TimestampOrder.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Int96TimestampOrder\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Int96TimestampOrder.html#property__TSPEC"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\IntType",
             "name": "IntType",
-            "summary": "Integer\u0020logical\u0020type\u0020annotation.",
+            "summary": "Integer\u0020logical\u0020type\u0020annotation",
             "url": "classes/Flow-Parquet-ThriftModel-IntType.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\IntType\u003A\u003A__construct\u0028\u0029",
@@ -6126,15 +8931,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-IntType.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\IntType\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-IntType.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\IntType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-IntType.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\IntType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-IntType.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\IntType\u003A\u003A\u0024bitWidth",
             "name": "bitWidth",
@@ -6148,7 +8953,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\JsonType",
             "name": "JsonType",
-            "summary": "Embedded\u0020JSON\u0020logical\u0020type\u0020annotation.",
+            "summary": "Embedded\u0020JSON\u0020logical\u0020type\u0020annotation",
             "url": "classes/Flow-Parquet-ThriftModel-JsonType.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\JsonType\u003A\u003A__construct\u0028\u0029",
@@ -6171,19 +8976,19 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-JsonType.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\JsonType\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-JsonType.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\JsonType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-JsonType.html#property_isValidate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\JsonType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-JsonType.html#property__TSPEC"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\KeyValue",
             "name": "KeyValue",
-            "summary": "Wrapper\u0020struct\u0020to\u0020store\u0020key\u0020values.",
+            "summary": "Wrapper\u0020struct\u0020to\u0020store\u0020key\u0020values",
             "url": "classes/Flow-Parquet-ThriftModel-KeyValue.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\KeyValue\u003A\u003A__construct\u0028\u0029",
@@ -6206,15 +9011,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-KeyValue.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\KeyValue\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-KeyValue.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\KeyValue\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-KeyValue.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\KeyValue\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-KeyValue.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\KeyValue\u003A\u003A\u0024key",
             "name": "key",
@@ -6251,15 +9056,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ListType.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ListType\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-ListType.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\ListType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-ListType.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\ListType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-ListType.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType",
             "name": "LogicalType",
@@ -6286,65 +9091,45 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024BSON",
-            "name": "BSON",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_BSON"
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property__TSPEC"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024DATE",
-            "name": "DATE",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024STRING",
+            "name": "STRING",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_DATE"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024DECIMAL",
-            "name": "DECIMAL",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_DECIMAL"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024ENUM",
-            "name": "ENUM",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_ENUM"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024FLOAT16",
-            "name": "FLOAT16",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_FLOAT16"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024INTEGER",
-            "name": "INTEGER",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_INTEGER"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024JSON",
-            "name": "JSON",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_JSON"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024LIST",
-            "name": "LIST",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_LIST"
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_STRING"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024MAP",
             "name": "MAP",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_MAP"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024STRING",
-            "name": "STRING",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024LIST",
+            "name": "LIST",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_STRING"
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_LIST"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024ENUM",
+            "name": "ENUM",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_ENUM"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024DECIMAL",
+            "name": "DECIMAL",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_DECIMAL"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024DATE",
+            "name": "DATE",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_DATE"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024TIME",
             "name": "TIME",
@@ -6356,15 +9141,55 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_TIMESTAMP"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024INTEGER",
+            "name": "INTEGER",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_INTEGER"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024UNKNOWN",
             "name": "UNKNOWN",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_UNKNOWN"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024JSON",
+            "name": "JSON",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_JSON"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024BSON",
+            "name": "BSON",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_BSON"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024UUID",
             "name": "UUID",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_UUID"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024FLOAT16",
+            "name": "FLOAT16",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_FLOAT16"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024VARIANT",
+            "name": "VARIANT",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_VARIANT"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024GEOMETRY",
+            "name": "GEOMETRY",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_GEOMETRY"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024GEOGRAPHY",
+            "name": "GEOGRAPHY",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_GEOGRAPHY"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\LogicalType\u003A\u003A\u0024FILE",
+            "name": "FILE",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-LogicalType.html#property_FILE"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\MapType",
             "name": "MapType",
@@ -6391,15 +9216,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-MapType.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\MapType\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-MapType.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\MapType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-MapType.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\MapType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-MapType.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\MicroSeconds",
             "name": "MicroSeconds",
@@ -6426,19 +9251,19 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-MicroSeconds.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\MicroSeconds\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-MicroSeconds.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\MicroSeconds\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-MicroSeconds.html#property_isValidate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\MicroSeconds\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-MicroSeconds.html#property__TSPEC"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\MilliSeconds",
             "name": "MilliSeconds",
-            "summary": "Time\u0020units\u0020for\u0020logical\u0020types.",
+            "summary": "Time\u0020units\u0020for\u0020logical\u0020types",
             "url": "classes/Flow-Parquet-ThriftModel-MilliSeconds.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\MilliSeconds\u003A\u003A__construct\u0028\u0029",
@@ -6461,15 +9286,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-MilliSeconds.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\MilliSeconds\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-MilliSeconds.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\MilliSeconds\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-MilliSeconds.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\MilliSeconds\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-MilliSeconds.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\NanoSeconds",
             "name": "NanoSeconds",
@@ -6496,15 +9321,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-NanoSeconds.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\NanoSeconds\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-NanoSeconds.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\NanoSeconds\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-NanoSeconds.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\NanoSeconds\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-NanoSeconds.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\NullType",
             "name": "NullType",
@@ -6531,15 +9356,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-NullType.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\NullType\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-NullType.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\NullType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-NullType.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\NullType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-NullType.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\OffsetIndex",
             "name": "OffsetIndex",
@@ -6566,15 +9391,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-OffsetIndex.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\OffsetIndex\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-OffsetIndex.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\OffsetIndex\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-OffsetIndex.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\OffsetIndex\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-OffsetIndex.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\OffsetIndex\u003A\u003A\u0024page_locations",
             "name": "page_locations",
@@ -6588,7 +9413,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageEncodingStats",
             "name": "PageEncodingStats",
-            "summary": "statistics\u0020of\u0020a\u0020given\u0020page\u0020type\u0020and\u0020encoding.",
+            "summary": "statistics\u0020of\u0020a\u0020given\u0020page\u0020type\u0020and\u0020encoding",
             "url": "classes/Flow-Parquet-ThriftModel-PageEncodingStats.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageEncodingStats\u003A\u003A__construct\u0028\u0029",
@@ -6611,30 +9436,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-PageEncodingStats.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageEncodingStats\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-PageEncodingStats.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageEncodingStats\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-PageEncodingStats.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageEncodingStats\u003A\u003A\u0024count",
-            "name": "count",
-            "summary": "number\u0020of\u0020pages\u0020of\u0020this\u0020type\u0020with\u0020this\u0020encoding\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-PageEncodingStats.html#property_count"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageEncodingStats\u003A\u003A\u0024encoding",
-            "name": "encoding",
-            "summary": "encoding\u0020of\u0020the\u0020page\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-PageEncodingStats.html#property_encoding"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageEncodingStats\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-PageEncodingStats.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageEncodingStats\u003A\u003A\u0024page_type",
             "name": "page_type",
-            "summary": "the\u0020page\u0020type\u0020\u0028data\/dic\/...\u0029\u0020\u002A.",
+            "summary": "the\u0020page\u0020type\u0020\u0028data\/dic\/...\u0029\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-PageEncodingStats.html#property_page_type"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageEncodingStats\u003A\u003A\u0024encoding",
+            "name": "encoding",
+            "summary": "encoding\u0020of\u0020the\u0020page\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-PageEncodingStats.html#property_encoding"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageEncodingStats\u003A\u003A\u0024count",
+            "name": "count",
+            "summary": "number\u0020of\u0020pages\u0020of\u0020this\u0020type\u0020with\u0020this\u0020encoding\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-PageEncodingStats.html#property_count"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader",
             "name": "PageHeader",
@@ -6661,24 +9486,34 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property_isValidate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property__TSPEC"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "the\u0020type\u0020of\u0020the\u0020page\u003A\u0020indicates\u0020which\u0020of\u0020the\u0020\u002A_header\u0020fields\u0020is\u0020set\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property_type"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024uncompressed_page_size",
+            "name": "uncompressed_page_size",
+            "summary": "Uncompressed\u0020page\u0020size\u0020in\u0020bytes\u0020\u0028not\u0020including\u0020this\u0020header\u0029\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property_uncompressed_page_size"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024compressed_page_size",
             "name": "compressed_page_size",
-            "summary": "Compressed\u0020\u0028and\u0020potentially\u0020encrypted\u0029\u0020page\u0020size\u0020in\u0020bytes,\u0020not\u0020including\u0020this\u0020header\u0020\u002A.",
+            "summary": "Compressed\u0020\u0028and\u0020potentially\u0020encrypted\u0029\u0020page\u0020size\u0020in\u0020bytes,\u0020not\u0020including\u0020this\u0020header\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property_compressed_page_size"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024crc",
             "name": "crc",
-            "summary": "The\u002032\u002Dbit\u0020CRC\u0020checksum\u0020for\u0020the\u0020page,\u0020to\u0020be\u0020be\u0020calculated\u0020as\u0020follows\u003A",
+            "summary": "The\u002032\u002Dbit\u0020CRC\u0020checksum\u0020for\u0020the\u0020page,\u0020to\u0020be\u0020calculated\u0020as\u0020follows\u003A",
             "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property_crc"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024data_page_header",
@@ -6686,30 +9521,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property_data_page_header"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024data_page_header_v2",
-            "name": "data_page_header_v2",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024index_page_header",
+            "name": "index_page_header",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property_data_page_header_v2"
+            "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property_index_page_header"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024dictionary_page_header",
             "name": "dictionary_page_header",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property_dictionary_page_header"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024index_page_header",
-            "name": "index_page_header",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024data_page_header_v2",
+            "name": "data_page_header_v2",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property_index_page_header"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024type",
-            "name": "type",
-            "summary": "the\u0020type\u0020of\u0020the\u0020page\u003A\u0020indicates\u0020which\u0020of\u0020the\u0020\u002A_header\u0020fields\u0020is\u0020set\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property_type"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageHeader\u003A\u003A\u0024uncompressed_page_size",
-            "name": "uncompressed_page_size",
-            "summary": "Uncompressed\u0020page\u0020size\u0020in\u0020bytes\u0020\u0028not\u0020including\u0020this\u0020header\u0029\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property_uncompressed_page_size"
+            "url": "classes/Flow-Parquet-ThriftModel-PageHeader.html#property_data_page_header_v2"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageLocation",
             "name": "PageLocation",
@@ -6736,19 +9561,24 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-PageLocation.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageLocation\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-PageLocation.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageLocation\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-PageLocation.html#property_isValidate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageLocation\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-PageLocation.html#property__TSPEC"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageLocation\u003A\u003A\u0024offset",
+            "name": "offset",
+            "summary": "Offset\u0020of\u0020the\u0020page\u0020in\u0020the\u0020file\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-PageLocation.html#property_offset"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageLocation\u003A\u003A\u0024compressed_page_size",
             "name": "compressed_page_size",
-            "summary": "Size\u0020of\u0020the\u0020page,\u0020including\u0020header.\u0020Sum\u0020of\u0020compressed_page_size\u0020and\u0020header\nlength.",
+            "summary": "Size\u0020of\u0020the\u0020page,\u0020including\u0020header.\u0020Equal\u0020to\u0020the\u0020sum\u0020of\u0020the\u0020page\u0027s\nPageHeader.compressed_page_size\u0020and\u0020the\u0020size\u0020of\u0020the\u0020serialized\u0020PageHeader.",
             "url": "classes/Flow-Parquet-ThriftModel-PageLocation.html#property_compressed_page_size"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageLocation\u003A\u003A\u0024first_row_index",
@@ -6756,14 +9586,9 @@ Search.appendIndex(
             "summary": "Index\u0020within\u0020the\u0020RowGroup\u0020of\u0020the\u0020first\u0020row\u0020of\u0020the\u0020page.\u0020When\u0020an\nOffsetIndex\u0020is\u0020present,\u0020pages\u0020must\u0020begin\u0020on\u0020row\u0020boundaries\n\u0028repetition_level\u0020\u003D\u00200\u0029.",
             "url": "classes/Flow-Parquet-ThriftModel-PageLocation.html#property_first_row_index"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageLocation\u003A\u003A\u0024offset",
-            "name": "offset",
-            "summary": "Offset\u0020of\u0020the\u0020page\u0020in\u0020the\u0020file\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-PageLocation.html#property_offset"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageType",
             "name": "PageType",
-            "summary": "Autogenerated\u0020by\u0020Thrift\u0020Compiler\u0020\u00280.18.1\u0029.",
+            "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-PageType.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageType\u003A\u003ADATA_PAGE",
@@ -6771,20 +9596,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-PageType.html#constant_DATA_PAGE"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageType\u003A\u003ADATA_PAGE_V2",
-            "name": "DATA_PAGE_V2",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageType\u003A\u003AINDEX_PAGE",
+            "name": "INDEX_PAGE",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-PageType.html#constant_DATA_PAGE_V2"
+            "url": "classes/Flow-Parquet-ThriftModel-PageType.html#constant_INDEX_PAGE"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageType\u003A\u003ADICTIONARY_PAGE",
             "name": "DICTIONARY_PAGE",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-PageType.html#constant_DICTIONARY_PAGE"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageType\u003A\u003AINDEX_PAGE",
-            "name": "INDEX_PAGE",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageType\u003A\u003ADATA_PAGE_V2",
+            "name": "DATA_PAGE_V2",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-PageType.html#constant_INDEX_PAGE"
+            "url": "classes/Flow-Parquet-ThriftModel-PageType.html#constant_DATA_PAGE_V2"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\PageType\u003A\u003A\u0024__names",
             "name": "__names",
@@ -6816,54 +9641,54 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\RowGroup\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\RowGroup\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\RowGroup\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\RowGroup\u003A\u003A\u0024columns",
             "name": "columns",
             "summary": "Metadata\u0020for\u0020each\u0020column\u0020chunk\u0020in\u0020this\u0020row\u0020group.",
             "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#property_columns"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\RowGroup\u003A\u003A\u0024file_offset",
-            "name": "file_offset",
-            "summary": "Byte\u0020offset\u0020from\u0020beginning\u0020of\u0020file\u0020to\u0020first\u0020page\u0020\u0028data\u0020or\u0020dictionary\u0029\nin\u0020this\u0020row\u0020group\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#property_file_offset"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\RowGroup\u003A\u003A\u0024total_byte_size",
+            "name": "total_byte_size",
+            "summary": "Total\u0020byte\u0020size\u0020of\u0020all\u0020the\u0020uncompressed\u0020column\u0020data\u0020in\u0020this\u0020row\u0020group\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#property_total_byte_size"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\RowGroup\u003A\u003A\u0024num_rows",
             "name": "num_rows",
-            "summary": "Number\u0020of\u0020rows\u0020in\u0020this\u0020row\u0020group\u0020\u002A.",
+            "summary": "Number\u0020of\u0020rows\u0020in\u0020this\u0020row\u0020group\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#property_num_rows"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\RowGroup\u003A\u003A\u0024ordinal",
-            "name": "ordinal",
-            "summary": "Row\u0020group\u0020ordinal\u0020in\u0020the\u0020file\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#property_ordinal"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\RowGroup\u003A\u003A\u0024sorting_columns",
             "name": "sorting_columns",
             "summary": "If\u0020set,\u0020specifies\u0020a\u0020sort\u0020ordering\u0020of\u0020the\u0020rows\u0020in\u0020this\u0020RowGroup.",
             "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#property_sorting_columns"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\RowGroup\u003A\u003A\u0024total_byte_size",
-            "name": "total_byte_size",
-            "summary": "Total\u0020byte\u0020size\u0020of\u0020all\u0020the\u0020uncompressed\u0020column\u0020data\u0020in\u0020this\u0020row\u0020group\u0020\u002A.",
-            "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#property_total_byte_size"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\RowGroup\u003A\u003A\u0024file_offset",
+            "name": "file_offset",
+            "summary": "Byte\u0020offset\u0020from\u0020beginning\u0020of\u0020file\u0020to\u0020first\u0020page\u0020\u0028data\u0020or\u0020dictionary\u0029\nin\u0020this\u0020row\u0020group\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#property_file_offset"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\RowGroup\u003A\u003A\u0024total_compressed_size",
             "name": "total_compressed_size",
-            "summary": "Total\u0020byte\u0020size\u0020of\u0020all\u0020compressed\u0020\u0028and\u0020potentially\u0020encrypted\u0029\u0020column\u0020data\nin\u0020this\u0020row\u0020group\u0020\u002A.",
+            "summary": "Total\u0020byte\u0020size\u0020of\u0020all\u0020compressed\u0020\u0028and\u0020potentially\u0020encrypted\u0029\u0020column\u0020data\nin\u0020this\u0020row\u0020group\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#property_total_compressed_size"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\RowGroup\u003A\u003A\u0024ordinal",
+            "name": "ordinal",
+            "summary": "Row\u0020group\u0020ordinal\u0020in\u0020the\u0020file\u0020\u002A",
+            "url": "classes/Flow-Parquet-ThriftModel-RowGroup.html#property_ordinal"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement",
             "name": "SchemaElement",
-            "summary": "Represents\u0020a\u0020element\u0020inside\u0020a\u0020schema\u0020definition.",
+            "summary": "Represents\u0020an\u0020element\u0020inside\u0020a\u0020schema\u0020definition.",
             "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A__construct\u0028\u0029",
@@ -6886,34 +9711,34 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024converted_type",
-            "name": "converted_type",
-            "summary": "DEPRECATED\u003A\u0020When\u0020the\u0020schema\u0020is\u0020the\u0020result\u0020of\u0020a\u0020conversion\u0020from\u0020another\u0020model.",
-            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_converted_type"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property__TSPEC"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024field_id",
-            "name": "field_id",
-            "summary": "When\u0020the\u0020original\u0020schema\u0020supports\u0020field\u0020ids,\u0020this\u0020will\u0020save\u0020the\noriginal\u0020field\u0020id\u0020in\u0020the\u0020parquet\u0020schema.",
-            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_field_id"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "Data\u0020type\u0020for\u0020this\u0020field.\u0020Not\u0020set\u0020if\u0020the\u0020current\u0020element\u0020is\u0020a\u0020non\u002Dleaf\u0020node",
+            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_type"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024logicalType",
-            "name": "logicalType",
-            "summary": "The\u0020logical\u0020type\u0020of\u0020this\u0020SchemaElement.",
-            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_logicalType"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024type_length",
+            "name": "type_length",
+            "summary": "If\u0020type\u0020is\u0020FIXED_LEN_BYTE_ARRAY,\u0020this\u0020is\u0020the\u0020byte\u0020length\u0020of\u0020the\u0020values.",
+            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_type_length"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024repetition_type",
+            "name": "repetition_type",
+            "summary": "repetition\u0020of\u0020the\u0020field.\u0020The\u0020root\u0020of\u0020the\u0020schema\u0020does\u0020not\u0020have\u0020a\u0020repetition_type.",
+            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_repetition_type"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024name",
             "name": "name",
-            "summary": "Name\u0020of\u0020the\u0020field\u0020in\u0020the\u0020schema.",
+            "summary": "Name\u0020of\u0020the\u0020field\u0020in\u0020the\u0020schema",
             "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_name"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024num_children",
@@ -6921,30 +9746,30 @@ Search.appendIndex(
             "summary": "Nested\u0020fields.\u0020\u0020Since\u0020thrift\u0020does\u0020not\u0020support\u0020nested\u0020fields,\nthe\u0020nesting\u0020is\u0020flattened\u0020to\u0020a\u0020single\u0020list\u0020by\u0020a\u0020depth\u002Dfirst\u0020traversal.",
             "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_num_children"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024precision",
-            "name": "precision",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_precision"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024repetition_type",
-            "name": "repetition_type",
-            "summary": "repetition\u0020of\u0020the\u0020field.\u0020The\u0020root\u0020of\u0020the\u0020schema\u0020does\u0020not\u0020have\u0020a\u0020repetition_type.",
-            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_repetition_type"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024converted_type",
+            "name": "converted_type",
+            "summary": "DEPRECATED\u003A\u0020When\u0020the\u0020schema\u0020is\u0020the\u0020result\u0020of\u0020a\u0020conversion\u0020from\u0020another\u0020model.",
+            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_converted_type"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024scale",
             "name": "scale",
             "summary": "DEPRECATED\u003A\u0020Used\u0020when\u0020this\u0020column\u0020contains\u0020decimal\u0020data.",
             "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_scale"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024type",
-            "name": "type",
-            "summary": "Data\u0020type\u0020for\u0020this\u0020field.\u0020Not\u0020set\u0020if\u0020the\u0020current\u0020element\u0020is\u0020a\u0020non\u002Dleaf\u0020node.",
-            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_type"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024precision",
+            "name": "precision",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_precision"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024type_length",
-            "name": "type_length",
-            "summary": "If\u0020type\u0020is\u0020FIXED_LEN_BYTE_ARRAY,\u0020this\u0020is\u0020the\u0020byte\u0020length\u0020of\u0020the\u0020values.",
-            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_type_length"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024field_id",
+            "name": "field_id",
+            "summary": "When\u0020the\u0020original\u0020schema\u0020supports\u0020field\u0020ids,\u0020this\u0020will\u0020save\u0020the\noriginal\u0020field\u0020id\u0020in\u0020the\u0020parquet\u0020schema",
+            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_field_id"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SchemaElement\u003A\u003A\u0024logicalType",
+            "name": "logicalType",
+            "summary": "The\u0020logical\u0020type\u0020of\u0020this\u0020SchemaElement",
+            "url": "classes/Flow-Parquet-ThriftModel-SchemaElement.html#property_logicalType"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SizeStatistics",
             "name": "SizeStatistics",
@@ -6971,34 +9796,34 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-SizeStatistics.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SizeStatistics\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-SizeStatistics.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SizeStatistics\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-SizeStatistics.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SizeStatistics\u003A\u003A\u0024definition_level_histogram",
-            "name": "definition_level_histogram",
-            "summary": "Same\u0020as\u0020repetition_level_histogram\u0020except\u0020for\u0020definition\u0020levels.",
-            "url": "classes/Flow-Parquet-ThriftModel-SizeStatistics.html#property_definition_level_histogram"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SizeStatistics\u003A\u003A\u0024repetition_level_histogram",
-            "name": "repetition_level_histogram",
-            "summary": "When\u0020present,\u0020there\u0020is\u0020expected\u0020to\u0020be\u0020one\u0020element\u0020corresponding\u0020to\u0020each\nrepetition\u0020\u0028i.e.\u0020size\u003Dmax\u0020repetition_level\u002B1\u0029\u0020where\u0020each\u0020element\nrepresents\u0020the\u0020number\u0020of\u0020times\u0020the\u0020repetition\u0020level\u0020was\u0020observed\u0020in\u0020the\ndata.",
-            "url": "classes/Flow-Parquet-ThriftModel-SizeStatistics.html#property_repetition_level_histogram"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SizeStatistics\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-SizeStatistics.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SizeStatistics\u003A\u003A\u0024unencoded_byte_array_data_bytes",
             "name": "unencoded_byte_array_data_bytes",
             "summary": "The\u0020number\u0020of\u0020physical\u0020bytes\u0020stored\u0020for\u0020BYTE_ARRAY\u0020data\u0020values\u0020assuming\nno\u0020encoding.\u0020This\u0020is\u0020exclusive\u0020of\u0020the\u0020bytes\u0020needed\u0020to\u0020store\u0020the\u0020length\u0020of\neach\u0020byte\u0020array.\u0020In\u0020other\u0020words,\u0020this\u0020field\u0020is\u0020equivalent\u0020to\u0020the\u0020\u0060\u0028size\nof\u0020PLAIN\u002DENCODING\u0020the\u0020byte\u0020array\u0020values\u0029\u0020\u002D\u0020\u00284\u0020bytes\u0020\u002A\u0020number\u0020of\u0020values\nwritten\u0029\u0060.\u0020To\u0020determine\u0020unencoded\u0020sizes\u0020of\u0020other\u0020types\u0020readers\u0020can\u0020use\nschema\u0020information\u0020multiplied\u0020by\u0020the\u0020number\u0020of\u0020non\u002Dnull\u0020and\u0020null\u0020values.",
             "url": "classes/Flow-Parquet-ThriftModel-SizeStatistics.html#property_unencoded_byte_array_data_bytes"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SizeStatistics\u003A\u003A\u0024repetition_level_histogram",
+            "name": "repetition_level_histogram",
+            "summary": "When\u0020present,\u0020there\u0020is\u0020expected\u0020to\u0020be\u0020one\u0020element\u0020corresponding\u0020to\u0020each\nrepetition\u0020\u0028i.e.\u0020size\u003Dmax\u0020repetition_level\u002B1\u0029\u0020where\u0020each\u0020element\nrepresents\u0020the\u0020number\u0020of\u0020times\u0020the\u0020repetition\u0020level\u0020was\u0020observed\u0020in\u0020the\ndata.",
+            "url": "classes/Flow-Parquet-ThriftModel-SizeStatistics.html#property_repetition_level_histogram"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SizeStatistics\u003A\u003A\u0024definition_level_histogram",
+            "name": "definition_level_histogram",
+            "summary": "Same\u0020as\u0020repetition_level_histogram\u0020except\u0020for\u0020definition\u0020levels.",
+            "url": "classes/Flow-Parquet-ThriftModel-SizeStatistics.html#property_definition_level_histogram"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SortingColumn",
             "name": "SortingColumn",
-            "summary": "Sort\u0020order\u0020within\u0020a\u0020RowGroup\u0020of\u0020a\u0020leaf\u0020column.",
+            "summary": "Sort\u0020order\u0020within\u0020a\u0020RowGroup\u0020of\u0020a\u0020leaf\u0020column",
             "url": "classes/Flow-Parquet-ThriftModel-SortingColumn.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SortingColumn\u003A\u003A__construct\u0028\u0029",
@@ -7021,24 +9846,24 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-SortingColumn.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SortingColumn\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-SortingColumn.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SortingColumn\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-SortingColumn.html#property_isValidate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SortingColumn\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-SortingColumn.html#property__TSPEC"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SortingColumn\u003A\u003A\u0024column_idx",
             "name": "column_idx",
-            "summary": "The\u0020ordinal\u0020position\u0020of\u0020the\u0020column\u0020\u0028in\u0020this\u0020row\u0020group\u0029\u0020\u002A.",
+            "summary": "The\u0020ordinal\u0020position\u0020of\u0020the\u0020column\u0020\u0028in\u0020this\u0020row\u0020group\u0029\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-SortingColumn.html#property_column_idx"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SortingColumn\u003A\u003A\u0024descending",
             "name": "descending",
-            "summary": "If\u0020true,\u0020indicates\u0020this\u0020column\u0020is\u0020sorted\u0020in\u0020descending\u0020order.\u0020\u002A.",
+            "summary": "If\u0020true,\u0020indicates\u0020this\u0020column\u0020is\u0020sorted\u0020in\u0020descending\u0020order.\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-SortingColumn.html#property_descending"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SortingColumn\u003A\u003A\u0024nulls_first",
@@ -7048,7 +9873,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SplitBlockAlgorithm",
             "name": "SplitBlockAlgorithm",
-            "summary": "Block\u002Dbased\u0020algorithm\u0020type\u0020annotation.\u0020\u002A.",
+            "summary": "Block\u002Dbased\u0020algorithm\u0020type\u0020annotation.\u0020\u002A",
             "url": "classes/Flow-Parquet-ThriftModel-SplitBlockAlgorithm.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SplitBlockAlgorithm\u003A\u003A__construct\u0028\u0029",
@@ -7071,15 +9896,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-SplitBlockAlgorithm.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SplitBlockAlgorithm\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-SplitBlockAlgorithm.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\SplitBlockAlgorithm\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-SplitBlockAlgorithm.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\SplitBlockAlgorithm\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-SplitBlockAlgorithm.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics",
             "name": "Statistics",
@@ -7106,59 +9931,64 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024distinct_count",
-            "name": "distinct_count",
-            "summary": "count\u0020of\u0020distinct\u0020values\u0020occurring.",
-            "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_distinct_count"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024is_max_value_exact",
-            "name": "is_max_value_exact",
-            "summary": "If\u0020true,\u0020max_value\u0020is\u0020the\u0020actual\u0020maximum\u0020value\u0020for\u0020a\u0020column.",
-            "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_is_max_value_exact"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024is_min_value_exact",
-            "name": "is_min_value_exact",
-            "summary": "If\u0020true,\u0020min_value\u0020is\u0020the\u0020actual\u0020minimum\u0020value\u0020for\u0020a\u0020column.",
-            "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_is_min_value_exact"
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024max",
             "name": "max",
             "summary": "DEPRECATED\u003A\u0020min\u0020and\u0020max\u0020value\u0020of\u0020the\u0020column.\u0020Use\u0020min_value\u0020and\u0020max_value.",
             "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_max"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024max_value",
-            "name": "max_value",
-            "summary": "Lower\u0020and\u0020upper\u0020bound\u0020values\u0020for\u0020the\u0020column,\u0020determined\u0020by\u0020its\u0020ColumnOrder.",
-            "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_max_value"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024min",
             "name": "min",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_min"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024min_value",
-            "name": "min_value",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_min_value"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024null_count",
             "name": "null_count",
             "summary": "Count\u0020of\u0020null\u0020values\u0020in\u0020the\u0020column.",
             "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_null_count"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024distinct_count",
+            "name": "distinct_count",
+            "summary": "count\u0020of\u0020distinct\u0020values\u0020occurring",
+            "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_distinct_count"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024max_value",
+            "name": "max_value",
+            "summary": "Lower\u0020and\u0020upper\u0020bound\u0020values\u0020for\u0020the\u0020column,\u0020determined\u0020by\u0020its\u0020ColumnOrder.",
+            "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_max_value"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024min_value",
+            "name": "min_value",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_min_value"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024is_max_value_exact",
+            "name": "is_max_value_exact",
+            "summary": "If\u0020true,\u0020max_value\u0020is\u0020the\u0020actual\u0020maximum\u0020value\u0020for\u0020a\u0020column",
+            "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_is_max_value_exact"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024is_min_value_exact",
+            "name": "is_min_value_exact",
+            "summary": "If\u0020true,\u0020min_value\u0020is\u0020the\u0020actual\u0020minimum\u0020value\u0020for\u0020a\u0020column",
+            "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_is_min_value_exact"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Statistics\u003A\u003A\u0024nan_count",
+            "name": "nan_count",
+            "summary": "Count\u0020of\u0020NaN\u0020values\u0020in\u0020the\u0020column\u003B\u0020only\u0020present\u0020if\u0020physical\u0020type\u0020is\u0020FLOAT\nor\u0020DOUBLE,\u0020or\u0020logical\u0020type\u0020is\u0020FLOAT16.",
+            "url": "classes/Flow-Parquet-ThriftModel-Statistics.html#property_nan_count"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\StringType",
             "name": "StringType",
-            "summary": "Empty\u0020structs\u0020to\u0020use\u0020as\u0020logical\u0020type\u0020annotations.",
+            "summary": "Empty\u0020structs\u0020to\u0020use\u0020as\u0020logical\u0020type\u0020annotations",
             "url": "classes/Flow-Parquet-ThriftModel-StringType.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\StringType\u003A\u003A__construct\u0028\u0029",
@@ -7181,19 +10011,19 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-StringType.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\StringType\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-StringType.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\StringType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-StringType.html#property_isValidate"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\StringType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-StringType.html#property__TSPEC"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimestampType",
             "name": "TimestampType",
-            "summary": "Timestamp\u0020logical\u0020type\u0020annotation.",
+            "summary": "Timestamp\u0020logical\u0020type\u0020annotation",
             "url": "classes/Flow-Parquet-ThriftModel-TimestampType.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimestampType\u003A\u003A__construct\u0028\u0029",
@@ -7216,15 +10046,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-TimestampType.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimestampType\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-TimestampType.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimestampType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-TimestampType.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimestampType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-TimestampType.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimestampType\u003A\u003A\u0024isAdjustedToUTC",
             "name": "isAdjustedToUTC",
@@ -7238,7 +10068,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimeType",
             "name": "TimeType",
-            "summary": "Time\u0020logical\u0020type\u0020annotation.",
+            "summary": "Time\u0020logical\u0020type\u0020annotation",
             "url": "classes/Flow-Parquet-ThriftModel-TimeType.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimeType\u003A\u003A__construct\u0028\u0029",
@@ -7261,15 +10091,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-TimeType.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimeType\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-TimeType.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimeType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-TimeType.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimeType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-TimeType.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimeType\u003A\u003A\u0024isAdjustedToUTC",
             "name": "isAdjustedToUTC",
@@ -7306,25 +10136,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-TimeUnit.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimeUnit\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-TimeUnit.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimeUnit\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-TimeUnit.html#property_isValidate"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimeUnit\u003A\u003A\u0024MICROS",
-            "name": "MICROS",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimeUnit\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-TimeUnit.html#property_MICROS"
+            "url": "classes/Flow-Parquet-ThriftModel-TimeUnit.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimeUnit\u003A\u003A\u0024MILLIS",
             "name": "MILLIS",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-TimeUnit.html#property_MILLIS"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimeUnit\u003A\u003A\u0024MICROS",
+            "name": "MICROS",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-TimeUnit.html#property_MICROS"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TimeUnit\u003A\u003A\u0024NANOS",
             "name": "NANOS",
@@ -7341,26 +10171,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-Type.html#constant_BOOLEAN"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Type\u003A\u003ABYTE_ARRAY",
-            "name": "BYTE_ARRAY",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-Type.html#constant_BYTE_ARRAY"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Type\u003A\u003ADOUBLE",
-            "name": "DOUBLE",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-Type.html#constant_DOUBLE"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Type\u003A\u003AFIXED_LEN_BYTE_ARRAY",
-            "name": "FIXED_LEN_BYTE_ARRAY",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-Type.html#constant_FIXED_LEN_BYTE_ARRAY"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Type\u003A\u003AFLOAT",
-            "name": "FLOAT",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-Type.html#constant_FLOAT"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Type\u003A\u003AINT32",
             "name": "INT32",
             "summary": "",
@@ -7376,6 +10186,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-Type.html#constant_INT96"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Type\u003A\u003AFLOAT",
+            "name": "FLOAT",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Type.html#constant_FLOAT"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Type\u003A\u003ADOUBLE",
+            "name": "DOUBLE",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Type.html#constant_DOUBLE"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Type\u003A\u003ABYTE_ARRAY",
+            "name": "BYTE_ARRAY",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Type.html#constant_BYTE_ARRAY"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Type\u003A\u003AFIXED_LEN_BYTE_ARRAY",
+            "name": "FIXED_LEN_BYTE_ARRAY",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Type.html#constant_FIXED_LEN_BYTE_ARRAY"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Type\u003A\u003A\u0024__names",
             "name": "__names",
             "summary": "",
@@ -7383,7 +10213,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TypeDefinedOrder",
             "name": "TypeDefinedOrder",
-            "summary": "Empty\u0020struct\u0020to\u0020signal\u0020the\u0020order\u0020defined\u0020by\u0020the\u0020physical\u0020or\u0020logical\u0020type.",
+            "summary": "Empty\u0020struct\u0020to\u0020signal\u0020the\u0020order\u0020defined\u0020by\u0020the\u0020physical\u0020or\u0020logical\u0020type",
             "url": "classes/Flow-Parquet-ThriftModel-TypeDefinedOrder.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TypeDefinedOrder\u003A\u003A__construct\u0028\u0029",
@@ -7406,15 +10236,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-TypeDefinedOrder.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\TypeDefinedOrder\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-TypeDefinedOrder.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\TypeDefinedOrder\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-TypeDefinedOrder.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\TypeDefinedOrder\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-TypeDefinedOrder.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Uncompressed",
             "name": "Uncompressed",
@@ -7441,15 +10271,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-Uncompressed.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Uncompressed\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-Uncompressed.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\Uncompressed\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-Uncompressed.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\Uncompressed\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-Uncompressed.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\UUIDType",
             "name": "UUIDType",
@@ -7476,15 +10306,55 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-UUIDType.html#method_write"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\UUIDType\u003A\u003A\u0024isValidate",
+            "name": "isValidate",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-UUIDType.html#property_isValidate"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\UUIDType\u003A\u003A\u0024_TSPEC",
             "name": "_TSPEC",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-UUIDType.html#property__TSPEC"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\UUIDType\u003A\u003A\u0024isValidate",
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\VariantType",
+            "name": "VariantType",
+            "summary": "Embedded\u0020Variant\u0020logical\u0020type\u0020annotation",
+            "url": "classes/Flow-Parquet-ThriftModel-VariantType.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\VariantType\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-VariantType.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\VariantType\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-VariantType.html#method_getName"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\VariantType\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-VariantType.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\VariantType\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-VariantType.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\VariantType\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-UUIDType.html#property_isValidate"
+            "url": "classes/Flow-Parquet-ThriftModel-VariantType.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\VariantType\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-VariantType.html#property__TSPEC"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\VariantType\u003A\u003A\u0024specification_version",
+            "name": "specification_version",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-VariantType.html#property_specification_version"
         },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\XxHash",
             "name": "XxHash",
@@ -7511,15 +10381,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-XxHash.html#method_write"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ThriftModel\\XxHash\u003A\u003A\u0024_TSPEC",
-            "name": "_TSPEC",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ThriftModel-XxHash.html#property__TSPEC"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ThriftModel\\XxHash\u003A\u003A\u0024isValidate",
             "name": "isValidate",
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-XxHash.html#property_isValidate"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ThriftModel\\XxHash\u003A\u003A\u0024_TSPEC",
+            "name": "_TSPEC",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ThriftModel-XxHash.html#property__TSPEC"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder",
             "name": "DeltaBinaryPackedColumnChunkBuilder",
@@ -7773,7 +10643,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilders\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
-            "summary": "",
+            "summary": "Each\u0020container\u0020carries\u0020its\u0020chunk\u0027s\u0020bloom\u0020filter\u0020when\u0020the\u0020column\u0020has\u0020one.",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_flush"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilders\u003A\u003AisAnyPageFull\u0028\u0029",
@@ -7806,6 +10676,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkContainer.html#property_columnChunk"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkContainer\u003A\u003A\u0024columnIndex",
+            "name": "columnIndex",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkContainer.html#property_columnIndex"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkContainer\u003A\u003A\u0024offsetIndex",
+            "name": "offsetIndex",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkContainer.html#property_offsetIndex"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkContainer\u003A\u003A\u0024bloomFilter",
+            "name": "bloomFilter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkContainer.html#property_bloomFilter"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnLists",
             "name": "ColumnLists",
             "summary": "",
@@ -7835,6 +10720,11 @@ Search.appendIndex(
             "name": "indices",
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-PageBuilder-Dictionary.html#property_indices"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\PageBuilder\\Dictionary\u003A\u003A\u0024keys",
+            "name": "keys",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-PageBuilder-Dictionary.html#property_keys"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\PageBuilder\\DictionaryBuilder\\FloatDictionaryBuilder",
             "name": "FloatDictionaryBuilder",
@@ -7873,7 +10763,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\PageBuilder\\DictionaryBuilder\u003A\u003Abuild\u0028\u0029",
             "name": "build",
-            "summary": "",
+            "summary": "\u0024dictionary\u0020extended\u0020with\u0020the\u0020values\u0020of\u0020\u0024data,\u0020its\u0020indices\u0020those\u0020of\u0020\u0024data\u0027s\u0020values.",
             "url": "classes/Flow-Parquet-Writer-PageBuilder-DictionaryBuilder.html#method_build"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\PageBuilder\\RLEBitPackedPacker",
@@ -7996,6 +10886,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-PageContainers.html#method_valuesCount"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\PageIndexBuilder",
+            "name": "PageIndexBuilder",
+            "summary": "One\u0020column\u0020chunk\u0027s\u0020page\u0020index,\u0020page\u0020by\u0020page,\u0020as\u0020arrow\u002Drs\u0020builds\u0020it\u003A\u0020a\u0020column\u0020index\u0020only\u0020at\u0020StatisticsLevel\u003A\u003APAGE\u0020and\nonly\u0020while\u0020every\u0020page\u0020that\u0020holds\u0020a\u0020value\u0020has\u0020bounds,\u0020an\u0020offset\u0020index\u0020always.",
+            "url": "classes/Flow-Parquet-Writer-PageIndexBuilder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\PageIndexBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-PageIndexBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\PageIndexBuilder\u003A\u003AaddPage\u0028\u0029",
+            "name": "addPage",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-PageIndexBuilder.html#method_addPage"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\PageIndexBuilder\u003A\u003AcolumnIndex\u0028\u0029",
+            "name": "columnIndex",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-PageIndexBuilder.html#method_columnIndex"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\PageIndexBuilder\u003A\u003AoffsetIndex\u0028\u0029",
+            "name": "offsetIndex",
+            "summary": "The\u0020data\u0020pages\u0020written\u0020from\u0020\u0024firstDataPageOffset\u0020on,\u0020header\u0020included,\u0020one\u0020per\u0020addPage\u0028\u0029\u0020call.",
+            "url": "classes/Flow-Parquet-Writer-PageIndexBuilder.html#method_offsetIndex"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\RowGroupBuilder",
             "name": "RowGroupBuilder",
             "summary": "",
@@ -8023,7 +10938,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\RowGroupBuilder\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
-            "summary": "",
+            "summary": "The\u0020row\u0020group\u0027s\u0020column\u0020chunks,\u0020then\u0020their\u0020bloom\u0020filters\u0020\u0028arrow\u002Drs\u0020BloomFilterPosition\u003A\u003AAfterRowGroup\u0029.",
             "url": "classes/Flow-Parquet-Writer-RowGroupBuilder.html#method_flush"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\RowGroupBuilder\u003A\u003AisEmpty\u0028\u0029",
@@ -8051,11 +10966,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-StatisticsCounter.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsCounter\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Writer-StatisticsCounter.html#method_add"
-        },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsCounter\u003A\u003AaddBatch\u0028\u0029",
             "name": "addBatch",
             "summary": "",
@@ -8081,6 +10991,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-StatisticsCounter.html#method_min"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsCounter\u003A\u003AnanCount\u0028\u0029",
+            "name": "nanCount",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-StatisticsCounter.html#method_nanCount"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsCounter\u003A\u003AnotNullCount\u0028\u0029",
             "name": "notNullCount",
             "summary": "",
@@ -8096,6 +11011,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-StatisticsCounter.html#method_reset"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsCounter\u003A\u003AtoPageStatistics\u0028\u0029",
+            "name": "toPageStatistics",
+            "summary": "Data\u0020page\u0020statistics\u003A\u0020a\u0020float\u0020page\u0020always\u0020carries\u0020a\u0020nan_count,\u00200\u0020for\u0020an\u0020all\u002Dnull\u0020page\u0020\u0028arrow\u002Drs\u0020get_nan_count\u0029.",
+            "url": "classes/Flow-Parquet-Writer-StatisticsCounter.html#method_toPageStatistics"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsCounter\u003A\u003AtoStatistics\u0028\u0029",
             "name": "toStatistics",
             "summary": "",
@@ -8105,6 +11025,81 @@ Search.appendIndex(
             "name": "valuesCount",
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-StatisticsCounter.html#method_valuesCount"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsLevel",
+            "name": "StatisticsLevel",
+            "summary": "Which\u0020statistics\u0020a\u0020writer\u0020computes,\u0020as\u0020arrow\u002Drs\u0020EnabledStatistics\u003A\u0020none,\u0020column\u0020chunk\u0020statistics,\u0020or\u0020column\u0020chunk\nstatistics\u0020plus\u0020a\u0020column\u0020index\u0020entry\u0020per\u0020page.",
+            "url": "classes/Flow-Parquet-Writer-StatisticsLevel.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsLevel\u003A\u003ACHUNK",
+            "name": "CHUNK",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-StatisticsLevel.html#enumcase_CHUNK"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsLevel\u003A\u003ANONE",
+            "name": "NONE",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-StatisticsLevel.html#enumcase_NONE"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsLevel\u003A\u003APAGE",
+            "name": "PAGE",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-StatisticsLevel.html#enumcase_PAGE"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsOptions",
+            "name": "StatisticsOptions",
+            "summary": "The\u0020statistics\u0020a\u0020writer\u0020computes,\u0020read\u0020from\u0020Options\u0020once\u0020for\u0020every\u0020column\u0020chunk\u0020builder.",
+            "url": "classes/Flow-Parquet-Writer-StatisticsOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-StatisticsOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsOptions\u003A\u003AfromOptions\u0028\u0029",
+            "name": "fromOptions",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-StatisticsOptions.html#method_fromOptions"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsOptions\u003A\u003Achunk\u0028\u0029",
+            "name": "chunk",
+            "summary": "The\u0020column\u0020chunk\u0027s\u0020statistics,\u0020none\u0020at\u0020StatisticsLevel\u003A\u003ANONE.",
+            "url": "classes/Flow-Parquet-Writer-StatisticsOptions.html#method_chunk"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsOptions\u003A\u003Acounter\u0028\u0029",
+            "name": "counter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-StatisticsOptions.html#method_counter"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsOptions\u003A\u003ApageHeader\u0028\u0029",
+            "name": "pageHeader",
+            "summary": "A\u0020data\u0020page\u0020header\u0027s\u0020statistics,\u0020only\u0020at\u0020StatisticsLevel\u003A\u003APAGE\u0020with\u0020Option\u003A\u003APAGE_HEADER_STATISTICS.",
+            "url": "classes/Flow-Parquet-Writer-StatisticsOptions.html#method_pageHeader"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsOptions\u003A\u003ApageIndex\u0028\u0029",
+            "name": "pageIndex",
+            "summary": "A\u0020new\u0020page\u0020index\u0020for\u0020one\u0020column\u0020chunk.",
+            "url": "classes/Flow-Parquet-Writer-StatisticsOptions.html#method_pageIndex"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsTruncation",
+            "name": "StatisticsTruncation",
+            "summary": "arrow\u002Drs\u002060\u0020column\/writer\/mod.rs\u0020truncate_min_value\u0020\/\u0020truncate_max_value.\u0020A\u0020truncated\u0020bound\u0020is\u0020not\u0020exact\u003B\u0020a\u0020bound\nthat\u0020cannot\u0020be\u0020truncated\u0020\u0028or\u0020whose\u0020increment\u0020fails\u0029\u0020is\u0020returned\u0020as\u0020given.",
+            "url": "classes/Flow-Parquet-Writer-StatisticsTruncation.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsTruncation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-StatisticsTruncation.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsTruncation\u003A\u003Amax\u0028\u0029",
+            "name": "max",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-StatisticsTruncation.html#method_max"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsTruncation\u003A\u003Amin\u0028\u0029",
+            "name": "min",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-StatisticsTruncation.html#method_min"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\BooleanValueStorage",
             "name": "BooleanValueStorage",
@@ -8356,6 +11351,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-parquet-binarywriter.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\BloomFilter",
+            "name": "BloomFilter",
+            "summary": "",
+            "url": "namespaces/flow-parquet-bloomfilter.html"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Data",
             "name": "Data",
             "summary": "",
@@ -8371,15 +11371,15 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-parquet-dremel.html"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\Statistics",
-            "name": "Statistics",
-            "summary": "",
-            "url": "namespaces/flow-parquet-dremel-statistics.html"
-        },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\Validator",
             "name": "Validator",
             "summary": "",
             "url": "namespaces/flow-parquet-dremel-validator.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\DSL",
+            "name": "DSL",
+            "summary": "",
+            "url": "namespaces/flow-parquet-dsl.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine",
             "name": "Engine",
@@ -8396,6 +11396,26 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-parquet-exception.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Filter",
+            "name": "Filter",
+            "summary": "",
+            "url": "namespaces/flow-parquet-filter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding",
+            "name": "Binding",
+            "summary": "",
+            "url": "namespaces/flow-parquet-filter-binding.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage",
+            "name": "PreImage",
+            "summary": "",
+            "url": "namespaces/flow-parquet-filter-binding-preimage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation",
+            "name": "Evaluation",
+            "summary": "",
+            "url": "namespaces/flow-parquet-filter-evaluation.html"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile",
             "name": "ParquetFile",
             "summary": "",
@@ -8411,6 +11431,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-parquet-parquetfile-data-converter.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index",
+            "name": "Index",
+            "summary": "",
+            "url": "namespaces/flow-parquet-parquetfile-index.html"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page",
             "name": "Page",
             "summary": "",
@@ -8420,6 +11445,11 @@ Search.appendIndex(
             "name": "Header",
             "summary": "",
             "url": "namespaces/flow-parquet-parquetfile-page-header.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\PageIndex",
+            "name": "PageIndex",
+            "summary": "",
+            "url": "namespaces/flow-parquet-parquetfile-pageindex.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup",
             "name": "RowGroup",
@@ -8440,6 +11470,11 @@ Search.appendIndex(
             "name": "Reader",
             "summary": "",
             "url": "namespaces/flow-parquet-reader.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\Pruning",
+            "name": "Pruning",
+            "summary": "",
+            "url": "namespaces/flow-parquet-reader-pruning.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Thrift",
             "name": "Thrift",

@@ -118,7 +118,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -168,7 +168,7 @@ if the lists are ordered.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_definition_level_histograms">$definition_level_histograms</a>
     <span>
-                        &nbsp;: array&lt;string|int, int&gt;            </span>
+                        &nbsp;: null|array&lt;string|int, int&gt;            </span>
 </dt>
 <dd>Same as repetition_level_histograms except for definitions levels.</dd>
 
@@ -192,15 +192,23 @@ if the lists are ordered.</dd>
 <dd>Two lists containing lower and upper bounds for the values of each page
 determined by the ColumnOrder of the column. These may be the actual
 minimum and maximum values found on a page, but can also be (more compact)
-values that do not exist on a page. For example, instead of storing &quot;&quot;Blart
+values that do not exist on a page. For example, instead of storing &quot;Blart
 Versenwald III&quot;, a writer may set min_values[i]=&quot;B&quot;, max_values[i]=&quot;C&quot;.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_nan_counts">$nan_counts</a>
+    <span>
+                        &nbsp;: null|array&lt;string|int, int&gt;            </span>
+</dt>
+<dd>A list containing the number of NaN values for each page. Only present
+for columns of physical type FLOAT or DOUBLE, or logical type FLOAT16.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_null_counts">$null_counts</a>
     <span>
-                        &nbsp;: array&lt;string|int, int&gt;            </span>
+                        &nbsp;: null|array&lt;string|int, int&gt;            </span>
 </dt>
-<dd>A list containing the number of null values for each page.</dd>
+<dd>A list containing the number of null values for each page</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_null_pages">$null_pages</a>
@@ -216,7 +224,7 @@ corresponding entries in min_values and max_values must be valid.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_repetition_level_histograms">$repetition_level_histograms</a>
     <span>
-                        &nbsp;: array&lt;string|int, int&gt;            </span>
+                        &nbsp;: null|array&lt;string|int, int&gt;            </span>
 </dt>
 <dd>Contains repetition level histograms for each page
 concatenated together.  The repetition_level_histogram field on
@@ -284,7 +292,7 @@ SizeStatistics contains more details.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -294,7 +302,7 @@ SizeStatistics contains more details.</dd>
         <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$_TSPEC</span>
-     = <span class="phpdocumentor-signature__default-value">[1 =&gt; [&#039;var&#039; =&gt; &#039;null_pages&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::BOOL, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::BOOL]], 2 =&gt; [&#039;var&#039; =&gt; &#039;min_values&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRING, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::STRING]], 3 =&gt; [&#039;var&#039; =&gt; &#039;max_values&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRING, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::STRING]], 4 =&gt; [&#039;var&#039; =&gt; &#039;boundary_order&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\BoundaryOrder&#039;], 5 =&gt; [&#039;var&#039; =&gt; &#039;null_counts&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::I64, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::I64]], 6 =&gt; [&#039;var&#039; =&gt; &#039;repetition_level_histograms&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::I64, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::I64]], 7 =&gt; [&#039;var&#039; =&gt; &#039;definition_level_histograms&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::I64, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::I64]]]</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(1 =&gt; array(&#039;var&#039; =&gt; &#039;null_pages&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::BOOL, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::BOOL)), 2 =&gt; array(&#039;var&#039; =&gt; &#039;min_values&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRING, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::STRING)), 3 =&gt; array(&#039;var&#039; =&gt; &#039;max_values&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRING, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::STRING)), 4 =&gt; array(&#039;var&#039; =&gt; &#039;boundary_order&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\BoundaryOrder&#039;), 5 =&gt; array(&#039;var&#039; =&gt; &#039;null_counts&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::I64, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::I64)), 6 =&gt; array(&#039;var&#039; =&gt; &#039;repetition_level_histograms&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::I64, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::I64)), 7 =&gt; array(&#039;var&#039; =&gt; &#039;definition_level_histograms&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::I64, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::I64)), 8 =&gt; array(&#039;var&#039; =&gt; &#039;nan_counts&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::I64, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::I64)))</span></code>
 
     
     
@@ -321,7 +329,7 @@ SizeStatistics contains more details.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -335,7 +343,7 @@ if the lists are ordered.</p>
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$boundary_order</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -362,7 +370,7 @@ if the lists are ordered.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -371,9 +379,9 @@ if the lists are ordered.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">array&lt;string|int, int&gt;</span>
+            <span class="phpdocumentor-signature__type">null|array&lt;string|int, int&gt;</span>
     <span class="phpdocumentor-signature__name">$definition_level_histograms</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -400,7 +408,7 @@ if the lists are ordered.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -437,7 +445,7 @@ if the lists are ordered.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
@@ -447,7 +455,7 @@ if the lists are ordered.</p>
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$max_values</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -474,14 +482,14 @@ if the lists are ordered.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Two lists containing lower and upper bounds for the values of each page
 determined by the ColumnOrder of the column. These may be the actual
 minimum and maximum values found on a page, but can also be (more compact)
-values that do not exist on a page. For example, instead of storing &quot;&quot;Blart
+values that do not exist on a page. For example, instead of storing &quot;Blart
 Versenwald III&quot;, a writer may set min_values[i]=&quot;B&quot;, max_values[i]=&quot;C&quot;.</p>
 
     
@@ -489,11 +497,74 @@ Versenwald III&quot;, a writer may set min_values[i]=&quot;B&quot;, max_values[i
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$min_values</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>Such more compact values must still be valid values within the column's
 logical type. Readers must make sure that list entries are populated before
 using them by inspecting null_pages.</p>
+<p>For columns of physical type FLOAT or DOUBLE, or logical type FLOAT16,
+NaN values are not to be included in these bounds. If all non-null values
+of a page are NaN, then a writer must do the following:</p>
+<ul>
+<li>If the order of this column is TYPE_ORDER, then a column index must
+not be written for this column chunk. While this is unfortunate for
+performance, it is necessary to avoid conflict with legacy files that
+still included NaN in min_values and max_values even if the page had
+non-NaN values. To mitigate this, IEEE754_TOTAL_ORDER is recommended.</li>
+<li>If the order of this column is IEEE754_TOTAL_ORDER, then min_values[i]
+and max_values[i] of that page must be set to the smallest and largest
+NaN values as defined by IEEE 754 total order.</li>
+</ul>
+<p>For columns of physical type INT96, the writer must do the following:</p>
+<ul>
+<li>If the order of this column is not INT96_TIMESTAMP_ORDER, then a column
+index must not be written for this column chunk.</li>
+<li>If the order of this column is INT96_TIMESTAMP_ORDER, the min_values[i]
+and max_values[i] of that page must be set to the smallest and largest
+values as defined by the INT96 chronological timestamp ordering.</li>
+</ul>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_nan_counts">
+        $nan_counts
+        <a href="classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_nan_counts" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">204</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A list containing the number of NaN values for each page. Only present
+for columns of physical type FLOAT or DOUBLE, or logical type FLOAT16.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">null|array&lt;string|int, int&gt;</span>
+    <span class="phpdocumentor-signature__name">$nan_counts</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>If this field is not present, readers MUST assume that there might be
+NaN values in any page.</p>
 </section>
 
     
@@ -520,18 +591,18 @@ using them by inspecting null_pages.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">A list containing the number of null values for each page.</p>
+        <p class="phpdocumentor-summary">A list containing the number of null values for each page</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">array&lt;string|int, int&gt;</span>
+            <span class="phpdocumentor-signature__type">null|array&lt;string|int, int&gt;</span>
     <span class="phpdocumentor-signature__name">$null_counts</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>Writers SHOULD always write this field even if no null values
 are present or the column is not nullable.
@@ -565,7 +636,7 @@ null counts are 0.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -580,7 +651,7 @@ corresponding entries in min_values and max_values must be valid.</p>
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">array&lt;string|int, bool&gt;</span>
     <span class="phpdocumentor-signature__name">$null_pages</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -607,7 +678,7 @@ corresponding entries in min_values and max_values must be valid.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
     </aside>
 
@@ -618,9 +689,9 @@ SizeStatistics contains more details.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">array&lt;string|int, int&gt;</span>
+            <span class="phpdocumentor-signature__type">null|array&lt;string|int, int&gt;</span>
     <span class="phpdocumentor-signature__name">$repetition_level_histograms</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>When present the length should always be (number of pages *
 (max_repetition_level + 1)) elements.</p>
@@ -658,7 +729,7 @@ for the second page.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
     </aside>
 
@@ -702,7 +773,7 @@ for the second page.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">204</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
@@ -736,7 +807,7 @@ for the second page.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">209</span>
+    <span class="phpdocumentor-element-found-in__line">242</span>
 
     </aside>
 
@@ -780,7 +851,7 @@ for the second page.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnindex.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnIndex.php">ColumnIndex.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">354</span>
+    <span class="phpdocumentor-element-found-in__line">384</span>
 
     </aside>
 
@@ -838,6 +909,7 @@ for the second page.</p>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_isValidate">$isValidate</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_max_values">$max_values</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_min_values">$min_values</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_nan_counts">$nan_counts</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_null_counts">$null_counts</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_null_pages">$null_pages</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnIndex.html#property_repetition_level_histograms">$repetition_level_histograms</a></li>

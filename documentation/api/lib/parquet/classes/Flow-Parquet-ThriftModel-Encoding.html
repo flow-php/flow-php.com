@@ -120,7 +120,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-encoding.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php">Encoding.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -148,11 +148,18 @@ enums are also used to specify the encoding of definition and repetition levels.
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-Parquet-ThriftModel-Encoding.html#constant_ALP">ALP</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 10                            </span>
+</dt>
+<dd>Adaptive Lossless floating-Point (ALP) encoding for FLOAT and DOUBLE.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-Encoding.html#constant_BIT_PACKED">BIT_PACKED</a>
     <span>
         &nbsp;: mixed&nbsp;= 4                            </span>
 </dt>
-<dd>Bit packed encoding.  This can only be used if the data has a known max
+<dd>DEPRECATED: Bit packed encoding.  This can only be used if the data has a known max
 width.  Usable for definition/repetition levels encoding.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
@@ -168,7 +175,7 @@ width.  Usable for definition/repetition levels encoding.</dd>
         &nbsp;: mixed&nbsp;= 5                            </span>
 </dt>
 <dd>Delta encoding for integers. This can be used for int columns and works best
-on sorted data.</dd>
+on sorted data</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-Encoding.html#constant_DELTA_BYTE_ARRAY">DELTA_BYTE_ARRAY</a>
@@ -183,7 +190,7 @@ on sorted data.</dd>
         &nbsp;: mixed&nbsp;= 6                            </span>
 </dt>
 <dd>Encoding for byte arrays to separate the length values and the data. The lengths
-are encoded using DELTA_BINARY_PACKED.</dd>
+are encoded using DELTA_BINARY_PACKED</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-Encoding.html#constant_PLAIN">PLAIN</a>
@@ -197,7 +204,7 @@ are encoded using DELTA_BINARY_PACKED.</dd>
     <span>
         &nbsp;: mixed&nbsp;= 2                            </span>
 </dt>
-<dd>Deprecated: Dictionary encoding. The values in the dictionary are encoded in the
+<dd>DEPRECATED: Dictionary encoding. The values in the dictionary are encoded in the
 plain type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
@@ -206,14 +213,14 @@ plain type.</dd>
         &nbsp;: mixed&nbsp;= 3                            </span>
 </dt>
 <dd>Group packed run length encoding. Usable for definition/repetition levels
-encoding and Booleans (on one bit: 0 is false; 1 is true.).</dd>
+encoding and Booleans (on one bit: 0 is false; 1 is true.)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-Encoding.html#constant_RLE_DICTIONARY">RLE_DICTIONARY</a>
     <span>
         &nbsp;: mixed&nbsp;= 8                            </span>
 </dt>
-<dd>Dictionary encoding: the ids are encoded using the RLE encoding.</dd>
+<dd>Dictionary encoding: the ids are encoded using the RLE encoding</dd>
 
     </dl>
 
@@ -243,6 +250,42 @@ encoding and Booleans (on one bit: 0 is false; 1 is true.).</dd>
 
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ALP">
+        ALP
+        <a href="classes/Flow-Parquet-ThriftModel-Encoding.html#constant_ALP" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-encoding.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php">Encoding.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">102</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Adaptive Lossless floating-Point (ALP) encoding for FLOAT and DOUBLE.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">ALP</span>
+    = <span class="phpdocumentor-signature__default-value">10</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><p>Losslessly converts decimal-like floating-point values to integers via
+decimal scaling, then applies Frame of Reference (FOR) encoding and
+bit-packing; values that cannot be converted losslessly are stored as
+exceptions. See Encodings.md for the detailed specification.</p>
+</section>
+
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_BIT_PACKED">
         BIT_PACKED
         <a href="classes/Flow-Parquet-ThriftModel-Encoding.html#constant_BIT_PACKED" class="headerlink"><i class="fas fa-link"></i></a>
@@ -252,11 +295,11 @@ encoding and Booleans (on one bit: 0 is false; 1 is true.).</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-encoding.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php">Encoding.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Bit packed encoding.  This can only be used if the data has a known max
+        <p class="phpdocumentor-summary">DEPRECATED: Bit packed encoding.  This can only be used if the data has a known max
 width.  Usable for definition/repetition levels encoding.</p>
 
     
@@ -268,7 +311,9 @@ width.  Usable for definition/repetition levels encoding.</p>
 </code>
 
 
-    
+        <section class="phpdocumentor-description"><p>Superseded by RLE (which is a hybrid of RLE and bit packing); see Encodings.md.</p>
+</section>
+
     
     
 
@@ -284,7 +329,7 @@ width.  Usable for definition/repetition levels encoding.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-encoding.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php">Encoding.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -323,12 +368,12 @@ Support for INT32, INT64 and FIXED_LEN_BYTE_ARRAY added in 2.11.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-encoding.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php">Encoding.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Delta encoding for integers. This can be used for int columns and works best
-on sorted data.</p>
+on sorted data</p>
 
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -355,7 +400,7 @@ on sorted data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-encoding.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php">Encoding.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -388,12 +433,12 @@ on sorted data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-encoding.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php">Encoding.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Encoding for byte arrays to separate the length values and the data. The lengths
-are encoded using DELTA_BINARY_PACKED.</p>
+are encoded using DELTA_BINARY_PACKED</p>
 
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -420,7 +465,7 @@ are encoded using DELTA_BINARY_PACKED.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-encoding.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php">Encoding.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -459,11 +504,11 @@ FIXED_LEN_BYTE_ARRAY - Just the bytes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-encoding.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php">Encoding.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Deprecated: Dictionary encoding. The values in the dictionary are encoded in the
+        <p class="phpdocumentor-summary">DEPRECATED: Dictionary encoding. The values in the dictionary are encoded in the
 plain type.</p>
 
     
@@ -475,8 +520,8 @@ plain type.</p>
 </code>
 
 
-        <section class="phpdocumentor-description"><p>in a data page use RLE_DICTIONARY instead.
-in a Dictionary page use PLAIN instead.</p>
+        <section class="phpdocumentor-description"><p>For a data page use RLE_DICTIONARY instead.
+For a Dictionary page use PLAIN instead.</p>
 </section>
 
     
@@ -494,12 +539,12 @@ in a Dictionary page use PLAIN instead.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-encoding.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php">Encoding.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Group packed run length encoding. Usable for definition/repetition levels
-encoding and Booleans (on one bit: 0 is false; 1 is true.).</p>
+encoding and Booleans (on one bit: 0 is false; 1 is true.)</p>
 
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -526,11 +571,11 @@ encoding and Booleans (on one bit: 0 is false; 1 is true.).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-encoding.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php">Encoding.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Dictionary encoding: the ids are encoded using the RLE encoding.</p>
+        <p class="phpdocumentor-summary">Dictionary encoding: the ids are encoded using the RLE encoding</p>
 
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -573,7 +618,7 @@ encoding and Booleans (on one bit: 0 is false; 1 is true.).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-encoding.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Encoding.php">Encoding.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -583,7 +628,7 @@ encoding and Booleans (on one bit: 0 is false; 1 is true.).</p>
         <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$__names</span>
-     = <span class="phpdocumentor-signature__default-value">[0 =&gt; &#039;PLAIN&#039;, 2 =&gt; &#039;PLAIN_DICTIONARY&#039;, 3 =&gt; &#039;RLE&#039;, 4 =&gt; &#039;BIT_PACKED&#039;, 5 =&gt; &#039;DELTA_BINARY_PACKED&#039;, 6 =&gt; &#039;DELTA_LENGTH_BYTE_ARRAY&#039;, 7 =&gt; &#039;DELTA_BYTE_ARRAY&#039;, 8 =&gt; &#039;RLE_DICTIONARY&#039;, 9 =&gt; &#039;BYTE_STREAM_SPLIT&#039;]</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(0 =&gt; &#039;PLAIN&#039;, 2 =&gt; &#039;PLAIN_DICTIONARY&#039;, 3 =&gt; &#039;RLE&#039;, 4 =&gt; &#039;BIT_PACKED&#039;, 5 =&gt; &#039;DELTA_BINARY_PACKED&#039;, 6 =&gt; &#039;DELTA_LENGTH_BYTE_ARRAY&#039;, 7 =&gt; &#039;DELTA_BYTE_ARRAY&#039;, 8 =&gt; &#039;RLE_DICTIONARY&#039;, 9 =&gt; &#039;BYTE_STREAM_SPLIT&#039;, 10 =&gt; &#039;ALP&#039;)</span></code>
 
     
     
@@ -615,6 +660,7 @@ encoding and Booleans (on one bit: 0 is false; 1 is true.).</p>
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-Parquet-ThriftModel-Encoding.html#constant_ALP">ALP</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-Encoding.html#constant_BIT_PACKED">BIT_PACKED</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-Encoding.html#constant_BYTE_STREAM_SPLIT">BYTE_STREAM_SPLIT</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-Encoding.html#constant_DELTA_BINARY_PACKED">DELTA_BINARY_PACKED</a></li>

@@ -122,15 +122,35 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnReader.php"><a href="files/src-lib-parquet-src-flow-parquet-reader-columnreader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnReader.php">ColumnReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">One column&#039;s values across the row groups of a file, from $offset for at most $limit rows.</p>
+            <p class="phpdocumentor-summary">One column&#039;s values in a row group, the selected rows only.</p>
 
 
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Parquet-Reader-ColumnReader.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>DecodedPage = array{values: list<mixed>, definitionLevels: array<int>}</p>
+</section>
+
+                                    </dd>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>DecodedChunk = array{pages: array&lt;int, DecodedPage&gt;, dictionary: ?Dictionary}</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
     
     
@@ -156,10 +176,20 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Parquet-Reader-ColumnReader.html#method_read">read()</a>
+    <a class="" href="classes/Flow-Parquet-Reader-ColumnReader.html#method_readPhysical">readPhysical()</a>
+    <span>
+                                &nbsp;: <abbr title="array{chunk: \Flow\Parquet\Reader\DecodedChunk, values: list}">DecodedChunk, values: list}</abbr>    </span>
+</dt>
+<dd>The leaf&#039;s undecoded physical values at the rows $selection selects, null where the leaf or an ancestor is null,
+and the whole decoded pages it read, keyed by the row of the group each starts at, with their dictionary, for
+readRowGroup() to serve without reading them again.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Reader-ColumnReader.html#method_readRowGroup">readRowGroup()</a>
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>    </span>
 </dt>
+<dd>The column&#039;s values at the rows $selection selects, row 0 being the group&#039;s first row.</dd>
 
     </dl>
 
@@ -189,14 +219,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnReader.php"><a href="files/src-lib-parquet-src-flow-parquet-reader-columnreader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnReader.php">ColumnReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Reader-ColumnChunkReader.html"><abbr title="\Flow\Parquet\Reader\ColumnChunkReader">ColumnChunkReader</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$chunks</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Dremel-DremelAssembler.html"><abbr title="\Flow\Parquet\Dremel\DremelAssembler">DremelAssembler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$assembler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Reader-SelectedPages.html"><abbr title="\Flow\Parquet\Reader\SelectedPages">SelectedPages</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pages</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Dremel-DremelAssembler.html"><abbr title="\Flow\Parquet\Dremel\DremelAssembler">DremelAssembler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$assembler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -205,8 +235,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$chunks</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Reader-ColumnChunkReader.html"><abbr title="\Flow\Parquet\Reader\ColumnChunkReader">ColumnChunkReader</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$pages</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Reader-SelectedPages.html"><abbr title="\Flow\Parquet\Reader\SelectedPages">SelectedPages</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -232,22 +262,109 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_read">
-        read()
-        <a href="classes/Flow-Parquet-Reader-ColumnReader.html#method_read" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_readPhysical">
+        readPhysical()
+        <a href="classes/Flow-Parquet-Reader-ColumnReader.html#method_readPhysical" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnReader.php"><a href="files/src-lib-parquet-src-flow-parquet-reader-columnreader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnReader.php">ColumnReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The leaf&#039;s undecoded physical values at the rows $selection selects, null where the leaf or an ancestor is null,
+and the whole decoded pages it read, keyed by the row of the group each starts at, with their dictionary, for
+readRowGroup() to serve without reading them again.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">read</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-Column.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\Column">Column</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Metadata.html"><abbr title="\Flow\Parquet\ParquetFile\Metadata">Metadata</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">readPhysical</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$leaf</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-RowGroup.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroup">RowGroup</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowGroup</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$group</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Reader-RowSelection.html"><abbr title="\Flow\Parquet\Reader\RowSelection">RowSelection</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$selection</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Index-Indexes.html"><abbr title="\Flow\Parquet\ParquetFile\Index\Indexes">Indexes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$indexes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="array{chunk: \Flow\Parquet\Reader\DecodedChunk, values: list}">DecodedChunk, values: list}</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$leaf</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$rowGroup</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-RowGroup.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroup">RowGroup</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$group</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stream</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$selection</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Reader-RowSelection.html"><abbr title="\Flow\Parquet\Reader\RowSelection">RowSelection</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$indexes</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Index-Indexes.html"><abbr title="\Flow\Parquet\ParquetFile\Index\Indexes">Indexes</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="array{chunk: \Flow\Parquet\Reader\DecodedChunk, values: list}">DecodedChunk, values: list}</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_readRowGroup">
+        readRowGroup()
+        <a href="classes/Flow-Parquet-Reader-ColumnReader.html#method_readRowGroup" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnReader.php"><a href="files/src-lib-parquet-src-flow-parquet-reader-columnreader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnReader.php">ColumnReader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The column&#039;s values at the rows $selection selects, row 0 being the group&#039;s first row.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">readRowGroup</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-Column.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\Column">Column</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-RowGroup.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroup">RowGroup</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowGroup</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$group</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Reader-RowSelection.html"><abbr title="\Flow\Parquet\Reader\RowSelection">RowSelection</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$selection</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Index-Indexes.html"><abbr title="\Flow\Parquet\ParquetFile\Index\Indexes">Indexes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$indexes</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, <abbr title="\Flow\Parquet\Reader\DecodedChunk">DecodedChunk</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$decoded</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -263,8 +380,15 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$metadata</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Metadata.html"><abbr title="\Flow\Parquet\ParquetFile\Metadata">Metadata</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$rowGroup</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-RowGroup.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroup">RowGroup</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$group</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -277,18 +401,27 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
+                <span class="phpdocumentor-argument-list__argument__name">$selection</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Reader-RowSelection.html"><abbr title="\Flow\Parquet\Reader\RowSelection">RowSelection</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$offset</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
+                <span class="phpdocumentor-argument-list__argument__name">$indexes</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Index-Indexes.html"><abbr title="\Flow\Parquet\ParquetFile\Index\Indexes">Indexes</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$decoded</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, <abbr title="\Flow\Parquet\Reader\DecodedChunk">DecodedChunk</abbr>&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>chunks readPhysical() returned, by leaf flat path</p>
+</section>
+
             </dd>
             </dl>
 
@@ -325,7 +458,8 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Parquet-Reader-ColumnReader.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-Parquet-Reader-ColumnReader.html#method_read">read()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Reader-ColumnReader.html#method_readPhysical">readPhysical()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Reader-ColumnReader.html#method_readRowGroup">readRowGroup()</a></li>
                                     </ul>
             </li>
                     </ul>

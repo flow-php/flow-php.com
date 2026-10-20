@@ -197,7 +197,7 @@ the first one past the offset.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Extractor/File/FileBatches.php"><a href="files/src-core-etl-src-flow-etl-extractor-file-filebatches.html"><abbr title="src/core/etl/src/Flow/ETL/Extractor/File/FileBatches.php">FileBatches.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -213,7 +213,9 @@ the first one past the offset.</p>
         <section class="phpdocumentor-description"><p>The return value is the rows of the window's offset this file consumed. A format that cannot skip rows is given
 offset 0 and a limit that counts the offset still to skip, and returns 0: FileReadLoop slices the offset from its
 rows. An OffsetSkippingFileBatches is given the offset and returns the rows it skipped. The limit is a hint a
-format may exceed - FileReadLoop trims what goes past it.</p>
+format may exceed - FileReadLoop trims what goes past it - and null when the read carries conjuncts, whose rows
+FileReadLoop counts. FileReadLoop applies the conjuncts to every row returned; a format given them when built may
+skip what they prove cannot match.</p>
 <p>A file's own resources are released by the generator (finally). Resources that span files - a kept first file,
 an inference sample - belong to the per-read object; the extractor that built it calls its close() in a finally
 (ParquetFileBatches, ExcelFileBatches).</p>

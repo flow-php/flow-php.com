@@ -118,15 +118,20 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">New page format allowing reading levels without decompressing the data
+            <p class="phpdocumentor-summary">Alternate page format allowing reading levels without decompressing the data
 Repetition and definition levels are uncompressed
-The remaining section containing the data is compressed if is_compressed is true.</p>
+The remaining section containing the data is compressed if is_compressed is true</p>
 
 
+    <section class="phpdocumentor-description"><p>Implementation note - this header is not necessarily a strict improvement over
+<code class="prettyprint">DataPageHeader</code> (in particular the original header might provide better compression
+in some scenarios). Page indexes require pages to start and end at row boundaries,
+regardless of which page header is used.</p>
+</section>
 
 
 
@@ -157,14 +162,14 @@ The remaining section containing the data is compressed if is_compressed is true
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Length of the definition levels.</dd>
+<dd>Length of the definition levels</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_encoding">$encoding</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Encoding used for data in this page *.</dd>
+<dd>Encoding used for data in this page *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_is_compressed">$is_compressed</a>
@@ -200,21 +205,21 @@ split across page boundaries when using V2 data pages.</dd>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Number of values, including NULLs, in this data page. *.</dd>
+<dd>Number of values, including NULLs, in this data page. *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_repetition_levels_byte_length">$repetition_levels_byte_length</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Length of the repetition levels.</dd>
+<dd>Length of the repetition levels</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-DataPageHeaderV2.html#property_statistics">$statistics</a>
     <span>
-                        &nbsp;: <a href="classes/Flow-Parquet-ThriftModel-Statistics.html"><abbr title="\Flow\Parquet\ThriftModel\Statistics">Statistics</abbr></a>            </span>
+                        &nbsp;: null|<a href="classes/Flow-Parquet-ThriftModel-Statistics.html"><abbr title="\Flow\Parquet\ThriftModel\Statistics">Statistics</abbr></a>            </span>
 </dt>
-<dd>Optional statistics for the data in this page *.</dd>
+<dd>Optional statistics for the data in this page *</dd>
 
     </dl>
 
@@ -278,7 +283,7 @@ split across page boundaries when using V2 data pages.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -288,7 +293,7 @@ split across page boundaries when using V2 data pages.</dd>
         <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$_TSPEC</span>
-     = <span class="phpdocumentor-signature__default-value">[1 =&gt; [&#039;var&#039; =&gt; &#039;num_values&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 2 =&gt; [&#039;var&#039; =&gt; &#039;num_nulls&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 3 =&gt; [&#039;var&#039; =&gt; &#039;num_rows&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 4 =&gt; [&#039;var&#039; =&gt; &#039;encoding&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\Encoding&#039;], 5 =&gt; [&#039;var&#039; =&gt; &#039;definition_levels_byte_length&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 6 =&gt; [&#039;var&#039; =&gt; &#039;repetition_levels_byte_length&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 7 =&gt; [&#039;var&#039; =&gt; &#039;is_compressed&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::BOOL], 8 =&gt; [&#039;var&#039; =&gt; &#039;statistics&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\Statistics&#039;]]</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(1 =&gt; array(&#039;var&#039; =&gt; &#039;num_values&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 2 =&gt; array(&#039;var&#039; =&gt; &#039;num_nulls&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 3 =&gt; array(&#039;var&#039; =&gt; &#039;num_rows&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 4 =&gt; array(&#039;var&#039; =&gt; &#039;encoding&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\Encoding&#039;), 5 =&gt; array(&#039;var&#039; =&gt; &#039;definition_levels_byte_length&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 6 =&gt; array(&#039;var&#039; =&gt; &#039;repetition_levels_byte_length&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 7 =&gt; array(&#039;var&#039; =&gt; &#039;is_compressed&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::BOOL), 8 =&gt; array(&#039;var&#039; =&gt; &#039;statistics&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\Statistics&#039;))</span></code>
 
     
     
@@ -315,18 +320,18 @@ split across page boundaries when using V2 data pages.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Length of the definition levels.</p>
+        <p class="phpdocumentor-summary">Length of the definition levels</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$definition_levels_byte_length</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -353,18 +358,18 @@ split across page boundaries when using V2 data pages.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Encoding used for data in this page *.</p>
+        <p class="phpdocumentor-summary">Encoding used for data in this page *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$encoding</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -391,7 +396,7 @@ split across page boundaries when using V2 data pages.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -405,9 +410,9 @@ split across page boundaries when using V2 data pages.</dd>
      = <span class="phpdocumentor-signature__default-value">true</span></code>
 
         <section class="phpdocumentor-description"><p>Which means the section of the page between
-definition_levels_byte_length + repetition_levels_byte_length + 1 and compressed_page_size (included)
+definition_levels_byte_length + repetition_levels_byte_length and compressed_page_size (included)
 is compressed with the compression_codec.
-If missing it is considered compressed.</p>
+If missing it is considered compressed</p>
 </section>
 
     
@@ -434,7 +439,7 @@ If missing it is considered compressed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -471,7 +476,7 @@ If missing it is considered compressed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -482,9 +487,9 @@ If missing it is considered compressed.</p>
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$num_nulls</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-        <section class="phpdocumentor-description"><p>Number of non-null = num_values - num_nulls which is also the number of values in the data section *.</p>
+        <section class="phpdocumentor-description"><p>Number of non-null = num_values - num_nulls which is also the number of values in the data section *</p>
 </section>
 
     
@@ -511,7 +516,7 @@ If missing it is considered compressed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -524,7 +529,7 @@ split across page boundaries when using V2 data pages.</p>
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$num_rows</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -551,18 +556,18 @@ split across page boundaries when using V2 data pages.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Number of values, including NULLs, in this data page. *.</p>
+        <p class="phpdocumentor-summary">Number of values, including NULLs, in this data page. *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$num_values</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -589,18 +594,18 @@ split across page boundaries when using V2 data pages.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Length of the repetition levels.</p>
+        <p class="phpdocumentor-summary">Length of the repetition levels</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$repetition_levels_byte_length</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -627,18 +632,18 @@ split across page boundaries when using V2 data pages.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Optional statistics for the data in this page *.</p>
+        <p class="phpdocumentor-summary">Optional statistics for the data in this page *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Parquet-ThriftModel-Statistics.html"><abbr title="\Flow\Parquet\ThriftModel\Statistics">Statistics</abbr></a></span>
+            <span class="phpdocumentor-signature__type">null|<a href="classes/Flow-Parquet-ThriftModel-Statistics.html"><abbr title="\Flow\Parquet\ThriftModel\Statistics">Statistics</abbr></a></span>
     <span class="phpdocumentor-signature__name">$statistics</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -670,7 +675,7 @@ split across page boundaries when using V2 data pages.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -714,7 +719,7 @@ split across page boundaries when using V2 data pages.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -748,7 +753,7 @@ split across page boundaries when using V2 data pages.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">176</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
@@ -792,7 +797,7 @@ split across page boundaries when using V2 data pages.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-datapageheaderv2.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/DataPageHeaderV2.php">DataPageHeaderV2.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">270</span>
+    <span class="phpdocumentor-element-found-in__line">252</span>
 
     </aside>
 

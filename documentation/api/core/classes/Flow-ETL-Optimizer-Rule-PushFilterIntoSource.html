@@ -146,13 +146,14 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Optimizer/Rule/PushFilterIntoSource.php"><a href="files/src-core-etl-src-flow-etl-optimizer-rule-pushfilterintosource.html"><abbr title="src/core/etl/src/Flow/ETL/Optimizer/Rule/PushFilterIntoSource.php">PushFilterIntoSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Evaluate a partition-only predicate once per FILE instead of once per row: the file never opens. The Filter node
-stays, so a source that lists more than the pushed filter admits still returns the right rows. The parts of an AND
-that read only partition columns are pushed one by one; an OR is pushed only as a whole.</p>
+            <p class="phpdocumentor-summary">Moves every deterministic part of an AND into the file source, which returns only the rows matching it; a
+partition-only part is also pushed as a path filter, so a file it rejects is never listed. A pushed part leaves its
+Filter node, and a node left with no part is removed. An OR is pushed only as a whole. Nodes are pushed leaf first;
+a part kept in a node stops the push of every part after it and of every node above it.</p>
 
 
 
@@ -217,7 +218,7 @@ that read only partition columns are pushed one by one; an OR is pushed only as 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Optimizer/Rule/PushFilterIntoSource.php"><a href="files/src-core-etl-src-flow-etl-optimizer-rule-pushfilterintosource.html"><abbr title="src/core/etl/src/Flow/ETL/Optimizer/Rule/PushFilterIntoSource.php">PushFilterIntoSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 

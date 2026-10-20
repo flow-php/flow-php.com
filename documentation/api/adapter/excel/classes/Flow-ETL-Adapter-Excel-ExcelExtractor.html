@@ -114,7 +114,7 @@
     
             <span class="phpdocumentor-element__extends">
             uses
-                            <abbr title="\Flow\ETL\Extractor\Batches">Batches</abbr>,                             <abbr title="\Flow\ETL\Extractor\File\FileReading">FileReading</abbr>                    </span>
+                            <abbr title="\Flow\ETL\Extractor\Batches">Batches</abbr>,                             <abbr title="\Flow\ETL\Extractor\File\FileReading">FileReading</abbr>,                             <abbr title="\Flow\ETL\Extractor\File\Scanning">Scanning</abbr>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -175,12 +175,6 @@
 shared-strings cache leaves its temp folder behind until a reader closes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_extract">extract()</a>
-    <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;<abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr>|null, void&gt;    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_inferSchema">inferSchema()</a>
     <span>
                                 &nbsp;: static    </span>
@@ -196,6 +190,12 @@ shared-strings cache leaves its temp folder behind until a reader closes.</dd>
     <a class="" href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_partitionSchema">partitionSchema()</a>
     <span>
                                 &nbsp;: <abbr title="\Flow\ETL\Schema">Schema</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_scan">scan()</a>
+    <span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;<abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr>|null, void&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -282,7 +282,7 @@ read every row of every file: OpenSpout discards the row bound of a sheet&#039;s
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -333,7 +333,7 @@ read every row of every file: OpenSpout discards the row bound of a sheet&#039;s
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -361,68 +361,6 @@ shared-strings cache leaves its temp folder behind until a reader closes.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_extract">
-        extract()
-        <a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_extract" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">124</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">extract</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pathFilter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Path\Filter\OnlyFiles">OnlyFiles</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;<abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr>|null, void&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$context</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$pathFilter</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">new <abbr title="\Flow\Filesystem\Path\Filter\OnlyFiles">OnlyFiles</abbr>()</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;<abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr>|null, void&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_inferSchema">
         inferSchema()
         <a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_inferSchema" class="headerlink"><i class="fas fa-link"></i></a>
@@ -431,7 +369,7 @@ shared-strings cache leaves its temp folder behind until a reader closes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -479,7 +417,7 @@ shared-strings cache leaves its temp folder behind until a reader closes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -517,7 +455,7 @@ shared-strings cache leaves its temp folder behind until a reader closes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">208</span>
 
     </aside>
 
@@ -547,6 +485,61 @@ shared-strings cache leaves its temp folder behind until a reader closes.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_scan">
+        scan()
+        <a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_scan" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">125</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">scan</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Extractor\File\FileScan">FileScan</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scan</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;<abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr>|null, void&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$context</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\FlowContext">FlowContext</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$scan</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Extractor\File\FileScan">FileScan</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;<abbr title="\Flow\ETL\Extractor\Signal">Signal</abbr>|null, void&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_schema">
         schema()
         <a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_schema" class="headerlink"><i class="fas fa-link"></i></a>
@@ -555,7 +548,7 @@ shared-strings cache leaves its temp folder behind until a reader closes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -593,7 +586,7 @@ shared-strings cache leaves its temp folder behind until a reader closes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">213</span>
 
     </aside>
 
@@ -631,7 +624,7 @@ shared-strings cache leaves its temp folder behind until a reader closes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">221</span>
+    <span class="phpdocumentor-element-found-in__line">222</span>
 
     </aside>
 
@@ -671,7 +664,7 @@ read every row of every file: OpenSpout discards the row bound of a sheet&#039;s
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">241</span>
+    <span class="phpdocumentor-element-found-in__line">242</span>
 
     </aside>
 
@@ -719,7 +712,7 @@ read every row of every file: OpenSpout discards the row bound of a sheet&#039;s
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">249</span>
+    <span class="phpdocumentor-element-found-in__line">250</span>
 
     </aside>
 
@@ -767,7 +760,7 @@ read every row of every file: OpenSpout discards the row bound of a sheet&#039;s
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">257</span>
+    <span class="phpdocumentor-element-found-in__line">258</span>
 
     </aside>
 
@@ -815,7 +808,7 @@ read every row of every file: OpenSpout discards the row bound of a sheet&#039;s
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">265</span>
+    <span class="phpdocumentor-element-found-in__line">266</span>
 
     </aside>
 
@@ -863,7 +856,7 @@ read every row of every file: OpenSpout discards the row bound of a sheet&#039;s
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">273</span>
+    <span class="phpdocumentor-element-found-in__line">274</span>
 
     </aside>
 
@@ -911,7 +904,7 @@ read every row of every file: OpenSpout discards the row bound of a sheet&#039;s
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-excelextractor.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/ExcelExtractor.php">ExcelExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">280</span>
+    <span class="phpdocumentor-element-found-in__line">281</span>
 
     </aside>
 
@@ -969,10 +962,10 @@ read every row of every file: OpenSpout discards the row bound of a sheet&#039;s
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method___destruct">__destruct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_extract">extract()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_inferSchema">inferSchema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_isRepeatable">isRepeatable()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_partitionSchema">partitionSchema()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_scan">scan()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_schema">schema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_source">source()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-ExcelExtractor.html#method_statistics">statistics()</a></li>

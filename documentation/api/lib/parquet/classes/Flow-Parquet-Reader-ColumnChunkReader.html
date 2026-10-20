@@ -122,7 +122,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnChunkReader.php"><a href="files/src-lib-parquet-src-flow-parquet-reader-columnchunkreader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnChunkReader.php">ColumnChunkReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -157,8 +157,12 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Reader-ColumnChunkReader.html#method_read">read()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-Parquet-Dremel-ColumnData-ReadFlatColumnValues.html"><abbr title="\Flow\Parquet\Dremel\ColumnData\ReadFlatColumnValues">ReadFlatColumnValues</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;mixed, <a href="classes/Flow-Parquet-ParquetFile-Page-Dictionary.html"><abbr title="\Flow\Parquet\ParquetFile\Page\Dictionary">Dictionary</abbr></a>|null&gt;    </span>
 </dt>
+<dd>The chunk&#039;s data pages keyed by the row of the row group each starts at: the $pages of $offsetIndex, one
+SourceStream::read per run of adjacent pages, or every page without an offset index. The dictionary is read from
+the chunk&#039;s start up to the first indexed page, wherever `dictionary_page_offset` points (PARQUET-816), unless
+$dictionary is given. Returns the dictionary the pages were decoded with.</dd>
 
     </dl>
 
@@ -188,7 +192,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnChunkReader.php"><a href="files/src-lib-parquet-src-flow-parquet-reader-columnchunkreader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnChunkReader.php">ColumnChunkReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -239,14 +243,18 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnChunkReader.php"><a href="files/src-lib-parquet-src-flow-parquet-reader-columnchunkreader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Reader/ColumnChunkReader.php">ColumnChunkReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The chunk&#039;s data pages keyed by the row of the row group each starts at: the $pages of $offsetIndex, one
+SourceStream::read per run of adjacent pages, or every page without an offset index. The dictionary is read from
+the chunk&#039;s start up to the first indexed page, wherever `dictionary_page_offset` points (PARQUET-816), unless
+$dictionary is given. Returns the dictionary the pages were decoded with.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">read</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroup\ColumnChunk">ColumnChunk</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnChunk</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-Parquet-Dremel-ColumnData-ReadFlatColumnValues.html"><abbr title="\Flow\Parquet\Dremel\ColumnData\ReadFlatColumnValues">ReadFlatColumnValues</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">read</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroup\ColumnChunk">ColumnChunk</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnChunk</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-FlatColumn.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\FlatColumn">FlatColumn</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\SourceStream">SourceStream</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-PageIndex-OffsetIndex.html"><abbr title="\Flow\Parquet\ParquetFile\PageIndex\OffsetIndex">OffsetIndex</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offsetIndex</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pages</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Page-Dictionary.html"><abbr title="\Flow\Parquet\ParquetFile\Page\Dictionary">Dictionary</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dictionary</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;mixed, <a href="classes/Flow-Parquet-ParquetFile-Page-Dictionary.html"><abbr title="\Flow\Parquet\ParquetFile\Page\Dictionary">Dictionary</abbr></a>|null&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -275,6 +283,29 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$offsetIndex</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-PageIndex-OffsetIndex.html"><abbr title="\Flow\Parquet\ParquetFile\PageIndex\OffsetIndex">OffsetIndex</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$pages</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, int&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>ascending positions in $offsetIndex</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$dictionary</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Page-Dictionary.html"><abbr title="\Flow\Parquet\ParquetFile\Page\Dictionary">Dictionary</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -283,7 +314,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-Parquet-Dremel-ColumnData-ReadFlatColumnValues.html"><abbr title="\Flow\Parquet\Dremel\ColumnData\ReadFlatColumnValues">ReadFlatColumnValues</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;mixed, <a href="classes/Flow-Parquet-ParquetFile-Page-Dictionary.html"><abbr title="\Flow\Parquet\ParquetFile\Page\Dictionary">Dictionary</abbr></a>|null&gt;</span>
             </section>
 
 </article>

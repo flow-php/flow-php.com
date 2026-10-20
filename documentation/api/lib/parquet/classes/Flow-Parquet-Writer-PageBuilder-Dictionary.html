@@ -160,6 +160,12 @@
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-Parquet-Writer-PageBuilder-Dictionary.html#property_keys">$keys</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+
     </dl>
 
 <h4 id="toc-methods">
@@ -204,7 +210,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageBuilder/Dictionary.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagebuilder-dictionary.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageBuilder/Dictionary.php">Dictionary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
@@ -241,7 +247,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageBuilder/Dictionary.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagebuilder-dictionary.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageBuilder/Dictionary.php">Dictionary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -252,6 +258,43 @@
             <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$indices</span>
     </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_keys">
+        $keys
+        <a href="classes/Flow-Parquet-Writer-PageBuilder-Dictionary.html#property_keys" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageBuilder/Dictionary.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagebuilder-dictionary.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageBuilder/Dictionary.php">Dictionary.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">17</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$keys</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -283,14 +326,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/PageBuilder/Dictionary.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-pagebuilder-dictionary.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/PageBuilder/Dictionary.php">Dictionary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dictionary</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$indices</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dictionary</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$indices</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int|string, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keys</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -310,7 +353,18 @@
                 : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, int&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>the indices of the values the dictionary was last extended with</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$keys</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int|string, int&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>each entry's lookup key to its index</p>
+</section>
+
             </dd>
             </dl>
 
@@ -344,6 +398,7 @@
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-Parquet-Writer-PageBuilder-Dictionary.html#property_dictionary">$dictionary</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Writer-PageBuilder-Dictionary.html#property_indices">$indices</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-Writer-PageBuilder-Dictionary.html#property_keys">$keys</a></li>
                                             </ul>
                 </li>
             

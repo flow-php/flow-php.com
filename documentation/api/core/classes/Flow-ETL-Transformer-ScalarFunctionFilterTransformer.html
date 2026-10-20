@@ -145,7 +145,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Transformer/ScalarFunctionFilterTransformer.php"><a href="files/src-core-etl-src-flow-etl-transformer-scalarfunctionfiltertransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/ScalarFunctionFilterTransformer.php">ScalarFunctionFilterTransformer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -239,7 +239,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Transformer/ScalarFunctionFilterTransformer.php"><a href="files/src-core-etl-src-flow-etl-transformer-scalarfunctionfiltertransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/ScalarFunctionFilterTransformer.php">ScalarFunctionFilterTransformer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -281,14 +281,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Transformer/ScalarFunctionFilterTransformer.php"><a href="files/src-core-etl-src-flow-etl-transformer-scalarfunctionfiltertransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/ScalarFunctionFilterTransformer.php">ScalarFunctionFilterTransformer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$function</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resolved</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$function</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Function-Evaluation-Filter.html"><abbr title="\Flow\ETL\Function\Evaluation\Filter">Filter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -304,11 +304,11 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$resolved</span>
-                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-Function-ScalarFunction.html"><abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$filter</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-Function-Evaluation-Filter.html"><abbr title="\Flow\ETL\Function\Evaluation\Filter">Filter</abbr></a></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>the predicate resolved against the bound schema; only bind() sets it</p>
+                    <section class="phpdocumentor-description"><p>the predicate bound to the input schema; only bind() sets it</p>
 </section>
 
             </dd>
@@ -334,7 +334,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Transformer/ScalarFunctionFilterTransformer.php"><a href="files/src-core-etl-src-flow-etl-transformer-scalarfunctionfiltertransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/ScalarFunctionFilterTransformer.php">ScalarFunctionFilterTransformer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -359,6 +359,20 @@
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="method_bind_tags">
+        Tags
+        <a href="classes/Flow-ETL-Transformer-ScalarFunctionFilterTransformer.html#method_bind_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Exception-InvalidArgumentException.html"><abbr title="\Flow\ETL\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></span>
+                                                                                    
+                                    </dd>
+                        </dl>
 
         
     
@@ -382,7 +396,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Transformer/ScalarFunctionFilterTransformer.php"><a href="files/src-core-etl-src-flow-etl-transformer-scalarfunctionfiltertransformer.html"><abbr title="src/core/etl/src/Flow/ETL/Transformer/ScalarFunctionFilterTransformer.php">ScalarFunctionFilterTransformer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 

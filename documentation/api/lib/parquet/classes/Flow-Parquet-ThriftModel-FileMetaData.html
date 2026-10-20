@@ -118,11 +118,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Description for file metadata.</p>
+            <p class="phpdocumentor-summary">Description for file metadata</p>
 
 
 
@@ -153,19 +153,19 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_column_orders">$column_orders</a>
     <span>
-                        &nbsp;: array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html"><abbr title="\Flow\Parquet\ThriftModel\ColumnOrder">ColumnOrder</abbr></a>&gt;            </span>
+                        &nbsp;: null|array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html"><abbr title="\Flow\Parquet\ThriftModel\ColumnOrder">ColumnOrder</abbr></a>&gt;            </span>
 </dt>
 <dd>Sort order used for the min_value and max_value fields in the Statistics
 objects and the min_values and max_values fields in the ColumnIndex
 objects of each column in this file. Sort orders are listed in the order
-matching the columns in the schema. The indexes are not necessary the same
+matching the columns in the schema. The indexes are not necessarily the same
 though, because only leaf nodes of the schema are represented in the list
 of sort orders.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_created_by">$created_by</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: null|string            </span>
 </dt>
 <dd>String for application that wrote this file.  This should be in the format
 &lt;Application&gt; version &lt;App Version&gt; (build &lt;App Build Hash&gt;).</dd>
@@ -173,7 +173,7 @@ of sort orders.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_encryption_algorithm">$encryption_algorithm</a>
     <span>
-                        &nbsp;: <a href="classes/Flow-Parquet-ThriftModel-EncryptionAlgorithm.html"><abbr title="\Flow\Parquet\ThriftModel\EncryptionAlgorithm">EncryptionAlgorithm</abbr></a>            </span>
+                        &nbsp;: null|<a href="classes/Flow-Parquet-ThriftModel-EncryptionAlgorithm.html"><abbr title="\Flow\Parquet\ThriftModel\EncryptionAlgorithm">EncryptionAlgorithm</abbr></a>            </span>
 </dt>
 <dd>Encryption algorithm. This field is set only in encrypted files
 with plaintext footer. Files with encrypted footer store algorithm id
@@ -182,7 +182,7 @@ in FileCryptoMetaData structure.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_footer_signing_key_metadata">$footer_signing_key_metadata</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: null|string            </span>
 </dt>
 <dd>Retrieval metadata of key used for signing the footer.</dd>
 
@@ -195,23 +195,23 @@ in FileCryptoMetaData structure.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_key_value_metadata">$key_value_metadata</a>
     <span>
-                        &nbsp;: array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-KeyValue.html"><abbr title="\Flow\Parquet\ThriftModel\KeyValue">KeyValue</abbr></a>&gt;            </span>
+                        &nbsp;: null|array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-KeyValue.html"><abbr title="\Flow\Parquet\ThriftModel\KeyValue">KeyValue</abbr></a>&gt;            </span>
 </dt>
-<dd>Optional key/value metadata *.</dd>
+<dd>Optional key/value metadata *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_num_rows">$num_rows</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Number of rows in this file *.</dd>
+<dd>Number of rows in this file *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_row_groups">$row_groups</a>
     <span>
                         &nbsp;: array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-RowGroup.html"><abbr title="\Flow\Parquet\ThriftModel\RowGroup">RowGroup</abbr></a>&gt;            </span>
 </dt>
-<dd>Row groups in this file *.</dd>
+<dd>Row groups in this file *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-FileMetaData.html#property_schema">$schema</a>
@@ -225,7 +225,7 @@ in FileCryptoMetaData structure.</dd>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Version of this file *.</dd>
+<dd>Version of this file</dd>
 
     </dl>
 
@@ -289,7 +289,7 @@ in FileCryptoMetaData structure.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -299,7 +299,7 @@ in FileCryptoMetaData structure.</dd>
         <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$_TSPEC</span>
-     = <span class="phpdocumentor-signature__default-value">[1 =&gt; [&#039;var&#039; =&gt; &#039;version&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 2 =&gt; [&#039;var&#039; =&gt; &#039;schema&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\SchemaElement&#039;]], 3 =&gt; [&#039;var&#039; =&gt; &#039;num_rows&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 4 =&gt; [&#039;var&#039; =&gt; &#039;row_groups&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\RowGroup&#039;]], 5 =&gt; [&#039;var&#039; =&gt; &#039;key_value_metadata&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\KeyValue&#039;]], 6 =&gt; [&#039;var&#039; =&gt; &#039;created_by&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING], 7 =&gt; [&#039;var&#039; =&gt; &#039;column_orders&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\ColumnOrder&#039;]], 8 =&gt; [&#039;var&#039; =&gt; &#039;encryption_algorithm&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\EncryptionAlgorithm&#039;], 9 =&gt; [&#039;var&#039; =&gt; &#039;footer_signing_key_metadata&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING]]</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(1 =&gt; array(&#039;var&#039; =&gt; &#039;version&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 2 =&gt; array(&#039;var&#039; =&gt; &#039;schema&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\SchemaElement&#039;)), 3 =&gt; array(&#039;var&#039; =&gt; &#039;num_rows&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 4 =&gt; array(&#039;var&#039; =&gt; &#039;row_groups&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\RowGroup&#039;)), 5 =&gt; array(&#039;var&#039; =&gt; &#039;key_value_metadata&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\KeyValue&#039;)), 6 =&gt; array(&#039;var&#039; =&gt; &#039;created_by&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING), 7 =&gt; array(&#039;var&#039; =&gt; &#039;column_orders&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\ColumnOrder&#039;)), 8 =&gt; array(&#039;var&#039; =&gt; &#039;encryption_algorithm&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\EncryptionAlgorithm&#039;), 9 =&gt; array(&#039;var&#039; =&gt; &#039;footer_signing_key_metadata&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING))</span></code>
 
     
     
@@ -326,23 +326,23 @@ in FileCryptoMetaData structure.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Sort order used for the min_value and max_value fields in the Statistics
 objects and the min_values and max_values fields in the ColumnIndex
 objects of each column in this file. Sort orders are listed in the order
-matching the columns in the schema. The indexes are not necessary the same
+matching the columns in the schema. The indexes are not necessarily the same
 though, because only leaf nodes of the schema are represented in the list
 of sort orders.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html"><abbr title="\Flow\Parquet\ThriftModel\ColumnOrder">ColumnOrder</abbr></a>&gt;</span>
+            <span class="phpdocumentor-signature__type">null|array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html"><abbr title="\Flow\Parquet\ThriftModel\ColumnOrder">ColumnOrder</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$column_orders</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>Without column_orders, the meaning of the min_value and max_value fields
 in the Statistics object and the ColumnIndex object is undefined. To ensure
@@ -376,7 +376,7 @@ by signed comparison regardless of column_orders.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -386,11 +386,11 @@ by signed comparison regardless of column_orders.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">string</span>
+            <span class="phpdocumentor-signature__type">null|string</span>
     <span class="phpdocumentor-signature__name">$created_by</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-        <section class="phpdocumentor-description"><p>e.g. impala version 1.0 (build 6cf94d29b2b7115df4de2c06e2ab4326d721eb55).</p>
+        <section class="phpdocumentor-description"><p>e.g. impala version 1.0 (build 6cf94d29b2b7115df4de2c06e2ab4326d721eb55)</p>
 </section>
 
     
@@ -417,7 +417,7 @@ by signed comparison regardless of column_orders.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -428,9 +428,9 @@ in FileCryptoMetaData structure.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Parquet-ThriftModel-EncryptionAlgorithm.html"><abbr title="\Flow\Parquet\ThriftModel\EncryptionAlgorithm">EncryptionAlgorithm</abbr></a></span>
+            <span class="phpdocumentor-signature__type">null|<a href="classes/Flow-Parquet-ThriftModel-EncryptionAlgorithm.html"><abbr title="\Flow\Parquet\ThriftModel\EncryptionAlgorithm">EncryptionAlgorithm</abbr></a></span>
     <span class="phpdocumentor-signature__name">$encryption_algorithm</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -457,7 +457,7 @@ in FileCryptoMetaData structure.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">178</span>
 
     </aside>
 
@@ -466,9 +466,9 @@ in FileCryptoMetaData structure.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">string</span>
+            <span class="phpdocumentor-signature__type">null|string</span>
     <span class="phpdocumentor-signature__name">$footer_signing_key_metadata</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>Used only in encrypted files with plaintext footer.</p>
 </section>
@@ -497,7 +497,7 @@ in FileCryptoMetaData structure.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -534,18 +534,18 @@ in FileCryptoMetaData structure.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">135</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Optional key/value metadata *.</p>
+        <p class="phpdocumentor-summary">Optional key/value metadata *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-KeyValue.html"><abbr title="\Flow\Parquet\ThriftModel\KeyValue">KeyValue</abbr></a>&gt;</span>
+            <span class="phpdocumentor-signature__type">null|array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-KeyValue.html"><abbr title="\Flow\Parquet\ThriftModel\KeyValue">KeyValue</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$key_value_metadata</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -572,18 +572,18 @@ in FileCryptoMetaData structure.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Number of rows in this file *.</p>
+        <p class="phpdocumentor-summary">Number of rows in this file *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$num_rows</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -610,18 +610,18 @@ in FileCryptoMetaData structure.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Row groups in this file *.</p>
+        <p class="phpdocumentor-summary">Row groups in this file *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-RowGroup.html"><abbr title="\Flow\Parquet\ThriftModel\RowGroup">RowGroup</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$row_groups</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -648,7 +648,7 @@ in FileCryptoMetaData structure.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -659,13 +659,13 @@ in FileCryptoMetaData structure.</p>
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-SchemaElement.html"><abbr title="\Flow\Parquet\ThriftModel\SchemaElement">SchemaElement</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$schema</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>The schema is represented as a tree with a single root.  The nodes of the tree
 are flattened to a list by doing a depth-first traversal.
 The column metadata contains the path in the schema for that column which can be
 used to map columns to nodes in the schema.
-The first element is the root *.</p>
+The first element is the root *</p>
 </section>
 
     
@@ -692,20 +692,26 @@ The first element is the root *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Version of this file *.</p>
+        <p class="phpdocumentor-summary">Version of this file</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$version</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>As of December 2025, there is no agreed upon consensus of what constitutes
+version 2 of the file. For maximum compatibility with readers, writers should
+always populate &quot;1&quot; for version. For maximum compatibility with writers,
+readers should accept &quot;1&quot; and &quot;2&quot; interchangeably.  All other versions are
+reserved for potential future use-cases.</p>
+</section>
+
     
     
 
@@ -735,7 +741,7 @@ The first element is the root *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">180</span>
 
     </aside>
 
@@ -779,7 +785,7 @@ The first element is the root *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">213</span>
 
     </aside>
 
@@ -813,7 +819,7 @@ The first element is the root *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">225</span>
+    <span class="phpdocumentor-element-found-in__line">219</span>
 
     </aside>
 
@@ -857,7 +863,7 @@ The first element is the root *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-filemetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/FileMetaData.php">FileMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">371</span>
+    <span class="phpdocumentor-element-found-in__line">346</span>
 
     </aside>
 

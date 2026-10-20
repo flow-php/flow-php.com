@@ -118,7 +118,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php">ColumnOrder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -129,8 +129,16 @@ elements (which will be needed for a collation-based ordering in the future).</p
 
     <section class="phpdocumentor-description"><p>Possible values are:</p>
 <ul>
-<li>TypeDefinedOrder - the column uses the order defined by its logical or
-physical type (if there is no logical type).</li>
+<li>
+<p>TypeDefinedOrder - the column uses the order defined by its logical or
+physical type (if there is no logical type).</p>
+</li>
+<li>
+<p>IEEE754TotalOrder - the floating point column uses IEEE 754 total order.</p>
+</li>
+<li>
+<p>Int96TimestampOrder - the INT96 column uses chronological timestamp order.</p>
+</li>
 </ul>
 <p>If the reader does not support the value of this union, min and max stats
 for this column should be ignored.</p>
@@ -161,6 +169,18 @@ for this column should be ignored.</p>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_IEEE_754_TOTAL_ORDER">$IEEE_754_TOTAL_ORDER</a>
+    <span>
+                        &nbsp;: null|<a href="classes/Flow-Parquet-ThriftModel-IEEE754TotalOrder.html"><abbr title="\Flow\Parquet\ThriftModel\IEEE754TotalOrder">IEEE754TotalOrder</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_INT96_TIMESTAMP_ORDER">$INT96_TIMESTAMP_ORDER</a>
+    <span>
+                        &nbsp;: null|<a href="classes/Flow-Parquet-ThriftModel-Int96TimestampOrder.html"><abbr title="\Flow\Parquet\ThriftModel\Int96TimestampOrder">Int96TimestampOrder</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_isValidate">$isValidate</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -169,7 +189,7 @@ for this column should be ignored.</p>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_TYPE_ORDER">$TYPE_ORDER</a>
     <span>
-                        &nbsp;: <a href="classes/Flow-Parquet-ThriftModel-TypeDefinedOrder.html"><abbr title="\Flow\Parquet\ThriftModel\TypeDefinedOrder">TypeDefinedOrder</abbr></a>            </span>
+                        &nbsp;: null|<a href="classes/Flow-Parquet-ThriftModel-TypeDefinedOrder.html"><abbr title="\Flow\Parquet\ThriftModel\TypeDefinedOrder">TypeDefinedOrder</abbr></a>            </span>
 </dt>
 <dd>The sort orders for logical types are:
   UTF8 - unsigned byte-wise comparison
@@ -183,6 +203,7 @@ for this column should be ignored.</p>
   UINT64 - unsigned comparison
   DECIMAL - signed comparison of the represented value
   DATE - signed comparison
+  FLOAT16 - signed comparison of the represented value (*)
   TIME_MILLIS - signed comparison
   TIME_MICROS - signed comparison
   TIMESTAMP_MILLIS - signed comparison
@@ -192,7 +213,11 @@ for this column should be ignored.</p>
   BSON - unsigned byte-wise comparison
   ENUM - unsigned byte-wise comparison
   LIST - undefined
-  MAP - undefined</dd>
+  MAP - undefined
+  VARIANT - undefined
+  GEOMETRY - undefined
+  GEOGRAPHY - undefined
+  FILE - undefined</dd>
 
     </dl>
 
@@ -256,7 +281,7 @@ for this column should be ignored.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php">ColumnOrder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -266,7 +291,81 @@ for this column should be ignored.</p>
         <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$_TSPEC</span>
-     = <span class="phpdocumentor-signature__default-value">[1 =&gt; [&#039;var&#039; =&gt; &#039;TYPE_ORDER&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\TypeDefinedOrder&#039;]]</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(1 =&gt; array(&#039;var&#039; =&gt; &#039;TYPE_ORDER&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\TypeDefinedOrder&#039;), 2 =&gt; array(&#039;var&#039; =&gt; &#039;IEEE_754_TOTAL_ORDER&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\IEEE754TotalOrder&#039;), 3 =&gt; array(&#039;var&#039; =&gt; &#039;INT96_TIMESTAMP_ORDER&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\Int96TimestampOrder&#039;))</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_IEEE_754_TOTAL_ORDER">
+        $IEEE_754_TOTAL_ORDER
+        <a href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_IEEE_754_TOTAL_ORDER" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php">ColumnOrder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">159</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">null|<a href="classes/Flow-Parquet-ThriftModel-IEEE754TotalOrder.html"><abbr title="\Flow\Parquet\ThriftModel\IEEE754TotalOrder">IEEE754TotalOrder</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$IEEE_754_TOTAL_ORDER</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_INT96_TIMESTAMP_ORDER">
+        $INT96_TIMESTAMP_ORDER
+        <a href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_INT96_TIMESTAMP_ORDER" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php">ColumnOrder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">163</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">null|<a href="classes/Flow-Parquet-ThriftModel-Int96TimestampOrder.html"><abbr title="\Flow\Parquet\ThriftModel\Int96TimestampOrder">Int96TimestampOrder</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$INT96_TIMESTAMP_ORDER</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -293,7 +392,7 @@ for this column should be ignored.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php">ColumnOrder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -330,7 +429,7 @@ for this column should be ignored.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php">ColumnOrder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
@@ -346,6 +445,7 @@ for this column should be ignored.</p>
   UINT64 - unsigned comparison
   DECIMAL - signed comparison of the represented value
   DATE - signed comparison
+  FLOAT16 - signed comparison of the represented value (*)
   TIME_MILLIS - signed comparison
   TIME_MICROS - signed comparison
   TIMESTAMP_MILLIS - signed comparison
@@ -355,38 +455,80 @@ for this column should be ignored.</p>
   BSON - unsigned byte-wise comparison
   ENUM - unsigned byte-wise comparison
   LIST - undefined
-  MAP - undefined</p>
+  MAP - undefined
+  VARIANT - undefined
+  GEOMETRY - undefined
+  GEOGRAPHY - undefined
+  FILE - undefined</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Parquet-ThriftModel-TypeDefinedOrder.html"><abbr title="\Flow\Parquet\ThriftModel\TypeDefinedOrder">TypeDefinedOrder</abbr></a></span>
+            <span class="phpdocumentor-signature__type">null|<a href="classes/Flow-Parquet-ThriftModel-TypeDefinedOrder.html"><abbr title="\Flow\Parquet\ThriftModel\TypeDefinedOrder">TypeDefinedOrder</abbr></a></span>
     <span class="phpdocumentor-signature__name">$TYPE_ORDER</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>In the absence of logical types, the sort order is determined by the physical type:
 BOOLEAN - false, true
 INT32 - signed comparison
 INT64 - signed comparison
-INT96 (only used for legacy timestamps) - undefined
+INT96 (only used for legacy timestamps) - depends on sort order (+)
 FLOAT - signed comparison of the represented value (<em>)
 DOUBLE - signed comparison of the represented value (</em>)
 BYTE_ARRAY - unsigned byte-wise comparison
 FIXED_LEN_BYTE_ARRAY - unsigned byte-wise comparison</p>
-<p>(*) Because the sorting order is not specified properly for floating
-point values (relations vs. total ordering) the following
+<p>(+) While the INT96 type has been deprecated, at the time of writing it is
+still used in many legacy systems. It is optional for writers to emit
+statistics for INT96 columns. Writers that emit stats for such columns
+should use the INT96_TIMESTAMP_ORDER for this type and order the values
+according to the legacy rules:
+- compare the last 4 bytes (days) as a little-endian 32-bit signed integer
+- if equal last 4 bytes, compare the first 8 bytes as a little-endian
+64-bit signed integer (nanos)
+If TYPE_ORDER is used for an INT96 column, readers should ignore all statistics
+(<code class="prettyprint">min</code>/<code class="prettyprint">max</code> fields in <code class="prettyprint">Statistics</code> and <code class="prettyprint">min_values</code>/<code class="prettyprint">max_values</code> fields in
+<code class="prettyprint">ColumnIndex</code>) for that column.</p>
+<p>(*) Because TYPE_ORDER is ambiguous for floating point types due to
+underspecified handling of NaN and -0/+0, it is recommended that writers
+use IEEE_754_TOTAL_ORDER for these types.</p>
+<pre class="prettyprint"><code class="prettyprint">If TYPE_ORDER is used for floating point types, then the following
 compatibility rules should be applied when reading statistics:
 - If the min is a NaN, it should be ignored.
 - If the max is a NaN, it should be ignored.
+- If the nan_count field is set, a reader can compute
+  nan_count + null_count == num_values to deduce whether all non-null
+  values are NaN.
 - If the min is +0, the row group may contain -0 values as well.
 - If the max is -0, the row group may contain +0 values as well.
-- When looking for NaN values, min and max should be ignored.</p>
-<pre class="prettyprint"><code class="prettyprint">When writing statistics the following rules should be followed:
-- NaNs should not be written to min or max statistics fields.
+- When looking for NaN values, min and max should be ignored.
+  If the nan_count field is set, it can be used to check whether
+  NaNs are present.
+
+When writing page or column chunk statistics for columns with
+TYPE_ORDER order, the following rules must be followed:
+- The nan_count field must be set for floating point types, even if
+  it is zero.
+- If the nan_count field is set, min and max statistics fields, when
+  present, must not contain NaN values and must be computed from
+  non-NaN values only. This signals to readers that the min and max
+  statistics are reliable for non-NaN values.
+- If all non-null values are NaN, min and max statistics must not be
+  written.
 - If the computed max value is zero (whether negative or positive),
   `+0.0` should be written into the max statistics field.
 - If the computed min value is zero (whether negative or positive),
   `-0.0` should be written into the min statistics field.
+
+When writing column indexes for columns with TYPE_ORDER order, the
+following rules must be followed:
+- NaNs must not be written to min_values or max_values.
+- If all non-null values of a page are NaN, a column index must not
+  be written for this column chunk because min_values and max_values
+  are required.
+- If the computed max value is zero (whether negative or positive),
+  `+0.0` should be written into the corresponding max_values entry.
+- If the computed min value is zero (whether negative or positive),
+  `-0.0` should be written into the corresponding min_values entry.
 </code></pre>
 </section>
 
@@ -419,7 +561,7 @@ compatibility rules should be applied when reading statistics:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php">ColumnOrder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -463,7 +605,7 @@ compatibility rules should be applied when reading statistics:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php">ColumnOrder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">180</span>
 
     </aside>
 
@@ -497,7 +639,7 @@ compatibility rules should be applied when reading statistics:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php">ColumnOrder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -541,7 +683,7 @@ compatibility rules should be applied when reading statistics:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnorder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnOrder.php">ColumnOrder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">233</span>
 
     </aside>
 
@@ -594,6 +736,8 @@ compatibility rules should be applied when reading statistics:
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property__TSPEC">$_TSPEC</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_IEEE_754_TOTAL_ORDER">$IEEE_754_TOTAL_ORDER</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_INT96_TIMESTAMP_ORDER">$INT96_TIMESTAMP_ORDER</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_isValidate">$isValidate</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnOrder.html#property_TYPE_ORDER">$TYPE_ORDER</a></li>
                                             </ul>

@@ -118,11 +118,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Description for column metadata.</p>
+            <p class="phpdocumentor-summary">Description for column metadata</p>
 
 
 
@@ -153,42 +153,42 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_bloom_filter_length">$bloom_filter_length</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
 <dd>Size of Bloom filter data including the serialized header, in bytes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_bloom_filter_offset">$bloom_filter_offset</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
-<dd>Byte offset from beginning of file to Bloom filter data. *.</dd>
+<dd>Byte offset from beginning of file to Bloom filter data. *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_codec">$codec</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Compression codec *.</dd>
+<dd>Compression codec *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_data_page_offset">$data_page_offset</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Byte offset from beginning of file to first data page *.</dd>
+<dd>Byte offset from beginning of file to first data page *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_dictionary_page_offset">$dictionary_page_offset</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
-<dd>Byte offset from the beginning of file to first (only) dictionary page *.</dd>
+<dd>Byte offset from the beginning of file to first (only) dictionary page *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_encoding_stats">$encoding_stats</a>
     <span>
-                        &nbsp;: array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-PageEncodingStats.html"><abbr title="\Flow\Parquet\ThriftModel\PageEncodingStats">PageEncodingStats</abbr></a>&gt;            </span>
+                        &nbsp;: null|array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-PageEncodingStats.html"><abbr title="\Flow\Parquet\ThriftModel\PageEncodingStats">PageEncodingStats</abbr></a>&gt;            </span>
 </dt>
 <dd>Set of all encodings used for pages in this column chunk.</dd>
 
@@ -198,14 +198,21 @@
                         &nbsp;: array&lt;string|int, int&gt;            </span>
 </dt>
 <dd>Set of all encodings used for this column. The purpose is to validate
-whether we can decode those pages. *.</dd>
+whether we can decode those pages. *</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_geospatial_statistics">$geospatial_statistics</a>
+    <span>
+                        &nbsp;: null|<a href="classes/Flow-Parquet-ThriftModel-GeospatialStatistics.html"><abbr title="\Flow\Parquet\ThriftModel\GeospatialStatistics">GeospatialStatistics</abbr></a>            </span>
+</dt>
+<dd>Optional statistics specific for Geometry and Geography logical types</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_index_page_offset">$index_page_offset</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
-<dd>Byte offset from beginning of file to root index page *.</dd>
+<dd>Byte offset from beginning of file to root index page *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_isValidate">$isValidate</a>
@@ -216,28 +223,28 @@ whether we can decode those pages. *.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_key_value_metadata">$key_value_metadata</a>
     <span>
-                        &nbsp;: array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-KeyValue.html"><abbr title="\Flow\Parquet\ThriftModel\KeyValue">KeyValue</abbr></a>&gt;            </span>
+                        &nbsp;: null|array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-KeyValue.html"><abbr title="\Flow\Parquet\ThriftModel\KeyValue">KeyValue</abbr></a>&gt;            </span>
 </dt>
-<dd>Optional key/value metadata *.</dd>
+<dd>Optional key/value metadata *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_num_values">$num_values</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Number of values in this column *.</dd>
+<dd>Number of values in this column *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_path_in_schema">$path_in_schema</a>
     <span>
                         &nbsp;: array&lt;string|int, string&gt;            </span>
 </dt>
-<dd>Path in schema *.</dd>
+<dd>Path in schema *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_size_statistics">$size_statistics</a>
     <span>
-                        &nbsp;: <a href="classes/Flow-Parquet-ThriftModel-SizeStatistics.html"><abbr title="\Flow\Parquet\ThriftModel\SizeStatistics">SizeStatistics</abbr></a>            </span>
+                        &nbsp;: null|<a href="classes/Flow-Parquet-ThriftModel-SizeStatistics.html"><abbr title="\Flow\Parquet\ThriftModel\SizeStatistics">SizeStatistics</abbr></a>            </span>
 </dt>
 <dd>Optional statistics to help estimate total memory when converted to in-memory
 representations. The histograms contained in these statistics can
@@ -247,9 +254,9 @@ filter pushdown.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_statistics">$statistics</a>
     <span>
-                        &nbsp;: <a href="classes/Flow-Parquet-ThriftModel-Statistics.html"><abbr title="\Flow\Parquet\ThriftModel\Statistics">Statistics</abbr></a>            </span>
+                        &nbsp;: null|<a href="classes/Flow-Parquet-ThriftModel-Statistics.html"><abbr title="\Flow\Parquet\ThriftModel\Statistics">Statistics</abbr></a>            </span>
 </dt>
-<dd>optional statistics for this column chunk.</dd>
+<dd>optional statistics for this column chunk</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_total_compressed_size">$total_compressed_size</a>
@@ -257,21 +264,21 @@ filter pushdown.</dd>
                         &nbsp;: int            </span>
 </dt>
 <dd>total byte size of all compressed, and potentially encrypted, pages
-in this column chunk (including the headers) *.</dd>
+in this column chunk (including the headers) *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_total_uncompressed_size">$total_uncompressed_size</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>total byte size of all uncompressed pages in this column chunk (including the headers) *.</dd>
+<dd>total byte size of all uncompressed pages in this column chunk (including the headers) *</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_type">$type</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Type of this column *.</dd>
+<dd>Type of this column *</dd>
 
     </dl>
 
@@ -335,7 +342,7 @@ in this column chunk (including the headers) *.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -345,7 +352,7 @@ in this column chunk (including the headers) *.</dd>
         <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$_TSPEC</span>
-     = <span class="phpdocumentor-signature__default-value">[1 =&gt; [&#039;var&#039; =&gt; &#039;type&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\Type&#039;], 2 =&gt; [&#039;var&#039; =&gt; &#039;encodings&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::I32, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\Encoding&#039;]], 3 =&gt; [&#039;var&#039; =&gt; &#039;path_in_schema&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRING, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::STRING]], 4 =&gt; [&#039;var&#039; =&gt; &#039;codec&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\CompressionCodec&#039;], 5 =&gt; [&#039;var&#039; =&gt; &#039;num_values&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 6 =&gt; [&#039;var&#039; =&gt; &#039;total_uncompressed_size&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 7 =&gt; [&#039;var&#039; =&gt; &#039;total_compressed_size&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 8 =&gt; [&#039;var&#039; =&gt; &#039;key_value_metadata&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\KeyValue&#039;]], 9 =&gt; [&#039;var&#039; =&gt; &#039;data_page_offset&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 10 =&gt; [&#039;var&#039; =&gt; &#039;index_page_offset&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 11 =&gt; [&#039;var&#039; =&gt; &#039;dictionary_page_offset&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 12 =&gt; [&#039;var&#039; =&gt; &#039;statistics&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\Statistics&#039;], 13 =&gt; [&#039;var&#039; =&gt; &#039;encoding_stats&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; [&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\PageEncodingStats&#039;]], 14 =&gt; [&#039;var&#039; =&gt; &#039;bloom_filter_offset&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 15 =&gt; [&#039;var&#039; =&gt; &#039;bloom_filter_length&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 16 =&gt; [&#039;var&#039; =&gt; &#039;size_statistics&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\SizeStatistics&#039;]]</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(1 =&gt; array(&#039;var&#039; =&gt; &#039;type&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\Type&#039;), 2 =&gt; array(&#039;var&#039; =&gt; &#039;encodings&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::I32, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\Encoding&#039;)), 3 =&gt; array(&#039;var&#039; =&gt; &#039;path_in_schema&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRING, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::STRING)), 4 =&gt; array(&#039;var&#039; =&gt; &#039;codec&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\CompressionCodec&#039;), 5 =&gt; array(&#039;var&#039; =&gt; &#039;num_values&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 6 =&gt; array(&#039;var&#039; =&gt; &#039;total_uncompressed_size&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 7 =&gt; array(&#039;var&#039; =&gt; &#039;total_compressed_size&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 8 =&gt; array(&#039;var&#039; =&gt; &#039;key_value_metadata&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\KeyValue&#039;)), 9 =&gt; array(&#039;var&#039; =&gt; &#039;data_page_offset&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 10 =&gt; array(&#039;var&#039; =&gt; &#039;index_page_offset&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 11 =&gt; array(&#039;var&#039; =&gt; &#039;dictionary_page_offset&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 12 =&gt; array(&#039;var&#039; =&gt; &#039;statistics&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\Statistics&#039;), 13 =&gt; array(&#039;var&#039; =&gt; &#039;encoding_stats&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::LST, &#039;etype&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;elem&#039; =&gt; array(&#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\PageEncodingStats&#039;)), 14 =&gt; array(&#039;var&#039; =&gt; &#039;bloom_filter_offset&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 15 =&gt; array(&#039;var&#039; =&gt; &#039;bloom_filter_length&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 16 =&gt; array(&#039;var&#039; =&gt; &#039;size_statistics&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\SizeStatistics&#039;), 17 =&gt; array(&#039;var&#039; =&gt; &#039;geospatial_statistics&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRUCT, &#039;class&#039; =&gt; &#039;\Flow\Parquet\ThriftModel\GeospatialStatistics&#039;))</span></code>
 
     
     
@@ -372,7 +379,7 @@ in this column chunk (including the headers) *.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">235</span>
 
     </aside>
 
@@ -381,9 +388,9 @@ in this column chunk (including the headers) *.</dd>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$bloom_filter_length</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>Added in 2.10 so readers may not read this field from old files and
 it can be obtained after the BloomFilterHeader has been deserialized.
@@ -415,18 +422,18 @@ in a single I/O.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">225</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Byte offset from beginning of file to Bloom filter data. *.</p>
+        <p class="phpdocumentor-summary">Byte offset from beginning of file to Bloom filter data. *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$bloom_filter_offset</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -453,18 +460,18 @@ in a single I/O.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Compression codec *.</p>
+        <p class="phpdocumentor-summary">Compression codec *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$codec</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -491,18 +498,18 @@ in a single I/O.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Byte offset from beginning of file to first data page *.</p>
+        <p class="phpdocumentor-summary">Byte offset from beginning of file to first data page *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$data_page_offset</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -529,18 +536,18 @@ in a single I/O.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Byte offset from the beginning of file to first (only) dictionary page *.</p>
+        <p class="phpdocumentor-summary">Byte offset from the beginning of file to first (only) dictionary page *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$dictionary_page_offset</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -567,7 +574,7 @@ in a single I/O.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">176</span>
+    <span class="phpdocumentor-element-found-in__line">219</span>
 
     </aside>
 
@@ -576,12 +583,12 @@ in a single I/O.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-PageEncodingStats.html"><abbr title="\Flow\Parquet\ThriftModel\PageEncodingStats">PageEncodingStats</abbr></a>&gt;</span>
+            <span class="phpdocumentor-signature__type">null|array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-PageEncodingStats.html"><abbr title="\Flow\Parquet\ThriftModel\PageEncodingStats">PageEncodingStats</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$encoding_stats</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>This information can be used to determine if all data pages are
-dictionary encoded for example *.</p>
+dictionary encoded for example *</p>
 </section>
 
     
@@ -608,19 +615,57 @@ dictionary encoded for example *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Set of all encodings used for this column. The purpose is to validate
-whether we can decode those pages. *.</p>
+whether we can decode those pages. *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">array&lt;string|int, int&gt;</span>
     <span class="phpdocumentor-signature__name">$encodings</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_geospatial_statistics">
+        $geospatial_statistics
+        <a href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_geospatial_statistics" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">250</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Optional statistics specific for Geometry and Geography logical types</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">null|<a href="classes/Flow-Parquet-ThriftModel-GeospatialStatistics.html"><abbr title="\Flow\Parquet\ThriftModel\GeospatialStatistics">GeospatialStatistics</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$geospatial_statistics</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -647,18 +692,18 @@ whether we can decode those pages. *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">191</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Byte offset from beginning of file to root index page *.</p>
+        <p class="phpdocumentor-summary">Byte offset from beginning of file to root index page *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$index_page_offset</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -685,7 +730,7 @@ whether we can decode those pages. *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -722,18 +767,18 @@ whether we can decode those pages. *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">198</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Optional key/value metadata *.</p>
+        <p class="phpdocumentor-summary">Optional key/value metadata *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-KeyValue.html"><abbr title="\Flow\Parquet\ThriftModel\KeyValue">KeyValue</abbr></a>&gt;</span>
+            <span class="phpdocumentor-signature__type">null|array&lt;string|int, <a href="classes/Flow-Parquet-ThriftModel-KeyValue.html"><abbr title="\Flow\Parquet\ThriftModel\KeyValue">KeyValue</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$key_value_metadata</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -760,18 +805,18 @@ whether we can decode those pages. *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">205</span>
+    <span class="phpdocumentor-element-found-in__line">168</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Number of values in this column *.</p>
+        <p class="phpdocumentor-summary">Number of values in this column *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$num_values</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -798,18 +843,18 @@ whether we can decode those pages. *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Path in schema *.</p>
+        <p class="phpdocumentor-summary">Path in schema *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$path_in_schema</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -836,7 +881,7 @@ whether we can decode those pages. *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">222</span>
+    <span class="phpdocumentor-element-found-in__line">244</span>
 
     </aside>
 
@@ -848,9 +893,9 @@ filter pushdown.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Parquet-ThriftModel-SizeStatistics.html"><abbr title="\Flow\Parquet\ThriftModel\SizeStatistics">SizeStatistics</abbr></a></span>
+            <span class="phpdocumentor-signature__type">null|<a href="classes/Flow-Parquet-ThriftModel-SizeStatistics.html"><abbr title="\Flow\Parquet\ThriftModel\SizeStatistics">SizeStatistics</abbr></a></span>
     <span class="phpdocumentor-signature__name">$size_statistics</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -877,18 +922,18 @@ filter pushdown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">211</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">optional statistics for this column chunk.</p>
+        <p class="phpdocumentor-summary">optional statistics for this column chunk</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-Parquet-ThriftModel-Statistics.html"><abbr title="\Flow\Parquet\ThriftModel\Statistics">Statistics</abbr></a></span>
+            <span class="phpdocumentor-signature__type">null|<a href="classes/Flow-Parquet-ThriftModel-Statistics.html"><abbr title="\Flow\Parquet\ThriftModel\Statistics">Statistics</abbr></a></span>
     <span class="phpdocumentor-signature__name">$statistics</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -915,19 +960,19 @@ filter pushdown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">237</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">total byte size of all compressed, and potentially encrypted, pages
-in this column chunk (including the headers) *.</p>
+in this column chunk (including the headers) *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$total_compressed_size</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -954,18 +999,18 @@ in this column chunk (including the headers) *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">244</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">total byte size of all uncompressed pages in this column chunk (including the headers) *.</p>
+        <p class="phpdocumentor-summary">total byte size of all uncompressed pages in this column chunk (including the headers) *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$total_uncompressed_size</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -992,18 +1037,18 @@ in this column chunk (including the headers) *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">251</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Type of this column *.</p>
+        <p class="phpdocumentor-summary">Type of this column *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$type</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -1035,7 +1080,7 @@ in this column chunk (including the headers) *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">253</span>
+    <span class="phpdocumentor-element-found-in__line">252</span>
 
     </aside>
 
@@ -1079,7 +1124,7 @@ in this column chunk (including the headers) *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">322</span>
+    <span class="phpdocumentor-element-found-in__line">309</span>
 
     </aside>
 
@@ -1113,7 +1158,7 @@ in this column chunk (including the headers) *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">327</span>
+    <span class="phpdocumentor-element-found-in__line">315</span>
 
     </aside>
 
@@ -1157,7 +1202,7 @@ in this column chunk (including the headers) *.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-columnmetadata.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/ColumnMetaData.php">ColumnMetaData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">528</span>
+    <span class="phpdocumentor-element-found-in__line">498</span>
 
     </aside>
 
@@ -1217,6 +1262,7 @@ in this column chunk (including the headers) *.</p>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_dictionary_page_offset">$dictionary_page_offset</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_encoding_stats">$encoding_stats</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_encodings">$encodings</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_geospatial_statistics">$geospatial_statistics</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_index_page_offset">$index_page_offset</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_isValidate">$isValidate</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-ColumnMetaData.html#property_key_value_metadata">$key_value_metadata</a></li>

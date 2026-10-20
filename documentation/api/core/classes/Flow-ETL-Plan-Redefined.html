@@ -173,12 +173,6 @@
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-ETL-Plan-Redefined.html#property_unknown">$unknown</a>
-    <span>
-                        &nbsp;: bool            </span>
-</dt>
-
     </dl>
 
 <h4 id="toc-methods">
@@ -203,7 +197,26 @@ under it.</dd>
 <dd>The column under the node that $name above it renames, or null when $name is not a plain alias.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Plan-Redefined.html#method_allBut">allBut()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>The node keeps only $kept (Select): every other column is gone above it.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Plan-Redefined.html#method_defines">defines()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Plan-Redefined.html#method_isAllBut">isAllBut()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Plan-Redefined.html#method_isUnknown">isUnknown()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -219,6 +232,13 @@ under it.</dd>
     <span>
                                 &nbsp;: self    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Plan-Redefined.html#method_rename">rename()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>$to holds exactly the values of $from, which is gone above the node.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Plan-Redefined.html#method_unknown">unknown()</a>
@@ -277,43 +297,6 @@ under it.</dd>
         
 
 </article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_unknown">
-        $unknown
-        <a href="classes/Flow-ETL-Plan-Redefined.html#property_unknown" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Plan/Redefined.php"><a href="files/src-core-etl-src-flow-etl-plan-redefined.html"><abbr title="src/core/etl/src/Flow/ETL/Plan/Redefined.php">Redefined.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">18</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$unknown</span>
-    </code>
-
-    
-    
-    
-
-        
-        
-
-</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -336,7 +319,7 @@ under it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Plan/Redefined.php"><a href="files/src-core-etl-src-flow-etl-plan-redefined.html"><abbr title="src/core/etl/src/Flow/ETL/Plan/Redefined.php">Redefined.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -393,7 +376,7 @@ under it.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Plan/Redefined.php"><a href="files/src-core-etl-src-flow-etl-plan-redefined.html"><abbr title="src/core/etl/src/Flow/ETL/Plan/Redefined.php">Redefined.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -432,6 +415,55 @@ under it.</p>
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_allBut">
+        allBut()
+        <a href="classes/Flow-ETL-Plan-Redefined.html#method_allBut" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Plan/Redefined.php"><a href="files/src-core-etl-src-flow-etl-plan-redefined.html"><abbr title="src/core/etl/src/Flow/ETL/Plan/Redefined.php">Redefined.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The node keeps only $kept (Select): every other column is gone above it.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">allBut</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$kept</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$kept</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_defines">
@@ -442,7 +474,7 @@ under it.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Plan/Redefined.php"><a href="files/src-core-etl-src-flow-etl-plan-redefined.html"><abbr title="src/core/etl/src/Flow/ETL/Plan/Redefined.php">Redefined.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -466,6 +498,82 @@ under it.</p>
             </dd>
             </dl>
 
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isAllBut">
+        isAllBut()
+        <a href="classes/Flow-ETL-Plan-Redefined.html#method_isAllBut" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Plan/Redefined.php"><a href="files/src-core-etl-src-flow-etl-plan-redefined.html"><abbr title="src/core/etl/src/Flow/ETL/Plan/Redefined.php">Redefined.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isAllBut</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isUnknown">
+        isUnknown()
+        <a href="classes/Flow-ETL-Plan-Redefined.html#method_isUnknown" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Plan/Redefined.php"><a href="files/src-core-etl-src-flow-etl-plan-redefined.html"><abbr title="src/core/etl/src/Flow/ETL/Plan/Redefined.php">Redefined.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isUnknown</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
     
 
         
@@ -568,6 +676,62 @@ under it.</p>
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_rename">
+        rename()
+        <a href="classes/Flow-ETL-Plan-Redefined.html#method_rename" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Plan/Redefined.php"><a href="files/src-core-etl-src-flow-etl-plan-redefined.html"><abbr title="src/core/etl/src/Flow/ETL/Plan/Redefined.php">Redefined.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">53</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">$to holds exactly the values of $from, which is gone above the node.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">rename</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$from</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$to</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_unknown">
         unknown()
         <a href="classes/Flow-ETL-Plan-Redefined.html#method_unknown" class="headerlink"><i class="fas fa-link"></i></a>
@@ -576,7 +740,7 @@ under it.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Plan/Redefined.php"><a href="files/src-core-etl-src-flow-etl-plan-redefined.html"><abbr title="src/core/etl/src/Flow/ETL/Plan/Redefined.php">Redefined.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -624,7 +788,6 @@ under it.</p>
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-ETL-Plan-Redefined.html#property_names">$names</a></li>
-                                                    <li class=""><a href="classes/Flow-ETL-Plan-Redefined.html#property_unknown">$unknown</a></li>
                                             </ul>
                 </li>
             
@@ -633,9 +796,13 @@ under it.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Plan-Redefined.html#method_alias">alias()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Plan-Redefined.html#method_aliasOf">aliasOf()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Plan-Redefined.html#method_allBut">allBut()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Plan-Redefined.html#method_defines">defines()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Plan-Redefined.html#method_isAllBut">isAllBut()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Plan-Redefined.html#method_isUnknown">isUnknown()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Plan-Redefined.html#method_names">names()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Plan-Redefined.html#method_none">none()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Plan-Redefined.html#method_rename">rename()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Plan-Redefined.html#method_unknown">unknown()</a></li>
                                     </ul>
             </li>

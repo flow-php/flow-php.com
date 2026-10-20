@@ -137,13 +137,6 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -case -">
-    <a class="" href="classes/Flow-Parquet-Option.html#enumcase_ARROW_BATCH_SIZE">ARROW_BATCH_SIZE</a>
-    <span>
-                                    </span>
-</dt>
-<dd>When using the Arrow engine, controls how many rows are returned per internal read call.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Parquet-Option.html#enumcase_ARROW_WRITE_BATCH_SIZE">ARROW_WRITE_BATCH_SIZE</a>
     <span>
                                     </span>
@@ -159,6 +152,21 @@ before sending them to the extension&#039;s writeBatch() in a single call.</dd>
 <dd>Compression level for Brotli codec. This option is going to be passed to gzcompress function when Compression is set to Brotli.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a class="" href="classes/Flow-Parquet-Option.html#enumcase_COLUMN_INDEX_TRUNCATE_LENGTH">COLUMN_INDEX_TRUNCATE_LENGTH</a>
+    <span>
+                                    </span>
+</dt>
+<dd>Column index bounds of BYTE_ARRAY and FIXED_LEN_BYTE_ARRAY columns are truncated to this many bytes, as
+STATISTICS_TRUNCATE_LENGTH truncates column chunk statistics (arrow-rs set_column_index_truncate_length).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a class="" href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_BLOOM_FILTERS">COLUMNS_BLOOM_FILTERS</a>
+    <span>
+                                    </span>
+</dt>
+<dd>Per-column bloom filter configuration using flat path notation.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_COMPRESSIONS">COLUMNS_COMPRESSIONS</a>
     <span>
                                     </span>
@@ -171,13 +179,6 @@ before sending them to the extension&#039;s writeBatch() in a single call.</dd>
                                     </span>
 </dt>
 <dd>Per-column encoding configuration using flat path notation.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -case -">
-    <a class="" href="classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_PAGE_MIN_CARDINALITY_RATION">DICTIONARY_PAGE_MIN_CARDINALITY_RATION</a>
-    <span>
-                                    </span>
-</dt>
-<dd>Whenever cardinality ratio of the dictionary goes below this value, PagesBuilders is going to fallback to PLAIN encoding.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_PAGE_SIZE">DICTIONARY_PAGE_SIZE</a>
@@ -208,11 +209,21 @@ before sending them to the extension&#039;s writeBatch() in a single call.</dd>
 <dd>Compression level for LZ4 codec. This option is going to be passed to lz4_compress function when Compression is set to LZ4.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a class="" href="classes/Flow-Parquet-Option.html#enumcase_PAGE_HEADER_STATISTICS">PAGE_HEADER_STATISTICS</a>
+    <span>
+                                    </span>
+</dt>
+<dd>Data page headers carry the page&#039;s statistics when the statistics level is PAGE, as arrow-rs
+set_write_page_header_statistics. Readers prune pages through the column index instead.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Parquet-Option.html#enumcase_PAGE_MAXIMUM_ROWS_COUNT">PAGE_MAXIMUM_ROWS_COUNT</a>
     <span>
                                     </span>
 </dt>
-<dd>PageBuilder is going to use this value to determine how many rows should be stored in one page.</dd>
+<dd>The rows a data page holds at most, beside PAGE_SIZE_BYTES (arrow-rs data_page_row_count_limit). The PHP writer
+checks it every PAGE_SIZE_CHECK_INTERVAL rows, the arrow writer every write batch. Smaller pages let the page
+index skip more of a filtered read, at the cost of more page headers.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Parquet-Option.html#enumcase_PAGE_SIZE_BYTES">PAGE_SIZE_BYTES</a>
@@ -242,6 +253,22 @@ before flushing it on disk.</dd>
                                     </span>
 </dt>
 <dd>RowGroupBuilder is going to use this value to determine how often it should check if RowGroup size is not exceeded.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a class="" href="classes/Flow-Parquet-Option.html#enumcase_STATISTICS_LEVEL">STATISTICS_LEVEL</a>
+    <span>
+                                    </span>
+</dt>
+<dd>A Writer\StatisticsLevel: NONE writes no statistics, CHUNK writes column chunk statistics, PAGE also writes a
+column index (per page min, max, null and NaN counts). The offset index is written at every level.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a class="" href="classes/Flow-Parquet-Option.html#enumcase_STATISTICS_TRUNCATE_LENGTH">STATISTICS_TRUNCATE_LENGTH</a>
+    <span>
+                                    </span>
+</dt>
+<dd>Column chunk and page statistics of BYTE_ARRAY and FIXED_LEN_BYTE_ARRAY columns are truncated to this many bytes,
+as arrow-rs does: the min is cut, the max is cut and incremented, and a truncated bound is marked inexact.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Parquet-Option.html#enumcase_VALIDATE_DATA">VALIDATE_DATA</a>
@@ -282,38 +309,6 @@ before flushing it on disk.</dd>
             -enum-case
         "
 >
-    <h4 class="phpdocumentor-element__name" id="enumcase_ARROW_BATCH_SIZE">
-        ARROW_BATCH_SIZE
-        <a href="classes/Flow-Parquet-Option.html#enumcase_ARROW_BATCH_SIZE" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">18</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">When using the Arrow engine, controls how many rows are returned per internal read call.</p>
-
-    
-        <section class="phpdocumentor-description"><p>Reduces peak memory usage for large row groups by streaming batches of this size.</p>
-<p>Only affects the Arrow engine. Ignored by the PHP engine.
-Set to null to read entire row groups at once (maximum throughput).</p>
-<p>Default: 1024</p>
-</section>
-
-    
-    
-
-        
-    </article>
-                    <article
-        class="
-            phpdocumentor-element
-            -enum-case
-        "
->
     <h4 class="phpdocumentor-element__name" id="enumcase_ARROW_WRITE_BATCH_SIZE">
         ARROW_WRITE_BATCH_SIZE
         <a href="classes/Flow-Parquet-Option.html#enumcase_ARROW_WRITE_BATCH_SIZE" class="headerlink"><i class="fas fa-link"></i></a>
@@ -322,7 +317,7 @@ Set to null to read entire row groups at once (maximum throughput).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -354,7 +349,7 @@ before sending them to the extension&#039;s writeBatch() in a single call.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -384,7 +379,7 @@ before sending them to the extension&#039;s writeBatch() in a single call.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -414,6 +409,45 @@ before sending them to the extension&#039;s writeBatch() in a single call.</p>
             -enum-case
         "
 >
+    <h4 class="phpdocumentor-element__name" id="enumcase_COLUMNS_BLOOM_FILTERS">
+        COLUMNS_BLOOM_FILTERS
+        <a href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_BLOOM_FILTERS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">58</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Per-column bloom filter configuration using flat path notation.</p>
+
+    
+        <section class="phpdocumentor-description"><p>Accepts array&lt;string, BloomFilterOptions&gt; where key is column flat path and value is the filter's false positive
+probability and expected distinct values.</p>
+<p>Flat path examples:</p>
+<ul>
+<li>Simple columns: 'column_name'</li>
+<li>Nested structs: 'user.address.street'</li>
+<li>List elements: 'items.list.element'</li>
+<li>Map keys/values: 'metadata.key_value.key', 'metadata.key_value.value'</li>
+</ul>
+<p>Values must be BloomFilterOptions instances. Readers use the filters for equality and in predicates only.</p>
+<p>Default: null (no bloom filters)</p>
+</section>
+
+    
+    
+
+        
+    </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -enum-case
+        "
+>
     <h4 class="phpdocumentor-element__name" id="enumcase_COLUMNS_ENCODINGS">
         COLUMNS_ENCODINGS
         <a href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_ENCODINGS" class="headerlink"><i class="fas fa-link"></i></a>
@@ -422,7 +456,7 @@ before sending them to the extension&#039;s writeBatch() in a single call.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -452,25 +486,23 @@ before sending them to the extension&#039;s writeBatch() in a single call.</p>
             -enum-case
         "
 >
-    <h4 class="phpdocumentor-element__name" id="enumcase_DICTIONARY_PAGE_MIN_CARDINALITY_RATION">
-        DICTIONARY_PAGE_MIN_CARDINALITY_RATION
-        <a href="classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_PAGE_MIN_CARDINALITY_RATION" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="enumcase_COLUMN_INDEX_TRUNCATE_LENGTH">
+        COLUMN_INDEX_TRUNCATE_LENGTH
+        <a href="classes/Flow-Parquet-Option.html#enumcase_COLUMN_INDEX_TRUNCATE_LENGTH" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Whenever cardinality ratio of the dictionary goes below this value, PagesBuilders is going to fallback to PLAIN encoding.</p>
+        <p class="phpdocumentor-summary">Column index bounds of BYTE_ARRAY and FIXED_LEN_BYTE_ARRAY columns are truncated to this many bytes, as
+STATISTICS_TRUNCATE_LENGTH truncates column chunk statistics (arrow-rs set_column_index_truncate_length).</p>
 
     
-        <section class="phpdocumentor-description"><p>Cardinality ration is calculated as distinct values / total values.
-Please notice that even when cardinality ration is above this value, PageBuilder will still fallback to PLAIN encoding
-when dictionary size gets above DICTIONARY_PAGE_SIZE.</p>
-<p>Default value 0.4 (40% of the total values is distinct)</p>
+        <section class="phpdocumentor-description"><p>Default value is 64</p>
 </section>
 
     
@@ -492,7 +524,7 @@ when dictionary size gets above DICTIONARY_PAGE_SIZE.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -521,7 +553,7 @@ when dictionary size gets above DICTIONARY_PAGE_SIZE.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -551,7 +583,7 @@ when dictionary size gets above DICTIONARY_PAGE_SIZE.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -586,7 +618,7 @@ return array of bytes (12) that represents INT96.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -608,6 +640,36 @@ return array of bytes (12) that represents INT96.</p>
             -enum-case
         "
 >
+    <h4 class="phpdocumentor-element__name" id="enumcase_PAGE_HEADER_STATISTICS">
+        PAGE_HEADER_STATISTICS
+        <a href="classes/Flow-Parquet-Option.html#enumcase_PAGE_HEADER_STATISTICS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">127</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Data page headers carry the page&#039;s statistics when the statistics level is PAGE, as arrow-rs
+set_write_page_header_statistics. Readers prune pages through the column index instead.</p>
+
+    
+        <section class="phpdocumentor-description"><p>Default value is false</p>
+</section>
+
+    
+    
+
+        
+    </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -enum-case
+        "
+>
     <h4 class="phpdocumentor-element__name" id="enumcase_PAGE_MAXIMUM_ROWS_COUNT">
         PAGE_MAXIMUM_ROWS_COUNT
         <a href="classes/Flow-Parquet-Option.html#enumcase_PAGE_MAXIMUM_ROWS_COUNT" class="headerlink"><i class="fas fa-link"></i></a>
@@ -616,15 +678,16 @@ return array of bytes (12) that represents INT96.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">PageBuilder is going to use this value to determine how many rows should be stored in one page.</p>
+        <p class="phpdocumentor-summary">The rows a data page holds at most, beside PAGE_SIZE_BYTES (arrow-rs data_page_row_count_limit). The PHP writer
+checks it every PAGE_SIZE_CHECK_INTERVAL rows, the arrow writer every write batch. Smaller pages let the page
+index skip more of a filtered read, at the cost of more page headers.</p>
 
     
-        <section class="phpdocumentor-description"><p>Smaller pages will reduce memory usage, but will increase the number of pages in the file increasing the IO operations.</p>
-<p>Default value is 1000 rows</p>
+        <section class="phpdocumentor-description"><p>Default value is 1000 rows</p>
 </section>
 
     
@@ -646,7 +709,7 @@ return array of bytes (12) that represents INT96.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
@@ -678,7 +741,7 @@ This should be considered as a threshold rather than a strict value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
@@ -709,7 +772,7 @@ If the value is set to 100, ColumnChunksBuilder is going to check the size only 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
     </aside>
 
@@ -741,7 +804,7 @@ https://parquet.apache.org/docs/file-format/configurations/#row-group-size</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -764,6 +827,67 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
             -enum-case
         "
 >
+    <h4 class="phpdocumentor-element__name" id="enumcase_STATISTICS_LEVEL">
+        STATISTICS_LEVEL
+        <a href="classes/Flow-Parquet-Option.html#enumcase_STATISTICS_LEVEL" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">184</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A Writer\StatisticsLevel: NONE writes no statistics, CHUNK writes column chunk statistics, PAGE also writes a
+column index (per page min, max, null and NaN counts). The offset index is written at every level.</p>
+
+    
+        <section class="phpdocumentor-description"><p>Default value is StatisticsLevel::PAGE</p>
+</section>
+
+    
+    
+
+        
+    </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -enum-case
+        "
+>
+    <h4 class="phpdocumentor-element__name" id="enumcase_STATISTICS_TRUNCATE_LENGTH">
+        STATISTICS_TRUNCATE_LENGTH
+        <a href="classes/Flow-Parquet-Option.html#enumcase_STATISTICS_TRUNCATE_LENGTH" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">193</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Column chunk and page statistics of BYTE_ARRAY and FIXED_LEN_BYTE_ARRAY columns are truncated to this many bytes,
+as arrow-rs does: the min is cut, the max is cut and incremented, and a truncated bound is marked inexact.</p>
+
+    
+        <section class="phpdocumentor-description"><p>Decimals and FLOAT16 are never truncated.</p>
+<p>Default value is 64</p>
+</section>
+
+    
+    
+
+        
+    </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -enum-case
+        "
+>
     <h4 class="phpdocumentor-element__name" id="enumcase_VALIDATE_DATA">
         VALIDATE_DATA
         <a href="classes/Flow-Parquet-Option.html#enumcase_VALIDATE_DATA" class="headerlink"><i class="fas fa-link"></i></a>
@@ -772,7 +896,7 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
@@ -801,7 +925,7 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">209</span>
 
     </aside>
 
@@ -835,7 +959,7 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -872,21 +996,24 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
                             <li class="phpdocumentor-on-this-page-section__title">Cases</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_ARROW_BATCH_SIZE">ARROW_BATCH_SIZE</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_ARROW_WRITE_BATCH_SIZE">ARROW_WRITE_BATCH_SIZE</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_BROTLI_COMPRESSION_LEVEL">BROTLI_COMPRESSION_LEVEL</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_COMPRESSIONS">COLUMNS_COMPRESSIONS</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_BLOOM_FILTERS">COLUMNS_BLOOM_FILTERS</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_ENCODINGS">COLUMNS_ENCODINGS</a></li>
-                                                    <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_PAGE_MIN_CARDINALITY_RATION">DICTIONARY_PAGE_MIN_CARDINALITY_RATION</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_COLUMN_INDEX_TRUNCATE_LENGTH">COLUMN_INDEX_TRUNCATE_LENGTH</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_PAGE_SIZE">DICTIONARY_PAGE_SIZE</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_GZIP_COMPRESSION_LEVEL">GZIP_COMPRESSION_LEVEL</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_INT_96_AS_DATETIME">INT_96_AS_DATETIME</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_LZ4_COMPRESSION_LEVEL">LZ4_COMPRESSION_LEVEL</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_PAGE_HEADER_STATISTICS">PAGE_HEADER_STATISTICS</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_PAGE_MAXIMUM_ROWS_COUNT">PAGE_MAXIMUM_ROWS_COUNT</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_PAGE_SIZE_BYTES">PAGE_SIZE_BYTES</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_PAGE_SIZE_CHECK_INTERVAL">PAGE_SIZE_CHECK_INTERVAL</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_ROW_GROUP_SIZE_BYTES">ROW_GROUP_SIZE_BYTES</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_ROW_GROUP_SIZE_CHECK_INTERVAL">ROW_GROUP_SIZE_CHECK_INTERVAL</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_STATISTICS_LEVEL">STATISTICS_LEVEL</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_STATISTICS_TRUNCATE_LENGTH">STATISTICS_TRUNCATE_LENGTH</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_VALIDATE_DATA">VALIDATE_DATA</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_WRITER_VERSION">WRITER_VERSION</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_ZSTD_COMPRESSION_LEVEL">ZSTD_COMPRESSION_LEVEL</a></li>

@@ -181,10 +181,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method_isRepeatable"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor\u003A\u003Aextract\u0028\u0029",
-            "name": "extract",
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor\u003A\u003Ascan\u0028\u0029",
+            "name": "scan",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method_extract"
+            "url": "classes/Flow-ETL-Adapter-CSV-CSVExtractor.html#method_scan"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\CSVExtractor\u003A\u003AinferSchema\u0028\u0029",
             "name": "inferSchema",

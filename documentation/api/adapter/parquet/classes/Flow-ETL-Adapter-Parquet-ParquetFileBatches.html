@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetFileBatches.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetfilebatches.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetFileBatches.php">ParquetFileBatches.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -169,7 +169,8 @@
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;mixed, int&gt;    </span>
 </dt>
 <dd>Skips the whole file when the window&#039;s offset covers it; otherwise reads from the offset. A file of a narrower
-schema is matched to $body.</dd>
+schema is matched to $body. What the conjuncts a file answers exactly prove cannot match is skipped; FileReadLoop
+drops the rest that does not match them.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Parquet-ParquetFileBatches.html#method_close">close()</a>
@@ -206,14 +207,14 @@ schema is matched to $body.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetFileBatches.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetfilebatches.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetFileBatches.php">ParquetFileBatches.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Parquet-ParquetSourceFileOpener.html"><abbr title="\Flow\ETL\Adapter\Parquet\ParquetSourceFileOpener">ParquetSourceFileOpener</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opener</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Extractor\File\FileColumns">FileColumns</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fileColumns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Adapter-Parquet-ParquetSourceFile.html"><abbr title="\Flow\ETL\Adapter\Parquet\ParquetSourceFile">ParquetSourceFile</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$firstFile</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">null|<abbr title="\Flow\ETL\Extractor\File\DerivedSchema">DerivedSchema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$derived</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Parquet-ParquetSourceFileOpener.html"><abbr title="\Flow\ETL\Adapter\Parquet\ParquetSourceFileOpener">ParquetSourceFileOpener</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opener</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Extractor\File\FileColumns">FileColumns</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fileColumns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Adapter-Parquet-ParquetSourceFile.html"><abbr title="\Flow\ETL\Adapter\Parquet\ParquetSourceFile">ParquetSourceFile</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$firstFile</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">null|<abbr title="\Flow\ETL\Extractor\File\DerivedSchema">DerivedSchema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$derived</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, <abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conjuncts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -253,6 +254,22 @@ schema is matched to $body.</dd>
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$body</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$conjuncts</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <abbr title="\Flow\ETL\Function\ScalarFunction">ScalarFunction</abbr>&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>FileScan::$conjuncts</p>
+</section>
+
+            </dd>
             </dl>
 
     
@@ -275,12 +292,13 @@ schema is matched to $body.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetFileBatches.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetfilebatches.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetFileBatches.php">ParquetFileBatches.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Skips the whole file when the window&#039;s offset covers it; otherwise reads from the offset. A file of a narrower
-schema is matched to $body.</p>
+schema is matched to $body. What the conjuncts a file answers exactly prove cannot match is skipped; FileReadLoop
+drops the rest that does not match them.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -367,7 +385,7 @@ schema is matched to $body.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetFileBatches.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-parquetfilebatches.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/ParquetFileBatches.php">ParquetFileBatches.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 

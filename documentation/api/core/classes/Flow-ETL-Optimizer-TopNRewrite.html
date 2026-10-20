@@ -184,7 +184,8 @@
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>    </span>
 </dt>
-<dd>The replacement for this node, or the node itself when nothing changes.</dd>
+<dd>The replacement for $original, given as $rebuilt over its rewritten children; $rebuilt itself when nothing
+changes.</dd>
 
     </dl>
 
@@ -218,11 +219,12 @@
 
     </aside>
 
-        <p class="phpdocumentor-summary">The replacement for this node, or the node itself when nothing changes.</p>
+        <p class="phpdocumentor-summary">The replacement for $original, given as $rebuilt over its rewritten children; $rebuilt itself when nothing
+changes.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">of</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$node</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">of</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$original</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rebuilt</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -234,7 +236,14 @@ exactly once, so the shared prefix stays shared. It never reaches into a join's 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$node</span>
+                <span class="phpdocumentor-argument-list__argument__name">$original</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$rebuilt</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Plan-Node.html"><abbr title="\Flow\ETL\Plan\Node">Node</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">

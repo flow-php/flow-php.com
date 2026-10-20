@@ -118,7 +118,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pagelocation.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php">PageLocation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -154,8 +154,8 @@
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Size of the page, including header. Sum of compressed_page_size and header
-length.</dd>
+<dd>Size of the page, including header. Equal to the sum of the page&#039;s
+PageHeader.compressed_page_size and the size of the serialized PageHeader.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-PageLocation.html#property_first_row_index">$first_row_index</a>
@@ -177,7 +177,7 @@ OffsetIndex is present, pages must begin on row boundaries
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Offset of the page in the file *.</dd>
+<dd>Offset of the page in the file *</dd>
 
     </dl>
 
@@ -241,7 +241,7 @@ OffsetIndex is present, pages must begin on row boundaries
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pagelocation.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php">PageLocation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -251,7 +251,7 @@ OffsetIndex is present, pages must begin on row boundaries
         <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$_TSPEC</span>
-     = <span class="phpdocumentor-signature__default-value">[1 =&gt; [&#039;var&#039; =&gt; &#039;offset&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 2 =&gt; [&#039;var&#039; =&gt; &#039;compressed_page_size&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32], 3 =&gt; [&#039;var&#039; =&gt; &#039;first_row_index&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64]]</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(1 =&gt; array(&#039;var&#039; =&gt; &#039;offset&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 2 =&gt; array(&#039;var&#039; =&gt; &#039;compressed_page_size&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I32), 3 =&gt; array(&#039;var&#039; =&gt; &#039;first_row_index&#039;, &#039;isRequired&#039; =&gt; true, &#039;type&#039; =&gt; \Thrift\Type\TType::I64))</span></code>
 
     
     
@@ -278,19 +278,19 @@ OffsetIndex is present, pages must begin on row boundaries
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pagelocation.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php">PageLocation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Size of the page, including header. Sum of compressed_page_size and header
-length.</p>
+        <p class="phpdocumentor-summary">Size of the page, including header. Equal to the sum of the page&#039;s
+PageHeader.compressed_page_size and the size of the serialized PageHeader.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$compressed_page_size</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -317,7 +317,7 @@ length.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pagelocation.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php">PageLocation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -330,7 +330,7 @@ OffsetIndex is present, pages must begin on row boundaries
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$first_row_index</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -357,7 +357,7 @@ OffsetIndex is present, pages must begin on row boundaries
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pagelocation.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php">PageLocation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -394,18 +394,18 @@ OffsetIndex is present, pages must begin on row boundaries
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pagelocation.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php">PageLocation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Offset of the page in the file *.</p>
+        <p class="phpdocumentor-summary">Offset of the page in the file *</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$offset</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -437,7 +437,7 @@ OffsetIndex is present, pages must begin on row boundaries
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pagelocation.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php">PageLocation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -481,7 +481,7 @@ OffsetIndex is present, pages must begin on row boundaries
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pagelocation.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php">PageLocation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -559,7 +559,7 @@ OffsetIndex is present, pages must begin on row boundaries
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-pagelocation.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/PageLocation.php">PageLocation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 

@@ -119,7 +119,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -196,11 +196,26 @@
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;&gt;    </span>
 </dt>
+<dd>The reader keeps the rows of the filter&#039;s bound conjuncts, the rest are evaluated here; offset and limit count the
+rows returned.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-ParquetFile.html#method_indexes">indexes()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-Parquet-ParquetFile-Index-Indexes.html"><abbr title="\Flow\Parquet\ParquetFile\Index\Indexes">Indexes</abbr></a>    </span>
+</dt>
+<dd>The page indexes, read from the file on first access.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-ParquetFile.html#method_metadata">metadata()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-Parquet-ParquetFile-Metadata.html"><abbr title="\Flow\Parquet\ParquetFile\Metadata">Metadata</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-ParquetFile.html#method_options">options()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -226,6 +241,7 @@
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string, mixed&gt;&gt;    </span>
 </dt>
+<dd>The query&#039;s rows one by one, keyed by column.</dd>
 
     </dl>
 
@@ -248,7 +264,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -292,7 +308,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -352,7 +368,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -386,7 +402,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -420,14 +436,16 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The reader keeps the rows of the filter&#039;s bound conjuncts, the rest are evaluated here; offset and limit count the
+rows returned.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">columns</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">columns</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Query.html"><abbr title="\Flow\Parquet\Query">Query</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Query.html"><abbr title="\Flow\Parquet\Query">Query</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\self::BATCH_SIZE">self::BATCH_SIZE</abbr></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -436,30 +454,16 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$query</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Query.html"><abbr title="\Flow\Parquet\Query">Query</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Parquet-Query.html"><abbr title="\Flow\Parquet\Query">Query</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$batchSize</span>
                 : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$columns</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, string&gt;</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$offset</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><abbr title="\self::BATCH_SIZE">self::BATCH_SIZE</abbr></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -481,6 +485,45 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_indexes">
+        indexes()
+        <a href="classes/Flow-Parquet-ParquetFile.html#method_indexes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The page indexes, read from the file on first access.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">indexes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-ParquetFile-Index-Indexes.html"><abbr title="\Flow\Parquet\ParquetFile\Index\Indexes">Indexes</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-ParquetFile-Index-Indexes.html"><abbr title="\Flow\Parquet\ParquetFile\Index\Indexes">Indexes</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_metadata">
         metadata()
         <a href="classes/Flow-Parquet-ParquetFile.html#method_metadata" class="headerlink"><i class="fas fa-link"></i></a>
@@ -489,7 +532,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -519,6 +562,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_options">
+        options()
+        <a href="classes/Flow-Parquet-ParquetFile.html#method_options" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">78</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">options</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Options.html"><abbr title="\Flow\Parquet\Options">Options</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_pageHeaders">
         pageHeaders()
         <a href="classes/Flow-Parquet-ParquetFile.html#method_pageHeaders" class="headerlink"><i class="fas fa-link"></i></a>
@@ -527,7 +608,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -565,7 +646,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -603,7 +684,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -641,14 +722,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfile.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFile.php">ParquetFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The query&#039;s rows one by one, keyed by column.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">values</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string, mixed&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">values</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Query.html"><abbr title="\Flow\Parquet\Query">Query</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Query.html"><abbr title="\Flow\Parquet\Query">Query</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string, mixed&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -657,23 +739,9 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$columns</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, string&gt;</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$offset</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+                <span class="phpdocumentor-argument-list__argument__name">$query</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Query.html"><abbr title="\Flow\Parquet\Query">Query</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Parquet-Query.html"><abbr title="\Flow\Parquet\Query">Query</abbr></a>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -722,7 +790,9 @@
                                             <li class=""><a href="classes/Flow-Parquet-ParquetFile.html#method___destruct">__destruct()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-ParquetFile.html#method_close">close()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-ParquetFile.html#method_columns">columns()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-ParquetFile.html#method_indexes">indexes()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-ParquetFile.html#method_metadata">metadata()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-ParquetFile.html#method_options">options()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-ParquetFile.html#method_pageHeaders">pageHeaders()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-ParquetFile.html#method_reader">reader()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-ParquetFile.html#method_schema">schema()</a></li>

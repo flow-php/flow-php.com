@@ -6371,15 +6371,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Executor-Pipeline.html#method_context"
         },                {
-            "fqsen": "\\Flow\\ETL\\Executor\\Pipeline\u003A\u003Alimit\u0028\u0029",
-            "name": "limit",
+            "fqsen": "\\Flow\\ETL\\Executor\\Pipeline\u003A\u003Ascan\u0028\u0029",
+            "name": "scan",
             "summary": "",
-            "url": "classes/Flow-ETL-Executor-Pipeline.html#method_limit"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Executor\\Pipeline\u003A\u003ApathFilter\u0028\u0029",
-            "name": "pathFilter",
-            "summary": "",
-            "url": "classes/Flow-ETL-Executor-Pipeline.html#method_pathFilter"
+            "url": "classes/Flow-ETL-Executor-Pipeline.html#method_scan"
         },                {
             "fqsen": "\\Flow\\ETL\\Executor\\Pipeline\u003A\u003Asources\u0028\u0029",
             "name": "sources",
@@ -6608,7 +6603,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Executor\\SourceRead\u003A\u003AisComplete\u0028\u0029",
             "name": "isComplete",
-            "summary": "Every\u0020read\u0020ran\u0020to\u0020its\u0020end\u0020and\u0020none\u0020had\u0020a\u0020limit\u0020or\u0020a\u0020partition\u0020filter\u0020pushed\u0020into\u0020it.",
+            "summary": "Every\u0020read\u0020ran\u0020to\u0020its\u0020end\u0020and\u0020none\u0020had\u0020a\u0020limit,\u0020a\u0020partition\u0020filter\u0020or\u0020a\u0020predicate\u0020pushed\u0020into\u0020it.",
             "url": "classes/Flow-ETL-Executor-SourceRead.html#method_isComplete"
         },                {
             "fqsen": "\\Flow\\ETL\\Executor\\SourceRows",
@@ -7181,10 +7176,10 @@ Search.appendIndex(
             "summary": "A\u0020source\u0020that\u0020lists\u0020files\u0020under\u0020a\u0020path.\u0020Its\u0020schema\u0020is\u0020a\u0020property\u0020of\u0020the\u0020source\u0020\u002D\u0020derived\u0020from\u0020the\u0020full\nlisting\u0020\u002D\u0020and\u0020a\u0020pruned\u0020read\u0020does\u0020not\u0020change\u0020it.",
             "url": "classes/Flow-ETL-Extractor-File-FileExtractor.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileExtractor\u003A\u003Aextract\u0028\u0029",
-            "name": "extract",
-            "summary": "Yields\u0020rows\u0020in\u0020batches.\u0020When\u0020the\u0020source\u0020is\u0020a\u0020BatchableExtractor\u0020a\u0020batch\u0020holds\u0020between\u00200\u0020and\u0020that\nextractor\u0027s\u0020own\u0020batchSize\u0028\u0029\u0020rows\u003B\u0020the\u0020size\u0020is\u0020chosen\u0020by\u0020the\u0020extractor\u0020and\u0020MAY\u0020vary\u0020between\nbatches.\u0020Consumers\u0020must\u0020not\u0020assume\u0020a\u0020minimum\u0020size,\u0020a\u0020constant\u0020size,\u0020or\u0020a\u0020non\u002Dempty\u0020batch.",
-            "url": "classes/Flow-ETL-Extractor-File-FileExtractor.html#method_extract"
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileExtractor\u003A\u003Ascan\u0028\u0029",
+            "name": "scan",
+            "summary": "Reads\u0020what\u0020the\u0020plan\u0020pushed\u0020into\u0020this\u0020read\u0020and\u0020returns\u0020only\u0020rows\u0020matching\u0020every\u0020one\u0020of\u0020\u0024scan\u002D\u003Econjuncts.\u0020The\nlimit\u0020and\u0020the\u0020path\u0020filter\u0020are\u0020hints\u003A\u0020the\u0020plan\u0020still\u0020enforces\u0020the\u0020limit,\u0020and\u0020every\u0020path\u0020filter\u0020is\u0020also\u0020one\u0020of\nthe\u0020conjuncts,\u0020so\u0020a\u0020source\u0020that\u0020reads\u0020or\u0020lists\u0020more\u0020is\u0020still\u0020correct.\u0020extract\u0028\u0029\u0020is\u0020scan\u0028\u0029\u0020with\u0020only\u0020a\u0020limit.",
+            "url": "classes/Flow-ETL-Extractor-File-FileExtractor.html#method_scan"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileExtractor\u003A\u003Asource\u0028\u0029",
             "name": "source",
@@ -7195,6 +7190,16 @@ Search.appendIndex(
             "name": "partitionSchema",
             "summary": "The\u0020partition\u0020block\u0020of\u0020this\u0020source\u0027s\u0020schema\u0020and\u0020nothing\u0020else\u0020\u002D\u0020typed\u0020exactly\u0020as\u0020the\u0020read\u0020emits\u0020it,\nempty\u0020when\u0020the\u0020source\u0020declares\u0020no\u0020partition\u0020columns.\u0020The\u0020planner\u0020asks\u0020it\u0020to\u0020decide\u0020whether\u0020a\u0020predicate\ncan\u0020be\u0020evaluated\u0020from\u0020the\u0020path\u0020alone.",
             "url": "classes/Flow-ETL-Extractor-File-FileExtractor.html#method_partitionSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileMetadataRow",
+            "name": "FileMetadataRow",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileMetadataRow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileMetadataRow\u003A\u003Arow\u0028\u0029",
+            "name": "row",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileMetadataRow.html#method_row"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileReading",
             "name": "FileReading",
@@ -7215,6 +7220,51 @@ Search.appendIndex(
             "name": "read",
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-File-FileReadLoop.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileScan",
+            "name": "FileScan",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileScan.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileScan\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileScan.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileScan\u003A\u003Anarrows\u0028\u0029",
+            "name": "narrows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileScan.html#method_narrows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileScan\u003A\u003AwithFilter\u0028\u0029",
+            "name": "withFilter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileScan.html#method_withFilter"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileScan\u003A\u003AwithLimit\u0028\u0029",
+            "name": "withLimit",
+            "summary": "Narrowing\u0020only\u003A\u0020a\u0020second\u0020push\u0020may\u0020lower\u0020the\u0020limit,\u0020never\u0020raise\u0020it.",
+            "url": "classes/Flow-ETL-Extractor-File-FileScan.html#method_withLimit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileScan\u003A\u003AwithPathFilter\u0028\u0029",
+            "name": "withPathFilter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileScan.html#method_withPathFilter"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileScan\u003A\u003A\u0024limit",
+            "name": "limit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileScan.html#property_limit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileScan\u003A\u003A\u0024pathFilter",
+            "name": "pathFilter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileScan.html#property_pathFilter"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\FileScan\u003A\u003A\u0024conjuncts",
+            "name": "conjuncts",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-FileScan.html#property_conjuncts"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\File\\FooterStatistics",
             "name": "FooterStatistics",
@@ -7256,6 +7306,16 @@ Search.appendIndex(
             "summary": "Refuses\u0020a\u0020file\u0020whose\u0020own\u0020columns\u0020\u0028header\u0029\u0020are\u0020not\u0020the\u0020inferred\u0020ones\u003B\u0020a\u0020file\u0020with\u0020no\u0020columns\u0020passes.",
             "url": "classes/Flow-ETL-Extractor-File-InferredColumns.html#method_refuseDivergence"
         },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ListedFileRow",
+            "name": "ListedFileRow",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-ListedFileRow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ListedFileRow\u003A\u003Arow\u0028\u0029",
+            "name": "row",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-ListedFileRow.html#method_row"
+        },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\File\\ListedFiles",
             "name": "ListedFiles",
             "summary": "",
@@ -7285,6 +7345,21 @@ Search.appendIndex(
             "name": "ListingPartitions",
             "summary": "FileReading\u0020for\u0020a\u0020source\u0020whose\u0020rows\u0020describe\u0020the\u0020files\u0020themselves\u003A\u0020the\u0020same\u0020partition\u0020columns,\u0020no\u0020metadata\ncolumns\u0020and\u0020no\u0020declared\u0020partition\u0020types\u0020\u002D\u0020each\u0020row\u0020already\u0020is\u0020the\u0020file\u0027s\u0020metadata.",
             "url": "classes/Flow-ETL-Extractor-File-ListingPartitions.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ListingScan",
+            "name": "ListingScan",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-ListingScan.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ListingScan\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-ListingScan.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\ListingScan\u003A\u003Ascan\u0028\u0029",
+            "name": "scan",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-ListingScan.html#method_scan"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\File\\MetadataColumns",
             "name": "MetadataColumns",
@@ -7366,6 +7441,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-File-PathFiltering.html#method_partitionNames"
         },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\PathPartitionsRow",
+            "name": "PathPartitionsRow",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-PathPartitionsRow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\PathPartitionsRow\u003A\u003Arow\u0028\u0029",
+            "name": "row",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-PathPartitionsRow.html#method_row"
+        },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\File\\ReadWindow",
             "name": "ReadWindow",
             "summary": "",
@@ -7385,6 +7470,16 @@ Search.appendIndex(
             "name": "limit",
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-File-ReadWindow.html#property_limit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\Scanning",
+            "name": "Scanning",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-Scanning.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Extractor\\File\\Scanning\u003A\u003Aextract\u0028\u0029",
+            "name": "extract",
+            "summary": "",
+            "url": "classes/Flow-ETL-Extractor-File-Scanning.html#method_extract"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\File\\SelfDescribingFile",
             "name": "SelfDescribingFile",
@@ -7456,10 +7551,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-FilesExtractor.html#method_isRepeatable"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\FilesExtractor\u003A\u003Aextract\u0028\u0029",
-            "name": "extract",
-            "summary": "Yields\u0020rows\u0020in\u0020batches.\u0020When\u0020the\u0020source\u0020is\u0020a\u0020BatchableExtractor\u0020a\u0020batch\u0020holds\u0020between\u00200\u0020and\u0020that\nextractor\u0027s\u0020own\u0020batchSize\u0028\u0029\u0020rows\u003B\u0020the\u0020size\u0020is\u0020chosen\u0020by\u0020the\u0020extractor\u0020and\u0020MAY\u0020vary\u0020between\nbatches.\u0020Consumers\u0020must\u0020not\u0020assume\u0020a\u0020minimum\u0020size,\u0020a\u0020constant\u0020size,\u0020or\u0020a\u0020non\u002Dempty\u0020batch.",
-            "url": "classes/Flow-ETL-Extractor-FilesExtractor.html#method_extract"
+            "fqsen": "\\Flow\\ETL\\Extractor\\FilesExtractor\u003A\u003Ascan\u0028\u0029",
+            "name": "scan",
+            "summary": "Reads\u0020what\u0020the\u0020plan\u0020pushed\u0020into\u0020this\u0020read\u0020and\u0020returns\u0020only\u0020rows\u0020matching\u0020every\u0020one\u0020of\u0020\u0024scan\u002D\u003Econjuncts.\u0020The\nlimit\u0020and\u0020the\u0020path\u0020filter\u0020are\u0020hints\u003A\u0020the\u0020plan\u0020still\u0020enforces\u0020the\u0020limit,\u0020and\u0020every\u0020path\u0020filter\u0020is\u0020also\u0020one\u0020of\nthe\u0020conjuncts,\u0020so\u0020a\u0020source\u0020that\u0020reads\u0020or\u0020lists\u0020more\u0020is\u0020still\u0020correct.\u0020extract\u0028\u0029\u0020is\u0020scan\u0028\u0029\u0020with\u0020only\u0020a\u0020limit.",
+            "url": "classes/Flow-ETL-Extractor-FilesExtractor.html#method_scan"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\FilesExtractor\u003A\u003ApartitionSchema\u0028\u0029",
             "name": "partitionSchema",
@@ -7696,10 +7791,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_isRepeatable"
         },                {
-            "fqsen": "\\Flow\\ETL\\Extractor\\PathPartitionsExtractor\u003A\u003Aextract\u0028\u0029",
-            "name": "extract",
-            "summary": "Yields\u0020rows\u0020in\u0020batches.\u0020When\u0020the\u0020source\u0020is\u0020a\u0020BatchableExtractor\u0020a\u0020batch\u0020holds\u0020between\u00200\u0020and\u0020that\nextractor\u0027s\u0020own\u0020batchSize\u0028\u0029\u0020rows\u003B\u0020the\u0020size\u0020is\u0020chosen\u0020by\u0020the\u0020extractor\u0020and\u0020MAY\u0020vary\u0020between\nbatches.\u0020Consumers\u0020must\u0020not\u0020assume\u0020a\u0020minimum\u0020size,\u0020a\u0020constant\u0020size,\u0020or\u0020a\u0020non\u002Dempty\u0020batch.",
-            "url": "classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_extract"
+            "fqsen": "\\Flow\\ETL\\Extractor\\PathPartitionsExtractor\u003A\u003Ascan\u0028\u0029",
+            "name": "scan",
+            "summary": "Reads\u0020what\u0020the\u0020plan\u0020pushed\u0020into\u0020this\u0020read\u0020and\u0020returns\u0020only\u0020rows\u0020matching\u0020every\u0020one\u0020of\u0020\u0024scan\u002D\u003Econjuncts.\u0020The\nlimit\u0020and\u0020the\u0020path\u0020filter\u0020are\u0020hints\u003A\u0020the\u0020plan\u0020still\u0020enforces\u0020the\u0020limit,\u0020and\u0020every\u0020path\u0020filter\u0020is\u0020also\u0020one\u0020of\nthe\u0020conjuncts,\u0020so\u0020a\u0020source\u0020that\u0020reads\u0020or\u0020lists\u0020more\u0020is\u0020still\u0020correct.\u0020extract\u0028\u0029\u0020is\u0020scan\u0028\u0029\u0020with\u0020only\u0020a\u0020limit.",
+            "url": "classes/Flow-ETL-Extractor-PathPartitionsExtractor.html#method_scan"
         },                {
             "fqsen": "\\Flow\\ETL\\Extractor\\PathPartitionsExtractor\u003A\u003ApartitionSchema\u0028\u0029",
             "name": "partitionSchema",
@@ -9061,11 +9156,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Function-Between-Boundary.html#method_compare"
         },                {
-            "fqsen": "\\Flow\\ETL\\Function\\Between\\Boundary\u003A\u003AcompareValues\u0028\u0029",
-            "name": "compareValues",
-            "summary": "",
-            "url": "classes/Flow-ETL-Function-Between-Boundary.html#method_compareValues"
-        },                {
             "fqsen": "\\Flow\\ETL\\Function\\Between\\Boundary\u003A\u003AEXCLUSIVE",
             "name": "EXCLUSIVE",
             "summary": "",
@@ -9575,6 +9665,16 @@ Search.appendIndex(
             "name": "eval",
             "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-ConcatWithSeparator.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Conjuncts",
+            "name": "Conjuncts",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Conjuncts.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Conjuncts\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Conjuncts.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Contains",
             "name": "Contains",
@@ -10195,6 +10295,21 @@ Search.appendIndex(
             "name": "eval",
             "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Equals.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\Filter",
+            "name": "Filter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-Filter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\Filter\u003A\u003Abind\u0028\u0029",
+            "name": "bind",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-Evaluation-Filter.html#method_bind"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\Filter\u003A\u003Afilter\u0028\u0029",
+            "name": "filter",
+            "summary": "The\u0020rows\u0020every\u0020predicate\u0020is\u0020TRUE\u0020for\u003A\u0020each\u0020is\u0020evaluated\u0020only\u0020on\u0020the\u0020rows\u0020the\u0020ones\u0020before\u0020it\u0020kept.",
+            "url": "classes/Flow-ETL-Function-Evaluation-Filter.html#method_filter"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\Evaluation\\ResultColumn",
             "name": "ResultColumn",
@@ -14266,6 +14381,21 @@ Search.appendIndex(
             "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Function-Uuid.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ValueOrder",
+            "name": "ValueOrder",
+            "summary": "Two\u0020strings\u0020order\u0020by\u0020bytes,\u0020as\u0020sort\u0020does,\u0020unless\u0020an\u0020operand\u0020is\u0020a\u0020numeric\u0020string\u0020column,\u0020which\u0020orders\u0020numerically.",
+            "url": "classes/Flow-ETL-Function-ValueOrder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ValueOrder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ValueOrder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Function\\ValueOrder\u003A\u003Acompare\u0028\u0029",
+            "name": "compare",
+            "summary": "",
+            "url": "classes/Flow-ETL-Function-ValueOrder.html#method_compare"
+        },                {
             "fqsen": "\\Flow\\ETL\\Function\\When",
             "name": "When",
             "summary": "",
@@ -15663,7 +15793,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Optimizer\\JoinSides\u003A\u003Aof\u0028\u0029",
             "name": "of",
-            "summary": "The\u0020replacement\u0020for\u0020this\u0020node,\u0020or\u0020the\u0020node\u0020itself\u0020when\u0020nothing\u0020changes.",
+            "summary": "The\u0020replacement\u0020for\u0020\u0024original,\u0020given\u0020as\u0020\u0024rebuilt\u0020over\u0020its\u0020rewritten\u0020children\u003B\u0020\u0024rebuilt\u0020itself\u0020when\u0020nothing\nchanges.",
             "url": "classes/Flow-ETL-Optimizer-JoinSides.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\Optimizer\\LimitWalk",
@@ -15698,7 +15828,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Optimizer\\Rule\\CombineLimits\u003A\u003Aof\u0028\u0029",
             "name": "of",
-            "summary": "The\u0020replacement\u0020for\u0020this\u0020node,\u0020or\u0020the\u0020node\u0020itself\u0020when\u0020nothing\u0020changes.",
+            "summary": "The\u0020replacement\u0020for\u0020\u0024original,\u0020given\u0020as\u0020\u0024rebuilt\u0020over\u0020its\u0020rewritten\u0020children\u003B\u0020\u0024rebuilt\u0020itself\u0020when\u0020nothing\nchanges.",
             "url": "classes/Flow-ETL-Optimizer-Rule-CombineLimits.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\Optimizer\\Rule\\CombineSortAndLimit",
@@ -15723,7 +15853,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Optimizer\\Rule\\PushFilterIntoSource",
             "name": "PushFilterIntoSource",
-            "summary": "Evaluate\u0020a\u0020partition\u002Donly\u0020predicate\u0020once\u0020per\u0020FILE\u0020instead\u0020of\u0020once\u0020per\u0020row\u003A\u0020the\u0020file\u0020never\u0020opens.\u0020The\u0020Filter\u0020node\nstays,\u0020so\u0020a\u0020source\u0020that\u0020lists\u0020more\u0020than\u0020the\u0020pushed\u0020filter\u0020admits\u0020still\u0020returns\u0020the\u0020right\u0020rows.\u0020The\u0020parts\u0020of\u0020an\u0020AND\nthat\u0020read\u0020only\u0020partition\u0020columns\u0020are\u0020pushed\u0020one\u0020by\u0020one\u003B\u0020an\u0020OR\u0020is\u0020pushed\u0020only\u0020as\u0020a\u0020whole.",
+            "summary": "Moves\u0020every\u0020deterministic\u0020part\u0020of\u0020an\u0020AND\u0020into\u0020the\u0020file\u0020source,\u0020which\u0020returns\u0020only\u0020the\u0020rows\u0020matching\u0020it\u003B\u0020a\npartition\u002Donly\u0020part\u0020is\u0020also\u0020pushed\u0020as\u0020a\u0020path\u0020filter,\u0020so\u0020a\u0020file\u0020it\u0020rejects\u0020is\u0020never\u0020listed.\u0020A\u0020pushed\u0020part\u0020leaves\u0020its\nFilter\u0020node,\u0020and\u0020a\u0020node\u0020left\u0020with\u0020no\u0020part\u0020is\u0020removed.\u0020An\u0020OR\u0020is\u0020pushed\u0020only\u0020as\u0020a\u0020whole.\u0020Nodes\u0020are\u0020pushed\u0020leaf\u0020first\u003B\na\u0020part\u0020kept\u0020in\u0020a\u0020node\u0020stops\u0020the\u0020push\u0020of\u0020every\u0020part\u0020after\u0020it\u0020and\u0020of\u0020every\u0020node\u0020above\u0020it.",
             "url": "classes/Flow-ETL-Optimizer-Rule-PushFilterIntoSource.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Optimizer\\Rule\\PushFilterIntoSource\u003A\u003Aapply\u0028\u0029",
@@ -15768,7 +15898,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Optimizer\\TopNRewrite\u003A\u003Aof\u0028\u0029",
             "name": "of",
-            "summary": "The\u0020replacement\u0020for\u0020this\u0020node,\u0020or\u0020the\u0020node\u0020itself\u0020when\u0020nothing\u0020changes.",
+            "summary": "The\u0020replacement\u0020for\u0020\u0024original,\u0020given\u0020as\u0020\u0024rebuilt\u0020over\u0020its\u0020rewritten\u0020children\u003B\u0020\u0024rebuilt\u0020itself\u0020when\u0020nothing\nchanges.",
             "url": "classes/Flow-ETL-Optimizer-TopNRewrite.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\Optimizer",
@@ -15950,6 +16080,11 @@ Search.appendIndex(
             "name": "read",
             "summary": "",
             "url": "classes/Flow-ETL-Plan-Explain-Details.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Details\u003A\u003Ascan\u0028\u0029",
+            "name": "scan",
+            "summary": "What\u0020the\u0020plan\u0020pushed\u0020into\u0020a\u0020read,\u0020each\u0020conjunct\u0020the\u0020source\u0020applies\u0020on\u0020its\u0020own\u0020line.",
+            "url": "classes/Flow-ETL-Plan-Explain-Details.html#method_scan"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Details\u003A\u003Anotes\u0028\u0029",
             "name": "notes",
@@ -16373,7 +16508,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Aggregate\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Aggregate.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Aggregate\u003A\u003A\u0024groupBy",
@@ -16423,7 +16558,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Batch\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Batch.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Batch\u003A\u003A\u0024size",
@@ -16468,7 +16603,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\BatchBy\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-BatchBy.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\BatchBy\u003A\u003A\u0024column",
@@ -16518,7 +16653,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Cache\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Cache.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Cache\u003A\u003A\u0024id",
@@ -16573,7 +16708,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Collect\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Collect.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\CollectRefs",
@@ -16613,7 +16748,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\CollectRefs\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-CollectRefs.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\CollectRefs\u003A\u003A\u0024references",
@@ -16658,7 +16793,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Constrain\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Constrain.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Constrain\u003A\u003A\u0024constraints",
@@ -16703,7 +16838,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Count\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Count.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\CrossJoin",
@@ -16748,7 +16883,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\CrossJoin\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-CrossJoin.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\CrossJoin\u003A\u003A\u0024prefix",
@@ -16793,7 +16928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Discard\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Discard.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Distinct",
@@ -16833,7 +16968,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Distinct\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Distinct.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Distinct\u003A\u003A\u0024entries",
@@ -16878,7 +17013,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Drop\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Drop.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Drop\u003A\u003A\u0024entries",
@@ -16923,7 +17058,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\DuplicateRow\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-DuplicateRow.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\DuplicateRow\u003A\u003A\u0024condition",
@@ -16978,7 +17113,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003Aname\u0028\u0029",
@@ -17038,7 +17173,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Filter\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Filter.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Filter\u003A\u003A\u0024function",
@@ -17088,7 +17223,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Join\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Join.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Join\u003A\u003A\u0024on",
@@ -17143,7 +17278,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\JoinEach\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-JoinEach.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\JoinEach\u003A\u003A\u0024factory",
@@ -17208,7 +17343,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Limit\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Limit.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Limit\u003A\u003A\u0024limit",
@@ -17253,7 +17388,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Offset\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Offset.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Offset\u003A\u003A\u0024offset",
@@ -17303,7 +17438,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Outputs\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Outputs.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Read",
@@ -17321,25 +17456,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Plan-Node-Read.html#method_extractor"
         },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\Node\\Read\u003A\u003Alimit\u0028\u0029",
-            "name": "limit",
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\Read\u003A\u003Ascan\u0028\u0029",
+            "name": "scan",
             "summary": "",
-            "url": "classes/Flow-ETL-Plan-Node-Read.html#method_limit"
+            "url": "classes/Flow-ETL-Plan-Node-Read.html#method_scan"
         },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\Node\\Read\u003A\u003ApathFilter\u0028\u0029",
-            "name": "pathFilter",
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\Read\u003A\u003AwithFilter\u0028\u0029",
+            "name": "withFilter",
             "summary": "",
-            "url": "classes/Flow-ETL-Plan-Node-Read.html#method_pathFilter"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\Node\\Read\u003A\u003AwithPathFilter\u0028\u0029",
-            "name": "withPathFilter",
-            "summary": "",
-            "url": "classes/Flow-ETL-Plan-Node-Read.html#method_withPathFilter"
+            "url": "classes/Flow-ETL-Plan-Node-Read.html#method_withFilter"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Read\u003A\u003AwithLimit\u0028\u0029",
             "name": "withLimit",
             "summary": "Narrowing\u0020only\u003A\u0020a\u0020second\u0020push\u0020may\u0020lower\u0020the\u0020limit,\u0020never\u0020raise\u0020it.",
             "url": "classes/Flow-ETL-Plan-Node-Read.html#method_withLimit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\Read\u003A\u003AwithPathFilter\u0028\u0029",
+            "name": "withPathFilter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Node-Read.html#method_withPathFilter"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Read\u003A\u003Achildren\u0028\u0029",
             "name": "children",
@@ -17373,7 +17508,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Read\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Read.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Rename",
@@ -17413,7 +17548,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Rename\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Rename.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Rename\u003A\u003A\u0024from",
@@ -17463,7 +17598,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\RenameEach\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-RenameEach.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\RenameEach\u003A\u003A\u0024strategies",
@@ -17508,7 +17643,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Repartition\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Repartition.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Repartition\u003A\u003A\u0024by",
@@ -17553,7 +17688,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Result\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Result.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Select",
@@ -17593,7 +17728,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Select\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Select.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Select\u003A\u003A\u0024entries",
@@ -17638,7 +17773,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Sort\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Sort.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Sort\u003A\u003A\u0024refs",
@@ -17688,7 +17823,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\TopN\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-TopN.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\TopN\u003A\u003A\u0024refs",
@@ -17743,7 +17878,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Transaction\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Transaction.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Transaction\u003A\u003A\u0024transaction",
@@ -17788,7 +17923,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Transform\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Transform.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Transform\u003A\u003A\u0024transformer",
@@ -17833,7 +17968,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Until\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Until.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Until\u003A\u003A\u0024function",
@@ -17878,7 +18013,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Validate\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Validate.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Validate\u003A\u003A\u0024schema",
@@ -17928,7 +18063,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\WindowColumn\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-WindowColumn.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\WindowColumn\u003A\u003Aname\u0028\u0029",
@@ -17983,7 +18118,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\WithColumn\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-WithColumn.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\WithColumn\u003A\u003Aname\u0028\u0029",
@@ -18038,7 +18173,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Write\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Write.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Write\u003A\u003A\u0024loader",
@@ -18078,7 +18213,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\u003A\u003Aredefines\u0028\u0029",
             "name": "redefines",
-            "summary": "Columns\u0020this\u0020node\u0020introduces\u0020or\u0020renames\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
+            "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node.html#method_redefines"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Redefined",
@@ -18096,40 +18231,85 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Plan-Redefined.html#property_names"
         },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Redefined\u003A\u003AallBut\u0028\u0029",
+            "name": "allBut",
+            "summary": "The\u0020node\u0020keeps\u0020only\u0020\u0024kept\u0020\u0028Select\u0029\u003A\u0020every\u0020other\u0020column\u0020is\u0020gone\u0020above\u0020it.",
+            "url": "classes/Flow-ETL-Plan-Redefined.html#method_allBut"
+        },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Redefined\u003A\u003Aalias\u0028\u0029",
             "name": "alias",
             "summary": "\u0024name\u0020holds\u0020exactly\u0020the\u0020values\u0020of\u0020\u0024below\u003A\u0020a\u0020reference\u0020to\u0020\u0024name\u0020above\u0020the\u0020node\u0020is\u0020a\u0020reference\u0020to\u0020\u0024below\nunder\u0020it.",
             "url": "classes/Flow-ETL-Plan-Redefined.html#method_alias"
         },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\Redefined\u003A\u003A\u0024unknown",
+            "fqsen": "\\Flow\\ETL\\Plan\\Redefined\u003A\u003Arename\u0028\u0029",
+            "name": "rename",
+            "summary": "\u0024to\u0020holds\u0020exactly\u0020the\u0020values\u0020of\u0020\u0024from,\u0020which\u0020is\u0020gone\u0020above\u0020the\u0020node.",
+            "url": "classes/Flow-ETL-Plan-Redefined.html#method_rename"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Redefined\u003A\u003Aunknown\u0028\u0029",
             "name": "unknown",
-            "summary": "",
-            "url": "classes/Flow-ETL-Plan-Redefined.html#property_unknown"
+            "summary": "The\u0020node\u0020cannot\u0020name\u0020its\u0020columns\u0020before\u0020a\u0020schema\u0020is\u0020bound\u0020\u0028RenameEach\u0029\u003A\u0020every\u0020name\u0020is\u0020redefined.",
+            "url": "classes/Flow-ETL-Plan-Redefined.html#method_unknown"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Redefined\u003A\u003Adefines\u0028\u0029",
             "name": "defines",
             "summary": "",
             "url": "classes/Flow-ETL-Plan-Redefined.html#method_defines"
         },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Redefined\u003A\u003AisAllBut\u0028\u0029",
+            "name": "isAllBut",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Redefined.html#method_isAllBut"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Redefined\u003A\u003AisUnknown\u0028\u0029",
+            "name": "isUnknown",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Redefined.html#method_isUnknown"
+        },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Redefined\u003A\u003AaliasOf\u0028\u0029",
             "name": "aliasOf",
             "summary": "The\u0020column\u0020under\u0020the\u0020node\u0020that\u0020\u0024name\u0020above\u0020it\u0020renames,\u0020or\u0020null\u0020when\u0020\u0024name\u0020is\u0020not\u0020a\u0020plain\u0020alias.",
             "url": "classes/Flow-ETL-Plan-Redefined.html#method_aliasOf"
         },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\ReplaceLeaf",
-            "name": "ReplaceLeaf",
+            "fqsen": "\\Flow\\ETL\\Plan\\Redefinition",
+            "name": "Redefinition",
             "summary": "",
-            "url": "classes/Flow-ETL-Plan-ReplaceLeaf.html"
+            "url": "classes/Flow-ETL-Plan-Redefinition.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\ReplaceLeaf\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Plan\\Redefinition\u003A\u003Anames",
+            "name": "names",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Redefinition.html#enumcase_names"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Redefinition\u003A\u003AallBut",
+            "name": "allBut",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Redefinition.html#enumcase_allBut"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Redefinition\u003A\u003Aunknown",
+            "name": "unknown",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Redefinition.html#enumcase_unknown"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\ReplaceNodes",
+            "name": "ReplaceNodes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-ReplaceNodes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\ReplaceNodes\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Plan-ReplaceLeaf.html#method___construct"
+            "summary": "Targets\u0020are\u0020found\u0020by\u0020the\u0020identity\u0020they\u0020have\u0020before\u0020the\u0020rewrite.",
+            "url": "classes/Flow-ETL-Plan-ReplaceNodes.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\ReplaceLeaf\u003A\u003Aof\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Plan\\ReplaceNodes\u003A\u003Aone\u0028\u0029",
+            "name": "one",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-ReplaceNodes.html#method_one"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\ReplaceNodes\u003A\u003Aof\u0028\u0029",
             "name": "of",
-            "summary": "The\u0020replacement\u0020for\u0020this\u0020node,\u0020or\u0020the\u0020node\u0020itself\u0020when\u0020nothing\u0020changes.",
-            "url": "classes/Flow-ETL-Plan-ReplaceLeaf.html#method_of"
+            "summary": "The\u0020replacement\u0020for\u0020\u0024original,\u0020given\u0020as\u0020\u0024rebuilt\u0020over\u0020its\u0020rewritten\u0020children\u003B\u0020\u0024rebuilt\u0020itself\u0020when\u0020nothing\nchanges.",
+            "url": "classes/Flow-ETL-Plan-ReplaceNodes.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\RequiredColumns",
             "name": "RequiredColumns",
@@ -18188,7 +18368,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Rewrite\u003A\u003Aof\u0028\u0029",
             "name": "of",
-            "summary": "The\u0020replacement\u0020for\u0020this\u0020node,\u0020or\u0020the\u0020node\u0020itself\u0020when\u0020nothing\u0020changes.",
+            "summary": "The\u0020replacement\u0020for\u0020\u0024original,\u0020given\u0020as\u0020\u0024rebuilt\u0020over\u0020its\u0020rewritten\u0020children\u003B\u0020\u0024rebuilt\u0020itself\u0020when\u0020nothing\nchanges.",
             "url": "classes/Flow-ETL-Plan-Rewrite.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\RowCount",
@@ -23541,10 +23721,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Floe-FloeExtractor.html#method_isRepeatable"
         },                {
-            "fqsen": "\\Flow\\Floe\\FloeExtractor\u003A\u003Aextract\u0028\u0029",
-            "name": "extract",
-            "summary": "Yields\u0020rows\u0020in\u0020batches.\u0020When\u0020the\u0020source\u0020is\u0020a\u0020BatchableExtractor\u0020a\u0020batch\u0020holds\u0020between\u00200\u0020and\u0020that\nextractor\u0027s\u0020own\u0020batchSize\u0028\u0029\u0020rows\u003B\u0020the\u0020size\u0020is\u0020chosen\u0020by\u0020the\u0020extractor\u0020and\u0020MAY\u0020vary\u0020between\nbatches.\u0020Consumers\u0020must\u0020not\u0020assume\u0020a\u0020minimum\u0020size,\u0020a\u0020constant\u0020size,\u0020or\u0020a\u0020non\u002Dempty\u0020batch.",
-            "url": "classes/Flow-Floe-FloeExtractor.html#method_extract"
+            "fqsen": "\\Flow\\Floe\\FloeExtractor\u003A\u003Ascan\u0028\u0029",
+            "name": "scan",
+            "summary": "Reads\u0020what\u0020the\u0020plan\u0020pushed\u0020into\u0020this\u0020read\u0020and\u0020returns\u0020only\u0020rows\u0020matching\u0020every\u0020one\u0020of\u0020\u0024scan\u002D\u003Econjuncts.\u0020The\nlimit\u0020and\u0020the\u0020path\u0020filter\u0020are\u0020hints\u003A\u0020the\u0020plan\u0020still\u0020enforces\u0020the\u0020limit,\u0020and\u0020every\u0020path\u0020filter\u0020is\u0020also\u0020one\u0020of\nthe\u0020conjuncts,\u0020so\u0020a\u0020source\u0020that\u0020reads\u0020or\u0020lists\u0020more\u0020is\u0020still\u0020correct.\u0020extract\u0028\u0029\u0020is\u0020scan\u0028\u0029\u0020with\u0020only\u0020a\u0020limit.",
+            "url": "classes/Flow-Floe-FloeExtractor.html#method_scan"
         },                {
             "fqsen": "\\Flow\\Floe\\FloeExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",

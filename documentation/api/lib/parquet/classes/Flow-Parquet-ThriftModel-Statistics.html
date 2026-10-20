@@ -118,7 +118,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -154,23 +154,23 @@ All fields are optional.</p>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_distinct_count">$distinct_count</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
-<dd>count of distinct values occurring.</dd>
+<dd>count of distinct values occurring</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_is_max_value_exact">$is_max_value_exact</a>
     <span>
-                        &nbsp;: bool            </span>
+                        &nbsp;: null|bool            </span>
 </dt>
-<dd>If true, max_value is the actual maximum value for a column.</dd>
+<dd>If true, max_value is the actual maximum value for a column</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_is_min_value_exact">$is_min_value_exact</a>
     <span>
-                        &nbsp;: bool            </span>
+                        &nbsp;: null|bool            </span>
 </dt>
-<dd>If true, min_value is the actual minimum value for a column.</dd>
+<dd>If true, min_value is the actual minimum value for a column</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_isValidate">$isValidate</a>
@@ -181,33 +181,41 @@ All fields are optional.</p>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_max">$max</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: null|string            </span>
 </dt>
 <dd>DEPRECATED: min and max value of the column. Use min_value and max_value.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_max_value">$max_value</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: null|string            </span>
 </dt>
 <dd>Lower and upper bound values for the column, determined by its ColumnOrder.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_min">$min</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: null|string            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_min_value">$min_value</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: null|string            </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_nan_count">$nan_count</a>
+    <span>
+                        &nbsp;: null|int            </span>
+</dt>
+<dd>Count of NaN values in the column; only present if physical type is FLOAT
+or DOUBLE, or logical type is FLOAT16.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_null_count">$null_count</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: null|int            </span>
 </dt>
 <dd>Count of null values in the column.</dd>
 
@@ -273,7 +281,7 @@ All fields are optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -283,7 +291,7 @@ All fields are optional.</p>
         <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$_TSPEC</span>
-     = <span class="phpdocumentor-signature__default-value">[1 =&gt; [&#039;var&#039; =&gt; &#039;max&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING], 2 =&gt; [&#039;var&#039; =&gt; &#039;min&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING], 3 =&gt; [&#039;var&#039; =&gt; &#039;null_count&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 4 =&gt; [&#039;var&#039; =&gt; &#039;distinct_count&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64], 5 =&gt; [&#039;var&#039; =&gt; &#039;max_value&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING], 6 =&gt; [&#039;var&#039; =&gt; &#039;min_value&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING], 7 =&gt; [&#039;var&#039; =&gt; &#039;is_max_value_exact&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::BOOL], 8 =&gt; [&#039;var&#039; =&gt; &#039;is_min_value_exact&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::BOOL]]</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(1 =&gt; array(&#039;var&#039; =&gt; &#039;max&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING), 2 =&gt; array(&#039;var&#039; =&gt; &#039;min&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING), 3 =&gt; array(&#039;var&#039; =&gt; &#039;null_count&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 4 =&gt; array(&#039;var&#039; =&gt; &#039;distinct_count&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64), 5 =&gt; array(&#039;var&#039; =&gt; &#039;max_value&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING), 6 =&gt; array(&#039;var&#039; =&gt; &#039;min_value&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::STRING), 7 =&gt; array(&#039;var&#039; =&gt; &#039;is_max_value_exact&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::BOOL), 8 =&gt; array(&#039;var&#039; =&gt; &#039;is_min_value_exact&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::BOOL), 9 =&gt; array(&#039;var&#039; =&gt; &#039;nan_count&#039;, &#039;isRequired&#039; =&gt; false, &#039;type&#039; =&gt; \Thrift\Type\TType::I64))</span></code>
 
     
     
@@ -310,18 +318,18 @@ All fields are optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">count of distinct values occurring.</p>
+        <p class="phpdocumentor-summary">count of distinct values occurring</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$distinct_count</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -348,18 +356,18 @@ All fields are optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">If true, max_value is the actual maximum value for a column.</p>
+        <p class="phpdocumentor-summary">If true, max_value is the actual maximum value for a column</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">bool</span>
+            <span class="phpdocumentor-signature__type">null|bool</span>
     <span class="phpdocumentor-signature__name">$is_max_value_exact</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -386,18 +394,18 @@ All fields are optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">If true, min_value is the actual minimum value for a column.</p>
+        <p class="phpdocumentor-summary">If true, min_value is the actual minimum value for a column</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">bool</span>
+            <span class="phpdocumentor-signature__type">null|bool</span>
     <span class="phpdocumentor-signature__name">$is_min_value_exact</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -424,7 +432,7 @@ All fields are optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -461,7 +469,7 @@ All fields are optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -470,9 +478,9 @@ All fields are optional.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">string</span>
+            <span class="phpdocumentor-signature__type">null|string</span>
     <span class="phpdocumentor-signature__name">$max</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>Values are encoded using PLAIN encoding, except that variable-length byte
 arrays do not include a length prefix.</p>
@@ -507,7 +515,7 @@ signed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -516,9 +524,9 @@ signed.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">string</span>
+            <span class="phpdocumentor-signature__type">null|string</span>
     <span class="phpdocumentor-signature__name">$max_value</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>These may be the actual minimum and maximum values found on a page or column
 chunk, but can also be (more compact) values that do not exist on a page or
@@ -553,7 +561,7 @@ arrays do not include a length prefix.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -561,9 +569,9 @@ arrays do not include a length prefix.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">string</span>
+            <span class="phpdocumentor-signature__type">null|string</span>
     <span class="phpdocumentor-signature__name">$min</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -590,7 +598,7 @@ arrays do not include a length prefix.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -598,11 +606,53 @@ arrays do not include a length prefix.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">string</span>
+            <span class="phpdocumentor-signature__type">null|string</span>
     <span class="phpdocumentor-signature__name">$min_value</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_nan_count">
+        $nan_count
+        <a href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_nan_count" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">151</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Count of NaN values in the column; only present if physical type is FLOAT
+or DOUBLE, or logical type is FLOAT16.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
+    <span class="phpdocumentor-signature__name">$nan_count</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>If this field is not present, readers MUST assume NaNs may be present
+(i.e. MUST assume nan_count &gt; 0 and MAY NOT assume nan_count == 0).</p>
+</section>
+
     
     
 
@@ -627,7 +677,7 @@ arrays do not include a length prefix.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -636,9 +686,9 @@ arrays do not include a length prefix.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">null|int</span>
     <span class="phpdocumentor-signature__name">$null_count</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>Writers SHOULD always write this field even if it is zero (i.e. no null value)
 or the column is not nullable.
@@ -675,7 +725,7 @@ If null_count is not present, readers MUST NOT assume null_count == 0.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -719,7 +769,7 @@ If null_count is not present, readers MUST NOT assume null_count == 0.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -753,7 +803,7 @@ If null_count is not present, readers MUST NOT assume null_count == 0.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php"><a href="files/src-lib-parquet-src-flow-parquet-thriftmodel-statistics.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ThriftModel/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">192</span>
 
     </aside>
 
@@ -858,6 +908,7 @@ If null_count is not present, readers MUST NOT assume null_count == 0.</p>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_max_value">$max_value</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_min">$min</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_min_value">$min_value</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_nan_count">$nan_count</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ThriftModel-Statistics.html#property_null_count">$null_count</a></li>
                                             </ul>
                 </li>

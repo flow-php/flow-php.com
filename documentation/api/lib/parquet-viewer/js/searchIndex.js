@@ -21,6 +21,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ParquetViewer-Parquet.html"
         },                {
+            "fqsen": "\\Flow\\ParquetViewer\\StatisticFormatter",
+            "name": "StatisticFormatter",
+            "summary": "",
+            "url": "classes/Flow-ParquetViewer-StatisticFormatter.html"
+        },                {
+            "fqsen": "\\Flow\\ParquetViewer\\StatisticFormatter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ParquetViewer-StatisticFormatter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ParquetViewer\\StatisticFormatter\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Flow-ParquetViewer-StatisticFormatter.html#method_format"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",

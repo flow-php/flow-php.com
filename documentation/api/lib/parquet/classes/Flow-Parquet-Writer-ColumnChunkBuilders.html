@@ -120,7 +120,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -176,6 +176,7 @@
     <span>
                                 &nbsp;: array&lt;string|int, <a href="classes/Flow-Parquet-Writer-ColumnChunkContainer.html"><abbr title="\Flow\Parquet\Writer\ColumnChunkContainer">ColumnChunkContainer</abbr></a>&gt;    </span>
 </dt>
+<dd>Each container carries its chunk&#039;s bloom filter when the column has one.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_initialize">initialize()</a>
@@ -224,14 +225,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, <a href="classes/Flow-Parquet-Writer-ColumnChunkBuilder.html"><abbr title="\Flow\Parquet\Writer\ColumnChunkBuilder">ColumnChunkBuilder</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$builders</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, <a href="classes/Flow-Parquet-Writer-ColumnChunkBuilder.html"><abbr title="\Flow\Parquet\Writer\ColumnChunkBuilder">ColumnChunkBuilder</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$builders</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-BloomFilter-BloomHash.html"><abbr title="\Flow\Parquet\BloomFilter\BloomHash">BloomHash</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bloomHash</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-BloomFilter-BloomHash.html"><abbr title="\Flow\Parquet\BloomFilter\BloomHash">BloomHash</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -243,6 +244,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$builders</span>
                 : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, <a href="classes/Flow-Parquet-Writer-ColumnChunkBuilder.html"><abbr title="\Flow\Parquet\Writer\ColumnChunkBuilder">ColumnChunkBuilder</abbr></a>&gt;</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bloomHash</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-BloomFilter-BloomHash.html"><abbr title="\Flow\Parquet\BloomFilter\BloomHash">BloomHash</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Parquet-BloomFilter-BloomHash.html"><abbr title="\Flow\Parquet\BloomFilter\BloomHash">BloomHash</abbr></a>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -268,7 +276,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -319,7 +327,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -357,7 +365,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -392,11 +400,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Each container carries its chunk&#039;s bloom filter when the column has one.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">flush</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fileOffset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Flow-Parquet-Writer-ColumnChunkContainer.html"><abbr title="\Flow\Parquet\Writer\ColumnChunkContainer">ColumnChunkContainer</abbr></a>&gt;</span></code>
@@ -440,7 +449,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -502,7 +511,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
@@ -541,7 +550,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-columnchunkbuilders.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ColumnChunkBuilders.php">ColumnChunkBuilders.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">183</span>
 
     </aside>
 
