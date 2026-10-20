@@ -8071,6 +8071,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Filesystem-ScalarFunctionFilter.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Filesystem\\ScalarFunctionFilter\u003A\u003Afunction\u0028\u0029",
+            "name": "function",
+            "summary": "",
+            "url": "classes/Flow-ETL-Filesystem-ScalarFunctionFilter.html#method_function"
+        },                {
             "fqsen": "\\Flow\\ETL\\Filesystem\\ScalarFunctionFilter\u003A\u003Aaccept\u0028\u0029",
             "name": "accept",
             "summary": "",
@@ -16086,6 +16091,11 @@ Search.appendIndex(
             "summary": "What\u0020the\u0020plan\u0020pushed\u0020into\u0020a\u0020read,\u0020each\u0020conjunct\u0020the\u0020source\u0020applies\u0020on\u0020its\u0020own\u0020line.",
             "url": "classes/Flow-ETL-Plan-Explain-Details.html#method_scan"
         },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Details\u003A\u003Afiles\u0028\u0029",
+            "name": "files",
+            "summary": "Each\u0020filter\u0020a\u0020file\u0020must\u0020pass,\u0020one\u0020per\u0020line.",
+            "url": "classes/Flow-ETL-Plan-Explain-Details.html#method_files"
+        },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Details\u003A\u003Anotes\u0028\u0029",
             "name": "notes",
             "summary": "The\u0020declarations\u0020below\u0020in\u0020plain\u0020words,\u0020for\u0020the\u0020ones\u0020that\u0020change\u0020how\u0020the\u0020rows\u0020flow.",
@@ -16150,6 +16160,61 @@ Search.appendIndex(
             "name": "suffix",
             "summary": "",
             "url": "classes/Flow-ETL-Plan-Explain-Entry.html#property_suffix"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Expression",
+            "name": "Expression",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Explain-Expression.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Expression\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Explain-Expression.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Expression\u003A\u003Aoperand\u0028\u0029",
+            "name": "operand",
+            "summary": "An\u0020operator\u0020inside\u0020another\u0020operator\u0020is\u0020parenthesized\u003B\u0020a\u0020reference,\u0020a\u0020value\u0020or\u0020a\u0020call\u0020reads\u0020unambiguously\u0020as\u0020is.",
+            "url": "classes/Flow-ETL-Plan-Explain-Expression.html#method_operand"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Expression\u003A\u003Aoperator\u0028\u0029",
+            "name": "operator",
+            "summary": "Null\u0020for\u0020a\u0020function\u0020the\u0020explain\u0020has\u0020no\u0020wording\u0020for.",
+            "url": "classes/Flow-ETL-Plan-Explain-Expression.html#method_operator"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Expression\u003A\u003Acomposite\u0028\u0029",
+            "name": "composite",
+            "summary": "Comparisons\u0020bind\u0020tighter\u0020than\u0020AND\/OR,\u0020so\u0020only\u0020a\u0020nested\u0020AND\/OR\u0020is\u0020parenthesized.",
+            "url": "classes/Flow-ETL-Plan-Explain-Expression.html#method_composite"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Expression\u003A\u003Apair\u0028\u0029",
+            "name": "pair",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Explain-Expression.html#method_pair"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Expression\u003A\u003Abetween\u0028\u0029",
+            "name": "between",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Explain-Expression.html#method_between"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Expression\u003A\u003Arange\u0028\u0029",
+            "name": "range",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Explain-Expression.html#method_range"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Expression\u003A\u003Acall\u0028\u0029",
+            "name": "call",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Explain-Expression.html#method_call"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Expression\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Flow-ETL-Plan-Explain-Expression.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Plan\\Explain\\Expression\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "Cut\u0020after\u0020a\u0020few\u0020values,\u0020so\u0020a\u0020long\u0020list\u0020never\u0020makes\u0020an\u0020unbounded\u0020line.",
+            "url": "classes/Flow-ETL-Plan-Explain-Expression.html#method_list"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Explain\\FlowLayout",
             "name": "FlowLayout",

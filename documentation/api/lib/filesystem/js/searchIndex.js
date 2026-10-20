@@ -816,6 +816,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Path-Filter-Filters.html#method_add"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\\Filter\\Filters\u003A\u003Afilters\u0028\u0029",
+            "name": "filters",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path-Filter-Filters.html#method_filters"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\Filter\\KeepAll",
             "name": "KeepAll",
             "summary": "",
