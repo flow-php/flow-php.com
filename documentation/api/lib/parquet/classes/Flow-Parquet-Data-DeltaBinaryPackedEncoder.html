@@ -122,7 +122,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Data/DeltaBinaryPackedEncoder.php"><a href="files/src-lib-parquet-src-flow-parquet-data-deltabinarypackedencoder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Data/DeltaBinaryPackedEncoder.php">DeltaBinaryPackedEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -188,14 +188,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Data/DeltaBinaryPackedEncoder.php"><a href="files/src-lib-parquet-src-flow-parquet-data-deltabinarypackedencoder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Data/DeltaBinaryPackedEncoder.php">DeltaBinaryPackedEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$blockSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\self::DEFAULT_BLOCK_SIZE">self::DEFAULT_BLOCK_SIZE</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$miniblockSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\self::DEFAULT_MINIBLOCK_SIZE">self::DEFAULT_MINIBLOCK_SIZE</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Data-DeltaCalculator.html"><abbr title="\Flow\Parquet\Data\DeltaCalculator">DeltaCalculator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$deltaCalculator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Data-DeltaCalculator.html"><abbr title="\Flow\Parquet\Data\DeltaCalculator">DeltaCalculator</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Data-ZigZag.html"><abbr title="\Flow\Parquet\Data\ZigZag">ZigZag</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$zigzag</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Data-ZigZag.html"><abbr title="\Flow\Parquet\Data\ZigZag">ZigZag</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$blockSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\self::DEFAULT_BLOCK_SIZE">self::DEFAULT_BLOCK_SIZE</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$miniblockSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\self::DEFAULT_MINIBLOCK_SIZE">self::DEFAULT_MINIBLOCK_SIZE</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Data-DeltaCalculator.html"><abbr title="\Flow\Parquet\Data\DeltaCalculator">DeltaCalculator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$deltaCalculator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Data-DeltaCalculator.html"><abbr title="\Flow\Parquet\Data\DeltaCalculator">DeltaCalculator</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Data-ZigZag.html"><abbr title="\Flow\Parquet\Data\ZigZag">ZigZag</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$zigzag</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Data-ZigZag.html"><abbr title="\Flow\Parquet\Data\ZigZag">ZigZag</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-PhysicalType.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\PhysicalType">PhysicalType</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$physicalType</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-Parquet-ParquetFile-Schema-PhysicalType.html#enumcase_INT64"><abbr title="\Flow\Parquet\ParquetFile\Schema\PhysicalType::INT64">PhysicalType::INT64</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -231,6 +231,13 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$physicalType</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema-PhysicalType.html"><abbr title="\Flow\Parquet\ParquetFile\Schema\PhysicalType">PhysicalType</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-Parquet-ParquetFile-Schema-PhysicalType.html#enumcase_INT64"><abbr title="\Flow\Parquet\ParquetFile\Schema\PhysicalType::INT64">PhysicalType::INT64</abbr></a></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -253,7 +260,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Data/DeltaBinaryPackedEncoder.php"><a href="files/src-lib-parquet-src-flow-parquet-data-deltabinarypackedencoder.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Data/DeltaBinaryPackedEncoder.php">DeltaBinaryPackedEncoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 

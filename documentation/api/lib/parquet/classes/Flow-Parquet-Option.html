@@ -181,11 +181,21 @@ STATISTICS_TRUNCATE_LENGTH truncates column chunk statistics (arrow-rs set_colum
 <dd>Per-column encoding configuration using flat path notation.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a class="" href="classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_ENABLED">DICTIONARY_ENABLED</a>
+    <span>
+                                    </span>
+</dt>
+<dd>Columns without a COLUMNS_ENCODINGS entry are dictionary-encoded (RLE_DICTIONARY), except BOOLEAN and, under
+writer version 1, FIXED_LEN_BYTE_ARRAY, as arrow-rs and parquet-java write them. False writes the writer
+version&#039;s fallback encoding instead. A COLUMNS_ENCODINGS entry always wins.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_PAGE_SIZE">DICTIONARY_PAGE_SIZE</a>
     <span>
                                     </span>
 </dt>
-<dd>Whenever size of the dictionary goes above this value, PagesBuilders is going to fallback to PLAIN encoding.</dd>
+<dd>Once the column chunk&#039;s dictionary reaches this size, the rest of the chunk falls back to the writer version&#039;s
+fallback encoding (PLAIN under v1).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Parquet-Option.html#enumcase_GZIP_COMPRESSION_LEVEL">GZIP_COMPRESSION_LEVEL</a>
@@ -516,6 +526,37 @@ STATISTICS_TRUNCATE_LENGTH truncates column chunk statistics (arrow-rs set_colum
             -enum-case
         "
 >
+    <h4 class="phpdocumentor-element__name" id="enumcase_DICTIONARY_ENABLED">
+        DICTIONARY_ENABLED
+        <a href="classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_ENABLED" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">91</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Columns without a COLUMNS_ENCODINGS entry are dictionary-encoded (RLE_DICTIONARY), except BOOLEAN and, under
+writer version 1, FIXED_LEN_BYTE_ARRAY, as arrow-rs and parquet-java write them. False writes the writer
+version&#039;s fallback encoding instead. A COLUMNS_ENCODINGS entry always wins.</p>
+
+    
+        <section class="phpdocumentor-description"><p>Default value is true</p>
+</section>
+
+    
+    
+
+        
+    </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -enum-case
+        "
+>
     <h4 class="phpdocumentor-element__name" id="enumcase_DICTIONARY_PAGE_SIZE">
         DICTIONARY_PAGE_SIZE
         <a href="classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_PAGE_SIZE" class="headerlink"><i class="fas fa-link"></i></a>
@@ -524,11 +565,12 @@ STATISTICS_TRUNCATE_LENGTH truncates column chunk statistics (arrow-rs set_colum
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Whenever size of the dictionary goes above this value, PagesBuilders is going to fallback to PLAIN encoding.</p>
+        <p class="phpdocumentor-summary">Once the column chunk&#039;s dictionary reaches this size, the rest of the chunk falls back to the writer version&#039;s
+fallback encoding (PLAIN under v1).</p>
 
     
         <section class="phpdocumentor-description"><p>Default value is 1Mb</p>
@@ -553,7 +595,7 @@ STATISTICS_TRUNCATE_LENGTH truncates column chunk statistics (arrow-rs set_colum
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -583,7 +625,7 @@ STATISTICS_TRUNCATE_LENGTH truncates column chunk statistics (arrow-rs set_colum
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -618,7 +660,7 @@ return array of bytes (12) that represents INT96.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -648,7 +690,7 @@ return array of bytes (12) that represents INT96.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -678,7 +720,7 @@ set_write_page_header_statistics. Readers prune pages through the column index i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -709,7 +751,7 @@ index skip more of a filtered read, at the cost of more page headers.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -741,7 +783,7 @@ This should be considered as a threshold rather than a strict value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -772,7 +814,7 @@ If the value is set to 100, ColumnChunksBuilder is going to check the size only 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -804,7 +846,7 @@ https://parquet.apache.org/docs/file-format/configurations/#row-group-size</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">176</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -835,7 +877,7 @@ If the value is set to 1000, RowGroupBuilder is going to check the size only aft
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">194</span>
 
     </aside>
 
@@ -865,7 +907,7 @@ column index (per page min, max, null and NaN counts). The offset index is writt
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">193</span>
+    <span class="phpdocumentor-element-found-in__line">203</span>
 
     </aside>
 
@@ -896,7 +938,7 @@ as arrow-rs does: the min is cut, the max is cut and incremented, and a truncate
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">199</span>
+    <span class="phpdocumentor-element-found-in__line">209</span>
 
     </aside>
 
@@ -925,7 +967,7 @@ as arrow-rs does: the min is cut, the max is cut and incremented, and a truncate
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">209</span>
+    <span class="phpdocumentor-element-found-in__line">219</span>
 
     </aside>
 
@@ -959,7 +1001,7 @@ as arrow-rs does: the min is cut, the max is cut and incremented, and a truncate
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Option.php"><a href="files/src-lib-parquet-src-flow-parquet-option.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Option.php">Option.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">217</span>
+    <span class="phpdocumentor-element-found-in__line">227</span>
 
     </aside>
 
@@ -1002,6 +1044,7 @@ as arrow-rs does: the min is cut, the max is cut and incremented, and a truncate
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_BLOOM_FILTERS">COLUMNS_BLOOM_FILTERS</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_COLUMNS_ENCODINGS">COLUMNS_ENCODINGS</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_COLUMN_INDEX_TRUNCATE_LENGTH">COLUMN_INDEX_TRUNCATE_LENGTH</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_ENABLED">DICTIONARY_ENABLED</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_PAGE_SIZE">DICTIONARY_PAGE_SIZE</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_GZIP_COMPRESSION_LEVEL">GZIP_COMPRESSION_LEVEL</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-Option.html#enumcase_INT_96_AS_DATETIME">INT_96_AS_DATETIME</a></li>

@@ -158,9 +158,21 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_addValues">addValues()</a>
     <span>
                                 &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_encoding">encoding()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-Parquet-ParquetFile-Encodings.html"><abbr title="\Flow\Parquet\ParquetFile\Encodings">Encodings</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -176,15 +188,15 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_reset">reset()</a>
+    <a class="" href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_plainSize">plainSize()</a>
     <span>
-                                &nbsp;: void    </span>
+                                &nbsp;: int    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_size">size()</a>
+    <a class="" href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_reset">reset()</a>
     <span>
-                                &nbsp;: int    </span>
+                                &nbsp;: void    </span>
 </dt>
 
     </dl>
@@ -207,6 +219,57 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-valuestorage-deltabinarypackedvaluestorage.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php">DeltaBinaryPackedValueStorage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Data-DeltaBinaryPackedEncoder.html"><abbr title="\Flow\Parquet\Data\DeltaBinaryPackedEncoder">DeltaBinaryPackedEncoder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$int32Encoder</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Data-DeltaBinaryPackedEncoder.html"><abbr title="\Flow\Parquet\Data\DeltaBinaryPackedEncoder">DeltaBinaryPackedEncoder</abbr></a>(physicalType: <a href="classes/Flow-Parquet-ParquetFile-Schema-PhysicalType.html#enumcase_INT32"><abbr title="\Flow\Parquet\ParquetFile\Schema\PhysicalType::INT32">PhysicalType::INT32</abbr></a>)</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Data-DeltaBinaryPackedEncoder.html"><abbr title="\Flow\Parquet\Data\DeltaBinaryPackedEncoder">DeltaBinaryPackedEncoder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$int64Encoder</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Parquet-Data-DeltaBinaryPackedEncoder.html"><abbr title="\Flow\Parquet\Data\DeltaBinaryPackedEncoder">DeltaBinaryPackedEncoder</abbr></a>(physicalType: <a href="classes/Flow-Parquet-ParquetFile-Schema-PhysicalType.html#enumcase_INT64"><abbr title="\Flow\Parquet\ParquetFile\Schema\PhysicalType::INT64">PhysicalType::INT64</abbr></a>)</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$int32Encoder</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Data-DeltaBinaryPackedEncoder.html"><abbr title="\Flow\Parquet\Data\DeltaBinaryPackedEncoder">DeltaBinaryPackedEncoder</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Parquet-Data-DeltaBinaryPackedEncoder.html"><abbr title="\Flow\Parquet\Data\DeltaBinaryPackedEncoder">DeltaBinaryPackedEncoder</abbr></a>(physicalType: <a href="classes/Flow-Parquet-ParquetFile-Schema-PhysicalType.html#enumcase_INT32"><abbr title="\Flow\Parquet\ParquetFile\Schema\PhysicalType::INT32">PhysicalType::INT32</abbr></a>)</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$int64Encoder</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Data-DeltaBinaryPackedEncoder.html"><abbr title="\Flow\Parquet\Data\DeltaBinaryPackedEncoder">DeltaBinaryPackedEncoder</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Parquet-Data-DeltaBinaryPackedEncoder.html"><abbr title="\Flow\Parquet\Data\DeltaBinaryPackedEncoder">DeltaBinaryPackedEncoder</abbr></a>(physicalType: <a href="classes/Flow-Parquet-ParquetFile-Schema-PhysicalType.html#enumcase_INT64"><abbr title="\Flow\Parquet\ParquetFile\Schema\PhysicalType::INT64">PhysicalType::INT64</abbr></a>)</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_addValues">
         addValues()
         <a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_addValues" class="headerlink"><i class="fas fa-link"></i></a>
@@ -215,7 +278,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-valuestorage-deltabinarypackedvaluestorage.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php">DeltaBinaryPackedValueStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -258,6 +321,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_encoding">
+        encoding()
+        <a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_encoding" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-valuestorage-deltabinarypackedvaluestorage.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php">DeltaBinaryPackedValueStorage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">61</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">encoding</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-ParquetFile-Encodings.html"><abbr title="\Flow\Parquet\ParquetFile\Encodings">Encodings</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-ParquetFile-Encodings.html"><abbr title="\Flow\Parquet\ParquetFile\Encodings">Encodings</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getBuffer">
         getBuffer()
         <a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_getBuffer" class="headerlink"><i class="fas fa-link"></i></a>
@@ -266,7 +367,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-valuestorage-deltabinarypackedvaluestorage.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php">DeltaBinaryPackedValueStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -304,7 +405,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-valuestorage-deltabinarypackedvaluestorage.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php">DeltaBinaryPackedValueStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -334,6 +435,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_plainSize">
+        plainSize()
+        <a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_plainSize" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-valuestorage-deltabinarypackedvaluestorage.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php">DeltaBinaryPackedValueStorage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">plainSize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_reset">
         reset()
         <a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_reset" class="headerlink"><i class="fas fa-link"></i></a>
@@ -342,7 +481,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-valuestorage-deltabinarypackedvaluestorage.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php">DeltaBinaryPackedValueStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -361,44 +500,6 @@
         
     
     
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_size">
-        size()
-        <a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_size" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php"><a href="files/src-lib-parquet-src-flow-parquet-writer-valuestorage-deltabinarypackedvaluestorage.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Writer/ValueStorage/DeltaBinaryPackedValueStorage.php">DeltaBinaryPackedValueStorage.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">63</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">size</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int</span>
-            </section>
-
 </article>
             </section>
 
@@ -422,11 +523,13 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_addValues">addValues()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_encoding">encoding()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_getBuffer">getBuffer()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_isEmpty">isEmpty()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_plainSize">plainSize()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_reset">reset()</a></li>
-                                            <li class=""><a href="classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_size">size()</a></li>
                                     </ul>
             </li>
                     </ul>

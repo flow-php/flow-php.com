@@ -441,6 +441,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Data-BitWidth.html#method_toBytes"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\BitWidth\u003A\u003AMAX_PACKED_IN_ACCUMULATOR",
+            "name": "MAX_PACKED_IN_ACCUMULATOR",
+            "summary": "Packing\u0020through\u0020one\u0020int\u0020accumulator\u0020holds\u0020the\u0020value\u0027s\u0020bits\u0020plus\u0020up\u0020to\u00207\u0020pending\u0020bits,\u0020which\u0020must\u0020stay\u0020below\u0020the\nsign\u0020bit\u003A\u002056\u0020\u002B\u00207\u0020\u003D\u002063.",
+            "url": "classes/Flow-Parquet-Data-BitWidth.html#constant_MAX_PACKED_IN_ACCUMULATOR"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Data\\BytesConverter",
             "name": "BytesConverter",
             "summary": "",
@@ -491,6 +496,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Data-DeltaBinaryPackedEncoder.html#method_encode"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaByteArrayDecoder",
+            "name": "DeltaByteArrayDecoder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaByteArrayDecoder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaByteArrayDecoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaByteArrayDecoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaByteArrayDecoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaByteArrayDecoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaByteArrayEncoder",
+            "name": "DeltaByteArrayEncoder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaByteArrayEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaByteArrayEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaByteArrayEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaByteArrayEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaByteArrayEncoder.html#method_encode"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Data\\DeltaCalculator",
             "name": "DeltaCalculator",
             "summary": "",
@@ -506,15 +541,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Data-DeltaCalculator.html#method_calculateDeltas"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaCalculator\u003A\u003AcalculateAbsoluteDeltas\u0028\u0029",
+            "name": "calculateAbsoluteDeltas",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaCalculator.html#method_calculateAbsoluteDeltas"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Data\\DeltaCalculator\u003A\u003AcalculateRelativeDelta\u0028\u0029",
             "name": "calculateRelativeDelta",
             "summary": "",
             "url": "classes/Flow-Parquet-Data-DeltaCalculator.html#method_calculateRelativeDelta"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaCalculator\u003A\u003AcalculateRelativeDeltas\u0028\u0029",
+            "name": "calculateRelativeDeltas",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaCalculator.html#method_calculateRelativeDeltas"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Data\\DeltaCalculator\u003A\u003AreconstructValues\u0028\u0029",
             "name": "reconstructValues",
             "summary": "",
             "url": "classes/Flow-Parquet-Data-DeltaCalculator.html#method_reconstructValues"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaCalculator\u003A\u003AtoInt32\u0028\u0029",
+            "name": "toInt32",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaCalculator.html#method_toInt32"
         },                {
             "fqsen": "\\Flow\\Parquet\\Data\\DeltaHeader",
             "name": "DeltaHeader",
@@ -545,6 +595,36 @@ Search.appendIndex(
             "name": "firstValue",
             "summary": "",
             "url": "classes/Flow-Parquet-Data-DeltaHeader.html#property_firstValue"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaLengthByteArrayDecoder",
+            "name": "DeltaLengthByteArrayDecoder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaLengthByteArrayDecoder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaLengthByteArrayDecoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaLengthByteArrayDecoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaLengthByteArrayDecoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaLengthByteArrayDecoder.html#method_decode"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaLengthByteArrayEncoder",
+            "name": "DeltaLengthByteArrayEncoder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaLengthByteArrayEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaLengthByteArrayEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaLengthByteArrayEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Data\\DeltaLengthByteArrayEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Data-DeltaLengthByteArrayEncoder.html#method_encode"
         },                {
             "fqsen": "\\Flow\\Parquet\\Data\\PhysicalCodec",
             "name": "PhysicalCodec",
@@ -2816,9 +2896,14 @@ Search.appendIndex(
             "summary": "Column\u0020index\u0020bounds\u0020of\u0020BYTE_ARRAY\u0020and\u0020FIXED_LEN_BYTE_ARRAY\u0020columns\u0020are\u0020truncated\u0020to\u0020this\u0020many\u0020bytes,\u0020as\nSTATISTICS_TRUNCATE_LENGTH\u0020truncates\u0020column\u0020chunk\u0020statistics\u0020\u0028arrow\u002Drs\u0020set_column_index_truncate_length\u0029.",
             "url": "classes/Flow-Parquet-Option.html#enumcase_COLUMN_INDEX_TRUNCATE_LENGTH"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Option\u003A\u003ADICTIONARY_ENABLED",
+            "name": "DICTIONARY_ENABLED",
+            "summary": "Columns\u0020without\u0020a\u0020COLUMNS_ENCODINGS\u0020entry\u0020are\u0020dictionary\u002Dencoded\u0020\u0028RLE_DICTIONARY\u0029,\u0020except\u0020BOOLEAN\u0020and,\u0020under\nwriter\u0020version\u00201,\u0020FIXED_LEN_BYTE_ARRAY,\u0020as\u0020arrow\u002Drs\u0020and\u0020parquet\u002Djava\u0020write\u0020them.\u0020False\u0020writes\u0020the\u0020writer\nversion\u0027s\u0020fallback\u0020encoding\u0020instead.\u0020A\u0020COLUMNS_ENCODINGS\u0020entry\u0020always\u0020wins.",
+            "url": "classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_ENABLED"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Option\u003A\u003ADICTIONARY_PAGE_SIZE",
             "name": "DICTIONARY_PAGE_SIZE",
-            "summary": "Whenever\u0020size\u0020of\u0020the\u0020dictionary\u0020goes\u0020above\u0020this\u0020value,\u0020PagesBuilders\u0020is\u0020going\u0020to\u0020fallback\u0020to\u0020PLAIN\u0020encoding.",
+            "summary": "Once\u0020the\u0020column\u0020chunk\u0027s\u0020dictionary\u0020reaches\u0020this\u0020size,\u0020the\u0020rest\u0020of\u0020the\u0020chunk\u0020falls\u0020back\u0020to\u0020the\u0020writer\u0020version\u0027s\nfallback\u0020encoding\u0020\u0028PLAIN\u0020under\u0020v1\u0029.",
             "url": "classes/Flow-Parquet-Option.html#enumcase_DICTIONARY_PAGE_SIZE"
         },                {
             "fqsen": "\\Flow\\Parquet\\Option\u003A\u003AGZIP_COMPRESSION_LEVEL",
@@ -3755,6 +3840,11 @@ Search.appendIndex(
             "name": "encoding",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Page-Header-DataPageHeaderV2.html#method_encoding"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\Header\\DataPageHeaderV2\u003A\u003AisCompressed\u0028\u0029",
+            "name": "isCompressed",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Page-Header-DataPageHeaderV2.html#method_isCompressed"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\Header\\DataPageHeaderV2\u003A\u003ArepetitionsByteLength\u0028\u0029",
             "name": "repetitionsByteLength",
@@ -6150,6 +6240,21 @@ Search.appendIndex(
             "name": "end",
             "summary": "",
             "url": "classes/Flow-Parquet-Reader-PageRun.html#property_end"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\PageValuesDecoder",
+            "name": "PageValuesDecoder",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-PageValuesDecoder.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\PageValuesDecoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-PageValuesDecoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\PageValuesDecoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-PageValuesDecoder.html#method_decode"
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\BloomFilterPruner",
             "name": "BloomFilterPruner",
@@ -10391,50 +10496,50 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ThriftModel-XxHash.html#property__TSPEC"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder",
-            "name": "DeltaBinaryPackedColumnChunkBuilder",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\FlatColumnChunkBuilder",
+            "name": "FlatColumnChunkBuilder",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-DeltaBinaryPackedColumnChunkBuilder.html"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-FlatColumnChunkBuilder.html"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\FlatColumnChunkBuilder\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-DeltaBinaryPackedColumnChunkBuilder.html#method___construct"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-FlatColumnChunkBuilder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder\u003A\u003AaddColumn\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\FlatColumnChunkBuilder\u003A\u003AaddColumn\u0028\u0029",
             "name": "addColumn",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-DeltaBinaryPackedColumnChunkBuilder.html#method_addColumn"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-FlatColumnChunkBuilder.html#method_addColumn"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder\u003A\u003AclosePage\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\FlatColumnChunkBuilder\u003A\u003AclosePage\u0028\u0029",
             "name": "closePage",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-DeltaBinaryPackedColumnChunkBuilder.html#method_closePage"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-FlatColumnChunkBuilder.html#method_closePage"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder\u003A\u003Acolumn\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\FlatColumnChunkBuilder\u003A\u003Acolumn\u0028\u0029",
             "name": "column",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-DeltaBinaryPackedColumnChunkBuilder.html#method_column"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-FlatColumnChunkBuilder.html#method_column"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder\u003A\u003Aflush\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\FlatColumnChunkBuilder\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-DeltaBinaryPackedColumnChunkBuilder.html#method_flush"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-FlatColumnChunkBuilder.html#method_flush"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder\u003A\u003AisEmpty\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\FlatColumnChunkBuilder\u003A\u003AisEmpty\u0028\u0029",
             "name": "isEmpty",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-DeltaBinaryPackedColumnChunkBuilder.html#method_isEmpty"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-FlatColumnChunkBuilder.html#method_isEmpty"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder\u003A\u003AisFull\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\FlatColumnChunkBuilder\u003A\u003AisFull\u0028\u0029",
             "name": "isFull",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-DeltaBinaryPackedColumnChunkBuilder.html#method_isFull"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-FlatColumnChunkBuilder.html#method_isFull"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\DeltaBinaryPackedColumnChunkBuilder\u003A\u003AuncompressedSize\u0028\u0029",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\FlatColumnChunkBuilder\u003A\u003AuncompressedSize\u0028\u0029",
             "name": "uncompressedSize",
             "summary": "Returns\u0020the\u0020uncompressed\u0020size\u0020of\u0020all\u0020pages\u0020in\u0020the\u0020column\u0020chunk.",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-DeltaBinaryPackedColumnChunkBuilder.html#method_uncompressedSize"
+            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-FlatColumnChunkBuilder.html#method_uncompressedSize"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\NestedColumnChunkBuilder",
             "name": "NestedColumnChunkBuilder",
@@ -10475,51 +10580,6 @@ Search.appendIndex(
             "name": "uncompressedSize",
             "summary": "Returns\u0020the\u0020uncompressed\u0020size\u0020of\u0020all\u0020pages\u0020in\u0020the\u0020column\u0020chunk.",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-NestedColumnChunkBuilder.html#method_uncompressedSize"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder",
-            "name": "PlainFlatColumnChunkBuilder",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-PlainFlatColumnChunkBuilder.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-PlainFlatColumnChunkBuilder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder\u003A\u003AaddColumn\u0028\u0029",
-            "name": "addColumn",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-PlainFlatColumnChunkBuilder.html#method_addColumn"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder\u003A\u003AclosePage\u0028\u0029",
-            "name": "closePage",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-PlainFlatColumnChunkBuilder.html#method_closePage"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder\u003A\u003Acolumn\u0028\u0029",
-            "name": "column",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-PlainFlatColumnChunkBuilder.html#method_column"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder\u003A\u003Aflush\u0028\u0029",
-            "name": "flush",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-PlainFlatColumnChunkBuilder.html#method_flush"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder\u003A\u003AisEmpty\u0028\u0029",
-            "name": "isEmpty",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-PlainFlatColumnChunkBuilder.html#method_isEmpty"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder\u003A\u003AisFull\u0028\u0029",
-            "name": "isFull",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-PlainFlatColumnChunkBuilder.html#method_isFull"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\PlainFlatColumnChunkBuilder\u003A\u003AuncompressedSize\u0028\u0029",
-            "name": "uncompressedSize",
-            "summary": "Returns\u0020the\u0020uncompressed\u0020size\u0020of\u0020all\u0020pages\u0020in\u0020the\u0020column\u0020chunk.",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilder-PlainFlatColumnChunkBuilder.html#method_uncompressedSize"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilder\\RLEDictionaryChunkBuilder",
             "name": "RLEDictionaryChunkBuilder",
@@ -10690,6 +10750,31 @@ Search.appendIndex(
             "name": "bloomFilter",
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkContainer.html#property_bloomFilter"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnEncodingPolicy",
+            "name": "ColumnEncodingPolicy",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ColumnEncodingPolicy.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnEncodingPolicy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ColumnEncodingPolicy.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnEncodingPolicy\u003A\u003AencodingFor\u0028\u0029",
+            "name": "encodingFor",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ColumnEncodingPolicy.html#method_encodingFor"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnEncodingPolicy\u003A\u003AfallbackEncoding\u0028\u0029",
+            "name": "fallbackEncoding",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ColumnEncodingPolicy.html#method_fallbackEncoding"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnEncodingPolicy\u003A\u003AsupportsDictionary\u0028\u0029",
+            "name": "supportsDictionary",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ColumnEncodingPolicy.html#method_supportsDictionary"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnLists",
             "name": "ColumnLists",
@@ -11111,6 +11196,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ValueStorage-BooleanValueStorage.html#method_addValues"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\BooleanValueStorage\u003A\u003Aencoding\u0028\u0029",
+            "name": "encoding",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-BooleanValueStorage.html#method_encoding"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\BooleanValueStorage\u003A\u003AgetBuffer\u0028\u0029",
             "name": "getBuffer",
             "summary": "",
@@ -11126,10 +11216,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ValueStorage-BooleanValueStorage.html#method_reset"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\BooleanValueStorage\u003A\u003Asize\u0028\u0029",
-            "name": "size",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\BooleanValueStorage\u003A\u003AplainSize\u0028\u0029",
+            "name": "plainSize",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ValueStorage-BooleanValueStorage.html#method_size"
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-BooleanValueStorage.html#method_plainSize"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\BufferValueStorage",
             "name": "BufferValueStorage",
@@ -11146,6 +11236,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ValueStorage-BufferValueStorage.html#method_addValues"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\BufferValueStorage\u003A\u003Aencoding\u0028\u0029",
+            "name": "encoding",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-BufferValueStorage.html#method_encoding"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\BufferValueStorage\u003A\u003AgetBuffer\u0028\u0029",
             "name": "getBuffer",
             "summary": "",
@@ -11161,20 +11256,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ValueStorage-BufferValueStorage.html#method_reset"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\BufferValueStorage\u003A\u003Asize\u0028\u0029",
-            "name": "size",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\BufferValueStorage\u003A\u003AplainSize\u0028\u0029",
+            "name": "plainSize",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ValueStorage-BufferValueStorage.html#method_size"
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-BufferValueStorage.html#method_plainSize"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaBinaryPackedValueStorage",
             "name": "DeltaBinaryPackedValueStorage",
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaBinaryPackedValueStorage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method___construct"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaBinaryPackedValueStorage\u003A\u003AaddValues\u0028\u0029",
             "name": "addValues",
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_addValues"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaBinaryPackedValueStorage\u003A\u003Aencoding\u0028\u0029",
+            "name": "encoding",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_encoding"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaBinaryPackedValueStorage\u003A\u003AgetBuffer\u0028\u0029",
             "name": "getBuffer",
@@ -11191,10 +11296,130 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_reset"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaBinaryPackedValueStorage\u003A\u003Asize\u0028\u0029",
-            "name": "size",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaBinaryPackedValueStorage\u003A\u003AplainSize\u0028\u0029",
+            "name": "plainSize",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_size"
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaBinaryPackedValueStorage.html#method_plainSize"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaByteArrayValueStorage",
+            "name": "DeltaByteArrayValueStorage",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaByteArrayValueStorage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaByteArrayValueStorage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaByteArrayValueStorage.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaByteArrayValueStorage\u003A\u003AaddValues\u0028\u0029",
+            "name": "addValues",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaByteArrayValueStorage.html#method_addValues"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaByteArrayValueStorage\u003A\u003Aencoding\u0028\u0029",
+            "name": "encoding",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaByteArrayValueStorage.html#method_encoding"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaByteArrayValueStorage\u003A\u003AgetBuffer\u0028\u0029",
+            "name": "getBuffer",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaByteArrayValueStorage.html#method_getBuffer"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaByteArrayValueStorage\u003A\u003AisEmpty\u0028\u0029",
+            "name": "isEmpty",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaByteArrayValueStorage.html#method_isEmpty"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaByteArrayValueStorage\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaByteArrayValueStorage.html#method_reset"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaByteArrayValueStorage\u003A\u003AplainSize\u0028\u0029",
+            "name": "plainSize",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaByteArrayValueStorage.html#method_plainSize"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaLengthByteArrayValueStorage",
+            "name": "DeltaLengthByteArrayValueStorage",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaLengthByteArrayValueStorage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaLengthByteArrayValueStorage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaLengthByteArrayValueStorage.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaLengthByteArrayValueStorage\u003A\u003AaddValues\u0028\u0029",
+            "name": "addValues",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaLengthByteArrayValueStorage.html#method_addValues"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaLengthByteArrayValueStorage\u003A\u003Aencoding\u0028\u0029",
+            "name": "encoding",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaLengthByteArrayValueStorage.html#method_encoding"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaLengthByteArrayValueStorage\u003A\u003AgetBuffer\u0028\u0029",
+            "name": "getBuffer",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaLengthByteArrayValueStorage.html#method_getBuffer"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaLengthByteArrayValueStorage\u003A\u003AisEmpty\u0028\u0029",
+            "name": "isEmpty",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaLengthByteArrayValueStorage.html#method_isEmpty"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaLengthByteArrayValueStorage\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaLengthByteArrayValueStorage.html#method_reset"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\DeltaLengthByteArrayValueStorage\u003A\u003AplainSize\u0028\u0029",
+            "name": "plainSize",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-DeltaLengthByteArrayValueStorage.html#method_plainSize"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\RLEBooleanValueStorage",
+            "name": "RLEBooleanValueStorage",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-RLEBooleanValueStorage.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\RLEBooleanValueStorage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-RLEBooleanValueStorage.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\RLEBooleanValueStorage\u003A\u003AaddValues\u0028\u0029",
+            "name": "addValues",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-RLEBooleanValueStorage.html#method_addValues"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\RLEBooleanValueStorage\u003A\u003Aencoding\u0028\u0029",
+            "name": "encoding",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-RLEBooleanValueStorage.html#method_encoding"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\RLEBooleanValueStorage\u003A\u003AgetBuffer\u0028\u0029",
+            "name": "getBuffer",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-RLEBooleanValueStorage.html#method_getBuffer"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\RLEBooleanValueStorage\u003A\u003AisEmpty\u0028\u0029",
+            "name": "isEmpty",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-RLEBooleanValueStorage.html#method_isEmpty"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\RLEBooleanValueStorage\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-RLEBooleanValueStorage.html#method_reset"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\RLEBooleanValueStorage\u003A\u003AplainSize\u0028\u0029",
+            "name": "plainSize",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-RLEBooleanValueStorage.html#method_plainSize"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\ValueStorage",
             "name": "ValueStorage",
@@ -11205,6 +11430,11 @@ Search.appendIndex(
             "name": "addValues",
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ValueStorage-ValueStorage.html#method_addValues"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\ValueStorage\u003A\u003Aencoding\u0028\u0029",
+            "name": "encoding",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-ValueStorage.html#method_encoding"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\ValueStorage\u003A\u003AgetBuffer\u0028\u0029",
             "name": "getBuffer",
@@ -11221,10 +11451,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ValueStorage-ValueStorage.html#method_reset"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\ValueStorage\u003A\u003Asize\u0028\u0029",
-            "name": "size",
+            "fqsen": "\\Flow\\Parquet\\Writer\\ValueStorage\\ValueStorage\u003A\u003AplainSize\u0028\u0029",
+            "name": "plainSize",
             "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ValueStorage-ValueStorage.html#method_size"
+            "url": "classes/Flow-Parquet-Writer-ValueStorage-ValueStorage.html#method_plainSize"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer",
             "name": "Writer",
