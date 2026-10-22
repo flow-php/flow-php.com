@@ -3943,7 +3943,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AcollectRefs\u0028\u0029",
             "name": "collectRefs",
-            "summary": "This\u0020method\u0020allows\u0020to\u0020collect\u0020references\u0020to\u0020all\u0020entries\u0020used\u0020in\u0020this\u0020pipeline.",
+            "summary": "This\u0020method\u0020allows\u0020to\u0020collect\u0020references\u0020to\u0020all\u0020columns\u0020used\u0020in\u0020this\u0020pipeline.",
             "url": "classes/Flow-ETL-DataFrame.html#method_collectRefs"
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Aconstrain\u0028\u0029",
@@ -3968,7 +3968,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003Adrop\u0028\u0029",
             "name": "drop",
-            "summary": "Drop\u0020given\u0020entries.",
+            "summary": "Drop\u0020given\u0020columns.",
             "url": "classes/Flow-ETL-DataFrame.html#method_drop"
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AdropDuplicates\u0028\u0029",
@@ -4130,6 +4130,16 @@ Search.appendIndex(
             "name": "with",
             "summary": "",
             "url": "classes/Flow-ETL-DataFrame.html#method_with"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AwithColumn\u0028\u0029",
+            "name": "withColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-DataFrame.html#method_withColumn"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AwithColumns\u0028\u0029",
+            "name": "withColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-DataFrame.html#method_withColumns"
         },                {
             "fqsen": "\\Flow\\ETL\\DataFrame\u003A\u003AwithEntries\u0028\u0029",
             "name": "withEntries",
@@ -4791,11 +4801,6 @@ Search.appendIndex(
             "summary": "An\u0020alias\u0020for\u0020\u0060ref\u0060.",
             "url": "namespaces/flow-etl-dsl.html#function_col"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\entry\u0028\u0029",
-            "name": "entry",
-            "summary": "An\u0020alias\u0020for\u0020\u0060ref\u0060.",
-            "url": "namespaces/flow-etl-dsl.html#function_entry"
-        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\ref\u0028\u0029",
             "name": "ref",
             "summary": "",
@@ -5018,12 +5023,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\array_unpack\u0028\u0029",
             "name": "array_unpack",
-            "summary": "Unpacks\u0020each\u0020element\u0020of\u0020an\u0020array\u0020into\u0020a\u0020new\u0020entry,\u0020using\u0020the\u0020array\u0020key\u0020as\u0020the\u0020entry\u0020name.",
+            "summary": "Unpacks\u0020each\u0020element\u0020of\u0020an\u0020array\u0020into\u0020a\u0020new\u0020column,\u0020using\u0020the\u0020array\u0020key\u0020as\u0020the\u0020column\u0020name.",
             "url": "namespaces/flow-etl-dsl.html#function_array_unpack"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\array_expand\u0028\u0029",
             "name": "array_expand",
-            "summary": "Expands\u0020each\u0020value\u0020into\u0020entry,\u0020if\u0020there\u0020are\u0020more\u0020than\u0020one\u0020value,\u0020multiple\u0020rows\u0020will\u0020be\u0020created.",
+            "summary": "Expands\u0020each\u0020value\u0020into\u0020a\u0020column,\u0020if\u0020there\u0020are\u0020more\u0020than\u0020one\u0020value,\u0020multiple\u0020rows\u0020will\u0020be\u0020created.",
             "url": "namespaces/flow-etl-dsl.html#function_array_expand"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\size\u0028\u0029",
@@ -5611,10 +5616,10 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_date_interval_to_microseconds"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\with_entry\u0028\u0029",
-            "name": "with_entry",
+            "fqsen": "\\Flow\\ETL\\DSL\\with_column\u0028\u0029",
+            "name": "with_column",
             "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_with_entry"
+            "url": "namespaces/flow-etl-dsl.html#function_with_column"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\constraint_unique\u0028\u0029",
             "name": "constraint_unique",
@@ -5906,10 +5911,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Exception-DataDependentSchemaException.html#method_step"
         },                {
-            "fqsen": "\\Flow\\ETL\\Exception\\DuplicatedEntriesException",
-            "name": "DuplicatedEntriesException",
+            "fqsen": "\\Flow\\ETL\\Exception\\DuplicatedColumnsException",
+            "name": "DuplicatedColumnsException",
             "summary": "",
-            "url": "classes/Flow-ETL-Exception-DuplicatedEntriesException.html"
+            "url": "classes/Flow-ETL-Exception-DuplicatedColumnsException.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Exception\\EvaluationException",
             "name": "EvaluationException",
@@ -6171,10 +6176,10 @@ Search.appendIndex(
             "summary": "The\u0020names\u0020closest\u0020to\u0020the\u0020one\u0020that\u0020was\u0020not\u0020found,\u0020ranked\u0020by\u0020similarity\u0020and\u0020capped\u0020\u002D\u0020not\u0020the\nfull\u0020column\u0020list.",
             "url": "classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html#method_suggestions"
         },                {
-            "fqsen": "\\Flow\\ETL\\Exception\\SchemaDefinitionNotFoundException\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Exception\\SchemaDefinitionNotFoundException\u003A\u003Acolumn\u0028\u0029",
+            "name": "column",
             "summary": "",
-            "url": "classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html#method_entry"
+            "url": "classes/Flow-ETL-Exception-SchemaDefinitionNotFoundException.html#method_column"
         },                {
             "fqsen": "\\Flow\\ETL\\Exception\\SchemaDefinitionNotUniqueException",
             "name": "SchemaDefinitionNotUniqueException",
@@ -12793,7 +12798,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aexpand\u0028\u0029",
             "name": "expand",
-            "summary": "Expands\u0020each\u0020value\u0020into\u0020entry,\u0020if\u0020there\u0020are\u0020more\u0020than\u0020one\u0020value,\u0020multiple\u0020rows\u0020will\u0020be\u0020created.",
+            "summary": "Expands\u0020each\u0020value\u0020into\u0020a\u0020column,\u0020if\u0020there\u0020are\u0020more\u0020than\u0020one\u0020value,\u0020multiple\u0020rows\u0020will\u0020be\u0020created.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_expand"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AgreaterThan\u0028\u0029",
@@ -12958,7 +12963,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003AonEach\u0028\u0029",
             "name": "onEach",
-            "summary": "Execute\u0020a\u0020scalar\u0020function\u0020on\u0020each\u0020element\u0020of\u0020an\u0020array\/list\/map\/structure\u0020entry.",
+            "summary": "Execute\u0020a\u0020scalar\u0020function\u0020on\u0020each\u0020element\u0020of\u0020an\u0020array\/list\/map\/structure\u0020column.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_onEach"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aor\u0028\u0029",
@@ -13178,7 +13183,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aunpack\u0028\u0029",
             "name": "unpack",
-            "summary": "Unpacks\u0020each\u0020element\u0020of\u0020an\u0020array\u0020into\u0020a\u0020new\u0020entry,\u0020using\u0020the\u0020array\u0020key\u0020as\u0020the\u0020entry\u0020name.",
+            "summary": "Unpacks\u0020each\u0020element\u0020of\u0020an\u0020array\u0020into\u0020a\u0020new\u0020column,\u0020using\u0020the\u0020array\u0020key\u0020as\u0020the\u0020column\u0020name.",
             "url": "classes/Flow-ETL-Function-ScalarFunctionChain.html#method_unpack"
         },                {
             "fqsen": "\\Flow\\ETL\\Function\\ScalarFunctionChain\u003A\u003Aupper\u0028\u0029",
@@ -17041,10 +17046,10 @@ Search.appendIndex(
             "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Distinct.html#method_redefines"
         },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\Node\\Distinct\u003A\u003A\u0024entries",
-            "name": "entries",
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\Distinct\u003A\u003A\u0024columns",
+            "name": "columns",
             "summary": "",
-            "url": "classes/Flow-ETL-Plan-Node-Distinct.html#property_entries"
+            "url": "classes/Flow-ETL-Plan-Node-Distinct.html#property_columns"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Drop",
             "name": "Drop",
@@ -17086,10 +17091,10 @@ Search.appendIndex(
             "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Drop.html#method_redefines"
         },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\Node\\Drop\u003A\u003A\u0024entries",
-            "name": "entries",
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\Drop\u003A\u003A\u0024columns",
+            "name": "columns",
             "summary": "",
-            "url": "classes/Flow-ETL-Plan-Node-Drop.html#property_entries"
+            "url": "classes/Flow-ETL-Plan-Node-Drop.html#property_columns"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\DuplicateRow",
             "name": "DuplicateRow",
@@ -17136,10 +17141,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Plan-Node-DuplicateRow.html#property_condition"
         },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\Node\\DuplicateRow\u003A\u003A\u0024entries",
-            "name": "entries",
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\DuplicateRow\u003A\u003A\u0024columns",
+            "name": "columns",
             "summary": "",
-            "url": "classes/Flow-ETL-Plan-Node-DuplicateRow.html#property_entries"
+            "url": "classes/Flow-ETL-Plan-Node-DuplicateRow.html#property_columns"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn",
             "name": "ExpandColumn",
@@ -17196,10 +17201,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#property_carries"
         },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003A\u0024entry",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003A\u0024column",
+            "name": "column",
             "summary": "",
-            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#property_entry"
+            "url": "classes/Flow-ETL-Plan-Node-ExpandColumn.html#property_column"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\ExpandColumn\u003A\u003A\u0024function",
             "name": "function",
@@ -17801,10 +17806,10 @@ Search.appendIndex(
             "summary": "Columns\u0020this\u0020node\u0020introduces,\u0020renames\u0020or\u0020removes\u0020on\u0020its\u0020output.\u0020A\u0020predicate\u0020that\u0020references\u0020one\u0020of\u0020them\u0020means\u0020a\ndifferent\u0020column\u0020below\u0020this\u0020node,\u0020so\u0020it\u0020cannot\u0020be\u0020pushed\u0020past\u0020it.\u0020Answered\u0020from\u0020what\u0020the\u0020node\u0020holds,\nnever\u0020from\u0020a\u0020class\u0020list.",
             "url": "classes/Flow-ETL-Plan-Node-Select.html#method_redefines"
         },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\Node\\Select\u003A\u003A\u0024entries",
-            "name": "entries",
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\Select\u003A\u003A\u0024columns",
+            "name": "columns",
             "summary": "",
-            "url": "classes/Flow-ETL-Plan-Node-Select.html#property_entries"
+            "url": "classes/Flow-ETL-Plan-Node-Select.html#property_columns"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\Sort",
             "name": "Sort",
@@ -18141,10 +18146,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Plan-Node-WindowColumn.html#method_name"
         },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\Node\\WindowColumn\u003A\u003A\u0024entry",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\WindowColumn\u003A\u003A\u0024column",
+            "name": "column",
             "summary": "",
-            "url": "classes/Flow-ETL-Plan-Node-WindowColumn.html#property_entry"
+            "url": "classes/Flow-ETL-Plan-Node-WindowColumn.html#property_column"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\WindowColumn\u003A\u003A\u0024function",
             "name": "function",
@@ -18196,10 +18201,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Plan-Node-WithColumn.html#method_name"
         },                {
-            "fqsen": "\\Flow\\ETL\\Plan\\Node\\WithColumn\u003A\u003A\u0024entry",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Plan\\Node\\WithColumn\u003A\u003A\u0024column",
+            "name": "column",
             "summary": "",
-            "url": "classes/Flow-ETL-Plan-Node-WithColumn.html#property_entry"
+            "url": "classes/Flow-ETL-Plan-Node-WithColumn.html#property_column"
         },                {
             "fqsen": "\\Flow\\ETL\\Plan\\Node\\WithColumn\u003A\u003A\u0024function",
             "name": "function",
@@ -19326,10 +19331,10 @@ Search.appendIndex(
             "summary": "Process\u0020a\u0020stream\u0020of\u0020Rows\u0020and\u0020return\u0020a\u0020new\u0020stream.",
             "url": "classes/Flow-ETL-Processor-WindowProcessor.html#method_process"
         },                {
-            "fqsen": "\\Flow\\ETL\\Processor\\WindowProcessor\u003A\u003A\u0024entry",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Processor\\WindowProcessor\u003A\u003A\u0024column",
+            "name": "column",
             "summary": "",
-            "url": "classes/Flow-ETL-Processor-WindowProcessor.html#property_entry"
+            "url": "classes/Flow-ETL-Processor-WindowProcessor.html#property_column"
         },                {
             "fqsen": "\\Flow\\ETL\\Processor\\WindowProcessor\u003A\u003A\u0024function",
             "name": "function",
@@ -20056,10 +20061,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-BooleanDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\BooleanDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\BooleanDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-BooleanDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-BooleanDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\BooleanDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -20141,10 +20146,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-DateDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-DateDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-DateDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -20216,10 +20221,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-DateTimeDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateTimeDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateTimeDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-DateTimeDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-DateTimeDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\DateTimeDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -20301,10 +20306,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-EnumDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\EnumDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\EnumDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-EnumDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-EnumDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\EnumDefinition\u003A\u003AenumClass\u0028\u0029",
             "name": "enumClass",
@@ -20381,10 +20386,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-FloatDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\FloatDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\FloatDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-FloatDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-FloatDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\FloatDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -20456,10 +20461,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-HTMLDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-HTMLDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-HTMLDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -20531,10 +20536,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-HTMLElementDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLElementDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLElementDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-HTMLElementDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-HTMLElementDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\HTMLElementDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -20606,10 +20611,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-IntegerDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\IntegerDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\IntegerDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-IntegerDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-IntegerDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\IntegerDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -20681,10 +20686,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-JsonDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\JsonDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\JsonDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-JsonDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-JsonDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\JsonDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -20756,10 +20761,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-ListDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ListDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ListDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-ListDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-ListDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\ListDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -20831,10 +20836,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-MapDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\MapDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\MapDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-MapDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-MapDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\MapDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -20906,10 +20911,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-NullDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\NullDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -20981,10 +20986,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-StringDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StringDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StringDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-StringDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-StringDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StringDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -21056,10 +21061,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-StructureDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StructureDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StructureDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-StructureDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-StructureDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\StructureDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -21131,10 +21136,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-TimeDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TimeDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TimeDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-TimeDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-TimeDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TimeDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -21206,10 +21211,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-TimeZoneDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TimeZoneDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TimeZoneDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-TimeZoneDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-TimeZoneDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\TimeZoneDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -21311,10 +21316,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-UuidDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UuidDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UuidDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-UuidDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-UuidDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\UuidDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -21396,10 +21401,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-XMLDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-XMLDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-XMLDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -21471,10 +21476,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition-XMLElementDefinition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLElementDefinition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLElementDefinition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition-XMLElementDefinition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition-XMLElementDefinition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\\XMLElementDefinition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -21541,10 +21546,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Schema-Definition.html#method_addMetadata"
         },                {
-            "fqsen": "\\Flow\\ETL\\Schema\\Definition\u003A\u003Aentry\u0028\u0029",
-            "name": "entry",
+            "fqsen": "\\Flow\\ETL\\Schema\\Definition\u003A\u003Areference\u0028\u0029",
+            "name": "reference",
             "summary": "",
-            "url": "classes/Flow-ETL-Schema-Definition.html#method_entry"
+            "url": "classes/Flow-ETL-Schema-Definition.html#method_reference"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Definition\u003A\u003AisCompatible\u0028\u0029",
             "name": "isCompatible",
@@ -22083,7 +22088,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Validator\\SelectiveValidator",
             "name": "SelectiveValidator",
-            "summary": "Matches\u0020only\u0020entries\u0020defined\u0020in\u0020the\u0020expected\u0020schema\u0020allowing\u0020for\u0020extra\u0020entries\u0020in\u0020given\u0020schema.",
+            "summary": "Matches\u0020only\u0020columns\u0020defined\u0020in\u0020the\u0020expected\u0020schema\u0020allowing\u0020for\u0020extra\u0020columns\u0020in\u0020given\u0020schema.",
             "url": "classes/Flow-ETL-Schema-Validator-SelectiveValidator.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Validator\\SelectiveValidator\u003A\u003Avalidate\u0028\u0029",
@@ -22093,7 +22098,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Validator\\StrictValidator",
             "name": "StrictValidator",
-            "summary": "Matches\u0020all\u0020entries\u0020in\u0020the\u0020schema,\u0020if\u0020row\u0020comes\u0020with\u0020any\u0020extra\u0020entry\u0020it\u0020will\u0020fail\u0020validation.",
+            "summary": "Matches\u0020all\u0020columns\u0020in\u0020the\u0020schema,\u0020if\u0020row\u0020comes\u0020with\u0020any\u0020extra\u0020column\u0020it\u0020will\u0020fail\u0020validation.",
             "url": "classes/Flow-ETL-Schema-Validator-StrictValidator.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\\Validator\\StrictValidator\u003A\u003Avalidate\u0028\u0029",
@@ -22198,7 +22203,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AgracefulRemove\u0028\u0029",
             "name": "gracefulRemove",
-            "summary": "Gracefully\u0020remove\u0020entries\u0020from\u0020schema\u0020without\u0020throwing\u0020an\u0020exception\u0020if\u0020entry\u0020does\u0020not\u0020exist.",
+            "summary": "Gracefully\u0020remove\u0020columns\u0020from\u0020schema\u0020without\u0020throwing\u0020an\u0020exception\u0020if\u0020column\u0020does\u0020not\u0020exist.",
             "url": "classes/Flow-ETL-Schema.html#method_gracefulRemove"
         },                {
             "fqsen": "\\Flow\\ETL\\Schema\u003A\u003AinsertAt\u0028\u0029",
@@ -22896,6 +22901,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-DerivedColumns.html#method_rows"
         },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\DropColumnsTransformer",
+            "name": "DropColumnsTransformer",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-DropColumnsTransformer.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\DropColumnsTransformer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-DropColumnsTransformer.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\DropColumnsTransformer\u003A\u003Abind\u0028\u0029",
+            "name": "bind",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-DropColumnsTransformer.html#method_bind"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Transformer\\DropColumnsTransformer\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "",
+            "url": "classes/Flow-ETL-Transformer-DropColumnsTransformer.html#method_transform"
+        },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\DropDuplicates\\Hashes",
             "name": "Hashes",
             "summary": "",
@@ -22935,26 +22960,6 @@ Search.appendIndex(
             "name": "transform",
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-DropDuplicatesTransformer.html#method_transform"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\DropEntriesTransformer",
-            "name": "DropEntriesTransformer",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-DropEntriesTransformer.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\DropEntriesTransformer\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-DropEntriesTransformer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\DropEntriesTransformer\u003A\u003Abind\u0028\u0029",
-            "name": "bind",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-DropEntriesTransformer.html#method_bind"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\DropEntriesTransformer\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
-            "summary": "",
-            "url": "classes/Flow-ETL-Transformer-DropEntriesTransformer.html#method_transform"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\DuplicateRowTransformer",
             "name": "DuplicateRowTransformer",
@@ -23071,120 +23076,120 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-LimitTransformer.html#property_limit"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\PruneEntriesTransformer",
-            "name": "PruneEntriesTransformer",
-            "summary": "Unlike\u0020\u007B\u0040see\u0020SelectEntriesTransformer\u007D,\u0020which\u0020throws\u0020when\u0020a\u0020reference\u0020is\u0020not\u0020declared\u0020by\u0020the\nschema,\u0020prune\u0020keeps\u0020what\u0020is\u0020there\u0020and\u0020silently\u0020skips\u0020absent\u0020references\u0020\u002D\u0020pruned\u0020rows\u0020are\u0020spilled\nto\u0020storage,\u0020where\u0020the\u0020pruning\u0020is\u0020opportunistic\u0020rather\u0020than\u0020a\u0020contract.",
-            "url": "classes/Flow-ETL-Transformer-PruneEntriesTransformer.html"
+            "fqsen": "\\Flow\\ETL\\Transformer\\PruneColumnsTransformer",
+            "name": "PruneColumnsTransformer",
+            "summary": "Unlike\u0020\u007B\u0040see\u0020SelectColumnsTransformer\u007D,\u0020which\u0020throws\u0020when\u0020a\u0020reference\u0020is\u0020not\u0020declared\u0020by\u0020the\nschema,\u0020prune\u0020keeps\u0020what\u0020is\u0020there\u0020and\u0020silently\u0020skips\u0020absent\u0020references\u0020\u002D\u0020pruned\u0020rows\u0020are\u0020spilled\nto\u0020storage,\u0020where\u0020the\u0020pruning\u0020is\u0020opportunistic\u0020rather\u0020than\u0020a\u0020contract.",
+            "url": "classes/Flow-ETL-Transformer-PruneColumnsTransformer.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\PruneEntriesTransformer\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\PruneColumnsTransformer\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-PruneEntriesTransformer.html#method___construct"
+            "url": "classes/Flow-ETL-Transformer-PruneColumnsTransformer.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\PruneEntriesTransformer\u003A\u003Abind\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\PruneColumnsTransformer\u003A\u003Abind\u0028\u0029",
             "name": "bind",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-PruneEntriesTransformer.html#method_bind"
+            "url": "classes/Flow-ETL-Transformer-PruneColumnsTransformer.html#method_bind"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\PruneEntriesTransformer\u003A\u003Atransform\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\PruneColumnsTransformer\u003A\u003Atransform\u0028\u0029",
             "name": "transform",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-PruneEntriesTransformer.html#method_transform"
+            "url": "classes/Flow-ETL-Transformer-PruneColumnsTransformer.html#method_transform"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameCaseEntryStrategy",
-            "name": "RenameCaseEntryStrategy",
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameCaseColumnStrategy",
+            "name": "RenameCaseColumnStrategy",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameCaseEntryStrategy.html"
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameCaseColumnStrategy.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameCaseEntryStrategy\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameCaseColumnStrategy\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameCaseEntryStrategy.html#method___construct"
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameCaseColumnStrategy.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameCaseEntryStrategy\u003A\u003Arenames\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameCaseColumnStrategy\u003A\u003Arenames\u0028\u0029",
             "name": "renames",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameCaseEntryStrategy.html#method_renames"
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameCaseColumnStrategy.html#method_renames"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameEntryStrategy",
-            "name": "RenameEntryStrategy",
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameColumnStrategy",
+            "name": "RenameColumnStrategy",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameEntryStrategy.html"
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameColumnStrategy.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameEntryStrategy\u003A\u003Arenames\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameColumnStrategy\u003A\u003Arenames\u0028\u0029",
             "name": "renames",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameEntryStrategy.html#method_renames"
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameColumnStrategy.html#method_renames"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameMapEntryStrategy",
-            "name": "RenameMapEntryStrategy",
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameMapColumnStrategy",
+            "name": "RenameMapColumnStrategy",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameMapEntryStrategy.html"
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameMapColumnStrategy.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameMapEntryStrategy\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameMapColumnStrategy\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameMapEntryStrategy.html#method___construct"
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameMapColumnStrategy.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameMapEntryStrategy\u003A\u003Arenames\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameMapColumnStrategy\u003A\u003Arenames\u0028\u0029",
             "name": "renames",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameMapEntryStrategy.html#method_renames"
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameMapColumnStrategy.html#method_renames"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameReplaceEntryStrategy",
-            "name": "RenameReplaceEntryStrategy",
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameReplaceColumnStrategy",
+            "name": "RenameReplaceColumnStrategy",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameReplaceEntryStrategy.html"
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameReplaceColumnStrategy.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameReplaceEntryStrategy\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameReplaceColumnStrategy\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameReplaceEntryStrategy.html#method___construct"
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameReplaceColumnStrategy.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameReplaceEntryStrategy\u003A\u003Arenames\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\Rename\\RenameReplaceColumnStrategy\u003A\u003Arenames\u0028\u0029",
             "name": "renames",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-Rename-RenameReplaceEntryStrategy.html#method_renames"
+            "url": "classes/Flow-ETL-Transformer-Rename-RenameReplaceColumnStrategy.html#method_renames"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameEachEntryTransformer",
-            "name": "RenameEachEntryTransformer",
+            "fqsen": "\\Flow\\ETL\\Transformer\\RenameColumnTransformer",
+            "name": "RenameColumnTransformer",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameEachEntryTransformer.html"
+            "url": "classes/Flow-ETL-Transformer-RenameColumnTransformer.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameEachEntryTransformer\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\RenameColumnTransformer\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameEachEntryTransformer.html#method___construct"
+            "url": "classes/Flow-ETL-Transformer-RenameColumnTransformer.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameEachEntryTransformer\u003A\u003Abind\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\RenameColumnTransformer\u003A\u003Abind\u0028\u0029",
             "name": "bind",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameEachEntryTransformer.html#method_bind"
+            "url": "classes/Flow-ETL-Transformer-RenameColumnTransformer.html#method_bind"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameEachEntryTransformer\u003A\u003Atransform\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\RenameColumnTransformer\u003A\u003Atransform\u0028\u0029",
             "name": "transform",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameEachEntryTransformer.html#method_transform"
+            "url": "classes/Flow-ETL-Transformer-RenameColumnTransformer.html#method_transform"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameEntryTransformer",
-            "name": "RenameEntryTransformer",
+            "fqsen": "\\Flow\\ETL\\Transformer\\RenameEachColumnTransformer",
+            "name": "RenameEachColumnTransformer",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameEntryTransformer.html"
+            "url": "classes/Flow-ETL-Transformer-RenameEachColumnTransformer.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameEntryTransformer\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\RenameEachColumnTransformer\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameEntryTransformer.html#method___construct"
+            "url": "classes/Flow-ETL-Transformer-RenameEachColumnTransformer.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameEntryTransformer\u003A\u003Abind\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\RenameEachColumnTransformer\u003A\u003Abind\u0028\u0029",
             "name": "bind",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameEntryTransformer.html#method_bind"
+            "url": "classes/Flow-ETL-Transformer-RenameEachColumnTransformer.html#method_bind"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\RenameEntryTransformer\u003A\u003Atransform\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\RenameEachColumnTransformer\u003A\u003Atransform\u0028\u0029",
             "name": "transform",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-RenameEntryTransformer.html#method_transform"
+            "url": "classes/Flow-ETL-Transformer-RenameEachColumnTransformer.html#method_transform"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\ScalarFunctionFilterTransformer",
             "name": "ScalarFunctionFilterTransformer",
@@ -23236,25 +23241,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Transformer-ScalarFunctionTransformer.html#property_function"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\SelectEntriesTransformer",
-            "name": "SelectEntriesTransformer",
+            "fqsen": "\\Flow\\ETL\\Transformer\\SelectColumnsTransformer",
+            "name": "SelectColumnsTransformer",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-SelectEntriesTransformer.html"
+            "url": "classes/Flow-ETL-Transformer-SelectColumnsTransformer.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\SelectEntriesTransformer\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\SelectColumnsTransformer\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-SelectEntriesTransformer.html#method___construct"
+            "url": "classes/Flow-ETL-Transformer-SelectColumnsTransformer.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\SelectEntriesTransformer\u003A\u003Abind\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\SelectColumnsTransformer\u003A\u003Abind\u0028\u0029",
             "name": "bind",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-SelectEntriesTransformer.html#method_bind"
+            "url": "classes/Flow-ETL-Transformer-SelectColumnsTransformer.html#method_bind"
         },                {
-            "fqsen": "\\Flow\\ETL\\Transformer\\SelectEntriesTransformer\u003A\u003Atransform\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Transformer\\SelectColumnsTransformer\u003A\u003Atransform\u0028\u0029",
             "name": "transform",
             "summary": "",
-            "url": "classes/Flow-ETL-Transformer-SelectEntriesTransformer.html#method_transform"
+            "url": "classes/Flow-ETL-Transformer-SelectColumnsTransformer.html#method_transform"
         },                {
             "fqsen": "\\Flow\\ETL\\Transformer\\SerializedPayloadDecoder",
             "name": "SerializedPayloadDecoder",
@@ -23681,25 +23686,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Window.html#method_rowsBetween"
         },                {
-            "fqsen": "\\Flow\\ETL\\WithEntry",
-            "name": "WithEntry",
+            "fqsen": "\\Flow\\ETL\\WithColumn",
+            "name": "WithColumn",
             "summary": "",
-            "url": "classes/Flow-ETL-WithEntry.html"
+            "url": "classes/Flow-ETL-WithColumn.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\WithEntry\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\WithColumn\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-WithEntry.html#method___construct"
+            "url": "classes/Flow-ETL-WithColumn.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\WithEntry\u003A\u003A\u0024name",
+            "fqsen": "\\Flow\\ETL\\WithColumn\u003A\u003A\u0024name",
             "name": "name",
             "summary": "",
-            "url": "classes/Flow-ETL-WithEntry.html#property_name"
+            "url": "classes/Flow-ETL-WithColumn.html#property_name"
         },                {
-            "fqsen": "\\Flow\\ETL\\WithEntry\u003A\u003A\u0024function",
+            "fqsen": "\\Flow\\ETL\\WithColumn\u003A\u003A\u0024function",
             "name": "function",
             "summary": "",
-            "url": "classes/Flow-ETL-WithEntry.html#property_function"
+            "url": "classes/Flow-ETL-WithColumn.html#property_function"
         },                {
             "fqsen": "\\Flow\\Floe\\Codec\\NoopCodec",
             "name": "NoopCodec",

@@ -101,10 +101,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Seal-SealLoader.html#method_withDateTimeFormat"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader\u003A\u003AwithIdentifierEntry\u0028\u0029",
-            "name": "withIdentifierEntry",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader\u003A\u003AwithIdentifierColumn\u0028\u0029",
+            "name": "withIdentifierColumn",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealLoader.html#method_withIdentifierEntry"
+            "url": "classes/Flow-ETL-Adapter-Seal-SealLoader.html#method_withIdentifierColumn"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata",
             "name": "SealMetadata",

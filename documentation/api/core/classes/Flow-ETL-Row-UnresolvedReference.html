@@ -508,7 +508,7 @@
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Function-ArrayExpand.html"><abbr title="\Flow\ETL\Function\ArrayExpand">ArrayExpand</abbr></a>    </span>
 </dt>
-<dd>Expands each value into entry, if there are more than one value, multiple rows will be created.</dd>
+<dd>Expands each value into a column, if there are more than one value, multiple rows will be created.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_greaterThan">greaterThan()</a>
@@ -746,7 +746,7 @@
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Function-OnEach.html"><abbr title="\Flow\ETL\Function\OnEach">OnEach</abbr></a>    </span>
 </dt>
-<dd>Execute a scalar function on each element of an array/list/map/structure entry.</dd>
+<dd>Execute a scalar function on each element of an array/list/map/structure column.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_or">or()</a>
@@ -1058,7 +1058,7 @@ that owns those fields - the resolver never learns the leaf&#039;s internal shap
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Function-ArrayUnpack.html"><abbr title="\Flow\ETL\Function\ArrayUnpack">ArrayUnpack</abbr></a>    </span>
 </dt>
-<dd>Unpacks each element of an array into a new entry, using the array key as the entry name.</dd>
+<dd>Unpacks each element of an array into a new column, using the array key as the column name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Function-ScalarFunctionChain.html#method_upper">upper()</a>
@@ -1121,7 +1121,7 @@ per-element narrowing. Never mutates $this.</dd>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$alias</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-SortOrder.html"><abbr title="\Flow\ETL\Row\SortOrder">SortOrder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sort</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Row-SortOrder.html#enumcase_ASC"><abbr title="\Flow\ETL\Row\SortOrder::ASC">SortOrder::ASC</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-NullsOrder.html"><abbr title="\Flow\ETL\Row\NullsOrder">NullsOrder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nulls</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Row-NullsOrder.html#enumcase_FIRST"><abbr title="\Flow\ETL\Row\NullsOrder::FIRST">NullsOrder::FIRST</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$alias</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-SortOrder.html"><abbr title="\Flow\ETL\Row\SortOrder">SortOrder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sort</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Row-SortOrder.html#enumcase_ASC"><abbr title="\Flow\ETL\Row\SortOrder::ASC">SortOrder::ASC</abbr></a></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Row-NullsOrder.html"><abbr title="\Flow\ETL\Row\NullsOrder">NullsOrder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nulls</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Row-NullsOrder.html#enumcase_FIRST"><abbr title="\Flow\ETL\Row\NullsOrder::FIRST">NullsOrder::FIRST</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1130,7 +1130,7 @@ per-element narrowing. Never mutates $this.</dd>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$entry</span>
+                <span class="phpdocumentor-argument-list__argument__name">$column</span>
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3604,7 +3604,7 @@ per-element narrowing. Never mutates $this.</dd>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Expands each value into entry, if there are more than one value, multiple rows will be created.</p>
+        <p class="phpdocumentor-summary">Expands each value into a column, if there are more than one value, multiple rows will be created.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -5406,7 +5406,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Execute a scalar function on each element of an array/list/map/structure entry.</p>
+        <p class="phpdocumentor-summary">Execute a scalar function on each element of an array/list/map/structure column.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -5416,7 +5416,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
         </div>
     
         <section class="phpdocumentor-description"><p>In order to use this function, you need to provide a reference to the &quot;element&quot; that will be used in the function.</p>
-<p>Example: $df-&gt;withEntry('array', ref('array')-&gt;onEach(ref('element')-&gt;cast(type_string())))</p>
+<p>Example: $df-&gt;withColumn('array', ref('array')-&gt;onEach(ref('element')-&gt;cast(type_string())))</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -7957,7 +7957,7 @@ that owns those fields - the resolver never learns the leaf&#039;s internal shap
 
     </aside>
 
-        <p class="phpdocumentor-summary">Unpacks each element of an array into a new entry, using the array key as the entry name.</p>
+        <p class="phpdocumentor-summary">Unpacks each element of an array into a new column, using the array key as the column name.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>

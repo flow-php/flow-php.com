@@ -271,10 +271,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-ExcelLoader.html#method_withSheetName"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelLoader\u003A\u003AwithSheetNameFromEntry\u0028\u0029",
-            "name": "withSheetNameFromEntry",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelLoader\u003A\u003AwithSheetNameFromColumn\u0028\u0029",
+            "name": "withSheetNameFromColumn",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Excel-ExcelLoader.html#method_withSheetNameFromEntry"
+            "url": "classes/Flow-ETL-Adapter-Excel-ExcelLoader.html#method_withSheetNameFromColumn"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\ExcelLoader\u003A\u003AwithTimeFormat\u0028\u0029",
             "name": "withTimeFormat",

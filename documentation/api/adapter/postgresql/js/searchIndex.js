@@ -1,46 +1,6 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap",
-            "name": "EntryTypesMap",
-            "summary": "Maps\u0020between\u0020Flow\u0020ETL\u0020types\u0020and\u0020PostgreSQL\u0020types.",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003Amap\u0028\u0029",
-            "name": "map",
-            "summary": "Maps\u0020a\u0020column\u0020value\u0020\u002B\u0020Flow\u0020type\u0020to\u0020a\u0020TypedValue\u0020suitable\u0020for\u0020PostgreSQL\u0020queries.",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_map"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003AvalueType\u0028\u0029",
-            "name": "valueType",
-            "summary": "The\u0020PostgreSQL\u0020value\u0020type\u0020a\u0020column\u0020of\u0020this\u0020Flow\u0020type\u0020is\u0020written\u0020as.",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_valueType"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003AtoColumnType\u0028\u0029",
-            "name": "toColumnType",
-            "summary": "Maps\u0020a\u0020Flow\u0020type\u0020to\u0020a\u0020PostgreSQL\u0020DDL\u0020column\u0020type.",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toColumnType"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003AtoFlowType\u0028\u0029",
-            "name": "toFlowType",
-            "summary": "Maps\u0020a\u0020PostgreSQL\u0020DDL\u0020column\u0020type\u0020back\u0020to\u0020a\u0020canonical\u0020Flow\u0020type.",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toFlowType"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003AtoFlowTypeWithTextFloor\u0028\u0029",
-            "name": "toFlowTypeWithTextFloor",
-            "summary": "Same\u0020mapping,\u0020except\u0020that\u0020a\u0020name\u0020this\u0020map\u0020does\u0020not\u0020recognise\u0020takes\u0020the\u0020text\u0020floor\u0020instead\u0020of\nthrowing.\u0020Only\u0020the\u0020result\u0020route\u0020may\u0020use\u0020it\u003A\u0020there\u0020the\u0020caster\u0020leaves\u0020an\u0020unrecognised\u0020type\u0020as\ntext,\u0020so\u0020schema\u0020and\u0020data\u0020agree.\u0020The\u0020catalog\u0020route\u0020has\u0020no\u0020such\u0020pairing\u0020and\u0020must\u0020keep\u0020refusing.",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#method_toFlowTypeWithTextFloor"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\EntryTypesMap\u003A\u003ADEFAULT_TYPES",
-            "name": "DEFAULT_TYPES",
-            "summary": "Default\u0020mapping\u0020of\u0020Flow\u0020type\u0020classes\u0020to\u0020PostgreSQL\u0020value\u0020types.",
-            "url": "classes/Flow-ETL-Adapter-PostgreSql-EntryTypesMap.html#constant_DEFAULT_TYPES"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Exception\\RuntimeException",
             "name": "RuntimeException",
             "summary": "",
@@ -846,6 +806,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-SchemaConverter.html#method_toPostgreSqlTable"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TypesMap",
+            "name": "TypesMap",
+            "summary": "Maps\u0020between\u0020Flow\u0020ETL\u0020types\u0020and\u0020PostgreSQL\u0020types.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TypesMap\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TypesMap\u003A\u003Amap\u0028\u0029",
+            "name": "map",
+            "summary": "Maps\u0020a\u0020column\u0020value\u0020\u002B\u0020Flow\u0020type\u0020to\u0020a\u0020TypedValue\u0020suitable\u0020for\u0020PostgreSQL\u0020queries.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html#method_map"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TypesMap\u003A\u003AvalueType\u0028\u0029",
+            "name": "valueType",
+            "summary": "The\u0020PostgreSQL\u0020value\u0020type\u0020a\u0020column\u0020of\u0020this\u0020Flow\u0020type\u0020is\u0020written\u0020as.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html#method_valueType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TypesMap\u003A\u003AtoColumnType\u0028\u0029",
+            "name": "toColumnType",
+            "summary": "Maps\u0020a\u0020Flow\u0020type\u0020to\u0020a\u0020PostgreSQL\u0020DDL\u0020column\u0020type.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html#method_toColumnType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TypesMap\u003A\u003AtoFlowType\u0028\u0029",
+            "name": "toFlowType",
+            "summary": "Maps\u0020a\u0020PostgreSQL\u0020DDL\u0020column\u0020type\u0020back\u0020to\u0020a\u0020canonical\u0020Flow\u0020type.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html#method_toFlowType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TypesMap\u003A\u003AtoFlowTypeWithTextFloor\u0028\u0029",
+            "name": "toFlowTypeWithTextFloor",
+            "summary": "Same\u0020mapping,\u0020except\u0020that\u0020a\u0020name\u0020this\u0020map\u0020does\u0020not\u0020recognise\u0020takes\u0020the\u0020text\u0020floor\u0020instead\u0020of\nthrowing.\u0020Only\u0020the\u0020result\u0020route\u0020may\u0020use\u0020it\u003A\u0020there\u0020the\u0020caster\u0020leaves\u0020an\u0020unrecognised\u0020type\u0020as\ntext,\u0020so\u0020schema\u0020and\u0020data\u0020agree.\u0020The\u0020catalog\u0020route\u0020has\u0020no\u0020such\u0020pairing\u0020and\u0020must\u0020keep\u0020refusing.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html#method_toFlowTypeWithTextFloor"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\TypesMap\u003A\u003ADEFAULT_TYPES",
+            "name": "DEFAULT_TYPES",
+            "summary": "Default\u0020mapping\u0020of\u0020Flow\u0020type\u0020classes\u0020to\u0020PostgreSQL\u0020value\u0020types.",
+            "url": "classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html#constant_DEFAULT_TYPES"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\ValueConverter\\EnumConverter",
             "name": "EnumConverter",
             "summary": "",
@@ -911,6 +911,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/default.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-postgresql-exception.html"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql",
             "name": "PostgreSql",
             "summary": "",
@@ -930,11 +935,6 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\Exception",
-            "name": "Exception",
-            "summary": "",
-            "url": "namespaces/flow-etl-adapter-postgresql-exception.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\LoaderOptions",
             "name": "LoaderOptions",
